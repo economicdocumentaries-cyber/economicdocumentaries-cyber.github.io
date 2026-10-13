@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" width="400" height="440">
+  <!-- Front view of the abdomen. The client's right side is on the viewer's left. -->
+  <rect width="400" height="440" fill="#FFFFFF"/>
+  <path d="M118 18C104 90 92 170 96 250C99 315 120 370 158 418H242C280 370 301 315 304 250C308 170 296 90 282 18Z" fill="#F6EFE9" stroke="#6B5E55" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="none" stroke="#9A8A7E" stroke-width="2.5" stroke-linecap="round">
+    <path d="M200 40Q166 96 118 120"/>
+    <path d="M200 40Q234 96 282 120"/>
+    <path d="M124 298Q150 356 186 396"/>
+    <path d="M276 298Q250 356 214 396"/>
+  </g>
+  <ellipse cx="200" cy="232" rx="7" ry="9" fill="#E9DCD2" stroke="#6B5E55" stroke-width="2.5"/>
+  <g stroke="#4B5563" stroke-width="2" stroke-dasharray="7 6">
+    <path d="M200 60V408"/>
+    <path d="M100 232H300"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1F3A5F" text-anchor="middle">
+    <text x="48" y="240">R</text>
+    <text x="352" y="240">L</text>
+  </g>
+</svg>

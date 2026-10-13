@@ -1,0 +1,307 @@
+{
+  "id": "sample-med-surg",
+  "title": "Med-Surg Sample Set",
+  "description": "A sample med-surg exam with every question type, including a 4-question COPD case study.",
+  "timeMinutes": 35,
+  "cases": {
+    "copd": {
+      "intro": "A nurse is caring for a client who was admitted to the medical unit with an exacerbation of chronic obstructive pulmonary disease (COPD).",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>0800:</b></p><p>Client is 68 years old and has a 45 pack-year smoking history. Client reports increasing shortness of breath over the past 3 days and a cough that now produces thick yellow sputum. Client is sitting upright and leaning forward with arms on the over-bed table, using accessory muscles to breathe, and speaking in 3- to 4-word phrases. Breath sounds are diminished, with expiratory wheezes in all lobes. Barrel-shaped chest. Client is alert and oriented. Oxygen started at 2 L/min by nasal cannula.</p><p><b>1000:</b></p><p>Client states breathing is \"a little easier\" after the nebulizer treatment. Speaking in short sentences. Sputum remains thick and yellow.</p><p><b>1200:</b></p><p>Client reports chills. Skin is warm and flushed. Speaking in full sentences.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Vital sign</th><th>0800</th><th>1000</th><th>1200</th></tr></thead><tbody><tr><td>Temperature</td><td>37.3°&nbsp;C (99.1°&nbsp;F)</td><td>37.8°&nbsp;C (100°&nbsp;F)</td><td>38.4°&nbsp;C (101.1°&nbsp;F)</td></tr><tr><td>Heart rate</td><td>108/min</td><td>102/min</td><td>104/min</td></tr><tr><td>Respiratory rate</td><td>28/min</td><td>24/min</td><td>22/min</td></tr><tr><td>Blood pressure</td><td>138/84&nbsp;mm&nbsp;Hg</td><td>136/82&nbsp;mm&nbsp;Hg</td><td>138/84&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>86% on room&nbsp;air</td><td>90% on 2&nbsp;L/min</td><td>91% on 2&nbsp;L/min</td></tr></tbody></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results</h4><p><b>0800:</b> Arterial blood gases, drawn on room air before oxygen was started</p><table><thead><tr><th>Test</th><th>Result</th><th>Reference range</th></tr></thead><tbody><tr><td>pH</td><td>7.31</td><td>7.35 to 7.45</td></tr><tr><td>PaCO₂</td><td>58&nbsp;mm&nbsp;Hg</td><td>35 to 45&nbsp;mm&nbsp;Hg</td></tr><tr><td>HCO₃⁻</td><td>29&nbsp;mEq/L</td><td>22 to 26&nbsp;mEq/L</td></tr><tr><td>PaO₂</td><td>54&nbsp;mm&nbsp;Hg</td><td>80 to 100&nbsp;mm&nbsp;Hg</td></tr></tbody></table><p><b>0800:</b> WBC count 13,800/mm³ (reference range 5,000 to 10,000/mm³)</p>"
+        },
+        {
+          "title": "Orders",
+          "html": "<h4>Orders</h4><ul><li>Oxygen by nasal cannula; titrate to keep SpO₂ 88% to 92%</li><li>Albuterol and ipratropium by nebulizer every 4 hours</li><li>Methylprednisolone 40 mg IV every 12 hours</li><li>Sputum culture and sensitivity</li><li>Azithromycin 500 mg IV every 24 hours</li><li>Chest x-ray</li></ul>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "furosemide-low-potassium",
+      "type": "mc",
+      "topic": "Pharmacology",
+      "stem": "A nurse is preparing to administer furosemide 40 mg PO to a client who has heart failure. The client's potassium level this morning is 3.1 mEq/L. Which of the following actions should the nurse take?",
+      "options": [
+        "Administer the medication and recheck the potassium level in 4 hours.",
+        "Withhold the medication and notify the provider.",
+        "Administer the medication with a glass of orange juice.",
+        "Administer half of the dose and document the potassium level."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Withhold the medication and notify the provider</b> is correct. Furosemide is a loop diuretic that causes the kidneys to excrete potassium. A potassium level of 3.1 mEq/L is below the expected range of 3.5 to 5.0 mEq/L, and another dose could make the hypokalemia worse and increase the risk of dysrhythmias. The provider might prescribe potassium replacement or change the diuretic.</p><p><b>Administer and recheck in 4 hours</b> is incorrect. Giving the dose first causes more potassium loss before the problem is addressed.</p><p><b>Administer with orange juice</b> is incorrect. Orange juice contains some potassium but cannot correct a level of 3.1 mEq/L, and the dose would still increase potassium loss.</p><p><b>Administer half of the dose</b> is incorrect. The nurse cannot change a prescribed dose without a prescription from the provider.</p>"
+    },
+    {
+      "id": "hypoglycemia-findings",
+      "type": "sata",
+      "topic": "Endocrine",
+      "stem": "A nurse is caring for a client who has type 1 diabetes mellitus. The client's capillary blood glucose is 52 mg/dL. Which of the following findings should the nurse expect?",
+      "options": [
+        "Diaphoresis",
+        "Fruity breath odor",
+        "Tachycardia",
+        "Hot, dry skin",
+        "Tremors",
+        "Confusion"
+      ],
+      "answer": [0, 2, 4, 5],
+      "rationale": "<p>A blood glucose of 52 mg/dL is hypoglycemia (less than 70 mg/dL). Low glucose triggers the sympathetic nervous system, which causes <b>diaphoresis</b>, <b>tachycardia</b>, and <b>tremors</b>. The brain depends on glucose for energy, so <b>confusion</b>, irritability, and trouble concentrating also occur.</p><p><b>Fruity breath odor</b> is incorrect. It is caused by ketones in diabetic ketoacidosis, which is a complication of hyperglycemia.</p><p><b>Hot, dry skin</b> is incorrect. It occurs with hyperglycemia and dehydration. Hypoglycemia causes cool, clammy skin.</p>"
+    },
+    {
+      "id": "thyroidectomy-hypocalcemia",
+      "type": "mc",
+      "topic": "Perioperative care",
+      "stem": "A nurse is caring for a client who had a total thyroidectomy 12 hours ago. Which of the following findings should the nurse report to the provider immediately?",
+      "options": [
+        "Tingling around the mouth",
+        "Pain when swallowing",
+        "A small amount of serosanguineous drainage on the dressing",
+        "Temperature 37.4° C (99.3° F)"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Tingling around the mouth</b> is correct. Tingling around the mouth or in the fingers is an early sign of hypocalcemia, which can occur if the parathyroid glands are injured or removed during thyroid surgery. Hypocalcemia can progress to tetany, laryngospasm, and seizures, so the nurse should report it right away.</p><p><b>Pain when swallowing</b> is incorrect. A sore throat is expected after neck surgery and endotracheal intubation.</p><p><b>Serosanguineous drainage</b> is incorrect. A small amount is expected. The nurse should also check behind the neck and the pillow for blood that pools there.</p><p><b>Temperature 37.4° C (99.3° F)</b> is incorrect. A slight elevation is common after surgery. A high fever with tachycardia could indicate thyroid storm.</p>"
+    },
+    {
+      "id": "neutropenic-precautions",
+      "type": "sata",
+      "topic": "Infection control",
+      "scoring": "partial",
+      "stem": "A nurse is reinforcing teaching about neutropenic precautions with a client who is receiving chemotherapy. The client's absolute neutrophil count (ANC) is 450/mm<sup>3</sup>. Which of the following instructions should the nurse include?",
+      "options": [
+        "Perform hand hygiene often, especially before eating and after using the bathroom.",
+        "Keep fresh flowers in a vase at the bedside.",
+        "Report a temperature of 38° C (100.4° F) or higher right away.",
+        "Avoid crowds and people who are sick.",
+        "Clean the cat's litter box every day.",
+        "Ask for the live-virus nasal spray flu vaccine."
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>An ANC below 500/mm<sup>3</sup> is severe neutropenia, so the client has a high risk of infection, and a fever might be the only sign of it. The client should <b>perform hand hygiene often</b>, <b>avoid crowds and people who are sick</b>, and <b>report a temperature of 38° C (100.4° F) or higher right away</b>, because a fever with neutropenia is an emergency.</p><p><b>Fresh flowers in a vase</b> is incorrect. Flowers, plants, and standing water can carry bacteria and fungi.</p><p><b>Cleaning the litter box</b> is incorrect. Cat feces can spread toxoplasmosis and other infections, so someone else should do this task.</p><p><b>The live-virus nasal spray flu vaccine</b> is incorrect. Live vaccines can cause infection in a client who is immunosuppressed. An inactivated flu shot is used instead.</p>"
+    },
+    {
+      "id": "hip-arthroplasty-teaching",
+      "type": "mc",
+      "topic": "Musculoskeletal",
+      "stem": "A nurse is reinforcing teaching with a client who had a total hip arthroplasty using a posterior approach. Which of the following actions by the client indicates a need for further teaching?",
+      "options": [
+        "Uses a long-handled reacher to pick up items from the floor",
+        "Sits in a chair with a raised seat and armrests",
+        "Bends forward to put on socks and shoes",
+        "Keeps a pillow between the legs when turning onto the side"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Bends forward to put on socks and shoes</b> is correct, because it shows the client needs more teaching. After a posterior-approach hip arthroplasty, the client must not flex the hip more than 90°, cross the legs, or turn the operative leg inward, because these positions can dislocate the new joint. Bending forward flexes the hip past 90°. The client should use a sock aid and a long-handled shoehorn instead.</p><p><b>Using a long-handled reacher</b>, <b>sitting in a raised chair with armrests</b>, and <b>keeping a pillow between the legs when turning</b> are incorrect, because each of these actions protects the new hip.</p>"
+    },
+    {
+      "id": "heart-failure-sodium",
+      "type": "sata",
+      "topic": "Cardiovascular",
+      "stem": "A nurse is teaching a client who has heart failure about a low-sodium diet. Which of the following foods should the nurse instruct the client to limit?",
+      "options": [
+        "Fresh apples",
+        "Canned chicken noodle soup",
+        "Soy sauce",
+        "Plain baked potato",
+        "Sliced deli turkey",
+        "Frozen pepperoni pizza"
+      ],
+      "answer": [1, 2, 4, 5],
+      "rationale": "<p>Most sodium comes from processed and packaged foods. <b>Canned soup</b>, <b>soy sauce</b>, <b>deli meats</b>, and <b>frozen convenience foods such as pizza</b> are high in sodium and should be limited. Eating less sodium reduces fluid retention, which eases edema and the workload of the heart.</p><p><b>Fresh apples</b> and a <b>plain baked potato</b> are incorrect. Fresh fruits and unprocessed vegetables without added salt are naturally low in sodium.</p>"
+    },
+    {
+      "id": "heparin-aptt",
+      "type": "mc",
+      "topic": "Pharmacology",
+      "stem": "A nurse is caring for a client who is receiving a continuous IV heparin infusion. Which of the following laboratory values should the nurse monitor to evaluate the therapeutic effect of the medication?",
+      "options": ["aPTT", "INR", "Platelet count", "Serum potassium"],
+      "answer": 0,
+      "rationale": "<p><b>aPTT</b> is correct. The activated partial thromboplastin time shows how well heparin is preventing clotting, and the infusion rate is adjusted to keep it in the prescribed range.</p><p><b>INR</b> is incorrect; it is used to monitor warfarin. <b>Platelet count</b> is incorrect; it is checked for heparin-induced thrombocytopenia, an adverse effect, not the therapeutic effect. <b>Serum potassium</b> does not show whether heparin is working.</p>"
+    },
+    {
+      "id": "lisinopril-teaching",
+      "type": "sata",
+      "topic": "Pharmacology",
+      "stem": "A nurse is reinforcing teaching with a client who has a new prescription for lisinopril. Which of the following findings should the nurse instruct the client to report to the provider?",
+      "options": [
+        "Swelling of the face, lips, or tongue",
+        "A dry cough that does not go away",
+        "Muscle weakness or an irregular heartbeat",
+        "Orange-colored urine",
+        "Ringing in the ears"
+      ],
+      "answer": [0, 1, 2],
+      "rationale": "<p><b>Swelling of the face, lips, or tongue</b> can be angioedema, which can block the airway. A <b>persistent dry cough</b> is a common reason to switch to another medication. <b>Muscle weakness or an irregular heartbeat</b> can be signs of hyperkalemia, because ACE inhibitors raise potassium.</p><p><b>Orange-colored urine</b> is an expected effect of rifampin, not lisinopril. <b>Ringing in the ears</b> is associated with aspirin toxicity and some diuretics.</p>"
+    },
+    {
+      "id": "warfarin-teaching",
+      "type": "emr",
+      "topic": "Pharmacology",
+      "stem": "A nurse is reinforcing teaching with a client who has a new prescription for warfarin. Which 3 instructions should the nurse include?",
+      "options": [
+        "Eat about the same amount of green leafy vegetables each week.",
+        "Use an electric razor and a soft-bristled toothbrush.",
+        "Keep all appointments for INR blood tests.",
+        "Take aspirin when you have a headache.",
+        "Avoid all foods that contain vitamin K.",
+        "Take two doses the next day if you miss a dose.",
+        "Expect your gums to bleed when you brush your teeth."
+      ],
+      "answer": [0, 1, 2],
+      "select": 3,
+      "rationale": "<p><b>Keep vitamin K intake consistent</b>, <b>use an electric razor and a soft-bristled toothbrush</b>, and <b>keep INR appointments</b> are correct. Warfarin works by blocking vitamin K–dependent clotting factors, so a sudden change in how much vitamin K the client eats can make the INR rise or fall. An electric razor and a soft toothbrush lower the risk of bleeding from cuts and gums. Regular INR tests show whether the dose keeps clotting in the therapeutic range.</p><p><b>Aspirin</b> is incorrect; it also affects clotting and increases the risk of bleeding. <b>Avoiding all vitamin K</b> is incorrect; the goal is a steady intake, not none. <b>Doubling a dose</b> is incorrect; it can cause bleeding, so the client should follow the provider's directions for a missed dose. <b>Bleeding gums</b> are not expected and should be reported, because they can be a sign that the dose is too high.</p>"
+    },
+    {
+      "id": "ppe-donning",
+      "type": "order",
+      "topic": "Infection control",
+      "stem": "A nurse is preparing to enter the room of a client who is on contact and droplet precautions. In which order should the nurse put on personal protective equipment (PPE)?",
+      "items": ["Gown", "Mask or respirator", "Goggles or face shield", "Gloves"],
+      "rationale": "<p>The CDC sequence for putting on PPE is <b>gown, mask or respirator, goggles or face shield, then gloves</b>. The gown goes on first. The mask goes on before the goggles so the eye protection fits over it. Gloves go on last so that they stay clean and cover the cuffs of the gown.</p>"
+    },
+    {
+      "id": "heparin-dose",
+      "type": "fill",
+      "topic": "Dosage calculation",
+      "stem": "A nurse is preparing to administer heparin 5,000 units subcutaneously. The available vial contains heparin 10,000 units/mL. How many mL should the nurse administer?",
+      "answer": 0.5,
+      "unit": "mL",
+      "round": "to the nearest tenth",
+      "rationale": "<p>Desired dose ÷ dose on hand × volume: 5,000 units ÷ 10,000 units × 1 mL = <b>0.5 mL</b>.</p>"
+    },
+    {
+      "id": "amoxicillin-dose",
+      "type": "fill",
+      "topic": "Dosage calculation",
+      "stem": "A nurse is preparing to administer amoxicillin 25 mg/kg/day PO divided every 12 hours to a child who weighs 44 lb. How many mg should the nurse administer per dose?",
+      "answer": 250,
+      "unit": "mg",
+      "round": "to the nearest whole number",
+      "rationale": "<p>First convert pounds to kilograms: 44 lb ÷ 2.2 = 20 kg. Then find the daily dose: 25 mg/kg/day × 20 kg = 500 mg/day. Every 12 hours means 2 doses a day, so 500 mg ÷ 2 = <b>250 mg per dose</b>.</p>"
+    },
+    {
+      "id": "appendicitis-hotspot",
+      "type": "hotspot",
+      "topic": "Gastrointestinal",
+      "stem": "A nurse is assessing a client who has suspected appendicitis. Click the area of the abdomen where the nurse should expect the client to have the most tenderness.",
+      "image": "img/abdomen.svg",
+      "alt": "Front view of a client's abdomen, divided into four quadrants by dashed lines through the umbilicus. The client's right side, marked R, is on the viewer's left.",
+      "regions": [{ "x": 24, "y": 52.7, "w": 26, "h": 42.3 }],
+      "rationale": "<p>Appendicitis typically causes pain and tenderness in the <b>right lower quadrant</b>, at McBurney's point, about one-third of the way from the right anterior superior iliac spine to the umbilicus. In a front view, the client's right side is on the viewer's left.</p>"
+    },
+    {
+      "id": "potassium-matrix",
+      "type": "matrix",
+      "multiple": true,
+      "topic": "Fluids and electrolytes",
+      "stem": "A nurse is reviewing findings that can occur with potassium imbalances. For each finding, click to specify whether it is associated with hypokalemia, hyperkalemia, or both.",
+      "rowHeader": "Finding",
+      "columns": ["Hypokalemia", "Hyperkalemia"],
+      "rows": ["Muscle weakness", "Peaked T waves", "Prominent U waves", "Cardiac dysrhythmias", "Decreased bowel sounds", "Diarrhea and intestinal cramping"],
+      "answer": [[0, 1], [1], [0], [0, 1], [0], [1]],
+      "rationale": "<p><b>Muscle weakness</b> and <b>cardiac dysrhythmias</b> occur with both imbalances, because potassium is essential for nerve and muscle function, including in the heart. <b>Peaked T waves</b> and <b>diarrhea with intestinal cramping</b> are associated with hyperkalemia. <b>Prominent U waves</b> and <b>decreased bowel sounds</b> are associated with hypokalemia, which slows smooth muscle activity in the GI tract.</p>"
+    },
+    {
+      "id": "dka-potassium",
+      "type": "dropdown",
+      "topic": "Endocrine",
+      "stem": "A nurse is caring for a client who has diabetic ketoacidosis (DKA). A continuous IV regular insulin infusion was started 2 hours ago. The client's serum potassium on admission was 5.2 mEq/L.",
+      "text": "The nurse should monitor the client closely for {{0}}, because insulin moves potassium {{1}}.",
+      "blanks": [
+        { "options": ["hypokalemia", "hyperkalemia", "hyponatremia", "hypercalcemia"], "answer": 0 },
+        { "options": ["into the cells", "out of the cells", "into the urine", "into the bones"], "answer": 0 }
+      ],
+      "rationale": "<p>In DKA, the lack of insulin and the acidosis shift potassium out of the cells, so the serum level can be normal or high on admission even though the body's total potassium is low from osmotic diuresis. Insulin moves potassium <b>into the cells</b>, so once the infusion starts, the serum level can drop quickly and cause <b>hypokalemia</b> and dysrhythmias. The nurse monitors potassium levels and the cardiac rhythm and gives potassium replacement as prescribed.</p><p><b>Hyperkalemia</b> is incorrect; the level was high on admission, but insulin lowers it. <b>Hyponatremia</b> and <b>hypercalcemia</b> are not caused by insulin moving potassium into the cells. Insulin does not move potassium <b>out of the cells</b>, <b>into the urine</b>, or <b>into the bones</b>.</p>"
+    },
+    {
+      "id": "digoxin-dragdrop",
+      "type": "dragdrop",
+      "topic": "Pharmacology",
+      "stem": "A nurse is preparing to administer digoxin to a client who has heart failure.",
+      "text": "Before giving the medication, the nurse should count the client's {{0}} pulse for {{1}} and withhold the dose if the rate is less than {{2}}. The nurse should also monitor the client's serum {{3}} level, because a low level increases the risk of digoxin toxicity.",
+      "tokens": ["apical", "radial", "1 full minute", "30 seconds", "60/min", "100/min", "potassium", "sodium"],
+      "answer": [0, 2, 4, 6],
+      "rationale": "<p>The nurse should count the <b>apical</b> pulse for <b>1 full minute</b>, withhold digoxin if the rate is less than <b>60/min</b> for an adult, and notify the provider. Low serum <b>potassium</b> increases the risk of digoxin toxicity, so it is monitored closely.</p>"
+    },
+    {
+      "id": "postop-bowtie",
+      "type": "bowtie",
+      "topic": "Perioperative care",
+      "stem": "A nurse is caring for a client who is 4 hours postoperative following an abdominal hysterectomy. The client's blood pressure is 84/50 mm Hg, heart rate is 128/min, and respiratory rate is 26/min. The skin is cool and clammy, and the abdominal dressing is saturated with bright red blood.",
+      "condition": { "options": ["Hypovolemic shock", "Septic shock", "Cardiogenic shock", "Pulmonary embolism"], "answer": 0 },
+      "actions": {
+        "options": ["Administer an IV isotonic fluid bolus", "Notify the surgeon", "Place the client in high-Fowler's position", "Administer IV furosemide", "Assist the client to ambulate"],
+        "answer": [0, 1],
+        "select": 2
+      },
+      "parameters": {
+        "options": ["Blood pressure", "Urine output", "Blood glucose", "Bowel sounds", "Deep tendon reflexes"],
+        "answer": [0, 1],
+        "select": 2
+      },
+      "rationale": "<p>Bright red bleeding with hypotension, tachycardia, and cool, clammy skin indicates <b>hypovolemic shock</b> from postoperative hemorrhage. The nurse should <b>notify the surgeon</b>, who might need to return the client to surgery, and give an <b>IV isotonic fluid bolus</b> to restore circulating volume. <b>Blood pressure</b> and <b>urine output</b> show whether perfusion is improving.</p><p>Septic shock would include signs of infection, such as fever. Cardiogenic shock results from pump failure, and a pulmonary embolism typically causes sudden dyspnea and chest pain. High-Fowler's position can worsen hypotension, furosemide would further reduce fluid volume, and ambulating is unsafe for a client in shock. Blood glucose, bowel sounds, and deep tendon reflexes do not show how the client is responding to treatment for shock.</p>"
+    },
+    {
+      "id": "copd-highlight",
+      "type": "highlight",
+      "case": "copd",
+      "topic": "Respiratory",
+      "stem": "Click to highlight the findings from the 0800 assessment that require follow-up.",
+      "passage": "Client reports increasing shortness of breath over the past 3 days and [[a cough that now produces thick yellow sputum]]. Client is [[using accessory muscles to breathe]] and [[speaking in 3- to 4-word phrases]]. [[Barrel-shaped chest]]. Client [[breathes out through pursed lips]]. [[Alert and oriented]].<br>[[Oxygen saturation 86% on room air]].",
+      "answer": [0, 1, 2, 6],
+      "rationale": "<p>Findings that require follow-up show the client is worse than baseline. <b>Thick yellow sputum</b> suggests a respiratory infection. <b>Accessory muscle use</b> and <b>speaking in 3- to 4-word phrases</b> show increased work of breathing. An <b>SpO₂ of 86%</b> is below the client's target of 88% to 92%.</p><p>A <b>barrel-shaped chest</b> is an expected long-term change in COPD. <b>Pursed-lip breathing</b> is a technique clients use to keep their airways open longer, so it is expected. Being <b>alert and oriented</b> is an expected finding.</p>"
+    },
+    {
+      "id": "copd-abg",
+      "type": "dropdown",
+      "case": "copd",
+      "topic": "Respiratory",
+      "stem": "The nurse reviews the client's arterial blood gas results.",
+      "text": "The client's ABG results indicate {{0}} caused by {{1}}.",
+      "blanks": [
+        { "options": ["respiratory acidosis", "respiratory alkalosis", "metabolic acidosis", "metabolic alkalosis"], "answer": 0 },
+        { "options": ["CO₂ retention", "hyperventilation", "loss of bicarbonate", "prolonged vomiting"], "answer": 0 }
+      ],
+      "rationale": "<p>A pH of 7.31 is below 7.35, which is acidosis. The PaCO₂ of 58 mm Hg is above 45 mm Hg, so the cause is respiratory: <b>respiratory acidosis</b>. In COPD, trapped air and poor ventilation lead to <b>CO₂ retention</b>. The HCO₃⁻ of 29 mEq/L shows that the kidneys are partly compensating.</p><p>Respiratory alkalosis results from hyperventilation, which lowers PaCO₂. Metabolic acidosis involves a low HCO₃⁻, such as from loss of bicarbonate. Metabolic alkalosis can result from prolonged vomiting.</p>"
+    },
+    {
+      "id": "copd-actions-matrix",
+      "type": "matrix",
+      "case": "copd",
+      "topic": "Respiratory",
+      "stem": "For each potential nursing action, click to specify whether the action is indicated or not indicated for the client.",
+      "rowHeader": "Potential nursing action",
+      "columns": ["Indicated", "Not Indicated"],
+      "rows": [
+        "Teach the client pursed-lip breathing.",
+        "Encourage the client to drink 2 to 3 L of fluid each day, unless contraindicated.",
+        "Schedule rest periods between care activities.",
+        "Increase the oxygen to keep the SpO₂ above 95%.",
+        "Encourage the client to eat three large meals a day."
+      ],
+      "answer": [0, 0, 0, 1, 1],
+      "rationale": "<p><b>Indicated:</b> pursed-lip breathing slows breathing and keeps airways open; fluids thin secretions so they are easier to cough up; rest periods reduce fatigue and oxygen demand.</p><p><b>Not indicated:</b> the SpO₂ target for this client is 88% to 92%, and more oxygen can worsen CO₂ retention. Large meals press on the diaphragm and increase shortness of breath, so the client should eat small, frequent, high-calorie meals.</p>"
+    },
+    {
+      "id": "copd-trends",
+      "type": "matrix",
+      "case": "copd",
+      "topic": "Respiratory",
+      "stem": "The nurse reviews the client's vital signs. For each finding, click to specify whether the finding has improved, has not changed, or has declined since 0800.",
+      "rowHeader": "Finding",
+      "columns": ["Improved", "No Change", "Declined"],
+      "rows": ["Temperature", "Respiratory rate", "Oxygen saturation", "Blood pressure"],
+      "answer": [2, 0, 0, 1],
+      "rationale": "<p>The <b>temperature</b> rose from 37.3° C (99.1° F) to 38.4° C (101.1° F), which is a decline and suggests infection. The <b>respiratory rate</b> fell from 28/min to 22/min and the <b>SpO₂</b> rose from 86% to 91%, so both improved with bronchodilators and oxygen. The <b>blood pressure</b> stayed about the same (138/84, 136/82, and 138/84 mm Hg), so it has not changed.</p>"
+    }
+  ]
+}
