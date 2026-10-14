@@ -969,6 +969,9 @@ export function validateSet(set) {
   if (set.description != null && typeof set.description !== 'string') add('"description" must be text.');
   if (set.timeMinutes != null && !(typeof set.timeMinutes === 'number' && set.timeMinutes > 0)) add('"timeMinutes" must be a number greater than 0, with no quotes.');
   if (set.hidden != null && typeof set.hidden !== 'boolean') add('"hidden" must be true or false, with no quotes.');
+  if (set.defaultCount != null && !(Number.isInteger(set.defaultCount) && set.defaultCount >= 1)) {
+    add('"defaultCount" must be a whole number of questions, like 25, with no quotes.');
+  }
   // The class and exam (SPEC 11). Whether the class exists is checked in sets.js.
   if (set.course != null && !isText(set.course)) add('"course" must be text: a class code from sets/courses.json, like "NU1110".');
   if (set.exam != null && !isText(set.exam)) add('"exam" must be text: the exam or unit the set is for, like "Exam 2".');

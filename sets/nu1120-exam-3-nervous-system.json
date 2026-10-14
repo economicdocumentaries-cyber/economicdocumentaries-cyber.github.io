@@ -5,6 +5,7 @@
   "course": "NU1120",
   "exam": "Exam 3",
   "timeMinutes": 75,
+  "defaultCount": 25,
   "cases": {
     "confusion": {
       "intro": "A nurse is caring for a 76-year-old client who was admitted to the medical unit yesterday with pneumonia. The client's primary language is Portuguese.",

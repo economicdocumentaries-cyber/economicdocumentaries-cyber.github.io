@@ -67,9 +67,11 @@ function leaveFullscreen() {
 
 // ---------- starting and resuming ----------
 
-// SPEC 4.3: filters, then order (questions in a case study stay together and
-// in order; whole blocks move), then the number of questions.
-export function chooseQuestions(set, s, random = Math.random) {
+// SPEC 4.3: filters, then which questions, then their order. The questions in
+// a case study stay together and in order (a case study is one block). With
+// fewer questions than match, they're picked by pickBlocks (SPEC 11.3).
+// seen: from lastSeen(), so questions seen longest ago (or never) come first.
+export function chooseQuestions(set, s, random = Math.random, seen = new Map()) {
   const keep = q => (!s.only || s.only.includes(q.id))
     && (!s.topics || s.topics.includes(q.topic))
     && (!s.types || s.types.includes(q.type));
@@ -83,14 +85,80 @@ export function chooseQuestions(set, s, random = Math.random) {
       blocks.push(caseBlocks.get(q.case));
     }
   }
-  const ordered = s.shuffleQuestions ? shuffle(blocks, random) : blocks;
   const limit = s.count ?? Infinity;
+  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen) : blocks;
+  const place = new Map(blocks.map((b, i) => [b, i]));
+  const ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => (place.get(a) ?? -1) - (place.get(b) ?? -1));
+  return ordered.flat();
+}
+
+// Whole blocks adding up to `limit` questions: the ones seen longest ago (or
+// never) first, and each topic getting its share in the same proportions as
+// all the questions, so a set written to a blueprint keeps its balance.
+// A case study's questions count toward their own topics.
+function pickBlocks(blocks, limit, random, seen) {
+  const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
+  const queue = shuffle(blocks, random).sort((a, b) => age(a) - age(b)); // seen longest ago first, in random order within an age
+  // Each topic's share of the limit, rounded so the shares add up to it.
+  const all = blocks.flat();
+  const topics = [...new Set(all.map(q => q.topic))];
+  const exact = topics.map(t => (all.filter(q => q.topic === t).length * limit) / all.length);
+  const share = exact.map(Math.floor);
+  const roundUp = topics.map((_, i) => i).sort((i, j) => exact[j] - share[j] - (exact[i] - share[i]));
+  for (const i of roundUp.slice(0, limit - share.reduce((a, b) => a + b, 0))) share[i]++;
+  const left = new Map(topics.map((t, i) => [t, share[i]])); // what each topic still needs
   const picked = [];
-  for (const block of ordered) {
-    if (picked.length >= limit) break;
-    picked.push(...block.slice(0, limit - picked.length));
+  let count = 0;
+  const take = b => {
+    queue.splice(queue.indexOf(b), 1);
+    picked.push(b);
+    for (const q of b) left.set(q.topic, left.get(q.topic) - 1);
+    count += b.length;
+  };
+  // Case studies whose turn it is: the ones starting within the first `limit` questions of the queue.
+  let start = 0;
+  for (const b of queue.slice()) {
+    if (start >= limit) break;
+    start += b.length;
+    if (b.length > 1 && count + b.length <= limit) take(b);
   }
+  // Then single questions: seen longest ago first, and among those, ones whose topic still needs some.
+  const full = b => (left.get(b[0].topic) > 0 ? 0 : 1);
+  while (count < limit) {
+    const singles = queue.filter(b => b.length === 1);
+    if (!singles.length) break;
+    take(singles.reduce((best, b) => (age(b) < age(best) || (age(b) === age(best) && full(b) < full(best)) ? b : best)));
+  }
+  // Too few single questions: more case studies that fit, then part of one rather than nothing.
+  for (const b of queue.slice()) if (count + b.length <= limit) take(b);
+  if (!picked.length) picked.push(queue[0].slice(0, limit));
   return picked;
+}
+
+// When each of the set's questions was last seen, as id -> attempt number
+// (higher is more recent). Attempts saved before the ids were kept count
+// every question if they had the whole set, or else just the missed ones.
+export function lastSeen(set) {
+  const seen = new Map();
+  setHistory(set.id).forEach((a, n) => {
+    for (const id of a.ids ?? (a.scope === 'full' ? set.questions.map(q => q.id) : a.missed ?? [])) seen.set(id, n);
+  });
+  return seen;
+}
+
+// How many questions an exam has unless the student changes it (SPEC 11.3):
+// the set's defaultCount, or null for every question.
+export function defaultCount(set) {
+  const n = set.defaultCount;
+  return Number.isInteger(n) && n >= 1 && n < set.questions.length ? n : null;
+}
+
+// "Best" on the homepage counts attempts of the whole set, or of at least its
+// default number of questions with every topic and type (SPEC 11.3).
+export function countsForBest(attempt, set) {
+  if (attempt.scope === 'full') return true;
+  return attempt.scope === 'part' && !attempt.settings?.topics && !attempt.settings?.types
+    && attempt.count >= (defaultCount(set) ?? set.questions.length);
 }
 
 // Standard time is the set's timeMinutes scaled to the number of questions,
@@ -106,7 +174,7 @@ export function timeLimitMs(set, count, s) {
 // Returns false when no questions match the settings.
 export function startExam(set, settings = {}) {
   const s = { ...DEFAULT_SETTINGS, ...settings };
-  const questions = chooseQuestions(set, s);
+  const questions = chooseQuestions(set, s, Math.random, lastSeen(set));
   if (!questions.length) return false;
   if (s.fullscreen) enterFullscreen();
   const limitMs = timeLimitMs(set, questions.length, s);
@@ -186,6 +254,7 @@ function saveResult(result) {
     count: result.items.length,
     scope: result.scope,
     timeUsedMs: result.timeUsedMs,
+    ids: result.items.map(i => i.id), // for showing questions not seen yet first
     missed: result.missed,
     settings: result.settings,
   });

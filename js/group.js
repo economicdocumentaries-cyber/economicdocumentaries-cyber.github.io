@@ -15,6 +15,7 @@ import { createCalculator } from './calc.js';
 import { loadSets } from './sets.js';
 import { groupStudyOn, connectStudent, hostAccount, problemText } from './firebase.js';
 import { guidesConsole } from './study-guides.js';
+import { setsConsole, withChanges, cachedChanges } from './set-changes.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -282,15 +283,15 @@ export async function groupView(root, { isCurrent }) {
       h('p', h('a.btn', { href: '#/' }, 'Home')));
     return;
   }
-  let db, sets;
+  let db, loaded;
   try {
-    [db, { sets }] = await Promise.all([connectStudent(), loadSets()]);
+    [db, loaded] = await Promise.all([connectStudent(), loadSets()]);
   } catch (err) {
     if (isCurrent()) fill(main, problemBox('Group study could not connect', err));
     return;
   }
   if (!isCurrent()) return;
-  return followSession(root, db, sets);
+  return followSession(root, db, withChanges(loaded.sets, cachedChanges(), loaded.courses));
 }
 
 // Follows /live: waits for a session, joins it, shows each question as the
@@ -810,8 +811,9 @@ function caseDetails({ intro, tabs = [] }) {
 
 // ---------- the host console (SPEC 6.5) ----------
 
-// #/host is group study and #/host/guides the study guides (SPEC 11.2), with
-// a menu at the top to switch between them.
+// #/host is group study, #/host/sets the question sets (SPEC 11.3), and
+// #/host/guides the study guides (SPEC 11.2), with a menu at the top to
+// switch between them.
 export async function hostView(root, { args = [], isCurrent }) {
   document.title = `Host console · ${SITE_NAME}`;
   leaveFullscreen();
@@ -832,7 +834,7 @@ export async function hostView(root, { args = [], isCurrent }) {
     return;
   }
   if (!isCurrent()) return;
-  return hostConsole(main, account, loaded, args[0] === 'guides' ? 'guides' : 'group');
+  return hostConsole(main, account, loaded, ['sets', 'guides'].includes(args[0]) ? args[0] : 'group');
 }
 
 // The host console's menu. Each page has its own link, so it can be bookmarked.
@@ -840,6 +842,7 @@ function hostMenu(area) {
   const item = (key, href, label) => h('a.host-menu-link', { href, 'aria-current': area === key ? 'page' : null }, label);
   return h('nav.host-menu', { 'aria-label': 'Host console' },
     item('group', '#/host', 'Group study'),
+    item('sets', '#/host/sets', 'Question sets'),
     item('guides', '#/host/guides', 'Study guides'));
 }
 
@@ -865,15 +868,18 @@ function hostConsole(main, account, { sets, courses, guides }, area) {
       fill(main, hostMenu(area), section);
       const db = account.database();
       const line = () => accountLine(user);
-      if (area === 'guides') {
+      if (area === 'guides' || area === 'sets') {
         const stopNotice = connectionNotice(db);
-        const stopGuides = guidesConsole(section, db, { courses, sets, published: guides }, line);
+        const stopPage = area === 'sets'
+          ? setsConsole(section, db, { sets, courses }, line)
+          : guidesConsole(section, db, { courses, sets, published: guides }, line);
         stopConsole = () => {
-          stopGuides();
+          stopPage();
           stopNotice();
         };
       } else {
-        stopConsole = runConsole(section, db, sets, courses, line);
+        // The start form shows the sets with the host's changes (SPEC 11.3).
+        stopConsole = runConsole(section, db, withChanges(sets, cachedChanges(), courses), courses, line);
       }
     }
   }

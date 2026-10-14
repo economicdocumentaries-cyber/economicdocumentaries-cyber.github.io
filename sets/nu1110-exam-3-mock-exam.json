@@ -5,6 +5,7 @@
   "course": "NU1110",
   "exam": "Exam 3",
   "timeMinutes": 75,
+  "defaultCount": 25,
   "cases": {
     "dose": {
       "intro": "A nurse is caring for a 58-year-old client on a surgical unit on the first day after a total knee replacement. The client has a prescription for oxycodone 5 mg PO every 4 hours as needed for pain.",

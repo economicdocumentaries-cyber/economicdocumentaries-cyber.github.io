@@ -7,10 +7,11 @@ import { typeLabel, QUESTION_TYPES } from './items.js';
 import { loadSets } from './sets.js';
 import {
   examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
-  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable,
+  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, countsForBest,
 } from './exam.js';
 import { groupView, hostView, liveBanner } from './group.js';
 import { watchUploadedGuides, downloadButton, guideFileName, formatSize, byExam } from './study-guides.js';
+import { withChanges, cachedChanges, watchChanges, currentChanges } from './set-changes.js';
 
 const app = document.getElementById('app');
 
@@ -62,22 +63,42 @@ async function homeView(root, { args, isCurrent }) {
   root.replaceChildren(page(main));
   const { sets, courses, guides, problems } = await loadSets();
   if (!isCurrent()) return;
-  const visible = sets.filter(s => !s.hidden);
-  const groups = classGroups(courses, visible, guides);
-  const single = groups ? null : { course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
+  const lists = h('div.home-lists');
+  let groups = null, single = null, uploaded = [], painted = null;
+
+  // The sets with the host's changes (SPEC 11.3): the ones last seen on this
+  // browser at first, then Firebase's, and again after every change.
+  function paint(changes) {
+    const key = JSON.stringify(changes);
+    if (key === painted) return;
+    painted = key;
+    const visible = withChanges(sets, changes, courses).filter(s => !s.hidden);
+    groups = classGroups(courses, visible, guides);
+    single = groups ? null : { course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
+    const tab = /^#\/class\/([^/]+)/.exec(location.hash)?.[1]; // the tab showing now, after a repaint too
+    fill(lists, groups ? classTabs(groups, tab ? decodeURIComponent(tab) : args[0])
+      : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'));
+    (groups ?? [single]).forEach(g => g.paintGuides(uploaded));
+  }
+
   fill(main,
     h('h1.page-title', 'Practice exams and study guides'),
-    h('p.lead', `Choose ${groups ? 'your class, then ' : ''}a question set or study guide. Exam simulation works like test day; practice mode shows the answer after each question.`),
+    h('p.lead', `Choose ${courses.length ? 'your class, then ' : ''}a question set or study guide. Exam simulation works like test day; practice mode shows the answer after each question.`),
     live.el,
     resumeBanner(),
-    groups ? classTabs(groups, args[0])
-      : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'),
+    lists,
     problems.length ? problemsPanel(problems) : null);
+  paint(cachedChanges());
+  const stopChanges = watchChanges(paint);
   // Guides the host uploads (SPEC 11.2) come from Firebase, and appear as soon as they're added.
-  const stopGuides = watchUploadedGuides(courses, uploaded => (groups ?? [single]).forEach(g => g.paintGuides(uploaded)));
+  const stopGuides = watchUploadedGuides(courses, list => {
+    uploaded = list;
+    (groups ?? [single]).forEach(g => g.paintGuides(list));
+  });
   return () => {
     live.stop();
+    stopChanges();
     stopGuides();
   };
 }
@@ -203,12 +224,13 @@ function resumeBanner() {
 }
 
 function setRow(set) {
-  const count = set.questions.length;
-  const minutes = Math.round(set.timeMinutes ?? count * 1.5);
+  const total = set.questions.length;
+  const count = defaultCount(set) ?? total; // what Start and Begin give (SPEC 11.3)
+  const minutes = Math.round(timeLimitMs(set, count, { timer: 'standard' }) / 60000);
   const past = setHistory(set.id);
   const last = past.at(-1);
-  const fullRuns = past.filter(a => a.scope === 'full');
-  const best = fullRuns.length ? Math.max(...fullRuns.map(a => a.percent)) : null;
+  const counted = past.filter(a => countsForBest(a, set));
+  const best = counted.length ? Math.max(...counted.map(a => a.percent)) : null;
   const known = new Set(set.questions.map(q => q.id));
   const missed = (last?.missed ?? []).filter(id => known.has(id));
   const lastScope = last?.scope === 'missed' ? `, ${plural(last.count, 'missed question')}`
@@ -218,7 +240,9 @@ function setRow(set) {
       set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
       h('h3', set.title),
       set.description ? h('p.set-desc', set.description) : null,
-      h('p.set-meta', `${plural(count, 'question')} · ${minutes} minutes`),
+      h('p.set-meta', count < total
+        ? `${plural(count, 'question')} per exam, from a set of ${total} · ${minutes} minutes`
+        : `${plural(total, 'question')} · ${minutes} minutes`),
       last ? h('p.set-history',
         'Last score: ', h('b', `${last.percent}%`), ` (${fmtDate(last.at, true)}${lastScope})`,
         best != null ? [' · Best: ', h('b', `${best}%`)] : null) : null),
@@ -275,9 +299,10 @@ function problemsPanel(problems) {
 async function setupView(root, { args, isCurrent }) {
   const main = h('main.wrap.setup', h('p.lead', 'Loading…'));
   root.replaceChildren(page(main));
-  const { sets, courses } = await loadSets();
+  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
   if (!isCurrent()) return;
-  const set = sets.find(x => x.id === args[0]);
+  const { courses } = loaded;
+  const set = withChanges(loaded.sets, changes, courses).find(x => x.id === args[0]); // with the host's changes (SPEC 11.3)
   if (!set) {
     document.title = SITE_NAME;
     fill(main, h('h1.page-title', 'Question set not found'),
@@ -289,7 +314,7 @@ async function setupView(root, { args, isCurrent }) {
   const course = courses.find(c => c.code === set.course);
   const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
-  const s = { ...DEFAULT_SETTINGS };
+  const s = { ...DEFAULT_SETTINGS, count: defaultCount(set) };
   const topics = [...new Set(set.questions.map(q => q.topic))];
   const types = QUESTION_TYPES.filter(t => set.questions.some(q => q.type === t));
   const matching = () => chooseQuestions(set, { ...s, count: null, shuffleQuestions: false }).length;
@@ -365,7 +390,7 @@ async function setupView(root, { args, isCurrent }) {
   syncs.push(() => {
     const most = matching();
     countInput.max = String(most);
-    if (document.activeElement !== countInput) countInput.value = String(s.count ?? most);
+    if (document.activeElement !== countInput) countInput.value = String(Math.min(s.count ?? most, most));
     countOf.textContent = ` of ${most}`;
   });
 
@@ -392,7 +417,7 @@ async function setupView(root, { args, isCurrent }) {
     h('fieldset.setting',
       h('legend', 'Number of questions'),
       h('div.choice-line', countInput, countOf),
-      h('p.setting-note', 'Case-study questions stay together and in order.')),
+      h('p.setting-note', 'Questions are spread across the topics, and ones you haven\'t seen yet come first. Case-study questions stay together and in order.')),
     filterBoxes('topics', 'Topics to include', topics, t => `${t} (${set.questions.filter(q => q.topic === t).length})`),
     filterBoxes('types', 'Question types to include', types, t => `${typeLabel(t)} (${set.questions.filter(q => q.type === t).length})`),
     h('fieldset.setting',
@@ -468,9 +493,9 @@ async function resultsView(root, { isCurrent }) {
       h('p', 'Finish an exam to see your results here. ', h('a', { href: '#/' }, 'Go to the homepage')));
     return;
   }
-  const { sets } = await loadSets();
+  const { sets, courses } = await loadSets();
   if (!isCurrent()) return;
-  const set = sets.find(x => x.id === r.setId);
+  const set = withChanges(sets, cachedChanges(), courses).find(x => x.id === r.setId);
   const fullyCorrect = r.items.length - r.missed.length;
   const mode = { exam: 'Exam simulation', practice: 'Practice mode' }[r.settings?.preset] ?? 'Custom settings';
   const scope = r.scope === 'missed' ? ' · Missed questions only'
@@ -498,7 +523,7 @@ async function resultsView(root, { isCurrent }) {
       set && r.missed.length
         ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
         : null,
-      set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake full set') : null,
+      set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
       h('a.btn', { href: '#/' }, 'Home')),
     perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0]))),
     perfTable('Performance by question type', 'Question type', byType));

@@ -702,6 +702,21 @@ span.order-text { flex: 1; font-size: 15px; }
 .guide-admin .set-row h4 { margin: 0; font: 700 17px/1.25 var(--slab); color: var(--ink); }
 .guide-editor { padding: 14px 16px 16px; background: #F7FBFE; border-bottom: 1px solid var(--line); }
 .editor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 18px; }
+.editor-grid .wide { grid-column: 1 / -1; }
+textarea.text-input { min-height: 84px; resize: vertical; }
+
+/* The host's question sets page (SPEC 11.3): every set by class, each with an Edit form. */
+.set-admin { max-width: 980px; }
+.set-class { margin-top: 22px; }
+.set-class:first-child { margin-top: 0; }
+.set-class-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 8px; }
+.set-class-title { font-size: 17px; }
+.set-flags { margin-top: 3px; color: var(--ink); }
+.set-editor { padding: 14px 16px 16px; background: #F7FBFE; border-bottom: 1px solid var(--line); }
+.count-field { min-width: 0; margin: 8px 0 0; padding: 0; border: 0; } /* the margin lines its legend up with the labels beside it */
+.count-field .choice-line { margin: 2px 0; }
+.set-editor .field-help { margin-top: 2px; }
+.show-line { margin-top: 12px; }
 
 /* ---------- small screens ---------- */
 
