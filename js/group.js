@@ -15,7 +15,8 @@ import { createCalculator } from './calc.js';
 import { loadSets } from './sets.js';
 import { groupStudyOn, connectStudent, hostAccount, problemText } from './firebase.js';
 import { guidesConsole } from './study-guides.js';
-import { setsConsole, withChanges, cachedChanges } from './set-changes.js';
+import { withChanges, currentChanges } from './set-changes.js';
+import { setsConsole, questionsPage } from './set-editor.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -283,15 +284,16 @@ export async function groupView(root, { isCurrent }) {
       h('p', h('a.btn', { href: '#/' }, 'Home')));
     return;
   }
-  let db, loaded;
+  let db, loaded, changes;
   try {
-    [db, loaded] = await Promise.all([connectStudent(), loadSets()]);
+    // The sets with the host's latest changes (SPEC 11.3), so everyone has the same questions.
+    [db, loaded, changes] = await Promise.all([connectStudent(), loadSets(), currentChanges()]);
   } catch (err) {
     if (isCurrent()) fill(main, problemBox('Group study could not connect', err));
     return;
   }
   if (!isCurrent()) return;
-  return followSession(root, db, withChanges(loaded.sets, cachedChanges(), loaded.courses));
+  return followSession(root, db, withChanges(loaded.sets, changes, loaded.courses));
 }
 
 // Follows /live: waits for a session, joins it, shows each question as the
@@ -834,7 +836,7 @@ export async function hostView(root, { args = [], isCurrent }) {
     return;
   }
   if (!isCurrent()) return;
-  return hostConsole(main, account, loaded, ['sets', 'guides'].includes(args[0]) ? args[0] : 'group');
+  return hostConsole(main, account, loaded, ['sets', 'guides'].includes(args[0]) ? args[0] : 'group', args[0] === 'sets' ? args[1] : null);
 }
 
 // The host console's menu. Each page has its own link, so it can be bookmarked.
@@ -856,7 +858,8 @@ function setOptions(sets, courses) {
   return groups.filter(([, list]) => list.length).map(([label, list]) => h('optgroup', { label }, list.map(option)));
 }
 
-function hostConsole(main, account, { sets, courses, guides }, area) {
+// setId: on the Question sets page, the set whose questions are open (#/host/sets/<set id>).
+function hostConsole(main, account, { sets, courses, guides }, area, setId) {
   let stopConsole = () => {};
   let closed = false;
 
@@ -870,16 +873,21 @@ function hostConsole(main, account, { sets, courses, guides }, area) {
       const line = () => accountLine(user);
       if (area === 'guides' || area === 'sets') {
         const stopNotice = connectionNotice(db);
-        const stopPage = area === 'sets'
-          ? setsConsole(section, db, { sets, courses }, line)
-          : guidesConsole(section, db, { courses, sets, published: guides }, line);
+        const stopPage = area === 'guides' ? guidesConsole(section, db, { courses, sets, published: guides }, line)
+          : setId ? questionsPage(section, db, { sets, courses }, line, setId)
+            : setsConsole(section, db, { sets, courses }, line);
         stopConsole = () => {
           stopPage();
           stopNotice();
         };
       } else {
-        // The start form shows the sets with the host's changes (SPEC 11.3).
-        stopConsole = runConsole(section, db, withChanges(sets, cachedChanges(), courses), courses, line);
+        // The start form shows the sets with the host's latest changes (SPEC 11.3).
+        fill(section, h('p.lead', 'Loading…'));
+        let stopped = false;
+        stopConsole = () => (stopped = true);
+        currentChanges().then(changes => {
+          if (!stopped && !closed) stopConsole = runConsole(section, db, withChanges(sets, changes, courses), courses, line);
+        });
       }
     }
   }

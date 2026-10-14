@@ -997,33 +997,42 @@ export function validateSet(set) {
     return problems;
   }
 
+  const seen = new Set();
+  set.questions.forEach((q, i) => {
+    const note = problem => add(problem, i + 1, isText(q?.id) ? q.id : null);
+    if (isText(q?.id) && seen.has(q.id)) note(`Another question already uses the id "${q.id}". Each id must be different.`);
+    else if (isText(q?.id)) seen.add(q.id);
+    validateQuestion(q, set.cases).forEach(note);
+  });
+  return problems;
+}
+
+// Checks one question (SPEC 5.3). cases: the set's case studies, for "case".
+// Returns its problems in plain words.
+export function validateQuestion(q, cases = {}) {
+  if (!q || typeof q !== 'object' || Array.isArray(q)) return ['This question is not written as an object { ... }.'];
+  const problems = [];
+  const note = problem => problems.push(problem);
+  if (typeof q.id === 'number') note('"id" must be text in quotes, like "q1".');
+  else if (!isText(q.id)) note('Missing "id" (a short name for the question, like "q1").');
+  const type = TYPES[q.type];
+  if (!type) note(q.type ? `Unknown question type "${q.type}". Use one of: ${QUESTION_TYPES.join(', ')}.` : `Missing "type" (one of: ${QUESTION_TYPES.join(', ')}).`);
   const needed = {
     topic: 'the topic name used on the results page',
     stem: 'the question text',
     rationale: 'the explanation students see after answering',
   };
-  const seen = new Set();
-  set.questions.forEach((q, i) => {
-    const note = problem => add(problem, i + 1, isText(q?.id) ? q.id : null);
-    if (!q || typeof q !== 'object' || Array.isArray(q)) return note('This question is not written as an object { ... }.');
-    if (typeof q.id === 'number') note('"id" must be text in quotes, like "q1".');
-    else if (!isText(q.id)) note('Missing "id" (a short name for the question, like "q1").');
-    else if (seen.has(q.id)) note(`Another question already uses the id "${q.id}". Each id must be different.`);
-    else seen.add(q.id);
-
-    const type = TYPES[q.type];
-    if (!type) note(q.type ? `Unknown question type "${q.type}". Use one of: ${QUESTION_TYPES.join(', ')}.` : `Missing "type" (one of: ${QUESTION_TYPES.join(', ')}).`);
-    for (const [field, what] of Object.entries(needed)) {
-      if (!isText(q[field])) note(`Missing "${field}" (${what}).`);
-    }
-    if (q.case != null && !(set.cases && Object.hasOwn(set.cases, q.case))) note(`"case" is "${q.case}", but "cases" has no case study with that name.`);
-    if (q.instruction != null && typeof q.instruction !== 'string') note('"instruction" must be text.');
-    if (!type) return;
-    try {
-      for (const problem of type.validate(q)) note(problem);
-    } catch {
-      note(`This ${type.label.toLowerCase()} question couldn't be checked. Compare it with a working question of the same type.`);
-    }
-  });
+  for (const [field, what] of Object.entries(needed)) {
+    if (!isText(q[field])) note(`Missing "${field}" (${what}).`);
+  }
+  if (q.case != null && !(cases && Object.hasOwn(cases, q.case))) note(`"case" is "${q.case}", but "cases" has no case study with that name.`);
+  if (q.instruction != null && typeof q.instruction !== 'string') note('"instruction" must be text.');
+  if (q.hidden != null && typeof q.hidden !== 'boolean') note('"hidden" must be true or false, with no quotes.');
+  if (!type) return problems;
+  try {
+    type.validate(q).forEach(note);
+  } catch {
+    note(`This ${type.label.toLowerCase()} question couldn't be checked. Compare it with a working question of the same type.`);
+  }
   return problems;
 }
