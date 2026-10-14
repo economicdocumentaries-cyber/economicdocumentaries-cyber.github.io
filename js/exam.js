@@ -34,6 +34,7 @@ export const DEFAULT_SETTINGS = {
 export const presetMatches = (s, name) => Object.entries(PRESETS[name]).every(([k, v]) => s[k] === v);
 
 export const activeExam = () => store.get(ACTIVE);
+export const discardExam = () => store.del(ACTIVE); // the homepage's "Discard exam"
 export const lastAttempt = () => store.get(LAST);
 export const setHistory = setId => store.get(HISTORY, {})[setId] ?? [];
 

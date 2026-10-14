@@ -14,6 +14,7 @@ import { questionParts, questionArea, feedbackPanel, chooseQuestions } from './e
 import { createCalculator } from './calc.js';
 import { loadSets } from './sets.js';
 import { groupStudyOn, connectStudent, hostAccount, problemText } from './firebase.js';
+import { guidesConsole } from './study-guides.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -809,7 +810,9 @@ function caseDetails({ intro, tabs = [] }) {
 
 // ---------- the host console (SPEC 6.5) ----------
 
-export async function hostView(root, { isCurrent }) {
+// #/host is group study and #/host/guides the study guides (SPEC 11.2), with
+// a menu at the top to switch between them.
+export async function hostView(root, { args = [], isCurrent }) {
   document.title = `Host console · ${SITE_NAME}`;
   leaveFullscreen();
   const main = h('main.wrap.host', h('p.lead', 'Connecting…'));
@@ -821,15 +824,23 @@ export async function hostView(root, { isCurrent }) {
       h('p', 'README.md, under “Turn on group study”, explains how to set it up. Solo practice works without it.'));
     return;
   }
-  let account, sets, courses;
+  let account, loaded;
   try {
-    [account, { sets, courses }] = await Promise.all([hostAccount(), loadSets()]);
+    [account, loaded] = await Promise.all([hostAccount(), loadSets()]);
   } catch (err) {
     if (isCurrent()) fill(main, problemBox('The host console could not connect', err));
     return;
   }
   if (!isCurrent()) return;
-  return hostConsole(main, account, sets, courses);
+  return hostConsole(main, account, loaded, args[0] === 'guides' ? 'guides' : 'group');
+}
+
+// The host console's menu. Each page has its own link, so it can be bookmarked.
+function hostMenu(area) {
+  const item = (key, href, label) => h('a.host-menu-link', { href, 'aria-current': area === key ? 'page' : null }, label);
+  return h('nav.host-menu', { 'aria-label': 'Host console' },
+    item('group', '#/host', 'Group study'),
+    item('guides', '#/host/guides', 'Study guides'));
 }
 
 // The start form's list of sets, grouped by class when the sets have classes (SPEC 11).
@@ -842,14 +853,29 @@ function setOptions(sets, courses) {
   return groups.filter(([, list]) => list.length).map(([label, list]) => h('optgroup', { label }, list.map(option)));
 }
 
-function hostConsole(main, account, sets, courses) {
+function hostConsole(main, account, { sets, courses, guides }, area) {
   let stopConsole = () => {};
   let closed = false;
 
   function signedIn(user) {
     if (!HOST_UID) showUid(user);
     else if (user.uid !== HOST_UID) showWrongAccount(user);
-    else stopConsole = runConsole(main, account.database(), sets, courses, () => accountLine(user));
+    else {
+      const section = h('div.host-section');
+      fill(main, hostMenu(area), section);
+      const db = account.database();
+      const line = () => accountLine(user);
+      if (area === 'guides') {
+        const stopNotice = connectionNotice(db);
+        const stopGuides = guidesConsole(section, db, { courses, sets, published: guides }, line);
+        stopConsole = () => {
+          stopGuides();
+          stopNotice();
+        };
+      } else {
+        stopConsole = runConsole(section, db, sets, courses, line);
+      }
+    }
   }
 
   function accountLine(user) {
@@ -908,7 +934,7 @@ function hostConsole(main, account, sets, courses) {
         h('div.uid-row', box, h('button.btn.btn-accent', { type: 'button', onclick: () => copyText(box) }, 'Copy UID'))),
       h('ol.steps',
         h('li', 'In ', h('code', 'js/config.js'), ', paste it between the quotes on the line ', h('code', 'export const HOST_UID = "";')),
-        h('li', 'In ', h('code', 'database.rules.json'), ', replace both copies of ', h('code', 'PASTE_HOST_UID'), ' with it. Keep the quote marks around it.'),
+        h('li', 'In ', h('code', 'database.rules.json'), ', replace every copy of ', h('code', 'PASTE_HOST_UID'), ' with it. Keep the quote marks around it.'),
         h('li', 'In the Firebase console, open Realtime Database, then the Rules tab. Replace everything there with the whole of ', h('code', 'database.rules.json'), ' and click Publish.'),
         h('li', 'Save both files (on the live site, upload them to GitHub), then reload this page.')),
       accountLine(user));

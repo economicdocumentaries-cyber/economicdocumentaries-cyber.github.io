@@ -461,6 +461,7 @@ span.order-text { flex: 1; font-size: 15px; }
 }
 .banner p { margin: 0; }
 .banner-detail { margin-top: 2px !important; font-size: 14px; color: var(--muted); }
+.banner-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .set-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .set-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .set-row h3 { font-size: 18px; }
@@ -624,6 +625,14 @@ span.order-text { flex: 1; font-size: 15px; }
 
 /* The host console */
 .host-page { --wrap: 1360px; }
+/* Its menu: Group study, Study guides (SPEC 11.2). Underlined like the tabs. */
+.host-menu { display: flex; flex-wrap: wrap; margin: 0 0 24px; box-shadow: inset 0 -1px 0 var(--line); }
+.host-menu-link {
+  padding: 9px 20px 10px; border-bottom: 3px solid transparent;
+  font-size: 15px; font-weight: 600; color: var(--muted); text-decoration: none;
+}
+.host-menu-link:hover { color: var(--ink); }
+.host-menu-link[aria-current="page"] { border-bottom-color: var(--accent); color: var(--ink); font-weight: 700; }
 .host-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .host-bar-tools { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 18px; margin-left: auto; }
 .host-controls { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -664,6 +673,34 @@ span.order-text { flex: 1; font-size: 15px; }
 .summary .bar-cell { width: 30%; }
 .muted { color: var(--muted); }
 
+/* The host's study guides page (SPEC 11.2): the upload form, then what's on the site. */
+.host-card { padding: 16px 20px 20px; background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 3px; }
+.guide-form { display: grid; gap: 4px; max-width: 640px; margin-bottom: 34px; }
+.guide-form .section-title { margin-bottom: 2px; }
+.optional { font-weight: 400; color: var(--muted); }
+.file-input { width: 100%; padding: 8px; background: #F7FBFE; border: 1px dashed #8F959E; border-radius: 3px; font-size: 14.5px; }
+.file-input::file-selector-button {
+  margin-right: 12px; min-height: 34px; padding: 0 14px; background: var(--btn); border: 1px solid #C6C9CE; border-radius: 2px;
+  font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--text); cursor: pointer;
+}
+.file-input::file-selector-button:hover { background: var(--btn-hover); }
+.own-work { flex-wrap: nowrap; align-items: flex-start; margin-top: 14px; font-size: 14px; }
+.own-work .ctl { flex: none; margin-top: 3px; }
+.upload-progress { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--ink); }
+.upload-bar { flex: 1 1 200px; max-width: 360px; height: 10px; overflow: hidden; background: #E7EBEF; border: 0; border-radius: 5px; -webkit-appearance: none; appearance: none; }
+.upload-bar::-webkit-progress-bar { background: #E7EBEF; }
+.upload-bar::-webkit-progress-value { background: var(--accent); }
+.upload-bar::-moz-progress-bar { background: var(--accent); }
+.guide-admin { max-width: 980px; }
+.usage-note { margin: 0 0 6px; font-size: 13.5px; color: var(--muted); }
+.guide-class { margin-top: 22px; }
+.guide-class-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 8px; }
+.guide-class-title { font-size: 17px; }
+.guide-class .field-help { margin-bottom: 8px; }
+.guide-admin .set-row h4 { margin: 0; font: 700 17px/1.25 var(--slab); color: var(--ink); }
+.guide-editor { padding: 14px 16px 16px; background: #F7FBFE; border-bottom: 1px solid var(--line); }
+.editor-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 18px; }
+
 /* ---------- small screens ---------- */
 
 /* The host's side panel moves under the question. */
@@ -701,7 +738,9 @@ span.order-text { flex: 1; font-size: 15px; }
   .class-term { display: block; }
   .class-term::before { content: none; }
   .class-name { font-size: 14.5px; }
-  .order, .bt-lists, .preset-cards, .settings { grid-template-columns: minmax(0, 1fr); }
+  .order, .bt-lists, .preset-cards, .settings, .editor-grid { grid-template-columns: minmax(0, 1fr); }
+  .host-card { padding: 14px 14px 16px; }
+  .host-menu-link { flex: 1 1 0; padding: 9px 10px 10px; text-align: center; }
   .nav-left { width: 100%; }
   .exam-actions { flex-wrap: wrap; }
   /* Results tables: drop the question count and shrink the bars so the score fits. */

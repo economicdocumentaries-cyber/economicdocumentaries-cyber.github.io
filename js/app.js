@@ -2,14 +2,15 @@
 // with its class tabs, setup, and results. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, store, siteHeader, siteFooter, fmtClock, fmtDate } from './util.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate } from './util.js';
 import { typeLabel, QUESTION_TYPES } from './items.js';
 import { loadSets } from './sets.js';
 import {
-  examView, reviewView, startExam, resumeExam, activeExam, lastAttempt, setHistory,
+  examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
   DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable,
 } from './exam.js';
 import { groupView, hostView, liveBanner } from './group.js';
+import { watchUploadedGuides, downloadButton, guideFileName, formatSize, byExam } from './study-guides.js';
 
 const app = document.getElementById('app');
 
@@ -63,6 +64,7 @@ async function homeView(root, { args, isCurrent }) {
   if (!isCurrent()) return;
   const visible = sets.filter(s => !s.hidden);
   const groups = classGroups(courses, visible, guides);
+  const single = groups ? null : { course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
   fill(main,
     h('h1.page-title', 'Practice exams and study guides'),
@@ -70,10 +72,14 @@ async function homeView(root, { args, isCurrent }) {
     live.el,
     resumeBanner(),
     groups ? classTabs(groups, args[0])
-      : homeLists({ course: null, sets: visible, guides },
-        problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'),
+      : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'),
     problems.length ? problemsPanel(problems) : null);
-  return live.stop;
+  // Guides the host uploads (SPEC 11.2) come from Firebase, and appear as soon as they're added.
+  const stopGuides = watchUploadedGuides(courses, uploaded => (groups ?? [single]).forEach(g => g.paintGuides(uploaded)));
+  return () => {
+    live.stop();
+    stopGuides();
+  };
 }
 
 const CLASS_KEY = 'pe.class'; // the class tab chosen last on this browser
@@ -91,17 +97,28 @@ function classGroups(courses, sets, guides) {
   return groups;
 }
 
-// A class's practice exams, then its study guides (SPEC 11). "Other" and the
-// no-classes list show study guides only when there are some.
+// A class's practice exams, then its study guides (SPEC 11), sorted by exam:
+// the published ones, and the ones the host uploaded (SPEC 11.2), which
+// group.paintGuides(uploaded) adds when they arrive. Other never has study
+// guides; the no-classes list shows them only when there are some.
 function homeLists(group, noSets) {
-  return [
-    h('section.home-section',
-      h('h2.section-title', 'Practice exams'),
-      group.sets.length ? h('ul.set-list', group.sets.map(setRow)) : h('p.empty-note', noSets)),
-    group.course || group.guides.length ? h('section.home-section',
-      h('h2.section-title', 'Study guides'),
-      group.guides.length ? h('ul.set-list', group.guides.map(guideRow)) : h('p.empty-note', 'No study guides for this class yet.')) : null,
-  ];
+  const exams = h('section.home-section',
+    h('h2.section-title', 'Practice exams'),
+    group.sets.length ? h('ul.set-list', group.sets.map(setRow)) : h('p.empty-note', noSets));
+  group.paintGuides = () => {};
+  if (!group.course && !group.allClasses) return exams;
+  const list = h('ul.set-list');
+  const empty = h('p.empty-note', 'No study guides for this class yet.');
+  const guides = h('section.home-section', h('h2.section-title', 'Study guides'), list, empty);
+  group.paintGuides = (uploaded = []) => {
+    const all = byExam([...group.guides, ...uploaded.filter(g => !group.course || g.course === group.course.code)]);
+    fill(list, all.map(guideRow));
+    list.hidden = !all.length;
+    empty.hidden = !!all.length;
+    guides.hidden = !group.course && !all.length;
+  };
+  group.paintGuides();
+  return [exams, guides];
 }
 
 // The tab shown first is the one in the link (#/class/NU1120), else the one
@@ -158,13 +175,31 @@ function resumeBanner() {
   const over = left != null && left <= 0;
   const paused = st.pausedAt && Date.now() - st.pausedAt < st.pauseLeftMs;
   const where = st.onGrid ? 'Reviewing your answers' : `Question ${st.index + 1} of ${st.questions.length}`;
-  return h('section.banner', { 'aria-label': 'Exam in progress' },
+  const banner = h('section.banner', { 'aria-label': 'Exam in progress' },
     h('div',
       h('p.banner-title', h('b', 'Exam in progress: '), st.title),
       h('p.banner-detail', over
         ? 'Time is up. Open the exam to see your score.'
         : `${where}${left != null ? ` · ${fmtClock(left)} left${paused ? ' (paused)' : ''}` : ''}`)),
-    h('button.btn.btn-accent', { type: 'button', onclick: resumeExam }, over ? 'See my score' : 'Resume exam'));
+    h('div.banner-actions',
+      h('button.btn.btn-accent', { type: 'button', onclick: resumeExam }, over ? 'See my score' : 'Resume exam'),
+      h('button.btn', { type: 'button', onclick: () => discard() }, 'Discard exam')));
+
+  // Deletes the unfinished exam after asking. Scores from finished exams stay.
+  async function discard() {
+    const choice = await modal({
+      title: 'Discard This Exam?',
+      message: `Your progress in ${st.title} will be deleted, and its answers won't be scored. This can't be undone. Your scores from finished exams stay.`,
+      buttons: [{ label: 'Keep it', value: 'keep', accent: true }, { label: 'Discard exam', value: 'discard' }],
+    });
+    if (choice !== 'discard') return;
+    discardExam();
+    banner.remove();
+    (document.querySelector('.class-tab[aria-selected="true"]') ?? document.querySelector('.set-row a'))?.focus();
+    toast('The exam was discarded.');
+  }
+
+  return banner;
 }
 
 function setRow(set) {
@@ -194,23 +229,26 @@ function setRow(set) {
 
 // A study guide (SPEC 11): its exam, title, and a Download button. The saved
 // file is named after the class and title, like "NU1110 Exam 2 Study Guide.pdf".
+// Uploaded guides (SPEC 11.2) show their size and the day they were added.
 function guideRow(guide) {
-  const name = `${guide.title.toLowerCase().startsWith(guide.course.toLowerCase()) ? '' : `${guide.course} `}${guide.title}`;
   const [year, month, day] = guide.updated?.split('-').map(Number) ?? [];
-  const facts = ['PDF', guide.pages ? plural(guide.pages, 'page') : null,
-    guide.updated ? `Updated ${fmtDate(new Date(year, month - 1, day).getTime(), true)}` : null];
+  const facts = guide.uploaded
+    ? ['PDF', formatSize(guide.size), guide.added ? `Added ${fmtDate(guide.added, true)}` : null]
+    : ['PDF', guide.pages ? plural(guide.pages, 'page') : null,
+        guide.updated ? `Updated ${fmtDate(new Date(year, month - 1, day).getTime(), true)}` : null];
   return h('li.set-row.guide-row',
     h('div.set-info',
       h('p.set-exam', h('span.tag', guide.exam)),
       h('h3', guide.title),
       guide.description ? h('p.set-desc', guide.description) : null,
       h('p.set-meta', facts.filter(Boolean).join(' · '))),
-    h('div.set-actions',
-      h('a.btn.btn-accent', {
-        href: `guides/${encodeURIComponent(guide.file)}`,
-        download: `${name.replace(/[\\/:*?"<>|]+/g, '-').trim()}.pdf`,
-        'aria-label': `Download ${guide.title} (PDF)`,
-      }, 'Download')));
+    h('div.set-actions', guide.uploaded
+      ? downloadButton(guide)
+      : h('a.btn.btn-accent', {
+          href: `guides/${encodeURIComponent(guide.file)}`,
+          download: guideFileName(guide),
+          'aria-label': `Download ${guide.title} (PDF)`,
+        }, 'Download')));
 }
 
 // SPEC 5.3: names the file, the question, and the problem in plain words.
