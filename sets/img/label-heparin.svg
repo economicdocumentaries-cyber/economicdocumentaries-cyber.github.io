@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260" font-family="Arial, Helvetica, sans-serif">
+  <title>Sample medication label: heparin sodium injection</title>
+  <!-- An original sample label for the Practice Exam Center, for practice only.
+       The strength per mL is its own shape (id label-concentration), so a
+       hot-spot area can be checked against it. -->
+  <rect width="600" height="260" fill="#FFFFFF"/>
+  <rect x="6" y="6" width="588" height="248" rx="10" fill="#FFFFFF" stroke="#4A5A6A" stroke-width="2"/>
+  <path d="M16 7 H28 V253 H16 A10 10 0 0 1 7 243 V17 A10 10 0 0 1 16 7 Z" fill="#1F6FB2"/>
+  <g fill="#555555" font-size="13">
+    <text x="44" y="36">NDC 00000-000-00</text>
+    <text x="574" y="36" text-anchor="end">Rx only</text>
+  </g>
+  <text x="44" y="74" font-size="26" font-weight="700" fill="#1F3A5F">Heparin Sodium Injection, USP</text>
+  <rect id="label-concentration" x="40" y="90" width="300" height="58" rx="6" fill="#E8F1FA" stroke="#1F6FB2" stroke-width="2"/>
+  <text x="190" y="128" font-size="26" font-weight="700" fill="#1F3A5F" text-anchor="middle">5,000 USP units/mL</text>
+  <g fill="#333333" font-size="16" text-anchor="end">
+    <text x="574" y="114">50,000 USP units</text>
+    <text x="574" y="136">per 10 mL</text>
+  </g>
+  <g fill="#333333" font-size="15">
+    <text x="44" y="180">10 mL Multiple-Dose Vial</text>
+    <text x="44" y="202">For intravenous or subcutaneous use</text>
+  </g>
+  <text x="44" y="238" font-size="12" fill="#666666">Lot PX2614 &#160;&#160; Exp 09/2027</text>
+  <text x="574" y="238" font-size="12" font-weight="700" fill="#B3261E" text-anchor="end">SAMPLE LABEL FOR PRACTICE ONLY</text>
+</svg>

@@ -1,0 +1,636 @@
+{
+  "id": "nu1110-exam-3-mock-exam",
+  "title": "Exam 3 Mock Exam",
+  "description": "A hard 50-question practice exam that follows the Exam 3 blueprint: health care systems, evidence-based practice, informatics and documentation, quality improvement, health policy, and abbreviations, conversions, and labels.",
+  "course": "NU1110",
+  "exam": "Exam 3",
+  "timeMinutes": 75,
+  "cases": {
+    "dose": {
+      "intro": "A nurse is caring for a 58-year-old client on a surgical unit on the first day after a total knee replacement. The client has a prescription for oxycodone 5 mg PO every 4 hours as needed for pain.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>1000 (day nurse):</b></p><p>Client rates right knee pain 7 on a 0-to-10 scale. Oxycodone 5 mg PO given.</p><p><b>1030 (float nurse):</b></p><p>Client complaining of pain as usual. Rates pain 7 on a 0-to-10 scale in the right knee. Gave oxycodone 5.0 mg PO. Client seems drug-seeking.</p><p><b>1130 (float nurse):</b></p><p>Client drowsy but opens eyes to voice. Respiratory rate 12/min, SpO₂ 93% on room air. Provider notified. Incident report filed.</p>"
+        },
+        {
+          "title": "Medication Administration Record",
+          "html": "<h4>Medication Administration Record</h4><table><thead><tr><th>Medication</th><th>Time</th><th>Given by</th><th>Bar-code scan</th></tr></thead><tbody><tr><td>Oxycodone 5&nbsp;mg PO every 4 hours PRN pain</td><td>1000</td><td>Day nurse</td><td>No alerts</td></tr><tr><td>Oxycodone 5&nbsp;mg PO every 4 hours PRN pain</td><td>1030</td><td>Float nurse</td><td>Alert: “Possible duplicate dose: last given at 1000.” Alert overridden.</td></tr></tbody></table>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Finding</th><th>0800</th><th>1130</th></tr></thead><tbody><tr><td>Level of consciousness</td><td>Alert</td><td>Drowsy, opens eyes to voice</td></tr><tr><td>Heart rate</td><td>84/min</td><td>72/min</td></tr><tr><td>Respiratory rate</td><td>18/min</td><td>12/min</td></tr><tr><td>Blood pressure</td><td>136/82&nbsp;mm&nbsp;Hg</td><td>118/70&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>97% on room air</td><td>93% on room air</td></tr></tbody></table>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "pn3-01", "type": "matrix", "topic": "Health care systems",
+      "stem": "A community health nurse is planning services for a city. For each nursing action, specify the level of prevention it represents.",
+      "rowHeader": "Nursing action",
+      "columns": ["Primary prevention", "Secondary prevention", "Tertiary prevention"],
+      "rows": [
+        "Running a free flu vaccine clinic at a senior center",
+        "Giving IV antibiotics to a client hospitalized with pneumonia",
+        "Providing physical therapy to a client after a hip replacement",
+        "Teaching a parents' group how to install infant car seats",
+        "Managing pain and nausea for a client receiving palliative care"
+      ],
+      "answer": [0, 1, 2, 0, 2],
+      "rationale": "<p><b>Primary prevention</b> promotes healthy living and prevents disease or injury before it starts: a <b>flu vaccine clinic</b> and <b>teaching car-seat safety</b>.</p><p><b>Secondary prevention</b> focuses on diagnosing and treating disease early, to keep it from progressing: <b>IV antibiotics for pneumonia</b> treat an existing illness before complications develop.</p><p><b>Tertiary prevention</b> restores function and limits complications of an established illness or injury, and it includes rehabilitation and palliative care: <b>physical therapy after a hip replacement</b> and <b>symptom management in palliative care</b>.</p>"
+    },
+    {
+      "id": "pn3-02", "type": "mc", "topic": "Health care systems",
+      "stem": "A nurse at a community health center is planning programs for clients. Which program is an example of tertiary prevention?",
+      "options": [
+        "A smoking-prevention class for middle school students",
+        "A free blood pressure screening at a grocery store",
+        "A foot-care class for clients who have type 2 diabetes, to prevent ulcers and amputations",
+        "A hepatitis B vaccination drive for health care workers"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Tertiary prevention</b> limits complications and disability from a disease the client already has, and restores function. Clients with type 2 diabetes already have the disease, so a <b>foot-care class</b> that helps prevent complications such as ulcers and amputations is tertiary prevention.</p><p>A <b>smoking-prevention class</b> and a <b>hepatitis B vaccination drive</b> are <b>primary prevention</b>: they prevent disease before it starts. A <b>blood pressure screening</b> looks for disease early, which is <b>secondary prevention</b>; it isn't tertiary prevention in any case.</p>"
+    },
+    {
+      "id": "pn3-03", "type": "sata", "topic": "Health care systems",
+      "stem": "A nurse manager explains that the hospital is moving many surgeries from its inpatient operating rooms to its outpatient surgical center. Which factors affecting health care delivery support this change?",
+      "options": [
+        "The need to contain the cost of care",
+        "Advances in technology, such as minimally invasive surgery, that allow same-day discharge",
+        "Care should be given in the most cost-effective setting that is safe for the client.",
+        "Most surgical clients need several days of hospital care to recover.",
+        "Outpatient centers can't provide specialist care."
+      ],
+      "answer": [0, 1, 2],
+      "rationale": "<p>Health care delivery is shaped by <b>cost-containment strategies</b> and <b>advances in technology</b>. Minimally invasive procedures let many clients go home the same day, and the <b>most cost-effective place of service</b> that is safe for the client should be chosen. That's why much secondary care is delivered in outpatient surgical centers.</p><p>Many surgical clients <b>don't</b> need several days in the hospital, which is exactly what makes outpatient surgery possible. Outpatient surgical centers and specialists' offices <b>are</b> settings for secondary (specialist) care.</p>"
+    },
+    {
+      "id": "pn3-04", "type": "mc", "topic": "Health care systems",
+      "stem": "A nurse is reviewing trends that affect the delivery of health care in the United States. Which factor most directly increases the demand for home health and long-term care services?",
+      "options": [
+        "A drop in the number of people who have health insurance",
+        "A growing older adult population with more chronic illness",
+        "Less use of technology in clients' homes",
+        "Shorter wait times in emergency departments"
+      ],
+      "answer": 1,
+      "rationale": "<p>As the population ages, more people live with <b>chronic illnesses</b> such as heart failure and diabetes. Chronic conditions need long-term management, rehabilitation, and help at home, so a <b>growing older adult population</b> most directly increases the demand for home health and long-term care.</p><p>A <b>drop in insurance coverage</b> limits access to care rather than raising the need for these services. Technology in clients' homes, such as remote monitoring, is <b>increasing</b>, and it supports care at home. <b>Emergency department wait times</b> don't drive the need for long-term services.</p>"
+    },
+    {
+      "id": "pn3-05", "type": "mc", "topic": "Health care systems",
+      "stem": "During a snowstorm, only part of the staff can get to the hospital. The charge nurse assigns one RN to give all medications on the unit, an LPN to do all dressing changes, and assistive personnel to take all vital signs. Which problem should the charge nurse anticipate with this care delivery model?",
+      "options": [
+        "The RN team leader will be accountable for every client's plan of care.",
+        "Clients may feel their care is fragmented and may not know which nurse is responsible for them.",
+        "One nurse will hold 24-hour responsibility for each client from admission to discharge.",
+        "Costs will rise because each client is cared for entirely by one RN."
+      ],
+      "answer": 1,
+      "rationale": "<p>Assigning staff by <b>task</b> rather than by client is <b>functional nursing</b>. It's cost-effective and gets many tasks done quickly, which is why it's used when systems are stressed by short staffing or severe weather. But care can become <b>fragmented and depersonalized</b>: clients can't identify “their nurse,” and nurses may be dissatisfied with a role limited to tasks.</p><p>An <b>RN team leader accountable for the team's clients</b> describes <b>team nursing</b>, the model used most often today. A nurse with <b>24-hour responsibility from admission to discharge</b> describes <b>primary nursing</b>. One RN providing all of each client's care describes total patient care, which tends to cost more; it isn't functional nursing.</p>"
+    },
+    {
+      "id": "pn3-06", "type": "sata", "topic": "Health care systems",
+      "stem": "A nurse at a rural clinic is following up with a client who has missed three appointments for diabetes care. Which findings are barriers that limit the client's access to health care?",
+      "options": [
+        "The nearest endocrinologist is 90 miles away, and the client doesn't have a car.",
+        "The client is paid by the hour and gets no paid sick leave.",
+        "The client's blood glucose readings are within the target range.",
+        "The client reads at a 4th-grade level and didn't understand the appointment letter.",
+        "The client lost their health insurance when they changed jobs.",
+        "The client has a primary care provider at the clinic."
+      ],
+      "answer": [0, 1, 3, 4],
+      "rationale": "<p>Factors that limit access to care include <b>distance and lack of transportation</b>, <b>lost income</b> when a client can't take paid time off, <b>low health literacy</b> (the client couldn't understand the appointment letter), and <b>lack of health insurance</b>. These social determinants of health keep clients from getting the care they need.</p><p>Blood glucose readings <b>within the target range</b> are a clinical finding, not a barrier. Having a <b>primary care provider</b> at the clinic connects the client to care, which <b>improves</b> access.</p>"
+    },
+    {
+      "id": "pn3-07", "type": "matrix", "topic": "Health care systems",
+      "stem": "For each finding, specify the social determinant of health domain it reflects.",
+      "rowHeader": "Finding",
+      "columns": ["Economic stability", "Education access and quality", "Health care access and quality", "Neighborhood and built environment", "Social and community context"],
+      "rows": [
+        "The client lives where there's no grocery store within walking distance and no sidewalks.",
+        "The client lost a job and must choose between paying rent and buying medications.",
+        "The client didn't finish high school and has trouble understanding written instructions.",
+        "The client has no primary care provider and uses the emergency department for all care.",
+        "The client recently moved to the country, has no family nearby, and faces discrimination at work."
+      ],
+      "answer": [3, 0, 1, 2, 4],
+      "rationale": "<p>Healthy People 2030 groups the social determinants of health into five domains. <b>Neighborhood and built environment</b>: safe places to walk, and access to healthy food (no grocery store or sidewalks). <b>Economic stability</b>: steady income for housing, food, and medications (choosing between rent and medications). <b>Education access and quality</b>: schooling and literacy (trouble understanding written instructions). <b>Health care access and quality</b>: having a regular provider and getting timely care (using the emergency department for all care). <b>Social and community context</b>: relationships, support, and discrimination (no family nearby, discrimination at work).</p>"
+    },
+    {
+      "id": "pn3-08", "type": "mc", "topic": "Health care systems",
+      "stem": "A rehabilitation unit uses patient-focused care. Which action by the nurse best reflects this framework?",
+      "options": [
+        "Assigning one nurse to give all medications so the work gets done quickly",
+        "Requiring all clients to follow the unit's set schedule for baths and meals",
+        "Limiting family members to visiting hours so care isn't interrupted",
+        "Planning the client's therapy times around the client's preferences and when the family can take part"
+      ],
+      "answer": 3,
+      "rationale": "<p>In <b>patient-focused care</b>, health care is organized around the client's expressed physical and emotional needs, and clients and families are part of decisions about how care is delivered. <b>Planning therapy around the client's preferences and the family's availability</b> reflects this.</p><p>Assigning one nurse to <b>give all medications</b> is functional nursing, which organizes care around tasks. Making every client follow the <b>unit's set schedule</b> and <b>limiting family involvement</b> organize care around the staff's convenience rather than the client's needs.</p>"
+    },
+    {
+      "id": "pn3-09", "type": "mc", "topic": "Health care systems",
+      "stem": "A nurse on a medical unit is planning discharges. Which client would benefit most from a referral to a case manager?",
+      "options": [
+        "A 34-year-old client who had an uncomplicated appendectomy and has a ride home",
+        "A 22-year-old client who was treated for a sprained ankle and will follow up with a primary care provider",
+        "A 45-year-old client who was observed overnight after fainting and whose test results were normal",
+        "A 78-year-old client with heart failure and diabetes who lives alone, sees four providers, and needs home oxygen"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Case management</b> is a collaborative process, led by a case manager (who may be a nurse or a social worker), that coordinates care for clients with <b>multiple care needs that require multiple providers</b>, during a hospital stay and across settings in the community. The older adult with heart failure and diabetes who lives alone, sees four providers, and needs home oxygen has the most complex needs.</p><p>The other clients have short-term, uncomplicated needs and clear follow-up plans, so they don't need a case manager to coordinate their care.</p>"
+    },
+    {
+      "id": "pn3-10", "type": "mc", "topic": "Health care systems",
+      "stem": "During a respiratory illness outbreak, a hospital has fewer ventilators than clients who need them. Which action best reflects the nurse's role in decisions about scarce resources?",
+      "options": [
+        "Following the facility's established allocation criteria and advocating for each client within them",
+        "Giving the next available ventilator to the client who arrived first",
+        "Giving the ventilator to the client whose family is most insistent",
+        "Deciding alone which client deserves the ventilator most, based on the nurse's own values"
+      ],
+      "answer": 0,
+      "rationale": "<p>When resources are scarce, nurses take part in allocation decisions by <b>following the agency's established, ethically based criteria</b> (such as its disaster or triage policies) and by <b>advocating</b> for each client within that framework. Nurses also need to know their agency's and community's expectations for them during a disaster.</p><p><b>First come, first served</b> ignores which clients are most likely to benefit. Basing the decision on a <b>family's insistence</b> is unfair to other clients. A nurse <b>deciding alone, based on personal values</b>, isn't consistent or fair, and it's outside the nurse's role.</p>"
+    },
+    {
+      "id": "pn3-11", "type": "mc", "topic": "Evidence-based practice",
+      "stem": "A new nurse asks why the unit no longer does some procedures “the way we've always done them.” Which explanation of how evidence-based practice (EBP) developed is accurate?",
+      "options": [
+        "EBP grew from a shift away from care based on tradition and habit, toward care based on research evidence, clinical expertise, and client preferences.",
+        "EBP replaced the nurse's clinical expertise with research findings alone.",
+        "EBP is a temporary trend that applies only to nurse researchers.",
+        "EBP began when hospitals required every nurse to conduct their own research studies."
+      ],
+      "answer": 0,
+      "rationale": "<p>Nursing care was once based largely on <b>tradition, habit, and authority</b>: “the way we've always done it.” EBP developed to close the <b>theory-practice gap</b> between what research shows and what nurses actually do. It combines three components: the <b>best current research evidence</b>, the <b>nurse's clinical expertise</b>, and the <b>client's preferences</b>, needs, and choices.</p><p>EBP doesn't <b>replace</b> clinical expertise; expertise is one of its three components. It isn't a passing trend, and it isn't only for researchers: every nurse is expected to use it. EBP means <b>using</b> research findings, not requiring every nurse to <b>conduct</b> studies.</p>"
+    },
+    {
+      "id": "pn3-12", "type": "sata", "topic": "Evidence-based practice",
+      "stem": "A nurse educator is explaining how evidence-based practice relates to other professional concepts. Which statements are accurate?",
+      "options": [
+        "Basing care on current evidence supports nurses' accountability for the care they give.",
+        "A nurse whose care falls below evidence-based standards of practice may face legal consequences.",
+        "Quality improvement teams often use evidence to choose which practice changes to make.",
+        "When the research evidence is strong, the client's preferences no longer need to be considered.",
+        "Evidence-based practice limits clinical decision making to following study results exactly."
+      ],
+      "answer": [0, 1, 2],
+      "rationale": "<p>EBP is linked to many concepts. It supports <b>accountability</b> and the credibility of the profession, because care is based on the best available evidence. Care that deviates from evidence-based <b>professional standards</b> can lead to <b>legal</b> consequences. And <b>quality improvement</b> uses evidence to decide what to change and how.</p><p>EBP always includes the <b>client's preferences</b>, however strong the evidence. It also supports clinical decision making rather than limiting it, because the nurse <b>integrates</b> the evidence with clinical expertise and the client's preferences.</p>"
+    },
+    {
+      "id": "pn3-13", "type": "mc", "topic": "Evidence-based practice",
+      "stem": "A nurse reads a recent systematic review showing that a different way of securing IV catheters reduces infections. The hospital's procedure still requires the older method. What should the nurse do?",
+      "options": [
+        "Start using the new method right away, because current evidence outranks facility policy.",
+        "Follow the current procedure, and bring the evidence to the unit's practice council to propose a change.",
+        "Ask each client which method they prefer, and use that one.",
+        "Disregard the review, because facility procedures are always based on the best evidence."
+      ],
+      "answer": 1,
+      "rationale": "<p>Nurses must <b>follow policies and procedures as written</b>. When evidence supports better outcomes, the nurse should use the <b>facility's process to suggest a change</b>, such as bringing the evidence to a practice council or EBP committee, so the change can be appraised, approved, and taught to all staff.</p><p>Changing practice <b>on one's own</b> puts the nurse outside facility standards and makes care inconsistent. Client preferences matter, but a client <b>can't choose a method</b> the facility hasn't approved. And procedures <b>aren't always current</b>, which is exactly why nurses should bring new evidence forward.</p>"
+    },
+    {
+      "id": "pn3-14", "type": "mc", "topic": "Evidence-based practice",
+      "stem": "A nurse manager learns that staff aren't using a new evidence-based fall-prevention protocol because they say they don't have time to read research. Which strategy best addresses this barrier?",
+      "options": [
+        "Disciplining staff who don't follow the protocol",
+        "Returning to the previous protocol until staff have more time",
+        "Requiring every nurse to complete a research study on falls",
+        "Giving staff paid time for short in-services, led by a unit EBP champion who summarizes the evidence"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Lack of time</b> and limited skill in finding and evaluating evidence are common barriers to EBP. Leaders can overcome them by <b>providing paid time and support</b>, such as brief in-services and a unit <b>EBP champion</b> who summarizes the evidence. This builds staff knowledge and confidence.</p><p><b>Discipline</b> doesn't address the barrier and can increase resistance to change. <b>Going back</b> to the old protocol abandons a practice that improves client safety. <b>Requiring every nurse to conduct a study</b> adds to the time burden; staff nurses need to use evidence, not produce it.</p>"
+    },
+    {
+      "id": "pn3-15", "type": "mc", "topic": "Evidence-based practice",
+      "stem": "A nurse on a unit for older adults is appraising a study of a new way to prevent pressure injuries. The study included 16 participants, all men between 20 and 30 years old, at a single hospital. Which conclusion about this study is most appropriate?",
+      "options": [
+        "The findings can be applied directly, because the study was published in a journal.",
+        "The small sample, so unlike the nurse's clients, limits how well the findings apply to them.",
+        "The article is a secondary source, because the researchers wrote it.",
+        "The study is invalid, because it didn't include the nurse's own clients."
+      ],
+      "answer": 1,
+      "rationale": "<p>When appraising a study, the nurse judges its <b>validity</b> (was it done well?), its <b>reliability</b> (would others get similar results?), and its <b>applicability</b> (do the participants resemble the nurse's clients?). A <b>small sample</b> of young men is very different from the older adults on the nurse's unit, so the findings may not apply to them without more evidence.</p><p>Being <b>published</b> doesn't make a study's findings apply to every population. A report written by the researchers who did the study is a <b>primary</b> source; a secondary source is one author writing about another author's work. A study doesn't need to include the nurse's own clients to be valid; it needs <b>similar</b> participants for its findings to apply.</p>"
+    },
+    {
+      "id": "pn3-16", "type": "order", "topic": "Evidence-based practice",
+      "stem": "A nurse wants to reduce catheter-associated urinary tract infections on the unit. Place the steps of the evidence-based practice process in order.",
+      "items": [
+        "Identify the clinical problem by reviewing the unit's clients and infection rates",
+        "Write a focused PICOT question about the problem",
+        "Search databases such as CINAHL for credible evidence",
+        "Judge the studies for quality, validity, and relevance to the unit",
+        "Use the evidence, with clinical expertise and client preferences, to change practice",
+        "Measure client outcomes and how well staff follow the new practice"
+      ],
+      "rationale": "<p>The steps of the EBP process are <b>Assess</b> (start with the client and identify the clinical problem), <b>Ask</b> (write a focused clinical question, often in PICOT form), <b>Acquire</b> (search credible sources such as CINAHL and MEDLINE), <b>Appraise</b> (judge the evidence for quality, validity, usefulness, and relevance to the setting), <b>Apply</b> (integrate the evidence with clinical expertise and client preferences to change practice), and <b>Evaluate</b> (measure client outcomes and how well nurses follow the plan, then accept, reject, or modify the change).</p>"
+    },
+    {
+      "id": "pn3-17", "type": "matrix", "topic": "Evidence-based practice",
+      "stem": "A nurse writes this clinical question: “In adult clients having elective surgery, does bathing with chlorhexidine the night before surgery, compared with bathing with soap and water, reduce surgical site infections within 30 days?” For each part of the question, specify the PICOT element it represents.",
+      "rowHeader": "Part of the question",
+      "columns": ["P (population)", "I (intervention)", "C (comparison)", "O (outcome)", "T (time)"],
+      "rows": [
+        "Bathing with soap and water",
+        "Adult clients having elective surgery",
+        "Within 30 days",
+        "Bathing with chlorhexidine the night before surgery",
+        "Fewer surgical site infections"
+      ],
+      "answer": [2, 0, 4, 1, 3],
+      "rationale": "<p>A PICOT question has five parts. <b>P</b>, the population: adult clients having elective surgery. <b>I</b>, the intervention: bathing with chlorhexidine the night before surgery. <b>C</b>, the comparison: bathing with soap and water. <b>O</b>, the outcome: fewer surgical site infections. <b>T</b>, the time: within 30 days. A focused PICOT question makes the search for evidence (the Acquire step) faster and more accurate.</p>"
+    },
+    {
+      "id": "pn3-18", "type": "matrix", "topic": "Evidence-based practice",
+      "stem": "For each action, specify whether it is an example of individual or organizational evidence-based practice.",
+      "rowHeader": "Action",
+      "columns": ["Individual", "Organizational"],
+      "rows": [
+        "A nurse reads a current article on pain assessment and starts using a validated pain scale with clients.",
+        "The nursing practice council revises the catheter-care policy and trains all staff.",
+        "A nurse searches a nursing database before caring for a client with an unfamiliar condition.",
+        "Hospital leaders fund EBP mentors and protected time for staff to review research.",
+        "All units adopt a fall-prevention bundle and track their fall rates every month."
+      ],
+      "answer": [0, 1, 0, 1, 1],
+      "rationale": "<p><b>Individual</b> EBP is a nurse using evidence in their own practice: reading current literature, searching a database, and applying the findings to the clients they care for.</p><p><b>Organizational</b> EBP is a change made across the facility. It needs leadership support, resources, and a formal process: <b>revising policies and procedures</b> and training all staff, <b>funding mentors and protected time</b>, and <b>tracking outcomes</b> such as fall rates across units. An individual nurse's evidence becomes organizational practice by going through the facility's process.</p>"
+    },
+    {
+      "id": "pn3-19", "type": "mc", "topic": "Informatics and documentation",
+      "stem": "Which statement by a nursing student shows an accurate understanding of nursing informatics?",
+      "options": [
+        "“Informatics is the IT department's job, so it doesn't affect my nursing practice.”",
+        "“Informatics just means typing my notes into a computer instead of writing them.”",
+        "“Informatics combines nursing knowledge with technology to manage information and support my clinical decisions.”",
+        "“The American Nurses Association hasn't recognized informatics as a nursing specialty.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Nursing informatics</b> integrates technology and devices with nursing knowledge and clinical decision-making skills. More broadly, informatics is the use of information and technology to communicate, manage knowledge, reduce errors, and support decision making, which makes it a key part of every nurse's practice.</p><p>Informatics isn't only the <b>IT department's</b> concern, and it's much more than <b>typing notes</b> into a computer. The American Nurses Association <b>designated nursing informatics as its own specialty</b> in 1992.</p>"
+    },
+    {
+      "id": "pn3-20", "type": "sata", "topic": "Informatics and documentation",
+      "stem": "A nurse is reviewing how informatics relates to other concepts. Which statements are accurate?",
+      "options": [
+        "Bar-code scanning at the bedside supports client safety during medication administration.",
+        "The electronic health record lets the interprofessional team communicate about the client.",
+        "A client's health literacy affects how well they can use an online patient portal.",
+        "Electronic alerts remove the need for the nurse to verify the client's identity.",
+        "Informatics has little effect on clinical decision making."
+      ],
+      "answer": [0, 1, 2],
+      "rationale": "<p>Informatics connects to <b>safety</b> (bar-code scanning matches the right client with the right medication), to <b>communication</b> (the electronic health record gives the whole team one shared record), and to <b>health literacy</b> (clients need reading and computer skills to use portals and online information, and nurses support clients with low health literacy).</p><p>Technology <b>supports</b> but doesn't replace the nurse's own checks, such as verifying the client's identity. And informatics strongly <b>supports</b> clinical decision making, for example through decision support alerts and quick access to data.</p>"
+    },
+    {
+      "id": "pn3-21", "type": "sata", "topic": "Informatics and documentation",
+      "stem": "A nurse is comparing the advantages and disadvantages of electronic health records (EHRs). Which are disadvantages or risks of EHRs?",
+      "options": [
+        "Alert fatigue, when frequent alerts lead staff to ignore or override them",
+        "Illegible handwriting in providers' prescriptions",
+        "Privacy breaches when staff share logins or leave screens open",
+        "Copying earlier notes forward, which can carry outdated information into the record",
+        "Loss of access to records when the system goes down",
+        "Slower sharing of information between providers"
+      ],
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p>EHRs make records legible and speed up the sharing of information, but they bring risks: <b>alert fatigue</b>, <b>privacy breaches</b> when security practices aren't followed, <b>copy-forward errors</b> that repeat outdated information, and <b>loss of access during downtime</b>, which is why facilities keep downtime procedures.</p><p><b>Illegible handwriting</b> is a problem with paper records that EHRs solve. EHRs make sharing information between providers <b>faster</b>, not slower.</p>"
+    },
+    {
+      "id": "pn3-22", "type": "mc", "topic": "Informatics and documentation",
+      "stem": "A nurse is documenting at a computer in the hallway when a client's call light comes on. Which action should the nurse take?",
+      "options": [
+        "Leave the screen open, to finish documenting when the nurse returns",
+        "Ask a nursing assistant to finish the note using the nurse's login",
+        "Log off (or lock the screen) before leaving the computer",
+        "Turn the monitor to face the wall and leave it logged in"
+      ],
+      "answer": 2,
+      "rationale": "<p>Electronic documentation guidelines say to <b>never leave a computer without logging off</b>, so no one else can see the record or document under the nurse's name. This protects client confidentiality and the integrity of the record.</p><p>Leaving the screen open, even <b>turned toward the wall</b>, still lets anyone view or change the record. Nurses must <b>never let anyone use their login</b>; every entry must be made by the person whose name is on it.</p>"
+    },
+    {
+      "id": "pn3-23", "type": "matrix", "topic": "Informatics and documentation",
+      "stem": "For each situation, specify the technology being used.",
+      "rowHeader": "Situation",
+      "columns": ["Computerized health record", "Telehealth", "Geographic information system (GIS)"],
+      "rows": [
+        "A public health nurse maps where children with high blood lead levels live, to target outreach.",
+        "A nurse reviews the daily weights that a rural client with heart failure sends from home.",
+        "An emergency department provider in another city views the client's allergies and medication list.",
+        "A mental health nurse practitioner holds a counseling session with a client by secure video.",
+        "Health officials map flu cases by neighborhood to decide where to hold vaccine clinics."
+      ],
+      "answer": [2, 1, 0, 1, 2],
+      "rationale": "<p>A <b>geographic information system</b> maps health data by location, such as where children with high lead levels live or where flu cases cluster, to target services. <b>Telehealth</b> delivers care at a distance, such as remote monitoring of a client's daily weights or a counseling session by secure video. A <b>computerized health record</b> stores the client's information so providers in other settings can see it, such as allergies and medications.</p>"
+    },
+    {
+      "id": "pn3-24", "type": "sata", "topic": "Informatics and documentation",
+      "stem": "A nurse is teaching a client who has newly diagnosed hypertension how to judge health information online. Which instructions should the nurse include?",
+      "options": [
+        "“Check who runs the site. Government, university, and professional organization sites are usually reliable.”",
+        "“Trust the sites that appear first in your search results.”",
+        "“Look for the date the information was last reviewed or updated.”",
+        "“Be cautious of sites that sell the products they recommend.”",
+        "“Talk with your provider before changing your treatment based on what you read.”",
+        "“Personal stories on social media are the most reliable source of information.”"
+      ],
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p>Nurses teach clients to judge online health information by checking <b>who runs the site</b> (sites ending in .gov or .edu, or run by professional organizations, are generally credible), <b>how current</b> the information is, and whether the site has a <b>commercial interest</b> in what it recommends. Clients should <b>talk with their provider</b> before changing treatment.</p><p>A site's <b>place in search results</b> reflects popularity or advertising, not accuracy. <b>Personal stories</b> can offer support, but they aren't reliable evidence.</p>"
+    },
+    {
+      "id": "pn3-25", "type": "mc", "topic": "Informatics and documentation",
+      "stem": "Which practice best supports accurate, individual client information at the point of care?",
+      "options": [
+        "Writing assessment findings on a paper towel and entering them at the end of the shift",
+        "Copying the previous shift's assessment forward when nothing seems different",
+        "Charting medications before giving them, to save time later in the shift",
+        "Entering findings into the record at the bedside right after collecting them"
+      ],
+      "answer": 3,
+      "rationale": "<p>Documenting at the <b>point of care</b>, at the bedside right after collecting the information, keeps the record accurate, timely, and specific to the individual client. Bedside computers, mobile devices, and bar-code scanning support this.</p><p>Notes on a <b>paper towel</b> can be lost or entered into the wrong client's record, and waiting until the end of the shift makes the record less accurate and timely. <b>Copying forward</b> an old assessment records findings the nurse didn't actually observe. <b>Charting before giving</b> a medication documents care that hasn't happened; it's inaccurate, and it's falsification if the dose isn't given.</p>"
+    },
+    {
+      "id": "pn3-26", "type": "mc", "topic": "Quality improvement",
+      "stem": "A nurse is explaining why health care organizations put so much effort into quality improvement. Which finding from the Institute of Medicine's report <i>To Err Is Human</i> started this national focus?",
+      "options": [
+        "Medical errors were causing tens of thousands of preventable deaths in U.S. hospitals each year.",
+        "Most errors were caused by careless individuals, so discipline was the best way to prevent them.",
+        "Errors happened mainly in surgery, so other units didn't need quality programs.",
+        "U.S. hospitals had almost no preventable errors, so the focus moved to lowering costs."
+      ],
+      "answer": 0,
+      "rationale": "<p>The Institute of Medicine's 2000 report <i>To Err Is Human</i> estimated that medical errors caused about <b>98,000 deaths in U.S. hospitals each year</b>. Later studies estimated even more preventable deaths, making medical errors a leading cause of death. These findings drove the push for quality improvement and safer systems.</p><p>The report found that most errors come from <b>faulty systems and processes</b>, not careless individuals, so blaming and disciplining staff doesn't prevent them. Errors happen in <b>every</b> setting, not just surgery. And the report showed that errors were <b>common</b>, not rare.</p>"
+    },
+    {
+      "id": "pn3-27", "type": "matrix", "topic": "Quality improvement",
+      "stem": "The Institute of Medicine's report <i>Crossing the Quality Chasm</i> proposed six aims for improving health care. For each example, specify the aim it reflects.",
+      "rowHeader": "Example",
+      "columns": ["Safe", "Effective", "Patient-centered", "Timely", "Efficient", "Equitable"],
+      "rows": [
+        "Care plans reflect each client's values, needs, and preferences.",
+        "Clients receive the same quality of care regardless of income, race, or insurance.",
+        "The unit cuts the wait for pain medication from 40 minutes to 10.",
+        "Bar-code scanning prevents medication errors that could harm clients.",
+        "The clinic stops ordering duplicate tests, saving supplies and staff time.",
+        "Clients with pneumonia receive treatments that research shows work."
+      ],
+      "answer": [2, 5, 3, 0, 4, 1],
+      "rationale": "<p>The six aims say care should be <b>safe</b> (avoiding harm, such as medication errors), <b>effective</b> (based on scientific evidence of benefit), <b>patient-centered</b> (respecting each client's values, needs, and preferences), <b>timely</b> (reducing harmful waits and delays), <b>efficient</b> (avoiding waste of supplies, equipment, time, and energy), and <b>equitable</b> (the same quality of care for everyone, regardless of personal characteristics such as income, race, or insurance).</p>"
+    },
+    {
+      "id": "pn3-28", "type": "matrix", "topic": "Quality improvement",
+      "stem": "A nurse is reviewing federal agencies that support quality and safety in health care. For each activity, specify the agency responsible.",
+      "rowHeader": "Activity",
+      "columns": ["OSHA", "FDA", "CDC", "NIH"],
+      "rows": [
+        "Investigates a cluster of infections and publishes hand-hygiene guidelines",
+        "Requires employers to provide safety-engineered needles to protect workers",
+        "Recalls an infusion pump model after reports of dosing errors",
+        "Funds a large research study on preventing pressure injuries"
+      ],
+      "answer": [2, 0, 1, 3],
+      "rationale": "<p>The <b>CDC</b> (Centers for Disease Control and Prevention) tracks disease, investigates outbreaks, and publishes guidelines such as those for hand hygiene and infection control. <b>OSHA</b> (Occupational Safety and Health Administration) protects <b>workers</b>, for example by requiring employers to provide safer needles that reduce needlestick injuries. The <b>FDA</b> (Food and Drug Administration) oversees the safety of drugs and medical devices, including recalls. The <b>NIH</b> (National Institutes of Health) conducts and funds medical research.</p>"
+    },
+    {
+      "id": "pn3-29", "type": "mc", "topic": "Quality improvement",
+      "stem": "A nurse is taking part in risk management on a medical unit. Which activity is an example of proactive risk management?",
+      "options": [
+        "Completing an incident report after a client falls",
+        "Meeting with a family after a medication error to explain what happened",
+        "Assessing every client's fall risk on admission and starting prevention measures for those at risk",
+        "Reviewing a lawsuit filed after a client was injured"
+      ],
+      "answer": 2,
+      "rationale": "<p>Risk management has <b>proactive</b> parts, which prevent adverse events before they happen, and <b>reactive</b> parts, which limit the damage after an event. <b>Assessing fall risk on admission and starting prevention measures</b> prevents falls before they occur, so it's proactive.</p><p><b>Completing an incident report</b> after a fall, <b>meeting with a family</b> after an error, and <b>reviewing a lawsuit</b> after an injury all respond to events that have already happened, so they're reactive.</p>"
+    },
+    {
+      "id": "pn3-30", "type": "matrix", "topic": "Quality improvement",
+      "stem": "A unit is using the Plan-Do-Study-Act (PDSA) cycle to reduce falls. For each activity, specify the phase of the cycle.",
+      "rowHeader": "Activity",
+      "columns": ["Plan", "Do", "Study", "Act"],
+      "rows": [
+        "Compare the fall rates before and after the trial.",
+        "Collect baseline fall data, and set a goal to reduce falls by 20%.",
+        "Adopt hourly rounding on all units after the trial succeeds.",
+        "Try hourly rounding on one unit for 4 weeks."
+      ],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p><b>Plan</b>: study the problem, collect baseline data, and set a measurable goal. <b>Do</b>: test the change on a small scale, such as hourly rounding on one unit. <b>Study</b>: analyze the results by comparing fall rates before and after the trial. <b>Act</b>: adopt the change more widely if it worked, or modify it and start the cycle again if it didn't.</p>"
+    },
+    {
+      "id": "pn3-31", "type": "matrix", "topic": "Health policy",
+      "stem": "For each policy, specify whether it is a public health policy or a private (organizational) policy.",
+      "rowHeader": "Policy",
+      "columns": ["Public policy", "Private (organizational) policy"],
+      "rows": [
+        "A state law requiring hospitals to report certain infections to the health department",
+        "A hospital's procedure for how often to change IV tubing",
+        "Federal regulations that set Medicare payment rules",
+        "A professional nursing association's position statement on safe staffing",
+        "A city ordinance banning smoking in public parks"
+      ],
+      "answer": [0, 1, 0, 1, 0],
+      "rationale": "<p><b>Public health policy</b> is established in <b>law and regulation</b> (state laws, federal regulations, and local ordinances), and the government agency responsible for it can enforce it.</p><p><b>Private policies</b> are developed by organizations such as hospitals and professional associations. They <b>aren't established by law</b>, though they can influence public policy. A hospital procedure and a professional association's position statement are private policies.</p>"
+    },
+    {
+      "id": "pn3-32", "type": "order", "topic": "Health policy",
+      "stem": "A state is responding to a rise in preventable falls among older adults. Place the events in the order of the stages of policymaking.",
+      "items": [
+        "Nurses and an advocacy group for older adults bring the rising fall rates to legislators' attention.",
+        "The legislature passes a law that funds community fall-prevention programs.",
+        "The state health department writes the regulations and starts the programs.",
+        "The health department measures whether fall rates have dropped."
+      ],
+      "rationale": "<p>The major stages of policymaking are <b>agenda setting</b> (a problem gains policymakers' attention, often because constituents, nurses, or special interest groups raise it), <b>government response</b> (a law is passed), <b>implementation</b> (an executive branch agency, such as a state health department, writes regulations and carries out the law), and <b>evaluation</b> (measuring whether the policy worked). The process involves negotiation and compromise, and it isn't always neat or linear.</p>"
+    },
+    {
+      "id": "pn3-33", "type": "mc", "topic": "Health policy",
+      "stem": "A client is being admitted to a hospital that participates in Medicare. Under the Patient Self-Determination Act, which action is required?",
+      "options": [
+        "Asking the client to sign a do-not-resuscitate order",
+        "Asking the family to choose which treatments the client will receive",
+        "Waiting until the client is critically ill to discuss end-of-life wishes",
+        "Giving the client written information about their right to make advance directives"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>Patient Self-Determination Act</b> requires health care facilities that receive Medicare and Medicaid funding to give clients, on admission, <b>written information about their right to make decisions about their care</b>, including the right to accept or refuse treatment and to make <b>advance directives</b>. This health policy protects client rights and autonomy.</p><p>The law requires <b>information</b>, not a <b>do-not-resuscitate order</b>; clients decide for themselves whether they want one. Decisions belong to the <b>client</b>, not the family, while the client is able to make them. And the information is given <b>on admission</b>, not saved for a crisis.</p>"
+    },
+    {
+      "id": "pn3-34", "type": "mc", "topic": "Health policy",
+      "stem": "A nurse suspects that a coworker is practicing while impaired by drugs. After the nurse reports the concern to the nurse manager, which organization oversees the coworker's license to practice nursing?",
+      "options": [
+        "The Joint Commission",
+        "The American Nurses Association",
+        "The state board of nursing",
+        "The Occupational Safety and Health Administration"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>state board of nursing</b> is a state executive branch agency that carries out the state's nurse practice act. It licenses nurses, investigates complaints, and can discipline a nurse's license.</p><p><b>The Joint Commission</b> accredits health care organizations; it doesn't license individual nurses. The <b>American Nurses Association</b> is a professional association that sets standards and a code of ethics, but it has no legal authority over licenses. <b>OSHA</b> protects workers' health and safety in the workplace.</p>"
+    },
+    {
+      "id": "pn3-35", "type": "sata", "topic": "Health policy",
+      "stem": "A hospital is preparing for its Joint Commission survey. Which statements about accreditation are accurate?",
+      "options": [
+        "Accreditation is voluntary and is based on a peer-review process.",
+        "Joint Commission accreditation helps a hospital qualify for Medicare and Medicaid reimbursement.",
+        "Once accredited, a hospital keeps its accreditation permanently.",
+        "To be reaccredited, the hospital must show that it keeps evaluating its performance and correcting problems.",
+        "National accreditation of a nursing program is the same as state board of nursing approval."
+      ],
+      "answer": [0, 1, 3],
+      "rationale": "<p><b>Accreditation</b> is a <b>private, voluntary</b> process of recognition through <b>peer review</b> against an accrediting organization's standards. Joint Commission accreditation builds public trust, gives credibility with private insurers, and <b>helps hospitals qualify for Medicare and Medicaid reimbursement</b>. Accredited organizations are <b>reevaluated periodically</b>, and they must show that they continuously evaluate their own performance, correct deficiencies, and keep meeting the standards.</p><p>Accreditation <b>isn't permanent</b>. For nursing programs, <b>national accreditation</b> (such as by CCNE or ACEN) is separate from <b>state board of nursing approval</b>, which is mandatory for prelicensure programs.</p>"
+    },
+    {
+      "id": "pn3-36", "type": "matrix", "topic": "Health policy",
+      "stem": "For each client, specify the type of health insurance that best fits the description.",
+      "rowHeader": "Client",
+      "columns": ["Medicare", "Medicaid", "Health maintenance organization (HMO)", "Preferred provider organization (PPO)"],
+      "rows": [
+        "A client whose plan requires choosing a primary care provider, who must refer them to any specialist",
+        "A 72-year-old retired client",
+        "A client who can see specialists without a referral, but pays higher premiums and copayments",
+        "A pregnant 24-year-old client whose family income is below the federal poverty level"
+      ],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p><b>Medicare</b> is federal health insurance for people <b>65 and older</b> (and some younger people with disabilities). <b>Medicaid</b> is a joint federal and state program for people with <b>low incomes</b>, including many pregnant clients and children. An <b>HMO</b> is a more restrictive managed care plan: the client chooses a <b>primary care provider who acts as a gatekeeper</b> and refers them to specialists. A <b>PPO</b> is less restrictive: clients can see specialists without a referral, but they pay <b>higher premiums, copayments, and deductibles</b>.</p>"
+    },
+    {
+      "id": "pn3-37", "type": "mc", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse reviews this prescription: “Famotidine 20 mg PO BID ac.” When should the nurse give this medication?",
+      "options": [
+        "Twice a day, after meals",
+        "Twice a day, at bedtime",
+        "Twice a day, before meals",
+        "Every 12 hours, only as needed"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>PO</b> means by mouth, <b>BID</b> means twice a day, and <b>ac</b> means before meals. So the nurse gives the medication by mouth, twice a day, before meals.</p><p><b>pc</b> means after meals, <b>hs</b> means at bedtime (hour of sleep), and <b>PRN</b> means as needed. None of these appear in this prescription.</p>"
+    },
+    {
+      "id": "pn3-38", "type": "dragdrop", "topic": "Abbreviations, conversions, and labels",
+      "stem": "Complete each prescription with the correct standard abbreviation.",
+      "text": "Nothing by mouth after midnight: {{0}} after midnight. Zolpidem 5 mg by mouth at bedtime as needed for sleep: zolpidem 5 mg PO {{1}} {{2}} for sleep. Give the first dose of the antibiotic immediately: {{3}}.",
+      "tokens": ["NPO", "hs", "PRN", "STAT", "pc", "ac", "q4h"],
+      "answer": [0, 1, 2, 3],
+      "rationale": "<p><b>NPO</b> means nothing by mouth. <b>hs</b> means at bedtime (hour of sleep). <b>PRN</b> means as needed. <b>STAT</b> means immediately.</p><p>The extra options are <b>pc</b> (after meals), <b>ac</b> (before meals), and <b>q4h</b> (every 4 hours), which don't match these instructions.</p>"
+    },
+    {
+      "id": "pn3-39", "type": "sata", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is checking prescriptions for safe notation. Which prescriptions are written correctly?",
+      "options": [
+        "Digoxin 0.125 mg PO daily",
+        "Lorazepam .5 mg PO at bedtime",
+        "Warfarin 5.0 mg PO daily",
+        "Levothyroxine 50 mcg PO daily",
+        "Insulin regular 10 U subcutaneously before meals"
+      ],
+      "answer": [0, 3],
+      "rationale": "<p><b>Digoxin 0.125 mg</b> has a <b>leading zero</b> before the decimal point, and <b>levothyroxine 50 mcg</b> is a whole number with no decimal, so both are written safely.</p><p><b>.5 mg</b> is missing the leading zero: the decimal point can be missed and the dose read as 5 mg, ten times too much. Write <b>0.5 mg</b>. <b>5.0 mg</b> has a <b>trailing zero</b>: if the decimal point is missed, it can be read as 50 mg. Write <b>5 mg</b>. <b>U</b> for units can be mistaken for a 0 or a 4, so it's on the do-not-use list; write <b>units</b>.</p>"
+    },
+    {
+      "id": "pn3-40", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client weighs 172 lb. How many kilograms does the client weigh?",
+      "answer": 78.2,
+      "unit": "kg",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>To convert pounds to kilograms, divide by 2.2: 172 ÷ 2.2 = 78.18… kg. Rounded to the nearest tenth, that's <b>78.2 kg</b>. Round only at the end of the problem, and don't add a trailing zero.</p>"
+    },
+    {
+      "id": "pn3-41", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "The provider prescribes levothyroxine 0.088 mg PO daily. How many micrograms is this dose?",
+      "answer": 88,
+      "unit": "mcg",
+      "strictZeros": true,
+      "rationale": "<p>To change a larger metric unit to a smaller one, multiply by 1,000 (or move the decimal point three places to the right): 0.088 mg × 1,000 = <b>88 mcg</b>.</p>"
+    },
+    {
+      "id": "pn3-42", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is calculating a client's oral intake for the day shift. The client drank 8 oz of water, 4 oz of apple juice, and 6 oz of milk, and took 2 tablespoons of a liquid antacid. What is the client's total oral intake?",
+      "answer": 570,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>Convert each item to milliliters, then add them. 1 oz = 30 mL, and 1 tablespoon = 15 mL. Water: 8 × 30 = 240 mL. Apple juice: 4 × 30 = 120 mL. Milk: 6 × 30 = 180 mL. Antacid: 2 × 15 = 30 mL. Total: 240 + 120 + 180 + 30 = <b>570 mL</b>.</p>"
+    },
+    {
+      "id": "pn3-43", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is prescribed a medication dose of 250 mcg. How many milligrams is this dose?",
+      "answer": 0.25,
+      "unit": "mg",
+      "strictZeros": true,
+      "rationale": "<p>To change a smaller metric unit to a larger one, divide by 1,000 (or move the decimal point three places to the left): 250 mcg ÷ 1,000 = <b>0.25 mg</b>. The answer needs a <b>leading zero</b> before the decimal point: write 0.25, not .25.</p>"
+    },
+    {
+      "id": "pn3-44", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "An IV antibiotic is to infuse over 2.5 hours. How many minutes will the infusion take?",
+      "answer": 150,
+      "unit": "minutes",
+      "strictZeros": true,
+      "rationale": "<p>To convert hours to minutes, multiply by 60: 2.5 × 60 = <b>150 minutes</b>.</p>"
+    },
+    {
+      "id": "pn3-45", "type": "hotspot", "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is preparing to give heparin. Click the part of the label that shows how much heparin is in each milliliter.",
+      "image": "img/label-heparin.svg",
+      "alt": "Sample medication label for heparin sodium injection. It shows the drug name, the amount of heparin per milliliter, the total amount in the vial, the vial size, the routes, a lot number, and an expiration date.",
+      "regions": [{ "x": 8, "y": 35.4, "w": 47.3, "h": 21.5 }],
+      "rationale": "<p>The <b>concentration</b>, <b>5,000 USP units/mL</b>, tells the nurse how much heparin is in each milliliter. It's the number the nurse uses to work out how much to give.</p><p>The <b>50,000 USP units per 10 mL</b> is the <b>total amount</b> in the whole vial; mistaking it for the strength per mL is a common cause of errors. The label also shows the vial size (10 mL multiple-dose vial), the routes, the lot number, and the expiration date.</p>"
+    },
+    {
+      "id": "pn3-46", "type": "fill", "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>The provider prescribes levothyroxine 0.1 mg PO daily. The nurse has the tablets shown on this label. How many tablets should the nurse give?</p><img src='sets/img/label-levothyroxine.svg' alt='Sample medication label: Levothyroxine Sodium Tablets, USP, 50 mcg in each tablet, bottle of 100 tablets.' width='600' height='240'>",
+      "answer": 2,
+      "unit": "tablets",
+      "strictZeros": true,
+      "rationale": "<p>The prescription is in milligrams, but the label is in micrograms, so convert first: 0.1 mg × 1,000 = 100 mcg. Each tablet contains 50 mcg, so 100 mcg ÷ 50 mcg = <b>2 tablets</b>.</p>"
+    },
+    {
+      "id": "pn3-47", "type": "highlight", "case": "dose", "topic": "Informatics and documentation",
+      "stem": "The float nurse's notes are shown below. Click to highlight the entries that don't follow documentation guidelines.",
+      "passage": "1030: [[Client complaining of pain as usual]]. [[Rates pain 7 on a 0-to-10 scale in the right knee]]. [[Gave oxycodone 5.0 mg PO]]. [[Client seems drug-seeking]].<br>1130: [[Client drowsy but opens eyes to voice]]. [[Respiratory rate 12/min, SpO₂ 93% on room air]]. [[Provider notified]]. [[Incident report filed]].",
+      "answer": [0, 2, 3, 6, 7],
+      "rationale": "<p>Documentation must be <b>FACT</b>: factual, accurate, complete, and timely. These entries need correcting:</p><ul><li>“<b>Complaining of pain as usual</b>” is a judgment, not a fact. Record what the client says and how they rate the pain.</li><li>“<b>5.0 mg</b>” has a trailing zero, which can be misread as 50 mg. Write 5 mg.</li><li>“<b>Seems drug-seeking</b>” is a subjective label. Document the behavior observed and the client's own words instead.</li><li>“<b>Provider notified</b>” is incomplete. Include the provider's name, the time, what was reported, and any new prescriptions.</li><li>“<b>Incident report filed</b>” doesn't belong in the medical record. Incident reports are confidential quality improvement documents, filed separately and never mentioned in the chart.</li></ul><p>The pain rating with its location, the level of consciousness, and the respiratory rate and oxygen saturation are objective, specific, and correctly documented.</p>"
+    },
+    {
+      "id": "pn3-48", "type": "mc", "case": "dose", "topic": "Informatics and documentation",
+      "stem": "The Medication Administration Record shows that the float nurse overrode a bar-code scanner alert at 1030. Which statement about this alert is accurate?",
+      "options": [
+        "It was clinical decision support that should have prompted the nurse to stop and verify the 1000 dose before giving the medication.",
+        "Alerts can be overridden whenever a client rates pain 7 or higher.",
+        "Bar-code scanning replaces the nurse's responsibility to check the MAR before giving a medication.",
+        "The alert most likely meant that the scanner needed repair."
+      ],
+      "answer": 0,
+      "rationale": "<p>The scanner's duplicate-dose warning is a form of <b>clinical decision support</b>: technology that checks the client's data and gives the nurse timely information for a safe decision. It should have prompted the nurse to <b>stop and verify</b> the 1000 dose in the MAR, which would have prevented the extra dose.</p><p>A high pain rating <b>doesn't justify</b> overriding a safety alert; the prescription allows a dose only every 4 hours. Decision support <b>supports, but doesn't replace</b>, the nurse's own checks. Assuming an alert is a <b>malfunction</b> without checking is how alert fatigue leads to errors.</p>"
+    },
+    {
+      "id": "pn3-49", "type": "matrix", "case": "dose", "topic": "Informatics and documentation",
+      "stem": "For each potential action, specify whether it is indicated or not indicated after the extra dose of oxycodone.",
+      "rowHeader": "Potential action",
+      "columns": ["Indicated", "Not Indicated"],
+      "rows": [
+        "Complete an incident (occurrence) report about the extra dose.",
+        "Write “incident report completed” in the client's medical record.",
+        "Notify the provider, and document the provider's name, the time, what was reported, and any new prescriptions.",
+        "Monitor the client's respiratory rate and level of consciousness closely.",
+        "Delete the 1030 dose from the electronic MAR, because it was given by mistake.",
+        "Place a copy of the incident report in the client's chart."
+      ],
+      "answer": [0, 1, 0, 0, 1, 1],
+      "rationale": "<p><b>Indicated:</b> complete an <b>incident report</b>, which the facility's risk management and quality improvement staff use to find and fix system problems. <b>Notify the provider</b> and document the facts completely: the provider's name, the time, what was reported, and any new prescriptions. <b>Monitor</b> the client's breathing and level of consciousness closely, because an extra opioid dose can depress respirations.</p><p><b>Not indicated:</b> the incident report is a confidential administrative document. It's filed with risk management, not in the medical record, and the chart shouldn't mention it or hold a copy. The record must stay <b>accurate and complete</b>: a dose that was given is never deleted, because the medical record is a legal document. The nurse documents what happened and the client's condition instead.</p>"
+    },
+    {
+      "id": "pn3-50", "type": "dropdown", "case": "dose", "topic": "Quality improvement",
+      "stem": "Complete the following sentences.",
+      "text": "Because the extra dose reached the client, this event is {{0}}. If the float nurse had stopped at the scanner alert and not given the dose, it would have been {{1}}. If the client had died or been permanently harmed, it would be {{2}}, and The Joint Commission would expect the hospital to complete {{3}}.",
+      "blanks": [
+        { "options": ["a near miss", "a medication error", "a sentinel event"], "answer": 1 },
+        { "options": ["a near miss", "a medication error", "a sentinel event"], "answer": 0 },
+        { "options": ["a near miss", "a medication error", "a sentinel event"], "answer": 2 },
+        { "options": ["a staff performance review", "a root cause analysis", "a new hiring plan"], "answer": 1 }
+      ],
+      "rationale": "<p>A <b>medication error</b> is a preventable mistake that reaches the client, whether or not it causes harm, as the extra dose did here. A <b>near miss</b> is an error caught <b>before</b> it reaches the client, as it would have been if the nurse had stopped at the scanner alert. A <b>sentinel event</b> is an unexpected occurrence that causes death or serious physical or psychological harm; it needs immediate investigation.</p><p>The Joint Commission requires a <b>root cause analysis</b> after a sentinel event, and recommends one after any adverse event. It looks for problems in <b>systems and processes</b>, such as alert design or staffing, rather than blaming one person, and it leads to an action plan that names who is responsible, includes pilot testing and timelines, and measures whether the changes work. A staff performance review focuses on one person, which isn't the purpose of a root cause analysis.</p>"
+    }
+  ]
+}

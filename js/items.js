@@ -27,6 +27,16 @@ function parseNumber(text) {
   return /^[-+]?(\d+\.?\d*|\.\d+)$/.test(t) ? Number(t) : null;
 }
 
+// The zero rules for medication math: no trailing zero after a decimal point
+// ("20.0", "1.50", or "4."), and a zero before a decimal point (".5" is wrong).
+function zerosOk(text) {
+  const t = String(text ?? '').trim().replace(/,/g, '');
+  return !/\.(\d*0)?$/.test(t) && !/^[-+]?\./.test(t);
+}
+
+// A fill-in answer's value is right (within the tolerance), however it's written.
+const rightValue = (q, n) => n != null && Math.abs(n - q.answer) <= (q.tolerance ?? 0) + 1e-9;
+
 // Image paths in a set are relative to the sets folder, like "img/abdomen.svg".
 const imageSrc = path => (/^https?:\/\//.test(path) ? path : `sets/${path}`);
 
@@ -298,9 +308,11 @@ function fillUI(q, ctx) {
   const row = h('div.fill', input, q.unit ? h('span.fill-unit', { id: unitId }, q.unit) : null);
   if (!review) return row;
   const ok = TYPES.fill.score(q, response).earned === 1;
-  row.append(mark(ok, ok ? 'Correct' : parseNumber(response) == null ? 'No answer' : 'Incorrect'));
+  const n = parseNumber(response);
+  row.append(mark(ok, ok ? 'Correct' : n == null ? 'No answer' : 'Incorrect'));
   return h('div', row, ok ? null : h('p.key-note', 'Correct answer: ', h('b', `${q.answer}${q.unit ? ` ${q.unit}` : ''}`),
-    q.tolerance ? ` (answers within ${q.tolerance} are accepted)` : ''));
+    q.tolerance ? ` (answers within ${q.tolerance} are accepted)` : '',
+    rightValue(q, n) ? '. Your number has the right value, but it must be written with no trailing zero, and with a zero before a decimal point.' : ''));
 }
 
 // Hot spot: click the image to place a marker. Mouse and touch only; this is
@@ -725,7 +737,7 @@ const TYPES = {
 
   fill: {
     label: 'Fill in the blank',
-    instruction: q => `Enter a number.${q.round ? ` Round the answer ${q.round}.` : ''}`,
+    instruction: q => `Enter a number.${q.round ? ` Round the answer ${q.round}.` : ''}${q.strictZeros ? ' Use a leading zero if it applies. Do not use a trailing zero.' : ''}`,
     prompt: 'Enter a number to continue.',
     validate(q) {
       const problems = [];
@@ -733,14 +745,13 @@ const TYPES = {
       if (q.tolerance != null && !(typeof q.tolerance === 'number' && q.tolerance >= 0)) problems.push('"tolerance" must be a number of 0 or more.');
       if (q.unit != null && typeof q.unit !== 'string') problems.push('"unit" must be text, like "mL".');
       if (q.round != null && typeof q.round !== 'string') problems.push('"round" must be text, like "to the nearest tenth".');
+      if (q.strictZeros != null && typeof q.strictZeros !== 'boolean') problems.push('"strictZeros" must be true or false, with no quotes.');
       return problems;
     },
     render: fillUI,
     answered: (q, r) => parseNumber(r) != null,
-    score(q, r) {
-      const n = parseNumber(r);
-      return { earned: n != null && Math.abs(n - q.answer) <= (q.tolerance ?? 0) + 1e-9 ? 1 : 0, max: 1 };
-    },
+    // With "strictZeros", the number must also follow the zero rules (zerosOk).
+    score: (q, r) => ({ earned: rightValue(q, parseNumber(r)) && (!q.strictZeros || zerosOk(r)) ? 1 : 0, max: 1 }),
     key: q => String(q.answer),
   },
 

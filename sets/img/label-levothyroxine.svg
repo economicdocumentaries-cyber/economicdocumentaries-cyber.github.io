@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240" font-family="Arial, Helvetica, sans-serif">
+  <title>Sample medication label: levothyroxine sodium tablets</title>
+  <!-- An original sample label for the Practice Exam Center, for practice only. -->
+  <rect width="600" height="240" fill="#FFFFFF"/>
+  <rect x="6" y="6" width="588" height="228" rx="10" fill="#FFFFFF" stroke="#4A5A6A" stroke-width="2"/>
+  <path d="M7 50 V17 A10 10 0 0 1 17 7 H583 A10 10 0 0 1 593 17 V50 Z" fill="#2E7D4F"/>
+  <g fill="#FFFFFF" font-size="13" font-weight="700">
+    <text x="24" y="34">NDC 00000-000-00</text>
+    <text x="576" y="34" text-anchor="end">Rx only</text>
+  </g>
+  <text x="24" y="86" font-size="25" font-weight="700" fill="#1F3A5F">Levothyroxine Sodium Tablets, USP</text>
+  <rect x="20" y="100" width="150" height="50" rx="6" fill="#EEF7F1" stroke="#2E7D4F" stroke-width="2"/>
+  <text x="95" y="134" font-size="26" font-weight="700" fill="#1F3A5F" text-anchor="middle">50 mcg</text>
+  <text x="576" y="132" font-size="18" font-weight="700" fill="#333333" text-anchor="end">100 Tablets</text>
+  <g fill="#333333" font-size="14">
+    <text x="24" y="176">Each tablet contains 50 mcg of levothyroxine sodium.</text>
+    <text x="24" y="196">Store at room temperature. Keep out of reach of children.</text>
+  </g>
+  <text x="24" y="222" font-size="12" fill="#666666">Lot LT0318 &#160;&#160; Exp 03/2028</text>
+  <text x="576" y="222" font-size="12" font-weight="700" fill="#B3261E" text-anchor="end">SAMPLE LABEL FOR PRACTICE ONLY</text>
+</svg>
