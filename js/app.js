@@ -429,7 +429,7 @@ async function setupView(root, { args, isCurrent }) {
         s.timer === 'off' ? 'It is untimed.' : ms ? `You have ${minutesText(ms)} to complete it.` : ''),
       h('ul',
         h('li', s.reveal === 'each' ? 'You will see the answer and rationale after each question.' : 'You will see your score, answers, and rationales at the end.'),
-        h('li', s.navigation === 'back' ? 'You can go back to earlier questions and flag questions to review.' : 'Select Continue to move to the next question. You cannot go back.'),
+        h('li', s.navigation === 'back' ? 'You can go back to earlier questions. Flag a question to skip it for now and come back to it later.' : 'Select Continue to move to the next question. You cannot go back.'),
         ms ? h('li', 'You can pause the timer for up to 5 minutes in total.') : null,
         s.fullscreen && fullscreenAvailable() ? h('li', 'The exam opens in full screen. Press Esc to leave full screen.') : null));
     const needMinutes = s.timer === 'custom' && !(s.minutes >= 1);

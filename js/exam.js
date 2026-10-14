@@ -126,6 +126,7 @@ export function startExam(set, settings = {}) {
     revealed: {}, // practice mode: questions whose answer has been shown
     flags: {},
     onGrid: false, // on the review grid before submitting
+    reachedGrid: false, // the review grid has been shown, so Continue goes back to it
     startedAt: now,
     limitMs,
     deadline: limitMs ? now + limitMs : null,
@@ -409,12 +410,17 @@ export function examView(root) {
 
   function onContinue() {
     const q = st.questions[st.index];
-    if (!isAnswered(q, st.responses[q.id])) {
-      modal({ title: 'Question Unanswered', message: unansweredMessage(q) });
+    const answered = isAnswered(q, st.responses[q.id]);
+    // A flagged question can be left unanswered, or partly answered, and
+    // finished later (SPEC 4.3).
+    if (!answered && !st.flags[q.id]) {
+      const later = canGoBack ? ' To answer it later, flag it and select Continue.' : '';
+      modal({ title: 'Question Unanswered', message: unansweredMessage(q) + later });
       return;
     }
-    if (showsAnswers && !st.revealed[q.id]) {
-      // Practice mode: show the answer and rationale before moving on.
+    if (answered && showsAnswers && !st.revealed[q.id]) {
+      // Practice mode: show the answer and rationale before moving on. (A
+      // flagged question that isn't answered yet moves on without them.)
       st.revealed[q.id] = true;
       save();
       showQuestion(false);
@@ -423,8 +429,9 @@ export function examView(root) {
       feedback?.focus({ preventScroll: true });
       return;
     }
-    if (st.index < st.questions.length - 1) goTo(st.index + 1);
-    else if (canGoBack) showGrid(true);
+    // After the review grid has been shown, Continue goes back to it (SPEC 4.3).
+    if (canGoBack && (st.reachedGrid || st.index === st.questions.length - 1)) showGrid(true);
+    else if (st.index < st.questions.length - 1) goTo(st.index + 1);
     else confirmSubmit();
   }
 
@@ -445,6 +452,7 @@ export function examView(root) {
   // With going back allowed, a grid of every question comes before submitting.
   function showGrid(moveFocus) {
     st.onGrid = true;
+    st.reachedGrid = true;
     save();
     counter.textContent = 'Review Your Answers';
     document.title = `${st.title} · Review your answers`;
@@ -454,7 +462,7 @@ export function examView(root) {
     area.clear(
       h('p.grid-intro',
         `You answered ${answeredCount} of ${st.questions.length} questions${flaggedCount ? ` and flagged ${flaggedCount}` : ''}. `,
-        'Select a question to go back to it, or submit your exam.'),
+        'Select a question to go back to it, or submit your exam. Continue brings you back here.'),
       h('ol.qgrid', st.questions.map((q, i) => {
         const answered = done(q), flagged = !!st.flags[q.id];
         return h('li', h('button.qtile', {
