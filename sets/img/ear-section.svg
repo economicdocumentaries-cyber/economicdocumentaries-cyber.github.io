@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" font-family="Arial, Helvetica, sans-serif">
+  <title>Cross-section of the ear</title>
+  <!-- An original drawing for the Practice Exam Center: the right ear seen from
+       the front, the outside of the head on the left. The ear canal, eardrum,
+       middle ear space, eustachian tube, cochlea, and semicircular canals are
+       each their own shape with an id (ear-canal, ear-tympanic, ear-middle,
+       ear-eustachian, ear-cochlea, ear-semicircular), so hot-spot areas can
+       be checked against them. -->
+  <rect width="600" height="420" fill="#FFFFFF"/>
+  <!-- temporal bone around the middle and inner ear -->
+  <path d="M232 70 C330 40 470 50 560 90 L560 360 C470 392 330 392 232 360 Z" fill="#EFE9E1" stroke="#B7A898" stroke-width="2"/>
+  <!-- auricle (the outer ear) -->
+  <path d="M120 60 C70 60 40 110 46 170 C50 220 70 250 92 280 C104 300 100 330 118 348 C130 360 150 352 150 334 L150 250 L150 150 C150 110 150 60 120 60 Z"
+    fill="#EDC2AB" stroke="#9C6E58" stroke-width="2.5"/>
+  <path d="M118 84 C90 88 72 120 74 164 C76 200 90 226 104 246" fill="none" stroke="#C48E74" stroke-width="3"/>
+  <!-- ear canal -->
+  <path id="ear-canal" fill="#F6DDD0" stroke="#9C6E58" stroke-width="2"
+    d="M148 176 C190 172 236 170 276 176 L292 180 L300 244 L280 246 C236 246 190 244 148 240 Z"/>
+  <!-- eardrum (tympanic membrane) -->
+  <path id="ear-tympanic" fill="#C9D3DC" stroke="#5F7484" stroke-width="2"
+    d="M290 172 L302 170 L316 250 L304 252 Z"/>
+  <!-- middle ear space -->
+  <path id="ear-middle" fill="#FFFFFF" stroke="#8E8173" stroke-width="2"
+    d="M304 160 C330 148 362 148 384 158 L392 250 C380 268 330 270 314 256 Z"/>
+  <!-- the three tiny bones: malleus, incus, stapes -->
+  <g fill="#E8DCC4" stroke="#8B7A5A" stroke-width="2" stroke-linejoin="round">
+    <path d="M306 182 L326 176 L332 186 L316 206 L308 204 Z"/>
+    <path d="M330 180 L348 178 L354 196 L344 214 L336 210 L340 194 Z"/>
+    <path d="M350 206 L372 198 L382 202 L382 216 L372 218 L352 214 Z"/>
+  </g>
+  <!-- eustachian tube, down toward the throat -->
+  <path id="ear-eustachian" fill="#F4E4DA" stroke="#9C7E70" stroke-width="2"
+    d="M352 262 L380 258 C398 296 420 326 446 352 L424 366 C398 340 374 308 352 262 Z"/>
+  <!-- semicircular canals -->
+  <path id="ear-semicircular" fill="#D7E6C9" stroke="#6E8A5A" stroke-width="2" fill-rule="evenodd"
+    d="M402 168 C392 120 412 80 446 78 C480 76 496 112 488 150 C484 168 474 178 462 182
+       L456 168 C466 162 472 152 474 140 C478 114 466 92 446 92 C422 94 410 126 416 164 Z
+       M440 182 C438 150 456 128 486 128 C516 130 532 152 528 176 C526 194 512 204 496 206
+       L494 192 C506 190 514 182 514 172 C516 156 504 142 486 142 C466 142 452 160 454 182 Z
+       M412 176 C380 168 362 142 372 118 C380 98 402 94 414 104 L406 116 C398 110 388 114 384 124 C378 140 392 158 418 162 Z"/>
+  <!-- vestibule -->
+  <ellipse cx="418" cy="200" rx="26" ry="20" fill="#E3EDD8" stroke="#6E8A5A" stroke-width="2"/>
+  <!-- cochlea, the snail-shaped spiral -->
+  <path id="ear-cochlea" fill="#F1D5C4" stroke="#A0705A" stroke-width="2"
+    d="M440 214 C478 206 512 226 514 262 C516 298 488 322 456 318 C424 314 406 288 410 260 C412 236 426 222 440 214 Z"/>
+  <g fill="none" stroke="#A0705A" stroke-width="2">
+    <path d="M462 300 C436 300 424 280 430 260 C436 242 458 236 474 246 C490 256 490 280 474 288 C462 294 448 286 450 272 C452 262 464 258 470 266"/>
+  </g>
+  <!-- nerve to the brain -->
+  <path d="M500 232 C530 226 556 222 590 220" fill="none" stroke="#E2B04A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M470 176 C500 190 520 206 534 222" fill="none" stroke="#E2B04A" stroke-width="5" stroke-linecap="round"/>
+  <g font-size="17" fill="#555555">
+    <text x="24" y="400">Outside of the head</text>
+    <text x="590" y="400" text-anchor="end">Toward the brain</text>
+  </g>
+</svg>

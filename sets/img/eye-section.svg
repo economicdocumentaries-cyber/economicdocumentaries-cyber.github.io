@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" font-family="Arial, Helvetica, sans-serif">
+  <title>Cross-section of the eye</title>
+  <!-- An original drawing for the Practice Exam Center: the eye seen from the
+       side, front on the left. The cornea, lens, macula, and optic nerve are
+       each their own shape with an id (eye-cornea, eye-lens, eye-macula,
+       eye-optic-nerve), so hot-spot areas can be checked against them. -->
+  <rect width="600" height="420" fill="#FFFFFF"/>
+  <!-- optic nerve, leaving the back of the eye -->
+  <path id="eye-optic-nerve" fill="#F2D9A6" stroke="#9A7A3A" stroke-width="2"
+    d="M452 220 C490 222 530 226 584 228 L584 280 C530 280 490 280 456 272 Z"/>
+  <path d="M470 236 C510 240 546 244 584 246 M470 256 C510 260 546 262 584 264" fill="none" stroke="#C9A866" stroke-width="2"/>
+  <!-- sclera (the white of the eye) -->
+  <circle cx="320" cy="210" r="150" fill="#FBFBF8" stroke="#8C6A5E" stroke-width="3"/>
+  <!-- choroid and retina, lining the back of the eye -->
+  <path d="M207 112 A142 142 0 1 1 207 308" fill="none" stroke="#9A5A4A" stroke-width="6"/>
+  <path d="M214 120 A132 132 0 1 1 214 300" fill="none" stroke="#E6A27E" stroke-width="7"/>
+  <!-- vitreous humor -->
+  <circle cx="320" cy="210" r="126" fill="#F3F8FB"/>
+  <!-- macula, at the center of the back of the retina -->
+  <ellipse id="eye-macula" cx="446" cy="204" rx="13" ry="30" fill="#E9C46A" stroke="#A8862E" stroke-width="2"/>
+  <circle cx="452" cy="204" r="4" fill="#B98A22"/>
+  <!-- cornea, the clear dome at the front -->
+  <path id="eye-cornea" fill="#DCEFF8" stroke="#5E8CA8" stroke-width="2.5"
+    d="M196 128 C128 150 128 270 196 292 C176 262 170 236 170 210 C170 184 176 158 196 128 Z"/>
+  <!-- aqueous humor in front of the lens -->
+  <path d="M196 132 C176 160 172 190 172 210 C172 232 176 260 196 288 L204 288 L204 132 Z" fill="#EEF7FB"/>
+  <!-- ciliary body and the ligaments that hold the lens -->
+  <g fill="#B5776A" stroke="#8C5A4E" stroke-width="1.5">
+    <path d="M206 130 L236 146 L214 158 Z"/>
+    <path d="M206 290 L236 274 L214 262 Z"/>
+  </g>
+  <g stroke="#B5776A" stroke-width="1.5">
+    <path d="M222 152 L226 166 M228 150 L232 164"/>
+    <path d="M222 268 L226 254 M228 270 L232 256"/>
+  </g>
+  <!-- iris, with the pupil between its two parts -->
+  <g fill="#5E86AC" stroke="#3E6080" stroke-width="2">
+    <path d="M202 140 L212 140 L212 190 L202 190 Z"/>
+    <path d="M202 230 L212 230 L212 280 L202 280 Z"/>
+  </g>
+  <!-- lens -->
+  <ellipse id="eye-lens" cx="232" cy="210" rx="20" ry="46" fill="#F3E8C8" stroke="#A88E52" stroke-width="2.5"/>
+  <!-- light coming in -->
+  <g stroke="#E0A11B" stroke-width="2.5" fill="none" stroke-dasharray="7 6">
+    <path d="M20 180 L150 192"/>
+    <path d="M20 240 L150 228"/>
+  </g>
+  <g font-size="17" fill="#555555">
+    <text x="20" y="168">Light</text>
+    <text x="20" y="400">Front of the eye</text>
+    <text x="580" y="400" text-anchor="end">Back of the eye</text>
+  </g>
+</svg>

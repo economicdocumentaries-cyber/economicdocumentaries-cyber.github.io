@@ -6,6 +6,7 @@
 // are published with the site files (SPEC 11.1).
 import { h, fill, modal, toast, fmtDate } from './util.js';
 import { groupStudyOn, connectStudent, problemText } from './firebase.js';
+import { arrange, newestGuide, guideKey, orderTools, dragSort, moved, readOrder, keepOrder } from './order.js';
 
 const LIMIT_MB = 5; // the same as for published files (tools/publish.py)
 export const MAX_GUIDE_BYTES = LIMIT_MB * 1024 * 1024;
@@ -50,10 +51,6 @@ export function readUploaded(value, courses = []) {
     }];
   }).sort((a, b) => naturally(a.exam, b.exam) || naturally(a.title, b.title));
 }
-
-// A class's guides, published and uploaded, in one list sorted by exam. Within
-// an exam, the published guides keep their order and come first.
-export const byExam = guides => guides.slice().sort((a, b) => naturally(a.exam, b.exam));
 
 // Calls onChange with the uploaded guides now and after every change. For the
 // homepage: problems are ignored, because it works the same without them.
@@ -153,10 +150,20 @@ async function upload(db, details, bytes, fileName, onProgress) {
 export function guidesConsole(section, db, { courses, sets, published }, accountLine) {
   document.title = 'Study guides · Host console';
   let uploaded = [];
-  let loaded = false;
+  let order = {};
+  let loaded = 0; // 1: /guides, 2: /order, 3: both
   let listProblem = null;
   let editing = null; // { id, el }: the guide whose details are being changed
   const listArea = h('div.guide-admin', h('p.lead', 'Loading the study guides…'));
+
+  // The order students see a class's guides in (SPEC 11.4); null for newest first.
+  async function saveOrder(code, keys) {
+    try {
+      await db.update(`order/${code}`, { guides: keys ? JSON.stringify(keys) : null });
+    } catch (err) {
+      toast(`The order wasn't saved. ${problemText(err)}`, 9000);
+    }
+  }
 
   if (!courses.length) {
     fill(section,
@@ -250,12 +257,14 @@ export function guidesConsole(section, db, { courses, sets, published }, account
     h('div.form-actions', uploadBtn));
 
   // --- what's on the site ---
-  function guideItem(guide) {
+  // tools: the grip and ▲ ▼ for this row (none while a guide's details are open).
+  function guideItem(guide, tools = null) {
     if (guide.uploaded && editing?.id === guide.id) return editing.el;
     const facts = guide.uploaded
       ? ['PDF', formatSize(guide.size), guide.added ? `Added ${fmtDate(guide.added, true)}` : null]
       : ['PDF', 'Published with the site files. To change it, ask Claude.'];
-    return h('li.set-row.guide-row',
+    return h('li.set-row.guide-row', { 'data-key': guideKey(guide) },
+      tools,
       h('div.set-info',
         h('p.set-exam', h('span.tag', guide.exam)),
         h('h4', guide.title),
@@ -273,7 +282,7 @@ export function guidesConsole(section, db, { courses, sets, published }, account
       fill(listArea, h('h2.section-title', 'On the site now'), h('p.notice', problemText(listProblem)));
       return;
     }
-    if (!loaded) return;
+    if (loaded !== 3) return;
     const total = uploaded.reduce((sum, g) => sum + Math.ceil(g.size / 3) * 4, 0); // stored as base64 text
     const share = (total / FREE_STORAGE) * 100;
     const known = new Set(courses.map(c => c.code));
@@ -284,12 +293,21 @@ export function guidesConsole(section, db, { courses, sets, published }, account
         ? `${plural(uploaded.length, 'uploaded guide')} · about ${formatSize(total)} of the free 1 GB (${share < 0.1 ? 'under 0.1' : share.toFixed(1)}%)`
         : 'No uploaded guides yet.'),
       courses.map(c => {
-        const list = byExam([...published.filter(g => g.course === c.code), ...uploaded.filter(g => g.course === c.code)]);
+        // In the order students see them; drag a guide's grip, or use ▲ ▼, to move it.
+        const list = arrange([...published.filter(g => g.course === c.code), ...uploaded.filter(g => g.course === c.code)],
+          guideKey, order[c.code]?.guides, newestGuide);
+        const keys = list.map(guideKey);
+        const canMove = list.length > 1 && !editing;
+        const ul = h('ul.set-list', { class: canMove ? 'orderable' : null }, list.map((g, i) => guideItem(g,
+          canMove ? orderTools(g.title, i, list.length, to => saveOrder(c.code, moved(keys, i, to))) : null)));
+        if (canMove) dragSort(ul, next => saveOrder(c.code, next));
         return h('section.guide-class',
           h('div.guide-class-head',
             h('h3.guide-class-title', `${c.code} · ${c.name}`),
-            h('a.link-btn', { href: `#/class/${encodeURIComponent(c.code)}` }, 'See it as students do')),
-          list.length ? h('ul.set-list', list.map(guideItem)) : h('p.empty-note', 'No study guides for this class yet.'));
+            h('span.set-class-links',
+              order[c.code]?.guides ? h('button.link-btn', { type: 'button', onclick: () => saveOrder(c.code, null) }, 'Newest first') : null,
+              h('a.link-btn', { href: `#/class/${encodeURIComponent(c.code)}` }, 'See it as students do'))),
+          list.length ? ul : h('p.empty-note', 'No study guides for this class yet.'));
       }),
       lost.length ? h('section.guide-class',
         h('h3.guide-class-title', 'Not on the site'),
@@ -360,7 +378,7 @@ export function guidesConsole(section, db, { courses, sets, published }, account
   }
 
   const stop = db.watch('guides', value => {
-    loaded = true;
+    loaded |= 1;
     listProblem = null;
     uploaded = readUploaded(value, courses);
     if (editing && !uploaded.some(g => g.id === editing.id)) editing = null;
@@ -369,13 +387,25 @@ export function guidesConsole(section, db, { courses, sets, published }, account
     listProblem = err;
     paintList();
   });
+  const stopOrder = db.watch('order', value => {
+    order = readOrder(value);
+    keepOrder(order);
+    loaded |= 2;
+    paintList();
+  }, err => {
+    listProblem = err;
+    paintList();
+  });
 
   fill(section,
     h('h1.page-title', 'Study guides'),
-    h('p.lead', 'Upload a PDF to a class. Students see it on that class\'s tab on the homepage right away, with no publishing needed. Anyone who opens the site can download it.'),
+    h('p.lead', 'Upload a PDF to a class. Students see it on that class\'s tab on the homepage right away, with no publishing needed, newest first. To change the order, drag a guide by its grip (⠿), or use ▲ ▼. Anyone who opens the site can download a guide.'),
     form,
     listArea,
     accountLine());
   suggestExams();
-  return () => stop();
+  return () => {
+    stop();
+    stopOrder();
+  };
 }

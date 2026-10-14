@@ -2,7 +2,7 @@
 // Auth. Students sign in anonymously and invisibly; the host signs in with
 // email and password. Firebase's code is only downloaded when firebaseConfig
 // in config.js is filled in, so the rest of the site works without it.
-import { firebaseConfig } from './config.js';
+import { firebaseConfig, HOST_UID } from './config.js';
 
 const SDK = 'https://www.gstatic.com/firebasejs/10.12.2';
 
@@ -55,6 +55,22 @@ export async function connectStudent() {
     await anonymousSignIn;
   }
   return database(fb);
+}
+
+// Saved on a browser where the host has signed in (group.js), so students'
+// browsers never even check hostSignedIn().
+export const HOST_HINT = 'pe.host';
+
+// Is the host signed in on this browser? (For the host's Student view; it
+// never signs anyone in.)
+export async function hostSignedIn() {
+  if (!groupStudyOn() || !HOST_UID) return false;
+  try {
+    const user = await signedInUser(await start());
+    return !!user && !user.isAnonymous && user.uid === HOST_UID;
+  } catch {
+    return false;
+  }
 }
 
 // For the host page. user is null unless someone is signed in with email and

@@ -10,15 +10,25 @@ import {
   DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, countsForBest,
 } from './exam.js';
 import { groupView, hostView, liveBanner } from './group.js';
-import { watchUploadedGuides, downloadButton, guideFileName, formatSize, byExam } from './study-guides.js';
+import { watchUploadedGuides, downloadButton, guideFileName, formatSize } from './study-guides.js';
 import { withChanges, cachedChanges, watchChanges, currentChanges } from './set-changes.js';
+import { arrange, newestSet, newestGuide, guideKey, cachedOrder, watchOrder } from './order.js';
+import { hostSignedIn, HOST_HINT } from './firebase.js';
 
 const app = document.getElementById('app');
 
 // ---------- shared ----------
 
 function page(main) {
-  return h('div.page', siteHeader(), main, siteFooter());
+  const el = h('div.page', siteHeader(), main, siteFooter());
+  // The host's "Student view" (SPEC 11.4): the host sees the pages exactly as
+  // students do, plus a button back to the host console. Students never see it.
+  if (store.get(HOST_HINT)) {
+    hostSignedIn().then(yes => {
+      if (yes && el.isConnected) el.append(h('a.host-pill', { href: '#/host' }, '← Back to host view'));
+    });
+  }
+  return el;
 }
 
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
@@ -66,16 +76,20 @@ async function homeView(root, { args, isCurrent }) {
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
   const lists = h('div.home-lists');
   let groups = null, single = null, uploaded = [], painted = null;
+  let changes = cachedChanges();
+  let order = cachedOrder();
 
-  // The sets with the host's changes (SPEC 11.3): the ones last seen on this
-  // browser at first, then Firebase's, and again after every change.
-  function paint(changes) {
-    const key = JSON.stringify(changes);
+  // The sets with the host's changes (SPEC 11.3), in the host's order (SPEC
+  // 11.4): the ones last seen on this browser at first, then Firebase's, and
+  // again after every change.
+  function paint() {
+    const key = JSON.stringify([changes, order]);
     if (key === painted) return;
     painted = key;
     const visible = withChanges(sets, changes, courses).filter(s => !s.hidden);
     groups = classGroups(courses, visible, guides);
-    single = groups ? null : { course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
+    single = groups ? null : { key: 'other', course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
+    for (const g of groups ?? [single]) g.order = order[g.key] ?? {};
     const tab = /^#\/class\/([^/]+)/.exec(location.hash)?.[1]; // the tab showing now, after a repaint too
     fill(lists, groups ? classTabs(groups, tab ? decodeURIComponent(tab) : args[0])
       : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'));
@@ -89,8 +103,15 @@ async function homeView(root, { args, isCurrent }) {
     resumeBanner(),
     lists,
     problems.length ? problemsPanel(problems) : null);
-  paint(cachedChanges());
-  const stopChanges = watchChanges(paint);
+  paint();
+  const stopChanges = watchChanges(c => {
+    changes = c;
+    paint();
+  });
+  const stopOrder = watchOrder(o => {
+    order = o;
+    paint();
+  });
   // Guides the host uploads (SPEC 11.2) come from Firebase, and appear as soon as they're added.
   const stopGuides = watchUploadedGuides(courses, list => {
     uploaded = list;
@@ -99,6 +120,7 @@ async function homeView(root, { args, isCurrent }) {
   return () => {
     live.stop();
     stopChanges();
+    stopOrder();
     stopGuides();
   };
 }
@@ -118,21 +140,23 @@ function classGroups(courses, sets, guides) {
   return groups;
 }
 
-// A class's practice exams, then its study guides (SPEC 11), sorted by exam:
-// the published ones, and the ones the host uploaded (SPEC 11.2), which
-// group.paintGuides(uploaded) adds when they arrive. Other never has study
-// guides; the no-classes list shows them only when there are some.
+// A class's practice exams, then its study guides (SPEC 11), each in the
+// host's order, newest first otherwise (SPEC 11.4): the published guides, and
+// the ones the host uploaded (SPEC 11.2), which group.paintGuides(uploaded)
+// adds when they arrive. Other never has study guides; the no-classes list
+// shows them only when there are some.
 function homeLists(group, noSets) {
+  const sets = arrange(group.sets, s => s.id, group.order?.sets, newestSet); // the host's order (SPEC 11.4)
   const exams = h('section.home-section',
     h('h2.section-title', 'Practice exams'),
-    group.sets.length ? h('ul.set-list', group.sets.map(setRow)) : h('p.empty-note', noSets));
+    sets.length ? h('ul.set-list', sets.map(setRow)) : h('p.empty-note', noSets));
   group.paintGuides = () => {};
   if (!group.course && !group.allClasses) return exams;
   const list = h('ul.set-list');
   const empty = h('p.empty-note', 'No study guides for this class yet.');
   const guides = h('section.home-section', h('h2.section-title', 'Study guides'), list, empty);
   group.paintGuides = (uploaded = []) => {
-    const all = byExam([...group.guides, ...uploaded.filter(g => !group.course || g.course === group.course.code)]);
+    const all = arrange([...group.guides, ...uploaded.filter(g => !group.course || g.course === group.course.code)], guideKey, group.order?.guides, newestGuide);
     fill(list, all.map(guideRow));
     list.hidden = !all.length;
     empty.hidden = !!all.length;

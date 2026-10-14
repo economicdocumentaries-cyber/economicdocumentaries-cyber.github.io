@@ -43,6 +43,7 @@ export function readChanges(value) {
     if (Number.isInteger(c.defaultCount) && c.defaultCount >= 0) clean.defaultCount = c.defaultCount;
     if (typeof c.hidden === 'boolean') clean.hidden = c.hidden;
     if (c.created === true) clean.created = true;
+    if (Number(c.createdAt) > 0) clean.createdAt = Number(c.createdAt);
     const questions = parsed(c.questions, isList);
     if (questions) {
       clean.questions = questions;
@@ -88,6 +89,7 @@ export function withChanges(sets, changes, courses = [], { keepHidden = false } 
       if ('exam' in c && (c.exam || !set.course)) set.exam = c.exam || null;
       if ('defaultCount' in c) set.defaultCount = c.defaultCount || null;
       if ('hidden' in c) set.hidden = c.hidden;
+      if (c.createdAt) set.createdAt = c.createdAt; // for "newest first" (js/order.js)
       if (c.questions) {
         const edited = { ...set, questions: c.questions, cases: c.cases };
         if (!validateSet(edited).length) set = { ...edited, edited: true };

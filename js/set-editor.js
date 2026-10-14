@@ -15,6 +15,7 @@ import { problemText } from './firebase.js';
 import { typeLabel, validateSet, validateQuestion, keyResponse } from './items.js';
 import { defaultCount, questionParts, feedbackPanel, startExam, activeExam, DEFAULT_SETTINGS, PRESETS } from './exam.js';
 import { LIMITS, readChanges, readDrafts, withChanges, keepChanges } from './set-changes.js';
+import { arrange, newestSet, orderTools, dragSort, moved, readOrder, keepOrder } from './order.js';
 
 // The types this editor writes, and the fields each one's form manages.
 const MANAGED = {
@@ -94,22 +95,33 @@ function saveFile(name, text) {
   setTimeout(() => URL.revokeObjectURL(url), 60000);
 }
 
-// ---------- #/host/sets: every set ----------
+// ---------- #/host/sets: every set, in the order students see them ----------
 
 // sets: the way their files have them (from loadSets). Returns a function that stops it.
 export function setsConsole(section, db, { sets, courses }, accountLine) {
   document.title = 'Question sets · Host console';
   let changes = {};
   let drafts = {};
+  let order = {};
   let raw = { setInfo: null, setDrafts: null }; // for the backup, exactly as the database has it
-  let loaded = 0; // 1: /setInfo, 2: /setDrafts, 3: both
+  let loaded = 0; // 1: /setInfo, 2: /setDrafts, 4: /order; 7: all three
   let listProblem = null;
   let editing = null; // { id, el }: the set whose details are being changed
   const listArea = h('div.set-admin', h('p.lead', 'Loading the question sets…'));
   const newArea = h('div');
   const all = () => withChanges(sets, changes, courses, { keepHidden: true });
 
-  function setItem(set, forStudents) {
+  // The order students see a class's sets in (SPEC 11.4); null for newest first.
+  async function saveOrder(key, keys) {
+    try {
+      await db.update(`order/${key}`, { sets: keys ? JSON.stringify(keys) : null });
+    } catch (err) {
+      toast(`The order wasn't saved. ${problemText(err)}`, 9000);
+    }
+  }
+
+  // tools: the grip and ▲ ▼ for this row (none while a set's details are open).
+  function setItem(set, forStudents, tools) {
     if (editing?.id === set.id) return editing.el;
     const shown = visible(set.questions);
     const hidden = set.questions.length - shown.length;
@@ -122,7 +134,8 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
       !set.made && set.edited ? 'Questions edited here' : null,
       drafts[set.id] ? h('b', 'Draft not published yet') : null,
     ].filter(Boolean);
-    return h('li.set-row',
+    return h('li.set-row', { 'data-key': set.id },
+      tools,
       h('div.set-info',
         set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
         h('h3', set.title),
@@ -142,17 +155,28 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
       fill(listArea, h('p.notice', problemText(listProblem)));
       return;
     }
-    if (loaded !== 3) return;
+    if (loaded !== 7) return;
     const list = all();
     const forStudents = new Set(withChanges(sets, changes, courses).map(s => s.id));
     const groups = courses.map(c => ({ key: c.code, label: `${c.code} · ${c.name}`, list: list.filter(s => s.course === c.code) }));
     const other = list.filter(s => !courses.some(c => c.code === s.course));
     if (other.length || !courses.length) groups.push({ key: 'other', label: courses.length ? 'Other' : 'Question sets', list: other });
-    fill(listArea, groups.map(g => h('section.set-class',
-      h('div.set-class-head',
-        h('h2.set-class-title', g.label),
-        courses.length ? h('a.link-btn', { href: `#/class/${encodeURIComponent(g.key)}` }, 'See it as students do') : null),
-      g.list.length ? h('ul.set-list', g.list.map(s => setItem(s, forStudents))) : h('p.empty-note', 'No question sets for this class yet.'))));
+    fill(listArea, groups.map(g => {
+      // In the order students see them; drag a set's grip, or use ▲ ▼, to move it.
+      const ordered = arrange(g.list, s => s.id, order[g.key]?.sets, newestSet);
+      const keys = ordered.map(s => s.id);
+      const canMove = ordered.length > 1 && !editing;
+      const ul = h('ul.set-list', { class: canMove ? 'orderable' : null }, ordered.map((s, i) => setItem(s, forStudents,
+        canMove ? orderTools(s.title, i, ordered.length, to => saveOrder(g.key, moved(keys, i, to))) : null)));
+      if (canMove) dragSort(ul, next => saveOrder(g.key, next));
+      return h('section.set-class',
+        h('div.set-class-head',
+          h('h2.set-class-title', g.label),
+          h('span.set-class-links',
+            order[g.key]?.sets ? h('button.link-btn', { type: 'button', onclick: () => saveOrder(g.key, null) }, 'Newest first') : null,
+            courses.length ? h('a.link-btn', { href: `#/class/${encodeURIComponent(g.key)}` }, 'See it as students do') : null)),
+        ordered.length ? ul : h('p.empty-note', 'No question sets for this class yet.'));
+    }));
   }
 
   // The class select and exam box shared by the New set and Edit forms.
@@ -191,7 +215,7 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
         if (!details.title) return fail('Type a name for the set.', title);
         if (details.course && !details.exam) return fail('Type which exam or unit it\'s for, like "Exam 4". A set in a class needs one.', exam);
         const id = newSetId(details.title, details.course, new Set([...sets.map(s => s.id), ...Object.keys(changes)]));
-        const record = { title: details.title, created: true, editedAt: db.serverTime() };
+        const record = { title: details.title, created: true, createdAt: db.serverTime(), editedAt: db.serverTime() };
         for (const key of ['course', 'exam', 'description']) if (details[key]) record[key] = details[key];
         create.disabled = true;
         try {
@@ -376,10 +400,19 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
     listProblem = err;
     paintList();
   });
+  const stopOrder = db.watch('order', value => {
+    order = readOrder(value);
+    keepOrder(order);
+    loaded |= 4;
+    paintList();
+  }, err => {
+    listProblem = err;
+    paintList();
+  });
 
   fill(section,
     h('h1.page-title', 'Question sets'),
-    h('p.lead', 'Change a set\'s name, description, class, or exam, how many questions an exam has, or hide it from students. Click Questions to add, edit, or hide its questions. Students see your changes right away, with no publishing to GitHub needed.'),
+    h('p.lead', 'Change a set\'s name, description, class, or exam, how many questions an exam has, or hide it from students. Click Questions to add, edit, or hide its questions. Drag a set by its grip (⠿), or use ▲ ▼, to change the order students see. Students see your changes right away, with no publishing to GitHub needed.'),
     h('div.console-tools',
       h('button.btn.btn-accent', { type: 'button', onclick: newSet }, 'New set'),
       h('button.btn', { type: 'button', onclick: backup }, 'Download a backup')),
@@ -389,6 +422,7 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
   return () => {
     stopInfo();
     stopDrafts();
+    stopOrder();
   };
 }
 
@@ -683,7 +717,8 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
   const rationale = h('textarea.text-input#qe-rationale', { rows: '6', value: toText(q?.rationale) });
   const typeArea = h('div.qe-type-area');
   const problemsBox = h('div.qe-problems', { role: 'alert' });
-  const preview = h('div.qe-preview');
+  const waiting = () => [h('p.qe-preview-title', 'Preview'), h('p.field-help', 'The preview appears when the question is complete.')];
+  const preview = h('div.qe-preview', waiting());
   const save = h('button.btn.btn-accent', { type: 'submit' }, isNew ? 'Add to draft' : 'Save in draft');
 
   function useType(t, carried = {}) {
@@ -712,7 +747,7 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
     timer = setTimeout(() => {
       const { question, problems } = build();
       fill(problemsBox, tried && problems.length ? h('ul', problems.map(p => h('li', p))) : null);
-      if (problems.length) fill(preview, h('p.qe-preview-title', 'Preview'), h('p.field-help', 'The preview appears when the question is complete.'));
+      if (problems.length) fill(preview, waiting());
       else {
         const key = keyResponse(question);
         fill(preview,

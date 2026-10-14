@@ -13,7 +13,7 @@ import { prepareItem, isAnswered, scoreItem, keyResponse, unansweredMessage } fr
 import { questionParts, questionArea, feedbackPanel, chooseQuestions } from './exam.js';
 import { createCalculator } from './calc.js';
 import { loadSets } from './sets.js';
-import { groupStudyOn, connectStudent, hostAccount, problemText } from './firebase.js';
+import { groupStudyOn, connectStudent, hostAccount, problemText, HOST_HINT } from './firebase.js';
 import { guidesConsole } from './study-guides.js';
 import { withChanges, currentChanges } from './set-changes.js';
 import { setsConsole, questionsPage } from './set-editor.js';
@@ -840,12 +840,15 @@ export async function hostView(root, { args = [], isCurrent }) {
 }
 
 // The host console's menu. Each page has its own link, so it can be bookmarked.
+// Student view (SPEC 11.4) opens the homepage exactly as students see it; a
+// "Back to host view" button there (app.js) comes back here.
 function hostMenu(area) {
   const item = (key, href, label) => h('a.host-menu-link', { href, 'aria-current': area === key ? 'page' : null }, label);
   return h('nav.host-menu', { 'aria-label': 'Host console' },
     item('group', '#/host', 'Group study'),
     item('sets', '#/host/sets', 'Question sets'),
-    item('guides', '#/host/guides', 'Study guides'));
+    item('guides', '#/host/guides', 'Study guides'),
+    h('a.btn.btn-small.student-view', { href: '#/' }, 'Student view'));
 }
 
 // The start form's list of sets, grouped by class when the sets have classes (SPEC 11).
@@ -867,6 +870,7 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId) {
     if (!HOST_UID) showUid(user);
     else if (user.uid !== HOST_UID) showWrongAccount(user);
     else {
+      store.set(HOST_HINT, true); // so the pages students see offer "Back to host view" on this browser
       const section = h('div.host-section');
       fill(main, hostMenu(area), section);
       const db = account.database();
@@ -899,6 +903,7 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId) {
         onclick: async () => {
           stopConsole();
           stopConsole = () => {};
+          store.del(HOST_HINT);
           await account.signOut().catch(() => {});
           if (!closed) showSignIn();
         },

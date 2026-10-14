@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" font-family="Arial, Helvetica, sans-serif">
+  <title>Cross-section of the skin</title>
+  <!-- An original drawing for the Practice Exam Center: a cross-section of the
+       skin, surface at the top. Each layer and gland is its own shape with an
+       id (skin-epidermis, skin-dermis, skin-hypodermis, skin-sebaceous,
+       skin-sweat), so hot-spot areas can be checked against it. -->
+  <rect width="600" height="420" fill="#FFFFFF"/>
+  <!-- muscle below the skin -->
+  <rect x="20" y="372" width="560" height="38" fill="#D99A93" stroke="#8C5A55" stroke-width="2"/>
+  <g stroke="#B9726B" stroke-width="2">
+    <path d="M30 382 H570 M30 392 H570 M30 402 H570"/>
+  </g>
+  <!-- hypodermis: fat -->
+  <path id="skin-hypodermis" fill="#FBEBC4" stroke="#B89A55" stroke-width="2" d="M20 262 H580 V372 H20 Z"/>
+  <g fill="#FFF6DD" stroke="#D2B676" stroke-width="1.5">
+    <circle cx="60" cy="300" r="20"/><circle cx="104" cy="334" r="22"/><circle cx="150" cy="292" r="19"/>
+    <circle cx="210" cy="336" r="21"/><circle cx="268" cy="296" r="20"/><circle cx="318" cy="340" r="19"/>
+    <circle cx="372" cy="298" r="21"/><circle cx="428" cy="338" r="20"/><circle cx="486" cy="296" r="20"/>
+    <circle cx="540" cy="336" r="21"/>
+  </g>
+  <!-- dermis -->
+  <path id="skin-dermis" fill="#F4D6CC" stroke="#A9786A" stroke-width="2"
+    d="M20 108 C40 96 56 120 76 108 C96 96 112 120 132 108 C152 96 168 120 188 108 C208 96 224 120 244 108 C264 96 280 120 300 108 C320 96 336 120 356 108 C376 96 392 120 412 108 C432 96 448 120 468 108 C488 96 504 120 524 108 C544 96 560 120 580 108 V262 H20 Z"/>
+  <!-- blood vessels in the dermis -->
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M30 236 C120 226 200 246 300 234 C400 222 480 244 570 232" stroke="#C0453E"/>
+    <path d="M30 248 C120 240 200 258 300 247 C400 236 480 256 570 246" stroke="#4E6FA8"/>
+    <path d="M120 236 C122 200 116 170 126 140" stroke="#C0453E" stroke-width="2.5"/>
+    <path d="M470 238 C468 200 474 170 462 138" stroke="#C0453E" stroke-width="2.5"/>
+  </g>
+  <!-- epidermis -->
+  <path id="skin-epidermis" fill="#E8BFA8" stroke="#8C6A5E" stroke-width="2"
+    d="M20 62 H580 V108 C560 120 544 96 524 108 C504 120 488 96 468 108 C448 120 432 96 412 108 C392 120 376 96 356 108 C336 120 320 96 300 108 C280 120 264 96 244 108 C224 120 208 96 188 108 C168 120 152 96 132 108 C112 120 96 96 76 108 C56 120 40 96 20 108 Z"/>
+  <path d="M20 62 H580 V70 H20 Z" fill="#D9A48C" stroke="none"/>
+  <!-- hair: shaft above the skin, follicle down into the hypodermis -->
+  <path d="M300 62 C296 40 304 22 296 6" fill="none" stroke="#4A3328" stroke-width="5" stroke-linecap="round"/>
+  <path d="M290 62 L286 270 C284 288 316 288 314 270 L310 62 Z" fill="#EBC9B9" stroke="#8C6A5E" stroke-width="2"/>
+  <path d="M300 58 L300 266" stroke="#4A3328" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="300" cy="276" rx="16" ry="12" fill="#C98F78" stroke="#8C6A5E" stroke-width="2"/>
+  <!-- arrector pili muscle -->
+  <path d="M312 190 L352 116" stroke="#C47A72" stroke-width="5" stroke-linecap="round"/>
+  <!-- sebaceous gland, beside the follicle -->
+  <path id="skin-sebaceous" fill="#F7E3A8" stroke="#A88A3A" stroke-width="2"
+    d="M286 132 C270 118 244 120 236 136 C228 152 238 172 256 174 C246 186 258 204 274 198 C284 194 288 182 288 172 Z"/>
+  <!-- eccrine sweat gland: a coil deep in the dermis, with its duct to a pore -->
+  <path d="M470 62 C474 90 462 120 470 150 C478 180 462 200 470 214" fill="none" stroke="#6B8FB0" stroke-width="4"/>
+  <path id="skin-sweat" fill="#CFE3F2" stroke="#4E6F90" stroke-width="2"
+    d="M440 214 C440 198 458 194 470 202 C484 192 504 200 502 216 C516 222 512 244 496 246 C496 258 476 262 466 252 C452 260 436 252 440 238 C428 232 430 216 440 214 Z"/>
+  <g fill="none" stroke="#4E6F90" stroke-width="2">
+    <path d="M452 220 C462 212 476 216 470 226 C464 236 480 240 488 230"/>
+  </g>
+  <!-- nerve ending -->
+  <path d="M160 250 C158 210 168 170 150 124" fill="none" stroke="#E2B04A" stroke-width="3"/>
+  <ellipse cx="150" cy="122" rx="9" ry="13" fill="#F3D27A" stroke="#B88A2A" stroke-width="2"/>
+  <g font-size="16" fill="#555555">
+    <text x="30" y="52">Skin surface</text>
+    <text x="512" y="398" text-anchor="middle" fill="#FFFFFF">Muscle</text>
+  </g>
+</svg>
