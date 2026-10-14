@@ -1,0 +1,1507 @@
+{
+  "id": "nu1120-exam-3-practice-exam",
+  "title": "Exam 3 Practice Exam",
+  "description": "All three Exam 3 topics in one practice exam: the integumentary system, the nervous system, and the senses. Each exam gives 25 of the 150 questions, spread evenly across the three topics.",
+  "course": "NU1120",
+  "exam": "Exam 3",
+  "timeMinutes": 225,
+  "defaultCount": 25,
+  "cases": {
+    "heel": {
+      "intro": "A nurse is caring for a 74-year-old client on a medical-surgical unit, 3 days after surgery to repair a fractured right hip.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>Day 3, 0800:</b></p><p>Client is alert and oriented. Reports right hip pain of 6 on a scale of 0 to 10 and prefers to stay on the back, because turning hurts. Has eaten about one-quarter of each meal for 2 days and takes only small sips of water. Was incontinent of urine overnight; the sheets were damp at 0600. Skin over the sacrum is intact. Right heel: a 3&nbsp;cm area of dark red skin that does not blanch when pressed; the skin is intact, with no blister. Left heel: intact, and the color matches the surrounding skin. Client has type 2 diabetes mellitus and reports decreased feeling in both feet.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Vital sign</th><th>Day 3, 0800</th></tr></thead><tbody><tr><td>Temperature</td><td>37.1°&nbsp;C (98.8°&nbsp;F)</td></tr><tr><td>Heart rate</td><td>84/min</td></tr><tr><td>Respiratory rate</td><td>18/min</td></tr><tr><td>Blood pressure</td><td>134/78&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>96% on room air</td></tr></tbody></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results</h4><table><thead><tr><th>Test</th><th>Result</th><th>Reference range</th></tr></thead><tbody><tr><td>White blood cells</td><td>8,200/mm³</td><td>5,000 to 10,000/mm³</td></tr><tr><td>Hemoglobin</td><td>11.6&nbsp;g/dL</td><td>12 to 17.5&nbsp;g/dL</td></tr><tr><td>Albumin</td><td>3.0&nbsp;g/dL</td><td>3.5 to 5.0&nbsp;g/dL</td></tr><tr><td>Blood glucose</td><td>186&nbsp;mg/dL</td><td>70 to 99&nbsp;mg/dL (fasting)</td></tr></tbody></table>"
+        }
+      ]
+    },
+    "confusion": {
+      "intro": "A nurse is caring for a 76-year-old client who was admitted to the medical unit yesterday with pneumonia. The client's primary language is Portuguese.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>0800:</b></p><p>Assessment completed with a Portuguese medical interpreter by phone. Client is alert and oriented to person, place, time, and situation, and follows directions. Pupils are equal, round, and reactive to light. Hand grips are strong and equal. Productive cough. Walks to the bathroom with a walker. Oxygen started at 2&nbsp;L/min by nasal cannula for an oxygen saturation of 91%.</p><p><b>1900:</b></p><p>Client is restless and pulling at the IV tubing, and keeps asking in Portuguese where she is. Through the phone interpreter, the client does not know the day or the name of the hospital, and has trouble following directions. Speech is clear. Pupils are equal, round, and reactive to light. Hand grips are strong and equal. The client's daughter, at the bedside, states that her mother lives alone and manages her own medications, and that the confusion started this afternoon. The daughter asks the staff to give all health information to her first, because in their family, decisions are made together.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Vital sign</th><th>0800</th><th>1900</th></tr></thead><tbody><tr><td>Temperature</td><td>37.6°&nbsp;C (99.7°&nbsp;F)</td><td>38.9°&nbsp;C (102°&nbsp;F)</td></tr><tr><td>Heart rate</td><td>88/min</td><td>108/min</td></tr><tr><td>Respiratory rate</td><td>20/min</td><td>24/min</td></tr><tr><td>Blood pressure</td><td>134/80&nbsp;mm&nbsp;Hg</td><td>126/76&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>91% on room air</td><td>95% on 2&nbsp;L/min</td></tr></tbody></table>"
+        },
+        {
+          "title": "Neurological Checks",
+          "html": "<h4>Neurological Checks</h4><table><thead><tr><th>Finding</th><th>0800</th><th>1900</th></tr></thead><tbody><tr><td>Level of consciousness</td><td>Alert</td><td>Alert, restless</td></tr><tr><td>Orientation</td><td>Person, place, time, and situation</td><td>Person only</td></tr><tr><td>Follows directions</td><td>Yes</td><td>With difficulty</td></tr><tr><td>Speech</td><td>Clear</td><td>Clear</td></tr><tr><td>Pupils</td><td>Equal, round, reactive to light, 3&nbsp;mm</td><td>Equal, round, reactive to light, 3&nbsp;mm</td></tr><tr><td>Hand grips</td><td>Strong and equal</td><td>Strong and equal</td></tr></tbody></table>"
+        }
+      ]
+    },
+    "hearing": {
+      "intro": "A nurse at an outpatient clinic is checking the blood pressure of a 78-year-old client who lives alone. The client's granddaughter drove the client to the visit.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>1000:</b></p><p>Client asks the nurse to repeat several questions and leans toward the nurse while the nurse speaks. Denies ear pain, drainage, or dizziness. Watches the nurse's lips closely. States, “At church dinners I know people are talking to me, but I can't make out what they're saying.”</p><p>Otoscopic exam: ear canals clear, with no cerumen buildup. Tympanic membranes intact and pearly gray.</p><p>The granddaughter reports that the client often misses phone calls and keeps the television very loud, and that the problem has crept up slowly over several years.</p><p>Blood pressure 136/82&nbsp;mm&nbsp;Hg.</p>"
+        },
+        {
+          "title": "Health History",
+          "html": "<h4>Health History</h4><p><b>Medical history:</b> hypertension, osteoarthritis of both knees</p><p><b>Medications:</b> amlodipine 5&nbsp;mg by mouth daily; acetaminophen as needed for knee pain</p><p><b>Work history:</b> 30 years in a printing plant with loud machinery</p><p><b>Family history:</b> mother had hearing loss in her 70s</p>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "is-01",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the layers of the epidermis. Which layer contains the stem cells that divide to replace skin cells, along with the melanocytes that make melanin?",
+      "options": ["Stratum corneum", "Stratum basale", "Stratum lucidum", "Stratum granulosum"],
+      "answer": 1,
+      "rationale": "<p>The <b>stratum basale</b> (basal layer, also called the stratum germinativum) is the deepest layer of the epidermis, next to the dermis. It is mitotically active: its stem cells divide, and the new keratinocytes move upward to form the other layers. It also holds the <b>melanocytes</b>, which make melanin.</p><p>The <b>stratum corneum</b> is the outermost layer of flat, keratinized cells that limits water loss; its cells no longer divide. The <b>stratum lucidum</b> is a clear layer found only in the thick skin of the palms and soles. In the <b>stratum granulosum</b>, cells fill with lipid-rich granules and begin to lose their nuclei as they move away from the blood supply in the dermis.</p>"
+    },
+    {
+      "id": "is-02",
+      "type": "order",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the structure of the thick skin on the palm of the hand. Place the layers of the epidermis in order, from the deepest layer to the skin surface.",
+      "items": ["Stratum basale", "Stratum spinosum", "Stratum granulosum", "Stratum lucidum", "Stratum corneum"],
+      "rationale": "<p>From deepest to surface: the <b>stratum basale</b> (dividing cells and melanocytes, next to the dermis), the <b>stratum spinosum</b> (several layers of keratinocytes held together by desmosomes, which look like spines), the <b>stratum granulosum</b> (cells with lipid-rich granules that begin to lose their nuclei), the <b>stratum lucidum</b> (a clear layer found only in the thick skin of the palms and soles), and the <b>stratum corneum</b> (the outer keratin layer that limits water loss).</p><p>Keratinocytes form in the basal layer and mature as they move outward. In skin other than the palms and soles, there is no stratum lucidum, so the granulosum lies directly under the corneum.</p>"
+    },
+    {
+      "id": "is-03",
+      "type": "hotspot",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing a cross-section of the skin. Click the layer that has no blood vessels of its own and is made mostly of keratinocytes.",
+      "image": "img/skin-layers.svg",
+      "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
+      "regions": [{"x": 3.7, "y": 15.2, "w": 44.3, "h": 9.0}, {"x": 52.0, "y": 15.2, "w": 44.3, "h": 9.0}],
+      "rationale": "<p>The <b>epidermis</b>, the thin top layer, is <b>avascular</b>: it has no blood vessels, so its cells get nutrients by diffusion from the dermis below. About 90% of its cells are <b>keratinocytes</b>, which form a barrier against heat, UV radiation, dehydration, and microorganisms.</p><p>The <b>dermis</b>, the thicker middle layer, is connective tissue rich in collagen, with blood vessels, nerve endings, hair follicles, and glands. The <b>hypodermis</b> (subcutaneous layer), the deep layer of fat, cushions the body, insulates it, stores energy, and anchors the skin to the tissues below.</p>"
+    },
+    {
+      "id": "is-04",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the dermis. Which statements describe the dermis?",
+      "options": ["It is the outermost layer that limits water loss.", "It contains blood vessels that nourish the epidermis.", "It is connective tissue made mostly of collagen.", "It is avascular and gets its nutrients by diffusion.", "Hair follicles and sweat glands are found in it.", "It contains nerve endings and mechanoreceptors."],
+      "answer": [1, 2, 4, 5],
+      "rationale": "<p>The <b>dermis</b> is a connective tissue layer whose main component is <b>collagen</b>, which gives the skin strength and flexibility. Its <b>blood vessels</b> feed the epidermis and support the inflammatory response, it holds <b>nerve endings and mechanoreceptors</b> for sensation, and <b>hair follicles and glands</b> sit in it (sweat glands can reach down into the subcutaneous layer).</p><p>The <b>outermost layer that limits water loss</b> is the stratum corneum of the epidermis, not the dermis. The <b>epidermis</b>, not the dermis, is avascular and gets its nutrients by diffusion from the dermis.</p>"
+    },
+    {
+      "id": "is-05",
+      "type": "hotspot",
+      "topic": "Integumentary system",
+      "stem": "A nurse is preparing to give a subcutaneous injection. Click the layer of tissue that the medication should reach.",
+      "image": "img/skin-layers.svg",
+      "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
+      "regions": [{"x": 3.7, "y": 68.1, "w": 92.7, "h": 20.0}, {"x": 3.7, "y": 62.9, "w": 43.7, "h": 4.3}, {"x": 52.7, "y": 62.9, "w": 43.7, "h": 4.3}],
+      "rationale": "<p>A subcutaneous injection goes into the <b>hypodermis</b> (subcutaneous layer), the deep layer of loose connective tissue and fat between the dermis and the muscle. Besides holding injected medication, this layer cushions the body, stores energy, insulates, and anchors the skin to the structures below.</p><p>The <b>epidermis</b> (top layer) and the <b>dermis</b> (middle layer, with blood vessels, glands, and hair follicles) are not the target of a subcutaneous injection; an intradermal injection is placed just under the epidermis. The <b>muscle</b> below the fat is the target of an intramuscular injection.</p>"
+    },
+    {
+      "id": "is-06",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the cells of the epidermis. What is the role of Langerhans cells?",
+      "options": ["They produce melanin, which absorbs ultraviolet light.", "They make the keratin that forms the skin's protective barrier.", "They take up microbial antigens and present them to the immune system.", "They detect high-frequency vibration and deep pressure."],
+      "answer": 2,
+      "rationale": "<p><b>Langerhans cells</b> are immune cells that live in the epidermis (most prominent in the stratum spinosum) and act like macrophages. In a skin infection, they take up microbial antigens and become <b>antigen-presenting cells</b>, starting the immune response.</p><p><b>Melanocytes</b>, in the stratum basale, produce melanin, which absorbs most UV light. <b>Keratinocytes</b>, about 90% of epidermal cells, make keratin and form the barrier. <b>Pacinian corpuscles</b>, in the deep dermis, sense high-frequency vibration and deep pressure.</p>"
+    },
+    {
+      "id": "is-07",
+      "type": "hotspot",
+      "topic": "Integumentary system",
+      "stem": "A client asks a nurse what makes the skin and scalp oily. Click the gland that secretes sebum.",
+      "image": "img/skin-layers.svg",
+      "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
+      "regions": [{"x": 43.0, "y": 31.0, "w": 3.7, "h": 14.8}, {"x": 40.0, "y": 31.9, "w": 2.3, "h": 6.7}],
+      "rationale": "<p>The <b>sebaceous gland</b> sits beside the hair follicle. Together with the hair, the follicle, and the arrector pili muscle, it forms the pilosebaceous unit. It secretes <b>sebum</b>, a mixture of lipids that forms a thin film on the skin and hair, helps prevent fluid loss, and has an antimicrobial role.</p><p>The <b>coiled gland</b> deeper in the dermis is an <b>eccrine sweat gland</b>, which makes watery sweat that cools the body as it evaporates. The <b>hair follicle</b> holds the hair, and the <b>fat cells</b> below belong to the subcutaneous layer.</p>"
+    },
+    {
+      "id": "is-08",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the glands of the skin. For each description, click to specify the gland it describes.",
+      "rowHeader": "Description",
+      "columns": ["Eccrine", "Apocrine", "Sebaceous", "Ceruminous"],
+      "rows": ["Produces earwax in the ear canal", "Secretes oily sebum into the hair follicle", "Found in the axillae and genital area; its secretions cause body odor when bacteria break them down", "Releases watery sweat over most of the body to cool it by evaporation"],
+      "answer": [3, 2, 1, 0],
+      "rationale": "<p><b>Eccrine</b> sweat glands are found throughout the body and produce watery (serous) sweat that cools the body as it evaporates. <b>Apocrine</b> glands are concentrated in the axillae, areolae, and genital area and release a thicker, protein-rich sweat; body odor comes from bacteria breaking it down. <b>Sebaceous</b> glands, part of the pilosebaceous unit, secrete <b>sebum</b> into the hair follicle. <b>Ceruminous</b> glands, modified apocrine glands in the ear canal, produce <b>cerumen</b> (earwax).</p>"
+    },
+    {
+      "id": "is-09",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "During a skin assessment, a nurse notes that a client's fingernails curve upward at the ends, like a spoon. The nurse should ask the client about a history of which condition?",
+      "options": ["Iron deficiency anemia", "Psoriasis", "Chronic lung disease", "A fungal nail infection"],
+      "answer": 0,
+      "rationale": "<p>Spoon-shaped nails (<b>koilonychia</b>), in which the outer edge of the nail curves upward, are associated with <b>iron deficiency anemia</b>, though they can also occur without a known cause.</p><p><b>Psoriasis</b> is associated with <b>pitting</b>, small pits in the nail plate. <b>Chronic lung disease</b> is associated with <b>clubbing</b>, a flattened angle between the nail and the nail fold. A <b>fungal infection</b> (onychomycosis) causes discolored, thickened nails with debris under the nail and splitting.</p>"
+    },
+    {
+      "id": "is-10",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is assessing the fingers of a client who has cystic fibrosis. Which finding indicates clubbing?",
+      "options": ["Small, deep pits are scattered across the surface of the nail plates.", "The angle at the nail base is flattened, and the fingertip is enlarged.", "The nails curve upward at the ends, so they look like a spoon.", "The nails are thick and yellow, with crumbly debris under them."],
+      "answer": 1,
+      "rationale": "<p><b>Clubbing</b> is an increased curve and thickening of the fingertip with <b>flattening (loss) of the angle between the nail plate and the nail fold</b>, best seen from the side. It is associated with chronic lung and heart disease, including cystic fibrosis, lung cancer, and interstitial lung disease, and calls for a full assessment of oxygenation.</p><p><b>Pitting</b> occurs with psoriasis, eczema, and alopecia areata. <b>Spoon nails</b> (koilonychia) are associated with iron deficiency anemia. <b>Thick, yellow nails with debris</b> suggest a fungal infection (onychomycosis).</p>"
+    },
+    {
+      "id": "is-11",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is teaching a group of clients about hair loss. Which statements are accurate?",
+      "options": ["Scarring alopecia destroys the hair follicles, so the hair loss is permanent.", "Alopecia areata always leaves permanent bald patches.", "Telogen effluvium can follow severe stress, illness, or childbirth.", "Alopecia areata is an immune-mediated hair loss, and the hair may grow back.", "Male pattern baldness is inherited and depends on androgens.", "Folliculitis is most often caused by a virus."],
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p><b>Alopecia areata</b> is a chronic, immune-mediated, <b>nonscarring</b> hair loss, most often in patches on the scalp; it can go away on its own, with the hair growing back. In <b>scarring alopecia</b>, the follicles are destroyed, so the loss is permanent. <b>Male pattern (androgenetic) baldness</b> is inherited and androgen-dependent: dihydrotestosterone shortens the growth phase of the follicles. <b>Telogen effluvium</b> is a nonscarring shedding that can follow psychological stress, severe or chronic illness, pregnancy and childbirth, surgery, or some medications.</p><p><b>Folliculitis</b>, an inflammation of the hair follicle with pustules and red papules, is most often <b>bacterial</b> (usually <i>Staphylococcus aureus</i>), not viral. Because alopecia areata is nonscarring, its bald patches are <b>not</b> always permanent.</p>"
+    },
+    {
+      "id": "is-12",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the sensory receptors of the skin. For each receptor, click to specify what it senses.",
+      "rowHeader": "Receptor",
+      "columns": ["Steady touch, edges, and shapes", "Pain and temperature", "High-frequency vibration and deep pressure", "Light touch and movement across the skin", "Stretching of the skin"],
+      "rows": ["Pacinian corpuscle", "Meissner corpuscle", "Ruffini ending", "Merkel cell", "Free nerve ending"],
+      "answer": [2, 3, 4, 0, 1],
+      "rationale": "<p><b>Pacinian corpuscles</b>, large layered receptors in the deep dermis, sense <b>high-frequency vibration and deep pressure</b>. <b>Meissner corpuscles</b>, in the dermal papillae of hairless skin such as the fingertips, sense <b>light touch and movement across the skin</b>. <b>Ruffini endings</b> sense <b>stretch</b>. <b>Merkel cells</b> sense <b>steady pressure, edges, and shapes</b>, which helps the brain build a picture of what is touched. <b>Free nerve endings</b> in the epidermis detect <b>pain and temperature</b>.</p>"
+    },
+    {
+      "id": "is-13",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client is working outdoors on a hot day. Which response of the skin helps the client's body lose heat?",
+      "options": ["Constriction of the blood vessels in the dermis", "Dilation of the blood vessels in the dermis", "Contraction of the arrector pili muscles", "Shivering of the skeletal muscles"],
+      "answer": 1,
+      "rationale": "<p>When the body is warm, the hypothalamus triggers <b>vasodilation</b> of the dermal blood vessels, which brings more warm blood near the surface so heat can leave the body, and the eccrine glands make sweat that cools the skin as it evaporates.</p><p><b>Vasoconstriction</b> keeps warm blood away from the surface to conserve heat in the cold. Contraction of the <b>arrector pili</b> muscles makes the hairs stand up, which traps a layer of warm air near the skin. <b>Shivering</b> is muscle activity that produces heat. All three help keep heat in, not let it out.</p>"
+    },
+    {
+      "id": "is-14",
+      "type": "order",
+      "topic": "Integumentary system",
+      "stem": "A nurse is teaching how the body makes active vitamin D. Place the steps in order.",
+      "items": ["Ultraviolet B light from the sun reaches the skin.", "7-dehydrocholesterol in the skin changes to previtamin D.", "Heat converts previtamin D to vitamin D3.", "The liver converts vitamin D3 to 25-hydroxyvitamin D.", "The kidneys convert 25-hydroxyvitamin D to active 1,25-dihydroxyvitamin D."],
+      "rationale": "<p>Vitamin D synthesis starts when <b>ultraviolet B</b> light (290 to 315 nm) reaches the skin and changes <b>7-dehydrocholesterol</b> into <b>previtamin D</b>. Body heat then converts previtamin D into <b>vitamin D3</b> (cholecalciferol). Vitamin D from the skin and the diet goes to the <b>liver</b>, which makes <b>25-hydroxyvitamin D</b>, and then to the <b>kidneys</b>, which make the active form, <b>1,25-dihydroxyvitamin D</b> (calcitriol). The last step is regulated by parathyroid hormone, calcium, and phosphorus.</p>"
+    },
+    {
+      "id": "is-15",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is caring for an older adult who is homebound and rarely goes outdoors. The nurse explains that sunlight on the skin helps the body make vitamin D. Which function of vitamin D should the nurse include in the teaching?",
+      "options": ["It stimulates the melanocytes to produce more melanin.", "It forms the collagen that strengthens the dermis.", "It controls how much the client sweats in hot weather.", "It helps the intestine absorb calcium for healthy bones."],
+      "answer": 3,
+      "rationale": "<p>The active form of vitamin D (calcitriol) <b>increases calcium absorption from the intestine</b>, which is essential for bone health. A client who gets little sun depends on vitamin D from the diet, and may need it checked or supplemented as the provider prescribes.</p><p>Vitamin D does not make <b>melanin</b> (melanocytes make it from tyrosine), does not form <b>collagen</b> (fibroblasts do), and does not control <b>sweating</b> (the sympathetic nervous system does).</p>"
+    },
+    {
+      "id": "is-16",
+      "type": "dropdown",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing how sweating is controlled. Complete the following sentences.",
+      "text": "Sweat glands are stimulated by the {{0}} nervous system. Sweating far beyond what the body needs to control its temperature is called {{1}}.",
+      "blanks": [
+        {"options": ["parasympathetic", "sympathetic", "somatic"], "answer": 1},
+        {"options": ["seborrhea", "hypothermia", "hyperhidrosis"], "answer": 2}
+      ],
+      "rationale": "<p>Sweat glands are stimulated by the <b>sympathetic</b> nervous system, through cholinergic autonomic neurons. In <b>hyperhidrosis</b>, an abnormal central response to normal emotional stress increases sympathetic signaling, so the eccrine glands make more sweat than temperature control requires.</p><p>The <b>parasympathetic</b> system does not control sweating, and the <b>somatic</b> nervous system controls voluntary skeletal muscle. <b>Seborrhea</b> refers to excess oil and scaling, as in seborrheic dermatitis, and <b>hypothermia</b> is a low core body temperature.</p>"
+    },
+    {
+      "id": "is-17",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is assessing a client who has dark skin for cyanosis. Where should the nurse look?",
+      "options": ["The lips and oral mucosa", "The skin of the forearm", "The skin of the abdomen", "The skin of the back"],
+      "answer": 0,
+      "rationale": "<p>Cyanosis is easiest to see where the skin or membrane is thin and the blood supply is rich, such as the <b>lips and oral mucosa</b>, nose, cheeks, ears, and nail beds. In clients with darker skin, the <b>mucous membranes and nail beds</b> are especially important, because pigment can hide color changes in the skin itself. Good lighting matters too.</p><p>The skin of the <b>forearm, abdomen, and back</b> is thicker and more pigmented, with less superficial blood flow, so cyanosis can be missed there.</p>"
+    },
+    {
+      "id": "is-18",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is caring for a client who has liver disease and a rising bilirubin level. Where does jaundice usually appear first?",
+      "options": ["The palms of the hands", "The nail beds", "The lips", "The sclera of the eyes"],
+      "answer": 3,
+      "rationale": "<p>Jaundice (hyperbilirubinemia) is a yellow color from bilirubin building up in the tissues. It usually shows first in the <b>sclera</b> (scleral icterus), once the serum bilirubin rises above about 3&nbsp;mg/dL (normal is less than 1&nbsp;mg/dL). The sclera is especially useful to check in clients with darker skin.</p><p>The <b>palms, nail beds, and lips</b> are not where jaundice first appears. The nail beds and lips are better places to look for cyanosis or pallor.</p>"
+    },
+    {
+      "id": "is-19",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is performing a skin assessment. Which findings can point to a disease in another body system?",
+      "options": ["Warm, dry skin in a comfortable room", "Yellow sclera", "Clubbing of the fingernails", "Dark, velvety patches on the back of the neck", "Bluish lips and nail beds", "A small mole that has looked the same for years"],
+      "answer": [1, 2, 3, 4],
+      "rationale": "<p>The skin often reflects disease elsewhere. <b>Yellow sclera</b> (jaundice) suggests liver dysfunction. <b>Clubbing</b> is associated with chronic lung and heart disease. <b>Bluish lips and nail beds</b> (cyanosis) suggest low oxygen, as in COPD, pneumonia, or pulmonary edema. <b>Dark, velvety patches</b> in skin folds such as the back of the neck (acanthosis nigricans) are associated with insulin resistance and diabetes.</p><p>A <b>mole that hasn't changed for years</b> is not a warning sign; change (evolving) is one of the warning signs of melanoma. <b>Warm, dry skin in a comfortable room</b> is a normal finding.</p>"
+    },
+    {
+      "id": "is-20",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A student asks a nurse why people have different skin tones. Which explanation is accurate?",
+      "options": ["People with darker skin have many more melanocytes in the epidermis.", "Darker skin has a thicker stratum corneum that blocks more light.", "Lighter skin has fewer blood vessels in the dermis, so it looks paler.", "The amount and spread of melanin differ, not the number of melanocytes."],
+      "answer": 3,
+      "rationale": "<p>People of all skin tones have <b>roughly the same number of melanocytes</b>. Skin tone depends on how much melanin the melanocytes make, and on the size and density of the melanin they pass to the keratinocytes. Melanin protects the cells' DNA from UV radiation.</p><p>Darker skin does <b>not</b> have more melanocytes. Skin tone does not come from a <b>thicker stratum corneum</b> or from the number of <b>blood vessels</b>, although blood flow and oxygenation do change skin color (redness, pallor, cyanosis).</p>"
+    },
+    {
+      "id": "is-21",
+      "type": "order",
+      "topic": "Integumentary system",
+      "stem": "A nurse is teaching a client how a surgical incision heals. Place the phases of wound healing in order.",
+      "items": ["Hemostasis", "Inflammatory phase", "Proliferative phase", "Maturation (remodeling) phase"],
+      "rationale": "<p>Healing begins with <b>hemostasis</b>: vessels constrict, platelets clump, and the coagulation cascade forms a fibrin clot. In the <b>inflammatory phase</b>, neutrophils and monocytes move in to destroy bacteria and clear debris. In the <b>proliferative phase</b> (by about days 5 to 7), fibroblasts lay down new collagen, granulation tissue fills the wound, new blood vessels grow, and new epithelium covers the surface. The <b>maturation (remodeling) phase</b> starts around week 3 and can last up to 12 months, as excess collagen is broken down and the scar gains strength.</p>"
+    },
+    {
+      "id": "is-22",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "For each event, click to specify the phase of wound healing in which it occurs.",
+      "rowHeader": "Event",
+      "columns": ["Hemostasis", "Inflammatory", "Proliferative", "Maturation"],
+      "rows": ["Excess collagen breaks down, and the scar gains strength over months", "Platelets clump and a fibrin clot forms", "Neutrophils and monocytes destroy bacteria and clear debris", "Fibroblasts lay down new collagen, and granulation tissue forms"],
+      "answer": [3, 0, 1, 2],
+      "rationale": "<p>In <b>hemostasis</b>, right after the injury, platelets clump and the coagulation cascade forms a <b>fibrin clot</b>. In the <b>inflammatory</b> phase, <b>neutrophils and monocytes</b> move in to destroy bacteria and clear debris. In the <b>proliferative</b> phase (by about days 5 to 7), <b>fibroblasts</b> lay down new collagen and granulation tissue fills the wound. In <b>maturation</b> (remodeling), from about week 3 for up to 12 months, excess collagen is broken down and the scar slowly strengthens.</p>"
+    },
+    {
+      "id": "is-23",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client who had abdominal surgery 4 weeks ago asks whether the incision is now as strong as the skin was before surgery. Which response by the nurse is accurate?",
+      "options": ["It regained its full strength by the end of the first week after surgery.", "Once it's fully healed, the scar will be stronger than the skin was before.", "Healing is complete now that the incision is closed and the stitches are out.", "It keeps getting stronger for months, but only to about 80% of the original."],
+      "answer": 3,
+      "rationale": "<p>The <b>maturation (remodeling) phase</b> begins around week 3 and can last up to 12 months. Wound strength peaks at about 11 to 14 weeks, but a scar never regains all of the original strength: it reaches only about <b>80%</b>.</p><p>At the <b>end of the first week</b>, the wound is still in the proliferative phase, with new collagen just being laid down. A scar is <b>not stronger</b> than the original skin. <b>Closure</b> of the skin does not mean healing is complete, because remodeling continues for months.</p>"
+    },
+    {
+      "id": "is-24",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing factors that affect wound healing. Which factors can delay healing?",
+      "options": ["Smoking", "Advanced age", "Poor nutrition", "Good circulation to the area", "Diabetes mellitus", "Adequate protein intake", "Wound infection"],
+      "answer": [0, 1, 2, 4, 6],
+      "rationale": "<p><b>Diabetes</b> impairs circulation and the immune response. <b>Smoking</b> constricts blood vessels and reduces oxygen delivery. <b>Poor nutrition</b> deprives the wound of the protein and nutrients it needs to build new tissue. <b>Infection</b> prolongs inflammation and destroys new tissue. <b>Advanced age</b> slows cell turnover and healing.</p><p><b>Good circulation</b> and <b>adequate protein intake</b> promote healing, because they bring oxygen and the building blocks of new collagen to the wound.</p>"
+    },
+    {
+      "id": "is-25",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse is assessing a surgical wound that was left open to heal by secondary intention 6 days ago. Which finding shows that the wound is in the proliferative phase?",
+      "options": ["A fibrin clot is sealing the edges of the wound.", "The scar is becoming flatter and paler.", "Red, moist granulation tissue is filling the base of the wound.", "The wound is warm and swollen, as it was on the first day."],
+      "answer": 2,
+      "rationale": "<p>In the <b>proliferative (granulation) phase</b>, from about days 5 to 7, fibroblasts lay down new collagen, new blood vessels grow, and red, moist <b>granulation tissue</b> fills the wound from the base, while new epithelium spreads from the edges. Wound contraction plays a larger part in wounds that heal by secondary intention.</p><p>A <b>fibrin clot</b> forms during hemostasis, right after the injury. A scar that becomes <b>flatter and paler</b> is part of maturation, which starts around week 3 and lasts up to a year. <b>Warmth and swelling</b> in the first days reflect the inflammatory phase.</p>"
+    },
+    {
+      "id": "is-26",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "A nurse is assessing burns on several clients. For each finding, click to specify the depth of the burn.",
+      "rowHeader": "Finding",
+      "columns": ["Superficial", "Partial-thickness", "Full-thickness", "Fourth-degree"],
+      "rows": ["Extends through the skin into muscle and bone", "Dry and leathery, does not blanch, with eschar present", "Moist, weeping blisters that are very painful and blanch with pressure", "Red, dry, and painful, with no blisters; blanches with pressure"],
+      "answer": [3, 2, 1, 0],
+      "rationale": "<p>A <b>superficial</b> (first-degree) burn involves only the epidermis: it is red, dry, painful, and blanches, without blisters, and usually heals without scarring. A <b>partial-thickness</b> (second-degree) burn involves the epidermis and part of the dermis: superficial partial-thickness burns form <b>blisters</b>, weep, are very painful, and blanch, while deep partial-thickness burns are mottled and don't blanch. A <b>full-thickness</b> (third-degree) burn extends through the whole dermis, often into the subcutaneous tissue: it is dry and leathery, doesn't blanch, and may have <b>eschar</b> (dead dermis). A <b>fourth-degree</b> burn extends beyond the skin into muscle, nerves, tendons, or bone.</p>"
+    },
+    {
+      "id": "is-27",
+      "type": "fill",
+      "topic": "Integumentary system",
+      "stem": "An adult client has partial-thickness burns over the entire right arm and the entire front of the trunk. Using the rule of nines, what percentage of the total body surface area (TBSA) is burned?",
+      "answer": 27,
+      "unit": "%",
+      "rationale": "<p>In the adult rule of nines, each <b>arm</b> (upper extremity) is <b>9%</b> and the <b>front of the trunk</b> is <b>18%</b>: 9% + 18% = <b>27%</b>.</p><p>The other values are 9% for the head and neck, 18% for the back of the trunk, 18% for each leg, and 1% for the perineum, which add up to 100%.</p>"
+    },
+    {
+      "id": "is-28",
+      "type": "fill",
+      "topic": "Integumentary system",
+      "stem": "An adult client has burns over the entire left leg and the perineum. Using the rule of nines, what percentage of the total body surface area is burned?",
+      "answer": 19,
+      "unit": "%",
+      "rationale": "<p>In the adult rule of nines, each <b>leg</b> (lower extremity, front and back) is <b>18%</b> and the <b>perineum</b> is <b>1%</b>: 18% + 1% = <b>19%</b>.</p><p>Each arm is 9%, the head and neck are 9%, and the front and the back of the trunk are 18% each.</p>"
+    },
+    {
+      "id": "is-29",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "An adult has several small burns scattered over both legs. The nurse estimates their total size using the client's palm. About how much of the total body surface area does the client's palm represent?",
+      "options": ["1%", "5%", "9%", "18%"],
+      "answer": 0,
+      "rationale": "<p>The client's own <b>palm is about 1%</b> of the total body surface area, which makes it useful for estimating small or scattered burns that are hard to measure with the rule of nines.</p><p><b>9%</b> is the value for one arm, or for the head and neck, in the rule of nines, and <b>18%</b> is the value for one leg, or for the front or the back of the trunk. <b>5%</b> is not a value in either method.</p>"
+    },
+    {
+      "id": "is-30",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "Which adult burn injury is classified as a major burn that is best managed in a burn center?",
+      "options": ["A partial-thickness burn covering 10% of the total body surface area, on the back", "A partial-thickness burn covering 17% of the total body surface area, on the trunk", "A full-thickness burn covering 12% of the total body surface area", "A full-thickness burn covering 5% of the total body surface area, on the thigh"],
+      "answer": 2,
+      "rationale": "<p>A <b>major</b> burn in an adult covers more than 25% of the TBSA, includes a <b>full-thickness burn of more than 10%</b>, or involves the face, perineum, or extremities. Major burns are best managed in a burn center.</p><p>A <b>partial-thickness burn of less than 15%</b> that doesn't involve the face or perineum is a <b>minor</b> burn, usually managed as an outpatient. A <b>partial-thickness burn of 15% to 20%</b>, or a <b>full-thickness burn of 2% to 10%</b>, is a <b>moderate</b> burn that needs admission but not always a burn center.</p>"
+    },
+    {
+      "id": "is-31",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is caring for a client who has large burns. Which complications should the nurse monitor for?",
+      "options": ["Increased sweating from the burned skin", "Improved sensation in the burned area", "Hypothermia", "Fluid loss and dehydration", "Infection and sepsis"],
+      "answer": [2, 3, 4],
+      "rationale": "<p>Burns destroy the skin's barrier, so the body loses <b>fluid</b> through the wound, which can lead to dehydration, and microorganisms can enter, leading to <b>infection and sepsis</b>. Losing skin also impairs temperature regulation, so the client is at risk for <b>hypothermia</b>.</p><p>Deep burns destroy the sweat glands, so sweating does <b>not increase</b> in burned skin. Deep burns also destroy nerve endings, which <b>reduces</b> sensation in the area rather than improving it.</p>"
+    },
+    {
+      "id": "is-32",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client arrives at the emergency department with a small burn on the hand after touching a live electrical wire. Which statement by the nurse is accurate?",
+      "options": ["A small skin burn means the injury is minor.", "The damage under the skin can be much more extensive than the burn on the surface.", "Electrical injuries damage only the skin where the wire touched it.", "Electrical burns are the most common reason for burn center admission."],
+      "answer": 1,
+      "rationale": "<p>Electrical injuries can cause <b>deep tissue damage and complications</b> in many body systems, so a small mark on the skin doesn't show the full injury. How severe it is depends on the voltage, the type of current, the body's resistance, and how long the contact lasted.</p><p>A <b>small skin burn doesn't mean</b> the injury is minor, and the damage is <b>not limited to the skin</b>. <b>Thermal</b> burns, from hot surfaces, liquids, steam, or flame, are the most common cause of burn center admission (about 86%), not electrical burns.</p>"
+    },
+    {
+      "id": "is-33",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "A nurse is assessing pressure injuries on several clients. For each finding, click to specify the stage.",
+      "rowHeader": "Finding",
+      "columns": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
+      "rows": ["A blister or shallow open sore that does not go through the full thickness of the skin", "A deep crater that reaches muscle, tendon, or bone", "Intact skin with a reddened area that does not blanch when pressed", "A crater that extends below the skin into the fatty tissue"],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p>A <b>stage 1</b> pressure injury is intact skin with redness that <b>doesn't blanch</b>; in darker skin, the area may look red, purple, or blue and be harder to see, and it may feel warm or cool and firm. <b>Stage 2</b> is a blister or shallow open sore that doesn't go through the full thickness of the skin. At <b>stage 3</b>, the sore becomes a crater below the skin surface, into the fat. At <b>stage 4</b>, the crater deepens to muscle, bone, tendon, or joint.</p>"
+    },
+    {
+      "id": "is-34",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is completing a pressure injury risk assessment. Which client factors increase the risk?",
+      "options": ["Skin that is often damp from incontinence", "Walking in the hallway several times a day", "Staying in one position for long periods", "Drinking enough fluids and eating protein-rich foods", "Decreased sensation in the legs", "Eating less than half of each meal"],
+      "answer": [0, 2, 4, 5],
+      "rationale": "<p>Pressure injuries form when prolonged pressure reduces blood flow to tissue, especially over bony prominences. <b>Immobility</b> keeps pressure on the same areas, <b>moisture</b> softens the skin and makes it easier to damage, <b>poor nutrition</b> weakens the skin and slows healing, and <b>decreased sensation</b> means the client doesn't feel the discomfort that normally prompts a change of position.</p><p><b>Walking several times a day</b> relieves pressure, and <b>good hydration and protein intake</b> support skin integrity, so both lower the risk.</p>"
+    },
+    {
+      "id": "is-35",
+      "type": "highlight",
+      "case": "heel",
+      "topic": "Integumentary system",
+      "stem": "Click to highlight the findings in the nurses' note that increase the client's risk for pressure injuries.",
+      "passage": "Client is [[alert and oriented]]. Reports right hip pain and [[prefers to stay on the back, because turning hurts]]. [[Has eaten about one-quarter of each meal for 2 days]]. [[Was incontinent of urine overnight; the sheets were damp at 0600]]. [[Skin over the sacrum is intact]]. Client has [[type 2 diabetes mellitus]] and [[reports decreased feeling in both feet]].",
+      "answer": [1, 2, 3, 5, 6],
+      "rationale": "<p>The risk factors are <b>staying in one position</b> (immobility from pain), <b>eating about one-quarter of meals</b> (poor nutrition), <b>damp sheets after incontinence</b> (moisture), <b>diabetes</b> (which impairs circulation and healing), and <b>decreased feeling in the feet</b> (the client may not feel the discomfort of pressure).</p><p>Being <b>alert and oriented</b> isn't a risk factor: the client can report discomfort and take part in care. <b>Intact skin over the sacrum</b> is a normal finding to keep checking, not a risk factor.</p>"
+    },
+    {
+      "id": "is-36",
+      "type": "matrix",
+      "case": "heel",
+      "topic": "Integumentary system",
+      "stem": "For each nursing action, click to specify whether it is indicated or not indicated for the client.",
+      "rowHeader": "Nursing action",
+      "columns": ["Indicated", "Not indicated"],
+      "rows": ["Reposition the client at least every 2 hours", "Place a pillow under the calves so the heels float off the bed", "Massage the reddened area on the right heel", "Clean and dry the skin promptly after each incontinence episode", "Encourage protein-rich foods and fluids", "Let the client stay on the back to avoid hip pain"],
+      "answer": [0, 0, 1, 0, 0, 1],
+      "rationale": "<p><b>Repositioning</b> at least every 2 hours and <b>floating the heels</b> on a pillow under the calves relieve pressure on the skin. <b>Cleaning and drying the skin</b> after incontinence removes moisture that softens the skin. <b>Protein and fluids</b> support skin integrity and healing, and the client has been eating and drinking little.</p><p><b>Massaging a reddened area</b> over a bony prominence is not indicated, because rubbing can further damage the fragile tissue. <b>Letting the client stay on the back</b> keeps pressure on the heels and sacrum; the nurse should manage the pain, for example by offering prescribed pain medication before turning, and still reposition the client.</p>"
+    },
+    {
+      "id": "is-37",
+      "type": "bowtie",
+      "case": "heel",
+      "topic": "Integumentary system",
+      "stem": "A nurse is reviewing the client's findings at 0800.",
+      "condition": {"options": ["Cellulitis of the heel", "Stage 1 pressure injury", "Full-thickness burn", "Stage 2 pressure injury"], "answer": 1},
+      "actions": {"options": ["Keep the client on the back to limit hip pain", "Encourage protein-rich foods and fluids", "Apply a heating pad to the heel", "Massage the heel to restore blood flow", "Relieve pressure on the heel by repositioning and floating it"], "answer": [1, 4], "select": 2},
+      "parameters": {"options": ["Color and blanching of the area on the right heel", "Visual acuity", "Food and fluid intake", "Hearing in each ear", "Bowel sounds"], "answer": [0, 2], "select": 2},
+      "rationale": "<p>Intact skin with a <b>dark red area that doesn't blanch</b> over a bony prominence is a <b>stage 1 pressure injury</b>. It isn't stage 2, because there is no blister or open area. <b>Cellulitis</b> would show spreading redness, warmth, swelling, and pain, often with a fever and a raised white blood cell count, which the client doesn't have. There is no history of a <b>burn</b>.</p><p>The nurse should <b>relieve pressure</b> on the heel by repositioning the client and floating the heel, and <b>support nutrition and hydration</b>, since the client is eating and drinking little and the albumin is low. <b>Massage</b> can further damage the tissue, a <b>heating pad</b> can burn skin with reduced sensation, and <b>staying on the back</b> keeps pressure on the heels.</p><p>To see whether the plan is working, the nurse monitors the <b>color and blanching</b> of the heel and the client's <b>food and fluid intake</b>. Visual acuity, bowel sounds, and hearing don't show the response to this care.</p>"
+    },
+    {
+      "id": "is-38",
+      "type": "mc",
+      "case": "heel",
+      "topic": "Integumentary system",
+      "stem": "At 1600, the nurse finds that the area on the right heel has opened into a shallow sore. The redness around it has spread, the skin is warmer, there is cloudy yellow drainage, and the client's temperature is 38.4°&nbsp;C (101.1°&nbsp;F). Which action should the nurse take first?",
+      "options": ["Record the findings and recheck the heel at the end of the shift.", "Cover the heel and wait to see whether the fever goes away.", "Report the wound changes and the fever to the provider.", "Ask the client to walk to improve circulation to the heel."],
+      "answer": 2,
+      "rationale": "<p>Spreading redness, more warmth, <b>cloudy drainage</b>, and a <b>new fever</b> suggest that the wound has become infected, and the open sore means the injury has progressed to stage 2. These are significant changes, and the nurse should <b>report them promptly</b> to the provider, using a structured format such as SBAR, so treatment can begin.</p><p><b>Waiting until the end of the shift</b> or <b>waiting for the fever to go away</b> delays care for a possible infection. Covering the wound is part of care, but it doesn't replace reporting the change. Asking a client who had hip surgery 3 days ago to <b>walk</b> on a painful heel doesn't treat the infection and may be unsafe.</p>"
+    },
+    {
+      "id": "is-39",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A nurse notes a shiny, pink, pearly bump with tiny visible blood vessels on a client's nose. The nurse recognizes this as a common sign of which skin cancer?",
+      "options": ["Melanoma", "Squamous cell carcinoma", "Seborrheic dermatitis", "Basal cell carcinoma"],
+      "answer": 3,
+      "rationale": "<p><b>Basal cell carcinoma</b>, the most common skin cancer, typically looks like a <b>shiny, pink or skin-colored bump with telangiectasia</b> (small visible blood vessels). It rarely spreads, but it can destroy the tissue around it, especially on the face and ears, so early treatment matters.</p><p><b>Melanoma</b>, the most lethal skin cancer, arises from melanocytes and usually shows the ABCDE changes in a pigmented spot. <b>Squamous cell carcinoma</b>, the second most common, appears as a scaly, red or darker bump or patch. <b>Seborrheic dermatitis</b> isn't a cancer: it causes red patches with a yellowish scale, such as dandruff.</p>"
+    },
+    {
+      "id": "is-40",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A client asks a nurse which changes in a mole should be checked by a provider. Which findings should the nurse include?",
+      "options": ["The mole is round, evenly brown, and 3 mm across.", "The mole has several shades of brown and black.", "The mole has changed in size, shape, or color.", "The mole is larger than 6 mm across.", "One half of the mole doesn't match the other half.", "The border is ragged, notched, or blurred."],
+      "answer": [1, 2, 3, 4, 5],
+      "rationale": "<p>The ABCDE warning signs of melanoma are <b>Asymmetry</b> (the halves don't match), an irregular <b>Border</b> (ragged, notched, or blurred), uneven <b>Color</b> (several shades), a <b>Diameter</b> larger than 6&nbsp;mm, and <b>Evolving</b> (changes in size, shape, or color). Any of these should be checked.</p><p>A <b>round, evenly colored mole smaller than 6&nbsp;mm</b> shows none of the warning signs, though the client should still watch it for changes.</p>"
+    },
+    {
+      "id": "is-41",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "For each skin condition, click to specify what causes it.",
+      "rowHeader": "Condition",
+      "columns": ["Virus", "Fungus", "Mite or louse"],
+      "rows": ["Grouped blisters on a red base on the lip (a cold sore)", "A painful, blistering rash in a band on one side of the body, in a client who had chickenpox as a child", "Intensely itchy papules that are worse at night and spread by skin-to-skin contact", "Cracked, itchy skin with small blisters between the toes"],
+      "answer": [0, 0, 2, 1],
+      "rationale": "<p>A <b>cold sore</b> is caused by <b>herpes simplex virus type 1</b>, which stays in the body and can reactivate. <b>Shingles</b> (herpes zoster) is caused by the <b>varicella-zoster virus</b>, which lies dormant in the sensory ganglia after chickenpox and can reactivate years later, causing a painful rash along one dermatome. <b>Scabies</b> is caused by a <b>mite</b> that burrows into the skin and causes intense itching, worse at night; it spreads by close skin-to-skin contact. <b>Athlete's foot</b> (tinea pedis) is a <b>fungal</b> infection.</p>"
+    },
+    {
+      "id": "is-42",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client has itchy, red, oozing patches on both forearms after clearing poison ivy from a yard. Which teaching is the most important part of the client's treatment?",
+      "options": ["Avoid touching the plant or substance that caused the reaction.", "Cover the patches with a tight bandage that doesn't let air in.", "Expect the rash itself to spread to other people by touch.", "Apply an antifungal cream to the patches twice a day."],
+      "answer": 0,
+      "rationale": "<p>This is <b>contact dermatitis</b>: itchy, red, oozing lesions where the skin touched an irritant or allergen, here poison ivy. The most important part of treatment is to <b>identify the cause and avoid it</b>. An antihistamine or a hydrocortisone cream may be prescribed for the reaction.</p><p>A <b>tight bandage</b> traps moisture and doesn't treat the cause. Contact dermatitis is a reaction, not an infection, so the rash itself <b>doesn't spread from person to person</b>, although plant oil left on the skin or clothes can cause new reactions. An <b>antifungal</b> cream treats fungal infections, not contact dermatitis.</p>"
+    },
+    {
+      "id": "is-43",
+      "type": "dragdrop",
+      "topic": "Integumentary system",
+      "stem": "A nurse is teaching a client about skin changes during pregnancy.",
+      "text": "Pink to silvery lines on the abdomen from rapid stretching of the skin are called {{0}}. Brown patches on the cheeks and forehead that darken with sun exposure are called {{1}}. A dark line down the middle of the abdomen is called the {{2}}.",
+      "tokens": ["vitiligo", "linea nigra", "striae gravidarum", "acanthosis nigricans", "melasma"],
+      "answer": [2, 4, 1],
+      "rationale": "<p><b>Striae gravidarum</b> are the stretch marks of pregnancy: linear scars that form when the skin stretches quickly and the connective tissue of the dermis is disrupted. <b>Melasma</b> (chloasma) is darkening of sun-exposed areas of the face, influenced by hormones and UV light. The <b>linea nigra</b> is a darker line down the center of the abdomen.</p><p><b>Vitiligo</b> is a loss of skin pigment, not darkening. <b>Acanthosis nigricans</b> is dark, velvety skin in body folds, associated with insulin resistance.</p>"
+    },
+    {
+      "id": "is-44",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client with cirrhosis of the liver has pitting edema in both legs. Which mechanism explains the edema?",
+      "options": ["The capillaries become more permeable, as they do after a severe burn.", "The lymphatic vessels are blocked, so fluid can't drain from the tissues.", "Less albumin is made, so oncotic pressure falls and fluid leaves the vessels.", "A clot in a deep leg vein raises the pressure in that leg's capillaries."],
+      "answer": 2,
+      "rationale": "<p>The liver makes <b>albumin</b>, the main protein that keeps fluid in the blood vessels (oncotic pressure). In liver failure or cirrhosis, <b>less protein is made</b>, oncotic pressure falls, and fluid moves out of the capillaries into the tissues, causing edema in both legs.</p><p><b>Increased capillary permeability</b> causes edema with burns, insect bites, cellulitis, and allergic reactions. <b>Lymphatic obstruction</b> occurs with conditions such as cancer, surgery, or filariasis. A <b>deep vein thrombosis</b> raises the hydrostatic pressure in one leg's capillaries, so the edema is usually on one side only.</p>"
+    },
+    {
+      "id": "is-45",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is teaching a client who is starting a medication given by transdermal patch. Which advantages of the patch should the nurse include?",
+      "options": ["It avoids first-pass metabolism by the liver.", "It delivers the medication steadily over time.", "It can deliver large doses of any medication.", "It works best when applied over irritated skin.", "It bypasses the stomach and intestines."],
+      "answer": [0, 1, 4],
+      "rationale": "<p>A transdermal patch gives <b>continuous, steady delivery</b> through the skin into the bloodstream. It <b>bypasses the gastrointestinal tract</b>, which avoids stomach irritation, and it <b>avoids the first-pass metabolism</b> in the liver that affects oral drugs. Patches can also make it easier for clients to take their medication as prescribed.</p><p>Patches go on <b>healthy, intact skin</b>, because irritated or damaged skin changes how much drug is absorbed. Only drugs with small molecules and a <b>low daily dose</b> work in a patch, so a patch can't deliver large doses of any medication.</p>"
+    },
+    {
+      "id": "is-46",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "Which instruction should a nurse give a client about applying a transdermal patch?",
+      "options": ["Apply a moisturizing lotion first so the patch sticks better.", "Wash the site with plain water, dry it well, and rotate sites.", "Put each new patch on the same spot so the dose stays the same.", "Place the patch over an area of irritated skin to soothe it."],
+      "answer": 1,
+      "rationale": "<p>The client should clean the site with <b>plain water</b>, pat it <b>completely dry</b>, and <b>rotate sites</b> with each new patch to avoid skin irritation. Some patches are worn for part of a day, and others for several days, such as a fentanyl patch worn for 72 hours.</p><p><b>Soaps, alcohol, lotions, and oils</b> should not be used just before applying a patch, because they can keep it from sticking and change absorption. Using the <b>same spot</b> every time irritates the skin. A patch shouldn't go on <b>irritated or damaged skin</b>, which changes how much medication is absorbed.</p>"
+    },
+    {
+      "id": "is-47",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "A nurse is performing a skin assessment. For each finding, click to specify the technique the nurse uses to assess it.",
+      "rowHeader": "Finding",
+      "columns": ["Inspection", "Palpation"],
+      "rows": ["Color", "Temperature", "Texture", "Turgor", "Distribution of a rash"],
+      "answer": [0, 1, 1, 1, 0],
+      "rationale": "<p>The skin assessment uses <b>inspection</b> and <b>palpation</b>. The nurse <b>inspects</b> (looks at) the <b>color</b> of the skin and the <b>distribution</b> of a rash or lesions. The nurse <b>palpates</b> (touches) to assess <b>temperature</b>, with the back of the hand, <b>texture</b>, and <b>turgor</b> (how quickly lifted skin returns to place). Moisture can be both seen and felt.</p>"
+    },
+    {
+      "id": "is-48",
+      "type": "matrix",
+      "topic": "Integumentary system",
+      "stem": "For each client, click to specify the transmission-based precautions the nurse should use, in addition to standard precautions.",
+      "rowHeader": "Client",
+      "columns": ["Contact", "Droplet", "Airborne"],
+      "rows": ["A client with a draining wound infected with MRSA", "A client with influenza", "A client with active pulmonary tuberculosis", "A client with scabies"],
+      "answer": [0, 1, 2, 0],
+      "rationale": "<p><b>Contact precautions</b> (gloves and a gown on entering the room, and hand hygiene on leaving) are used for infections spread by direct or indirect contact, such as an <b>MRSA wound</b> and <b>scabies</b>. <b>Droplet precautions</b> (a surgical mask within 3 to 6 feet of the client) are used for infections spread by large respiratory droplets, such as <b>influenza</b>. <b>Airborne precautions</b> (a negative-pressure room and an N95 respirator) are used for infections spread by tiny particles that stay in the air, such as <b>tuberculosis</b>.</p>"
+    },
+    {
+      "id": "is-49",
+      "type": "sata",
+      "topic": "Integumentary system",
+      "stem": "A nurse is about to assess a client's skin, including a draining wound. Which actions follow standard precautions?",
+      "options": ["Wear gloves only if the client looks ill.", "Wear gloves when touching the wound or its drainage.", "Perform hand hygiene before and after the assessment.", "Keep the same gloves on to assess the next client.", "Discard the soiled dressing in the proper container."],
+      "answer": [1, 2, 4],
+      "rationale": "<p>Standard precautions apply to every client: <b>hand hygiene</b> before and after contact, <b>gloves</b> when touching broken skin, mucous membranes, or body fluids such as wound drainage, and <b>proper disposal</b> of contaminated materials. A gown is added if drainage could splash.</p><p>Gloves are chosen for the <b>task</b> (contact with drainage or broken skin), not for how ill the client looks. Gloves are never <b>kept on</b> between clients, because that carries microorganisms from one client to the next.</p>"
+    },
+    {
+      "id": "is-50",
+      "type": "mc",
+      "topic": "Integumentary system",
+      "stem": "A client who prefers to speak Haitian Creole is having a skin assessment, and the nurse needs to ask about a new rash and itching. Which action is best?",
+      "options": ["Use a qualified medical interpreter for the health history.", "Ask the client's teenage daughter to interpret.", "Speak slowly and loudly in English.", "Skip the history and do only the physical examination."],
+      "answer": 0,
+      "rationale": "<p>A <b>qualified medical interpreter</b> makes sure the client understands the questions and can describe the symptoms accurately and privately. That supports an accurate assessment, the client's own decisions about care, and the client's dignity.</p><p>A <b>family member</b>, especially a child, may not translate medical terms correctly and limits the client's privacy. <b>Speaking slowly and loudly</b> in English doesn't overcome a language barrier. <b>Skipping the history</b> leaves out key information, such as when the rash started and what makes it itch.</p>"
+    },
+    {
+      "id": "ns-01",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing how the nervous system is organized. Which of the following make up the central nervous system (CNS)?",
+      "options": ["The brain and the 12 pairs of cranial nerves", "The sympathetic and parasympathetic divisions", "The brain and the spinal cord", "The spinal cord and the 31 pairs of spinal nerves"],
+      "answer": 2,
+      "rationale": "<p><b>The brain and the spinal cord</b> make up the CNS. The CNS receives and integrates information and sends out motor commands.</p><p>The other options include parts of the <b>peripheral nervous system (PNS)</b>, which is everything outside the brain and spinal cord. The 12 pairs of cranial nerves and the 31 pairs of spinal nerves are peripheral nerves. The sympathetic and parasympathetic divisions belong to the autonomic nervous system, which is part of the PNS.</p>"
+    },
+    {
+      "id": "ns-02",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each body function, specify whether it is controlled mainly by the somatic nervous system or the autonomic nervous system.",
+      "rowHeader": "Body function",
+      "columns": ["Somatic", "Autonomic"],
+      "rows": ["Walking across the room", "Speeding up the heart rate during exercise", "Moving food through the intestines", "Raising a hand to ask a question", "Dilating the pupils in dim light", "Sweating in a hot room"],
+      "answer": [0, 1, 1, 0, 1, 1],
+      "rationale": "<p>The <b>somatic</b> nervous system controls voluntary movement of skeletal muscles, such as <b>walking</b> and <b>raising a hand</b>.</p><p>The <b>autonomic</b> nervous system works automatically (involuntarily) on the heart, smooth muscle, and glands. <b>Speeding up the heart rate</b>, <b>moving food through the intestines</b> (peristalsis), <b>dilating the pupils</b>, and <b>sweating</b> are all automatic responses that a person doesn't consciously control.</p>"
+    },
+    {
+      "id": "ns-03",
+      "type": "dragdrop",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing how the peripheral nervous system carries information.",
+      "text": "Fibers that carry signals from sensory receptors toward the central nervous system are {{0}} fibers. Fibers that carry commands from the central nervous system to muscles and glands are {{1}} fibers. Voluntary movement of skeletal muscles is controlled by the {{2}} nervous system.",
+      "tokens": ["afferent", "efferent", "somatic", "autonomic", "parasympathetic", "central"],
+      "answer": [0, 1, 2],
+      "rationale": "<p><b>Afferent</b> (sensory) fibers carry signals from receptors <b>toward</b> the CNS. <b>Efferent</b> (motor) fibers carry commands <b>away from</b> the CNS to muscles and glands. A memory aid: afferent <b>a</b>rrives, efferent <b>e</b>xits.</p><p>The <b>somatic</b> nervous system controls voluntary skeletal muscle movement. The <b>autonomic</b> nervous system, including its <b>parasympathetic</b> division, works involuntarily on organs and glands. The <b>central</b> nervous system is the brain and spinal cord, not a type of peripheral fiber.</p>"
+    },
+    {
+      "id": "ns-04",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "Which part of a neuron receives most of the incoming signals from other neurons?",
+      "options": ["Axon terminal", "Dendrites", "Myelin sheath", "Axon"],
+      "answer": 1,
+      "rationale": "<p><b>Dendrites</b> are the branching extensions of the neuron. They receive most of its input from other neurons and carry those impulses toward the cell body (soma).</p><p>The <b>axon</b> carries impulses <b>away</b> from the cell body, and the <b>axon terminal</b> at its end releases neurotransmitters to the next cell. The <b>myelin sheath</b> wraps and insulates the axon so impulses travel faster; it doesn't receive signals.</p>"
+    },
+    {
+      "id": "ns-05",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "A nurse is teaching a group of nursing students about the myelin sheath. Which of the following statements are accurate?",
+      "options": ["It speeds up the movement of action potentials along the axon.", "Oligodendrocytes form it in the central nervous system.", "It is a protective layer of fat (lipids) and protein.", "Myelinated fibers make up the gray matter of the brain.", "Schwann cells form it in the peripheral nervous system.", "Damage to it makes nerve signals travel faster."],
+      "answer": [0, 1, 2, 4],
+      "rationale": "<p>The myelin sheath is a protective layer of <b>fat and protein</b> wrapped around the axon. Like the insulation on an electrical wire, it <b>speeds up</b> the conduction of action potentials. <b>Oligodendrocytes</b> form myelin in the CNS, and <b>Schwann cells</b> form it in the PNS.</p><p><b>Myelinated fibers make up the white matter</b>, not the gray matter; gray matter is mostly nerve cell bodies and unmyelinated fibers. <b>Damaged myelin slows</b> nerve signals, or stops them altogether, as in multiple sclerosis.</p>"
+    },
+    {
+      "id": "ns-06",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each type of neuroglia (glial cell), specify its main function.",
+      "rowHeader": "Glial cell",
+      "columns": ["Helps form the blood–brain barrier", "Acts as the brain's immune cell", "Lines the ventricles and helps make cerebrospinal fluid", "Forms myelin in the central nervous system"],
+      "rows": ["Microglia", "Oligodendrocyte", "Astrocyte", "Ependymal cell"],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p><b>Microglia</b> are the resident macrophages of the brain and spinal cord, so they provide immune defense. <b>Oligodendrocytes</b> form the myelin sheath in the CNS. <b>Astrocytes</b>, the star-shaped glial cells, regulate the brain's internal environment, and their foot processes help form the blood–brain barrier. <b>Ependymal cells</b> line the ventricles of the brain and the central canal of the spinal cord, and help produce cerebrospinal fluid.</p>"
+    },
+    {
+      "id": "ns-07",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "Which glial cell is the most numerous in the central nervous system and helps regulate the brain's internal environment?",
+      "options": ["Schwann cell", "Microglia", "Satellite cell", "Astrocyte"],
+      "answer": 3,
+      "rationale": "<p><b>Astrocytes</b> are the most numerous glial cells in the CNS. They regulate the brain's internal environment, including its energy supply and signal transmission, and their foot processes are part of the blood–brain barrier.</p><p><b>Microglia</b> are the immune cells (macrophages) of the CNS. <b>Satellite cells</b> surround nerve cell bodies in peripheral ganglia, where they regulate the microenvironment much as astrocytes do in the brain. <b>Schwann cells</b> form myelin in the peripheral nervous system.</p>"
+    },
+    {
+      "id": "ns-08",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "An action potential usually begins in which part of the neuron?",
+      "options": ["The dendritic tree", "The nucleus of the cell body", "The axon hillock", "The myelin sheath"],
+      "answer": 2,
+      "rationale": "<p>The <b>axon hillock</b>, where the axon leaves the cell body, has the most voltage-gated sodium channels. That makes it the most easily excited part of the neuron and the place where the action potential starts (the trigger zone).</p><p><b>Dendrites</b> receive incoming signals and carry them toward the cell body. The <b>nucleus</b> in the cell body directs protein synthesis. The <b>myelin sheath</b> insulates the axon; it doesn't start impulses.</p>"
+    },
+    {
+      "id": "ns-09",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A client who has multiple sclerosis asks the nurse why the disease affects movement and sensation. The nurse should explain that multiple sclerosis damages which of the following?",
+      "options": ["The myelin sheath that insulates axons in the brain and spinal cord", "The dopamine-producing neurons of the midbrain", "The bones of the vertebral column", "The sensory receptors in the skin"],
+      "answer": 0,
+      "rationale": "<p>Multiple sclerosis is an <b>autoimmune disease</b> that causes inflammation and <b>demyelination</b> (loss of myelin) in the CNS, along with scarring (gliosis) and loss of neurons. Without myelin, nerve signals slow down or stop, so movement, sensation, and vision can all be affected.</p><p>Loss of <b>dopamine-producing neurons</b> in the midbrain causes Parkinson disease. Multiple sclerosis doesn't damage the <b>vertebrae</b> or the <b>skin's sensory receptors</b>; it damages the nerve fibers that carry their signals.</p>"
+    },
+    {
+      "id": "ns-10",
+      "type": "order",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing how a neuron fires. Place the events of an action potential in the order in which they occur, starting with the neuron at rest.",
+      "items": ["The inside of the neuron rests at about −70 mV.", "A stimulus brings the membrane to threshold.", "Voltage-gated sodium channels open, and sodium rushes in (depolarization).", "Potassium channels open, and potassium flows out (repolarization).", "The membrane briefly becomes more negative than at rest (hyperpolarization).", "The membrane returns to its resting potential."],
+      "rationale": "<p>At rest, the inside of the neuron is about <b>−70 mV</b>. When a stimulus brings the membrane to <b>threshold</b>, voltage-gated <b>sodium channels open</b> and sodium rushes in, so the inside becomes positive (<b>depolarization</b>, peaking near +30 mV). The sodium channels then close, and slower <b>potassium channels open</b>; potassium flows out and brings the charge back down (<b>repolarization</b>). Because the potassium channels close slowly, the membrane briefly <b>overshoots</b> the resting value (<b>hyperpolarization</b>) before it <b>returns to rest</b>. The refractory period during this time keeps the impulse moving in one direction.</p>"
+    },
+    {
+      "id": "ns-11",
+      "type": "dropdown",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the resting membrane potential of a neuron. Complete the following sentences.",
+      "text": "At rest, the inside of a neuron is {{0}} compared with the outside. Sodium ions are more concentrated {{1}} the cell, and the sodium-potassium pump moves {{2}}.",
+      "blanks": [
+        {"options": ["positive", "negative", "neutral"], "answer": 1},
+        {"options": ["inside", "outside"], "answer": 1},
+        {"options": ["2 sodium ions out for every 3 potassium ions in", "3 potassium ions out for every 2 sodium ions in", "3 sodium ions out for every 2 potassium ions in"], "answer": 2}
+      ],
+      "rationale": "<p>At rest, the inside of a neuron is <b>negative</b> (about −70 mV) compared with the outside. <b>Sodium</b> is concentrated <b>outside</b> the cell, and potassium is concentrated inside. The <b>sodium-potassium pump</b> uses energy to move <b>3 sodium ions out for every 2 potassium ions in</b>. This unequal exchange keeps the inside negative and maintains the concentration gradients the neuron needs to fire.</p>"
+    },
+    {
+      "id": "ns-12",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing how action potentials work. Which statement describes the all-or-none principle?",
+      "options": ["A stronger stimulus produces a larger action potential.", "An action potential travels in both directions along the axon at once.", "A neuron can fire again immediately after an action potential.", "Once threshold is reached, the action potential fires completely, at the same size every time."],
+      "answer": 3,
+      "rationale": "<p>Under the <b>all-or-none</b> principle, a stimulus that reaches threshold triggers a <b>complete</b> action potential, and a stimulus below threshold triggers none. A <b>stronger stimulus doesn't make a bigger action potential</b>; the size is always the same.</p><p>During the <b>refractory period</b> after an action potential, the sodium channels can't reopen, so the neuron <b>can't fire again right away</b>, and the impulse travels in <b>only one direction</b> down the axon.</p>"
+    },
+    {
+      "id": "ns-13",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "Which of the following neurotransmitters are correctly matched with their functions?",
+      "options": ["GABA: the main inhibitory neurotransmitter in the brain", "Norepinephrine: slows the heart rate during rest", "Dopamine: motor control, learning, and reward", "Serotonin: the neurotransmitter lost in Parkinson disease", "Acetylcholine: triggers skeletal muscle contraction at the neuromuscular junction"],
+      "answer": [0, 2, 4],
+      "rationale": "<p><b>GABA</b> is the main inhibitory neurotransmitter in the brain. <b>Dopamine</b> is involved in motor control, learning, reward, and emotion. <b>Acetylcholine</b> is released at the neuromuscular junction, where it triggers skeletal muscle contraction; it also helps regulate the heart, peristalsis, and gland secretion.</p><p><b>Norepinephrine</b> carries sympathetic (fight-or-flight) responses, so it <b>speeds up</b> the heart; slowing the heart at rest is a parasympathetic effect of acetylcholine. Parkinson disease results from the loss of <b>dopamine</b>-producing neurons, not serotonin. Serotonin affects mood, bowel motility, bladder control, and cardiovascular function, and is linked to depression.</p>"
+    },
+    {
+      "id": "ns-14",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "At the neuromuscular junction, which event directly causes the motor neuron to release acetylcholine into the synaptic cleft?",
+      "options": ["Sodium entering the muscle fiber", "Calcium entering the nerve terminal", "Acetylcholinesterase breaking down acetylcholine", "Potassium leaving the muscle fiber"],
+      "answer": 1,
+      "rationale": "<p>When an action potential reaches the motor neuron's terminal, voltage-gated <b>calcium channels open</b>. <b>Calcium entering the nerve terminal</b> makes the vesicles fuse with the membrane and release acetylcholine into the synaptic cleft.</p><p>Acetylcholine then binds to receptors on the muscle fiber, and <b>sodium enters the muscle fiber</b> and depolarizes it; that happens after the release. <b>Acetylcholinesterase</b> breaks down acetylcholine to <b>end</b> the signal. <b>Potassium leaving</b> a cell is part of repolarization, not neurotransmitter release.</p>"
+    },
+    {
+      "id": "ns-15",
+      "type": "hotspot",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the functions of the cerebral lobes. Click the lobe that contains the primary visual cortex.",
+      "image": "img/brain-lateral.svg",
+      "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
+      "regions": [{"x": 76.7, "y": 29, "w": 11.3, "h": 32}, {"x": 77.4, "y": 22, "w": 7.3, "h": 7}, {"x": 75.4, "y": 61, "w": 8.6, "h": 5}, {"x": 88, "y": 37, "w": 2, "h": 19}],
+      "rationale": "<p>The <b>occipital lobe</b>, at the back of the cerebrum, contains the primary visual cortex. It receives information from the retina and interprets what the person sees.</p><p>The <b>frontal lobe</b> (front) handles voluntary movement, problem-solving, attention, memory, and speech production. The <b>parietal lobe</b> (top, behind the central sulcus) processes touch and body position. The <b>temporal lobe</b> (side, below the lateral sulcus) processes hearing and language comprehension. The cerebellum, below the occipital lobe, coordinates movement and balance.</p>"
+    },
+    {
+      "id": "ns-16",
+      "type": "hotspot",
+      "topic": "Nervous system",
+      "stem": "Click the lobe that contains the auditory cortex, where hearing is processed.",
+      "image": "img/brain-lateral.svg",
+      "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
+      "regions": [{"x": 37.4, "y": 57, "w": 37.3, "h": 11}, {"x": 50, "y": 52, "w": 18.6, "h": 5}, {"x": 41.4, "y": 68, "w": 19.3, "h": 4}, {"x": 32.7, "y": 59, "w": 4.6, "h": 8}, {"x": 56.7, "y": 49, "w": 8, "h": 3}],
+      "rationale": "<p>The <b>temporal lobe</b>, on the side of the brain below the lateral sulcus, contains the auditory cortex, which processes hearing. In the dominant hemisphere (usually the left), it also contains Wernicke's area, which is needed to understand language.</p><p>The <b>occipital lobe</b> processes vision, the <b>parietal lobe</b> processes touch and body position, and the <b>frontal lobe</b> controls voluntary movement and higher mental functions such as planning and judgment.</p>"
+    },
+    {
+      "id": "ns-17",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is caring for a client who had a stroke. The client speaks fluently, but the words make little sense, and the client can't follow spoken directions. The nurse should recognize that the stroke most likely damaged which area of the brain?",
+      "options": ["Broca's area in the frontal lobe", "The primary visual cortex in the occipital lobe", "Wernicke's area in the temporal lobe", "The primary somatosensory cortex in the parietal lobe"],
+      "answer": 2,
+      "rationale": "<p><b>Wernicke's area</b>, in the temporal lobe of the dominant hemisphere, is needed to <b>understand</b> spoken and written language. Damage to it leaves speech fluent but often meaningless, and the client can't follow directions.</p><p><b>Broca's area</b>, in the frontal lobe, controls the muscles of speech; damage to it makes speech halting and effortful, while understanding is mostly kept. The <b>visual cortex</b> processes sight, and the <b>somatosensory cortex</b> processes touch and body position. Damage to these doesn't explain this client's language problem.</p>"
+    },
+    {
+      "id": "ns-18",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is assessing a client who has damage to the cerebellum. Which finding should the nurse expect?",
+      "options": ["An unsteady, uncoordinated gait (ataxia)", "Loss of the sense of smell", "Inability to feel light touch on one side of the body", "Inability to understand spoken words"],
+      "answer": 0,
+      "rationale": "<p>The <b>cerebellum</b> coordinates smooth voluntary movement, balance, and motor learning. Damage to it causes <b>ataxia</b> (lack of coordination), poor balance, and an unsteady, abnormal gait.</p><p>The <b>sense of smell</b> depends on the olfactory nerve (CN I) and the olfactory area. <b>Feeling light touch</b> is processed in the somatosensory cortex of the parietal lobe. <b>Understanding spoken words</b> depends on Wernicke's area in the temporal lobe.</p>"
+    },
+    {
+      "id": "ns-19",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "Which part of the brainstem regulates breathing, heart rate, and blood pressure, and coordinates the coughing, swallowing, and vomiting reflexes?",
+      "options": ["Pons", "Midbrain", "Thalamus", "Medulla oblongata"],
+      "answer": 3,
+      "rationale": "<p>The <b>medulla oblongata</b>, the lowest part of the brainstem, is continuous with the spinal cord. It regulates functions needed for survival: breathing (in response to carbon dioxide and pH), heart rate, blood pressure, and cardiac contractility. It also coordinates protective reflexes such as vomiting, swallowing, coughing, and sneezing.</p><p>The <b>pons</b> relays signals between the cerebrum, cerebellum, and spinal cord. The <b>midbrain</b> is involved in movement and motivation, and its substantia nigra produces dopamine. The <b>thalamus</b> is part of the diencephalon, not the brainstem; it relays sensory information to the cortex.</p>"
+    },
+    {
+      "id": "ns-20",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "Which functions does the hypothalamus regulate?",
+      "options": ["Body temperature", "Smooth coordination of voluntary movement", "Thirst and appetite", "Hormone release by the pituitary gland", "Relaying sensory information to the cerebral cortex", "Sleep–wake (circadian) rhythms"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Although small, the <b>hypothalamus</b> is essential for homeostasis. It regulates <b>body temperature</b>, <b>thirst and appetite</b>, heart rate, blood pressure, and <b>circadian rhythms</b>, and it links the nervous system to the endocrine system by controlling <b>hormone release by the pituitary gland</b>. It also makes antidiuretic hormone (ADH) and oxytocin.</p><p>The <b>cerebellum</b> coordinates smooth voluntary movement. The <b>thalamus</b> is the main relay center that sends sensory information to the cerebral cortex.</p>"
+    },
+    {
+      "id": "ns-21",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is caring for a client whose level of consciousness has decreased. The nurse recalls that which brain system keeps a person awake and alert?",
+      "options": ["The limbic system", "The reticular activating system (RAS)", "The basal nuclei", "The cerebellum"],
+      "answer": 1,
+      "rationale": "<p>The <b>reticular activating system</b>, part of the reticular formation in the brainstem, regulates <b>consciousness</b>. Sensory input keeps it active, which promotes wakefulness and alertness. It also filters out repetitive or unimportant stimuli, which prevents sensory overload.</p><p>The <b>limbic system</b> controls emotion, memory, and motivation. The <b>basal nuclei</b> help control voluntary movement and muscle tone. The <b>cerebellum</b> coordinates movement and balance.</p>"
+    },
+    {
+      "id": "ns-22",
+      "type": "hotspot",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing a cross-section of the spinal cord. Click an area of gray matter that contains the cell bodies of the motor neurons that control skeletal muscles.",
+      "image": "img/spinal-cord-section.svg",
+      "alt": "Cross-section of the spinal cord, with the back (posterior) at the top and the front (anterior) at the bottom. Butterfly-shaped gray matter surrounds the central canal, and nerve roots with ganglia leave each side.",
+      "regions": [{"x": 37.9, "y": 58, "w": 7.1, "h": 11}, {"x": 55, "y": 58, "w": 7.1, "h": 11}, {"x": 35, "y": 62, "w": 2.8, "h": 9}, {"x": 62.2, "y": 62, "w": 2.8, "h": 9}, {"x": 37.9, "y": 69, "w": 5, "h": 3}, {"x": 57.2, "y": 69, "w": 5, "h": 3}, {"x": 45, "y": 58, "w": 1.4, "h": 7}, {"x": 53.6, "y": 58, "w": 1.4, "h": 7}],
+      "rationale": "<p>The cell bodies of the motor neurons that control skeletal muscles are in the <b>ventral (anterior) horns</b> of the gray matter: the broad lower wings of the butterfly in this view. Their fibers leave through the <b>ventral roots</b> to reach skeletal muscles.</p><p>The <b>dorsal (posterior) horns</b>, at the top, process incoming sensory information. Sensory fibers enter through the <b>dorsal roots</b>, and the cell bodies of those sensory neurons sit in the <b>dorsal root ganglia</b>, outside the cord. The white matter around the gray matter holds the ascending and descending tracts.</p>"
+    },
+    {
+      "id": "ns-23",
+      "type": "order",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the protective layers around the spinal cord. Place the layers and spaces in order, starting at the vertebra and moving inward to the spinal cord.",
+      "items": ["Epidural space", "Dura mater", "Subdural space", "Arachnoid mater", "Subarachnoid space", "Pia mater"],
+      "rationale": "<p>Just inside the bone of the vertebra is the <b>epidural space</b>, which holds fat (adipose tissue) and blood vessels. Next is the <b>dura mater</b>, the tough outer covering, then the <b>subdural space</b>. The <b>arachnoid mater</b> is the weblike middle layer. Beneath it, the <b>subarachnoid space</b> holds cerebrospinal fluid. The delicate <b>pia mater</b> clings directly to the surface of the spinal cord. A memory aid for the meninges from the outside in: <b>DAP</b> (dura, arachnoid, pia).</p>"
+    },
+    {
+      "id": "ns-24",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is assisting with a lumbar puncture to collect cerebrospinal fluid (CSF). The nurse knows that the needle must reach which space?",
+      "options": ["The epidural space", "The subdural space", "The subarachnoid space", "The central canal of the spinal cord"],
+      "answer": 2,
+      "rationale": "<p>CSF circulates in the <b>subarachnoid space</b>, between the arachnoid mater and the pia mater, so that's where a lumbar puncture collects it. The needle goes in low in the lumbar spine, below the level where the spinal cord ends (around L1 to L2), so it doesn't touch the cord.</p><p>The <b>epidural space</b> lies outside the dura and holds fat and blood vessels, not CSF. The <b>subdural space</b> lies between the dura and the arachnoid. The <b>central canal</b> is inside the spinal cord itself, which a lumbar puncture must avoid.</p>"
+    },
+    {
+      "id": "ns-25",
+      "type": "fill",
+      "topic": "Nervous system",
+      "stem": "How many pairs of spinal nerves branch from the spinal cord?",
+      "answer": 31,
+      "unit": "pairs",
+      "rationale": "<p>There are <b>31 pairs</b> of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal. Each one leaves the vertebral column through an opening between the vertebrae (the intervertebral foramen). Together with the 12 pairs of cranial nerves, they make up most of the peripheral nervous system.</p>"
+    },
+    {
+      "id": "ns-26",
+      "type": "emr",
+      "topic": "Nervous system",
+      "stem": "A nurse is preparing to test the cranial nerves that move the eyes. Which cranial nerves control eye movement?",
+      "options": ["Oculomotor (CN III)", "Optic (CN II)", "Trochlear (CN IV)", "Facial (CN VII)", "Abducens (CN VI)", "Trigeminal (CN V)"],
+      "answer": [0, 2, 4],
+      "select": 3,
+      "rationale": "<p>Three cranial nerves move the eyes. The <b>oculomotor nerve (CN III)</b> moves most of the eye muscles, raises the eyelid, and constricts the pupil. The <b>trochlear nerve (CN IV)</b> moves the superior oblique muscle, which helps the eye look down. The <b>abducens nerve (CN VI)</b> moves the lateral rectus muscle, which turns the eye outward. A memory aid: <b>LR6, SO4</b>, and the rest are 3.</p><p>The <b>optic nerve (CN II)</b> carries vision, but it doesn't move the eye. The <b>trigeminal nerve (CN V)</b> carries sensation from the face and controls chewing. The <b>facial nerve (CN VII)</b> controls facial expression.</p>"
+    },
+    {
+      "id": "ns-27",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each cranial nerve, specify whether it carries sensory signals, motor signals, or both.",
+      "rowHeader": "Cranial nerve",
+      "columns": ["Sensory", "Motor", "Both"],
+      "rows": ["Olfactory (CN I)", "Trigeminal (CN V)", "Spinal accessory (CN XI)", "Facial (CN VII)", "Optic (CN II)", "Hypoglossal (CN XII)", "Vestibulocochlear (CN VIII)"],
+      "answer": [0, 2, 1, 2, 0, 1, 0],
+      "rationale": "<p>The <b>sensory</b> nerves carry information to the brain: the <b>olfactory nerve (CN I)</b> for smell, the <b>optic nerve (CN II)</b> for vision, and the <b>vestibulocochlear nerve (CN VIII)</b> for hearing and balance. The <b>motor</b> nerves move muscles: the <b>spinal accessory nerve (CN XI)</b> turns the head and shrugs the shoulders, and the <b>hypoglossal nerve (CN XII)</b> moves the tongue. Two do <b>both</b>: the <b>trigeminal nerve (CN V)</b> carries facial sensation and controls the chewing muscles, and the <b>facial nerve (CN VII)</b> controls facial expression and carries taste from the front two-thirds of the tongue.</p><p>The memory aid <b>Some Say Marry Money But My Brother Says Big Brains Matter More</b> gives each nerve's type in order, from I to XII (S = sensory, M = motor, B = both).</p>"
+    },
+    {
+      "id": "ns-28",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is assessing a client's spinal accessory nerve (CN XI). Which instruction should the nurse give the client?",
+      "options": ["“Stick out your tongue and move it from side to side.”", "“Clench your teeth while I feel your jaw muscles.”", "“Smile, frown, and puff out your cheeks.”", "“Shrug your shoulders and turn your head while I push against them.”"],
+      "answer": 3,
+      "rationale": "<p>The <b>spinal accessory nerve (CN XI)</b> supplies the trapezius and sternocleidomastoid muscles, so the nurse tests it by having the client <b>shrug the shoulders</b> and <b>turn the head against resistance</b>, and compares the strength of both sides.</p><p>Moving the <b>tongue</b> tests the hypoglossal nerve (CN XII). <b>Clenching the teeth</b> tests the motor part of the trigeminal nerve (CN V). <b>Smiling, frowning, and puffing out the cheeks</b> test the facial nerve (CN VII).</p>"
+    },
+    {
+      "id": "ns-29",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse notes that one side of a client's face droops when the client smiles, and the client reports that food tastes different on the front of the tongue. Which cranial nerve should the nurse suspect is affected?",
+      "options": ["Facial (CN VII)", "Glossopharyngeal (CN IX)", "Trigeminal (CN V)", "Hypoglossal (CN XII)"],
+      "answer": 0,
+      "rationale": "<p>The <b>facial nerve (CN VII)</b> controls the muscles of facial expression and carries taste from the <b>front two-thirds</b> of the tongue. It also controls the tear and saliva glands. Drooping on one side of the face with a change in taste points to this nerve.</p><p>The <b>glossopharyngeal nerve (CN IX)</b> carries taste from the <b>back third</b> of the tongue and controls throat muscles. The <b>trigeminal nerve (CN V)</b> carries facial sensation and controls chewing. The <b>hypoglossal nerve (CN XII)</b> moves the tongue.</p>"
+    },
+    {
+      "id": "ns-30",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "Which of the following functions does the vagus nerve (CN X) control?",
+      "options": ["Slowing the heart rate", "Turning the head", "Movement of the throat and voice box muscles", "Hearing and balance", "Digestion, including motility of the stomach and intestines", "Moving the tongue"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>The <b>vagus nerve (CN X)</b> is the main nerve of the parasympathetic nervous system. It controls organs in the chest and abdomen, so it <b>slows the heart rate</b> and supports <b>digestion</b>, and it moves the muscles of the <b>throat and voice box</b> for speech and swallowing.</p><p><b>Turning the head</b> is controlled by the spinal accessory nerve (CN XI), <b>hearing and balance</b> by the vestibulocochlear nerve (CN VIII), and <b>moving the tongue</b> by the hypoglossal nerve (CN XII).</p>"
+    },
+    {
+      "id": "ns-31",
+      "type": "order",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing how a reflex works. Place the parts of a reflex arc in the order in which the signal passes through them.",
+      "items": ["Receptor", "Sensory neuron", "Integration center", "Motor neuron", "Effector"],
+      "rationale": "<p>A reflex arc is a fast, automatic pathway. The <b>receptor</b> detects the stimulus; for a tendon reflex, the muscle spindle senses the stretch. The <b>sensory (afferent) neuron</b> carries the signal to the spinal cord. The <b>integration center</b> in the spinal cord connects it to the motor neuron, directly or through interneurons. The <b>motor (efferent) neuron</b> carries the command out, and the <b>effector</b>, a muscle or gland, responds.</p>"
+    },
+    {
+      "id": "ns-32",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse taps the patellar tendon just below the kneecap with a reflex hammer. Which response should the nurse expect?",
+      "options": ["The hamstrings contract, and the knee bends.", "The quadriceps contracts, and the lower leg kicks forward.", "The foot points downward (plantar flexion).", "The big toe moves up, and the other toes fan out."],
+      "answer": 1,
+      "rationale": "<p>Tapping the patellar tendon stretches the <b>quadriceps femoris</b>, which reflexively contracts and <b>extends the knee</b>, so the lower leg kicks forward. This knee-jerk reflex is <b>monosynaptic</b> (one synapse between the sensory and motor neurons) and tests the femoral nerve and spinal segments L2 to L4.</p><p>The <b>hamstrings</b> bend the knee; this tap doesn't stretch them. <b>Plantar flexion</b> of the foot is the Achilles (ankle-jerk) reflex. The <b>big toe moving up while the other toes fan out</b> is the Babinski response, tested on the sole of the foot.</p>"
+    },
+    {
+      "id": "ns-33",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each deep tendon reflex, specify the spinal cord segments it tests.",
+      "rowHeader": "Reflex",
+      "columns": ["C5–C6", "C7–C8", "L2–L4", "S1–S2"],
+      "rows": ["Patellar (knee-jerk)", "Biceps", "Achilles (ankle-jerk)", "Triceps"],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p>Each deep tendon reflex tests a level of the spinal cord. The <b>biceps</b> reflex (musculocutaneous nerve) tests <b>C5–C6</b>. The <b>triceps</b> reflex (radial nerve) tests <b>C7–C8</b>. The <b>patellar</b> reflex (femoral nerve) tests <b>L2–L4</b>. The <b>Achilles</b> reflex (tibial nerve) tests <b>S1–S2</b>. The brachioradialis reflex (radial nerve) also tests C5–C6. An abnormal reflex helps locate a problem in the spinal cord or its nerves.</p>"
+    },
+    {
+      "id": "ns-34",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is assessing the reflexes of a healthy 9-month-old infant. Which reflex is still expected at this age?",
+      "options": ["Moro (startle) reflex", "Rooting reflex", "Babinski reflex", "Stepping reflex"],
+      "answer": 2,
+      "rationale": "<p>The <b>Babinski reflex</b> (the big toe moves up and the other toes fan out when the sole is stroked) is normal in infants and is often present until about 12 months of age.</p><p>The other newborn reflexes fade much earlier: the <b>Moro</b> reflex by about 3 to 4 months, the <b>stepping</b> reflex by about 3 months, and the <b>rooting</b> reflex by about 4 to 6 months. A newborn reflex that lasts too long, or is missing or uneven, should be reported, because it can signal a problem in the central nervous system.</p>"
+    },
+    {
+      "id": "ns-35",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "While supporting a newborn's head and neck, a nurse lets the newborn's body drop a few centimeters. The newborn's arms extend and spread outward, and the fingers open. How should the nurse document this response?",
+      "options": ["Moro (startle) reflex present", "Tonic neck reflex present", "Palmar grasp reflex present", "Rooting reflex present"],
+      "answer": 0,
+      "rationale": "<p>This is the <b>Moro (startle) reflex</b>: a sudden drop makes the newborn abduct and extend both arms, with the fingers opening. It's normal from birth and fades by about 3 to 4 months.</p><p>The <b>tonic neck</b> (fencing) reflex appears when the head is turned to one side: the arm on that side extends and the opposite arm flexes. The <b>palmar grasp</b> reflex is the newborn gripping a finger placed in the palm. The <b>rooting</b> reflex is turning toward the touch and opening the mouth when the cheek is stroked.</p>"
+    },
+    {
+      "id": "ns-36",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each effect, specify whether it results from sympathetic or parasympathetic stimulation.",
+      "rowHeader": "Effect",
+      "columns": ["Sympathetic", "Parasympathetic"],
+      "rows": ["The bronchioles dilate.", "The pupils constrict for near vision.", "Gut motility increases.", "Blood flow to skeletal muscles increases.", "The detrusor muscle contracts to empty the bladder.", "The liver releases glucose.", "Tear and saliva glands increase their secretions."],
+      "answer": [0, 1, 1, 0, 1, 0, 1],
+      "rationale": "<p>The <b>sympathetic</b> (fight-or-flight) division prepares the body for action: it <b>dilates the bronchioles</b>, <b>increases blood flow to skeletal muscles</b>, and makes the <b>liver release glucose</b> for energy.</p><p>The <b>parasympathetic</b> (rest-and-digest) division supports routine body functions: it <b>constricts the pupils</b> for near vision, <b>increases gut motility</b>, <b>contracts the detrusor muscle</b> (while relaxing the urethral sphincters) to empty the bladder, and <b>increases tear and saliva secretion</b>.</p>"
+    },
+    {
+      "id": "ns-37",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "Which neurotransmitter do most sympathetic postganglionic neurons release at their target organs?",
+      "options": ["Acetylcholine", "Dopamine", "GABA", "Norepinephrine"],
+      "answer": 3,
+      "rationale": "<p>Most <b>sympathetic postganglionic</b> neurons release <b>norepinephrine</b>, which activates adrenergic receptors on target organs. The adrenal medulla also releases epinephrine into the blood.</p><p><b>Acetylcholine</b> is released by the <b>preganglionic</b> neurons of both divisions and by <b>parasympathetic postganglionic</b> neurons. <b>Dopamine</b> works mainly in the brain (motor control and reward), and <b>GABA</b> is the brain's main inhibitory neurotransmitter.</p>"
+    },
+    {
+      "id": "ns-38",
+      "type": "dragdrop",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the two divisions of the autonomic nervous system.",
+      "text": "The sympathetic division is called the {{0}} system, and its preganglionic nerve cell bodies lie in the thoracic and upper lumbar spinal cord. The parasympathetic division is called the {{1}} system, and its fibers travel in cranial nerves III, VII, IX, and X and in the sacral spinal nerves {{2}}.",
+      "tokens": ["fight-or-flight", "rest-and-digest", "S2 to S4", "C5 to T1", "L1 to L5", "sense-and-respond"],
+      "answer": [0, 1, 2],
+      "rationale": "<p>The <b>sympathetic</b> division is the <b>fight-or-flight</b> system. Its preganglionic neurons start in the spinal cord from T1 to L2 (thoracolumbar). The <b>parasympathetic</b> division is the <b>rest-and-digest</b> system. Its fibers leave the brainstem in cranial nerves III, VII, IX, and X, and leave the sacral spinal cord in the pelvic splanchnic nerves from <b>S2 to S4</b> (craniosacral).</p><p><b>C5 to T1</b> and <b>L1 to L5</b> aren't the outflow levels of either division, and “sense-and-respond” isn't a name for either one.</p>"
+    },
+    {
+      "id": "ns-39",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "A client is having a strong sympathetic (fight-or-flight) response. Which findings should the nurse expect?",
+      "options": ["Dilated pupils", "Constricted bronchioles", "Increased heart rate", "Increased urine output", "Increased sweating", "Decreased bowel sounds"],
+      "answer": [0, 2, 4, 5],
+      "rationale": "<p>The sympathetic response readies the body for action: the <b>pupils dilate</b>, the <b>heart rate</b> and contractility increase, <b>sweat glands</b> secrete more, and <b>digestion slows</b>, so bowel sounds decrease.</p><p>The bronchioles <b>dilate</b>, not constrict, to bring in more air. <b>Urine output decreases</b>, because the detrusor muscle relaxes and the urethral sphincters contract. Constricting the bronchioles and emptying the bladder are parasympathetic effects.</p>"
+    },
+    {
+      "id": "ns-40",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A client has Parkinson disease. The nurse recalls that the client's symptoms result from the loss of neurons that produce which neurotransmitter?",
+      "options": ["Acetylcholine", "Dopamine", "Serotonin", "GABA"],
+      "answer": 1,
+      "rationale": "<p>Parkinson disease is a neurodegenerative disorder caused by the loss of <b>dopamine</b>-producing neurons, mainly in the substantia nigra of the midbrain. Dopamine is needed for smooth motor control, so clients develop movement problems such as a shuffling (parkinsonian) gait.</p><p><b>Acetylcholine</b> works at the neuromuscular junction and in the parasympathetic system. <b>Serotonin</b> affects mood, sleep, and bowel function. <b>GABA</b> is the brain's main inhibitory neurotransmitter.</p>"
+    },
+    {
+      "id": "ns-41",
+      "type": "matrix",
+      "topic": "Nervous system",
+      "stem": "For each finding, specify the term the nurse should use to document it.",
+      "rowHeader": "Finding",
+      "columns": ["Dysarthria", "Dysphagia", "Ataxia", "Apraxia"],
+      "rows": ["Difficulty swallowing", "Lack of coordination of muscle movements", "Can't carry out a learned movement when asked, even though strength is normal", "Slurred speech caused by weak or poorly controlled speech muscles"],
+      "answer": [1, 2, 3, 0],
+      "rationale": "<p><b>Dysphagia</b> (dys = difficult, phagia = eating) is difficulty swallowing. <b>Ataxia</b> is a lack of coordination of muscle movements, often from damage to the cerebellum. <b>Apraxia</b> (a = without, praxis = action) is the inability to carry out a learned, purposeful movement even though the muscles work. <b>Dysarthria</b> (dys = difficult, arthr = articulation) is unclear speech caused by weakness or poor control of the muscles of speech, such as the tongue and lips.</p>"
+    },
+    {
+      "id": "ns-42",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "During a mental status examination, a client says, “I feel hopeless.” The nurse observes that the client's facial expression doesn't change during the interview. How should the nurse document these findings?",
+      "options": ["Mood: flat. Affect: hopeless.", "Thought process: hopeless. Thought content: flat.", "Mood: hopeless. Affect: flat.", "Insight: poor. Judgment: flat."],
+      "answer": 2,
+      "rationale": "<p><b>Mood</b> is the client's own description of how they feel, so it's documented in the client's words: <b>hopeless</b>. <b>Affect</b> is the nurse's observation of the client's emotional expression; a face that doesn't change is a <b>flat</b> affect.</p><p><b>Thought process</b> is how the client organizes their thoughts, and <b>thought content</b> is what they think about, such as suicidal thoughts or delusions. <b>Insight</b> is the client's understanding of their illness, and <b>judgment</b> is the ability to make sound decisions. A client who feels hopeless should also be asked directly about thoughts of suicide.</p>"
+    },
+    {
+      "id": "ns-43",
+      "type": "sata",
+      "topic": "Nervous system",
+      "stem": "A nurse is giving a client the Montreal Cognitive Assessment (MoCA). Which tasks are part of this test?",
+      "options": ["Drawing a clock that shows 10 past 11", "Reading an eye chart from 20 feet away", "Subtracting 7 from 100, and continuing to subtract 7", "Recalling a list of 5 words after a delay", "Touching the nose with the eyes closed", "Naming pictured animals, such as a lion and a camel"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>The <b>MoCA</b> screens cognition in several areas. It includes <b>drawing a clock</b> that shows 10 past 11 and copying a cube (visuospatial and executive function), <b>naming animals</b> (a lion, a rhinoceros, and a camel), <b>serial sevens</b> (subtracting 7 from 100 several times) and other attention tasks, repeating sentences, word fluency, abstraction, <b>delayed recall</b> of 5 words, and orientation.</p><p><b>Reading an eye chart</b> tests vision and the optic nerve (CN II). <b>Touching the nose with the eyes closed</b> tests coordination (the cerebellum). Both belong to other parts of the neurological exam.</p>"
+    },
+    {
+      "id": "ns-44",
+      "type": "highlight",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the neurological assessment of an older adult client. Click to highlight the findings that require follow-up.",
+      "passage": "[[Alert and oriented to person, place, and time]]. Speech is clear. [[Recalls 1 of 5 words after 5 minutes]]. [[Pupils are equal, round, and reactive to light]]. [[Gait is wide-based and unsteady]], and [[client reports falling twice this month]]. [[Hand grips are strong and equal]].",
+      "answer": [1, 3, 4],
+      "rationale": "<p>The findings that need follow-up: <b>recalling only 1 of 5 words</b> after a delay suggests a memory problem that needs further cognitive assessment. A <b>wide-based, unsteady gait</b> and <b>two falls this month</b> show a high fall risk. Cognitive changes and falls are key concerns in older adults.</p><p>Being <b>alert and oriented to person, place, and time</b>, <b>pupils that are equal, round, and reactive to light</b>, and <b>strong, equal hand grips</b> are expected findings.</p>"
+    },
+    {
+      "id": "ns-45",
+      "type": "mc",
+      "topic": "Nervous system",
+      "stem": "A nurse is using the BATHE technique to interview a client who is anxious about upcoming tests. Which question addresses the H in BATHE?",
+      "options": ["“What is going on in your life right now?”", "“How is this affecting you?”", "“What troubles you most about this situation?”", "“How are you handling all of this?”"],
+      "answer": 3,
+      "rationale": "<p>BATHE is a set of open-ended questions for brief, supportive interviews. <b>H</b> is <b>Handling</b>: “How are you handling it?”</p><p>“What is going on in your life?” addresses <b>Background</b>. “How is this affecting you?” addresses <b>Affect</b>. “What troubles you most?” addresses <b>Troubles</b>. BATHE ends with <b>Empathy</b>, a statement such as “That sounds very frustrating.”</p>"
+    },
+    {
+      "id": "ns-46",
+      "type": "highlight",
+      "case": "confusion",
+      "topic": "Nervous system",
+      "stem": "Click to highlight the findings in the 1900 nurses' note that show a change from the client's usual mental status.",
+      "passage": "Client is [[restless and pulling at the IV tubing]], and [[keeps asking where she is]]. Through the phone interpreter, the client [[does not know the day or the name of the hospital]], and [[has trouble following directions]]. [[Speech is clear]]. [[Hand grips are strong and equal]]. The daughter states that her mother [[lives alone and manages her own medications]], and that [[the confusion started this afternoon]].",
+      "answer": [0, 1, 2, 3, 7],
+      "rationale": "<p>The findings that show a <b>change from baseline</b> are new <b>restlessness and pulling at the IV tubing</b>, <b>asking again and again where she is</b>, <b>not knowing the day or the hospital</b>, and <b>trouble following directions</b>. Together they show new disorientation and inattention. The daughter's report that <b>the confusion started this afternoon</b> confirms that the change is sudden.</p><p><b>Clear speech</b> and <b>strong, equal hand grips</b> are unchanged from 0800 and expected. That the client <b>lives alone and manages her own medications</b> describes her usual level of functioning (her baseline). It's what the nurse compares the current findings with, not a change.</p>"
+    },
+    {
+      "id": "ns-47",
+      "type": "matrix",
+      "case": "confusion",
+      "topic": "Nervous system",
+      "stem": "For each finding, specify whether the client's status has improved, has not changed, or has declined since 0800.",
+      "rowHeader": "Finding",
+      "columns": ["Improved", "No Change", "Declined"],
+      "rows": ["Orientation", "Temperature", "Oxygen saturation", "Pupil response", "Hand grip strength", "Ability to follow directions"],
+      "answer": [2, 2, 0, 1, 1, 2],
+      "rationale": "<p><b>Declined:</b> <b>orientation</b> went from oriented to person, place, time, and situation to oriented to person only. The <b>temperature</b> rose from 37.6°&nbsp;C to 38.9°&nbsp;C, a new fever. And the client went from following directions to <b>following them only with difficulty</b>.</p><p><b>Improved:</b> <b>oxygen saturation</b> rose from 91% on room air to 95% on 2&nbsp;L/min of oxygen.</p><p><b>No change:</b> the <b>pupils</b> are still equal, round, and reactive to light, and the <b>hand grips</b> are still strong and equal.</p>"
+    },
+    {
+      "id": "ns-48",
+      "type": "matrix",
+      "case": "confusion",
+      "topic": "Nervous system",
+      "stem": "For each potential nursing action, specify whether it is indicated or not indicated for the client at this time.",
+      "rowHeader": "Potential nursing action",
+      "columns": ["Indicated", "Not Indicated"],
+      "rows": ["Use a professional medical interpreter to assess the client's orientation.", "Ask the daughter to interpret the orientation questions.", "Report the change in mental status to the provider right away, using SBAR.", "Wait until morning to see whether the confusion clears.", "Keep the bed low and the call light within reach, and check on the client often.", "Give health information only to the daughter, as the daughter requested."],
+      "answer": [0, 1, 0, 1, 0, 1],
+      "rationale": "<p><b>Indicated:</b> a <b>professional medical interpreter</b> gives the most accurate assessment of orientation and cognition. A sudden change in mental status must be <b>reported promptly</b>; SBAR (situation, background, assessment, recommendation) organizes the report. A confused, restless client is at high risk for falls, so <b>safety measures</b> such as a low bed, the call light within reach, and frequent checks are needed.</p><p><b>Not indicated:</b> <b>family members shouldn't interpret</b> assessment questions, because they may soften, add to, or answer for the client, which hides the true findings. <b>Waiting until morning</b> delays care for a sudden change that needs prompt reporting. The nurse can respect the family's cultural value of making decisions together, but shouldn't share information <b>only with the daughter</b> without knowing the client's own wishes. The nurse should ask the client, through an interpreter, how she wants her family involved, and support her autonomy.</p>"
+    },
+    {
+      "id": "ns-49",
+      "type": "dropdown",
+      "case": "confusion",
+      "topic": "Nervous system",
+      "stem": "Complete the following sentences.",
+      "text": "The client's findings are most consistent with {{0}}, because the confusion {{1}}. To judge this change, the nurse compares the client's current mental status with {{2}}.",
+      "blanks": [
+        {"options": ["dementia (a major neurocognitive disorder)", "delirium (an acute confusional state)", "expressive aphasia", "a normal response to being in the hospital"], "answer": 1},
+        {"options": ["has developed slowly over several years", "affects only the ability to speak", "began suddenly, along with a new fever", "is expected in clients older than 75"], "answer": 2},
+        {"options": ["her usual level of functioning, as described by her daughter", "the average score for clients her age", "the mental status of other clients on the unit", "her expected mental status at discharge"], "answer": 0}
+      ],
+      "rationale": "<p>The findings fit <b>delirium</b>, an acute confusional state. The confusion <b>began suddenly</b> (this afternoon), along with a <b>new fever</b> from the client's infection, and the client is newly disoriented, inattentive, and restless. Delirium needs prompt reporting, because its cause, such as an infection, can often be treated.</p><p><b>Dementia</b> (a major neurocognitive disorder) develops <b>slowly</b>, over months to years, not in an afternoon. <b>Expressive aphasia</b> affects producing speech, and this client's speech is clear. Confusion is <b>not</b> a normal part of being in the hospital or of aging.</p><p>The best comparison is the client's <b>own baseline</b>: her daughter reports that she normally lives alone and manages her own medications. Averages for her age group or comparisons with other clients can't show a change in this client.</p>"
+    },
+    {
+      "id": "ns-50",
+      "type": "bowtie",
+      "case": "confusion",
+      "topic": "Nervous system",
+      "stem": "A nurse is reviewing the client's findings at 1900.",
+      "condition": {"options": ["Delirium", "Dementia", "Expressive aphasia", "Cerebellar ataxia"], "answer": 0},
+      "actions": {"options": ["Arrange a professional medical interpreter for assessments", "Apply wrist restraints to protect the IV", "Notify the provider of the change using SBAR", "Have the daughter answer the assessment questions", "Withhold oral fluids until the confusion clears"], "answer": [0, 2], "select": 2},
+      "parameters": {"options": ["Orientation and attention", "Babinski reflex", "Temperature", "Hearing in each ear", "Deep tendon reflexes"], "answer": [0, 2], "select": 2},
+      "rationale": "<p>The client's <b>sudden</b> confusion, inattention, and restlessness, with a new fever from an infection, point to <b>delirium</b>. Dementia develops slowly. Expressive aphasia affects producing speech, and her speech is clear. Cerebellar ataxia affects coordination, not thinking.</p><p><b>Actions:</b> arrange a <b>professional medical interpreter</b> so assessments are accurate, and <b>notify the provider using SBAR</b>, because a sudden change in mental status needs prompt reporting. Restraints are a last resort and can increase agitation and injury. Family members shouldn't answer for the client or interpret assessments. Withholding fluids could cause dehydration, which can make delirium worse.</p><p><b>Parameters to monitor:</b> <b>orientation and attention</b>, compared with her baseline, show whether the delirium is improving, and <b>temperature</b> tracks the infection that is its likely cause. The Babinski reflex, hearing, and deep tendon reflexes don't track this problem.</p>"
+    },
+    {
+      "id": "se-01",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing the senses. For each sense, click to specify whether it is a general sense or a special sense.",
+      "rowHeader": "Sense",
+      "columns": ["General sense", "Special sense"],
+      "rows": ["Vision", "Touch", "Taste", "Equilibrium", "Proprioception", "Temperature"],
+      "answer": [1, 0, 1, 1, 0, 0],
+      "rationale": "<p><b>General senses</b> use receptors spread throughout the body: <b>touch</b>, pressure, pain, <b>temperature</b>, <b>proprioception</b> (the position of body parts and the effort used to move them), and interoception (the body's internal condition). <b>Special senses</b> have specialized sense organs: <b>vision</b> (the eyes), hearing and <b>equilibrium</b> (the inner ear), <b>taste</b> (taste buds), and smell (olfactory receptors).</p>"
+    },
+    {
+      "id": "se-02",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "With the client's eyes closed, a nurse moves the client's big toe up, then down, and asks which way it moved. Which sense is the nurse testing?",
+      "options": ["Interoception", "Vestibular sense", "Proprioception", "Nociception"],
+      "answer": 2,
+      "rationale": "<p><b>Proprioception</b> is the awareness of where body parts are in relation to each other, and of the effort used to move them. Asking a client to say which way a toe or finger was moved, with the eyes closed, tests it.</p><p><b>Interoception</b> is awareness of the body's internal condition, such as hunger, thirst, or a full bladder. The <b>vestibular sense</b> detects the movement and position of the head relative to gravity, for balance. <b>Nociception</b> is the detection of pain by nociceptors.</p>"
+    },
+    {
+      "id": "se-03",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing sensory receptors. For each receptor, click to specify the stimulus it detects.",
+      "rowHeader": "Receptor",
+      "columns": ["Tissue damage (pain)", "Light", "Odor molecules", "Oxygen, carbon dioxide, and pH of the blood"],
+      "rows": ["Rods and cones (photoreceptors)", "Carotid and aortic bodies (chemoreceptors)", "Free nerve endings (nociceptors)", "Olfactory receptor neurons"],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p><b>Rods and cones</b> are photoreceptors in the retina that convert <b>light</b> into nerve signals. The <b>carotid and aortic bodies</b> are chemoreceptors that monitor the blood's <b>oxygen, carbon dioxide, and pH</b>. <b>Free nerve endings</b> act as nociceptors, which detect <b>pain</b>, and as thermoreceptors. <b>Olfactory receptor neurons</b> are chemoreceptors in the nose that respond to <b>odor molecules</b>.</p>"
+    },
+    {
+      "id": "se-04",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client steps on a tack and feels an immediate, sharp pain, followed a moment later by a dull ache. What is the immediate, sharp pain called?",
+      "options": ["Slow (second) pain", "Referred pain", "Fast (first) pain", "Visceral pain"],
+      "answer": 2,
+      "rationale": "<p><b>Fast pain</b>, also called first pain, is the immediate, sharp, well-localized pain felt when the skin is pricked or cut. <b>Slow pain</b>, or second pain, is the delayed, dull ache that follows, like the ache after stubbing a toe.</p><p><b>Referred pain</b> is felt at a site different from where it starts, such as arm pain during a heart attack. <b>Visceral pain</b> comes from internal organs and is usually hard to pinpoint.</p>"
+    },
+    {
+      "id": "se-05",
+      "type": "dropdown",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing why some medications cause nausea. Complete the following sentence.",
+      "text": "The chemoreceptor trigger zone, located in the {{0}}, responds to drugs and hormones in the blood and can cause {{1}}.",
+      "blanks": [
+        {"options": ["cerebellum", "occipital lobe", "medulla"], "answer": 2},
+        {"options": ["coughing", "vomiting", "fever"], "answer": 1}
+      ],
+      "rationale": "<p>The <b>chemoreceptor trigger zone</b> sits in the <b>medulla</b> of the brainstem. It responds to drugs and hormones carried in the blood and can trigger nausea and <b>vomiting</b>, which is why some medications cause nausea.</p><p>The <b>cerebellum</b> coordinates movement and balance, and the <b>occipital lobe</b> interprets vision. The trigger zone doesn't cause <b>coughing</b>, a reflex set off by irritation of the airway, or <b>fever</b>, which the hypothalamus regulates.</p>"
+    },
+    {
+      "id": "se-06",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client runs the fingertips over a piece of fabric to feel its fine texture. Which receptors, concentrated in the hairless skin of the fingertips, make this possible?",
+      "options": ["Meissner corpuscles", "Pacinian corpuscles", "Ruffini endings", "Free nerve endings"],
+      "answer": 0,
+      "rationale": "<p><b>Meissner corpuscles</b> lie in the dermal papillae of hairless (glabrous) skin, such as the fingertips, and sense <b>light touch and fine movement across the skin</b>, like the texture of fabric.</p><p><b>Pacinian corpuscles</b> sense high-frequency vibration and deep pressure. <b>Ruffini endings</b> sense stretch, sliding of the skin, and changes in joint angle. <b>Free nerve endings</b> detect pain and temperature.</p>"
+    },
+    {
+      "id": "se-07",
+      "type": "sata",
+      "topic": "Senses",
+      "stem": "A nurse is teaching about the visceral senses. Which sensations are visceral senses?",
+      "options": ["Hearing music", "Nausea", "Seeing the color red", "The need to urinate", "Thirst", "Hunger"],
+      "answer": [1, 3, 4, 5],
+      "rationale": "<p><b>Visceral senses</b> tell the brain about the internal organs and the body's needs: <b>nausea</b>, <b>hunger</b>, <b>thirst</b>, and the need to <b>urinate</b> or defecate. They are part of interoception, the awareness of the body's internal condition.</p><p><b>Seeing a color</b> (vision) and <b>hearing music</b> (hearing) are special senses, which use specialized sense organs to detect stimuli from outside the body.</p>"
+    },
+    {
+      "id": "se-08",
+      "type": "order",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing how tears are made and drained. Place the steps in order.",
+      "items": ["The lacrimal glands secrete tears.", "Blinking spreads the tears across the surface of the eye.", "The tears drain into the lacrimal puncta near the inner corner of the eye.", "The tears collect in the lacrimal sac.", "The tears drain through the nasolacrimal duct into the nose."],
+      "rationale": "<p>Tears are made in the <b>lacrimal glands</b>, almond-sized glands at the upper outer corner of each eye. <b>Blinking</b> spreads the tears across the eye, where they mix with oil from the meibomian glands. Used tears drain through the <b>lacrimal puncta</b>, small openings in the upper and lower lids near the nose, into the <b>lacrimal sac</b> in the inner corner, and then through the <b>nasolacrimal duct</b> into the nose. That's why the nose runs when a person cries.</p>"
+    },
+    {
+      "id": "se-09",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client has dry eyes because the tears evaporate too quickly. Which structures normally add oil to the tears to slow evaporation?",
+      "options": ["Lacrimal glands", "Lacrimal puncta", "Conjunctiva", "Meibomian glands"],
+      "answer": 3,
+      "rationale": "<p>The <b>meibomian glands</b>, along the edges of the eyelids, make oil that mixes with the watery tears. The oil slows evaporation, helps the tears cling to the eye, and keeps them from spilling over the lashes.</p><p>The <b>lacrimal glands</b> make the watery, salty part of the tears, which cleans and lubricates the eye and is antiseptic. The <b>lacrimal puncta</b> drain used tears away. The <b>conjunctiva</b> is a thin mucous membrane over the sclera.</p>"
+    },
+    {
+      "id": "se-10",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "Which statement about the conjunctiva is accurate?",
+      "options": ["It is the colored part of the eye that controls the size of the pupil.", "It is the clear dome at the front of the eye that bends light.", "It produces the watery part of the tears.", "It is a thin mucous membrane that covers the sclera but not the cornea."],
+      "answer": 3,
+      "rationale": "<p>The <b>conjunctiva</b> is a thin, protective mucous membrane that covers the <b>sclera</b> (the white of the eye) and lines the eyelids. It does <b>not</b> cover the cornea, the clear front surface of the eye.</p><p>The <b>iris</b> is the colored part that controls the pupil. The <b>cornea</b> is the clear dome that bends light as it enters. The <b>lacrimal glands</b> produce the watery part of the tears.</p>"
+    },
+    {
+      "id": "se-11",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing the structures of the eye. For each structure, click to specify its function.",
+      "rowHeader": "Structure",
+      "columns": ["Changes shape to focus light", "Converts light into nerve impulses", "Bends light as it enters the eye", "Supplies blood to the eye", "Controls the size of the pupil"],
+      "rows": ["Cornea", "Iris", "Lens", "Retina", "Choroid"],
+      "answer": [2, 4, 0, 1, 3],
+      "rationale": "<p>The <b>cornea</b>, the clear front part of the outer layer, <b>bends (refracts) light</b> as it enters. The <b>iris</b>, the colored part, controls the size of the <b>pupil</b> and so the amount of light let in. The <b>lens</b>, controlled by the ciliary muscles, becomes thicker or thinner to <b>focus</b> light on the retina. The <b>retina</b> lines the back of the eye; its rods and cones <b>convert light into nerve impulses</b>, which leave the eye through the optic nerve. The <b>choroid</b> is the layer that carries the eye's <b>blood supply</b>.</p>"
+    },
+    {
+      "id": "se-12",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing the anatomy of the eye. Click the structure that changes thickness to focus on objects at different distances.",
+      "image": "img/eye-section.svg",
+      "alt": "Side view of the eye with the front on the left: a clear dome at the front, the colored iris with an opening in the middle, a clear oval structure behind the opening, a jelly-filled chamber lined by layers at the back, a small yellow spot at the center of the back, and a thick nerve leaving the back of the eye.",
+      "regions": [{"x": 36.3, "y": 43.3, "w": 4.7, "h": 13.3}, {"x": 37.3, "y": 40.5, "w": 2.7, "h": 2.8}, {"x": 37.3, "y": 56.6, "w": 2.7, "h": 2.9}],
+      "rationale": "<p>The <b>lens</b>, the clear oval structure just behind the pupil, focuses light on the retina. The ciliary muscles change its thickness: it becomes thicker and rounder to focus on near objects (accommodation) and thinner for distant ones. Clouding of the lens is a cataract.</p><p>The <b>cornea</b>, the clear dome at the front, bends light but doesn't change shape to focus. The <b>macula</b>, the yellow spot at the back, gives sharp central vision. The <b>optic nerve</b> carries signals from the retina to the brain.</p>"
+    },
+    {
+      "id": "se-13",
+      "type": "dragdrop",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing the fluids of the eye.",
+      "text": "The {{0}} humor fills the space in front of the lens and bathes the iris and pupil. The {{1}} humor is a clear, jellylike substance that fills the large cavity behind the lens.",
+      "tokens": ["lacrimal", "vitreous", "serous", "aqueous"],
+      "answer": [3, 1],
+      "rationale": "<p>The <b>aqueous humor</b> is a watery fluid that fills the anterior and posterior chambers, in front of the lens, and bathes the iris, pupil, and lens. The <b>vitreous humor</b> is a clear, jellylike substance that fills the cavity behind the lens and helps the eye keep its shape.</p><p><b>Lacrimal</b> fluid is tears, which bathe the outside of the eye. <b>Serous</b> fluid is the thin, watery fluid made by serous membranes, such as those lining the chest and abdomen; it isn't one of the humors of the eye.</p>"
+    },
+    {
+      "id": "se-14",
+      "type": "order",
+      "topic": "Senses",
+      "stem": "A nurse is teaching how light becomes vision. Place the structures in the order in which light, and the signals it creates, pass through them.",
+      "items": ["Cornea", "Pupil", "Lens", "Retina", "Optic nerve", "Occipital lobe of the brain"],
+      "rationale": "<p>Light enters through the <b>cornea</b>, which bends it, passes through the <b>pupil</b>, whose size the iris controls, and is focused by the <b>lens</b> onto the <b>retina</b>. The retina's rods and cones convert the light into electrical signals, which travel along the <b>optic nerve</b> (cranial nerve II) to the <b>occipital lobe</b>, where the visual cortex interprets them.</p>"
+    },
+    {
+      "id": "se-15",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each statement, click to specify whether it describes rods or cones.",
+      "rowHeader": "Statement",
+      "columns": ["Rods", "Cones"],
+      "rows": ["Most active in dim light", "Detect color", "Most densely packed in the fovea centralis", "Mainly responsible for night vision", "Most active in bright light"],
+      "answer": [0, 1, 1, 0, 1],
+      "rationale": "<p><b>Rods</b> work in <b>low light</b> and are mainly responsible for <b>night vision</b>. <b>Cones</b> work in <b>bright light</b> and perceive <b>color</b>, with red, green, and blue cones. The <b>fovea centralis</b>, a small pit at the center of the macula, is packed with cones, which is why it gives the sharpest central vision.</p>"
+    },
+    {
+      "id": "se-16",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "Click the area of the retina that is responsible for sharp central vision.",
+      "image": "img/eye-section.svg",
+      "alt": "Side view of the eye with the front on the left: a clear dome at the front, the colored iris with an opening in the middle, a clear oval structure behind the opening, a jelly-filled chamber lined by layers at the back, a small yellow spot at the center of the back, and a thick nerve leaving the back of the eye.",
+      "regions": [{"x": 73.0, "y": 43.8, "w": 2.7, "h": 9.5}],
+      "rationale": "<p>The <b>macula</b> is the central part of the retina, at the back of the eye. At its center is the <b>fovea centralis</b>, a small pit packed with cones, which gives the sharpest central vision. Macular degeneration damages this area and causes loss of central vision.</p><p>The <b>lens</b> focuses light, the <b>optic nerve</b> carries signals to the brain, and the rest of the retina, which has more rods, supports side (peripheral) and night vision.</p>"
+    },
+    {
+      "id": "se-17",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client looks up from a book to a sign across the room, then back at the book. Which change lets the eyes focus on the book again?",
+      "options": ["The lens becomes thinner and flatter.", "The cornea changes shape.", "The lens becomes thicker and rounder.", "The pupils dilate."],
+      "answer": 2,
+      "rationale": "<p><b>Accommodation</b> is the eye's response for focusing on near objects. The ciliary muscles change the shape of the lens: it becomes <b>thicker and rounder</b>, which bends light more and focuses the near image on the retina. The pupils also constrict.</p><p>A <b>thinner, flatter</b> lens focuses on distant objects. The <b>cornea</b> bends light but doesn't change shape to focus. The pupils <b>constrict</b>, not dilate, when focusing up close.</p>"
+    },
+    {
+      "id": "se-18",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "Click the structure that carries visual impulses from the retina to the brain.",
+      "image": "img/eye-section.svg",
+      "alt": "Side view of the eye with the front on the left: a clear dome at the front, the colored iris with an opening in the middle, a clear oval structure behind the opening, a jelly-filled chamber lined by layers at the back, a small yellow spot at the center of the back, and a thick nerve leaving the back of the eye.",
+      "regions": [{"x": 78.7, "y": 54.8, "w": 18.3, "h": 10.0}],
+      "rationale": "<p>The <b>optic nerve</b> (cranial nerve II) leaves the back of the eye and carries impulses from the retina's rods and cones to the brain, where the occipital lobe interprets them.</p><p>The <b>lens</b> focuses light, the <b>macula</b> is the area of the retina for sharp central vision, and the <b>cornea</b> bends light as it enters the eye. None of them carries signals to the brain.</p>"
+    },
+    {
+      "id": "se-19",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A nurse is screening a client's visual acuity. Which tool should the nurse use?",
+      "options": ["Tuning fork", "Otoscope", "Snellen chart", "Reflex hammer"],
+      "answer": 2,
+      "rationale": "<p><b>Visual acuity</b>, how clearly a person sees, is tested with a <b>Snellen chart</b>, a wall chart of letters that get smaller on each line.</p><p>A <b>tuning fork</b> is used to assess hearing, an <b>otoscope</b> to examine the ear canal and eardrum, and a <b>reflex hammer</b> to test deep tendon reflexes.</p>"
+    },
+    {
+      "id": "se-20",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each eye disorder, click to specify its description.",
+      "rowHeader": "Disorder",
+      "columns": ["Loss of central vision from damage to the macula", "Damage to the retina's small blood vessels from long-term high blood glucose", "Clouding of the lens", "Loss of side vision from increased pressure in the eye"],
+      "rows": ["Cataract", "Glaucoma", "Macular degeneration", "Diabetic retinopathy"],
+      "answer": [2, 3, 0, 1],
+      "rationale": "<p>A <b>cataract</b> is clouding of the <b>lens</b>, as its proteins break down and clump, causing blurred or dim vision. <b>Glaucoma</b> involves increased <b>intraocular pressure</b> that damages the optic nerve and causes loss of <b>peripheral (side)</b> vision. <b>Macular degeneration</b> damages the <b>macula</b>, causing loss of <b>central</b> vision, mostly in people over 50. <b>Diabetic retinopathy</b> is damage to the retina's small blood vessels from long-term <b>high blood glucose</b>, and it can lead to blindness.</p>"
+    },
+    {
+      "id": "se-21",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A 64-year-old client who has no vision problems asks why regular eye exams are needed. Which response by the nurse is accurate?",
+      "options": ["Glaucoma can damage vision before a person notices any symptoms.", "Cataracts always cause eye pain, so exams aren't needed until pain begins.", "Aging affects only the ability to see colors.", "Eye exams are needed only for people who wear glasses."],
+      "answer": 0,
+      "rationale": "<p><b>Glaucoma</b> often causes no symptoms at first, and more than half of the people who have it don't know it. Regular eye exams can find raised intraocular pressure and early damage before vision is lost. Diabetic retinopathy is also silent early on.</p><p><b>Cataracts</b> cause gradual clouding and blurred vision, not pain. Aging affects <b>more than color vision</b>: cataracts, macular degeneration, and glaucoma all become more common. Eye exams matter for everyone, <b>not only people who wear glasses</b>.</p>"
+    },
+    {
+      "id": "se-22",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client can read a book clearly but can't read road signs while driving. The nurse recognizes this as which condition?",
+      "options": ["Hyperopia (farsightedness)", "Myopia (nearsightedness)", "Macular degeneration", "Strabismus"],
+      "answer": 1,
+      "rationale": "<p><b>Myopia</b> (nearsightedness) is a refractive error in which <b>near objects are clear but distant objects are blurry</b>, because the eye focuses distant images in front of the retina.</p><p><b>Hyperopia</b> (farsightedness) is the opposite: distant objects are clearer than near ones. <b>Macular degeneration</b> causes loss of central vision at any distance. <b>Strabismus</b> is misalignment of the eyes.</p>"
+    },
+    {
+      "id": "se-23",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "During a well-child visit, a nurse notices that one of a 4-year-old child's eyes turns inward. Why should the nurse refer the child for an eye exam?",
+      "options": ["The eye will straighten as the child grows, so the referral can wait until age 10.", "An eye that turns inward is a sign of glaucoma.", "Strabismus affects only how the eyes look, not how the child sees.", "Untreated misalignment of the eyes can lead to amblyopia and loss of binocular vision."],
+      "answer": 3,
+      "rationale": "<p>An eye that turns inward (<b>esotropia</b>) is a form of <b>strabismus</b>, misalignment of the eyes. Early treatment matters, because untreated strabismus can lead to <b>amblyopia</b> (reduced vision in one eye), <b>loss of binocular vision</b>, and double vision.</p><p>Strabismus doesn't reliably go away with growth, so <b>waiting</b> risks permanent vision loss. It isn't a sign of <b>glaucoma</b>. It affects how the child <b>sees</b>, not just how the eyes look.</p>"
+    },
+    {
+      "id": "se-24",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "When a nurse shines a light into a client's right eye, both pupils constrict. Which cranial nerve carries the signal that makes the pupils constrict?",
+      "options": ["Optic nerve (cranial nerve II)", "Oculomotor nerve (cranial nerve III)", "Trochlear nerve (cranial nerve IV)", "Abducens nerve (cranial nerve VI)"],
+      "answer": 1,
+      "rationale": "<p>In the pupillary light reflex, the <b>optic nerve (CN II)</b> carries the light signal from the retina to the brain, and the <b>oculomotor nerve (CN III)</b> carries the command back to the muscles of the iris, which <b>constrict</b> both pupils. Checking the direct and consensual responses helps show whether a problem lies with CN II or CN III.</p><p>The <b>optic nerve</b> senses the light but doesn't constrict the pupil. The <b>trochlear (CN IV)</b> and <b>abducens (CN VI)</b> nerves move the eye but don't control the pupil.</p>"
+    },
+    {
+      "id": "se-25",
+      "type": "order",
+      "topic": "Senses",
+      "stem": "A nurse is teaching how sound is heard. Place the steps in order.",
+      "items": ["Sound waves travel through the external auditory canal.", "The sound waves vibrate the tympanic membrane.", "The malleus, incus, and stapes vibrate.", "The stapes pushes on the oval window, moving the fluid in the cochlea.", "Hair cells in the cochlea change the movement into nerve signals.", "The vestibulocochlear nerve carries the signals to the brain."],
+      "rationale": "<p>Sound waves enter the outer ear and travel through the <b>ear canal</b> to the <b>tympanic membrane</b> (eardrum), which vibrates. The vibration passes through the three ossicles of the middle ear, the <b>malleus, incus, and stapes</b>. The stapes pushes on the <b>oval window</b>, creating pressure waves in the fluid of the <b>cochlea</b>, where <b>hair cells</b> of the organ of Corti turn the movement into nerve signals. The signals travel along the <b>vestibulocochlear nerve (CN VIII)</b> to the brain's hearing center.</p>"
+    },
+    {
+      "id": "se-26",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "Click the structure in which hair cells change fluid vibrations into nerve signals.",
+      "image": "img/ear-section.svg",
+      "alt": "Cross-section of the ear with the outside of the head on the left: the outer ear, a canal leading to a thin membrane, an air-filled space with three tiny bones, a tube running down from that space, three looped canals, a small chamber below them, and a snail-shaped spiral, with a nerve leading toward the brain.",
+      "regions": [{"x": 69.3, "y": 58.1, "w": 15.4, "h": 10.5}, {"x": 71.0, "y": 54.8, "w": 12.0, "h": 3.3}, {"x": 71.0, "y": 68.6, "w": 12.0, "h": 3.3}, {"x": 73.0, "y": 51.9, "w": 7.0, "h": 2.9}, {"x": 73.3, "y": 71.9, "w": 7.3, "h": 2.4}],
+      "rationale": "<p>The <b>cochlea</b>, the snail-shaped spiral of the inner ear, contains the organ of Corti. Its hair cells change fluid waves into nerve signals, which travel to the brain along the vestibulocochlear nerve. Damage here causes sensorineural hearing loss.</p><p>The <b>semicircular canals</b>, the three loops above it, sense rotation of the head for balance. The <b>middle ear</b>, the air-filled space with the three tiny bones, passes vibrations from the eardrum to the inner ear. The <b>ear canal</b> carries sound waves to the eardrum.</p>"
+    },
+    {
+      "id": "se-27",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client asks why the ears “pop” as an airplane descends. Which structure equalizes the pressure in the middle ear with the throat?",
+      "options": ["Cochlea", "Semicircular canals", "External auditory canal", "Eustachian tube"],
+      "answer": 3,
+      "rationale": "<p>The <b>eustachian tube</b> connects the air-filled middle ear to the nasopharynx, so the pressure in the middle ear can equalize with the pressure in the throat. When it opens during swallowing or yawning, the ears “pop.” A swollen eustachian tube can trap fluid in the middle ear, which can lead to otitis media.</p><p>The <b>cochlea</b> changes fluid vibrations into nerve signals for hearing. The <b>semicircular canals</b> sense head rotation for balance. The <b>external auditory canal</b> carries sound to the eardrum; it's outside the eardrum and doesn't open into the middle ear.</p>"
+    },
+    {
+      "id": "se-28",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client asks whether earwax is harmful and should be removed every day. Which response by the nurse is accurate?",
+      "options": ["Earwax protects the ear canal, but too much can block it and muffle hearing.", "Earwax is a sign of an ear infection and should be removed every day.", "Earwax is made by the cochlea to protect the hair cells inside the ear.", "Earwax has no purpose, so removing all of it every day is healthiest."],
+      "answer": 0,
+      "rationale": "<p><b>Cerumen</b> (earwax), made by ceruminous glands in the ear canal, <b>cleans and lubricates</b> the canal and has antimicrobial properties. But too much cerumen, or an impaction, can block the canal and cause <b>conductive hearing loss</b>, so the nurse checks for cerumen during a hearing assessment.</p><p>Earwax is normal, <b>not a sign of infection</b>, and doesn't need daily removal. It's made in the <b>ear canal</b>, not the cochlea. It has a purpose, so removing all of it isn't healthiest.</p>"
+    },
+    {
+      "id": "se-29",
+      "type": "sata",
+      "topic": "Senses",
+      "stem": "A nurse is completing a hearing assessment. Which information should the nurse gather?",
+      "options": ["How effectively the client communicates", "Whether cerumen is blocking the ear canals", "Whether the client can taste salt on the tongue", "The client's ability to read a Snellen chart", "How well the client hears normal conversation", "Whether the client uses hearing aids"],
+      "answer": [0, 1, 4, 5],
+      "rationale": "<p>A hearing assessment focuses on <b>hearing acuity</b>, whether the client uses <b>hearing aids</b>, any <b>cerumen</b> that could block sound, and how <b>effectively the client communicates</b>. The findings help the nurse tell conductive from sensorineural hearing loss and adapt how they communicate with the client.</p><p>The <b>Snellen chart</b> tests visual acuity, and <b>taste</b> is tested when assessing cranial nerves VII and IX, not hearing.</p>"
+    },
+    {
+      "id": "se-30",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "Click the structures that sense rotation of the head to help keep the body balanced.",
+      "image": "img/ear-section.svg",
+      "alt": "Cross-section of the ear with the outside of the head on the left: the outer ear, a canal leading to a thin membrane, an air-filled space with three tiny bones, a tube running down from that space, three looped canals, a small chamber below them, and a snail-shaped spiral, with a nerve leading toward the brain.",
+      "regions": [{"x": 65.8, "y": 18.6, "w": 15.5, "h": 21.0}, {"x": 75.3, "y": 31.0, "w": 12.7, "h": 12.9}, {"x": 61.7, "y": 23.3, "w": 5.3, "h": 12.8}],
+      "rationale": "<p>The <b>semicircular canals</b>, the three looped canals of the inner ear, detect rotation of the head. With the vestibule, they send signals along the vestibulocochlear nerve (CN VIII) that help maintain balance, posture, and steady vision. Problems here can cause vertigo and falls.</p><p>The <b>cochlea</b>, the spiral below them, is for hearing. The <b>middle ear</b> passes sound vibrations to the inner ear. The <b>ear canal</b> carries sound to the eardrum.</p>"
+    },
+    {
+      "id": "se-31",
+      "type": "hotspot",
+      "topic": "Senses",
+      "stem": "A child has acute otitis media. Click the space where the fluid collects.",
+      "image": "img/ear-section.svg",
+      "alt": "Cross-section of the ear with the outside of the head on the left: the outer ear, a canal leading to a thin membrane, an air-filled space with three tiny bones, a tube running down from that space, three looped canals, a small chamber below them, and a snail-shaped spiral, with a nerve leading toward the brain.",
+      "regions": [{"x": 52.7, "y": 38.1, "w": 10.8, "h": 22.4}],
+      "rationale": "<p>In <b>acute otitis media</b>, viruses or bacteria grow in fluid trapped in the <b>middle ear</b>, the air-filled space just behind the eardrum that holds the three tiny bones. A swollen eustachian tube can keep the fluid from draining, causing ear pain and muffled hearing (a conductive hearing loss).</p><p>The <b>ear canal</b> is outside the eardrum; an infection there is otitis externa. The <b>cochlea</b> and <b>semicircular canals</b> are parts of the inner ear.</p>"
+    },
+    {
+      "id": "se-32",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each ear disorder, click to specify its description.",
+      "rowHeader": "Disorder",
+      "columns": ["Gradual hearing loss in both ears with aging", "Ringing or buzzing that usually only the client can hear", "Episodes of vertigo, changing hearing loss, tinnitus, and a full feeling in the ear", "Infection with fluid trapped in the middle ear"],
+      "rows": ["Otitis media", "Presbycusis", "Tinnitus", "Ménière disease"],
+      "answer": [3, 0, 1, 2],
+      "rationale": "<p><b>Acute otitis media</b> is an infection of fluid trapped in the <b>middle ear</b>, causing ear pain and muffled hearing. <b>Presbycusis</b> is the gradual, <b>bilateral</b> hearing loss of aging. <b>Tinnitus</b> is a high-pitched <b>ringing or buzzing</b> that is usually heard only by the client. <b>Ménière disease</b> is a chronic inner ear disorder, thought to come from excess fluid in the inner ear, with episodes of <b>vertigo</b>, fluctuating sensorineural hearing loss, tinnitus, and a feeling of <b>fullness</b> in the ear.</p>"
+    },
+    {
+      "id": "se-33",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client reports that the room seems to spin when the client rolls over in bed. Which term should the nurse use to document this symptom?",
+      "options": ["Tinnitus", "Presyncope", "Vertigo", "Proprioception"],
+      "answer": 2,
+      "rationale": "<p><b>Vertigo</b> is a false sense of motion, of oneself or the surroundings, often spinning. It usually comes from the vestibular system, as in benign paroxysmal positional vertigo, which is set off by changes in head position.</p><p><b>Tinnitus</b> is ringing or buzzing in the ears. <b>Presyncope</b> is the lightheaded feeling of being about to faint, not spinning. <b>Proprioception</b> is the sense of body position, not a symptom.</p>"
+    },
+    {
+      "id": "se-34",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client with Ménière disease has sudden episodes of vertigo. Which action is the nurse's priority?",
+      "options": ["Encourage the client to keep walking until the episode passes.", "Help the client sit or lie down to prevent a fall.", "Schedule a hearing test for later in the week.", "Teach the client to follow a low-sodium diet."],
+      "answer": 1,
+      "rationale": "<p>Vertigo affects balance and posture, so <b>safety</b> comes first: during an episode, the nurse helps the client <b>sit or lie down</b>, keeps the call light within reach, and helps with walking afterward to prevent <b>falls</b>.</p><p><b>Walking</b> during vertigo increases the risk of falling. A <b>hearing test</b> is useful, since Ménière disease affects hearing, and a <b>low-sodium diet</b> can help reduce episodes over time, but neither comes first while the client is dizzy.</p>"
+    },
+    {
+      "id": "se-35",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each basic taste, click to specify the substance that produces it.",
+      "rowHeader": "Taste",
+      "columns": ["Hydrogen ions (acids)", "Sodium ions", "Sugars", "Glutamate", "Alkaloids"],
+      "rows": ["Sweet", "Sour", "Salty", "Bitter", "Umami"],
+      "answer": [2, 0, 1, 4, 3],
+      "rationale": "<p><b>Sweet</b> tastes come from <b>sugars</b> and sweeteners, <b>sour</b> from free <b>hydrogen ions</b> (acids), <b>salty</b> from <b>sodium ions</b>, <b>bitter</b> from <b>alkaloids</b>, and <b>umami</b> (savory) from <b>glutamate</b> and other amino acids. Ion channels detect salty and sour tastes, and G protein-coupled receptors detect sweet, bitter, and umami.</p>"
+    },
+    {
+      "id": "se-36",
+      "type": "dropdown",
+      "topic": "Senses",
+      "stem": "A nurse is reviewing the cranial nerves that carry taste. Complete the following sentence.",
+      "text": "Taste from the front two-thirds of the tongue travels to the brain on cranial nerve {{0}}, and taste from the back one-third travels on cranial nerve {{1}}.",
+      "blanks": [
+        {"options": ["VII (facial)", "IX (glossopharyngeal)", "X (vagus)"], "answer": 0},
+        {"options": ["VII (facial)", "IX (glossopharyngeal)", "X (vagus)"], "answer": 1}
+      ],
+      "rationale": "<p>Taste from the <b>front two-thirds</b> of the tongue travels on the chorda tympani branch of the <b>facial nerve (CN VII)</b>. Taste from the <b>back one-third</b> of the tongue and the rest of the mouth travels on the <b>glossopharyngeal nerve (CN IX)</b>. Taste receptors in the back of the throat and the esophagus send signals on the <b>vagus nerve (CN X)</b>.</p>"
+    },
+    {
+      "id": "se-37",
+      "type": "order",
+      "topic": "Senses",
+      "stem": "Place the steps of the sense of smell in order.",
+      "items": ["Odor molecules bind to receptors on olfactory sensory neurons in the nose.", "The neurons send signals through the cribriform plate.", "The signals reach the olfactory bulb.", "The signals travel along the olfactory tract.", "The olfactory center of the brain interprets the smell."],
+      "rationale": "<p>Smell starts when <b>odor molecules bind</b> to receptors on <b>olfactory sensory neurons</b>, which fire signals along the olfactory nerves <b>through the cribriform plate</b> of the skull to the <b>olfactory bulb</b>. From there, the signals travel along the <b>olfactory tract</b> to the <b>olfactory center</b> of the brain. Its connections to the limbic system tie smells to emotions and memories.</p>"
+    },
+    {
+      "id": "se-38",
+      "type": "sata",
+      "topic": "Senses",
+      "stem": "An older adult reports that food has little taste or smell. Which risks should the nurse address?",
+      "options": ["A stronger desire to eat", "Better hearing and vision", "Not noticing smoke or a gas leak", "Eating spoiled food without noticing", "Poor appetite and weight loss"],
+      "answer": [2, 3, 4],
+      "rationale": "<p>Smell and taste work together to create <b>flavor</b>, so their loss can reduce <b>appetite</b> and affect nutrition. Smell also protects <b>safety</b>: the client may not notice <b>smoke, a gas leak</b>, or <b>spoiled food</b>. The nurse can suggest working smoke and gas detectors, checking the dates on food, and making meals more appealing with color and texture.</p><p>Losing smell and taste doesn't improve <b>hearing or vision</b>, and it usually <b>reduces</b>, rather than increases, the desire to eat.</p>"
+    },
+    {
+      "id": "se-39",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client with a stuffy nose from a cold says that food has lost its flavor. Which explanation by the nurse is accurate?",
+      "options": ["Smell is part of flavor, so a blocked nose dulls the taste of food.", "The cold virus has permanently damaged the client's taste buds.", "Flavor depends only on the taste buds on the tongue, not the nose.", "Taste signals travel to the brain on the olfactory nerve."],
+      "answer": 0,
+      "rationale": "<p>Taste is a multisensory experience: <b>smell</b>, texture, and taste work together to create <b>flavor</b>. When congestion keeps odor molecules from reaching the olfactory receptors, food seems to have little flavor, even though the taste buds still work.</p><p>A cold doesn't <b>permanently damage</b> the taste buds. Flavor does <b>not</b> depend only on the tongue. Taste travels on cranial nerves <b>VII, IX, and X</b>; the olfactory nerve carries smell.</p>"
+    },
+    {
+      "id": "se-40",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each description of pain, click to specify the type of pain.",
+      "rowHeader": "Description",
+      "columns": ["Somatic", "Visceral", "Neuropathic", "Referred"],
+      "rows": ["Burning, shooting pain in the feet from diabetic nerve damage", "Pain in the left arm and jaw during a heart attack", "Cramping pain from the intestines that is hard to pinpoint", "Sharp, well-localized pain from a cut on the hand"],
+      "answer": [2, 3, 1, 0],
+      "rationale": "<p><b>Somatic pain</b>, a type of nociceptive pain, comes from nociceptors in the skin or deep tissues and is usually well localized, like a cut. <b>Visceral pain</b>, also nociceptive, comes from internal organs and is often cramping and hard to pinpoint. <b>Neuropathic pain</b> comes from a problem in the nervous system itself, such as diabetic nerve damage, and is often burning or shooting. <b>Referred pain</b> is felt at a site different from its source, such as arm and jaw pain from the heart.</p>"
+    },
+    {
+      "id": "se-41",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A client who had surgery yesterday rates the pain as 8 on a scale of 0 to 10 while calmly reading a book. Which is the most reliable indicator of the client's pain?",
+      "options": ["The client's calm facial expression", "The client's report of the pain", "The client's vital signs", "The nurse's experience with similar surgeries"],
+      "answer": 1,
+      "rationale": "<p>The <b>client's report</b> of pain is the most reliable indicator, because pain is a personal experience shaped by biological, psychological, and social factors. The nurse accepts the report, treats the pain, and reassesses.</p><p>People cope with pain in different ways, so a <b>calm expression</b> or <b>normal vital signs</b> don't rule out severe pain. The <b>nurse's experience</b> with other clients doesn't measure this client's pain.</p>"
+    },
+    {
+      "id": "se-42",
+      "type": "matrix",
+      "topic": "Senses",
+      "stem": "For each statement, click to specify whether it describes acute pain or chronic pain.",
+      "rowHeader": "Statement",
+      "columns": ["Acute pain", "Chronic pain"],
+      "rows": ["Began recently, after an injury or surgery", "Serves a protective purpose", "Persists from long-term arthritis", "Is associated with nerve changes from diabetes", "Is expected to go away as the tissue heals"],
+      "answer": [0, 0, 1, 1, 0],
+      "rationale": "<p><b>Acute pain</b> has a recent onset, after an injury or surgery, and serves a <b>protective purpose</b>: it warns of tissue damage and usually goes away as the tissue heals. <b>Chronic pain</b> persists, with ongoing tissue inflammation or changes in the peripheral nerves, as in <b>arthritis</b>, <b>diabetes</b>, or tumor growth.</p>"
+    },
+    {
+      "id": "se-43",
+      "type": "sata",
+      "topic": "Senses",
+      "stem": "A nurse is teaching a group of nursing students about the pain experience. Which statements by the nurse are accurate?",
+      "options": ["Past experiences with pain can change how a person feels pain and responds to it.", "The same injury causes the same amount of pain in everyone.", "Culture and beliefs can shape how a person expresses pain.", "A client who is laughing with visitors can't be in severe pain.", "Support from family and friends can affect how a person copes with pain.", "Anxiety can make pain feel worse."],
+      "answer": [0, 2, 4, 5],
+      "rationale": "<p>Pain is <b>biopsychosocial</b>: biological, psychological, and social factors all shape it. <b>Past experiences</b>, <b>culture and beliefs</b>, <b>anxiety</b>, and <b>support from others</b> can all change how strongly pain is felt and how a person responds to it. That's why the client's own report is the most reliable indicator.</p><p>The same injury does <b>not</b> cause the same pain in everyone. People cope with pain in different ways, so a client <b>laughing with visitors</b>, which can be a distraction, may still be in severe pain.</p>"
+    },
+    {
+      "id": "se-44",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A nurse is teaching an older adult about sensory changes with aging. Which statement by the client shows understanding?",
+      "options": ["My sense of smell may weaken, so I'll keep my smoke detector working.", "My hearing should get sharper as I age, so I won't need hearing tests.", "Older adults always feel pain more strongly than younger adults do.", "New glasses can fix any change in my vision that comes with age."],
+      "answer": 0,
+      "rationale": "<p>With aging, <b>taste and smell</b> often weaken, so safety measures such as a <b>working smoke detector</b> make sense, along with checking the dates on food. Older adults also commonly have reduced vision (cataracts, macular degeneration, glaucoma) and hearing loss.</p><p>Hearing usually <b>declines</b> with age: almost 1 in 4 adults aged 65 to 74, and 1 in 2 aged 75 and older, have disabling hearing loss, so hearing checks still matter. Pain doesn't <b>always</b> feel stronger with age; some older adults feel less pain, which can hide an injury. Age-related problems such as cataracts and glaucoma <b>need treatment</b> that glasses can't provide.</p>"
+    },
+    {
+      "id": "se-45",
+      "type": "sata",
+      "topic": "Senses",
+      "stem": "A nurse is caring for a client who has severely impaired vision. Which actions help the nurse communicate effectively?",
+      "options": ["Use hand gestures to show the client what to do.", "Describe the layout of the room and where things are.", "Explain what you are about to do before touching the client.", "Move the client's belongings without saying so, to keep the room tidy.", "Introduce yourself each time you enter the room."],
+      "answer": [1, 2, 4],
+      "rationale": "<p>For a client with impaired vision, the nurse <b>says who they are</b> each time they come in, <b>describes the surroundings</b> and where things are, and gives <b>spoken explanations</b> before and during care, so the client isn't startled and can stay independent.</p><p><b>Gestures</b> don't help someone who can't see them. Moving belongings <b>without telling the client</b> takes away the client's sense of where things are and increases the risk of falls.</p>"
+    },
+    {
+      "id": "se-46",
+      "type": "mc",
+      "topic": "Senses",
+      "stem": "A pregnant client asks when the baby will first be able to recognize the mother's voice. Which response by the nurse is accurate?",
+      "options": ["Only after the baby is about 3 months old", "Around 25 weeks of pregnancy, before birth", "Not until the baby begins to speak", "At birth, when the ears first fill with air"],
+      "answer": 1,
+      "rationale": "<p>Many senses begin developing <b>before birth</b>. A fetus can recognize the <b>mother's voice by about 25 weeks</b> of pregnancy. Other milestones include swallowing (taste) at about 17 weeks, smelling odors at about 28 weeks, and pupils constricting to light at 30 to 32 weeks. Color vision develops around 3 months after birth.</p><p>Recognizing the voice doesn't wait until <b>3 months after birth</b> (when color vision develops) or until the baby <b>speaks</b>. Hearing doesn't begin <b>at birth</b>; it develops in the womb.</p>"
+    },
+    {
+      "id": "se-47",
+      "type": "highlight",
+      "case": "hearing",
+      "topic": "Senses",
+      "stem": "Click to highlight the findings in the nurses' note that suggest the client has a hearing impairment.",
+      "passage": "Client [[asks the nurse to repeat several questions]] and [[leans toward the nurse while the nurse speaks]]. [[Denies ear pain, drainage, or dizziness]]. [[Watches the nurse's lips closely]]. States that at church dinners, [[people are talking, but the client can't make out what they're saying]]. [[Ear canals are clear]], and the [[tympanic membranes are intact and pearly gray]]. The granddaughter reports that the client [[often misses phone calls]] and [[keeps the television very loud]].",
+      "answer": [0, 1, 3, 4, 7, 8],
+      "rationale": "<p>Signs of a hearing impairment are <b>asking for questions to be repeated</b>, <b>leaning toward the speaker</b>, and <b>watching the speaker's lips</b>, which suggests the client relies on lip reading. So are knowing that <b>people are talking without understanding the words</b> (worse with background noise), <b>missing phone calls</b>, and <b>keeping the TV very loud</b>.</p><p><b>No ear pain, drainage, or dizziness</b>, <b>clear ear canals</b>, and <b>intact, pearly gray tympanic membranes</b> are normal findings. They point away from an infection or a cerumen blockage, which would cause a conductive hearing loss.</p>"
+    },
+    {
+      "id": "se-48",
+      "type": "matrix",
+      "case": "hearing",
+      "topic": "Senses",
+      "stem": "For each cause of hearing loss, click to specify whether it causes conductive or sensorineural hearing loss.",
+      "rowHeader": "Cause",
+      "columns": ["Conductive", "Sensorineural"],
+      "rows": ["Age-related loss in both ears (presbycusis)", "Cerumen blocking the ear canal", "Fluid in the middle ear from otitis media", "Damage to the hair cells of the cochlea from years of loud noise", "Ménière disease"],
+      "answer": [1, 0, 0, 1, 1],
+      "rationale": "<p><b>Conductive</b> hearing loss happens when sound can't reach the inner ear, as with <b>cerumen</b> blocking the ear canal or <b>fluid in the middle ear</b> from otitis media, which is common in young children. <b>Sensorineural</b> hearing loss comes from problems in the cochlea, the auditory nerve, or the brain, such as <b>presbycusis</b>, <b>noise damage to the cochlea's hair cells</b>, and <b>Ménière disease</b>. This client's clear ear canals and normal eardrums, with aging and years of loud machinery, fit a sensorineural loss.</p>"
+    },
+    {
+      "id": "se-49",
+      "type": "sata",
+      "case": "hearing",
+      "topic": "Senses",
+      "stem": "Which actions should the nurse take to communicate effectively with the client?",
+      "options": ["Move to a quiet room away from background noise.", "Turn away to type in the record while asking questions.", "Shout so the client can hear every word.", "Face the client and speak clearly at a normal pace.", "Ask the client to repeat back the key points of any instructions.", "Direct the questions to the granddaughter instead of the client."],
+      "answer": [0, 3, 4],
+      "rationale": "<p>The nurse should <b>face the client</b> and speak clearly, so the client can see the nurse's lips and expressions, <b>reduce background noise</b>, which makes speech harder to understand, and <b>confirm understanding</b> by asking the client to repeat back key points.</p><p><b>Shouting</b> distorts speech and can feel disrespectful. <b>Talking to the granddaughter</b> instead of the client leaves the client out of their own care. <b>Turning away</b> to type hides the nurse's face and muffles the voice.</p>"
+    },
+    {
+      "id": "se-50",
+      "type": "dropdown",
+      "case": "hearing",
+      "topic": "Senses",
+      "stem": "Complete the following sentence.",
+      "text": "The client's findings are most consistent with {{0}}, a {{1}} hearing loss that affects {{2}}.",
+      "blanks": [
+        {"options": ["acute otitis media", "presbycusis", "cerumen impaction"], "answer": 1},
+        {"options": ["conductive", "sensorineural"], "answer": 1},
+        {"options": ["both ears", "only one ear"], "answer": 0}
+      ],
+      "rationale": "<p>Hearing loss that has crept up over several years in an older adult, with trouble understanding words in noisy places, normal ear canals and eardrums, and a family history of hearing loss, fits <b>presbycusis</b>: a <b>sensorineural</b>, age-related hearing loss that affects <b>both ears</b>. Years of loud machinery may have added noise damage.</p><p><b>Acute otitis media</b> would cause ear pain and fluid behind the eardrum, and <b>cerumen impaction</b> would block the canal; both cause <b>conductive</b> loss, and this client's canals and eardrums are normal. Presbycusis affects <b>both ears</b>, not only one.</p>"
+    }
+  ]
+}

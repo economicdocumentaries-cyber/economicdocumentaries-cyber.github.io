@@ -520,6 +520,7 @@ function followSession(root, db, sets) {
     view = 'screen';
     const { sid, set, questions, layouts } = s;
     const caseTabs = {};
+    const crossed = {}; // choices crossed out on each question, while this page is open
     let shown = null; // "index|phase|locked|timeUp" on screen; only a change redraws the question (SPEC 6.4 item 5)
     let shownIndex = -1; // the question on screen (live.index can change a moment before the screen does)
     let groupBox = null;
@@ -649,6 +650,8 @@ function followSession(root, db, sets) {
           locked: frozen,
           review: revealed,
           onChange: r => saveDraft(sid, index, r),
+          crossed: crossed[index],
+          onCross: list => (crossed[index] = list),
         }),
         revealed ? feedbackPanel(q, mine, { answered: locked }) : null,
         groupBox,

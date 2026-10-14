@@ -193,6 +193,7 @@ export function startExam(set, settings = {}) {
     caseTabs: {}, // the exhibit tab last shown for each case study
     revealed: {}, // practice mode: questions whose answer has been shown
     flags: {},
+    crossed: {}, // choices crossed out on each question (a study aid)
     onGrid: false, // on the review grid before submitting
     reachedGrid: false, // the review grid has been shown, so Continue goes back to it
     startedAt: now,
@@ -376,6 +377,7 @@ export function examView(root) {
   st.caseTabs ??= {};
   st.revealed ??= {};
   st.flags ??= {};
+  st.crossed ??= {}; // choices crossed out on each question (a study aid)
   const timed = !!st.deadline;
   const canGoBack = s.navigation === 'back';
   const showsAnswers = s.reveal === 'each';
@@ -459,6 +461,12 @@ export function examView(root) {
         review: revealed,
         onChange: r => {
           st.responses[q.id] = r;
+          save();
+        },
+        crossed: st.crossed[q.id],
+        onCross: list => {
+          if (list.length) st.crossed[q.id] = list;
+          else delete st.crossed[q.id];
           save();
         },
       }),

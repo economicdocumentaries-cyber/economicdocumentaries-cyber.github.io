@@ -151,25 +151,55 @@ function checkMarkers(text, count) {
 // "idPrefix" keeps element ids unique when several questions share a page.
 
 // Radio buttons (mc), checkboxes (sata), or checkboxes with a limit (emr).
+// Crossing out (SPEC 4.4), a study aid that never changes the score: right-click
+// a choice, or click the struck-through "abc" button next to it. Crossing out
+// a picked choice un-picks it, and picking a crossed-out choice brings it back.
+// ctx.crossed: the crossed-out choices (positions in the set file);
+// ctx.onCross(list) gets the new list.
 function choiceList(q, ctx, multiple, limit = Infinity) {
-  const { response, layout, review = false, labelledBy, onChange } = ctx;
+  const { response, layout, review = false, labelledBy, onChange, onCross } = ctx;
   const locked = ctx.locked || review;
   const order = layout?.options ?? range(q.options.length);
   const picked = new Set(multiple ? response ?? [] : response == null ? [] : [response]);
   const key = new Set([].concat(q.answer));
+  const crossed = new Set(review ? [] : ctx.crossed ?? []);
+  const lines = new Map(); // choice -> { row, input, strike }
+  const answerNow = () => (multiple ? [...picked].sort((a, b) => a - b) : [...picked][0] ?? null);
+  function setCrossed(i, on) {
+    if (on === crossed.has(i)) return;
+    if (on) crossed.add(i);
+    else crossed.delete(i);
+    const { row, strike } = lines.get(i);
+    row.classList.toggle('crossed', on);
+    strike?.setAttribute('aria-pressed', String(on));
+    onCross?.([...crossed].sort((a, b) => a - b));
+  }
+  function toggleCross(i) {
+    const on = !crossed.has(i);
+    if (on && picked.has(i)) {
+      picked.delete(i);
+      lines.get(i).input.checked = false;
+      applyLimit();
+      onChange?.(answerNow());
+    }
+    setCrossed(i, on);
+  }
   const rows = order.map(i => {
     const input = h('input.ctl', { type: multiple ? 'checkbox' : 'radio', name: `q-${q.id}`, value: String(i), checked: picked.has(i), disabled: locked });
     input.addEventListener('change', () => {
       if (!multiple) picked.clear();
-      if (input.checked) picked.add(i);
-      else picked.delete(i);
+      if (input.checked) {
+        picked.add(i);
+        setCrossed(i, false);
+      } else picked.delete(i);
       applyLimit();
       onChange?.(multiple ? [...picked].sort((a, b) => a - b) : i);
     });
     // The outline box follows focus (.opt:focus-within). Safari doesn't focus
     // a radio or checkbox when it's clicked, so focus it here.
     input.addEventListener('click', () => input.focus({ preventScroll: true }));
-    const row = h('label.opt', input, h('span.opt-text', { html: q.options[i] }));
+    const row = h('label.opt', { class: crossed.has(i) ? 'crossed' : null }, input, h('span.opt-text', { html: q.options[i] }));
+    lines.set(i, { row, input, strike: null });
     if (review) {
       const right = key.has(i), mine = picked.has(i);
       row.classList.add('reviewed', right ? 'is-key' : mine ? 'is-wrong' : 'is-plain');
@@ -177,6 +207,24 @@ function choiceList(q, ctx, multiple, limit = Infinity) {
       else if (right) row.append(mark(true, 'Correct answer'));
     }
     return row;
+  });
+  // Each choice in a line with its cross-out button (not inside the label, so
+  // the button never picks the choice).
+  const shown = rows.map((row, n) => {
+    if (locked) return row;
+    const i = order[n];
+    const words = q.options[i].replace(/<[^>]+>/g, '').trim();
+    const strike = h('button.strike-btn', {
+      type: 'button', title: 'Cross out', 'aria-pressed': String(crossed.has(i)),
+      'aria-label': `Cross out: ${words.length > 80 ? `${words.slice(0, 80)}…` : words}`,
+      onclick: () => toggleCross(i),
+    }, h('span.strike-icon', { 'aria-hidden': 'true' }, 'abc'));
+    lines.get(i).strike = strike;
+    row.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      toggleCross(i);
+    });
+    return h('div.opt-line', row, strike);
   });
   // "Select 3": once 3 are checked, the rest wait until one is cleared.
   function applyLimit() {
@@ -188,7 +236,7 @@ function choiceList(q, ctx, multiple, limit = Infinity) {
     }
   }
   applyLimit();
-  return h('div.choices', { role: multiple ? 'group' : 'radiogroup', 'aria-labelledby': labelledBy }, rows);
+  return h('div.choices', { role: multiple ? 'group' : 'radiogroup', 'aria-labelledby': labelledBy }, shown);
 }
 
 // Ordered response: options start in the Unordered box (never in the right
