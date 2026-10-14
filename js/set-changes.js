@@ -10,10 +10,26 @@
 // don't wait for Firebase.
 import { store } from './util.js';
 import { groupStudyOn, connectStudent } from './firebase.js';
-import { validateSet } from './items.js';
+import { validateSet, setPictureLoader, uploadedPictureId } from './items.js';
 
 const CACHE = 'pe.setInfo';
 export const LIMITS = { title: 120, description: 600, course: 20, exam: 60 }; // the same as database.rules.json
+
+// Pictures the host uploads for hot spot questions (SPEC 11.3, part 3) are
+// kept in /setImages/<id> = { data (a data: URL), set, name, size, uploadedAt },
+// which anyone signed in can read one at a time. A question shows its picture
+// as "db:<id>", and a page loads it when the question appears.
+setPictureLoader(async id => {
+  if (!groupStudyOn()) throw new Error('Firebase is off.');
+  const db = await connectStudent();
+  const data = await db.read(`setImages/${id}/data`);
+  if (typeof data !== 'string' || !data.startsWith('data:image/')) throw new Error('That picture isn\'t there.');
+  return data;
+});
+
+// The ids of the uploaded pictures some questions use.
+export const pictureIds = questions => new Set((questions ?? [])
+  .map(q => (q?.type === 'hotspot' ? uploadedPictureId(q.image) : null)).filter(Boolean));
 
 const isText = v => typeof v === 'string' && v.trim() !== '';
 

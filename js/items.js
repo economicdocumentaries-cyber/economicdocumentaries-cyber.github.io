@@ -38,7 +38,31 @@ function zerosOk(text) {
 const rightValue = (q, n) => n != null && Math.abs(n - q.answer) <= (q.tolerance ?? 0) + 1e-9;
 
 // Image paths in a set are relative to the sets folder, like "img/abdomen.svg".
+// A picture the host uploaded on the console is "db:<id>" instead: it's kept
+// in Firebase, at /setImages/<id>, and js/set-changes.js says how to load it.
 const imageSrc = path => (/^https?:\/\//.test(path) ? path : `sets/${path}`);
+export const uploadedPictureId = path => /^db:([\w-]+)$/.exec(path ?? '')?.[1] ?? null;
+const pictures = new Map(); // id -> a promise of the picture as a data: URL
+let loadPicture = null;
+export const setPictureLoader = load => (loadPicture = load);
+export const rememberPicture = (id, url) => pictures.set(id, Promise.resolve(url));
+
+// Shows a set's picture in img. note (hidden at first) shows if an uploaded
+// picture can't be loaded.
+export function showPicture(img, path, note = null) {
+  const id = uploadedPictureId(path);
+  if (!id) {
+    img.src = imageSrc(path);
+    return;
+  }
+  if (!pictures.has(id)) {
+    const loading = loadPicture ? loadPicture(id) : Promise.reject(new Error('Pictures can\'t be loaded on this page.'));
+    pictures.set(id, loading);
+    loading.catch(() => pictures.delete(id)); // try again next time
+  }
+  img.classList.add('is-loading');
+  pictures.get(id).then(url => (img.src = url), () => note && (note.hidden = false)).finally(() => img.classList.remove('is-loading'));
+}
 
 // Plain text with <br> line breaks -> text and <br> elements.
 const withBreaks = text => text.split(/<br\s*\/?>/i).flatMap((part, i) => (i ? [h('br'), part] : [part]));
@@ -65,7 +89,7 @@ function cloze(text, makeBlank) {
 }
 
 // "text [[phrase]] more" -> [{ text }, { phrase, n }, ...], or null when the brackets don't pair up.
-function highlightParts(passage) {
+export function highlightParts(passage) {
   const parts = [];
   let n = 0;
   for (const chunk of passage.split(/(\[\[[\s\S]*?\]\])/)) {
@@ -320,7 +344,9 @@ function fillUI(q, ctx) {
 function hotspotUI(q, ctx) {
   const { response, review = false, onChange } = ctx;
   const locked = ctx.locked || review;
-  const img = h('img', { src: imageSrc(q.image), alt: q.alt, draggable: 'false' });
+  const img = h('img', { alt: q.alt, draggable: 'false' });
+  const missing = h('p.picture-missing', { role: 'alert', hidden: true }, 'The picture couldn\'t be loaded. Check the internet connection, then reload the page.');
+  showPicture(img, q.image, missing);
   const marker = h('span.hotspot-marker', { 'aria-hidden': 'true' });
   const status = h('p.sr-only', { 'aria-live': 'polite' });
   const regions = review
@@ -344,9 +370,9 @@ function hotspotUI(q, ctx) {
     onChange?.(spot);
   });
   show(response);
-  if (!review) return h('div.hotspot-wrap', area, status);
+  if (!review) return h('div.hotspot-wrap', area, missing, status);
   const ok = TYPES.hotspot.score(q, response).earned === 1;
-  return h('div.hotspot-wrap', area,
+  return h('div.hotspot-wrap', area, missing,
     h('p.key-note', response ? mark(ok, ok ? 'Your click is in the correct area.' : 'Your click is outside the correct area.') : mark(false, 'No answer.'),
       ' The correct area is outlined in green.'));
 }

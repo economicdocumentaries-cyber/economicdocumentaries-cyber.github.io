@@ -6,16 +6,18 @@
 //   /setDrafts/<set id>, which only the host can read, until Publish changes
 //   copies it into /setInfo/<set id> (questions and cases, as JSON text). The
 //   first change to a set whose questions come from its file starts the draft
-//   from the file's; the file stays as a backup. Multiple choice, select all,
-//   select N, fill in the blank, ordered response, matrix, and drop-down
-//   questions can be written and edited here; other types (and case study
-//   exhibits) are kept as they are, and can be hidden or deleted.
+//   from the file's; the file stays as a backup. Every question type can be
+//   written and edited here, and so can case studies (their exhibits). The
+//   questions can be put in order. Pictures uploaded for hot spot questions
+//   go into /setImages/<id> together with the draft, and are deleted when
+//   nothing uses them any more.
 import { h, fill, modal, toast } from './util.js';
 import { problemText } from './firebase.js';
-import { typeLabel, validateSet, validateQuestion, keyResponse } from './items.js';
-import { defaultCount, questionParts, feedbackPanel, startExam, activeExam, DEFAULT_SETTINGS, PRESETS } from './exam.js';
-import { LIMITS, readChanges, readDrafts, withChanges, keepChanges } from './set-changes.js';
+import { typeLabel, validateSet, validateQuestion, keyResponse, highlightParts, showPicture, rememberPicture } from './items.js';
+import { defaultCount, questionParts, questionArea, feedbackPanel, startExam, activeExam, DEFAULT_SETTINGS, PRESETS } from './exam.js';
+import { LIMITS, readChanges, readDrafts, withChanges, keepChanges, pictureIds } from './set-changes.js';
 import { arrange, newestSet, orderTools, dragSort, moved, readOrder, keepOrder } from './order.js';
+import { formatSize } from './study-guides.js';
 
 // The types this editor writes, and the fields each one's form manages.
 const MANAGED = {
@@ -26,6 +28,10 @@ const MANAGED = {
   order: ['items'],
   matrix: ['rows', 'columns', 'answer', 'multiple', 'rowHeader'],
   dropdown: ['text', 'blanks'],
+  hotspot: ['image', 'alt', 'regions'],
+  highlight: ['passage', 'answer'],
+  dragdrop: ['text', 'tokens', 'answer'],
+  bowtie: ['condition', 'actions', 'parameters'],
 };
 const EDITABLE = Object.keys(MANAGED);
 const FIELD_NAMES = { title: 'name', description: 'description', course: 'class', exam: 'exam', defaultCount: 'questions per exam', hidden: 'shown or hidden' };
@@ -54,10 +60,87 @@ function toText(html) {
     .replace(/<br\s*\/?>\n?/gi, '\n')
     .replace(/&lt;/g, '<');
 }
+const safeHtml = text => text.replace(new RegExp(`<(?!/?(?:${TAGS})\\b)`, 'gi'), '&lt;');
 function toHtml(text) {
-  const safe = text.trim().replace(new RegExp(`<(?!/?(?:${TAGS})\\b)`, 'gi'), '&lt;');
-  const paragraphs = safe.split(/\n\s*\n/).map(p => p.trim().replace(/\n/g, '<br>')).filter(Boolean);
+  const paragraphs = safeHtml(text.trim()).split(/\n\s*\n/).map(p => p.trim().replace(/\n/g, '<br>')).filter(Boolean);
   return paragraphs.length > 1 ? paragraphs.map(p => `<p>${p}</p>`).join('') : paragraphs[0] ?? '';
+}
+
+// A case study exhibit as text for the form, and back. The tab's title is the
+// exhibit's heading, so it isn't in the text (heading: whether the exhibit
+// starts with it). A blank line starts a paragraph, and a simple table is
+// rows of cells with | between them, the first row being the heading row.
+// Anything else (a list, or a table with joined cells) stays as its HTML.
+function exhibitToText(html, title) {
+  const t = document.createElement('template');
+  t.innerHTML = String(html ?? '').trim();
+  const nodes = [...t.content.childNodes].filter(n => n.nodeType === 1 || n.textContent.trim());
+  const heading = nodes[0]?.nodeName === 'H4' && nodes[0].textContent.trim() === String(title ?? '').trim();
+  if (heading) nodes.shift();
+  const blocks = nodes.map(n => {
+    if (n.nodeType !== 1) return n.textContent.trim();
+    if (n.nodeName === 'P' && !n.attributes.length) return toText(n.innerHTML);
+    if (n.nodeName === 'TABLE') return tableToText(n) ?? n.outerHTML;
+    return n.outerHTML;
+  });
+  return { text: blocks.join('\n\n'), heading };
+}
+
+// "Vital sign | 0800\nPulse | 88/min", or null for a table that can't be written that way.
+function tableToText(table) {
+  if (table.attributes.length || table.caption || table.tFoot || table.tBodies.length > 1 || table.tHead?.rows.length !== 1) return null;
+  if (table.querySelector('table, [colspan], [rowspan], [class], [style], [id]')) return null;
+  const rows = [...table.rows];
+  if (rows[0].parentNode !== table.tHead) return null;
+  const lines = [];
+  for (const [i, row] of rows.entries()) {
+    const cells = [...row.cells];
+    if (cells.length < 2 || cells.some(c => (c.nodeName === 'TH') !== (i === 0) || !c.innerHTML.trim() || /\||<br|\n/i.test(c.innerHTML))) return null;
+    lines.push(cells.map(c => toText(c.innerHTML).trim()).join(' | '));
+  }
+  return lines.join('\n');
+}
+
+function exhibitToHtml(text, title, heading = true) {
+  const blocks = text.replace(/\r\n?/g, '\n').trim().split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
+  const body = blocks.map(block => {
+    // A table: | between the cells, or tabs (a table pasted from Word or Excel).
+    const lines = block.split('\n').map(l => l.replace(/^ +| +$/g, ''));
+    const cut = lines.every(l => l.includes('|')) ? '|' : lines.every(l => l.includes('\t')) ? '\t' : null;
+    if (cut) {
+      const rows = lines.map(l => (cut === '|' ? l.trim().replace(/^\||\|$/g, '') : l).split(cut).map(c => safeHtml(c.trim())));
+      const head = `<thead><tr>${rows[0].map(c => `<th>${c}</th>`).join('')}</tr></thead>`;
+      const rest = rows.length > 1 ? `<tbody>${rows.slice(1).map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>` : '';
+      return `<table>${head}${rest}</table>`;
+    }
+    if (/^<(table|ul|ol|h4|p)\b/i.test(block)) return safeHtml(block);
+    return `<p>${safeHtml(block).replace(/\n/g, '<br>')}</p>`;
+  }).join('');
+  const name = title.trim().replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  return `${heading && name ? `<h4>${name}</h4>` : ''}${body}`;
+}
+
+// JSON with every object's keys in order, so two copies of a question compare
+// equal however their fields were written.
+const stable = value => JSON.stringify(value, (_, v) => (v && typeof v === 'object' && !Array.isArray(v)
+  ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))) : v));
+
+// Database deletes for the uploaded pictures in ids that aren't in keep.
+const forget = (ids, keep = new Set()) => Object.fromEntries([...ids].filter(id => !keep.has(id)).map(id => [`setImages/${id}`, null]));
+
+// Text cut to a whole word near `most` characters, with "…" when it's cut.
+const shorten = (text, most) => (text.length <= most ? text : `${text.slice(0, most).replace(/\s+\S*$/, '')}…`);
+
+// [3, 4, 5, 9] -> "3–5 and 9"
+function numberRanges(list) {
+  const runs = [];
+  for (const n of list) {
+    const last = runs[runs.length - 1];
+    if (last && n === last[1] + 1) last[1] = n;
+    else runs.push([n, n]);
+  }
+  const words = runs.map(([a, b]) => (a === b ? String(a) : `${a}–${b}`));
+  return words.length > 1 ? `${words.slice(0, -1).join(', ')} and ${words[words.length - 1]}` : words[0] ?? '';
 }
 
 // A new question's id, numbered after the set's: "pn3-51" after "pn3-50",
@@ -243,14 +326,26 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
   }
 
   // Everything changed on the console, as a file: the sets the way students see
-  // them (with hidden questions), the drafts, and the database's exact copy.
-  function backup() {
+  // them (with hidden questions), the drafts, the pictures uploaded for their
+  // hot spot questions, and the database's exact copy.
+  async function backup() {
     const strip = ({ file, made, edited, ...set }) => set;
+    const saved = all().filter(s => changes[s.id] || drafts[s.id]).map(strip);
+    const ids = new Set([...saved, ...Object.values(drafts)].flatMap(s => [...pictureIds(s.questions)]));
+    const pictures = {};
+    for (const id of ids) {
+      try {
+        pictures[id] = await db.read(`setImages/${id}`);
+      } catch {
+        pictures[id] = null;
+      }
+    }
     const data = {
       backup: 'Practice Exam Center: question sets changed on the host console',
       savedAt: new Date().toISOString(),
-      sets: all().filter(s => changes[s.id] || drafts[s.id]).map(strip),
+      sets: saved,
       drafts,
+      pictures,
       firebase: raw,
     };
     saveFile(`question-sets-backup-${new Date().toISOString().slice(0, 10)}.json`, `${JSON.stringify(data, null, 2)}\n`);
@@ -312,8 +407,9 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
         buttons: [{ label: 'Keep it', value: 'keep', accent: true }, { label: 'Delete set', value: 'delete' }],
       });
       if (choice !== 'delete') return;
+      const pictures = new Set([...pictureIds(changes[set.id]?.questions), ...pictureIds(drafts[set.id]?.questions)]);
       try {
-        await db.update('', { [`setInfo/${set.id}`]: null, [`setDrafts/${set.id}`]: null });
+        await db.update('', { [`setInfo/${set.id}`]: null, [`setDrafts/${set.id}`]: null, ...forget(pictures) });
         toast('Deleted.');
         done();
       } catch (err) {
@@ -428,9 +524,10 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
 
 // ---------- #/host/sets/<set id>: one set's questions ----------
 
-// How a draft differs from what students see.
-const bare = q => JSON.stringify({ ...q, hidden: undefined });
-function differences(before, after) {
+// How a draft differs from what students see: its questions, their order, and
+// the case studies.
+const bare = q => stable({ ...q, hidden: undefined });
+function differences(before, after, casesBefore = {}, casesAfter = {}) {
   const was = new Map(before.map(q => [q.id, q]));
   const now = new Set(after.map(q => q.id));
   const d = { new: 0, changed: 0, hidden: 0, 'shown again': 0, deleted: 0 };
@@ -444,7 +541,20 @@ function differences(before, after) {
     }
   }
   for (const q of before) if (!now.has(q.id)) d.deleted++;
-  return Object.entries(d).filter(([, n]) => n).map(([word, n]) => `${n} ${word}`);
+  const out = Object.entries(d).filter(([, n]) => n).map(([word, n]) => `${n} ${word}`);
+  const kept = after.filter(q => was.has(q.id)).map(q => q.id);
+  if (kept.join('\n') !== before.filter(q => now.has(q.id)).map(q => q.id).join('\n')) out.push('questions in a new order');
+  const c = { new: 0, changed: 0, deleted: 0 };
+  for (const key of new Set([...Object.keys(casesBefore), ...Object.keys(casesAfter)])) {
+    if (!(key in casesBefore)) c.new++;
+    else if (!(key in casesAfter)) c.deleted++;
+    else if (stable(casesBefore[key]) !== stable(casesAfter[key])) c.changed++;
+  }
+  const study = n => (n === 1 ? 'case study' : 'case studies');
+  if (c.new) out.push(`${c.new} new ${study(c.new)}`);
+  if (c.changed) out.push(`${c.changed} ${study(c.changed)} changed`);
+  if (c.deleted) out.push(`${c.deleted} ${study(c.deleted)} deleted`);
+  return out;
 }
 
 export function questionsPage(section, db, { sets, courses }, accountLine, setId) {
@@ -464,9 +574,18 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
     return { live, draft, questions: draft?.questions ?? live?.questions ?? [], cases: draft?.cases ?? live?.cases ?? {} };
   }
 
-  const saveDraft = (questions, cases) => db.write(`setDrafts/${setId}`, {
-    questions: JSON.stringify(questions), cases: JSON.stringify(cases ?? {}), editedAt: db.serverTime(),
-  });
+  // Saves the draft, with any other writes (a picture uploaded for a question).
+  // Uploaded pictures that nothing uses any more (neither the draft nor what
+  // students see) are deleted with it.
+  function saveDraft(questions, cases, extra = {}) {
+    const { live, draft } = state();
+    const keep = new Set([...pictureIds(live?.questions), ...pictureIds(questions)]);
+    return db.update('', {
+      [`setDrafts/${setId}`]: { questions: JSON.stringify(questions), cases: JSON.stringify(cases ?? {}), editedAt: db.serverTime() },
+      ...extra,
+      ...forget(pictureIds(draft?.questions), keep),
+    });
+  }
 
   function paint(force = false) {
     if (pageProblem) {
@@ -494,13 +613,111 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
       h('p.set-meta.q-page-meta', [course ? `${course.code} · ${course.name}` : 'Other (no class)', plural(visible(questions).length, 'question')].join(' · ')),
       statusBox(live, draft, questions, cases),
       h('div.console-tools',
-        h('button.btn.btn-accent', { type: 'button', onclick: () => openEditor(null) }, 'Add a question')),
-      editing?.id === '' ? editing.el : null,
-      questions.length
-        ? h('ol.q-list', { 'aria-label': 'Questions' }, questions.map((q, i) => questionRow(q, i + 1, live)))
-        : h('p.empty-note', 'No questions yet. Click Add a question to write the first one.'),
+        h('button.btn.btn-accent', { type: 'button', onclick: () => openEditor(null) }, 'Add a question'),
+        h('button.btn', { type: 'button', onclick: () => openCase(null) }, 'Add a case study')),
+      editing?.id === '' || editing?.id === 'case:' ? editing.el : null,
+      caseList(cases, questions),
+      Object.keys(cases).length && questions.length ? h('h2.section-title.q-list-title', 'Questions') : null,
+      questions.length ? questionList(questions, live) : h('p.empty-note', 'No questions yet. Click Add a question to write the first one.'),
       sourceNote(live, draft),
       accountLine());
+  }
+
+  // The questions in order: drag one by its grip (⠿), or use ▲ ▼, to move it.
+  // A case study's questions show in this order too.
+  function questionList(questions, live) {
+    const canMove = questions.length > 1 && !editing;
+    const ids = questions.map(q => q.id);
+    const list = h('ol.q-list', { 'aria-label': 'Questions', class: canMove ? 'orderable' : null }, questions.map((q, i) => questionRow(q, i + 1, live,
+      canMove ? orderTools(`question ${i + 1}`, i, questions.length, to => reorder(moved(ids, i, to))) : null)));
+    if (canMove) dragSort(list, reorder);
+    return list;
+  }
+
+  async function reorder(ids) {
+    const { questions, cases } = state();
+    const byId = new Map(questions.map(q => [q.id, q]));
+    const next = ids.map(id => byId.get(id)).filter(Boolean);
+    if (next.length !== questions.length) return;
+    try {
+      await saveDraft(next, cases);
+    } catch (err) {
+      toast(`The order wasn't saved. ${problemText(err)}`, 9000);
+    }
+  }
+
+  // The case studies: their exhibits, and which questions are in each.
+  function caseList(cases, questions) {
+    const keys = Object.keys(cases);
+    if (!keys.length) return null;
+    return h('section.case-studies',
+      h('h2.section-title', 'Case studies'),
+      h('ul.case-list', keys.map(key => {
+        if (editing?.id === `case:${key}`) return editing.el;
+        const c = cases[key] ?? {};
+        const tabs = (c.tabs ?? []).map((t, i) => t.title || `Exhibit ${i + 1}`);
+        const used = questions.flatMap((q, i) => (q.case === key ? [i + 1] : []));
+        return h('li.case-row',
+          h('div.q-row-info',
+            h('p.q-row-head', h('b', key), ` · ${plural(tabs.length, 'exhibit')}: ${tabs.join(', ')} · `,
+              used.length ? `${used.length === 1 ? 'question' : 'questions'} ${numberRanges(used)}` : 'no questions yet'),
+            c.intro ? h('p.q-row-stem', plainText(c.intro).slice(0, 220)) : null),
+          h('div.set-actions',
+            h('button.btn', { type: 'button', 'aria-label': `Edit case study ${key}`, onclick: () => openCase(key) }, 'Edit'),
+            h('button.btn', { type: 'button', 'aria-label': `Delete case study ${key}`, onclick: () => removeCase(key, used) }, 'Delete')));
+      })));
+  }
+
+  function openCase(key) {
+    const { cases } = state();
+    editing = {
+      id: `case:${key ?? ''}`,
+      el: caseEditor(key, cases, {
+        onSave: async (name, study) => {
+          const now = state();
+          // A renamed case study keeps its place, and its questions follow it.
+          const next = {};
+          for (const [k, v] of Object.entries(now.cases)) next[k === key ? name : k] = k === key ? study : v;
+          if (!key) next[name] = study;
+          const questions = key && key !== name ? now.questions.map(q => (q.case === key ? { ...q, case: name } : q)) : now.questions;
+          await saveDraft(questions, next);
+          editing = null;
+          toast(key ? 'Saved in the draft.' : 'Added to the draft. Now add its questions, and choose this case study in each one.', key ? 4000 : 7000);
+          paint(true);
+        },
+        onCancel: () => {
+          editing = null;
+          paint(true);
+        },
+      }),
+    };
+    paint(true);
+    editing.el.querySelector('input, textarea')?.focus();
+  }
+
+  async function removeCase(key, used) {
+    if (used.length) {
+      const one = used.length === 1;
+      await modal({
+        title: 'This Case Study Has Questions',
+        message: `${one ? 'Question' : 'Questions'} ${numberRanges(used)} ${one ? 'is' : 'are'} part of it. Take ${one ? 'it' : 'them'} out of the case study (in ${one ? 'its' : 'each'} Edit form), or delete ${one ? 'it' : 'them'}, first.`,
+        buttons: [{ label: 'OK', value: 'ok', accent: true }],
+      });
+      return;
+    }
+    const choice = await modal({
+      title: 'Delete This Case Study?',
+      message: `The case study "${key}" and its exhibits are taken out of the draft. Students keep seeing them until you publish.`,
+      buttons: [{ label: 'Keep it', value: 'keep', accent: true }, { label: 'Delete case study', value: 'delete' }],
+    });
+    if (choice !== 'delete') return;
+    const { questions, cases } = state();
+    const { [key]: gone, ...rest } = cases;
+    try {
+      await saveDraft(questions, rest);
+    } catch (err) {
+      toast(`It wasn't deleted. ${problemText(err)}`, 9000);
+    }
   }
 
   // What students see now, or the draft and how to publish it.
@@ -510,8 +727,8 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
         h('p', live.questions.length ? `Students see ${plural(visible(live.questions).length, 'question')}.` : 'This set has no questions yet, so students don\'t see it.',
           ' Changes you make are kept as a draft until you publish them.'));
     }
-    const diff = differences(live.questions, questions);
-    const problems = validateSet({ ...live, questions, cases });
+    const diff = differences(live.questions, questions, live.cases ?? {}, cases ?? {});
+    const problems = questions.length ? validateSet({ ...live, questions, cases }) : [{ problem: 'Add at least one question.' }];
     const ownWork = h('input.ctl#q-own-work', { type: 'checkbox' });
     const note = h('p.form-problem', { role: 'alert' });
     const publish = h('button.btn.btn-accent', { type: 'button', disabled: !!problems.length || !diff.length }, 'Publish changes');
@@ -529,6 +746,7 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
           [`setInfo/${setId}/cases`]: JSON.stringify(cases ?? {}),
           [`setInfo/${setId}/publishedAt`]: db.serverTime(),
           [`setDrafts/${setId}`]: null,
+          ...forget(pictureIds(live.questions), pictureIds(questions)), // pictures students no longer see
         });
         toast('Published. Students see the changes now.');
       } catch (err) {
@@ -551,12 +769,14 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
         h('button.btn', { type: 'button', onclick: discard }, 'Discard draft')));
   }
 
-  function questionRow(q, n, live) {
+  // tools: the grip and ▲ ▼ for this row (none while a form is open).
+  function questionRow(q, n, live, tools) {
     if (editing && editing.id === q.id) return editing.el;
     const old = live.questions.find(x => x.id === q.id);
     const badges = [!old ? 'New' : bare(old) !== bare(q) ? 'Changed' : null, q.hidden ? 'Hidden' : null].filter(Boolean);
     const editable = EDITABLE.includes(q.type);
-    return h('li.q-row', { class: q.hidden ? 'is-hidden' : null },
+    return h('li.q-row', { 'data-key': q.id, class: q.hidden ? 'is-hidden' : null },
+      tools,
       h('div.q-row-info',
         h('p.q-row-head', h('b', `${n}.`), ` ${typeLabel(q.type)} · ${q.topic}`, q.case ? ` · case study "${q.case}"` : '',
           badges.map(b => h(`span.badge.badge-${b.toLowerCase()}`, b))),
@@ -578,14 +798,26 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
 
   function openEditor(q) {
     const { questions, cases } = state();
+    // The pictures this set's hot spot questions use, to use again.
+    const pictures = [...new Map(questions.filter(x => x.type === 'hotspot' && isText(x.image)).map(x => [x.image, { path: x.image, alt: x.alt ?? '' }])).values()];
     editing = {
       id: q?.id ?? '',
       el: questionEditor(q, {
-        setId, questions, cases,
-        onSave: async question => {
+        setId, questions, cases, pictures,
+        onSave: async (question, upload) => {
           const now = state();
-          const next = q ? now.questions.map(x => (x.id === q.id ? question : x)) : [...now.questions, question];
-          await saveDraft(next, now.cases);
+          const next = now.questions.filter(x => x.id !== question.id);
+          let at = q ? now.questions.findIndex(x => x.id === q.id) : next.length;
+          // A question that joins a case study goes after the case study's other questions.
+          if (question.case && question.case !== q?.case) {
+            const last = next.map(x => x.case).lastIndexOf(question.case);
+            if (last >= 0) at = last + 1;
+          }
+          next.splice(Math.max(0, Math.min(at, next.length)), 0, question);
+          const extra = upload ? {
+            [`setImages/${upload.id}`]: { data: upload.data, set: setId, name: upload.name, size: upload.size, uploadedAt: db.serverTime() },
+          } : {};
+          await saveDraft(next, now.cases, extra);
           editing = null;
           toast(q ? 'Saved in the draft.' : 'Added to the draft.');
           paint(true);
@@ -636,8 +868,9 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
       buttons: [{ label: 'Keep the draft', value: 'keep', accent: true }, { label: 'Discard draft', value: 'discard' }],
     });
     if (choice !== 'discard') return;
+    const { live, draft } = state();
     try {
-      await db.write(`setDrafts/${setId}`, null);
+      await db.update('', { [`setDrafts/${setId}`]: null, ...forget(pictureIds(draft?.questions), pictureIds(live?.questions)) });
       editing = null;
       toast('The draft was discarded.');
     } catch (err) {
@@ -668,9 +901,11 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
       buttons: [{ label: 'Keep these questions', value: 'keep', accent: true }, { label: 'Use the file\'s questions', value: 'file' }],
     });
     if (choice !== 'file') return;
+    const { live, draft } = state();
     try {
       await db.update('', {
         [`setInfo/${setId}/questions`]: null, [`setInfo/${setId}/cases`]: null, [`setInfo/${setId}/publishedAt`]: null, [`setDrafts/${setId}`]: null,
+        ...forget(new Set([...pictureIds(live?.questions), ...pictureIds(draft?.questions)])),
       });
       editing = null;
       toast('Done. Students see the file\'s questions.');
@@ -703,9 +938,10 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
 
 // ---------- the question form ----------
 
-// A form for one question (q: null for a new one). onSave(question) gets a
-// question that passes every check.
-function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
+// A form for one question (q: null for a new one). onSave(question, upload)
+// gets a question that passes every check, and a new picture to save with it
+// (a hot spot's), if there is one. pictures: the set's hot spot pictures.
+function questionEditor(q, { setId, questions, cases, pictures = [], onSave, onCancel }) {
   const isNew = !q;
   let type = q?.type ?? 'mc';
   let typeForm = null;
@@ -713,6 +949,10 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
   const typeSelect = isNew ? h('select.text-input#qe-type', EDITABLE.map(t => h('option', { value: t }, typeLabel(t)))) : null;
   const topics = h('datalist#qe-topics', [...new Set(questions.map(x => x.topic).filter(isText))].sort(naturally).map(t => h('option', { value: t })));
   const topic = h('input.text-input#qe-topic', { type: 'text', list: 'qe-topics', maxlength: '80', value: q?.topic ?? '', autocomplete: 'off' });
+  const caseKeys = Object.keys(cases ?? {});
+  const caseSelect = caseKeys.length ? h('select.text-input#qe-case',
+    h('option', { value: '' }, 'None: a stand-alone question'),
+    caseKeys.map(key => h('option', { value: key, selected: q?.case === key }, `${key}: ${shorten(plainText(cases[key].intro), 80) || plural(cases[key].tabs?.length ?? 0, 'exhibit')}`))) : null;
   const stem = h('textarea.text-input#qe-stem', { rows: '4', value: toText(q?.stem) });
   const rationale = h('textarea.text-input#qe-rationale', { rows: '6', value: toText(q?.rationale) });
   const typeArea = h('div.qe-type-area');
@@ -723,7 +963,7 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
 
   function useType(t, carried = {}) {
     type = t;
-    typeForm = TYPE_FORMS[t](isNew ? carried : q);
+    typeForm = TYPE_FORMS[t](isNew ? carried : q, { pictures });
     fill(typeArea, typeForm.el);
     refresh();
   }
@@ -731,33 +971,46 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
   // The question as the form has it, and what's missing in plain words.
   function build() {
     const { fields, problems } = typeForm.read();
-    const kept = isNew ? {} : Object.fromEntries(Object.entries(q).filter(([k]) => !['id', 'type', 'topic', 'stem', 'rationale', ...MANAGED[q.type]].includes(k)));
-    const question = { id: q?.id ?? nextId(setId, questions), type, topic: topic.value.trim(), stem: toHtml(stem.value), ...fields, rationale: toHtml(rationale.value), ...kept };
+    const managed = ['id', 'type', 'case', 'topic', 'stem', 'rationale', ...MANAGED[q?.type ?? type]];
+    const kept = isNew ? {} : Object.fromEntries(Object.entries(q).filter(([k]) => !managed.includes(k)));
+    const study = caseSelect?.value || (caseSelect ? null : q?.case) || null; // a case study that's gone stays named, so the set check says so
+    // Text that wasn't changed keeps its HTML exactly, so the question doesn't count as changed.
+    const html = (box, before) => (q && box.value === toText(before) ? before : toHtml(box.value));
+    const question = {
+      id: q?.id ?? nextId(setId, questions), type, ...(study ? { case: study } : {}),
+      topic: topic.value.trim(), stem: html(stem, q?.stem), ...fields, rationale: html(rationale, q?.rationale), ...kept,
+    };
     const missing = [];
     if (!question.topic) missing.push('Type a topic, like "Pharmacology". Students see their score by topic.');
     if (!stem.value.trim()) missing.push('Type the question.');
     missing.push(...problems);
     if (!rationale.value.trim()) missing.push('Type the rationale: why the right answer is right, and why each wrong option is wrong.');
-    return { question, problems: missing.length ? missing : validateQuestion(question, cases) };
+    return { question, problems: missing.length ? missing : validateQuestion(question, cases), upload: typeForm.upload?.() ?? null };
   }
 
   let timer = 0;
+  let previewTab = 0; // the exhibit tab shown in the preview
   function refresh() {
     clearTimeout(timer);
     timer = setTimeout(() => {
       const { question, problems } = build();
       fill(problemsBox, tried && problems.length ? h('ul', problems.map(p => h('li', p))) : null);
-      if (problems.length) fill(preview, waiting());
-      else {
-        const key = keyResponse(question);
-        fill(preview,
-          h('p.qe-preview-title', 'Preview: what students see, with the right answer marked'),
-          questionParts(question, { response: key, review: true, idPrefix: 'qe-pv-' }),
-          feedbackPanel(question, key));
-        // The key is shown as if it were an answer; here it's the correct answer, not "your" answer.
-        for (const m of preview.querySelectorAll('.mark.ok')) {
-          if (m.lastChild?.textContent === ' Your answer') m.lastChild.textContent = ' Correct answer';
-        }
+      if (problems.length) {
+        fill(preview, waiting());
+        return;
+      }
+      const key = keyResponse(question);
+      const parts = [questionParts(question, { response: key, review: true, idPrefix: 'qe-pv-' }), feedbackPanel(question, key)];
+      // A case study question shows next to the case study's exhibits, as in an exam.
+      const area = h('div.qe-preview-area');
+      if (question.case && cases[question.case]) {
+        questionArea(area, cases, { get: () => previewTab, set: (_, i) => (previewTab = i) }).show(question, parts);
+      } else fill(area, parts);
+      fill(preview, h('p.qe-preview-title', 'Preview: what students see, with the right answer marked'), area);
+      // The key is shown as if it were an answer; here it's the correct answer, not "your" answer.
+      for (const m of preview.querySelectorAll('.mark.ok')) {
+        if (m.lastChild?.textContent === ' Your answer') m.lastChild.textContent = ' Correct answer';
+        if (m.lastChild?.textContent === ' Your click is in the correct area.') m.lastChild.textContent = ' A click in the green area is correct.';
       }
     }, 150);
   }
@@ -768,18 +1021,21 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
     onsubmit: async e => {
       e.preventDefault();
       tried = true;
-      const { question, problems } = build();
+      const { question, problems, upload } = build();
       if (problems.length) {
         fill(problemsBox, h('ul', problems.map(p => h('li', p))));
         problemsBox.scrollIntoView({ block: 'nearest' });
         return;
       }
       save.disabled = true;
+      const label = save.textContent;
+      if (upload) save.textContent = 'Saving the picture…';
       try {
-        await onSave(question);
+        await onSave(question, upload);
       } catch (err) {
         fill(problemsBox, h('ul', h('li', `It didn't save. ${problemText(err)}`)));
         save.disabled = false;
+        save.textContent = label;
       }
     },
   },
@@ -787,8 +1043,10 @@ function questionEditor(q, { setId, questions, cases, onSave, onCancel }) {
     h('div.editor-grid',
       isNew ? h('div.field', h('label.field-label', { for: 'qe-type' }, 'Question type'), typeSelect)
         : h('div.field', h('p.field-label', 'Question type'), h('p.qe-fixed', typeLabel(type))),
-      h('div.field', h('label.field-label', { for: 'qe-topic' }, 'Topic'), topic, topics)),
-    q?.case ? h('p.field-help', `This question is part of a case study ("${q.case}"). Its exhibits stay as they are.`) : null,
+      h('div.field', h('label.field-label', { for: 'qe-topic' }, 'Topic'), topic, topics),
+      caseSelect ? h('div.field.wide', h('label.field-label', { for: 'qe-case' }, 'Case study'), caseSelect,
+        h('p.field-help', 'A case study question shows next to the case study\'s exhibits, after the case study\'s other questions.')) : null),
+    !caseSelect && q?.case ? h('p.field-help', `This question names the case study "${q.case}", which isn't in the set.`) : null,
     h('div.field', h('label.field-label', { for: 'qe-stem' }, 'Question'), stem,
       h('p.field-help', 'A blank line starts a new paragraph.')),
     typeArea,
@@ -1105,6 +1363,507 @@ function dropdownForm(q) {
   };
 }
 
+// ---------- hot spot: a picture, and boxes over the correct area ----------
+
+const PICTURE_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp', 'image/svg+xml'];
+const PICTURE_MAX = 2 * 1024 * 1024; // bytes, once shrunk (database.rules.json allows 2,800,000 characters of data)
+const PICTURE_SIDE = 1600; // pixels: bigger pictures are shrunk to fit
+
+const newPictureId = () => `p${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`;
+const dataBytes = url => Math.floor(((url.length - url.indexOf(',') - 1) * 3) / 4);
+
+function fileAsUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(new Error('That file couldn\'t be read. Try again, or choose another picture.'));
+    reader.readAsDataURL(file);
+  });
+}
+
+function pictureFrom(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => reject(new Error('That file isn\'t a picture this browser can show. Choose a PNG, JPG, GIF, WebP, or SVG picture.'));
+    img.src = url;
+  });
+}
+
+// A picture file as a data: URL, shrunk when it's bigger than a question needs.
+async function readPicture(file) {
+  if (!PICTURE_TYPES.includes(file.type)) throw new Error('Choose a PNG, JPG, GIF, WebP, or SVG picture.');
+  if (file.size > 25 * 1024 * 1024) throw new Error(`That picture is ${formatSize(file.size)}. Choose one smaller than 25 MB.`);
+  const url = await fileAsUrl(file);
+  const img = await pictureFrom(url);
+  if (!img.naturalWidth || !img.naturalHeight) throw new Error('This picture has no size. If it\'s an SVG, give its <svg> tag a width and height, or save it as a PNG.');
+  const side = Math.max(img.naturalWidth, img.naturalHeight);
+  if (file.type === 'image/svg+xml' || (side <= PICTURE_SIDE && file.size <= PICTURE_MAX)) {
+    if (file.size > PICTURE_MAX) throw new Error(`That picture is ${formatSize(file.size)}, and the limit is 2 MB. Save a smaller copy and try again.`);
+    return { data: url, size: file.size, shrunk: false };
+  }
+  // Too big: draw it smaller. Drawings stay PNG unless only a JPEG fits; photos are JPEG.
+  const scale = Math.min(1, PICTURE_SIDE / side);
+  const canvas = h('canvas', { width: String(Math.max(1, Math.round(img.naturalWidth * scale))), height: String(Math.max(1, Math.round(img.naturalHeight * scale))) });
+  const g = canvas.getContext('2d');
+  let data = '';
+  if (!['image/jpeg', 'image/webp'].includes(file.type)) {
+    g.drawImage(img, 0, 0, canvas.width, canvas.height);
+    data = canvas.toDataURL('image/png');
+  }
+  if (!data || dataBytes(data) > PICTURE_MAX) {
+    g.fillStyle = '#fff';
+    g.fillRect(0, 0, canvas.width, canvas.height);
+    g.drawImage(img, 0, 0, canvas.width, canvas.height);
+    data = canvas.toDataURL('image/jpeg', 0.85);
+  }
+  if (dataBytes(data) > PICTURE_MAX) throw new Error(`That picture is still ${formatSize(dataBytes(data))} after shrinking it, and the limit is 2 MB. Try a simpler picture.`);
+  return { data, size: dataBytes(data), shrunk: true };
+}
+
+// The picture comes from an upload (saved with the question, after the
+// own-work box is ticked) or from another hot spot question in the set. The
+// correct area is one or more boxes: drag across the picture to draw one, drag
+// a box to move it or its corner to resize it, or type its numbers.
+function hotspotForm(q, { pictures = [] }) {
+  let image = q.image ?? '';
+  let upload = null; // a new picture: { id, data, name, size }
+  let boxes = Array.isArray(q.regions) ? q.regions.map(g => ({ ...g })) : [];
+  let picked = boxes.length ? 0 : -1;
+  let drag = null; // { mode: 'new' | 'move' | 'size', i, from, was }
+
+  const fileInput = h('input.file-input#qe-picture', { type: 'file', accept: PICTURE_TYPES.join(',') });
+  const fileNote = h('p.field-help.qe-file-note', { 'aria-live': 'polite' });
+  const own = h('input.ctl#qe-picture-own', { type: 'checkbox' });
+  const ownLine = h('label.choice-line.own-work', { hidden: true }, own,
+    h('span', 'This picture is my own drawing or photo. It isn\'t from a textbook, class slides, or the internet.'));
+  const choices = h('div.qe-picture-choices');
+  const alt = h('input.text-input#qe-alt', { type: 'text', maxlength: '300', value: q.alt ?? '' });
+  const img = h('img.qe-picture', { alt: '', draggable: 'false' });
+  const missing = h('p.picture-missing', { role: 'alert', hidden: true }, 'The picture couldn\'t be loaded. Check the internet connection, or upload it again.');
+  const layer = h('div.qe-boxes');
+  const stage = h('div.qe-stage', { hidden: !image }, img, layer);
+  const boxList = h('ol.qe-box-list', { 'aria-label': 'Boxes over the correct area' });
+  const changed = () => layer.dispatchEvent(new Event('change', { bubbles: true })); // the preview follows
+  // A box in the middle, to move by typing its numbers (or by dragging it).
+  const addBox = h('button.btn.btn-small', {
+    type: 'button',
+    hidden: !image,
+    onclick: () => {
+      boxes.push({ x: 40, y: 40, w: 20, h: 20 });
+      picked = boxes.length - 1;
+      drawBoxes();
+      drawList();
+      changed();
+      boxList.lastElementChild?.querySelector('input')?.focus();
+    },
+  }, 'Add a box');
+
+  const round = v => Math.round(v * 10) / 10;
+  const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+  const tidy = b => {
+    const x = clamp(round(b.x), 0, 99);
+    const y = clamp(round(b.y), 0, 99);
+    return { x, y, w: clamp(round(b.w), 1, round(100 - x)), h: clamp(round(b.h), 1, round(100 - y)) };
+  };
+  const spot = e => {
+    const r = img.getBoundingClientRect();
+    return { x: clamp(((e.clientX - r.left) / r.width) * 100, 0, 100), y: clamp(((e.clientY - r.top) / r.height) * 100, 0, 100) };
+  };
+
+  function drawBoxes() {
+    fill(layer, boxes.map((b, i) => h('div.qe-box', {
+      'data-i': String(i), class: i === picked ? 'picked' : null,
+      style: { left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%`, height: `${b.h}%` },
+    }, h('span.qe-box-num', String(i + 1)), h('span.qe-box-handle', { title: 'Drag to resize' }))));
+  }
+
+  // The boxes' numbers, in percent of the picture, to check or type.
+  function drawList() {
+    fill(boxList, boxes.map((b, i) => {
+      const inputs = {};
+      const field = (key, label) => {
+        const input = h('input.num-input', {
+          type: 'number', min: '0', max: '100', step: '0.1', inputmode: 'decimal', value: String(b[key]),
+          'aria-label': `Box ${i + 1}: ${label.toLowerCase()}, in percent of the picture`,
+        });
+        input.addEventListener('input', () => {
+          const v = parseFloat(input.value);
+          if (!Number.isFinite(v)) return;
+          boxes[i] = tidy({ ...boxes[i], [key]: v });
+          picked = i;
+          drawBoxes();
+          for (const [k, el] of Object.entries(inputs)) if (el !== input) el.value = String(boxes[i][k]);
+        });
+        input.addEventListener('change', () => (input.value = String(boxes[i][key])));
+        inputs[key] = input;
+        return h('label.qe-box-field', h('span', label), input);
+      };
+      return h('li.qe-box-row', { class: i === picked ? 'picked' : null },
+        h('b', `Box ${i + 1}`), field('x', 'Left'), field('y', 'Top'), field('w', 'Width'), field('h', 'Height'),
+        h('button.link-btn', {
+          type: 'button',
+          onclick: () => {
+            boxes.splice(i, 1);
+            picked = Math.min(picked, boxes.length - 1);
+            drawBoxes();
+            drawList();
+            changed();
+          },
+        }, `Remove box ${i + 1}`));
+    }));
+  }
+
+  layer.addEventListener('pointerdown', e => {
+    if (e.button > 0 || !img.naturalWidth) return;
+    e.preventDefault();
+    const p = spot(e);
+    const box = e.target.closest('.qe-box');
+    if (box) {
+      picked = Number(box.dataset.i);
+      drag = { mode: e.target.closest('.qe-box-handle') ? 'size' : 'move', i: picked, from: p, was: { ...boxes[picked] } };
+    } else {
+      boxes.push({ x: p.x, y: p.y, w: 0, h: 0 });
+      picked = boxes.length - 1;
+      drag = { mode: 'new', i: picked, from: p };
+    }
+    layer.setPointerCapture(e.pointerId);
+    drawBoxes();
+  });
+  layer.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const p = spot(e);
+    const b = boxes[drag.i];
+    const dx = p.x - drag.from.x;
+    const dy = p.y - drag.from.y;
+    if (drag.mode === 'new') Object.assign(b, { x: Math.min(p.x, drag.from.x), y: Math.min(p.y, drag.from.y), w: Math.abs(dx), h: Math.abs(dy) });
+    else if (drag.mode === 'move') Object.assign(b, { x: clamp(drag.was.x + dx, 0, 100 - b.w), y: clamp(drag.was.y + dy, 0, 100 - b.h) });
+    else Object.assign(b, { w: clamp(drag.was.w + dx, 1, 100 - b.x), h: clamp(drag.was.h + dy, 1, 100 - b.y) });
+    drawBoxes();
+  });
+  const stop = () => {
+    if (!drag) return;
+    const b = boxes[drag.i];
+    if (drag.mode === 'new' && (b.w < 1 || b.h < 1)) {
+      boxes.splice(drag.i, 1); // a click, not a drag
+      picked = -1;
+    } else boxes[drag.i] = tidy(b);
+    drag = null;
+    drawBoxes();
+    drawList();
+    changed();
+  };
+  layer.addEventListener('pointerup', stop);
+  layer.addEventListener('pointercancel', stop);
+
+  function usePicture(path) {
+    image = path;
+    missing.hidden = true;
+    stage.hidden = false;
+    addBox.hidden = false;
+    img.removeAttribute('src');
+    showPicture(img, path, missing);
+    drawBoxes();
+    paintChoices();
+    changed();
+  }
+
+  // The set's other pictures, to use again (no new upload needed).
+  function paintChoices() {
+    const others = pictures.filter(p => p.path !== image);
+    fill(choices, others.length ? [
+      h('p.field-help', 'Or use a picture from another hot spot question in this set:'),
+      h('div.qe-thumbs', others.map((p, i) => {
+        const thumb = h('img', { alt: '' });
+        showPicture(thumb, p.path);
+        return h('button.qe-thumb', {
+          type: 'button',
+          'aria-label': `Use picture ${i + 1}${p.alt ? `: ${p.alt}` : ''}`,
+          onclick: () => {
+            upload = null;
+            ownLine.hidden = true;
+            fileNote.textContent = '';
+            if (!alt.value.trim()) alt.value = p.alt;
+            usePicture(p.path);
+          },
+        }, thumb);
+      }))] : null);
+  }
+
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files[0];
+    fileInput.value = ''; // so the same file can be chosen again
+    if (!file) return;
+    fileNote.textContent = 'Reading the picture…';
+    try {
+      const picture = await readPicture(file);
+      const id = newPictureId();
+      rememberPicture(id, picture.data);
+      upload = { id, data: picture.data, name: file.name.slice(0, 200), size: picture.size };
+      own.checked = false;
+      ownLine.hidden = false;
+      fileNote.textContent = `${file.name} · ${formatSize(picture.size)}${picture.shrunk ? ' (made smaller to fit)' : ''}`;
+      usePicture(`db:${id}`);
+    } catch (err) {
+      fileNote.textContent = err.message;
+    }
+  });
+
+  if (image) showPicture(img, image, missing);
+  drawBoxes();
+  drawList();
+  paintChoices();
+  return {
+    el: h('div.qe-hotspot',
+      h('div.field',
+        h('label.field-label', { for: 'qe-picture' }, image ? 'Picture (choose a file to replace it)' : 'Picture'),
+        h('p.field-help', 'Upload a PNG, JPG, GIF, WebP, or SVG picture you drew or took yourself. Big pictures are made smaller to fit (2 MB at most).'),
+        fileInput, fileNote, choices, ownLine),
+      h('div.field', h('label.field-label', { for: 'qe-alt' }, 'Describe the picture'), alt,
+        h('p.field-help', 'For students who use a screen reader. Say what it shows without giving the answer away, like "Side view of the eye with the front on the left."')),
+      h('div.field',
+        h('p.field-label', 'Correct area'),
+        h('p.field-help', 'Drag across the picture to draw a box over the correct area. Drag a box to move it, or its corner to resize it, or type its numbers (in percent of the picture). Use more boxes for an odd shape. A click inside any box is correct.'),
+        stage, boxList, h('div.qe-box-actions', addBox))),
+    read() {
+      const problems = [];
+      if (!image) problems.push('Upload a picture, or choose one already in this set.');
+      if (upload && !own.checked) problems.push('Tick the box to confirm the picture is your own drawing or photo.');
+      if (!alt.value.trim()) problems.push('Describe the picture for students who use a screen reader, without giving the answer away.');
+      if (image && !boxes.length) problems.push('Drag across the picture to draw a box over the correct area.');
+      return { fields: { image, alt: alt.value.trim(), regions: boxes.map(tidy) }, problems };
+    },
+    upload: () => upload,
+  };
+}
+
+// ---------- highlight: a passage with phrases students can click ----------
+
+// The passage is plain text, and line breaks are <br>.
+const toPassage = text => text.replace(/\r\n?/g, '\n').trim().replace(/\n/g, '<br>');
+
+function highlightForm(q) {
+  const passage = h('textarea.text-input#qe-passage', { rows: '6', value: (q.passage ?? '').replace(/<br\s*\/?>/gi, '\n') });
+  const list = h('ul.qe-phrases', { 'aria-label': 'Clickable phrases' });
+  const note = h('p.field-help.qe-phrase-note', { role: 'status' });
+  const marked = new Set(); // "phrase#2": the second phrase with that text, so marks survive edits
+  const keyed = phrases => {
+    const seen = new Map();
+    return phrases.map(p => {
+      const k = (seen.get(p.phrase) ?? 0) + 1;
+      seen.set(p.phrase, k);
+      return { ...p, key: `${p.phrase}#${k}` };
+    });
+  };
+  const phrasesIn = value => {
+    const parts = highlightParts(value);
+    return parts ? keyed(parts.filter(p => p.phrase != null)) : null;
+  };
+  for (const p of phrasesIn(q.passage ?? '') ?? []) if ((q.answer ?? []).includes(p.n)) marked.add(p.key);
+  const changed = () => passage.dispatchEvent(new Event('input', { bubbles: true }));
+
+  function paintList() {
+    const phrases = phrasesIn(toPassage(passage.value));
+    if (!phrases) {
+      fill(list, h('li.qe-phrase-problem', 'A [[ doesn\'t have a matching ]], or the other way around.'));
+      return;
+    }
+    fill(list, phrases.length ? phrases.map((p, i) => {
+      const words = p.phrase.replace(/<br\s*\/?>/gi, ' ');
+      const box = h('input.ctl', { type: 'checkbox', checked: marked.has(p.key), 'aria-label': `Should be highlighted: ${words}` });
+      box.addEventListener('change', () => (box.checked ? marked.add(p.key) : marked.delete(p.key)));
+      return h('li', h('label.choice-line', box, h('span', words)),
+        h('button.link-btn', { type: 'button', 'aria-label': `Make "${words}" plain text again`, onclick: () => unwrap(i) }, 'Make it plain text'));
+    }) : h('li.qe-phrase-none', 'No clickable phrases yet.'));
+  }
+
+  // Puts [[ ]] around the selected words.
+  function makeClickable() {
+    const v = passage.value;
+    let a = passage.selectionStart;
+    let b = passage.selectionEnd;
+    while (a < b && /\s/.test(v[a])) a++;
+    while (b > a && /\s/.test(v[b - 1])) b--;
+    if (a === b) {
+      note.textContent = 'First select some words in the passage, then click the button.';
+      return;
+    }
+    const before = v.slice(0, a);
+    const words = v.slice(a, b);
+    const open = (before.match(/\[\[/g) ?? []).length - (before.match(/\]\]/g) ?? []).length;
+    if (open > 0 || words.includes('[[') || words.includes(']]')) {
+      note.textContent = 'Those words overlap a phrase that\'s already clickable.';
+      return;
+    }
+    passage.setRangeText(`[[${words}]]`, a, b, 'end');
+    note.textContent = '';
+    passage.focus();
+    paintList();
+    changed();
+  }
+
+  // Takes the [[ ]] off phrase i.
+  function unwrap(i) {
+    let n = -1;
+    passage.value = passage.value.replace(/\[\[([\s\S]*?)\]\]/g, (m, words) => (++n === i ? words : m));
+    paintList();
+    changed();
+  }
+
+  passage.addEventListener('input', paintList);
+  paintList();
+  return {
+    el: h('div.qe-highlight',
+      h('div.field',
+        h('label.field-label', { for: 'qe-passage' }, 'Passage'),
+        h('p.field-help', 'Type or paste the text, like part of the nurses\' notes. Then select the words or phrases students can click, and click "Make the selected words clickable". They show as [[like this]].'),
+        passage,
+        h('div.form-actions', h('button.btn.btn-small', { type: 'button', onclick: makeClickable }, 'Make the selected words clickable')),
+        note),
+      h('div.field',
+        h('p.field-label', 'Clickable phrases'),
+        h('p.field-help', 'Tick the ones that should be highlighted. The others are there to see whether students can tell the difference.'),
+        list)),
+    read() {
+      const problems = [];
+      const value = toPassage(passage.value);
+      const phrases = phrasesIn(value);
+      if (!value) problems.push('Type the passage.');
+      else if (!phrases) problems.push('A [[ in the passage doesn\'t have a matching ]], or the other way around.');
+      else if (!phrases.length) problems.push('Make some words clickable: select them in the passage, then click "Make the selected words clickable".');
+      else if (!phrases.some(p => marked.has(p.key))) problems.push('Tick the phrases that should be highlighted.');
+      if (/<(?!br\s*\/?>)[a-z/!]/i.test(value)) problems.push('The passage can only hold plain text, without tags like <b>.');
+      return { fields: { passage: value, answer: (phrases ?? []).filter(p => marked.has(p.key)).map(p => p.n) }, problems };
+    },
+  };
+}
+
+// ---------- drag and drop: a sentence with blanks, and words to drag ----------
+
+function dragdropForm(q) {
+  const text = h('textarea.text-input#qe-dd-text', { rows: '3', value: (q.text ?? '').replace(MARKER, (_, n) => `{{${Number(n) + 1}}}`) });
+  const area = h('div.blank-editors');
+  const words = listEditor({ values: q.tokens?.length ? q.tokens : ['', '', '', ''], noun: 'Word', addLabel: 'Add a word', onChange: () => paintBlanks() });
+  const first = words.items();
+  const answers = (Array.isArray(q.answer) ? q.answer : []).map(a => first[a]?.key ?? null); // each blank's word, by its key
+  const changed = () => text.dispatchEvent(new Event('input', { bubbles: true }));
+
+  function paintBlanks() {
+    const list = words.items();
+    fill(area, answers.map((key, i) => {
+      const select = h('select.text-input', { id: `qe-dd-blank-${i + 1}` },
+        h('option', { value: '' }, 'Choose the word that goes here'),
+        list.map((w, j) => h('option', { value: String(w.key), selected: w.key === key }, w.text || `Word ${j + 1}`)));
+      select.addEventListener('change', () => (answers[i] = select.value ? Number(select.value) : null));
+      return h('div.blank-editor.dd-blank',
+        h('label.field-label', { for: select.id }, `Blank {{${i + 1}}}: the word that goes there`),
+        select,
+        h('button.link-btn', { type: 'button', onclick: () => removeBlank(i) }, `Remove blank {{${i + 1}}}`));
+    }));
+  }
+  // Takes its {{n}} out of the sentence, and renumbers the later ones.
+  function removeBlank(i) {
+    answers.splice(i, 1);
+    text.value = text.value.replace(MARKER, (m, k) => (Number(k) === i + 1 ? '' : Number(k) > i + 1 ? `{{${Number(k) - 1}}}` : m));
+    paintBlanks();
+    changed();
+  }
+  const insert = h('button.btn.btn-small', {
+    type: 'button',
+    onclick: () => {
+      const end = text.selectionEnd ?? text.value.length;
+      text.setRangeText(`{{${answers.length + 1}}}`, text.selectionStart ?? end, end, 'end');
+      answers.push(null);
+      paintBlanks();
+      text.focus();
+      changed();
+    },
+  }, 'Add a blank at the cursor');
+  words.el.addEventListener('input', () => paintBlanks()); // the choices follow the words as they're typed
+  paintBlanks();
+
+  return {
+    el: h('div.qe-dragdrop',
+      h('div.field',
+        h('label.field-label', { for: 'qe-dd-text' }, 'Sentence with blanks'),
+        h('p.field-help', 'Type the sentence. Put the cursor where a blank goes and click "Add a blank at the cursor". It shows as {{1}}, {{2}}, and so on.'),
+        text,
+        h('div.form-actions', insert)),
+      h('div.field',
+        h('p.field-label', 'Words to drag'),
+        h('p.field-help', 'The words or phrases students drag into the blanks. Add a few wrong ones too. Students see them in a shuffled order.'),
+        words.el),
+      area),
+    read() {
+      const list = words.items();
+      const problems = [];
+      const found = [...text.value.matchAll(MARKER)].map(m => Number(m[1]));
+      if (!text.value.trim()) problems.push('Type the sentence.');
+      if (!answers.length) problems.push('Add at least one blank: put the cursor where it goes, and click "Add a blank at the cursor".');
+      answers.forEach((key, i) => {
+        const n = i + 1;
+        const times = found.filter(f => f === n).length;
+        if (times !== 1) problems.push(times ? `The sentence has {{${n}}} more than once.` : `The sentence needs {{${n}}} where blank ${n} goes.`);
+        if (key == null || !list.some(w => w.key === key)) problems.push(`Blank {{${n}}}: choose the word that goes there.`);
+      });
+      for (const f of new Set(found)) {
+        if (f < 1 || f > answers.length) problems.push(`The sentence has {{${f}}}, but there ${answers.length === 1 ? 'is 1 blank' : `are ${answers.length} blanks`}.`);
+      }
+      if (list.length < 2) problems.push('Add at least 2 words to drag.');
+      list.forEach((w, i) => w.text || problems.push(`Word ${i + 1} is empty. Type it, or remove it with ✕.`));
+      const used = answers.filter(k => k != null);
+      if (new Set(used).size !== used.length) problems.push('A word can fill only one blank. If two blanks need the same word, add it to the list twice.');
+      return {
+        fields: {
+          text: text.value.trim().replace(MARKER, (_, k) => `{{${Number(k) - 1}}}`),
+          tokens: list.map(w => w.text),
+          answer: answers.map(key => list.findIndex(w => w.key === key)),
+        },
+        problems,
+      };
+    },
+  };
+}
+
+// ---------- bow tie: a condition, actions to take, and parameters to monitor ----------
+
+const BOWTIE_LISTS = {
+  condition: { noun: 'Condition', mark: 'radio', count: 4, add: 'Add a condition', label: 'Conditions: mark the one the client is most likely experiencing',
+    missing: 'Mark the condition the client is most likely experiencing.' },
+  actions: { noun: 'Action', mark: 'checkbox', count: 5, add: 'Add an action', label: 'Actions to take: mark the ones the nurse should take',
+    missing: 'Mark the actions the nurse should take.' },
+  parameters: { noun: 'Parameter', mark: 'checkbox', count: 5, add: 'Add a parameter', label: 'Parameters to monitor: mark the ones the nurse should monitor',
+    missing: 'Mark the parameters the nurse should monitor.' },
+};
+
+function bowtieForm(q) {
+  const editors = Object.fromEntries(Object.entries(BOWTIE_LISTS).map(([key, l]) => {
+    const g = q[key] ?? {};
+    const options = g.options?.length ? g.options : Array(l.count).fill('');
+    const picked = new Set(key === 'condition' ? (Number.isInteger(g.answer) ? [g.answer] : []) : Array.isArray(g.answer) ? g.answer : []);
+    return [key, listEditor({ values: options, marks: options.map((_, i) => picked.has(i)), mark: l.mark, noun: l.noun, addLabel: l.add })];
+  }));
+  return {
+    el: h('div.qe-bowtie',
+      h('p.field-help', 'Students put 1 condition in the middle of the diagram, and as many actions and parameters as you mark (usually 2 of each) on its sides. Add a few believable wrong options to each list. Students see each list in a shuffled order.'),
+      Object.entries(BOWTIE_LISTS).map(([key, l]) => h('div.field', h('p.field-label', l.label), editors[key].el))),
+    read() {
+      const problems = [];
+      const fields = {};
+      for (const [key, l] of Object.entries(BOWTIE_LISTS)) {
+        const items = editors[key].items();
+        if (items.length < 2) problems.push(`Add at least 2 ${l.noun.toLowerCase()}s.`);
+        items.forEach((it, i) => it.text || problems.push(`${l.noun} ${i + 1} is empty. Type it, or remove it with ✕.`));
+        const answer = items.flatMap((it, i) => (it.marked ? [i] : []));
+        if (!answer.length) problems.push(l.missing);
+        const options = items.map(it => it.text);
+        fields[key] = key === 'condition' ? { options, answer: answer[0] ?? null } : { options, answer, select: answer.length };
+      }
+      return { fields, problems };
+    },
+  };
+}
+
 const TYPE_FORMS = {
   mc: q => choicesForm(q, 'one'),
   sata: q => choicesForm(q, 'many'),
@@ -1113,4 +1872,146 @@ const TYPE_FORMS = {
   order: orderForm,
   matrix: matrixForm,
   dropdown: dropdownForm,
+  hotspot: hotspotForm,
+  highlight: highlightForm,
+  dragdrop: dragdropForm,
+  bowtie: bowtieForm,
 };
+
+// ---------- the case study form ----------
+
+const EXHIBIT_TITLES = ['Nurses\' Notes', 'Vital Signs', 'Laboratory Results', 'Orders', 'Health History', 'Medication Administration Record',
+  'Admission Note', 'Progress Notes', 'Diagnostic Results', 'Intake and Output', 'Flow Sheet'];
+let exhibits = 0;
+
+// A form for a case study (key: null for a new one): its short name, its
+// introduction, and its exhibit tabs. onSave(name, caseStudy).
+function caseEditor(key, cases, { onSave, onCancel }) {
+  const c = key ? cases[key] : { intro: '', tabs: [{ title: 'Nurses\' Notes', html: '' }] };
+  const name = h('input.text-input#ce-name', { type: 'text', maxlength: '40', value: key ?? '', autocomplete: 'off' });
+  const intro = h('textarea.text-input#ce-intro', { rows: '3', value: toText(c.intro) });
+  const titles = h('datalist#ce-titles', EXHIBIT_TITLES.map(t => h('option', { value: t })));
+  const tabList = h('ol.exhibit-list', { 'aria-label': 'Exhibit tabs' });
+  const problemsBox = h('div.qe-problems', { role: 'alert' });
+  const preview = h('div.qe-preview');
+  const save = h('button.btn.btn-accent', { type: 'submit' }, key ? 'Save in draft' : 'Add to draft');
+  let tried = false;
+  let previewTab = 0;
+
+  function tabEditor(tab = { title: '', html: '' }) {
+    const n = ++exhibits;
+    const { text, heading } = exhibitToText(tab.html, tab.title);
+    const title = h('input.text-input', { id: `ce-title-${n}`, type: 'text', maxlength: '60', list: 'ce-titles', value: tab.title ?? '', autocomplete: 'off' });
+    const content = h('textarea.text-input.ce-content', { id: `ce-content-${n}`, rows: '8', value: text });
+    const legend = h('legend');
+    const li = h('li.exhibit-editor', h('fieldset',
+      legend,
+      h('div.field', h('label.field-label', { for: title.id }, 'Tab title'), title),
+      h('div.field', h('label.field-label', { for: content.id }, 'Content'), content),
+      h('span.order-ctls',
+        h('button.order-ctl', { type: 'button', onclick: () => { li.previousElementSibling?.before(li); relabel(); } }, '▲'),
+        h('button.order-ctl', { type: 'button', onclick: () => { li.nextElementSibling?.after(li); relabel(); } }, '▼'),
+        h('button.order-ctl', { type: 'button', onclick: () => { li.remove(); relabel(); } }, '✕'))));
+    // A new exhibit starts with its title as a heading, like the others. One
+    // that isn't changed keeps its HTML exactly.
+    return Object.assign(li, { tabTitle: title, tabContent: content, tabHeading: tab.html ? heading : true, tabLegend: legend, tabBefore: { ...tab, text } });
+  }
+
+  // "Exhibit 2", and its buttons named for screen readers.
+  function relabel() {
+    const items = [...tabList.children];
+    items.forEach((li, i) => {
+      li.tabLegend.textContent = `Exhibit ${i + 1}`;
+      const [up, down, remove] = li.querySelectorAll('.order-ctl');
+      up.setAttribute('aria-label', `Move exhibit ${i + 1} up`);
+      up.disabled = i === 0;
+      down.setAttribute('aria-label', `Move exhibit ${i + 1} down`);
+      down.disabled = i === items.length - 1;
+      remove.setAttribute('aria-label', `Remove exhibit ${i + 1}`);
+    });
+    refresh();
+  }
+
+  function build() {
+    const problems = [];
+    const short = name.value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (!short) problems.push('Type a short name for the case study, like "copd" or "hip-fracture".');
+    else if (short !== key && Object.hasOwn(cases, short)) problems.push(`Another case study in this set is already called "${short}".`);
+    if (!intro.value.trim()) problems.push('Type the introduction: who the client is and where, like "A nurse is caring for a 68-year-old client on a medical unit."');
+    const tabs = [...tabList.children].map((li, i) => {
+      const title = li.tabTitle.value.trim();
+      if (!title) problems.push(`Exhibit ${i + 1} needs a tab title, like "Vital Signs".`);
+      if (!li.tabContent.value.trim()) problems.push(`Exhibit ${i + 1} is empty. Type what it shows, or remove it with ✕.`);
+      const before = li.tabBefore;
+      const same = before.html && li.tabContent.value === before.text && title === (before.title ?? '').trim();
+      return { title, html: same ? before.html : exhibitToHtml(li.tabContent.value, title, li.tabHeading) };
+    });
+    if (!tabs.length) problems.push('Add at least one exhibit tab.');
+    const introHtml = key && intro.value === toText(c.intro) ? c.intro : toHtml(intro.value);
+    return { short, study: { intro: introHtml, tabs }, problems };
+  }
+
+  let timer = 0;
+  function refresh() {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const { short, study, problems } = build();
+      fill(problemsBox, tried && problems.length ? h('ul', problems.map(p => h('li', p))) : null);
+      const area = h('div.qe-preview-area');
+      const k = short || 'case';
+      questionArea(area, { [k]: study }, { get: () => previewTab, set: (_, i) => (previewTab = i) })
+        .show({ case: k }, h('p.field-help', 'The case study\'s questions show here, one at a time, next to its exhibits.'));
+      fill(preview, h('p.qe-preview-title', 'Preview: what students see'), area);
+    }, 150);
+  }
+
+  const addTab = h('button.btn.btn-small', {
+    type: 'button',
+    onclick: () => {
+      const li = tabEditor();
+      tabList.append(li);
+      relabel();
+      li.tabTitle.focus();
+    },
+  }, 'Add an exhibit tab');
+  (c.tabs ?? []).forEach(tab => tabList.append(tabEditor(tab)));
+
+  const form = h('form.q-editor.case-editor', {
+    'aria-label': key ? `Edit case study ${key}` : 'New case study',
+    novalidate: true,
+    onsubmit: async e => {
+      e.preventDefault();
+      tried = true;
+      const { short, study, problems } = build();
+      if (problems.length) {
+        fill(problemsBox, h('ul', problems.map(p => h('li', p))));
+        problemsBox.scrollIntoView({ block: 'nearest' });
+        return;
+      }
+      save.disabled = true;
+      try {
+        await onSave(short, study);
+      } catch (err) {
+        fill(problemsBox, h('ul', h('li', `It didn't save. ${problemText(err)}`)));
+        save.disabled = false;
+      }
+    },
+  },
+    h('h2.section-title', key ? `Edit case study "${key}"` : 'New case study'),
+    h('div.field', h('label.field-label', { for: 'ce-name' }, 'Short name'), name,
+      h('p.field-help', 'Only you see it, here and in the question form. Use letters, numbers, and dashes, like "copd" or "hip-fracture".')),
+    h('div.field', h('label.field-label', { for: 'ce-intro' }, 'Introduction'), intro,
+      h('p.field-help', 'Students read it above the exhibit tabs.')),
+    h('div.field',
+      h('p.field-label', 'Exhibit tabs'),
+      h('p.field-help', 'Each tab\'s title is its heading. In the content, a blank line starts a new paragraph, and tags like <b> work. For a table, put each row on its own line with | between the columns, or paste a table copied from Word or Excel; the first row is the heading row. For example:'),
+      h('pre.ce-example', 'Vital sign | 0800 | 1200\nHeart rate | 88/min | 112/min\nTemperature | 37.2° C | 38.4° C'),
+      tabList, h('div.form-actions', addTab), titles),
+    problemsBox,
+    h('div.form-actions', save, h('button.btn', { type: 'button', onclick: onCancel }, 'Cancel')),
+    preview);
+  form.addEventListener('input', refresh);
+  form.addEventListener('change', refresh);
+  relabel();
+  return form;
+}
