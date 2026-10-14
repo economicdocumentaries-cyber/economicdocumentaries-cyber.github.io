@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="Arial, Helvetica, sans-serif">
+  <title>Side view of the brain</title>
+  <!-- An original drawing for the Practice Exam Center: the left side of the
+       brain, front of the head on the viewer's left. Each lobe is its own shape
+       (ids brain-*), so hot-spot areas can be checked against it. -->
+  <rect width="600" height="400" fill="#FFFFFF"/>
+  <g stroke="#8C6A5E" stroke-width="2.5" stroke-linejoin="round">
+    <path id="brain-brainstem" d="M322 280 C326 320 330 355 334 392 L372 392 C370 352 372 318 382 280 Z" fill="#E5CABE"/>
+    <path id="brain-cerebellum" d="M372 300 C370 262 420 252 470 258 C522 264 548 290 540 316 C532 340 492 352 452 348 C405 344 374 330 372 300 Z" fill="#EBD3C8"/>
+  </g>
+  <g fill="none" stroke="#C9A79A" stroke-width="1.6" stroke-linecap="round">
+    <path d="M386 312 C430 300 490 300 534 314"/>
+    <path d="M392 326 C436 318 488 320 526 330"/>
+    <path d="M406 339 C440 334 478 336 506 341"/>
+  </g>
+  <g fill="#F5E6DF" stroke="#8C6A5E" stroke-width="2.5" stroke-linejoin="round">
+    <path id="brain-frontal" d="M78 215 C58 160 82 92 150 62 C200 38 255 26 300 27 C292 80 278 150 262 218 C238 224 212 230 188 238 C160 246 135 252 110 248 C92 244 80 232 78 215 Z"/>
+    <path id="brain-parietal" d="M300 27 C360 26 430 38 470 58 C458 110 452 170 452 226 C425 214 398 200 372 186 C340 196 300 208 262 218 C278 150 292 80 300 27 Z"/>
+    <path id="brain-occipital" d="M470 58 C510 80 540 120 545 170 C552 215 535 252 500 266 C485 272 465 274 448 272 C449 258 451 242 452 226 C452 170 458 110 470 58 Z"/>
+    <path id="brain-temporal" d="M188 238 C212 230 238 224 262 218 C300 208 340 196 372 186 C398 200 425 214 452 226 C451 242 449 258 448 272 C420 272 370 292 330 293 C280 296 225 290 195 268 C185 260 180 246 188 238 Z"/>
+  </g>
+  <!-- folds (gyri), drawn lightly so they don't look like lobe borders -->
+  <g fill="none" stroke="#DDBDB0" stroke-width="1.6" stroke-linecap="round">
+    <path d="M108 128 C134 112 160 118 184 96"/>
+    <path d="M98 172 C130 156 168 170 206 140"/>
+    <path d="M124 214 C158 204 196 210 232 188"/>
+    <path d="M196 64 C214 90 236 92 258 76"/>
+    <path d="M330 64 C352 92 384 86 414 108"/>
+    <path d="M322 134 C352 122 388 142 426 128"/>
+    <path d="M300 186 C330 172 362 178 398 166"/>
+    <path d="M232 256 C272 244 322 254 366 236"/>
+    <path d="M268 278 C306 270 352 278 410 256"/>
+    <path d="M486 112 C506 132 500 164 524 186"/>
+    <path d="M472 214 C492 230 510 222 530 236"/>
+  </g>
+  <g font-size="19" fill="#555555">
+    <text x="24" y="388">&#9664; Front of head</text>
+    <text x="576" y="388" text-anchor="end">Back of head &#9654;</text>
+  </g>
+</svg>

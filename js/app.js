@@ -1,8 +1,8 @@
-// Hash router and the pages around the exam (SPEC 2, 4.1–4.5): homepage,
-// setup, and results. Group study's pages are in group.js. Routes use #/
-// links because GitHub Pages has no server-side routing.
+// Hash router and the pages around the exam (SPEC 2, 4.1–4.5, 11): homepage
+// with its class tabs, setup, and results. Group study's pages are in
+// group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, siteHeader, siteFooter, fmtClock, fmtDate } from './util.js';
+import { h, fill, modal, store, siteHeader, siteFooter, fmtClock, fmtDate } from './util.js';
 import { typeLabel, QUESTION_TYPES } from './items.js';
 import { loadSets } from './sets.js';
 import {
@@ -52,25 +52,103 @@ function timeLeft(st, now = Date.now()) {
   return st.deadline + Math.min(now - st.pausedAt, st.pauseLeftMs) - now;
 }
 
-// ---------- homepage (SPEC 4.1, 4.4, 4.5) ----------
+// ---------- homepage (SPEC 4.1, 4.4, 4.5, 11) ----------
 
-async function homeView(root, { isCurrent }) {
+// #/ and #/class/<code>: the class tabs, or one list when there's no class list.
+async function homeView(root, { args, isCurrent }) {
   document.title = SITE_NAME;
   const main = h('main.wrap.home', h('p.lead', 'Loading question sets…'));
   root.replaceChildren(page(main));
-  const { sets, problems } = await loadSets();
+  const { sets, courses, guides, problems } = await loadSets();
   if (!isCurrent()) return;
   const visible = sets.filter(s => !s.hidden);
+  const groups = classGroups(courses, visible, guides);
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
   fill(main,
-    h('h1.page-title', 'Practice exams'),
-    h('p.lead', 'Choose a question set. Exam simulation works like test day; practice mode shows the answer after each question.'),
+    h('h1.page-title', 'Practice exams and study guides'),
+    h('p.lead', `Choose ${groups ? 'your class, then ' : ''}a question set or study guide. Exam simulation works like test day; practice mode shows the answer after each question.`),
     live.el,
     resumeBanner(),
-    visible.length ? h('ul.set-list', visible.map(setRow))
-      : h('p', problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'),
+    groups ? classTabs(groups, args[0])
+      : homeLists({ course: null, sets: visible, guides },
+        problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'),
     problems.length ? problemsPanel(problems) : null);
   return live.stop;
+}
+
+const CLASS_KEY = 'pe.class'; // the class tab chosen last on this browser
+const classLink = key => `#/class/${encodeURIComponent(key)}`;
+
+// The homepage tabs: one per class in sets/courses.json, in that order, then
+// "Other" for sets without a class. null when there's no class list.
+function classGroups(courses, sets, guides) {
+  if (!courses.length) return null;
+  const groups = courses.map(course => ({
+    key: course.code, course, sets: sets.filter(s => s.course === course.code), guides: guides.filter(g => g.course === course.code),
+  }));
+  const other = sets.filter(s => !s.course);
+  if (other.length) groups.push({ key: 'other', course: null, sets: other, guides: [] });
+  return groups;
+}
+
+// A class's practice exams, then its study guides (SPEC 11). "Other" and the
+// no-classes list show study guides only when there are some.
+function homeLists(group, noSets) {
+  return [
+    h('section.home-section',
+      h('h2.section-title', 'Practice exams'),
+      group.sets.length ? h('ul.set-list', group.sets.map(setRow)) : h('p.empty-note', noSets)),
+    group.course || group.guides.length ? h('section.home-section',
+      h('h2.section-title', 'Study guides'),
+      group.guides.length ? h('ul.set-list', group.guides.map(guideRow)) : h('p.empty-note', 'No study guides for this class yet.')) : null,
+  ];
+}
+
+// The tab shown first is the one in the link (#/class/NU1120), else the one
+// chosen last on this browser, else the first with sets or study guides.
+// Choosing a tab changes the link without reloading the page, so it can be shared.
+function classTabs(groups, wanted) {
+  const find = key => (typeof key === 'string' ? groups.findIndex(g => g.key.toLowerCase() === key.toLowerCase()) : -1);
+  const linked = find(wanted);
+  let current = linked >= 0 ? linked : find(store.get(CLASS_KEY));
+  if (current < 0) current = Math.max(0, groups.findIndex(g => g.sets.length || g.guides.length));
+  if (linked >= 0) store.set(CLASS_KEY, groups[linked].key);
+  else if (wanted) history.replaceState(history.state, '', classLink(groups[current].key));
+
+  const tabs = groups.map((g, i) => h('button.tab.class-tab', {
+    type: 'button', role: 'tab', id: `class-tab-${i}`, 'aria-controls': `class-panel-${i}`, onclick: () => choose(i),
+  }, g.course
+    ? [h('span.class-code', g.course.code, g.course.term ? h('span.class-term', g.course.term) : null), h('span.class-name', g.course.name)]
+    : [h('span.class-code', 'Other'), h('span.class-name', 'More practice')]));
+  const panels = groups.map((g, i) => h('div.class-panel', { role: 'tabpanel', id: `class-panel-${i}`, 'aria-labelledby': `class-tab-${i}` },
+    homeLists(g, 'No practice exams for this class yet.')));
+  const tablist = h('div.tabs.class-tabs', { role: 'tablist', 'aria-label': 'Classes' }, tabs);
+  tablist.addEventListener('keydown', e => {
+    const last = tabs.length - 1;
+    const next = { ArrowRight: current === last ? 0 : current + 1, ArrowLeft: current === 0 ? last : current - 1, Home: 0, End: last }[e.key];
+    if (next == null) return;
+    e.preventDefault();
+    choose(next);
+    tabs[next].focus();
+  });
+
+  function show(i) {
+    current = i;
+    tabs.forEach((tab, j) => {
+      tab.setAttribute('aria-selected', String(j === i));
+      tab.tabIndex = j === i ? 0 : -1;
+    });
+    panels.forEach((panel, j) => (panel.hidden = j !== i));
+  }
+
+  function choose(i) {
+    show(i);
+    store.set(CLASS_KEY, groups[i].key);
+    history.replaceState(history.state, '', classLink(groups[i].key));
+  }
+
+  show(current);
+  return h('div.classes', tablist, panels);
 }
 
 function resumeBanner() {
@@ -102,7 +180,8 @@ function setRow(set) {
     : last?.scope === 'part' ? `, ${plural(last.count, 'question')}` : '';
   return h('li.set-row',
     h('div.set-info',
-      h('h2', set.title),
+      set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
+      h('h3', set.title),
       set.description ? h('p.set-desc', set.description) : null,
       h('p.set-meta', `${plural(count, 'question')} · ${minutes} minutes`),
       last ? h('p.set-history',
@@ -113,6 +192,27 @@ function setRow(set) {
       missed.length ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, missed, last.settings) }, `Retake missed (${missed.length})`) : null));
 }
 
+// A study guide (SPEC 11): its exam, title, and a Download button. The saved
+// file is named after the class and title, like "NU1110 Exam 2 Study Guide.pdf".
+function guideRow(guide) {
+  const name = `${guide.title.toLowerCase().startsWith(guide.course.toLowerCase()) ? '' : `${guide.course} `}${guide.title}`;
+  const [year, month, day] = guide.updated?.split('-').map(Number) ?? [];
+  const facts = ['PDF', guide.pages ? plural(guide.pages, 'page') : null,
+    guide.updated ? `Updated ${fmtDate(new Date(year, month - 1, day).getTime(), true)}` : null];
+  return h('li.set-row.guide-row',
+    h('div.set-info',
+      h('p.set-exam', h('span.tag', guide.exam)),
+      h('h3', guide.title),
+      guide.description ? h('p.set-desc', guide.description) : null,
+      h('p.set-meta', facts.filter(Boolean).join(' · '))),
+    h('div.set-actions',
+      h('a.btn.btn-accent', {
+        href: `guides/${encodeURIComponent(guide.file)}`,
+        download: `${name.replace(/[\\/:*?"<>|]+/g, '-').trim()}.pdf`,
+        'aria-label': `Download ${guide.title} (PDF)`,
+      }, 'Download')));
+}
+
 // SPEC 5.3: names the file, the question, and the problem in plain words.
 function problemsPanel(problems) {
   const byFile = new Map();
@@ -121,12 +221,13 @@ function problemsPanel(problems) {
     byFile.get(p.file).items.push(p);
   }
   return h('section.problems', { 'aria-labelledby': 'problems-title' },
-    h('h2#problems-title', 'These sets could not be loaded'),
-    h('p.problems-lead', 'The files below have mistakes, so their question sets are hidden until the files are fixed. Everything else on the site works normally.'),
+    h('h2#problems-title', 'Some files could not be loaded'),
+    h('p.problems-lead', 'The files below have mistakes. Until they are fixed, the question sets and study guides they hold are left off the site. Everything else on the site works normally.'),
     [...byFile].map(([file, { title, items }]) => h('div.problem-file',
-      h('h3', h('code', `sets/${file}`), title ? ` · ${title}` : ''),
+      h('h3', h('code', file), title ? ` · ${title}` : ''),
       h('ul', items.map(p => h('li',
-        p.question ? h('b', `Question ${p.question}${p.qid ? ` ("${p.qid}")` : ''}: `) : null,
+        p.where ? h('b', `${p.where}: `)
+          : p.question ? h('b', `Question ${p.question}${p.qid ? ` ("${p.qid}")` : ''}: `) : null,
         p.problem,
         p.code ? h('pre.problem-code', p.code) : null))))));
 }
@@ -136,7 +237,7 @@ function problemsPanel(problems) {
 async function setupView(root, { args, isCurrent }) {
   const main = h('main.wrap.setup', h('p.lead', 'Loading…'));
   root.replaceChildren(page(main));
-  const { sets } = await loadSets();
+  const { sets, courses } = await loadSets();
   if (!isCurrent()) return;
   const set = sets.find(x => x.id === args[0]);
   if (!set) {
@@ -146,6 +247,9 @@ async function setupView(root, { args, isCurrent }) {
     return;
   }
   document.title = `${set.title} · ${SITE_NAME}`;
+  // Back to the set's class tab (SPEC 11).
+  const course = courses.find(c => c.code === set.course);
+  const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
   const s = { ...DEFAULT_SETTINGS };
   const topics = [...new Set(set.questions.map(q => q.topic))];
@@ -297,7 +401,8 @@ async function setupView(root, { args, isCurrent }) {
   }
 
   fill(main,
-    h('p.crumb', h('a', { href: '#/' }, '← All question sets')),
+    h('p.crumb', h('a', { href: back }, course ? `← ${course.code} ${course.name}` : '← All question sets')),
+    set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
     h('h1.page-title', set.title),
     set.description ? h('p.lead', set.description) : null,
     summary,
@@ -309,7 +414,7 @@ async function setupView(root, { args, isCurrent }) {
       customNote),
     h('details.customize', h('summary', 'Customize settings'), settings),
     problem,
-    h('div.setup-actions', beginBtn, h('a.btn', { href: '#/' }, 'Back')));
+    h('div.setup-actions', beginBtn, h('a.btn', { href: back }, 'Back')));
   changed();
 }
 
@@ -398,7 +503,7 @@ function perfTable(title, firstHeader, rows) {
 // ---------- router ----------
 
 const routes = {
-  '': homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, group: groupView, host: hostView,
+  '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, group: groupView, host: hostView,
 };
 let cleanup = null;
 let routeCount = 0;

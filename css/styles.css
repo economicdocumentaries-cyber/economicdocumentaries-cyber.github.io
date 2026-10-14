@@ -186,9 +186,12 @@ a { color: var(--ink); }
   padding-right: 28px;
 }
 .case-intro { margin: 0 0 12px; font-size: 14px; }
-.tabs { display: flex; flex: none; overflow-x: auto; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
+/* The line under the tabs is an inset shadow, so the chosen tab's underline
+   covers it without sticking out of the row. (Sticking out by 1px made
+   Windows browsers show a scroll bar beside the tabs.) */
+.tabs { display: flex; flex: none; overflow-x: auto; margin-bottom: 16px; box-shadow: inset 0 -1px 0 var(--line); }
 .tab {
-  flex: none; margin-bottom: -1px; padding: 8px 14px 9px;
+  flex: none; padding: 8px 14px 9px;
   background: none; border: 0; border-bottom: 3px solid transparent; border-radius: 0;
   font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap;
 }
@@ -460,12 +463,29 @@ span.order-text { flex: 1; font-size: 15px; }
 .banner-detail { margin-top: 2px !important; font-size: 14px; color: var(--muted); }
 .set-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .set-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-.set-row h2 { font-size: 18px; }
+.set-row h3 { font-size: 18px; }
 .set-desc { margin: 4px 0 2px; }
 .set-meta { margin: 0; font-size: 13px; color: var(--muted); }
 .set-history { margin: 6px 0 0; font-size: 13.5px; color: var(--muted); }
 .set-history b { color: var(--text); }
 .set-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+/* The exam or unit a set is for, above its title (SPEC 11). */
+.set-exam { margin: 0 0 5px; }
+.tag { display: inline-block; padding: 1px 10px; background: #EEF7FC; border: 1px solid #BFE1F4; border-radius: 12px; font-size: 12.5px; font-weight: 600; line-height: 1.6; color: var(--ink); }
+
+/* Class tabs (SPEC 11): the exhibit tabs, larger, with the code and term
+   above the class name. The chosen tab isn't bolder, so tabs don't change
+   width when another one is chosen. */
+.class-tabs { margin-bottom: 0; }
+.class-tab { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 10px 22px 11px; text-align: left; white-space: normal; }
+.class-tab[aria-selected="true"] { font-weight: 600; }
+.class-code { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.class-term::before { content: " · "; }
+.class-name { font-size: 16px; }
+/* Practice exams, then study guides (SPEC 11). */
+.home-section { margin-top: 24px; }
+.home-section + .home-section { margin-top: 34px; }
+.empty-note { margin: 0; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); }
 .problems { margin-top: 28px; padding: 14px 18px 16px; background: #FFF8F0; border: 1px solid #E9C9A8; }
 .problems h2 { margin-bottom: 6px; font-size: 18px; }
 .problems-lead { margin: 0 0 6px; font-size: 14px; }
@@ -673,6 +693,14 @@ span.order-text { flex: 1; font-size: 15px; }
   .modal-head { align-items: flex-start; gap: 14px; }
   .modal-title { font-size: 20px; }
   .cell { min-width: 84px; }
+  /* Set and guide rows: the buttons always go under the text. */
+  .set-row { flex-direction: column; align-items: flex-start; }
+  /* Class tabs share the width, long names wrap, and the term gets its own line. */
+  .class-tab { flex: 1 1 0; min-width: 96px; padding: 8px 10px 10px; }
+  .class-code { font-size: 11px; letter-spacing: .04em; }
+  .class-term { display: block; }
+  .class-term::before { content: none; }
+  .class-name { font-size: 14.5px; }
   .order, .bt-lists, .preset-cards, .settings { grid-template-columns: minmax(0, 1fr); }
   .nav-left { width: 100%; }
   .exam-actions { flex-wrap: wrap; }
@@ -719,4 +747,5 @@ span.order-text { flex: 1; font-size: 15px; }
   .qtile.answered, .preset:has(.ctl:checked) { outline: 2px solid Highlight; }
   .opt:focus-within { outline: 2px solid Highlight; }
   .btn-continue { border: 1px solid ButtonText; }
+  .tabs { border-bottom: 1px solid CanvasText; }
 }

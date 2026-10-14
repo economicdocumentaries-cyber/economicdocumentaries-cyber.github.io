@@ -821,25 +821,35 @@ export async function hostView(root, { isCurrent }) {
       h('p', 'README.md, under “Turn on group study”, explains how to set it up. Solo practice works without it.'));
     return;
   }
-  let account, sets;
+  let account, sets, courses;
   try {
-    [account, { sets }] = await Promise.all([hostAccount(), loadSets()]);
+    [account, { sets, courses }] = await Promise.all([hostAccount(), loadSets()]);
   } catch (err) {
     if (isCurrent()) fill(main, problemBox('The host console could not connect', err));
     return;
   }
   if (!isCurrent()) return;
-  return hostConsole(main, account, sets);
+  return hostConsole(main, account, sets, courses);
 }
 
-function hostConsole(main, account, sets) {
+// The start form's list of sets, grouped by class when the sets have classes (SPEC 11).
+function setOptions(sets, courses) {
+  const option = set => h('option', { value: set.id },
+    `${set.title}${set.exam ? ` (${set.exam})` : ''}${set.hidden ? ' (hidden)' : ''} · ${plural(set.questions.length, 'question')}`);
+  if (!sets.some(s => s.course)) return sets.map(option);
+  const groups = courses.map(c => [`${c.code} ${c.name}`, sets.filter(s => s.course === c.code)]);
+  groups.push(['Other', sets.filter(s => !groups.some(([, list]) => list.includes(s)))]);
+  return groups.filter(([, list]) => list.length).map(([label, list]) => h('optgroup', { label }, list.map(option)));
+}
+
+function hostConsole(main, account, sets, courses) {
   let stopConsole = () => {};
   let closed = false;
 
   function signedIn(user) {
     if (!HOST_UID) showUid(user);
     else if (user.uid !== HOST_UID) showWrongAccount(user);
-    else stopConsole = runConsole(main, account.database(), sets, () => accountLine(user));
+    else stopConsole = runConsole(main, account.database(), sets, courses, () => accountLine(user));
   }
 
   function accountLine(user) {
@@ -935,7 +945,7 @@ function copyText(input) {
 
 // The signed-in host's console: the start form, the running session, and the
 // summary afterwards, following /live. Returns a function that stops it.
-function runConsole(main, db, sets, accountLine) {
+function runConsole(main, db, sets, courses, accountLine) {
   let live = null;
   let view = null; // 'start' | 'run:<sid>' | 'summary:<sid>' | 'problem'
   let run = null;
@@ -970,8 +980,7 @@ function runConsole(main, db, sets, accountLine) {
       fill(main, h('h1.page-title', 'Start a group session'), h('p.lead', 'There are no question sets to use yet. Add one to the sets folder first.'), accountLine());
       return;
     }
-    const select = h('select.text-input#host-set', sets.map(set =>
-      h('option', { value: set.id }, `${set.title}${set.hidden ? ' (hidden)' : ''} · ${plural(set.questions.length, 'question')}`)));
+    const select = h('select.text-input#host-set', setOptions(sets, courses));
     const revealInputs = [['each', 'After each question'], ['end', 'At the end']].map(([value, label]) => {
       const input = h('input.ctl', { type: 'radio', name: 'host-reveal', value, checked: value === 'each' });
       return [input, h('label.choice-line', input, h('span', label))];

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400" font-family="Arial, Helvetica, sans-serif">
+  <title>Cross-section of the spinal cord</title>
+  <!-- An original drawing for the Practice Exam Center: a cross-section of
+       the spinal cord, back (posterior) at the top. The gray matter is one
+       shape (id cord-gray), so hot-spot areas can be checked against it. -->
+  <rect width="560" height="400" fill="#FFFFFF"/>
+  <!-- nerve roots and spinal nerves, behind the cord -->
+  <g fill="none" stroke="#C9A79A" stroke-width="9" stroke-linecap="round">
+    <path d="M360 110 C388 100 408 102 424 110"/>
+    <path d="M450 126 C464 140 472 160 482 176"/>
+    <path d="M384 276 C422 262 462 220 482 178"/>
+    <path d="M482 177 L548 184"/>
+    <path d="M200 110 C172 100 152 102 136 110"/>
+    <path d="M110 126 C96 140 88 160 78 176"/>
+    <path d="M176 276 C138 262 98 220 78 178"/>
+    <path d="M78 177 L12 184"/>
+  </g>
+  <g fill="#E4C8BC" stroke="#8C6A5E" stroke-width="2">
+    <ellipse cx="437" cy="118" rx="22" ry="14" transform="rotate(28 437 118)"/>
+    <ellipse cx="123" cy="118" rx="22" ry="14" transform="rotate(-28 123 118)"/>
+  </g>
+  <ellipse cx="280" cy="200" rx="150" ry="118" fill="#F7EEE8" stroke="#8C6A5E" stroke-width="2.5"/>
+  <path d="M280 84 L280 132" stroke="#8C6A5E" stroke-width="2" fill="none"/>
+  <path d="M274 318 L280 276 L286 318" fill="#FFFFFF" stroke="#8C6A5E" stroke-width="2" stroke-linejoin="round"/>
+  <path id="cord-gray" fill="#D9B9AC" stroke="#8C6A5E" stroke-width="2" stroke-linejoin="round"
+    d="M280 186 C296 184 306 170 316 150 C326 130 334 112 342 102 C348 96 356 100 352 110 C344 132 336 160 334 186 C344 192 354 200 352 208 C350 216 340 216 340 222 C352 236 372 250 374 266 C376 284 352 298 330 294 C310 290 298 262 292 238 C290 230 286 226 280 226 C274 226 270 230 268 238 C262 262 250 290 230 294 C208 298 184 284 186 266 C188 250 208 236 220 222 C220 216 210 216 208 208 C206 200 216 192 226 186 C224 160 216 132 208 110 C204 100 212 96 218 102 C226 112 234 130 244 150 C254 170 264 184 280 186 Z"/>
+  <circle cx="280" cy="206" r="5" fill="#FFFFFF" stroke="#8C6A5E" stroke-width="1.5"/>
+  <g font-size="20" fill="#555555" text-anchor="middle">
+    <text x="280" y="30">Posterior (back)</text>
+    <text x="280" y="388">Anterior (front)</text>
+  </g>
+</svg>
