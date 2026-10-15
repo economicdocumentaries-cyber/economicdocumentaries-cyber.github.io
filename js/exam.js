@@ -4,6 +4,7 @@
 import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
+import { track } from './analytics.js';
 
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
@@ -34,7 +35,12 @@ export const DEFAULT_SETTINGS = {
 export const presetMatches = (s, name) => Object.entries(PRESETS[name]).every(([k, v]) => s[k] === v);
 
 export const activeExam = () => store.get(ACTIVE);
-export const discardExam = () => store.del(ACTIVE); // the homepage's "Discard exam"
+// The homepage's "Discard exam".
+export function discardExam() {
+  const st = activeExam();
+  if (st) track('exam-discard', { set: st.setId, class: st.course ?? undefined });
+  store.del(ACTIVE);
+}
 export const lastAttempt = () => store.get(LAST);
 export const setHistory = setId => store.get(HISTORY, {})[setId] ?? [];
 
@@ -182,6 +188,7 @@ export function startExam(set, settings = {}) {
   store.set(ACTIVE, {
     v: 2,
     setId: set.id,
+    course: set.course ?? 'other', // for the usage stats
     title: set.title,
     settings: s,
     scope: s.only ? 'missed' : questions.length < set.questions.length ? 'part' : 'full',
@@ -210,6 +217,7 @@ export function startExam(set, settings = {}) {
 
 export function resumeExam() {
   const st = activeExam();
+  if (st) track('exam-resume', { set: st.setId, class: st.course ?? undefined });
   if (st?.settings.fullscreen && !st.fullscreenDeclined) enterFullscreen();
   location.hash = '#/exam';
 }
@@ -391,6 +399,14 @@ export function examView(root) {
   const save = () => {
     if (!finished) store.set(ACTIVE, st);
   };
+  // An event for the usage stats, sent once per exam (kept in pe.active, so a reload doesn't send it again).
+  const once = (name, details = {}) => {
+    st.tracked ??= {};
+    if (st.tracked[name]) return;
+    st.tracked[name] = true;
+    save();
+    track(name, { set: st.setId, class: st.course ?? undefined, ...details });
+  };
 
   // --- build the page ---
   const counter = h('h1.q-counter', { tabindex: '-1' });
@@ -434,7 +450,11 @@ export function examView(root) {
     : null;
   if (calc) {
     page.append(calc.el);
-    calcBtn.addEventListener('click', () => calcBtn.setAttribute('aria-pressed', String(calc.toggle(calcBtn))));
+    calcBtn.addEventListener('click', () => {
+      const open = calc.toggle(calcBtn);
+      calcBtn.setAttribute('aria-pressed', String(open));
+      if (open) once('calculator-open');
+    });
   }
 
   const area = questionArea(question, st.cases, {
@@ -588,6 +608,10 @@ export function examView(root) {
 
   function finish(reason) {
     if (finished) return;
+    track('exam-finish', {
+      set: st.setId, class: st.course ?? undefined, mode: s.preset, questions: st.questions.length, ended: reason === 'time' ? 'time-up' : 'submitted',
+      flagged: Object.keys(st.flags).length ? 'yes' : 'no', 'crossed-out': Object.keys(st.crossed ?? {}).length ? 'yes' : 'no',
+    });
     saveResult(grade(st, reason));
     store.del(ACTIVE);
     finished = true;
@@ -602,6 +626,7 @@ export function examView(root) {
     if (!timed || st.pausedAt || st.pauseLeftMs <= 0 || finished) return;
     st.pausedAt = Date.now();
     save();
+    once('pause');
     showPaused();
   }
 
@@ -703,6 +728,7 @@ export function examView(root) {
     } else if (choice === 'continue') {
       st.fullscreenDeclined = true;
       save();
+      once('fullscreen-off');
     }
   }
 
@@ -780,6 +806,7 @@ export function reviewView(root, { args = [] } = {}) {
   }
   const onlyMissed = args[0] === 'incorrect';
   const missed = new Set(r.missed);
+  track('review-open', { set: r.setId, which: onlyMissed ? 'incorrect' : 'all' });
   const list = r.questions.filter(q => !onlyMissed || missed.has(q.id));
   let index = 0;
   const tabs = new Map();

@@ -14,6 +14,7 @@ import { watchUploadedGuides, downloadButton, guideFileName, formatSize } from '
 import { withChanges, cachedChanges, watchChanges, currentChanges } from './set-changes.js';
 import { arrange, newestSet, newestGuide, guideKey, cachedOrder, watchOrder } from './order.js';
 import { hostSignedIn, HOST_HINT } from './firebase.js';
+import { trackPage, track, countThisBrowser, thisBrowserCounts } from './analytics.js';
 
 const app = document.getElementById('app');
 
@@ -36,17 +37,41 @@ const minutesText = ms => plural(Math.round(ms / 60000), 'minute');
 
 // Starts an exam from a click. Starting a new exam ends the one in progress,
 // so ask first. Without that question, full screen is requested right away,
-// while the click still counts.
-function begin(set, settings) {
+// while the click still counts. onStart() runs once the exam has started.
+function begin(set, settings, onStart) {
+  const go = () => startExam(set, settings) && onStart?.();
   const active = activeExam();
-  if (!active) return startExam(set, settings);
+  if (!active) return go();
   modal({
     title: 'Start a New Exam?',
     message: `You have an exam in progress (${active.title}). Starting a new one ends it, and its answers will not be scored.`,
     buttons: [{ label: 'Cancel', value: 'cancel', accent: true }, { label: 'Start new exam', value: 'start' }],
   }).then(choice => {
-    if (choice === 'start') startExam(set, settings);
+    if (choice === 'start') go();
   });
+}
+
+// The usage stats for an exam started on the setup page: "exam-start", and
+// "settings-changed" with each setting that differs from the mode the student
+// chose (README "Usage stats").
+function trackStart(set, s, chosen, topicCount, typeCount) {
+  const base = { ...DEFAULT_SETTINGS, count: defaultCount(set), ...PRESETS[chosen] };
+  const on = v => (v ? 'on' : 'off');
+  const changes = [];
+  const differs = key => JSON.stringify(s[key] ?? null) !== JSON.stringify(base[key] ?? null);
+  if (differs('reveal')) changes.push(['answers', s.reveal === 'each' ? 'after each question' : 'at the end']);
+  if (differs('navigation')) changes.push(['navigation', s.navigation === 'back' ? 'going back' : 'continue only']);
+  if (differs('timer') || (s.timer === 'custom' && differs('minutes'))) changes.push(['timer', s.timer === 'custom' ? `${s.minutes} minutes` : s.timer]);
+  if (differs('count')) changes.push(['questions', s.count ?? 'all']);
+  if (s.topics) changes.push(['topics', `${s.topics.length} of ${topicCount}`]);
+  if (s.types) changes.push(['types', `${s.types.length} of ${typeCount}`]);
+  for (const [key, name] of [['shuffleQuestions', 'shuffle-questions'], ['shuffleChoices', 'shuffle-choices'], ['fullscreen', 'full-screen'], ['calculator', 'calculator']]) {
+    if (differs(key)) changes.push([name, on(s[key])]);
+  }
+  if (differs('textSize')) changes.push(['text-size', s.textSize]);
+  const where = { set: set.id, class: set.course ?? 'other' };
+  track('exam-start', { ...where, mode: s.preset, customized: changes.length ? 'yes' : 'no', questions: chooseQuestions(set, { ...s, shuffleQuestions: false }).length });
+  if (changes.length) track('settings-changed', { ...where, ...Object.fromEntries(changes) });
 }
 
 // "Retake missed questions": only the questions without full points, with the
@@ -54,7 +79,10 @@ function begin(set, settings) {
 function retakeMissed(set, ids, settings) {
   const known = new Set(set.questions.map(q => q.id));
   const only = ids.filter(id => known.has(id));
-  if (only.length) begin(set, { ...DEFAULT_SETTINGS, ...settings, only, count: null, topics: null, types: null });
+  if (only.length) {
+    begin(set, { ...DEFAULT_SETTINGS, ...settings, only, count: null, topics: null, types: null },
+      () => track('retake-missed', { set: set.id, class: set.course ?? 'other', questions: only.length }));
+  }
 }
 
 // Time left on a saved exam, counting a pause that may have run out while away.
@@ -296,6 +324,7 @@ function guideRow(guide) {
           href: `guides/${encodeURIComponent(guide.file)}`,
           download: guideFileName(guide),
           'aria-label': `Download ${guide.title} (PDF)`,
+          onclick: () => track('guide-download', { class: guide.course, guide: guide.title, kind: 'published' }),
         }, 'Download')));
 }
 
@@ -339,6 +368,7 @@ async function setupView(root, { args, isCurrent }) {
   const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
   const s = { ...DEFAULT_SETTINGS, count: defaultCount(set) };
+  let chosen = 'exam'; // the mode the student picked last, for the usage stats
   const topics = [...new Set(set.questions.map(q => q.topic))];
   const types = QUESTION_TYPES.filter(t => set.questions.some(q => q.type === t));
   const matching = () => chooseQuestions(set, { ...s, count: null, shuffleQuestions: false }).length;
@@ -394,6 +424,7 @@ async function setupView(root, { args, isCurrent }) {
     const input = h('input.ctl', { type: 'radio', name: 'preset', value: name });
     input.addEventListener('change', () => {
       Object.assign(s, PRESETS[name]);
+      chosen = name;
       changed();
     });
     presetInputs[name] = input;
@@ -453,7 +484,13 @@ async function setupView(root, { args, isCurrent }) {
     radios('textSize', 'Text size', [['standard', 'Standard'], ['large', 'Large'], ['larger', 'Larger']]));
 
   const problem = h('p.setup-problem', { role: 'alert' });
-  const beginBtn = h('button.btn.btn-accent.btn-big', { type: 'button', onclick: () => begin(set, { ...s }) }, 'Begin');
+  const beginBtn = h('button.btn.btn-accent.btn-big', {
+    type: 'button',
+    onclick: () => {
+      const settings = { ...s };
+      begin(set, settings, () => trackStart(set, settings, chosen, topics.length, types.length));
+    },
+  }, 'Begin');
 
   // After any change: work out which preset still matches, then redraw.
   // (Boxes being typed in are left alone; see the sync functions above.)
@@ -589,9 +626,26 @@ function perfTable(title, firstHeader, rows) {
 
 // ---------- router ----------
 
+// #/stats-off and #/stats-on (README "Usage stats"): whether this browser's
+// visits count. Not linked anywhere; the host's sign-in turns it off too.
+function statsView(root, on) {
+  countThisBrowser(on);
+  document.title = `Usage stats · ${SITE_NAME}`;
+  fill(root, page(h('main.wrap.plain-page',
+    h('h1.page-title', 'Usage stats'),
+    h('p.lead', thisBrowserCounts()
+      ? 'Visits on this browser count in the site\'s anonymous usage stats again.'
+      : 'Visits on this browser don\'t count in the site\'s anonymous usage stats.'),
+    h('div.form-actions',
+      h('a.btn.btn-accent', { href: '#/' }, 'Home'),
+      h('a.btn', { href: thisBrowserCounts() ? '#/stats-off' : '#/stats-on' }, thisBrowserCounts() ? 'Don\'t count them' : 'Count them again')))));
+}
+
 const routes = {
   '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, group: groupView, host: hostView,
+  'stats-off': root => statsView(root, false), 'stats-on': root => statsView(root, true),
 };
+const UNCOUNTED = new Set(['host', 'stats-off', 'stats-on']); // the host's pages, and the stats switch
 let cleanup = null;
 let routeCount = 0;
 
@@ -605,6 +659,8 @@ async function route() {
   const done = await view(app, { args, isCurrent: () => id === routeCount });
   if (id === routeCount && typeof done === 'function') cleanup = done;
   else if (typeof done === 'function') done();
+  // One page view per page change, counted as a path: "/", "/class/NU1120", "/exam".
+  if (id === routeCount && !UNCOUNTED.has(name)) trackPage(`/${[name, ...args].filter(Boolean).map(encodeURIComponent).join('/')}`);
 }
 
 addEventListener('hashchange', route);

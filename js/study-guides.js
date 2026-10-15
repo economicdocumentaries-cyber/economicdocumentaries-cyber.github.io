@@ -7,6 +7,7 @@
 import { h, fill, modal, toast, fmtDate } from './util.js';
 import { groupStudyOn, connectStudent, problemText } from './firebase.js';
 import { arrange, newestGuide, guideKey, orderTools, dragSort, moved, readOrder, keepOrder } from './order.js';
+import { track } from './analytics.js';
 
 const LIMIT_MB = 5; // the same as for published files (tools/publish.py)
 export const MAX_GUIDE_BYTES = LIMIT_MB * 1024 * 1024;
@@ -106,6 +107,7 @@ export function downloadButton(guide, { accent = true } = {}) {
     button.textContent = 'Downloading…';
     try {
       await downloadUploaded(guide);
+      track('guide-download', { class: guide.course, guide: guide.title, kind: 'uploaded' });
     } catch (err) {
       toast(err.code ? `The study guide didn't download. ${problemText(err)}` : err.message, 9000);
     } finally {

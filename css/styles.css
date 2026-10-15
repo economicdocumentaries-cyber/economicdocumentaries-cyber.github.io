@@ -75,6 +75,7 @@ a { color: var(--ink); }
 .fs-notice p { margin: 0; }
 .fs-notice b { color: var(--text); }
 .disclaimer { margin: 0; text-align: center; }
+.stats-note { margin-top: 4px; }
 
 /* ---------- buttons ---------- */
 
@@ -464,7 +465,7 @@ span.order-text { flex: 1; font-size: 15px; }
 
 /* ---------- homepage, setup, and results ---------- */
 
-.home, .setup, .results { padding-top: 28px; }
+.home, .setup, .results, .plain-page { padding-top: 28px; }
 .page-title { font-size: 26px; }
 .lead { margin: 6px 0 22px; color: var(--muted); }
 .crumb { margin: 0 0 10px; font-size: 14px; }

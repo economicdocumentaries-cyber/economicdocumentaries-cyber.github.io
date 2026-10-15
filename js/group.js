@@ -17,6 +17,7 @@ import { groupStudyOn, connectStudent, hostAccount, problemText, HOST_HINT } fro
 import { guidesConsole } from './study-guides.js';
 import { withChanges, currentChanges } from './set-changes.js';
 import { setsConsole, questionsPage } from './set-editor.js';
+import { track, countThisBrowser } from './analytics.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -435,7 +436,10 @@ function followSession(root, db, sets) {
     const path = `sessions/${sid}/participants/${db.uid}`;
     try {
       if (people[db.uid]) await db.update(path, { name });
-      else await db.write(path, { name, joinedAt: db.serverTime() });
+      else {
+        await db.write(path, { name, joinedAt: db.serverTime() });
+        track('group-join', { set: s.set?.id, class: s.set?.course ?? 'other' }); // never the display name
+      }
     } catch (err) {
       if (s?.sid !== sid) return;
       joinProblem = true;
@@ -874,6 +878,7 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId) {
     else if (user.uid !== HOST_UID) showWrongAccount(user);
     else {
       store.set(HOST_HINT, true); // so the pages students see offer "Back to host view" on this browser
+      countThisBrowser(false); // the owner's visits don't count in the usage stats (README "Usage stats")
       const section = h('div.host-section');
       fill(main, hostMenu(area), section);
       const db = account.database();
