@@ -16,10 +16,11 @@ const LOW_TIME_MS = 5 * 60 * 1000;
 // SPEC 4.2. Choosing a preset on the setup screen fills these settings in.
 export const PRESETS = {
   exam: { reveal: 'end', navigation: 'continue', timer: 'standard', fullscreen: true, shuffleQuestions: true, shuffleChoices: true },
-  practice: { reveal: 'each', navigation: 'back', timer: 'off' },
+  practice: { reveal: 'each', navigation: 'back', timer: 'off', fullscreen: false },
 };
 
-// SPEC 4.3. "Exam simulation" is the default.
+// SPEC 4.3: every setting, with Exam simulation's values. The setup page
+// starts on Practice mode instead (SPEC 4.2).
 export const DEFAULT_SETTINGS = {
   preset: 'exam',
   ...PRESETS.exam,

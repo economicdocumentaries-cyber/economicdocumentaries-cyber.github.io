@@ -367,8 +367,9 @@ async function setupView(root, { args, isCurrent }) {
   const course = courses.find(c => c.code === set.course);
   const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
-  const s = { ...DEFAULT_SETTINGS, count: defaultCount(set) };
-  let chosen = 'exam'; // the mode the student picked last, for the usage stats
+  // Practice mode first (the owner's choice, 2026-10-15).
+  const s = { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', count: defaultCount(set) };
+  let chosen = 'practice'; // the mode the student picked last, for the usage stats
   const topics = [...new Set(set.questions.map(q => q.topic))];
   const types = QUESTION_TYPES.filter(t => set.questions.some(q => q.type === t));
   const matching = () => chooseQuestions(set, { ...s, count: null, shuffleQuestions: false }).length;
@@ -533,8 +534,8 @@ async function setupView(root, { args, isCurrent }) {
     h('fieldset.presets',
       h('legend.section-title', 'Choose a mode'),
       h('div.preset-cards',
-        presetCard('exam', 'Exam simulation', ['Timed, with up to 5 minutes of pause', 'Continue only: no going back', 'Answers and rationales at the end', 'Full screen, shuffled questions and choices']),
-        presetCard('practice', 'Practice mode', ['Untimed', 'Answer and rationale after each question', 'Go back and flag questions'])),
+        presetCard('practice', 'Practice mode', ['Untimed', 'Answer and rationale after each question', 'Go back and flag questions', 'No full screen']),
+        presetCard('exam', 'Exam simulation', ['Timed, with up to 5 minutes of pause', 'Continue only: no going back', 'Answers and rationales at the end', 'Full screen, shuffled questions and choices'])),
       customNote),
     h('details.customize', h('summary', 'Customize settings'), settings),
     problem,
