@@ -18,6 +18,7 @@ import { guidesConsole } from './study-guides.js';
 import { withChanges, currentChanges } from './set-changes.js';
 import { setsConsole, questionsPage } from './set-editor.js';
 import { track, countThisBrowser } from './analytics.js';
+import { reportsConsole, reportedCount } from './reports.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -820,9 +821,9 @@ function caseDetails({ intro, tabs = [] }) {
 
 // ---------- the host console (SPEC 6.5) ----------
 
-// #/host is group study, #/host/sets the question sets (SPEC 11.3), and
-// #/host/guides the study guides (SPEC 11.2), with a menu at the top to
-// switch between them.
+// #/host is group study, #/host/sets the question sets (SPEC 11.3),
+// #/host/guides the study guides (SPEC 11.2), and #/host/reports the problems
+// students reported (SPEC 11.6), with a menu at the top to switch between them.
 export async function hostView(root, { args = [], isCurrent }) {
   document.title = `Host console · ${SITE_NAME}`;
   leaveFullscreen();
@@ -843,19 +844,27 @@ export async function hostView(root, { args = [], isCurrent }) {
     return;
   }
   if (!isCurrent()) return;
-  return hostConsole(main, account, loaded, ['sets', 'guides'].includes(args[0]) ? args[0] : 'group', args[0] === 'sets' ? args[1] : null);
+  const area = ['sets', 'guides', 'reports'].includes(args[0]) ? args[0] : 'group';
+  return hostConsole(main, account, loaded, area, area === 'sets' ? args[1] : null, area === 'sets' ? args[2] : null);
 }
 
 // The host console's menu. Each page has its own link, so it can be bookmarked.
 // Student view (SPEC 11.4) opens the homepage exactly as students see it; a
 // "Back to host view" button there (app.js) comes back here.
+// The Reports link shows how many questions have reports, once known.
 function hostMenu(area) {
   const item = (key, href, label) => h('a.host-menu-link', { href, 'aria-current': area === key ? 'page' : null }, label);
-  return h('nav.host-menu', { 'aria-label': 'Host console' },
+  const reports = item('reports', '#/host/reports', 'Reports');
+  const menu = h('nav.host-menu', { 'aria-label': 'Host console' },
     item('group', '#/host', 'Group study'),
     item('sets', '#/host/sets', 'Question sets'),
     item('guides', '#/host/guides', 'Study guides'),
+    reports,
     h('a.btn.btn-small.student-view', { href: '#/' }, 'Student view'));
+  menu.setReports = n => fill(reports, 'Reports', n
+    ? [h('span.menu-count', { 'aria-hidden': 'true' }, String(n)), h('span.sr-only', ` (${n === 1 ? '1 question' : `${n} questions`} reported)`)]
+    : null);
+  return menu;
 }
 
 // The start form's list of sets, grouped by class when the sets have classes (SPEC 11).
@@ -868,8 +877,9 @@ function setOptions(sets, courses) {
   return groups.filter(([, list]) => list.length).map(([label, list]) => h('optgroup', { label }, list.map(option)));
 }
 
-// setId: on the Question sets page, the set whose questions are open (#/host/sets/<set id>).
-function hostConsole(main, account, { sets, courses, guides }, area, setId) {
+// setId: on the Question sets page, the set whose questions are open
+// (#/host/sets/<set id>), and questionId the question whose form opens with it.
+function hostConsole(main, account, { sets, courses, guides }, area, setId, questionId) {
   let stopConsole = () => {};
   let closed = false;
 
@@ -880,25 +890,37 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId) {
       store.set(HOST_HINT, true); // so the pages students see offer "Back to host view" on this browser
       countThisBrowser(false); // the owner's visits don't count in the usage stats (README "Usage stats")
       const section = h('div.host-section');
-      fill(main, hostMenu(area), section);
+      const menu = hostMenu(area);
+      fill(main, menu, section);
       const db = account.database();
       const line = () => accountLine(user);
-      if (area === 'guides' || area === 'sets') {
+      const stopCount = db.watch('reports', value => menu.setReports(reportedCount(value)), () => {});
+      if (area === 'guides' || area === 'sets' || area === 'reports') {
         const stopNotice = connectionNotice(db);
         const stopPage = area === 'guides' ? guidesConsole(section, db, { courses, sets, published: guides }, line)
-          : setId ? questionsPage(section, db, { sets, courses }, line, setId)
-            : setsConsole(section, db, { sets, courses }, line);
+          : area === 'reports' ? reportsConsole(section, db, { sets, courses }, line)
+            : setId ? questionsPage(section, db, { sets, courses }, line, setId, questionId)
+              : setsConsole(section, db, { sets, courses }, line);
         stopConsole = () => {
           stopPage();
           stopNotice();
+          stopCount();
         };
       } else {
         // The start form shows the sets with the host's latest changes (SPEC 11.3).
         fill(section, h('p.lead', 'Loading…'));
         let stopped = false;
-        stopConsole = () => (stopped = true);
+        stopConsole = () => {
+          stopped = true;
+          stopCount();
+        };
         currentChanges().then(changes => {
-          if (!stopped && !closed) stopConsole = runConsole(section, db, withChanges(sets, changes, courses), courses, line);
+          if (stopped || closed) return;
+          const stopRun = runConsole(section, db, withChanges(sets, changes, courses), courses, line);
+          stopConsole = () => {
+            stopRun();
+            stopCount();
+          };
         });
       }
     }

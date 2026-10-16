@@ -5,6 +5,7 @@ import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeade
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
+import { reportLine } from './reports.js';
 
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
@@ -291,7 +292,8 @@ export function questionParts(q, ctx) {
 
 // Result and rationale under a question (practice mode, review mode, and
 // group study). Group study passes answered: false when no answer was locked in.
-export function feedbackPanel(q, response, { answered = true } = {}) {
+// report: the set's id, to offer "Report a problem with this question" (SPEC 11.6).
+export function feedbackPanel(q, response, { answered = true, report = null } = {}) {
   const { earned, max } = scoreItem(q, response);
   const result = !answered ? 'wrong' : earned === max ? 'correct' : earned > 0 ? 'partial' : 'wrong';
   return h(`section.feedback.is-${result}`, { tabindex: '-1', 'aria-label': 'Answer and rationale' },
@@ -300,7 +302,8 @@ export function feedbackPanel(q, response, { answered = true } = {}) {
           ` · ${earned} of ${max} point${max === 1 ? '' : 's'}`]
       : [h('b', 'No answer locked in'), ` · 0 of ${max} point${max === 1 ? '' : 's'}`]),
     h('h2.feedback-title', 'Rationale'),
-    h('div.rationale', { html: q.rationale }));
+    h('div.rationale', { html: q.rationale }),
+    report ? reportLine(report, q) : null);
 }
 
 // The question part of the screen. Case questions get the two-column layout
@@ -491,7 +494,7 @@ export function examView(root) {
           save();
         },
       }),
-      revealed ? feedbackPanel(q, st.responses[q.id]) : null,
+      revealed ? feedbackPanel(q, st.responses[q.id], { report: st.setId }) : null,
       actions,
     ]);
     if (moveFocus) {
@@ -857,7 +860,7 @@ export function reviewView(root, { args = [] } = {}) {
     nextBtn.textContent = index === list.length - 1 ? 'Finish' : 'Next';
     area.show(q, [
       ...questionParts(q, { response: r.responses[q.id], layout: r.layout?.[q.id], review: true }),
-      feedbackPanel(q, r.responses[q.id]),
+      feedbackPanel(q, r.responses[q.id], { report: r.setId }),
       actions,
     ]);
     if (moveFocus) {

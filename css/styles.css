@@ -357,6 +357,27 @@ span.order-text { flex: 1; font-size: 15px; }
 .modal-msg > :last-child { margin-bottom: 0; }
 .modal-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 16px; }
 
+/* Reporting a problem with a question (SPEC 11.6): the line under a rationale, and its dialog. */
+.report-line { margin: 14px 0 0; font-size: 13.5px; }
+.link-btn.report-btn { color: var(--muted); }
+.link-btn.report-btn:hover:not([aria-disabled=true]) { color: var(--ink); }
+.link-btn.report-btn[aria-disabled=true] { color: var(--ok); text-decoration: none; cursor: default; }
+.report-form { width: min(470px, 100%); font-size: 14px; }
+.report-reasons { margin: 6px 0 4px; padding: 0; border: 0; }
+.report-reasons .field-label { margin-top: 4px; }
+.choice-line.report-reason { flex-wrap: nowrap; align-items: flex-start; margin: 5px 0; font-size: 14px; }
+.report-note { min-height: 76px; margin-top: 4px; font-size: 15px; }
+.report-form .field-help { margin-top: 4px; }
+
+/* The host's Reports page. */
+.report-list { max-width: 980px; border-top: 1px solid var(--line); }
+.report-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.report-stem { margin: 0 0 6px; overflow-wrap: anywhere; }
+.report-reasons-list, .report-notes { margin: 0 0 6px; padding-left: 20px; font-size: 14px; }
+.report-notes li { margin: 2px 0; }
+.report-date, .report-meta { font-size: 13px; color: var(--muted); }
+.report-meta { margin: 0 0 8px; }
+
 /* ---------- toasts ---------- */
 
 .toasts {
@@ -649,6 +670,7 @@ span.order-text { flex: 1; font-size: 15px; }
 }
 .host-menu-link:hover { color: var(--ink); }
 .host-menu-link[aria-current="page"] { border-bottom-color: var(--accent); color: var(--ink); font-weight: 700; }
+.menu-count { display: inline-block; min-width: 20px; margin-left: 7px; padding: 0 6px; border-radius: 10px; background: var(--bad); color: #fff; font-size: 12px; font-weight: 700; line-height: 20px; text-align: center; vertical-align: 1px; }
 .host-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .host-bar-tools { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px 18px; margin-left: auto; }
 .host-controls { display: flex; flex-wrap: wrap; gap: 10px; }

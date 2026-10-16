@@ -557,7 +557,9 @@ function differences(before, after, casesBefore = {}, casesAfter = {}) {
   return out;
 }
 
-export function questionsPage(section, db, { sets, courses }, accountLine, setId) {
+// questionId: a question whose form opens once the page has loaded
+// (#/host/sets/<set id>/<question id>, from the Reports page).
+export function questionsPage(section, db, { sets, courses }, accountLine, setId, questionId = null) {
   let changes = {};
   let drafts = {};
   let loaded = 0;
@@ -594,6 +596,15 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
     }
     if (loaded !== 3) return;
     const s = state();
+    if (questionId) {
+      const q = s.questions.find(x => x.id === questionId);
+      questionId = null; // only the first time
+      if (q) {
+        openEditor(q);
+        editing?.el.scrollIntoView({ block: 'start' });
+        return;
+      }
+    }
     const key = JSON.stringify([s, editing?.id]);
     if (!force && key === painted) return;
     painted = key;

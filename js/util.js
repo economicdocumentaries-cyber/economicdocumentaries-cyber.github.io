@@ -183,13 +183,29 @@ function syncModals() {
 // Shows an alert and resolves with the value of the button pressed, 'close'
 // for the Close button or Esc, or undefined if closeModals() removed it.
 // The returned promise also has .close(value).
-export function modal({ title, message = '', buttons = [], closable = true } = {}) {
+// message can be text or elements (a small form, say). focus: the element to
+// start on (else the first button). check(value), if given, runs when a button
+// is clicked and can wait: the alert stays open when it returns false.
+export function modal({ title, message = '', buttons = [], closable = true, focus = null, check = null } = {}) {
   const n = ++modalCount;
   const returnFocus = document.activeElement;
   let resolve;
   const result = new Promise(r => (resolve = r));
 
-  const actions = buttons.map(b => h('button.btn', { type: 'button', class: b.accent ? 'btn-accent' : null, onclick: () => close(b.value) }, b.label));
+  const actions = buttons.map(b => h('button.btn', { type: 'button', class: b.accent ? 'btn-accent' : null, onclick: () => choose(b.value) }, b.label));
+  async function choose(value) {
+    if (check) {
+      actions.forEach(a => (a.disabled = true));
+      let ok = false;
+      try {
+        ok = await check(value);
+      } finally {
+        actions.forEach(a => (a.disabled = false));
+      }
+      if (ok === false) return;
+    }
+    close(value);
+  }
   const box = h('div.modal', { role: 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': `modal-title-${n}`, 'aria-describedby': `modal-msg-${n}`, tabindex: '-1' },
     h('div.modal-head',
       h('h2.modal-title', { id: `modal-title-${n}` }, title),
@@ -213,7 +229,7 @@ export function modal({ title, message = '', buttons = [], closable = true } = {
   openModals.push(entry);
   document.body.append(backdrop);
   syncModals();
-  (actions[0] ?? box.querySelector('.close-btn') ?? box).focus({ preventScroll: true });
+  (focus ?? actions[0] ?? box.querySelector('.close-btn') ?? box).focus({ preventScroll: true });
   result.close = close;
   return result;
 }
