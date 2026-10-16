@@ -7,6 +7,8 @@
 // local preview and the checks never count. A browser with localStorage
 // "umami.disabled" sends nothing: the host's sign-in sets it, and so does
 // #/stats-off. Calls made before the tracker loads wait in a short queue.
+// The tag's id must not be "umami": browsers make an element's id a window
+// property, and the tracker doesn't set up window.umami when it's taken.
 const OFF = 'umami.disabled';
 const queue = [];
 
@@ -21,7 +23,7 @@ function flush() {
     }
   }
 }
-document.getElementById('umami')?.addEventListener('load', flush);
+document.getElementById('umami-script')?.addEventListener('load', flush);
 
 function statsOff() {
   try {
