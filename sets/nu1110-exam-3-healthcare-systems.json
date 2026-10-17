@@ -1,0 +1,644 @@
+{
+  "id": "nu1110-exam-3-healthcare-systems",
+  "title": "Healthcare Systems",
+  "description": "Class 11 practice: levels of prevention and care, care delivery and payment models, access to care and social determinants of health, and allocation of resources.",
+  "course": "NU1110",
+  "exam": "Exam 3",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "cases": {
+    "community": {
+      "intro": "A community health nurse at a county health department is assessing a neighborhood to decide how to use a 1-year grant to improve the residents' health.",
+      "tabs": [
+        {
+          "title": "Community Assessment",
+          "html": "<h4>Community Assessment</h4><p><b>Population:</b> 6,400 residents. One in three households has an income below the poverty line.</p><p><b>Work:</b> Most adults work hourly jobs with no paid time off at two food-processing plants.</p><p><b>Health care:</b> One clinic, open Monday to Friday, 9:00&nbsp;a.m. to 4:00&nbsp;p.m. The nearest hospital is 18 miles away.</p><p><b>Transportation:</b> One bus route, every 90 minutes, with no service on Sundays. One in four households has no car.</p><p><b>Insurance:</b> 21% of adults have no health insurance.</p><p><b>Strengths:</b> An active faith community that runs a Saturday food pantry, a public library with free internet, and a new walking trail along the river.</p>"
+        },
+        {
+          "title": "Health Data",
+          "html": "<h4>Health Data</h4><table><thead><tr><th>Indicator</th><th>Neighborhood</th><th>State</th></tr></thead><tbody><tr><td>Children up to date on vaccines by age 2</td><td>68%</td><td>91%</td></tr><tr><td>Women ages 50 to 74 with a mammogram in the past 2 years</td><td>49%</td><td>77%</td></tr><tr><td>Breast cancers found at a late stage</td><td>41%</td><td>22%</td></tr><tr><td>Adults who have diabetes</td><td>15%</td><td>10%</td></tr><tr><td>Emergency department visits for asthma, per 1,000 children</td><td>24</td><td>11</td></tr></tbody></table>"
+        },
+        {
+          "title": "Grant",
+          "html": "<h4>Grant Terms</h4><p>$90,000 for 1 year. The county must choose <b>one</b> program and report measurable results at the end of the year.</p><p><b>Proposals from the community coalition:</b></p><ul><li><b>A:</b> Discounted memberships at a private gym 12 miles away</li><li><b>B:</b> Billboards about healthy eating along the highway</li><li><b>C:</b> A mobile health van that visits the neighborhood on evenings and Saturdays, offering childhood vaccines and mammogram referrals, with help scheduling and getting rides</li><li><b>D:</b> A new advanced imaging machine for the hospital 18 miles away</li></ul>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "hcs-01", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A nurse is explaining the levels of prevention to a group of nursing students. Which of the following statements best describes secondary prevention?",
+      "options": [
+        "Keeping a disease or injury from developing in people who are healthy",
+        "Finding a disease early, often before symptoms appear, and treating it to keep it from progressing",
+        "Restoring function and limiting complications after a disease or injury is established",
+        "Relieving symptoms and promoting comfort when a cure is no longer possible"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Finding a disease early and treating it to keep it from progressing</b> is correct. Secondary prevention focuses on early detection, through screening and case finding, and prompt treatment, often before symptoms start.</p><p><b>Keeping a disease from developing in healthy people</b> describes primary prevention, such as immunizations and health teaching. <b>Restoring function and limiting complications</b> describes tertiary prevention, such as rehabilitation. <b>Relieving symptoms when a cure isn't possible</b> is palliative care, which the class includes in tertiary prevention.</p><p><b>Takeaway:</b> Ask whether the disease exists yet. No: primary. Maybe, not found yet: secondary. Yes, established: tertiary.</p>"
+    },
+    {
+      "id": "hcs-02", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A nurse gives a hepatitis B vaccine to a client who is hospitalized after a motor-vehicle crash. Which of the following statements describes this intervention?",
+      "options": [
+        "It is secondary prevention, because it is given in a hospital.",
+        "It is tertiary prevention, because the client is recovering from an injury.",
+        "It is primary prevention, because it protects against a disease the client doesn't have.",
+        "It is secondary prevention, because it detects hepatitis B early."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>It is primary prevention</b> is correct. A vaccine keeps a disease from developing, so it's primary prevention wherever it's given. The setting doesn't decide the level of prevention.</p><p><b>Secondary because it's given in a hospital</b> confuses the level of prevention with the level of care, which is about where care happens. <b>Tertiary because the client is recovering</b> mixes up the injury being treated with the purpose of this intervention: the vaccine doesn't treat the injury. <b>Detects hepatitis B early</b> is wrong because a vaccine doesn't test for disease; a screening blood test would.</p><p><b>Takeaway:</b> Classify by what the intervention does, not where it's done. A vaccine is always primary prevention.</p>"
+    },
+    {
+      "id": "hcs-03", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A school nurse screens a group of healthy-looking 12-year-olds for scoliosis. Which of the following statements describes this activity?",
+      "options": [
+        "It is secondary prevention, because it looks for a problem that may already be present.",
+        "It is primary prevention, because the children have no symptoms.",
+        "It is primary prevention, because it takes place in a school.",
+        "It is tertiary prevention, because it keeps a spinal curve from getting worse."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>It is secondary prevention</b> is correct. Screening looks for a condition that may already exist but hasn't been found, so it can be treated early. That's true even when the people screened look healthy.</p><p><b>Primary because the children have no symptoms</b> is the common trap: having no symptoms doesn't mean the condition isn't there, and finding hidden conditions is exactly what screening does. <b>Primary because it's at a school</b> decides by setting instead of purpose. <b>Tertiary</b> applies to treating an established, diagnosed condition, such as bracing after scoliosis is diagnosed, not to screening.</p><p><b>Takeaway:</b> Screening is secondary prevention, even in healthy-looking people: it searches for disease that may already be there.</p>"
+    },
+    {
+      "id": "hcs-04", "type": "sata", "topic": "Levels of prevention and care",
+      "stem": "A nurse is planning a primary prevention program for adolescents at a community center. Which of the following activities should the nurse include?",
+      "options": [
+        "Teaching about consistent condom use",
+        "Offering the HPV vaccine",
+        "Testing sexually active teens for chlamydia",
+        "Running a program to keep middle schoolers from starting to vape",
+        "Leading a support group for teens who have type 1 diabetes",
+        "Teaching safe driving, including wearing seat belts and not texting while driving"
+      ],
+      "answer": [0, 1, 3, 5],
+      "rationale": "<p><b>Condom teaching, the HPV vaccine, a vaping-prevention program, and safe-driving teaching</b> are primary prevention: each keeps a disease or injury from developing in teens who don't have it.</p><p><b>Testing for chlamydia</b> is screening, which looks for an infection that may already be present: secondary prevention. <b>A support group for teens who have diabetes</b> helps people with an established disease cope and avoid complications: tertiary prevention.</p><p><b>Takeaway:</b> Primary prevention is health teaching and protection, like vaccines, before any disease exists.</p>"
+    },
+    {
+      "id": "hcs-05", "type": "matrix", "topic": "Levels of prevention and care",
+      "stem": "A nurse is reviewing the services a client received over the past 2 years. For each service, specify the level of care it represents.",
+      "rowHeader": "Service",
+      "columns": ["Primary care", "Secondary care", "Tertiary care"],
+      "rows": [
+        "An annual physical and a flu shot at a provider's office",
+        "A 3-day admission to a community hospital for pneumonia that needs IV antibiotics",
+        "A knee arthroscopy at an outpatient surgical center",
+        "Treatment of an ear infection at a community health center",
+        "Care in a regional burn center after severe burns",
+        "Several weeks in an inpatient rehabilitation center after a spinal cord injury"
+      ],
+      "answer": [0, 1, 1, 0, 2, 2],
+      "rationale": "<p><b>Primary care</b> is the entry point to the system: provider offices, clinics, and community health centers, for health maintenance (physicals, immunizations) and common acute illnesses, like <b>an ear infection</b>.</p><p><b>Secondary care</b> is given in hospitals, outpatient surgical centers, and specialists' offices: <b>a hospital stay for pneumonia that needs IV antibiotics</b> and <b>same-day knee surgery</b>.</p><p><b>Tertiary care</b> is highly specialized: complicated procedures and rehabilitative or extended care, in places like <b>a regional burn center</b> or <b>a rehabilitation center</b>.</p><p><b>Takeaway:</b> Levels of care describe where care happens and how specialized it is: office, then hospital or specialist, then a highly specialized center.</p>"
+    },
+    {
+      "id": "hcs-06", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A nurse is precepting a new graduate who is learning about levels of prevention and levels of care. Which of the following statements by the new graduate indicates an understanding?",
+      "options": [
+        "“Anything done in a hospital counts as secondary prevention, because hospitals treat disease.”",
+        "“Primary care and primary prevention mean the same thing, since both happen in a provider's office.”",
+        "“A flu shot given in a long-term care facility is tertiary prevention, because the residents are older.”",
+        "“Teaching a healthy adult about nutrition is primary prevention, whether it happens in a clinic or at a health fair.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Teaching a healthy adult about nutrition is primary prevention, wherever it happens</b> is correct. Levels of prevention describe what an intervention does: prevent disease, find it early, or treat and restore. Levels of care describe where care happens. Health teaching for someone without disease prevents disease, so it's primary prevention in any setting.</p><p><b>Anything in a hospital is secondary prevention</b> mixes up the setting with the purpose. <b>Primary care and primary prevention are the same</b> confuses the two frameworks: primary care is the setting where much primary prevention happens, but it also treats common illnesses and orders screenings. <b>A flu shot in long-term care is tertiary</b> is wrong because a vaccine is always primary prevention, whatever the client's age.</p><p><b>Takeaway:</b> Prevention level is about purpose; care level is about place. Keep the two apart.</p>"
+    },
+    {
+      "id": "hcs-07", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A client who has heart failure is still receiving treatment to slow the disease and asks the nurse about palliative care. Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“Palliative care is only for people expected to live 6 months or less.”",
+        "“Palliative care relieves symptoms and can be given along with your heart failure treatment.”",
+        "“To receive palliative care, you would first need to stop your heart medications.”",
+        "“Palliative care is another name for hospice, which begins when treatment stops.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Palliative care relieves symptoms and can be given along with treatment</b> is correct. Palliative care focuses on symptom relief and quality of life at any stage of a serious illness, and it can be combined with treatment aimed at the disease.</p><p><b>Only for people expected to live 6 months or less</b> and <b>stopping heart medications</b> describe hospice: end-of-life comfort care, usually for a prognosis of 6 months or less, without curative treatment. <b>Another name for hospice</b> is the misconception behind both: all hospice care is palliative, but not all palliative care is hospice.</p><p><b>Takeaway:</b> Palliative care is symptom relief at any stage, even during treatment; hospice is comfort care at the end of life, without curative treatment.</p>"
+    },
+    {
+      "id": "hcs-08", "type": "emr", "topic": "Levels of prevention and care",
+      "stem": "A nurse is reviewing the clients on a medical unit. Which 2 clients are the most appropriate for a referral to hospice?",
+      "options": [
+        "A client who has metastatic pancreatic cancer, is expected to live about 3 months, and has decided to stop chemotherapy",
+        "A client who has newly diagnosed breast cancer and wants help with nausea during chemotherapy",
+        "A client who has end-stage COPD, is expected to live less than 6 months, and wants to focus on comfort at home",
+        "A client who is recovering from a hip fracture and needs physical therapy before going home",
+        "A client who has heart failure and wants every available treatment, including an evaluation for a heart transplant",
+        "A client who had a stroke last week and is starting speech therapy"
+      ],
+      "answer": [0, 2],
+      "select": 2,
+      "rationale": "<p>Hospice is end-of-life comfort care, usually for clients with a prognosis of 6 months or less who are no longer seeking curative treatment. <b>The client with metastatic pancreatic cancer who stopped chemotherapy</b> and <b>the client with end-stage COPD who wants comfort care at home</b> both fit.</p><p><b>The client who wants help with nausea during chemotherapy</b> needs palliative care, which can be given along with curative treatment. <b>The client recovering from a hip fracture</b> and <b>the client starting speech therapy after a stroke</b> need rehabilitation to restore function. <b>The client who wants every available treatment</b> is still seeking curative care, so hospice doesn't match their goals.</p><p><b>Takeaway:</b> Hospice fits a prognosis of about 6 months or less plus a choice of comfort over cure.</p>"
+    },
+    {
+      "id": "hcs-09", "type": "mc", "topic": "Levels of prevention and care",
+      "stem": "A nurse is using Healthy People 2030 to plan a community health program. Which of the following statements describes Healthy People?",
+      "options": [
+        "It is a federal program that pays for health care for adults 65 and older.",
+        "It is an organization that accredits hospitals and sets patient safety goals.",
+        "It sets and tracks national health objectives for a 10-year period.",
+        "It is a list of screenings that every provider is legally required to perform."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>It sets and tracks national health objectives for a 10-year period</b> is correct. Healthy People, from the U.S. Department of Health and Human Services, sets and monitors national health objectives every 10 years, encourages collaboration across communities and sectors, and guides people toward informed health decisions. Healthy People 2030 has a strong focus on social determinants of health.</p><p><b>Paying for care for adults 65 and older</b> describes Medicare. <b>Accrediting hospitals and setting patient safety goals</b> describes The Joint Commission. <b>Required screenings</b> is wrong: Healthy People sets goals and targets, not laws that providers must follow.</p><p><b>Takeaway:</b> Healthy People sets the nation's 10-year health objectives, which guide prevention and health promotion.</p>"
+    },
+    {
+      "id": "hcs-10", "type": "sata", "topic": "Levels of prevention and care",
+      "stem": "A client who has a family history of heart disease asks the nurse for help staying healthy. Which of the following actions by the nurse reflect the nurse's role in health promotion?",
+      "options": [
+        "Helping the client choose a specific, measurable goal that the client values",
+        "Setting the client's goals, since the nurse knows the evidence best",
+        "Teaching the client how to track progress toward the goal",
+        "Planning with the client how to change the goal if it isn't working",
+        "Telling the client that a family history means heart disease can't be prevented"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>The nurse's role in health promotion is to teach clients how to stay healthy, and to make sure they understand the importance of setting health goals and can <b>assess, implement, evaluate, and modify</b> their own goals. <b>Helping the client choose a goal the client values</b>, <b>teaching the client to track progress</b>, and <b>planning how to adjust the goal</b> all do that.</p><p><b>Setting the client's goals for them</b> takes control away from the client; health promotion enables people to increase control over their own health. <b>Saying heart disease can't be prevented</b> is false: family history is a risk factor that can't be changed, but many others, like diet, activity, smoking, and blood pressure, can.</p><p><b>Takeaway:</b> In health promotion, the client owns the goals; the nurse teaches and supports.</p>"
+    },
+    {
+      "id": "hcs-11", "type": "mc", "topic": "Factors affecting health care delivery",
+      "stem": "A nurse reads a report showing that rural counties have far fewer primary care providers and nurses per resident than cities do. Which of the following factors affecting health care delivery does this describe?",
+      "options": [
+        "Advances in technology",
+        "Efforts to contain the cost of care",
+        "Growth of the older adult population",
+        "Uneven distribution of the health care workforce"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Uneven distribution of the health care workforce</b> is correct. Shortages of nurses and primary care providers are worse in some places than others, especially rural areas, which affects how and where care can be delivered.</p><p><b>Advances in technology</b> change what care is possible and what it costs, but don't explain fewer providers in rural areas. <b>Cost containment</b> drives changes like shorter hospital stays. <b>An aging population</b> raises the demand for care, but this report is about the supply of providers.</p><p><b>Takeaway:</b> Fewer providers in some areas means a workforce shortage and maldistribution, a factor that affects both delivery and access.</p>"
+    },
+    {
+      "id": "hcs-12", "type": "sata", "topic": "Factors affecting health care delivery",
+      "stem": "A nurse is explaining factors that affect the delivery of health care to a nursing student. Which of the following statements should the nurse include?",
+      "options": [
+        "“New technology can improve care, but it can also raise its cost.”",
+        "“Efforts to contain costs have made hospital stays longer.”",
+        "“Health care in the United States is delivered by one government system.”",
+        "“When services are fragmented, clients need more help coordinating their care.”",
+        "“Shortages of nurses affect every part of the country equally.”",
+        "“Natural disasters and disease outbreaks can strain a community's health care resources.”"
+      ],
+      "answer": [0, 3, 5],
+      "rationale": "<p><b>Technology</b> improves care but adds cost. <b>Fragmented services</b>, with many providers who don't coordinate, increase the need for care coordination such as case management. <b>Disasters and outbreaks</b> strain resources, which is why nurses must know their agency's and community's expectations in a disaster.</p><p><b>Longer hospital stays</b> is backward: cost containment has shortened stays and moved care to outpatient and home settings. <b>One government system</b> is wrong: the U.S. system mixes public and private, for-profit and nonprofit insurers and providers, and most people have private insurance through an employer. <b>Equal shortages everywhere</b> is wrong: shortages are uneven and worst in rural areas.</p><p><b>Takeaway:</b> Know the big drivers of health care delivery: cost, technology, aging and chronic illness, the workforce, fragmentation, and disasters.</p>"
+    },
+    {
+      "id": "hcs-13", "type": "mc", "topic": "Factors affecting health care delivery",
+      "stem": "A client who has diabetes, kidney disease, and depression sees five providers who don't share records, and has received conflicting instructions about which medications to take. Which of the following factors affecting health care delivery best explains this problem?",
+      "options": [
+        "Fragmentation of services among providers",
+        "Advances in medical technology",
+        "Shortages of nurses in the hospital",
+        "Growth in the number of outpatient surgery centers"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Fragmentation of services</b> is correct. When many providers care for one client without sharing information, care becomes fragmented: duplicated tests, conflicting instructions, and gaps. Coordination, such as case management, is the response.</p><p><b>Technology</b> could help here, through a shared electronic record, but it isn't the cause. <b>Nurse shortages in the hospital</b> don't explain conflicting instructions from outpatient providers. <b>More outpatient surgery centers</b> reflects cost containment, not this client's problem.</p><p><b>Takeaway:</b> Many providers and no shared plan add up to fragmentation; the fix is coordination.</p>"
+    },
+    {
+      "id": "hcs-14", "type": "dropdown", "topic": "Factors affecting health care delivery",
+      "stem": "A hospital is adding robotic surgery and telehealth visits. Complete the following sentence.",
+      "text": "Advances in technology like these can {{0}}, but they also tend to {{1}}.",
+      "blanks": [
+        { "options": ["replace the need for nursing assessment", "lower the cost of every procedure", "shorten recovery and reach clients at a distance", "eliminate the need for hospitals"], "answer": 2 },
+        { "options": ["reduce access for rural clients", "raise the cost of care", "make documentation unnecessary", "end the need for client teaching"], "answer": 1 }
+      ],
+      "rationale": "<p>New technology, such as minimally invasive or robotic surgery and telehealth, can <b>shorten recovery and reach clients at a distance</b>, but it also tends to <b>raise the cost of care</b> through equipment, training, and upkeep. The system must balance that against cost containment.</p><p>Technology supports nursing judgment but never <b>replaces nursing assessment</b>, and it doesn't <b>eliminate hospitals</b> or <b>lower the cost of every procedure</b>. Telehealth actually <b>improves</b> access for rural clients, and it doesn't remove the need for <b>documentation</b> or <b>teaching</b>.</p><p><b>Takeaway:</b> Technology cuts both ways in health care delivery: better care and access, at a higher cost.</p>"
+    },
+    {
+      "id": "hcs-15", "type": "mc", "topic": "Factors affecting health care delivery",
+      "stem": "A hospital activates its disaster plan after a tornado, and a nurse who is not scheduled to work is called in. Which of the following actions should the nurse take?",
+      "options": [
+        "Go directly to the scene of the tornado to help injured people",
+        "Report to the hospital as directed and take the role assigned in the disaster plan",
+        "Wait for news reports on how many people were injured before deciding",
+        "Decline to come in, because nurses are responsible only for their scheduled shifts"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Report as directed and take the assigned role</b> is correct. Nurses must know their agency's and community's expectations in a disaster, and follow the disaster plan, which assigns roles so staff and supplies go where they're needed most.</p><p><b>Going to the scene</b> without an assignment bypasses the plan, can put the nurse at risk, and leaves the hospital short. <b>Waiting for the news</b> delays care after the plan has already been activated. <b>Declining because it isn't a scheduled shift</b> ignores the nurse's role in the agency's disaster response.</p><p><b>Takeaway:</b> In a disaster, follow the plan: report where you're assigned and do the role you're given.</p>"
+    },
+    {
+      "id": "hcs-16", "type": "mc", "topic": "Factors affecting health care delivery",
+      "stem": "A hospital's data show that clients who speak little English wait longer for pain medication and are readmitted more often than other clients. Which of the following factors affecting health care delivery does this reflect?",
+      "options": [
+        "Increasing diversity and health disparities",
+        "Advances in technology",
+        "Workforce shortages in rural areas",
+        "Growth of managed care"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Increasing diversity and health disparities</b> is correct. A health disparity is a difference in care or outcomes between groups, here linked to language. As the population grows more diverse, the system must provide interpreters and culturally responsive care so every client gets the same quality of care.</p><p><b>Technology</b>, <b>rural workforce shortages</b>, and <b>managed care</b> are real factors, but none of them explains why one group of clients in the same hospital gets slower care and worse outcomes.</p><p><b>Takeaway:</b> Worse care or outcomes for one group is a health disparity; the fix starts with equal access, such as qualified interpreters.</p>"
+    },
+    {
+      "id": "hcs-17", "type": "mc", "topic": "Factors affecting health care delivery",
+      "stem": "Medicare now pays hospitals less when too many clients are readmitted within 30 days of discharge. Which of the following changes in care delivery would the nurse expect the hospital to make?",
+      "options": [
+        "Keeping every client in the hospital several days longer",
+        "Stopping admissions of clients who have chronic illnesses",
+        "Strengthening discharge teaching and calling clients after discharge",
+        "Sending clients home before teaching is finished, to free up beds"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Strengthening discharge teaching and calling clients after discharge</b> is correct. Payment rules and other government policies shape how care is delivered. When payment depends on avoiding readmissions, hospitals invest in what prevents them: teaching, care coordination, medication reconciliation, and follow-up after discharge.</p><p><b>Keeping every client longer</b> raises costs and isn't how hospitals respond to cost pressure. <b>Refusing clients who have chronic illnesses</b> isn't a legal or ethical option. <b>Sending clients home before teaching is finished</b> would increase readmissions.</p><p><b>Takeaway:</b> Financing and regulation shape care delivery: when payment rewards outcomes, the system invests in prevention and coordination.</p>"
+    },
+    {
+      "id": "hcs-18", "type": "mc", "topic": "Care delivery and payment models",
+      "stem": "A nurse is explaining managed care to a nursing student. Which of the following statements describes the goal of managed care?",
+      "options": [
+        "To give clients unlimited choice of providers, whatever the cost",
+        "To have the federal government pay directly for all health care",
+        "To move care into hospitals, where it can be closely monitored",
+        "To provide cost-effective, high-quality care that improves outcomes for groups of clients"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Cost-effective, high-quality care that improves outcomes for groups of clients</b> is correct. Managed care, which includes HMOs and PPOs, coordinates care to control cost while keeping quality high.</p><p><b>Unlimited choice at any cost</b> is the opposite of managed care, which uses provider networks and, in HMOs, a primary care gatekeeper. <b>The government paying for all care</b> describes a single-payer model, not managed care. <b>Moving care into hospitals</b> raises costs; managed care favors the most cost-effective setting, often outpatient.</p><p><b>Takeaway:</b> Managed care means coordinated care that controls cost while keeping quality.</p>"
+    },
+    {
+      "id": "hcs-19", "type": "mc", "topic": "Care delivery and payment models",
+      "stem": "A client who has a preferred provider organization (PPO) plan wants to see a dermatologist who is outside the plan's network, without seeing a primary care provider first. Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“You can see this dermatologist, but you'll usually pay more than for one in the network.”",
+        "“You'll need a referral from your primary care provider before the visit.”",
+        "“Your plan won't pay anything toward providers outside its network.”",
+        "“You'll pay the same as in the network, because PPO plans don't have networks.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>You can, but you'll usually pay more</b> is correct. PPOs are less restrictive: no primary care provider is required, specialists don't need a referral, and the larger network includes out-of-network coverage at a higher cost. The trade-off is higher premiums, copayments, and deductibles.</p><p><b>Needing a referral from a primary care provider</b> and <b>no payment outside the network</b> describe an HMO. <b>PPOs have no networks</b> is wrong: a PPO has a network, and staying in it costs the client less.</p><p><b>Takeaway:</b> A PPO offers choice without referrals, at a higher price, and more still out of network.</p>"
+    },
+    {
+      "id": "hcs-20", "type": "dragdrop", "topic": "Care delivery and payment models",
+      "stem": "A client is choosing between a health maintenance organization (HMO) plan and a preferred provider organization (PPO) plan. Complete the nurse's explanation.",
+      "text": "Compared with a PPO, an HMO usually has {{0}} premiums and copays, requires {{1}} before the client sees a specialist, and covers care {{2}}.",
+      "tokens": ["lower", "higher", "a referral from the primary care provider", "no referral", "only within its network", "in or out of its network"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>An HMO is more restrictive and costs the client less: <b>lower</b> premiums, copays, and out-of-pocket costs. The client must choose a primary care provider (PCP), who manages specialty care, so a <b>referral from the primary care provider</b> is needed, and care is covered <b>only within its network</b>.</p><p><b>Higher</b> costs, <b>no referral</b>, and coverage <b>in or out of its network</b> describe a PPO.</p><p><b>Takeaway:</b> HMO: “Have to Meet your Own PCP first.” PPO: “Pay more, Pick openly.”</p>"
+    },
+    {
+      "id": "hcs-21", "type": "matrix", "topic": "Care delivery and payment models",
+      "stem": "For each client, specify the public program most likely to help pay for the client's care.",
+      "rowHeader": "Client",
+      "columns": ["Medicare", "Medicaid", "Children's Health Insurance Program (CHIP)"],
+      "rows": [
+        "A 45-year-old client who has end-stage kidney disease and receives dialysis",
+        "A 9-year-old whose parents earn too much to qualify for Medicaid but can't afford private insurance",
+        "A nursing home resident who has spent all of their savings on care",
+        "A pregnant client with a very low income who meets the state's eligibility rules"
+      ],
+      "answer": [0, 2, 1, 1],
+      "rationale": "<p><b>Medicare</b> is federal insurance for people 65 and older, people with certain permanent disabilities, and people with end-stage renal disease, like <b>the client on dialysis</b>.</p><p><b>Medicaid</b>, funded by the federal government and the states, covers people with low incomes, with eligibility rules that vary by state, like <b>the low-income pregnant client</b>. It's also the major payer for long-term nursing home care, so <b>a resident who has spent their savings</b> often qualifies.</p><p><b>CHIP</b> covers children in families that earn too much for Medicaid but can't afford private insurance, like <b>the 9-year-old</b>.</p><p><b>Takeaway:</b> MediCARE: we care for people 65 and older (and kidney failure). MedicAID: aid for low incomes (and long-term care). CHIP: children in between.</p>"
+    },
+    {
+      "id": "hcs-22", "type": "mc", "topic": "Care delivery and payment models",
+      "stem": "A rehabilitation unit uses patient-focused care. Which of the following statements by a client's daughter indicates that the unit is following this framework?",
+      "options": [
+        "“The nurses picked Mom's bath time so the unit could stay on schedule.”",
+        "“The doctor decided on Mom's discharge plan and told us about it afterward.”",
+        "“The staff asked what matters most to Mom and included us in the care conference.”",
+        "“Visiting is limited so the staff can finish their tasks without interruption.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Asking what matters to the client and including the family</b> is correct. Patient-focused care organizes care around the client's expressed physical and emotional needs, and makes clients and families integral to decisions about their care.</p><p><b>A bath time set for the unit's schedule</b>, <b>a discharge plan decided without the family</b>, and <b>visiting limited for staff convenience</b> all organize care around the staff or the institution instead of the client.</p><p><b>Takeaway:</b> In patient-focused care, the client's needs and the family's participation shape the plan.</p>"
+    },
+    {
+      "id": "hcs-23", "type": "matrix", "topic": "Care delivery and payment models",
+      "stem": "For each situation, specify the nursing care delivery model being used.",
+      "rowHeader": "Situation",
+      "columns": ["Functional nursing", "Team nursing", "Primary nursing", "Total patient care"],
+      "rows": [
+        "An RN leads an LPN and two assistive personnel and assigns each member's work based on their skills.",
+        "Each staff member is assigned one kind of task, such as vital signs or treatments, for every client on the unit.",
+        "One RN plans a client's care from admission to discharge, and other nurses follow that plan when the RN is off.",
+        "In the intensive care unit, one RN gives all of the care for two clients during the shift."
+      ],
+      "answer": [1, 0, 2, 3],
+      "rationale": "<p><b>Team nursing</b>, the most common model today: an RN team leader is accountable for the team's clients and assigns members, such as LPNs and assistive personnel, by ability.</p><p><b>Functional nursing</b> is task-oriented: staff do specific tasks for many clients instead of caring for specific clients. It's used when systems are stressed, such as by staffing shortages or severe weather.</p><p><b>Primary nursing</b> is a relationship model: one primary nurse has 24-hour responsibility for a client's care from admission to discharge, and associate nurses follow the primary nurse's plan.</p><p><b>Total patient care</b>, the case method: one RN provides all aspects of care for assigned clients during the shift, which is common in intensive care.</p><p><b>Takeaway:</b> Functional means tasks; team means an RN leader; primary means the same RN from admission to discharge; total means everything, this shift.</p>"
+    },
+    {
+      "id": "hcs-24", "type": "mc", "topic": "Care delivery and payment models",
+      "stem": "A unit uses team nursing, and team members' assignments change every few days. Which of the following problems is most likely to result?",
+      "options": [
+        "The team leader loses accountability for the team's clients",
+        "Clients' care loses continuity from one day to the next",
+        "Assistive personnel can no longer help with clients' care",
+        "Each RN must give all of the care to every client on the unit"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Loss of continuity</b> is correct. In team nursing, frequent assignment changes mean clients see different caregivers, which can lead to a lack of continuity of care.</p><p><b>The team leader stays accountable</b> for the clients assigned to the team; that's a defining feature of the model. <b>Assistive personnel</b> remain part of the team and are assigned tasks based on their abilities. <b>One RN giving all care</b> describes total patient care, not team nursing.</p><p><b>Takeaway:</b> Team nursing frees RNs for complex care, but frequent assignment changes cost continuity.</p>"
+    },
+    {
+      "id": "hcs-25", "type": "mc", "topic": "Care delivery and payment models",
+      "stem": "A medical unit is changing from functional nursing to primary nursing. Which of the following outcomes would the nurse manager expect after the change?",
+      "options": [
+        "Care becomes more task-focused, so many tasks get done quickly",
+        "Clients can name the nurse who is responsible for their care",
+        "Fewer RNs are needed, so staffing costs go down",
+        "Assistive personnel take over planning each client's care"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Clients can name the nurse responsible for their care</b> is correct. Functional nursing's drawbacks are fragmented, depersonalized care and clients who can't identify “their nurse.” Primary nursing gives each client one nurse responsible from admission to discharge, which improves continuity and the nurse's autonomy.</p><p><b>Task-focused care done quickly</b> describes functional nursing, the model the unit is leaving. <b>Fewer RNs and lower costs</b> is backward: primary nursing needs more RNs and costs more. <b>Assistive personnel planning care</b> is outside their role; in primary nursing, the primary nurse develops the plan.</p><p><b>Takeaway:</b> Primary nursing trades a higher cost for continuity, accountability, and clients who know their nurse.</p>"
+    },
+    {
+      "id": "hcs-26", "type": "sata", "topic": "Care delivery and payment models",
+      "stem": "A nurse is learning about case management. Which of the following statements about case management are accurate?",
+      "options": [
+        "“A case manager leads an interprofessional team that coordinates the client's care.”",
+        "“The case manager may be a nurse, a social worker, or another member of the health care team.”",
+        "“Case management is most needed when a client has many care needs and several providers.”",
+        "“The case manager gives all of the client's direct care during each shift.”",
+        "“Case management can cover one hospital stay or follow the client into the community.”",
+        "“Only clients who have private insurance can receive case management.”"
+      ],
+      "answer": [0, 1, 2, 4],
+      "rationale": "<p>Case management is a <b>collaborative process</b> in which an interprofessional team, <b>led by a case manager</b>, coordinates care. The case manager <b>may be a nurse, a social worker, or another team member</b>. It's essential when a client has <b>multiple care needs requiring multiple providers</b>, and it may be <b>limited to one hospitalization or follow the client across community settings</b>.</p><p>The case manager coordinates care rather than <b>giving all direct care each shift</b>, which describes total patient care. Case management isn't <b>limited to private insurance</b>: hospitals, Medicare and Medicaid programs, and community agencies all use it.</p><p><b>Takeaway:</b> The case manager is the coordinator for complex needs across providers and settings.</p>"
+    },
+    {
+      "id": "hcs-27", "type": "sata", "topic": "Access to care and social determinants",
+      "stem": "A nurse in a walk-in clinic is caring for a 29-year-old client who has asthma. The client lost their job and health insurance last month and is running out of their inhaler. Which of the following actions should the nurse take?",
+      "options": [
+        "Refer the client to a social worker to check eligibility for Medicaid or marketplace coverage",
+        "Tell the client that the clinic can't provide care without insurance",
+        "Give the client information about a community health center with sliding-scale fees",
+        "Advise the client to use the emergency department for routine refills, because it can't refuse care",
+        "Help the client look into a low-cost generic or a manufacturer's assistance program for the inhaler"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>A nurse can help a client without insurance by <b>referring to a social worker or case manager</b> (the client may qualify for Medicaid or for marketplace coverage under the Affordable Care Act), pointing the client to <b>community health centers with sliding-scale fees</b> and free clinics, and finding <b>lower-cost medications</b> through generics or manufacturer assistance programs.</p><p><b>Refusing care without insurance</b> abandons the client and ignores these resources. <b>Using the emergency department for routine refills</b> is costly and inappropriate: emergency departments must screen and stabilize anyone with an emergency, but they aren't a source of routine care.</p><p><b>Takeaway:</b> No insurance doesn't mean no care: refer, connect the client to sliding-scale clinics, and find affordable medications.</p>"
+    },
+    {
+      "id": "hcs-28", "type": "mc", "topic": "Access to care and social determinants",
+      "stem": "A nurse is teaching a class about social determinants of health. Which of the following definitions should the nurse use?",
+      "options": [
+        "The genetic traits and family history that raise a person's risk of disease",
+        "The personal habits, such as smoking and diet, that a person chooses",
+        "The services that a person's health insurance plan will pay for",
+        "The conditions where people are born, live, learn, work, play, and age that affect their health"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>The conditions where people are born, live, learn, work, play, and age</b> is correct. Social determinants of health (SDOH) are the social and environmental conditions that affect health, functioning, and quality-of-life outcomes and risks.</p><p><b>Genetic traits and family history</b> are biological risk factors that can't be changed, not SDOH. <b>Personal habits</b> like smoking and diet are individual behaviors, though SDOH strongly shape them. <b>Insurance benefits</b> are one part of health care access, too narrow to define SDOH.</p><p><b>Takeaway:</b> SDOH are about the conditions around a person, not their genes or their individual choices.</p>"
+    },
+    {
+      "id": "hcs-29", "type": "sata", "topic": "Access to care and social determinants",
+      "stem": "A nurse is completing a social determinants of health screening with a client. Which of the following findings are social determinants of health?",
+      "options": [
+        "Lives in an apartment with mold and pests",
+        "Has a family history of breast cancer",
+        "Didn't finish high school",
+        "Is 78 years old",
+        "Smokes a pack of cigarettes a day"
+      ],
+      "answer": [0, 2],
+      "rationale": "<p><b>Housing with mold and pests</b> (neighborhood and built environment) and <b>not finishing high school</b> (education access and quality) are social determinants of health: conditions in the places where people live, learn, and work.</p><p><b>Family history</b> and <b>age</b> are biological factors that can't be changed, so they aren't SDOH. <b>Smoking</b> is an individual health behavior. SDOH can shape it, through stress or tobacco marketing in a neighborhood, for example, but the behavior itself isn't an SDOH.</p><p><b>Takeaway:</b> Age, genes, and personal habits aren't SDOH; housing, education, income, and community are.</p>"
+    },
+    {
+      "id": "hcs-30", "type": "mc", "topic": "Access to care and social determinants",
+      "stem": "A client tells the nurse, “The last time I went to that clinic, the staff made fun of my accent, so I haven't gone back.” Which of the following barriers to care does this statement describe?",
+      "options": [
+        "A geographic barrier",
+        "Discrimination and mistrust of the health care system",
+        "A financial barrier",
+        "Low health literacy"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Discrimination and mistrust</b> is correct. Being treated with disrespect because of an accent is discrimination, and it leads to mistrust and avoiding care: a barrier that limits access even when care is nearby and affordable.</p><p>A <b>geographic barrier</b> is distance, or living where few providers practice. A <b>financial barrier</b> is cost or a lack of insurance. <b>Low health literacy</b> is trouble finding, understanding, and using health information. None of these is what the client describes.</p><p><b>Takeaway:</b> Access barriers aren't only money and miles: discrimination and mistrust keep people away too.</p>"
+    },
+    {
+      "id": "hcs-31", "type": "sata", "topic": "Access to care and social determinants",
+      "stem": "A nurse is helping an urban clinic reduce barriers to care for its clients. Which of the following strategies address barriers to access?",
+      "options": [
+        "Offering visits by video or phone",
+        "Using a qualified medical interpreter service",
+        "Providing bus passes or a ride service for appointments",
+        "Requiring payment in full before each visit",
+        "Writing teaching materials in plain language at a 5th- to 6th-grade reading level",
+        "Charging fees on a sliding scale based on income"
+      ],
+      "answer": [0, 1, 2, 4, 5],
+      "rationale": "<p>Each correct strategy removes a barrier: <b>video or phone visits</b> (distance and transportation), <b>qualified interpreters</b> (language), <b>bus passes or rides</b> (transportation), <b>plain-language materials at a 5th- to 6th-grade level</b> (health literacy), and <b>sliding-scale fees</b> (cost).</p><p><b>Requiring payment in full before each visit</b> adds a financial barrier, and keeps clients with low incomes away.</p><p><b>Takeaway:</b> Match each strategy to a barrier: distance, transportation, language, literacy, or cost.</p>"
+    },
+    {
+      "id": "hcs-32", "type": "dragdrop", "topic": "Access to care and social determinants",
+      "stem": "A nurse is reviewing how Healthy People 2030 groups the social determinants of health. Complete the sentence.",
+      "text": "The five domains are economic stability, {{0}}, health care access and quality, {{1}}, and social and community context.",
+      "tokens": ["education access and quality", "neighborhood and built environment", "genetics and family history", "personal health behaviors", "insurance plan benefits"],
+      "answer": [0, 1],
+      "rationale": "<p>The five domains are <b>economic stability</b>, <b>education access and quality</b>, <b>health care access and quality</b>, <b>neighborhood and built environment</b>, and <b>social and community context</b>.</p><p><b>Genetics and family history</b> are biological factors, and <b>personal health behaviors</b> are individual choices; neither is a domain of the social determinants. <b>Insurance plan benefits</b> fall within health care access, not a separate domain.</p><p><b>Takeaway:</b> The five SDOH domains: economic stability, education, health care access, neighborhood and built environment, and social and community context.</p>"
+    },
+    {
+      "id": "hcs-33", "type": "mc", "topic": "Access to care and social determinants",
+      "stem": "A nurse is preparing a client who has been living in a homeless shelter for discharge after surgery. Which of the following actions best addresses a social determinant of health?",
+      "options": [
+        "Reminding the client that smoking slows wound healing",
+        "Teaching the client to take medications at the same time each day",
+        "Referring the client to a social worker for help finding stable housing",
+        "Encouraging the client to walk for 30 minutes each day"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Referring the client to a social worker for stable housing</b> is correct. Housing is a social determinant of health, and a shelter makes wound care, rest, and storing medications hard. Addressing it gives the rest of the discharge teaching a chance to work.</p><p><b>Smoking</b>, <b>medication timing</b>, and <b>walking</b> are individual health behaviors. Teaching about them is good care, but it doesn't address the conditions the client lives in.</p><p><b>Takeaway:</b> To address an SDOH, change the client's conditions (housing, food, income, transportation), not only their behavior.</p>"
+    },
+    {
+      "id": "hcs-34", "type": "mc", "topic": "Health care systems and other concepts",
+      "stem": "A nurse who worked for 5 years at one hospital starts a job at another hospital whose procedures are different. Which of the following actions should the nurse take?",
+      "options": [
+        "Learn and follow the new hospital's policies and procedures",
+        "Keep using the old hospital's procedures, since they worked well",
+        "Follow whichever procedure takes less time for each task",
+        "Ask each client which procedure they would prefer"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Learn and follow the new hospital's policies and procedures</b> is correct. Each agency has its own policies and procedures, and nurses are accountable for knowing and following the requirements of the agency where they practice. If the nurse believes a procedure should change, the nurse can propose it through the agency's process.</p><p><b>Using the old hospital's procedures</b>, <b>choosing the fastest method</b>, and <b>letting clients choose the procedure</b> all step outside the agency's standards, which puts clients and the nurse at risk.</p><p><b>Takeaway:</b> Accountability means practicing by your current agency's policies and procedures.</p>"
+    },
+    {
+      "id": "hcs-35", "type": "matrix", "topic": "Health care systems and other concepts",
+      "stem": "A nurse is reviewing how health care systems relate to other nursing concepts. For each nursing action, specify the concept it best reflects.",
+      "rowHeader": "Nursing action",
+      "columns": ["Accountability", "Advocacy", "Communication", "Ethics"],
+      "rows": [
+        "Gives a structured handoff when the client transfers to a rehabilitation center",
+        "Applies the same criteria to every client when deciding who gets a scarce resource",
+        "Follows the agency's procedure for central line care and answers for the care given",
+        "Speaks up when a client is about to be discharged without a safe way to get home"
+      ],
+      "answer": [2, 3, 0, 1],
+      "rationale": "<p><b>Communication:</b> a structured handoff keeps care continuous across settings. <b>Ethics:</b> applying the same criteria to everyone is justice in allocating scarce resources. <b>Accountability:</b> following agency policy and answering for the care given. <b>Advocacy:</b> speaking up so the client can overcome a barrier and leave safely.</p><p><b>Takeaway:</b> Health care systems connect to accountability (policies), advocacy (barriers), communication (handoffs), collaboration (teams), and ethics (justice).</p>"
+    },
+    {
+      "id": "hcs-36", "type": "mc", "topic": "Health care systems and other concepts",
+      "stem": "A hospital is considering changing a medical unit from team nursing to total patient care. Which of the following effects should the nurse manager expect?",
+      "options": [
+        "More RNs will be needed, which will raise staffing costs",
+        "Clients' care will become more fragmented and task-focused",
+        "Assistive personnel will take on more of each client's care",
+        "Staffing costs will fall, because the unit will need fewer staff"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>More RNs, and higher staffing costs</b> is correct. In total patient care, one RN gives all of the care for assigned clients during the shift. That gives holistic care and clear accountability, but it takes many RNs, so it's expensive. A care delivery model affects the budget as well as client outcomes and safety.</p><p><b>Fragmented, task-focused care</b> describes functional nursing. <b>Assistive personnel taking on more care</b> describes team and functional nursing, which use them for tasks; total patient care relies on RNs. <b>Costs falling</b> is backward, because RNs replace less costly team members.</p><p><b>Takeaway:</b> Every care delivery model has a trade-off; total patient care buys holistic care at the cost of more RNs.</p>"
+    },
+    {
+      "id": "hcs-37", "type": "mc", "topic": "Health care systems and other concepts",
+      "stem": "A nurse is floated to an unfamiliar unit that uses team nursing. Which of the following actions should the nurse take first?",
+      "options": [
+        "Ask the team leader to clarify the nurse's assignment and which tasks are delegated to whom",
+        "Begin giving medications to the clients who seem the sickest",
+        "Ask the assistive personnel which tasks they would like to do",
+        "Use the routines from the nurse's home unit until someone corrects them"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Clarifying the assignment with the team leader</b> is correct. In team nursing, the RN team leader is accountable for the team's clients and assigns tasks. A floating nurse must know their role, the unit's expectations, and who is doing what before acting, to keep care safe.</p><p><b>Starting medications on the sickest-looking clients</b> skips getting a report and an assignment. <b>Letting assistive personnel pick tasks</b> isn't how delegation works; the RN assigns tasks based on ability. <b>Using home-unit routines</b> ignores this unit's policies.</p><p><b>Takeaway:</b> On a new unit, know your role and the model first: clarify the assignment before you act.</p>"
+    },
+    {
+      "id": "hcs-38", "type": "mc", "topic": "Health care systems and other concepts",
+      "stem": "A client's insurance plan denies coverage for home health visits that the provider ordered after the client's hospital stay. Which of the following actions by the nurse best reflects advocacy?",
+      "options": [
+        "Telling the client to pay for the visits out of pocket",
+        "Canceling the home health referral, since it won't be covered",
+        "Contacting the case manager to help the client appeal or find another way to get the service",
+        "Advising the client to come back to the emergency department if problems start"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Working with the case manager to appeal or find another option</b> is correct. Advocacy means helping clients overcome barriers to the care they need, and case managers know payer rules, appeals, and community resources.</p><p><b>Paying out of pocket</b> may not be possible, and it skips the client's other options. <b>Canceling the referral</b> leaves the client without needed care. <b>Using the emergency department</b> waits for a problem instead of preventing it, and it's costly.</p><p><b>Takeaway:</b> When the system blocks needed care, the nurse advocates, often through the case manager.</p>"
+    },
+    {
+      "id": "hcs-39", "type": "mc", "topic": "Health care systems and other concepts",
+      "stem": "A client who had a stroke is going home next week. Which of the following actions best reflects interprofessional collaboration in planning the client's move home?",
+      "options": [
+        "The nurse writes the discharge plan alone and gives it to the client on the day of discharge.",
+        "The nurse, therapists, social worker, client, and family meet to plan the client's care at home.",
+        "Each discipline gives the client separate instructions without comparing them.",
+        "The provider decides on all services, and the nurse carries out the orders."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>The team meeting with the client and family</b> is correct. Interprofessional collaboration brings each discipline's expertise together, with the client and family, so the plan is coordinated and realistic.</p><p><b>A plan written alone</b> leaves out the other disciplines and the family. <b>Separate instructions</b> create fragmented and sometimes conflicting care. <b>The provider deciding everything</b> leaves out the team's and the client's input.</p><p><b>Takeaway:</b> Collaboration means everyone, including the client and family, plans together.</p>"
+    },
+    {
+      "id": "hcs-40", "type": "mc", "topic": "Allocation of resources",
+      "stem": "A nurse manager must reduce the unit's supply costs by 10%. Which of the following actions best balances cost with safe care?",
+      "options": [
+        "Reusing single-use supplies after cleaning them",
+        "Delaying dressing changes to make supplies last longer",
+        "Using the least expensive dressing for every wound, whatever the type",
+        "Opening supplies only when they're needed, to reduce waste"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Opening supplies only when they're needed</b> is correct. Nurses help allocate limited resources by using supplies cost-consciously and avoiding waste, without compromising care.</p><p><b>Reusing single-use items</b> risks infection and violates infection-control standards. <b>Delaying dressing changes</b> risks infection and poor healing. <b>The cheapest dressing for every wound</b> ignores what each wound needs, and can cost more if wounds heal poorly.</p><p><b>Takeaway:</b> Save resources by cutting waste, never by cutting safe care.</p>"
+    },
+    {
+      "id": "hcs-41", "type": "dropdown", "topic": "Allocation of resources",
+      "stem": "Complete the following sentences about allocating limited health care resources.",
+      "text": "Distributing scarce resources fairly reflects the ethical principle of {{0}}. During a disaster, the goal of allocation becomes {{1}}.",
+      "blanks": [
+        { "options": ["autonomy", "veracity", "distributive justice", "fidelity"], "answer": 2 },
+        { "options": ["treating clients in the order they arrive", "doing the greatest good for the greatest number of people", "treating clients who can pay first", "saving every client, whatever it costs"], "answer": 1 }
+      ],
+      "rationale": "<p><b>Distributive justice</b> is the fair, equitable distribution of resources. When demand far exceeds supply, as in a disaster, the goal shifts to <b>doing the greatest good for the greatest number</b>.</p><p><b>Autonomy</b> is the client's right to decide, <b>veracity</b> is truthfulness, and <b>fidelity</b> is keeping promises. <b>First come, first served</b> and <b>ability to pay</b> aren't fair or effective ways to allocate, and <b>saving everyone at any cost</b> isn't possible when resources run out.</p><p><b>Takeaway:</b> Scarce resources call for justice; disasters call for the greatest good for the greatest number.</p>"
+    },
+    {
+      "id": "hcs-42", "type": "matrix", "topic": "Allocation of resources",
+      "stem": "A nurse is triaging victims of a bus crash using a mass-casualty triage system. For each victim, specify the triage category.",
+      "rowHeader": "Victim",
+      "columns": ["Red (immediate)", "Yellow (delayed)", "Green (minor)", "Black (expectant)"],
+      "rows": [
+        "Walking around the scene with abrasions and a sprained wrist",
+        "Respiratory rate 34/min, confused, capillary refill 4 seconds",
+        "Not breathing, even after the airway is opened",
+        "Closed fracture of the lower leg; can't walk; alert, with a normal respiratory rate and pulse"
+      ],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p>In a mass-casualty event, the goal is the greatest good for the greatest number. <b>Green (minor)</b> is the walking wounded, like the victim with abrasions and a sprain. <b>Red (immediate)</b> is a life-threatening problem that can be treated now: a respiratory rate over 30/min, confusion, and a capillary refill over 2 seconds signal respiratory failure and shock. <b>Black (expectant)</b> is a victim who isn't breathing after the airway is opened. <b>Yellow (delayed)</b> is a serious but stable injury, like a closed leg fracture with normal breathing, pulse, and mental status.</p><p><b>Takeaway:</b> Triage puts limited resources where they'll save the most lives: red first, then yellow, then green.</p>"
+    },
+    {
+      "id": "hcs-43", "type": "mc", "topic": "Allocation of resources",
+      "stem": "A medical unit is two nurses short for the night shift, and no replacements are available. Which of the following actions should the staff nurse take?",
+      "options": [
+        "Refuse the assignment and leave at the end of the previous shift",
+        "Ask assistive personnel to give the oral medications",
+        "Skip documentation for the shift to save time",
+        "Report the unsafe staffing through the chain of command and help the charge nurse prioritize care"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Reporting through the chain of command and helping prioritize</b> is correct. When resources are short, the nurse advocates for safe staffing through the proper channels, and helps prioritize care (airway, breathing, circulation; unstable before stable) with what's available.</p><p><b>Leaving without a replacement</b> can be client abandonment. <b>Assistive personnel giving medications</b> is outside their scope. <b>Skipping documentation</b> violates standards and puts clients and the nurse at legal risk.</p><p><b>Takeaway:</b> When short-staffed, speak up through the chain of command, then prioritize; never abandon clients or delegate outside someone's scope.</p>"
+    },
+    {
+      "id": "hcs-44", "type": "mc", "topic": "Allocation of resources",
+      "stem": "A medical unit has one telemetry bed available, and four clients are being considered for it. Which client should the nurse recommend for the bed?",
+      "options": [
+        "A client who has long-standing atrial fibrillation with a heart rate controlled at 70 to 80/min for 2 days",
+        "A client on day 3 after a hip replacement whose vital signs have been stable",
+        "A client who has cellulitis of the leg and a normal ECG",
+        "A client admitted with chest pain who has new ST-segment changes on the ECG"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>The client with chest pain and new ST changes</b> is correct. When resources are limited, the nurse helps decide who needs them most, putting unstable before stable and acute before chronic. New ST changes with chest pain suggest acute cardiac ischemia, which needs continuous monitoring.</p><p><b>Controlled atrial fibrillation</b> is chronic and stable. <b>Stable vital signs after a hip replacement</b> and <b>cellulitis with a normal ECG</b> don't call for cardiac monitoring.</p><p><b>Takeaway:</b> Give a scarce resource to the client who is unstable and most likely to benefit.</p>"
+    },
+    {
+      "id": "hcs-45", "type": "sata", "topic": "Allocation of resources",
+      "stem": "During a shortage of influenza vaccine, a clinic must decide who receives its limited supply first. Which of the following clients should the nurse identify as priorities?",
+      "options": [
+        "A 72-year-old client who has heart failure",
+        "A healthy 24-year-old college student",
+        "A client who is 28 weeks pregnant",
+        "A resident of a long-term care facility",
+        "A healthy 50-year-old office worker",
+        "A healthy 16-year-old athlete"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>When a resource is scarce, it goes first to the people at greatest risk of serious harm, which does the greatest good and reflects justice. <b>Older adults with chronic illness</b>, <b>pregnant clients</b>, and <b>long-term care residents</b> are at high risk of severe influenza and its complications.</p><p><b>The healthy 24-year-old, 50-year-old, and 16-year-old</b> are at lower risk, so they can wait until more vaccine is available.</p><p><b>Takeaway:</b> In a shortage, allocate by risk and benefit, using the same criteria for everyone.</p>"
+    },
+    {
+      "id": "hcs-46", "type": "highlight", "case": "community", "topic": "Access to care and social determinants",
+      "stem": "Click to highlight the findings from the community assessment that are barriers limiting residents' access to health care.",
+      "passage": "Most adults work [[hourly jobs with no paid time off]].<br>The only clinic is [[open Monday to Friday, 9:00 a.m. to 4:00 p.m.]]<br>The [[nearest hospital is 18 miles away]].<br>The bus runs [[every 90 minutes, with no service on Sundays]].<br>[[21% of adults have no health insurance]].<br>An [[active faith community runs a Saturday food pantry]].<br>The [[public library offers free internet]].<br>A [[new walking trail runs along the river]].",
+      "answer": [0, 1, 2, 3, 4],
+      "rationale": "<p>The barriers are <b>hourly jobs with no paid time off</b> (a visit means lost pay), <b>a clinic open only during weekday working hours</b>, <b>a hospital 18 miles away</b>, <b>infrequent buses with no Sunday service</b> (and many households have no car), and <b>a high rate of uninsured adults</b>. Each one limits whether residents can get care, whatever their health needs.</p><p><b>The food pantry</b>, <b>free internet at the library</b>, and <b>the walking trail</b> are community strengths, resources a program can build on, not barriers.</p><p><b>Takeaway:</b> Access barriers include cost, distance, transportation, and service hours that don't fit people's lives; note the community's strengths too.</p>"
+    },
+    {
+      "id": "hcs-47", "type": "matrix", "case": "community", "topic": "Levels of prevention and care",
+      "stem": "The coalition lists programs that could address the health data. For each program, specify the level of prevention it represents.",
+      "rowHeader": "Program",
+      "columns": ["Primary prevention", "Secondary prevention", "Tertiary prevention"],
+      "rows": [
+        "Scheduling mammograms for women ages 50 to 74",
+        "Teaching children who have asthma, and their families, to use an asthma action plan",
+        "Offering childhood vaccines on evenings and Saturdays",
+        "Running a support group for women being treated for breast cancer",
+        "Teaching middle-school students how to avoid starting to smoke"
+      ],
+      "answer": [1, 2, 0, 2, 0],
+      "rationale": "<p><b>Primary prevention</b> keeps disease from developing: <b>childhood vaccines</b> and <b>smoking-prevention teaching</b>.</p><p><b>Secondary prevention</b> finds disease early: <b>scheduling screening mammograms</b>, which could lower the high rate of breast cancers found at a late stage.</p><p><b>Tertiary prevention</b> limits complications and supports people with an established disease: <b>asthma action plans for children who have asthma</b>, which can cut emergency visits, and <b>a support group for women being treated for breast cancer</b>.</p><p><b>Takeaway:</b> Match the program to the disease's stage: none yet (primary), hidden or early (secondary), established (tertiary).</p>"
+    },
+    {
+      "id": "hcs-48", "type": "dropdown", "case": "community", "topic": "Access to care and social determinants",
+      "stem": "The nurse is analyzing why so few children in the neighborhood are up to date on their vaccines. Complete the following sentence.",
+      "text": "The finding that best explains the low childhood vaccination rate is that {{0}}, so the nurse's first step should be to {{1}}.",
+      "blanks": [
+        { "options": ["the nearest hospital is 18 miles away", "one in three households has an income below the poverty line", "the only clinic is open on weekdays during the hours parents work hourly jobs", "21% of adults have no health insurance"], "answer": 2 },
+        { "options": ["tell parents that vaccines are required for school", "offer vaccine clinics on evenings and weekends in the neighborhood", "build a new hospital closer to the neighborhood", "mail parents written vaccine schedules"], "answer": 1 }
+      ],
+      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>offer vaccine clinics on evenings and weekends in the neighborhood</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
+    },
+    {
+      "id": "hcs-49", "type": "mc", "case": "community", "topic": "Allocation of resources",
+      "stem": "The grant can fund only one of the coalition's proposals. Which proposal should the nurse recommend?",
+      "options": [
+        "A: Discounted memberships at a private gym 12 miles away",
+        "B: Billboards about healthy eating along the highway",
+        "C: A mobile health van offering childhood vaccines and mammogram referrals on evenings and Saturdays",
+        "D: A new advanced imaging machine for the hospital 18 miles away"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>The mobile health van</b> is correct. It targets the neighborhood's biggest gaps (low vaccination and mammogram rates, late-stage breast cancers), removes its main barriers (work hours, distance, transportation), and produces measurable results within a year. That's a fair allocation of limited resources that does the most good for the most people.</p><p><b>Gym memberships 12 miles away</b> help mostly residents who already have cars and money. <b>Billboards</b> don't remove any barrier and are hard to measure. <b>An imaging machine at a distant hospital</b> uses the whole grant on a service residents can't easily reach, and doesn't address the gaps in the data.</p><p><b>Takeaway:</b> When resources are limited, choose the option that meets the greatest need, removes real barriers, and reaches the most people.</p>"
+    },
+    {
+      "id": "hcs-50", "type": "matrix", "case": "community", "topic": "Access to care and social determinants",
+      "stem": "One year later, the nurse compares the neighborhood's data with the original assessment. For each finding, specify whether it shows improvement, no change, or a decline.",
+      "rowHeader": "Finding (before → after)",
+      "columns": ["Improved", "No change", "Declined"],
+      "rows": [
+        "Children up to date on vaccines by age 2: 68% → 86%",
+        "Women ages 50 to 74 with a recent mammogram: 49% → 50%",
+        "Emergency department visits for asthma, per 1,000 children: 24 → 31",
+        "Adults with no health insurance: 21% → 14%"
+      ],
+      "answer": [0, 1, 2, 0],
+      "rationale": "<p><b>Vaccination rates rose</b> from 68% to 86%, and <b>uninsured adults fell</b> from 21% to 14%: both improved. <b>Mammogram rates barely moved</b> (49% to 50%), so referrals alone didn't close that gap, and the nurse should look at what still stands in the way, such as getting to the imaging site. <b>Asthma emergency visits rose</b> from 24 to 31 per 1,000 children, a decline in health that needs attention in the next plan.</p><p><b>Takeaway:</b> Evaluate against the baseline data: keep what worked, and revise the plan where results didn't change or got worse.</p>"
+    }
+  ]
+}

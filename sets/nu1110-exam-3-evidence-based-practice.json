@@ -1,0 +1,655 @@
+{
+  "id": "nu1110-exam-3-evidence-based-practice",
+  "title": "Evidence-Based Practice",
+  "description": "Class 12 practice: how EBP evolved, its links to other concepts, research basics, the steps of EBP and PICOT questions, and individual and organizational EBP.",
+  "course": "NU1110",
+  "exam": "Exam 3",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "cases": {
+    "delirium": {
+      "intro": "A nurse on a medical unit for older adults is concerned about how many clients develop delirium (sudden confusion) during their hospital stay, and starts an evidence-based practice project.",
+      "tabs": [
+        {
+          "title": "Unit Observations",
+          "html": "<h4>Unit Observations</h4><p><b>Delirium rate:</b> 28% of clients 70 and older developed delirium last quarter. Similar units in the health system average 15%.</p><p><b>Nights:</b> Overhead lights are turned on for vital signs at 0000 and 0400 for every client, as hospital policy requires.</p><p><b>Sensory aids:</b> Clients' glasses and hearing aids are usually kept in their bedside drawers.</p><p><b>Sleep:</b> Sleeping pills are given on request, per provider orders.</p><p><b>Strengths:</b> Families are encouraged to visit, and a large clock and calendar hang in each room.</p>"
+        },
+        {
+          "title": "Sources Found",
+          "html": "<h4>Sources the Nurse Found</h4><ol><li><b>A systematic review and meta-analysis</b> of 14 randomized controlled trials: programs without medication (reorientation, sleep routines, early walking, and glasses and hearing aids in use) reduced new cases of delirium in hospitalized older adults by about a third.</li><li><b>A single randomized controlled trial</b> at one hospital (220 clients): a nighttime quiet routine (dimmed lights, less noise, and care grouped together) reduced delirium compared with usual care.</li><li><b>A qualitative study</b> of 12 family members describing what it was like to watch a parent become delirious.</li><li><b>An opinion article</b> by a hospital executive recommending a sleeping pill for every older adult on admission.</li></ol>"
+        },
+        {
+          "title": "Hospital Policy",
+          "html": "<h4>Hospital Policy NUR-114</h4><p>Vital signs every 4 hours, around the clock, for all clients.</p><p>Sleep medications may be given on the client's request, per provider order.</p>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "ebp-01", "type": "mc", "topic": "Evolution of evidence-based practice",
+      "stem": "A nurse educator is describing how evidence-based practice began in nursing. Which of the following contributions did Florence Nightingale make?",
+      "options": [
+        "She defined evidence-based medicine as the use of current best evidence with clinical expertise.",
+        "She founded a library of systematic reviews of randomized controlled trials.",
+        "She named evidence-based practice one of six core competencies for nurses.",
+        "She collected and analyzed death rates, showing that better sanitation reduced deaths."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>She collected and analyzed death rates</b> is correct. During the Crimean War in the 1850s, Nightingale gathered and analyzed mortality data and showed that sanitation saved lives. Using data to change practice makes her the first nurse researcher.</p><p><b>Defining evidence-based medicine</b> came in the 1990s, from Sackett and colleagues. <b>A library of systematic reviews</b> describes the Cochrane Collaboration, inspired by Archie Cochrane. <b>Six core competencies</b> describes QSEN, in the 2000s.</p><p><b>Takeaway:</b> Evidence-based practice in nursing goes back to Nightingale, who used data to improve care.</p>"
+    },
+    {
+      "id": "ebp-02", "type": "mc", "topic": "Evolution of evidence-based practice",
+      "stem": "A nurse learns that research published several years ago found a better way to prevent a common complication, but most units still use the older method. Which of the following terms describes this situation?",
+      "options": [
+        "The theory-practice gap",
+        "Informed consent",
+        "Benchmarking",
+        "Peer review"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>The theory-practice gap</b> is correct. It's the delay between what research shows and what's actually done in practice. Evidence-based practice aims to close it by moving the best evidence into everyday care.</p><p><b>Informed consent</b> is a research participant's voluntary agreement to take part. <b>Benchmarking</b> compares an organization's outcomes with those of leaders in high-quality care, a quality improvement tool. <b>Peer review</b> is experts evaluating an article before it's published.</p><p><b>Takeaway:</b> When practice lags behind the evidence, that's the theory-practice gap, and EBP is the bridge.</p>"
+    },
+    {
+      "id": "ebp-03", "type": "sata", "topic": "Evolution of evidence-based practice",
+      "stem": "A nurse manager is listening to staff discuss how they decide on care. Which of the following statements reflect evidence-based practice rather than tradition?",
+      "options": [
+        "“We've always done it this way, and it seems to work fine.”",
+        "“We changed our routine after reviewing current studies and asking clients what they prefer.”",
+        "“The charge nurse prefers this method, so that's what we use.”",
+        "“I combine the best evidence with my experience and what the client wants.”",
+        "“Let's check what the latest guideline recommends for this situation.”"
+      ],
+      "answer": [1, 3, 4],
+      "rationale": "<p>Evidence-based practice combines the <b>best current evidence</b>, the nurse's <b>clinical expertise</b>, and the <b>client's preferences</b>. <b>Changing a routine after reviewing studies and asking clients</b>, <b>combining evidence, experience, and the client's wishes</b>, and <b>checking the latest guideline</b> all reflect it.</p><p><b>“We've always done it this way”</b> and <b>“the charge nurse prefers it”</b> are tradition and authority, not evidence. Practices based on tradition can continue long after research shows a better way.</p><p><b>Takeaway:</b> EBP asks “What does the evidence show, and what does this client want?” instead of “How have we always done it?”</p>"
+    },
+    {
+      "id": "ebp-04", "type": "mc", "topic": "Evolution of evidence-based practice",
+      "stem": "A surgical unit still keeps all clients on bed rest for 24 hours after abdominal surgery “because we always have,” although current evidence supports getting clients up and walking early. Which of the following concerns is the most important for the nurse to raise?",
+      "options": [
+        "Nurses on the unit may find the routine less convenient",
+        "Clients may develop complications, such as blood clots and pneumonia, that early walking helps prevent",
+        "The unit may spend more on bed linens",
+        "Clients may ask why other hospitals do things differently"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Preventable complications</b> is correct. The main risk of practicing by tradition instead of evidence is that clients get less effective or even harmful care. Immobility raises the risk of blood clots, pneumonia, and other complications that early walking helps prevent.</p><p><b>Convenience for nurses</b>, <b>linen costs</b>, and <b>clients' questions</b> are minor next to harm to clients, and none of them is the reason EBP matters.</p><p><b>Takeaway:</b> Tradition's biggest risk is client harm: outdated care can cause complications that evidence-based care prevents.</p>"
+    },
+    {
+      "id": "ebp-05", "type": "mc", "topic": "Evolution of evidence-based practice",
+      "stem": "Which of the following actions by a staff nurse best helps close the theory-practice gap on the nurse's unit?",
+      "options": [
+        "Continuing current routines until a supervisor brings up new research",
+        "Changing the unit's shared procedure for the nurse's own clients without telling anyone",
+        "Sharing a current guideline at a staff meeting and asking the practice council to review the procedure",
+        "Leaving research to nurse researchers, since staff nurses don't use it"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Sharing the guideline and asking the practice council to review the procedure</b> is correct. Staff nurses help close the gap between research and practice by bringing current evidence forward and using the facility's process to update practice.</p><p><b>Waiting for a supervisor</b> leaves the gap open. <b>Changing a shared procedure on one's own</b> bypasses policy, which nurses must follow as written until it's changed. <b>Leaving research to researchers</b> is a misperception: every nurse uses evidence, and EBP is part of a staff nurse's accountability.</p><p><b>Takeaway:</b> Every nurse can narrow the theory-practice gap by bringing evidence forward through the proper channels.</p>"
+    },
+    {
+      "id": "ebp-06", "type": "dropdown", "topic": "Evolution of evidence-based practice",
+      "stem": "Complete the following sentence about how evidence-based practice became an expectation for every nurse.",
+      "text": "In the early 2000s, reports from the {{0}} named evidence-based practice a core competency for all health professionals, and {{1}} listed it as one of six competencies for nurses.",
+      "blanks": [
+        { "options": ["American Hospital Association", "Food and Drug Administration", "Institute of Medicine (IOM)", "World Health Organization"], "answer": 2 },
+        { "options": ["Healthy People", "QSEN (Quality and Safety Education for Nurses)", "OSHA", "Medicare"], "answer": 1 }
+      ],
+      "rationale": "<p>The <b>Institute of Medicine (IOM)</b>, in reports such as Crossing the Quality Chasm and Health Professions Education, named EBP a core competency for all health professionals. <b>QSEN</b> then listed EBP as one of six competencies that nursing programs teach, along with patient-centered care, teamwork and collaboration, quality improvement, safety, and informatics.</p><p>The <b>American Hospital Association</b>, the <b>FDA</b>, and the <b>WHO</b> didn't set these competencies. <b>Healthy People</b> sets national health objectives, <b>OSHA</b> covers workplace safety, and <b>Medicare</b> is an insurance program.</p><p><b>Takeaway:</b> EBP went from Nightingale's data to a core competency (IOM, QSEN) expected of every nurse.</p>"
+    },
+    {
+      "id": "ebp-07", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "A nurse is explaining evidence-based practice to a nursing student. Which of the following definitions is the most complete?",
+      "options": [
+        "Combining the best current research with the nurse's clinical expertise and the client's preferences",
+        "Following the results of the most recent research study, whatever the client prefers",
+        "Combining research evidence with the nurse's clinical expertise",
+        "Providing care the way experienced nurses on the unit have always provided it"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Research, clinical expertise, and client preferences</b> is correct. EBP has three components: the best current research evidence, the nurse's clinical expertise, and the client's preferences, which reflect their needs, interests, and choices.</p><p><b>Following the latest study whatever the client prefers</b> leaves out expertise and the client. <b>Research plus expertise</b> leaves out the client's preferences, a common incomplete definition. <b>The way experienced nurses always have</b> is tradition.</p><p><b>Takeaway:</b> If a definition of EBP leaves out the client's preferences, it's incomplete.</p>"
+    },
+    {
+      "id": "ebp-08", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "Strong evidence supports walking soon after surgery. A client who had surgery yesterday declines to walk this afternoon, saying, “I'm too exhausted. Maybe this evening.” Which of the following actions by the nurse reflects evidence-based practice?",
+      "options": [
+        "Insisting that the client walk now, because the evidence for early walking is strong",
+        "Documenting that the client refused, and not bringing up walking again",
+        "Asking about the fatigue, explaining the benefits, and agreeing on a time to walk",
+        "Reporting the client's noncompliance to the provider right away"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Asking about the fatigue, explaining the benefits, and agreeing on a time</b> is correct. EBP integrates the evidence with the nurse's expertise and the client's preferences. The nurse respects the client's choice, teaches, and works out a plan the client accepts, then documents it.</p><p><b>Insisting</b> ignores the client's preferences and autonomy. <b>Dropping the subject</b> gives up on teaching and planning. <b>Reporting noncompliance</b> treats a reasonable request as defiance instead of partnering with the client.</p><p><b>Takeaway:</b> The client's preference is one of EBP's three parts: respect it, teach, and plan together.</p>"
+    },
+    {
+      "id": "ebp-09", "type": "matrix", "topic": "EBP and other concepts",
+      "stem": "For each example, specify the concept that it best links to evidence-based practice.",
+      "rowHeader": "Example",
+      "columns": ["Accountability", "Clinical decision making", "Health, wellness, and illness", "Legal issues", "Quality improvement"],
+      "rows": [
+        "A nurse uses a validated risk tool to choose the best fall-prevention steps for one client.",
+        "A nurse's outdated wound care falls below professional standards, and the client sues.",
+        "A nurse teaches a client who has heart failure evidence-based ways to limit salt at home.",
+        "A unit uses evidence to improve what care it gives, when, and why.",
+        "Nurses who base care on evidence can answer for giving clients the best care."
+      ],
+      "answer": [1, 3, 2, 4, 0],
+      "rationale": "<p><b>Clinical decision making:</b> evidence helps the nurse deliver high-quality care to an individual client. <b>Legal issues:</b> practice that deviates from professional standards creates legal risk. <b>Health, wellness, and illness:</b> evidence guides teaching clients about self-care. <b>Quality improvement:</b> evidence improves the why, when, and what of nursing care. <b>Accountability:</b> EBP lets nurses answer for providing the best care.</p><p><b>Takeaway:</b> EBP touches accountability, decision making, health teaching, legal standards, and quality.</p>"
+    },
+    {
+      "id": "ebp-10", "type": "sata", "topic": "EBP and other concepts",
+      "stem": "A nurse is reviewing who defines the standards of nursing care that evidence-based practice helps shape. Which of the following define standards of nursing care?",
+      "options": [
+        "The American Nurses Association (ANA)",
+        "The National League for Nursing (NLN)",
+        "The Joint Commission",
+        "State nurse practice acts",
+        "Advertisements from medical supply companies",
+        "Individual health care facilities' policies and procedures"
+      ],
+      "answer": [0, 1, 2, 3, 5],
+      "rationale": "<p>Standards of nursing care are defined by the <b>ANA</b>, the <b>NLN</b>, <b>The Joint Commission</b>, <b>state nurse practice acts</b>, and <b>individual health care facilities</b> through their policies and procedures. EBP helps define the current best-practice standards.</p><p><b>Supply company advertisements</b> are marketing, not standards, and the companies have a financial interest in what nurses use.</p><p><b>Takeaway:</b> Standards come from professional organizations, accreditors, state law, and your own facility's policies.</p>"
+    },
+    {
+      "id": "ebp-11", "type": "matrix", "topic": "EBP and other concepts",
+      "stem": "For each project, specify whether it is an example of research, evidence-based practice, or quality improvement.",
+      "rowHeader": "Project",
+      "columns": ["Research", "Evidence-based practice", "Quality improvement"],
+      "rows": [
+        "Applying a published guideline on preventing pressure injuries to the unit's care",
+        "Testing whether a new music program lowers anxiety, with random assignment and review board approval",
+        "Tracking the unit's hand-hygiene rates and changing the process to raise them",
+        "Using a systematic review to update the unit's catheter-care procedure",
+        "Surveying the unit's clients about wait times to fix the unit's discharge process"
+      ],
+      "answer": [1, 0, 2, 1, 2],
+      "rationale": "<p><b>Research</b> generates new knowledge, usually with a formal design and institutional review board (IRB) approval: testing a music program with random assignment. <b>Evidence-based practice</b> applies existing best evidence to practice: a published guideline, a systematic review. <b>Quality improvement</b> uses a unit's or organization's own data to improve its own processes and outcomes: hand-hygiene rates and discharge wait times.</p><p><b>Takeaway:</b> Research creates evidence, EBP uses evidence, and QI uses local data to improve local processes.</p>"
+    },
+    {
+      "id": "ebp-12", "type": "sata", "topic": "EBP and other concepts",
+      "stem": "A nurse manager asks staff why they rarely use research in their practice. Which of the following responses describe barriers to evidence-based practice?",
+      "options": [
+        "“I don't have time to look things up during my shift.”",
+        "“I'm not sure how to tell whether a study is any good.”",
+        "“Our unit has computers with access to nursing databases.”",
+        "“We've always done it this way, and it works.”",
+        "“My manager gives us paid time for journal club.”",
+        "“I don't think research applies to real nursing.”"
+      ],
+      "answer": [0, 1, 3, 5],
+      "rationale": "<p>Barriers to EBP include <b>lack of time and heavy workloads</b>, <b>limited knowledge and skill in evaluating evidence</b>, <b>resistance to change from traditional routines</b>, and <b>misperceptions, or not seeing the value of EBP</b>.</p><p><b>Access to nursing databases</b> and <b>paid time for journal club</b> are supports that help overcome barriers, not barriers.</p><p><b>Takeaway:</b> EBP barriers fall into time, skills, access, support, and attitudes, and each has a matching fix.</p>"
+    },
+    {
+      "id": "ebp-13", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "Staff on a unit say they don't trust “the latest research” and prefer their traditional routine for preventing falls. Which of the following strategies should the nurse manager use first?",
+      "options": [
+        "Order staff to adopt the new practice starting tomorrow",
+        "Share the unit's own fall data along with the evidence, and involve staff in planning the change",
+        "Wait until every staff member agrees before discussing the evidence",
+        "Hire new nurses who already use evidence-based practice"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Sharing the unit's data with the evidence and involving staff</b> is correct. Resistance to change and not valuing EBP are attitude barriers. Seeing their own unit's outcomes makes the problem real, and involving staff early builds ownership of the change.</p><p><b>Ordering an immediate change</b> usually deepens resistance. <b>Waiting for everyone to agree</b> stalls the change while clients keep falling. <b>Hiring new nurses</b> doesn't address the current staff or the unit's culture.</p><p><b>Takeaway:</b> Overcome resistance with data and involvement, not orders.</p>"
+    },
+    {
+      "id": "ebp-14", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "A nurse reads research showing that units with more nurses per client have fewer client deaths and complications. Which of the following statements describes how this evidence relates to staffing?",
+      "options": [
+        "It can guide decisions about safe staffing levels, because it links staffing to client outcomes.",
+        "It doesn't apply to staffing, because staffing is only a budget decision.",
+        "It means every unit must hire more nurses immediately, whatever its clients need.",
+        "It applies only to research hospitals, not to community hospitals."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>It can guide safe staffing decisions</b> is correct. EBP relates to staffing because evidence shows that nurse staffing affects client safety and outcomes, so leaders can use it, together with their own data and their clients' needs, to plan safe staffing.</p><p><b>Only a budget decision</b> ignores the evidence linking staffing to outcomes. <b>Every unit must hire more immediately</b> overstates it: evidence informs decisions alongside each unit's needs. <b>Only research hospitals</b> is wrong: evidence from many settings can apply broadly when it fits the clients.</p><p><b>Takeaway:</b> Evidence about staffing and outcomes is part of how organizations decide what safe staffing is.</p>"
+    },
+    {
+      "id": "ebp-15", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "Which of the following statements describes the role of accrediting organizations, such as The Joint Commission, in evidence-based practice?",
+      "options": [
+        "They write each hospital's procedures for its nurses to follow.",
+        "They conduct most of the nursing research that hospitals use.",
+        "They license individual nurses to practice.",
+        "They set evidence-based standards that organizations must meet, which pushes facilities to use current evidence."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>They set evidence-based standards that organizations must meet</b> is correct. Reputable accreditors base their standards on evidence, and organizations must show they meet them, which drives facilities to keep their practice current.</p><p><b>Each hospital writes its own procedures</b>, guided by those standards. <b>Most research</b> is done by researchers at universities, agencies, and health systems, not by accreditors. <b>Licensing nurses</b> is the state board of nursing's job.</p><p><b>Takeaway:</b> Accreditors raise the floor for practice by tying their standards to the evidence.</p>"
+    },
+    {
+      "id": "ebp-16", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "A unit adopts a structured, evidence-based handoff tool for shift change. Which of the following outcomes is the main reason for this change?",
+      "options": [
+        "Fewer communication errors and gaps in care, which improves client safety",
+        "Shorter shifts for the nurses on the unit",
+        "Less need to document care in the medical record",
+        "Fewer clients admitted to the unit each week"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Fewer communication errors, which improves safety</b> is correct. EBP relates to communication and safety: evidence shows that structured handoffs keep information from being lost between caregivers, which keeps care continuous across the team.</p><p>A handoff tool doesn't <b>shorten shifts</b>, replace <b>documentation</b>, or change <b>admissions</b>.</p><p><b>Takeaway:</b> Evidence-based communication tools make care safer by keeping information intact between caregivers.</p>"
+    },
+    {
+      "id": "ebp-17", "type": "sata", "topic": "EBP and other concepts",
+      "stem": "A nurse is explaining why evidence-based practice matters for the nursing profession and for clients. Which of the following statements should the nurse include?",
+      "options": [
+        "“It helps ensure the credibility of the nursing profession.”",
+        "“It guarantees that every client will recover.”",
+        "“It provides accountability for the care nurses give.”",
+        "“It means nurses no longer need to follow facility policies.”",
+        "“It helps define current best-practice standards of care.”"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Using EBP helps <b>ensure the credibility of the profession</b>, <b>provides accountability for nursing care</b>, and <b>defines current best-practice standards</b>.</p><p>No approach <b>guarantees recovery</b>; evidence improves the odds of good outcomes. EBP doesn't replace <b>facility policies</b>: nurses follow policies as written, and use the facility's process to change them when the evidence supports it.</p><p><b>Takeaway:</b> EBP builds credibility, accountability, and standards, and it works through policy, not around it.</p>"
+    },
+    {
+      "id": "ebp-18", "type": "mc", "topic": "Research methodology",
+      "stem": "A nurse researcher is planning several studies. Which of the following research questions calls for a qualitative design?",
+      "options": [
+        "Does a daily walking program lower blood pressure more than usual care?",
+        "What is it like for family members to care for a parent who has dementia at home?",
+        "How many clients on the unit develop pressure injuries each month?",
+        "Is there a relationship between hours of sleep and pain scores after surgery?"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>What it's like to care for a parent who has dementia</b> is correct. Qualitative research explores experiences, meanings, and perceptions, using words from interviews, focus groups, and observation.</p><p><b>Does walking lower blood pressure</b> tests an intervention: an experimental, quantitative design. <b>How many clients develop pressure injuries</b> counts: descriptive and quantitative. <b>A relationship between sleep and pain scores</b> uses numbers to find a correlation: quantitative.</p><p><b>Takeaway:</b> “What is it like…?” points to qualitative research; “Does…?”, “How many…?”, and “Is there a relationship…?” point to quantitative research.</p>"
+    },
+    {
+      "id": "ebp-19", "type": "matrix", "topic": "Research methodology",
+      "stem": "For each feature, specify whether it is typical of quantitative or qualitative research.",
+      "rowHeader": "Feature",
+      "columns": ["Quantitative", "Qualitative"],
+      "rows": [
+        "Data are numbers, such as blood pressure readings and pain scores",
+        "Data are words from interviews and observations",
+        "The researcher keeps interviewing participants until no new themes appear",
+        "A large sample, often randomly selected",
+        "Tests a hypothesis about cause and effect",
+        "A small sample, chosen on purpose because they have lived the experience"
+      ],
+      "answer": [0, 1, 1, 0, 0, 1],
+      "rationale": "<p><b>Quantitative</b> research uses numbers (measurements, scores, statistics), larger and often random samples, and an objective, controlled approach to test hypotheses and find cause-and-effect relationships.</p><p><b>Qualitative</b> research uses words (interviews, focus groups, observation) and smaller, purposeful samples of people who have lived the experience, and it collects data until no new themes appear, which is called saturation.</p><p><b>Takeaway:</b> Quantitative research counts and tests; qualitative research listens and describes.</p>"
+    },
+    {
+      "id": "ebp-20", "type": "dropdown", "topic": "Research methodology",
+      "stem": "A study tests whether a daily walking program lowers blood pressure in older adults. Complete the following sentence.",
+      "text": "In this study, the walking program is the {{0}} variable, and blood pressure is the {{1}} variable.",
+      "blanks": [
+        { "options": ["dependent", "independent", "confounding", "control"], "answer": 1 },
+        { "options": ["independent", "control", "dependent", "random"], "answer": 2 }
+      ],
+      "rationale": "<p>The <b>independent</b> variable is what the researcher changes or manipulates, the intervention or “cause”: the walking program. The <b>dependent</b> variable is what's measured, the outcome that depends on it: blood pressure.</p><p>A <b>confounding</b> variable is an outside factor that could distort the results. <b>Control</b> describes a comparison group, and <b>random</b> describes how participants are assigned; neither names these variables.</p><p><b>Takeaway:</b> Independent is what I change; dependent is the data I measure.</p>"
+    },
+    {
+      "id": "ebp-21", "type": "matrix", "topic": "Research methodology",
+      "stem": "A nurse is evaluating measurement tools used in research. For each description, specify whether it describes reliability or validity.",
+      "rowHeader": "Description",
+      "columns": ["Reliability", "Validity"],
+      "rows": [
+        "Two nurses who use a pain scale on the same client at the same time get the same score.",
+        "A questionnaire meant to measure depression really measures depression, not anxiety.",
+        "A thermometer gives the same reading three times in a row on the same client.",
+        "A fall-risk tool correctly identifies the clients who go on to fall."
+      ],
+      "answer": [0, 1, 0, 1],
+      "rationale": "<p><b>Reliability</b> is consistency: the tool gives the same results when it's used again, or by different people, under the same conditions, like the pain scale and the thermometer.</p><p><b>Validity</b> is accuracy: the tool measures what it claims to measure, like the depression questionnaire and a fall-risk tool that identifies the clients who fall.</p><p><b>Takeaway:</b> Reliability means repeatable; validity means it truly measures what it should.</p>"
+    },
+    {
+      "id": "ebp-22", "type": "mc", "topic": "Research methodology",
+      "stem": "In a study of a new mouthwash to prevent mouth sores during chemotherapy, one group of clients uses the mouthwash and another group receives usual mouth care. Which of the following statements describes the purpose of the usual-care group?",
+      "options": [
+        "It gives the researchers a comparison, so they can tell whether the mouthwash made the difference.",
+        "It lets the researchers give the mouthwash to more clients.",
+        "It makes the study qualitative instead of quantitative.",
+        "It protects the clients' confidentiality."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>It gives a comparison</b> is correct. The control group gets usual care or no intervention. Comparing it with the group that got the intervention shows whether the intervention caused the difference in outcomes.</p><p>A control group means <b>fewer</b> clients get the new mouthwash, not more. It doesn't make a study <b>qualitative</b>; controlled comparisons are quantitative. <b>Confidentiality</b> is protected by how data are handled, not by group assignment.</p><p><b>Takeaway:</b> Without a comparison group, you can't tell whether the intervention worked.</p>"
+    },
+    {
+      "id": "ebp-23", "type": "mc", "topic": "Research methodology",
+      "stem": "Which of the following features makes a study a randomized controlled trial?",
+      "options": [
+        "The researcher interviews participants about their experiences.",
+        "The researcher observes and describes a group without changing anything.",
+        "Participants are randomly assigned to receive the intervention or usual care.",
+        "The researcher compares outcomes before and after a change, without a comparison group."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Random assignment to the intervention or usual care</b> is correct. A randomized controlled trial (RCT) has three features: the researcher manipulates an intervention, there's a control group, and participants are randomly assigned, so each has an equal chance of being in either group, which reduces bias.</p><p><b>Interviews about experiences</b> describe qualitative research. <b>Observing without changing anything</b> describes a non-experimental, descriptive design. <b>Before and after without a comparison group</b> is quasi-experimental.</p><p><b>Takeaway:</b> An RCT has an intervention, a control group, and random assignment.</p>"
+    },
+    {
+      "id": "ebp-24", "type": "mc", "topic": "Research methodology",
+      "stem": "A nurse compares the unit's fall rates for 6 months before and 6 months after starting hourly rounding. There is no comparison unit, and clients weren't randomly assigned. Which of the following designs is this?",
+      "options": [
+        "A randomized controlled trial",
+        "A qualitative study",
+        "A systematic review",
+        "A quasi-experimental study"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>A quasi-experimental study</b> is correct. The nurse made a change (hourly rounding) and measured its effect, but without random assignment or a separate control group, which makes it quasi-experimental.</p><p>A <b>randomized controlled trial</b> needs random assignment and a control group. A <b>qualitative study</b> explores experiences in words. A <b>systematic review</b> summarizes many existing studies on one question.</p><p><b>Takeaway:</b> An intervention without randomization or a control group is quasi-experimental, which is weaker evidence than an RCT.</p>"
+    },
+    {
+      "id": "ebp-25", "type": "sata", "topic": "Research methodology",
+      "stem": "A nurse is searching the literature for evidence. Which of the following are primary sources?",
+      "options": [
+        "A textbook chapter that summarizes many studies on wound care",
+        "A journal article written by the researchers who conducted the study",
+        "A news story describing a recent study",
+        "A thesis in which a nurse researcher reports their own original study",
+        "A magazine article in which one author describes another author's work"
+      ],
+      "answer": [1, 3],
+      "rationale": "<p>A <b>primary source</b> is the original report of a study by the people who did it: <b>a journal article by the researchers</b> and <b>a thesis reporting the researcher's own study</b>.</p><p>A <b>secondary source</b> is one author writing about another author's work: <b>a textbook chapter summarizing studies</b>, <b>a news story about a study</b>, and <b>a magazine article describing another author's work</b>. They're useful for background, but details can be lost or changed in the retelling.</p><p><b>Takeaway:</b> A primary source is the original study by its researchers; a secondary source is someone else's summary.</p>"
+    },
+    {
+      "id": "ebp-26", "type": "mc", "topic": "Research methodology",
+      "stem": "A nurse wants to understand how clients feel about living with a new ostomy, to improve the unit's teaching. Which of the following types of evidence best answers this question?",
+      "options": [
+        "A randomized controlled trial comparing two brands of ostomy pouches",
+        "A cohort study of infection rates after ostomy surgery",
+        "Qualitative studies in which clients describe living with an ostomy",
+        "An expert's opinion on which ostomy supplies to buy"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Qualitative studies of clients' experiences</b> is correct. Qualitative studies sit lower on the hierarchy of evidence for whether an intervention works, but they're the best evidence for questions about meaning and experience, which is what this question asks.</p><p><b>A trial of pouch brands</b> and <b>a cohort study of infection rates</b> answer different questions, about effectiveness and risk. <b>Expert opinion</b> is the weakest level of evidence, and it doesn't capture clients' own views.</p><p><b>Takeaway:</b> Match the evidence to the question: for “What is it like?”, qualitative studies are the best evidence.</p>"
+    },
+    {
+      "id": "ebp-27", "type": "sata", "topic": "Research methodology",
+      "stem": "A nurse is helping recruit clients for a research study on the unit. Which of the following actions protect the participants' rights?",
+      "options": [
+        "Explaining that taking part is voluntary",
+        "Telling clients they may leave the study at any time without losing any care",
+        "Confirming that an institutional review board (IRB) approved the study",
+        "Listing participants' names in the unit newsletter to thank them",
+        "Promising participants that the new treatment will work",
+        "Keeping each participant's data confidential"
+      ],
+      "answer": [0, 1, 2, 5],
+      "rationale": "<p>Research ethics protect participants through <b>voluntary participation</b>, <b>the right to withdraw at any time</b> without penalty, <b>approval by an institutional review board (IRB)</b>, and <b>confidentiality</b> of their data. These rest on respect for persons, beneficence, and justice.</p><p><b>Publishing participants' names</b> breaks confidentiality. <b>Promising that a treatment will work</b> is dishonest and undermines informed consent; the study exists because the answer isn't known yet.</p><p><b>Takeaway:</b> Participants must be informed, take part voluntarily, be free to withdraw, be in an IRB-approved study, and have their data kept confidential.</p>"
+    },
+    {
+      "id": "ebp-28", "type": "mc", "topic": "Research methodology",
+      "stem": "A nurse is appraising a study showing that a new wound dressing heals wounds faster. The company that makes the dressing paid for the study, and its own employees analyzed the data. Which of the following conclusions should the nurse draw?",
+      "options": [
+        "The results must be accurate, since the company knows its product best.",
+        "The study should be ignored completely, because companies can't do research.",
+        "The funding source doesn't matter once a study is published.",
+        "The possible conflict of interest calls for caution and a search for independent studies."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Caution and a search for independent studies</b> is correct. Appraising evidence includes judging its credibility, and a sponsor that analyzes data about its own product has a conflict of interest that could bias the results. Independent studies that find the same thing would make the evidence more trustworthy.</p><p><b>Accepting the results because the company knows the product</b> ignores the bias. <b>Ignoring the study completely</b> overcorrects: industry-funded studies can be valid, but they need scrutiny. <b>Publication alone</b> doesn't remove bias.</p><p><b>Takeaway:</b> When appraising a study, ask who paid for it and who analyzed the data.</p>"
+    },
+    {
+      "id": "ebp-29", "type": "order", "topic": "Research methodology",
+      "stem": "A nurse researcher is planning a study. Place the steps of the research process in order.",
+      "items": [
+        "Identify the problem or research question",
+        "Review the literature",
+        "Write the hypothesis and define the variables",
+        "Choose the design, sample, and methods",
+        "Collect and analyze the data",
+        "Interpret and share the findings"
+      ],
+      "rationale": "<p>The research process moves from <b>identifying the problem</b>, to <b>reviewing the literature</b> to learn what's already known, to <b>writing a hypothesis and defining the variables</b>, to <b>choosing the design, sample, and methods</b>, to <b>collecting and analyzing data</b>, and finally to <b>interpreting and sharing (disseminating) the findings</b> so others can use them.</p><p><b>Takeaway:</b> Know the question and the literature before planning the study, and share the results at the end so they can become evidence.</p>"
+    },
+    {
+      "id": "ebp-30", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse is choosing articles to support a practice change. Which of the following features increases confidence in an article's quality?",
+      "options": [
+        "It was reviewed by experts in the field before it was published.",
+        "It was shared widely on social media.",
+        "It was written in plain, easy-to-read language.",
+        "It was published on the website of a company that sells the product."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Reviewed by experts before publication</b> is correct. In peer review, experts evaluate an article's methods and conclusions before a journal publishes it, which helps screen out weak or biased work. Every source should still be judged for credibility.</p><p><b>Social media shares</b> measure popularity, not quality. <b>Plain language</b> helps readers but says nothing about the quality of the study. <b>A company that sells the product</b> has a conflict of interest.</p><p><b>Takeaway:</b> Look for peer-reviewed sources, and judge every source for credibility.</p>"
+    },
+    {
+      "id": "ebp-31", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse writes this question: “In adults who have type 2 diabetes, does a text-message reminder program, compared with printed instructions, improve medication adherence over 3 months?” Which part of the question is the outcome (O)?",
+      "options": [
+        "Adults who have type 2 diabetes",
+        "Improved medication adherence",
+        "Printed instructions",
+        "Over 3 months"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Improved medication adherence</b> is correct. The outcome is the result being measured. In this PICOT question, P = adults who have type 2 diabetes, I = a text-message reminder program, C = printed instructions, O = medication adherence, and T = over 3 months.</p><p><b>Adults who have type 2 diabetes</b> is the population, <b>printed instructions</b> is the comparison (the alternative to the intervention), and <b>over 3 months</b> is the time.</p><p><b>Takeaway:</b> The outcome is what you measure; the comparison is the alternative to the intervention.</p>"
+    },
+    {
+      "id": "ebp-32", "type": "matrix", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse is leading an evidence-based practice project to improve pain control after knee replacement. For each activity, specify the step of the evidence-based practice process.",
+      "rowHeader": "Activity",
+      "columns": ["Assess", "Ask", "Acquire", "Appraise", "Apply", "Evaluate"],
+      "rows": [
+        "Searches CINAHL and MEDLINE for studies on cold therapy after knee surgery",
+        "Notices that clients' pain scores after knee replacement are higher than the hospital's goal",
+        "Compares pain scores for 3 months after the change with the scores from before",
+        "Writes a focused question in PICOT format",
+        "Starts the new cold-therapy routine, combining the evidence with clients' preferences",
+        "Judges each study's quality and whether its participants resemble the unit's clients"
+      ],
+      "answer": [2, 0, 5, 1, 4, 3],
+      "rationale": "<p>The EBP process starts with the client: <b>Assess</b> (notice the clinical problem: high pain scores), <b>Ask</b> (write a focused PICOT question), <b>Acquire</b> (search credible databases such as CINAHL and MEDLINE), <b>Appraise</b> (judge quality, validity, and fit with the unit's clients), <b>Apply</b> (put the evidence into practice with clinical expertise and client preferences), and <b>Evaluate</b> (compare outcomes after the change with the baseline).</p><p><b>Takeaway:</b> Assess, Ask, Acquire, Appraise, Apply, Evaluate. The textbook's four steps (ask, retrieve, appraise, apply and evaluate) follow the same order.</p>"
+    },
+    {
+      "id": "ebp-33", "type": "sata", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse is looking for credible evidence about preventing falls in older adults. Which of the following sources should the nurse use?",
+      "options": [
+        "The CINAHL database of nursing and health literature",
+        "A personal blog about home remedies",
+        "The Cochrane Library of systematic reviews",
+        "A video posted by a celebrity on social media",
+        "A clinical practice guideline from a professional organization"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Credible sources include databases such as <b>CINAHL</b> (and MEDLINE or PubMed), the <b>Cochrane Library</b> of systematic reviews, and <b>clinical practice guidelines</b> from professional organizations and agencies. Nursing databases may give abstracts or full text, and many offer tutorials.</p><p><b>A personal blog</b> and <b>a celebrity's video</b> aren't peer-reviewed and often aren't based on research. Every source should be judged for credibility.</p><p><b>Takeaway:</b> Acquire evidence from peer-reviewed databases, systematic reviews, and professional guidelines.</p>"
+    },
+    {
+      "id": "ebp-34", "type": "sata", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse is reviewing journal articles for an evidence-based practice project. Which of the following should the nurse look for in each article?",
+      "options": [
+        "An overview of the study, including how it was done",
+        "The number of times the article was shared online",
+        "A conclusion based on the study's results",
+        "Relevant references to other research",
+        "Whether the author's opinion matches the nurse's own"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>In a literature review, nurses look for the article's scientific elements: <b>an overview of the study, including its methodology</b>, <b>a written conclusion based on the study's results</b>, and <b>relevant references</b>. These show whether the study can be judged and trusted.</p><p><b>Online shares</b> measure popularity, not quality. <b>Agreeing with the nurse's opinion</b> isn't a standard of evidence; looking only for agreement is bias.</p><p><b>Takeaway:</b> Judge an article by its methods, its results-based conclusion, and its references, not by its popularity or whether you agree with it.</p>"
+    },
+    {
+      "id": "ebp-35", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A unit has started a new evidence-based routine. Before judging the results, the team checks whether nurses on every shift are carrying out the routine the way it was designed. Which of the following statements explains why?",
+      "options": [
+        "Checking how the routine is carried out replaces the need to measure client outcomes.",
+        "If the routine isn't carried out as intended, the results can't show whether the routine itself works.",
+        "Nurses who don't follow the routine exactly must be disciplined.",
+        "The routine can be changed only if every nurse agrees to it."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>If the routine isn't carried out as intended, the results can't show whether it works</b> is correct. Evaluating a practice change begins at implementation: the team monitors that the change is carried out as intended, then analyzes the outcome data. Poor results from a routine that wasn't followed say nothing about the routine itself.</p><p>Monitoring the process doesn't <b>replace measuring outcomes</b>; both are needed. The purpose is improvement, not <b>discipline</b>. A change doesn't need <b>every nurse's agreement</b>; it goes through the organization's process.</p><p><b>Takeaway:</b> Check that a change was actually carried out as designed before you judge whether it worked.</p>"
+    },
+    {
+      "id": "ebp-36", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A unit tried a new routine for reassessing pain 1 hour after pain medication. After 3 months, clients' satisfaction with pain control rose on the day shift, but night-shift nurses often missed the reassessments. Which of the following actions should the team take?",
+      "options": [
+        "Reject the routine, since it didn't work on every shift",
+        "Accept the routine unchanged and spread it to every unit",
+        "Modify the routine for the night shift and keep monitoring the results",
+        "Stop collecting data, since satisfaction already improved"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Modify the routine for nights and keep monitoring</b> is correct. After evaluating a change, the team can accept, reject, or modify it. The routine helped when it was carried out, so the problem is how it fits the night shift, which calls for changing the process and then monitoring again.</p><p><b>Rejecting it</b> throws away a practice that worked. <b>Spreading it unchanged</b> carries the night-shift problem to every unit. <b>Stopping data collection</b> ends evaluation before the problem is fixed.</p><p><b>Takeaway:</b> Evaluation leads to accepting, rejecting, or modifying the change, and then the cycle continues.</p>"
+    },
+    {
+      "id": "ebp-37", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse wants to find evidence on reducing anxiety in children having blood drawn. Which of the following questions is written in a focused, searchable PICOT format?",
+      "options": [
+        "“What do pediatric nurses believe is the best way to calm children during blood draws?”",
+        "“In school-age children having blood drawn, does a distraction toy, compared with no distraction, lower anxiety scores during the procedure?”",
+        "“Is a distraction toy a good idea, and should every hospital buy them for children?”",
+        "“How do children of all ages feel about needles and medical procedures in general?”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>The question with all five parts</b> is correct: P = school-age children having blood drawn, I = a distraction toy, C = no distraction, O = anxiety scores, T = during the procedure. A focused PICOT question is specific and searchable.</p><p><b>What nurses believe</b> asks for opinion, not evidence about an intervention. <b>Is it a good idea, and should every hospital buy them</b> is vague and asks two questions at once. <b>How children feel about needles in general</b> is too broad to search well.</p><p><b>Takeaway:</b> A good clinical question names the population, intervention, comparison, outcome, and time.</p>"
+    },
+    {
+      "id": "ebp-38", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A 3-month pilot of a new oral-care routine lowered pneumonia rates on one unit, with no new problems found. Which of the following steps should come next to make the routine part of everyday care?",
+      "options": [
+        "Ask each nurse to decide whether to use the routine",
+        "Work with management to revise the facility's policy and procedure to include the routine",
+        "End the routine, since the pilot is over",
+        "Keep the routine on the pilot unit only, without telling other units"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Revising the facility's policy and procedure with management</b> is correct. If a change is beneficial, the team works with management to update the facility's policies and procedures, so the change becomes part of the nursing routine.</p><p><b>Leaving it to each nurse</b> makes care inconsistent. <b>Ending it</b> throws away a change that worked. <b>Keeping it on one unit in silence</b> withholds a benefit from other clients; successful methods should be shared.</p><p><b>Takeaway:</b> A successful pilot becomes routine through the facility's policies and procedures.</p>"
+    },
+    {
+      "id": "ebp-39", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "Which of the following is an example of individual evidence-based practice?",
+      "options": [
+        "A hospital's practice council updates the policy on preventing falls.",
+        "A health system adopts a new sepsis screening protocol in every emergency department.",
+        "A nurse uses a current guideline to teach assigned clients heart failure self-care, within unit policy.",
+        "Nursing leadership funds a new evidence-based practice fellowship."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>A nurse using a current guideline with assigned clients, within policy</b> is correct. Individual EBP is a single nurse at the point of care: asking questions about their own practice, reading, and applying evidence to their own clients within current policy.</p><p><b>A council updating policy</b>, <b>a system-wide protocol</b>, and <b>leadership funding a fellowship</b> are organizational EBP: changes and resources at the level of the unit, facility, or system.</p><p><b>Takeaway:</b> Individual EBP is one nurse, their own clients, within policy; organizational EBP is system-wide change.</p>"
+    },
+    {
+      "id": "ebp-40", "type": "sata", "topic": "Individual and organizational EBP",
+      "stem": "A hospital wants to build evidence-based practice across the organization. Which of the following should it put in place?",
+      "options": [
+        "Leadership support and a culture that encourages questions",
+        "Funding and protected time for EBP projects",
+        "A rule that each nurse changes procedures alone whenever they find a new study",
+        "An EBP council that includes nurse researchers and librarians",
+        "Access to databases and references at the point of care"
+      ],
+      "answer": [0, 1, 3, 4],
+      "rationale": "<p>Organizational EBP needs <b>leadership support and a culture of inquiry</b>, <b>resources such as funding and protected time</b>, <b>people with expertise</b> such as an EBP council, nurse researchers, librarians, and mentors, and <b>access to evidence</b> where care happens. These turn evidence into standardized, lasting change.</p><p><b>Each nurse changing procedures alone</b> creates inconsistent care and bypasses policy; changes go through the organization's process.</p><p><b>Takeaway:</b> Organizations sustain EBP with leadership, resources, expert support, and access to evidence.</p>"
+    },
+    {
+      "id": "ebp-41", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "A hospital's evidence-based practice council uses the Iowa Model to guide its practice changes. Which of the following statements describes the purpose of a formal EBP model like this one?",
+      "options": [
+        "It replaces the need for nurses to read research.",
+        "It lets each nurse change unit procedures independently.",
+        "It is a law that every hospital must follow.",
+        "It gives a step-by-step structure for making practice changes across the organization."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>A step-by-step structure for organization-wide change</b> is correct. Formal EBP models, such as the Iowa Model, the Johns Hopkins model, ACE Star, and Stetler, guide an organization through identifying a problem, finding and appraising evidence, piloting a change, and spreading it through policies and protocols.</p><p>A model doesn't <b>replace reading research</b>; it organizes how evidence is used. It doesn't let <b>individual nurses change procedures independently</b>; changes go through the organization's process. It's a framework, not a <b>law</b>.</p><p><b>Takeaway:</b> A formal EBP model is the organization's roadmap for evidence-based change.</p>"
+    },
+    {
+      "id": "ebp-42", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "A nurse is comparing individual and organizational evidence-based practice. Which of the following statements is accurate?",
+      "options": [
+        "Individual EBP is quicker and specific to one client; organizational EBP takes longer but standardizes care and has a larger, lasting impact.",
+        "Individual EBP changes the facility's policy manual, while organizational EBP affects the care of only one client at a time.",
+        "Individual EBP depends on leadership support and funding, while organizational EBP needs only one interested nurse.",
+        "Individual and organizational EBP are the same process and differ only in which department pays for the work."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Individual EBP is quicker and client-specific; organizational EBP takes longer but standardizes care with a larger, lasting impact</b> is correct. Individual EBP is one nurse applying evidence to their own clients within current policy. Organizational EBP involves leaders, councils, and committees changing policies and protocols across a unit or system, and it lasts.</p><p>The second and third options <b>swap the two levels</b>: organizational EBP changes the policy manual and needs leadership support, funding, and resources. <b>Only who pays</b> ignores the real differences in scope and process.</p><p><b>Takeaway:</b> Individual EBP is fast and personal; organizational EBP is slower, standardized, and bigger.</p>"
+    },
+    {
+      "id": "ebp-43", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "A staff nurse wants to encourage coworkers to use evidence in their practice. Which of the following actions is the most effective?",
+      "options": [
+        "Telling coworkers they're wrong whenever they follow routine practices",
+        "Waiting for the nurse manager to bring up evidence-based practice",
+        "Starting a monthly unit journal club that discusses a current article",
+        "Changing the unit's shared procedures on their own when they find a new study"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>A monthly journal club</b> is correct. Journal clubs build skill in reading and appraising research, make evidence part of the unit's culture, and help overcome attitude barriers such as misperceptions and low confidence.</p><p><b>Criticizing coworkers</b> creates resistance. <b>Waiting for the manager</b> leaves the theory-practice gap open. <b>Changing shared procedures alone</b> bypasses policy; changes go through the facility's process.</p><p><b>Takeaway:</b> Staff nurses spread EBP by building skills and culture, like journal clubs, not by going around policy.</p>"
+    },
+    {
+      "id": "ebp-44", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "A hospital plans to introduce an evidence-based routine for giving handoff report at the bedside. Why should it pilot the routine on one or two units before using it everywhere?",
+      "options": [
+        "To avoid having to measure any results",
+        "Because evidence-based changes are never used hospital-wide",
+        "So the units that don't take part can keep their own procedures permanently",
+        "To test the change on a small scale, find problems, and measure results before spreading it"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Testing small, finding problems, and measuring results before spreading</b> is correct. Pilot testing is part of organizational EBP: it shows whether the change works in this setting and lets the team fix problems before a facility-wide rollout.</p><p>A pilot exists <b>to measure</b> results, not to avoid measuring them. Successful changes <b>are</b> spread hospital-wide, through policy. Other units don't keep <b>their own procedures permanently</b>; once the change proves itself, it becomes the standard.</p><p><b>Takeaway:</b> Pilot it small, measure it, fix it, then spread it.</p>"
+    },
+    {
+      "id": "ebp-45", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "Which of the following recognitions requires a hospital to show that evidence-based practice is built into the organization?",
+      "options": [
+        "Healthy People 2030",
+        "A state nursing license",
+        "Medicare Part A eligibility",
+        "Magnet recognition from the American Nurses Credentialing Center"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Magnet recognition</b> is correct. The American Nurses Credentialing Center's Magnet program recognizes nursing excellence, and it requires the organization to show that evidence-based practice and research are part of its nursing practice. Organizational EBP supports Magnet status.</p><p><b>Healthy People 2030</b> sets national health objectives. <b>A state nursing license</b> lets an individual practice. <b>Medicare Part A</b> is hospital insurance coverage for clients.</p><p><b>Takeaway:</b> Magnet status signals a hospital culture of nursing excellence, including evidence-based practice.</p>"
+    },
+    {
+      "id": "ebp-46", "type": "highlight", "case": "delirium", "topic": "Steps of evidence-based practice",
+      "stem": "Click to highlight the findings from the unit observations that suggest a practice problem the nurse should address.",
+      "passage": "[[28% of clients 70 and older developed delirium, compared with 15% on similar units]].<br>[[Overhead lights are turned on for vital signs at 0000 and 0400 for every client]].<br>[[Glasses and hearing aids are usually kept in bedside drawers]].<br>[[Sleeping pills are given on request]].<br>[[Families are encouraged to visit]].<br>[[A large clock and calendar hang in each room]].",
+      "answer": [0, 1, 2, 3],
+      "rationale": "<p>The cues of a practice problem are <b>a delirium rate nearly double</b> that of similar units, <b>lights on for every client at 0000 and 0400</b> (broken sleep), <b>glasses and hearing aids left in drawers</b> (sensory deprivation, which raises confusion), and <b>sleeping pills on request</b> (sedating medications raise the risk of delirium in older adults).</p><p><b>Family visits</b> and <b>a clock and calendar</b> help orient clients; they're strengths to keep.</p><p><b>Takeaway:</b> EBP starts with assessing: compare your data with a benchmark, and look at current routines for the cause.</p>"
+    },
+    {
+      "id": "ebp-47", "type": "dropdown", "case": "delirium", "topic": "Steps of evidence-based practice",
+      "stem": "The nurse writes a PICOT question to guide the search. Complete the question.",
+      "text": "In {{0}}, does {{1}}, compared with {{2}}, reduce {{3}} during the hospital stay?",
+      "blanks": [
+        { "options": ["nurses on the medical unit", "hospitalized adults 70 and older", "all adults in the community", "family members of older adults"], "answer": 1 },
+        { "options": ["a routine of reorientation, sleep, walking, and sensory aids, without medication", "a sleeping pill for every client at bedtime", "more vital-sign checks at night", "a larger calendar in each room"], "answer": 0 },
+        { "options": ["no hospital stay", "a sleeping pill on request", "usual care", "family visits"], "answer": 2 },
+        { "options": ["the unit's costs", "nurses' overtime", "the number of visitors", "new cases of delirium"], "answer": 3 }
+      ],
+      "rationale": "<p>A useful PICOT question for this problem: <b>P</b> = hospitalized adults 70 and older; <b>I</b> = a routine of reorientation, sleep, walking, and sensory aids, without medication; <b>C</b> = usual care; <b>O</b> = new cases of delirium; <b>T</b> = during the hospital stay.</p><p><b>Nurses</b> and <b>family members</b> aren't the clients at risk, and <b>all adults in the community</b> is the wrong population. <b>Sleeping pills</b> and <b>more night checks</b> add risk instead of testing a solution, and <b>a bigger calendar</b> is too small to be the intervention. <b>Usual care</b> is the natural comparison. <b>Costs</b>, <b>overtime</b>, and <b>visitors</b> aren't the client outcome the nurse is worried about.</p><p><b>Takeaway:</b> Build the PICOT question from the assessed problem: the clients at risk, the intervention, usual care, and the outcome you want to change.</p>"
+    },
+    {
+      "id": "ebp-48", "type": "order", "case": "delirium", "topic": "Research methodology",
+      "stem": "Place the four sources the nurse found in order, from the strongest to the weakest evidence about whether a program reduces delirium.",
+      "items": [
+        "The systematic review and meta-analysis of 14 randomized controlled trials",
+        "The single randomized controlled trial at one hospital",
+        "The qualitative study of family members' experiences",
+        "The opinion article by a hospital executive"
+      ],
+      "rationale": "<p>In the hierarchy of evidence for whether an intervention works, <b>a systematic review and meta-analysis of randomized controlled trials</b> is strongest (Level I), <b>a single well-designed RCT</b> is next (Level II), <b>a single qualitative study</b> is lower (Level VI), and <b>expert opinion</b> is weakest (Level VII).</p><p>The qualitative study is still valuable: it's the best evidence about what families experience, just not about whether the program works.</p><p><b>Takeaway:</b> For “Does it work?”, a meta-analysis of RCTs is strongest and opinion is weakest.</p>"
+    },
+    {
+      "id": "ebp-49", "type": "matrix", "case": "delirium", "topic": "Individual and organizational EBP",
+      "stem": "Until the hospital's policy changes, the nurse wants to use the evidence with assigned clients. For each potential action, specify whether it is indicated or not indicated.",
+      "rowHeader": "Potential action",
+      "columns": ["Indicated", "Not Indicated"],
+      "rows": [
+        "Make sure clients wear their glasses and hearing aids during the day",
+        "Skip the 0000 and 0400 vital signs for clients who seem stable",
+        "Dim the lights and keep noise down at night, while still doing the required checks",
+        "Help clients walk in the hall during the day, as their condition allows",
+        "Give every older adult a sleeping pill on admission, as the opinion article suggests",
+        "Present the evidence to the unit's practice council and propose a change to the night vital-signs policy"
+      ],
+      "answer": [0, 1, 0, 0, 1, 0],
+      "rationale": "<p>Individual EBP works within current policy. The nurse can <b>keep glasses and hearing aids in use</b>, <b>dim the lights and reduce noise while still doing the required checks</b>, and <b>help clients walk</b>: each is supported by the evidence and allowed by policy. To change the policy itself, the nurse <b>brings the evidence to the practice council</b>, which is the organization's process.</p><p><b>Skipping required vital signs</b> violates the policy as written, even with good evidence. <b>A sleeping pill for every older adult</b> follows the weakest source and contradicts the stronger evidence: sedating medications raise the risk of delirium.</p><p><b>Takeaway:</b> Use the evidence where policy allows, and change the policy through the organization's process.</p>"
+    },
+    {
+      "id": "ebp-50", "type": "matrix", "case": "delirium", "topic": "Steps of evidence-based practice",
+      "stem": "Six months after the hospital adopts the new routine, the council reviews the unit's results. For each finding, specify whether it shows improvement, no change, or a decline.",
+      "rowHeader": "Finding (before → after)",
+      "columns": ["Improved", "No change", "Declined"],
+      "rows": [
+        "New delirium in clients 70 and older: 28% → 16%",
+        "Average length of stay: 5.1 → 5.1 days",
+        "Night-shift staff trained in the routine: 95% → 70%, after many new hires",
+        "Nights on which clients 70 and older received a sleeping pill: 61% → 22%"
+      ],
+      "answer": [0, 1, 2, 0],
+      "rationale": "<p><b>New delirium fell</b> from 28% to 16%, and <b>sleeping-pill use dropped</b> from 61% to 22% of nights: both improved. <b>Length of stay didn't change</b>. <b>Training coverage on nights fell</b> to 70% after new hires, a decline that could erode the results.</p><p>Evaluation drives the next decision: keep the routine, since it's working, and modify the rollout by training the new staff, then keep monitoring.</p><p><b>Takeaway:</b> Evaluate outcomes and the process together, then accept, modify, or reject the change.</p>"
+    }
+  ]
+}

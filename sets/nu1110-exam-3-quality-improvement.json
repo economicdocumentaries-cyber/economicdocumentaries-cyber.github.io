@@ -1,0 +1,654 @@
+{
+  "id": "nu1110-exam-3-quality-improvement",
+  "title": "Quality Improvement",
+  "description": "Class 14 practice: why quality must improve, federal, state, and local initiatives, the QI process and risk management, incident reports, and quality management programs such as PDSA.",
+  "course": "NU1110",
+  "exam": "Exam 3",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "cases": {
+    "pressure": {
+      "intro": "A nurse on a 30-bed medical-surgical unit joins the unit's quality improvement team after the unit's rate of hospital-acquired pressure injuries rose for two quarters in a row.",
+      "tabs": [
+        {
+          "title": "Unit Data",
+          "html": "<h4>Unit Data</h4><table><thead><tr><th>Measure</th><th>Q1</th><th>Q2</th><th>Q3</th></tr></thead><tbody><tr><td>Hospital-acquired pressure injuries per 1,000 client days (national average for similar units: 0.9)</td><td>1.1</td><td>1.6</td><td>2.4</td></tr><tr><td>Stage 3 pressure injuries</td><td>0</td><td>1</td><td>2</td></tr><tr><td>Skin assessment documented within 8 hours of admission</td><td>70%</td><td>66%</td><td>64%</td></tr><tr><td>Repositioning documented every 2 hours, day shift</td><td>84%</td><td>82%</td><td>81%</td></tr><tr><td>Repositioning documented every 2 hours, night shift</td><td>71%</td><td>63%</td><td>58%</td></tr></tbody></table><p>Every client has a pressure-injury risk score on admission. 95% of staff completed skin-care training this year.</p>"
+        },
+        {
+          "title": "Staff Comments",
+          "html": "<h4>Staff Comments</h4><ul><li><b>Night shift:</b> “It's two of us for 15 clients, and the repositioning log is on paper at the desk.”</li><li><b>Day shift:</b> “A pressure-relieving mattress takes a day to arrive. We have 6 for 30 beds, and they're usually all in use.”</li><li><b>Charge nurse:</b> “Wound care nurse consults take about 3 days.”</li></ul>"
+        },
+        {
+          "title": "Draft Action Plan",
+          "html": "<h4>Draft Action Plan</h4><p><b>Goal:</b> Lower the rate to 1.0 per 1,000 client days within 6 months.</p><p><b>Change to test:</b> Hourly rounding with repositioning prompts in the electronic record, and the repositioning log moved to the bedside.</p><p><b>Responsible:</b> The unit's QI nurse leads the test; the nurse manager oversees it.</p>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "qi-01", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A nurse is explaining what quality health care means. Which of the following definitions from the Institute of Medicine (IOM) should the nurse use?",
+      "options": [
+        "Care that costs the client and the hospital as little as possible, in every case",
+        "Care that gives every client whatever services they request, when they request them",
+        "The degree to which health services increase the likelihood of desired outcomes and are consistent with current professional knowledge",
+        "Care that is provided only by the most experienced staff members on each unit"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Increasing the likelihood of desired outcomes, consistent with current professional knowledge</b> is correct. That's the IOM's definition of quality: care that makes good outcomes more likely, for individuals and populations, and reflects current knowledge.</p><p><b>The lowest cost</b> isn't the measure of quality; quality management aims for cost-effective care by preventing overuse, misuse, and underuse, not by cutting corners. <b>Whatever clients request</b> may not be appropriate or evidence-based. <b>The most experienced staff</b> doesn't guarantee quality, and every nurse is expected to give quality care.</p><p><b>Takeaway:</b> Quality means better odds of good outcomes, based on current knowledge.</p>"
+    },
+    {
+      "id": "qi-02", "type": "sata", "topic": "The need for quality improvement",
+      "stem": "A nurse manager is describing high-quality care to new staff. Which of the following are part of high-quality care?",
+      "options": [
+        "Giving clients the services that are appropriate for them",
+        "Providing care in a technically competent way",
+        "Choosing the most expensive treatment available",
+        "Communicating well with clients and families",
+        "Making decisions together with clients",
+        "Being sensitive to each client's culture"
+      ],
+      "answer": [0, 1, 3, 4, 5],
+      "rationale": "<p>High-quality care means providing clients with <b>appropriate services</b>, in a <b>technically competent</b> manner, with <b>good communication</b>, <b>shared decision making</b>, and <b>cultural sensitivity</b>.</p><p><b>The most expensive treatment</b> isn't automatically the best; unnecessary or costly care can be overuse, which quality management tries to prevent.</p><p><b>Takeaway:</b> Quality care is appropriate, competent, communicative, shared, and culturally sensitive, not necessarily the most expensive.</p>"
+    },
+    {
+      "id": "qi-03", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "Which of the following statements defines quality improvement?",
+      "options": [
+        "Systematic, continuous actions that lead to measurable improvements in health care services and in the health of targeted client groups",
+        "A one-time inspection of a unit to find staff members who aren't following policy",
+        "A research study that tests a new treatment and requires review board approval",
+        "A yearly survey that asks clients whether they liked their hospital room"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Systematic, continuous actions that lead to measurable improvements</b> is correct. This definition, from the Health Resources and Services Administration (HRSA), highlights what makes QI work: it's ongoing, it's organized, and its results are measured.</p><p><b>A one-time inspection to find staff at fault</b> isn't continuous and focuses on blame instead of systems. <b>A research study</b> generates new knowledge, while QI improves local processes using local data. <b>A yearly room survey</b> may collect some data, but on its own it isn't a systematic improvement process.</p><p><b>Takeaway:</b> QI is continuous, systematic, and measurable.</p>"
+    },
+    {
+      "id": "qi-04", "type": "matrix", "topic": "The need for quality improvement",
+      "stem": "Quality management aims to prevent the overuse, misuse, and underuse of health care. For each example, specify the problem it shows.",
+      "rowHeader": "Example",
+      "columns": ["Overuse", "Misuse", "Underuse"],
+      "rows": [
+        "A client receives antibiotics for a cold caused by a virus",
+        "A client receives the wrong dose of the right medication",
+        "An eligible older adult is never offered a pneumococcal vaccine",
+        "A client has a repeat CT scan although a recent one is available",
+        "A client who has diabetes doesn't get an annual eye exam",
+        "A client develops a preventable infection after a properly chosen surgery"
+      ],
+      "answer": [0, 1, 2, 0, 2, 1],
+      "rationale": "<p><b>Overuse</b> is care that isn't needed: antibiotics for a viral cold, and a repeat scan when a recent one exists. <b>Misuse</b> is the right care done wrong, including preventable complications: the wrong dose of the right medication, and a preventable infection after an appropriate surgery. <b>Underuse</b> is needed care that isn't given: a missed vaccine, and a missed eye exam for a client who has diabetes.</p><p><b>Takeaway:</b> Overuse is too much care, misuse is care done wrong, and underuse is care left out; quality management targets all three.</p>"
+    },
+    {
+      "id": "qi-05", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A nurse is explaining how the Institute of Medicine's report To Err Is Human changed the way hospitals respond to errors. Which of the following statements reflects the report's main message?",
+      "options": [
+        "Most errors are caused by careless individuals, who should be removed.",
+        "Errors are rare, so tracking them isn't worth the cost.",
+        "Only physicians make errors that harm clients.",
+        "Most errors come from faulty systems and processes, so the fix is to redesign the systems."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Most errors come from faulty systems, so the fix is to redesign them</b> is correct. To Err Is Human (2000) estimated that errors caused about 98,000 hospital deaths a year, and its central message was that good people working in bad systems make mistakes, so safety depends on better systems.</p><p><b>Blaming careless individuals</b> is the approach the report moved away from. Errors are <b>common</b>, not rare. And errors involve <b>every</b> discipline, not only physicians.</p><p><b>Takeaway:</b> Fix the system, not the blame.</p>"
+    },
+    {
+      "id": "qi-06", "type": "dropdown", "topic": "The need for quality improvement",
+      "stem": "Complete the following sentences about the need for quality improvement.",
+      "text": "The IOM's 2000 report estimated that errors caused about {{0}} deaths a year in U.S. hospitals. A 2011 update estimated {{1}} preventable deaths a year, which would make medical errors the {{2}}.",
+      "blanks": [
+        { "options": ["9,800", "98,000", "980,000", "9.8 million"], "answer": 1 },
+        { "options": ["21,000 to 40,000", "2.1 to 4 million", "210,000 to 400,000", "about 9,800"], "answer": 2 },
+        { "options": ["third leading cause of death", "tenth leading cause of death", "rarest cause of death in hospitals", "leading cause of death in children"], "answer": 0 }
+      ],
+      "rationale": "<p>To Err Is Human (IOM, 2000) estimated about <b>98,000</b> deaths a year in hospitals from errors. An updated study in 2011 estimated <b>210,000 to 400,000</b> preventable deaths a year, which would make medical errors the <b>third leading cause of death</b> in the United States.</p><p><b>Takeaway:</b> Hundreds of thousands of preventable deaths are why quality improvement is every nurse's job.</p>"
+    },
+    {
+      "id": "qi-07", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "Which of the following statements describes a conclusion of the Institute of Medicine's report Crossing the Quality Chasm?",
+      "options": [
+        "The U.S. health care system was working well and needed only small adjustments to its funding.",
+        "The health care system was too disorganized to care well for people with several chronic illnesses, and needed redesign around six aims.",
+        "Hospitals should stop measuring quality, because collecting data distracts staff from client care.",
+        "Quality would improve on its own if hospitals simply hired more physicians and specialists."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>The system was too disorganized for people with several chronic illnesses and needed redesign around six aims</b> is correct. Crossing the Quality Chasm (IOM, 2001) proposed six aims for improvement: care that is safe, timely, effective, efficient, equitable, and patient-centered.</p><p>The report called for major redesign, not <b>small adjustments</b>. It called for <b>more</b> measurement, not less. And it found the problem was how care is organized, not simply the <b>number of physicians</b>.</p><p><b>Takeaway:</b> The six aims (STEEEP) define quality care: safe, timely, effective, efficient, equitable, and patient-centered.</p>"
+    },
+    {
+      "id": "qi-08", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A clinic prescribes an antibiotic for nearly every sore throat without testing, although evidence shows that most sore throats are caused by viruses. Which of the six aims for improvement is the clinic failing to meet?",
+      "options": [
+        "Effective",
+        "Timely",
+        "Equitable",
+        "Patient-centered"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Effective</b> is correct. Effective care means providing services based on scientific evidence to everyone who could benefit, and not providing services that are unlikely to help. Antibiotics don't help viral infections, so giving them without testing is ineffective care, and overuse.</p><p><b>Timely</b> is about avoiding harmful delays, <b>equitable</b> is about care that doesn't vary by personal characteristics such as income or race, and <b>patient-centered</b> is about respecting clients' preferences, needs, and values. None of these is the main problem here.</p><p><b>Takeaway:</b> Effective care follows the evidence: give what helps, and skip what doesn't.</p>"
+    },
+    {
+      "id": "qi-09", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A nurse is asked why the hospital invests so much in quality improvement. Which of the following explanations is most accurate?",
+      "options": [
+        "It mainly helps the hospital look good in its advertisements.",
+        "It replaces the need for nurses to use clinical judgment.",
+        "Measuring care against standards and fixing processes reduces errors, infections, falls, and readmissions.",
+        "It's required only once, when the hospital first opens."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Measuring care and fixing processes reduces errors, infections, falls, and readmissions</b> is correct. QI connects directly to client outcomes: fewer complications and readmissions, safer care, lower costs, and more satisfied clients.</p><p>Good results may help a hospital's reputation, but <b>advertising</b> isn't the purpose. QI supports nurses' judgment rather than <b>replacing it</b>. And QI is <b>continuous</b>, not a one-time requirement.</p><p><b>Takeaway:</b> QI matters because it makes measurable differences in client outcomes.</p>"
+    },
+    {
+      "id": "qi-10", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A nurse notices that, three times this month, clients' 0900 medications weren't given until after 1100 because the pharmacy delivered them late. Which of the following actions best reflects quality improvement?",
+      "options": [
+        "Working faster on mornings when medications arrive late",
+        "Asking the pharmacist on duty to apologize to the clients",
+        "Telling the clients that late medications are normal on the unit",
+        "Reporting the pattern so the team can look at the delivery process and fix it"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Reporting the pattern so the process can be fixed</b> is correct. A repeated problem points to a system or process issue. QI finds and fixes the process, so every client benefits, not just today's.</p><p><b>Working faster</b> may help one morning but leaves the cause in place. <b>An apology</b> doesn't change the process. <b>Telling clients late medications are normal</b> accepts poor-quality care.</p><p><b>Takeaway:</b> When a problem repeats, report it so the process can be fixed.</p>"
+    },
+    {
+      "id": "qi-11", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "Which of the following statements describes the main purpose of quality management?",
+      "options": [
+        "Ranking nurses by how quickly they finish their tasks",
+        "Evaluating care processes against accepted standards to correct problems before they harm clients",
+        "Replacing the need for accreditation surveys",
+        "Finding staff members to discipline after errors"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Evaluating care against standards to correct problems before they harm clients</b> is correct. Quality management evaluates medical and nursing processes for quality and effectiveness, compared with accepted standards, to correct problems, prevent errors, and provide cost-effective care by preventing overuse, misuse, and underuse.</p><p><b>Speed rankings</b> don't measure quality. Quality management doesn't <b>replace accreditation</b>; it helps organizations meet accreditation standards. <b>Disciplining staff</b> focuses on blame instead of systems.</p><p><b>Takeaway:</b> Quality management compares care with standards to fix problems before clients are harmed.</p>"
+    },
+    {
+      "id": "qi-12", "type": "mc", "topic": "The need for quality improvement",
+      "stem": "A unit's QI team wants to know whether the quality of its nursing care is improving. Which of the following data would show this best?",
+      "options": [
+        "The unit's rates of falls and pressure injuries over the past year",
+        "The number of nurses hired over the past year",
+        "The total hours of overtime worked on the unit",
+        "The number of supplies the unit ordered"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Rates of falls and pressure injuries over time</b> is correct. QI depends on measurable outcomes, and falls and pressure injuries are nurse-sensitive outcomes that reflect the quality of nursing care. Tracking them over time shows whether care is improving.</p><p><b>Hiring</b>, <b>overtime</b>, and <b>supply orders</b> describe staffing and costs. They may affect quality, but they don't measure client outcomes.</p><p><b>Takeaway:</b> Judge the quality of care by client outcomes over time.</p>"
+    },
+    {
+      "id": "qi-13", "type": "matrix", "topic": "Quality initiatives and agencies",
+      "stem": "For each activity, specify the organization responsible.",
+      "rowHeader": "Activity",
+      "columns": ["Centers for Medicare & Medicaid Services (CMS)", "The Joint Commission", "Agency for Healthcare Research and Quality (AHRQ)", "State board of nursing"],
+      "rows": [
+        "Surveys hospitals on site and decides whether they keep their accreditation",
+        "Approves nursing education programs and licenses nurses",
+        "Lowers payments to hospitals that have too many readmissions within 30 days",
+        "Funds research on patient safety and created the TeamSTEPPS teamwork training"
+      ],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p><b>The Joint Commission</b> accredits health care organizations through on-site surveys, and sets standards such as the National Patient Safety Goals. The <b>state board of nursing</b> enforces the Nurse Practice Act, licenses and disciplines nurses, and approves nursing programs. <b>CMS</b> ties payment to quality, including penalties for too many readmissions. <b>AHRQ</b> funds research on quality and patient safety and created TeamSTEPPS.</p><p><b>Takeaway:</b> CMS pays for quality, The Joint Commission sets and checks standards, AHRQ researches safety, and the state board of nursing licenses and approves.</p>"
+    },
+    {
+      "id": "qi-14", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A client develops a serious, unexpected reaction to a medication that was approved last year. Which of the following agencies collects reports of adverse events like this one?",
+      "options": [
+        "The Occupational Safety and Health Administration (OSHA)",
+        "The National Institutes of Health (NIH)",
+        "The Food and Drug Administration (FDA)",
+        "The Centers for Disease Control and Prevention (CDC)"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>The FDA</b> is correct. The FDA approves and regulates drugs, medical devices, vaccines, and blood, and it collects reports of serious adverse events through its MedWatch program. Those reports can lead to new warnings or recalls.</p><p><b>OSHA</b> protects workers' safety. <b>The NIH</b> funds and conducts medical research. <b>The CDC</b> tracks diseases and infections and publishes infection-control guidelines.</p><p><b>Takeaway:</b> Problems with drugs and devices are reported to the FDA.</p>"
+    },
+    {
+      "id": "qi-15", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A hospital requires staff to use two client identifiers, such as name and date of birth, before every medication and procedure. Which of the following initiatives most directly drives this requirement?",
+      "options": [
+        "Healthy People 2030",
+        "OSHA's workplace safety standards",
+        "Medicare Part D drug coverage",
+        "The Joint Commission's National Patient Safety Goals"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>The Joint Commission's National Patient Safety Goals</b> is correct. These goals target known safety problems, such as identifying clients correctly, and accredited organizations must meet them. Using two identifiers is a long-standing goal.</p><p><b>Healthy People 2030</b> sets national health objectives for the population. <b>OSHA</b> protects workers. <b>Medicare Part D</b> pays for prescription drugs.</p><p><b>Takeaway:</b> National Patient Safety Goals come from The Joint Commission, and identifying clients correctly is one of them.</p>"
+    },
+    {
+      "id": "qi-16", "type": "sata", "topic": "Quality initiatives and agencies",
+      "stem": "The Centers for Medicare & Medicaid Services (CMS) won't pay hospitals extra for certain conditions that clients acquire during a hospital stay. Which of the following are examples of these conditions?",
+      "options": [
+        "A catheter-associated urinary tract infection",
+        "Pneumonia that was present when the client was admitted",
+        "A stage 3 pressure injury that developed in the hospital",
+        "The planned surgery the client was admitted for",
+        "A fall with an injury during the hospital stay"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>CMS ties payment to quality. It won't pay extra for preventable hospital-acquired conditions, such as <b>catheter-associated urinary tract infections</b>, <b>stage 3 and 4 pressure injuries</b>, and <b>falls with injury</b>. It also penalizes hospitals with too many readmissions.</p><p><b>Pneumonia present on admission</b> wasn't acquired in the hospital, and <b>the planned surgery</b> is the reason for the stay, not a complication.</p><p><b>Takeaway:</b> When payment depends on preventing harm, hospitals invest in preventing it.</p>"
+    },
+    {
+      "id": "qi-17", "type": "matrix", "topic": "Quality initiatives and agencies",
+      "stem": "For each initiative to improve health care, specify whether it is federal, state, or local.",
+      "rowHeader": "Initiative",
+      "columns": ["Federal", "State", "Local"],
+      "rows": [
+        "Medicare lowers payments to hospitals with too many readmissions",
+        "A city health department offers free blood pressure checks in barbershops",
+        "A state law requires hospitals to report certain infections to the state health department",
+        "The FDA approves a new vaccine after reviewing safety data",
+        "The state board of nursing requires continuing education to renew a nursing license",
+        "A county health department inspects restaurants and posts the results"
+      ],
+      "answer": [0, 2, 1, 0, 1, 2],
+      "rationale": "<p><b>Federal</b> initiatives come from national agencies and programs, such as Medicare's readmission penalties and FDA vaccine approval. <b>State</b> initiatives come from state laws and state agencies, such as infection-reporting laws and the board of nursing's license renewal rules. <b>Local</b> initiatives come from city and county health departments, such as community blood pressure checks and restaurant inspections.</p><p><b>Takeaway:</b> Quality and safety are shaped at every level: federal, state, and local.</p>"
+    },
+    {
+      "id": "qi-18", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "Which of the following statements explains how accreditation by The Joint Commission drives quality improvement in hospitals?",
+      "options": [
+        "The Joint Commission manages each hospital's daily staffing.",
+        "Hospitals must meet evidence-based standards and show continuous improvement to keep their accreditation.",
+        "The Joint Commission licenses each nurse who works in an accredited hospital.",
+        "The Joint Commission pays for every hospital's QI projects."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Meeting evidence-based standards and showing continuous improvement</b> is correct. To be reaccredited, an organization must show that it continuously evaluates its performance, corrects deficiencies, and improves, and on-site surveys check this. That makes QI an ongoing requirement.</p><p>The Joint Commission doesn't manage <b>daily staffing</b>, <b>license nurses</b> (the state board of nursing does), or <b>pay for QI projects</b>.</p><p><b>Takeaway:</b> Accreditation keeps QI going, because hospitals must keep proving that they meet standards and improve.</p>"
+    },
+    {
+      "id": "qi-19", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "After several nurses are assaulted in the emergency department, the hospital adds panic buttons and violence-prevention training. Which of the following statements about OSHA's role is accurate?",
+      "options": [
+        "OSHA sets standards that protect the health and safety of workers, including nurses.",
+        "OSHA approves new medications before they can be given to clients.",
+        "OSHA tracks infectious disease outbreaks across the country.",
+        "OSHA accredits hospitals and publishes National Patient Safety Goals."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>OSHA protects workers' health and safety</b> is correct. The Occupational Safety and Health Administration requires employers to provide a safe workplace and reduce hazards, including workplace violence, needlesticks, and chemical exposures. It protects staff, not clients.</p><p><b>Approving medications</b> is the FDA's role. <b>Tracking outbreaks</b> is the CDC's. <b>Accrediting hospitals and setting patient safety goals</b> is The Joint Commission's.</p><p><b>Takeaway:</b> OSHA is about the occupational safety of workers.</p>"
+    },
+    {
+      "id": "qi-20", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A hospital reports its rates of central line infections to a national CDC system that lets it compare its rates with other hospitals' rates. Which of the following is the main purpose of this reporting?",
+      "options": [
+        "To decide which nurses caused each infection",
+        "To replace the hospital's own infection-control program",
+        "To set the price that insurers pay for central lines",
+        "To track and compare health care-associated infections so hospitals can find and fix problems"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Tracking and comparing infections so hospitals can find and fix problems</b> is correct. The CDC tracks health care-associated infections through its national reporting system and publishes infection-control guidelines. Comparing a hospital's rates with others' shows where it needs to improve.</p><p>The goal is system improvement, not finding <b>who caused</b> each infection. National data <b>support</b> the hospital's own program rather than replacing it, and they don't set <b>prices</b>.</p><p><b>Takeaway:</b> National infection data let hospitals compare themselves with others and focus their improvement work.</p>"
+    },
+    {
+      "id": "qi-21", "type": "mc", "topic": "QI and other concepts",
+      "stem": "A nurse tells the nurse manager about a near miss: the nurse almost gave a medication to the wrong client but caught it at the bedside. Which of the following responses by the manager best supports quality improvement?",
+      "options": [
+        "Writing the nurse up so the mistake isn't repeated",
+        "Thanking the nurse for reporting, and reviewing the process that allowed the near miss",
+        "Telling the nurse that near misses don't need to be reported, since no harm occurred",
+        "Posting the nurse's name at the nurses' station as a reminder to others"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Thanking the nurse and reviewing the process</b> is correct. Near misses show weaknesses in a system before anyone is harmed, so QI depends on staff reporting them. Responding without blame keeps people reporting, and looking at the process finds the real fix.</p><p><b>Writing the nurse up</b> and <b>posting their name</b> punish reporting, so future near misses go unreported. <b>Not reporting near misses</b> throws away the chance to fix a problem before it harms someone.</p><p><b>Takeaway:</b> Reward reporting and fix the process; near misses are free lessons.</p>"
+    },
+    {
+      "id": "qi-22", "type": "sata", "topic": "QI and other concepts",
+      "stem": "Which of the following actions reflect a staff nurse's role in quality improvement?",
+      "options": [
+        "Reporting errors, near misses, and unsafe conditions",
+        "Leaving quality improvement to the nurse managers",
+        "Collecting data for unit audits, such as fall tracking",
+        "Joining the unit's QI team or practice council",
+        "Not mentioning coworkers' mistakes, to protect them",
+        "Following protocols consistently so results can be measured"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Staff nurses are central to QI: they <b>identify and report problems</b> (errors, near misses, unsafe conditions), <b>collect data</b>, <b>join QI teams, councils, and root cause analyses</b>, and <b>follow protocols consistently</b> so a change can be measured fairly. Nurses at the bedside are well positioned to spot risks.</p><p><b>Leaving QI to managers</b> wastes the bedside view. <b>Hiding coworkers' mistakes</b> lets the same system problems keep harming clients.</p><p><b>Takeaway:</b> Every nurse does QI: speak up, report, collect data, and take part.</p>"
+    },
+    {
+      "id": "qi-23", "type": "dropdown", "topic": "QI and other concepts",
+      "stem": "Complete the following sentence about how quality improvement relates to other concepts.",
+      "text": "Quality improvement relates to {{0}}, because its main goal is preventing errors and harm, and to {{1}}, because data from electronic records are used to compare a unit's results with others'.",
+      "blanks": [
+        { "options": ["health policy", "safety", "culture", "growth and development"], "answer": 1 },
+        { "options": ["informatics", "ethics", "spirituality", "nutrition"], "answer": 0 }
+      ],
+      "rationale": "<p>QI relates to <b>safety</b>, because preventing errors and harm is its central goal, and to <b>informatics</b>, because electronic data collection, comparison with other units, and decision support make measurement possible.</p><p>QI also connects to health policy (CMS payment rules and accreditation standards drive QI), evidence-based practice, accountability, and communication, but those don't fit the reasons given in the sentence.</p><p><b>Takeaway:</b> QI is tied to safety (its goal) and informatics (its data).</p>"
+    },
+    {
+      "id": "qi-24", "type": "mc", "topic": "QI and other concepts",
+      "stem": "A QI team wants to know whether clients feel respected and included in decisions about their care. Which of the following data sources should the team use?",
+      "options": [
+        "Client satisfaction and experience surveys",
+        "Incident reports filed on the unit",
+        "The unit's staffing schedules",
+        "Invoices for the unit's supplies"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Client satisfaction and experience surveys</b> is correct. Clients' own reports are the best data about whether care feels respectful and shared, which are parts of quality, patient-centered care. Nurses are well positioned to analyze client satisfaction and act on it.</p><p><b>Incident reports</b> capture events that harmed or could harm someone, not clients' sense of respect. <b>Staffing schedules</b> and <b>supply invoices</b> describe resources, not clients' experience.</p><p><b>Takeaway:</b> To measure patient-centered care, ask the clients.</p>"
+    },
+    {
+      "id": "qi-25", "type": "mc", "topic": "QI and other concepts",
+      "stem": "A nurse notices that the unit's new bed alarms are easy to switch off by accident when clients reposition. Which of the following actions best reflects the nurse's role in quality improvement?",
+      "options": [
+        "Taping over the switch on the nurse's own clients' beds, without telling anyone",
+        "Waiting to see whether a client falls before saying anything",
+        "Reporting the problem through the proper channels and suggesting a fix to the QI team",
+        "Turning off the alarms, since they don't work reliably"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Reporting the problem and suggesting a fix</b> is correct. The bedside nurse is well positioned to spot equipment and process risks, and reporting them lets the organization fix the problem for every client, which is proactive risk management.</p><p><b>A private workaround</b> leaves other units at risk and may create new hazards. <b>Waiting for a fall</b> turns a preventable risk into harm. <b>Turning off the alarms</b> removes a safety measure.</p><p><b>Takeaway:</b> Report risks before they cause harm, so the system gets fixed.</p>"
+    },
+    {
+      "id": "qi-26", "type": "mc", "topic": "QI and other concepts",
+      "stem": "Which of the following QSEN competencies asks nurses to use data to monitor the outcomes of care and to test changes that improve them?",
+      "options": [
+        "Informatics",
+        "Teamwork and collaboration",
+        "Patient-centered care",
+        "Quality improvement"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Quality improvement</b> is correct. QSEN's quality improvement competency asks nurses to use data to monitor outcomes and to use improvement methods to design and test changes.</p><p><b>Informatics</b> is about using information and technology. <b>Teamwork and collaboration</b> is about working effectively with others. <b>Patient-centered care</b> is about recognizing the client as a full partner. All six QSEN competencies work together, but this description is quality improvement.</p><p><b>Takeaway:</b> QSEN's QI competency: measure outcomes, test changes, and improve.</p>"
+    },
+    {
+      "id": "qi-27", "type": "mc", "topic": "QI and other concepts",
+      "stem": "A QI team is choosing a change to reduce catheter-associated infections on its unit. Which of the following approaches is best?",
+      "options": [
+        "Choosing whatever change the most senior nurse prefers",
+        "Basing the change on the best available evidence, then testing it with the unit's own data",
+        "Copying another hospital's change without checking whether it worked",
+        "Making several changes at once without measuring any of them"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Basing the change on the best evidence, then testing it with local data</b> is correct. QI and evidence-based practice work together: the change should be built on the best evidence, and the unit's own data show whether it works there.</p><p><b>The senior nurse's preference</b> is tradition, not evidence. <b>Copying without checking results</b> skips both evidence and measurement. <b>Several unmeasured changes</b> make it impossible to tell what helped.</p><p><b>Takeaway:</b> Choose changes from the evidence, and prove them with your own data.</p>"
+    },
+    {
+      "id": "qi-28", "type": "order", "topic": "The quality improvement process",
+      "stem": "A unit's QI team is working through the quality improvement process. Place the steps in order.",
+      "items": [
+        "Analyze the unit's current protocols and outcomes",
+        "Compare the results with those of leaders in high-quality care",
+        "Identify areas for improvement",
+        "Research the factors that lead to better outcomes",
+        "Put changes in place to improve outcomes",
+        "Analyze outcomes to see whether the changes worked"
+      ],
+      "rationale": "<p>The QI process is continuous and has several steps: <b>analyze current protocols and outcomes</b>, <b>compare them with leaders in high-quality care</b> (benchmarking), <b>identify areas for improvement</b>, <b>research what leads to better outcomes</b>, <b>implement changes</b>, and <b>analyze the outcomes</b> to see whether the changes worked and find further improvements. A facility that improves should share its methods so others can improve too.</p><p><b>Takeaway:</b> Measure, compare, target, research, change, and measure again.</p>"
+    },
+    {
+      "id": "qi-29", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A client dies after a medication error in an accredited hospital. Which of the following statements describes The Joint Commission's role after this sentinel event?",
+      "options": [
+        "It reviews how the hospital responded, including its root cause analysis and action plan, as part of accreditation.",
+        "It decides whether the nurse involved keeps their license.",
+        "It takes over the hospital's operations until the investigation ends.",
+        "It has no role, because each hospital handles its own errors privately."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>It reviews the hospital's response, including the root cause analysis and action plan</b> is correct. A sentinel event, an unexpected occurrence involving death, serious physical or psychological injury, or the risk of it, requires immediate investigation and response. The Joint Commission expects a thorough root cause analysis and a plan to reduce future risk, and it reviews the response as part of accreditation.</p><p><b>Licensure decisions</b> belong to the state board of nursing. The Joint Commission doesn't <b>take over hospitals</b>. And sentinel events aren't handled <b>privately</b>: accreditors expect a documented response.</p><p><b>Takeaway:</b> After a sentinel event come a root cause analysis, an action plan, and The Joint Commission's review.</p>"
+    },
+    {
+      "id": "qi-30", "type": "mc", "topic": "The quality improvement process",
+      "stem": "Which of the following situations is a breach of care?",
+      "options": [
+        "A nurse reports a near miss to the charge nurse.",
+        "A client who has been told the risks declines a bath.",
+        "A nurse doesn't reassess a client's pain after giving an opioid, although the policy requires it.",
+        "A nurse asks for help programming an unfamiliar infusion pump."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Not reassessing after an opioid, as the policy requires</b> is correct. A breach of care occurs when a nurse does something that shouldn't have been done, or doesn't do something that should have been done. Missing a required reassessment is an omission, and nurses are most often involved in breaches around bedside assessment and monitoring.</p><p><b>Reporting a near miss</b> and <b>asking for help</b> with unfamiliar equipment are safe, expected practices. <b>A client's informed refusal</b> is the client's right, not a breach, as long as it's respected and documented.</p><p><b>Takeaway:</b> A breach of care is doing what shouldn't be done, or not doing what should be.</p>"
+    },
+    {
+      "id": "qi-31", "type": "sata", "topic": "The quality improvement process",
+      "stem": "Which of the following actions help a nurse reduce the risk of a breach of care?",
+      "options": [
+        "Reporting problems to supervisors",
+        "Skipping documentation on busy shifts",
+        "Staying current in skills and education",
+        "Basing care on a nursing model, and documenting the care and the client's response",
+        "Avoiding questions so they look competent"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>Nurses reduce the risk of a breach of care by <b>reporting problems to supervisors</b>, <b>staying current in skills and education</b>, and <b>basing all care on a nursing model and documenting the care and the client's response</b>.</p><p><b>Skipping documentation</b> leaves no proof that care was given. <b>Avoiding questions</b> leads to mistakes with unfamiliar tasks; asking is safe practice.</p><p><b>Takeaway:</b> Speak up, stay current, and document care and responses.</p>"
+    },
+    {
+      "id": "qi-32", "type": "mc", "topic": "The quality improvement process",
+      "stem": "After a client falls, the risk manager reviews what happened, makes sure the client's injury is treated, and works to prevent another fall. Which part of risk management does this describe?",
+      "options": [
+        "Proactive risk management",
+        "Benchmarking",
+        "Accreditation",
+        "Reactive risk management"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Reactive risk management</b> is correct. Risk management has proactive parts, which prevent adverse events, and reactive parts, which minimize the damage after an event happens, and it must happen every day. Responding to a fall that already occurred is reactive.</p><p><b>Proactive</b> risk management would identify and reduce fall risks before anyone falls. <b>Benchmarking</b> compares outcomes with leaders. <b>Accreditation</b> is an external review of an organization against standards.</p><p><b>Takeaway:</b> Before an event: proactive. After an event: reactive.</p>"
+    },
+    {
+      "id": "qi-33", "type": "sata", "topic": "The quality improvement process",
+      "stem": "Which of the following activities are part of a hospital's risk management process?",
+      "options": [
+        "Identifying risks that could lead to client or staff injury or financial loss",
+        "Reviewing the systems that monitor those risks",
+        "Analyzing how often past adverse events happened, how severe they were, and why",
+        "Keeping up to date on health care laws",
+        "Assigning blame for each adverse event to one staff member",
+        "Identifying the need for client and staff education"
+      ],
+      "answer": [0, 1, 2, 3, 5],
+      "rationale": "<p>The risk management process <b>identifies risks</b> of client or staff injury or financial loss, <b>reviews the systems that monitor risks</b>, <b>analyzes the frequency, severity, and causes of past adverse events</b>, <b>stays current on health care laws</b>, and <b>identifies education needs</b>.</p><p><b>Assigning blame to one person</b> isn't part of it: like root cause analysis, risk management looks at systems, so the same event doesn't happen again.</p><p><b>Takeaway:</b> Risk management finds, monitors, analyzes, and teaches; it doesn't hunt for someone to blame.</p>"
+    },
+    {
+      "id": "qi-34", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A nurse completes an incident report after giving a client the wrong dose of a medication. Which of the following statements about the report is accurate?",
+      "options": [
+        "It is placed in the client's medical record.",
+        "It is sent to risk management or the quality department per policy, and it isn't part of the medical record.",
+        "It is given to the client's family so they know what happened.",
+        "The nurse keeps a copy at home in case of a lawsuit."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>It goes to risk management or the quality department, not into the medical record</b> is correct. An incident (occurrence) report documents any event out of the ordinary that harmed or could have harmed a client, employee, or visitor. It's a confidential QI and risk management tool, used to find patterns and fix systems, and access is limited to risk management, QI staff, and administrators.</p><p>It's <b>never placed in the client's record</b>, and the record shouldn't mention it. It isn't <b>given to the family</b>; the client and family are told what happened through the facility's disclosure process. <b>Copies taken home</b> break confidentiality.</p><p><b>Takeaway:</b> Chart the facts of the event in the record; send the incident report to risk management, never into the chart.</p>"
+    },
+    {
+      "id": "qi-35", "type": "order", "topic": "The quality improvement process",
+      "stem": "A nurse finds a client on the floor beside the bed. Place the nurse's actions in order.",
+      "items": [
+        "Assess the client for injury and give the care needed",
+        "Notify the provider and the charge nurse",
+        "Document the facts of the event and the care given in the client's record",
+        "Complete an incident report"
+      ],
+      "rationale": "<p>The client comes first: <b>assess for injury and give the care needed</b>. Then <b>notify the provider and the charge nurse</b>. Next, <b>document the facts in the client's record</b>: what the nurse observed, the care given, and who was notified. Finally, <b>complete the incident report</b> for risk management.</p><p><b>Takeaway:</b> Assess and treat, notify, document the facts, then file the incident report.</p>"
+    },
+    {
+      "id": "qi-36", "type": "sata", "topic": "The quality improvement process",
+      "stem": "Which of the following belong in an incident report about a client's fall?",
+      "options": [
+        "The date, time, and place of the event",
+        "The nurse's opinion about who was at fault",
+        "What the nurse saw, described objectively",
+        "The care given and who was notified",
+        "A note that a copy will be placed in the client's chart"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>An incident report gives <b>objective facts</b>: <b>the date, time, and place</b>, <b>what the nurse saw</b> and the client's condition, and <b>the care given and who was notified</b>. It's completed by the nurse who witnessed or discovered the event, as soon as possible.</p><p><b>Opinions about fault</b> don't belong, because the report is for finding system problems, not blame. And incident reports are <b>never placed in the chart</b>.</p><p><b>Takeaway:</b> Incident reports are factual, prompt, blame-free, and kept out of the chart.</p>"
+    },
+    {
+      "id": "qi-37", "type": "sata", "topic": "The quality improvement process",
+      "stem": "A hospital's QI team wants to reduce medication errors. Which of the following strategies should the team use?",
+      "options": [
+        "Bar-code scanning of client ID bands and medications",
+        "Taking verbal orders for routine medications to save time",
+        "Computerized provider order entry",
+        "A pharmacist's review before the first dose of a new medication",
+        "Storing look-alike medications next to each other",
+        "Labels that highlight the differences between look-alike, sound-alike drug names"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Strategies that reduce medication errors include <b>bar-code scanning</b>, <b>computerized provider order entry</b>, a <b>pharmacy first-dose review</b>, and managing <b>look-alike, sound-alike names</b>, for example with labels that highlight the differences (such as “hydrOXYzine” and “hydrALAZINE”) and storing those drugs apart.</p><p><b>Verbal orders</b> for routine medications add risk; they're for urgent situations only. <b>Storing look-alikes together</b> invites mix-ups.</p><p><b>Takeaway:</b> Medication safety comes from layered checks: scanning, electronic orders, pharmacy review, and clear labels.</p>"
+    },
+    {
+      "id": "qi-38", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A client develops a rash and wheezing after receiving a prescribed antibiotic. Which of the following terms describes harm that a client experiences from exposure to a medication?",
+      "options": [
+        "An adverse drug event",
+        "A near miss",
+        "Medication reconciliation",
+        "A breach of confidentiality"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>An adverse drug event</b> is correct. It's harm a client experiences as a result of exposure to a medication, whether from an allergic reaction, an error, or a known risk of the drug. Many adverse drug events are preventable.</p><p><b>A near miss</b> is an error caught before it reaches the client, so there's no harm. <b>Medication reconciliation</b> is comparing a client's medication lists to prevent errors. <b>A breach of confidentiality</b> is about privacy.</p><p><b>Takeaway:</b> Harm from a medication is an adverse drug event, and many of them are preventable.</p>"
+    },
+    {
+      "id": "qi-39", "type": "emr", "topic": "Quality management programs",
+      "stem": "A unit is using the Plan-Do-Study-Act cycle to improve hand hygiene. Which 2 activities belong in the Study phase?",
+      "options": [
+        "Setting a goal of 90% hand-hygiene compliance in 3 months",
+        "Comparing the hand-hygiene rate during the trial with the baseline rate",
+        "Placing hand sanitizer at every doorway on one unit for 4 weeks",
+        "Analyzing whether the trial unit's infection rate changed",
+        "Adding sanitizer at every doorway in the hospital after the trial succeeds",
+        "Deciding who will collect the audit data, and how"
+      ],
+      "answer": [1, 3],
+      "select": 2,
+      "rationale": "<p>In the <b>Study</b> phase, the team analyzes the data and compares the results with its predictions and the baseline: <b>comparing compliance with the baseline</b> and <b>analyzing whether infections changed</b>.</p><p><b>Setting a goal</b> and <b>deciding who collects data</b> belong in Plan. <b>Placing sanitizer on one unit for 4 weeks</b> is Do, a small-scale test. <b>Spreading the change hospital-wide</b> is Act.</p><p><b>Takeaway:</b> Plan it, Do it small, Study the data, and Act on the results.</p>"
+    },
+    {
+      "id": "qi-40", "type": "mc", "topic": "Quality management programs",
+      "stem": "A QI team has planned a new handoff tool to reduce communication errors. Which of the following actions represents the Do phase of the Plan-Do-Study-Act cycle?",
+      "options": [
+        "Using the tool on every unit in the hospital starting next week",
+        "Comparing the error rates before and after the tool was used",
+        "Using the tool on one unit for 2 weeks and recording any problems",
+        "Making the tool part of hospital policy"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Using the tool on one unit for 2 weeks and recording problems</b> is correct. The Do phase carries out the change on a small scale, as a pilot test, while collecting data and noting problems.</p><p><b>Using it hospital-wide right away</b> is the common trap: spreading the change comes in Act, after Study shows it works. <b>Comparing error rates</b> is Study. <b>Making it policy</b> is Act.</p><p><b>Takeaway:</b> “Do” means a small test first, never the full rollout.</p>"
+    },
+    {
+      "id": "qi-41", "type": "matrix", "topic": "Quality management programs",
+      "stem": "For each description, specify the quality management approach.",
+      "rowHeader": "Description",
+      "columns": ["Six Sigma", "Lean", "Failure mode and effects analysis (FMEA)", "Root cause analysis (RCA)"],
+      "rows": [
+        "After a client's unexpected death, a team finds the underlying system causes",
+        "Uses statistics to cut variation and defects, following Define, Measure, Analyze, Improve, and Control",
+        "Before a new unit opens, a team predicts how its medication process could fail and fixes the riskiest steps",
+        "Removes wasted steps that add no value for the client, such as repeated registration and long waits"
+      ],
+      "answer": [3, 0, 2, 1],
+      "rationale": "<p><b>Root cause analysis</b> is reactive: after an adverse or sentinel event, it finds the underlying system causes. <b>Six Sigma</b> uses statistics to reduce variation and defects through Define, Measure, Analyze, Improve, and Control (DMAIC). <b>FMEA</b> is proactive: before harm occurs, it predicts how a process could fail and redesigns it. <b>Lean</b> eliminates waste and steps that add no value, to improve flow.</p><p><b>Takeaway:</b> RCA looks back after harm, FMEA looks ahead before harm, Six Sigma cuts variation, and Lean cuts waste.</p>"
+    },
+    {
+      "id": "qi-42", "type": "mc", "topic": "Quality management programs",
+      "stem": "A hospital wants every department, from housekeeping to surgery, to take part in improving quality all the time, with a focus on what clients need. Which of the following approaches fits this goal best?",
+      "options": [
+        "A single root cause analysis",
+        "A failure mode and effects analysis of one process",
+        "A yearly inspection by the nurse manager",
+        "Total quality management (continuous quality improvement)"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Total quality management (continuous quality improvement)</b> is correct. TQM/CQI is an organization-wide philosophy: everyone, at every level, continuously improves processes, with a focus on the client and decisions based on data.</p><p><b>A root cause analysis</b> and <b>an FMEA</b> each examine one event or one process. <b>A yearly inspection</b> isn't continuous and doesn't involve everyone.</p><p><b>Takeaway:</b> TQM/CQI means everyone, everywhere, improving all the time.</p>"
+    },
+    {
+      "id": "qi-43", "type": "mc", "topic": "Quality management programs",
+      "stem": "A 4-week test of a new medication-pass routine on one unit cut interruptions and errors in half, with no new problems. Which of the following actions belongs in the Act phase?",
+      "options": [
+        "Running the same 4-week test again on the same unit",
+        "Adopting the routine, updating the policy, and spreading it to other units",
+        "Deciding which data to collect during the test",
+        "Ending the routine, since the test is over"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Adopting the routine, updating the policy, and spreading it</b> is correct. In the Act phase, the team decides to adopt, adapt (modify), or abandon the change. A successful test is adopted and standardized.</p><p><b>Repeating the same test</b> adds nothing when the results were clear. <b>Deciding which data to collect</b> belongs in Plan. <b>Ending a change that worked</b> throws away the improvement.</p><p><b>Takeaway:</b> In Act, adopt, adapt, or abandon the change, based on what Study showed.</p>"
+    },
+    {
+      "id": "qi-44", "type": "mc", "topic": "Quality management programs",
+      "stem": "Why does the Plan-Do-Study-Act cycle repeat instead of ending after one round?",
+      "options": [
+        "Each round's results lead to the next test of change, so improvement keeps going.",
+        "The first round always fails, so the team has to try again.",
+        "Accreditors require exactly three rounds for every change.",
+        "Repeating the cycle lets the team skip measuring results."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Each round's results lead to the next test</b> is correct. Quality improvement is continuous: what the team learns in one cycle shapes the next plan, so changes are refined in small steps.</p><p>First rounds <b>often succeed</b>, and accreditors don't require a <b>set number</b> of cycles. Every cycle <b>includes</b> measuring results; that's the Study phase.</p><p><b>Takeaway:</b> PDSA is a loop: each cycle teaches something that starts the next one.</p>"
+    },
+    {
+      "id": "qi-45", "type": "mc", "topic": "Quality management programs",
+      "stem": "During a root cause analysis, a team draws a diagram that groups the possible causes of an error into categories, such as people, methods, equipment, and environment. Which tool is the team using?",
+      "options": [
+        "A run chart",
+        "A PICOT question",
+        "A fishbone (cause-and-effect) diagram",
+        "A pie chart of staffing"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>A fishbone (cause-and-effect) diagram</b> is correct. It sorts possible causes into categories, so a root cause analysis team can see every contributing factor, not just the most obvious one. Asking “why?” repeatedly (the 5 Whys) is another RCA tool.</p><p><b>A run chart</b> shows data over time. <b>A PICOT question</b> frames a clinical question for an evidence search. <b>A pie chart of staffing</b> shows proportions, not causes.</p><p><b>Takeaway:</b> Fishbone diagrams and the 5 Whys help an RCA dig past the obvious to the root cause.</p>"
+    },
+    {
+      "id": "qi-46", "type": "highlight", "case": "pressure", "topic": "The quality improvement process",
+      "stem": "Click to highlight the findings that point to areas the QI team should target.",
+      "passage": "[[The pressure-injury rate rose from 1.1 to 2.4 per 1,000 client days, against a national average of 0.9]].<br>[[Every client has a risk score on admission]].<br>[[Skin assessments within 8 hours of admission fell to 64%]].<br>[[Night-shift repositioning documentation fell to 58%]].<br>[[95% of staff completed skin-care training this year]].<br>[[Pressure-relieving mattresses take a day to arrive]].",
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>The targets are the <b>rising pressure-injury rate</b>, well above the national average, <b>skin assessments within 8 hours falling to 64%</b>, <b>night-shift repositioning falling to 58%</b>, and <b>a day's wait for pressure-relieving mattresses</b>. Each one shows a gap between current care and best practice.</p><p><b>Risk scores on admission</b> and <b>95% of staff trained</b> are strengths: the problem isn't knowledge or risk screening, but follow-through on assessments, repositioning, and equipment.</p><p><b>Takeaway:</b> QI targets the gaps between current performance and the benchmark, and notes the strengths to build on.</p>"
+    },
+    {
+      "id": "qi-47", "type": "dropdown", "case": "pressure", "topic": "The quality improvement process",
+      "stem": "Complete the following sentence about the unit data.",
+      "text": "Comparing the unit's rate with the national average for similar units is called {{0}}, and because the rate keeps rising, the team's next step is to {{1}}.",
+      "blanks": [
+        { "options": ["accreditation", "benchmarking", "triage", "randomization"], "answer": 1 },
+        { "options": ["wait another quarter to be sure", "stop documenting repositioning", "identify the causes and test a change", "transfer high-risk clients to other units"], "answer": 2 }
+      ],
+      "rationale": "<p>Comparing a unit's outcomes with those of leaders or similar units is <b>benchmarking</b>, a step in the QI process. A rising rate well above the benchmark calls for the team to <b>identify the causes and test a change</b>.</p><p><b>Accreditation</b> is an external review against standards, <b>triage</b> sorts clients by urgency, and <b>randomization</b> assigns research participants to groups. <b>Waiting another quarter</b> lets more clients be harmed, <b>stopping documentation</b> hides the problem, and <b>transferring high-risk clients</b> moves the problem instead of fixing it.</p><p><b>Takeaway:</b> Benchmark to see the gap, then find the causes and test a fix.</p>"
+    },
+    {
+      "id": "qi-48", "type": "matrix", "case": "pressure", "topic": "Quality management programs",
+      "stem": "The team is planning its test of the change. For each potential action, specify whether it is indicated or not indicated.",
+      "rowHeader": "Potential action",
+      "columns": ["Indicated", "Not Indicated"],
+      "rows": [
+        "Test hourly rounding on one hallway for 6 weeks before deciding on more",
+        "Start hourly rounding on every unit in the hospital next week",
+        "Find out which night nurses missed repositioning and discipline them",
+        "Move the repositioning log from the desk to each client's bedside",
+        "Track repositioning documentation weekly and the injury rate monthly during the test",
+        "Stop measuring once staff say they like the new routine"
+      ],
+      "answer": [0, 1, 1, 0, 0, 1],
+      "rationale": "<p><b>Indicated:</b> testing the change on a small scale first (the Do phase of PDSA), fixing the process problem staff identified (the log kept at the desk), and measuring both the process (repositioning documentation) and the outcome (the injury rate).</p><p><b>Not indicated:</b> a <b>hospital-wide rollout</b> before the test shows results; <b>disciplining night nurses</b>, which blames individuals for a system problem (two nurses for 15 clients, and a log away from the bedside); and <b>stopping measurement</b> based on opinions instead of data.</p><p><b>Takeaway:</b> Test small, fix the process, and keep measuring; don't blame people or spread a change too soon.</p>"
+    },
+    {
+      "id": "qi-49", "type": "sata", "case": "pressure", "topic": "The quality improvement process",
+      "stem": "The nurse manager reviews the draft action plan. Which of the following elements should a complete action plan include?",
+      "options": [
+        "Who is responsible for carrying out and overseeing the changes",
+        "A pilot test of the change",
+        "A list of staff members who will be disciplined",
+        "Timelines for putting the changes in place",
+        "Strategies for measuring whether the changes work",
+        "A promise that no client will ever develop a pressure injury"
+      ],
+      "answer": [0, 1, 3, 4],
+      "rationale": "<p>A complete action plan identifies <b>who is responsible</b> for implementing and overseeing the improvements, includes <b>pilot testing</b>, sets <b>timelines</b>, and states <b>strategies for measuring effectiveness</b>. The draft has a goal, a change to test, and responsible people, but it still needs a timeline for each step and a measurement plan.</p><p><b>A list of staff to discipline</b> focuses on blame instead of systems, and <b>a promise of zero injuries</b> isn't a measurable plan.</p><p><b>Takeaway:</b> An action plan answers who, pilot, when, and how it will be measured.</p>"
+    },
+    {
+      "id": "qi-50", "type": "matrix", "case": "pressure", "topic": "The quality improvement process",
+      "stem": "After the 6-week test on one hallway, the team compares the results with the unit's Q3 data. For each finding, specify whether it shows improvement, no change, or a decline.",
+      "rowHeader": "Finding (Q3 → test period)",
+      "columns": ["Improved", "No change", "Declined"],
+      "rows": [
+        "Pressure injuries per 1,000 client days: 2.4 → 1.2",
+        "Night-shift repositioning documentation: 58% → 88%",
+        "Skin assessments within 8 hours of admission: 64% → 65%",
+        "Days to get a wound care consult: 3 → 5"
+      ],
+      "answer": [0, 0, 1, 2],
+      "rationale": "<p><b>The injury rate fell by half</b>, and <b>night-shift repositioning rose</b> to 88%: both improved, so the change is working on the problem it targeted. <b>Admission skin assessments barely moved</b>, so they need their own change in the next cycle. <b>Wound care consults got slower</b>, a decline to report and address.</p><p>In the Act phase, the team can adopt hourly rounding more widely and plan the next PDSA cycle for admission skin assessments and consult delays.</p><p><b>Takeaway:</b> Evaluate each measure separately: keep what worked, and plan the next cycle for what didn't change or got worse.</p>"
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "id": "nu1110-exam-3-health-policy",
+  "title": "Health Policy",
+  "description": "Class 15 practice: health policy as an entity and a process, how policy is made, key health laws, agencies and professional associations, accreditation, and insurance and reimbursement.",
+  "course": "NU1110",
+  "exam": "Exam 3",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "cases": {
+    "scooter": {
+      "intro": "A nurse in a regional emergency department is concerned about the number of teens injured while riding rental electric scooters, and decides to work toward a state law.",
+      "tabs": [
+        {
+          "title": "ED Data",
+          "html": "<h4>Emergency Department Data, Past 12 Months</h4><table><thead><tr><th>Scooter riders under 18</th><th>Number</th></tr></thead><tbody><tr><td>Injuries treated</td><td>142</td></tr><tr><td>Wearing a helmet</td><td>17 (12%)</td></tr><tr><td>Head injuries</td><td>57 (40%)</td></tr><tr><td>Admitted to the hospital</td><td>21</td></tr></tbody></table><p>Reviews of helmet laws for young bicycle riders found more helmet use and fewer head injuries after the laws took effect.</p>"
+        },
+        {
+          "title": "Timeline",
+          "html": "<h4>What Happened</h4><ol><li>The nurse and the state nurses association present the ED data to two state legislators and a parents' safety group.</li><li>A legislator drafts a bill requiring helmets for scooter riders under 18, with helmets available at rental stations.</li><li>After hearings, negotiation with scooter companies, and amendments, the legislature passes the bill, and the governor signs it.</li><li>The state health department writes regulations on helmet standards, rental stations, and fines.</li><li>One year later, the health department compares injury data with the year before the law.</li></ol>"
+        },
+        {
+          "title": "Stakeholders",
+          "html": "<h4>Stakeholders</h4><ul><li>State legislators and the governor's staff</li><li>State health department staff</li><li>The state courts</li><li>Scooter rental companies</li><li>The state nurses association</li><li>A parents' safety group</li><li>Teens who ride scooters</li></ul>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "hp-01", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "A nurse is explaining health policy to a group of nursing students. Which of the following definitions should the nurse use?",
+      "options": [
+        "Actions taken by government bodies and other groups in society to reach specific health care goals",
+        "A list of the daily tasks that a hospital assigns to each nurse",
+        "The rules that a single insurance company uses to pay claims",
+        "A personal health goal that a client sets with the nurse"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Actions taken by government bodies and other groups in society to reach health care goals</b> is correct. Health policy is both an entity, such as a law, regulation, guideline, or position statement, and a process: how those are developed and carried out.</p><p><b>A hospital's task list</b> is an assignment, not policy. <b>One insurer's claim rules</b> are far too narrow. <b>A client's personal goal</b> is part of a care plan.</p><p><b>Takeaway:</b> Health policy is what governments and other groups do to reach health care goals: both the rules and the process of making them.</p>"
+    },
+    {
+      "id": "hp-02", "type": "sata", "topic": "Health policy as an entity and a process",
+      "stem": "Which of the following can be forms of health policy?",
+      "options": [
+        "A federal law",
+        "A regulation written by a state agency",
+        "A government agency's guideline",
+        "A nurse's opinion posted on social media",
+        "A professional association's position statement",
+        "A court's decision interpreting a law"
+      ],
+      "answer": [0, 1, 2, 4, 5],
+      "rationale": "<p>Health policy includes <b>laws</b>, <b>regulations</b>, <b>government agency guidelines</b>, <b>position statements</b>, resolutions, <b>judicial decrees</b>, and budget priorities.</p><p><b>A personal opinion on social media</b> isn't policy, although nurses can influence policy through proper channels, such as professional associations and contacting legislators.</p><p><b>Takeaway:</b> Policy takes many forms: laws, regulations, guidelines, position statements, court decisions, and budgets.</p>"
+    },
+    {
+      "id": "hp-03", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "Which of the following statements best explains why nurses need to understand health policy?",
+      "options": [
+        "Health policy affects only hospital administrators, not bedside care.",
+        "Policies drive the availability, safety, and quality of care, and a missing or poorly written policy can harm people.",
+        "Nurses must write every policy at their hospital themselves.",
+        "Health policy matters only during election years."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Policies drive the availability, safety, and quality of care</b> is correct. A poorly constructed policy, or the absence of a needed one, can seriously harm individuals and populations. Nurses need to understand how policy affects their clients, their own practice, and their organizations, and they can influence it.</p><p>Policy shapes <b>bedside care</b>, not just administration. Nurses help develop policies but don't write <b>every</b> one. And policy is made and changed <b>all the time</b>, not only in election years.</p><p><b>Takeaway:</b> Policy shapes what care is available, how safe it is, and how good it is.</p>"
+    },
+    {
+      "id": "hp-04", "type": "dropdown", "topic": "Health policy as an entity and a process",
+      "stem": "Complete the following sentence about the two kinds of health policy.",
+      "text": "Public health policy is established in {{0}} and enforced by {{1}}, while an organization's own policy {{2}}.",
+      "blanks": [
+        { "options": ["a hospital's handbook", "law and regulation", "professional opinion", "insurance contracts"], "answer": 1 },
+        { "options": ["the government agency responsible for it", "each hospital's staff", "accrediting organizations only", "private citizens"], "answer": 0 },
+        { "options": ["applies to every citizen in the state", "overrides federal law", "is binding only within that organization", "must be signed by the governor"], "answer": 2 }
+      ],
+      "rationale": "<p><b>Public health policy</b> is established in <b>law and regulation</b> and is enforceable by <b>the government agency responsible for carrying it out</b>. It can be influenced by health care organizations, professional associations, accrediting agencies, and private citizens.</p><p>A private, <b>organizational policy</b>, from a hospital or a professional group, isn't established by law, so it's <b>binding only within that organization</b>, though it can directly or indirectly affect public policy.</p><p><b>Takeaway:</b> Public policy is backed by law and government; organizational policy is the organization's own rules.</p>"
+    },
+    {
+      "id": "hp-05", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "The American Nurses Association publishes a position statement on safe nurse staffing. Which of the following statements about this position statement is accurate?",
+      "options": [
+        "It is a federal law that every hospital must follow.",
+        "It has no effect, since only government bodies make policy.",
+        "It isn't law, but it can influence public policy and the policies of health care organizations.",
+        "It replaces each state's Nurse Practice Act."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>It isn't law, but it can influence public and organizational policy</b> is correct. Private organizations, such as professional associations, develop policies that aren't established by law or regulation, but they can directly or indirectly shape public policy, for example by informing legislators and guiding hospitals.</p><p>It isn't a <b>federal law</b>. Saying it has <b>no effect</b> ignores how associations shape policy. And it doesn't replace a state's <b>Nurse Practice Act</b>, which is state law.</p><p><b>Takeaway:</b> Professional associations make policy without making law, and their positions can move lawmakers.</p>"
+    },
+    {
+      "id": "hp-06", "type": "sata", "topic": "Health policy as an entity and a process",
+      "stem": "Which of the following have the force of law?",
+      "options": [
+        "A presidential executive order",
+        "A hospital's visitor policy",
+        "A court's interpretation of a law",
+        "A nursing unit's break schedule",
+        "A presidential veto of a bill"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Public health policy is usually first established in law, passed by Congress or a state legislature and signed by the president or a governor. <b>Presidential vetoes</b>, <b>executive orders</b>, and <b>judicial interpretations of law</b> also have the force of law.</p><p><b>A hospital's visitor policy</b> and <b>a unit's break schedule</b> are organizational rules: they apply inside that organization, but they aren't law.</p><p><b>Takeaway:</b> Laws, vetoes, executive orders, and court interpretations carry legal force; organizational policies don't.</p>"
+    },
+    {
+      "id": "hp-07", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "Why are laws about health care usually written in broad, general terms?",
+      "options": [
+        "So that no agency has to enforce them",
+        "Because legislators aren't allowed to include any details",
+        "So that the public won't understand them",
+        "To allow flexibility and to help the law stand the test of time"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>To allow flexibility and to stand the test of time</b> is correct. Laws provide broad mandates on purpose, so they can be applied as situations change without being rewritten.</p><p>Laws are written <b>to be enforced</b>: a government agency is assigned to carry each one out. Legislators <b>can</b> include details, but broad wording keeps a law workable. And laws aren't written to <b>confuse the public</b>.</p><p><b>Takeaway:</b> A law sets a broad mandate, written to last.</p>"
+    },
+    {
+      "id": "hp-08", "type": "sata", "topic": "Developing health policy",
+      "stem": "Which of the following can start the development of a public health policy?",
+      "options": [
+        "Legislators commit to solving a health problem",
+        "Constituents bring a problem to their legislators' attention",
+        "Special interest groups raise awareness and lobby for a policy",
+        "Nurses bring data about a health problem to their lawmakers",
+        "Leaders of a government health agency commit to closing a gap in services"
+      ],
+      "answer": [0, 1, 2, 3, 4],
+      "rationale": "<p>All of these can start it. Public policy development may begin when <b>legislators</b> or <b>leaders of a government health agency</b> commit to solving a problem or bridging a gap in services. <b>Constituents</b>, including <b>nurses with data from their practice</b>, bring problems to legislators' attention, and <b>special interest groups</b> raise awareness and lobby.</p><p>Each path gets a problem onto the agenda; what happens next depends on the political process.</p><p><b>Takeaway:</b> Public policy starts when a problem reaches people with the power to act: legislators, agency leaders, constituents, and advocates.</p>"
+    },
+    {
+      "id": "hp-09", "type": "mc", "topic": "Developing health policy",
+      "stem": "A nursing student says, “Health policy is for politicians. Nurses don't really have a role in it.” Which of the following responses by the nurse is best?",
+      "options": [
+        "“Nurses have a significant role. We see how policies affect clients, and we can influence them as citizens and through professional organizations.”",
+        "“You're right. Nurses should leave policy to others and focus only on bedside care.”",
+        "“Only nurses who are elected to public office are able to affect health policy.”",
+        "“Nurses can influence their own hospital's policies, but never state or federal laws.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Nurses have a significant role</b> is correct. Nurses are the largest group of health care professionals and see the effects of policy firsthand. They can influence change by working with public officials at the local, state, and national levels, as individual citizens or as members of professional organizations.</p><p><b>Bedside care only</b> ignores how policy shapes that care. Nurses don't need to <b>hold office</b> to influence policy. And nurses <b>do</b> influence laws, through testimony, lobbying, and contact with legislators.</p><p><b>Takeaway:</b> The nurse's role in health policy is significant, from the bedside to the legislature.</p>"
+    },
+    {
+      "id": "hp-10", "type": "sata", "topic": "Developing health policy",
+      "stem": "A nurse wants to influence a proposed state health law. Which of the following actions should the nurse take?",
+      "options": [
+        "Testify at a legislative hearing about what the nurse sees in practice",
+        "Stay silent, so as not to seem political",
+        "Contact legislators by letter, email, or a meeting",
+        "Work through a professional association that lobbies on the issue",
+        "Comment on the proposed regulations when they're open for public comment",
+        "Wait until the law passes, and then complain on social media"
+      ],
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p>Nurses influence policy by <b>testifying</b> as experts, <b>contacting legislators</b>, <b>working through professional associations</b> that lobby, and <b>commenting on proposed regulations</b>. Voting, staying informed, and serving on boards and committees help too.</p><p><b>Staying silent</b> leaves the nurse's expertise out of the decision. <b>Complaining after the law passes</b> misses the chance to shape it.</p><p><b>Takeaway:</b> Speak up early, through the channels that reach decision-makers.</p>"
+    },
+    {
+      "id": "hp-11", "type": "order", "topic": "Developing health policy",
+      "stem": "A nurse wants to start a policy change about a problem seen in practice. Place the steps in order.",
+      "items": [
+        "Identify the problem from practice or data",
+        "Gather evidence and data about the problem",
+        "Find stakeholders and allies, such as a professional association",
+        "Propose a solution to the right decision-makers",
+        "Help put the policy in place, and evaluate it"
+      ],
+      "rationale": "<p>A nurse starts a policy change by <b>identifying the problem</b>, <b>gathering evidence and data</b>, <b>finding stakeholders and allies</b>, <b>proposing a solution to the right decision-makers</b> (such as a unit council, administration, or legislators), and then <b>helping implement and evaluate</b> the policy.</p><p><b>Takeaway:</b> Problem, evidence, allies, proposal, then follow-through.</p>"
+    },
+    {
+      "id": "hp-12", "type": "mc", "topic": "Developing health policy",
+      "stem": "Which of the following statements describes how public health policy is usually made?",
+      "options": [
+        "Strictly by following the scientific evidence, with no politics or compromise at any stage",
+        "Through influence, negotiation, bargaining, and compromise among stakeholders, in a process that isn't always logical or linear",
+        "By the president alone, without any input from legislators, agencies, or the public",
+        "In a fixed, straight sequence of steps that always happens in the same order"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Through influence, negotiation, bargaining, and compromise, in a process that isn't always linear</b> is correct. Public policy is the product of both government processes and political forces. Relationships form among stakeholders inside and outside government, and decisions about how resources are allocated, and to whom, are made within a political framework.</p><p>Evidence matters, but policy also involves <b>politics and compromise</b>. Many people shape policy, not <b>the president alone</b>. And the stages of policymaking often overlap and repeat rather than following a <b>fixed sequence</b>.</p><p><b>Takeaway:</b> Policymaking is political and messy, which is why nurses' voices matter.</p>"
+    },
+    {
+      "id": "hp-13", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "A 24-year-old client who just started a job without health benefits asks about insurance. Under the Affordable Care Act, which of the following statements is accurate?",
+      "options": [
+        "“Insurers can deny you coverage because of a health condition you already have.”",
+        "“You can't get any health coverage until you turn 26.”",
+        "“You may be able to stay on a parent's health plan until you turn 26.”",
+        "“The Affordable Care Act covers only people who are 65 and older.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>You may be able to stay on a parent's plan until 26</b> is correct. The Affordable Care Act (2010) lets young adults stay on a parent's plan until age 26. It also bans denial of coverage for pre-existing conditions, expanded Medicaid, created insurance marketplaces, and covers many preventive services without cost-sharing.</p><p><b>Denial for pre-existing conditions</b> is what the ACA ended. Coverage isn't <b>delayed until 26</b>. And coverage for people <b>65 and older</b> is Medicare, not the ACA.</p><p><b>Takeaway:</b> The ACA: dependents covered to 26, no denials for pre-existing conditions, wider coverage, and preventive care without cost-sharing.</p>"
+    },
+    {
+      "id": "hp-14", "type": "sata", "topic": "Health policy and other concepts",
+      "stem": "A nurse is explaining how the Affordable Care Act changed health coverage. Which of the following changes came from the ACA?",
+      "options": [
+        "Insurers can no longer deny coverage because of pre-existing conditions",
+        "Medicare was replaced by private insurance",
+        "States could expand Medicaid to cover more adults with low incomes",
+        "Health insurance marketplaces were created",
+        "All hospitals became government-owned",
+        "Many preventive services are covered without cost-sharing"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>The ACA <b>banned denials for pre-existing conditions</b>, let states <b>expand Medicaid</b>, created <b>insurance marketplaces</b>, and requires coverage of many <b>preventive services without cost-sharing</b>. It also tied more payment to quality and value. By expanding access, it aimed for better outcomes and more emphasis on prevention.</p><p>Medicare <b>still exists</b> alongside private plans, and the ACA didn't make hospitals <b>government-owned</b>.</p><p><b>Takeaway:</b> The ACA expanded access and protections; it didn't replace Medicare or take over hospitals.</p>"
+    },
+    {
+      "id": "hp-15", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "On admission to a hospital, a client says they don't have an advance directive and asks what it is. Which of the following responses by the nurse is appropriate?",
+      "options": [
+        "“You'll need to complete an advance directive before we can admit you to the hospital today.”",
+        "“Advance directives are only meant for clients who are over 80 or who are terminally ill.”",
+        "“Without an advance directive, your doctor will make all of your health care decisions for you.”",
+        "“It states your care wishes, or names someone to decide for you if you can't. I can give you information, and it's your choice.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Explaining what it is, and that the choice is the client's</b> is correct. Under the Patient Self-Determination Act (1990), facilities that receive Medicare or Medicaid must tell adult clients on admission, in writing, about their right to make health care decisions, including accepting or refusing treatment and creating advance directives such as a living will or a durable power of attorney for health care. They must document whether the client has one.</p><p>A facility <b>can't require</b> an advance directive as a condition of care. Advance directives are for <b>any adult</b>, not just older or dying clients. And without one, decisions aren't simply left to <b>the doctor</b>: the client decides while able to, and state law guides who decides if they can't.</p><p><b>Takeaway:</b> The PSDA requires informing clients about advance directives, never requiring them.</p>"
+    },
+    {
+      "id": "hp-16", "type": "matrix", "topic": "Health policy and other concepts",
+      "stem": "For each situation, specify the law that applies.",
+      "rowHeader": "Situation",
+      "columns": ["HIPAA", "Patient Self-Determination Act", "Mental Health Parity and Addiction Equity Act", "EMTALA"],
+      "rows": [
+        "An emergency department must screen and stabilize a client with chest pain who has no insurance",
+        "A client's health plan must cover therapy visits no more restrictively than medical visits",
+        "A nurse may not tell a client's employer about the client's diagnosis",
+        "An adult client receives written information about advance directives on admission"
+      ],
+      "answer": [3, 2, 0, 1],
+      "rationale": "<p><b>EMTALA</b> (1986) requires hospital emergency departments that take Medicare to screen and stabilize anyone with an emergency, regardless of ability to pay. The <b>Mental Health Parity and Addiction Equity Act</b> (2008) requires health plans that cover mental health and substance use care to cover it no more restrictively than medical and surgical care, though some plans are exempt. <b>HIPAA</b> (1996) protects the privacy and security of health information. The <b>Patient Self-Determination Act</b> (1990) requires informing adult clients about advance directives on admission.</p><p><b>Takeaway:</b> EMTALA: emergency care for everyone. MHPAEA: parity for mental health. HIPAA: privacy. PSDA: advance directives.</p>"
+    },
+    {
+      "id": "hp-17", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "A city plans new bike lanes, safer sidewalks, and a farmers' market near low-income housing after its transportation, parks, and health departments review how each plan would affect residents' health. Which of the following approaches does this reflect?",
+      "options": [
+        "Health in All Policies",
+        "Managed care",
+        "Charting by exception",
+        "Fee-for-service payment"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Health in All Policies</b> is correct. This approach, described by the American Public Health Association, considers health in every sector's decisions, such as transportation, parks, housing, and education, not just health care. Its key elements include promoting health and equity, collaborating across sectors, benefiting multiple partners, engaging stakeholders, and creating structural or process change.</p><p><b>Managed care</b> is a way of organizing and paying for care. <b>Charting by exception</b> is a documentation method. <b>Fee-for-service</b> is a payment method.</p><p><b>Takeaway:</b> Health in All Policies means every department's decisions consider health.</p>"
+    },
+    {
+      "id": "hp-18", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "A new state law requires hospitals to publicly report their rates of hospital-acquired infections. Which effect is this policy most likely to have on quality?",
+      "options": [
+        "Hospitals will stop tracking infections to avoid bad publicity.",
+        "Hospitals will be motivated to track and reduce their infection rates.",
+        "Infection rates will rise because staff are busy reporting.",
+        "The law will have no effect on hospital practices."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Hospitals will be motivated to track and reduce infections</b> is correct. Health policies influence safety and quality: when results are public, organizations work to improve them, which leads to better client outcomes.</p><p>The law <b>requires</b> tracking, so hospitals can't simply stop. Reporting doesn't <b>cause</b> infections. And policies like this one are designed to change practice, so <b>no effect</b> is unlikely.</p><p><b>Takeaway:</b> Policy drives quality: what's required and made public gets measured and improved.</p>"
+    },
+    {
+      "id": "hp-19", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "Which of the following hospital policies best protects a client's right to make informed decisions about their own care?",
+      "options": [
+        "A policy that lets the provider decide on procedures without discussing them",
+        "A policy that limits clients' access to their own records",
+        "A policy requiring that clients be told the risks, benefits, and alternatives before procedures",
+        "A policy that allows family members to consent for any adult client"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Requiring that clients learn the risks, benefits, and alternatives</b> is correct. Informed consent policies protect clients' rights and autonomy, which health policy, such as the Patient Self-Determination Act, supports.</p><p><b>Deciding without discussion</b> takes away the client's choice. <b>Limiting access to their own records</b> conflicts with clients' right to see and get copies of them. <b>Family consent for any adult</b> overrides a competent client's right to decide.</p><p><b>Takeaway:</b> Policies that inform clients protect their right to decide.</p>"
+    },
+    {
+      "id": "hp-20", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "Which of the following examples best shows how a health policy can improve client outcomes?",
+      "options": [
+        "A hospital policy that sets a dress code for all of the hospital's visitors",
+        "A state law that moves the date when every nursing license expires each year",
+        "A hospital policy that limits visitor parking near the emergency entrance",
+        "A state law requiring sepsis screening in hospitals, leading to earlier treatment and fewer deaths"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>A sepsis screening law that leads to earlier treatment and fewer deaths</b> is correct. It links a policy directly to safer care and a measurable outcome. Health policies contribute to positive outcomes by setting standards, expanding access, and requiring evidence-based practices.</p><p><b>A visitor dress code</b>, <b>a license expiration date</b>, and <b>parking rules</b> are real policies, but none of them directly changes client outcomes.</p><p><b>Takeaway:</b> The policies that matter most for outcomes require safer, evidence-based care or expand access.</p>"
+    },
+    {
+      "id": "hp-21", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "Which of the following statements describes a state's Nurse Practice Act?",
+      "options": [
+        "It is a state law that defines the scope of nursing practice and the legal limits of a nurse's role.",
+        "It is a hospital's policy describing which tasks nurses may delegate.",
+        "It is a federal law that sets the same rules for nurses in every state.",
+        "It is a position statement from a professional nursing association."
+      ],
+      "answer": 0,
+      "rationale": "<p><b>A state law defining the scope of nursing practice and the legal limits of a nurse's role</b> is correct. Each state's Nurse Practice Act sets the legal limits and responsibilities of nursing practice. The state board of nursing enforces it: it licenses nurses, approves nursing programs, and takes disciplinary action.</p><p><b>A hospital policy</b> must stay within the Nurse Practice Act but isn't the act itself. It's <b>state</b> law, so the details differ from state to state. <b>A position statement</b> isn't law.</p><p><b>Takeaway:</b> The Nurse Practice Act is state law, and the board of nursing enforces it.</p>"
+    },
+    {
+      "id": "hp-22", "type": "matrix", "topic": "Agencies and organizations",
+      "stem": "For each responsibility, specify the agency.",
+      "rowHeader": "Responsibility",
+      "columns": ["U.S. Department of Health and Human Services", "State health department", "State office of emergency medical services", "Local health department"],
+      "rows": [
+        "Sets training and certification standards for EMTs and oversees the state's trauma system",
+        "Is the principal federal health agency, and administers more grant dollars than all other federal agencies combined",
+        "Investigates a cluster of food poisoning cases linked to a restaurant in town",
+        "Licenses nursing homes and keeps the state's birth and death records"
+      ],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p>The <b>U.S. Department of Health and Human Services</b> is the principal federal health agency, with 11 operating divisions (including the CDC, CMS, FDA, and NIH), and it administers more grant dollars than all other federal agencies combined. A <b>state health department</b> licenses facilities such as hospitals and long-term care facilities, receives complaints, tracks state health data, keeps vital records, and enforces state health laws. A <b>state office of EMS</b> sets EMS training and certification standards, accredits training programs, oversees the trauma system, and licenses medical transport. A <b>local health department</b> runs community programs and investigates local outbreaks.</p><p><b>Takeaway:</b> Federal (HHS), state (health department, EMS office), and local (health department) agencies each oversee different parts of health care.</p>"
+    },
+    {
+      "id": "hp-23", "type": "matrix", "topic": "Agencies and organizations",
+      "stem": "For each organization, specify the type of international health organization.",
+      "rowHeader": "Organization",
+      "columns": ["Multilateral", "Bilateral", "Nongovernmental (NGO)"],
+      "rows": [
+        "The U.S. Agency for International Development, a government agency that gives aid to developing countries",
+        "Project HOPE, an independent group that sends medical volunteers and supplies after disasters",
+        "The World Health Organization, part of the United Nations"
+      ],
+      "answer": [1, 2, 0],
+      "rationale": "<p><b>Multilateral</b> organizations involve many nations: the <b>World Health Organization</b>, part of the United Nations, is the only international health organization with legal authority. <b>Bilateral</b> organizations are government agencies of one country that give aid to developing countries, like <b>USAID</b>. <b>Nongovernmental organizations</b>, also called private voluntary organizations, are independent of any government and may be faith-based, like <b>Project HOPE</b>, which provides medicine, supplies, volunteers, training, and disaster response.</p><p><b>Takeaway:</b> Multilateral means many nations (WHO); bilateral means one country helping another (USAID); an NGO has no government behind it (Project HOPE).</p>"
+    },
+    {
+      "id": "hp-24", "type": "mc", "topic": "Agencies and organizations",
+      "stem": "Which of the following statements about the Occupational Safety and Health Administration (OSHA) is accurate?",
+      "options": [
+        "It is the federal agency that approves new medications.",
+        "It ensures workplace health and safety, and its rules cover most private-sector employers, including health care employers.",
+        "It accredits hospitals and long-term care facilities.",
+        "It is a state agency that licenses nurses."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>It ensures workplace health and safety, covering most private-sector employers</b> is correct. OSHA requires employers to provide a safe workplace and reduce or eliminate hazards, with standards that cover industrial and health care workplaces, and it helps employers meet them.</p><p><b>Approving medications</b> is the FDA's job. <b>Accrediting facilities</b> is done by organizations such as The Joint Commission. <b>Licensing nurses</b> is the state board of nursing's job.</p><p><b>Takeaway:</b> OSHA keeps workplaces, including hospitals, safe for workers.</p>"
+    },
+    {
+      "id": "hp-25", "type": "matrix", "topic": "Agencies and organizations",
+      "stem": "For each description, specify the professional organization.",
+      "rowHeader": "Description",
+      "columns": ["International Council of Nurses (ICN)", "Sigma Theta Tau International (STTI)", "National Student Nurses' Association (NSNA)", "American Association of Colleges of Nursing (AACN)"],
+      "rows": [
+        "Represents nursing students and helps them develop as professionals",
+        "Represents schools of nursing that offer baccalaureate and graduate programs",
+        "An international honor society of nursing that supports research",
+        "A federation of national nurses' associations from many countries"
+      ],
+      "answer": [2, 3, 1, 0],
+      "rationale": "<p>The <b>NSNA</b> represents nursing students. The <b>AACN</b> represents baccalaureate and graduate schools of nursing (its autonomous arm, CCNE, accredits those programs). <b>Sigma Theta Tau International</b> is nursing's international honor society and supports research. The <b>ICN</b> is a federation of national nurses' associations from many countries.</p><p>All of these professional associations help define standards, support research, and take part in policy development.</p><p><b>Takeaway:</b> Know the major associations: ANA, NLN, AACN, NSNA, STTI, and ICN.</p>"
+    },
+    {
+      "id": "hp-26", "type": "mc", "topic": "Agencies and organizations",
+      "stem": "A state legislature passes a law changing the continuing education that nurses need to renew their licenses. Which of the following agencies will most likely write the regulations to carry out the law?",
+      "options": [
+        "The Joint Commission",
+        "The American Nurses Association",
+        "The state board of nursing",
+        "The U.S. Food and Drug Administration"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>The state board of nursing</b> is correct. Once a law passes, an executive branch agency is assigned to carry it out, and it writes regulations with the details. State boards of nursing are state agencies that oversee nurse licensure, so they would write the rules on continuing education.</p><p><b>The Joint Commission</b> is a private accreditor, and <b>the ANA</b> is a professional association; neither writes government regulations. <b>The FDA</b> is a federal agency that regulates drugs and devices.</p><p><b>Takeaway:</b> A law is carried out, through regulations, by the government agency that oversees that area.</p>"
+    },
+    {
+      "id": "hp-27", "type": "sata", "topic": "Agencies and organizations",
+      "stem": "Which of the following are roles of professional nursing associations?",
+      "options": [
+        "Defining standards of practice and professional behavior",
+        "Accrediting hospitals",
+        "Issuing nursing licenses",
+        "Supporting nursing research",
+        "Taking part in policy development at the local, state, and national levels"
+      ],
+      "answer": [0, 3, 4],
+      "rationale": "<p>Professional associations <b>define standards of practice and professional behavior</b>, establish codes of ethics, <b>support nursing research</b>, and <b>take part in policy development</b> at every level of government. Some exist to support specific groups within nursing.</p><p><b>Accrediting hospitals</b> is done by accreditors such as The Joint Commission. <b>Issuing licenses</b> is a government function, carried out by the state board of nursing.</p><p><b>Takeaway:</b> Associations handle standards, ethics, research, and advocacy; the state handles licensing.</p>"
+    },
+    {
+      "id": "hp-28", "type": "mc", "topic": "Agencies and organizations",
+      "stem": "Why do organizations such as the National Association of Hispanic Nurses and the American Assembly for Men in Nursing exist?",
+      "options": [
+        "To license nurses from those groups",
+        "To accredit nursing programs that serve those groups",
+        "To replace the American Nurses Association for their members",
+        "To support and promote the interests of specific groups within the nursing profession"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>To support and promote the interests of specific groups within nursing</b> is correct. Several professional associations exist for particular groups of nurses, such as the Asian American/Pacific Islander Nurses Association, the American Assembly for Men in Nursing, and the National Association of Hispanic Nurses. Like other associations, they support their members and take part in policy.</p><p>They don't <b>license</b> nurses (the state board does) or <b>accredit</b> programs (accreditors such as CCNE and ACEN do), and they work alongside the ANA rather than <b>replacing</b> it.</p><p><b>Takeaway:</b> Specialty and demographic associations give specific groups of nurses a voice and support.</p>"
+    },
+    {
+      "id": "hp-29", "type": "mc", "topic": "Agencies and organizations",
+      "stem": "A nurse wants to change a state's minimum requirements for nurse staffing in hospitals. Which of the following approaches is most likely to work?",
+      "options": [
+        "Working through the state nurses association to support a bill, and testifying before the state legislature",
+        "Posting complaints about staffing on the nurse's personal social media",
+        "Asking the hospital's visitors to sign a petition at the front desk",
+        "Waiting for the federal government to act on its own"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Working through the state nurses association and testifying</b> is correct. Staffing requirements set by state law are changed through the state legislature, and professional associations have the organization, data, and lobbying experience to move a bill. Nurses' testimony gives legislators firsthand evidence.</p><p><b>Social media complaints</b> don't reach decision-makers in a structured way. <b>A petition at the front desk</b> may break hospital policy and doesn't reach legislators. <b>Waiting for the federal government</b> skips the level of government that sets these requirements.</p><p><b>Takeaway:</b> Take a policy goal to the right level of government, with allies such as professional associations.</p>"
+    },
+    {
+      "id": "hp-30", "type": "mc", "topic": "Accrediting organizations",
+      "stem": "Which of the following statements describes accreditation?",
+      "options": [
+        "It is a hospital's internal self-review, with no outside reviewers involved.",
+        "It is a peer-review process that judges an organization against an accrediting body's standards, and it is private and voluntary.",
+        "It is a requirement that every nurse complete continuing education each year.",
+        "It is a federal law that every hospital must follow."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>A private, voluntary peer-review process that judges an organization against standards</b> is correct. Accreditation certifies that an organization meets quality criteria and is competent to provide its services, and accredited organizations are reevaluated periodically.</p><p>A self-review is part of accreditation, but <b>outside peer reviewers</b>, through an on-site survey, validate it. <b>Continuing education</b> requirements apply to individual nurses' licenses, not to organizations. And accreditation isn't a <b>federal law</b>; it's voluntary, though it brings benefits such as qualifying for Medicare and Medicaid payment.</p><p><b>Takeaway:</b> Accreditation applies to organizations and programs; licensure and certification apply to individuals.</p>"
+    },
+    {
+      "id": "hp-31", "type": "mc", "topic": "Accrediting organizations",
+      "stem": "A hospital board is deciding whether to seek accreditation from The Joint Commission. Which of the following is a benefit of accreditation?",
+      "options": [
+        "It lets the hospital skip the state's licensing requirements for health care facilities.",
+        "It guarantees that no errors or adverse events will ever occur in the hospital.",
+        "It builds public trust, gives credibility with private insurers, and helps the hospital qualify for Medicare and Medicaid payment.",
+        "It means the hospital no longer needs to write any of its own policies or procedures."
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Public trust, credibility with private insurers, and qualifying for Medicare and Medicaid payment</b> is correct. Joint Commission accreditation enhances consumer trust and respectability, gives credibility with private third-party payers, and helps the organization meet the qualifications for Medicare and Medicaid reimbursement.</p><p>Accreditation doesn't replace <b>state licensing</b>, can't <b>guarantee</b> that errors never happen, and doesn't replace the hospital's <b>own policies</b>.</p><p><b>Takeaway:</b> Accreditation earns trust, credibility with payers, and Medicare and Medicaid eligibility.</p>"
+    },
+    {
+      "id": "hp-32", "type": "matrix", "topic": "Accrediting organizations",
+      "stem": "For each example, specify whether it describes accreditation, licensure, or certification.",
+      "rowHeader": "Example",
+      "columns": ["Accreditation", "Licensure", "Certification"],
+      "rows": [
+        "A nursing program shows that it meets a national organization's standards",
+        "A state gives an individual legal permission to practice as an RN",
+        "An RN passes an exam to show expertise in critical care nursing",
+        "A hospital passes an on-site survey by The Joint Commission",
+        "A nurse meets the state's requirements to renew their permission to practice"
+      ],
+      "answer": [0, 1, 2, 0, 1],
+      "rationale": "<p><b>Accreditation</b> applies to organizations and programs: a nursing program meeting national standards, and a hospital passing a Joint Commission survey. It's voluntary. <b>Licensure</b> is the state's legal permission for an individual to practice, including its renewal; it's mandatory. <b>Certification</b> shows an individual's expertise in a specialty, such as critical care; it's voluntary.</p><p><b>Takeaway:</b> Organizations are accredited; individuals are licensed (required) and certified (optional, for specialties).</p>"
+    },
+    {
+      "id": "hp-33", "type": "mc", "topic": "Accrediting organizations",
+      "stem": "Which of the following organizations accredits baccalaureate and graduate nursing programs, but not associate degree or practical nursing programs?",
+      "options": [
+        "The Accreditation Commission for Education in Nursing (ACEN)",
+        "The Joint Commission",
+        "The state board of nursing",
+        "The Commission on Collegiate Nursing Education (CCNE)"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>The Commission on Collegiate Nursing Education (CCNE)</b> is correct. CCNE, an autonomous arm of the AACN, accredits baccalaureate and graduate nursing programs.</p><p><b>ACEN</b> accredits programs at every level, from practical and diploma through associate, baccalaureate, master's, and clinical doctorate, as does the NLN's Commission for Nursing Education Accreditation. <b>The Joint Commission</b> accredits health care organizations, not schools. <b>The state board of nursing</b> approves programs, which is separate from national accreditation.</p><p><b>Takeaway:</b> CCNE accredits baccalaureate and graduate programs; ACEN and the NLN's CNEA accredit all levels.</p>"
+    },
+    {
+      "id": "hp-34", "type": "mc", "topic": "Accrediting organizations",
+      "stem": "A nursing student asks, “Since our program is accredited by CCNE, does that mean the state board of nursing approved it?” Which of the following responses is accurate?",
+      "options": [
+        "“No. State board approval is separate, and every state requires it for prelicensure programs; national accreditation is voluntary.”",
+        "“Yes. National accreditation and state board approval are the same process with different names.”",
+        "“No. State boards of nursing only license nurses and don't oversee nursing programs at all.”",
+        "“Yes. CCNE is the office within each state board of nursing that approves programs.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>No: state board approval is separate and required, and national accreditation is voluntary</b> is correct. Every state requires board of nursing approval for prelicensure programs. National accreditation, such as by CCNE or ACEN, is a separate, voluntary peer review, though most graduate programs require applicants to have graduated from an accredited program.</p><p>The two are <b>not the same process</b>. State boards <b>do</b> approve nursing programs, as well as licensing nurses. And CCNE is a national accreditor connected to the AACN, <b>not part of any state board</b>.</p><p><b>Takeaway:</b> State approval is mandatory; national accreditation is voluntary, but it matters for graduate school.</p>"
+    },
+    {
+      "id": "hp-35", "type": "dropdown", "topic": "Accrediting organizations",
+      "stem": "Complete the following sentence about how accreditation works.",
+      "text": "Reputable accrediting organizations set their standards through {{0}}, and an on-site survey is used to {{1}}.",
+      "blanks": [
+        { "options": ["a popular vote", "an evidence-based process", "each hospital's preferences", "insurance company rules"], "answer": 1 },
+        { "options": ["hire the organization's staff", "write the organization's budget", "validate the organization's self-assessment and performance", "license the organization's nurses"], "answer": 2 }
+      ],
+      "rationale": "<p>Reputable accreditors set standards through <b>an evidence-based process</b>. Organizations seeking accreditation assess themselves, and an <b>on-site survey validates that self-assessment and their performance</b>. To be reaccredited, they must show that they've kept evaluating their performance, corrected deficiencies, and improved.</p><p>Standards aren't set by <b>a popular vote</b>, <b>each hospital's preferences</b>, or <b>insurers' rules</b>. Surveyors don't <b>hire staff</b>, <b>write budgets</b>, or <b>license nurses</b>.</p><p><b>Takeaway:</b> Evidence-based standards, a self-assessment, and an on-site survey to check it.</p>"
+    },
+    {
+      "id": "hp-36", "type": "mc", "topic": "Accrediting organizations",
+      "stem": "Which of the following statements describes how The Joint Commission advances health care policy beyond the organizations it accredits?",
+      "options": [
+        "It passes federal laws that apply to all hospitals.",
+        "Its National Patient Safety Goals and sentinel event reporting system shape national safety and quality standards.",
+        "It sets the price that Medicare pays for each diagnosis.",
+        "It licenses physicians and nurses in every state."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Its National Patient Safety Goals and sentinel event reporting system shape national standards</b> is correct. The Joint Commission is an independent, nonprofit organization, and its standards influence quality and safety practices across health care, which advances health policy.</p><p>It doesn't <b>pass laws</b> (legislatures do), <b>set Medicare payments</b> (CMS does), or <b>license</b> clinicians (state boards do).</p><p><b>Takeaway:</b> The Joint Commission shapes national policy through its standards, not through law.</p>"
+    },
+    {
+      "id": "hp-37", "type": "sata", "topic": "Accrediting organizations",
+      "stem": "Which of the following types of organizations does The Joint Commission accredit?",
+      "options": [
+        "Hospitals",
+        "Schools of nursing",
+        "Long-term care facilities",
+        "Behavioral health care providers",
+        "Individual nurses",
+        "Ambulatory care centers"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>The Joint Commission sets standards for and accredits health care provider organizations, including <b>hospitals</b>, <b>long-term care facilities</b>, <b>behavioral health care providers</b>, and <b>ambulatory care centers</b>.</p><p><b>Schools of nursing</b> are accredited by nursing education accreditors such as CCNE, ACEN, and the NLN's CNEA. <b>Individual nurses</b> are licensed by the state, and may be certified in a specialty; they aren't accredited.</p><p><b>Takeaway:</b> The Joint Commission accredits health care organizations, not schools or individuals.</p>"
+    },
+    {
+      "id": "hp-38", "type": "matrix", "topic": "Insurance and reimbursement",
+      "stem": "For each description, specify the reimbursement method.",
+      "rowHeader": "Description",
+      "columns": ["Fee-for-service", "Capitation", "Prospective payment (DRGs)", "Value-based purchasing"],
+      "rows": [
+        "Medicare pays a hospital a set amount, decided in advance, based on the client's diagnosis",
+        "The provider is paid separately for each service given",
+        "Payment goes up or down with quality measures, such as infection and readmission rates",
+        "A health plan pays a provider a fixed amount per member each month, whatever services are used"
+      ],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p><b>Fee-for-service</b> pays for each service provided. <b>Capitation</b> pays a fixed amount per member per month, whatever services are used, and is used by HMOs. <b>Prospective payment</b>, through diagnosis-related groups (DRGs), pays a set amount per diagnosis, decided in advance. <b>Value-based purchasing</b> (pay for performance) ties payment to quality outcomes.</p><p><b>Takeaway:</b> Providers can be paid per service, per member, per diagnosis, or for performance.</p>"
+    },
+    {
+      "id": "hp-39", "type": "mc", "topic": "Insurance and reimbursement",
+      "stem": "Under Medicare's prospective payment system, a hospital receives a set amount for each client's diagnosis-related group (DRG). Which of the following does this payment method encourage?",
+      "options": [
+        "Longer hospital stays, since the hospital is paid for each extra day",
+        "More tests for every client, since each test is paid separately",
+        "Efficient care and shorter stays, since the hospital keeps any savings or absorbs any extra costs",
+        "No change in care, since payment doesn't depend on how care is given"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Efficient care and shorter stays</b> is correct. With a set amount per diagnosis, a hospital that provides care for less keeps the difference, and one that spends more absorbs the loss, so DRGs encourage efficient care and shorter stays.</p><p><b>Paying for each extra day</b> and <b>paying for each test separately</b> describe fee-for-service incentives. And payment methods <b>do</b> change behavior, which is why policymakers design them carefully.</p><p><b>Takeaway:</b> A fixed payment per diagnosis rewards efficiency, which is also why discharge teaching and follow-up matter more than ever.</p>"
+    },
+    {
+      "id": "hp-40", "type": "mc", "topic": "Insurance and reimbursement",
+      "stem": "A health policy analyst raises a concern about fee-for-service payment. Which of the following concerns is the analyst most likely to raise?",
+      "options": [
+        "It pays providers too little for complex care.",
+        "It keeps clients from choosing their own providers.",
+        "It is used only by Medicaid programs.",
+        "It can encourage overuse, because providers earn more by doing more."
+      ],
+      "answer": 3,
+      "rationale": "<p><b>It can encourage overuse</b> is correct. Fee-for-service pays for each service provided, so more tests and procedures mean more payment, whether or not they're needed. That's one reason payers have moved toward prospective and value-based payment.</p><p>Fee-for-service generally pays <b>more</b>, not less, as care becomes more complex. It doesn't limit <b>which providers</b> clients choose; networks and gatekeepers do that. And it's used by many payers, not <b>only Medicaid</b>.</p><p><b>Takeaway:</b> Fee-for-service rewards volume; value-based payment rewards results.</p>"
+    },
+    {
+      "id": "hp-41", "type": "dropdown", "topic": "Insurance and reimbursement",
+      "stem": "A client is comparing health plans. Complete the nurse's explanation.",
+      "text": "The monthly cost of the plan is the {{0}}. The amount you pay before the plan starts paying is the {{1}}. A flat fee for each visit is a {{2}}.",
+      "blanks": [
+        { "options": ["deductible", "premium", "copay", "coinsurance"], "answer": 1 },
+        { "options": ["copay", "coinsurance", "deductible", "premium"], "answer": 2 },
+        { "options": ["coinsurance", "premium", "deductible", "copay"], "answer": 3 }
+      ],
+      "rationale": "<p>The <b>premium</b> is the monthly cost of the plan. The <b>deductible</b> is what the client pays before insurance starts paying. A <b>copay</b> is a flat fee per visit. <b>Coinsurance</b> is the percentage the client pays after meeting the deductible.</p><p><b>Takeaway:</b> Premium: the monthly cost. Deductible: what you pay before the plan pays. Copay: a flat fee. Coinsurance: a percentage.</p>"
+    },
+    {
+      "id": "hp-42", "type": "mc", "topic": "Insurance and reimbursement",
+      "stem": "After meeting the deductible, a client pays 20% of each hospital bill, and the plan pays the rest. What is the client's 20% share called?",
+      "options": [
+        "Coinsurance",
+        "A premium",
+        "A copay",
+        "Capitation"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Coinsurance</b> is correct. It's the percentage of costs that the client pays after meeting the deductible.</p><p><b>A premium</b> is the monthly cost of the plan. <b>A copay</b> is a flat dollar amount per visit, not a percentage. <b>Capitation</b> is a way of paying providers a fixed amount per member, not a cost to the client.</p><p><b>Takeaway:</b> A percentage after the deductible is coinsurance; a flat fee is a copay.</p>"
+    },
+    {
+      "id": "hp-43", "type": "matrix", "topic": "Insurance and reimbursement",
+      "stem": "For each client, specify the program that most likely covers the care described.",
+      "rowHeader": "Client",
+      "columns": ["TRICARE", "Veterans Affairs (VA) health care", "Indian Health Service", "Medicare Part D"],
+      "rows": [
+        "A veteran who receives care at a VA medical center",
+        "A Medicare client who needs coverage for prescription drugs",
+        "The spouse of an active-duty soldier",
+        "A member of a federally recognized tribe treated at a tribal health clinic"
+      ],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p><b>TRICARE</b> covers active-duty military members and their families. <b>VA health care</b> covers eligible veterans. The <b>Indian Health Service</b> provides care for members of federally recognized American Indian and Alaska Native tribes. <b>Medicare Part D</b> covers prescription drugs.</p><p><b>Takeaway:</b> Know who each public program serves: military families, veterans, tribal members, and Medicare enrollees.</p>"
+    },
+    {
+      "id": "hp-44", "type": "mc", "topic": "Insurance and reimbursement",
+      "stem": "A client who has Medicare says, “Part A covers my visits to my doctor's office.” Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“That's right. Part A covers all of your care.”",
+        "“Part A covers only your prescription drugs.”",
+        "“Part A is the private Medicare Advantage plan.”",
+        "“Part A mainly covers hospital care. Office visits with your provider are covered by Part B.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Part A covers hospital care; Part B covers provider and outpatient services</b> is correct. Medicare Part A is hospital insurance, Part B covers outpatient and provider services such as office visits, Part C is Medicare Advantage (private plans that provide Medicare benefits), and Part D covers prescription drugs.</p><p>Part A doesn't cover <b>all</b> care, isn't <b>drug</b> coverage (that's Part D), and isn't <b>Medicare Advantage</b> (that's Part C).</p><p><b>Takeaway:</b> Medicare A, B, C, D: hospital, provider and outpatient care, Advantage plans, and drugs.</p>"
+    },
+    {
+      "id": "hp-45", "type": "mc", "topic": "Insurance and reimbursement",
+      "stem": "A client who has Medicaid is moving to another state and asks whether their coverage will continue. Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“Medicaid is a federal program, so your coverage moves with you automatically to any state.”",
+        "“Medicaid coverage ends when a client turns 65, so moving won't change anything for you.”",
+        "“Medicaid covers only children and pregnant women, so you'll need private insurance either way.”",
+        "“Medicaid is run jointly by the federal government and each state, and eligibility varies, so you'll need to apply in your new state.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Medicaid is federal and state, eligibility varies, so apply in the new state</b> is correct. Medicaid is funded by the federal government and the states, and each state sets its own eligibility rules within federal guidelines, so coverage doesn't simply transfer.</p><p>It isn't purely <b>federal</b>. It doesn't <b>end at 65</b>: some older adults have both Medicare and Medicaid, and Medicaid is a major payer for long-term care. And it covers <b>adults</b> with low incomes too, not only children and pregnant women.</p><p><b>Takeaway:</b> Medicaid is a federal and state partnership, so eligibility depends on the state.</p>"
+    },
+    {
+      "id": "hp-46", "type": "matrix", "case": "scooter", "topic": "Developing health policy",
+      "stem": "For each event in the timeline, specify the stage of policymaking.",
+      "rowHeader": "Event",
+      "columns": ["Agenda setting", "Government response", "Implementation", "Evaluation"],
+      "rows": [
+        "A legislator drafts a bill requiring helmets for riders under 18",
+        "The state health department writes regulations on helmet standards and fines",
+        "The nurse and the state nurses association present the ED data to legislators",
+        "The health department compares injury data with the year before the law",
+        "The legislature passes the bill, and the governor signs it"
+      ],
+      "answer": [1, 2, 0, 3, 1],
+      "rationale": "<p><b>Agenda setting</b> is when a problem gets attention: the nurse and the state nurses association bringing the injury data to legislators. <b>Government response</b> is when the government acts on it: drafting, passing, and signing the bill. <b>Implementation</b> is when an agency puts the law into action: the health department writing the regulations. <b>Evaluation</b> asks whether it worked: comparing injury data before and after.</p><p><b>Takeaway:</b> Agenda setting, government response, implementation, evaluation, though in real life the stages often overlap.</p>"
+    },
+    {
+      "id": "hp-47", "type": "sata", "case": "scooter", "topic": "Developing health policy",
+      "stem": "Before the first draft of the bill is written, which of the following should be determined?",
+      "options": [
+        "Which population will benefit from the policy",
+        "Which nurse will get credit for the idea",
+        "The policy's cost-benefit ratio",
+        "Which stakeholders support or oppose the policy",
+        "Whether scooter companies will be allowed to write the regulations",
+        "The scientific evidence and successful similar models"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Before a bill is drafted, its supporters determine <b>the population that will benefit</b> (riders under 18), <b>the cost-benefit ratio</b>, <b>the stakeholders and their support</b>, and <b>the scientific evidence and successful similar models</b>, such as helmet laws for young bicycle riders.</p><p><b>Credit for the idea</b> doesn't belong in policy planning. And regulations are written by the government agency assigned to carry out the law, not by <b>the companies being regulated</b>.</p><p><b>Takeaway:</b> Before drafting, know who benefits, what it costs, who's for or against it, and what the evidence shows.</p>"
+    },
+    {
+      "id": "hp-48", "type": "matrix", "case": "scooter", "topic": "Developing health policy",
+      "stem": "For each stakeholder, specify whether it is inside or outside government.",
+      "rowHeader": "Stakeholder",
+      "columns": ["Inside government", "Outside government"],
+      "rows": [
+        "State legislators",
+        "State health department staff",
+        "Scooter rental companies",
+        "The state courts",
+        "A parents' safety group",
+        "The state nurses association"
+      ],
+      "answer": [0, 0, 1, 0, 1, 1],
+      "rationale": "<p>Stakeholders <b>inside government</b> include legislators, bureaucrats such as health department staff, the governor's staff, and the courts. Stakeholders <b>outside government</b> include interested citizens, institutions, professional associations such as the state nurses association, and special interest groups such as scooter companies and parents' groups.</p><p>At each stage, formal and informal relationships develop among all of them, and the final policy reflects their influence, negotiation, and compromise.</p><p><b>Takeaway:</b> Policy is shaped by people inside government and those outside it who work to influence it.</p>"
+    },
+    {
+      "id": "hp-49", "type": "mc", "case": "scooter", "topic": "Health policy as an entity and a process",
+      "stem": "After the governor signs the law, the state health department writes the regulations. Which of the following statements about these regulations is accurate?",
+      "options": [
+        "They can add requirements the law doesn't authorize, such as banning scooters for everyone.",
+        "They give the details of how the law will be carried out, and they must stay within the law's authority and intent.",
+        "They don't need to refer to the law, since the agency is the expert.",
+        "They have no force until a court approves each one."
+      ],
+      "answer": 1,
+      "rationale": "<p><b>They give the details, and must stay within the law's authority and intent</b> is correct. Laws give broad mandates; regulations, written by the executive branch agency assigned to carry out the law, provide the details. Regulations must refer directly to the law, can't exceed the agency's authority, and must honor the law's original intent.</p><p><b>Adding requirements the law doesn't authorize</b>, like a total ban, would exceed the agency's authority. Regulations <b>must</b> refer to the law. And they don't need <b>court approval</b> to take effect.</p><p><b>Takeaway:</b> The law sets the mandate; regulations fill in the details, within the law's limits.</p>"
+    },
+    {
+      "id": "hp-50", "type": "mc", "case": "scooter", "topic": "Developing health policy",
+      "stem": "One year after the law takes effect, which of the following data would best show whether the policy worked?",
+      "options": [
+        "The number of scooter companies operating in the state",
+        "How many legislators voted for the bill",
+        "Head injuries among scooter riders under 18 in the year before and the year after the law",
+        "The number of news stories written about the law"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
+    }
+  ]
+}
