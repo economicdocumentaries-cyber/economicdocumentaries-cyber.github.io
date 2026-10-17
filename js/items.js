@@ -1078,6 +1078,22 @@ export function validateSet(set) {
     else if (isText(q?.id)) seen.add(q.id);
     validateQuestion(q, set.cases).forEach(note);
   });
+  // Topic weights (SPEC 11.3): how an exam's questions are split across the
+  // topics, like a blueprint's counts, whatever the size of each topic's pool.
+  if (set.topicWeights != null) {
+    const weights = set.topicWeights;
+    if (typeof weights !== 'object' || Array.isArray(weights)) {
+      add('"topicWeights" must give each topic a number, like { "Safety": 10, "Pharmacology": 8 }.');
+    } else {
+      const topics = new Set(set.questions.map(q => q?.topic).filter(isText));
+      for (const [topic, n] of Object.entries(weights)) {
+        if (!(typeof n === 'number' && n >= 0)) add(`"topicWeights": the weight for "${topic}" must be a number of 0 or more, with no quotes.`);
+        if (!topics.has(topic)) add(`"topicWeights" names "${topic}", but no question has that topic. Check the spelling.`);
+      }
+      for (const topic of topics) if (!(topic in weights)) add(`"topicWeights" has no weight for the topic "${topic}". Give every topic a weight.`);
+      if (!Object.values(weights).some(n => n > 0)) add('"topicWeights" needs at least one weight greater than 0.');
+    }
+  }
   return problems;
 }
 

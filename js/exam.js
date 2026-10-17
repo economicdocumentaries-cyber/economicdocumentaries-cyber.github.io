@@ -94,7 +94,7 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map()) 
     }
   }
   const limit = s.count ?? Infinity;
-  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen) : blocks;
+  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen, set.topicWeights) : blocks;
   const place = new Map(blocks.map((b, i) => [b, i]));
   const ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => (place.get(a) ?? -1) - (place.get(b) ?? -1));
   return ordered.flat();
@@ -104,13 +104,20 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map()) 
 // never) first, and each topic getting its share in the same proportions as
 // all the questions, so a set written to a blueprint keeps its balance.
 // A case study's questions count toward their own topics.
-function pickBlocks(blocks, limit, random, seen) {
+// weights: the set's topicWeights, when its exams must follow a blueprint
+// whatever the size of each topic's pool (SPEC 11.3). Then each topic's share
+// comes first, with its questions seen longest ago, and a case study may go
+// past its topics' shares by 2 questions at most.
+function pickBlocks(blocks, limit, random, seen, weights = null) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
   const queue = shuffle(blocks, random).sort((a, b) => age(a) - age(b)); // seen longest ago first, in random order within an age
   // Each topic's share of the limit, rounded so the shares add up to it.
   const all = blocks.flat();
   const topics = [...new Set(all.map(q => q.topic))];
-  const exact = topics.map(t => (all.filter(q => q.topic === t).length * limit) / all.length);
+  const blueprint = !!weights && topics.every(t => weights[t] >= 0) && topics.some(t => weights[t] > 0);
+  const weightOf = t => (blueprint ? weights[t] : all.filter(q => q.topic === t).length);
+  const total = topics.reduce((sum, t) => sum + weightOf(t), 0);
+  const exact = topics.map(t => (weightOf(t) * limit) / total);
   const share = exact.map(Math.floor);
   const roundUp = topics.map((_, i) => i).sort((i, j) => exact[j] - share[j] - (exact[i] - share[i]));
   for (const i of roundUp.slice(0, limit - share.reduce((a, b) => a + b, 0))) share[i]++;
@@ -123,19 +130,55 @@ function pickBlocks(blocks, limit, random, seen) {
     for (const q of b) left.set(q.topic, left.get(q.topic) - 1);
     count += b.length;
   };
+  // A case study that would take its topics more than 2 past their shares (blueprint sets only).
+  const tooBig = b => blueprint && [...new Set(b.map(q => q.topic))].some(t => b.filter(q => q.topic === t).length > left.get(t) + 2);
   // Case studies whose turn it is: the ones starting within the first `limit` questions of the queue.
   let start = 0;
   for (const b of queue.slice()) {
     if (start >= limit) break;
     start += b.length;
-    if (b.length > 1 && count + b.length <= limit) take(b);
+    if (b.length > 1 && count + b.length <= limit && !tooBig(b)) take(b);
+  }
+  // In a blueprint set, a case study that went past its topics' shares leaves fewer open
+  // places than the other topics still need: those places are shared out again by weight,
+  // so the shortfall is spread over the topics instead of landing on one.
+  if (blueprint) {
+    const open = topics.filter(t => left.get(t) > 0 && weights[t] > 0);
+    const places = limit - count;
+    if (open.reduce((sum, t) => sum + left.get(t), 0) > places) {
+      const given = new Map(open.map(t => [t, 0]));
+      let rest = places;
+      let active = open;
+      // By weight, never past what a topic still needs; places a full topic can't take go round again.
+      while (rest > 0 && active.length) {
+        const total = active.reduce((sum, t) => sum + weights[t], 0);
+        const fair = active.map(t => (weights[t] * rest) / total);
+        const whole = fair.map(Math.floor);
+        const tie = active.map(() => random());
+        const order = active.map((_, i) => i).sort((i, j) => fair[j] - whole[j] - (fair[i] - whole[i]) || tie[i] - tie[j]);
+        for (const i of order.slice(0, rest - whole.reduce((a, b) => a + b, 0))) whole[i]++;
+        let handed = 0;
+        active.forEach((t, i) => {
+          const add = Math.min(whole[i], left.get(t) - given.get(t));
+          given.set(t, given.get(t) + add);
+          handed += add;
+        });
+        if (!handed) break;
+        rest -= handed;
+        active = active.filter(t => given.get(t) < left.get(t));
+      }
+      for (const t of open) left.set(t, given.get(t));
+    }
   }
   // Then single questions: seen longest ago first, and among those, ones whose topic still needs some.
+  // In a blueprint set, topics that still need some come first, then the oldest question among them.
   const full = b => (left.get(b[0].topic) > 0 ? 0 : 1);
   while (count < limit) {
     const singles = queue.filter(b => b.length === 1);
     if (!singles.length) break;
-    take(singles.reduce((best, b) => (age(b) < age(best) || (age(b) === age(best) && full(b) < full(best)) ? b : best)));
+    const needed = blueprint ? singles.filter(b => !full(b)) : [];
+    const pool = needed.length ? needed : singles;
+    take(pool.reduce((best, b) => (age(b) < age(best) || (age(b) === age(best) && full(b) < full(best)) ? b : best)));
   }
   // Too few single questions: more case studies that fit, then part of one rather than nothing.
   for (const b of queue.slice()) if (count + b.length <= limit) take(b);
