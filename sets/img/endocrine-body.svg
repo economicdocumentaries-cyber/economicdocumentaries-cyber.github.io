@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 520" width="440" height="520" font-family="Arial, Helvetica, sans-serif">
+  <title>Endocrine glands of the neck and trunk, front view</title>
+  <!-- An original drawing for the Practice Exam Center: the neck and trunk
+       seen from the front, so the client's right is on the viewer's left.
+       The glands are drawn larger than life so they are easy to click.
+       The thyroid gland's two lobes and isthmus, the thymus, the pancreas,
+       the two adrenal glands, the two kidneys, and the liver are each their
+       own shape with an id (body-thyroid-right, body-thyroid-left,
+       body-thyroid-isthmus, body-thymus, body-pancreas, body-adrenal-right,
+       body-adrenal-left, body-kidney-right, body-kidney-left, body-liver), so
+       hot-spot areas can be checked against them. The stomach is only
+       outlined, so the pancreas behind it shows. -->
+  <rect width="440" height="520" fill="#FFFFFF"/>
+  <!-- outline of the body -->
+  <path fill="#FAF1EA" stroke="#C9AE9A" stroke-width="2.5"
+    d="M186 0 L254 0 L258 54 C300 66 360 72 392 96 C412 112 416 140 414 172 L404 300 C400 360 408 420 418 520 L22 520 C32 420 40 360 36 300 L26 172 C24 140 28 112 48 96 C80 72 140 66 182 54 Z"/>
+  <!-- lungs and heart, faint, for orientation -->
+  <path fill="#F2E6EA" stroke="#D9C2CA" stroke-width="2" d="M190 150 C150 150 112 190 104 250 C100 282 110 300 134 302 C164 300 186 290 196 270 Z"/>
+  <path fill="#F2E6EA" stroke="#D9C2CA" stroke-width="2" d="M250 150 C290 150 328 190 336 250 C340 282 330 300 306 302 C276 300 254 290 244 270 Z"/>
+  <path fill="#F3DCDC" stroke="#D8B7B7" stroke-width="2" d="M206 228 C230 220 262 228 270 250 C276 272 258 296 232 300 C214 300 200 284 200 262 C200 246 202 234 206 228 Z"/>
+  <!-- diaphragm -->
+  <path fill="none" stroke="#DCC7B8" stroke-width="2" d="M70 306 C140 290 300 290 370 306"/>
+  <!-- trachea, with its rings of cartilage -->
+  <rect x="208" y="20" width="24" height="136" rx="10" fill="#EFE8E2" stroke="#B9AA9C" stroke-width="2"/>
+  <g stroke="#CFC2B6" stroke-width="2">
+    <line x1="210" y1="34" x2="230" y2="34"/><line x1="210" y1="48" x2="230" y2="48"/>
+    <line x1="210" y1="62" x2="230" y2="62"/><line x1="210" y1="134" x2="230" y2="134"/>
+    <line x1="210" y1="146" x2="230" y2="146"/>
+  </g>
+  <!-- thyroid gland: right lobe (viewer's left), isthmus, left lobe -->
+  <path id="body-thyroid-right" fill="#E2907B" stroke="#A85A47" stroke-width="2"
+    d="M206 72 C188 68 172 84 172 106 C172 128 188 138 206 130 L210 120 L210 82 Z"/>
+  <path id="body-thyroid-left" fill="#E2907B" stroke="#A85A47" stroke-width="2"
+    d="M234 72 C252 68 268 84 268 106 C268 128 252 138 234 130 L230 120 L230 82 Z"/>
+  <rect id="body-thyroid-isthmus" x="202" y="94" width="36" height="26" rx="5" fill="#D97C66" stroke="#A85A47" stroke-width="2"/>
+  <!-- thymus, in the upper chest above the heart -->
+  <path id="body-thymus" fill="#BFD6E6" stroke="#5F86A3" stroke-width="2"
+    d="M218 168 C200 166 192 184 194 204 C196 220 206 228 218 224 L220 196 L222 224 C234 228 244 220 246 204 C248 184 240 166 222 168 Z"/>
+  <!-- liver, on the client's right -->
+  <path id="body-liver" fill="#D9A79A" stroke="#9C6658" stroke-width="2"
+    d="M70 306 C120 294 196 296 232 306 C226 320 206 330 176 334 C140 340 100 342 78 334 C66 328 64 314 70 306 Z"/>
+  <!-- stomach, outline only -->
+  <path fill="none" stroke="#C7A8A0" stroke-width="2" stroke-dasharray="6 5"
+    d="M246 298 C288 290 332 302 336 322 C340 340 320 354 292 352 C272 350 260 342 252 332 C246 324 242 310 246 298 Z"/>
+  <!-- pancreas, behind the stomach: head on the client's right, tail toward the left -->
+  <path id="body-pancreas" fill="#EBC77E" stroke="#A8873A" stroke-width="2"
+    d="M164 358 C162 342 180 334 198 340 C226 348 254 340 280 332 C296 328 304 342 294 352 C270 368 238 376 210 380 C186 384 166 374 164 358 Z"/>
+  <!-- kidneys -->
+  <path id="body-kidney-right" fill="#C98F86" stroke="#8E5A52" stroke-width="2"
+    d="M126 410 C104 410 96 434 98 458 C100 482 114 494 132 490 C146 486 146 470 140 460 C136 452 138 442 146 434 C152 422 144 410 126 410 Z"/>
+  <path id="body-kidney-left" fill="#C98F86" stroke="#8E5A52" stroke-width="2"
+    d="M314 402 C336 402 344 426 342 450 C340 474 326 486 308 482 C294 478 294 462 300 452 C304 444 302 434 294 426 C288 414 296 402 314 402 Z"/>
+  <!-- adrenal glands, on top of the kidneys -->
+  <path id="body-adrenal-right" fill="#9CC9A3" stroke="#4F8A5C" stroke-width="2"
+    d="M98 414 C100 394 114 376 128 370 C142 378 156 396 158 414 C140 406 116 406 98 414 Z"/>
+  <path id="body-adrenal-left" fill="#9CC9A3" stroke="#4F8A5C" stroke-width="2"
+    d="M282 406 C284 386 298 368 312 362 C326 370 340 388 342 406 C324 398 300 398 282 406 Z"/>
+  <text x="38" y="510" font-size="13" fill="#6B7684">CLIENT'S RIGHT</text>
+  <text x="402" y="510" font-size="13" fill="#6B7684" text-anchor="end">CLIENT'S LEFT</text>
+</svg>

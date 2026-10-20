@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" font-family="Arial, Helvetica, sans-serif">
+  <title>The brain cut down the middle, seen from the side</title>
+  <!-- An original drawing for the Practice Exam Center: the inner surface of
+       the brain after a cut down the middle, the front of the head on the
+       left. The small glands are drawn larger than life so they are easy to
+       click. The hypothalamus, the two lobes of the pituitary gland, the
+       pineal gland, the thalamus, the brainstem, and the cerebellum are each
+       their own shape with an id (brain-hypothalamus, brain-pituitary-anterior,
+       brain-pituitary-posterior, brain-pineal, brain-thalamus, brain-brainstem,
+       brain-cerebellum), so hot-spot areas can be checked against them. -->
+  <rect width="600" height="420" fill="#FFFFFF"/>
+  <!-- cerebrum, inner surface -->
+  <path id="brain-cerebrum" fill="#F4DED8" stroke="#B98D84" stroke-width="2.5"
+    d="M66 224 C58 142 128 60 262 44 C384 30 502 72 542 152 C558 186 558 216 548 236 C522 252 470 260 412 266 L300 268 L204 266 C150 264 100 258 80 248 C70 242 66 234 66 224 Z"/>
+  <!-- folds on the inner surface -->
+  <g fill="none" stroke="#D9AFA6" stroke-width="2.5" stroke-linecap="round">
+    <path d="M118 120 C150 104 176 110 196 96"/>
+    <path d="M96 182 C120 170 140 176 160 162"/>
+    <path d="M230 82 C262 70 300 74 330 64"/>
+    <path d="M372 80 C404 86 430 100 452 96"/>
+    <path d="M470 142 C492 158 508 176 520 200"/>
+    <path d="M462 230 C486 222 508 228 530 220"/>
+  </g>
+  <!-- corpus callosum, the curved band that joins the two halves -->
+  <path fill="#FBF4EF" stroke="#C9A79E" stroke-width="2"
+    d="M168 192 C172 150 230 124 302 122 C374 120 426 142 436 178 C438 194 426 202 412 198 C404 172 366 148 302 148 C238 148 200 168 196 196 C194 208 170 206 168 192 Z"/>
+  <!-- thalamus -->
+  <ellipse id="brain-thalamus" cx="314" cy="204" rx="50" ry="29" fill="#E8C8C0" stroke="#AE8277" stroke-width="2"/>
+  <!-- hypothalamus, below and in front of the thalamus -->
+  <path id="brain-hypothalamus" fill="#F2B48F" stroke="#B9744E" stroke-width="2"
+    d="M234 222 C254 212 284 214 296 228 C302 242 294 256 280 262 L254 264 C240 260 230 248 228 236 C228 230 230 225 234 222 Z"/>
+  <!-- optic chiasm, where the optic nerves cross -->
+  <ellipse cx="208" cy="262" rx="13" ry="6" fill="#F3E3BF" stroke="#B9A06A" stroke-width="1.5"/>
+  <!-- brainstem: midbrain, pons, and medulla -->
+  <path id="brain-brainstem" fill="#E7D2CB" stroke="#AE8A80" stroke-width="2"
+    d="M302 234 L352 240 C364 262 372 290 376 320 L372 350 L366 420 L328 420 L324 356 C302 348 288 322 292 296 C294 272 297 252 302 234 Z"/>
+  <!-- cerebellum -->
+  <path id="brain-cerebellum" fill="#EAD3CE" stroke="#AE8A80" stroke-width="2"
+    d="M384 276 C424 260 490 262 520 290 C542 312 534 352 502 368 C468 386 412 382 388 358 C374 342 372 298 384 276 Z"/>
+  <g fill="none" stroke="#C8A69E" stroke-width="2" stroke-linecap="round">
+    <path d="M398 300 C430 288 476 290 508 304"/>
+    <path d="M396 322 C430 312 480 314 514 326"/>
+    <path d="M400 344 C432 336 474 338 504 348"/>
+  </g>
+  <!-- bone of the skull base, with the cup that holds the pituitary gland -->
+  <path fill="#ECE5DA" stroke="#B3A694" stroke-width="2"
+    d="M140 294 L202 294 C200 356 310 358 310 302 L340 302 L340 318 L324 318 C320 372 186 374 186 312 L140 312 Z"/>
+  <!-- pituitary stalk -->
+  <path fill="#E8BFA9" stroke="#B9806A" stroke-width="1.5" d="M262 262 L276 262 L288 297 L274 297 Z"/>
+  <!-- pituitary gland: the front (anterior) lobe and the back (posterior) lobe -->
+  <ellipse id="brain-pituitary-anterior" cx="236" cy="316" rx="26" ry="21" fill="#E2907B" stroke="#A85A47" stroke-width="2"/>
+  <ellipse id="brain-pituitary-posterior" cx="282" cy="315" rx="18" ry="19" fill="#C3A0CC" stroke="#7E5A8C" stroke-width="2"/>
+  <!-- pineal gland, at the back of the thalamus -->
+  <path id="brain-pineal" fill="#9CC9A3" stroke="#4F8A5C" stroke-width="2"
+    d="M356 232 C364 220 388 222 397 233 C404 243 397 257 383 258 C368 257 354 246 356 232 Z"/>
+  <text x="24" y="404" font-size="15" fill="#6B7684">FRONT</text>
+  <text x="576" y="404" font-size="15" fill="#6B7684" text-anchor="end">BACK</text>
+</svg>
