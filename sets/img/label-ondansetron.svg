@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260" font-family="Arial, Helvetica, sans-serif">
+  <title>Sample medication label: ondansetron oral solution</title>
+  <!-- An original sample label for the Practice Exam Center, for practice only.
+       The strength box (how much drug is in each 5 mL) is its own shape with
+       an id (label-strength), so hot-spot areas can be checked against it. -->
+  <rect width="600" height="260" fill="#FFFFFF"/>
+  <rect x="6" y="6" width="588" height="248" rx="10" fill="#FFFFFF" stroke="#4A5A6A" stroke-width="2"/>
+  <path d="M7 50 V17 A10 10 0 0 1 17 7 H583 A10 10 0 0 1 593 17 V50 Z" fill="#B5651D"/>
+  <g fill="#FFFFFF" font-size="13" font-weight="700">
+    <text x="24" y="34">NDC 00000-000-00</text>
+    <text x="576" y="34" text-anchor="end">Rx only</text>
+  </g>
+  <text x="24" y="86" font-size="25" font-weight="700" fill="#5A3210">Ondansetron Oral Solution, USP</text>
+  <rect id="label-strength" x="20" y="102" width="210" height="50" rx="6" fill="#FBF1E6" stroke="#B5651D" stroke-width="2"/>
+  <text x="125" y="136" font-size="25" font-weight="700" fill="#5A3210" text-anchor="middle">4 mg per 5 mL</text>
+  <text x="576" y="134" font-size="20" font-weight="700" fill="#333333" text-anchor="end">50 mL</text>
+  <g fill="#333333" font-size="14">
+    <text x="24" y="180">Each 5 mL contains 4 mg of ondansetron (as ondansetron hydrochloride).</text>
+    <text x="24" y="200">For oral use only. Store at 20° to 25°C (68° to 77°F).</text>
+    <text x="24" y="220">Protect from light. Keep the bottle tightly closed.</text>
+  </g>
+  <text x="24" y="244" font-size="12" fill="#666666">Lot ON2209 &#160;&#160; Exp 05/2028</text>
+  <text x="576" y="244" font-size="12" font-weight="700" fill="#B3261E" text-anchor="end">SAMPLE LABEL FOR PRACTICE ONLY</text>
+</svg>

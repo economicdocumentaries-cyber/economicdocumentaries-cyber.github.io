@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260" font-family="Arial, Helvetica, sans-serif">
+  <title>Sample medication label: cephalexin capsules</title>
+  <!-- An original sample label for the Practice Exam Center, for practice only.
+       The brand name is made up. The generic name and the expiration date
+       each sit on their own shape with an id (label-generic, label-exp), so
+       hot-spot areas can be checked against them. -->
+  <rect width="600" height="260" fill="#FFFFFF"/>
+  <rect x="6" y="6" width="588" height="248" rx="10" fill="#FFFFFF" stroke="#4A5A6A" stroke-width="2"/>
+  <path d="M7 50 V17 A10 10 0 0 1 17 7 H583 A10 10 0 0 1 593 17 V50 Z" fill="#6A4C93"/>
+  <g fill="#FFFFFF" font-size="13" font-weight="700">
+    <text x="24" y="34">NDC 00000-000-00</text>
+    <text x="576" y="34" text-anchor="end">Rx only</text>
+  </g>
+  <text x="24" y="88" font-size="30" font-weight="700" fill="#3F2A63">Trainex<tspan font-size="16" dy="-12">®</tspan></text>
+  <rect id="label-generic" x="18" y="98" width="268" height="28" rx="4" fill="#FFFFFF"/>
+  <text x="24" y="118" font-size="17" fill="#333333">(cephalexin capsules, USP)</text>
+  <rect x="20" y="136" width="150" height="48" rx="6" fill="#F4F0FA" stroke="#6A4C93" stroke-width="2"/>
+  <text x="95" y="169" font-size="26" font-weight="700" fill="#3F2A63" text-anchor="middle">500 mg</text>
+  <text x="576" y="168" font-size="18" font-weight="700" fill="#333333" text-anchor="end">100 Capsules</text>
+  <g fill="#333333" font-size="14">
+    <text x="24" y="208">Each capsule contains cephalexin monohydrate equal to 500 mg of cephalexin.</text>
+    <text x="24" y="228">Store at 20° to 25°C (68° to 77°F). Keep out of reach of children.</text>
+  </g>
+  <text x="24" y="246" font-size="12" fill="#666666">Lot CX4471</text>
+  <rect id="label-exp" x="104" y="233" width="84" height="18" rx="3" fill="#FFFFFF"/>
+  <text x="110" y="246" font-size="12" fill="#666666">Exp 08/2026</text>
+  <text x="576" y="246" font-size="12" font-weight="700" fill="#B3261E" text-anchor="end">SAMPLE LABEL FOR PRACTICE ONLY</text>
+</svg>

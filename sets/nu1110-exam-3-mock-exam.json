@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-mock-exam",
   "title": "Exam 3 Mock Exam",
-  "description": "A practice exam that follows the Exam 3 blueprint. Each exam gives 25 questions, split across the topics the way the real exam is, from a pool of 300: health care systems, evidence-based practice, informatics and documentation, quality improvement, health policy, and abbreviations, conversions, and labels.",
+  "description": "A practice exam that follows the Exam 3 blueprint. Each exam gives 25 questions, split across the topics the way the real exam is, from a pool of 350: health care systems, evidence-based practice, informatics and documentation, quality improvement, health policy, and abbreviations, conversions, and labels.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 450,
+  "timeMinutes": 525,
   "defaultCount": 25,
   "topicWeights": {"Health care systems": 10, "Evidence-based practice": 8, "Informatics and documentation": 10, "Quality improvement": 6, "Health policy": 6, "Abbreviations, conversions, and labels": 10},
   "cases": {
@@ -107,6 +107,23 @@
         {
           "title": "Stakeholders",
           "html": "<h4>Stakeholders</h4><ul><li>State legislators and the governor's staff</li><li>State health department staff</li><li>The state courts</li><li>Scooter rental companies</li><li>The state nurses association</li><li>A parents' safety group</li><li>Teens who ride scooters</li></ul>"
+        }
+      ]
+    },
+    "fluids": {
+      "intro": "A nurse on a medical unit is caring for a 74-year-old client who was admitted yesterday with heart failure.",
+      "tabs": [
+        {
+          "title": "Provider's Orders",
+          "html": "<h4>Provider's Orders</h4><p><b>Day 1, 1600:</b></p><p>Admit to the medical unit.<br>Furosemide 40 mg q AM<br>Metoprolol tartrate 25 mg PO BID<br>Potassium chloride 20.0 mEq PO daily<br>Insulin lispro 4 U subcut AC<br>Docusate sodium 100 mg PO<br>Acetaminophen 650 mg PO q6h PRN pain<br>Fluid restriction: 1,500 mL a day<br>Weigh daily before breakfast<br>Activity: up ad lib</p><p>J. Ramos, MD</p>"
+        },
+        {
+          "title": "Intake and Output",
+          "html": "<h4>Intake and Output: Day 2, 0700 to 1900</h4><table><thead><tr><th>Time</th><th>Intake</th><th>Amount</th></tr></thead><tbody><tr><td>0800</td><td>Coffee</td><td>8&nbsp;oz</td></tr><tr><td>0800</td><td>Apple juice</td><td>4&nbsp;oz</td></tr><tr><td>0900</td><td>Water with medications</td><td>90&nbsp;mL</td></tr><tr><td>1000</td><td>IV flush (saline)</td><td>10&nbsp;mL</td></tr><tr><td>1230</td><td>Tomato soup</td><td>1&nbsp;cup</td></tr><tr><td>1230</td><td>Milk</td><td>6&nbsp;oz</td></tr><tr><td>1400</td><td>IV flush (saline)</td><td>10&nbsp;mL</td></tr><tr><td>1700</td><td>Water with medications</td><td>2&nbsp;tbsp</td></tr></tbody></table><table><thead><tr><th>Time</th><th>Output</th><th>Amount</th></tr></thead><tbody><tr><td>0700</td><td>Urine</td><td>400&nbsp;mL</td></tr><tr><td>1100</td><td>Urine</td><td>650&nbsp;mL</td></tr><tr><td>1500</td><td>Urine</td><td>500&nbsp;mL</td></tr><tr><td>1830</td><td>Urine</td><td>350&nbsp;mL</td></tr></tbody></table>"
+        },
+        {
+          "title": "Daily Weights",
+          "html": "<h4>Daily Weights</h4><table><thead><tr><th>Day and time</th><th>Weight</th></tr></thead><tbody><tr><td>Day 1, 1500 (on admission)</td><td>187&nbsp;lb</td></tr><tr><td>Day 2, 0600 (before breakfast)</td><td>183.7&nbsp;lb</td></tr></tbody></table>"
         }
       ]
     }
@@ -2988,6 +3005,510 @@
       "options": ["The number of scooter companies operating in the state", "How many legislators voted for the bill", "Head injuries among scooter riders under 18 in the year before and the year after the law", "The number of news stories written about the law"],
       "answer": 2,
       "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
+    },
+    {
+      "id": "acl-01",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse reads “NKDA” on a client's allergy band. Which of the following is the meaning of this abbreviation?",
+      "options": ["No known allergies of any kind", "No known drug allergies", "No known dietary allergies", "A known drug allergy, not yet named"],
+      "answer": 1,
+      "rationale": "<p><b>NKDA</b> means <b>no known drug allergies</b>: the client has no known allergies to medications. It says nothing about foods or other substances.</p><p><b>NKA</b> is the abbreviation for no known allergies of any kind. Neither abbreviation refers to dietary allergies, and neither means an allergy is present: when a client has a drug allergy, the drug and the reaction are written out, as in “penicillin (PCN): hives.”</p><p><b>Takeaway:</b> NKDA means no known drug allergies; NKA means no known allergies.</p>"
+    },
+    {
+      "id": "acl-02",
+      "type": "matrix",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing a client's medication schedule. For each order, click to specify how many times a day the medication is given.",
+      "rowHeader": "Order",
+      "columns": ["Once a day", "2 times a day", "3 times a day", "4 times a day"],
+      "rows": ["Metoprolol 25 mg PO BID", "Cephalexin 500 mg PO q6h", "Amlodipine 5 mg PO q24h", "Docusate 100 mg PO TID", "Famotidine 20 mg PO q12h", "Sucralfate 1 g PO QID"],
+      "answer": [1, 3, 0, 2, 1, 3],
+      "rationale": "<p><b>q</b> means every and <b>h</b> means hour, so divide 24 hours by the number of hours: <b>q6h</b> is every 6 hours, or <b>4 times a day</b>; <b>q12h</b> is every 12 hours, or <b>2 times a day</b>; and <b>q24h</b> is every 24 hours, or <b>once a day</b>. <b>BID</b> is twice a day, <b>TID</b> three times a day, and <b>QID</b> four times a day.</p><p><b>Takeaway:</b> BID is 2, TID is 3, and QID is 4 times a day; for q_h, divide 24 by the number of hours.</p>"
+    },
+    {
+      "id": "acl-03",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A prescription reads: “Ibuprofen 400 mg PO q6h PRN pain c̄ food.” Which of the following instructions should the nurse give the client?",
+      "options": ["Take it before eating, every 6 hours, whether or not you have pain.", "Take it with food, at most every 6 hours, when you need it for pain.", "Take it after meals and at bedtime, when you need it for pain.", "Take it by mouth every 6 hours, starting right away, without food."],
+      "answer": 1,
+      "rationale": "<p>Read each part: <b>PO</b> is by mouth, <b>q6h</b> is every 6 hours, <b>PRN</b> is as needed (here, for pain), and <b>c̄</b> (a c with a bar over it) means <b>with</b>. The client takes it with food when it's needed for pain, no more often than every 6 hours.</p><p><b>ā</b> means before, and a PRN medication isn't taken on a schedule whether or not there is pain. <b>PC</b> (after meals) and <b>HS</b> (at bedtime) aren't in this order. Nothing in the order says to start right away (<b>STAT</b>) or to take it without food.</p><p><b>Takeaway:</b> c̄ means with, ā means before, and p̄ means after; PRN means only when needed.</p>"
+    },
+    {
+      "id": "acl-04",
+      "type": "dropdown",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A prescription reads: “Timolol eye drops 1 drop OU BID.” Complete the following sentence.",
+      "text": "The nurse instills 1 drop in {{0}}, {{1}}.",
+      "blanks": [
+        {"options": ["the right eye", "the left eye", "both eyes"], "answer": 2},
+        {"options": ["twice a day", "every 2 hours", "at bedtime"], "answer": 0}
+      ],
+      "rationale": "<p><b>OU</b> means <b>both eyes</b>; <b>OD</b> is the right eye and <b>OS</b> the left eye. <b>BID</b> means <b>twice a day</b>. Every 2 hours would be written <b>q2h</b>, and at bedtime <b>HS</b>.</p><p><b>Takeaway:</b> OD is the right eye, OS the left eye, and OU both eyes.</p>"
+    },
+    {
+      "id": "acl-05",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing a client's history, which lists “HTN, CAD, and OSA.” Which of the following conditions does the client have?",
+      "options": ["High blood pressure, coronary artery disease, and obstructive sleep apnea", "Low blood pressure, chronic airway disease, and obstructive sleep apnea", "Low blood pressure, coronary artery disease, and osteoarthritis of the spine", "High blood pressure, chronic airway disease, and osteoarthritis of the spine"],
+      "answer": 0,
+      "rationale": "<p><b>HTN</b> is hypertension (<b>high</b> blood pressure), <b>CAD</b> is <b>coronary artery disease</b>, and <b>OSA</b> is <b>obstructive sleep apnea</b>, in which the airway closes off again and again during sleep.</p><p>Low blood pressure is hypotension, not HTN. CAD refers to the coronary arteries of the heart, not the airways. OSA is a sleep disorder, not arthritis.</p><p><b>Takeaway:</b> HTN is hypertension, CAD is coronary artery disease, and OSA is obstructive sleep apnea.</p>"
+    },
+    {
+      "id": "acl-06",
+      "type": "dragdrop",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is writing a summary of a client's history using standard abbreviations. Complete the following sentences.",
+      "text": "The client developed a blood clot in a deep vein of the left leg ({{0}}), and part of it traveled to the lungs ({{1}}). The client also has an enlarged prostate ({{2}}).",
+      "tokens": ["PE", "CKD", "DVT", "PD", "BPH", "PNA"],
+      "answer": [2, 0, 4],
+      "rationale": "<p>A clot in a deep vein, usually of the leg, is a <b>DVT</b> (deep vein thrombosis). When part of it breaks off and lodges in the lungs, it is a <b>PE</b> (pulmonary embolism). An enlarged prostate is <b>BPH</b> (benign prostatic hypertrophy, also called hyperplasia).</p><p><b>CKD</b> is chronic kidney disease, <b>PD</b> is Parkinson disease, and <b>PNA</b> is pneumonia.</p><p><b>Takeaway:</b> DVT is a clot in a deep vein, PE is a clot in the lungs, and BPH is an enlarged prostate.</p>"
+    },
+    {
+      "id": "acl-07",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client's activity order reads “Up ad lib.” Which of the following statements by the nurse explains this order?",
+      "options": ["“You need to stay in bed until the provider sees you.”", "“You can get up when a nurse is with you to help.”", "“You can sit in the chair after each meal.”", "“You can get up and move around as much as you want.”"],
+      "answer": 3,
+      "rationale": "<p><b>Ad lib</b> means as much as desired, so “up ad lib” means the client can get out of bed and move around <b>as much as the client wants</b>.</p><p>Staying in bed would be ordered as bed rest, and getting up only with help would be ordered as up with assistance. Nothing in the order ties activity to meals.</p><p><b>Takeaway:</b> Ad lib means as much as desired.</p>"
+    },
+    {
+      "id": "acl-08",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing a client's assessment notes. Which of the following findings should the nurse report to the provider?",
+      "options": ["RUE: radial pulse strong, hand warm", "LLE: pedal pulse strong, foot warm and pink", "RLE: pedal pulse absent, foot cool and pale", "LUE: skin warm and dry, moves fingers on request"],
+      "answer": 2,
+      "rationale": "<p><b>RLE</b> is the right lower extremity: the right leg and foot. A <b>missing pedal pulse with a cool, pale foot</b> suggests poor blood flow to the right leg, which can be an emergency, so the nurse reports it right away.</p><p>The other findings are expected: a strong radial pulse and a warm hand in the right upper extremity (<b>RUE</b>, the right arm), a strong pedal pulse and a warm, pink foot in the left lower extremity (<b>LLE</b>), and warm, dry skin and normal movement in the left upper extremity (<b>LUE</b>).</p><p><b>Takeaway:</b> In RUE, LUE, RLE, and LLE, the first letter is the side, the second is upper (arm) or lower (leg), and E is extremity.</p>"
+    },
+    {
+      "id": "acl-09",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client had cataract surgery on the left eye this morning. The nurse reviews this prescription: “Moxifloxacin eye drops 1 drop OD QID.” Which of the following actions should the nurse take?",
+      "options": ["Instill the drops in the left eye, because that eye had surgery.", "Instill the drops in the right eye, as the order is written.", "Instill the drops in both eyes, so that the surgical eye is covered.", "Contact the provider to clarify which eye should receive the drops."],
+      "answer": 3,
+      "rationale": "<p><b>OD</b> means the <b>right eye</b>, but the surgery was on the <b>left eye</b> (OS). The order and the client's situation don't match, so the nurse <b>clarifies the order with the provider</b> before giving the drops. The eye abbreviations are easy to mix up, which is one reason many facilities ask that “right eye,” “left eye,” and “both eyes” be written out.</p><p>The nurse never changes an order on an assumption, so the nurse doesn't put the drops in the left eye or in both eyes (OU) without a new order. Giving them in the right eye as written could leave the eye that had surgery untreated.</p><p><b>Takeaway:</b> When an order doesn't fit the client, clarify it with the provider before acting.</p>"
+    },
+    {
+      "id": "acl-10",
+      "type": "sata",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is checking a new medication order to make sure that it is complete. Which of the following parts must the order include?",
+      "options": ["The name of the medication", "The client's room number", "The dose", "The route", "How often to give it", "The prescriber's signature"],
+      "answer": [0, 2, 3, 4, 5],
+      "rationale": "<p>A complete medication order includes the <b>client's name</b>, the <b>date and time</b> it was written, the <b>name of the medication</b>, the <b>dose</b>, the <b>route</b>, the <b>frequency</b> (how often), and the <b>prescriber's signature</b>. If any part is missing, the nurse clarifies the order with the prescriber before giving the medication.</p><p>The <b>room number</b> isn't part of the order: clients change rooms, and a room number doesn't identify a client. Clients are identified by name and a second identifier, such as the date of birth.</p><p><b>Takeaway:</b> The client's name, the date and time, the drug, dose, route, and frequency, and the prescriber's signature make an order complete.</p>"
+    },
+    {
+      "id": "acl-11",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A prescription reads: “Aluminum hydroxide suspension 30 mL PO PC and HS.” The client eats three meals a day. How many times a day will the client take this medication?",
+      "options": ["2 times a day", "3 times a day", "4 times a day", "6 times a day"],
+      "answer": 2,
+      "rationale": "<p><b>PC</b> means after meals and <b>HS</b> means at the hour of sleep (bedtime). With three meals a day, the client takes it after breakfast, lunch, and dinner, and again at bedtime: <b>4 times a day</b>.</p><p>Three times a day leaves out the bedtime dose. Twice a day or six times a day doesn't match the order.</p><p><b>Takeaway:</b> PC means after meals, AC before meals, and HS at bedtime.</p>"
+    },
+    {
+      "id": "acl-12",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client has this prescription: “Ondansetron 4 mg PO q8h PRN nausea, x3 doses.” The client received the first dose at 0800 and asks for another dose at 1400 because of nausea. Which of the following actions should the nurse take?",
+      "options": ["Give the dose now, because a PRN medication is given when the client asks for it.", "Give half of the dose now and the other half at 1600, when 8 hours have passed.", "Explain that the next dose can be given at 1600, and offer other comfort measures.", "Explain that the order has run out, because the client already received a dose."],
+      "answer": 2,
+      "rationale": "<p><b>q8h</b> means no more often than every 8 hours, so after a dose at 0800 the next dose can be given at <b>1600</b>. <b>PRN</b> means only when needed, but it doesn't remove the time limit. <b>x3 doses</b> means the order allows three doses in all, and only one has been given. Until 1600, the nurse offers other comfort measures and reports nausea that doesn't ease.</p><p>Giving a PRN dose early breaks the q8h limit. Splitting a dose changes the prescribed dose, which the nurse can't do. And after one dose, two of the three doses remain.</p><p><b>Takeaway:</b> PRN means when needed, but never more often than the interval in the order; x3 means three doses in all.</p>"
+    },
+    {
+      "id": "acl-13",
+      "type": "matrix",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing units of measure. For each unit, click to specify the system it belongs to.",
+      "rowHeader": "Unit",
+      "columns": ["Metric", "Household"],
+      "rows": ["Milliliter (mL)", "Teaspoon (tsp)", "Ounce (oz)", "Kilogram (kg)", "Microgram (mcg)", "Tablespoon (tbsp)", "Pound (lb)"],
+      "answer": [0, 1, 1, 0, 0, 1, 1],
+      "rationale": "<p>The <b>metric</b> system is built on units of ten: the <b>gram</b> for weight (kilogram, milligram, microgram), the <b>liter</b> for volume (milliliter), and the <b>meter</b> for length (centimeter, millimeter). <b>Household</b> measures are the ones used in kitchens and homes: the <b>teaspoon</b>, <b>tablespoon</b>, <b>ounce</b>, cup, pint, and quart for volume, and the <b>pound</b> and the inch for weight and length. Medications are dosed in metric units, because household measures are less exact.</p><p><b>Takeaway:</b> Grams, liters, and meters, with their prefixes, are metric; teaspoons, tablespoons, ounces, cups, and pounds are household measures.</p>"
+    },
+    {
+      "id": "acl-14",
+      "type": "dropdown",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing metric abbreviations. Complete the following sentence.",
+      "text": "The abbreviation mcg stands for {{0}}, and 1 mcg is {{1}}.",
+      "blanks": [
+        {"options": ["milligram", "microgram", "megagram"], "answer": 1},
+        {"options": ["1,000 times larger than 1 mg", "the same amount as 1 mg", "one-thousandth of 1 mg"], "answer": 2}
+      ],
+      "rationale": "<p><b>mcg</b> is a <b>microgram</b>, the smallest of the weight units used in common medication doses. There are 1,000 mcg in 1 mg, so <b>1 mcg is one-thousandth of 1 mg</b>, and 1 mg is 1,000 times larger than 1 mcg.</p><p>A <b>milligram</b> is written mg. Mixing up mcg and mg is a 1,000-fold error, which is why the units are always written clearly.</p><p><b>Takeaway:</b> 1 mg = 1,000 mcg, so a microgram is one-thousandth of a milligram.</p>"
+    },
+    {
+      "id": "acl-15",
+      "type": "order",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is comparing four amounts of a medication. Place the amounts in order from the largest to the smallest.",
+      "items": ["0.05 kg", "0.5 g", "50 mg", "5,000 mcg"],
+      "rationale": "<p>Convert everything to one unit, such as milligrams: <b>0.05 kg</b> = 50 g = <b>50,000 mg</b>; <b>0.5 g</b> = <b>500 mg</b>; <b>50 mg</b>; and <b>5,000 mcg</b> = <b>5 mg</b>. From largest to smallest, the order is 0.05 kg, 0.5 g, 50 mg, and 5,000 mcg.</p><p>The biggest-looking number, 5,000, is the smallest amount, because a microgram is so small. Compare amounts only after putting them in the same unit.</p><p><b>Takeaway:</b> From kg to g to mg to mcg, each step is 1,000 times smaller.</p>"
+    },
+    {
+      "id": "acl-16",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is teaching the parent of a child who is prescribed an oral liquid antibiotic, 5 mL twice a day. Which of the following instructions is best?",
+      "options": ["Measure each dose with the oral syringe that is marked in milliliters.", "Measure each dose with one of the teaspoons from the kitchen.", "Measure each dose with a kitchen tablespoon, and give about one-third of it.", "Measure each dose with a measuring cup from the kitchen."],
+      "answer": 0,
+      "rationale": "<p>Kitchen spoons and cups come in many sizes, so they aren't accurate for medications. An <b>oral syringe or dosing cup marked in milliliters</b> measures the 5 mL dose exactly, so it is the safest choice.</p><p>One teaspoon equals <b>5 mL</b> in conversions, but a teaspoon from the kitchen may hold much less or more. A third of a kitchen tablespoon, or a kitchen measuring cup, is even less exact for a 5 mL dose.</p><p><b>Takeaway:</b> Use the household equivalents for conversions, but measure liquid medications with a device marked in mL.</p>"
+    },
+    {
+      "id": "acl-17",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse needs to convert a dose from milligrams to grams. Which of the following describes the conversion?",
+      "options": ["Multiply the number of milligrams by 1,000.", "Divide the number of milligrams by 100.", "Multiply the number of milligrams by 100.", "Divide the number of milligrams by 1,000."],
+      "answer": 3,
+      "rationale": "<p>A gram is <b>larger</b> than a milligram (1 g = 1,000 mg), so going from mg to g gives a smaller number: <b>divide by 1,000</b>, which moves the decimal point 3 places to the left. For example, 250 mg = 0.25 g.</p><p>Multiplying by 1,000 goes the other way, from g to mg. The steps between g, mg, and mcg are 1,000, not 100.</p><p><b>Takeaway:</b> Going to a larger unit, divide (the decimal point moves left); going to a smaller unit, multiply (it moves right).</p>"
+    },
+    {
+      "id": "acl-18",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is prescribed 0.75 g of a medication. How many milligrams is this dose?",
+      "answer": 750,
+      "unit": "mg",
+      "strictZeros": true,
+      "rationale": "<p>1 g = 1,000 mg, and a gram is the larger unit, so multiply: 0.75 × 1,000 = <b>750 mg</b> (move the decimal point 3 places to the right).</p><p>Dividing instead, which gives 0.00075, is the most common mistake: because a gram is larger, the number of milligrams must be bigger than the number of grams.</p><p><b>Takeaway:</b> To change g to mg, multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-19",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is receiving 1.5 L of IV fluid. How many milliliters is this?",
+      "answer": 1500,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>1 L = 1,000 mL, so multiply: 1.5 × 1,000 = <b>1,500 mL</b>. The answer is a whole number, so it is written without a decimal point.</p><p>Writing 15 or 150 comes from moving the decimal point only 1 or 2 places; liters to milliliters is always 3 places.</p><p><b>Takeaway:</b> To change L to mL, multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-20",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A newborn weighs 3,600 g. How many kilograms does the newborn weigh?",
+      "answer": 3.6,
+      "unit": "kg",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 1,000 g, and a kilogram is the larger unit, so divide: 3,600 ÷ 1,000 = <b>3.6 kg</b>.</p><p>Writing 3.60 adds a trailing zero, which is marked wrong. Multiplying instead gives a number far too large for a newborn.</p><p><b>Takeaway:</b> To change g to kg, divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-21",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is prescribed 500 mcg of a medication. How many milligrams is this dose?",
+      "answer": 0.5,
+      "unit": "mg",
+      "strictZeros": true,
+      "rationale": "<p>1 mg = 1,000 mcg, and a milligram is the larger unit, so divide: 500 ÷ 1,000 = <b>0.5 mg</b>.</p><p>The answer needs a <b>leading zero</b> (0.5, not .5), because a decimal point without a zero in front can be missed and read as 5 mg, a 10-fold overdose. Writing 0.50 adds a trailing zero, which is also marked wrong.</p><p><b>Takeaway:</b> To change mcg to mg, divide by 1,000, and always put a zero in front of a decimal point.</p>"
+    },
+    {
+      "id": "acl-22",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A prescription calls for 0.4 mg of a medication. How many micrograms is this?",
+      "answer": 400,
+      "unit": "mcg",
+      "strictZeros": true,
+      "rationale": "<p>1 mg = 1,000 mcg, and a microgram is the smaller unit, so multiply: 0.4 × 1,000 = <b>400 mcg</b>.</p><p>Dividing instead gives 0.0004, which can't be right: changing to a smaller unit always gives a bigger number.</p><p><b>Takeaway:</b> To change mg to mcg, multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-23",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is prescribed 1,500 mg of a medication. How many grams is this dose?",
+      "answer": 1.5,
+      "unit": "g",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 g = 1,000 mg, and a gram is the larger unit, so divide: 1,500 ÷ 1,000 = <b>1.5 g</b>.</p><p>Writing 1.50 adds a trailing zero, which is marked wrong, and 15 g comes from moving the decimal point only 2 places.</p><p><b>Takeaway:</b> To change mg to g, divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-24",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse measures a wound that is 35 mm long. How many centimeters long is the wound?",
+      "answer": 3.5,
+      "unit": "cm",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 cm = 10 mm, and a centimeter is the larger unit, so divide: 35 ÷ 10 = <b>3.5 cm</b>.</p><p>Length steps are different from weight and volume steps: there are 10 mm in a centimeter and 100 cm in a meter, so dividing by 1,000 here would be wrong.</p><p><b>Takeaway:</b> 1 cm = 10 mm, and 1 m = 100 cm.</p>"
+    },
+    {
+      "id": "acl-25",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is encouraged to drink 2 L of fluid each day. So far today, the client has had 1,350 mL. How many more milliliters does the client need to drink to reach the goal?",
+      "answer": 650,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>Put both amounts in the same unit first: 2 L = <b>2,000 mL</b>. Then subtract: 2,000 − 1,350 = <b>650 mL</b>.</p><p>Subtracting before converting (2 − 1,350) makes no sense, and using 1 L = 100 mL gives a negative answer. Always convert to one unit before adding or subtracting.</p><p><b>Takeaway:</b> Convert to the same unit before you add or subtract.</p>"
+    },
+    {
+      "id": "acl-26",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "The provider prescribes digoxin 0.25 mg PO daily. The pharmacy sends tablets labeled “digoxin 250 mcg.” Which of the following conclusions is correct?",
+      "options": ["The tablets are 1,000 times stronger than the dose, so the nurse calls the pharmacy.", "The tablets equal the prescribed dose, so the nurse gives 1 tablet.", "The tablets are smaller than the dose, so the nurse gives 4 tablets.", "The units on the order and the label differ, so the nurse holds the dose."],
+      "answer": 1,
+      "rationale": "<p>Convert before comparing: 250 mcg ÷ 1,000 = <b>0.25 mg</b>, which is exactly the prescribed dose, so the nurse gives <b>1 tablet</b>.</p><p>The tablets aren't 1,000 times stronger: 250 is a bigger number only because a microgram is a smaller unit. Four tablets would be 1 mg, four times the dose. Different units don't make an order wrong; the nurse converts them, and checks with the pharmacy only if the converted amounts don't match.</p><p><b>Takeaway:</b> Put the order and the label in the same unit before deciding how much to give.</p>"
+    },
+    {
+      "id": "acl-27",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is prescribed 2 teaspoons (tsp) of a liquid medication. How many milliliters is this dose?",
+      "answer": 10,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>1 tsp = 5 mL, so 2 tsp × 5 mL = <b>10 mL</b>.</p><p>Using 15 mL, the amount in a tablespoon, gives 30 mL, three times the dose. Teaspoon (tsp) and tablespoon (tbsp) are easy to mix up, so read the abbreviation carefully.</p><p><b>Takeaway:</b> 1 tsp = 5 mL; 1 tbsp = 15 mL = 3 tsp.</p>"
+    },
+    {
+      "id": "acl-28",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client takes 4 tablespoons (tbsp) of a liquid nutritional supplement. How many milliliters is this?",
+      "answer": 60,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>1 tbsp = 15 mL, so 4 tbsp × 15 mL = <b>60 mL</b>. (This is also 2 oz, since 1 oz = 30 mL = 2 tbsp.)</p><p>Using 5 mL, the amount in a teaspoon, gives 20 mL, too little.</p><p><b>Takeaway:</b> 1 tbsp = 15 mL, and 2 tbsp = 1 oz = 30 mL.</p>"
+    },
+    {
+      "id": "acl-29",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A child weighs 46 lb. How many kilograms does the child weigh?",
+      "answer": 20.9,
+      "unit": "kg",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 2.2 lb, and a kilogram is the larger unit, so divide: 46 ÷ 2.2 = 20.909…, which rounds to <b>20.9 kg</b>. A weight in kilograms is always a smaller number than the same weight in pounds.</p><p>Multiplying by 2.2 instead gives 101.2, a number in the wrong direction. Rounding to 21 drops the tenths that the answer calls for.</p><p><b>Takeaway:</b> To change lb to kg, divide by 2.2; to change kg to lb, multiply by 2.2.</p>"
+    },
+    {
+      "id": "acl-30",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client weighs 25 kg. How many pounds does the client weigh?",
+      "answer": 55,
+      "unit": "lb",
+      "tolerance": 0.15,
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 2.2 lb, and a pound is the smaller unit, so multiply: 25 × 2.2 = <b>55 lb</b>. The answer is a whole number, so it is written 55, with no trailing zero (55.0 is marked wrong).</p><p>Dividing by 2.2 instead gives 11.4, a number in the wrong direction: a weight in pounds is always larger than the same weight in kilograms.</p><p><b>Takeaway:</b> To change kg to lb, multiply by 2.2.</p>"
+    },
+    {
+      "id": "acl-31",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client is 5 feet 6 inches tall. How many centimeters tall is the client?",
+      "answer": 167.6,
+      "unit": "cm",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>First change the height to inches: 5 feet × 12 inches = 60 inches, plus 6 inches = <b>66 inches</b>. Then use 1 inch = 2.54 cm: 66 × 2.54 = 167.64, which rounds to <b>167.6 cm</b>.</p><p>Multiplying 5.6 by 30.48 (as if 5 feet 6 inches were 5.6 feet) gives the wrong answer, because 6 inches is half a foot (5.5 feet), not 0.6 feet.</p><p><b>Takeaway:</b> 1 foot = 12 inches, and 1 inch = 2.54 cm.</p>"
+    },
+    {
+      "id": "acl-32",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "An IV medication is to infuse over 45 minutes. How many hours is this?",
+      "answer": 0.75,
+      "unit": "hours",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>1 hour = 60 minutes, and an hour is the larger unit, so divide: 45 ÷ 60 = <b>0.75 hours</b>. The answer is less than 1, so it is rounded to the hundredth and written with a <b>leading zero</b> (.75 is marked wrong).</p><p>Multiplying by 60 instead gives 2,700, a number in the wrong direction, and 0.45 treats an hour as if it had 100 minutes.</p><p><b>Takeaway:</b> To change minutes to hours, divide by 60; to change hours to minutes, multiply by 60.</p>"
+    },
+    {
+      "id": "acl-33",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A client's temperature is 38.5 °C. What is this temperature in degrees Fahrenheit?",
+      "answer": 101.3,
+      "unit": "°F",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>Use °F = (9/5 × °C) + 32. First multiply: 9/5 × 38.5 = 69.3. Then add 32: 69.3 + 32 = <b>101.3 °F</b>.</p><p>Adding 32 before multiplying gives the wrong answer (126.9), and using 5/9 instead of 9/5 gives a temperature that is too low. A quick check: a fever in °C (above 38) is a little over 100 in °F.</p><p><b>Takeaway:</b> °F = (9/5 × °C) + 32; multiply first, then add 32.</p>"
+    },
+    {
+      "id": "acl-34",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A child's temperature is 101.5 °F. What is this temperature in degrees Celsius?",
+      "answer": 38.6,
+      "unit": "°C",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>Use °C = 5/9 × (°F − 32). First subtract: 101.5 − 32 = 69.5. Then multiply: 5/9 × 69.5 = 38.61…, which rounds to <b>38.6 °C</b>.</p><p>Multiplying before subtracting 32 gives the wrong answer (24.4), and using 9/5 instead of 5/9 gives a number that is far too high. A quick check: normal body temperature is about 37 °C, so a fever is a little above that.</p><p><b>Takeaway:</b> °C = 5/9 × (°F − 32); subtract 32 first, then multiply.</p>"
+    },
+    {
+      "id": "acl-35",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is totaling a client's oral intake for the day shift. The client drank 1 cup of coffee, 4 oz of orange juice, 1 cup of broth, and a 12-oz can of ginger ale, and took medications with 90 mL of water. What is the client's total oral intake?",
+      "answer": 1050,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>Convert each item to milliliters, then add: coffee, 1 cup = <b>240 mL</b>; orange juice, 4 oz × 30 = <b>120 mL</b>; broth, 1 cup = <b>240 mL</b>; ginger ale, 12 oz × 30 = <b>360 mL</b>; and water, <b>90 mL</b>. Total: 240 + 120 + 240 + 360 + 90 = <b>1,050 mL</b>.</p><p>Common errors are using 8 mL for a cup (a cup is 8 oz, or 240 mL), leaving out the water taken with medications, which counts as intake, and adding ounces and milliliters together without converting.</p><p><b>Takeaway:</b> 1 oz = 30 mL and 1 cup = 8 oz = 240 mL; convert everything to mL, then add.</p>"
+    },
+    {
+      "id": "acl-36",
+      "type": "hotspot",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is reviewing a medication label. Click the generic name of the medication.",
+      "image": "img/label-cephalexin.svg",
+      "alt": "Sample medication label for capsules. It shows an NDC number and Rx only at the top, a large name with a registered-trademark symbol, a smaller name in parentheses below it, the strength in a box, the number of capsules in the bottle, a description and storage directions, and a lot number and expiration date at the bottom.",
+      "regions": [{"x": 3.3, "y": 38.1, "w": 44.0, "h": 10.0}],
+      "rationale": "<p>The <b>generic name</b> is the drug's official name, here <b>cephalexin</b>, shown in smaller type below the brand name, often in parentheses. Nurses use generic names, because a drug has one generic name but may be sold under several brand names.</p><p>The large name with the ® symbol, <b>Trainex</b>, is the <b>brand (trade) name</b>, which belongs to one manufacturer (this one is made up). The box shows the <b>dosage strength</b> (500 mg in each capsule), and the number on the right is the <b>total amount</b> in the bottle.</p><p><b>Takeaway:</b> The brand name is the large one with the ® symbol; the generic name is the drug itself, usually in smaller type or in parentheses.</p>"
+    },
+    {
+      "id": "acl-37",
+      "type": "hotspot",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is checking whether a medication can still be used. Click the expiration date on the label.",
+      "image": "img/label-cephalexin.svg",
+      "alt": "Sample medication label for capsules. It shows an NDC number and Rx only at the top, a large name with a registered-trademark symbol, a smaller name in parentheses below it, the strength in a box, the number of capsules in the bottle, a description and storage directions, and a lot number and expiration date at the bottom.",
+      "regions": [{"x": 17.6, "y": 90.0, "w": 13.4, "h": 6.2}],
+      "rationale": "<p>The <b>expiration date</b>, marked <b>Exp</b>, is the last date the manufacturer guarantees the drug's strength and safety; here it is <b>August 2026</b>. It is usually printed next to the <b>lot number</b>, which identifies the batch the drug came from, for example during a recall.</p><p>The <b>NDC number</b> at the top identifies the drug, its strength, and its package, and <b>Rx only</b> means it needs a prescription. Neither is the expiration date.</p><p><b>Takeaway:</b> The expiration date (Exp) is usually printed next to the lot number.</p>"
+    },
+    {
+      "id": "acl-38",
+      "type": "sata",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is teaching a nursing student which information is printed on a manufacturer's medication label. Which of the following items are found on the label?",
+      "options": ["The client's name", "The generic name of the drug", "How often the drug is to be given to the client", "The dosage strength", "The prescriber's name", "The expiration date"],
+      "answer": [1, 3, 5],
+      "rationale": "<p>A manufacturer's label describes the <b>drug</b>: the brand and <b>generic names</b>, the form, the <b>dosage strength</b>, the total amount, the route, storage directions and warnings, the NDC number, the lot number, and the <b>expiration date</b>.</p><p>The <b>client's name</b>, <b>how often</b> to give the drug, and the <b>prescriber's name</b> come from the <b>medication order</b>, not the manufacturer's label. Comparing the label with the order is how the nurse checks for the right drug, dose, and route.</p><p><b>Takeaway:</b> The label describes the drug; the order describes the client's dose, route, and schedule.</p>"
+    },
+    {
+      "id": "acl-39",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>A nurse is reviewing the medication label shown. Which of the following is the total amount of solution in the bottle?</p><img src='sets/img/label-ondansetron.svg' alt='Sample medication label: Ondansetron Oral Solution, USP, 4 mg per 5 mL, bottle of 50 mL, for oral use only.' width='600' height='260'>",
+      "options": ["4 mL", "5 mL", "40 mL", "50 mL"],
+      "answer": 3,
+      "rationale": "<p>The <b>total amount</b> is the volume of solution in the whole bottle, printed on its own: <b>50 mL</b>. The strength, <b>4 mg per 5 mL</b>, tells how much drug is in each 5 mL, not how much solution the bottle holds.</p><p><b>5 mL</b> is the volume in the strength statement, and <b>4</b> is the number of milligrams in each 5 mL, so neither is the total. <b>40 mL</b> doesn't appear on the label.</p><p><b>Takeaway:</b> The strength is how much drug is in each mL or each 5 mL; the total amount is how much is in the whole container.</p>"
+    },
+    {
+      "id": "acl-40",
+      "type": "dropdown",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>A nurse is reviewing the medication label shown. Complete the following sentence.</p><img src='sets/img/label-ondansetron.svg' alt='Sample medication label: Ondansetron Oral Solution, USP, 4 mg per 5 mL, bottle of 50 mL. For oral use only. Store at 20 to 25 degrees C (68 to 77 degrees F). Protect from light. Keep the bottle tightly closed.' width='600' height='260'>",
+      "text": "This solution is given {{0}}, and it is stored {{1}}.",
+      "blanks": [
+        {"options": ["by injection into a vein", "by mouth", "by injection into a muscle"], "answer": 1},
+        {"options": ["in the refrigerator", "at room temperature, protected from light", "in the freezer"], "answer": 1}
+      ],
+      "rationale": "<p>The label says <b>“For oral use only,”</b> so the solution is given <b>by mouth</b>. Its storage directions say to keep it at <b>20° to 25°C (68° to 77°F)</b>, which is room temperature, and to <b>protect it from light</b>, with the bottle tightly closed.</p><p>Nothing on this label allows an injection, and it doesn't call for refrigeration or freezing. The label of a drug that must be refrigerated says so, often with a range such as 2° to 8°C.</p><p><b>Takeaway:</b> Read the route and the storage directions on every label; they are part of giving a drug safely.</p>"
+    },
+    {
+      "id": "acl-41",
+      "type": "hotspot",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is preparing to give ondansetron oral solution. Click the part of the label that shows how much ondansetron is in each 5 mL.",
+      "image": "img/label-ondansetron.svg",
+      "alt": "Sample medication label for an oral solution. It shows an NDC number and Rx only at the top, the drug name, a box with the amount of drug in a set volume, the total volume in the bottle on the right, directions for use and storage, and a lot number and expiration date at the bottom.",
+      "regions": [{"x": 4.0, "y": 40.4, "w": 33.6, "h": 17.6}],
+      "rationale": "<p>The <b>dosage strength</b> of a liquid tells how much drug is in a set volume: here, <b>4 mg in every 5 mL</b>. The nurse uses it to find the volume that holds a prescribed dose.</p><p>The number on the right, <b>50 mL</b>, is the total amount in the bottle, not the amount in each dose. The name at the top is the drug's generic name and form.</p><p><b>Takeaway:</b> For a liquid, the strength is the amount of drug in a set volume, such as mg per mL or mg per 5 mL.</p>"
+    },
+    {
+      "id": "acl-42",
+      "type": "hotspot",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "A nurse is checking how a medication may be given. Click the part of the label that shows the routes by which this medication may be given.",
+      "image": "img/label-ketorolac.svg",
+      "alt": "Sample medication label for an injection. It shows an NDC number and Rx only at the top, the drug name, the strength in a box, the vial size on the right, a line about how the drug may be given, a description and directions, and a lot number and expiration date at the bottom.",
+      "regions": [{"x": 3.3, "y": 61.9, "w": 32.0, "h": 10.0}],
+      "rationale": "<p>The <b>route</b> is printed as <b>“For IV or IM use”</b>: this injection may be given into a vein (intravenous, <b>IV</b>) or into a muscle (intramuscular, <b>IM</b>). The nurse checks that the route on the label matches the route in the order.</p><p>The box shows the <b>strength</b> (30 mg in each mL), and “1 mL Single-Dose Vial” gives the <b>total amount</b> and the type of vial. The name at the top is the drug's generic name and form.</p><p><b>Takeaway:</b> Match the route on the label to the route in the order before giving any medication.</p>"
+    },
+    {
+      "id": "acl-43",
+      "type": "matrix",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>A nurse is reviewing the medication label shown. For each statement, click to specify whether it is correct or incorrect.</p><img src='sets/img/label-ketorolac.svg' alt='Sample medication label: Ketorolac Tromethamine Injection, USP, 30 mg/mL, 1 mL single-dose vial, for IV or IM use. Discard unused portion. Protect from light.' width='600' height='260'>",
+      "rowHeader": "Statement",
+      "columns": ["Correct", "Incorrect"],
+      "rows": ["Each mL of the solution contains 30 mg of the drug.", "The vial holds 30 mL of solution.", "The medication may be given by mouth.", "The vial is meant to be used for only one dose.", "The vial must be protected from light."],
+      "answer": [0, 1, 1, 0, 0],
+      "rationale": "<p>The strength, <b>30 mg/mL</b>, means each mL contains 30 mg (<b>correct</b>). The vial holds <b>1 mL</b>, not 30 mL; 30 is the number of milligrams in that 1 mL (<b>incorrect</b>). The label says <b>“For IV or IM use,”</b> so the drug isn't given by mouth (<b>incorrect</b>). A <b>single-dose vial</b> is used once, and the unused portion is discarded (<b>correct</b>). The label says to <b>protect it from light</b> (<b>correct</b>).</p><p><b>Takeaway:</b> Read the strength, total amount, route, and storage on a label one at a time; mixing up the strength and the total amount is a common error.</p>"
+    },
+    {
+      "id": "acl-44",
+      "type": "fill",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>The provider prescribes cephalexin 1 g PO every 12 hours. The nurse has the capsules shown on this label. How many capsules should the nurse give for each dose?</p><img src='sets/img/label-cephalexin.svg' alt='Sample medication label: Trainex (cephalexin capsules, USP), 500 mg in each capsule, bottle of 100 capsules.' width='600' height='260'>",
+      "answer": 2,
+      "unit": "capsules",
+      "strictZeros": true,
+      "rationale": "<p>Convert first: <b>1 g = 1,000 mg</b>. Each capsule contains <b>500 mg</b>, so 1,000 mg ÷ 500 mg = <b>2 capsules</b>.</p><p>Giving 1 capsule gives only half the dose, and reading 1 g as 1 mg would make the dose seem far too small to give. The 100 on the label is the number of capsules in the bottle, not part of the dose.</p><p><b>Takeaway:</b> Convert the order to the label's unit, then see how many capsules or tablets make up the dose.</p>"
+    },
+    {
+      "id": "acl-45",
+      "type": "mc",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "<p>It is November 2026. A nurse is preparing to give cephalexin 500 mg PO, as prescribed, from the bottle shown on this label. Which of the following findings should stop the nurse from giving the medication?</p><img src='sets/img/label-cephalexin.svg' alt='Sample medication label: Trainex (cephalexin capsules, USP), 500 mg in each capsule, bottle of 100 capsules, NDC number at the top, lot CX4471, expiration date 08/2026.' width='600' height='260'>",
+      "options": ["The label shows both a brand name and a generic name.", "The bottle contains 100 capsules.", "The expiration date on the label has passed.", "The NDC number is printed at the top of the label."],
+      "answer": 2,
+      "rationale": "<p>The label's expiration date is <b>08/2026</b>, and it is now November 2026, so the medication has <b>expired</b>. An expired drug may have lost strength or changed, so the nurse doesn't give it, sets the bottle aside as the facility's policy directs, and gets an unexpired supply from the pharmacy.</p><p>Labels routinely show both a <b>brand name</b> and a <b>generic name</b>, a <b>total amount</b> such as 100 capsules, and an <b>NDC number</b>; none of these is a problem. The dose itself matches the label: one 500 mg capsule.</p><p><b>Takeaway:</b> Before every dose, check the expiration date along with the drug, dose, and route.</p>"
+    },
+    {
+      "id": "acl-46",
+      "type": "highlight",
+      "case": "fluids",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "Click to highlight the orders that the nurse must clarify with the provider before carrying them out.",
+      "passage": "[[Furosemide 40 mg q AM]]<br>[[Metoprolol tartrate 25 mg PO BID]]<br>[[Potassium chloride 20.0 mEq PO daily]]<br>[[Insulin lispro 4 U subcut AC]]<br>[[Docusate sodium 100 mg PO]]<br>[[Acetaminophen 650 mg PO q6h PRN pain]]<br>[[Fluid restriction: 1,500 mL a day]]<br>[[Weigh daily before breakfast]]<br>[[Activity: up ad lib]]",
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p>Four orders need clarifying. <b>Furosemide 40 mg q AM</b> has <b>no route</b>; furosemide can be given by mouth or IV, and the nurse can't choose. <b>Potassium chloride 20.0 mEq</b> has a <b>trailing zero</b>, which can be misread as 200 mEq, a 10-fold overdose. <b>Insulin lispro 4 U</b> uses <b>U</b> for units, which can be misread as a 0 (40 units); “units” must be written out. <b>Docusate sodium 100 mg PO</b> has <b>no frequency</b>.</p><p>The metoprolol and acetaminophen orders have every part: the drug, dose, route, and frequency (q6h PRN pain for the acetaminophen). The fluid restriction, daily weight, and activity orders are complete as written.</p><p><b>Takeaway:</b> Before carrying out an order, check that it has the drug, dose, route, and frequency, with no U, trailing zero, or missing leading zero.</p>"
+    },
+    {
+      "id": "acl-47",
+      "type": "fill",
+      "case": "fluids",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "Review the client's intake and output record. What is the client's total oral intake from 0700 to 1900 on Day 2?",
+      "answer": 900,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>Count only what the client took <b>by mouth</b>, and convert to mL (1 oz = 30 mL, 1 cup = 240 mL, 1 tbsp = 15 mL): coffee, 8 oz = <b>240 mL</b>; apple juice, 4 oz = <b>120 mL</b>; water with medications, <b>90 mL</b>; tomato soup, 1 cup = <b>240 mL</b>; milk, 6 oz = <b>180 mL</b>; and water with medications, 2 tbsp = <b>30 mL</b>. Total: 240 + 120 + 90 + 240 + 180 + 30 = <b>900 mL</b>.</p><p>The two 10 mL IV flushes are IV intake, not oral intake, so they aren't added here, and urine is output. The nurse compares the day's total intake with the 1,500 mL fluid restriction.</p><p><b>Takeaway:</b> Convert every household measure to mL before adding, and keep oral intake, IV intake, and output separate.</p>"
+    },
+    {
+      "id": "acl-48",
+      "type": "fill",
+      "case": "fluids",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "Review the client's daily weights. How many kilograms has the client lost since admission?",
+      "answer": 1.5,
+      "unit": "kg",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>Subtract, then convert: 187 lb − 183.7 lb = <b>3.3 lb</b>, and 3.3 ÷ 2.2 = <b>1.5 kg</b>. Converting each weight first gives the same answer: 187 ÷ 2.2 = 85 kg, 183.7 ÷ 2.2 = 83.5 kg, and 85 − 83.5 = 1.5 kg.</p><p>Giving the loss in pounds (3.3) is the most common error. In a client with heart failure who is receiving a diuretic, a loss of about 1.5 kg in a day suggests that extra fluid is being removed; the nurse keeps comparing weights taken the same way each morning.</p><p><b>Takeaway:</b> 1 kg = 2.2 lb, so divide pounds by 2.2 to get kilograms.</p>"
+    },
+    {
+      "id": "acl-49",
+      "type": "mc",
+      "case": "fluids",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "It is 0730 on Day 2, and breakfast trays will arrive at 0800. Which of the following orders should the nurse clarify with the provider first?",
+      "options": ["Docusate sodium 100 mg PO", "Insulin lispro 4 U subcut AC", "Furosemide 40 mg q AM", "Potassium chloride 20.0 mEq PO daily"],
+      "answer": 1,
+      "rationale": "<p>The <b>insulin</b> order comes first. Insulin is a high-alert medication, an AC dose is due <b>before breakfast</b>, within the next 30 minutes, and “4 U” can be misread as 40 units, a 10-fold overdose that could cause severe hypoglycemia.</p><p>The other orders need clarifying too, but they come next. The <b>furosemide</b> and <b>potassium chloride</b> doses are due later in the morning, which leaves time to clarify them before they are given. The <b>docusate</b> order, for a stool softener with no frequency, is the least urgent.</p><p><b>Takeaway:</b> Clarify first the order that is due soonest and could do the most harm if misread, often a high-alert medication.</p>"
+    },
+    {
+      "id": "acl-50",
+      "type": "mc",
+      "case": "fluids",
+      "topic": "Abbreviations, conversions, and labels",
+      "stem": "Which of the following actions should the nurse take to clarify the insulin order?",
+      "options": ["Contact the provider, and ask for the order to be rewritten with “units” spelled out.", "Give 4 units, because that is the most likely meaning of the order as written.", "Ask another nurse to read the order and decide which dose the provider meant.", "Write “units” next to the U on the order, and then give the dose as corrected."],
+      "answer": 0,
+      "rationale": "<p>Only the <b>prescriber</b> can change an order, so the nurse <b>contacts the provider</b> before the dose is due, explains the problem, and asks for the order to be rewritten with <b>“units” spelled out</b>. The nurse holds the dose until the order is clear and documents the clarification.</p><p>Giving the dose based on its <b>most likely</b> meaning is a guess, and guessing with insulin can be dangerous. <b>Another nurse</b> can't decide what the prescriber meant. And the nurse never <b>edits</b> an order, even to fix an abbreviation.</p><p><b>Takeaway:</b> Unclear orders go back to the prescriber; the nurse never guesses at them or rewrites them.</p>"
     }
   ]
 }
