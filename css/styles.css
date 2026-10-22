@@ -229,6 +229,7 @@ a { color: var(--ink); }
 /* ---------- ordered response ---------- */
 
 .order { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.order.order-key { grid-template-columns: minmax(0, 1fr); max-width: 560px; }
 .order-box { background: #fff; border: 1px solid #C6C9CE; border-radius: 3px; }
 .order-title { margin: 0; padding: 8px 12px; background: #F3F5F7; border-bottom: 1px solid #C6C9CE; font: 700 14px var(--sans); color: var(--ink); }
 .order-list { display: grid; align-content: start; gap: 8px; min-height: 150px; margin: 0; padding: 10px; list-style: none; }
@@ -419,10 +420,15 @@ span.order-text { flex: 1; font-size: 15px; }
 .counter-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; }
 .mode-tag { padding: 3px 10px; background: #EEF7FC; border: 1px solid #BFE1F4; border-radius: 12px; font-size: 12.5px; font-weight: 600; color: var(--ink); white-space: nowrap; }
 .nav-left { display: flex; gap: 10px; margin-right: auto; }
-.btn-nav, .btn-flag { min-height: 42px; }
+.btn-nav, .btn-flag, .btn-save { min-height: 42px; }
 .btn-flag svg { flex: none; color: var(--muted); }
 .btn-flag[aria-pressed="true"] { background: var(--hl); border-color: #D9C55A; }
 .btn-flag[aria-pressed="true"] svg { color: var(--ink); }
+/* Save (SPEC 11.7): the bookmark fills in once the question is saved. */
+.btn-save svg { flex: none; color: var(--muted); }
+.btn-save[aria-pressed="true"] { background: #DCEEF9; border-color: var(--accent-deep); }
+.btn-save[aria-pressed="true"] svg { color: var(--ink); }
+.btn-save[aria-pressed="true"] svg path { fill: currentColor; }
 
 .grid-intro { margin: 0 0 4px; font-size: 15px; }
 .qgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); gap: 10px; max-width: 760px; margin: 16px 0 12px; padding: 0; list-style: none; }
@@ -450,6 +456,7 @@ span.order-text { flex: 1; font-size: 15px; }
 .feedback.is-correct { border-left-color: var(--ok); }
 .feedback.is-partial { border-left-color: var(--accent-deep); }
 .feedback.is-wrong { border-left-color: var(--bad); }
+.feedback.is-key { border-left-color: var(--ok); }
 .feedback-result { margin: 0 0 10px; font-size: 15.5px; }
 .feedback.is-correct .feedback-result b { color: var(--ok); }
 .feedback.is-wrong .feedback-result b { color: var(--bad); }
@@ -486,7 +493,7 @@ span.order-text { flex: 1; font-size: 15px; }
 
 /* ---------- homepage, setup, and results ---------- */
 
-.home, .setup, .results, .plain-page { padding-top: 28px; }
+.home, .setup, .results, .saved-page, .plain-page { padding-top: 28px; }
 .page-title { font-size: 26px; }
 .lead { margin: 6px 0 22px; color: var(--muted); }
 .crumb { margin: 0 0 10px; font-size: 14px; }
@@ -524,6 +531,19 @@ span.order-text { flex: 1; font-size: 15px; }
 .home-section { margin-top: 24px; }
 .home-section + .home-section { margin-top: 34px; }
 .empty-note { margin: 0; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); }
+/* Saved questions (SPEC 11.7): the homepage link, and the Saved questions page. */
+.home-saved { margin: -6px 0 22px; }
+.saved-link svg { flex: none; }
+.saved-class { margin-top: 26px; }
+.saved-class .section-title { margin-bottom: 12px; }
+.saved-set { margin-bottom: 18px; border: 1px solid var(--line); border-radius: 4px; }
+.saved-set-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 14px 16px; background: #F7FBFE; }
+.saved-set-head h3 { font-size: 18px; }
+.saved-list { margin: 0; padding: 0; list-style: none; }
+.saved-item { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px 20px; padding: 12px 16px; border-top: 1px solid var(--line); }
+.saved-info { flex: 1 1 360px; min-width: 0; }
+.saved-text { margin: 0 0 2px; }
+.saved-item.is-gone .saved-text, .saved-set.is-gone h3 { color: var(--muted); }
 .problems { margin-top: 28px; padding: 14px 18px 16px; background: #FFF8F0; border: 1px solid #E9C9A8; }
 .problems h2 { margin-bottom: 6px; font-size: 18px; }
 .problems-lead { margin: 0 0 6px; font-size: 14px; }
@@ -883,8 +903,9 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .modal-head { align-items: flex-start; gap: 14px; }
   .modal-title { font-size: 20px; }
   .cell { min-width: 84px; }
-  /* Set and guide rows: the buttons always go under the text. */
-  .set-row { flex-direction: column; align-items: flex-start; }
+  /* Set and guide rows, and saved questions: the buttons always go under the text. */
+  .set-row, .saved-set-head, .saved-item { flex-direction: column; align-items: flex-start; }
+  .saved-info { flex-basis: auto; }
   .orderable > li.set-row, .orderable > li.q-row { grid-template-columns: auto minmax(0, 1fr); align-items: start; }
   .orderable > li.set-row .set-actions, .orderable > li.q-row .set-actions { grid-column: 2; }
   .host-menu .student-view { margin: 6px 0 8px; }
@@ -938,7 +959,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 @media (forced-colors: active) {
   .ctl { appearance: auto; -webkit-appearance: auto; background: none; border: 0; box-shadow: none; }
   .hl[aria-pressed="true"], .token[aria-pressed="true"], .bt-opt[aria-pressed="true"], .strike-btn[aria-pressed="true"],
-  .drop.filled, .bt-slot.filled, .tab[aria-selected="true"], .btn-flag[aria-pressed="true"],
+  .drop.filled, .bt-slot.filled, .tab[aria-selected="true"], .btn-flag[aria-pressed="true"], .btn-save[aria-pressed="true"],
   .qtile.answered, .preset:has(.ctl:checked) { outline: 2px solid Highlight; }
   .opt:focus-within { outline: 2px solid Highlight; }
   .btn-continue { border: 1px solid ButtonText; }

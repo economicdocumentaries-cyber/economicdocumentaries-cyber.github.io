@@ -1,7 +1,7 @@
 {
   "id": "nu1120-exam-3-senses",
   "title": "The Senses",
-  "description": "Week 8: general and special senses, sensory receptors, the eye and vision, the ear, hearing, and balance, taste and smell, pain, and sensory changes across the lifespan.",
+  "description": "Week 8, matched to the Exam 3 study guide: touch, proprioception, and interoception, the eye and how vision works, eye tests (Snellen, Ishihara, Amsler grid, and tonometry) and eye findings, the ear and hearing, balance, and taste and smell.",
   "course": "NU1120",
   "exam": "Exam 3",
   "timeMinutes": 75,
@@ -19,6 +19,19 @@
           "html": "<h4>Health History</h4><p><b>Medical history:</b> hypertension, osteoarthritis of both knees</p><p><b>Medications:</b> amlodipine 5&nbsp;mg by mouth daily; acetaminophen as needed for knee pain</p><p><b>Work history:</b> 30 years in a printing plant with loud machinery</p><p><b>Family history:</b> mother had hearing loss in her 70s</p>"
         }
       ]
+    },
+    "eyeexam": {
+      "intro": "A nurse at a community eye screening event is assessing a 71-year-old client who has had type 2 diabetes for 15 years.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p>Client reports that straight lines, such as door frames, look wavy in the center when using the right eye, starting about a month ago. Holds the event program at arm's length to read it. Has not had an eye exam in 4 years. Takes metformin for diabetes. Denies eye pain. Eyes are clear, with no redness or drainage. Pupils are equal and react to light.</p>"
+        },
+        {
+          "title": "Screening Results",
+          "html": "<h4>Screening Results</h4><table><thead><tr><th>Test</th><th>Right eye</th><th>Left eye</th></tr></thead><tbody><tr><td>Snellen chart</td><td>20/50</td><td>20/30</td></tr><tr><td>Amsler grid</td><td>Wavy lines and a blurry spot near the center</td><td>Straight, even lines</td></tr><tr><td>Ishihara plates</td><td>All numbers read correctly</td><td>All numbers read correctly</td></tr><tr><td>Tonometry</td><td>Normal pressure</td><td>Normal pressure</td></tr></tbody></table>"
+        }
+      ]
     }
   },
   "questions": [
@@ -31,12 +44,13 @@
       "columns": ["General sense", "Special sense"],
       "rows": ["Vision", "Touch", "Taste", "Equilibrium", "Proprioception", "Temperature"],
       "answer": [1, 0, 1, 1, 0, 0],
-      "rationale": "<p><b>General senses</b> use receptors spread throughout the body: <b>touch</b>, pressure, pain, <b>temperature</b>, <b>proprioception</b> (the position of body parts and the effort used to move them), and interoception (the body's internal condition). <b>Special senses</b> have specialized sense organs: <b>vision</b> (the eyes), hearing and <b>equilibrium</b> (the inner ear), <b>taste</b> (taste buds), and smell (olfactory receptors).</p>"
+      "rationale": "<p><b>General senses</b> use receptors spread throughout the body: <b>touch</b>, pressure, pain, <b>temperature</b>, <b>proprioception</b> (the position of body parts and the effort used to move them), and interoception (the body's internal condition). <b>Special senses</b> have specialized sense organs: <b>vision</b> (the eyes), hearing and <b>equilibrium</b> (the inner ear), <b>taste</b> (taste buds), and smell (olfactory receptors).</p>",
+      "hidden": true
     },
     {
       "id": "se-02",
       "type": "mc",
-      "topic": "General and special senses",
+      "topic": "Touch, proprioception, and interoception",
       "stem": "With the client's eyes closed, a nurse moves the client's big toe up, then down, and asks which way it moved. Which sense is the nurse testing?",
       "options": ["Interoception", "Vestibular sense", "Proprioception", "Nociception"],
       "answer": 2,
@@ -51,7 +65,8 @@
       "columns": ["Tissue damage (pain)", "Light", "Odor molecules", "Oxygen, carbon dioxide, and pH of the blood"],
       "rows": ["Rods and cones (photoreceptors)", "Carotid and aortic bodies (chemoreceptors)", "Free nerve endings (nociceptors)", "Olfactory receptor neurons"],
       "answer": [1, 3, 0, 2],
-      "rationale": "<p><b>Rods and cones</b> are photoreceptors in the retina that convert <b>light</b> into nerve signals. The <b>carotid and aortic bodies</b> are chemoreceptors that monitor the blood's <b>oxygen, carbon dioxide, and pH</b>. <b>Free nerve endings</b> act as nociceptors, which detect <b>pain</b>, and as thermoreceptors. <b>Olfactory receptor neurons</b> are chemoreceptors in the nose that respond to <b>odor molecules</b>.</p>"
+      "rationale": "<p><b>Rods and cones</b> are photoreceptors in the retina that convert <b>light</b> into nerve signals. The <b>carotid and aortic bodies</b> are chemoreceptors that monitor the blood's <b>oxygen, carbon dioxide, and pH</b>. <b>Free nerve endings</b> act as nociceptors, which detect <b>pain</b>, and as thermoreceptors. <b>Olfactory receptor neurons</b> are chemoreceptors in the nose that respond to <b>odor molecules</b>.</p>",
+      "hidden": true
     },
     {
       "id": "se-04",
@@ -60,7 +75,8 @@
       "stem": "A client steps on a tack and feels an immediate, sharp pain, followed a moment later by a dull ache. What is the immediate, sharp pain called?",
       "options": ["Slow (second) pain", "Referred pain", "Fast (first) pain", "Visceral pain"],
       "answer": 2,
-      "rationale": "<p><b>Fast pain</b>, also called first pain, is the immediate, sharp, well-localized pain felt when the skin is pricked or cut. <b>Slow pain</b>, or second pain, is the delayed, dull ache that follows, like the ache after stubbing a toe.</p><p><b>Referred pain</b> is felt at a site different from where it starts, such as arm pain during a heart attack. <b>Visceral pain</b> comes from internal organs and is usually hard to pinpoint.</p>"
+      "rationale": "<p><b>Fast pain</b>, also called first pain, is the immediate, sharp, well-localized pain felt when the skin is pricked or cut. <b>Slow pain</b>, or second pain, is the delayed, dull ache that follows, like the ache after stubbing a toe.</p><p><b>Referred pain</b> is felt at a site different from where it starts, such as arm pain during a heart attack. <b>Visceral pain</b> comes from internal organs and is usually hard to pinpoint.</p>",
+      "hidden": true
     },
     {
       "id": "se-05",
@@ -72,12 +88,13 @@
         {"options": ["cerebellum", "occipital lobe", "medulla"], "answer": 2},
         {"options": ["coughing", "vomiting", "fever"], "answer": 1}
       ],
-      "rationale": "<p>The <b>chemoreceptor trigger zone</b> sits in the <b>medulla</b> of the brainstem. It responds to drugs and hormones carried in the blood and can trigger nausea and <b>vomiting</b>, which is why some medications cause nausea.</p><p>The <b>cerebellum</b> coordinates movement and balance, and the <b>occipital lobe</b> interprets vision. The trigger zone doesn't cause <b>coughing</b>, a reflex set off by irritation of the airway, or <b>fever</b>, which the hypothalamus regulates.</p>"
+      "rationale": "<p>The <b>chemoreceptor trigger zone</b> sits in the <b>medulla</b> of the brainstem. It responds to drugs and hormones carried in the blood and can trigger nausea and <b>vomiting</b>, which is why some medications cause nausea.</p><p>The <b>cerebellum</b> coordinates movement and balance, and the <b>occipital lobe</b> interprets vision. The trigger zone doesn't cause <b>coughing</b>, a reflex set off by irritation of the airway, or <b>fever</b>, which the hypothalamus regulates.</p>",
+      "hidden": true
     },
     {
       "id": "se-06",
       "type": "mc",
-      "topic": "Sensory receptors",
+      "topic": "Touch, proprioception, and interoception",
       "stem": "A client runs the fingertips over a piece of fabric to feel its fine texture. Which receptors, concentrated in the hairless skin of the fingertips, make this possible?",
       "options": ["Meissner corpuscles", "Pacinian corpuscles", "Ruffini endings", "Free nerve endings"],
       "answer": 0,
@@ -90,7 +107,8 @@
       "stem": "A nurse is teaching about the visceral senses. Which sensations are visceral senses?",
       "options": ["Hearing music", "Nausea", "Seeing the color red", "The need to urinate", "Thirst", "Hunger"],
       "answer": [1, 3, 4, 5],
-      "rationale": "<p><b>Visceral senses</b> tell the brain about the internal organs and the body's needs: <b>nausea</b>, <b>hunger</b>, <b>thirst</b>, and the need to <b>urinate</b> or defecate. They are part of interoception, the awareness of the body's internal condition.</p><p><b>Seeing a color</b> (vision) and <b>hearing music</b> (hearing) are special senses, which use specialized sense organs to detect stimuli from outside the body.</p>"
+      "rationale": "<p><b>Visceral senses</b> tell the brain about the internal organs and the body's needs: <b>nausea</b>, <b>hunger</b>, <b>thirst</b>, and the need to <b>urinate</b> or defecate. They are part of interoception, the awareness of the body's internal condition.</p><p><b>Seeing a color</b> (vision) and <b>hearing music</b> (hearing) are special senses, which use specialized sense organs to detect stimuli from outside the body.</p>",
+      "hidden": true
     },
     {
       "id": "se-08",
@@ -98,7 +116,8 @@
       "topic": "Eye structures",
       "stem": "A nurse is reviewing how tears are made and drained. Place the steps in order.",
       "items": ["The lacrimal glands secrete tears.", "Blinking spreads the tears across the surface of the eye.", "The tears drain into the lacrimal puncta near the inner corner of the eye.", "The tears collect in the lacrimal sac.", "The tears drain through the nasolacrimal duct into the nose."],
-      "rationale": "<p>Tears are made in the <b>lacrimal glands</b>, almond-sized glands at the upper outer corner of each eye. <b>Blinking</b> spreads the tears across the eye, where they mix with oil from the meibomian glands. Used tears drain through the <b>lacrimal puncta</b>, small openings in the upper and lower lids near the nose, into the <b>lacrimal sac</b> in the inner corner, and then through the <b>nasolacrimal duct</b> into the nose. That's why the nose runs when a person cries.</p>"
+      "rationale": "<p>Tears are made in the <b>lacrimal glands</b>, almond-sized glands at the upper outer corner of each eye. <b>Blinking</b> spreads the tears across the eye, where they mix with oil from the meibomian glands. Used tears drain through the <b>lacrimal puncta</b>, small openings in the upper and lower lids near the nose, into the <b>lacrimal sac</b> in the inner corner, and then through the <b>nasolacrimal duct</b> into the nose. That's why the nose runs when a person cries.</p>",
+      "hidden": true
     },
     {
       "id": "se-09",
@@ -107,7 +126,8 @@
       "stem": "A client has dry eyes because the tears evaporate too quickly. Which structures normally add oil to the tears to slow evaporation?",
       "options": ["Lacrimal glands", "Lacrimal puncta", "Conjunctiva", "Meibomian glands"],
       "answer": 3,
-      "rationale": "<p>The <b>meibomian glands</b>, along the edges of the eyelids, make oil that mixes with the watery tears. The oil slows evaporation, helps the tears cling to the eye, and keeps them from spilling over the lashes.</p><p>The <b>lacrimal glands</b> make the watery, salty part of the tears, which cleans and lubricates the eye and is antiseptic. The <b>lacrimal puncta</b> drain used tears away. The <b>conjunctiva</b> is a thin mucous membrane over the sclera.</p>"
+      "rationale": "<p>The <b>meibomian glands</b>, along the edges of the eyelids, make oil that mixes with the watery tears. The oil slows evaporation, helps the tears cling to the eye, and keeps them from spilling over the lashes.</p><p>The <b>lacrimal glands</b> make the watery, salty part of the tears, which cleans and lubricates the eye and is antiseptic. The <b>lacrimal puncta</b> drain used tears away. The <b>conjunctiva</b> is a thin mucous membrane over the sclera.</p>",
+      "hidden": true
     },
     {
       "id": "se-10",
@@ -116,7 +136,8 @@
       "stem": "Which statement about the conjunctiva is accurate?",
       "options": ["It is the colored part of the eye that controls the size of the pupil.", "It is the clear dome at the front of the eye that bends light.", "It produces the watery part of the tears.", "It is a thin mucous membrane that covers the sclera but not the cornea."],
       "answer": 3,
-      "rationale": "<p>The <b>conjunctiva</b> is a thin, protective mucous membrane that covers the <b>sclera</b> (the white of the eye) and lines the eyelids. It does <b>not</b> cover the cornea, the clear front surface of the eye.</p><p>The <b>iris</b> is the colored part that controls the pupil. The <b>cornea</b> is the clear dome that bends light as it enters. The <b>lacrimal glands</b> produce the watery part of the tears.</p>"
+      "rationale": "<p>The <b>conjunctiva</b> is a thin, protective mucous membrane that covers the <b>sclera</b> (the white of the eye) and lines the eyelids. It does <b>not</b> cover the cornea, the clear front surface of the eye.</p><p>The <b>iris</b> is the colored part that controls the pupil. The <b>cornea</b> is the clear dome that bends light as it enters. The <b>lacrimal glands</b> produce the watery part of the tears.</p>",
+      "hidden": true
     },
     {
       "id": "se-11",
@@ -147,7 +168,8 @@
       "text": "The {{0}} humor fills the space in front of the lens and bathes the iris and pupil. The {{1}} humor is a clear, jellylike substance that fills the large cavity behind the lens.",
       "tokens": ["lacrimal", "vitreous", "serous", "aqueous"],
       "answer": [3, 1],
-      "rationale": "<p>The <b>aqueous humor</b> is a watery fluid that fills the anterior and posterior chambers, in front of the lens, and bathes the iris, pupil, and lens. The <b>vitreous humor</b> is a clear, jellylike substance that fills the cavity behind the lens and helps the eye keep its shape.</p><p><b>Lacrimal</b> fluid is tears, which bathe the outside of the eye. <b>Serous</b> fluid is the thin, watery fluid made by serous membranes, such as those lining the chest and abdomen; it isn't one of the humors of the eye.</p>"
+      "rationale": "<p>The <b>aqueous humor</b> is a watery fluid that fills the anterior and posterior chambers, in front of the lens, and bathes the iris, pupil, and lens. The <b>vitreous humor</b> is a clear, jellylike substance that fills the cavity behind the lens and helps the eye keep its shape.</p><p><b>Lacrimal</b> fluid is tears, which bathe the outside of the eye. <b>Serous</b> fluid is the thin, watery fluid made by serous membranes, such as those lining the chest and abdomen; it isn't one of the humors of the eye.</p>",
+      "hidden": true
     },
     {
       "id": "se-14",
@@ -200,7 +222,7 @@
     {
       "id": "se-19",
       "type": "mc",
-      "topic": "Vision assessment and disorders",
+      "topic": "Eye assessments",
       "stem": "A nurse is screening a client's visual acuity. Which tool should the nurse use?",
       "options": ["Tuning fork", "Otoscope", "Snellen chart", "Reflex hammer"],
       "answer": 2,
@@ -209,7 +231,7 @@
     {
       "id": "se-20",
       "type": "matrix",
-      "topic": "Vision assessment and disorders",
+      "topic": "Eye findings",
       "stem": "For each eye disorder, click to specify its description.",
       "rowHeader": "Disorder",
       "columns": ["Loss of central vision from damage to the macula", "Damage to the retina's small blood vessels from long-term high blood glucose", "Clouding of the lens", "Loss of side vision from increased pressure in the eye"],
@@ -220,7 +242,7 @@
     {
       "id": "se-21",
       "type": "mc",
-      "topic": "Vision assessment and disorders",
+      "topic": "Eye findings",
       "stem": "A 64-year-old client who has no vision problems asks why regular eye exams are needed. Which response by the nurse is accurate?",
       "options": ["Glaucoma can damage vision before a person notices any symptoms.", "Cataracts always cause eye pain, so exams aren't needed until pain begins.", "Aging affects only the ability to see colors.", "Eye exams are needed only for people who wear glasses."],
       "answer": 0,
@@ -229,7 +251,7 @@
     {
       "id": "se-22",
       "type": "mc",
-      "topic": "Vision assessment and disorders",
+      "topic": "Eye findings",
       "stem": "A client can read a book clearly but can't read road signs while driving. The nurse recognizes this as which condition?",
       "options": ["Hyperopia (farsightedness)", "Myopia (nearsightedness)", "Macular degeneration", "Strabismus"],
       "answer": 1,
@@ -242,12 +264,13 @@
       "stem": "During a well-child visit, a nurse notices that one of a 4-year-old child's eyes turns inward. Why should the nurse refer the child for an eye exam?",
       "options": ["The eye will straighten as the child grows, so the referral can wait until age 10.", "An eye that turns inward is a sign of glaucoma.", "Strabismus affects only how the eyes look, not how the child sees.", "Untreated misalignment of the eyes can lead to amblyopia and loss of binocular vision."],
       "answer": 3,
-      "rationale": "<p>An eye that turns inward (<b>esotropia</b>) is a form of <b>strabismus</b>, misalignment of the eyes. Early treatment matters, because untreated strabismus can lead to <b>amblyopia</b> (reduced vision in one eye), <b>loss of binocular vision</b>, and double vision.</p><p>Strabismus doesn't reliably go away with growth, so <b>waiting</b> risks permanent vision loss. It isn't a sign of <b>glaucoma</b>. It affects how the child <b>sees</b>, not just how the eyes look.</p>"
+      "rationale": "<p>An eye that turns inward (<b>esotropia</b>) is a form of <b>strabismus</b>, misalignment of the eyes. Early treatment matters, because untreated strabismus can lead to <b>amblyopia</b> (reduced vision in one eye), <b>loss of binocular vision</b>, and double vision.</p><p>Strabismus doesn't reliably go away with growth, so <b>waiting</b> risks permanent vision loss. It isn't a sign of <b>glaucoma</b>. It affects how the child <b>sees</b>, not just how the eyes look.</p>",
+      "hidden": true
     },
     {
       "id": "se-24",
       "type": "mc",
-      "topic": "Vision assessment and disorders",
+      "topic": "Physiology of vision",
       "stem": "When a nurse shines a light into a client's right eye, both pupils constrict. Which cranial nerve carries the signal that makes the pupils constrict?",
       "options": ["Optic nerve (cranial nerve II)", "Oculomotor nerve (cranial nerve III)", "Trochlear nerve (cranial nerve IV)", "Abducens nerve (cranial nerve VI)"],
       "answer": 1,
@@ -278,7 +301,8 @@
       "stem": "A client asks why the ears “pop” as an airplane descends. Which structure equalizes the pressure in the middle ear with the throat?",
       "options": ["Cochlea", "Semicircular canals", "External auditory canal", "Eustachian tube"],
       "answer": 3,
-      "rationale": "<p>The <b>eustachian tube</b> connects the air-filled middle ear to the nasopharynx, so the pressure in the middle ear can equalize with the pressure in the throat. When it opens during swallowing or yawning, the ears “pop.” A swollen eustachian tube can trap fluid in the middle ear, which can lead to otitis media.</p><p>The <b>cochlea</b> changes fluid vibrations into nerve signals for hearing. The <b>semicircular canals</b> sense head rotation for balance. The <b>external auditory canal</b> carries sound to the eardrum; it's outside the eardrum and doesn't open into the middle ear.</p>"
+      "rationale": "<p>The <b>eustachian tube</b> connects the air-filled middle ear to the nasopharynx, so the pressure in the middle ear can equalize with the pressure in the throat. When it opens during swallowing or yawning, the ears “pop.” A swollen eustachian tube can trap fluid in the middle ear, which can lead to otitis media.</p><p>The <b>cochlea</b> changes fluid vibrations into nerve signals for hearing. The <b>semicircular canals</b> sense head rotation for balance. The <b>external auditory canal</b> carries sound to the eardrum; it's outside the eardrum and doesn't open into the middle ear.</p>",
+      "hidden": true
     },
     {
       "id": "se-28",
@@ -296,12 +320,13 @@
       "stem": "A nurse is completing a hearing assessment. Which information should the nurse gather?",
       "options": ["How effectively the client communicates", "Whether cerumen is blocking the ear canals", "Whether the client can taste salt on the tongue", "The client's ability to read a Snellen chart", "How well the client hears normal conversation", "Whether the client uses hearing aids"],
       "answer": [0, 1, 4, 5],
-      "rationale": "<p>A hearing assessment focuses on <b>hearing acuity</b>, whether the client uses <b>hearing aids</b>, any <b>cerumen</b> that could block sound, and how <b>effectively the client communicates</b>. The findings help the nurse tell conductive from sensorineural hearing loss and adapt how they communicate with the client.</p><p>The <b>Snellen chart</b> tests visual acuity, and <b>taste</b> is tested when assessing cranial nerves VII and IX, not hearing.</p>"
+      "rationale": "<p>A hearing assessment focuses on <b>hearing acuity</b>, whether the client uses <b>hearing aids</b>, any <b>cerumen</b> that could block sound, and how <b>effectively the client communicates</b>. The findings help the nurse tell conductive from sensorineural hearing loss and adapt how they communicate with the client.</p><p>The <b>Snellen chart</b> tests visual acuity, and <b>taste</b> is tested when assessing cranial nerves VII and IX, not hearing.</p>",
+      "hidden": true
     },
     {
       "id": "se-30",
       "type": "hotspot",
-      "topic": "Balance and ear disorders",
+      "topic": "Balance (vestibular system)",
       "stem": "Click the structures that sense rotation of the head to help keep the body balanced.",
       "image": "img/ear-section.svg",
       "alt": "Cross-section of the ear with the outside of the head on the left: the outer ear, a canal leading to a thin membrane, an air-filled space with three tiny bones, a tube running down from that space, three looped canals, a small chamber below them, and a snail-shaped spiral, with a nerve leading toward the brain.",
@@ -316,7 +341,8 @@
       "image": "img/ear-section.svg",
       "alt": "Cross-section of the ear with the outside of the head on the left: the outer ear, a canal leading to a thin membrane, an air-filled space with three tiny bones, a tube running down from that space, three looped canals, a small chamber below them, and a snail-shaped spiral, with a nerve leading toward the brain.",
       "regions": [{"x": 52.7, "y": 38.1, "w": 10.8, "h": 22.4}],
-      "rationale": "<p>In <b>acute otitis media</b>, viruses or bacteria grow in fluid trapped in the <b>middle ear</b>, the air-filled space just behind the eardrum that holds the three tiny bones. A swollen eustachian tube can keep the fluid from draining, causing ear pain and muffled hearing (a conductive hearing loss).</p><p>The <b>ear canal</b> is outside the eardrum; an infection there is otitis externa. The <b>cochlea</b> and <b>semicircular canals</b> are parts of the inner ear.</p>"
+      "rationale": "<p>In <b>acute otitis media</b>, viruses or bacteria grow in fluid trapped in the <b>middle ear</b>, the air-filled space just behind the eardrum that holds the three tiny bones. A swollen eustachian tube can keep the fluid from draining, causing ear pain and muffled hearing (a conductive hearing loss).</p><p>The <b>ear canal</b> is outside the eardrum; an infection there is otitis externa. The <b>cochlea</b> and <b>semicircular canals</b> are parts of the inner ear.</p>",
+      "hidden": true
     },
     {
       "id": "se-32",
@@ -327,7 +353,8 @@
       "columns": ["Gradual hearing loss in both ears with aging", "Ringing or buzzing that usually only the client can hear", "Episodes of vertigo, changing hearing loss, tinnitus, and a full feeling in the ear", "Infection with fluid trapped in the middle ear"],
       "rows": ["Otitis media", "Presbycusis", "Tinnitus", "Ménière disease"],
       "answer": [3, 0, 1, 2],
-      "rationale": "<p><b>Acute otitis media</b> is an infection of fluid trapped in the <b>middle ear</b>, causing ear pain and muffled hearing. <b>Presbycusis</b> is the gradual, <b>bilateral</b> hearing loss of aging. <b>Tinnitus</b> is a high-pitched <b>ringing or buzzing</b> that is usually heard only by the client. <b>Ménière disease</b> is a chronic inner ear disorder, thought to come from excess fluid in the inner ear, with episodes of <b>vertigo</b>, fluctuating sensorineural hearing loss, tinnitus, and a feeling of <b>fullness</b> in the ear.</p>"
+      "rationale": "<p><b>Acute otitis media</b> is an infection of fluid trapped in the <b>middle ear</b>, causing ear pain and muffled hearing. <b>Presbycusis</b> is the gradual, <b>bilateral</b> hearing loss of aging. <b>Tinnitus</b> is a high-pitched <b>ringing or buzzing</b> that is usually heard only by the client. <b>Ménière disease</b> is a chronic inner ear disorder, thought to come from excess fluid in the inner ear, with episodes of <b>vertigo</b>, fluctuating sensorineural hearing loss, tinnitus, and a feeling of <b>fullness</b> in the ear.</p>",
+      "hidden": true
     },
     {
       "id": "se-33",
@@ -336,7 +363,8 @@
       "stem": "A client reports that the room seems to spin when the client rolls over in bed. Which term should the nurse use to document this symptom?",
       "options": ["Tinnitus", "Presyncope", "Vertigo", "Proprioception"],
       "answer": 2,
-      "rationale": "<p><b>Vertigo</b> is a false sense of motion, of oneself or the surroundings, often spinning. It usually comes from the vestibular system, as in benign paroxysmal positional vertigo, which is set off by changes in head position.</p><p><b>Tinnitus</b> is ringing or buzzing in the ears. <b>Presyncope</b> is the lightheaded feeling of being about to faint, not spinning. <b>Proprioception</b> is the sense of body position, not a symptom.</p>"
+      "rationale": "<p><b>Vertigo</b> is a false sense of motion, of oneself or the surroundings, often spinning. It usually comes from the vestibular system, as in benign paroxysmal positional vertigo, which is set off by changes in head position.</p><p><b>Tinnitus</b> is ringing or buzzing in the ears. <b>Presyncope</b> is the lightheaded feeling of being about to faint, not spinning. <b>Proprioception</b> is the sense of body position, not a symptom.</p>",
+      "hidden": true
     },
     {
       "id": "se-34",
@@ -345,7 +373,8 @@
       "stem": "A client with Ménière disease has sudden episodes of vertigo. Which action is the nurse's priority?",
       "options": ["Encourage the client to keep walking until the episode passes.", "Help the client sit or lie down to prevent a fall.", "Schedule a hearing test for later in the week.", "Teach the client to follow a low-sodium diet."],
       "answer": 1,
-      "rationale": "<p>Vertigo affects balance and posture, so <b>safety</b> comes first: during an episode, the nurse helps the client <b>sit or lie down</b>, keeps the call light within reach, and helps with walking afterward to prevent <b>falls</b>.</p><p><b>Walking</b> during vertigo increases the risk of falling. A <b>hearing test</b> is useful, since Ménière disease affects hearing, and a <b>low-sodium diet</b> can help reduce episodes over time, but neither comes first while the client is dizzy.</p>"
+      "rationale": "<p>Vertigo affects balance and posture, so <b>safety</b> comes first: during an episode, the nurse helps the client <b>sit or lie down</b>, keeps the call light within reach, and helps with walking afterward to prevent <b>falls</b>.</p><p><b>Walking</b> during vertigo increases the risk of falling. A <b>hearing test</b> is useful, since Ménière disease affects hearing, and a <b>low-sodium diet</b> can help reduce episodes over time, but neither comes first while the client is dizzy.</p>",
+      "hidden": true
     },
     {
       "id": "se-35",
@@ -376,7 +405,8 @@
       "topic": "Taste and smell",
       "stem": "Place the steps of the sense of smell in order.",
       "items": ["Odor molecules bind to receptors on olfactory sensory neurons in the nose.", "The neurons send signals through the cribriform plate.", "The signals reach the olfactory bulb.", "The signals travel along the olfactory tract.", "The olfactory center of the brain interprets the smell."],
-      "rationale": "<p>Smell starts when <b>odor molecules bind</b> to receptors on <b>olfactory sensory neurons</b>, which fire signals along the olfactory nerves <b>through the cribriform plate</b> of the skull to the <b>olfactory bulb</b>. From there, the signals travel along the <b>olfactory tract</b> to the <b>olfactory center</b> of the brain. Its connections to the limbic system tie smells to emotions and memories.</p>"
+      "rationale": "<p>Smell starts when <b>odor molecules bind</b> to receptors on <b>olfactory sensory neurons</b>, which fire signals along the olfactory nerves <b>through the cribriform plate</b> of the skull to the <b>olfactory bulb</b>. From there, the signals travel along the <b>olfactory tract</b> to the <b>olfactory center</b> of the brain. Its connections to the limbic system tie smells to emotions and memories.</p>",
+      "hidden": true
     },
     {
       "id": "se-38",
@@ -385,7 +415,8 @@
       "stem": "An older adult reports that food has little taste or smell. Which risks should the nurse address?",
       "options": ["A stronger desire to eat", "Better hearing and vision", "Not noticing smoke or a gas leak", "Eating spoiled food without noticing", "Poor appetite and weight loss"],
       "answer": [2, 3, 4],
-      "rationale": "<p>Smell and taste work together to create <b>flavor</b>, so their loss can reduce <b>appetite</b> and affect nutrition. Smell also protects <b>safety</b>: the client may not notice <b>smoke, a gas leak</b>, or <b>spoiled food</b>. The nurse can suggest working smoke and gas detectors, checking the dates on food, and making meals more appealing with color and texture.</p><p>Losing smell and taste doesn't improve <b>hearing or vision</b>, and it usually <b>reduces</b>, rather than increases, the desire to eat.</p>"
+      "rationale": "<p>Smell and taste work together to create <b>flavor</b>, so their loss can reduce <b>appetite</b> and affect nutrition. Smell also protects <b>safety</b>: the client may not notice <b>smoke, a gas leak</b>, or <b>spoiled food</b>. The nurse can suggest working smoke and gas detectors, checking the dates on food, and making meals more appealing with color and texture.</p><p>Losing smell and taste doesn't improve <b>hearing or vision</b>, and it usually <b>reduces</b>, rather than increases, the desire to eat.</p>",
+      "hidden": true
     },
     {
       "id": "se-39",
@@ -405,7 +436,8 @@
       "columns": ["Somatic", "Visceral", "Neuropathic", "Referred"],
       "rows": ["Burning, shooting pain in the feet from diabetic nerve damage", "Pain in the left arm and jaw during a heart attack", "Cramping pain from the intestines that is hard to pinpoint", "Sharp, well-localized pain from a cut on the hand"],
       "answer": [2, 3, 1, 0],
-      "rationale": "<p><b>Somatic pain</b>, a type of nociceptive pain, comes from nociceptors in the skin or deep tissues and is usually well localized, like a cut. <b>Visceral pain</b>, also nociceptive, comes from internal organs and is often cramping and hard to pinpoint. <b>Neuropathic pain</b> comes from a problem in the nervous system itself, such as diabetic nerve damage, and is often burning or shooting. <b>Referred pain</b> is felt at a site different from its source, such as arm and jaw pain from the heart.</p>"
+      "rationale": "<p><b>Somatic pain</b>, a type of nociceptive pain, comes from nociceptors in the skin or deep tissues and is usually well localized, like a cut. <b>Visceral pain</b>, also nociceptive, comes from internal organs and is often cramping and hard to pinpoint. <b>Neuropathic pain</b> comes from a problem in the nervous system itself, such as diabetic nerve damage, and is often burning or shooting. <b>Referred pain</b> is felt at a site different from its source, such as arm and jaw pain from the heart.</p>",
+      "hidden": true
     },
     {
       "id": "se-41",
@@ -414,7 +446,8 @@
       "stem": "A client who had surgery yesterday rates the pain as 8 on a scale of 0 to 10 while calmly reading a book. Which is the most reliable indicator of the client's pain?",
       "options": ["The client's calm facial expression", "The client's report of the pain", "The client's vital signs", "The nurse's experience with similar surgeries"],
       "answer": 1,
-      "rationale": "<p>The <b>client's report</b> of pain is the most reliable indicator, because pain is a personal experience shaped by biological, psychological, and social factors. The nurse accepts the report, treats the pain, and reassesses.</p><p>People cope with pain in different ways, so a <b>calm expression</b> or <b>normal vital signs</b> don't rule out severe pain. The <b>nurse's experience</b> with other clients doesn't measure this client's pain.</p>"
+      "rationale": "<p>The <b>client's report</b> of pain is the most reliable indicator, because pain is a personal experience shaped by biological, psychological, and social factors. The nurse accepts the report, treats the pain, and reassesses.</p><p>People cope with pain in different ways, so a <b>calm expression</b> or <b>normal vital signs</b> don't rule out severe pain. The <b>nurse's experience</b> with other clients doesn't measure this client's pain.</p>",
+      "hidden": true
     },
     {
       "id": "se-42",
@@ -425,7 +458,8 @@
       "columns": ["Acute pain", "Chronic pain"],
       "rows": ["Began recently, after an injury or surgery", "Serves a protective purpose", "Persists from long-term arthritis", "Is associated with nerve changes from diabetes", "Is expected to go away as the tissue heals"],
       "answer": [0, 0, 1, 1, 0],
-      "rationale": "<p><b>Acute pain</b> has a recent onset, after an injury or surgery, and serves a <b>protective purpose</b>: it warns of tissue damage and usually goes away as the tissue heals. <b>Chronic pain</b> persists, with ongoing tissue inflammation or changes in the peripheral nerves, as in <b>arthritis</b>, <b>diabetes</b>, or tumor growth.</p>"
+      "rationale": "<p><b>Acute pain</b> has a recent onset, after an injury or surgery, and serves a <b>protective purpose</b>: it warns of tissue damage and usually goes away as the tissue heals. <b>Chronic pain</b> persists, with ongoing tissue inflammation or changes in the peripheral nerves, as in <b>arthritis</b>, <b>diabetes</b>, or tumor growth.</p>",
+      "hidden": true
     },
     {
       "id": "se-43",
@@ -434,7 +468,8 @@
       "stem": "A nurse is teaching a group of nursing students about the pain experience. Which statements by the nurse are accurate?",
       "options": ["Past experiences with pain can change how a person feels pain and responds to it.", "The same injury causes the same amount of pain in everyone.", "Culture and beliefs can shape how a person expresses pain.", "A client who is laughing with visitors can't be in severe pain.", "Support from family and friends can affect how a person copes with pain.", "Anxiety can make pain feel worse."],
       "answer": [0, 2, 4, 5],
-      "rationale": "<p>Pain is <b>biopsychosocial</b>: biological, psychological, and social factors all shape it. <b>Past experiences</b>, <b>culture and beliefs</b>, <b>anxiety</b>, and <b>support from others</b> can all change how strongly pain is felt and how a person responds to it. That's why the client's own report is the most reliable indicator.</p><p>The same injury does <b>not</b> cause the same pain in everyone. People cope with pain in different ways, so a client <b>laughing with visitors</b>, which can be a distraction, may still be in severe pain.</p>"
+      "rationale": "<p>Pain is <b>biopsychosocial</b>: biological, psychological, and social factors all shape it. <b>Past experiences</b>, <b>culture and beliefs</b>, <b>anxiety</b>, and <b>support from others</b> can all change how strongly pain is felt and how a person responds to it. That's why the client's own report is the most reliable indicator.</p><p>The same injury does <b>not</b> cause the same pain in everyone. People cope with pain in different ways, so a client <b>laughing with visitors</b>, which can be a distraction, may still be in severe pain.</p>",
+      "hidden": true
     },
     {
       "id": "se-44",
@@ -443,7 +478,8 @@
       "stem": "A nurse is teaching an older adult about sensory changes with aging. Which statement by the client shows understanding?",
       "options": ["My sense of smell may weaken, so I'll keep my smoke detector working.", "My hearing should get sharper as I age, so I won't need hearing tests.", "Older adults always feel pain more strongly than younger adults do.", "New glasses can fix any change in my vision that comes with age."],
       "answer": 0,
-      "rationale": "<p>With aging, <b>taste and smell</b> often weaken, so safety measures such as a <b>working smoke detector</b> make sense, along with checking the dates on food. Older adults also commonly have reduced vision (cataracts, macular degeneration, glaucoma) and hearing loss.</p><p>Hearing usually <b>declines</b> with age: almost 1 in 4 adults aged 65 to 74, and 1 in 2 aged 75 and older, have disabling hearing loss, so hearing checks still matter. Pain doesn't <b>always</b> feel stronger with age; some older adults feel less pain, which can hide an injury. Age-related problems such as cataracts and glaucoma <b>need treatment</b> that glasses can't provide.</p>"
+      "rationale": "<p>With aging, <b>taste and smell</b> often weaken, so safety measures such as a <b>working smoke detector</b> make sense, along with checking the dates on food. Older adults also commonly have reduced vision (cataracts, macular degeneration, glaucoma) and hearing loss.</p><p>Hearing usually <b>declines</b> with age: almost 1 in 4 adults aged 65 to 74, and 1 in 2 aged 75 and older, have disabling hearing loss, so hearing checks still matter. Pain doesn't <b>always</b> feel stronger with age; some older adults feel less pain, which can hide an injury. Age-related problems such as cataracts and glaucoma <b>need treatment</b> that glasses can't provide.</p>",
+      "hidden": true
     },
     {
       "id": "se-45",
@@ -452,7 +488,8 @@
       "stem": "A nurse is caring for a client who has severely impaired vision. Which actions help the nurse communicate effectively?",
       "options": ["Use hand gestures to show the client what to do.", "Describe the layout of the room and where things are.", "Explain what you are about to do before touching the client.", "Move the client's belongings without saying so, to keep the room tidy.", "Introduce yourself each time you enter the room."],
       "answer": [1, 2, 4],
-      "rationale": "<p>For a client with impaired vision, the nurse <b>says who they are</b> each time they come in, <b>describes the surroundings</b> and where things are, and gives <b>spoken explanations</b> before and during care, so the client isn't startled and can stay independent.</p><p><b>Gestures</b> don't help someone who can't see them. Moving belongings <b>without telling the client</b> takes away the client's sense of where things are and increases the risk of falls.</p>"
+      "rationale": "<p>For a client with impaired vision, the nurse <b>says who they are</b> each time they come in, <b>describes the surroundings</b> and where things are, and gives <b>spoken explanations</b> before and during care, so the client isn't startled and can stay independent.</p><p><b>Gestures</b> don't help someone who can't see them. Moving belongings <b>without telling the client</b> takes away the client's sense of where things are and increases the risk of falls.</p>",
+      "hidden": true
     },
     {
       "id": "se-46",
@@ -461,7 +498,8 @@
       "stem": "A pregnant client asks when the baby will first be able to recognize the mother's voice. Which response by the nurse is accurate?",
       "options": ["Only after the baby is about 3 months old", "Around 25 weeks of pregnancy, before birth", "Not until the baby begins to speak", "At birth, when the ears first fill with air"],
       "answer": 1,
-      "rationale": "<p>Many senses begin developing <b>before birth</b>. A fetus can recognize the <b>mother's voice by about 25 weeks</b> of pregnancy. Other milestones include swallowing (taste) at about 17 weeks, smelling odors at about 28 weeks, and pupils constricting to light at 30 to 32 weeks. Color vision develops around 3 months after birth.</p><p>Recognizing the voice doesn't wait until <b>3 months after birth</b> (when color vision develops) or until the baby <b>speaks</b>. Hearing doesn't begin <b>at birth</b>; it develops in the womb.</p>"
+      "rationale": "<p>Many senses begin developing <b>before birth</b>. A fetus can recognize the <b>mother's voice by about 25 weeks</b> of pregnancy. Other milestones include swallowing (taste) at about 17 weeks, smelling odors at about 28 weeks, and pupils constricting to light at 30 to 32 weeks. Color vision develops around 3 months after birth.</p><p>Recognizing the voice doesn't wait until <b>3 months after birth</b> (when color vision develops) or until the baby <b>speaks</b>. Hearing doesn't begin <b>at birth</b>; it develops in the womb.</p>",
+      "hidden": true
     },
     {
       "id": "se-47",
@@ -471,7 +509,8 @@
       "stem": "Click to highlight the findings in the nurses' note that suggest the client has a hearing impairment.",
       "passage": "Client [[asks the nurse to repeat several questions]] and [[leans toward the nurse while the nurse speaks]]. [[Denies ear pain, drainage, or dizziness]]. [[Watches the nurse's lips closely]]. States that at church dinners, [[people are talking, but the client can't make out what they're saying]]. [[Ear canals are clear]], and the [[tympanic membranes are intact and pearly gray]]. The granddaughter reports that the client [[often misses phone calls]] and [[keeps the television very loud]].",
       "answer": [0, 1, 3, 4, 7, 8],
-      "rationale": "<p>Signs of a hearing impairment are <b>asking for questions to be repeated</b>, <b>leaning toward the speaker</b>, and <b>watching the speaker's lips</b>, which suggests the client relies on lip reading. So are knowing that <b>people are talking without understanding the words</b> (worse with background noise), <b>missing phone calls</b>, and <b>keeping the TV very loud</b>.</p><p><b>No ear pain, drainage, or dizziness</b>, <b>clear ear canals</b>, and <b>intact, pearly gray tympanic membranes</b> are normal findings. They point away from an infection or a cerumen blockage, which would cause a conductive hearing loss.</p>"
+      "rationale": "<p>Signs of a hearing impairment are <b>asking for questions to be repeated</b>, <b>leaning toward the speaker</b>, and <b>watching the speaker's lips</b>, which suggests the client relies on lip reading. So are knowing that <b>people are talking without understanding the words</b> (worse with background noise), <b>missing phone calls</b>, and <b>keeping the TV very loud</b>.</p><p><b>No ear pain, drainage, or dizziness</b>, <b>clear ear canals</b>, and <b>intact, pearly gray tympanic membranes</b> are normal findings. They point away from an infection or a cerumen blockage, which would cause a conductive hearing loss.</p>",
+      "hidden": true
     },
     {
       "id": "se-48",
@@ -483,7 +522,8 @@
       "columns": ["Conductive", "Sensorineural"],
       "rows": ["Age-related loss in both ears (presbycusis)", "Cerumen blocking the ear canal", "Fluid in the middle ear from otitis media", "Damage to the hair cells of the cochlea from years of loud noise", "Ménière disease"],
       "answer": [1, 0, 0, 1, 1],
-      "rationale": "<p><b>Conductive</b> hearing loss happens when sound can't reach the inner ear, as with <b>cerumen</b> blocking the ear canal or <b>fluid in the middle ear</b> from otitis media, which is common in young children. <b>Sensorineural</b> hearing loss comes from problems in the cochlea, the auditory nerve, or the brain, such as <b>presbycusis</b>, <b>noise damage to the cochlea's hair cells</b>, and <b>Ménière disease</b>. This client's clear ear canals and normal eardrums, with aging and years of loud machinery, fit a sensorineural loss.</p>"
+      "rationale": "<p><b>Conductive</b> hearing loss happens when sound can't reach the inner ear, as with <b>cerumen</b> blocking the ear canal or <b>fluid in the middle ear</b> from otitis media, which is common in young children. <b>Sensorineural</b> hearing loss comes from problems in the cochlea, the auditory nerve, or the brain, such as <b>presbycusis</b>, <b>noise damage to the cochlea's hair cells</b>, and <b>Ménière disease</b>. This client's clear ear canals and normal eardrums, with aging and years of loud machinery, fit a sensorineural loss.</p>",
+      "hidden": true
     },
     {
       "id": "se-49",
@@ -493,7 +533,8 @@
       "stem": "Which actions should the nurse take to communicate effectively with the client?",
       "options": ["Move to a quiet room away from background noise.", "Turn away to type in the record while asking questions.", "Shout so the client can hear every word.", "Face the client and speak clearly at a normal pace.", "Ask the client to repeat back the key points of any instructions.", "Direct the questions to the granddaughter instead of the client."],
       "answer": [0, 3, 4],
-      "rationale": "<p>The nurse should <b>face the client</b> and speak clearly, so the client can see the nurse's lips and expressions, <b>reduce background noise</b>, which makes speech harder to understand, and <b>confirm understanding</b> by asking the client to repeat back key points.</p><p><b>Shouting</b> distorts speech and can feel disrespectful. <b>Talking to the granddaughter</b> instead of the client leaves the client out of their own care. <b>Turning away</b> to type hides the nurse's face and muffles the voice.</p>"
+      "rationale": "<p>The nurse should <b>face the client</b> and speak clearly, so the client can see the nurse's lips and expressions, <b>reduce background noise</b>, which makes speech harder to understand, and <b>confirm understanding</b> by asking the client to repeat back key points.</p><p><b>Shouting</b> distorts speech and can feel disrespectful. <b>Talking to the granddaughter</b> instead of the client leaves the client out of their own care. <b>Turning away</b> to type hides the nurse's face and muffles the voice.</p>",
+      "hidden": true
     },
     {
       "id": "se-50",
@@ -507,7 +548,286 @@
         {"options": ["conductive", "sensorineural"], "answer": 1},
         {"options": ["both ears", "only one ear"], "answer": 0}
       ],
-      "rationale": "<p>Hearing loss that has crept up over several years in an older adult, with trouble understanding words in noisy places, normal ear canals and eardrums, and a family history of hearing loss, fits <b>presbycusis</b>: a <b>sensorineural</b>, age-related hearing loss that affects <b>both ears</b>. Years of loud machinery may have added noise damage.</p><p><b>Acute otitis media</b> would cause ear pain and fluid behind the eardrum, and <b>cerumen impaction</b> would block the canal; both cause <b>conductive</b> loss, and this client's canals and eardrums are normal. Presbycusis affects <b>both ears</b>, not only one.</p>"
+      "rationale": "<p>Hearing loss that has crept up over several years in an older adult, with trouble understanding words in noisy places, normal ear canals and eardrums, and a family history of hearing loss, fits <b>presbycusis</b>: a <b>sensorineural</b>, age-related hearing loss that affects <b>both ears</b>. Years of loud machinery may have added noise damage.</p><p><b>Acute otitis media</b> would cause ear pain and fluid behind the eardrum, and <b>cerumen impaction</b> would block the canal; both cause <b>conductive</b> loss, and this client's canals and eardrums are normal. Presbycusis affects <b>both ears</b>, not only one.</p>",
+      "hidden": true
+    },
+    {
+      "id": "se-51",
+      "type": "mc",
+      "topic": "Ear anatomy and hearing",
+      "stem": "A nurse is reviewing the external ear. Which of the following is the function of the auricle (pinna)?",
+      "options": ["It catches sound waves and funnels them into the ear canal.", "It amplifies vibrations and passes them to the inner ear.", "It senses rotation of the head to help with balance.", "It makes the cerumen that protects the ear canal."],
+      "answer": 0,
+      "rationale": "<p>The <b>auricle (pinna)</b>, the visible outer ear, <b>catches sound</b> and <b>funnels</b> it into the external auditory canal, which leads to the eardrum.</p><p>The <b>ossicles</b> of the middle ear amplify vibrations and pass them to the inner ear. The <b>semicircular canals</b> of the inner ear sense rotation of the head. <b>Cerumen</b> (earwax) is made in the ear canal, not by the auricle.</p><p><b>Takeaway:</b> The auricle catches and funnels sound; the canal makes cerumen.</p>"
+    },
+    {
+      "id": "se-52",
+      "type": "matrix",
+      "topic": "Ear anatomy and hearing",
+      "stem": "A nurse is reviewing the parts of the ear. For each structure, click to specify where it is.",
+      "rowHeader": "Structure",
+      "columns": ["External ear", "Middle ear", "Inner ear"],
+      "rows": ["Cochlea", "Auricle (pinna)", "Incus", "Organ of Corti", "Malleus", "External auditory canal"],
+      "answer": [2, 0, 1, 2, 1, 0],
+      "rationale": "<p>The <b>external ear</b> is the <b>auricle (pinna)</b> and the <b>external auditory canal</b>, which catch sound and funnel it to the eardrum. The <b>middle ear</b> holds the tympanic membrane and the three <b>ossicles</b>, the <b>malleus</b>, <b>incus</b>, and stapes, which pass the vibration on and amplify it. The <b>inner ear</b> holds the <b>cochlea</b>, a fluid-filled, snail-shaped organ, and the <b>organ of Corti</b>, which sits on the cochlear tubes and turns fluid movement into nerve signals.</p><p><b>Takeaway:</b> The external ear is the auricle and canal, the middle ear the eardrum and ossicles, and the inner ear the cochlea and organ of Corti.</p>"
+    },
+    {
+      "id": "se-53",
+      "type": "mc",
+      "topic": "Ear anatomy and hearing",
+      "stem": "A nurse is teaching about hearing. Which of the following lobes of the brain processes the hearing signals carried by the vestibulocochlear nerve?",
+      "options": ["Occipital lobe", "Temporal lobe", "Frontal lobe", "Parietal lobe"],
+      "answer": 1,
+      "rationale": "<p>The cochlear branch of the <b>vestibulocochlear nerve (CN VIII)</b> carries hearing signals to the <b>temporal lobe</b>, which handles auditory processing.</p><p>The <b>occipital lobe</b> processes vision, the <b>frontal lobe</b> handles movement, planning, and Broca's speech area, and the <b>parietal lobe</b> processes touch and body position.</p><p><b>Takeaway:</b> Hearing is processed in the temporal lobe.</p>"
+    },
+    {
+      "id": "se-54",
+      "type": "mc",
+      "topic": "Ear anatomy and hearing",
+      "stem": "A client has hearing loss because many hair cells of the organ of Corti are damaged. Which of the following describes the problem?",
+      "options": ["Sound waves can't reach the eardrum through the ear canal.", "The ossicles can't pass the vibration to the inner ear.", "The eardrum can't vibrate in response to sound.", "Fluid movement in the cochlea isn't turned into nerve signals."],
+      "answer": 3,
+      "rationale": "<p>The <b>organ of Corti</b> sits on the cochlear tubes, and its tiny <b>hair cells</b> bend as the cochlear fluid moves, creating the <b>nerve signals</b> that CN VIII carries to the brain. If the hair cells are damaged, sound can still reach the cochlea and move its fluid, but the movement <b>isn't turned into nerve signals</b>, so hearing is lost.</p><p>A blocked ear canal, ossicles that can't move, or an eardrum that can't vibrate are problems earlier in the path, before the sound reaches the cochlea.</p><p><b>Takeaway:</b> The hair cells of the organ of Corti turn cochlear fluid movement into nerve signals.</p>"
+    },
+    {
+      "id": "se-55",
+      "type": "matrix",
+      "topic": "Balance (vestibular system)",
+      "stem": "A nurse is reviewing the vestibular system. For each description, click to specify the structures it describes.",
+      "rowHeader": "Description",
+      "columns": ["Semicircular canals", "Utricle and saccule"],
+      "rows": ["Sense turning the head from side to side", "Sense a car braking suddenly", "Contain crystal-like otoconia", "Sense tilting the head", "Sense an elevator starting to go up"],
+      "answer": [0, 1, 1, 0, 1],
+      "rationale": "<p>The <b>semicircular canals</b> are fluid-filled tubes lined with hair cells that sense <b>rotary motion</b>, motion that isn't in a straight line, such as <b>turning or tilting the head</b>. The <b>utricle and saccule</b> (the otolith organs, in the vestibule) contain hair cells and crystal-like <b>otoconia</b>, which shift with the fluid to sense <b>straight-line movement</b>: forward or backward (a car braking) and up or down (an elevator).</p><p><b>Takeaway:</b> The semicircular canals sense turning; the utricle and saccule, with their otoconia, sense straight-line motion.</p>"
+    },
+    {
+      "id": "se-56",
+      "type": "mc",
+      "topic": "Balance (vestibular system)",
+      "stem": "A nurse is reviewing the nerves of the ear. Which of the following cranial nerves carries signals from the vestibular system to the brain?",
+      "options": ["Facial (CN VII)", "Glossopharyngeal (CN IX)", "Vestibulocochlear (CN VIII)", "Trigeminal (CN V)"],
+      "answer": 2,
+      "rationale": "<p>The <b>vestibulocochlear nerve (CN VIII)</b> has two branches: the <b>vestibular</b> branch carries head position and movement (balance), and the <b>cochlear</b> branch carries hearing.</p><p>The <b>facial nerve (CN VII)</b> controls facial expression, the <b>glossopharyngeal nerve (CN IX)</b> serves the back of the tongue and the pharynx, and the <b>trigeminal nerve (CN V)</b> carries facial sensation and controls chewing.</p><p><b>Takeaway:</b> CN VIII carries both balance (vestibular) and hearing (cochlear).</p>"
+    },
+    {
+      "id": "se-57",
+      "type": "mc",
+      "topic": "Balance (vestibular system)",
+      "stem": "A nurse is comparing the hair cells of the semicircular canals with those of the cochlea. Which of the following describes the hair cells of the semicircular canals?",
+      "options": ["They react to fluid that moves with body movements, not with sound.", "They react to sound waves that are passed on by the ossicles.", "They react to light that reaches the inner ear through the canal.", "They react to chemicals that are dissolved in the fluid of the ear."],
+      "answer": 0,
+      "rationale": "<p>Both the cochlea and the semicircular canals use <b>hair cells</b> bathed in fluid. In the cochlea, the fluid moves with <b>sound waves</b>. In the semicircular canals, the hair cells instead react to fluid that moves with <b>body movements</b>, especially turning or tilting the head, which is how they sense balance.</p><p>Sound waves passed on by the ossicles move the cochlear fluid, not the fluid of the semicircular canals. Light and dissolved chemicals are sensed by the eye and by the taste and smell receptors.</p><p><b>Takeaway:</b> The cochlea's hair cells sense sound; the semicircular canals' hair cells sense body movement.</p>"
+    },
+    {
+      "id": "se-58",
+      "type": "hotspot",
+      "topic": "Eye structures",
+      "stem": "Click the clear structure at the front of the eye that bends light first as it enters the eye.",
+      "image": "img/eye-section.svg",
+      "alt": "Side view of the eye with the front on the left: a clear dome at the front, the colored iris with an opening in the middle, a clear oval structure behind the opening, a jelly-filled chamber lined by layers at the back, a small yellow spot at the center of the back, and a thick nerve leaving the back of the eye.",
+      "regions": [{"x": 25.4, "y": 41, "w": 2.6, "h": 18}, {"x": 27.4, "y": 36.2, "w": 2, "h": 3.8}, {"x": 27.4, "y": 60.4, "w": 1.6, "h": 3.4}],
+      "rationale": "<p>The <b>cornea</b>, the clear dome at the front of the eye, is the eye's front window and <b>bends (focuses) light</b> first as it enters. An unevenly curved, egg-shaped cornea causes <b>astigmatism</b>.</p><p>The <b>lens</b>, behind the pupil, fine-tunes the focus; the <b>macula</b>, at the back, gives sharp central vision; and the <b>optic nerve</b> carries the signals to the brain.</p><p><b>Takeaway:</b> The cornea bends light first; the lens fine-tunes the focus.</p>"
+    },
+    {
+      "id": "se-59",
+      "type": "mc",
+      "topic": "Physiology of vision",
+      "stem": "A client walks from a dark room into bright sunlight. Which of the following changes in the eye protects the retina from the extra light?",
+      "options": ["The lens becomes thicker and rounder.", "The iris makes the pupil smaller.", "The cornea becomes cloudy.", "The rods take over from the cones."],
+      "answer": 1,
+      "rationale": "<p>The <b>iris</b> is the colored muscle that controls the size of the <b>pupil</b>, regulating how much light enters. In bright light the pupil <b>constricts</b> (gets smaller), letting in less light.</p><p>The lens changes shape to focus for near and far, not to control light. A cloudy cornea or lens is a disorder, not a response to light. Rods work in <b>dim</b> light, while cones handle bright light, color, and detail.</p><p><b>Takeaway:</b> The iris controls the pupil: smaller in bright light, larger in dim light.</p>"
+    },
+    {
+      "id": "se-60",
+      "type": "matrix",
+      "topic": "Eye assessments",
+      "stem": "A nurse is reviewing eye assessments. For each test, click to specify what it checks.",
+      "rowHeader": "Test",
+      "columns": ["Visual acuity", "Red–green color vision", "Central visual field", "Focusing, to determine corrective lenses", "Pressure inside the eye"],
+      "rows": ["Tonometry", "Amsler grid", "Snellen chart", "Refraction test", "Ishihara plates"],
+      "answer": [4, 2, 0, 3, 1],
+      "rationale": "<p>The <b>Snellen chart</b> screens <b>visual acuity</b>, the sharpness of distance vision. <b>Ishihara plates</b>, circular plates of colored dots, screen for <b>red–green color vision</b> deficiency. The <b>Amsler grid</b> of horizontal and vertical lines monitors the <b>central visual field</b>, which macular degeneration damages. The <b>refraction test</b> checks how well the eyes focus light on the retina, to determine <b>corrective lenses</b> for myopia and hyperopia. <b>Tonometry</b> measures <b>intraocular pressure</b>, to check for glaucoma.</p><p><b>Takeaway:</b> Snellen checks sharpness, Ishihara red and green, Amsler central vision, refraction the need for glasses, and tonometry eye pressure.</p>"
+    },
+    {
+      "id": "se-61",
+      "type": "mc",
+      "topic": "Eye assessments",
+      "stem": "During a Snellen screening, the vision in a client's right eye is recorded as 20/40. Which of the following explains this result?",
+      "options": ["The client sees at 40 ft what a normal eye sees at 20 ft.", "The client has 40% of normal vision in the right eye.", "The client sees at 20 ft what a normal eye sees at 40 ft.", "The client can read 20 of the 40 letters on the chart."],
+      "answer": 2,
+      "rationale": "<p>In a Snellen result, the <b>top number</b> is the client's distance from the chart, usually <b>20 ft</b>, and the <b>bottom number</b> is the distance at which a normal eye can read that line. So <b>20/40</b> means the client sees at 20 ft what a normal eye sees at 40 ft: the client's distance vision is worse than normal.</p><p>Reversing the numbers would describe better-than-normal vision. The result isn't a percentage or a count of letters.</p><p><b>Takeaway:</b> 20/40 means the client sees at 20 ft what a normal eye sees at 40 ft.</p>"
+    },
+    {
+      "id": "se-62",
+      "type": "mc",
+      "topic": "Eye assessments",
+      "stem": "A client can't see the numbers hidden in several circular plates of colored dots. Which of the following conditions does this result suggest?",
+      "options": ["Glaucoma", "Myopia", "Macular degeneration", "Color vision deficiency"],
+      "answer": 3,
+      "rationale": "<p>The circular plates of colored dots are <b>Ishihara plates</b> (pseudoisochromatic plates). A number made of dots of one color hides among dots of another color, and a client with a <b>red–green color vision deficiency</b> can't pick it out.</p><p><b>Glaucoma</b> is checked with tonometry, <b>myopia</b> with the Snellen chart and the refraction test, and <b>macular degeneration</b> with the Amsler grid.</p><p><b>Takeaway:</b> Ishihara plates screen for red–green color vision deficiency.</p>"
+    },
+    {
+      "id": "se-63",
+      "type": "mc",
+      "topic": "Eye assessments",
+      "stem": "A nurse is teaching a client how to use an Amsler grid at home. Which of the following instructions should the nurse include?",
+      "options": ["“Cover one eye, stare at the center dot, and report wavy or missing lines.”", "“Stand 20 feet away, and read the smallest line of letters that you can see.”", "“Look through each of the two lenses, and tell me which one looks clearer.”", "“Find the number hidden among the colored dots on each of the round plates.”"],
+      "answer": 0,
+      "rationale": "<p>The <b>Amsler grid</b> is a grid of horizontal and vertical lines with a center dot. The client <b>covers one eye</b>, stares at the <b>center dot</b>, and reports lines that look <b>wavy, blurry, or missing</b>, which suggest <b>macular degeneration</b>. Testing each eye regularly shows changes in central vision early.</p><p>Reading letters from 20 feet is the <b>Snellen</b> test, comparing lenses is the <b>refraction</b> test, and finding numbers among colored dots is the <b>Ishihara</b> test.</p><p><b>Takeaway:</b> With the Amsler grid, test one eye at a time: stare at the dot, and report wavy or missing lines.</p>"
+    },
+    {
+      "id": "se-64",
+      "type": "mc",
+      "topic": "Eye assessments",
+      "stem": "A nurse is reviewing the needs of four clients at an eye clinic. Which client most needs tonometry?",
+      "options": ["A 30-year-old who can't read road signs clearly while driving", "A 62-year-old with no symptoms whose mother had glaucoma", "A 45-year-old who now holds books at arm's length to read", "A 25-year-old who has trouble telling red from green"],
+      "answer": 1,
+      "rationale": "<p><b>Tonometry</b> measures intraocular pressure to check for <b>glaucoma</b>, which can damage vision before the person notices any symptoms. An older client with a <b>family history</b> of glaucoma and no symptoms is the one who most needs it.</p><p>Blurry road signs suggest myopia (Snellen chart and refraction), holding books at arm's length suggests presbyopia (reading glasses), and trouble telling red from green suggests a color vision deficiency (Ishihara plates).</p><p><b>Takeaway:</b> Tonometry screens for glaucoma, which is silent at first, so risk factors decide who needs it.</p>"
+    },
+    {
+      "id": "se-65",
+      "type": "matrix",
+      "topic": "Eye findings",
+      "stem": "A nurse is reviewing refractive errors and related eye findings. For each description, click to specify the condition it describes.",
+      "rowHeader": "Description",
+      "columns": ["Myopia", "Hyperopia", "Presbyopia", "Astigmatism"],
+      "rows": ["Light focuses in front of the retina, so distant objects are blurry", "The lens stiffens with age, so close objects are hard to focus on", "The cornea or lens is egg-shaped, so vision is blurry at all distances", "Light focuses behind the retina, so near objects are blurry"],
+      "answer": [0, 2, 3, 1],
+      "rationale": "<p>In <b>myopia</b> (nearsightedness), light focuses <b>in front of</b> the retina, so near is clear and <b>far is blurry</b>. In <b>hyperopia</b> (farsightedness), light focuses <b>behind</b> the retina, so far is clear and <b>near is blurry</b>. <b>Presbyopia</b> is <b>age-related</b> farsightedness: the lens <b>stiffens</b>, usually after 40, and can't focus up close. In <b>astigmatism</b>, the cornea or lens is slightly <b>egg-shaped</b> rather than round, so light focuses unevenly and vision is blurry or distorted at <b>all distances</b>.</p><p><b>Takeaway:</b> Myopia blurs far vision, hyperopia and presbyopia blur near vision, and astigmatism blurs vision at all distances.</p>"
+    },
+    {
+      "id": "se-66",
+      "type": "mc",
+      "topic": "Eye findings",
+      "stem": "A 47-year-old client who has always had good vision now holds the menu at arm's length to read it, but sees road signs clearly. Which of the following explains this change?",
+      "options": ["Light is focusing in front of the retina because the eyeball is too long.", "The cornea has become egg-shaped, which blurs vision at all distances.", "The lens has stiffened with age and can't change shape for close focus.", "The macula has been damaged, which causes a loss of central vision."],
+      "answer": 2,
+      "rationale": "<p>New trouble focusing up close after age 40, in someone who has always seen well, is <b>presbyopia</b>: the <b>lens stiffens with age</b> and can't change shape enough for near focus, so the client holds reading material farther away. Reading glasses help.</p><p>Light focusing in front of the retina is <b>myopia</b>, which blurs <b>distant</b> objects. An egg-shaped cornea (<b>astigmatism</b>) blurs vision at all distances. Damage to the macula (<b>macular degeneration</b>) causes a loss of central vision. Hyperopia also blurs near vision, but it comes from the shape of the eye, not aging of the lens.</p><p><b>Takeaway:</b> Presbyopia and hyperopia both blur near vision; presbyopia comes from aging of the lens.</p>"
+    },
+    {
+      "id": "se-67",
+      "type": "mc",
+      "topic": "Taste and smell",
+      "stem": "A nurse is teaching about the sense of taste. Which of the following describes where the taste buds are found?",
+      "options": ["Inside the nasal cavity", "In the salivary glands", "On the teeth and gums", "On the papillae of the tongue"],
+      "answer": 3,
+      "rationale": "<p><b>Taste buds</b> sit on the <b>papillae</b>, the small bumps of the tongue. Their receptor cells detect chemicals <b>dissolved in saliva</b>.</p><p>The nasal cavity holds the receptors for <b>smell</b>, which adds a great deal to flavor. The salivary glands make saliva, and taste isn't limited to the roof of the mouth.</p><p><b>Takeaway:</b> Taste buds sit on the papillae of the tongue and detect chemicals dissolved in saliva.</p>"
+    },
+    {
+      "id": "se-68",
+      "type": "mc",
+      "topic": "Taste and smell",
+      "stem": "A client whose mouth is very dry from a medication says that food tastes dull. Which of the following explanations by the nurse is accurate?",
+      "options": ["“Taste receptors detect chemicals dissolved in saliva, so dryness dulls taste.”", "“A dry mouth damages the taste buds permanently, so this won't improve.”", "“The medicine has blocked the nerve that carries smell from your nose.”", "“Food tastes dull because the dry mouth has worn away the papillae.”"],
+      "answer": 0,
+      "rationale": "<p>Taste receptor cells detect chemicals that are <b>dissolved in saliva</b>. With too little saliva, fewer flavor chemicals reach the receptors, so food <b>tastes dull</b>. Sips of water and treating the dry mouth can help.</p><p>A dry mouth doesn't usually damage the taste buds permanently. The medication's effect here is on saliva, not on the olfactory nerve (CN I), and the papillae are still there.</p><p><b>Takeaway:</b> Taste needs saliva: chemicals must dissolve in it to reach the taste receptors.</p>"
+    },
+    {
+      "id": "se-69",
+      "type": "sata",
+      "topic": "Touch, proprioception, and interoception",
+      "stem": "A nurse is teaching about interoception. Which of the following sensations are examples of interoception?",
+      "options": ["Feeling hungry before lunch", "Knowing where the arm is with the eyes closed", "Feeling the heart pounding after climbing stairs", "Feeling the texture of a sweater", "Sensing that the bladder is full", "Feeling nauseated"],
+      "answer": [0, 2, 4, 5],
+      "rationale": "<p><b>Interoception</b> is the sense of the body's <b>internal state</b>: <b>hunger</b>, thirst, the <b>heartbeat</b>, breathing, the <b>need to urinate</b> or have a bowel movement, and <b>nausea</b>.</p><p>Knowing where the arm is without looking is <b>proprioception</b> (body position), and feeling a sweater's texture is <b>touch</b>, sensed by the skin's mechanoreceptors.</p><p><b>Takeaway:</b> Interoception is the inner sense of hunger, thirst, heartbeat, breathing, bladder, bowel, and nausea.</p>"
+    },
+    {
+      "id": "se-70",
+      "type": "mc",
+      "topic": "Touch, proprioception, and interoception",
+      "stem": "A nurse is reviewing proprioception. Which of the following receptors provide the sense of body position?",
+      "options": ["Rods and cones in the retina at the back of the eye", "Receptors in the muscles, tendons, and joints", "Taste buds on the papillae of the tongue", "Hair cells in the cochlea of the inner ear"],
+      "answer": 1,
+      "rationale": "<p><b>Proprioception</b> is the sense of <b>body position</b>: where the body parts are in relation to each other, and the effort used to move them, without looking. Its receptors are in the <b>muscles, tendons, and joints</b>, and the signals are processed in the <b>parietal lobe</b> and the <b>cerebellum</b>.</p><p>Rods and cones sense light, taste buds sense dissolved chemicals, and the cochlea's hair cells sense sound.</p><p><b>Takeaway:</b> Proprioception comes from receptors in the muscles, tendons, and joints.</p>"
+    },
+    {
+      "id": "se-71",
+      "type": "mc",
+      "topic": "Touch, proprioception, and interoception",
+      "stem": "A nurse is reviewing the pathway for the sense of touch. Which of the following parts of the brain processes touch signals from the skin?",
+      "options": ["The occipital lobe", "The temporal lobe", "The parietal lobe", "The frontal lobe"],
+      "answer": 2,
+      "rationale": "<p>Touch is detected by the skin's <b>mechanoreceptors</b> (Merkel discs, Ruffini endings, and Meissner and Pacinian corpuscles) and by free nerve endings, and the signals are processed in the <b>parietal lobe</b>, which handles sensation and proprioception.</p><p>The <b>occipital lobe</b> processes vision, the <b>temporal lobe</b> hearing, and the <b>frontal lobe</b> movement, planning, and Broca's speech area.</p><p><b>Takeaway:</b> Touch signals go to the parietal lobe.</p>"
+    },
+    {
+      "id": "se-72",
+      "type": "mc",
+      "topic": "Touch, proprioception, and interoception",
+      "stem": "A nurse is assessing four clients. Which client's finding shows a problem with interoception?",
+      "options": ["A client who can't tell whether a toe is pointing up or down with the eyes closed", "A client who can't feel the vibration of a tuning fork on the ankle", "A client who can't identify a coin by touch with the eyes closed", "A client who doesn't sense the need to urinate until the bladder overflows"],
+      "answer": 3,
+      "rationale": "<p><b>Interoception</b> is the sense of the body's <b>internal state</b>, including the <b>need to urinate</b>. Not sensing a full bladder until it overflows is a problem with interoception.</p><p>Not knowing a toe's position with the eyes closed is a problem with <b>proprioception</b> (body position). Not feeling a vibration, or not identifying a coin by touch, is a problem with <b>touch</b>: the skin's mechanoreceptors and their pathways.</p><p><b>Takeaway:</b> Proprioception is body position; interoception is internal feelings such as hunger, thirst, and bladder fullness.</p>"
+    },
+    {
+      "id": "se-73",
+      "type": "mc",
+      "topic": "Eye findings",
+      "stem": "An older adult client reports that vision has become cloudy and dim, with bright glare from headlights at night. The nurse notes that the pupil looks cloudy. Which of the following conditions is most likely?",
+      "options": ["Myopia", "Astigmatism", "Glaucoma", "Cataracts"],
+      "answer": 3,
+      "rationale": "<p><b>Cataracts</b> are clouding of the <b>lens</b> as its proteins break down. They cause cloudy, dim, blurry vision, <b>glare</b> (especially from headlights at night), and a <b>cloudy-looking pupil</b>.</p><p><b>Myopia</b> blurs distant objects but doesn't cloud the lens, <b>astigmatism</b> blurs vision at all distances because of an egg-shaped cornea or lens, and <b>glaucoma</b> is high pressure in the eye, found with tonometry.</p><p><b>Takeaway:</b> Cloudy, dim vision with glare and a cloudy pupil points to cataracts.</p>"
+    },
+    {
+      "id": "se-74",
+      "type": "mc",
+      "topic": "Touch, proprioception, and interoception",
+      "stem": "A nurse is reviewing the receptors of the skin. Which of the following receptors detect pain and temperature?",
+      "options": ["Free nerve endings", "Meissner corpuscles", "Pacinian corpuscles", "Merkel discs"],
+      "answer": 0,
+      "rationale": "<p><b>Free nerve endings</b> in the skin detect <b>pain and temperature</b>. Touch, pressure, vibration, and stretch are detected by the mechanoreceptors: <b>Merkel discs</b> (steady pressure and edges), <b>Meissner corpuscles</b> (fine touch and low-frequency vibration), <b>Pacinian corpuscles</b> (high-frequency vibration and pressure), and Ruffini endings (stretch).</p><p><b>Takeaway:</b> Free nerve endings sense pain and temperature; the mechanoreceptors sense touch, pressure, vibration, and stretch.</p>"
+    },
+    {
+      "id": "se-75",
+      "type": "highlight",
+      "case": "eyeexam",
+      "topic": "Eye findings",
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "Client reports that [[straight lines, such as door frames, look wavy in the center when using the right eye]]. [[Holds the event program at arm's length to read it]]. [[Has not had an eye exam in 4 years]]. [[Denies eye pain]]. [[Eyes are clear, with no redness or drainage]]. [[Pupils are equal and react to light]].",
+      "answer": [0, 1, 2],
+      "rationale": "<p>Three findings need follow-up. <b>Straight lines that look wavy in the center</b> suggest damage to the macula (<b>macular degeneration</b>), which causes central vision loss. <b>Holding reading material at arm's length</b> suggests <b>presbyopia</b>, which reading glasses can correct. And a client who has had <b>diabetes for 15 years without an eye exam in 4 years</b> is overdue: diabetes can damage the retina (diabetic retinopathy) before symptoms appear, so yearly eye exams are needed.</p><p>No eye pain, clear eyes without redness or drainage, and equal pupils that react to light are expected findings.</p><p><b>Takeaway:</b> Wavy central lines, new trouble reading up close, and missed yearly eye exams in diabetes all need follow-up.</p>"
+    },
+    {
+      "id": "se-76",
+      "type": "dropdown",
+      "case": "eyeexam",
+      "topic": "Eye findings",
+      "stem": "Complete the following sentence.",
+      "text": "The wavy lines on the Amsler grid suggest {{0}}, and holding reading material at arm's length suggests {{1}}.",
+      "blanks": [
+        {"options": ["cataracts", "macular degeneration", "glaucoma"], "answer": 1},
+        {"options": ["myopia", "astigmatism", "presbyopia"], "answer": 2}
+      ],
+      "rationale": "<p>The <b>Amsler grid</b> monitors the central visual field, so <b>wavy lines and a blurry spot near the center</b> suggest <b>macular degeneration</b>, damage to the macula, usually related to age. <b>Holding reading material at arm's length</b> after age 40 suggests <b>presbyopia</b>, the age-related stiffening of the lens.</p><p><b>Cataracts</b> cause cloudy, dim vision with glare. <b>Glaucoma</b> is found with tonometry, and this client's eye pressure is normal. <b>Myopia</b> blurs distant objects, and <b>astigmatism</b> blurs vision at all distances.</p><p><b>Takeaway:</b> Wavy central lines point to macular degeneration; near-vision trouble after 40 points to presbyopia.</p>"
+    },
+    {
+      "id": "se-77",
+      "type": "mc",
+      "case": "eyeexam",
+      "topic": "Eye findings",
+      "stem": "Which of the following findings needs the most prompt referral to an eye provider?",
+      "options": ["The new wavy lines and blurry spot in the right eye", "Holding the event program at arm's length to read it", "The normal results of the Ishihara color plates", "The normal eye pressure on tonometry"],
+      "answer": 0,
+      "rationale": "<p>New <b>wavy lines and a blurry spot in central vision</b> suggest <b>macular degeneration</b>, which can progress to a loss of central vision. A new change like this needs <b>prompt</b> evaluation by an eye provider.</p><p>Trouble reading up close (<b>presbyopia</b>) is common after 40 and is corrected with reading glasses; it isn't urgent. Normal Ishihara plates and normal eye pressure are reassuring findings, not reasons for referral.</p><p><b>Takeaway:</b> A new change in central vision needs prompt follow-up; presbyopia can wait for routine care.</p>"
+    },
+    {
+      "id": "se-78",
+      "type": "mc",
+      "case": "eyeexam",
+      "topic": "Eye assessments",
+      "stem": "Which of the following does the client's tonometry result show?",
+      "options": ["The client's central vision is normal in both eyes.", "The eye pressure is normal, with no sign of glaucoma.", "The client's red–green color vision is normal.", "The client doesn't need glasses for distance vision."],
+      "answer": 1,
+      "rationale": "<p><b>Tonometry</b> measures the <b>pressure inside the eye</b> (intraocular pressure) to check for <b>glaucoma</b>. A normal result means the eye pressure is normal, with no sign of glaucoma at this time.</p><p>Central vision is checked with the <b>Amsler grid</b>, and this client's is abnormal in the right eye. Color vision is checked with the <b>Ishihara plates</b>, and the need for corrective lenses with the <b>refraction test</b>.</p><p><b>Takeaway:</b> Tonometry measures eye pressure for glaucoma, and nothing else.</p>"
+    },
+    {
+      "id": "se-79",
+      "type": "mc",
+      "case": "eyeexam",
+      "topic": "Eye findings",
+      "stem": "The nurse teaches the client about diabetic retinopathy. Which of the following statements by the client shows an understanding of the teaching?",
+      "options": ["“I'll wait to have an eye exam until I notice my vision getting worse.”", "“Diabetes can affect my feet and kidneys, but it doesn't affect my eyes.”", "“I need a yearly eye exam, since diabetes can harm my retina without symptoms.”", "“My eyes are healthy, because my color vision test today was normal.”"],
+      "answer": 2,
+      "rationale": "<p>In <b>diabetic retinopathy</b>, chronic high blood glucose damages the small blood vessels of the retina. There are <b>no symptoms at first</b>; later come blurred vision and, without treatment, blindness. That is why people with diabetes need <b>yearly eye exams</b>.</p><p>Waiting for symptoms misses the early, treatable stage. Diabetes does affect the eyes, as well as the feet and kidneys. A normal color vision test doesn't show the health of the retina's blood vessels.</p><p><b>Takeaway:</b> Diabetic retinopathy is silent at first, so clients with diabetes need an eye exam every year.</p>"
     }
   ]
 }

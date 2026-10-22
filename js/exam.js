@@ -1,11 +1,13 @@
 // The exam screen (SPEC 3.2–3.5, 4.2–4.5): header, question counter, timer,
 // pause, calculator, Continue, alerts, full screen, saved progress, the
-// case-study layout, practice feedback, going back and flagging, and review mode.
+// case-study layout, practice feedback, going back and flagging, saving
+// questions (SPEC 11.7), and review mode.
 import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
 import { reportLine } from './reports.js';
+import { saveButton } from './saved.js';
 
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
@@ -222,8 +224,9 @@ export function timeLimitMs(set, count, s) {
   return Math.round(minutes * 60) * 1000;
 }
 
-// Returns false when no questions match the settings.
-export function startExam(set, settings = {}) {
+// Returns false when no questions match the settings. scope: 'saved' for a
+// practice exam of saved questions (SPEC 11.7); otherwise it's worked out.
+export function startExam(set, settings = {}, scope = null) {
   const s = { ...DEFAULT_SETTINGS, ...settings };
   const questions = chooseQuestions(set, s, Math.random, lastSeen(set));
   if (!questions.length) return false;
@@ -236,7 +239,7 @@ export function startExam(set, settings = {}) {
     course: set.course ?? 'other', // for the usage stats
     title: set.title,
     settings: s,
-    scope: s.only ? 'missed' : questions.length < set.questions.length ? 'part' : 'full',
+    scope: scope ?? (s.only ? 'missed' : questions.length < set.questions.length ? 'part' : 'full'),
     cases: set.cases ?? {},
     questions, // a copy, so later edits to the set file can't break this attempt
     layout: Object.fromEntries(questions.map(q => [q.id, prepareItem(q, { shuffle: s.shuffleChoices })])),
@@ -336,11 +339,13 @@ export function questionParts(q, ctx) {
 // Result and rationale under a question (practice mode, review mode, and
 // group study). Group study passes answered: false when no answer was locked in.
 // report: the set's id, to offer "Report a problem with this question" (SPEC 11.6).
-export function feedbackPanel(q, response, { answered = true, report = null } = {}) {
+// answerKey: the answer key is shown above, not a student's answer (a saved
+// question's View answer, SPEC 11.7), so there's no score.
+export function feedbackPanel(q, response, { answered = true, report = null, answerKey = false } = {}) {
   const { earned, max } = scoreItem(q, response);
-  const result = !answered ? 'wrong' : earned === max ? 'correct' : earned > 0 ? 'partial' : 'wrong';
+  const result = answerKey ? 'key' : !answered ? 'wrong' : earned === max ? 'correct' : earned > 0 ? 'partial' : 'wrong';
   return h(`section.feedback.is-${result}`, { tabindex: '-1', 'aria-label': 'Answer and rationale' },
-    h('p.feedback-result', answered
+    answerKey ? null : h('p.feedback-result', answered
       ? [h('b', { correct: '✓ Correct', partial: 'Partially correct', wrong: '✗ Incorrect' }[result]),
           ` · ${earned} of ${max} point${max === 1 ? '' : 's'}`]
       : [h('b', 'No answer locked in'), ` · 0 of ${max} point${max === 1 ? '' : 's'}`]),
@@ -469,8 +474,11 @@ export function examView(root) {
   const prevBtn = h('button.btn.btn-nav', { type: 'button', onclick: () => goTo(st.index - 1) }, 'Previous');
   const flagLabel = h('span', 'Flag');
   const flagBtn = h('button.btn.btn-flag', { type: 'button', 'aria-pressed': 'false', onclick: () => toggleFlag() }, icon('flag'), flagLabel);
+  // Save (SPEC 11.7) appears when answers show after each question, as in
+  // practice mode; exam simulation stays like test day.
+  const saver = showsAnswers ? saveButton() : null;
   const actions = h('div.exam-actions',
-    canGoBack ? h('div.nav-left', prevBtn, flagBtn) : null,
+    canGoBack || saver ? h('div.nav-left', canGoBack ? [prevBtn, flagBtn] : null, saver?.el) : null,
     h('button.btn-continue', { type: 'button', onclick: () => onContinue() }, 'Continue'));
   const footer = siteFooter();
   const fsNotice = footer.querySelector('.fs-notice');
@@ -521,6 +529,7 @@ export function examView(root) {
     document.title = `${st.title} · Question ${st.index + 1}`;
     prevBtn.hidden = st.index === 0;
     paintFlag();
+    saver?.show(st.setId, st.title, q.id);
     area.show(q, [
       ...questionParts(q, {
         response: st.responses[q.id],
@@ -869,7 +878,8 @@ export function reviewView(root, { args = [] } = {}) {
       else location.hash = '#/results';
     },
   }, 'Next');
-  const actions = h('div.exam-actions', h('div.nav-left', prevBtn), nextBtn);
+  const saver = saveButton(); // SPEC 11.7
+  const actions = h('div.exam-actions', h('div.nav-left', prevBtn, saver.el), nextBtn);
   const area = questionArea(question, r.cases ?? {}, { get: key => tabs.get(key) ?? 0, set: (key, i) => tabs.set(key, i) });
 
   root.replaceChildren(h('div.page.exam.review', { 'data-text-size': r.settings?.textSize ?? 'standard' },
@@ -901,6 +911,7 @@ export function reviewView(root, { args = [] } = {}) {
     document.title = `Review · ${r.title}`;
     prevBtn.hidden = index === 0;
     nextBtn.textContent = index === list.length - 1 ? 'Finish' : 'Next';
+    saver.show(r.setId, r.title, q.id);
     area.show(q, [
       ...questionParts(q, { response: r.responses[q.id], layout: r.layout?.[q.id], review: true }),
       feedbackPanel(q, r.responses[q.id], { report: r.setId }),

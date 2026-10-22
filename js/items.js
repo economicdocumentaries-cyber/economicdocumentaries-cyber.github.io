@@ -109,8 +109,8 @@ function mark(ok, words) {
 }
 
 // After a wrong or empty blank: "✗ Incorrect  Correct answer: apical"
-function blankMark(ok, given, correctText) {
-  if (ok) return h('span.blank-mark', mark(true, 'Correct'));
+function blankMark(ok, given, correctText, right = 'Correct') {
+  if (ok) return h('span.blank-mark', mark(true, right));
   return h('span.blank-mark', mark(false, given ? 'Incorrect' : 'No answer'), h('span.key-inline', 'Correct answer: ', h('b', correctText)));
 }
 
@@ -146,8 +146,10 @@ function checkMarkers(text, count) {
 }
 
 // ---------- answer screens ----------
-// ctx: { response, layout, locked, review, labelledBy, idPrefix, onChange(response) }.
+// ctx: { response, layout, locked, review, answerKey, labelledBy, idPrefix, onChange(response) }.
 // "review" draws the answer read-only, with the key and ✓ / ✗ marks.
+// "answerKey" (with review, and keyResponse(q) as the response) shows only the
+// answer key: the marks say "Correct answer" instead of "Your answer" or "Correct".
 // "idPrefix" keeps element ids unique when several questions share a page.
 
 // Radio buttons (mc), checkboxes (sata), or checkboxes with a limit (emr).
@@ -203,7 +205,7 @@ function choiceList(q, ctx, multiple, limit = Infinity) {
     if (review) {
       const right = key.has(i), mine = picked.has(i);
       row.classList.add('reviewed', right ? 'is-key' : mine ? 'is-wrong' : 'is-plain');
-      if (mine) row.append(mark(right, 'Your answer'));
+      if (mine) row.append(mark(right, ctx.answerKey ? 'Correct answer' : 'Your answer'));
       else if (right) row.append(mark(true, 'Correct answer'));
     }
     return row;
@@ -243,7 +245,7 @@ function choiceList(q, ctx, multiple, limit = Infinity) {
 // order) and move to the Ordered Response box by click or drag; ▲ ▼ ✕ adjust.
 function orderUI(q, ctx) {
   const { response, layout, labelledBy, onChange } = ctx;
-  if (ctx.review) return orderReview(q, response, labelledBy);
+  if (ctx.review) return orderReview(q, response, labelledBy, ctx.answerKey);
   const locked = !!ctx.locked;
   const start = layout?.items ?? range(q.items.length);
   let placed = Array.isArray(response) ? response.filter(i => isIndex(i, q.items.length)) : [];
@@ -356,17 +358,20 @@ function orderUI(q, ctx) {
   return root;
 }
 
-// Review: the student's order with each position marked, next to the right order.
-function orderReview(q, response, labelledBy) {
+// Review: the student's order with each position marked, next to the right
+// order. The answer key has only the right order.
+function orderReview(q, response, labelledBy, answerKey = false) {
   const placed = Array.isArray(response) ? response : [];
+  const correct = h('div.order-box', h('h3.order-title', 'Correct order'), h('ol.order-list',
+    q.items.map((item, pos) => h('li.order-item.placed.is-key', h('span.order-num', `${pos + 1}.`), h('span.order-text', item)))));
+  if (answerKey) return h('div.order.order-key', { role: 'group', 'aria-labelledby': labelledBy }, correct);
   return h('div.order', { role: 'group', 'aria-labelledby': labelledBy },
     h('div.order-box', h('h3.order-title', 'Your order'), h('ol.order-list',
       placed.length
         ? placed.map((i, pos) => h('li.order-item.placed', { class: i === pos ? 'is-key' : 'is-wrong' },
             h('span.order-num', `${pos + 1}.`), h('span.order-text', q.items[i]), mark(i === pos, i === pos ? 'Correct' : 'Incorrect')))
         : h('li.order-empty', 'No answer'))),
-    h('div.order-box', h('h3.order-title', 'Correct order'), h('ol.order-list',
-      q.items.map((item, pos) => h('li.order-item.placed.is-key', h('span.order-num', `${pos + 1}.`), h('span.order-text', item))))));
+    correct);
 }
 
 function fillUI(q, ctx) {
@@ -381,7 +386,7 @@ function fillUI(q, ctx) {
   if (!review) return row;
   const ok = TYPES.fill.score(q, response).earned === 1;
   const n = parseNumber(response);
-  row.append(mark(ok, ok ? 'Correct' : n == null ? 'No answer' : 'Incorrect'));
+  row.append(mark(ok, ok ? (ctx.answerKey ? 'Correct answer' : 'Correct') : n == null ? 'No answer' : 'Incorrect'));
   return h('div', row, ok ? null : h('p.key-note', 'Correct answer: ', h('b', `${q.answer}${q.unit ? ` ${q.unit}` : ''}`),
     q.tolerance ? ` (answers within ${q.tolerance} are accepted)` : '',
     rightValue(q, n) ? '. Your number has the right value, but it must be written with no trailing zero, and with a zero before a decimal point.' : ''));
@@ -417,8 +422,9 @@ function hotspotUI(q, ctx) {
     status.textContent = 'Location marked.';
     onChange?.(spot);
   });
-  show(response);
+  show(ctx.answerKey ? null : response); // the answer key has no click to show
   if (!review) return h('div.hotspot-wrap', area, missing, status);
+  if (ctx.answerKey) return h('div.hotspot-wrap', area, missing, h('p.key-note', 'The correct area is outlined in green.'));
   const ok = TYPES.hotspot.score(q, response).earned === 1;
   return h('div.hotspot-wrap', area, missing,
     h('p.key-note', response ? mark(ok, ok ? 'Your click is in the correct area.' : 'Your click is outside the correct area.') : mark(false, 'No answer.'),
@@ -457,7 +463,9 @@ function matrixUI(q, ctx) {
             : mine ? h('span.cell-mark.bad', h('span', { 'aria-hidden': 'true' }, '✗'), h('span.sr-only', 'incorrect')) : null));
     }))));
   const table = h('div.matrix-wrap', h('table.matrix', { 'aria-labelledby': labelledBy }, head, body));
-  return review ? h('div', table, legend('✓ Green cells are the correct answers. ✗ Red cells are boxes you checked that are incorrect.')) : table;
+  return review
+    ? h('div', table, legend(ctx.answerKey ? '✓ Green cells are the correct answers.' : '✓ Green cells are the correct answers. ✗ Red cells are boxes you checked that are incorrect.'))
+    : table;
 }
 
 function dropdownUI(q, ctx) {
@@ -474,7 +482,7 @@ function dropdownUI(q, ctx) {
       onChange?.(value.slice());
     });
     if (!review) return select;
-    return h('span.blank-wrap', select, blankMark(value[n] === blank.answer, value[n] != null, blank.options[blank.answer]));
+    return h('span.blank-wrap', select, blankMark(value[n] === blank.answer, value[n] != null, blank.options[blank.answer], ctx.answerKey ? 'Correct answer' : 'Correct'));
   });
   return h('div.cloze-text', { role: 'group', 'aria-labelledby': labelledBy, class: review ? 'reviewed' : null }, sentence);
 }
@@ -491,7 +499,7 @@ function dragdropUI(q, ctx) {
       const t = value[n], ok = t === q.answer[n];
       return h('span.blank-wrap',
         h('span.drop.filled', { class: ok ? 'is-key' : 'is-wrong' }, t == null ? '—' : q.tokens[t]),
-        blankMark(ok, t != null, q.tokens[q.answer[n]]));
+        blankMark(ok, t != null, q.tokens[q.answer[n]], ctx.answerKey ? 'Correct answer' : 'Correct'));
     }));
   }
   let picked = null; // option clicked and waiting for a blank
@@ -598,8 +606,8 @@ function highlightUI(q, ctx) {
     if (review) {
       const right = key.has(part.n), mine = picked.has(part.n);
       const kind = mine ? (right ? 'hl-right' : 'hl-wrong') : right ? 'hl-missed' : null;
-      return h('span.hl', { class: kind }, withBreaks(part.phrase),
-        kind ? h('span.sr-only', { 'hl-right': ' (highlighted, correct)', 'hl-wrong': ' (highlighted, incorrect)', 'hl-missed': ' (should have been highlighted)' }[kind]) : null);
+      const said = ctx.answerKey ? { 'hl-right': ' (correct answer)' } : { 'hl-right': ' (highlighted, correct)', 'hl-wrong': ' (highlighted, incorrect)', 'hl-missed': ' (should have been highlighted)' };
+      return h('span.hl', { class: kind }, withBreaks(part.phrase), kind ? h('span.sr-only', said[kind]) : null);
     }
     const span = pseudoButton('span.hl', { locked, 'aria-pressed': String(picked.has(part.n)) }, withBreaks(part.phrase));
     span.addEventListener('click', () => {
@@ -613,6 +621,7 @@ function highlightUI(q, ctx) {
   });
   const passage = h('div.passage', { role: 'group', 'aria-labelledby': labelledBy }, nodes);
   if (!review) return passage;
+  if (ctx.answerKey) return h('div', passage, h('p.review-legend.hl-legend', h('span.hl.hl-right', 'Green'), ' items are the correct answers.'));
   return h('div', passage, h('p.review-legend.hl-legend',
     h('span.hl.hl-right', 'Green'), ' you highlighted correctly. ',
     h('span.hl.hl-wrong', 'Red'), ' you highlighted, but it is incorrect. ',
@@ -680,7 +689,7 @@ function bowtieUI(q, ctx) {
         if (review) {
           const ok = i != null && keyOf(key).includes(i);
           btn.classList.add(ok ? 'is-key' : 'is-wrong');
-          btn.append(h('span.bt-mark', mark(ok, ok ? 'Correct' : i == null ? 'No answer' : 'Incorrect')));
+          btn.append(h('span.bt-mark', mark(ok, ok ? (ctx.answerKey ? 'Correct answer' : 'Correct') : i == null ? 'No answer' : 'Incorrect')));
         }
       });
       const full = !list.includes(null);

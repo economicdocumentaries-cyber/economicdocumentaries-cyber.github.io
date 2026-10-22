@@ -1,14 +1,16 @@
 // Hash router and the pages around the exam (SPEC 2, 4.1–4.5, 11): homepage
-// with its class tabs, setup, and results. Group study's pages are in
+// with its class tabs, setup, results, and saved questions. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate } from './util.js';
-import { typeLabel, QUESTION_TYPES } from './items.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon } from './util.js';
+import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets } from './sets.js';
 import {
   examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
   DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, countsForBest,
+  questionArea, questionParts, feedbackPanel,
 } from './exam.js';
+import { savedSets, savedCount, setSaved, forgetSet, saveButton } from './saved.js';
 import { groupView, hostView, liveBanner } from './group.js';
 import { watchUploadedGuides, downloadButton, guideFileName, formatSize } from './study-guides.js';
 import { withChanges, cachedChanges, watchChanges, currentChanges } from './set-changes.js';
@@ -38,8 +40,9 @@ const minutesText = ms => plural(Math.round(ms / 60000), 'minute');
 // Starts an exam from a click. Starting a new exam ends the one in progress,
 // so ask first. Without that question, full screen is requested right away,
 // while the click still counts. onStart() runs once the exam has started.
-function begin(set, settings, onStart) {
-  const go = () => startExam(set, settings) && onStart?.();
+// scope: see startExam().
+function begin(set, settings, onStart, scope = null) {
+  const go = () => startExam(set, settings, scope) && onStart?.();
   const active = activeExam();
   if (!active) return go();
   modal({
@@ -124,11 +127,13 @@ async function homeView(root, { args, isCurrent }) {
     (groups ?? [single]).forEach(g => g.paintGuides(uploaded));
   }
 
+  const saved = savedLink();
   fill(main,
     h('h1.page-title', 'Practice exams and study guides'),
     h('p.lead', `Choose ${courses.length ? 'your class, then ' : ''}a question set or study guide. Exam simulation works like test day; practice mode shows the answer after each question.`),
     live.el,
     resumeBanner(),
+    saved ? h('p.home-saved', saved) : null,
     lists,
     problems.length ? problemsPanel(problems) : null);
   paint();
@@ -286,6 +291,7 @@ function setRow(set) {
   const known = new Set(set.questions.map(q => q.id));
   const missed = (last?.missed ?? []).filter(id => known.has(id));
   const lastScope = last?.scope === 'missed' ? `, ${plural(last.count, 'missed question')}`
+    : last?.scope === 'saved' ? `, ${plural(last.count, 'saved question')}`
     : last?.scope === 'part' ? `, ${plural(last.count, 'question')}` : '';
   return h('li.set-row',
     h('div.set-info',
@@ -561,6 +567,7 @@ async function resultsView(root, { isCurrent }) {
   const fullyCorrect = r.items.length - r.missed.length;
   const mode = { exam: 'Exam simulation', practice: 'Practice mode' }[r.settings?.preset] ?? 'Custom settings';
   const scope = r.scope === 'missed' ? ' · Missed questions only'
+    : r.scope === 'saved' ? ' · Saved questions only'
     : r.scope === 'part' && set ? ` · ${r.items.length} of ${set.questions.length} questions` : '';
   const byType = groupBy(r.items, i => i.type)
     .sort((a, b) => QUESTION_TYPES.indexOf(a[0]) - QUESTION_TYPES.indexOf(b[0]))
@@ -586,6 +593,7 @@ async function resultsView(root, { isCurrent }) {
         ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
         : null,
       set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
+      savedLink(),
       h('a.btn', { href: '#/' }, 'Home')),
     perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0]))),
     perfTable('Performance by question type', 'Question type', byType));
@@ -625,6 +633,205 @@ function perfTable(title, firstHeader, rows) {
       })))));
 }
 
+// ---------- saved questions (SPEC 11.7) ----------
+
+// "Saved questions (3)" on the homepage and the results page, once there are some.
+function savedLink() {
+  const n = savedCount();
+  return n ? h('a.btn.saved-link', { href: '#/saved' }, icon('bookmark'), `Saved questions (${n})`) : null;
+}
+
+// A set's saved questions as [question id, when saved], newest first.
+const newestSaved = entry => Object.entries(entry?.questions ?? {}).sort((a, b) => b[1] - a[1]);
+
+// The stem as plain text, shortened, for the list.
+function stemStart(q, length = 160) {
+  const t = document.createElement('template');
+  t.innerHTML = q.stem;
+  const text = t.content.textContent.replace(/\s+/g, ' ').trim();
+  return text.length > length ? `${text.slice(0, length - 1).trimEnd().replace(/[.,;:]+$/, '')}…` : text;
+}
+
+// #/saved: the saved questions by class and set (in the homepage's order),
+// newest first, each with View answer and Remove, and Practice these for each
+// set. Questions and sets taken off the site since are listed with a note.
+// #/saved/<set id>/<question id> is savedQuestionView.
+async function savedView(root, ctx) {
+  if (ctx.args[0]) return savedQuestionView(root, ctx);
+  document.title = `Saved questions · ${SITE_NAME}`;
+  const main = h('main.wrap.saved-page', h('p.lead', 'Loading…'));
+  root.replaceChildren(page(main));
+  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
+  if (!ctx.isCurrent()) return;
+  const { courses } = loaded;
+  const sets = new Map(withChanges(loaded.sets, changes, courses).filter(s => !s.hidden).map(s => [s.id, s]));
+  const order = cachedOrder();
+  let rowCount = 0; // for the ids that tell the buttons apart
+
+  function paint() {
+    const all = savedSets();
+    const here = Object.keys(all).filter(id => sets.has(id)).map(id => sets.get(id));
+    const gone = Object.keys(all).filter(id => !sets.has(id));
+    const groups = courses.length
+      ? [...courses.map(c => ({ key: c.code, title: `${c.code} ${c.name}`, sets: here.filter(s => s.course === c.code) })),
+          { key: 'other', title: 'Other', sets: here.filter(s => !s.course) }]
+      : [{ key: 'other', title: null, sets: here }];
+    fill(main,
+      h('p.crumb', h('a', { href: '#/' }, '← Home')),
+      h('h1.page-title', { tabindex: '-1' }, 'Saved questions'),
+      h('p.lead', 'Questions you saved in practice mode or while reviewing an exam. They\'re kept on this browser only.'),
+      Object.keys(all).length ? null : [
+        h('p.empty-note', 'You haven\'t saved any questions yet. In practice mode, or when you review your answers after an exam, select Save on a question to keep it here.'),
+        h('div.form-actions', h('a.btn.btn-accent', { href: '#/' }, 'Home'))],
+      groups.filter(g => g.sets.length).map(g => h('section.saved-class',
+        g.title ? h('h2.section-title', g.title) : null,
+        arrange(g.sets, s => s.id, order[g.key]?.sets, newestSet).map(s => setBlock(s, all[s.id])))),
+      gone.length ? h('section.saved-class',
+        h('h2.section-title', 'Not on the site right now'),
+        gone.map(id => goneBlock(id, all[id]))) : null);
+  }
+
+  function setBlock(set, entry) {
+    const byId = new Map(set.questions.map(q => [q.id, q]));
+    const saved = newestSaved(entry);
+    const shown = saved.map(([id]) => id).filter(id => byId.has(id));
+    return h('section.saved-set',
+      h('div.saved-set-head',
+        h('div.set-info',
+          set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
+          h('h3', set.title),
+          h('p.set-meta', plural(saved.length, 'saved question'))),
+        shown.length ? h('div.set-actions', h('button.btn.btn-accent', {
+          type: 'button',
+          onclick: () => begin(set, { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', only: shown }, null, 'saved'),
+        }, shown.length === 1 ? 'Practice this one' : `Practice these (${shown.length})`)) : null),
+      h('ul.saved-list', saved.map(([id, at]) => savedRow(set, byId.get(id), id, at))));
+  }
+
+  // One saved question: the start of its text, its type, topic, and the day
+  // it was saved. A question no longer in the set just says so.
+  function savedRow(set, q, id, at) {
+    const textId = `saved-text-${++rowCount}`;
+    const remove = h('button.btn', { type: 'button', 'aria-describedby': textId, onclick: e => removeRow(e.currentTarget, set, id) }, 'Remove');
+    const when = `Saved ${fmtDate(at, true)}`;
+    if (!q) {
+      return h('li.saved-item.is-gone',
+        h('div.saved-info', h('p.saved-text', { id: textId }, 'This question is no longer in the set.'), h('p.set-meta', when)),
+        h('div.set-actions', remove));
+    }
+    return h('li.saved-item',
+      h('div.saved-info',
+        h('p.saved-text', { id: textId }, stemStart(q)),
+        h('p.set-meta', `${typeLabel(q.type)} · ${q.topic} · ${when}`)),
+      h('div.set-actions',
+        h('a.btn', { href: `#/saved/${encodeURIComponent(set.id)}/${encodeURIComponent(id)}`, 'aria-describedby': textId }, 'View answer'),
+        remove));
+  }
+
+  // The keyboard focus goes on to the next saved question (or the one before), or to the title.
+  function removeRow(button, set, id) {
+    const at = [...main.querySelectorAll('.saved-item')].indexOf(button.closest('.saved-item'));
+    setSaved(set.id, set.title, id, false);
+    paint();
+    const rows = [...main.querySelectorAll('.saved-item')];
+    (rows[Math.min(at, rows.length - 1)]?.querySelector('.btn') ?? main.querySelector('.page-title')).focus();
+    toast('Removed from your saved questions.');
+  }
+
+  // A set that's been taken off the site (or hidden by the host) since.
+  function goneBlock(setId, entry) {
+    return h('section.saved-set.is-gone',
+      h('div.saved-set-head',
+        h('div.set-info',
+          h('h3', entry.title || setId),
+          h('p.set-meta', `${plural(newestSaved(entry).length, 'saved question')} · This set isn't on the site right now.`)),
+        h('div.set-actions', h('button.btn', {
+          type: 'button',
+          onclick: () => {
+            forgetSet(setId);
+            paint();
+            main.querySelector('.page-title').focus();
+            toast('Removed from your saved questions.');
+          },
+        }, 'Remove'))));
+  }
+
+  paint();
+}
+
+// #/saved/<set id>/<question id>: a set's saved questions one at a time,
+// newest first, starting at that question. Like review mode: the question with
+// its answer key and rationale, Save (to remove it from the list), and free
+// Previous and Next. The link follows the question shown, so a reload stays on it.
+async function savedQuestionView(root, { args, isCurrent }) {
+  const [setId, startId] = args;
+  root.replaceChildren(page(h('main.wrap.plain-page', h('p.lead', 'Loading…'))));
+  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
+  if (!isCurrent()) return;
+  const set = withChanges(loaded.sets, changes, loaded.courses).find(s => s.id === setId && !s.hidden);
+  const byId = new Map((set?.questions ?? []).map(q => [q.id, q]));
+  const list = newestSaved(savedSets()[setId]).map(([id]) => byId.get(id)).filter(Boolean);
+  if (!list.length) {
+    document.title = `Saved questions · ${SITE_NAME}`;
+    fill(root, page(h('main.wrap.plain-page',
+      h('h1.page-title', 'Nothing to show'),
+      h('p.lead', 'This question isn\'t in your saved questions, or it\'s no longer on the site.'),
+      h('div.form-actions', h('a.btn.btn-accent', { href: '#/saved' }, 'Saved questions')))));
+    return;
+  }
+  let index = Math.max(0, list.findIndex(q => q.id === startId));
+  const tabs = new Map();
+  const counter = h('h1.q-counter', { tabindex: '-1' });
+  const question = h('section.question');
+  const prevBtn = h('button.btn.btn-nav', { type: 'button', onclick: () => go(index - 1) }, 'Previous');
+  const saver = saveButton();
+  const nextBtn = h('button.btn-continue', {
+    type: 'button',
+    onclick: () => {
+      if (index < list.length - 1) go(index + 1);
+      else location.hash = '#/saved';
+    },
+  }, 'Next');
+  const actions = h('div.exam-actions', h('div.nav-left', prevBtn, saver.el), nextBtn);
+  const area = questionArea(question, set.cases ?? {}, { get: key => tabs.get(key) ?? 0, set: (key, i) => tabs.set(key, i) });
+
+  root.replaceChildren(h('div.page.exam.review',
+    siteHeader({ title: set.title, onClose: () => (location.hash = '#/saved'), link: false }),
+    h('main.wrap',
+      h('div.info-row',
+        h('div.counter-wrap', counter, h('span.mode-tag', 'Saved questions')),
+        h('div.info-tools', h('a.btn', { href: '#/saved' }, 'Back to saved questions'))),
+      question),
+    siteFooter()));
+
+  function go(i) {
+    index = i;
+    show(true);
+  }
+
+  function show(moveFocus) {
+    const q = list[index];
+    const key = keyResponse(q);
+    counter.textContent = `Question: ${index + 1} of ${list.length}`;
+    document.title = `Saved questions · ${set.title}`;
+    prevBtn.hidden = index === 0;
+    nextBtn.textContent = index === list.length - 1 ? 'Finish' : 'Next';
+    saver.show(set.id, set.title, q.id);
+    history.replaceState(history.state, '', `#/saved/${encodeURIComponent(set.id)}/${encodeURIComponent(q.id)}`);
+    area.show(q, [
+      ...questionParts(q, { response: key, review: true, answerKey: true }),
+      feedbackPanel(q, key, { answerKey: true, report: set.id }),
+      actions,
+    ]);
+    if (moveFocus) {
+      window.scrollTo(0, 0);
+      counter.focus({ preventScroll: true });
+    }
+  }
+
+  show(false);
+}
+
 // ---------- router ----------
 
 // #/stats-off and #/stats-on (README "Usage stats"): whether this browser's
@@ -643,7 +850,7 @@ function statsView(root, on) {
 }
 
 const routes = {
-  '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, group: groupView, host: hostView,
+  '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, saved: savedView, group: groupView, host: hostView,
   'stats-off': root => statsView(root, false), 'stats-on': root => statsView(root, true),
 };
 const UNCOUNTED = new Set(['host', 'stats-off', 'stats-on']); // the host's pages, and the stats switch
@@ -661,7 +868,9 @@ async function route() {
   if (id === routeCount && typeof done === 'function') cleanup = done;
   else if (typeof done === 'function') done();
   // One page view per page change, counted as a path: "/", "/class/NU1120", "/exam".
-  if (id === routeCount && !UNCOUNTED.has(name)) trackPage(`/${[name, ...args].filter(Boolean).map(encodeURIComponent).join('/')}`);
+  // A saved question's page counts as its set's: "/saved/<set id>".
+  const counted = name === 'saved' ? args.slice(0, 1) : args;
+  if (id === routeCount && !UNCOUNTED.has(name)) trackPage(`/${[name, ...counted].filter(Boolean).map(encodeURIComponent).join('/')}`);
 }
 
 addEventListener('hashchange', route);

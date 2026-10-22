@@ -1,7 +1,7 @@
 {
   "id": "nu1120-exam-3-integumentary-system",
   "title": "The Integumentary System",
-  "description": "Week 6: the layers of the skin, glands, hair and nails, skin functions, wound healing, burns, pressure injuries, skin disorders, transdermal medications, and the skin assessment.",
+  "description": "Week 6, matched to the Exam 3 study guide: skin cells and mechanoreceptors, the skin assessment, signs of skin dysfunction and edema, common skin findings, mole checks and IV skin prep, skin medications, and other findings.",
   "course": "NU1120",
   "exam": "Exam 3",
   "timeMinutes": 75,
@@ -23,13 +23,22 @@
           "html": "<h4>Laboratory Results</h4><table><thead><tr><th>Test</th><th>Result</th><th>Reference range</th></tr></thead><tbody><tr><td>White blood cells</td><td>8,200/mm³</td><td>5,000 to 10,000/mm³</td></tr><tr><td>Hemoglobin</td><td>11.6&nbsp;g/dL</td><td>12 to 17.5&nbsp;g/dL</td></tr><tr><td>Albumin</td><td>3.0&nbsp;g/dL</td><td>3.5 to 5.0&nbsp;g/dL</td></tr><tr><td>Blood glucose</td><td>186&nbsp;mg/dL</td><td>70 to 99&nbsp;mg/dL (fasting)</td></tr></tbody></table>"
         }
       ]
+    },
+    "impetigo": {
+      "intro": "A nurse at a pediatric clinic is assessing a 5-year-old child whose parent brought the child in for sores on the face.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>Day 1, 1000:</b></p><p>Parent reports red sores around the child's nose and mouth for 4 days. The sores burst and now have yellow-brown, honey-colored crusts. The child scratches them, and a new sore appeared on the back of the right hand yesterday. The child attends preschool, and an older brother had similar sores last week.</p><p>Temperature 37.0&nbsp;°C (98.6&nbsp;°F). Seven red sores, 1 to 2&nbsp;cm across, with honey-colored crusts: six around the nostrils and the corners of the mouth, and one on the back of the right hand. No blisters inside the mouth. Skin elsewhere is warm, dry, and intact. The child is playful and eating well.</p>"
+        }
+      ]
     }
   },
   "questions": [
     {
       "id": "is-01",
       "type": "mc",
-      "topic": "Skin structure and layers",
+      "topic": "Skin cells",
       "stem": "A nurse is reviewing the layers of the epidermis. Which layer contains the stem cells that divide to replace skin cells, along with the melanocytes that make melanin?",
       "options": ["Stratum corneum", "Stratum basale", "Stratum lucidum", "Stratum granulosum"],
       "answer": 1,
@@ -41,12 +50,13 @@
       "topic": "Skin structure and layers",
       "stem": "A nurse is reviewing the structure of the thick skin on the palm of the hand. Place the layers of the epidermis in order, from the deepest layer to the skin surface.",
       "items": ["Stratum basale", "Stratum spinosum", "Stratum granulosum", "Stratum lucidum", "Stratum corneum"],
-      "rationale": "<p>From deepest to surface: the <b>stratum basale</b> (dividing cells and melanocytes, next to the dermis), the <b>stratum spinosum</b> (several layers of keratinocytes held together by desmosomes, which look like spines), the <b>stratum granulosum</b> (cells with lipid-rich granules that begin to lose their nuclei), the <b>stratum lucidum</b> (a clear layer found only in the thick skin of the palms and soles), and the <b>stratum corneum</b> (the outer keratin layer that limits water loss).</p><p>Keratinocytes form in the basal layer and mature as they move outward. In skin other than the palms and soles, there is no stratum lucidum, so the granulosum lies directly under the corneum.</p>"
+      "rationale": "<p>From deepest to surface: the <b>stratum basale</b> (dividing cells and melanocytes, next to the dermis), the <b>stratum spinosum</b> (several layers of keratinocytes held together by desmosomes, which look like spines), the <b>stratum granulosum</b> (cells with lipid-rich granules that begin to lose their nuclei), the <b>stratum lucidum</b> (a clear layer found only in the thick skin of the palms and soles), and the <b>stratum corneum</b> (the outer keratin layer that limits water loss).</p><p>Keratinocytes form in the basal layer and mature as they move outward. In skin other than the palms and soles, there is no stratum lucidum, so the granulosum lies directly under the corneum.</p>",
+      "hidden": true
     },
     {
       "id": "is-03",
       "type": "hotspot",
-      "topic": "Skin structure and layers",
+      "topic": "Skin cells",
       "stem": "A nurse is reviewing a cross-section of the skin. Click the layer that has no blood vessels of its own and is made mostly of keratinocytes.",
       "image": "img/skin-layers.svg",
       "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
@@ -60,7 +70,8 @@
       "stem": "A nurse is reviewing the dermis. Which statements describe the dermis?",
       "options": ["It is the outermost layer that limits water loss.", "It contains blood vessels that nourish the epidermis.", "It is connective tissue made mostly of collagen.", "It is avascular and gets its nutrients by diffusion.", "Hair follicles and sweat glands are found in it.", "It contains nerve endings and mechanoreceptors."],
       "answer": [1, 2, 4, 5],
-      "rationale": "<p>The <b>dermis</b> is a connective tissue layer whose main component is <b>collagen</b>, which gives the skin strength and flexibility. Its <b>blood vessels</b> feed the epidermis and support the inflammatory response, it holds <b>nerve endings and mechanoreceptors</b> for sensation, and <b>hair follicles and glands</b> sit in it (sweat glands can reach down into the subcutaneous layer).</p><p>The <b>outermost layer that limits water loss</b> is the stratum corneum of the epidermis, not the dermis. The <b>epidermis</b>, not the dermis, is avascular and gets its nutrients by diffusion from the dermis.</p>"
+      "rationale": "<p>The <b>dermis</b> is a connective tissue layer whose main component is <b>collagen</b>, which gives the skin strength and flexibility. Its <b>blood vessels</b> feed the epidermis and support the inflammatory response, it holds <b>nerve endings and mechanoreceptors</b> for sensation, and <b>hair follicles and glands</b> sit in it (sweat glands can reach down into the subcutaneous layer).</p><p>The <b>outermost layer that limits water loss</b> is the stratum corneum of the epidermis, not the dermis. The <b>epidermis</b>, not the dermis, is avascular and gets its nutrients by diffusion from the dermis.</p>",
+      "hidden": true
     },
     {
       "id": "is-05",
@@ -70,12 +81,13 @@
       "image": "img/skin-layers.svg",
       "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
       "regions": [{"x": 3.7, "y": 68.1, "w": 92.7, "h": 20.0}, {"x": 3.7, "y": 62.9, "w": 43.7, "h": 4.3}, {"x": 52.7, "y": 62.9, "w": 43.7, "h": 4.3}],
-      "rationale": "<p>A subcutaneous injection goes into the <b>hypodermis</b> (subcutaneous layer), the deep layer of loose connective tissue and fat between the dermis and the muscle. Besides holding injected medication, this layer cushions the body, stores energy, insulates, and anchors the skin to the structures below.</p><p>The <b>epidermis</b> (top layer) and the <b>dermis</b> (middle layer, with blood vessels, glands, and hair follicles) are not the target of a subcutaneous injection; an intradermal injection is placed just under the epidermis. The <b>muscle</b> below the fat is the target of an intramuscular injection.</p>"
+      "rationale": "<p>A subcutaneous injection goes into the <b>hypodermis</b> (subcutaneous layer), the deep layer of loose connective tissue and fat between the dermis and the muscle. Besides holding injected medication, this layer cushions the body, stores energy, insulates, and anchors the skin to the structures below.</p><p>The <b>epidermis</b> (top layer) and the <b>dermis</b> (middle layer, with blood vessels, glands, and hair follicles) are not the target of a subcutaneous injection; an intradermal injection is placed just under the epidermis. The <b>muscle</b> below the fat is the target of an intramuscular injection.</p>",
+      "hidden": true
     },
     {
       "id": "is-06",
       "type": "mc",
-      "topic": "Skin structure and layers",
+      "topic": "Skin cells",
       "stem": "A nurse is reviewing the cells of the epidermis. What is the role of Langerhans cells?",
       "options": ["They produce melanin, which absorbs ultraviolet light.", "They make the keratin that forms the skin's protective barrier.", "They take up microbial antigens and present them to the immune system.", "They detect high-frequency vibration and deep pressure."],
       "answer": 2,
@@ -89,7 +101,8 @@
       "image": "img/skin-layers.svg",
       "alt": "Cross-section of the skin with the surface at the top: a thin top layer, a thicker middle layer with blood vessels, a nerve ending, a hair follicle, a gland beside the follicle, and a coiled gland, and a deep layer of fat cells above the muscle.",
       "regions": [{"x": 43.0, "y": 31.0, "w": 3.7, "h": 14.8}, {"x": 40.0, "y": 31.9, "w": 2.3, "h": 6.7}],
-      "rationale": "<p>The <b>sebaceous gland</b> sits beside the hair follicle. Together with the hair, the follicle, and the arrector pili muscle, it forms the pilosebaceous unit. It secretes <b>sebum</b>, a mixture of lipids that forms a thin film on the skin and hair, helps prevent fluid loss, and has an antimicrobial role.</p><p>The <b>coiled gland</b> deeper in the dermis is an <b>eccrine sweat gland</b>, which makes watery sweat that cools the body as it evaporates. The <b>hair follicle</b> holds the hair, and the <b>fat cells</b> below belong to the subcutaneous layer.</p>"
+      "rationale": "<p>The <b>sebaceous gland</b> sits beside the hair follicle. Together with the hair, the follicle, and the arrector pili muscle, it forms the pilosebaceous unit. It secretes <b>sebum</b>, a mixture of lipids that forms a thin film on the skin and hair, helps prevent fluid loss, and has an antimicrobial role.</p><p>The <b>coiled gland</b> deeper in the dermis is an <b>eccrine sweat gland</b>, which makes watery sweat that cools the body as it evaporates. The <b>hair follicle</b> holds the hair, and the <b>fat cells</b> below belong to the subcutaneous layer.</p>",
+      "hidden": true
     },
     {
       "id": "is-08",
@@ -100,7 +113,8 @@
       "columns": ["Eccrine", "Apocrine", "Sebaceous", "Ceruminous"],
       "rows": ["Produces earwax in the ear canal", "Secretes oily sebum into the hair follicle", "Found in the axillae and genital area; its secretions cause body odor when bacteria break them down", "Releases watery sweat over most of the body to cool it by evaporation"],
       "answer": [3, 2, 1, 0],
-      "rationale": "<p><b>Eccrine</b> sweat glands are found throughout the body and produce watery (serous) sweat that cools the body as it evaporates. <b>Apocrine</b> glands are concentrated in the axillae, areolae, and genital area and release a thicker, protein-rich sweat; body odor comes from bacteria breaking it down. <b>Sebaceous</b> glands, part of the pilosebaceous unit, secrete <b>sebum</b> into the hair follicle. <b>Ceruminous</b> glands, modified apocrine glands in the ear canal, produce <b>cerumen</b> (earwax).</p>"
+      "rationale": "<p><b>Eccrine</b> sweat glands are found throughout the body and produce watery (serous) sweat that cools the body as it evaporates. <b>Apocrine</b> glands are concentrated in the axillae, areolae, and genital area and release a thicker, protein-rich sweat; body odor comes from bacteria breaking it down. <b>Sebaceous</b> glands, part of the pilosebaceous unit, secrete <b>sebum</b> into the hair follicle. <b>Ceruminous</b> glands, modified apocrine glands in the ear canal, produce <b>cerumen</b> (earwax).</p>",
+      "hidden": true
     },
     {
       "id": "is-09",
@@ -109,7 +123,8 @@
       "stem": "During a skin assessment, a nurse notes that a client's fingernails curve upward at the ends, like a spoon. The nurse should ask the client about a history of which condition?",
       "options": ["Iron deficiency anemia", "Psoriasis", "Chronic lung disease", "A fungal nail infection"],
       "answer": 0,
-      "rationale": "<p>Spoon-shaped nails (<b>koilonychia</b>), in which the outer edge of the nail curves upward, are associated with <b>iron deficiency anemia</b>, though they can also occur without a known cause.</p><p><b>Psoriasis</b> is associated with <b>pitting</b>, small pits in the nail plate. <b>Chronic lung disease</b> is associated with <b>clubbing</b>, a flattened angle between the nail and the nail fold. A <b>fungal infection</b> (onychomycosis) causes discolored, thickened nails with debris under the nail and splitting.</p>"
+      "rationale": "<p>Spoon-shaped nails (<b>koilonychia</b>), in which the outer edge of the nail curves upward, are associated with <b>iron deficiency anemia</b>, though they can also occur without a known cause.</p><p><b>Psoriasis</b> is associated with <b>pitting</b>, small pits in the nail plate. <b>Chronic lung disease</b> is associated with <b>clubbing</b>, a flattened angle between the nail and the nail fold. A <b>fungal infection</b> (onychomycosis) causes discolored, thickened nails with debris under the nail and splitting.</p>",
+      "hidden": true
     },
     {
       "id": "is-10",
@@ -118,7 +133,8 @@
       "stem": "A nurse is assessing the fingers of a client who has cystic fibrosis. Which finding indicates clubbing?",
       "options": ["Small, deep pits are scattered across the surface of the nail plates.", "The angle at the nail base is flattened, and the fingertip is enlarged.", "The nails curve upward at the ends, so they look like a spoon.", "The nails are thick and yellow, with crumbly debris under them."],
       "answer": 1,
-      "rationale": "<p><b>Clubbing</b> is an increased curve and thickening of the fingertip with <b>flattening (loss) of the angle between the nail plate and the nail fold</b>, best seen from the side. It is associated with chronic lung and heart disease, including cystic fibrosis, lung cancer, and interstitial lung disease, and calls for a full assessment of oxygenation.</p><p><b>Pitting</b> occurs with psoriasis, eczema, and alopecia areata. <b>Spoon nails</b> (koilonychia) are associated with iron deficiency anemia. <b>Thick, yellow nails with debris</b> suggest a fungal infection (onychomycosis).</p>"
+      "rationale": "<p><b>Clubbing</b> is an increased curve and thickening of the fingertip with <b>flattening (loss) of the angle between the nail plate and the nail fold</b>, best seen from the side. It is associated with chronic lung and heart disease, including cystic fibrosis, lung cancer, and interstitial lung disease, and calls for a full assessment of oxygenation.</p><p><b>Pitting</b> occurs with psoriasis, eczema, and alopecia areata. <b>Spoon nails</b> (koilonychia) are associated with iron deficiency anemia. <b>Thick, yellow nails with debris</b> suggest a fungal infection (onychomycosis).</p>",
+      "hidden": true
     },
     {
       "id": "is-11",
@@ -127,12 +143,13 @@
       "stem": "A nurse is teaching a group of clients about hair loss. Which statements are accurate?",
       "options": ["Scarring alopecia destroys the hair follicles, so the hair loss is permanent.", "Alopecia areata always leaves permanent bald patches.", "Telogen effluvium can follow severe stress, illness, or childbirth.", "Alopecia areata is an immune-mediated hair loss, and the hair may grow back.", "Male pattern baldness is inherited and depends on androgens.", "Folliculitis is most often caused by a virus."],
       "answer": [0, 2, 3, 4],
-      "rationale": "<p><b>Alopecia areata</b> is a chronic, immune-mediated, <b>nonscarring</b> hair loss, most often in patches on the scalp; it can go away on its own, with the hair growing back. In <b>scarring alopecia</b>, the follicles are destroyed, so the loss is permanent. <b>Male pattern (androgenetic) baldness</b> is inherited and androgen-dependent: dihydrotestosterone shortens the growth phase of the follicles. <b>Telogen effluvium</b> is a nonscarring shedding that can follow psychological stress, severe or chronic illness, pregnancy and childbirth, surgery, or some medications.</p><p><b>Folliculitis</b>, an inflammation of the hair follicle with pustules and red papules, is most often <b>bacterial</b> (usually <i>Staphylococcus aureus</i>), not viral. Because alopecia areata is nonscarring, its bald patches are <b>not</b> always permanent.</p>"
+      "rationale": "<p><b>Alopecia areata</b> is a chronic, immune-mediated, <b>nonscarring</b> hair loss, most often in patches on the scalp; it can go away on its own, with the hair growing back. In <b>scarring alopecia</b>, the follicles are destroyed, so the loss is permanent. <b>Male pattern (androgenetic) baldness</b> is inherited and androgen-dependent: dihydrotestosterone shortens the growth phase of the follicles. <b>Telogen effluvium</b> is a nonscarring shedding that can follow psychological stress, severe or chronic illness, pregnancy and childbirth, surgery, or some medications.</p><p><b>Folliculitis</b>, an inflammation of the hair follicle with pustules and red papules, is most often <b>bacterial</b> (usually <i>Staphylococcus aureus</i>), not viral. Because alopecia areata is nonscarring, its bald patches are <b>not</b> always permanent.</p>",
+      "hidden": true
     },
     {
       "id": "is-12",
       "type": "matrix",
-      "topic": "Skin functions",
+      "topic": "Mechanoreceptors",
       "stem": "A nurse is reviewing the sensory receptors of the skin. For each receptor, click to specify what it senses.",
       "rowHeader": "Receptor",
       "columns": ["Steady touch, edges, and shapes", "Pain and temperature", "High-frequency vibration and deep pressure", "Light touch and movement across the skin", "Stretching of the skin"],
@@ -147,7 +164,8 @@
       "stem": "A client is working outdoors on a hot day. Which response of the skin helps the client's body lose heat?",
       "options": ["Constriction of the blood vessels in the dermis", "Dilation of the blood vessels in the dermis", "Contraction of the arrector pili muscles", "Shivering of the skeletal muscles"],
       "answer": 1,
-      "rationale": "<p>When the body is warm, the hypothalamus triggers <b>vasodilation</b> of the dermal blood vessels, which brings more warm blood near the surface so heat can leave the body, and the eccrine glands make sweat that cools the skin as it evaporates.</p><p><b>Vasoconstriction</b> keeps warm blood away from the surface to conserve heat in the cold. Contraction of the <b>arrector pili</b> muscles makes the hairs stand up, which traps a layer of warm air near the skin. <b>Shivering</b> is muscle activity that produces heat. All three help keep heat in, not let it out.</p>"
+      "rationale": "<p>When the body is warm, the hypothalamus triggers <b>vasodilation</b> of the dermal blood vessels, which brings more warm blood near the surface so heat can leave the body, and the eccrine glands make sweat that cools the skin as it evaporates.</p><p><b>Vasoconstriction</b> keeps warm blood away from the surface to conserve heat in the cold. Contraction of the <b>arrector pili</b> muscles makes the hairs stand up, which traps a layer of warm air near the skin. <b>Shivering</b> is muscle activity that produces heat. All three help keep heat in, not let it out.</p>",
+      "hidden": true
     },
     {
       "id": "is-14",
@@ -155,7 +173,8 @@
       "topic": "Skin functions",
       "stem": "A nurse is teaching how the body makes active vitamin D. Place the steps in order.",
       "items": ["Ultraviolet B light from the sun reaches the skin.", "7-dehydrocholesterol in the skin changes to previtamin D.", "Heat converts previtamin D to vitamin D3.", "The liver converts vitamin D3 to 25-hydroxyvitamin D.", "The kidneys convert 25-hydroxyvitamin D to active 1,25-dihydroxyvitamin D."],
-      "rationale": "<p>Vitamin D synthesis starts when <b>ultraviolet B</b> light (290 to 315 nm) reaches the skin and changes <b>7-dehydrocholesterol</b> into <b>previtamin D</b>. Body heat then converts previtamin D into <b>vitamin D3</b> (cholecalciferol). Vitamin D from the skin and the diet goes to the <b>liver</b>, which makes <b>25-hydroxyvitamin D</b>, and then to the <b>kidneys</b>, which make the active form, <b>1,25-dihydroxyvitamin D</b> (calcitriol). The last step is regulated by parathyroid hormone, calcium, and phosphorus.</p>"
+      "rationale": "<p>Vitamin D synthesis starts when <b>ultraviolet B</b> light (290 to 315 nm) reaches the skin and changes <b>7-dehydrocholesterol</b> into <b>previtamin D</b>. Body heat then converts previtamin D into <b>vitamin D3</b> (cholecalciferol). Vitamin D from the skin and the diet goes to the <b>liver</b>, which makes <b>25-hydroxyvitamin D</b>, and then to the <b>kidneys</b>, which make the active form, <b>1,25-dihydroxyvitamin D</b> (calcitriol). The last step is regulated by parathyroid hormone, calcium, and phosphorus.</p>",
+      "hidden": true
     },
     {
       "id": "is-15",
@@ -164,7 +183,8 @@
       "stem": "A nurse is caring for an older adult who is homebound and rarely goes outdoors. The nurse explains that sunlight on the skin helps the body make vitamin D. Which function of vitamin D should the nurse include in the teaching?",
       "options": ["It stimulates the melanocytes to produce more melanin.", "It forms the collagen that strengthens the dermis.", "It controls how much the client sweats in hot weather.", "It helps the intestine absorb calcium for healthy bones."],
       "answer": 3,
-      "rationale": "<p>The active form of vitamin D (calcitriol) <b>increases calcium absorption from the intestine</b>, which is essential for bone health. A client who gets little sun depends on vitamin D from the diet, and may need it checked or supplemented as the provider prescribes.</p><p>Vitamin D does not make <b>melanin</b> (melanocytes make it from tyrosine), does not form <b>collagen</b> (fibroblasts do), and does not control <b>sweating</b> (the sympathetic nervous system does).</p>"
+      "rationale": "<p>The active form of vitamin D (calcitriol) <b>increases calcium absorption from the intestine</b>, which is essential for bone health. A client who gets little sun depends on vitamin D from the diet, and may need it checked or supplemented as the provider prescribes.</p><p>Vitamin D does not make <b>melanin</b> (melanocytes make it from tyrosine), does not form <b>collagen</b> (fibroblasts do), and does not control <b>sweating</b> (the sympathetic nervous system does).</p>",
+      "hidden": true
     },
     {
       "id": "is-16",
@@ -176,12 +196,13 @@
         {"options": ["parasympathetic", "sympathetic", "somatic"], "answer": 1},
         {"options": ["seborrhea", "hypothermia", "hyperhidrosis"], "answer": 2}
       ],
-      "rationale": "<p>Sweat glands are stimulated by the <b>sympathetic</b> nervous system, through cholinergic autonomic neurons. In <b>hyperhidrosis</b>, an abnormal central response to normal emotional stress increases sympathetic signaling, so the eccrine glands make more sweat than temperature control requires.</p><p>The <b>parasympathetic</b> system does not control sweating, and the <b>somatic</b> nervous system controls voluntary skeletal muscle. <b>Seborrhea</b> refers to excess oil and scaling, as in seborrheic dermatitis, and <b>hypothermia</b> is a low core body temperature.</p>"
+      "rationale": "<p>Sweat glands are stimulated by the <b>sympathetic</b> nervous system, through cholinergic autonomic neurons. In <b>hyperhidrosis</b>, an abnormal central response to normal emotional stress increases sympathetic signaling, so the eccrine glands make more sweat than temperature control requires.</p><p>The <b>parasympathetic</b> system does not control sweating, and the <b>somatic</b> nervous system controls voluntary skeletal muscle. <b>Seborrhea</b> refers to excess oil and scaling, as in seborrheic dermatitis, and <b>hypothermia</b> is a low core body temperature.</p>",
+      "hidden": true
     },
     {
       "id": "is-17",
       "type": "mc",
-      "topic": "Skin color and systemic signs",
+      "topic": "Skin assessment",
       "stem": "A nurse is assessing a client who has dark skin for cyanosis. Where should the nurse look?",
       "options": ["The lips and oral mucosa", "The skin of the forearm", "The skin of the abdomen", "The skin of the back"],
       "answer": 0,
@@ -190,7 +211,7 @@
     {
       "id": "is-18",
       "type": "mc",
-      "topic": "Skin color and systemic signs",
+      "topic": "Skin assessment",
       "stem": "A nurse is caring for a client who has liver disease and a rising bilirubin level. Where does jaundice usually appear first?",
       "options": ["The palms of the hands", "The nail beds", "The lips", "The sclera of the eyes"],
       "answer": 3,
@@ -203,12 +224,13 @@
       "stem": "A nurse is performing a skin assessment. Which findings can point to a disease in another body system?",
       "options": ["Warm, dry skin in a comfortable room", "Yellow sclera", "Clubbing of the fingernails", "Dark, velvety patches on the back of the neck", "Bluish lips and nail beds", "A small mole that has looked the same for years"],
       "answer": [1, 2, 3, 4],
-      "rationale": "<p>The skin often reflects disease elsewhere. <b>Yellow sclera</b> (jaundice) suggests liver dysfunction. <b>Clubbing</b> is associated with chronic lung and heart disease. <b>Bluish lips and nail beds</b> (cyanosis) suggest low oxygen, as in COPD, pneumonia, or pulmonary edema. <b>Dark, velvety patches</b> in skin folds such as the back of the neck (acanthosis nigricans) are associated with insulin resistance and diabetes.</p><p>A <b>mole that hasn't changed for years</b> is not a warning sign; change (evolving) is one of the warning signs of melanoma. <b>Warm, dry skin in a comfortable room</b> is a normal finding.</p>"
+      "rationale": "<p>The skin often reflects disease elsewhere. <b>Yellow sclera</b> (jaundice) suggests liver dysfunction. <b>Clubbing</b> is associated with chronic lung and heart disease. <b>Bluish lips and nail beds</b> (cyanosis) suggest low oxygen, as in COPD, pneumonia, or pulmonary edema. <b>Dark, velvety patches</b> in skin folds such as the back of the neck (acanthosis nigricans) are associated with insulin resistance and diabetes.</p><p>A <b>mole that hasn't changed for years</b> is not a warning sign; change (evolving) is one of the warning signs of melanoma. <b>Warm, dry skin in a comfortable room</b> is a normal finding.</p>",
+      "hidden": true
     },
     {
       "id": "is-20",
       "type": "mc",
-      "topic": "Skin color and systemic signs",
+      "topic": "Skin cells",
       "stem": "A student asks a nurse why people have different skin tones. Which explanation is accurate?",
       "options": ["People with darker skin have many more melanocytes in the epidermis.", "Darker skin has a thicker stratum corneum that blocks more light.", "Lighter skin has fewer blood vessels in the dermis, so it looks paler.", "The amount and spread of melanin differ, not the number of melanocytes."],
       "answer": 3,
@@ -220,7 +242,8 @@
       "topic": "Wound healing",
       "stem": "A nurse is teaching a client how a surgical incision heals. Place the phases of wound healing in order.",
       "items": ["Hemostasis", "Inflammatory phase", "Proliferative phase", "Maturation (remodeling) phase"],
-      "rationale": "<p>Healing begins with <b>hemostasis</b>: vessels constrict, platelets clump, and the coagulation cascade forms a fibrin clot. In the <b>inflammatory phase</b>, neutrophils and monocytes move in to destroy bacteria and clear debris. In the <b>proliferative phase</b> (by about days 5 to 7), fibroblasts lay down new collagen, granulation tissue fills the wound, new blood vessels grow, and new epithelium covers the surface. The <b>maturation (remodeling) phase</b> starts around week 3 and can last up to 12 months, as excess collagen is broken down and the scar gains strength.</p>"
+      "rationale": "<p>Healing begins with <b>hemostasis</b>: vessels constrict, platelets clump, and the coagulation cascade forms a fibrin clot. In the <b>inflammatory phase</b>, neutrophils and monocytes move in to destroy bacteria and clear debris. In the <b>proliferative phase</b> (by about days 5 to 7), fibroblasts lay down new collagen, granulation tissue fills the wound, new blood vessels grow, and new epithelium covers the surface. The <b>maturation (remodeling) phase</b> starts around week 3 and can last up to 12 months, as excess collagen is broken down and the scar gains strength.</p>",
+      "hidden": true
     },
     {
       "id": "is-22",
@@ -231,7 +254,8 @@
       "columns": ["Hemostasis", "Inflammatory", "Proliferative", "Maturation"],
       "rows": ["Excess collagen breaks down, and the scar gains strength over months", "Platelets clump and a fibrin clot forms", "Neutrophils and monocytes destroy bacteria and clear debris", "Fibroblasts lay down new collagen, and granulation tissue forms"],
       "answer": [3, 0, 1, 2],
-      "rationale": "<p>In <b>hemostasis</b>, right after the injury, platelets clump and the coagulation cascade forms a <b>fibrin clot</b>. In the <b>inflammatory</b> phase, <b>neutrophils and monocytes</b> move in to destroy bacteria and clear debris. In the <b>proliferative</b> phase (by about days 5 to 7), <b>fibroblasts</b> lay down new collagen and granulation tissue fills the wound. In <b>maturation</b> (remodeling), from about week 3 for up to 12 months, excess collagen is broken down and the scar slowly strengthens.</p>"
+      "rationale": "<p>In <b>hemostasis</b>, right after the injury, platelets clump and the coagulation cascade forms a <b>fibrin clot</b>. In the <b>inflammatory</b> phase, <b>neutrophils and monocytes</b> move in to destroy bacteria and clear debris. In the <b>proliferative</b> phase (by about days 5 to 7), <b>fibroblasts</b> lay down new collagen and granulation tissue fills the wound. In <b>maturation</b> (remodeling), from about week 3 for up to 12 months, excess collagen is broken down and the scar slowly strengthens.</p>",
+      "hidden": true
     },
     {
       "id": "is-23",
@@ -240,7 +264,8 @@
       "stem": "A client who had abdominal surgery 4 weeks ago asks whether the incision is now as strong as the skin was before surgery. Which response by the nurse is accurate?",
       "options": ["It regained its full strength by the end of the first week after surgery.", "Once it's fully healed, the scar will be stronger than the skin was before.", "Healing is complete now that the incision is closed and the stitches are out.", "It keeps getting stronger for months, but only to about 80% of the original."],
       "answer": 3,
-      "rationale": "<p>The <b>maturation (remodeling) phase</b> begins around week 3 and can last up to 12 months. Wound strength peaks at about 11 to 14 weeks, but a scar never regains all of the original strength: it reaches only about <b>80%</b>.</p><p>At the <b>end of the first week</b>, the wound is still in the proliferative phase, with new collagen just being laid down. A scar is <b>not stronger</b> than the original skin. <b>Closure</b> of the skin does not mean healing is complete, because remodeling continues for months.</p>"
+      "rationale": "<p>The <b>maturation (remodeling) phase</b> begins around week 3 and can last up to 12 months. Wound strength peaks at about 11 to 14 weeks, but a scar never regains all of the original strength: it reaches only about <b>80%</b>.</p><p>At the <b>end of the first week</b>, the wound is still in the proliferative phase, with new collagen just being laid down. A scar is <b>not stronger</b> than the original skin. <b>Closure</b> of the skin does not mean healing is complete, because remodeling continues for months.</p>",
+      "hidden": true
     },
     {
       "id": "is-24",
@@ -249,7 +274,8 @@
       "stem": "A nurse is reviewing factors that affect wound healing. Which factors can delay healing?",
       "options": ["Smoking", "Advanced age", "Poor nutrition", "Good circulation to the area", "Diabetes mellitus", "Adequate protein intake", "Wound infection"],
       "answer": [0, 1, 2, 4, 6],
-      "rationale": "<p><b>Diabetes</b> impairs circulation and the immune response. <b>Smoking</b> constricts blood vessels and reduces oxygen delivery. <b>Poor nutrition</b> deprives the wound of the protein and nutrients it needs to build new tissue. <b>Infection</b> prolongs inflammation and destroys new tissue. <b>Advanced age</b> slows cell turnover and healing.</p><p><b>Good circulation</b> and <b>adequate protein intake</b> promote healing, because they bring oxygen and the building blocks of new collagen to the wound.</p>"
+      "rationale": "<p><b>Diabetes</b> impairs circulation and the immune response. <b>Smoking</b> constricts blood vessels and reduces oxygen delivery. <b>Poor nutrition</b> deprives the wound of the protein and nutrients it needs to build new tissue. <b>Infection</b> prolongs inflammation and destroys new tissue. <b>Advanced age</b> slows cell turnover and healing.</p><p><b>Good circulation</b> and <b>adequate protein intake</b> promote healing, because they bring oxygen and the building blocks of new collagen to the wound.</p>",
+      "hidden": true
     },
     {
       "id": "is-25",
@@ -258,7 +284,8 @@
       "stem": "A nurse is assessing a surgical wound that was left open to heal by secondary intention 6 days ago. Which finding shows that the wound is in the proliferative phase?",
       "options": ["A fibrin clot is sealing the edges of the wound.", "The scar is becoming flatter and paler.", "Red, moist granulation tissue is filling the base of the wound.", "The wound is warm and swollen, as it was on the first day."],
       "answer": 2,
-      "rationale": "<p>In the <b>proliferative (granulation) phase</b>, from about days 5 to 7, fibroblasts lay down new collagen, new blood vessels grow, and red, moist <b>granulation tissue</b> fills the wound from the base, while new epithelium spreads from the edges. Wound contraction plays a larger part in wounds that heal by secondary intention.</p><p>A <b>fibrin clot</b> forms during hemostasis, right after the injury. A scar that becomes <b>flatter and paler</b> is part of maturation, which starts around week 3 and lasts up to a year. <b>Warmth and swelling</b> in the first days reflect the inflammatory phase.</p>"
+      "rationale": "<p>In the <b>proliferative (granulation) phase</b>, from about days 5 to 7, fibroblasts lay down new collagen, new blood vessels grow, and red, moist <b>granulation tissue</b> fills the wound from the base, while new epithelium spreads from the edges. Wound contraction plays a larger part in wounds that heal by secondary intention.</p><p>A <b>fibrin clot</b> forms during hemostasis, right after the injury. A scar that becomes <b>flatter and paler</b> is part of maturation, which starts around week 3 and lasts up to a year. <b>Warmth and swelling</b> in the first days reflect the inflammatory phase.</p>",
+      "hidden": true
     },
     {
       "id": "is-26",
@@ -269,7 +296,8 @@
       "columns": ["Superficial", "Partial-thickness", "Full-thickness", "Fourth-degree"],
       "rows": ["Extends through the skin into muscle and bone", "Dry and leathery, does not blanch, with eschar present", "Moist, weeping blisters that are very painful and blanch with pressure", "Red, dry, and painful, with no blisters; blanches with pressure"],
       "answer": [3, 2, 1, 0],
-      "rationale": "<p>A <b>superficial</b> (first-degree) burn involves only the epidermis: it is red, dry, painful, and blanches, without blisters, and usually heals without scarring. A <b>partial-thickness</b> (second-degree) burn involves the epidermis and part of the dermis: superficial partial-thickness burns form <b>blisters</b>, weep, are very painful, and blanch, while deep partial-thickness burns are mottled and don't blanch. A <b>full-thickness</b> (third-degree) burn extends through the whole dermis, often into the subcutaneous tissue: it is dry and leathery, doesn't blanch, and may have <b>eschar</b> (dead dermis). A <b>fourth-degree</b> burn extends beyond the skin into muscle, nerves, tendons, or bone.</p>"
+      "rationale": "<p>A <b>superficial</b> (first-degree) burn involves only the epidermis: it is red, dry, painful, and blanches, without blisters, and usually heals without scarring. A <b>partial-thickness</b> (second-degree) burn involves the epidermis and part of the dermis: superficial partial-thickness burns form <b>blisters</b>, weep, are very painful, and blanch, while deep partial-thickness burns are mottled and don't blanch. A <b>full-thickness</b> (third-degree) burn extends through the whole dermis, often into the subcutaneous tissue: it is dry and leathery, doesn't blanch, and may have <b>eschar</b> (dead dermis). A <b>fourth-degree</b> burn extends beyond the skin into muscle, nerves, tendons, or bone.</p>",
+      "hidden": true
     },
     {
       "id": "is-27",
@@ -278,7 +306,8 @@
       "stem": "An adult client has partial-thickness burns over the entire right arm and the entire front of the trunk. Using the rule of nines, what percentage of the total body surface area (TBSA) is burned?",
       "answer": 27,
       "unit": "%",
-      "rationale": "<p>In the adult rule of nines, each <b>arm</b> (upper extremity) is <b>9%</b> and the <b>front of the trunk</b> is <b>18%</b>: 9% + 18% = <b>27%</b>.</p><p>The other values are 9% for the head and neck, 18% for the back of the trunk, 18% for each leg, and 1% for the perineum, which add up to 100%.</p>"
+      "rationale": "<p>In the adult rule of nines, each <b>arm</b> (upper extremity) is <b>9%</b> and the <b>front of the trunk</b> is <b>18%</b>: 9% + 18% = <b>27%</b>.</p><p>The other values are 9% for the head and neck, 18% for the back of the trunk, 18% for each leg, and 1% for the perineum, which add up to 100%.</p>",
+      "hidden": true
     },
     {
       "id": "is-28",
@@ -287,7 +316,8 @@
       "stem": "An adult client has burns over the entire left leg and the perineum. Using the rule of nines, what percentage of the total body surface area is burned?",
       "answer": 19,
       "unit": "%",
-      "rationale": "<p>In the adult rule of nines, each <b>leg</b> (lower extremity, front and back) is <b>18%</b> and the <b>perineum</b> is <b>1%</b>: 18% + 1% = <b>19%</b>.</p><p>Each arm is 9%, the head and neck are 9%, and the front and the back of the trunk are 18% each.</p>"
+      "rationale": "<p>In the adult rule of nines, each <b>leg</b> (lower extremity, front and back) is <b>18%</b> and the <b>perineum</b> is <b>1%</b>: 18% + 1% = <b>19%</b>.</p><p>Each arm is 9%, the head and neck are 9%, and the front and the back of the trunk are 18% each.</p>",
+      "hidden": true
     },
     {
       "id": "is-29",
@@ -296,7 +326,8 @@
       "stem": "An adult has several small burns scattered over both legs. The nurse estimates their total size using the client's palm. About how much of the total body surface area does the client's palm represent?",
       "options": ["1%", "5%", "9%", "18%"],
       "answer": 0,
-      "rationale": "<p>The client's own <b>palm is about 1%</b> of the total body surface area, which makes it useful for estimating small or scattered burns that are hard to measure with the rule of nines.</p><p><b>9%</b> is the value for one arm, or for the head and neck, in the rule of nines, and <b>18%</b> is the value for one leg, or for the front or the back of the trunk. <b>5%</b> is not a value in either method.</p>"
+      "rationale": "<p>The client's own <b>palm is about 1%</b> of the total body surface area, which makes it useful for estimating small or scattered burns that are hard to measure with the rule of nines.</p><p><b>9%</b> is the value for one arm, or for the head and neck, in the rule of nines, and <b>18%</b> is the value for one leg, or for the front or the back of the trunk. <b>5%</b> is not a value in either method.</p>",
+      "hidden": true
     },
     {
       "id": "is-30",
@@ -305,7 +336,8 @@
       "stem": "Which adult burn injury is classified as a major burn that is best managed in a burn center?",
       "options": ["A partial-thickness burn covering 10% of the total body surface area, on the back", "A partial-thickness burn covering 17% of the total body surface area, on the trunk", "A full-thickness burn covering 12% of the total body surface area", "A full-thickness burn covering 5% of the total body surface area, on the thigh"],
       "answer": 2,
-      "rationale": "<p>A <b>major</b> burn in an adult covers more than 25% of the TBSA, includes a <b>full-thickness burn of more than 10%</b>, or involves the face, perineum, or extremities. Major burns are best managed in a burn center.</p><p>A <b>partial-thickness burn of less than 15%</b> that doesn't involve the face or perineum is a <b>minor</b> burn, usually managed as an outpatient. A <b>partial-thickness burn of 15% to 20%</b>, or a <b>full-thickness burn of 2% to 10%</b>, is a <b>moderate</b> burn that needs admission but not always a burn center.</p>"
+      "rationale": "<p>A <b>major</b> burn in an adult covers more than 25% of the TBSA, includes a <b>full-thickness burn of more than 10%</b>, or involves the face, perineum, or extremities. Major burns are best managed in a burn center.</p><p>A <b>partial-thickness burn of less than 15%</b> that doesn't involve the face or perineum is a <b>minor</b> burn, usually managed as an outpatient. A <b>partial-thickness burn of 15% to 20%</b>, or a <b>full-thickness burn of 2% to 10%</b>, is a <b>moderate</b> burn that needs admission but not always a burn center.</p>",
+      "hidden": true
     },
     {
       "id": "is-31",
@@ -314,7 +346,8 @@
       "stem": "A nurse is caring for a client who has large burns. Which complications should the nurse monitor for?",
       "options": ["Increased sweating from the burned skin", "Improved sensation in the burned area", "Hypothermia", "Fluid loss and dehydration", "Infection and sepsis"],
       "answer": [2, 3, 4],
-      "rationale": "<p>Burns destroy the skin's barrier, so the body loses <b>fluid</b> through the wound, which can lead to dehydration, and microorganisms can enter, leading to <b>infection and sepsis</b>. Losing skin also impairs temperature regulation, so the client is at risk for <b>hypothermia</b>.</p><p>Deep burns destroy the sweat glands, so sweating does <b>not increase</b> in burned skin. Deep burns also destroy nerve endings, which <b>reduces</b> sensation in the area rather than improving it.</p>"
+      "rationale": "<p>Burns destroy the skin's barrier, so the body loses <b>fluid</b> through the wound, which can lead to dehydration, and microorganisms can enter, leading to <b>infection and sepsis</b>. Losing skin also impairs temperature regulation, so the client is at risk for <b>hypothermia</b>.</p><p>Deep burns destroy the sweat glands, so sweating does <b>not increase</b> in burned skin. Deep burns also destroy nerve endings, which <b>reduces</b> sensation in the area rather than improving it.</p>",
+      "hidden": true
     },
     {
       "id": "is-32",
@@ -323,7 +356,8 @@
       "stem": "A client arrives at the emergency department with a small burn on the hand after touching a live electrical wire. Which statement by the nurse is accurate?",
       "options": ["A small skin burn means the injury is minor.", "The damage under the skin can be much more extensive than the burn on the surface.", "Electrical injuries damage only the skin where the wire touched it.", "Electrical burns are the most common reason for burn center admission."],
       "answer": 1,
-      "rationale": "<p>Electrical injuries can cause <b>deep tissue damage and complications</b> in many body systems, so a small mark on the skin doesn't show the full injury. How severe it is depends on the voltage, the type of current, the body's resistance, and how long the contact lasted.</p><p>A <b>small skin burn doesn't mean</b> the injury is minor, and the damage is <b>not limited to the skin</b>. <b>Thermal</b> burns, from hot surfaces, liquids, steam, or flame, are the most common cause of burn center admission (about 86%), not electrical burns.</p>"
+      "rationale": "<p>Electrical injuries can cause <b>deep tissue damage and complications</b> in many body systems, so a small mark on the skin doesn't show the full injury. How severe it is depends on the voltage, the type of current, the body's resistance, and how long the contact lasted.</p><p>A <b>small skin burn doesn't mean</b> the injury is minor, and the damage is <b>not limited to the skin</b>. <b>Thermal</b> burns, from hot surfaces, liquids, steam, or flame, are the most common cause of burn center admission (about 86%), not electrical burns.</p>",
+      "hidden": true
     },
     {
       "id": "is-33",
@@ -334,7 +368,8 @@
       "columns": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
       "rows": ["A blister or shallow open sore that does not go through the full thickness of the skin", "A deep crater that reaches muscle, tendon, or bone", "Intact skin with a reddened area that does not blanch when pressed", "A crater that extends below the skin into the fatty tissue"],
       "answer": [1, 3, 0, 2],
-      "rationale": "<p>A <b>stage 1</b> pressure injury is intact skin with redness that <b>doesn't blanch</b>; in darker skin, the area may look red, purple, or blue and be harder to see, and it may feel warm or cool and firm. <b>Stage 2</b> is a blister or shallow open sore that doesn't go through the full thickness of the skin. At <b>stage 3</b>, the sore becomes a crater below the skin surface, into the fat. At <b>stage 4</b>, the crater deepens to muscle, bone, tendon, or joint.</p>"
+      "rationale": "<p>A <b>stage 1</b> pressure injury is intact skin with redness that <b>doesn't blanch</b>; in darker skin, the area may look red, purple, or blue and be harder to see, and it may feel warm or cool and firm. <b>Stage 2</b> is a blister or shallow open sore that doesn't go through the full thickness of the skin. At <b>stage 3</b>, the sore becomes a crater below the skin surface, into the fat. At <b>stage 4</b>, the crater deepens to muscle, bone, tendon, or joint.</p>",
+      "hidden": true
     },
     {
       "id": "is-34",
@@ -343,7 +378,8 @@
       "stem": "A nurse is completing a pressure injury risk assessment. Which client factors increase the risk?",
       "options": ["Skin that is often damp from incontinence", "Walking in the hallway several times a day", "Staying in one position for long periods", "Drinking enough fluids and eating protein-rich foods", "Decreased sensation in the legs", "Eating less than half of each meal"],
       "answer": [0, 2, 4, 5],
-      "rationale": "<p>Pressure injuries form when prolonged pressure reduces blood flow to tissue, especially over bony prominences. <b>Immobility</b> keeps pressure on the same areas, <b>moisture</b> softens the skin and makes it easier to damage, <b>poor nutrition</b> weakens the skin and slows healing, and <b>decreased sensation</b> means the client doesn't feel the discomfort that normally prompts a change of position.</p><p><b>Walking several times a day</b> relieves pressure, and <b>good hydration and protein intake</b> support skin integrity, so both lower the risk.</p>"
+      "rationale": "<p>Pressure injuries form when prolonged pressure reduces blood flow to tissue, especially over bony prominences. <b>Immobility</b> keeps pressure on the same areas, <b>moisture</b> softens the skin and makes it easier to damage, <b>poor nutrition</b> weakens the skin and slows healing, and <b>decreased sensation</b> means the client doesn't feel the discomfort that normally prompts a change of position.</p><p><b>Walking several times a day</b> relieves pressure, and <b>good hydration and protein intake</b> support skin integrity, so both lower the risk.</p>",
+      "hidden": true
     },
     {
       "id": "is-35",
@@ -353,7 +389,8 @@
       "stem": "Click to highlight the findings in the nurses' note that increase the client's risk for pressure injuries.",
       "passage": "Client is [[alert and oriented]]. Reports right hip pain and [[prefers to stay on the back, because turning hurts]]. [[Has eaten about one-quarter of each meal for 2 days]]. [[Was incontinent of urine overnight; the sheets were damp at 0600]]. [[Skin over the sacrum is intact]]. Client has [[type 2 diabetes mellitus]] and [[reports decreased feeling in both feet]].",
       "answer": [1, 2, 3, 5, 6],
-      "rationale": "<p>The risk factors are <b>staying in one position</b> (immobility from pain), <b>eating about one-quarter of meals</b> (poor nutrition), <b>damp sheets after incontinence</b> (moisture), <b>diabetes</b> (which impairs circulation and healing), and <b>decreased feeling in the feet</b> (the client may not feel the discomfort of pressure).</p><p>Being <b>alert and oriented</b> isn't a risk factor: the client can report discomfort and take part in care. <b>Intact skin over the sacrum</b> is a normal finding to keep checking, not a risk factor.</p>"
+      "rationale": "<p>The risk factors are <b>staying in one position</b> (immobility from pain), <b>eating about one-quarter of meals</b> (poor nutrition), <b>damp sheets after incontinence</b> (moisture), <b>diabetes</b> (which impairs circulation and healing), and <b>decreased feeling in the feet</b> (the client may not feel the discomfort of pressure).</p><p>Being <b>alert and oriented</b> isn't a risk factor: the client can report discomfort and take part in care. <b>Intact skin over the sacrum</b> is a normal finding to keep checking, not a risk factor.</p>",
+      "hidden": true
     },
     {
       "id": "is-36",
@@ -365,7 +402,8 @@
       "columns": ["Indicated", "Not indicated"],
       "rows": ["Reposition the client at least every 2 hours", "Place a pillow under the calves so the heels float off the bed", "Massage the reddened area on the right heel", "Clean and dry the skin promptly after each incontinence episode", "Encourage protein-rich foods and fluids", "Let the client stay on the back to avoid hip pain"],
       "answer": [0, 0, 1, 0, 0, 1],
-      "rationale": "<p><b>Repositioning</b> at least every 2 hours and <b>floating the heels</b> on a pillow under the calves relieve pressure on the skin. <b>Cleaning and drying the skin</b> after incontinence removes moisture that softens the skin. <b>Protein and fluids</b> support skin integrity and healing, and the client has been eating and drinking little.</p><p><b>Massaging a reddened area</b> over a bony prominence is not indicated, because rubbing can further damage the fragile tissue. <b>Letting the client stay on the back</b> keeps pressure on the heels and sacrum; the nurse should manage the pain, for example by offering prescribed pain medication before turning, and still reposition the client.</p>"
+      "rationale": "<p><b>Repositioning</b> at least every 2 hours and <b>floating the heels</b> on a pillow under the calves relieve pressure on the skin. <b>Cleaning and drying the skin</b> after incontinence removes moisture that softens the skin. <b>Protein and fluids</b> support skin integrity and healing, and the client has been eating and drinking little.</p><p><b>Massaging a reddened area</b> over a bony prominence is not indicated, because rubbing can further damage the fragile tissue. <b>Letting the client stay on the back</b> keeps pressure on the heels and sacrum; the nurse should manage the pain, for example by offering prescribed pain medication before turning, and still reposition the client.</p>",
+      "hidden": true
     },
     {
       "id": "is-37",
@@ -376,7 +414,8 @@
       "condition": {"options": ["Cellulitis of the heel", "Stage 1 pressure injury", "Full-thickness burn", "Stage 2 pressure injury"], "answer": 1},
       "actions": {"options": ["Keep the client on the back to limit hip pain", "Encourage protein-rich foods and fluids", "Apply a heating pad to the heel", "Massage the heel to restore blood flow", "Relieve pressure on the heel by repositioning and floating it"], "answer": [1, 4], "select": 2},
       "parameters": {"options": ["Color and blanching of the area on the right heel", "Visual acuity", "Food and fluid intake", "Hearing in each ear", "Bowel sounds"], "answer": [0, 2], "select": 2},
-      "rationale": "<p>Intact skin with a <b>dark red area that doesn't blanch</b> over a bony prominence is a <b>stage 1 pressure injury</b>. It isn't stage 2, because there is no blister or open area. <b>Cellulitis</b> would show spreading redness, warmth, swelling, and pain, often with a fever and a raised white blood cell count, which the client doesn't have. There is no history of a <b>burn</b>.</p><p>The nurse should <b>relieve pressure</b> on the heel by repositioning the client and floating the heel, and <b>support nutrition and hydration</b>, since the client is eating and drinking little and the albumin is low. <b>Massage</b> can further damage the tissue, a <b>heating pad</b> can burn skin with reduced sensation, and <b>staying on the back</b> keeps pressure on the heels.</p><p>To see whether the plan is working, the nurse monitors the <b>color and blanching</b> of the heel and the client's <b>food and fluid intake</b>. Visual acuity, bowel sounds, and hearing don't show the response to this care.</p>"
+      "rationale": "<p>Intact skin with a <b>dark red area that doesn't blanch</b> over a bony prominence is a <b>stage 1 pressure injury</b>. It isn't stage 2, because there is no blister or open area. <b>Cellulitis</b> would show spreading redness, warmth, swelling, and pain, often with a fever and a raised white blood cell count, which the client doesn't have. There is no history of a <b>burn</b>.</p><p>The nurse should <b>relieve pressure</b> on the heel by repositioning the client and floating the heel, and <b>support nutrition and hydration</b>, since the client is eating and drinking little and the albumin is low. <b>Massage</b> can further damage the tissue, a <b>heating pad</b> can burn skin with reduced sensation, and <b>staying on the back</b> keeps pressure on the heels.</p><p>To see whether the plan is working, the nurse monitors the <b>color and blanching</b> of the heel and the client's <b>food and fluid intake</b>. Visual acuity, bowel sounds, and hearing don't show the response to this care.</p>",
+      "hidden": true
     },
     {
       "id": "is-38",
@@ -386,7 +425,8 @@
       "stem": "At 1600, the nurse finds that the area on the right heel has opened into a shallow sore. The redness around it has spread, the skin is warmer, there is cloudy yellow drainage, and the client's temperature is 38.4°&nbsp;C (101.1°&nbsp;F). Which action should the nurse take first?",
       "options": ["Record the findings and recheck the heel at the end of the shift.", "Cover the heel and wait to see whether the fever goes away.", "Report the wound changes and the fever to the provider.", "Ask the client to walk to improve circulation to the heel."],
       "answer": 2,
-      "rationale": "<p>Spreading redness, more warmth, <b>cloudy drainage</b>, and a <b>new fever</b> suggest that the wound has become infected, and the open sore means the injury has progressed to stage 2. These are significant changes, and the nurse should <b>report them promptly</b> to the provider, using a structured format such as SBAR, so treatment can begin.</p><p><b>Waiting until the end of the shift</b> or <b>waiting for the fever to go away</b> delays care for a possible infection. Covering the wound is part of care, but it doesn't replace reporting the change. Asking a client who had hip surgery 3 days ago to <b>walk</b> on a painful heel doesn't treat the infection and may be unsafe.</p>"
+      "rationale": "<p>Spreading redness, more warmth, <b>cloudy drainage</b>, and a <b>new fever</b> suggest that the wound has become infected, and the open sore means the injury has progressed to stage 2. These are significant changes, and the nurse should <b>report them promptly</b> to the provider, using a structured format such as SBAR, so treatment can begin.</p><p><b>Waiting until the end of the shift</b> or <b>waiting for the fever to go away</b> delays care for a possible infection. Covering the wound is part of care, but it doesn't replace reporting the change. Asking a client who had hip surgery 3 days ago to <b>walk</b> on a painful heel doesn't treat the infection and may be unsafe.</p>",
+      "hidden": true
     },
     {
       "id": "is-39",
@@ -395,12 +435,13 @@
       "stem": "A nurse notes a shiny, pink, pearly bump with tiny visible blood vessels on a client's nose. The nurse recognizes this as a common sign of which skin cancer?",
       "options": ["Melanoma", "Squamous cell carcinoma", "Seborrheic dermatitis", "Basal cell carcinoma"],
       "answer": 3,
-      "rationale": "<p><b>Basal cell carcinoma</b>, the most common skin cancer, typically looks like a <b>shiny, pink or skin-colored bump with telangiectasia</b> (small visible blood vessels). It rarely spreads, but it can destroy the tissue around it, especially on the face and ears, so early treatment matters.</p><p><b>Melanoma</b>, the most lethal skin cancer, arises from melanocytes and usually shows the ABCDE changes in a pigmented spot. <b>Squamous cell carcinoma</b>, the second most common, appears as a scaly, red or darker bump or patch. <b>Seborrheic dermatitis</b> isn't a cancer: it causes red patches with a yellowish scale, such as dandruff.</p>"
+      "rationale": "<p><b>Basal cell carcinoma</b>, the most common skin cancer, typically looks like a <b>shiny, pink or skin-colored bump with telangiectasia</b> (small visible blood vessels). It rarely spreads, but it can destroy the tissue around it, especially on the face and ears, so early treatment matters.</p><p><b>Melanoma</b>, the most lethal skin cancer, arises from melanocytes and usually shows the ABCDE changes in a pigmented spot. <b>Squamous cell carcinoma</b>, the second most common, appears as a scaly, red or darker bump or patch. <b>Seborrheic dermatitis</b> isn't a cancer: it causes red patches with a yellowish scale, such as dandruff.</p>",
+      "hidden": true
     },
     {
       "id": "is-40",
       "type": "sata",
-      "topic": "Integumentary disorders",
+      "topic": "Skin interventions",
       "stem": "A client asks a nurse which changes in a mole should be checked by a provider. Which findings should the nurse include?",
       "options": ["The mole is round, evenly brown, and 3 mm across.", "The mole has several shades of brown and black.", "The mole has changed in size, shape, or color.", "The mole is larger than 6 mm across.", "One half of the mole doesn't match the other half.", "The border is ragged, notched, or blurred."],
       "answer": [1, 2, 3, 4, 5],
@@ -415,12 +456,13 @@
       "columns": ["Virus", "Fungus", "Mite or louse"],
       "rows": ["Grouped blisters on a red base on the lip (a cold sore)", "A painful, blistering rash in a band on one side of the body, in a client who had chickenpox as a child", "Intensely itchy papules that are worse at night and spread by skin-to-skin contact", "Cracked, itchy skin with small blisters between the toes"],
       "answer": [0, 0, 2, 1],
-      "rationale": "<p>A <b>cold sore</b> is caused by <b>herpes simplex virus type 1</b>, which stays in the body and can reactivate. <b>Shingles</b> (herpes zoster) is caused by the <b>varicella-zoster virus</b>, which lies dormant in the sensory ganglia after chickenpox and can reactivate years later, causing a painful rash along one dermatome. <b>Scabies</b> is caused by a <b>mite</b> that burrows into the skin and causes intense itching, worse at night; it spreads by close skin-to-skin contact. <b>Athlete's foot</b> (tinea pedis) is a <b>fungal</b> infection.</p>"
+      "rationale": "<p>A <b>cold sore</b> is caused by <b>herpes simplex virus type 1</b>, which stays in the body and can reactivate. <b>Shingles</b> (herpes zoster) is caused by the <b>varicella-zoster virus</b>, which lies dormant in the sensory ganglia after chickenpox and can reactivate years later, causing a painful rash along one dermatome. <b>Scabies</b> is caused by a <b>mite</b> that burrows into the skin and causes intense itching, worse at night; it spreads by close skin-to-skin contact. <b>Athlete's foot</b> (tinea pedis) is a <b>fungal</b> infection.</p>",
+      "hidden": true
     },
     {
       "id": "is-42",
       "type": "mc",
-      "topic": "Integumentary disorders",
+      "topic": "Common skin findings",
       "stem": "A client has itchy, red, oozing patches on both forearms after clearing poison ivy from a yard. Which teaching is the most important part of the client's treatment?",
       "options": ["Avoid touching the plant or substance that caused the reaction.", "Cover the patches with a tight bandage that doesn't let air in.", "Expect the rash itself to spread to other people by touch.", "Apply an antifungal cream to the patches twice a day."],
       "answer": 0,
@@ -429,7 +471,7 @@
     {
       "id": "is-43",
       "type": "dragdrop",
-      "topic": "Integumentary disorders",
+      "topic": "Skin assessment",
       "stem": "A nurse is teaching a client about skin changes during pregnancy.",
       "text": "Pink to silvery lines on the abdomen from rapid stretching of the skin are called {{0}}. Brown patches on the cheeks and forehead that darken with sun exposure are called {{1}}. A dark line down the middle of the abdomen is called the {{2}}.",
       "tokens": ["vitiligo", "linea nigra", "striae gravidarum", "acanthosis nigricans", "melasma"],
@@ -443,7 +485,8 @@
       "stem": "A client with cirrhosis of the liver has pitting edema in both legs. Which mechanism explains the edema?",
       "options": ["The capillaries become more permeable, as they do after a severe burn.", "The lymphatic vessels are blocked, so fluid can't drain from the tissues.", "Less albumin is made, so oncotic pressure falls and fluid leaves the vessels.", "A clot in a deep leg vein raises the pressure in that leg's capillaries."],
       "answer": 2,
-      "rationale": "<p>The liver makes <b>albumin</b>, the main protein that keeps fluid in the blood vessels (oncotic pressure). In liver failure or cirrhosis, <b>less protein is made</b>, oncotic pressure falls, and fluid moves out of the capillaries into the tissues, causing edema in both legs.</p><p><b>Increased capillary permeability</b> causes edema with burns, insect bites, cellulitis, and allergic reactions. <b>Lymphatic obstruction</b> occurs with conditions such as cancer, surgery, or filariasis. A <b>deep vein thrombosis</b> raises the hydrostatic pressure in one leg's capillaries, so the edema is usually on one side only.</p>"
+      "rationale": "<p>The liver makes <b>albumin</b>, the main protein that keeps fluid in the blood vessels (oncotic pressure). In liver failure or cirrhosis, <b>less protein is made</b>, oncotic pressure falls, and fluid moves out of the capillaries into the tissues, causing edema in both legs.</p><p><b>Increased capillary permeability</b> causes edema with burns, insect bites, cellulitis, and allergic reactions. <b>Lymphatic obstruction</b> occurs with conditions such as cancer, surgery, or filariasis. A <b>deep vein thrombosis</b> raises the hydrostatic pressure in one leg's capillaries, so the edema is usually on one side only.</p>",
+      "hidden": true
     },
     {
       "id": "is-45",
@@ -452,7 +495,8 @@
       "stem": "A nurse is teaching a client who is starting a medication given by transdermal patch. Which advantages of the patch should the nurse include?",
       "options": ["It avoids first-pass metabolism by the liver.", "It delivers the medication steadily over time.", "It can deliver large doses of any medication.", "It works best when applied over irritated skin.", "It bypasses the stomach and intestines."],
       "answer": [0, 1, 4],
-      "rationale": "<p>A transdermal patch gives <b>continuous, steady delivery</b> through the skin into the bloodstream. It <b>bypasses the gastrointestinal tract</b>, which avoids stomach irritation, and it <b>avoids the first-pass metabolism</b> in the liver that affects oral drugs. Patches can also make it easier for clients to take their medication as prescribed.</p><p>Patches go on <b>healthy, intact skin</b>, because irritated or damaged skin changes how much drug is absorbed. Only drugs with small molecules and a <b>low daily dose</b> work in a patch, so a patch can't deliver large doses of any medication.</p>"
+      "rationale": "<p>A transdermal patch gives <b>continuous, steady delivery</b> through the skin into the bloodstream. It <b>bypasses the gastrointestinal tract</b>, which avoids stomach irritation, and it <b>avoids the first-pass metabolism</b> in the liver that affects oral drugs. Patches can also make it easier for clients to take their medication as prescribed.</p><p>Patches go on <b>healthy, intact skin</b>, because irritated or damaged skin changes how much drug is absorbed. Only drugs with small molecules and a <b>low daily dose</b> work in a patch, so a patch can't deliver large doses of any medication.</p>",
+      "hidden": true
     },
     {
       "id": "is-46",
@@ -461,12 +505,13 @@
       "stem": "Which instruction should a nurse give a client about applying a transdermal patch?",
       "options": ["Apply a moisturizing lotion first so the patch sticks better.", "Wash the site with plain water, dry it well, and rotate sites.", "Put each new patch on the same spot so the dose stays the same.", "Place the patch over an area of irritated skin to soothe it."],
       "answer": 1,
-      "rationale": "<p>The client should clean the site with <b>plain water</b>, pat it <b>completely dry</b>, and <b>rotate sites</b> with each new patch to avoid skin irritation. Some patches are worn for part of a day, and others for several days, such as a fentanyl patch worn for 72 hours.</p><p><b>Soaps, alcohol, lotions, and oils</b> should not be used just before applying a patch, because they can keep it from sticking and change absorption. Using the <b>same spot</b> every time irritates the skin. A patch shouldn't go on <b>irritated or damaged skin</b>, which changes how much medication is absorbed.</p>"
+      "rationale": "<p>The client should clean the site with <b>plain water</b>, pat it <b>completely dry</b>, and <b>rotate sites</b> with each new patch to avoid skin irritation. Some patches are worn for part of a day, and others for several days, such as a fentanyl patch worn for 72 hours.</p><p><b>Soaps, alcohol, lotions, and oils</b> should not be used just before applying a patch, because they can keep it from sticking and change absorption. Using the <b>same spot</b> every time irritates the skin. A patch shouldn't go on <b>irritated or damaged skin</b>, which changes how much medication is absorbed.</p>",
+      "hidden": true
     },
     {
       "id": "is-47",
       "type": "matrix",
-      "topic": "Integumentary assessment",
+      "topic": "Skin assessment",
       "stem": "A nurse is performing a skin assessment. For each finding, click to specify the technique the nurse uses to assess it.",
       "rowHeader": "Finding",
       "columns": ["Inspection", "Palpation"],
@@ -483,7 +528,8 @@
       "columns": ["Contact", "Droplet", "Airborne"],
       "rows": ["A client with a draining wound infected with MRSA", "A client with influenza", "A client with active pulmonary tuberculosis", "A client with scabies"],
       "answer": [0, 1, 2, 0],
-      "rationale": "<p><b>Contact precautions</b> (gloves and a gown on entering the room, and hand hygiene on leaving) are used for infections spread by direct or indirect contact, such as an <b>MRSA wound</b> and <b>scabies</b>. <b>Droplet precautions</b> (a surgical mask within 3 to 6 feet of the client) are used for infections spread by large respiratory droplets, such as <b>influenza</b>. <b>Airborne precautions</b> (a negative-pressure room and an N95 respirator) are used for infections spread by tiny particles that stay in the air, such as <b>tuberculosis</b>.</p>"
+      "rationale": "<p><b>Contact precautions</b> (gloves and a gown on entering the room, and hand hygiene on leaving) are used for infections spread by direct or indirect contact, such as an <b>MRSA wound</b> and <b>scabies</b>. <b>Droplet precautions</b> (a surgical mask within 3 to 6 feet of the client) are used for infections spread by large respiratory droplets, such as <b>influenza</b>. <b>Airborne precautions</b> (a negative-pressure room and an N95 respirator) are used for infections spread by tiny particles that stay in the air, such as <b>tuberculosis</b>.</p>",
+      "hidden": true
     },
     {
       "id": "is-49",
@@ -492,7 +538,8 @@
       "stem": "A nurse is about to assess a client's skin, including a draining wound. Which actions follow standard precautions?",
       "options": ["Wear gloves only if the client looks ill.", "Wear gloves when touching the wound or its drainage.", "Perform hand hygiene before and after the assessment.", "Keep the same gloves on to assess the next client.", "Discard the soiled dressing in the proper container."],
       "answer": [1, 2, 4],
-      "rationale": "<p>Standard precautions apply to every client: <b>hand hygiene</b> before and after contact, <b>gloves</b> when touching broken skin, mucous membranes, or body fluids such as wound drainage, and <b>proper disposal</b> of contaminated materials. A gown is added if drainage could splash.</p><p>Gloves are chosen for the <b>task</b> (contact with drainage or broken skin), not for how ill the client looks. Gloves are never <b>kept on</b> between clients, because that carries microorganisms from one client to the next.</p>"
+      "rationale": "<p>Standard precautions apply to every client: <b>hand hygiene</b> before and after contact, <b>gloves</b> when touching broken skin, mucous membranes, or body fluids such as wound drainage, and <b>proper disposal</b> of contaminated materials. A gown is added if drainage could splash.</p><p>Gloves are chosen for the <b>task</b> (contact with drainage or broken skin), not for how ill the client looks. Gloves are never <b>kept on</b> between clients, because that carries microorganisms from one client to the next.</p>",
+      "hidden": true
     },
     {
       "id": "is-50",
@@ -501,7 +548,383 @@
       "stem": "A client who prefers to speak Haitian Creole is having a skin assessment, and the nurse needs to ask about a new rash and itching. Which action is best?",
       "options": ["Use a qualified medical interpreter for the health history.", "Ask the client's teenage daughter to interpret.", "Speak slowly and loudly in English.", "Skip the history and do only the physical examination."],
       "answer": 0,
-      "rationale": "<p>A <b>qualified medical interpreter</b> makes sure the client understands the questions and can describe the symptoms accurately and privately. That supports an accurate assessment, the client's own decisions about care, and the client's dignity.</p><p>A <b>family member</b>, especially a child, may not translate medical terms correctly and limits the client's privacy. <b>Speaking slowly and loudly</b> in English doesn't overcome a language barrier. <b>Skipping the history</b> leaves out key information, such as when the rash started and what makes it itch.</p>"
+      "rationale": "<p>A <b>qualified medical interpreter</b> makes sure the client understands the questions and can describe the symptoms accurately and privately. That supports an accurate assessment, the client's own decisions about care, and the client's dignity.</p><p>A <b>family member</b>, especially a child, may not translate medical terms correctly and limits the client's privacy. <b>Speaking slowly and loudly</b> in English doesn't overcome a language barrier. <b>Skipping the history</b> leaves out key information, such as when the rash started and what makes it itch.</p>",
+      "hidden": true
+    },
+    {
+      "id": "is-51",
+      "type": "matrix",
+      "topic": "Skin cells",
+      "stem": "A nurse is reviewing the cells of the epidermis. For each description, click to specify the cell it describes.",
+      "rowHeader": "Description",
+      "columns": ["Keratinocytes", "Melanocytes", "Merkel cells"],
+      "rows": ["Make keratin, which forms a protective barrier", "Make a pigment that absorbs ultraviolet light", "Act as touch receptors for light pressure, shapes, and edges", "Make up about 90% of the cells of the epidermis", "Protect the DNA in skin cells from sun damage"],
+      "answer": [0, 1, 2, 0, 1],
+      "rationale": "<p><b>Keratinocytes</b> make up about <b>90% of the epidermis</b>. They are made in the basal layer and produce <b>keratin</b>, which forms the protective <b>barrier</b> against heat, ultraviolet light, water loss, and microbes. <b>Melanocytes</b>, in the basal layer, make <b>melanin</b>, the pigment that <b>absorbs ultraviolet light</b> and protects the DNA of skin cells. <b>Merkel cells</b>, also in the basal layer and most numerous in the fingertips, are <b>touch receptors</b> for light pressure, shapes, and edges.</p><p><b>Takeaway:</b> Keratinocytes keep things out, melanocytes make color, and Merkel cells mark touch.</p>"
+    },
+    {
+      "id": "is-52",
+      "type": "mc",
+      "topic": "Skin cells",
+      "stem": "A client has a large abrasion that has scraped away the epidermis on the forearm. Which of the following risks does the loss of the epidermis create?",
+      "options": ["Infection and fluid loss, because the keratin barrier is gone", "Numbness of the area, because the epidermis holds most of the touch receptors", "Low blood pressure, because the epidermis contains the skin's blood vessels", "Darker skin at the site, because more melanin is made to replace the barrier"],
+      "answer": 0,
+      "rationale": "<p>The epidermis is the body's <b>first line of defense</b>. Its keratinocytes make <b>keratin</b>, which forms a <b>barrier</b> against microbes and keeps water in. When the epidermis is scraped away, bacteria can enter and fluid can escape, so the nurse watches for <b>infection</b> and keeps the wound clean and covered as prescribed.</p><p>Most touch receptors aren't in the epidermis: Meissner and Pacinian corpuscles and Ruffini endings lie deeper, so the area doesn't go numb. The epidermis has <b>no blood vessels</b> of its own, so losing it doesn't cause low blood pressure. And the skin doesn't make extra melanin to replace the barrier.</p><p><b>Takeaway:</b> Losing the epidermis means losing the keratin barrier: watch for infection and fluid loss.</p>"
+    },
+    {
+      "id": "is-53",
+      "type": "mc",
+      "topic": "Common skin findings",
+      "stem": "The parent of a child with eczema (atopic dermatitis) asks how to help the child's dry, itchy, red patches. Which of the following responses by the nurse is best?",
+      "options": ["“Bathe your child twice a day in hot water to clear the patches.”", "“Moisturize the skin often, and avoid things that make it flare.”", "“Keep the patches uncovered and dry so that they can air out.”", "“Use an antibiotic ointment on the patches until they clear.”"],
+      "answer": 1,
+      "rationale": "<p><b>Eczema (atopic dermatitis)</b> is a <b>chronic</b> condition of <b>dry, itchy, red, inflamed</b> skin. Care centers on <b>moisturizing</b> often and <b>avoiding triggers</b>, such as harsh soaps or certain fabrics, with antihistamines and topical steroids as prescribed for itching and inflammation.</p><p>Hot water and frequent baths dry the skin further. Leaving the patches to “air out” without moisturizer makes the dryness worse. Eczema isn't a bacterial infection, so an antibiotic ointment isn't the treatment unless an infection develops.</p><p><b>Takeaway:</b> For eczema, moisturize, avoid triggers, and use antihistamines and topical steroids as prescribed.</p>"
+    },
+    {
+      "id": "is-54",
+      "type": "matrix",
+      "topic": "Mechanoreceptors",
+      "stem": "A nurse is reviewing where the mechanoreceptors of the skin are found. For each receptor, click to specify its location.",
+      "rowHeader": "Receptor",
+      "columns": ["Fingertips and the basal layer of the epidermis", "Dermal papillae of hairless (glabrous) skin", "Dermis, joints, and fascia", "Deep in the palms, ligaments, and joints"],
+      "rows": ["Ruffini endings", "Merkel discs", "Pacinian corpuscles", "Meissner corpuscles"],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p><b>Merkel discs</b> sit in the <b>basal layer</b> of the epidermis, especially in the <b>fingertips</b>, in both hairy and hairless skin. <b>Meissner corpuscles</b> sit in the <b>dermal papillae</b> of hairless (glabrous) skin, such as the fingertips and palms. <b>Ruffini endings</b> are in the <b>dermis, joints, and fascia</b>, where they sense stretch. <b>Pacinian corpuscles</b> lie <b>deep</b>, in the palms and fingertips and in <b>ligaments and joints</b>.</p><p><b>Takeaway:</b> Merkel and Meissner are near the surface (basal layer, dermal papillae); Ruffini and Pacinian reach deeper, down to the joints.</p>"
+    },
+    {
+      "id": "is-55",
+      "type": "mc",
+      "topic": "Mechanoreceptors",
+      "stem": "A client holds an electric toothbrush and feels its fast, buzzing vibration in the palm. Which of the following receptors mainly detects this sensation?",
+      "options": ["Merkel discs", "Ruffini endings", "Pacinian corpuscles", "Meissner corpuscles"],
+      "answer": 2,
+      "rationale": "<p><b>Pacinian corpuscles</b>, deep in the palms, fingertips, ligaments, and joints, detect <b>high-frequency vibration</b> and deep pressure, such as the fast buzz of an electric toothbrush.</p><p><b>Meissner corpuscles</b> detect <b>low-frequency</b> vibration and fine touch, so they respond to a slower flutter, not a fast buzz. <b>Merkel discs</b> detect steady pressure, shapes, and edges, and <b>Ruffini endings</b> detect stretch of the skin and changes in joint angle.</p><p><b>Takeaway:</b> High-frequency vibration is Pacinian; low-frequency vibration and fine touch are Meissner.</p>"
+    },
+    {
+      "id": "is-56",
+      "type": "mc",
+      "topic": "Mechanoreceptors",
+      "stem": "A nurse gently pulls the skin on the back of a client's hand to one side, stretching it. Which of the following receptors detects this stretch?",
+      "options": ["Meissner corpuscles", "Merkel discs", "Pacinian corpuscles", "Ruffini endings"],
+      "answer": 3,
+      "rationale": "<p><b>Ruffini endings</b>, in the dermis, joints, and fascia, detect <b>stretch</b> of the skin, slipping and sliding of objects across the skin, and changes in <b>joint angle</b>.</p><p><b>Meissner corpuscles</b> detect fine touch and low-frequency vibration, <b>Merkel discs</b> detect steady pressure, edges, and shapes, and <b>Pacinian corpuscles</b> detect high-frequency vibration and deep pressure.</p><p><b>Takeaway:</b> Ruffini endings sense stretch, like a rubber band.</p>"
+    },
+    {
+      "id": "is-57",
+      "type": "mc",
+      "topic": "Mechanoreceptors",
+      "stem": "During a sensory assessment, a client feels the slow flutter of a low-frequency vibration on a fingertip but can't feel a high-frequency vibration at the same spot. Which of the following conclusions is most likely?",
+      "options": ["The Merkel discs are working, but the Ruffini endings are not.", "The Ruffini endings are working, but the Merkel discs are not.", "The Pacinian corpuscles are working, but the Meissner corpuscles are not.", "The Meissner corpuscles are working, but the Pacinian corpuscles are not."],
+      "answer": 3,
+      "rationale": "<p>The two vibration receptors split the work. <b>Meissner corpuscles</b> detect <b>low-frequency</b> vibration (and fine touch), so feeling the slow flutter shows that they are working. <b>Pacinian corpuscles</b> detect <b>high-frequency</b> vibration, so not feeling the fast vibration points to a problem with them or with the nerves that carry their signals.</p><p>Reversing the two (Pacinian working, Meissner not) is the common swap. Merkel discs and Ruffini endings sense pressure, edges, and stretch, not vibration, so this test doesn't show how they are working.</p><p><b>Takeaway:</b> Meissner means low-frequency vibration; Pacinian means high-frequency vibration.</p>"
+    },
+    {
+      "id": "is-58",
+      "type": "emr",
+      "topic": "Mechanoreceptors",
+      "stem": "A nurse is reviewing the mechanoreceptors that are found in and around the joints. Which 2 receptors are found in the joints?",
+      "options": ["Ruffini endings", "Meissner corpuscles", "Pacinian corpuscles", "Merkel discs", "Langerhans cells"],
+      "answer": [0, 2],
+      "select": 2,
+      "rationale": "<p><b>Ruffini endings</b> are found in the dermis, <b>joints</b>, and fascia, where they sense stretch and changes in joint angle. <b>Pacinian corpuscles</b> lie deep in the palms and fingertips and in <b>ligaments and joints</b>, where they sense high-frequency vibration and pressure.</p><p><b>Meissner corpuscles</b> sit in the dermal papillae of hairless skin, and <b>Merkel discs</b> sit in the basal layer of the epidermis, both near the surface. <b>Langerhans cells</b> are immune cells of the epidermis, not mechanoreceptors.</p><p><b>Takeaway:</b> The receptors that reach the joints are the deep ones: Ruffini and Pacinian.</p>"
+    },
+    {
+      "id": "is-59",
+      "type": "mc",
+      "topic": "Skin assessment",
+      "stem": "A nurse is assessing a client who has dark skin and a low oxygen saturation. Which of the following describes how cyanosis is most likely to look on this client's skin?",
+      "options": ["Ashen gray", "Bright red", "Yellow-green", "Deep purple-black"],
+      "answer": 0,
+      "rationale": "<p>On dark skin, the bluish color of cyanosis is hard to see, and the skin tends to look <b>ashen gray</b>. The nurse checks areas with less pigment, such as the <b>oral mucosa, conjunctiva, palms, soles, and nail beds</b>, compares them with the client's baseline, and confirms with the oxygen saturation.</p><p>Bright red isn't a sign of low oxygen. Yellow-green suggests jaundice or a bruise that is healing, and purple-black patches suggest bruising, not cyanosis.</p><p><b>Takeaway:</b> Cyanosis or pallor on dark skin looks ashen gray; check the mucosa, conjunctiva, palms, soles, and nail beds.</p>"
+    },
+    {
+      "id": "is-60",
+      "type": "mc",
+      "topic": "Skin assessment",
+      "stem": "A nurse suspects inflammation over a client's shin, but the client's dark skin makes redness hard to see. Which of the following actions should the nurse take?",
+      "options": ["Document that no inflammation is present, because no redness is seen.", "Palpate for warmth, swelling, and firmness, and compare with the other leg.", "Press on the area firmly to see whether the skin turns lighter or white.", "Ask the client to raise the leg so that the redness shows more clearly."],
+      "answer": 1,
+      "rationale": "<p>On darker skin, redness from inflammation may look <b>purple or darker</b>, or may not show at all, so the nurse uses the <b>hands</b> as well as the eyes: <b>warmth, swelling, and firmness</b> can reveal inflammation, or a pressure injury, that can't be seen. Comparing with the <b>opposite side</b> and the client's baseline shows what is new.</p><p>Not seeing redness doesn't mean there is no inflammation. Watching the color after pressing is harder to judge on dark skin and doesn't replace palpation. Raising the leg doesn't make inflammation easier to see.</p><p><b>Takeaway:</b> On dark skin, palpate for warmth, swelling, and firmness, and compare with the other side.</p>"
+    },
+    {
+      "id": "is-61",
+      "type": "mc",
+      "topic": "Skin assessment",
+      "stem": "A client who is 28 weeks pregnant is worried about a dark line down the middle of her abdomen and darker patches on her cheeks. Which of the following responses by the nurse is best?",
+      "options": ["“These changes can be early signs of skin cancer, so a skin biopsy is needed.”", "“These changes mean your liver isn't working well, so we'll check your blood.”", "“These changes are common in pregnancy and usually fade after the baby is born.”", "“These changes are permanent, but a bleaching cream will lighten them now.”"],
+      "answer": 2,
+      "rationale": "<p>The dark midline is the <b>linea nigra</b>, and the darker facial patches are <b>chloasma</b> (melasma), the “mask of pregnancy.” Both come from pregnancy hormones, are <b>normal</b>, and usually <b>fade after delivery</b>. The nurse can add that sun protection helps keep the facial patches from darkening.</p><p>These are expected pregnancy changes, not signs of skin cancer or of liver failure, which turns the skin and sclera yellow (jaundice). They usually fade rather than being permanent, and bleaching creams aren't the usual answer in pregnancy.</p><p><b>Takeaway:</b> Linea nigra, chloasma, and striae gravidarum are normal skin changes of pregnancy.</p>"
+    },
+    {
+      "id": "is-62",
+      "type": "mc",
+      "topic": "Skin assessment",
+      "stem": "A nurse notes bluish lips and nail beds on a client who has COPD. Which of the following actions should the nurse take first?",
+      "options": ["Cover the client with a warm blanket.", "Massage the nail beds to bring blood to them.", "Document the finding as a normal variation.", "Check the client's oxygen saturation."],
+      "answer": 3,
+      "rationale": "<p>Bluish lips and nail beds are <b>cyanosis</b>, a sign of <b>low oxygen</b>. It is best seen where the skin is thin and has a rich blood supply, such as the lips, oral mucosa, and nail beds. The nurse <b>confirms it with the oxygen saturation (SpO₂)</b> right away and reports a low reading.</p><p>A blanket or massage doesn't treat low oxygen; cold can make nail beds look bluish, but in a client with COPD the first step is to check oxygen. Cyanosis isn't a normal variation to simply document.</p><p><b>Takeaway:</b> Cyanosis means low oxygen: confirm it with the SpO₂.</p>"
+    },
+    {
+      "id": "is-63",
+      "type": "matrix",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse is reviewing signs of skin dysfunction. For each finding, click to specify the term it describes.",
+      "rowHeader": "Finding",
+      "columns": ["Pruritus", "Papule", "Vesicle", "Edema"],
+      "rows": ["A small, solid, raised bump less than 1 cm across", "Itching", "A small, raised blister filled with clear fluid", "Swelling from fluid in the tissues", "A cluster of tiny fluid-filled blisters on a cold sore"],
+      "answer": [1, 0, 2, 3, 2],
+      "rationale": "<p><b>Pruritus</b> is <b>itching</b>, the most common skin symptom. A <b>papule</b> is a small, <b>solid</b>, raised bump less than 1 cm across, as in acne or many rashes. A <b>vesicle</b> is a small, raised blister <b>filled with fluid</b>, as in a cold sore, chickenpox, or poison ivy. <b>Edema</b> is <b>swelling</b> from fluid in the tissues. All four are <b>localized</b> signs, at the site of the problem.</p><p><b>Takeaway:</b> A papule is a solid bump, a vesicle is a fluid-filled blister, pruritus is itching, and edema is swelling.</p>"
+    },
+    {
+      "id": "is-64",
+      "type": "mc",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A client has a red, warm, painful area on the lower leg. Which of the following findings suggests that the problem is now affecting the whole body?",
+      "options": ["Itching that is worse at night", "A temperature of 38.6 °C (101.5 °F)", "Swelling around the red area", "A few small papules near the edge"],
+      "answer": 1,
+      "rationale": "<p><b>Fever</b> is a <b>systemic</b> (whole-body) sign: it suggests that the skin problem has caused, or comes from, an <b>infection</b>, such as cellulitis. The nurse reports it.</p><p>Itching, swelling, and papules are <b>localized</b> signs, at the site of the problem. They matter, but they don't show that the whole body is affected.</p><p><b>Takeaway:</b> Pruritus, papules, vesicles, and edema are localized signs; fever is systemic.</p>"
+    },
+    {
+      "id": "is-65",
+      "type": "mc",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse gently pinches the skin below the clavicle of an older adult client and releases it. The skin stays raised and returns to place slowly. Which of the following does this finding suggest?",
+      "options": ["Pitting edema", "Normal skin elasticity", "Dehydration", "A skin infection"],
+      "answer": 2,
+      "rationale": "<p>Skin that stays raised (<b>tenting</b>) and returns slowly shows <b>poor skin turgor</b>, a sign of <b>dehydration</b>. In older adults the nurse checks turgor below the clavicle or over the sternum, because older skin loses some elasticity and the back of the hand is less reliable.</p><p>Normal skin snaps back right away. Pitting edema is checked by pressing over a bony area and watching for a dent, not by pinching. Tenting isn't a sign of infection.</p><p><b>Takeaway:</b> Tenting skin means poor turgor, a sign of dehydration.</p>"
+    },
+    {
+      "id": "is-66",
+      "type": "mc",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse is assessing a client's ankles for pitting edema. Which of the following techniques is correct?",
+      "options": ["Press firmly over the bone for about 5 seconds, then note the dent's depth.", "Pinch the skin over the ankle, then note how quickly it returns to place.", "Stroke the skin lightly with a fingertip, then note whether the client feels it.", "Measure around the ankle with a tape, then compare the result with yesterday's."],
+      "answer": 0,
+      "rationale": "<p>To check for <b>pitting edema</b>, the nurse <b>presses firmly over a bony area</b>, such as the top of the foot, the ankle, or the shin, for about <b>5 seconds</b>, then releases and notes <b>how deep the dent is</b> and how long it lasts, and grades it.</p><p>Pinching the skin tests <b>turgor</b> (dehydration), and a light stroke tests sensation. Measuring around the ankle tracks swelling over time, but it doesn't show whether the edema pits.</p><p><b>Takeaway:</b> For pitting edema, press over bone for about 5 seconds, then measure the depth of the pit.</p>"
+    },
+    {
+      "id": "is-67",
+      "type": "matrix",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse is grading pitting edema on several clients. For each finding, click to specify the grade.",
+      "rowHeader": "Depth of the pit",
+      "columns": ["1+", "2+", "3+", "4+"],
+      "rows": ["A pit 6 mm deep", "A pit 1 mm deep", "A pit 8 mm deep", "A pit 3 mm deep", "A pit 5 mm deep"],
+      "answer": [2, 0, 3, 1, 2],
+      "rationale": "<p>The study guide's grades are <b>1+</b> for <b>0 to 1 mm</b>, <b>2+</b> for <b>2 to 4 mm</b>, <b>3+</b> for <b>5 to 7 mm</b>, and <b>4+</b> for <b>8 mm</b>. So a 1 mm pit is 1+, a 3 mm pit is 2+, 5 mm and 6 mm pits are 3+, and an 8 mm pit is 4+.</p><p><b>Takeaway:</b> Pitting edema is 1+ at 0 to 1 mm, 2+ at 2 to 4 mm, 3+ at 5 to 7 mm, and 4+ at 8 mm.</p>"
+    },
+    {
+      "id": "is-68",
+      "type": "sata",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse is inspecting the skin around a client's IV site. Which of the following findings are signs of infection?",
+      "options": ["Warmth around the site", "Flaking, rough skin on the forearm", "Red streaks spreading up the arm", "Pus draining from the site", "Skin that snaps back quickly when pinched", "A temperature of 38.4 °C (101.1 °F)"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Signs of infection include <b>redness</b>, <b>warmth</b>, swelling, pain, <b>pus or drainage</b>, <b>red streaks</b> spreading from the area, and <b>fever</b>. The nurse reports them; an infected IV site is usually removed and treated as the provider orders.</p><p><b>Flaking, rough skin</b> is a sign of dry skin (xerosis), not infection. Skin that <b>snaps back quickly</b> shows normal turgor.</p><p><b>Takeaway:</b> Redness, warmth, swelling, pain, drainage, red streaks, and fever point to infection.</p>"
+    },
+    {
+      "id": "is-69",
+      "type": "mc",
+      "topic": "Signs of skin dysfunction",
+      "stem": "A nurse is doing a follow-up inspection of a client's rash. Which of the following findings should the nurse report to the provider?",
+      "options": ["The rash is the same size as yesterday and has faded slightly.", "The client says the itching is milder than it was this morning.", "The skin around the rash is cool, dry, and intact.", "The rash has spread, feels warmer, and has begun to drain."],
+      "answer": 3,
+      "rationale": "<p>A follow-up inspection asks whether the problem is getting better or worse: is it <b>spreading</b>, <b>draining</b>, <b>warmer</b>, or more painful? A rash that has spread, feels warmer, and drains is <b>getting worse</b> and may be infected, so the nurse describes it (location, size, color, distribution, and drainage) and <b>reports</b> it.</p><p>A rash that is the same size and fading, milder itching, and cool, dry, intact skin around the rash all show that the problem is stable or improving.</p><p><b>Takeaway:</b> On re-inspection, report a rash that is spreading, warmer, more painful, or draining.</p>"
+    },
+    {
+      "id": "is-70",
+      "type": "matrix",
+      "topic": "Common skin findings",
+      "stem": "A nurse is reviewing common skin findings. For each finding, click to specify the condition it suggests.",
+      "rowHeader": "Finding",
+      "columns": ["Psoriasis", "Acne vulgaris", "Tinea pedis", "Pediculosis"],
+      "rows": ["Tiny white eggs (nits) stuck to the hair shafts", "Silvery, scaly patches on the elbows and knees", "Cracking, peeling skin and small blisters between the toes", "Blackheads, whiteheads, and pustules on the face", "Itchy, scaly patches on the scalp and trunk"],
+      "answer": [3, 0, 2, 1, 0],
+      "rationale": "<p><b>Psoriasis</b> is a chronic, autoimmune rash of itchy, <b>scaly (silvery) patches</b>, most often on the <b>knees, elbows, trunk, and scalp</b>. <b>Acne vulgaris</b> is <b>comedones</b> (blackheads and whiteheads), papules, pustules, nodules, or cysts from blocked, inflamed hair follicles and their sebaceous glands. <b>Tinea pedis</b> (athlete's foot) is a fungal infection with <b>cracking, peeling, and small blisters between the toes</b>. <b>Pediculosis</b> is an infestation of <b>lice</b>, whose eggs (nits) stick to the hair shafts.</p><p><b>Takeaway:</b> Scaly elbows and knees suggest psoriasis, comedones acne, cracking between the toes tinea pedis, and nits lice.</p>"
+    },
+    {
+      "id": "is-71",
+      "type": "mc",
+      "topic": "Common skin findings",
+      "stem": "A client reports tingling and burning on the upper lip yesterday. Today the nurse sees a group of small, painful blisters on a red base at the same spot. Which of the following conditions is most likely?",
+      "options": ["Impetigo", "Contact dermatitis", "Acne vulgaris", "Herpes simplex virus type 1"],
+      "answer": 3,
+      "rationale": "<p><b>Herpes simplex virus type 1 (HSV-1)</b> causes cold sores: <b>tingling or burning first</b>, then painful <b>grouped vesicles on a red base</b> around the mouth, which crust over and heal in 2 to 6 weeks and can come back. It spreads by direct contact, so the client avoids touching the sores.</p><p><b>Impetigo</b> forms sores that burst and leave crusts, mostly on children's faces and hands. <b>Contact dermatitis</b> is an itchy rash only where an irritant touched the skin. <b>Acne</b> forms comedones and pustules, not grouped blisters after tingling.</p><p><b>Takeaway:</b> Tingling, then grouped blisters on a red base on the lip, means HSV-1.</p>"
+    },
+    {
+      "id": "is-72",
+      "type": "mc",
+      "topic": "Common skin findings",
+      "stem": "A client has a smooth, round patch of hair loss on the scalp that appeared over a few weeks. Which of the following actions should the nurse take?",
+      "options": ["Ask about medications, stress, and diet, and how the client feels about it.", "Tell the client that the hair in this type of hair loss won't grow back.", "Apply an antifungal cream to the patch right away.", "Explain that patchy hair loss is caused by washing the hair too often."],
+      "answer": 0,
+      "rationale": "<p>A smooth, round patch of hair loss fits <b>alopecia areata</b>, an autoimmune, <b>patchy</b> hair loss; the hair often grows back. The nurse assesses the <b>pattern</b>, <b>medications</b>, <b>stress</b>, and <b>nutrition</b>, all of which can affect hair, and asks about <b>body image</b>, since hair loss can be upsetting.</p><p>In patchy alopecia, the hair often grows back. A smooth patch without scaling doesn't point to a fungal infection, and the nurse doesn't start a treatment that hasn't been prescribed. Washing the hair doesn't cause patchy hair loss.</p><p><b>Takeaway:</b> For alopecia, assess the pattern, medications, stress, nutrition, and body image.</p>"
+    },
+    {
+      "id": "is-73",
+      "type": "mc",
+      "topic": "Common skin findings",
+      "stem": "At a school health visit, a child has an itchy scalp and nits stuck to the hair shafts. Which of the following instructions should the nurse give the family?",
+      "options": ["“Shave your child's head, since that's the way to get rid of lice.”", "“Use the lice treatment as directed, and wash the bedding in hot water.”", "“Keep your child home from school for a month, until the itching stops.”", "“Spray the house with insecticide, because lice live mainly in carpets.”"],
+      "answer": 1,
+      "rationale": "<p><b>Pediculosis</b> is a <b>lice</b> infestation: itching, with nits stuck to the hair shafts. Treatment is a <b>lice treatment used as directed</b>, removing the nits, and <b>washing bedding, clothes, and hats in hot water</b>. In a health care facility, the nurse uses <b>contact precautions</b>.</p><p>Shaving isn't needed, a child doesn't need to stay home for a month, and spraying the house isn't the treatment, since head lice live on the head, not mainly in carpets.</p><p><b>Takeaway:</b> For lice, use the treatment as directed, wash bedding and clothes in hot water, and use contact precautions in a facility.</p>"
+    },
+    {
+      "id": "is-74",
+      "type": "mc",
+      "topic": "Common skin findings",
+      "stem": "A teenage client with acne vulgaris asks how to care for the skin. Which of the following instructions should the nurse give?",
+      "options": ["“Scrub your face hard several times a day to open the pores.”", "“Squeeze the pimples so that they heal faster.”", "“Wash your face gently, and don't squeeze or pick the pimples.”", "“Stop washing your face, because soap causes acne.”"],
+      "answer": 2,
+      "rationale": "<p><b>Acne vulgaris</b> comes from blocked, inflamed hair follicles and their sebaceous glands (pilosebaceous units), forming comedones, papules, pustules, nodules, or cysts. The nurse teaches <b>gentle cleansing</b> and <b>not squeezing</b> or picking, which pushes bacteria deeper and causes <b>scarring</b>.</p><p>Hard scrubbing irritates the skin and can worsen inflammation. Squeezing doesn't speed healing. And soap doesn't cause acne; gentle washing helps.</p><p><b>Takeaway:</b> For acne, wash gently and don't squeeze, which scars.</p>"
+    },
+    {
+      "id": "is-75",
+      "type": "mc",
+      "topic": "Skin interventions",
+      "stem": "A nurse is teaching a community group about early detection of melanoma. Which of the following instructions should the nurse include?",
+      "options": ["“Check your skin once a year, on your birthday.”", "“A mole needs checking when it starts to hurt or bleed.”", "“Check your skin every month, and protect it from the sun.”", "“Sunscreen matters most on cloudy days, when UV is strongest.”"],
+      "answer": 2,
+      "rationale": "<p>Cancer awareness teaching includes <b>monthly self-skin checks</b>, using the ABCDE warning signs (asymmetry, border, color, diameter, evolving), and <b>sun protection</b>. Changes found early are easier to treat.</p><p>Once a year is too seldom for self-checks. Waiting for pain or bleeding misses early melanomas, which are often painless. UV exposure matters every day, not mainly on cloudy days.</p><p><b>Takeaway:</b> Teach monthly skin checks using the ABCDEs, and sun protection.</p>"
+    },
+    {
+      "id": "is-76",
+      "type": "mc",
+      "topic": "Skin interventions",
+      "stem": "A client has several moles on the back. Which of the following actions by the nurse best supports early detection of melanoma?",
+      "options": ["Remove the largest mole so that it can be checked.", "Tell the client that moles on the back don't need monitoring.", "Apply sunscreen to the moles at each visit.", "Map where each mole is, measure it, and compare at each visit."],
+      "answer": 3,
+      "rationale": "<p>The nurse <b>maps the location</b> of each mole, on a body diagram or with photos, <b>measures</b> it, and <b>monitors</b> it for change at each visit. A mole that is <b>evolving</b> (changing in size, shape, or color) is a warning sign of melanoma.</p><p>Removing a mole is a provider's procedure, not a nursing action. Moles on the back need monitoring too, since clients can't easily see them. Sunscreen protects the skin but doesn't detect changes.</p><p><b>Takeaway:</b> Map, measure, and monitor moles for change.</p>"
+    },
+    {
+      "id": "is-77",
+      "type": "order",
+      "topic": "Skin interventions",
+      "stem": "A nurse is preparing a client's skin for an IV catheter with chlorhexidine. Place the steps in order.",
+      "items": ["Perform hand hygiene and put on gloves.", "Scrub the site with chlorhexidine using back-and-forth friction for about 30 seconds.", "Let the chlorhexidine air-dry completely without blowing on it or fanning it.", "Insert the IV catheter."],
+      "rationale": "<p>After <b>hand hygiene and gloves</b>, the nurse <b>scrubs</b> the site with chlorhexidine (in alcohol), the <b>first-choice</b> agent, using back-and-forth friction for about 30 seconds. Then the nurse lets it <b>air-dry completely</b>; drying is what makes it work, so the nurse doesn't blow on it, fan it, or wipe it. Only then is the catheter <b>inserted</b>.</p><p><b>Takeaway:</b> Chlorhexidine is first choice: scrub with friction, and let it dry completely before inserting the IV.</p>"
+    },
+    {
+      "id": "is-78",
+      "type": "mc",
+      "topic": "Skin interventions",
+      "stem": "A nurse is preparing to start an IV, and the client reports an allergy to chlorhexidine. Which of the following actions should the nurse take?",
+      "options": ["Ask about an iodine allergy, then use povidone-iodine and let it dry.", "Use chlorhexidine anyway, because it is the first-choice agent for IV sites.", "Skip the skin prep, because no agent is safe for this client.", "Use alcohol, and insert the catheter while the site is still wet."],
+      "answer": 0,
+      "rationale": "<p>When chlorhexidine can't be used, the alternatives are <b>tincture of iodine</b>, <b>povidone-iodine</b>, or <b>70% alcohol</b>. Before using an iodine product, the nurse <b>asks about an iodine allergy</b>. Povidone-iodine needs a longer drying time, about 2 minutes, so the nurse lets it <b>dry fully</b> before inserting the catheter.</p><p>Using chlorhexidine despite an allergy risks a reaction. Skipping skin prep raises the risk of infection. Alcohol dries quickly but has no lasting antimicrobial effect, and inserting through a wet site defeats any agent.</p><p><b>Takeaway:</b> Chlorhexidine is first choice; if it can't be used, check for an iodine allergy and let the agent dry fully.</p>"
+    },
+    {
+      "id": "is-79",
+      "type": "matrix",
+      "topic": "Skin medications",
+      "stem": "A nurse is reviewing medications used for skin and related conditions. For each condition, click to specify the medication used to treat it.",
+      "rowHeader": "Condition",
+      "columns": ["Griseofulvin", "Antihistamine", "Topical corticosteroid"],
+      "rows": ["Ringworm of the scalp", "Itching and sneezing from seasonal allergies", "A flare of eczema with red, inflamed patches", "Athlete's foot that hasn't cleared with foot care alone", "Nausea from motion sickness"],
+      "answer": [0, 1, 2, 0, 1],
+      "rationale": "<p><b>Griseofulvin</b> is an <b>antifungal</b> taken by mouth for ringworm, athlete's foot, jock itch, and fungal infections of the scalp and nails. <b>Antihistamines</b> block histamine at H1 receptors, treating <b>allergies</b>, itching, and cold and flu symptoms, and also <b>nausea and motion sickness</b>. <b>Topical corticosteroids</b> control <b>inflammation</b> by mimicking the body's corticosteroid hormones, as in eczema, psoriasis, and contact dermatitis.</p><p><b>Takeaway:</b> Fungus calls for griseofulvin; allergy, itching, or motion sickness for an antihistamine; inflammation for a topical steroid.</p>"
+    },
+    {
+      "id": "is-80",
+      "type": "mc",
+      "topic": "Skin medications",
+      "stem": "A nurse is teaching an older adult client who has just started taking an antihistamine for itching. Which of the following instructions should the nurse include?",
+      "options": ["“You can take an extra dose whenever you start to feel drowsy.”", "“It can make you drowsy, so take care when getting up or driving.”", "“Drink less fluid than usual, because this medicine causes fluid retention.”", "“This medicine works by killing the bacteria that cause the itching.”"],
+      "answer": 1,
+      "rationale": "<p>Antihistamines block histamine at H1 receptors and often cause <b>drowsiness</b> and <b>dry mouth</b>. Older adults are more sensitive to drowsiness and at higher risk of <b>falls</b>, so the nurse teaches caution when getting up and driving.</p><p>Drowsiness is a side effect, not a reason for an extra dose. Antihistamines don't cause fluid retention, and they don't kill bacteria; they block histamine, which drives itching and allergy symptoms.</p><p><b>Takeaway:</b> Antihistamines can cause drowsiness and dry mouth; teach fall and driving safety.</p>"
+    },
+    {
+      "id": "is-81",
+      "type": "mc",
+      "topic": "Skin medications",
+      "stem": "A client is prescribed griseofulvin for a fungal infection of the toenails. Which of the following statements by the client shows an understanding of the teaching?",
+      "options": ["“I'll stop taking it in a few days, as soon as my nails look better.”", "“I'll take it on an empty stomach so that it's absorbed faster.”", "“I'll take it with a fatty meal and protect my skin from the sun.”", "“I'll rub the medicine onto my toenails twice a day.”"],
+      "answer": 2,
+      "rationale": "<p><b>Griseofulvin</b> is an <b>antifungal taken by mouth</b>, usually for <b>weeks</b> or longer for nail infections. It is absorbed better with a <b>fatty meal</b>, and it can make the skin more sensitive to sunlight (<b>photosensitivity</b>), so the client uses sun protection.</p><p>Stopping early lets the infection return. Taking it on an empty stomach lowers absorption. It is a pill, not an ointment.</p><p><b>Takeaway:</b> Griseofulvin is taken by mouth with a fatty meal, for weeks, with sun protection.</p>"
+    },
+    {
+      "id": "is-82",
+      "type": "matrix",
+      "topic": "Other findings",
+      "stem": "A nurse is reviewing terms for common findings. For each term, click to specify its meaning.",
+      "rowHeader": "Term",
+      "columns": ["Low urine output", "Very low number of white blood cells", "A collection of blood outside the blood vessels", "Nasal congestion, runny nose, sneezing, and itching"],
+      "rows": ["Leukopenia", "Rhinitis", "Oliguria", "Hematoma"],
+      "answer": [1, 3, 0, 2],
+      "rationale": "<p>Breaking the words apart helps. <b>Leuko-</b> (white) + <b>-penia</b> (deficiency) gives <b>leukopenia</b>, a very low number of white blood cells. <b>Oligo-</b> (few) + <b>-uria</b> (urine) gives <b>oliguria</b>, low urine output. <b>Rhin-</b> (nose) + <b>-itis</b> (inflammation) gives <b>rhinitis</b>, a reaction, often allergic, with nasal congestion, runny nose, sneezing, and itching. A <b>hematoma</b> is a collection of blood outside the blood vessels that forms a raised, bruise-like swelling.</p><p><b>Takeaway:</b> Leukopenia means few white cells, oliguria little urine, rhinitis an irritated nose, and a hematoma pooled blood under the skin.</p>"
+    },
+    {
+      "id": "is-83",
+      "type": "sata",
+      "topic": "Other findings",
+      "stem": "A client has liver failure, the end stage of chronic liver disease. Which of the following findings should the nurse expect?",
+      "options": ["Light-colored stools", "A red, raised, itchy rash", "Jaundice of the skin and sclera", "Dark-colored stools", "Pale yellow urine", "Itchy skin with no rash"],
+      "answer": [0, 2, 5],
+      "rationale": "<p>In liver failure, <b>bilirubin</b> isn't cleared into the stool, so it builds up in the body: the skin and sclera turn yellow (<b>jaundice</b>), the urine turns <b>dark</b>, the stools turn <b>light (clay) colored</b>, and the skin <b>itches without a rash</b>. Other signs include abdominal pain, nausea and vomiting, and <b>altered mental status</b>.</p><p>The itching of liver failure comes without a rash, so a red, raised, itchy rash suggests another cause. Stools turn light, not dark, and urine turns dark, not pale.</p><p><b>Takeaway:</b> Liver failure flips the colors: yellow skin, dark urine, and light stools.</p>"
+    },
+    {
+      "id": "is-84",
+      "type": "mc",
+      "topic": "Other findings",
+      "stem": "A client's laboratory results show leukopenia. Which of the following findings should the nurse report to the provider first?",
+      "options": ["A temperature of 38.2 °C (100.8 °F)", "Mild fatigue after walking in the hall", "Dry skin on both hands", "A slight headache that eases with rest"],
+      "answer": 0,
+      "rationale": "<p><b>Leukopenia</b> is a very low number of white blood cells, so the client has a <b>high risk of infection</b> and may not show the usual signs. <b>Fever may be the only sign</b> of an infection that can become serious quickly, so it is reported first. The nurse also uses strict hand hygiene.</p><p>Mild fatigue, dry hands, and a slight headache that eases with rest are less urgent and stable.</p><p><b>Takeaway:</b> In leukopenia, fever may be the only sign of infection, so report it right away.</p>"
+    },
+    {
+      "id": "is-85",
+      "type": "highlight",
+      "case": "impetigo",
+      "topic": "Common skin findings",
+      "stem": "Click to highlight the findings in the nurses' notes that suggest impetigo.",
+      "passage": "Parent reports [[red sores around the child's nose and mouth for 4 days]]. The sores burst and now have [[yellow-brown, honey-colored crusts]]. The child scratches them, and [[a new sore appeared on the back of the right hand]] yesterday. The child attends preschool, and [[an older brother had similar sores last week]]. [[Temperature 37.0 °C (98.6 °F)]]. [[No blisters inside the mouth]]. [[Skin elsewhere is warm, dry, and intact]]. [[The child is playful and eating well]].",
+      "answer": [0, 1, 2, 3],
+      "rationale": "<p><b>Impetigo</b> is a highly contagious <b>bacterial</b> skin infection, mostly of infants and young children. It starts as <b>red sores around the nose and mouth</b> (and on the hands and feet) that burst and form <b>honey-colored crusts</b> over about a week. Scratching <b>spreads</b> it to new sites, such as the hand, and it spreads easily between children, as with the <b>brother</b>.</p><p>A normal temperature, no blisters inside the mouth, intact skin elsewhere, and a playful child who is eating well are expected findings. They don't rule impetigo out, but they don't point to it.</p><p><b>Takeaway:</b> Red sores around the nose and mouth that crust over honey-colored, and that spread by scratching and contact, mean impetigo.</p>"
+    },
+    {
+      "id": "is-86",
+      "type": "dropdown",
+      "case": "impetigo",
+      "topic": "Common skin findings",
+      "stem": "Complete the following sentence.",
+      "text": "The child's findings are most consistent with {{0}}, which is caused by {{1}}.",
+      "blanks": [
+        {"options": ["eczema", "impetigo", "herpes simplex virus type 1"], "answer": 1},
+        {"options": ["a virus", "a fungus", "bacteria"], "answer": 2}
+      ],
+      "rationale": "<p>Red sores around the nose and mouth that burst and form <b>honey-colored crusts</b>, spreading with scratching and between siblings, are <b>impetigo</b>, a contagious <b>bacterial</b> skin infection. It is treated with an antibiotic ointment such as mupirocin.</p><p><b>Eczema</b> is chronic, dry, itchy, red skin without honey-colored crusts. <b>HSV-1</b> causes grouped blisters on a red base, usually on the lip, after tingling. Fungal infections such as tinea pedis cause cracking and peeling, not honey-colored crusts.</p><p><b>Takeaway:</b> Honey-colored crusts mean impetigo, a bacterial infection.</p>"
+    },
+    {
+      "id": "is-87",
+      "type": "sata",
+      "case": "impetigo",
+      "topic": "Skin medications",
+      "stem": "The provider prescribes mupirocin ointment. Which of the following instructions should the nurse give the parent?",
+      "options": ["Wash the sores gently and pat them dry before applying the ointment.", "Share towels only with the child's brother, who already had the sores.", "Apply a thin layer of the ointment as prescribed.", "Finish the full course, even if the sores look better.", "Wash your hands before and after touching the sores.", "Cover the sores with a thick layer of petroleum jelly instead of the ointment."],
+      "answer": [0, 2, 3, 4],
+      "rationale": "<p><b>Mupirocin</b> is an <b>antibiotic ointment</b> for bacterial skin infections such as impetigo. The parent <b>washes the sores gently and dries them</b>, applies a <b>thin layer</b> as prescribed, and <b>finishes the full course</b> even when the sores look better. Because impetigo is highly contagious, <b>hand hygiene</b> before and after touching the sores and not sharing towels help stop the spread.</p><p>No one should share the child's towels, including a brother who already had the sores, since the infection can come back or spread. Petroleum jelly doesn't treat the infection and shouldn't replace the prescribed ointment.</p><p><b>Takeaway:</b> For impetigo, use mupirocin as prescribed after gentle washing, finish the course, wash hands, and don't share towels.</p>"
+    },
+    {
+      "id": "is-88",
+      "type": "matrix",
+      "case": "impetigo",
+      "topic": "Common skin findings",
+      "stem": "On Day 8, the parent brings the child back for a follow-up visit. For each finding, click to specify whether it has improved, has not changed, or has declined since Day 1.",
+      "rowHeader": "Finding (Day 1 → Day 8)",
+      "columns": ["Improved", "No change", "Declined"],
+      "rows": ["Sores around the nose and mouth: honey-colored crusts → pink, healing skin with no crusts", "Number of sores: 7 → 2", "Temperature: 37.0 °C → 37.1 °C", "Urine: pale yellow → dark, cola-colored", "Face: no swelling → puffy around the eyes"],
+      "answer": [0, 0, 1, 2, 2],
+      "rationale": "<p>The skin is <b>improving</b>: the crusts are gone, the skin is pink and healing, and there are fewer sores. The temperature has <b>not changed</b> in any meaningful way and is normal. But <b>dark, cola-colored urine</b> and <b>puffiness around the eyes</b> are new, so they have <b>declined</b>: they are warning signs of <b>kidney problems</b>, a complication of impetigo, even as the skin heals.</p><p><b>Takeaway:</b> After impetigo, watch for dark urine, swelling, and less urine, which signal kidney problems.</p>"
+    },
+    {
+      "id": "is-89",
+      "type": "mc",
+      "case": "impetigo",
+      "topic": "Other findings",
+      "stem": "The parent also says that the child has urinated only twice today, in small amounts. Which of the following actions should the nurse take?",
+      "options": ["Reassure the parent that the sores are healing, so no other follow-up is needed.", "Report the dark urine, puffy eyes, and low urine output to the provider now.", "Encourage extra fluids for a few days, and recheck the urine in a month.", "Restart the mupirocin ointment for another full course to clear the infection."],
+      "answer": 1,
+      "rationale": "<p>Urinating only twice in small amounts is <b>oliguria</b> (low urine output). Together with <b>dark urine</b> and <b>puffy eyes</b> after impetigo, it suggests <b>kidney problems</b>, a complication of impetigo, so the nurse <b>reports</b> these findings to the provider right away.</p><p>Healing skin doesn't rule out the complication. Waiting a month delays care for a kidney problem, and extra fluids aren't safe to push before anyone knows how the kidneys are working. More mupirocin treats the skin, not the kidneys.</p><p><b>Takeaway:</b> Report dark urine, swelling, or low urine output after impetigo promptly.</p>"
     }
   ]
 }
