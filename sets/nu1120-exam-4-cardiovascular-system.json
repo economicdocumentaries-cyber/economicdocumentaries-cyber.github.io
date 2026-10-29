@@ -1,0 +1,517 @@
+{
+  "id": "nu1120-exam-4-cardiovascular-system",
+  "title": "The Cardiovascular System",
+  "description": "Week 10: the heart's structures, valves, and coronary arteries, the cardiac cycle, the conduction system and the ECG, blood vessels, blood cells and blood types, how blood pressure is regulated, cardiac output, common cardiovascular diseases, medications and cholesterol, the lymphatic system, and arrhythmias.",
+  "course": "NU1120",
+  "exam": "Exam 4",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "cases": {
+    "edvisit": {
+      "intro": "A nurse in the emergency department is caring for a 74-year-old client who came in because of fatigue and shortness of breath.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>1400:</b></p><p>Client reports feeling tired for the past 2 weeks and getting short of breath while carrying laundry up the stairs. Says the heart sometimes “flutters” or races, then slows down again. Denies chest pain. Has had hypertension for 12 years and takes amlodipine 5&nbsp;mg daily. Lives with a daughter and walks the dog each morning.</p><p>Alert and oriented. Apical pulse irregularly irregular. Skin warm and dry. Capillary refill less than 2 seconds. Lungs clear. Trace swelling in both ankles.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Vital sign</th><th>1400</th></tr></thead><tbody><tr><td>Temperature</td><td>36.8&nbsp;°C (98.2&nbsp;°F)</td></tr><tr><td>Heart rate (apical)</td><td>124/min, irregular</td></tr><tr><td>Respiratory rate</td><td>22/min</td></tr><tr><td>Blood pressure</td><td>118/74&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>95% on room air</td></tr></tbody></table>"
+        },
+        {
+          "title": "Diagnostic Results",
+          "html": "<h4>Diagnostic Results</h4><p><b>12-lead ECG, 1410:</b></p><table><thead><tr><th>Finding</th><th>Result</th></tr></thead><tbody><tr><td>Rhythm</td><td>Irregularly irregular</td></tr><tr><td>Ventricular rate</td><td>124/min</td></tr><tr><td>P waves</td><td>None that can be identified</td></tr><tr><td>PR interval</td><td>Can't be measured</td></tr><tr><td>QRS complex</td><td>80&nbsp;ms</td></tr></tbody></table><p><b>Laboratory results, 1415:</b></p><table><thead><tr><th>Test</th><th>Result</th><th>Reference range</th></tr></thead><tbody><tr><td>Potassium</td><td>4.2&nbsp;mmol/L</td><td>3.5–5.0&nbsp;mmol/L</td></tr></tbody></table>"
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "cv-01",
+      "type": "hotspot",
+      "topic": "Heart structures and blood flow",
+      "stem": "A nurse is reviewing how blood leaves the heart. Click the chamber that pumps oxygen-rich blood out to the body.",
+      "image": "img/heart-section.svg",
+      "alt": "Front view of a heart cut open to show its inside, with the client's right on the viewer's left, marked R and L: two upper chambers and two lower chambers, all the same color, with a valve between each upper and lower chamber; a large vein entering the upper chamber on the viewer's left from above and another from below; two veins entering the upper chamber on the viewer's right from the side; and two large arteries rising from the lower chambers and crossing, one of them arching over the top of the heart.",
+      "regions": [{"x": 59.2, "y": 60.8, "w": 15, "h": 21.4}, {"x": 60.9, "y": 82.3, "w": 7.5, "h": 5.1}, {"x": 56.7, "y": 60, "w": 2.5, "h": 13.3}],
+      "rationale": "<p>The <b>left ventricle</b> pumps oxygen-rich blood through the aortic valve into the <b>aorta</b>, which carries it to the body. On a front view, the client's left is on the viewer's right, so it's the lower chamber on the viewer's right. Its wall is the thickest in the heart because it pumps against the high pressure of the systemic circulation.</p><p>The <b>right ventricle</b>, the lower chamber on the viewer's left, pumps oxygen-poor blood into the pulmonary trunk, toward the lungs. The two upper chambers, the atria, receive blood: the right atrium from the venae cavae, and the left atrium from the pulmonary veins.</p><p><b>Takeaway:</b> The left ventricle pumps oxygen-rich blood into the aorta; on a front view, it's the lower chamber on the viewer's right.</p>"
+    },
+    {
+      "id": "cv-02",
+      "type": "order",
+      "topic": "Heart structures and blood flow",
+      "stem": "Blood that is low in oxygen returns from the body to the heart through the venae cavae. Place the structures in the order that blood passes through them on its way to the aorta.",
+      "items": ["Right atrium", "Right ventricle", "Pulmonary arteries", "Pulmonary veins", "Left atrium", "Left ventricle"],
+      "rationale": "<p>Blood from the body enters the <b>right atrium</b> through the superior and inferior venae cavae, passes the tricuspid valve into the <b>right ventricle</b>, and is pumped through the pulmonic valve into the pulmonary trunk and <b>pulmonary arteries</b> to the lungs (the pulmonary circulation). In the lungs, it picks up oxygen and gives off carbon dioxide. The <b>pulmonary veins</b> carry the oxygen-rich blood to the <b>left atrium</b>; it passes the mitral valve into the <b>left ventricle</b>, which pumps it through the aortic valve into the aorta and out to the body (the systemic circulation).</p><p>Common mistakes are sending blood from the right side straight to the left side, skipping the lungs, and mixing up the pulmonary arteries, which carry blood away from the heart to the lungs, with the pulmonary veins, which bring it back.</p><p><b>Takeaway:</b> Right atrium → right ventricle → pulmonary arteries → lungs → pulmonary veins → left atrium → left ventricle → aorta.</p>"
+    },
+    {
+      "id": "cv-03",
+      "type": "hotspot",
+      "topic": "Heart structures and blood flow",
+      "stem": "A client has a heart valve that doesn't close completely, so blood leaks backward from the right ventricle into the right atrium when the ventricles contract. Click the valve that is leaking.",
+      "image": "img/heart-section.svg",
+      "alt": "Front view of a heart cut open to show its inside, with the client's right on the viewer's left, marked R and L: two upper chambers and two lower chambers, all the same color, with a valve between each upper and lower chamber; a large vein entering the upper chamber on the viewer's left from above and another from below; two veins entering the upper chamber on the viewer's right from the side; and two large arteries rising from the lower chambers and crossing, one of them arching over the top of the heart.",
+      "regions": [{"x": 30.9, "y": 54.9, "w": 10.8, "h": 5.1}],
+      "rationale": "<p>The valve between the <b>right atrium and the right ventricle</b> is the <b>tricuspid valve</b>, one of the two atrioventricular (AV) valves. It should close when the ventricles contract (systole), so blood goes forward into the pulmonary trunk instead of back into the atrium. On a front view, the client's right is on the viewer's left, so it's the valve between the two chambers on the viewer's left.</p><p>The <b>mitral valve</b>, on the viewer's right, is the AV valve between the left atrium and left ventricle. The <b>pulmonic and aortic valves</b> (the semilunar valves) sit where the pulmonary trunk and the aorta leave the ventricles; they keep blood from flowing back into the ventricles during diastole.</p><p><b>Takeaway:</b> Backflow from the right ventricle into the right atrium means a leaking tricuspid valve, the AV valve on the client's right.</p>"
+    },
+    {
+      "id": "cv-04",
+      "type": "matrix",
+      "topic": "Heart structures and blood flow",
+      "stem": "A nurse is reviewing the valves of the heart. For each valve, click to specify where it is.",
+      "rowHeader": "Valve",
+      "columns": ["Between the left ventricle and the aorta", "Between the right atrium and right ventricle", "Between the right ventricle and the pulmonary artery", "Between the left atrium and left ventricle"],
+      "rows": ["Tricuspid valve", "Pulmonic valve", "Mitral valve", "Aortic valve"],
+      "answer": [1, 2, 3, 0],
+      "rationale": "<p>The two <b>atrioventricular (AV) valves</b> sit between each atrium and its ventricle: the <b>tricuspid valve</b> on the right (right atrium to right ventricle) and the <b>mitral valve</b> on the left (left atrium to left ventricle). Cords called chordae tendineae tie their leaflets to the papillary muscles of the ventricles, so the leaflets don't flip back into the atria.</p><p>The two <b>semilunar valves</b> sit where the arteries leave the ventricles: the <b>pulmonic valve</b> between the right ventricle and the pulmonary artery, and the <b>aortic valve</b> between the left ventricle and the aorta.</p><p><b>Takeaway:</b> The tricuspid and mitral valves are the AV valves (atrium to ventricle); the pulmonic and aortic valves are the semilunar valves (ventricle to artery).</p>"
+    },
+    {
+      "id": "cv-05",
+      "type": "mc",
+      "topic": "Heart structures and blood flow",
+      "stem": "A nurse is reviewing the layers of the heart wall. Which of the following layers contracts to pump blood?",
+      "options": ["Myocardium", "Endocardium", "Epicardium", "Fibrous pericardium"],
+      "answer": 0,
+      "rationale": "<p>The <b>myocardium</b>, the middle and thickest layer, is cardiac muscle; its cells contract to pump blood.</p><p>The <b>endocardium</b> is the thin inner lining of the chambers and valves; the conduction system runs just beneath it. The <b>epicardium</b> is the outer layer of the heart wall (the visceral layer of the pericardium), where the coronary arteries and veins run. The <b>fibrous pericardium</b> is the tough outer layer of the sac around the heart; it protects and anchors the heart but doesn't contract.</p><p><b>Takeaway:</b> <i>Myo-</i> means muscle: the myocardium is the heart wall's muscle layer, the one that pumps.</p>"
+    },
+    {
+      "id": "cv-06",
+      "type": "mc",
+      "topic": "Heart structures and blood flow",
+      "stem": "A client's right ventricle is no longer pumping effectively. Which of the following describes where blood backs up first?",
+      "options": ["Into the veins that bring blood from the lungs", "Into the arteries that carry blood to the body", "Into the veins that bring blood from the body", "Into the arteries that carry blood to the lungs"],
+      "answer": 2,
+      "rationale": "<p>Blood reaches the <b>right ventricle</b> from the right atrium, which collects it from the body through the venae cavae. When the right ventricle can't pump all of it forward into the pulmonary arteries, blood backs up behind it: into the right atrium and the <b>veins that bring blood from the body</b>, where the pressure rises.</p><p>Backup into the <b>veins from the lungs</b> (the pulmonary veins) happens when the <b>left</b> ventricle fails, since the lungs drain into the left side of the heart. The <b>arteries to the lungs</b> and the <b>arteries to the body</b> are downstream of the ventricles: blood is pumped into them, so it doesn't back up into them.</p><p><b>Takeaway:</b> Blood backs up behind a failing ventricle: right-sided failure backs up into the veins from the body, and left-sided failure backs up into the lungs.</p>"
+    },
+    {
+      "id": "cv-07",
+      "type": "matrix",
+      "topic": "Coronary circulation and the cardiac cycle",
+      "stem": "A nurse is reviewing the blood supply of the heart. For each part of the heart, click to specify the coronary artery that mainly supplies it.",
+      "rowHeader": "Part of the heart",
+      "columns": ["Right coronary artery", "Left coronary artery and its branches"],
+      "rows": ["Left atrium", "Sinoatrial (SA) node", "Right ventricle", "Left ventricle", "Atrioventricular (AV) node"],
+      "answer": [1, 0, 0, 1, 0],
+      "rationale": "<p>The <b>right coronary artery</b> supplies the right atrium, the <b>right ventricle</b>, part of the left ventricle, and, in most people, the <b>sinoatrial (SA) node</b> and the <b>atrioventricular (AV) node</b>. That's why a blocked right coronary artery can cause a slow heart rate or a heart block.</p><p>The <b>left coronary artery</b> quickly divides into the <b>left circumflex</b> and <b>left anterior descending</b> arteries, which supply the <b>left atrium</b> and most of the <b>left ventricle</b>, the heart's main pump.</p><p><b>Takeaway:</b> The right coronary artery feeds the right heart and the SA and AV nodes; the left coronary artery's branches feed the left atrium and the left ventricle.</p>"
+    },
+    {
+      "id": "cv-08",
+      "type": "mc",
+      "topic": "Coronary circulation and the cardiac cycle",
+      "stem": "A client's heart rate rises to 150/min. Which of the following explains why a fast heart rate can reduce blood flow to the heart muscle?",
+      "options": ["The atria stop contracting, so less blood enters the coronary arteries", "Diastole gets shorter, and the coronary arteries fill mostly during diastole", "Systole gets shorter, and the coronary arteries fill mostly during systole", "The aortic valve stays open longer, so blood bypasses the coronary arteries"],
+      "answer": 1,
+      "rationale": "<p>In most tissues, blood flow peaks during systole, but the <b>coronary arteries fill mostly during diastole</b>: when the ventricles contract, the heart muscle squeezes the vessels inside it. When the heart rate rises, <b>diastole shortens</b> much more than systole does, so there's less time for blood to flow into the heart muscle, just when it needs more oxygen.</p><p>The coronary arteries <b>don't fill mostly during systole</b>; that's true of other tissues, not of the heart muscle. The <b>atria</b> keep contracting at a fast rate, and the coronary arteries are filled from the aorta, not the atria. The <b>aortic valve</b> is open only during systole; it doesn't send blood past the coronary arteries, which branch off the aorta just above the valve.</p><p><b>Takeaway:</b> The coronary arteries fill during diastole, so a fast heart rate, which shortens diastole, cuts blood flow to the heart muscle.</p>"
+    },
+    {
+      "id": "cv-09",
+      "type": "matrix",
+      "topic": "Coronary circulation and the cardiac cycle",
+      "stem": "A nurse is reviewing the cardiac cycle. For each event, click to specify whether it happens during ventricular diastole or ventricular systole.",
+      "rowHeader": "Event",
+      "columns": ["Ventricular diastole", "Ventricular systole"],
+      "rows": ["The ventricles fill with blood", "The aortic and pulmonic valves are open", "The mitral and tricuspid valves are open", "Blood is pushed into the aorta and pulmonary arteries", "The ventricular muscle relaxes"],
+      "answer": [0, 1, 0, 1, 0],
+      "rationale": "<p><b>Ventricular diastole</b> is relaxation and filling: the ventricular muscle <b>relaxes</b>, the <b>mitral and tricuspid valves are open</b>, and the ventricles <b>fill with blood</b> from the atria. It begins when the aortic and pulmonic valves close and ends when the mitral and tricuspid valves close.</p><p><b>Ventricular systole</b> is contraction and ejection: once the pressure in the ventricles rises above the pressure in the arteries, the <b>aortic and pulmonic valves open</b>, and blood is <b>pushed into the aorta and pulmonary arteries</b>. It begins when the mitral and tricuspid valves close and ends when the aortic and pulmonic valves close.</p><p><b>Takeaway:</b> Diastole: ventricles relax and fill, AV valves open. Systole: ventricles contract and eject, semilunar valves open.</p>"
+    },
+    {
+      "id": "cv-10",
+      "type": "mc",
+      "topic": "Coronary circulation and the cardiac cycle",
+      "stem": "A client's blood pressure is 136/84 mm Hg. Which of the following does the 84 represent?",
+      "options": ["The peak pressure in the arteries while the ventricles contract", "The difference between the systolic and diastolic pressures", "The average pressure in the arteries over the whole cardiac cycle", "The lowest pressure in the arteries while the ventricles relax and fill"],
+      "answer": 3,
+      "rationale": "<p>Blood pressure is written as systolic over diastolic. The <b>diastolic pressure</b> (84) is the <b>lowest pressure in the arteries</b>, while the ventricles relax and fill (ventricular diastole); the elastic aorta, recoiling after each beat, keeps it from falling further. The <b>systolic pressure</b> (136) is the <b>peak pressure</b>, while the ventricles contract and eject blood.</p><p>The <b>difference</b> between them (136 − 84 = 52 mm Hg) is the <b>pulse pressure</b>. The <b>average</b> pressure over the whole cycle is the <b>mean arterial pressure</b> (MAP), which is always closer to the diastolic pressure.</p><p><b>Takeaway:</b> The bottom number is the diastolic pressure: the lowest pressure in the arteries, while the ventricles fill.</p>"
+    },
+    {
+      "id": "cv-11",
+      "type": "hotspot",
+      "topic": "Conduction system and the ECG",
+      "stem": "A nurse is reviewing the conduction system of the heart. Click the structure that normally starts each heartbeat.",
+      "image": "img/heart-conduction.svg",
+      "alt": "Front view of a heart cut open to show its four chambers, with the client's right on the viewer's left, marked R and L: a large vein entering the upper chamber on the viewer's left from above and another from below, two veins entering the upper chamber on the viewer's right, a valve between each upper and lower chamber, and yellow structures in the walls of the heart: two yellow ovals, a short yellow band, and yellow lines running down the wall between the lower chambers and up along their outer walls.",
+      "regions": [{"x": 32.5, "y": 29.7, "w": 8.3, "h": 3.7}, {"x": 33.4, "y": 33.4, "w": 6.6, "h": 0.7}, {"x": 34.2, "y": 28.9, "w": 5, "h": 0.7}],
+      "rationale": "<p>The <b>sinoatrial (SA) node</b>, in the wall of the <b>right atrium</b> near where the superior vena cava enters, is the heart's natural <b>pacemaker</b>. Its pacemaker cells fire on their own, normally 60 to 100 times a minute, which sets a normal sinus rhythm; the autonomic nervous system speeds it up or slows it down. Each impulse spreads through the atria and makes them contract.</p><p>The <b>atrioventricular (AV) node</b>, the yellow oval low in the wall between the atria, receives the impulse and delays it briefly. The <b>bundle of His</b>, the <b>bundle branches</b>, and the <b>Purkinje fibers</b> then carry it through the ventricles. None of them starts the beat when the SA node is working.</p><p><b>Takeaway:</b> The SA node, high in the right atrium, starts each normal heartbeat, 60 to 100 times a minute.</p>"
+    },
+    {
+      "id": "cv-12",
+      "type": "order",
+      "topic": "Conduction system and the ECG",
+      "stem": "A nurse is teaching how an electrical impulse travels through the heart. Place the structures in the order the impulse reaches them, starting where it begins.",
+      "items": ["Sinoatrial (SA) node", "Atrioventricular (AV) node", "Bundle of His", "Right and left bundle branches", "Purkinje fibers"],
+      "rationale": "<p>An impulse starts in the <b>SA node</b> in the right atrium and spreads across both atria, which contract. It reaches the <b>AV node</b>, which holds it for a short pause so the ventricles can finish filling. It then travels down the <b>bundle of His</b> into the wall between the ventricles (the interventricular septum), divides into the <b>right and left bundle branches</b>, and spreads through the <b>Purkinje fibers</b> in the ventricle walls, which makes the ventricles contract.</p><p>Putting the AV node first, or the Purkinje fibers before the bundle branches, reverses part of the path: the impulse always travels from the atria down to the ventricles.</p><p><b>Takeaway:</b> SA node → AV node → bundle of His → bundle branches → Purkinje fibers.</p>"
+    },
+    {
+      "id": "cv-13",
+      "type": "mc",
+      "topic": "Conduction system and the ECG",
+      "stem": "A client's natural pacemaker has stopped firing, and the ECG now shows a regular heart rate of 50/min. Which of the following is most likely pacing the client's heart?",
+      "options": ["Purkinje fibers", "Atrioventricular node", "The vagus nerve", "Left bundle branch"],
+      "answer": 1,
+      "rationale": "<p>Each part of the conduction system can fire on its own, but more slowly the farther it is from the SA node: the <b>SA node</b> fires 60 to 100 times a minute, the <b>AV node</b> 40 to 60, and the <b>Purkinje fibers</b> 20 to 40. The fastest one sets the rate, so when the SA node stops, the AV node usually takes over, and a regular rate of <b>50/min</b> fits its range. A rate below 60/min is a bradyarrhythmia.</p><p>The <b>Purkinje fibers</b> would pace at only 20 to 40 a minute. The <b>left bundle branch</b> carries impulses to the ventricles; it isn't the usual backup pacemaker at this rate. The <b>vagus nerve</b> (parasympathetic) can slow the heart, but nerves don't start the heartbeat: the heart's own pacemaker cells do.</p><p><b>Takeaway:</b> Backup pacemakers are slower: SA node 60 to 100, AV node 40 to 60, Purkinje fibers 20 to 40 beats a minute.</p>"
+    },
+    {
+      "id": "cv-14",
+      "type": "matrix",
+      "topic": "Conduction system and the ECG",
+      "stem": "A nurse is reviewing the action potential of a heart muscle cell. For each phase, click to specify what happens.",
+      "rowHeader": "Phase",
+      "columns": ["Calcium enters while potassium leaves, holding a plateau", "Potassium slowly leaks out at rest", "Sodium rushes in, causing rapid depolarization", "Potassium leaves after the calcium channels close, repolarizing the cell"],
+      "rows": ["Phase 0", "Phase 2", "Phase 3", "Phase 4"],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p>A heart muscle cell rests at about −90 mV in <b>phase 4</b>, while <b>potassium slowly leaks out</b>. In <b>phase 0</b>, voltage-gated <b>sodium channels open and sodium rushes in</b>, quickly depolarizing the cell to about +50 mV. In phase 1, some potassium channels open for a small repolarization. In <b>phase 2</b>, the <b>plateau</b>, calcium coming in balances potassium going out, so the voltage holds steady. In <b>phase 3</b>, the <b>calcium channels close</b>, and <b>potassium leaving</b> the cell repolarizes it back to −90 mV.</p><p>Mixing up sodium (the fast rise) and calcium (the plateau) is the most common mistake.</p><p><b>Takeaway:</b> Phase 0 sodium in, phase 2 calcium in and potassium out (plateau), phase 3 potassium out (repolarization), phase 4 rest.</p>"
+    },
+    {
+      "id": "cv-15",
+      "type": "dragdrop",
+      "topic": "Conduction system and the ECG",
+      "stem": "A nurse is reviewing a normal ECG. Complete the following sentence.",
+      "text": "On an ECG, the P wave shows {{0}}, the QRS complex shows {{1}}, and the T wave shows {{2}}.",
+      "tokens": ["ventricular repolarization", "atrial depolarization", "the AV node's delay", "ventricular depolarization", "atrial repolarization"],
+      "answer": [1, 3, 0],
+      "rationale": "<p>The <b>P wave</b>, the first wave, is <b>atrial depolarization</b>, which starts at the SA node just before the atria contract. The <b>QRS complex</b> is <b>ventricular depolarization</b>: the Q wave is the septum, the R wave is the main mass of the ventricles (they contract at its peak), and the S wave is the last of the Purkinje fibers. The <b>T wave</b> is <b>ventricular repolarization</b>.</p><p>The <b>AV node's delay</b> is part of the PR interval, the time from the start of the P wave to the start of the QRS complex (120 to 200 ms); it isn't a wave of its own. <b>Atrial repolarization</b> happens at the same time as the QRS complex, so it doesn't show as a separate wave.</p><p><b>Takeaway:</b> P = the atria depolarize; QRS = the ventricles depolarize; T = the ventricles repolarize.</p>"
+    },
+    {
+      "id": "cv-16",
+      "type": "mc",
+      "topic": "Conduction system and the ECG",
+      "stem": "A nurse reviews a client's ECG: heart rate 78/min, an upright P wave before each QRS complex, PR interval 160 ms, and QRS complex 140 ms. Which of the following findings should the nurse report to the provider?",
+      "options": ["Heart rate of 78/min", "PR interval of 160 ms", "QRS complex of 140 ms", "Upright P wave before each QRS complex"],
+      "answer": 2,
+      "rationale": "<p>A normal <b>QRS complex</b> lasts <b>less than 120 ms</b> (usually 60 to 100 ms), because the impulse spreads quickly through the bundle branches and Purkinje fibers. At <b>140 ms</b>, this client's QRS is <b>wide</b>, so the ventricles are depolarizing slowly or by an abnormal path, as with a bundle branch block, a high potassium level, or a rhythm that starts in the ventricles. It needs follow-up.</p><p>A <b>PR interval of 160 ms</b> is within the normal 120 to 200 ms, so the AV node's delay is normal. A <b>heart rate of 78/min</b> is within 60 to 100, and an <b>upright P wave before each QRS complex</b> shows that each beat starts in the SA node.</p><p><b>Takeaway:</b> PR interval 120 to 200 ms; QRS under 120 ms. A wider QRS means slow or abnormal spread through the ventricles.</p>"
+    },
+    {
+      "id": "cv-17",
+      "type": "matrix",
+      "topic": "Blood vessels and blood pressure",
+      "stem": "A nurse is reviewing the types of capillaries. For each organ, click to specify the type of capillary it mainly has.",
+      "rowHeader": "Organ",
+      "columns": ["Continuous", "Fenestrated", "Discontinuous"],
+      "rows": ["Liver", "Skin", "Kidney", "Bone marrow", "Small intestine"],
+      "answer": [2, 0, 1, 2, 1],
+      "rationale": "<p><b>Continuous</b> capillaries have an unbroken lining. They're found in muscle, connective tissue, the <b>skin</b>, the lungs, and the central nervous system; large molecules cross them only by being carried through the cells (transcytosis). <b>Fenestrated</b> capillaries have small pores that let small molecules and a little protein through. They're found where a lot is filtered or absorbed: the <b>kidneys</b>, the <b>intestines</b>, the pancreas, and the endocrine glands. <b>Discontinuous</b> capillaries have large gaps between their cells and in the layer under them. They're found in the <b>liver</b>, the spleen, and the <b>bone marrow</b>.</p><p><b>Takeaway:</b> Continuous: skin, muscle, lungs, brain. Fenestrated: kidneys, intestines, endocrine glands. Discontinuous: liver, spleen, bone marrow.</p>"
+    },
+    {
+      "id": "cv-18",
+      "type": "mc",
+      "topic": "Blood vessels and blood pressure",
+      "stem": "During a sympathetic (fight-or-flight) response, a client's arteries narrow and the blood pressure rises. Which of the following layers of the artery wall narrows the artery?",
+      "options": ["Tunica media", "Tunica intima", "Tunica externa", "External elastic membrane"],
+      "answer": 0,
+      "rationale": "<p>The <b>tunica media</b>, the middle layer, is mostly <b>smooth muscle</b>. When the sympathetic nervous system stimulates it, the muscle contracts and the artery narrows (vasoconstriction), which raises resistance and blood pressure; when the muscle relaxes, the artery widens. The media is thickest on the arterial side, and in small arteries and arterioles, it controls resistance.</p><p>The <b>tunica intima</b>, the inner layer, is a single layer of endothelial cells on a basal lamina, in contact with the blood. The <b>tunica externa</b> (adventitia), the outer layer, is mostly collagen that keeps the vessel intact and anchors it, and it carries the vessel's own blood vessels and nerves (the vasa vasorum and nervi vasorum). The <b>external elastic membrane</b> is a layer of elastic fibers between the media and the externa; it doesn't contract.</p><p><b>Takeaway:</b> The smooth muscle of the tunica media changes a blood vessel's diameter.</p>"
+    },
+    {
+      "id": "cv-19",
+      "type": "fill",
+      "topic": "Blood vessels and blood pressure",
+      "stem": "A client's blood pressure is 150/90 mm Hg. Using the formula mean arterial pressure (MAP) = diastolic pressure + 1/3 of the pulse pressure, what is the client's MAP?",
+      "answer": 110,
+      "unit": "mm Hg",
+      "rationale": "<p>The <b>pulse pressure</b> is the systolic minus the diastolic pressure: 150 − 90 = 60 mm Hg. One third of it is 20. Add that to the diastolic pressure: 90 + 20 = <b>110 mm Hg</b>.</p><p>Averaging the two numbers ((150 + 90) ÷ 2 = 120) overestimates the MAP, because the heart spends longer in diastole than in systole. Adding a third of the systolic pressure instead of the pulse pressure is another common mistake.</p><p><b>Takeaway:</b> MAP = diastolic + (systolic − diastolic) ÷ 3, and it's always closer to the diastolic pressure.</p>"
+    },
+    {
+      "id": "cv-20",
+      "type": "mc",
+      "topic": "Blood vessels and blood pressure",
+      "stem": "Over 5 years, an older adult client's usual blood pressure has changed from 128/80 mm Hg to 162/76 mm Hg. Which of the following best explains this change?",
+      "options": ["The client's stroke volume has decreased", "The client's blood volume has decreased", "The client's arterioles have dilated", "The client's arteries have become stiffer"],
+      "answer": 3,
+      "rationale": "<p>The systolic pressure has risen while the diastolic pressure has dropped a little, so the <b>pulse pressure</b> has widened from 48 to 86 mm Hg. A healthy, elastic aorta stretches with each beat, which softens the systolic peak, and then recoils during diastole, which holds the diastolic pressure up. As the arteries become <b>stiffer</b>, which often happens with age, the systolic pressure rises and the diastolic pressure falls: the stiffer the artery, the larger the pulse pressure.</p><p>A smaller <b>stroke volume</b> or a lower <b>blood volume</b> would lower the systolic pressure, not raise it. <b>Dilated arterioles</b> lower resistance and tend to lower both pressures.</p><p><b>Takeaway:</b> A widening pulse pressure, with the systolic pressure rising and the diastolic pressure falling, points to stiffer arteries.</p>"
+    },
+    {
+      "id": "cv-21",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "stem": "A client's red blood cell count is below the expected range. Which of the following functions is most affected?",
+      "options": ["Fighting bacterial infections", "Carrying oxygen to the tissues", "Forming clots to stop bleeding", "Holding fluid inside the blood vessels"],
+      "answer": 1,
+      "rationale": "<p><b>Red blood cells</b> (erythrocytes), about 4 to 6 million in each mm³ of blood, are full of <b>hemoglobin</b>, which carries <b>oxygen</b> from the lungs to the tissues; they also help return carbon dioxide to the lungs. They're made in the red bone marrow and live about 120 days. With fewer of them, less oxygen reaches the tissues, which can cause fatigue and shortness of breath with activity.</p><p><b>Fighting infections</b> is the job of the white blood cells, <b>forming clots</b> the job of the platelets and clotting proteins such as fibrinogen, and <b>holding fluid in the vessels</b> depends mainly on the plasma protein albumin.</p><p><b>Takeaway:</b> Red blood cells carry oxygen on hemoglobin, so a low count means less oxygen for the tissues.</p>"
+    },
+    {
+      "id": "cv-22",
+      "type": "matrix",
+      "topic": "Blood components and blood types",
+      "stem": "A nurse is reviewing the types of white blood cells. For each description, click to specify the white blood cell it describes.",
+      "rowHeader": "Description",
+      "columns": ["Neutrophil", "Eosinophil", "Basophil", "Lymphocyte", "Monocyte"],
+      "rows": ["Makes antibodies, and some live for years as memory cells", "Rises first in an acute bacterial infection", "Rises in chronic infections and becomes a macrophage in the tissues", "Releases heparin, which helps prevent clotting", "Fights parasitic infections"],
+      "answer": [3, 0, 4, 2, 1],
+      "rationale": "<p><b>Neutrophils</b> are the first responders in an <b>acute</b> (sudden) bacterial infection, and they live from hours to a few days. <b>Eosinophils</b> fight <b>parasites</b> and take part in allergic reactions. <b>Basophils</b> take part in allergic reactions and release <b>heparin</b>, which helps prevent clotting. These three are the granulocytes. The agranulocytes are the <b>lymphocytes</b>, which make <b>antibodies</b> (B cells) and include memory cells that live for years, and the <b>monocytes</b>, which rise in <b>chronic</b> infections and become macrophages in the tissues.</p><p><b>Takeaway:</b> Neutrophils: acute infection. Eosinophils: parasites and allergy. Basophils: allergy and heparin. Lymphocytes: antibodies. Monocytes: chronic infection.</p>"
+    },
+    {
+      "id": "cv-23",
+      "type": "sata",
+      "topic": "Blood components and blood types",
+      "stem": "A client's platelet count is very low. Which of the following findings should the nurse monitor for?",
+      "options": ["Bleeding gums", "Fever and frequent infections", "Easy bruising", "Nosebleeds", "Fatigue and shortness of breath", "Blood in the urine"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p><b>Platelets</b> (thrombocytes) are small cell fragments without a nucleus. They're made in the bone marrow, live 7 to 10 days, and plug damaged vessels to start <b>clotting</b>. With very few platelets, small injuries keep bleeding, so the nurse watches for <b>bleeding gums</b>, <b>easy bruising</b>, <b>nosebleeds</b>, and <b>blood in the urine</b>.</p><p><b>Fever and frequent infections</b> point to a problem with the white blood cells, and <b>fatigue and shortness of breath</b> to a problem with the red blood cells.</p><p><b>Takeaway:</b> A low platelet count means a risk of bleeding: check the gums, skin, nose, and urine.</p>"
+    },
+    {
+      "id": "cv-24",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "stem": "A client with liver failure has a low albumin level and new swelling in both legs. Which of the following explains the swelling?",
+      "options": ["Less albumin makes the blood clot more easily", "Less albumin blocks the client's lymphatic vessels", "Less albumin raises the pressure in the client's arteries", "Less albumin lets fluid move out of the blood vessels"],
+      "answer": 3,
+      "rationale": "<p><b>Albumin</b>, the main protein in plasma, is made by the liver. It keeps fluid inside the blood vessels by osmotic pressure: it draws water into the blood. When the liver fails and the albumin level drops, less water is held in the vessels, so <b>fluid moves out into the tissues</b> and causes swelling (edema), often in the legs.</p><p>Clotting depends on platelets and clotting proteins such as <b>fibrinogen</b>, not albumin. A low albumin level doesn't <b>block lymphatic vessels</b>, and it doesn't <b>raise the pressure in the arteries</b>.</p><p><b>Takeaway:</b> Albumin holds fluid in the vessels; a low albumin level lets fluid leak into the tissues as edema.</p>"
+    },
+    {
+      "id": "cv-25",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "stem": "A client with type A-negative blood needs a transfusion of red blood cells. Which of the following donor blood types is compatible?",
+      "options": ["O-negative", "A-positive", "B-negative", "AB-negative"],
+      "answer": 0,
+      "rationale": "<p>Type A blood has the <b>A antigen</b> on its red blood cells and <b>anti-B antibodies</b> in its plasma, so the client can receive red blood cells without the B antigen: type A or type O. The client is also <b>Rh-negative</b>, with no Rh factor on the red blood cells, so the cells given should be <b>Rh-negative</b> too. <b>O-negative</b> red blood cells have no A, B, or Rh antigens, so they're compatible (A-negative cells would be too).</p><p><b>A-positive</b> cells carry the Rh factor, which an Rh-negative client can make antibodies against. <b>B-negative</b> and <b>AB-negative</b> cells carry the B antigen, which the client's anti-B antibodies would attack.</p><p><b>Takeaway:</b> Donor red cells must not carry an antigen the client lacks: A, B, or the Rh factor.</p>"
+    },
+    {
+      "id": "cv-26",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "stem": "A nurse is preparing to give red blood cell transfusions to 4 clients. Which of the following transfusions should the nurse clarify with the provider?",
+      "options": ["Type B-negative cells for a client with type B-positive blood", "Type A-negative cells for a client with type AB-positive blood", "Type B-positive cells for a client with type A-positive blood", "Type O-positive cells for a client with type O-positive blood"],
+      "answer": 2,
+      "rationale": "<p>A client can safely receive red blood cells only if the cells carry no A, B, or Rh antigen that the client's own cells lack, since the client's antibodies would attack it. A client with <b>type A-positive</b> blood has <b>anti-B antibodies</b>, so <b>type B-positive</b> cells, which carry the B antigen, aren't compatible. The nurse should clarify this transfusion before giving it.</p><p>The other transfusions are compatible. <b>B-negative</b> cells carry the B antigen and no Rh factor, and a <b>B-positive</b> client has both. <b>A-negative</b> cells carry only the A antigen, and an <b>AB-positive</b> client has A, B, and Rh antigens and no anti-A or anti-B antibodies. <b>O-positive</b> cells carry only the Rh factor, which an <b>O-positive</b> client has too.</p><p><b>Takeaway:</b> Before a transfusion, check that the donor's red cells carry no antigen the client lacks: A, B, or Rh.</p>"
+    },
+    {
+      "id": "cv-27",
+      "type": "mc",
+      "topic": "Regulation of blood pressure and blood gases",
+      "stem": "A nurse is reviewing how the body senses blood pressure. Which of the following locations contain the baroreceptors that monitor arterial blood pressure?",
+      "options": ["The medulla oblongata and pons", "The carotid sinus and aortic arch", "The kidneys and adrenal glands", "The hypothalamus and pituitary gland"],
+      "answer": 1,
+      "rationale": "<p><b>Baroreceptors</b> are stretch receptors in the <b>carotid sinus</b> and the <b>aortic arch</b>. They sense how much the artery walls stretch and signal the vasomotor center in the medulla oblongata within seconds, through the glossopharyngeal nerve from the carotid sinus and the vagus nerve from the aortic arch.</p><p>The <b>medulla oblongata</b> receives the signals and responds, but it doesn't sense arterial pressure itself. The <b>kidneys</b> respond to low blood flow by releasing renin, and the <b>adrenal glands</b> release epinephrine, norepinephrine, and aldosterone, which raise the pressure over minutes to hours. The <b>hypothalamus and pituitary gland</b> make and release ADH (vasopressin), which also acts more slowly.</p><p><b>Takeaway:</b> Baroreceptors in the carotid sinus and aortic arch sense blood pressure and report to the medulla.</p>"
+    },
+    {
+      "id": "cv-28",
+      "type": "dropdown",
+      "topic": "Regulation of blood pressure and blood gases",
+      "stem": "A client who is bleeding has a falling blood pressure. Complete the following sentence.",
+      "text": "As the blood pressure falls, the baroreceptors send fewer signals to the {{0}}, which responds by increasing {{1}} activity. This {{2}} blood vessels, raising the blood pressure.",
+      "blanks": [
+        {"options": ["hypothalamus", "medulla oblongata", "cerebellum", "pituitary gland"], "answer": 1},
+        {"options": ["sympathetic", "parasympathetic", "somatic"], "answer": 0},
+        {"options": ["slows the heart rate and widens", "speeds up the heart rate and narrows", "slows the heart rate and narrows", "speeds up the heart rate and widens"], "answer": 1}
+      ],
+      "rationale": "<p>Baroreceptors sense the stretch of the artery walls. When the blood pressure falls, they're stretched less and send <b>fewer signals</b> to the vasomotor center in the <b>medulla oblongata</b>. The medulla responds by increasing <b>sympathetic</b> activity and decreasing parasympathetic activity, which <b>speeds up the heart rate</b>, strengthens each contraction, and <b>narrows the blood vessels</b> (vasoconstriction), raising the blood pressure within seconds.</p><p>The <b>parasympathetic</b> system does the opposite when the pressure is high: it slows the heart and widens the vessels. The <b>somatic</b> system controls skeletal muscle, not the heart or vessels. The <b>hypothalamus</b>, <b>cerebellum</b>, and <b>pituitary gland</b> aren't the center for this reflex.</p><p><b>Takeaway:</b> Low blood pressure → fewer baroreceptor signals → the medulla raises sympathetic activity → faster heart rate and narrower vessels.</p>"
+    },
+    {
+      "id": "cv-29",
+      "type": "order",
+      "topic": "Regulation of blood pressure and blood gases",
+      "stem": "Blood flow to a client's kidneys has dropped. Place the steps of the renin-angiotensin-aldosterone system (RAAS) in order.",
+      "items": ["The kidneys release renin", "Renin forms angiotensin I", "Angiotensin-converting enzyme (ACE) forms angiotensin II", "Angiotensin II narrows the blood vessels and triggers aldosterone release", "The kidneys keep more sodium and water"],
+      "rationale": "<p>When blood flow to the kidneys drops (or less salt reaches them, or sympathetic activity rises), the kidneys release <b>renin</b>. Renin turns angiotensinogen into <b>angiotensin I</b>, and <b>angiotensin-converting enzyme (ACE)</b> turns angiotensin I into <b>angiotensin II</b>. Angiotensin II strongly narrows the blood vessels, and it triggers the adrenal cortex to release <b>aldosterone</b>, which makes the kidneys <b>keep more sodium and water</b>. The larger blood volume and narrower vessels raise the blood pressure.</p><p>The baroreceptor reflex works in seconds; the RAAS raises blood pressure over a longer time, by changing the blood volume.</p><p><b>Takeaway:</b> Renin → angiotensin I → (ACE) → angiotensin II → narrower vessels and aldosterone → sodium and water kept → higher blood pressure.</p>"
+    },
+    {
+      "id": "cv-30",
+      "type": "mc",
+      "topic": "Regulation of blood pressure and blood gases",
+      "stem": "A nurse reviews the arterial blood gas and electrolyte results of a 72-year-old client: pH 7.34, PaCO₂ 46 mm Hg, PaO₂ 78 mm Hg, and potassium 6.3 mmol/L. Which of the following results should the nurse report to the provider first?",
+      "options": ["pH 7.34", "PaCO₂ 46 mm Hg", "PaO₂ 78 mm Hg", "Potassium 6.3 mmol/L"],
+      "answer": 3,
+      "rationale": "<p>A <b>potassium level of 6.3 mmol/L</b> is above both the normal range (3.5 to 5.0) and the <b>critical limit of 6.0</b>. A high potassium level can cause dangerous heart rhythms, so it's reported first.</p><p>The <b>pH of 7.34</b> (normal 7.35 to 7.45) and the <b>PaCO₂ of 46 mm Hg</b> (normal 35 to 45) are only slightly out of range and far from their critical limits (a pH below 7.20, a PaCO₂ above 65). A <b>PaO₂ of 78 mm Hg</b> is within the expected range for an adult over 65 (75 to 85), even though it's below the 80 to 100 expected for younger adults.</p><p><b>Takeaway:</b> Report a result past its critical limit first, such as a potassium level over 6.0 mmol/L, and compare the PaO₂ with the range for the client's age.</p>"
+    },
+    {
+      "id": "cv-31",
+      "type": "fill",
+      "topic": "Cardiac output and heart function",
+      "stem": "A client's stroke volume is 70 mL, and the heart rate is 80/min. Using cardiac output = stroke volume × heart rate, what is the client's cardiac output in liters per minute?",
+      "answer": 5.6,
+      "unit": "L/min",
+      "rationale": "<p>Cardiac output is the amount of blood the left ventricle pumps each minute: 70 mL per beat × 80 beats a minute = 5,600 mL/min. There are 1,000 mL in a liter, so that's <b>5.6 L/min</b>.</p><p>Writing 5,600 gives the answer in milliliters, not liters, and adding the two numbers (150) mixes up the formula.</p><p><b>Takeaway:</b> Cardiac output = stroke volume × heart rate; divide milliliters by 1,000 to get liters.</p>"
+    },
+    {
+      "id": "cv-32",
+      "type": "matrix",
+      "topic": "Cardiac output and heart function",
+      "stem": "A nurse is reviewing terms for how the heart pumps. For each description, click to specify the term it describes.",
+      "rowHeader": "Description",
+      "columns": ["Stroke volume", "Afterload", "Ejection fraction", "Preload"],
+      "rows": ["The volume, and the stretch, in a ventricle at the end of filling", "The pressure a ventricle must overcome to open the aortic valve", "The amount of blood pumped out with each beat", "The share of the filled volume that is pumped out with each beat"],
+      "answer": [3, 1, 0, 2],
+      "rationale": "<p><b>Preload</b> is the volume in the ventricle at the end of diastole (the end-diastolic volume) and the stretch it puts on the muscle. <b>Afterload</b> is the pressure the ventricle must push against to open the aortic valve and eject blood; the diastolic blood pressure is a good index of it. <b>Stroke volume</b> is the blood pumped out with one beat: the end-diastolic volume minus the volume left at the end of systole. <b>Ejection fraction</b> is the stroke volume divided by the end-diastolic volume: the percentage of the filled volume that is pumped out.</p><p><b>Takeaway:</b> Preload is the filling, afterload is the pressure to push against, stroke volume is one beat's output, and ejection fraction is the percentage pumped out.</p>"
+    },
+    {
+      "id": "cv-33",
+      "type": "mc",
+      "topic": "Cardiac output and heart function",
+      "stem": "A client's left ventricle holds 120 mL at the end of filling and pumps out 48 mL with each beat. Which of the following describes the client's ejection fraction?",
+      "options": ["40%, which is below normal", "40%, which is normal", "60%, which is normal", "72%, which is above normal"],
+      "answer": 0,
+      "rationale": "<p>Ejection fraction = stroke volume ÷ end-diastolic volume: 48 ÷ 120 = 0.4, or <b>40%</b>. A normal ejection fraction is <b>greater than 55%</b>, so 40% is <b>below normal</b>: the ventricle pumps out a smaller share of its blood with each beat, as in heart failure.</p><p>Dividing the blood left in the ventricle after the beat (120 − 48 = 72 mL) by the end-diastolic volume gives <b>60%</b>, and treating the 72 mL as a percentage gives <b>72%</b>; neither is the ejection fraction.</p><p><b>Takeaway:</b> Ejection fraction = stroke volume ÷ end-diastolic volume. Normal is above 55%, and a low ejection fraction points to heart failure.</p>"
+    },
+    {
+      "id": "cv-34",
+      "type": "sata",
+      "topic": "Cardiac output and heart function",
+      "stem": "A nurse is reviewing what affects stroke volume. Which of the following changes increase stroke volume?",
+      "options": ["Stronger contraction of the heart muscle", "Higher pressure in the aorta to push against", "More blood returning to the heart", "Less blood returning to the heart", "Lower pressure in the aorta to push against", "A weaker heart muscle after a heart attack"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Stroke volume increases with <b>stronger contraction</b> (more contractility, as with epinephrine and norepinephrine), with <b>more blood returning to the heart</b> (a higher preload), and with <b>lower pressure to push against</b> (a lower afterload). The Frank-Starling law explains preload: more venous return stretches the ventricle more, and stretched muscle contracts more forcefully, so the heart pumps out what comes in.</p><p><b>Higher pressure in the aorta</b> (a higher afterload, as with a high diastolic pressure) makes it harder to eject blood, so stroke volume falls. <b>Less blood returning</b> means less stretch and less to pump. A <b>weaker heart muscle</b> after a heart attack contracts less forcefully.</p><p><b>Takeaway:</b> Stroke volume rises with more contractility, more preload, and less afterload.</p>"
+    },
+    {
+      "id": "cv-35",
+      "type": "mc",
+      "topic": "Cardiovascular disorders",
+      "stem": "A client reports a squeezing discomfort behind the sternum that starts while climbing stairs and goes away after a few minutes of rest. Which of the following conditions do these findings suggest?",
+      "options": ["Peripheral artery disease in the legs", "Heart failure from a weak left ventricle", "A heart attack from a fully blocked artery", "Angina from coronary artery disease"],
+      "answer": 3,
+      "rationale": "<p><b>Coronary artery disease</b> (CAD) is atherosclerotic plaque narrowing the coronary arteries, so less oxygen reaches the heart muscle. The discomfort it causes is <b>angina pectoris</b>: a gradual pressure or squeezing behind the sternum, brought on by exertion or emotional stress, when the heart needs more oxygen than the narrowed arteries can deliver, and eased by rest.</p><p>A <b>heart attack</b>, from a fully blocked coronary artery, causes chest pain that lasts and isn't relieved by rest. <b>Peripheral artery disease</b> narrows the arteries to the legs and causes leg pain with walking, not chest discomfort. <b>Heart failure</b> causes fatigue, shortness of breath, and swelling.</p><p><b>Takeaway:</b> Chest discomfort brought on by exertion and relieved within minutes by rest is angina from coronary artery disease.</p>"
+    },
+    {
+      "id": "cv-36",
+      "type": "matrix",
+      "topic": "Cardiovascular disorders",
+      "stem": "A nurse is reviewing the ACC/AHA stages of heart failure. For each client, click to specify the stage.",
+      "rowHeader": "Client",
+      "columns": ["Stage A", "Stage B", "Stage C", "Stage D"],
+      "rows": ["Had shortness of breath and ankle swelling last year that improved with treatment", "Has hypertension and diabetes, a normal heart, and no symptoms", "Is short of breath at rest and has been hospitalized 3 times this year despite full treatment", "Has an enlarged, thickened left ventricle on an echocardiogram but no symptoms"],
+      "answer": [2, 0, 3, 1],
+      "rationale": "<p>The ACC/AHA stages describe how far heart failure has progressed. <b>Stage A</b> (at risk): risk factors such as hypertension, diabetes, or metabolic syndrome, but no symptoms and no structural heart disease. <b>Stage B</b> (pre-heart failure): structural heart disease, such as an enlarged ventricle, or elevated filling pressures or cardiac markers, but no symptoms. <b>Stage C</b> (symptomatic): current <b>or past</b> symptoms of heart failure, so a client whose symptoms improved with treatment stays in stage C. <b>Stage D</b> (advanced): symptoms that interfere with daily life, or repeated hospital stays, despite guideline-directed treatment.</p><p><b>Takeaway:</b> A = risk factors only, B = structural disease without symptoms, C = symptoms now or in the past, D = symptoms despite full treatment.</p>"
+    },
+    {
+      "id": "cv-37",
+      "type": "mc",
+      "topic": "Cardiovascular disorders",
+      "stem": "A client asks what cerebrovascular disease means. Which of the following conditions is a cerebrovascular disease?",
+      "options": ["Peripheral artery disease", "Coronary artery disease", "Carotid artery disease", "Congestive heart failure"],
+      "answer": 2,
+      "rationale": "<p><b>Cerebrovascular disease</b> covers conditions that affect blood flow to the brain: stroke, a brain aneurysm, bleeding in the brain, and <b>carotid artery disease</b>, in which plaque narrows the carotid arteries in the neck that carry blood to the brain.</p><p><b>Peripheral artery disease</b> narrows the arteries to the legs, <b>coronary artery disease</b> narrows the arteries to the heart muscle, and <b>congestive heart failure</b> is the heart's inability to pump blood effectively. All three are cardiovascular diseases, but none of them is a disease of the brain's blood supply.</p><p><b>Takeaway:</b> Cerebrovascular disease affects blood flow to the brain: stroke, aneurysm, bleeding in the brain, and carotid artery disease.</p>"
+    },
+    {
+      "id": "cv-38",
+      "type": "sata",
+      "topic": "Cardiovascular disorders",
+      "stem": "A nurse is reviewing a 66-year-old client's health record. Which of the following findings are risk factors for cardiovascular disease?",
+      "options": ["Blood pressure of 152/94 mm Hg", "Blood type O-positive", "Type 2 diabetes mellitus", "Smokes a pack of cigarettes a day", "Father had a heart attack at age 50", "Body mass index (BMI) of 34"],
+      "answer": [0, 2, 3, 4, 5],
+      "rationale": "<p>Risk factors for cardiovascular disease include <b>high blood pressure</b> (152/94 is above the expected 120/80 or less), <b>diabetes</b>, <b>smoking</b>, a <b>family history</b> of heart disease, especially at a young age, and <b>obesity</b> (a BMI of 34 is above the expected 18.5 to 25). Others are high cholesterol, older age, and physical inactivity. Hypertension accounts for more deaths from cardiovascular disease in the United States than any other modifiable risk factor: a rise of 20 mm Hg in systolic pressure, or 10 mm Hg in diastolic pressure, doubles the risk of death from stroke or heart disease.</p><p><b>Blood type O-positive</b> isn't a risk factor for cardiovascular disease.</p><p><b>Takeaway:</b> High blood pressure, diabetes, smoking, obesity, high cholesterol, inactivity, and family history raise the risk of cardiovascular disease; hypertension is the leading modifiable one.</p>"
+    },
+    {
+      "id": "cv-39",
+      "type": "matrix",
+      "topic": "Prevention, medications, and cholesterol",
+      "stem": "A nurse is reviewing a client's blood pressure medications. For each medication, click to specify how it works.",
+      "rowHeader": "Medication",
+      "columns": ["Makes the kidneys remove more salt and water", "Limits calcium entering heart and vessel cells", "Blocks the enzyme that forms angiotensin II", "Blocks angiotensin II at its receptors"],
+      "rows": ["Lisinopril", "Amlodipine", "Losartan", "Hydrochlorothiazide"],
+      "answer": [2, 1, 3, 0],
+      "rationale": "<p><b>Hydrochlorothiazide</b> is a thiazide diuretic (a water pill): it makes the kidneys pass more salt and water, so the client urinates more. <b>Amlodipine</b> is a dihydropyridine calcium channel blocker: it limits how much calcium moves into the cells of the heart and blood vessels, which relaxes the vessels. <b>Lisinopril</b> is an ACE inhibitor: it blocks angiotensin-converting enzyme, so less angiotensin I becomes angiotensin II. <b>Losartan</b> is an angiotensin II receptor blocker (ARB): it keeps angiotensin II from acting on the receptors that would otherwise narrow the vessels.</p><p>The generic names give a clue: ACE inhibitors end in <b>-pril</b>, ARBs in <b>-sartan</b>, and dihydropyridine calcium channel blockers in <b>-dipine</b>.</p><p><b>Takeaway:</b> Thiazides remove salt and water, calcium channel blockers relax the vessels, ACE inhibitors (-pril) block angiotensin II's formation, and ARBs (-sartan) block its receptors.</p>"
+    },
+    {
+      "id": "cv-40",
+      "type": "mc",
+      "topic": "Prevention, medications, and cholesterol",
+      "stem": "A client is prescribed metoprolol for an arrhythmia. Which of the following antiarrhythmic classes does metoprolol belong to?",
+      "options": ["Class I: sodium channel blockers", "Class II: beta blockers", "Class III: potassium channel blockers", "Class IV: calcium channel blockers"],
+      "answer": 1,
+      "rationale": "<p><b>Metoprolol</b> is a <b>beta blocker</b>, a <b>class II</b> antiarrhythmic: it blocks the sympathetic nervous system's effect on the heart, which slows the heart rate and conduction through the AV node.</p><p><b>Class I</b> drugs, such as quinidine, block sodium channels. <b>Class III</b> drugs, such as amiodarone, block potassium channels. <b>Class IV</b> drugs, such as verapamil, block calcium channels.</p><p><b>Takeaway:</b> Class I sodium channel blockers (quinidine), class II beta blockers (metoprolol), class III potassium channel blockers (amiodarone), class IV calcium channel blockers (verapamil).</p>"
+    },
+    {
+      "id": "cv-41",
+      "type": "mc",
+      "topic": "Prevention, medications, and cholesterol",
+      "stem": "A nurse is teaching a client who has a high LDL cholesterol level and is starting atorvastatin. Which of the following statements by the client indicates a need for further teaching?",
+      "options": ["“I'll aim for at least 150 minutes of exercise a week.”", "“I'll choose foods that are low in saturated and trans fats.”", "“I'll stop taking the medicine once my LDL is normal.”", "“I'll keep eating fatty fish, such as salmon, twice a week.”"],
+      "answer": 2,
+      "rationale": "<p>A statin such as atorvastatin lowers cholesterol only while it's taken. <b>Stopping it once the LDL is normal</b> lets the level rise again, so this statement shows a need for further teaching: the client should keep taking it unless the provider changes the plan.</p><p>The other statements are correct. A healthy lifestyle is the cornerstone of treating high cholesterol, and it continues alongside a statin: at least <b>150 minutes of exercise a week</b>; a diet <b>low in saturated and trans fats</b> and rich in fiber, fruit, vegetables, and <b>fatty fish</b>; a healthy weight; and no smoking.</p><p><b>Takeaway:</b> Statins work only while they're taken, and they go with, not instead of, exercise and a heart-healthy diet.</p>"
+    },
+    {
+      "id": "cv-42",
+      "type": "mc",
+      "topic": "Prevention, medications, and cholesterol",
+      "stem": "A nurse reviews the fasting lipid results of 4 clients. Which of the following sets of results needs follow-up?",
+      "options": ["Total cholesterol 168 mg/dL, LDL 112 mg/dL", "Total cholesterol 176 mg/dL, LDL 92 mg/dL", "Total cholesterol 188 mg/dL, LDL 96 mg/dL", "Total cholesterol 196 mg/dL, LDL 84 mg/dL"],
+      "answer": 0,
+      "rationale": "<p>An <b>LDL above 100 mg/dL</b> is elevated, even when the <b>total cholesterol is below 200 mg/dL</b>. LDL is the cholesterol that builds plaque in the arteries, which leads to coronary artery disease and carotid artery disease, so an LDL of <b>112 mg/dL</b> needs follow-up.</p><p>The other three clients have a total cholesterol under 200 and an LDL under 100. A total of 196 is close to the limit, but it isn't high, and that client's LDL of 84 is in range.</p><p><b>Takeaway:</b> Check the LDL on its own: a total cholesterol over 200 mg/dL or an LDL over 100 mg/dL is high.</p>"
+    },
+    {
+      "id": "cv-43",
+      "type": "mc",
+      "topic": "Lymphatic system",
+      "stem": "A client had several lymph nodes removed from under the right arm during cancer surgery and now has swelling of the right arm. Which of the following explains the swelling?",
+      "options": ["Less oxygen-rich blood reaches the arm", "Extra tissue fluid can't drain back into the blood", "The veins of the arm have lost their valves", "The arm's capillaries can't exchange nutrients"],
+      "answer": 1,
+      "rationale": "<p>Capillaries leak some fluid into the tissues, and the <b>lymphatic system</b> collects the extra and returns it to the blood, which keeps the fluid balanced and <b>prevents edema</b>. When lymph nodes and vessels are removed, <b>extra tissue fluid can't drain</b> from that area, so it builds up as swelling (lymphedema).</p><p>The surgery doesn't block the <b>arteries</b>, so oxygen-rich blood still reaches the arm. The <b>veins</b> keep their valves, and the <b>capillaries</b> still exchange oxygen and nutrients.</p><p><b>Takeaway:</b> The lymphatic system returns extra tissue fluid to the blood; when it's damaged or removed, swelling follows.</p>"
+    },
+    {
+      "id": "cv-44",
+      "type": "matrix",
+      "topic": "Lymphatic system",
+      "stem": "A nurse is reviewing the organs of the lymphatic system. For each function, click to specify the organ.",
+      "rowHeader": "Function",
+      "columns": ["Spleen", "Thymus", "Lymph nodes"],
+      "rows": ["Where T lymphocytes mature", "Stores red blood cells and platelets", "Filters lymph and holds immune cells along the lymphatic vessels", "Helps recycle iron from old red blood cells"],
+      "answer": [1, 0, 2, 0],
+      "rationale": "<p>The <b>thymus</b>, in the upper chest, is where lymphocytes from the bone marrow mature into <b>T lymphocytes</b> (T cells). The <b>spleen</b> filters the blood, helps prevent infection, <b>stores red blood cells and platelets</b>, and takes part in <b>iron metabolism</b> by recycling the iron from old red blood cells. The <b>lymph nodes</b> sit along the lymphatic vessels; they <b>filter lymph</b> and hold immune cells, which is why they can swell during an infection and are checked in a lymph node exam.</p><p><b>Takeaway:</b> Thymus: T cells mature. Spleen: filters blood, stores red cells and platelets, recycles iron. Lymph nodes: filter lymph.</p>"
+    },
+    {
+      "id": "cv-45",
+      "type": "mc",
+      "topic": "Arrhythmias and assessment",
+      "stem": "A client on a cardiac unit suddenly becomes unresponsive. The monitor shows chaotic, irregular waves with no recognizable QRS complexes. Which of the following rhythms does this describe?",
+      "options": ["Ventricular fibrillation", "Atrial fibrillation", "First-degree atrioventricular block", "Supraventricular tachycardia"],
+      "answer": 0,
+      "rationale": "<p><b>Ventricular fibrillation</b> is disorganized electrical activity in the ventricles: the monitor shows chaotic, irregular waves with no recognizable QRS complexes, and the ventricles quiver instead of pumping. The client loses consciousness, and without immediate treatment, death follows.</p><p><b>Atrial fibrillation</b> starts in the atria; QRS complexes are still seen, and the client usually stays responsive. <b>Supraventricular tachycardia</b> is a fast rhythm with narrow QRS complexes. <b>First-degree AV block</b> is slow conduction through the AV node, with a QRS complex after every P wave.</p><p><b>Takeaway:</b> No recognizable QRS complexes, chaotic waves, and an unresponsive client mean ventricular fibrillation, an emergency.</p>"
+    },
+    {
+      "id": "cv-46",
+      "type": "highlight",
+      "case": "edvisit",
+      "topic": "Arrhythmias and assessment",
+      "stem": "Click to highlight the findings in the 1400 nurses' notes that need follow-up.",
+      "passage": "Client reports [[feeling tired for the past 2 weeks]] and [[getting short of breath while carrying laundry up the stairs]]. Says the [[heart sometimes “flutters” or races, then slows down again]]. [[Denies chest pain]]. Has had hypertension for 12 years and takes amlodipine 5 mg daily. Lives with a daughter and walks the dog each morning. [[Alert and oriented]]. [[Apical pulse irregularly irregular]]. [[Skin warm and dry]]. [[Capillary refill less than 2 seconds]]. [[Lungs clear]]. [[Trace swelling in both ankles]].",
+      "answer": [0, 1, 2, 5, 9],
+      "rationale": "<p>Five findings need follow-up. <b>Fatigue for 2 weeks</b> and <b>shortness of breath with activity</b> can mean the heart isn't pumping enough blood to meet the body's needs. A heart that <b>“flutters” or races, then slows</b> suggests an arrhythmia, and an <b>irregularly irregular apical pulse</b> shows a rhythm with no regular pattern. <b>Swelling in both ankles</b> can mean fluid is building up because the heart isn't pumping effectively. In an older adult, these findings should be investigated, not dismissed as part of getting older.</p><p>Being <b>alert and oriented</b>, <b>denying chest pain</b>, <b>warm, dry skin</b>, a <b>capillary refill of less than 2 seconds</b>, and <b>clear lungs</b> are expected findings: blood flow to the brain, skin, and lungs is adequate for now.</p><p><b>Takeaway:</b> Fatigue, shortness of breath, palpitations, an irregular pulse, and new swelling are cardiovascular findings that need follow-up, whatever the client's age.</p>"
+    },
+    {
+      "id": "cv-47",
+      "type": "dropdown",
+      "case": "edvisit",
+      "topic": "Arrhythmias and assessment",
+      "stem": "The nurse reviews the client's ECG. Complete the following sentences.",
+      "text": "The ECG shows no P waves that can be identified, which means the {{0}} aren't depolarizing in an organized way. The QRS complex of 80 ms is {{1}}, so impulses are spreading through the ventricles {{2}}.",
+      "blanks": [
+        {"options": ["ventricles", "atria", "Purkinje fibers"], "answer": 1},
+        {"options": ["wider than normal", "within the normal range", "narrower than normal"], "answer": 1},
+        {"options": ["along the normal pathway", "through a blocked bundle branch", "from a pacemaker in the ventricles"], "answer": 0}
+      ],
+      "rationale": "<p>The <b>P wave</b> is atrial depolarization. With no P waves that can be identified, the <b>atria</b> aren't depolarizing in an organized way from the SA node. The <b>QRS complex</b> is ventricular depolarization, and a normal QRS lasts less than 120 ms (usually 60 to 100 ms). At <b>80 ms</b>, this client's QRS is <b>within the normal range</b> (a narrow complex), so the impulses that pass the AV node spread through the ventricles <b>along the normal pathway</b> of the bundle branches and Purkinje fibers.</p><p>A <b>wide QRS</b>, over 120 ms, would point to a <b>blocked bundle branch</b> or a <b>rhythm that starts in the ventricles</b>. A QRS of 80 ms isn't <b>narrower than normal</b>.</p><p><b>Takeaway:</b> Missing P waves point to a problem in the atria; a narrow QRS means the impulses still reach the ventricles by the normal pathway.</p>"
+    },
+    {
+      "id": "cv-48",
+      "type": "bowtie",
+      "case": "edvisit",
+      "topic": "Arrhythmias and assessment",
+      "stem": "A nurse is reviewing the client's findings, vital signs, and ECG.",
+      "condition": {"options": ["Sinus bradycardia", "Atrial fibrillation", "Ventricular fibrillation", "Third-degree atrioventricular block"], "answer": 1},
+      "actions": {"options": ["Help the client walk the hallway to check activity tolerance", "Place the client on continuous cardiac monitoring", "Lay the client flat in bed to rest the heart", "Report the new irregular rhythm to the provider", "Encourage the client to drink extra fluids"], "answer": [1, 3]},
+      "parameters": {"options": ["Pupil response to light", "Heart rate and rhythm", "Blood glucose", "Blood pressure", "Skin turgor"], "answer": [1, 3]},
+      "rationale": "<p>An <b>irregularly irregular</b> rhythm with <b>no identifiable P waves</b>, a <b>narrow QRS complex</b> (80 ms), and a fast ventricular rate (124/min), in a client with fatigue, shortness of breath, and palpitations, is <b>atrial fibrillation</b>, the most common sustained arrhythmia. It can lead to stroke and heart failure, and a fast ventricular rate can lower the blood pressure.</p><p>The nurse should <b>place the client on continuous cardiac monitoring</b> (telemetry) to track the rhythm and rate, and <b>report the new irregular rhythm</b> to the provider, who decides on treatment. The nurse monitors the <b>heart rate and rhythm</b> and the <b>blood pressure</b>, which can drop with a fast, irregular rate or with medications that slow the rate.</p><p><b>Ventricular fibrillation</b> has no recognizable QRS complexes, and the client would be unresponsive. <b>Third-degree AV block</b> and <b>sinus bradycardia</b> are slow rhythms, below 60/min, not 124/min. <b>Walking the hallway</b> adds to the heart's workload in a client who is short of breath with activity, and <b>lying flat</b> can make shortness of breath worse. <b>Extra fluids</b> aren't indicated for a client with new ankle swelling. <b>Pupil response</b>, <b>blood glucose</b>, and <b>skin turgor</b> don't show whether the rhythm is under control.</p><p><b>Takeaway:</b> Atrial fibrillation: irregularly irregular, no P waves, narrow QRS. Monitor the rhythm continuously, report it, and watch the heart rate, rhythm, and blood pressure.</p>"
+    },
+    {
+      "id": "cv-49",
+      "type": "sata",
+      "case": "edvisit",
+      "topic": "Arrhythmias and assessment",
+      "stem": "The provider prescribes metoprolol, and the client will go home with follow-up care. Which of the following instructions should the nurse include in the discharge teaching?",
+      "options": ["Take metoprolol only on days your heart flutters", "Report a fluttering or racing heartbeat that comes back", "Check your pulse, and report a rate that stays below 60/min", "An irregular pulse is a normal part of aging, so there's no need to report it", "Take metoprolol every day, even when you feel well"],
+      "answer": [1, 2, 4],
+      "rationale": "<p>Teaching the client and family is part of caring for a client with an arrhythmia. The client should take <b>metoprolol every day</b> as prescribed, since it controls the heart rate only while it's taken; <b>report a fluttering or racing heartbeat that comes back</b>, a sign the rate or rhythm isn't controlled; and <b>check the pulse and report a rate that stays below 60/min</b>, since metoprolol slows the heart and can slow it too much.</p><p>Taking metoprolol <b>only on days the heart flutters</b> leaves the rate uncontrolled the rest of the time. An <b>irregular pulse isn't a normal part of aging</b>: new heart symptoms in an older adult need to be reported, not dismissed.</p><p><b>Takeaway:</b> A client taking a medication that controls the heart rate takes it every day, reports a returning fast or fluttering heartbeat, and reports a pulse that stays below 60/min.</p>"
+    },
+    {
+      "id": "cv-50",
+      "type": "matrix",
+      "case": "edvisit",
+      "topic": "Arrhythmias and assessment",
+      "stem": "At 1800, after the first doses of metoprolol, the nurse reassesses the client: heart rate 84/min, irregularly irregular; blood pressure 92/58 mm Hg; respiratory rate 18/min; trace swelling in both ankles. For each finding, click to specify whether the client's condition has improved, has not changed, or has declined since 1400.",
+      "rowHeader": "Finding at 1800",
+      "columns": ["Improved", "No change", "Declined"],
+      "rows": ["Heart rate 84/min", "Irregularly irregular rhythm", "Blood pressure 92/58 mm Hg", "Respiratory rate 18/min", "Trace swelling in both ankles"],
+      "answer": [0, 1, 2, 0, 1],
+      "rationale": "<p>Compared with 1400, the <b>heart rate</b> has dropped from 124/min to <b>84/min</b>, within 60 to 100, so it has <b>improved</b>, and the <b>respiratory rate</b> has come down from 22 to <b>18/min</b>, which has also <b>improved</b>. The <b>irregularly irregular rhythm</b> is the same (<b>no change</b>), which is expected: metoprolol slows the rate but doesn't restore a regular rhythm. The <b>trace ankle swelling</b> hasn't changed either. The <b>blood pressure</b> has fallen from 118/74 to <b>92/58 mm Hg</b>, so it has <b>declined</b>: metoprolol can lower the blood pressure, and the nurse should report the drop.</p><p><b>Takeaway:</b> Compare each finding with the client's earlier one; a slower heart rate can come with a drop in blood pressure that needs reporting.</p>"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 540" width="480" height="540" font-family="Arial, Helvetica, sans-serif">
+  <title>Inside of the heart, front view</title>
+  <!-- An original drawing for the Practice Exam Center: the heart cut open
+       and seen from the front, so the client's right is on the viewer's left.
+       All four chambers share one color, so color doesn't tell them apart.
+       The chambers, the four valves, and the great vessels are each their own
+       shape with an id (heart-ra, heart-rv, heart-la, heart-lv,
+       heart-tricuspid, heart-mitral, heart-pulmonic, heart-aortic, heart-svc,
+       heart-ivc, heart-aorta, heart-pulmonary-trunk), so hot-spot areas can
+       be checked against them. The aorta leaves the left ventricle behind
+       the pulmonary trunk, which leaves the right ventricle in front of it,
+       so the two cross, as they do in the body. -->
+  <rect width="480" height="540" fill="#FFFFFF"/>
+  <g font-size="15" font-weight="700" fill="#5C4A48">
+    <text x="18" y="30">R</text>
+    <text x="450" y="30">L</text>
+  </g>
+  <!-- right pulmonary artery, passing behind the aorta -->
+  <path fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M150 96 L270 96 L270 118 L150 118 Z"/>
+  <!-- aorta above the heart: up from the heart, over to the viewer's right, and down behind -->
+  <path id="heart-aorta" fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5"
+    d="M222 150 L222 70 C222 38 250 20 290 18 C336 16 380 34 382 80 L382 156 L350 156 L350 84 C348 60 330 50 292 50 C266 52 254 60 254 74 L254 150 Z"/>
+  <!-- the arteries branching off the top of the aortic arch -->
+  <g fill="#F2D7D4" stroke="#A8706A" stroke-width="2">
+    <path d="M266 26 L266 0 L282 0 L282 21 Z"/>
+    <path d="M300 18 L300 0 L316 0 L316 18 Z"/>
+    <path d="M334 21 L334 0 L350 0 L350 27 Z"/>
+  </g>
+  <!-- outline of the heart muscle -->
+  <path fill="#E7B3AE" stroke="#A8706A" stroke-width="3"
+    d="M92 176 C90 152 106 140 132 140 L384 144 C404 148 412 176 410 214 C408 250 402 282 392 304 C410 350 410 410 388 444 C370 474 340 498 314 504 C280 500 236 484 200 462 C166 440 146 410 140 376 L138 330 C106 322 94 300 92 270 Z"/>
+  <!-- the aorta's start, from the left ventricle up behind the pulmonary trunk -->
+  <path fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M266 330 L298 330 L254 142 L222 142 Z"/>
+  <!-- pulmonary trunk: from the right ventricle up in front of the aorta, dividing into the
+       left pulmonary artery (to the viewer's right) and the right pulmonary artery (behind the aorta) -->
+  <path id="heart-pulmonary-trunk" fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5"
+    d="M202 330 L234 330 L294 146 L294 118 L402 118 L402 96 L262 96 L262 146 Z"/>
+  <!-- superior vena cava, from above into the right atrium -->
+  <path id="heart-svc" fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M112 0 L148 0 L148 160 L112 160 Z"/>
+  <!-- inferior vena cava, from below into the right atrium -->
+  <path id="heart-ivc" fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M100 540 L100 280 L136 280 L136 540 Z"/>
+  <!-- pulmonary veins, from the lungs into the left atrium -->
+  <g fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5">
+    <path d="M374 174 L480 170 L480 192 L374 196 Z"/>
+    <path d="M374 232 L480 236 L480 258 L374 254 Z"/>
+  </g>
+  <!-- right atrium -->
+  <path id="heart-ra" fill="#F9E4E2" stroke="#B98580" stroke-width="2"
+    d="M102 176 C100 160 110 152 128 152 L206 152 L206 296 L102 296 C98 268 98 204 102 176 Z"/>
+  <!-- left atrium -->
+  <path id="heart-la" fill="#F9E4E2" stroke="#B98580" stroke-width="2"
+    d="M300 154 L364 154 C384 156 392 180 390 214 C388 248 378 280 362 296 L300 296 Z"/>
+  <!-- right ventricle -->
+  <path id="heart-rv" fill="#F9E4E2" stroke="#B98580" stroke-width="2"
+    d="M156 322 L240 322 L244 452 C212 456 186 440 172 414 C160 392 154 356 156 322 Z"/>
+  <!-- left ventricle, with the thicker wall -->
+  <path id="heart-lv" fill="#F9E4E2" stroke="#B98580" stroke-width="2"
+    d="M262 322 L352 322 C372 348 376 392 366 428 C356 458 334 474 308 478 L292 472 C280 440 266 384 262 322 Z"/>
+  <!-- tricuspid valve, between the right atrium and right ventricle -->
+  <path id="heart-tricuspid" fill="#FFFFFF" stroke="#8C6A66" stroke-width="2" d="M146 294 L200 294 L200 324 L146 324 Z"/>
+  <!-- mitral valve, between the left atrium and left ventricle -->
+  <path id="heart-mitral" fill="#FFFFFF" stroke="#8C6A66" stroke-width="2" d="M304 294 L358 294 L358 324 L304 324 Z"/>
+  <!-- pulmonic valve, at the start of the pulmonary trunk -->
+  <path id="heart-pulmonic" fill="#FFFFFF" stroke="#8C6A66" stroke-width="2" d="M211.8 300 L243.8 300 L239.2 314 L207.2 314 Z"/>
+  <!-- aortic valve, at the start of the aorta -->
+  <path id="heart-aortic" fill="#FFFFFF" stroke="#8C6A66" stroke-width="2" d="M259 300 L291 300 L294.3 314 L262.3 314 Z"/>
+  <!-- valve leaflets and cusps -->
+  <g fill="#FFF7EE" stroke="#8C6A66" stroke-width="1.5">
+    <path d="M148 296 L172 296 L162 322 Z"/>
+    <path d="M174 296 L198 296 L186 322 Z"/>
+    <path d="M306 296 L330 296 L320 322 Z"/>
+    <path d="M332 296 L356 296 L344 322 Z"/>
+  </g>
+  <g fill="none" stroke="#8C6A66" stroke-width="1.5">
+    <path d="M213 302 Q218.5 312 224 302 Q229.5 312 235 302 Q238.5 310 242 302"/>
+    <path d="M260 302 Q265.5 312 271 302 Q276.5 312 282 302 Q285.5 310 289 302"/>
+  </g>
+</svg>

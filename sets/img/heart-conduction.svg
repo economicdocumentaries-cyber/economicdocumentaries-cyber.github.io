@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 540" width="480" height="540" font-family="Arial, Helvetica, sans-serif">
+  <title>Conduction system of the heart, front view</title>
+  <!-- An original drawing for the Practice Exam Center: the heart cut open
+       and seen from the front, so the client's right is on the viewer's left,
+       with its conduction system in yellow. Every part of the conduction
+       system has the same color, so color doesn't tell them apart. The
+       sinoatrial node, the atrioventricular node, and the bundle of His are
+       drawn larger than life so they are easy to click, and are each their own shape with an id (cond-sa, cond-av, cond-his), so
+       hot-spot areas can be checked against them. Only the veins entering the
+       atria are drawn; the aorta and pulmonary trunk are left out. -->
+  <rect width="480" height="540" fill="#FFFFFF"/>
+  <g font-size="15" font-weight="700" fill="#5C4A48">
+    <text x="18" y="30">R</text>
+    <text x="450" y="30">L</text>
+  </g>
+  <!-- outline of the heart muscle -->
+  <path fill="#E7B3AE" stroke="#A8706A" stroke-width="3"
+    d="M92 176 C90 152 106 140 132 140 L384 144 C404 148 412 176 410 214 C408 250 402 282 392 304 C410 350 410 410 388 444 C370 474 340 498 314 504 C280 500 236 484 200 462 C166 440 146 410 140 376 L138 330 C106 322 94 300 92 270 Z"/>
+  <!-- superior vena cava, from above into the right atrium -->
+  <path fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M112 0 L148 0 L148 160 L112 160 Z"/>
+  <!-- inferior vena cava, from below into the right atrium -->
+  <path fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5" d="M100 540 L100 280 L136 280 L136 540 Z"/>
+  <!-- pulmonary veins, from the lungs into the left atrium -->
+  <g fill="#F2D7D4" stroke="#A8706A" stroke-width="2.5">
+    <path d="M374 174 L480 170 L480 192 L374 196 Z"/>
+    <path d="M374 232 L480 236 L480 258 L374 254 Z"/>
+  </g>
+  <!-- the four chambers; the wall between the atria and the wall between the ventricles are the muscle between them -->
+  <g fill="#F9E4E2" stroke="#B98580" stroke-width="2">
+    <path d="M102 176 C100 160 110 152 128 152 L222 152 L222 290 L102 290 C98 264 98 204 102 176 Z"/>
+    <path d="M250 154 L364 154 C384 156 392 180 390 214 C388 248 378 280 362 290 L250 290 Z"/>
+    <path d="M150 322 L234 322 L240 452 C210 456 184 440 170 414 C158 392 150 356 150 322 Z"/>
+    <path d="M262 322 L352 322 C372 348 376 392 366 428 C356 458 334 474 308 478 L292 472 C280 440 266 384 262 322 Z"/>
+  </g>
+  <!-- tricuspid and mitral valves -->
+  <g fill="#FFFFFF" stroke="#8C6A66" stroke-width="2">
+    <path d="M146 290 L216 290 L216 322 L146 322 Z"/>
+    <path d="M268 290 L352 290 L352 322 L268 322 Z"/>
+  </g>
+  <g fill="#FFF7EE" stroke="#8C6A66" stroke-width="1.5">
+    <path d="M150 292 L180 292 L166 320 Z"/>
+    <path d="M182 292 L212 292 L198 320 Z"/>
+    <path d="M272 292 L308 292 L292 320 Z"/>
+    <path d="M312 292 L348 292 L332 320 Z"/>
+  </g>
+  <!-- conduction system -->
+  <g fill="none" stroke="#C99A12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- right and left bundle branches, down each side of the wall between the ventricles -->
+    <path stroke-width="5" d="M248 334 C242 360 240 400 240 430 C239 440 236 446 232 448"/>
+    <path stroke-width="5" d="M250 334 C258 362 262 404 268 440 C272 456 276 464 282 468"/>
+    <!-- Purkinje fibers, along the walls of the ventricles -->
+    <path stroke-width="3.5" d="M232 448 C208 458 180 446 164 418 C152 396 146 362 146 334"/>
+    <path stroke-width="3.5" d="M282 468 C306 486 344 474 360 446 C376 416 382 372 370 334"/>
+    <path stroke-width="2.5" d="M196 450 L206 432 M170 420 L184 410 M154 384 L168 380 M150 352 L162 352"/>
+    <path stroke-width="2.5" d="M314 480 L310 460 M344 466 L334 450 M366 428 L352 424 M376 390 L362 392 M374 352 L360 356"/>
+  </g>
+  <!-- bundle of His, from the atrioventricular node down into the wall between the ventricles -->
+  <path id="cond-his" fill="#F2C230" stroke="#B8901A" stroke-width="1.5" d="M232 288 L246 288 L254 336 L244 338 Z"/>
+  <!-- atrioventricular node, low in the wall between the atria -->
+  <ellipse id="cond-av" cx="238" cy="277" rx="22" ry="15" fill="#F2C230" stroke="#B8901A" stroke-width="2"/>
+  <!-- sinoatrial node, in the wall of the right atrium where the superior vena cava enters -->
+  <ellipse id="cond-sa" cx="176" cy="171" rx="29" ry="17" fill="#F2C230" stroke="#B8901A" stroke-width="2"/>
+</svg>
