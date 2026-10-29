@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-quality-improvement",
   "title": "Quality Improvement",
-  "description": "Class 14 practice: why quality must improve, federal, state, and local initiatives, the QI process and risk management, incident reports, and quality management programs such as PDSA.",
+  "description": "Class 14 practice: why quality must improve, federal, state, and local initiatives, nurse-sensitive indicators, the QI process, chart audits, and risk management, incident reports, and quality management programs such as PDSA and root cause analysis.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 75,
+  "timeMinutes": 95,
   "defaultCount": 25,
   "cases": {
     "pressure": {
@@ -649,6 +649,165 @@
       ],
       "answer": [0, 0, 1, 2],
       "rationale": "<p><b>The injury rate fell by half</b>, and <b>night-shift repositioning rose</b> to 88%: both improved, so the change is working on the problem it targeted. <b>Admission skin assessments barely moved</b>, so they need their own change in the next cycle. <b>Wound care consults got slower</b>, a decline to report and address.</p><p>In the Act phase, the team can adopt hourly rounding more widely and plan the next PDSA cycle for admission skin assessments and consult delays.</p><p><b>Takeaway:</b> Evaluate each measure separately: keep what worked, and plan the next cycle for what didn't change or got worse.</p>"
+    },
+    {
+      "id": "qi-51", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A unit's QI team has chosen falls as the area of care it most needs to improve. Which of the following steps of the quality improvement process should the team take next?",
+      "options": [
+        "Put a new fall-prevention routine in place on the unit",
+        "Analyze the outcomes to see whether the changes worked",
+        "Research the factors that lead to fewer falls",
+        "Compare the unit's fall rate with the rates at leading hospitals"
+      ],
+      "answer": 2,
+      "rationale": "<p>The QI process moves in order: analyze current care and outcomes, compare them with leaders in high-quality care (benchmarking), identify areas for improvement, <b>research the factors that lead to better outcomes</b>, put changes in place, and analyze the outcomes. This team has identified its area (falls), so it next <b>researches what reduces falls</b>, such as the evidence and the methods that leading hospitals use.</p><p><b>Putting a routine in place</b> before the research skips the evidence the change should be built on. <b>Analyzing outcomes</b> comes after a change is in place. <b>Comparing with leading hospitals</b> comes before choosing the area to improve.</p><p><b>Takeaway:</b> Identify the area to improve, then research what works before changing practice.</p>"
+    },
+    {
+      "id": "qi-52", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A unit's QI team has started using a new discharge-teaching checklist to reduce readmissions. Which of the following steps of the quality improvement process should the team take next?",
+      "options": [
+        "Analyze the outcomes to see whether readmissions went down",
+        "Spread the checklist to every unit in the hospital",
+        "Identify the areas where the unit needs to improve",
+        "Research the factors that lead to fewer readmissions"
+      ],
+      "answer": 0,
+      "rationale": "<p>In the QI process, <b>putting changes in place</b> is followed by <b>analyzing the outcomes</b> to see whether the changes worked: here, whether readmissions went down. The results then point to areas for further improvement, and the process continues.</p><p><b>Spreading the checklist</b> before checking the results could spread a change that doesn't work. <b>Identifying the areas</b> to improve and <b>researching the factors</b> that lead to fewer readmissions came before the team chose the checklist.</p><p><b>Takeaway:</b> After a change is in place, measure the outcomes to see whether it worked.</p>"
+    },
+    {
+      "id": "qi-53", "type": "mc", "topic": "Quality management programs",
+      "stem": "A QI team is starting a PDSA cycle to reduce catheter-associated urinary tract infections (CAUTIs). Which of the following activities belongs in the Plan phase?",
+      "options": [
+        "Using a new catheter-removal checklist on one unit",
+        "Comparing infection rates before and after the trial",
+        "Adopting the checklist on every unit of the hospital",
+        "Setting a goal and deciding how infections will be measured"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>Plan</b> phase identifies the problem, sets a measurable <b>goal</b>, predicts what will happen, chooses the change to test, and decides <b>how results will be measured</b> and who is responsible.</p><p><b>Using the checklist on one unit</b> is the Do phase (a small test). <b>Comparing rates</b> before and after is the Study phase. <b>Adopting it everywhere</b> is a decision in the Act phase.</p><p><b>Takeaway:</b> Plan: set the goal, choose the change, and decide how to measure the results.</p>"
+    },
+    {
+      "id": "qi-54", "type": "mc", "topic": "Quality management programs",
+      "stem": "A QI team used the PDSA cycle to test a turning-reminder board for preventing hospital-acquired pressure injuries. Which of the following statements from the team's report represents the Study phase?",
+      "options": [
+        "“The board will be added to every medical-surgical unit next month, and the policy updated.”",
+        "“Pressure injuries fell from 8 to 4 during the test, as the team predicted.”",
+        "“The team predicts that the board will cut pressure injuries in half within 6 weeks.”",
+        "“The board was used on one unit for 6 weeks while staff recorded any problems.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>Study</b> phase analyzes the data from the test and compares the results with the baseline and the prediction: pressure injuries fell from 8 to 4, as the team expected.</p><p><b>Predicting</b> the result belongs to Plan. <b>Using the board on one unit</b> while recording problems is Do, the small-scale test. <b>Adding the board to every unit</b> and updating the policy is Act, after Study shows the change worked.</p><p><b>Takeaway:</b> Study: analyze the results and compare them with the prediction and the baseline.</p>"
+    },
+    {
+      "id": "qi-55", "type": "mc", "topic": "Quality management programs",
+      "stem": "A small test of a new oral-care routine didn't lower the unit's rate of hospital-acquired pneumonia. Which of the following actions fits the Act phase of the PDSA cycle?",
+      "options": [
+        "Adapting or abandoning the change, then planning another test",
+        "Adopting the change on every unit",
+        "Stopping all work on preventing pneumonia",
+        "Repeating the same test with no changes"
+      ],
+      "answer": 0,
+      "rationale": "<p>In the <b>Act</b> phase, the team decides what to do with what it learned: <b>adopt</b> a change that worked, <b>adapt</b> it, or <b>abandon</b> it. A change that didn't work is adapted or abandoned, and the cycle starts again with a <b>new plan</b>.</p><p><b>Adopting</b> a change that didn't help spreads it without benefit. <b>Stopping the work</b> leaves the problem unsolved. <b>Repeating the same test</b> unchanged is unlikely to give a different result.</p><p><b>Takeaway:</b> Act: adopt a change that worked; adapt or abandon one that didn't, and plan the next cycle.</p>"
+    },
+    {
+      "id": "qi-56", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A nurse is reviewing the unit's quality data. Which of the following is a nurse-sensitive quality indicator?",
+      "options": [
+        "The number of surgeries performed each month",
+        "The average wait for laboratory results",
+        "The number of clients admitted each day",
+        "The rate of client falls with injury"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Nurse-sensitive indicators</b> measure outcomes and processes that nursing care directly affects. <b>Falls with injury</b> is one: rounding, fall-risk assessment, and safety measures by nurses change the rate. The National Database of Nursing Quality Indicators (NDNQI) collects these measures.</p><p>The <b>number of surgeries</b> and the <b>number of admissions</b> measure how busy the hospital is, not the quality of nursing care. The <b>wait for laboratory results</b> depends mainly on the laboratory.</p><p><b>Takeaway:</b> Nurse-sensitive indicators, such as falls with injury, reflect outcomes that nursing care affects.</p>"
+    },
+    {
+      "id": "qi-57", "type": "sata", "topic": "Quality initiatives and agencies",
+      "stem": "A nurse is learning about the National Database of Nursing Quality Indicators (NDNQI). Which of the following are nurse-sensitive indicators?",
+      "options": [
+        "Rates of hospital-acquired pressure injuries",
+        "The number of physicians on the medical staff",
+        "Rates of catheter-associated urinary tract infections",
+        "Rates of central line-associated bloodstream infections",
+        "The number of MRI scans done each month",
+        "Nurse staffing and skill mix"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Nurse-sensitive indicators include <b>pressure injuries</b>, <b>catheter-associated urinary tract infections (CAUTIs)</b>, <b>central line-associated bloodstream infections (CLABSIs)</b>, and falls: outcomes that nursing care, such as turning, catheter care, and line care, directly affects. <b>Staffing and skill mix</b> are structure indicators: how many nurses there are and how they're prepared affects these outcomes.</p><p>The <b>number of physicians</b> and the <b>number of MRI scans</b> measure staffing and volume outside nursing, not nursing quality.</p><p><b>Takeaway:</b> NDNQI indicators include falls, pressure injuries, CAUTIs, CLABSIs, and nurse staffing.</p>"
+    },
+    {
+      "id": "qi-58", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A nursing student asks why some quality indicators are called nurse-sensitive. Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“Nurses are the ones who collect the data for them.”",
+        "“Only nurses are allowed to see the results.”",
+        "“They reflect outcomes that nursing care directly affects.”",
+        "“They measure how satisfied nurses are with their jobs.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>An indicator is <b>nurse-sensitive</b> when nursing care, or how nursing is staffed, <b>directly affects</b> it, so it shows the quality of nursing care. Comparing these indicators with national benchmarks helps units find where to improve.</p><p>Who <b>collects</b> the data or who may <b>see</b> the results doesn't make an indicator nurse-sensitive. Nurses' <b>job satisfaction</b> is tracked too, but it isn't what the term means.</p><p><b>Takeaway:</b> Nurse-sensitive indicators measure what nursing care affects.</p>"
+    },
+    {
+      "id": "qi-59", "type": "mc", "topic": "Quality initiatives and agencies",
+      "stem": "A unit's results on a nurse-sensitive indicator are worse than the national benchmark for similar units. Which of the following conclusions should the unit's QI team draw?",
+      "options": [
+        "The clients on the unit are sicker, so no change is needed",
+        "The nursing care processes behind the indicator need review",
+        "The national data are probably wrong for this unit",
+        "The nurses involved in each case should be disciplined"
+      ],
+      "answer": 1,
+      "rationale": "<p>A nurse-sensitive indicator that's worse than the <b>benchmark</b> for similar units points to <b>nursing care processes</b> that need improving. The team reviews how the care is done (for example, with a PDSA cycle or a chart audit) and plans changes.</p><p>Benchmarks compare <b>similar units</b>, so assuming the clients are <b>sicker</b> or the <b>data are wrong</b> dismisses a real signal. QI looks at systems and processes, not <b>discipline</b> of individuals.</p><p><b>Takeaway:</b> When a nurse-sensitive indicator falls behind the benchmark, review and improve the nursing care processes.</p>"
+    },
+    {
+      "id": "qi-60", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A unit's QI team pulls 20 client records to check whether nurses documented a fall-risk score every shift, as policy requires. Which of the following activities is the team carrying out?",
+      "options": [
+        "A root cause analysis",
+        "An incident report",
+        "A failure mode and effects analysis",
+        "A chart audit"
+      ],
+      "answer": 3,
+      "rationale": "<p>A <b>chart audit</b> reviews a sample of records to check whether <b>documentation</b> is complete and meets the standard, such as a fall-risk score every shift. The results show how well a practice is being followed.</p><p>A <b>root cause analysis</b> looks for the system causes of one serious event. An <b>incident report</b> describes a specific event, such as a fall. A <b>failure mode and effects analysis</b> predicts how a process could fail before harm happens.</p><p><b>Takeaway:</b> A chart audit checks records for complete, correct documentation.</p>"
+    },
+    {
+      "id": "qi-61", "type": "mc", "topic": "The quality improvement process",
+      "stem": "A QI team reviews 25 client records and finds that a skin assessment was documented every shift in only 15 of them. Which of the following actions should the team take next?",
+      "options": [
+        "Ask the nurses to add the missing assessments to those records now",
+        "Stop reviewing records, since most of them were complete",
+        "Share the results, plan a change, and review the records again later",
+        "Discipline each nurse whose record was missing an assessment"
+      ],
+      "answer": 2,
+      "rationale": "<p>Audit results are used to <b>improve the process</b>: the team <b>shares the results</b> with staff, plans a change (such as education or a reminder in the electronic record), and <b>audits again</b> later to see whether documentation improves.</p><p>Filling in assessments <b>now</b> for past shifts would make the records inaccurate, since no one can see the skin as it was then. <b>Stopping</b> ignores a 40% gap. QI focuses on processes, not <b>discipline</b> of individuals.</p><p><b>Takeaway:</b> Use audit results to change the process, then audit again to measure the improvement.</p>"
+    },
+    {
+      "id": "qi-62", "type": "sata", "topic": "Quality management programs",
+      "stem": "A client received 10 times the prescribed dose of insulin and was transferred to intensive care. Which of the following questions should the team ask during the root cause analysis?",
+      "options": [
+        "Were two strengths of insulin stored next to each other?",
+        "Was the nurse interrupted while preparing the dose?",
+        "Which nurse made the error, so that nurse can be disciplined?",
+        "Was a second nurse available to double-check the dose?",
+        "What kind of health insurance does the client have?"
+      ],
+      "answer": [0, 1, 3],
+      "rationale": "<p>A root cause analysis looks at <b>the systems and processes</b> that allowed the error: how the medications were <b>stored</b>, <b>interruptions</b> during preparation, and whether a <b>double-check</b> was available. The answers lead to an action plan that makes the error less likely to happen again.</p><p>Finding <b>someone to discipline</b> isn't the goal: an RCA focuses on systems, not individual blame, so staff can report errors openly. The client's <b>insurance</b> has nothing to do with how the error happened.</p><p><b>Takeaway:</b> A root cause analysis asks how systems and processes allowed the error, not who to blame.</p>"
+    },
+    {
+      "id": "qi-63", "type": "mc", "topic": "Quality management programs",
+      "stem": "During a root cause analysis, the team keeps asking why each cause happened until it reaches a problem in the system. Which of the following techniques is the team using?",
+      "options": [
+        "The 5 Whys",
+        "A chart audit",
+        "A PDSA cycle",
+        "A fishbone diagram"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>5 Whys</b> technique asks “why?” again and again, about five times, moving past the first answer to the <b>underlying system cause</b>.</p><p>A <b>fishbone diagram</b> is another root cause analysis tool, which sorts possible causes into categories rather than following one chain of whys. A <b>chart audit</b> checks documentation, and a <b>PDSA cycle</b> tests a change.</p><p><b>Takeaway:</b> The 5 Whys follows one cause back, why by why, to the system problem.</p>"
     }
   ]
 }

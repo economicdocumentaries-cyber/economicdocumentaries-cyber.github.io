@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-informatics-and-documentation",
   "title": "Informatics and Documentation",
-  "description": "Class 13 practice: informatics in nursing, health information technology, decision support and health literacy, documentation guidelines and formats, and the legal side of documentation.",
+  "description": "Class 13 practice: informatics in nursing, health information technology, decision support and health literacy, confidentiality and protecting client information (HIPAA), documentation guidelines and formats such as PIE and DAR, and the legal side of documentation.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 75,
+  "timeMinutes": 105,
   "defaultCount": 25,
   "cases": {
     "telehealth": {
@@ -638,6 +638,253 @@
       ],
       "answer": 1,
       "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>"
+    },
+    {
+      "id": "inf-51", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse realizes that a client who was just discharged was handed another client's discharge papers by mistake. Which of the following actions should the nurse take?",
+      "options": [
+        "Ask the client to throw the other client's papers away at home",
+        "Get the papers back and report the error, following facility policy",
+        "Say nothing, since the papers were handed over by accident",
+        "Call the other client to apologize before doing anything else"
+      ],
+      "answer": 1,
+      "rationale": "<p>Handing over another client's papers discloses that client's health information, even by accident, so it's a breach. The nurse <b>gets the papers back</b> right away to limit who sees them, gives the client the correct papers, and <b>reports the error</b> through the facility's process (an incident report and the supervisor or privacy officer), who decides how the other client is told.</p><p>Asking the client to <b>throw the papers away</b> leaves the information with the wrong person. <b>Saying nothing</b> hides a breach the facility must handle. <b>Calling the other client first</b> delays getting the papers back, and telling the client is the facility's decision.</p><p><b>Takeaway:</b> Accidental disclosures are still breaches: stop the exposure, then report it following policy.</p>"
+    },
+    {
+      "id": "inf-52", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A well-known singer is admitted to another unit of the hospital. A coworker says, “Let's look at the record to see why the singer is here.” Which of the following responses should the nurse make?",
+      "options": [
+        "“We can look as long as we don't tell anyone what we read.”",
+        "“We should ask the charge nurse first for permission to look.”",
+        "“We can only open records of clients we're caring for.”",
+        "“We can look, since we both work for this hospital.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Records are opened only by staff directly involved in the client's care, on a <b>need-to-know</b> basis. Neither nurse is caring for the singer, so neither may open the record.</p><p><b>Not telling anyone</b> doesn't fix the breach: opening the record is the violation, and every access to an electronic record is tracked and can be audited. A <b>charge nurse</b> can't give permission to look out of curiosity, and <b>working for the hospital</b> doesn't give access to every client's record.</p><p><b>Takeaway:</b> Working in the facility doesn't grant access: only caring for the client does.</p>"
+    },
+    {
+      "id": "inf-53", "type": "sata", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse is reviewing ways to keep client information private on the unit. Which of the following actions protect client confidentiality?",
+      "options": [
+        "Speaking quietly when discussing care in a shared room",
+        "Using only clients' first names when talking in the hallway",
+        "Closing the curtain before asking about a client's history",
+        "Keeping the computer screen turned away from the hallway",
+        "Writing clients' diagnoses next to their names on the hallway board"
+      ],
+      "answer": [0, 2, 3],
+      "rationale": "<p>Ways to protect confidentiality include <b>speaking quietly</b> in shared rooms, <b>closing the curtain</b> (or moving to a private space) before asking about a client's history, and <b>positioning the screen</b> so people walking by can't read it.</p><p><b>First names</b> alone, with a room number or details, can still identify a client to anyone listening. <b>Diagnoses on a hallway board</b> next to names are in plain view of every visitor; boards in shared spaces show only what's needed, without diagnoses.</p><p><b>Takeaway:</b> Talk quietly and privately, shield screens, and keep diagnoses off public boards.</p>"
+    },
+    {
+      "id": "inf-54", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "At the end of the shift, a nurse has a printed handoff report that lists the nurse's clients, their diagnoses, and their room numbers. Which of the following actions should the nurse take with the report?",
+      "options": [
+        "Put it in the recycling bin at the nurses' station",
+        "Take it home to review before the next shift",
+        "Leave it at the nurses' station for the next nurse",
+        "Put it in the locked bin for shredding"
+      ],
+      "answer": 3,
+      "rationale": "<p>A printed report holds <b>protected health information</b>: names with diagnoses. When it's no longer needed, it goes into the <b>locked shredding bin</b>, so no one else can read it.</p><p>A <b>recycling bin</b> is open to anyone. <b>Taking it home</b> carries client information out of the facility, where it can be lost or seen. <b>Leaving it at the station</b> exposes it to anyone passing by; the next nurse gets a verbal or electronic handoff.</p><p><b>Takeaway:</b> Paper with client information is shredded, never recycled, taken home, or left out.</p>"
+    },
+    {
+      "id": "inf-55", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A caller says she is a client's daughter and asks the nurse for the results of the client's tests. Which of the following actions should the nurse take?",
+      "options": [
+        "Confirm that the client has authorized sharing information with this caller",
+        "Share the results, since adult children have a right to know them",
+        "Tell the caller only whether the results were normal",
+        "Share the results after the caller gives the client's date of birth"
+      ],
+      "answer": 0,
+      "rationale": "<p>Family members can receive a client's health information only if the <b>client has authorized it</b> (for example, by naming them on a release or a privacy code). The nurse checks for that authorization and verifies who is calling before sharing anything.</p><p>Adult children don't automatically <b>have a right</b> to a parent's information. Saying whether the results were <b>normal</b> is still sharing them. Knowing the client's <b>date of birth</b> doesn't prove who the caller is or that the client agreed.</p><p><b>Takeaway:</b> Share information with family only with the client's authorization, after verifying the caller.</p>"
+    },
+    {
+      "id": "inf-56", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse posts on a personal social media account: “Long night on 4 West. Our client who coded at 0200 made it, and his family finally showed up!” The post has no names. Which of the following statements about the post is accurate?",
+      "options": [
+        "The post is acceptable because the account is private",
+        "The post is acceptable because it doesn't name the client",
+        "The post is a breach because its details can identify the client",
+        "The post is a breach only if the client sees it"
+      ],
+      "answer": 2,
+      "rationale": "<p>Leaving out the name isn't enough. The <b>unit, the time of the code, and the details</b> let coworkers, family, or friends identify the client, so the post breaches confidentiality and HIPAA.</p><p>A <b>private account</b> can still be shared or seen by others, and posting about clients at all is against policy. Whether the <b>client ever sees it</b> doesn't matter: the disclosure itself is the breach.</p><p><b>Takeaway:</b> Never post about clients, even without names; details can identify them.</p>"
+    },
+    {
+      "id": "inf-57", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A nursing student assigned to one client sees that a friend from high school was admitted to the same unit. Which of the following actions may the student take?",
+      "options": [
+        "Read the friend's record to understand the diagnosis",
+        "Read only the record of the student's assigned client",
+        "Read only the friend's vital signs and nursing notes",
+        "Read the friend's record with the instructor present"
+      ],
+      "answer": 1,
+      "rationale": "<p>Students may open records <b>only for their assigned clients</b>, because that's the only care they're involved in. The friend isn't the student's client, so the friend's record stays closed, all of it.</p><p>Reading <b>part of the record</b>, or reading it <b>with the instructor present</b>, is still access without a need to know. If the friend wants to share news, that's the friend's choice.</p><p><b>Takeaway:</b> Students access only their assigned clients' records.</p>"
+    },
+    {
+      "id": "inf-58", "type": "matrix", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse is reviewing practices at an outpatient clinic. For each practice, click to specify whether it is allowed under HIPAA or is a breach of confidentiality.",
+      "rowHeader": "Practice",
+      "columns": ["Allowed", "Breach"],
+      "rows": [
+        "Calling a client's name in the waiting room, without the reason for the visit",
+        "Leaving a voicemail that describes the client's test results in detail",
+        "Using a sign-in sheet that asks only for the client's name and arrival time",
+        "Discussing a client's diagnosis loudly at the front desk",
+        "Giving a client's information to another nurse caring for the client"
+      ],
+      "answer": [0, 1, 0, 1, 0],
+      "rationale": "<p>HIPAA allows small, <b>incidental disclosures</b> when reasonable safeguards are in place: <b>calling a name</b> in the waiting room without the reason for the visit, and a <b>sign-in sheet</b> that doesn't list why the client is there. Sharing information with <b>others caring for the client</b> is allowed, because it's needed for treatment.</p><p>A <b>detailed voicemail</b> about results can be heard by anyone with access to the phone; the nurse leaves only a request to call back. <b>Discussing a diagnosis loudly</b> at the front desk ignores reasonable safeguards.</p><p><b>Takeaway:</b> Incidental disclosures with safeguards and sharing for treatment are allowed; careless details are not.</p>"
+    },
+    {
+      "id": "inf-59", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "Out of concern, a nurse opens the record of a neighbor who is a client on another unit, and shares nothing with anyone. Which of the following statements about this action is accurate?",
+      "options": [
+        "It is allowed, because the nurse shared nothing",
+        "It is a breach, and the access is tracked in the record",
+        "It is allowed, because the nurse acted out of concern",
+        "It is a breach only if the neighbor complains"
+      ],
+      "answer": 1,
+      "rationale": "<p>Opening a record without a <b>need to know</b> is a breach of confidentiality, whatever the reason. The electronic record is <b>auditable</b>: every access is logged under the user's login, so the facility can see who opened the record and when.</p><p>Sharing <b>nothing afterward</b> doesn't undo the access, and <b>concern</b> isn't a care-related reason. The breach doesn't depend on whether the client <b>complains</b>.</p><p><b>Takeaway:</b> Every access to an electronic record is tracked; looking without a need to know is a breach.</p>"
+    },
+    {
+      "id": "inf-60", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse is setting up a password for the electronic health record. Which of the following practices helps keep client information secure?",
+      "options": [
+        "Using a strong password and changing it regularly",
+        "Writing the password on a note under the keyboard",
+        "Using the same password as the nurse's personal email",
+        "Telling the charge nurse the password for emergencies"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>strong, unique password that's changed regularly</b> keeps others from using the nurse's access. Every entry and every look at a record is tied to the login, so the nurse is responsible for anything done under it.</p><p>A <b>note under the keyboard</b> lets anyone find it. <b>Reusing a personal password</b> means one leak exposes both. <b>Telling anyone</b>, even the charge nurse, is sharing a login, which is never allowed.</p><p><b>Takeaway:</b> Use a strong, unique password, change it often, and never write it down or share it.</p>"
+    },
+    {
+      "id": "inf-61", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A client asks a nurse, “Can I see what's written in my medical record?” Which of the following responses should the nurse make?",
+      "options": [
+        "“Only your provider is allowed to read your medical record.”",
+        "“You'll need a lawyer to request your medical record.”",
+        "“You can see your record only after you're discharged.”",
+        "“Yes. You have the right to see and get a copy of your record.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>Under HIPAA, clients have the <b>right to see and get a copy</b> of their own health records. The nurse follows the facility's process for the request.</p><p>The record isn't limited to the <b>provider</b>, a <b>lawyer</b> isn't needed, and access doesn't wait for <b>discharge</b>.</p><p><b>Takeaway:</b> Clients have the right to see and copy their own records.</p>"
+    },
+    {
+      "id": "inf-62", "type": "sata", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse manager is reviewing reports of possible privacy problems on the unit. Which of the following situations are breaches of client confidentiality?",
+      "options": [
+        "Two nurses discussing a client's diagnosis in the cafeteria line",
+        "Giving report on a client to the oncoming nurse in a private area",
+        "Taking a photo of a client's wound with a personal phone",
+        "Calling a client's provider to report a change in condition",
+        "Telling a client's coworker, who is visiting, why the client was admitted"
+      ],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Three situations are breaches. <b>Discussing a diagnosis in the cafeteria</b> lets others overhear. A <b>photo on a personal phone</b> stores client information on an unsecured device; photos are taken only with consent and facility equipment, following policy. <b>Telling a visiting coworker</b> why the client was admitted shares information without the client's permission.</p><p><b>Report to the oncoming nurse</b> in a private area and <b>calling the provider</b> about a change in condition share information with people caring for the client, which is needed for treatment.</p><p><b>Takeaway:</b> Sharing for care, in private, is allowed; public talk, personal devices, and telling visitors are breaches.</p>"
+    },
+    {
+      "id": "inf-63", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A client has signed a form allowing the facility to share her health information with her husband. In her room, with her present, the husband asks the nurse about her test results. Which of the following actions should the nurse take?",
+      "options": [
+        "Share the results with him",
+        "Refuse, since only the client may receive her results",
+        "Ask him to get the results from the provider's office",
+        "Share the results only after he signs a release form"
+      ],
+      "answer": 0,
+      "rationale": "<p>The client has <b>authorized</b> sharing her information with her husband, so the nurse <b>may share the results</b> with him. Her presence lets the nurse confirm who he is.</p><p>A client's information isn't limited to the client when she has given permission, so <b>refusing</b> isn't required, and sending him to the <b>provider's office</b> isn't needed. The release is signed by the <b>client</b>, not by the person receiving the information.</p><p><b>Takeaway:</b> The client decides who receives her information; once she has authorized someone, the nurse may share with them.</p>"
+    },
+    {
+      "id": "inf-64", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "At the grocery store, a friend asks a nurse, “Is our neighbor a patient on your unit? I heard she was in the hospital.” Which of the following responses should the nurse make?",
+      "options": [
+        "“She is, but I can't tell you why she's there.”",
+        "“Yes, she is. You should call her room to say hello.”",
+        "“I can't share anything about who is or isn't a client.”",
+        "“I'll let you know if she's still there tomorrow.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Even the fact that someone <b>is a client</b> is protected health information. The nurse can't confirm or deny it outside of care.</p><p><b>Confirming she's there</b>, even without the reason, discloses information. Suggesting the friend <b>call her room</b> confirms it too. Promising an <b>update tomorrow</b> plans another disclosure.</p><p><b>Takeaway:</b> Don't confirm or deny that someone is a client; that's protected too.</p>"
+    },
+    {
+      "id": "inf-65", "type": "mc", "topic": "Confidentiality and protecting information",
+      "stem": "A nurse needs to send a client's new laboratory result to the client's provider. Which of the following methods protects the client's information?",
+      "options": [
+        "Texting the result from the nurse's personal phone",
+        "Emailing the result to the provider's personal email",
+        "Writing the result on the unit's whiteboard",
+        "Using the facility's secure messaging system"
+      ],
+      "answer": 3,
+      "rationale": "<p>Client information is sent only through the facility's <b>secure, approved systems</b>, such as secure messaging in the electronic record, or by calling the provider. These systems protect the information and record who sent what.</p><p>A <b>personal phone</b> and <b>personal email</b> aren't secure: messages can be lost, forwarded, or stored where others can see them. A <b>whiteboard</b> puts the result in view of anyone passing.</p><p><b>Takeaway:</b> Share client information only through the facility's secure systems, never personal phones or email.</p>"
+    },
+    {
+      "id": "inf-66", "type": "mc", "topic": "Documentation guidelines",
+      "stem": "A nurse is learning focus charting with DAR notes. Which of the following does the R stand for?",
+      "options": [
+        "Response",
+        "Recommendation",
+        "Reassessment",
+        "Rationale"
+      ],
+      "answer": 0,
+      "rationale": "<p>A DAR note in focus charting has three parts: <b>Data</b> (the subjective and objective information about the focus), <b>Action</b> (what the nurse did), and <b>Response</b> (how the client responded).</p><p><b>Recommendation</b> is the R in SBAR handoffs. <b>Reassessment</b> may be part of finding the response, and a <b>rationale</b> explains why an action is done, but neither is a letter of DAR.</p><p><b>Takeaway:</b> DAR = Data, Action, Response.</p>"
+    },
+    {
+      "id": "inf-67", "type": "mc", "topic": "Documentation guidelines",
+      "stem": "A nurse writes this note in DAR format about a client's pain. Which of the following statements represents the A of the note?",
+      "options": [
+        "Client reports pain of 7 out of 10 in the left hip; grimacing when moving",
+        "Gave oxycodone 5 mg PO and repositioned the client with a pillow",
+        "At 1030, client reports pain of 3 out of 10; resting quietly",
+        "Acute pain related to the surgical incision on the left hip"
+      ],
+      "answer": 1,
+      "rationale": "<p>In a DAR note, the A is the <b>Action</b>: what the nurse did. <b>Giving the oxycodone and repositioning the client</b> is the action.</p><p>The pain report and grimacing are the <b>Data</b>. The pain of 3 out of 10 afterward is the <b>Response</b>. “Acute pain related to the incision” is a nursing diagnosis, the kind of statement that is the A (Assessment) of a SOAP note, not of a DAR note.</p><p><b>Takeaway:</b> In DAR, A is the nurse's Action; in SOAP, A is the Assessment.</p>"
+    },
+    {
+      "id": "inf-68", "type": "mc", "topic": "Documentation guidelines",
+      "stem": "A nurse writes a PIE note about a client who has thick lung secretions after surgery. Which of the following statements represents the E of the note?",
+      "options": [
+        "Ineffective airway clearance related to thick secretions and incision pain",
+        "Helped the client cough and deep breathe every 2 hours; splinted the incision",
+        "Coughing up thin, clear sputum; breath sounds clear after coughing",
+        "Weak cough; coarse crackles heard in both lower lobes"
+      ],
+      "answer": 2,
+      "rationale": "<p>A PIE note has three parts: the <b>Problem</b>, the <b>Intervention</b>, and the <b>Evaluation</b>. The E is the evaluation of how the client responded to the interventions: <b>coughing up thin, clear sputum</b>, with clear breath sounds.</p><p><b>Ineffective airway clearance</b> is the problem (P), and <b>helping the client cough and deep breathe</b> is the intervention (I). The <b>weak cough and crackles</b> are assessment data that led to the problem, not one of the note's three parts.</p><p><b>Takeaway:</b> PIE: Problem, Intervention, Evaluation; the E tells how the client responded.</p>"
+    },
+    {
+      "id": "inf-69", "type": "matrix", "topic": "Documentation guidelines",
+      "stem": "A nurse is writing a DAR note about a client who became dizzy while getting out of bed. For each statement, click to specify the part of the note it belongs in.",
+      "rowHeader": "Statement",
+      "columns": ["D", "A", "R"],
+      "rows": [
+        "Client reports feeling dizzy when standing",
+        "Assisted the client back to bed and raised the head of the bed",
+        "Standing BP 92/58 mm Hg; lying BP 118/72 mm Hg",
+        "After 15 minutes, client reports the dizziness is gone"
+      ],
+      "answer": [0, 1, 0, 2],
+      "rationale": "<p>The <b>Data</b> are the subjective and objective information about the focus: the client's report of <b>dizziness when standing</b> and the <b>blood pressure</b> readings. The <b>Action</b> is what the nurse did: <b>assisting the client back to bed</b> and raising the head of the bed. The <b>Response</b> is how the client did afterward: the <b>dizziness is gone</b> after 15 minutes.</p><p><b>Takeaway:</b> In DAR, data can be subjective or objective; the action is the nurse's, and the response is the client's.</p>"
+    },
+    {
+      "id": "inf-70", "type": "mc", "topic": "Documentation guidelines",
+      "stem": "A nurse writes a PIE note about a client who hasn't had a bowel movement in 4 days. Which of the following statements represents the P of the note?",
+      "options": [
+        "Gave docusate 100 mg PO and encouraged 2 L of fluids today",
+        "Client had a soft, formed bowel movement at 1400",
+        "Abdomen firm and slightly distended; bowel sounds hypoactive",
+        "Constipation related to decreased activity and fluid intake"
+      ],
+      "answer": 3,
+      "rationale": "<p>In a PIE note, the P is the <b>problem</b>, usually written as a nursing diagnosis: <b>constipation related to decreased activity and fluid intake</b>.</p><p><b>Giving docusate and encouraging fluids</b> is the intervention (I), and <b>the soft, formed bowel movement</b> is the evaluation (E). The <b>firm abdomen and hypoactive bowel sounds</b> are assessment data that support the problem, not one of the note's three parts.</p><p><b>Takeaway:</b> In PIE, the P names the problem, the I is what the nurse did, and the E is how the client responded.</p>"
     }
   ]
 }

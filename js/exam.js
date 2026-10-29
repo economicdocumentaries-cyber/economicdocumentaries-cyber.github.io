@@ -109,7 +109,9 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map()) 
 // weights: the set's topicWeights, when its exams must follow a blueprint
 // whatever the size of each topic's pool (SPEC 11.3). Then each topic's share
 // comes first, with its questions seen longest ago, and a case study may go
-// past its topics' shares by 2 questions at most.
+// past its topics' shares by 2 questions at most. A topic weighted 0 is left
+// out, with any case study that has a question in it, unless the other topics
+// run out of questions.
 function pickBlocks(blocks, limit, random, seen, weights = null) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
   const queue = shuffle(blocks, random).sort((a, b) => age(a) - age(b)); // seen longest ago first, in random order within an age
@@ -132,8 +134,9 @@ function pickBlocks(blocks, limit, random, seen, weights = null) {
     for (const q of b) left.set(q.topic, left.get(q.topic) - 1);
     count += b.length;
   };
-  // A case study that would take its topics more than 2 past their shares (blueprint sets only).
-  const tooBig = b => blueprint && [...new Set(b.map(q => q.topic))].some(t => b.filter(q => q.topic === t).length > left.get(t) + 2);
+  // A case study that would take its topics more than 2 past their shares, or has a topic
+  // weighted 0 (blueprint sets only).
+  const tooBig = b => blueprint && [...new Set(b.map(q => q.topic))].some(t => weights[t] === 0 || b.filter(q => q.topic === t).length > left.get(t) + 2);
   // Case studies whose turn it is: the ones starting within the first `limit` questions of the queue.
   let start = 0;
   for (const b of queue.slice()) {

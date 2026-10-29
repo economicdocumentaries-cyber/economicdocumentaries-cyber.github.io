@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-health-policy",
   "title": "Health Policy",
-  "description": "Class 15 practice: health policy as an entity and a process, how policy is made, key health laws, agencies and professional associations, accreditation, and insurance and reimbursement.",
+  "description": "Class 15 practice: health policy as an entity and a process, how policy is made, key health laws such as HIPAA and the Mental Health Parity and Addiction Equity Act, agencies such as the FDA and professional associations, accreditation, and insurance and reimbursement.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 75,
+  "timeMinutes": 96,
   "defaultCount": 25,
   "cases": {
     "scooter": {
@@ -655,6 +655,176 @@
       ],
       "answer": 2,
       "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
+    },
+    {
+      "id": "hp-51", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A nurse is teaching a group of nursing students about the Mental Health Parity and Addiction Equity Act (MHPAEA). Which of the following describes the law's main purpose?",
+      "options": [
+        "Plans that cover mental health and substance use care can't limit it more than medical care",
+        "Every health plan must offer coverage for mental health and substance use care",
+        "Mental health records must be stored apart from the rest of the medical record",
+        "Emergency departments must treat clients in a mental health crisis without insurance"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>Mental Health Parity and Addiction Equity Act</b> (2008) requires health plans that cover mental health and substance use care to cover it <b>no more restrictively than medical and surgical care</b>: copays, deductibles, and limits on visits or days can't be stricter.</p><p>The law <b>doesn't require every plan to offer</b> these benefits; it applies to plans that do. Keeping <b>records separate</b> is about privacy, not parity. Treating anyone in an <b>emergency</b> regardless of insurance comes from EMTALA.</p><p><b>Takeaway:</b> Parity means mental health and substance use benefits are covered on the same terms as medical benefits.</p>"
+    },
+    {
+      "id": "hp-52", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A client's health plan, which isn't exempt from the parity law, charges a $20 copay to see a cardiologist and a $60 copay to see a psychiatrist. Which of the following statements is accurate?",
+      "options": [
+        "The difference is allowed, because psychiatric visits last longer",
+        "The difference is allowed, because the client agreed to the plan",
+        "The higher copay for psychiatric visits goes against the parity law",
+        "The difference is allowed, because both doctors are specialists"
+      ],
+      "answer": 2,
+      "rationale": "<p>Under the parity law, a plan's <b>copays</b> for mental health care can't be higher than its copays for comparable medical care. A $60 copay for a psychiatrist when a medical specialist costs $20 is a <b>parity violation</b>.</p><p>The <b>length of the visit</b>, the client's <b>agreement to the plan</b>, and the fact that both are <b>specialists</b> don't make a stricter copay for mental health care allowed; comparing specialist visits is exactly what the law requires.</p><p><b>Takeaway:</b> Copays for mental health care can't be higher than for comparable medical care.</p>"
+    },
+    {
+      "id": "hp-53", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A nurse is helping a client compare health plans. Which of the following plan features meets the requirements of the Mental Health Parity and Addiction Equity Act?",
+      "options": [
+        "A limit of 20 therapy visits a year, with no limit on medical visits",
+        "Prior approval for every therapy visit, but not for medical visits",
+        "A higher deductible for substance use treatment than for medical care",
+        "The same limits on outpatient therapy visits as on outpatient medical visits"
+      ],
+      "answer": 3,
+      "rationale": "<p>Parity means the plan's rules for mental health and substance use care are <b>no stricter than for medical care</b>. Applying <b>the same limits</b> to outpatient therapy visits as to outpatient medical visits meets the law.</p><p>A <b>yearly cap on therapy visits</b> with no cap on medical visits, <b>prior approval</b> required only for therapy, and a <b>higher deductible</b> for substance use treatment all make mental health or substance use care harder to get than medical care.</p><p><b>Takeaway:</b> Visit limits, prior approval rules, and deductibles must be no stricter for mental health care than for medical care.</p>"
+    },
+    {
+      "id": "hp-54", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A client who is starting treatment for alcohol use disorder asks whether the parity law applies to this care. Which of the following responses should the nurse make?",
+      "options": [
+        "“No. The law covers mental illness, not substance use.”",
+        "“Yes. Substance use treatment is covered by the law too.”",
+        "“Only if you also have a mental illness, such as depression.”",
+        "“Only for a hospital stay to detox, not outpatient care.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>The law's full name, the Mental Health Parity and <b>Addiction</b> Equity Act, shows that it covers <b>substance use disorders</b> as well as mental illness. A plan that covers alcohol use disorder treatment must cover it no more restrictively than medical care, inpatient and outpatient.</p><p>The law isn't limited to <b>mental illness</b>, doesn't require a <b>second diagnosis</b>, and isn't limited to <b>inpatient detox</b>.</p><p><b>Takeaway:</b> Parity applies to substance use disorder treatment, not only to mental illness.</p>"
+    },
+    {
+      "id": "hp-55", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A client's health plan doesn't offer any mental health or substance use benefits. Which of the following statements about the Mental Health Parity and Addiction Equity Act is accurate?",
+      "options": [
+        "The law applies only to plans that offer these benefits",
+        "The law requires the plan to add these benefits right away",
+        "The law requires the plan to pay for this care at no cost",
+        "The law requires the plan to refund the client's premiums"
+      ],
+      "answer": 0,
+      "rationale": "<p>The parity law sets rules for plans that <b>offer</b> mental health or substance use benefits: those benefits can't be covered more restrictively than medical care. On its own, it <b>doesn't require</b> a plan to offer them. (A later law, the Affordable Care Act, requires many individual and small-group plans to include mental health and substance use care as essential health benefits.)</p><p>The parity law doesn't make a plan <b>add</b> benefits, make care <b>free</b>, or <b>refund premiums</b>.</p><p><b>Takeaway:</b> Parity applies to plans that cover mental health and substance use care; it doesn't by itself require that coverage.</p>"
+    },
+    {
+      "id": "hp-56", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "In a class discussion, a nurse explains that some health plans are exempt from the Mental Health Parity and Addiction Equity Act. Which of the following describes how an exemption can affect clients covered by an exempt plan?",
+      "options": [
+        "Their plan must stop covering mental health care completely",
+        "Their medical care must be covered with the same limits as mental health care",
+        "Their plan may limit mental health care more than it limits medical care",
+        "Their mental health care must be paid for by the federal government"
+      ],
+      "answer": 2,
+      "rationale": "<p>An exempt plan doesn't have to follow parity rules, so it <b>may cover mental health and substance use care more restrictively</b> than medical care: higher copays, fewer visits, or more approvals. Clients in exempt plans can face higher costs or limits that make treatment harder to get.</p><p>An exemption doesn't force a plan to <b>drop</b> mental health coverage, doesn't change how <b>medical care</b> is covered, and doesn't move the cost to the <b>federal government</b>.</p><p><b>Takeaway:</b> Exemptions let some plans limit mental health care more than medical care, which can keep clients from treatment.</p>"
+    },
+    {
+      "id": "hp-57", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A nurse is explaining why mental health parity matters for client outcomes. Which of the following statements is accurate?",
+      "options": [
+        "“Parity guarantees that mental illness can be cured.”",
+        "“Coverage on equal terms helps clients get treatment when they need it.”",
+        "“Parity lowers the price of every prescription medication.”",
+        "“Parity requires employers to provide counseling at work.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>When mental health and substance use care are covered on the <b>same terms as medical care</b>, cost and visit limits are less likely to keep clients from treatment. Getting care early and continuing it improves outcomes such as symptom control, recovery, and safety.</p><p>Parity doesn't <b>guarantee a cure</b>, doesn't set <b>medication prices</b>, and doesn't require <b>counseling at work</b>; it governs how health plans cover care.</p><p><b>Takeaway:</b> Parity improves outcomes by removing coverage barriers to mental health and substance use treatment.</p>"
+    },
+    {
+      "id": "hp-58", "type": "mc", "topic": "Mental Health Parity Act",
+      "stem": "A client says, “My plan stopped paying for therapy after 20 visits this year, but it has no visit limit for my diabetes care.” Which of the following actions should the nurse take?",
+      "options": [
+        "Advise the client to stop therapy until the new plan year",
+        "Explain that health plans rarely cover mental health care",
+        "Suggest the client pay for therapy without questioning the plan",
+        "Tell the client about parity protections and how to appeal the decision"
+      ],
+      "answer": 3,
+      "rationale": "<p>A visit limit on therapy that the plan doesn't apply to medical care may <b>violate the parity law</b>. The nurse advocates for the client by explaining these <b>protections</b> and how to <b>appeal</b> the plan's decision; the Centers for Medicare &amp; Medicaid Services (CMS) and state insurance regulators also explain clients' rights.</p><p><b>Stopping therapy</b> can harm the client's recovery. Saying plans <b>rarely cover</b> mental health care is inaccurate. <b>Paying without questioning</b> the plan gives up protections the client may have.</p><p><b>Takeaway:</b> When mental health care is limited more than medical care, the nurse helps the client use parity protections and appeal.</p>"
+    },
+    {
+      "id": "hp-59", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "A nurse is reviewing major health laws. Which of the following describes the general purpose of the Health Insurance Portability and Accountability Act (HIPAA)?",
+      "options": [
+        "To give every client written information about advance directives on admission",
+        "To protect the privacy and security of health information and keep insurance portable",
+        "To require emergency departments to screen and stabilize clients regardless of ability to pay",
+        "To guarantee health insurance coverage for every citizen of the United States"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>HIPAA</b> (1996) protects the <b>privacy and security of health information</b>, giving clients rights over their records and limiting who may see them, and it helps workers <b>keep health insurance</b> when they change or lose jobs (portability).</p><p>Information about <b>advance directives</b> comes from the Patient Self-Determination Act. <b>Screening and stabilizing</b> anyone in an emergency department comes from EMTALA. No federal law <b>guarantees insurance</b> for every citizen.</p><p><b>Takeaway:</b> HIPAA protects health information privacy and security, and insurance portability.</p>"
+    },
+    {
+      "id": "hp-60", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "A nurse is reviewing which information is protected by HIPAA. Which of the following is protected health information (PHI)?",
+      "options": [
+        "A printed list of clients' names with their diagnoses",
+        "The average length of stay on the unit last month",
+        "The hospital's written policy on preventing falls",
+        "The total number of beds on each unit of the hospital"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Protected health information</b> is health information that can be linked to a specific person, such as <b>names with diagnoses</b>, in any form: spoken, written, or electronic.</p><p>An <b>average length of stay</b> is a statistic about many clients that identifies no one. A <b>fall-prevention policy</b> and the <b>number of beds</b> contain no client information at all.</p><p><b>Takeaway:</b> PHI is health information that identifies a person; statistics and policies are not PHI.</p>"
+    },
+    {
+      "id": "hp-61", "type": "sata", "topic": "Health policy as an entity and a process",
+      "stem": "A nurse is teaching staff about protected health information (PHI). Which of the following, when linked to a client's health information, are PHI?",
+      "options": [
+        "The client's name",
+        "The unit's nurse-to-client ratio",
+        "The client's date of birth",
+        "The client's medical record number",
+        "The generic name of a medication",
+        "A photo of the client's face"
+      ],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Anything that can identify a client makes health information <b>protected</b>: the <b>name</b>, <b>date of birth</b>, <b>medical record number</b>, and a <b>photo of the face</b>, along with others such as the address, phone number, and Social Security number.</p><p>The unit's <b>nurse-to-client ratio</b> and a medication's <b>generic name</b> don't identify any client.</p><p><b>Takeaway:</b> Identifiers such as the name, date of birth, record number, and photo turn health information into PHI.</p>"
+    },
+    {
+      "id": "hp-62", "type": "mc", "topic": "Agencies and organizations",
+      "stem": "A nurse is reviewing federal health agencies. Which of the following is a role of the U.S. Food and Drug Administration (FDA)?",
+      "options": [
+        "Setting the nurse-to-client staffing ratio for every hospital",
+        "Paying for health care for adults 65 years of age and older",
+        "Approving new medications and medical devices as safe and effective",
+        "Investigating outbreaks of infectious disease in communities"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>FDA</b>, part of the U.S. Department of Health and Human Services, makes sure that <b>medications, medical devices</b>, food, and other products are safe and effective. It reviews and <b>approves new medications and devices</b> before they're sold, monitors them afterward, and can issue warnings and recalls.</p><p>No federal agency sets <b>staffing ratios</b> for every hospital. <b>Paying for care for adults 65 and older</b> is Medicare, run by the Centers for Medicare &amp; Medicaid Services. <b>Investigating outbreaks</b> is the work of the Centers for Disease Control and Prevention.</p><p><b>Takeaway:</b> The FDA approves and oversees the safety of medications, medical devices, and food.</p>"
+    },
+    {
+      "id": "hp-63", "type": "mc", "topic": "Health policy as an entity and a process",
+      "stem": "A nurse is explaining who must follow HIPAA's privacy rules. Which of the following organizations must follow them?",
+      "options": [
+        "A newspaper that reports on a car accident",
+        "A gym where a client takes fitness classes",
+        "A store that sells vitamins and supplements",
+        "A client's health insurance plan"
+      ],
+      "answer": 3,
+      "rationale": "<p>HIPAA's privacy rules apply to <b>covered entities</b>: <b>health plans</b> (such as a client's insurer), health care providers who bill electronically (hospitals, clinics, pharmacies, nurses' employers), and health care clearinghouses, along with the businesses that handle health information for them.</p><p>A <b>newspaper</b>, a <b>gym</b>, and a <b>vitamin store</b> aren't covered entities, so HIPAA doesn't govern them, even if they learn something about a person's health.</p><p><b>Takeaway:</b> HIPAA applies to health plans, health care providers, and the businesses that handle health information for them.</p>"
+    },
+    {
+      "id": "hp-64", "type": "mc", "topic": "Health policy and other concepts",
+      "stem": "A nurse is explaining why health policy pays attention to health literacy. Which of the following statements should the nurse include?",
+      "options": [
+        "“Low health literacy is linked to more hospital stays, more emergency visits, and poorer health.”",
+        "“Health literacy matters only for clients who don't speak English.”",
+        "“Clients with low health literacy can't use written health materials at all.”",
+        "“Health literacy depends mainly on how many years of school a person finished.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Low health literacy is linked to poorer health</b>: more hospital stays and emergency visits, less use of preventive care, and more mistakes with medications. That's why health policies call for health information that people can find, understand, and use, and why nurses check that clients understand what they're taught.</p><p>Low health literacy affects people of <b>every background</b>, including fluent English speakers and people with many <b>years of school</b>, especially when they're sick or stressed. Clients with low health literacy <b>can use written materials</b> that are clear and simple, with plain words and pictures.</p><p><b>Takeaway:</b> Low health literacy leads to poorer health outcomes, so policy pushes for health information everyone can understand and use.</p>"
     }
   ]
 }

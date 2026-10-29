@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-abbreviations-conversions-and-labels",
   "title": "Abbreviations, Conversions, and Labels",
-  "description": "Class 10 practice for Exam 3: common medical abbreviations, medication orders, units of measure, metric, household, weight, length, time, and temperature conversions, intake in mL, and reading medication labels.",
+  "description": "Class 10 practice for Exam 3: common medical abbreviations, including spotting the wrong one in a documentation entry, complete medication orders, units of measure, metric, household, weight, length, time, and temperature conversions, dose calculations, intake in mL, and reading medication labels.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 75,
+  "timeMinutes": 126,
   "defaultCount": 25,
   "cases": {
     "fluids": {
@@ -529,6 +529,314 @@
       "options": ["Contact the provider, and ask for the order to be rewritten with “units” spelled out.", "Give 4 units, because that is the most likely meaning of the order as written.", "Ask another nurse to read the order and decide which dose the provider meant.", "Write “units” next to the U on the order, and then give the dose as corrected."],
       "answer": 0,
       "rationale": "<p>Only the <b>prescriber</b> can change an order, so the nurse <b>contacts the provider</b> before the dose is due, explains the problem, and asks for the order to be rewritten with <b>“units” spelled out</b>. The nurse holds the dose until the order is clear and documents the clarification.</p><p>Giving the dose based on its <b>most likely</b> meaning is a guess, and guessing with insulin can be dangerous. <b>Another nurse</b> can't decide what the prescriber meant. And the nurse never <b>edits</b> an order, even to fix an abbreviation.</p><p><b>Takeaway:</b> Unclear orders go back to the prescriber; the nurse never guesses at them or rewrites them.</p>"
+    },
+    {
+      "id": "acl-51",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0730: Client NPO for a 1000 procedure.", "0800: Gave insulin lispro 6 U subcut.", "0815: BP 132/84, SpO2 97% on room air.", "0900: Client A&O; walked in the hall."],
+      "answer": 1,
+      "rationale": "<p><b>U</b> for units is on the list of abbreviations not to use: a handwritten or blurred U can look like a 0 or a 4, so 6 U can be read as 60 units, a 10-fold insulin overdose. The nurse writes out <b>units</b>: “6 units.”</p><p><b>NPO</b> (nothing by mouth), <b>BP</b> (blood pressure), <b>SpO2</b> (oxygen saturation), and <b>A&amp;O</b> (alert and oriented) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Write out “units”; a U can be misread as a 0 or a 4.</p>"
+    },
+    {
+      "id": "acl-52",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0900: Gave lisinopril 10 mg PO QD as ordered.", "1000: Client reports a headache; BP 128/76.", "1100: Up ad lib; walked to the bathroom alone.", "1200: I&O recorded; oral intake 360 mL."],
+      "answer": 0,
+      "rationale": "<p><b>QD</b> (every day) is on the list of abbreviations not to use: it can be mistaken for QID (four times a day), and the period after a lowercase q can look like an i. The nurse writes <b>daily</b>.</p><p><b>BP</b> (blood pressure), <b>ad lib</b> (as much as desired), and <b>I&amp;O</b> (intake and output) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Write “daily” instead of QD, which can be read as QID.</p>"
+    },
+    {
+      "id": "acl-53",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four medication entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Gave metoprolol tartrate 25 mg PO.", "0900: Gave furosemide 40 mg IV.", "1700: Gave warfarin 5.0 mg PO.", "2100: Gave docusate sodium 100 mg PO at bedtime."],
+      "answer": 2,
+      "rationale": "<p>A <b>trailing zero</b>, as in <b>5.0 mg</b>, is not to be used: if the decimal point is missed, 5.0 mg is read as 50 mg, a 10-fold overdose of warfarin. A whole-number dose is written without a decimal point: <b>5 mg</b>.</p><p>The other entries write each dose as a whole number with its unit (mg) and use the standard routes <b>PO</b> (by mouth) and <b>IV</b> (intravenous).</p><p><b>Takeaway:</b> Never put a zero after a decimal point: write 5 mg, not 5.0 mg.</p>"
+    },
+    {
+      "id": "acl-54",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0700: AP 72, RR 16, BP 118/76.", "0800: Client NPO; IV fluids infusing.", "1000: Gave ondansetron 4 mg IV for nausea.", "1100: Gave lorazepam .5 mg PO for anxiety."],
+      "answer": 3,
+      "rationale": "<p>A dose smaller than 1 needs a <b>leading zero</b>: without it, the decimal point in <b>.5 mg</b> can be missed, and the dose read as 5 mg, a 10-fold overdose. The nurse writes <b>0.5 mg</b>.</p><p><b>AP</b> (apical pulse), <b>RR</b> (respiratory rate), <b>BP</b> (blood pressure), <b>NPO</b> (nothing by mouth), and <b>IV</b> (intravenous) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Always put a zero before a decimal point: write 0.5 mg, never .5 mg.</p>"
+    },
+    {
+      "id": "acl-55",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A client has glaucoma in the left eye only, and the nurse gave the eye drops in that eye. Which of the following entries the nurse documented contains an incorrect abbreviation?",
+      "options": ["0800: Gave 1 drop of timolol in OD.", "0900: Client A&O; denies eye pain.", "1000: Up ad lib with a steady gait.", "1200: Ate 75% of lunch; I&O recorded."],
+      "answer": 0,
+      "rationale": "<p><b>OD</b> means the <b>right eye</b>. The drops went into the left eye, which is <b>OS</b>, so this entry records the wrong eye. (OU means both eyes.) Writing “left eye” in full prevents mix-ups between these look-alike abbreviations.</p><p><b>A&amp;O</b> (alert and oriented), <b>ad lib</b> (as much as desired), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> OD is the right eye, OS the left eye, OU both eyes; spelling out the eye avoids errors.</p>"
+    },
+    {
+      "id": "acl-56",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0700: BP 126/80, AP 78, SpO2 98%.", "0830: Client finished breakfast; gave famotidine 20 mg PO ac.", "1200: Gave docusate sodium 100 mg PO with 240 mL of water.", "1400: Client A&O; resting in bed."],
+      "answer": 1,
+      "rationale": "<p><b>ac</b> means <b>before meals</b>. The client had already finished breakfast when the famotidine was given, so the dose was given after the meal, which is <b>pc</b>. The entry's abbreviation doesn't match what happened.</p><p><b>BP</b> (blood pressure), <b>AP</b> (apical pulse), <b>SpO2</b> (oxygen saturation), <b>PO</b> (by mouth), and <b>A&amp;O</b> (alert and oriented) are used correctly in the other entries.</p><p><b>Takeaway:</b> ac = before meals, pc = after meals; the entry must match when the dose was actually given.</p>"
+    },
+    {
+      "id": "acl-57",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Client A&O; up ad lib.", "0900: RR 18, SpO2 96% on 2 L of O2.", "1000: Gave ceftriaxone 1 g PO through the IV line.", "1200: Gave acetaminophen 650 mg PO for a headache."],
+      "answer": 2,
+      "rationale": "<p><b>PO</b> means <b>by mouth</b>, but the ceftriaxone was given <b>through the IV line</b>, so the route should be documented as <b>IV</b> (intravenous). A wrong route in the record can lead to the next dose being given the wrong way.</p><p><b>A&amp;O</b>, <b>ad lib</b>, <b>RR</b>, <b>SpO2</b>, and <b>O2</b> (oxygen) are used correctly, and the acetaminophen was given by mouth, so <b>PO</b> is right there.</p><p><b>Takeaway:</b> PO is by mouth; a medication given through an IV line is documented as IV.</p>"
+    },
+    {
+      "id": "acl-58",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A client has a dressing over an incision on the right forearm. Which of the following entries the nurse documented contains an incorrect abbreviation?",
+      "options": ["0800: AP 80, BP 124/78, RR 16.", "0900: Client A&O; denies pain.", "1000: Up ad lib in the room.", "1100: Dressing on RLE incision dry and intact."],
+      "answer": 3,
+      "rationale": "<p><b>RLE</b> means <b>right lower extremity</b> (the right leg). The forearm is part of the arm, the <b>right upper extremity</b>, which is <b>RUE</b>. The entry places the incision on the wrong limb.</p><p><b>AP</b> (apical pulse), <b>BP</b>, <b>RR</b>, <b>A&amp;O</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> RUE and LUE are the arms; RLE and LLE are the legs.</p>"
+    },
+    {
+      "id": "acl-59",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented on admission. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Client NPO for a 1300 procedure.", "0900: Allergies reviewed: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO.", "1100: I&O recorded for the shift."],
+      "answer": 1,
+      "rationale": "<p><b>NKDA</b> means <b>no known drug allergies</b>, but the same entry says the client gets <b>hives after taking penicillin</b>, which is a drug allergy. Recording NKDA could lead to the client being given penicillin. The allergy should be recorded: “Allergy: penicillin (hives).”</p><p><b>NPO</b> (nothing by mouth), <b>PO</b> (by mouth), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> NKDA means no known drug allergies; any reported drug reaction has to be recorded instead.</p>"
+    },
+    {
+      "id": "acl-60",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["1200: Pain rated 7 out of 10; client A&O.", "1230: RR 16, SpO2 95% on room air.", "1245: Gave MS 2 mg IV for pain.", "1400: Pain now 3 out of 10; up ad lib."],
+      "answer": 2,
+      "rationale": "<p><b>MS</b> is on the list of abbreviations not to use: it can mean morphine sulfate or magnesium sulfate, two very different drugs. The nurse writes the drug's name in full: <b>morphine</b>.</p><p><b>A&amp;O</b> (alert and oriented), <b>RR</b>, <b>SpO2</b>, <b>IV</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> Write drug names in full; MS can mean morphine or magnesium sulfate.</p>"
+    },
+    {
+      "id": "acl-61",
+      "type": "mc",
+      "topic": "Metric conversions",
+      "stem": "A client is prescribed 750 mcg of a medication. How many milligrams is this dose?",
+      "options": ["0.75 mg", "7.5 mg", "75 mg", "750,000 mg"],
+      "answer": 0,
+      "rationale": "<p>A microgram is smaller than a milligram, and 1 mg = 1,000 mcg, so divide by 1,000: 750 ÷ 1,000 = <b>0.75 mg</b> (move the decimal point 3 places to the left, and keep the zero in front of it).</p><p>7.5 mg and 75 mg come from moving the decimal point only 1 or 2 places. 750,000 mg comes from multiplying instead of dividing; going from a smaller unit to a larger one, the number must get smaller.</p><p><b>Takeaway:</b> mcg → mg: divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-62",
+      "type": "mc",
+      "topic": "Metric conversions",
+      "stem": "The provider prescribes 0.3 g of a medication. How many milligrams is this dose?",
+      "options": ["0.0003 mg", "3 mg", "30 mg", "300 mg"],
+      "answer": 3,
+      "rationale": "<p>A gram is larger than a milligram, and 1 g = 1,000 mg, so multiply by 1,000: 0.3 × 1,000 = <b>300 mg</b> (move the decimal point 3 places to the right).</p><p>0.0003 mg comes from dividing instead of multiplying. 3 mg and 30 mg come from moving the decimal point only 1 or 2 places.</p><p><b>Takeaway:</b> g → mg: multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-63",
+      "type": "mc",
+      "topic": "Metric conversions",
+      "stem": "A client's IV bag holds 250 mL of fluid. How many liters is this?",
+      "options": ["0.25 L", "2.5 L", "25 L", "250,000 L"],
+      "answer": 0,
+      "rationale": "<p>A milliliter is smaller than a liter, and 1 L = 1,000 mL, so divide by 1,000: 250 ÷ 1,000 = <b>0.25 L</b>.</p><p>2.5 L and 25 L come from moving the decimal point only 2 or 1 places. 250,000 L comes from multiplying instead of dividing.</p><p><b>Takeaway:</b> mL → L: divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-64",
+      "type": "mc",
+      "topic": "Metric conversions",
+      "stem": "A client is prescribed 0.025 mg of a medication. How many micrograms is this dose?",
+      "options": ["0.000025 mcg", "2.5 mcg", "25 mcg", "250 mcg"],
+      "answer": 2,
+      "rationale": "<p>A milligram is larger than a microgram, and 1 mg = 1,000 mcg, so multiply by 1,000: 0.025 × 1,000 = <b>25 mcg</b> (move the decimal point 3 places to the right).</p><p>0.000025 mcg comes from dividing instead of multiplying. 2.5 mcg and 250 mcg come from moving the decimal point 2 or 4 places instead of 3.</p><p><b>Takeaway:</b> mg → mcg: multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-65",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A client drank 7 oz of juice. How many milliliters did the client drink?",
+      "options": ["7 mL", "35 mL", "105 mL", "210 mL"],
+      "answer": 3,
+      "rationale": "<p>1 oz = 30 mL, so multiply by 30: 7 × 30 = <b>210 mL</b>.</p><p>7 mL leaves the ounces unconverted. 35 mL uses the factor for teaspoons (5 mL), and 105 mL the factor for tablespoons (15 mL).</p><p><b>Takeaway:</b> 1 oz = 30 mL, 1 tablespoon = 15 mL, and 1 teaspoon = 5 mL.</p>"
+    },
+    {
+      "id": "acl-66",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A client is prescribed 1.5 tablespoons (Tbsp) of a liquid medication. How many milliliters is this dose?",
+      "options": ["7.5 mL", "15 mL", "22.5 mL", "45 mL"],
+      "answer": 2,
+      "rationale": "<p>1 Tbsp = 15 mL, so multiply by 15: 1.5 × 15 = <b>22.5 mL</b>.</p><p>7.5 mL uses the factor for teaspoons (5 mL), 45 mL the factor for ounces (30 mL), and 15 mL converts only the 1 tablespoon and drops the half.</p><p><b>Takeaway:</b> Tablespoons → mL: multiply by 15.</p>"
+    },
+    {
+      "id": "acl-67",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A client is prescribed 3 teaspoons (tsp) of a liquid medication. How many milliliters is this dose?",
+      "options": ["15 mL", "30 mL", "45 mL", "90 mL"],
+      "answer": 0,
+      "rationale": "<p>1 tsp = 5 mL, so multiply by 5: 3 × 5 = <b>15 mL</b>, the same as 1 tablespoon.</p><p>45 mL uses the factor for tablespoons (15 mL), and 90 mL the factor for ounces (30 mL). 30 mL equals 1 oz, which is 6 teaspoons, not 3.</p><p><b>Takeaway:</b> Teaspoons → mL: multiply by 5; 3 teaspoons make 1 tablespoon.</p>"
+    },
+    {
+      "id": "acl-68",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A client weighs 187 lb. How many kilograms does the client weigh?",
+      "options": ["8.5 kg", "85 kg", "93.5 kg", "411.4 kg"],
+      "answer": 1,
+      "rationale": "<p>1 kg = 2.2 lb, and a kilogram is the larger unit, so divide by 2.2: 187 ÷ 2.2 = <b>85 kg</b>.</p><p>411.4 kg comes from multiplying by 2.2 instead of dividing. 93.5 kg comes from dividing by 2 instead of 2.2, and 8.5 kg from a slipped decimal point.</p><p><b>Takeaway:</b> lb → kg: divide by 2.2, so the number of kilograms is smaller than the number of pounds.</p>"
+    },
+    {
+      "id": "acl-69",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A child weighs 18 kg. How many pounds does the child weigh?",
+      "options": ["8.2 lb", "18 lb", "36 lb", "39.6 lb"],
+      "answer": 3,
+      "rationale": "<p>1 kg = 2.2 lb, so multiply by 2.2: 18 × 2.2 = <b>39.6 lb</b>.</p><p>8.2 lb comes from dividing by 2.2 instead of multiplying, 36 lb from multiplying by 2 instead of 2.2, and 18 lb leaves the kilograms unconverted.</p><p><b>Takeaway:</b> kg → lb: multiply by 2.2, so the number of pounds is larger than the number of kilograms.</p>"
+    },
+    {
+      "id": "acl-70",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "An IV medication is to infuse over 210 minutes. How many hours is this?",
+      "options": ["3.3 hours", "3.5 hours", "21 hours", "12,600 hours"],
+      "answer": 1,
+      "rationale": "<p>1 hour = 60 minutes, so divide by 60: 210 ÷ 60 = <b>3.5 hours</b> (3 hours and 30 minutes).</p><p>3.3 hours treats “3 hours 30 minutes” as 3.3, but 30 minutes is half an hour, 0.5. 21 hours comes from dividing by 10, and 12,600 hours from multiplying by 60 instead of dividing.</p><p><b>Takeaway:</b> Minutes → hours: divide by 60; 30 minutes is 0.5 hour, not 0.3.</p>"
+    },
+    {
+      "id": "acl-71",
+      "type": "mc",
+      "topic": "Household and other conversions",
+      "stem": "A unit of blood is to infuse over 1.75 hours. How many minutes is this?",
+      "options": ["17.5 minutes", "105 minutes", "135 minutes", "175 minutes"],
+      "answer": 1,
+      "rationale": "<p>1 hour = 60 minutes, so multiply by 60: 1.75 × 60 = <b>105 minutes</b>.</p><p>135 minutes reads 1.75 hours as 1 hour and 75 minutes, but 0.75 hour is 45 minutes. 175 minutes comes from multiplying by 100, and 17.5 minutes from multiplying by 10.</p><p><b>Takeaway:</b> Hours → minutes: multiply by 60; 0.75 hour is 45 minutes.</p>"
+    },
+    {
+      "id": "acl-72",
+      "type": "mc",
+      "topic": "Dose calculations",
+      "stem": "The provider prescribes cyanocobalamin 1 mg PO daily. The tablets on hand contain 500 mcg each. How many tablets should the nurse give?",
+      "options": ["0.5 tablet", "1 tablet", "2 tablets", "20 tablets"],
+      "answer": 2,
+      "rationale": "<p>First, change the dose to the same unit as the tablets: 1 mg = 1,000 mcg. Then divide the desired dose by the dose on hand: 1,000 mcg ÷ 500 mcg = <b>2 tablets</b>.</p><p>1 tablet comes from skipping the conversion and treating 1 mg and 500 mcg as the same amount. 0.5 tablet comes from dividing the wrong way (500 ÷ 1,000), and 20 tablets from converting 1 mg to 10,000 mcg.</p><p><b>Takeaway:</b> Convert to the same unit first, then divide the desired dose by the dose on hand.</p>"
+    },
+    {
+      "id": "acl-73",
+      "type": "mc",
+      "topic": "Dose calculations",
+      "stem": "The provider prescribes amoxicillin 400 mg PO. The oral suspension contains 250 mg per 5 mL. How many milliliters should the nurse give?",
+      "options": ["1.6 mL", "3.1 mL", "5 mL", "8 mL"],
+      "answer": 3,
+      "rationale": "<p>Desired dose ÷ dose on hand × volume: 400 mg ÷ 250 mg × 5 mL = 1.6 × 5 = <b>8 mL</b>.</p><p>1.6 mL forgets to multiply by the 5 mL that holds each 250 mg. 3.1 mL divides the wrong way (250 ÷ 400 × 5). 5 mL is the volume that holds 250 mg, not the 400 mg prescribed.</p><p><b>Takeaway:</b> For liquids, multiply by the volume that holds the dose on hand: desired ÷ have × volume.</p>"
+    },
+    {
+      "id": "acl-74",
+      "type": "mc",
+      "topic": "Dose calculations",
+      "stem": "The provider prescribes 4 mg/kg of a medication for a child who weighs 55 lb. How many milligrams is the dose?",
+      "options": ["100 mg", "110 mg", "220 mg", "484 mg"],
+      "answer": 0,
+      "rationale": "<p>First, change the weight to kilograms: 55 lb ÷ 2.2 = 25 kg. Then multiply by the dose per kilogram: 25 kg × 4 mg/kg = <b>100 mg</b>.</p><p>220 mg multiplies the weight in pounds by 4, skipping the conversion. 484 mg converts the wrong way (55 × 2.2 = 121, then × 4). 110 mg divides the pounds by 2 instead of 2.2.</p><p><b>Takeaway:</b> For a dose per kilogram, change pounds to kilograms (÷ 2.2) before multiplying.</p>"
+    },
+    {
+      "id": "acl-75",
+      "type": "mc",
+      "topic": "Dose calculations",
+      "stem": "The provider prescribes heparin 2,500 units subcut. The vial contains 5,000 units per mL. How many milliliters should the nurse give?",
+      "options": ["0.05 mL", "0.5 mL", "2 mL", "5 mL"],
+      "answer": 1,
+      "rationale": "<p>Desired dose ÷ dose on hand × volume: 2,500 units ÷ 5,000 units × 1 mL = <b>0.5 mL</b>, written with a zero before the decimal point.</p><p>2 mL comes from dividing the wrong way (5,000 ÷ 2,500). 0.05 mL and 5 mL come from a slipped decimal point. Half the strength in the vial must be less than 1 mL.</p><p><b>Takeaway:</b> Desired ÷ have × volume; check that the answer makes sense (half the dose on hand, half the volume).</p>"
+    },
+    {
+      "id": "acl-76",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse is checking four new medication orders. Which of the following orders is complete?",
+      "options": ["Carvedilol 6.25 PO BID", "Pantoprazole 40 mg daily", "Lisinopril 10 mg PO daily", "Cephalexin 500 mg PO"],
+      "answer": 2,
+      "rationale": "<p>A medication order needs the <b>drug</b>, the <b>dose</b> (a number <b>and</b> a unit of measure), the <b>route</b>, and the <b>time or frequency</b>, plus a reason if it's PRN. <b>Lisinopril 10 mg PO daily</b> has all of them.</p><p><b>Carvedilol 6.25 PO BID</b> has a number but no unit (mg? mcg?). <b>Pantoprazole 40 mg daily</b> has no route (by mouth or IV?). <b>Cephalexin 500 mg PO</b> doesn't say how often to give it.</p><p><b>Takeaway:</b> Check every order for the drug, a dose with its unit, the route, and the frequency.</p>"
+    },
+    {
+      "id": "acl-77",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse reviews this order: “Metoprolol tartrate 25 PO BID.” Which of the following elements is missing from the order?",
+      "options": ["The unit of measure of the dose", "The route", "The frequency", "The name of the medication"],
+      "answer": 0,
+      "rationale": "<p>A dose has two parts, a <b>number and a unit of measure</b>: 25 alone could mean 25 mg or 25 mcg, a 1,000-fold difference. The nurse clarifies the order with the prescriber instead of guessing the unit.</p><p>The order does name the drug (metoprolol tartrate), the route (<b>PO</b>, by mouth), and the frequency (<b>BID</b>, twice a day).</p><p><b>Takeaway:</b> A dose needs both a number and a unit, like 25 mg.</p>"
+    },
+    {
+      "id": "acl-78",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse reviews this order: “Acetaminophen 650 mg PO q6h PRN.” Which of the following elements is missing from the order?",
+      "options": ["The unit of measure of the dose", "The reason to give it as needed", "The route", "How often it may be given"],
+      "answer": 1,
+      "rationale": "<p>A <b>PRN</b> (as needed) order must say <b>why</b> the medication is to be given, such as “for pain” or “for a temperature over 38.3 °C.” Acetaminophen can be given for pain or fever, so the nurse can't tell when this order applies.</p><p>The order has a dose with its unit (650 <b>mg</b>), the route (<b>PO</b>), and how often it may be given (<b>q6h</b>, every 6 hours).</p><p><b>Takeaway:</b> Every PRN order needs a reason, like “PRN pain.”</p>"
+    },
+    {
+      "id": "acl-79",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse reviews this order: “Furosemide 40 mg BID.” Which of the following elements is missing from the order?",
+      "options": ["The name of the medication", "The unit of measure of the dose", "The route", "The frequency"],
+      "answer": 2,
+      "rationale": "<p>The order has no <b>route</b>. Furosemide can be given by mouth or IV, and the two routes act differently, so the nurse can't choose; the nurse clarifies the order with the prescriber.</p><p>The order does name the drug (furosemide), give the dose with its unit (40 <b>mg</b>), and the frequency (<b>BID</b>, twice a day).</p><p><b>Takeaway:</b> Every order needs a route, like PO or IV.</p>"
+    },
+    {
+      "id": "acl-80",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse reviews this order: “Ondansetron 4 mg IV PRN nausea.” Which of the following elements is missing from the order?",
+      "options": ["The reason to give it as needed", "The route", "The unit of measure of the dose", "How often it may be given"],
+      "answer": 3,
+      "rationale": "<p>The order doesn't say <b>how often</b> the dose may be given (for example, q8h, every 8 hours). Without it, the nurse doesn't know how soon a second dose is safe.</p><p>The order has the drug (ondansetron), the dose with its unit (4 <b>mg</b>), the route (<b>IV</b>), and the reason for the PRN dose (<b>nausea</b>).</p><p><b>Takeaway:</b> PRN orders still need a frequency, like q8h PRN nausea.</p>"
+    },
+    {
+      "id": "acl-81",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse finds this new order for a client who reports pain: “Hydromorphone 2 PO q4h PRN pain.” Which of the following actions should the nurse take?",
+      "options": ["Give 2 mg, since milligrams is the usual unit for this medication", "Ask the client how many milligrams they usually take at home", "Contact the prescriber to clarify the dose before giving it", "Give the dose and note in the record that the unit is missing"],
+      "answer": 2,
+      "rationale": "<p>The dose has a number but <b>no unit</b>, so the order is incomplete. The nurse <b>contacts the prescriber</b> to clarify it before giving the medication; only the prescriber can complete the order. Meanwhile, the nurse can use other comfort measures and tell the client when the medication will be available.</p><p><b>Assuming milligrams</b>, even if it's the usual unit, is guessing at a dose of an opioid. The <b>client's home dose</b> doesn't change what this order says. <b>Giving the dose and noting the problem</b> afterward still means giving a dose that was never clearly prescribed.</p><p><b>Takeaway:</b> When an order is missing an element, clarify it with the prescriber before giving the medication.</p>"
+    },
+    {
+      "id": "acl-82",
+      "type": "sata",
+      "topic": "Medication orders",
+      "stem": "A nurse reviews a client's new medication orders. Which of the following orders should the nurse clarify with the prescriber before carrying them out?",
+      "options": ["Metformin 500 mg PO BID with meals", "Sertraline 50 mg PO", "Docusate sodium 100 mg PO BID", "Oxycodone 5 mg PO q4h PRN", "Enoxaparin 40 subcut daily", "Atorvastatin 20 mg PO at bedtime"],
+      "answer": [1, 3, 4],
+      "rationale": "<p>Three orders are incomplete. <b>Sertraline 50 mg PO</b> has no frequency. <b>Oxycodone 5 mg PO q4h PRN</b> has no reason for the PRN dose (for example, PRN pain). <b>Enoxaparin 40 subcut daily</b> has no unit of measure for the dose (40 mg?).</p><p>The metformin, docusate sodium, and atorvastatin orders each have the drug, a dose with its unit, the route, and the frequency.</p><p><b>Takeaway:</b> Check each order for a dose with its unit, the route, the frequency, and a reason if it's PRN.</p>"
+    },
+    {
+      "id": "acl-83",
+      "type": "matrix",
+      "topic": "Medication orders",
+      "stem": "A nurse is checking a client's medication orders. For each order, click to specify whether it is complete or needs clarification.",
+      "rowHeader": "Order",
+      "columns": ["Complete", "Needs clarification"],
+      "rows": ["Levothyroxine 75 mcg PO daily before breakfast", "Prednisone 10 PO daily", "Morphine 2 mg IV q2h PRN severe pain", "Famotidine 20 mg BID", "Ibuprofen 400 mg PO q6h PRN"],
+      "answer": [0, 1, 0, 1, 1],
+      "rationale": "<p><b>Levothyroxine 75 mcg PO daily before breakfast</b> and <b>morphine 2 mg IV q2h PRN severe pain</b> are complete: each has the drug, a dose with its unit, the route, the frequency, and, for the PRN order, a reason.</p><p><b>Prednisone 10 PO daily</b> has no unit for the dose. <b>Famotidine 20 mg BID</b> has no route. <b>Ibuprofen 400 mg PO q6h PRN</b> has no reason for the PRN dose; ibuprofen can be given for pain, fever, or inflammation.</p><p><b>Takeaway:</b> An order is complete only with the drug, a dose and its unit, the route, the frequency, and a reason for PRN doses.</p>"
+    },
+    {
+      "id": "acl-84",
+      "type": "mc",
+      "topic": "Medication orders",
+      "stem": "A nurse is teaching a nursing student about medication orders. Which of the following elements must a PRN order include that a scheduled order doesn't need?",
+      "options": ["The reason to give the medication", "The route of the medication", "The unit of measure of the dose", "The prescriber's signature"],
+      "answer": 0,
+      "rationale": "<p>A <b>PRN</b> order is given only when the client needs it, so it must state the <b>reason</b>, such as “PRN nausea” or “PRN pain,” to tell the nurse when it applies.</p><p>Every order, scheduled or PRN, needs the <b>route</b>, a dose with its <b>unit of measure</b>, and the <b>prescriber's signature</b>, along with the client's name, the date and time, the drug, and the frequency.</p><p><b>Takeaway:</b> PRN orders must include the reason; all orders need the drug, dose and unit, route, and frequency.</p>"
     }
   ]
 }

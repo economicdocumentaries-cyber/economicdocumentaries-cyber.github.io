@@ -1,12 +1,12 @@
 {
   "id": "nu1110-exam-3-mock-exam",
   "title": "Exam 3 Mock Exam",
-  "description": "A practice exam that follows the Exam 3 blueprint. Each exam gives 25 questions, split across the topics the way the real exam is, from a pool of 350: health care systems, evidence-based practice, informatics and documentation, quality improvement, health policy, and abbreviations, conversions, and labels.",
+  "description": "A practice exam that follows the Exam 3 blueprint and the professor's review. Each exam gives 60 questions, split the way the real exam is, from a pool of 437: 10 each on health care systems, evidence-based practice, informatics and documentation (3 on confidentiality), quality improvement (2 on the PDSA cycle), and health policy (2 on the Mental Health Parity Act), plus 3 abbreviations, 6 med math (3 fill in the blank), and 1 prescriber's order. Label questions stay in the pool as extra practice.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 525,
-  "defaultCount": 25,
-  "topicWeights": {"Health care systems": 10, "Evidence-based practice": 8, "Informatics and documentation": 10, "Quality improvement": 6, "Health policy": 6, "Abbreviations, conversions, and labels": 10},
+  "timeMinutes": 656,
+  "defaultCount": 60,
+  "topicWeights": {"Health care systems": 10, "Evidence-based practice": 10, "Informatics and documentation": 7, "Confidentiality of health information": 3, "Quality improvement": 8, "PDSA cycle": 2, "Health policy": 8, "Mental Health Parity Act": 2, "Medical abbreviations": 3, "Med math: fill in the blank": 3, "Med math: multiple choice": 3, "Prescriber's orders": 1, "Extra practice": 0},
   "cases": {
     "dose": {
       "intro": "A nurse is caring for a 58-year-old client on a surgical unit on the first day after a total knee replacement. The client has a prescription for oxycodone 5 mg PO every 4 hours as needed for pain.",
@@ -328,7 +328,7 @@
     {
       "id": "pn3-22",
       "type": "mc",
-      "topic": "Informatics and documentation",
+      "topic": "Confidentiality of health information",
       "stem": "A nurse is documenting at a computer in the hallway when a client's call light comes on. Which action should the nurse take?",
       "options": ["Leave the screen open, to finish documenting when the nurse returns", "Ask a nursing assistant to finish the note using the nurse's login", "Log off (or lock the screen) before leaving the computer", "Turn the monitor to face the wall and leave it logged in"],
       "answer": 2,
@@ -406,7 +406,7 @@
     {
       "id": "pn3-30",
       "type": "matrix",
-      "topic": "Quality improvement",
+      "topic": "PDSA cycle",
       "stem": "A unit is using the Plan-Do-Study-Act (PDSA) cycle to reduce falls. For each activity, specify the phase of the cycle.",
       "rowHeader": "Activity",
       "columns": ["Plan", "Do", "Study", "Act"],
@@ -474,7 +474,7 @@
     {
       "id": "pn3-37",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse reviews this prescription: “Famotidine 20 mg PO BID ac.” When should the nurse give this medication?",
       "options": ["Twice a day, after meals", "Twice a day, at bedtime", "Twice a day, before meals", "Every 12 hours, only as needed"],
       "answer": 2,
@@ -483,7 +483,7 @@
     {
       "id": "pn3-38",
       "type": "dragdrop",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "Complete each prescription with the correct standard abbreviation.",
       "text": "Nothing by mouth after midnight: {{0}} after midnight. Zolpidem 5 mg by mouth at bedtime as needed for sleep: zolpidem 5 mg PO {{1}} {{2}} for sleep. Give the first dose of the antibiotic immediately: {{3}}.",
       "tokens": ["NPO", "hs", "PRN", "STAT", "pc", "ac", "q4h"],
@@ -493,7 +493,7 @@
     {
       "id": "pn3-39",
       "type": "sata",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is checking prescriptions for safe notation. Which prescriptions are written correctly?",
       "options": ["Digoxin 0.125 mg PO daily", "Lorazepam .5 mg PO at bedtime", "Warfarin 5.0 mg PO daily", "Levothyroxine 50 mcg PO daily", "Insulin regular 10 U subcutaneously before meals"],
       "answer": [0, 3],
@@ -502,7 +502,7 @@
     {
       "id": "pn3-40",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client weighs 172 lb. How many kilograms does the client weigh?",
       "answer": 78.2,
       "unit": "kg",
@@ -513,7 +513,7 @@
     {
       "id": "pn3-41",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "The provider prescribes levothyroxine 0.088 mg PO daily. How many micrograms is this dose?",
       "answer": 88,
       "unit": "mcg",
@@ -523,7 +523,7 @@
     {
       "id": "pn3-42",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A nurse is calculating a client's oral intake for the day shift. The client drank 8 oz of water, 4 oz of apple juice, and 6 oz of milk, and took 2 tablespoons of a liquid antacid. What is the client's total oral intake?",
       "answer": 570,
       "unit": "mL",
@@ -533,7 +533,7 @@
     {
       "id": "pn3-43",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is prescribed a medication dose of 250 mcg. How many milligrams is this dose?",
       "answer": 0.25,
       "unit": "mg",
@@ -543,7 +543,7 @@
     {
       "id": "pn3-44",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "An IV antibiotic is to infuse over 2.5 hours. How many minutes will the infusion take?",
       "answer": 150,
       "unit": "minutes",
@@ -553,7 +553,7 @@
     {
       "id": "pn3-45",
       "type": "hotspot",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is preparing to give heparin. Click the part of the label that shows how much heparin is in each milliliter.",
       "image": "img/label-heparin.svg",
       "alt": "Sample medication label for heparin sodium injection. It shows the drug name, the amount of heparin per milliliter, the total amount in the vial, the vial size, the routes, a lot number, and an expiration date.",
@@ -563,7 +563,7 @@
     {
       "id": "pn3-46",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "<p>The provider prescribes levothyroxine 0.1 mg PO daily. The nurse has the tablets shown on this label. How many tablets should the nurse give?</p><img src='sets/img/label-levothyroxine.svg' alt='Sample medication label: Levothyroxine Sodium Tablets, USP, 50 mcg in each tablet, bottle of 100 tablets.' width='600' height='240'>",
       "answer": 2,
       "unit": "tablets",
@@ -1577,6 +1577,62 @@
       "rationale": "<p><b>New delirium fell</b> from 28% to 16%, and <b>sleeping-pill use dropped</b> from 61% to 22% of nights: both improved. <b>Length of stay didn't change</b>. <b>Training coverage on nights fell</b> to 70% after new hires, a decline that could erode the results.</p><p>Evaluation drives the next decision: keep the routine, since it's working, and modify the rollout by training the new staff, then keep monitoring.</p><p><b>Takeaway:</b> Evaluate outcomes and the process together, then accept, modify, or reject the change.</p>"
     },
     {
+      "id": "ebp-51",
+      "type": "mc",
+      "topic": "Evidence-based practice",
+      "stem": "A nurse is starting an evidence-based practice project on the unit. Which of the following actions should the nurse take first?",
+      "options": ["Write a focused clinical question in PICOT format", "Assess an assigned client's vital signs for the care plan", "Identify a clinical problem from the unit's data", "Look for current research articles in nursing journals"],
+      "answer": 2,
+      "rationale": "<p>The EBP process <b>starts with the client</b>: the first step, <b>Assess</b>, is noticing and identifying a <b>clinical problem</b>, often from the unit's data, such as a rise in pressure injuries. Then the nurse asks a focused question (PICOT), acquires the evidence, appraises it, applies it, and evaluates the results.</p><p><b>Writing a PICOT question</b> is the second step, Ask; the question comes from the problem the nurse identified. <b>Looking for research articles</b> is Acquire, the third step. <b>Assessing a client's vital signs for the care plan</b> is the first step of the nursing process, a separate process that guides one client's care, not a step of EBP.</p><p><b>Takeaway:</b> EBP starts by identifying a clinical problem: Assess, Ask, Acquire, Appraise, Apply, Evaluate.</p>"
+    },
+    {
+      "id": "ebp-52",
+      "type": "mc",
+      "topic": "Evidence-based practice",
+      "stem": "A nurse has written a focused PICOT question about preventing falls at night. Which of the following steps of the evidence-based practice process should the nurse take next?",
+      "options": ["Search credible databases, such as CINAHL, for studies that answer the question", "Judge the quality of the studies and how well they fit the unit's clients", "Change the unit's night routine to match the newest study", "Compare the unit's fall rates before and after a practice change"],
+      "answer": 0,
+      "rationale": "<p>After the <b>Ask</b> step (a focused PICOT question), the nurse <b>acquires</b> the evidence, also called retrieving it: searching credible databases, such as CINAHL and MEDLINE, for studies that answer the question.</p><p><b>Judging the studies</b> is Appraise, which needs studies in hand first. <b>Changing the routine</b> to match one study skips appraisal and the facility's process for changing practice. <b>Comparing fall rates</b> before and after a change is Evaluate, the last step.</p><p><b>Takeaway:</b> Ask, then Acquire: the PICOT question guides the search for evidence.</p>"
+    },
+    {
+      "id": "ebp-53",
+      "type": "mc",
+      "topic": "Evidence-based practice",
+      "stem": "A nursing student asks whether the evidence-based practice process is part of the nursing process. Which of the following responses by the nurse is accurate?",
+      "options": ["“No. EBP is a process that only nurse researchers use, so staff nurses don't need it.”", "“Yes. EBP is the assessment step of the nursing process, where the nurse gathers evidence.”", "“Yes. Each step of EBP happens during the matching step of the nursing process.”", "“No. EBP uses evidence to improve practice; the nursing process plans each client's care.”"],
+      "answer": 3,
+      "rationale": "<p>They're <b>separate processes</b> with different purposes. The <b>EBP process</b> (Assess, Ask, Acquire, Appraise, Apply, Evaluate) answers a clinical question with the best evidence and changes practice, often for a whole unit. The <b>nursing process</b> (assessment, diagnosis, planning, implementation, evaluation) guides the plan of care for one client. Evidence can shape the interventions a nurse chooses, but EBP isn't part of the nursing process.</p><p>EBP's first step, Assess, means identifying a clinical problem, not the <b>assessment step</b> of a client's care plan. Both processes begin by assessing and end by evaluating, but EBP's steps don't <b>happen inside</b> the nursing process. EBP isn't <b>only for researchers</b>: staff nurses use it every day.</p><p><b>Takeaway:</b> EBP and the nursing process are separate: EBP improves practice with evidence; the nursing process plans each client's care.</p>"
+    },
+    {
+      "id": "ebp-54",
+      "type": "matrix",
+      "topic": "Evidence-based practice",
+      "stem": "For each activity, specify whether it is part of the evidence-based practice process or the nursing process.",
+      "rowHeader": "Activity",
+      "columns": ["Evidence-based practice process", "Nursing process"],
+      "rows": ["Writes a focused clinical question about preventing pressure injuries", "Collects a newly admitted client's health history", "Judges the quality of 5 studies on walking soon after surgery", "Identifies acute pain as a priority problem in a client's care plan", "Checks whether a client met the goal of walking 50 feet with a walker", "Compares the unit's infection rate before and after a practice change"],
+      "answer": [0, 1, 0, 1, 1, 0],
+      "rationale": "<p>The <b>EBP process</b> works on a practice question for a group of clients: writing a <b>focused clinical question</b> (Ask), <b>judging the quality of studies</b> (Appraise), and <b>comparing the unit's infection rate</b> before and after a change (Evaluate).</p><p>The <b>nursing process</b> plans and evaluates one client's care: <b>collecting a health history</b> (assessment), <b>identifying acute pain as a priority problem</b> (diagnosis), and <b>checking whether the client met the goal</b> of walking 50 feet (evaluation).</p><p><b>Takeaway:</b> Both processes evaluate results, but EBP evaluates a practice change, while the nursing process evaluates one client's progress.</p>"
+    },
+    {
+      "id": "ebp-55",
+      "type": "mc",
+      "topic": "Evidence-based practice",
+      "stem": "A nurse who just started working at a new hospital is about to insert a urinary catheter. The nurse learned a slightly different method at a previous hospital. Which of the following actions should the nurse take?",
+      "options": ["Use the previous hospital's method, since it worked well there", "Check this hospital's policy and procedure, and follow it as written", "Ask the client which of the two methods the client would prefer", "Use the method that the nurse's coworkers say they usually use"],
+      "answer": 1,
+      "rationale": "<p>Nurses must follow the <b>policies and procedures</b> of the facility where they're working, <b>as written</b>. Before doing a procedure, the nurse checks this hospital's procedure. If the nurse believes another method is better, the nurse brings the evidence through the hospital's process for changing a policy, such as the practice council.</p><p>A <b>previous hospital's method</b> doesn't apply here, even if it worked there. Clients' preferences matter, but a client can't choose a <b>method the hospital hasn't approved</b>. What <b>coworkers usually do</b> may differ from the written procedure.</p><p><b>Takeaway:</b> Wherever you work, check that facility's policy and procedure, and follow it as written.</p>"
+    },
+    {
+      "id": "ebp-56",
+      "type": "mc",
+      "topic": "Evidence-based practice",
+      "stem": "Several nurses on a unit say they'd like to use research in their practice, but they don't know how to judge whether a study's findings are strong. Which of the following strategies should the nurse manager use?",
+      "options": ["Adding computers with database access at each nurses' station", "Asking the nurses to read more articles on their own time", "Offering classes on appraising research, with an EBP mentor to help", "Telling the nurses to follow whatever the newest study shows"],
+      "answer": 2,
+      "rationale": "<p>Not knowing how to judge a study is a <b>knowledge and skill barrier</b>. It's best addressed with <b>education</b>, such as classes on appraising research, and <b>support from an EBP mentor</b> (or a librarian) who helps nurses find and judge studies.</p><p><b>Database access</b> fixes an access barrier, but the nurses still couldn't judge what they find. <b>Reading more on their own time</b> adds to the workload without teaching the skill. <b>Following the newest study</b> skips appraisal; a new study isn't necessarily a strong one.</p><p><b>Takeaway:</b> Match the fix to the barrier: skill barriers need education and mentoring.</p>"
+    },
+    {
       "id": "inf-01",
       "type": "mc",
       "topic": "Informatics and documentation",
@@ -1940,7 +1996,7 @@
     {
       "id": "inf-40",
       "type": "mc",
-      "topic": "Informatics and documentation",
+      "topic": "Confidentiality of health information",
       "stem": "In which of the following situations may the nurse share a client's health information without the client's written authorization?",
       "options": ["Telling the client's employer why the client missed work", "Reporting a confirmed case of measles to the local health department", "Discussing the client's diagnosis with a friend in the waiting room", "Giving the client's condition to a reporter who calls the unit"],
       "answer": 1,
@@ -1977,7 +2033,7 @@
     {
       "id": "inf-44",
       "type": "mc",
-      "topic": "Informatics and documentation",
+      "topic": "Confidentiality of health information",
       "stem": "A float nurse's login isn't working, and they ask to use the nurse's login to chart for a few minutes. Which of the following responses should the nurse give?",
       "options": ["“Sure, just log out when you're done charting.”", "“I can't share my login, but I'll help you reach the IT help desk or the charge nurse to get access.”", "“Tell me what to chart, and I'll enter it under my name.”", "“Write your notes on paper, and throw them away after you chart them tomorrow.”"],
       "answer": 1,
@@ -2031,7 +2087,7 @@
       "id": "inf-49",
       "type": "mc",
       "case": "telehealth",
-      "topic": "Informatics and documentation",
+      "topic": "Confidentiality of health information",
       "stem": "The client's daughter asks the nurse for her own login to the client's patient portal so she can help manage the client's medications. Which of the following responses should the nurse give?",
       "options": ["“I can give you your parent's password now, since you're family.”", "“Family members can never have access to a client's records.”", "“You can log in with your parent's account whenever you need to.”", "“Your parent can give written permission for you to have your own proxy access to the portal.”"],
       "answer": 3,
@@ -2046,6 +2102,190 @@
       "options": ["“0930: Called the provider about the client's weight problem and noncompliance. New orders received and carried out. Client teaching done.”", "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed furosemide doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”", "“0930: Provider aware of wt gain. Furosemide increased per order. Client to weigh QD and verbalized understanding of all teaching.”", "“0930: Provider seemed unconcerned about the client's weight gain but agreed to increase the dose. Client appears to understand.”"],
       "answer": 1,
       "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>"
+    },
+    {
+      "id": "inf-51",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse realizes that a client who was just discharged was handed another client's discharge papers by mistake. Which of the following actions should the nurse take?",
+      "options": ["Ask the client to throw the other client's papers away at home", "Get the papers back and report the error, following facility policy", "Say nothing, since the papers were handed over by accident", "Call the other client to apologize before doing anything else"],
+      "answer": 1,
+      "rationale": "<p>Handing over another client's papers discloses that client's health information, even by accident, so it's a breach. The nurse <b>gets the papers back</b> right away to limit who sees them, gives the client the correct papers, and <b>reports the error</b> through the facility's process (an incident report and the supervisor or privacy officer), who decides how the other client is told.</p><p>Asking the client to <b>throw the papers away</b> leaves the information with the wrong person. <b>Saying nothing</b> hides a breach the facility must handle. <b>Calling the other client first</b> delays getting the papers back, and telling the client is the facility's decision.</p><p><b>Takeaway:</b> Accidental disclosures are still breaches: stop the exposure, then report it following policy.</p>"
+    },
+    {
+      "id": "inf-52",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A well-known singer is admitted to another unit of the hospital. A coworker says, “Let's look at the record to see why the singer is here.” Which of the following responses should the nurse make?",
+      "options": ["“We can look as long as we don't tell anyone what we read.”", "“We should ask the charge nurse first for permission to look.”", "“We can only open records of clients we're caring for.”", "“We can look, since we both work for this hospital.”"],
+      "answer": 2,
+      "rationale": "<p>Records are opened only by staff directly involved in the client's care, on a <b>need-to-know</b> basis. Neither nurse is caring for the singer, so neither may open the record.</p><p><b>Not telling anyone</b> doesn't fix the breach: opening the record is the violation, and every access to an electronic record is tracked and can be audited. A <b>charge nurse</b> can't give permission to look out of curiosity, and <b>working for the hospital</b> doesn't give access to every client's record.</p><p><b>Takeaway:</b> Working in the facility doesn't grant access: only caring for the client does.</p>"
+    },
+    {
+      "id": "inf-53",
+      "type": "sata",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse is reviewing ways to keep client information private on the unit. Which of the following actions protect client confidentiality?",
+      "options": ["Speaking quietly when discussing care in a shared room", "Using only clients' first names when talking in the hallway", "Closing the curtain before asking about a client's history", "Keeping the computer screen turned away from the hallway", "Writing clients' diagnoses next to their names on the hallway board"],
+      "answer": [0, 2, 3],
+      "rationale": "<p>Ways to protect confidentiality include <b>speaking quietly</b> in shared rooms, <b>closing the curtain</b> (or moving to a private space) before asking about a client's history, and <b>positioning the screen</b> so people walking by can't read it.</p><p><b>First names</b> alone, with a room number or details, can still identify a client to anyone listening. <b>Diagnoses on a hallway board</b> next to names are in plain view of every visitor; boards in shared spaces show only what's needed, without diagnoses.</p><p><b>Takeaway:</b> Talk quietly and privately, shield screens, and keep diagnoses off public boards.</p>"
+    },
+    {
+      "id": "inf-54",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "At the end of the shift, a nurse has a printed handoff report that lists the nurse's clients, their diagnoses, and their room numbers. Which of the following actions should the nurse take with the report?",
+      "options": ["Put it in the recycling bin at the nurses' station", "Take it home to review before the next shift", "Leave it at the nurses' station for the next nurse", "Put it in the locked bin for shredding"],
+      "answer": 3,
+      "rationale": "<p>A printed report holds <b>protected health information</b>: names with diagnoses. When it's no longer needed, it goes into the <b>locked shredding bin</b>, so no one else can read it.</p><p>A <b>recycling bin</b> is open to anyone. <b>Taking it home</b> carries client information out of the facility, where it can be lost or seen. <b>Leaving it at the station</b> exposes it to anyone passing by; the next nurse gets a verbal or electronic handoff.</p><p><b>Takeaway:</b> Paper with client information is shredded, never recycled, taken home, or left out.</p>"
+    },
+    {
+      "id": "inf-55",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A caller says she is a client's daughter and asks the nurse for the results of the client's tests. Which of the following actions should the nurse take?",
+      "options": ["Confirm that the client has authorized sharing information with this caller", "Share the results, since adult children have a right to know them", "Tell the caller only whether the results were normal", "Share the results after the caller gives the client's date of birth"],
+      "answer": 0,
+      "rationale": "<p>Family members can receive a client's health information only if the <b>client has authorized it</b> (for example, by naming them on a release or a privacy code). The nurse checks for that authorization and verifies who is calling before sharing anything.</p><p>Adult children don't automatically <b>have a right</b> to a parent's information. Saying whether the results were <b>normal</b> is still sharing them. Knowing the client's <b>date of birth</b> doesn't prove who the caller is or that the client agreed.</p><p><b>Takeaway:</b> Share information with family only with the client's authorization, after verifying the caller.</p>"
+    },
+    {
+      "id": "inf-56",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse posts on a personal social media account: “Long night on 4 West. Our client who coded at 0200 made it, and his family finally showed up!” The post has no names. Which of the following statements about the post is accurate?",
+      "options": ["The post is acceptable because the account is private", "The post is acceptable because it doesn't name the client", "The post is a breach because its details can identify the client", "The post is a breach only if the client sees it"],
+      "answer": 2,
+      "rationale": "<p>Leaving out the name isn't enough. The <b>unit, the time of the code, and the details</b> let coworkers, family, or friends identify the client, so the post breaches confidentiality and HIPAA.</p><p>A <b>private account</b> can still be shared or seen by others, and posting about clients at all is against policy. Whether the <b>client ever sees it</b> doesn't matter: the disclosure itself is the breach.</p><p><b>Takeaway:</b> Never post about clients, even without names; details can identify them.</p>"
+    },
+    {
+      "id": "inf-57",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A nursing student assigned to one client sees that a friend from high school was admitted to the same unit. Which of the following actions may the student take?",
+      "options": ["Read the friend's record to understand the diagnosis", "Read only the record of the student's assigned client", "Read only the friend's vital signs and nursing notes", "Read the friend's record with the instructor present"],
+      "answer": 1,
+      "rationale": "<p>Students may open records <b>only for their assigned clients</b>, because that's the only care they're involved in. The friend isn't the student's client, so the friend's record stays closed, all of it.</p><p>Reading <b>part of the record</b>, or reading it <b>with the instructor present</b>, is still access without a need to know. If the friend wants to share news, that's the friend's choice.</p><p><b>Takeaway:</b> Students access only their assigned clients' records.</p>"
+    },
+    {
+      "id": "inf-58",
+      "type": "matrix",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse is reviewing practices at an outpatient clinic. For each practice, click to specify whether it is allowed under HIPAA or is a breach of confidentiality.",
+      "rowHeader": "Practice",
+      "columns": ["Allowed", "Breach"],
+      "rows": ["Calling a client's name in the waiting room, without the reason for the visit", "Leaving a voicemail that describes the client's test results in detail", "Using a sign-in sheet that asks only for the client's name and arrival time", "Discussing a client's diagnosis loudly at the front desk", "Giving a client's information to another nurse caring for the client"],
+      "answer": [0, 1, 0, 1, 0],
+      "rationale": "<p>HIPAA allows small, <b>incidental disclosures</b> when reasonable safeguards are in place: <b>calling a name</b> in the waiting room without the reason for the visit, and a <b>sign-in sheet</b> that doesn't list why the client is there. Sharing information with <b>others caring for the client</b> is allowed, because it's needed for treatment.</p><p>A <b>detailed voicemail</b> about results can be heard by anyone with access to the phone; the nurse leaves only a request to call back. <b>Discussing a diagnosis loudly</b> at the front desk ignores reasonable safeguards.</p><p><b>Takeaway:</b> Incidental disclosures with safeguards and sharing for treatment are allowed; careless details are not.</p>"
+    },
+    {
+      "id": "inf-59",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "Out of concern, a nurse opens the record of a neighbor who is a client on another unit, and shares nothing with anyone. Which of the following statements about this action is accurate?",
+      "options": ["It is allowed, because the nurse shared nothing", "It is a breach, and the access is tracked in the record", "It is allowed, because the nurse acted out of concern", "It is a breach only if the neighbor complains"],
+      "answer": 1,
+      "rationale": "<p>Opening a record without a <b>need to know</b> is a breach of confidentiality, whatever the reason. The electronic record is <b>auditable</b>: every access is logged under the user's login, so the facility can see who opened the record and when.</p><p>Sharing <b>nothing afterward</b> doesn't undo the access, and <b>concern</b> isn't a care-related reason. The breach doesn't depend on whether the client <b>complains</b>.</p><p><b>Takeaway:</b> Every access to an electronic record is tracked; looking without a need to know is a breach.</p>"
+    },
+    {
+      "id": "inf-60",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse is setting up a password for the electronic health record. Which of the following practices helps keep client information secure?",
+      "options": ["Using a strong password and changing it regularly", "Writing the password on a note under the keyboard", "Using the same password as the nurse's personal email", "Telling the charge nurse the password for emergencies"],
+      "answer": 0,
+      "rationale": "<p>A <b>strong, unique password that's changed regularly</b> keeps others from using the nurse's access. Every entry and every look at a record is tied to the login, so the nurse is responsible for anything done under it.</p><p>A <b>note under the keyboard</b> lets anyone find it. <b>Reusing a personal password</b> means one leak exposes both. <b>Telling anyone</b>, even the charge nurse, is sharing a login, which is never allowed.</p><p><b>Takeaway:</b> Use a strong, unique password, change it often, and never write it down or share it.</p>"
+    },
+    {
+      "id": "inf-61",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A client asks a nurse, “Can I see what's written in my medical record?” Which of the following responses should the nurse make?",
+      "options": ["“Only your provider is allowed to read your medical record.”", "“You'll need a lawyer to request your medical record.”", "“You can see your record only after you're discharged.”", "“Yes. You have the right to see and get a copy of your record.”"],
+      "answer": 3,
+      "rationale": "<p>Under HIPAA, clients have the <b>right to see and get a copy</b> of their own health records. The nurse follows the facility's process for the request.</p><p>The record isn't limited to the <b>provider</b>, a <b>lawyer</b> isn't needed, and access doesn't wait for <b>discharge</b>.</p><p><b>Takeaway:</b> Clients have the right to see and copy their own records.</p>"
+    },
+    {
+      "id": "inf-62",
+      "type": "sata",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse manager is reviewing reports of possible privacy problems on the unit. Which of the following situations are breaches of client confidentiality?",
+      "options": ["Two nurses discussing a client's diagnosis in the cafeteria line", "Giving report on a client to the oncoming nurse in a private area", "Taking a photo of a client's wound with a personal phone", "Calling a client's provider to report a change in condition", "Telling a client's coworker, who is visiting, why the client was admitted"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Three situations are breaches. <b>Discussing a diagnosis in the cafeteria</b> lets others overhear. A <b>photo on a personal phone</b> stores client information on an unsecured device; photos are taken only with consent and facility equipment, following policy. <b>Telling a visiting coworker</b> why the client was admitted shares information without the client's permission.</p><p><b>Report to the oncoming nurse</b> in a private area and <b>calling the provider</b> about a change in condition share information with people caring for the client, which is needed for treatment.</p><p><b>Takeaway:</b> Sharing for care, in private, is allowed; public talk, personal devices, and telling visitors are breaches.</p>"
+    },
+    {
+      "id": "inf-63",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A client has signed a form allowing the facility to share her health information with her husband. In her room, with her present, the husband asks the nurse about her test results. Which of the following actions should the nurse take?",
+      "options": ["Share the results with him", "Refuse, since only the client may receive her results", "Ask him to get the results from the provider's office", "Share the results only after he signs a release form"],
+      "answer": 0,
+      "rationale": "<p>The client has <b>authorized</b> sharing her information with her husband, so the nurse <b>may share the results</b> with him. Her presence lets the nurse confirm who he is.</p><p>A client's information isn't limited to the client when she has given permission, so <b>refusing</b> isn't required, and sending him to the <b>provider's office</b> isn't needed. The release is signed by the <b>client</b>, not by the person receiving the information.</p><p><b>Takeaway:</b> The client decides who receives her information; once she has authorized someone, the nurse may share with them.</p>"
+    },
+    {
+      "id": "inf-64",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "At the grocery store, a friend asks a nurse, “Is our neighbor a patient on your unit? I heard she was in the hospital.” Which of the following responses should the nurse make?",
+      "options": ["“She is, but I can't tell you why she's there.”", "“Yes, she is. You should call her room to say hello.”", "“I can't share anything about who is or isn't a client.”", "“I'll let you know if she's still there tomorrow.”"],
+      "answer": 2,
+      "rationale": "<p>Even the fact that someone <b>is a client</b> is protected health information. The nurse can't confirm or deny it outside of care.</p><p><b>Confirming she's there</b>, even without the reason, discloses information. Suggesting the friend <b>call her room</b> confirms it too. Promising an <b>update tomorrow</b> plans another disclosure.</p><p><b>Takeaway:</b> Don't confirm or deny that someone is a client; that's protected too.</p>"
+    },
+    {
+      "id": "inf-65",
+      "type": "mc",
+      "topic": "Confidentiality of health information",
+      "stem": "A nurse needs to send a client's new laboratory result to the client's provider. Which of the following methods protects the client's information?",
+      "options": ["Texting the result from the nurse's personal phone", "Emailing the result to the provider's personal email", "Writing the result on the unit's whiteboard", "Using the facility's secure messaging system"],
+      "answer": 3,
+      "rationale": "<p>Client information is sent only through the facility's <b>secure, approved systems</b>, such as secure messaging in the electronic record, or by calling the provider. These systems protect the information and record who sent what.</p><p>A <b>personal phone</b> and <b>personal email</b> aren't secure: messages can be lost, forwarded, or stored where others can see them. A <b>whiteboard</b> puts the result in view of anyone passing.</p><p><b>Takeaway:</b> Share client information only through the facility's secure systems, never personal phones or email.</p>"
+    },
+    {
+      "id": "inf-66",
+      "type": "mc",
+      "topic": "Informatics and documentation",
+      "stem": "A nurse is learning focus charting with DAR notes. Which of the following does the R stand for?",
+      "options": ["Response", "Recommendation", "Reassessment", "Rationale"],
+      "answer": 0,
+      "rationale": "<p>A DAR note in focus charting has three parts: <b>Data</b> (the subjective and objective information about the focus), <b>Action</b> (what the nurse did), and <b>Response</b> (how the client responded).</p><p><b>Recommendation</b> is the R in SBAR handoffs. <b>Reassessment</b> may be part of finding the response, and a <b>rationale</b> explains why an action is done, but neither is a letter of DAR.</p><p><b>Takeaway:</b> DAR = Data, Action, Response.</p>"
+    },
+    {
+      "id": "inf-67",
+      "type": "mc",
+      "topic": "Informatics and documentation",
+      "stem": "A nurse writes this note in DAR format about a client's pain. Which of the following statements represents the A of the note?",
+      "options": ["Client reports pain of 7 out of 10 in the left hip; grimacing when moving", "Gave oxycodone 5 mg PO and repositioned the client with a pillow", "At 1030, client reports pain of 3 out of 10; resting quietly", "Acute pain related to the surgical incision on the left hip"],
+      "answer": 1,
+      "rationale": "<p>In a DAR note, the A is the <b>Action</b>: what the nurse did. <b>Giving the oxycodone and repositioning the client</b> is the action.</p><p>The pain report and grimacing are the <b>Data</b>. The pain of 3 out of 10 afterward is the <b>Response</b>. “Acute pain related to the incision” is a nursing diagnosis, the kind of statement that is the A (Assessment) of a SOAP note, not of a DAR note.</p><p><b>Takeaway:</b> In DAR, A is the nurse's Action; in SOAP, A is the Assessment.</p>"
+    },
+    {
+      "id": "inf-68",
+      "type": "mc",
+      "topic": "Informatics and documentation",
+      "stem": "A nurse writes a PIE note about a client who has thick lung secretions after surgery. Which of the following statements represents the E of the note?",
+      "options": ["Ineffective airway clearance related to thick secretions and incision pain", "Helped the client cough and deep breathe every 2 hours; splinted the incision", "Coughing up thin, clear sputum; breath sounds clear after coughing", "Weak cough; coarse crackles heard in both lower lobes"],
+      "answer": 2,
+      "rationale": "<p>A PIE note has three parts: the <b>Problem</b>, the <b>Intervention</b>, and the <b>Evaluation</b>. The E is the evaluation of how the client responded to the interventions: <b>coughing up thin, clear sputum</b>, with clear breath sounds.</p><p><b>Ineffective airway clearance</b> is the problem (P), and <b>helping the client cough and deep breathe</b> is the intervention (I). The <b>weak cough and crackles</b> are assessment data that led to the problem, not one of the note's three parts.</p><p><b>Takeaway:</b> PIE: Problem, Intervention, Evaluation; the E tells how the client responded.</p>"
+    },
+    {
+      "id": "inf-69",
+      "type": "matrix",
+      "topic": "Informatics and documentation",
+      "stem": "A nurse is writing a DAR note about a client who became dizzy while getting out of bed. For each statement, click to specify the part of the note it belongs in.",
+      "rowHeader": "Statement",
+      "columns": ["D", "A", "R"],
+      "rows": ["Client reports feeling dizzy when standing", "Assisted the client back to bed and raised the head of the bed", "Standing BP 92/58 mm Hg; lying BP 118/72 mm Hg", "After 15 minutes, client reports the dizziness is gone"],
+      "answer": [0, 1, 0, 2],
+      "rationale": "<p>The <b>Data</b> are the subjective and objective information about the focus: the client's report of <b>dizziness when standing</b> and the <b>blood pressure</b> readings. The <b>Action</b> is what the nurse did: <b>assisting the client back to bed</b> and raising the head of the bed. The <b>Response</b> is how the client did afterward: the <b>dizziness is gone</b> after 15 minutes.</p><p><b>Takeaway:</b> In DAR, data can be subjective or objective; the action is the nurse's, and the response is the client's.</p>"
+    },
+    {
+      "id": "inf-70",
+      "type": "mc",
+      "topic": "Informatics and documentation",
+      "stem": "A nurse writes a PIE note about a client who hasn't had a bowel movement in 4 days. Which of the following statements represents the P of the note?",
+      "options": ["Gave docusate 100 mg PO and encouraged 2 L of fluids today", "Client had a soft, formed bowel movement at 1400", "Abdomen firm and slightly distended; bowel sounds hypoactive", "Constipation related to decreased activity and fluid intake"],
+      "answer": 3,
+      "rationale": "<p>In a PIE note, the P is the <b>problem</b>, usually written as a nursing diagnosis: <b>constipation related to decreased activity and fluid intake</b>.</p><p><b>Giving docusate and encouraging fluids</b> is the intervention (I), and <b>the soft, formed bowel movement</b> is the evaluation (E). The <b>firm abdomen and hypoactive bowel sounds</b> are assessment data that support the problem, not one of the note's three parts.</p><p><b>Takeaway:</b> In PIE, the P names the problem, the I is what the nurse did, and the E is how the client responded.</p>"
     },
     {
       "id": "qi-01",
@@ -2403,7 +2643,7 @@
     {
       "id": "qi-39",
       "type": "emr",
-      "topic": "Quality improvement",
+      "topic": "PDSA cycle",
       "stem": "A unit is using the Plan-Do-Study-Act cycle to improve hand hygiene. Which 2 activities belong in the Study phase?",
       "options": ["Setting a goal of 90% hand-hygiene compliance in 3 months", "Comparing the hand-hygiene rate during the trial with the baseline rate", "Placing hand sanitizer at every doorway on one unit for 4 weeks", "Analyzing whether the trial unit's infection rate changed", "Adding sanitizer at every doorway in the hospital after the trial succeeds", "Deciding who will collect the audit data, and how"],
       "answer": [1, 3],
@@ -2413,7 +2653,7 @@
     {
       "id": "qi-40",
       "type": "mc",
-      "topic": "Quality improvement",
+      "topic": "PDSA cycle",
       "stem": "A QI team has planned a new handoff tool to reduce communication errors. Which of the following actions represents the Do phase of the Plan-Do-Study-Act cycle?",
       "options": ["Using the tool on every unit in the hospital starting next week", "Comparing the error rates before and after the tool was used", "Using the tool on one unit for 2 weeks and recording any problems", "Making the tool part of hospital policy"],
       "answer": 2,
@@ -2442,7 +2682,7 @@
     {
       "id": "qi-43",
       "type": "mc",
-      "topic": "Quality improvement",
+      "topic": "PDSA cycle",
       "stem": "A 4-week test of a new medication-pass routine on one unit cut interruptions and errors in half, with no new problems. Which of the following actions belongs in the Act phase?",
       "options": ["Running the same 4-week test again on the same unit", "Adopting the routine, updating the policy, and spreading it to other units", "Deciding which data to collect during the test", "Ending the routine, since the test is over"],
       "answer": 1,
@@ -2451,7 +2691,7 @@
     {
       "id": "qi-44",
       "type": "mc",
-      "topic": "Quality improvement",
+      "topic": "PDSA cycle",
       "stem": "Why does the Plan-Do-Study-Act cycle repeat instead of ending after one round?",
       "options": ["Each round's results lead to the next test of change, so improvement keeps going.", "The first round always fails, so the team has to try again.", "Accreditors require exactly three rounds for every change.", "Repeating the cycle lets the team skip measuring results."],
       "answer": 0,
@@ -2522,6 +2762,123 @@
       "rows": ["Pressure injuries per 1,000 client days: 2.4 → 1.2", "Night-shift repositioning documentation: 58% → 88%", "Skin assessments within 8 hours of admission: 64% → 65%", "Days to get a wound care consult: 3 → 5"],
       "answer": [0, 0, 1, 2],
       "rationale": "<p><b>The injury rate fell by half</b>, and <b>night-shift repositioning rose</b> to 88%: both improved, so the change is working on the problem it targeted. <b>Admission skin assessments barely moved</b>, so they need their own change in the next cycle. <b>Wound care consults got slower</b>, a decline to report and address.</p><p>In the Act phase, the team can adopt hourly rounding more widely and plan the next PDSA cycle for admission skin assessments and consult delays.</p><p><b>Takeaway:</b> Evaluate each measure separately: keep what worked, and plan the next cycle for what didn't change or got worse.</p>"
+    },
+    {
+      "id": "qi-51",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A unit's QI team has chosen falls as the area of care it most needs to improve. Which of the following steps of the quality improvement process should the team take next?",
+      "options": ["Put a new fall-prevention routine in place on the unit", "Analyze the outcomes to see whether the changes worked", "Research the factors that lead to fewer falls", "Compare the unit's fall rate with the rates at leading hospitals"],
+      "answer": 2,
+      "rationale": "<p>The QI process moves in order: analyze current care and outcomes, compare them with leaders in high-quality care (benchmarking), identify areas for improvement, <b>research the factors that lead to better outcomes</b>, put changes in place, and analyze the outcomes. This team has identified its area (falls), so it next <b>researches what reduces falls</b>, such as the evidence and the methods that leading hospitals use.</p><p><b>Putting a routine in place</b> before the research skips the evidence the change should be built on. <b>Analyzing outcomes</b> comes after a change is in place. <b>Comparing with leading hospitals</b> comes before choosing the area to improve.</p><p><b>Takeaway:</b> Identify the area to improve, then research what works before changing practice.</p>"
+    },
+    {
+      "id": "qi-52",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A unit's QI team has started using a new discharge-teaching checklist to reduce readmissions. Which of the following steps of the quality improvement process should the team take next?",
+      "options": ["Analyze the outcomes to see whether readmissions went down", "Spread the checklist to every unit in the hospital", "Identify the areas where the unit needs to improve", "Research the factors that lead to fewer readmissions"],
+      "answer": 0,
+      "rationale": "<p>In the QI process, <b>putting changes in place</b> is followed by <b>analyzing the outcomes</b> to see whether the changes worked: here, whether readmissions went down. The results then point to areas for further improvement, and the process continues.</p><p><b>Spreading the checklist</b> before checking the results could spread a change that doesn't work. <b>Identifying the areas</b> to improve and <b>researching the factors</b> that lead to fewer readmissions came before the team chose the checklist.</p><p><b>Takeaway:</b> After a change is in place, measure the outcomes to see whether it worked.</p>"
+    },
+    {
+      "id": "qi-53",
+      "type": "mc",
+      "topic": "PDSA cycle",
+      "stem": "A QI team is starting a PDSA cycle to reduce catheter-associated urinary tract infections (CAUTIs). Which of the following activities belongs in the Plan phase?",
+      "options": ["Using a new catheter-removal checklist on one unit", "Comparing infection rates before and after the trial", "Adopting the checklist on every unit of the hospital", "Setting a goal and deciding how infections will be measured"],
+      "answer": 3,
+      "rationale": "<p>The <b>Plan</b> phase identifies the problem, sets a measurable <b>goal</b>, predicts what will happen, chooses the change to test, and decides <b>how results will be measured</b> and who is responsible.</p><p><b>Using the checklist on one unit</b> is the Do phase (a small test). <b>Comparing rates</b> before and after is the Study phase. <b>Adopting it everywhere</b> is a decision in the Act phase.</p><p><b>Takeaway:</b> Plan: set the goal, choose the change, and decide how to measure the results.</p>"
+    },
+    {
+      "id": "qi-54",
+      "type": "mc",
+      "topic": "PDSA cycle",
+      "stem": "A QI team used the PDSA cycle to test a turning-reminder board for preventing hospital-acquired pressure injuries. Which of the following statements from the team's report represents the Study phase?",
+      "options": ["“The board will be added to every medical-surgical unit next month, and the policy updated.”", "“Pressure injuries fell from 8 to 4 during the test, as the team predicted.”", "“The team predicts that the board will cut pressure injuries in half within 6 weeks.”", "“The board was used on one unit for 6 weeks while staff recorded any problems.”"],
+      "answer": 1,
+      "rationale": "<p>The <b>Study</b> phase analyzes the data from the test and compares the results with the baseline and the prediction: pressure injuries fell from 8 to 4, as the team expected.</p><p><b>Predicting</b> the result belongs to Plan. <b>Using the board on one unit</b> while recording problems is Do, the small-scale test. <b>Adding the board to every unit</b> and updating the policy is Act, after Study shows the change worked.</p><p><b>Takeaway:</b> Study: analyze the results and compare them with the prediction and the baseline.</p>"
+    },
+    {
+      "id": "qi-55",
+      "type": "mc",
+      "topic": "PDSA cycle",
+      "stem": "A small test of a new oral-care routine didn't lower the unit's rate of hospital-acquired pneumonia. Which of the following actions fits the Act phase of the PDSA cycle?",
+      "options": ["Adapting or abandoning the change, then planning another test", "Adopting the change on every unit", "Stopping all work on preventing pneumonia", "Repeating the same test with no changes"],
+      "answer": 0,
+      "rationale": "<p>In the <b>Act</b> phase, the team decides what to do with what it learned: <b>adopt</b> a change that worked, <b>adapt</b> it, or <b>abandon</b> it. A change that didn't work is adapted or abandoned, and the cycle starts again with a <b>new plan</b>.</p><p><b>Adopting</b> a change that didn't help spreads it without benefit. <b>Stopping the work</b> leaves the problem unsolved. <b>Repeating the same test</b> unchanged is unlikely to give a different result.</p><p><b>Takeaway:</b> Act: adopt a change that worked; adapt or abandon one that didn't, and plan the next cycle.</p>"
+    },
+    {
+      "id": "qi-56",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A nurse is reviewing the unit's quality data. Which of the following is a nurse-sensitive quality indicator?",
+      "options": ["The number of surgeries performed each month", "The average wait for laboratory results", "The number of clients admitted each day", "The rate of client falls with injury"],
+      "answer": 3,
+      "rationale": "<p><b>Nurse-sensitive indicators</b> measure outcomes and processes that nursing care directly affects. <b>Falls with injury</b> is one: rounding, fall-risk assessment, and safety measures by nurses change the rate. The National Database of Nursing Quality Indicators (NDNQI) collects these measures.</p><p>The <b>number of surgeries</b> and the <b>number of admissions</b> measure how busy the hospital is, not the quality of nursing care. The <b>wait for laboratory results</b> depends mainly on the laboratory.</p><p><b>Takeaway:</b> Nurse-sensitive indicators, such as falls with injury, reflect outcomes that nursing care affects.</p>"
+    },
+    {
+      "id": "qi-57",
+      "type": "sata",
+      "topic": "Quality improvement",
+      "stem": "A nurse is learning about the National Database of Nursing Quality Indicators (NDNQI). Which of the following are nurse-sensitive indicators?",
+      "options": ["Rates of hospital-acquired pressure injuries", "The number of physicians on the medical staff", "Rates of catheter-associated urinary tract infections", "Rates of central line-associated bloodstream infections", "The number of MRI scans done each month", "Nurse staffing and skill mix"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Nurse-sensitive indicators include <b>pressure injuries</b>, <b>catheter-associated urinary tract infections (CAUTIs)</b>, <b>central line-associated bloodstream infections (CLABSIs)</b>, and falls: outcomes that nursing care, such as turning, catheter care, and line care, directly affects. <b>Staffing and skill mix</b> are structure indicators: how many nurses there are and how they're prepared affects these outcomes.</p><p>The <b>number of physicians</b> and the <b>number of MRI scans</b> measure staffing and volume outside nursing, not nursing quality.</p><p><b>Takeaway:</b> NDNQI indicators include falls, pressure injuries, CAUTIs, CLABSIs, and nurse staffing.</p>"
+    },
+    {
+      "id": "qi-58",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A nursing student asks why some quality indicators are called nurse-sensitive. Which of the following responses by the nurse is accurate?",
+      "options": ["“Nurses are the ones who collect the data for them.”", "“Only nurses are allowed to see the results.”", "“They reflect outcomes that nursing care directly affects.”", "“They measure how satisfied nurses are with their jobs.”"],
+      "answer": 2,
+      "rationale": "<p>An indicator is <b>nurse-sensitive</b> when nursing care, or how nursing is staffed, <b>directly affects</b> it, so it shows the quality of nursing care. Comparing these indicators with national benchmarks helps units find where to improve.</p><p>Who <b>collects</b> the data or who may <b>see</b> the results doesn't make an indicator nurse-sensitive. Nurses' <b>job satisfaction</b> is tracked too, but it isn't what the term means.</p><p><b>Takeaway:</b> Nurse-sensitive indicators measure what nursing care affects.</p>"
+    },
+    {
+      "id": "qi-59",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A unit's results on a nurse-sensitive indicator are worse than the national benchmark for similar units. Which of the following conclusions should the unit's QI team draw?",
+      "options": ["The clients on the unit are sicker, so no change is needed", "The nursing care processes behind the indicator need review", "The national data are probably wrong for this unit", "The nurses involved in each case should be disciplined"],
+      "answer": 1,
+      "rationale": "<p>A nurse-sensitive indicator that's worse than the <b>benchmark</b> for similar units points to <b>nursing care processes</b> that need improving. The team reviews how the care is done (for example, with a PDSA cycle or a chart audit) and plans changes.</p><p>Benchmarks compare <b>similar units</b>, so assuming the clients are <b>sicker</b> or the <b>data are wrong</b> dismisses a real signal. QI looks at systems and processes, not <b>discipline</b> of individuals.</p><p><b>Takeaway:</b> When a nurse-sensitive indicator falls behind the benchmark, review and improve the nursing care processes.</p>"
+    },
+    {
+      "id": "qi-60",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A unit's QI team pulls 20 client records to check whether nurses documented a fall-risk score every shift, as policy requires. Which of the following activities is the team carrying out?",
+      "options": ["A root cause analysis", "An incident report", "A failure mode and effects analysis", "A chart audit"],
+      "answer": 3,
+      "rationale": "<p>A <b>chart audit</b> reviews a sample of records to check whether <b>documentation</b> is complete and meets the standard, such as a fall-risk score every shift. The results show how well a practice is being followed.</p><p>A <b>root cause analysis</b> looks for the system causes of one serious event. An <b>incident report</b> describes a specific event, such as a fall. A <b>failure mode and effects analysis</b> predicts how a process could fail before harm happens.</p><p><b>Takeaway:</b> A chart audit checks records for complete, correct documentation.</p>"
+    },
+    {
+      "id": "qi-61",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "A QI team reviews 25 client records and finds that a skin assessment was documented every shift in only 15 of them. Which of the following actions should the team take next?",
+      "options": ["Ask the nurses to add the missing assessments to those records now", "Stop reviewing records, since most of them were complete", "Share the results, plan a change, and review the records again later", "Discipline each nurse whose record was missing an assessment"],
+      "answer": 2,
+      "rationale": "<p>Audit results are used to <b>improve the process</b>: the team <b>shares the results</b> with staff, plans a change (such as education or a reminder in the electronic record), and <b>audits again</b> later to see whether documentation improves.</p><p>Filling in assessments <b>now</b> for past shifts would make the records inaccurate, since no one can see the skin as it was then. <b>Stopping</b> ignores a 40% gap. QI focuses on processes, not <b>discipline</b> of individuals.</p><p><b>Takeaway:</b> Use audit results to change the process, then audit again to measure the improvement.</p>"
+    },
+    {
+      "id": "qi-62",
+      "type": "sata",
+      "topic": "Quality improvement",
+      "stem": "A client received 10 times the prescribed dose of insulin and was transferred to intensive care. Which of the following questions should the team ask during the root cause analysis?",
+      "options": ["Were two strengths of insulin stored next to each other?", "Was the nurse interrupted while preparing the dose?", "Which nurse made the error, so that nurse can be disciplined?", "Was a second nurse available to double-check the dose?", "What kind of health insurance does the client have?"],
+      "answer": [0, 1, 3],
+      "rationale": "<p>A root cause analysis looks at <b>the systems and processes</b> that allowed the error: how the medications were <b>stored</b>, <b>interruptions</b> during preparation, and whether a <b>double-check</b> was available. The answers lead to an action plan that makes the error less likely to happen again.</p><p>Finding <b>someone to discipline</b> isn't the goal: an RCA focuses on systems, not individual blame, so staff can report errors openly. The client's <b>insurance</b> has nothing to do with how the error happened.</p><p><b>Takeaway:</b> A root cause analysis asks how systems and processes allowed the error, not who to blame.</p>"
+    },
+    {
+      "id": "qi-63",
+      "type": "mc",
+      "topic": "Quality improvement",
+      "stem": "During a root cause analysis, the team keeps asking why each cause happened until it reaches a problem in the system. Which of the following techniques is the team using?",
+      "options": ["The 5 Whys", "A chart audit", "A PDSA cycle", "A fishbone diagram"],
+      "answer": 0,
+      "rationale": "<p>The <b>5 Whys</b> technique asks “why?” again and again, about five times, moving past the first answer to the <b>underlying system cause</b>.</p><p>A <b>fishbone diagram</b> is another root cause analysis tool, which sorts possible causes into categories rather than following one chain of whys. A <b>chart audit</b> checks documentation, and a <b>PDSA cycle</b> tests a change.</p><p><b>Takeaway:</b> The 5 Whys follows one cause back, why by why, to the system problem.</p>"
     },
     {
       "id": "hp-01",
@@ -3007,9 +3364,135 @@
       "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
     },
     {
+      "id": "hp-51",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A nurse is teaching a group of nursing students about the Mental Health Parity and Addiction Equity Act (MHPAEA). Which of the following describes the law's main purpose?",
+      "options": ["Plans that cover mental health and substance use care can't limit it more than medical care", "Every health plan must offer coverage for mental health and substance use care", "Mental health records must be stored apart from the rest of the medical record", "Emergency departments must treat clients in a mental health crisis without insurance"],
+      "answer": 0,
+      "rationale": "<p>The <b>Mental Health Parity and Addiction Equity Act</b> (2008) requires health plans that cover mental health and substance use care to cover it <b>no more restrictively than medical and surgical care</b>: copays, deductibles, and limits on visits or days can't be stricter.</p><p>The law <b>doesn't require every plan to offer</b> these benefits; it applies to plans that do. Keeping <b>records separate</b> is about privacy, not parity. Treating anyone in an <b>emergency</b> regardless of insurance comes from EMTALA.</p><p><b>Takeaway:</b> Parity means mental health and substance use benefits are covered on the same terms as medical benefits.</p>"
+    },
+    {
+      "id": "hp-52",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A client's health plan, which isn't exempt from the parity law, charges a $20 copay to see a cardiologist and a $60 copay to see a psychiatrist. Which of the following statements is accurate?",
+      "options": ["The difference is allowed, because psychiatric visits last longer", "The difference is allowed, because the client agreed to the plan", "The higher copay for psychiatric visits goes against the parity law", "The difference is allowed, because both doctors are specialists"],
+      "answer": 2,
+      "rationale": "<p>Under the parity law, a plan's <b>copays</b> for mental health care can't be higher than its copays for comparable medical care. A $60 copay for a psychiatrist when a medical specialist costs $20 is a <b>parity violation</b>.</p><p>The <b>length of the visit</b>, the client's <b>agreement to the plan</b>, and the fact that both are <b>specialists</b> don't make a stricter copay for mental health care allowed; comparing specialist visits is exactly what the law requires.</p><p><b>Takeaway:</b> Copays for mental health care can't be higher than for comparable medical care.</p>"
+    },
+    {
+      "id": "hp-53",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A nurse is helping a client compare health plans. Which of the following plan features meets the requirements of the Mental Health Parity and Addiction Equity Act?",
+      "options": ["A limit of 20 therapy visits a year, with no limit on medical visits", "Prior approval for every therapy visit, but not for medical visits", "A higher deductible for substance use treatment than for medical care", "The same limits on outpatient therapy visits as on outpatient medical visits"],
+      "answer": 3,
+      "rationale": "<p>Parity means the plan's rules for mental health and substance use care are <b>no stricter than for medical care</b>. Applying <b>the same limits</b> to outpatient therapy visits as to outpatient medical visits meets the law.</p><p>A <b>yearly cap on therapy visits</b> with no cap on medical visits, <b>prior approval</b> required only for therapy, and a <b>higher deductible</b> for substance use treatment all make mental health or substance use care harder to get than medical care.</p><p><b>Takeaway:</b> Visit limits, prior approval rules, and deductibles must be no stricter for mental health care than for medical care.</p>"
+    },
+    {
+      "id": "hp-54",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A client who is starting treatment for alcohol use disorder asks whether the parity law applies to this care. Which of the following responses should the nurse make?",
+      "options": ["“No. The law covers mental illness, not substance use.”", "“Yes. Substance use treatment is covered by the law too.”", "“Only if you also have a mental illness, such as depression.”", "“Only for a hospital stay to detox, not outpatient care.”"],
+      "answer": 1,
+      "rationale": "<p>The law's full name, the Mental Health Parity and <b>Addiction</b> Equity Act, shows that it covers <b>substance use disorders</b> as well as mental illness. A plan that covers alcohol use disorder treatment must cover it no more restrictively than medical care, inpatient and outpatient.</p><p>The law isn't limited to <b>mental illness</b>, doesn't require a <b>second diagnosis</b>, and isn't limited to <b>inpatient detox</b>.</p><p><b>Takeaway:</b> Parity applies to substance use disorder treatment, not only to mental illness.</p>"
+    },
+    {
+      "id": "hp-55",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A client's health plan doesn't offer any mental health or substance use benefits. Which of the following statements about the Mental Health Parity and Addiction Equity Act is accurate?",
+      "options": ["The law applies only to plans that offer these benefits", "The law requires the plan to add these benefits right away", "The law requires the plan to pay for this care at no cost", "The law requires the plan to refund the client's premiums"],
+      "answer": 0,
+      "rationale": "<p>The parity law sets rules for plans that <b>offer</b> mental health or substance use benefits: those benefits can't be covered more restrictively than medical care. On its own, it <b>doesn't require</b> a plan to offer them. (A later law, the Affordable Care Act, requires many individual and small-group plans to include mental health and substance use care as essential health benefits.)</p><p>The parity law doesn't make a plan <b>add</b> benefits, make care <b>free</b>, or <b>refund premiums</b>.</p><p><b>Takeaway:</b> Parity applies to plans that cover mental health and substance use care; it doesn't by itself require that coverage.</p>"
+    },
+    {
+      "id": "hp-56",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "In a class discussion, a nurse explains that some health plans are exempt from the Mental Health Parity and Addiction Equity Act. Which of the following describes how an exemption can affect clients covered by an exempt plan?",
+      "options": ["Their plan must stop covering mental health care completely", "Their medical care must be covered with the same limits as mental health care", "Their plan may limit mental health care more than it limits medical care", "Their mental health care must be paid for by the federal government"],
+      "answer": 2,
+      "rationale": "<p>An exempt plan doesn't have to follow parity rules, so it <b>may cover mental health and substance use care more restrictively</b> than medical care: higher copays, fewer visits, or more approvals. Clients in exempt plans can face higher costs or limits that make treatment harder to get.</p><p>An exemption doesn't force a plan to <b>drop</b> mental health coverage, doesn't change how <b>medical care</b> is covered, and doesn't move the cost to the <b>federal government</b>.</p><p><b>Takeaway:</b> Exemptions let some plans limit mental health care more than medical care, which can keep clients from treatment.</p>"
+    },
+    {
+      "id": "hp-57",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A nurse is explaining why mental health parity matters for client outcomes. Which of the following statements is accurate?",
+      "options": ["“Parity guarantees that mental illness can be cured.”", "“Coverage on equal terms helps clients get treatment when they need it.”", "“Parity lowers the price of every prescription medication.”", "“Parity requires employers to provide counseling at work.”"],
+      "answer": 1,
+      "rationale": "<p>When mental health and substance use care are covered on the <b>same terms as medical care</b>, cost and visit limits are less likely to keep clients from treatment. Getting care early and continuing it improves outcomes such as symptom control, recovery, and safety.</p><p>Parity doesn't <b>guarantee a cure</b>, doesn't set <b>medication prices</b>, and doesn't require <b>counseling at work</b>; it governs how health plans cover care.</p><p><b>Takeaway:</b> Parity improves outcomes by removing coverage barriers to mental health and substance use treatment.</p>"
+    },
+    {
+      "id": "hp-58",
+      "type": "mc",
+      "topic": "Mental Health Parity Act",
+      "stem": "A client says, “My plan stopped paying for therapy after 20 visits this year, but it has no visit limit for my diabetes care.” Which of the following actions should the nurse take?",
+      "options": ["Advise the client to stop therapy until the new plan year", "Explain that health plans rarely cover mental health care", "Suggest the client pay for therapy without questioning the plan", "Tell the client about parity protections and how to appeal the decision"],
+      "answer": 3,
+      "rationale": "<p>A visit limit on therapy that the plan doesn't apply to medical care may <b>violate the parity law</b>. The nurse advocates for the client by explaining these <b>protections</b> and how to <b>appeal</b> the plan's decision; the Centers for Medicare &amp; Medicaid Services (CMS) and state insurance regulators also explain clients' rights.</p><p><b>Stopping therapy</b> can harm the client's recovery. Saying plans <b>rarely cover</b> mental health care is inaccurate. <b>Paying without questioning</b> the plan gives up protections the client may have.</p><p><b>Takeaway:</b> When mental health care is limited more than medical care, the nurse helps the client use parity protections and appeal.</p>"
+    },
+    {
+      "id": "hp-59",
+      "type": "mc",
+      "topic": "Health policy",
+      "stem": "A nurse is reviewing major health laws. Which of the following describes the general purpose of the Health Insurance Portability and Accountability Act (HIPAA)?",
+      "options": ["To give every client written information about advance directives on admission", "To protect the privacy and security of health information and keep insurance portable", "To require emergency departments to screen and stabilize clients regardless of ability to pay", "To guarantee health insurance coverage for every citizen of the United States"],
+      "answer": 1,
+      "rationale": "<p><b>HIPAA</b> (1996) protects the <b>privacy and security of health information</b>, giving clients rights over their records and limiting who may see them, and it helps workers <b>keep health insurance</b> when they change or lose jobs (portability).</p><p>Information about <b>advance directives</b> comes from the Patient Self-Determination Act. <b>Screening and stabilizing</b> anyone in an emergency department comes from EMTALA. No federal law <b>guarantees insurance</b> for every citizen.</p><p><b>Takeaway:</b> HIPAA protects health information privacy and security, and insurance portability.</p>"
+    },
+    {
+      "id": "hp-60",
+      "type": "mc",
+      "topic": "Health policy",
+      "stem": "A nurse is reviewing which information is protected by HIPAA. Which of the following is protected health information (PHI)?",
+      "options": ["A printed list of clients' names with their diagnoses", "The average length of stay on the unit last month", "The hospital's written policy on preventing falls", "The total number of beds on each unit of the hospital"],
+      "answer": 0,
+      "rationale": "<p><b>Protected health information</b> is health information that can be linked to a specific person, such as <b>names with diagnoses</b>, in any form: spoken, written, or electronic.</p><p>An <b>average length of stay</b> is a statistic about many clients that identifies no one. A <b>fall-prevention policy</b> and the <b>number of beds</b> contain no client information at all.</p><p><b>Takeaway:</b> PHI is health information that identifies a person; statistics and policies are not PHI.</p>"
+    },
+    {
+      "id": "hp-61",
+      "type": "sata",
+      "topic": "Health policy",
+      "stem": "A nurse is teaching staff about protected health information (PHI). Which of the following, when linked to a client's health information, are PHI?",
+      "options": ["The client's name", "The unit's nurse-to-client ratio", "The client's date of birth", "The client's medical record number", "The generic name of a medication", "A photo of the client's face"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Anything that can identify a client makes health information <b>protected</b>: the <b>name</b>, <b>date of birth</b>, <b>medical record number</b>, and a <b>photo of the face</b>, along with others such as the address, phone number, and Social Security number.</p><p>The unit's <b>nurse-to-client ratio</b> and a medication's <b>generic name</b> don't identify any client.</p><p><b>Takeaway:</b> Identifiers such as the name, date of birth, record number, and photo turn health information into PHI.</p>"
+    },
+    {
+      "id": "hp-62",
+      "type": "mc",
+      "topic": "Health policy",
+      "stem": "A nurse is reviewing federal health agencies. Which of the following is a role of the U.S. Food and Drug Administration (FDA)?",
+      "options": ["Setting the nurse-to-client staffing ratio for every hospital", "Paying for health care for adults 65 years of age and older", "Approving new medications and medical devices as safe and effective", "Investigating outbreaks of infectious disease in communities"],
+      "answer": 2,
+      "rationale": "<p>The <b>FDA</b>, part of the U.S. Department of Health and Human Services, makes sure that <b>medications, medical devices</b>, food, and other products are safe and effective. It reviews and <b>approves new medications and devices</b> before they're sold, monitors them afterward, and can issue warnings and recalls.</p><p>No federal agency sets <b>staffing ratios</b> for every hospital. <b>Paying for care for adults 65 and older</b> is Medicare, run by the Centers for Medicare &amp; Medicaid Services. <b>Investigating outbreaks</b> is the work of the Centers for Disease Control and Prevention.</p><p><b>Takeaway:</b> The FDA approves and oversees the safety of medications, medical devices, and food.</p>"
+    },
+    {
+      "id": "hp-63",
+      "type": "mc",
+      "topic": "Health policy",
+      "stem": "A nurse is explaining who must follow HIPAA's privacy rules. Which of the following organizations must follow them?",
+      "options": ["A newspaper that reports on a car accident", "A gym where a client takes fitness classes", "A store that sells vitamins and supplements", "A client's health insurance plan"],
+      "answer": 3,
+      "rationale": "<p>HIPAA's privacy rules apply to <b>covered entities</b>: <b>health plans</b> (such as a client's insurer), health care providers who bill electronically (hospitals, clinics, pharmacies, nurses' employers), and health care clearinghouses, along with the businesses that handle health information for them.</p><p>A <b>newspaper</b>, a <b>gym</b>, and a <b>vitamin store</b> aren't covered entities, so HIPAA doesn't govern them, even if they learn something about a person's health.</p><p><b>Takeaway:</b> HIPAA applies to health plans, health care providers, and the businesses that handle health information for them.</p>"
+    },
+    {
+      "id": "hp-64",
+      "type": "mc",
+      "topic": "Health policy",
+      "stem": "A nurse is explaining why health policy pays attention to health literacy. Which of the following statements should the nurse include?",
+      "options": ["“Low health literacy is linked to more hospital stays, more emergency visits, and poorer health.”", "“Health literacy matters only for clients who don't speak English.”", "“Clients with low health literacy can't use written health materials at all.”", "“Health literacy depends mainly on how many years of school a person finished.”"],
+      "answer": 0,
+      "rationale": "<p><b>Low health literacy is linked to poorer health</b>: more hospital stays and emergency visits, less use of preventive care, and more mistakes with medications. That's why health policies call for health information that people can find, understand, and use, and why nurses check that clients understand what they're taught.</p><p>Low health literacy affects people of <b>every background</b>, including fluent English speakers and people with many <b>years of school</b>, especially when they're sick or stressed. Clients with low health literacy <b>can use written materials</b> that are clear and simple, with plain words and pictures.</p><p><b>Takeaway:</b> Low health literacy leads to poorer health outcomes, so policy pushes for health information everyone can understand and use.</p>"
+    },
+    {
       "id": "acl-01",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse reads “NKDA” on a client's allergy band. Which of the following is the meaning of this abbreviation?",
       "options": ["No known allergies of any kind", "No known drug allergies", "No known dietary allergies", "A known drug allergy, not yet named"],
       "answer": 1,
@@ -3018,7 +3501,7 @@
     {
       "id": "acl-02",
       "type": "matrix",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing a client's medication schedule. For each order, click to specify how many times a day the medication is given.",
       "rowHeader": "Order",
       "columns": ["Once a day", "2 times a day", "3 times a day", "4 times a day"],
@@ -3029,7 +3512,7 @@
     {
       "id": "acl-03",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A prescription reads: “Ibuprofen 400 mg PO q6h PRN pain c̄ food.” Which of the following instructions should the nurse give the client?",
       "options": ["Take it before eating, every 6 hours, whether or not you have pain.", "Take it with food, at most every 6 hours, when you need it for pain.", "Take it after meals and at bedtime, when you need it for pain.", "Take it by mouth every 6 hours, starting right away, without food."],
       "answer": 1,
@@ -3038,7 +3521,7 @@
     {
       "id": "acl-04",
       "type": "dropdown",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A prescription reads: “Timolol eye drops 1 drop OU BID.” Complete the following sentence.",
       "text": "The nurse instills 1 drop in {{0}}, {{1}}.",
       "blanks": [
@@ -3050,7 +3533,7 @@
     {
       "id": "acl-05",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing a client's history, which lists “HTN, CAD, and OSA.” Which of the following conditions does the client have?",
       "options": ["High blood pressure, coronary artery disease, and obstructive sleep apnea", "Low blood pressure, chronic airway disease, and obstructive sleep apnea", "Low blood pressure, coronary artery disease, and osteoarthritis of the spine", "High blood pressure, chronic airway disease, and osteoarthritis of the spine"],
       "answer": 0,
@@ -3059,7 +3542,7 @@
     {
       "id": "acl-06",
       "type": "dragdrop",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is writing a summary of a client's history using standard abbreviations. Complete the following sentences.",
       "text": "The client developed a blood clot in a deep vein of the left leg ({{0}}), and part of it traveled to the lungs ({{1}}). The client also has an enlarged prostate ({{2}}).",
       "tokens": ["PE", "CKD", "DVT", "PD", "BPH", "PNA"],
@@ -3069,7 +3552,7 @@
     {
       "id": "acl-07",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A client's activity order reads “Up ad lib.” Which of the following statements by the nurse explains this order?",
       "options": ["“You need to stay in bed until the provider sees you.”", "“You can get up when a nurse is with you to help.”", "“You can sit in the chair after each meal.”", "“You can get up and move around as much as you want.”"],
       "answer": 3,
@@ -3078,7 +3561,7 @@
     {
       "id": "acl-08",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing a client's assessment notes. Which of the following findings should the nurse report to the provider?",
       "options": ["RUE: radial pulse strong, hand warm", "LLE: pedal pulse strong, foot warm and pink", "RLE: pedal pulse absent, foot cool and pale", "LUE: skin warm and dry, moves fingers on request"],
       "answer": 2,
@@ -3087,7 +3570,7 @@
     {
       "id": "acl-09",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A client had cataract surgery on the left eye this morning. The nurse reviews this prescription: “Moxifloxacin eye drops 1 drop OD QID.” Which of the following actions should the nurse take?",
       "options": ["Instill the drops in the left eye, because that eye had surgery.", "Instill the drops in the right eye, as the order is written.", "Instill the drops in both eyes, so that the surgical eye is covered.", "Contact the provider to clarify which eye should receive the drops."],
       "answer": 3,
@@ -3096,7 +3579,7 @@
     {
       "id": "acl-10",
       "type": "sata",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Prescriber's orders",
       "stem": "A nurse is checking a new medication order to make sure that it is complete. Which of the following parts must the order include?",
       "options": ["The name of the medication", "The client's room number", "The dose", "The route", "How often to give it", "The prescriber's signature"],
       "answer": [0, 2, 3, 4, 5],
@@ -3105,7 +3588,7 @@
     {
       "id": "acl-11",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A prescription reads: “Aluminum hydroxide suspension 30 mL PO PC and HS.” The client eats three meals a day. How many times a day will the client take this medication?",
       "options": ["2 times a day", "3 times a day", "4 times a day", "6 times a day"],
       "answer": 2,
@@ -3114,7 +3597,7 @@
     {
       "id": "acl-12",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A client has this prescription: “Ondansetron 4 mg PO q8h PRN nausea, x3 doses.” The client received the first dose at 0800 and asks for another dose at 1400 because of nausea. Which of the following actions should the nurse take?",
       "options": ["Give the dose now, because a PRN medication is given when the client asks for it.", "Give half of the dose now and the other half at 1600, when 8 hours have passed.", "Explain that the next dose can be given at 1600, and offer other comfort measures.", "Explain that the order has run out, because the client already received a dose."],
       "answer": 2,
@@ -3123,7 +3606,7 @@
     {
       "id": "acl-13",
       "type": "matrix",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing units of measure. For each unit, click to specify the system it belongs to.",
       "rowHeader": "Unit",
       "columns": ["Metric", "Household"],
@@ -3134,7 +3617,7 @@
     {
       "id": "acl-14",
       "type": "dropdown",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing metric abbreviations. Complete the following sentence.",
       "text": "The abbreviation mcg stands for {{0}}, and 1 mcg is {{1}}.",
       "blanks": [
@@ -3146,7 +3629,7 @@
     {
       "id": "acl-15",
       "type": "order",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: multiple choice",
       "stem": "A nurse is comparing four amounts of a medication. Place the amounts in order from the largest to the smallest.",
       "items": ["0.05 kg", "0.5 g", "50 mg", "5,000 mcg"],
       "rationale": "<p>Convert everything to one unit, such as milligrams: <b>0.05 kg</b> = 50 g = <b>50,000 mg</b>; <b>0.5 g</b> = <b>500 mg</b>; <b>50 mg</b>; and <b>5,000 mcg</b> = <b>5 mg</b>. From largest to smallest, the order is 0.05 kg, 0.5 g, 50 mg, and 5,000 mcg.</p><p>The biggest-looking number, 5,000, is the smallest amount, because a microgram is so small. Compare amounts only after putting them in the same unit.</p><p><b>Takeaway:</b> From kg to g to mg to mcg, each step is 1,000 times smaller.</p>"
@@ -3154,7 +3637,7 @@
     {
       "id": "acl-16",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is teaching the parent of a child who is prescribed an oral liquid antibiotic, 5 mL twice a day. Which of the following instructions is best?",
       "options": ["Measure each dose with the oral syringe that is marked in milliliters.", "Measure each dose with one of the teaspoons from the kitchen.", "Measure each dose with a kitchen tablespoon, and give about one-third of it.", "Measure each dose with a measuring cup from the kitchen."],
       "answer": 0,
@@ -3163,7 +3646,7 @@
     {
       "id": "acl-17",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: multiple choice",
       "stem": "A nurse needs to convert a dose from milligrams to grams. Which of the following describes the conversion?",
       "options": ["Multiply the number of milligrams by 1,000.", "Divide the number of milligrams by 100.", "Multiply the number of milligrams by 100.", "Divide the number of milligrams by 1,000."],
       "answer": 3,
@@ -3172,7 +3655,7 @@
     {
       "id": "acl-18",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is prescribed 0.75 g of a medication. How many milligrams is this dose?",
       "answer": 750,
       "unit": "mg",
@@ -3182,7 +3665,7 @@
     {
       "id": "acl-19",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is receiving 1.5 L of IV fluid. How many milliliters is this?",
       "answer": 1500,
       "unit": "mL",
@@ -3192,7 +3675,7 @@
     {
       "id": "acl-20",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A newborn weighs 3,600 g. How many kilograms does the newborn weigh?",
       "answer": 3.6,
       "unit": "kg",
@@ -3203,7 +3686,7 @@
     {
       "id": "acl-21",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is prescribed 500 mcg of a medication. How many milligrams is this dose?",
       "answer": 0.5,
       "unit": "mg",
@@ -3213,7 +3696,7 @@
     {
       "id": "acl-22",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A prescription calls for 0.4 mg of a medication. How many micrograms is this?",
       "answer": 400,
       "unit": "mcg",
@@ -3223,7 +3706,7 @@
     {
       "id": "acl-23",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is prescribed 1,500 mg of a medication. How many grams is this dose?",
       "answer": 1.5,
       "unit": "g",
@@ -3234,7 +3717,7 @@
     {
       "id": "acl-24",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A nurse measures a wound that is 35 mm long. How many centimeters long is the wound?",
       "answer": 3.5,
       "unit": "cm",
@@ -3245,7 +3728,7 @@
     {
       "id": "acl-25",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is encouraged to drink 2 L of fluid each day. So far today, the client has had 1,350 mL. How many more milliliters does the client need to drink to reach the goal?",
       "answer": 650,
       "unit": "mL",
@@ -3255,7 +3738,7 @@
     {
       "id": "acl-26",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: multiple choice",
       "stem": "The provider prescribes digoxin 0.25 mg PO daily. The pharmacy sends tablets labeled “digoxin 250 mcg.” Which of the following conclusions is correct?",
       "options": ["The tablets are 1,000 times stronger than the dose, so the nurse calls the pharmacy.", "The tablets equal the prescribed dose, so the nurse gives 1 tablet.", "The tablets are smaller than the dose, so the nurse gives 4 tablets.", "The units on the order and the label differ, so the nurse holds the dose."],
       "answer": 1,
@@ -3264,7 +3747,7 @@
     {
       "id": "acl-27",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is prescribed 2 teaspoons (tsp) of a liquid medication. How many milliliters is this dose?",
       "answer": 10,
       "unit": "mL",
@@ -3274,7 +3757,7 @@
     {
       "id": "acl-28",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client takes 4 tablespoons (tbsp) of a liquid nutritional supplement. How many milliliters is this?",
       "answer": 60,
       "unit": "mL",
@@ -3284,7 +3767,7 @@
     {
       "id": "acl-29",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A child weighs 46 lb. How many kilograms does the child weigh?",
       "answer": 20.9,
       "unit": "kg",
@@ -3295,7 +3778,7 @@
     {
       "id": "acl-30",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client weighs 25 kg. How many pounds does the client weigh?",
       "answer": 55,
       "unit": "lb",
@@ -3306,7 +3789,7 @@
     {
       "id": "acl-31",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client is 5 feet 6 inches tall. How many centimeters tall is the client?",
       "answer": 167.6,
       "unit": "cm",
@@ -3317,7 +3800,7 @@
     {
       "id": "acl-32",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "An IV medication is to infuse over 45 minutes. How many hours is this?",
       "answer": 0.75,
       "unit": "hours",
@@ -3328,7 +3811,7 @@
     {
       "id": "acl-33",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A client's temperature is 38.5 °C. What is this temperature in degrees Fahrenheit?",
       "answer": 101.3,
       "unit": "°F",
@@ -3339,7 +3822,7 @@
     {
       "id": "acl-34",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A child's temperature is 101.5 °F. What is this temperature in degrees Celsius?",
       "answer": 38.6,
       "unit": "°C",
@@ -3350,7 +3833,7 @@
     {
       "id": "acl-35",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "A nurse is totaling a client's oral intake for the day shift. The client drank 1 cup of coffee, 4 oz of orange juice, 1 cup of broth, and a 12-oz can of ginger ale, and took medications with 90 mL of water. What is the client's total oral intake?",
       "answer": 1050,
       "unit": "mL",
@@ -3360,7 +3843,7 @@
     {
       "id": "acl-36",
       "type": "hotspot",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is reviewing a medication label. Click the generic name of the medication.",
       "image": "img/label-cephalexin.svg",
       "alt": "Sample medication label for capsules. It shows an NDC number and Rx only at the top, a large name with a registered-trademark symbol, a smaller name in parentheses below it, the strength in a box, the number of capsules in the bottle, a description and storage directions, and a lot number and expiration date at the bottom.",
@@ -3370,7 +3853,7 @@
     {
       "id": "acl-37",
       "type": "hotspot",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is checking whether a medication can still be used. Click the expiration date on the label.",
       "image": "img/label-cephalexin.svg",
       "alt": "Sample medication label for capsules. It shows an NDC number and Rx only at the top, a large name with a registered-trademark symbol, a smaller name in parentheses below it, the strength in a box, the number of capsules in the bottle, a description and storage directions, and a lot number and expiration date at the bottom.",
@@ -3380,7 +3863,7 @@
     {
       "id": "acl-38",
       "type": "sata",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is teaching a nursing student which information is printed on a manufacturer's medication label. Which of the following items are found on the label?",
       "options": ["The client's name", "The generic name of the drug", "How often the drug is to be given to the client", "The dosage strength", "The prescriber's name", "The expiration date"],
       "answer": [1, 3, 5],
@@ -3389,7 +3872,7 @@
     {
       "id": "acl-39",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "<p>A nurse is reviewing the medication label shown. Which of the following is the total amount of solution in the bottle?</p><img src='sets/img/label-ondansetron.svg' alt='Sample medication label: Ondansetron Oral Solution, USP, 4 mg per 5 mL, bottle of 50 mL, for oral use only.' width='600' height='260'>",
       "options": ["4 mL", "5 mL", "40 mL", "50 mL"],
       "answer": 3,
@@ -3398,7 +3881,7 @@
     {
       "id": "acl-40",
       "type": "dropdown",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "<p>A nurse is reviewing the medication label shown. Complete the following sentence.</p><img src='sets/img/label-ondansetron.svg' alt='Sample medication label: Ondansetron Oral Solution, USP, 4 mg per 5 mL, bottle of 50 mL. For oral use only. Store at 20 to 25 degrees C (68 to 77 degrees F). Protect from light. Keep the bottle tightly closed.' width='600' height='260'>",
       "text": "This solution is given {{0}}, and it is stored {{1}}.",
       "blanks": [
@@ -3410,7 +3893,7 @@
     {
       "id": "acl-41",
       "type": "hotspot",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is preparing to give ondansetron oral solution. Click the part of the label that shows how much ondansetron is in each 5 mL.",
       "image": "img/label-ondansetron.svg",
       "alt": "Sample medication label for an oral solution. It shows an NDC number and Rx only at the top, the drug name, a box with the amount of drug in a set volume, the total volume in the bottle on the right, directions for use and storage, and a lot number and expiration date at the bottom.",
@@ -3420,7 +3903,7 @@
     {
       "id": "acl-42",
       "type": "hotspot",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "A nurse is checking how a medication may be given. Click the part of the label that shows the routes by which this medication may be given.",
       "image": "img/label-ketorolac.svg",
       "alt": "Sample medication label for an injection. It shows an NDC number and Rx only at the top, the drug name, the strength in a box, the vial size on the right, a line about how the drug may be given, a description and directions, and a lot number and expiration date at the bottom.",
@@ -3430,7 +3913,7 @@
     {
       "id": "acl-43",
       "type": "matrix",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "<p>A nurse is reviewing the medication label shown. For each statement, click to specify whether it is correct or incorrect.</p><img src='sets/img/label-ketorolac.svg' alt='Sample medication label: Ketorolac Tromethamine Injection, USP, 30 mg/mL, 1 mL single-dose vial, for IV or IM use. Discard unused portion. Protect from light.' width='600' height='260'>",
       "rowHeader": "Statement",
       "columns": ["Correct", "Incorrect"],
@@ -3441,7 +3924,7 @@
     {
       "id": "acl-44",
       "type": "fill",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Med math: fill in the blank",
       "stem": "<p>The provider prescribes cephalexin 1 g PO every 12 hours. The nurse has the capsules shown on this label. How many capsules should the nurse give for each dose?</p><img src='sets/img/label-cephalexin.svg' alt='Sample medication label: Trainex (cephalexin capsules, USP), 500 mg in each capsule, bottle of 100 capsules.' width='600' height='260'>",
       "answer": 2,
       "unit": "capsules",
@@ -3451,7 +3934,7 @@
     {
       "id": "acl-45",
       "type": "mc",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "<p>It is November 2026. A nurse is preparing to give cephalexin 500 mg PO, as prescribed, from the bottle shown on this label. Which of the following findings should stop the nurse from giving the medication?</p><img src='sets/img/label-cephalexin.svg' alt='Sample medication label: Trainex (cephalexin capsules, USP), 500 mg in each capsule, bottle of 100 capsules, NDC number at the top, lot CX4471, expiration date 08/2026.' width='600' height='260'>",
       "options": ["The label shows both a brand name and a generic name.", "The bottle contains 100 capsules.", "The expiration date on the label has passed.", "The NDC number is printed at the top of the label."],
       "answer": 2,
@@ -3461,7 +3944,7 @@
       "id": "acl-46",
       "type": "highlight",
       "case": "fluids",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "Click to highlight the orders that the nurse must clarify with the provider before carrying them out.",
       "passage": "[[Furosemide 40 mg q AM]]<br>[[Metoprolol tartrate 25 mg PO BID]]<br>[[Potassium chloride 20.0 mEq PO daily]]<br>[[Insulin lispro 4 U subcut AC]]<br>[[Docusate sodium 100 mg PO]]<br>[[Acetaminophen 650 mg PO q6h PRN pain]]<br>[[Fluid restriction: 1,500 mL a day]]<br>[[Weigh daily before breakfast]]<br>[[Activity: up ad lib]]",
       "answer": [0, 2, 3, 4],
@@ -3471,7 +3954,7 @@
       "id": "acl-47",
       "type": "fill",
       "case": "fluids",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "Review the client's intake and output record. What is the client's total oral intake from 0700 to 1900 on Day 2?",
       "answer": 900,
       "unit": "mL",
@@ -3482,7 +3965,7 @@
       "id": "acl-48",
       "type": "fill",
       "case": "fluids",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "Review the client's daily weights. How many kilograms has the client lost since admission?",
       "answer": 1.5,
       "unit": "kg",
@@ -3494,7 +3977,7 @@
       "id": "acl-49",
       "type": "mc",
       "case": "fluids",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "It is 0730 on Day 2, and breakfast trays will arrive at 0800. Which of the following orders should the nurse clarify with the provider first?",
       "options": ["Docusate sodium 100 mg PO", "Insulin lispro 4 U subcut AC", "Furosemide 40 mg q AM", "Potassium chloride 20.0 mEq PO daily"],
       "answer": 1,
@@ -3504,11 +3987,319 @@
       "id": "acl-50",
       "type": "mc",
       "case": "fluids",
-      "topic": "Abbreviations, conversions, and labels",
+      "topic": "Extra practice",
       "stem": "Which of the following actions should the nurse take to clarify the insulin order?",
       "options": ["Contact the provider, and ask for the order to be rewritten with “units” spelled out.", "Give 4 units, because that is the most likely meaning of the order as written.", "Ask another nurse to read the order and decide which dose the provider meant.", "Write “units” next to the U on the order, and then give the dose as corrected."],
       "answer": 0,
       "rationale": "<p>Only the <b>prescriber</b> can change an order, so the nurse <b>contacts the provider</b> before the dose is due, explains the problem, and asks for the order to be rewritten with <b>“units” spelled out</b>. The nurse holds the dose until the order is clear and documents the clarification.</p><p>Giving the dose based on its <b>most likely</b> meaning is a guess, and guessing with insulin can be dangerous. <b>Another nurse</b> can't decide what the prescriber meant. And the nurse never <b>edits</b> an order, even to fix an abbreviation.</p><p><b>Takeaway:</b> Unclear orders go back to the prescriber; the nurse never guesses at them or rewrites them.</p>"
+    },
+    {
+      "id": "acl-51",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0730: Client NPO for a 1000 procedure.", "0800: Gave insulin lispro 6 U subcut.", "0815: BP 132/84, SpO2 97% on room air.", "0900: Client A&O; walked in the hall."],
+      "answer": 1,
+      "rationale": "<p><b>U</b> for units is on the list of abbreviations not to use: a handwritten or blurred U can look like a 0 or a 4, so 6 U can be read as 60 units, a 10-fold insulin overdose. The nurse writes out <b>units</b>: “6 units.”</p><p><b>NPO</b> (nothing by mouth), <b>BP</b> (blood pressure), <b>SpO2</b> (oxygen saturation), and <b>A&amp;O</b> (alert and oriented) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Write out “units”; a U can be misread as a 0 or a 4.</p>"
+    },
+    {
+      "id": "acl-52",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0900: Gave lisinopril 10 mg PO QD as ordered.", "1000: Client reports a headache; BP 128/76.", "1100: Up ad lib; walked to the bathroom alone.", "1200: I&O recorded; oral intake 360 mL."],
+      "answer": 0,
+      "rationale": "<p><b>QD</b> (every day) is on the list of abbreviations not to use: it can be mistaken for QID (four times a day), and the period after a lowercase q can look like an i. The nurse writes <b>daily</b>.</p><p><b>BP</b> (blood pressure), <b>ad lib</b> (as much as desired), and <b>I&amp;O</b> (intake and output) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Write “daily” instead of QD, which can be read as QID.</p>"
+    },
+    {
+      "id": "acl-53",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four medication entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Gave metoprolol tartrate 25 mg PO.", "0900: Gave furosemide 40 mg IV.", "1700: Gave warfarin 5.0 mg PO.", "2100: Gave docusate sodium 100 mg PO at bedtime."],
+      "answer": 2,
+      "rationale": "<p>A <b>trailing zero</b>, as in <b>5.0 mg</b>, is not to be used: if the decimal point is missed, 5.0 mg is read as 50 mg, a 10-fold overdose of warfarin. A whole-number dose is written without a decimal point: <b>5 mg</b>.</p><p>The other entries write each dose as a whole number with its unit (mg) and use the standard routes <b>PO</b> (by mouth) and <b>IV</b> (intravenous).</p><p><b>Takeaway:</b> Never put a zero after a decimal point: write 5 mg, not 5.0 mg.</p>"
+    },
+    {
+      "id": "acl-54",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0700: AP 72, RR 16, BP 118/76.", "0800: Client NPO; IV fluids infusing.", "1000: Gave ondansetron 4 mg IV for nausea.", "1100: Gave lorazepam .5 mg PO for anxiety."],
+      "answer": 3,
+      "rationale": "<p>A dose smaller than 1 needs a <b>leading zero</b>: without it, the decimal point in <b>.5 mg</b> can be missed, and the dose read as 5 mg, a 10-fold overdose. The nurse writes <b>0.5 mg</b>.</p><p><b>AP</b> (apical pulse), <b>RR</b> (respiratory rate), <b>BP</b> (blood pressure), <b>NPO</b> (nothing by mouth), and <b>IV</b> (intravenous) are standard abbreviations, used correctly here.</p><p><b>Takeaway:</b> Always put a zero before a decimal point: write 0.5 mg, never .5 mg.</p>"
+    },
+    {
+      "id": "acl-55",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A client has glaucoma in the left eye only, and the nurse gave the eye drops in that eye. Which of the following entries the nurse documented contains an incorrect abbreviation?",
+      "options": ["0800: Gave 1 drop of timolol in OD.", "0900: Client A&O; denies eye pain.", "1000: Up ad lib with a steady gait.", "1200: Ate 75% of lunch; I&O recorded."],
+      "answer": 0,
+      "rationale": "<p><b>OD</b> means the <b>right eye</b>. The drops went into the left eye, which is <b>OS</b>, so this entry records the wrong eye. (OU means both eyes.) Writing “left eye” in full prevents mix-ups between these look-alike abbreviations.</p><p><b>A&amp;O</b> (alert and oriented), <b>ad lib</b> (as much as desired), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> OD is the right eye, OS the left eye, OU both eyes; spelling out the eye avoids errors.</p>"
+    },
+    {
+      "id": "acl-56",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0700: BP 126/80, AP 78, SpO2 98%.", "0830: Client finished breakfast; gave famotidine 20 mg PO ac.", "1200: Gave docusate sodium 100 mg PO with 240 mL of water.", "1400: Client A&O; resting in bed."],
+      "answer": 1,
+      "rationale": "<p><b>ac</b> means <b>before meals</b>. The client had already finished breakfast when the famotidine was given, so the dose was given after the meal, which is <b>pc</b>. The entry's abbreviation doesn't match what happened.</p><p><b>BP</b> (blood pressure), <b>AP</b> (apical pulse), <b>SpO2</b> (oxygen saturation), <b>PO</b> (by mouth), and <b>A&amp;O</b> (alert and oriented) are used correctly in the other entries.</p><p><b>Takeaway:</b> ac = before meals, pc = after meals; the entry must match when the dose was actually given.</p>"
+    },
+    {
+      "id": "acl-57",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Client A&O; up ad lib.", "0900: RR 18, SpO2 96% on 2 L of O2.", "1000: Gave ceftriaxone 1 g PO through the IV line.", "1200: Gave acetaminophen 650 mg PO for a headache."],
+      "answer": 2,
+      "rationale": "<p><b>PO</b> means <b>by mouth</b>, but the ceftriaxone was given <b>through the IV line</b>, so the route should be documented as <b>IV</b> (intravenous). A wrong route in the record can lead to the next dose being given the wrong way.</p><p><b>A&amp;O</b>, <b>ad lib</b>, <b>RR</b>, <b>SpO2</b>, and <b>O2</b> (oxygen) are used correctly, and the acetaminophen was given by mouth, so <b>PO</b> is right there.</p><p><b>Takeaway:</b> PO is by mouth; a medication given through an IV line is documented as IV.</p>"
+    },
+    {
+      "id": "acl-58",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A client has a dressing over an incision on the right forearm. Which of the following entries the nurse documented contains an incorrect abbreviation?",
+      "options": ["0800: AP 80, BP 124/78, RR 16.", "0900: Client A&O; denies pain.", "1000: Up ad lib in the room.", "1100: Dressing on RLE incision dry and intact."],
+      "answer": 3,
+      "rationale": "<p><b>RLE</b> means <b>right lower extremity</b> (the right leg). The forearm is part of the arm, the <b>right upper extremity</b>, which is <b>RUE</b>. The entry places the incision on the wrong limb.</p><p><b>AP</b> (apical pulse), <b>BP</b>, <b>RR</b>, <b>A&amp;O</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> RUE and LUE are the arms; RLE and LLE are the legs.</p>"
+    },
+    {
+      "id": "acl-59",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented on admission. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["0800: Client NPO for a 1300 procedure.", "0900: Allergies reviewed: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO.", "1100: I&O recorded for the shift."],
+      "answer": 1,
+      "rationale": "<p><b>NKDA</b> means <b>no known drug allergies</b>, but the same entry says the client gets <b>hives after taking penicillin</b>, which is a drug allergy. Recording NKDA could lead to the client being given penicillin. The allergy should be recorded: “Allergy: penicillin (hives).”</p><p><b>NPO</b> (nothing by mouth), <b>PO</b> (by mouth), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> NKDA means no known drug allergies; any reported drug reaction has to be recorded instead.</p>"
+    },
+    {
+      "id": "acl-60",
+      "type": "mc",
+      "topic": "Medical abbreviations",
+      "stem": "A nurse is reviewing four entries documented during the shift. Which of the following entries contains an incorrect abbreviation?",
+      "options": ["1200: Pain rated 7 out of 10; client A&O.", "1230: RR 16, SpO2 95% on room air.", "1245: Gave MS 2 mg IV for pain.", "1400: Pain now 3 out of 10; up ad lib."],
+      "answer": 2,
+      "rationale": "<p><b>MS</b> is on the list of abbreviations not to use: it can mean morphine sulfate or magnesium sulfate, two very different drugs. The nurse writes the drug's name in full: <b>morphine</b>.</p><p><b>A&amp;O</b> (alert and oriented), <b>RR</b>, <b>SpO2</b>, <b>IV</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> Write drug names in full; MS can mean morphine or magnesium sulfate.</p>"
+    },
+    {
+      "id": "acl-61",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client is prescribed 750 mcg of a medication. How many milligrams is this dose?",
+      "options": ["0.75 mg", "7.5 mg", "75 mg", "750,000 mg"],
+      "answer": 0,
+      "rationale": "<p>A microgram is smaller than a milligram, and 1 mg = 1,000 mcg, so divide by 1,000: 750 ÷ 1,000 = <b>0.75 mg</b> (move the decimal point 3 places to the left, and keep the zero in front of it).</p><p>7.5 mg and 75 mg come from moving the decimal point only 1 or 2 places. 750,000 mg comes from multiplying instead of dividing; going from a smaller unit to a larger one, the number must get smaller.</p><p><b>Takeaway:</b> mcg → mg: divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-62",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "The provider prescribes 0.3 g of a medication. How many milligrams is this dose?",
+      "options": ["0.0003 mg", "3 mg", "30 mg", "300 mg"],
+      "answer": 3,
+      "rationale": "<p>A gram is larger than a milligram, and 1 g = 1,000 mg, so multiply by 1,000: 0.3 × 1,000 = <b>300 mg</b> (move the decimal point 3 places to the right).</p><p>0.0003 mg comes from dividing instead of multiplying. 3 mg and 30 mg come from moving the decimal point only 1 or 2 places.</p><p><b>Takeaway:</b> g → mg: multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-63",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client's IV bag holds 250 mL of fluid. How many liters is this?",
+      "options": ["0.25 L", "2.5 L", "25 L", "250,000 L"],
+      "answer": 0,
+      "rationale": "<p>A milliliter is smaller than a liter, and 1 L = 1,000 mL, so divide by 1,000: 250 ÷ 1,000 = <b>0.25 L</b>.</p><p>2.5 L and 25 L come from moving the decimal point only 2 or 1 places. 250,000 L comes from multiplying instead of dividing.</p><p><b>Takeaway:</b> mL → L: divide by 1,000.</p>"
+    },
+    {
+      "id": "acl-64",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client is prescribed 0.025 mg of a medication. How many micrograms is this dose?",
+      "options": ["0.000025 mcg", "2.5 mcg", "25 mcg", "250 mcg"],
+      "answer": 2,
+      "rationale": "<p>A milligram is larger than a microgram, and 1 mg = 1,000 mcg, so multiply by 1,000: 0.025 × 1,000 = <b>25 mcg</b> (move the decimal point 3 places to the right).</p><p>0.000025 mcg comes from dividing instead of multiplying. 2.5 mcg and 250 mcg come from moving the decimal point 2 or 4 places instead of 3.</p><p><b>Takeaway:</b> mg → mcg: multiply by 1,000.</p>"
+    },
+    {
+      "id": "acl-65",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client drank 7 oz of juice. How many milliliters did the client drink?",
+      "options": ["7 mL", "35 mL", "105 mL", "210 mL"],
+      "answer": 3,
+      "rationale": "<p>1 oz = 30 mL, so multiply by 30: 7 × 30 = <b>210 mL</b>.</p><p>7 mL leaves the ounces unconverted. 35 mL uses the factor for teaspoons (5 mL), and 105 mL the factor for tablespoons (15 mL).</p><p><b>Takeaway:</b> 1 oz = 30 mL, 1 tablespoon = 15 mL, and 1 teaspoon = 5 mL.</p>"
+    },
+    {
+      "id": "acl-66",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client is prescribed 1.5 tablespoons (Tbsp) of a liquid medication. How many milliliters is this dose?",
+      "options": ["7.5 mL", "15 mL", "22.5 mL", "45 mL"],
+      "answer": 2,
+      "rationale": "<p>1 Tbsp = 15 mL, so multiply by 15: 1.5 × 15 = <b>22.5 mL</b>.</p><p>7.5 mL uses the factor for teaspoons (5 mL), 45 mL the factor for ounces (30 mL), and 15 mL converts only the 1 tablespoon and drops the half.</p><p><b>Takeaway:</b> Tablespoons → mL: multiply by 15.</p>"
+    },
+    {
+      "id": "acl-67",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client is prescribed 3 teaspoons (tsp) of a liquid medication. How many milliliters is this dose?",
+      "options": ["15 mL", "30 mL", "45 mL", "90 mL"],
+      "answer": 0,
+      "rationale": "<p>1 tsp = 5 mL, so multiply by 5: 3 × 5 = <b>15 mL</b>, the same as 1 tablespoon.</p><p>45 mL uses the factor for tablespoons (15 mL), and 90 mL the factor for ounces (30 mL). 30 mL equals 1 oz, which is 6 teaspoons, not 3.</p><p><b>Takeaway:</b> Teaspoons → mL: multiply by 5; 3 teaspoons make 1 tablespoon.</p>"
+    },
+    {
+      "id": "acl-68",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A client weighs 187 lb. How many kilograms does the client weigh?",
+      "options": ["8.5 kg", "85 kg", "93.5 kg", "411.4 kg"],
+      "answer": 1,
+      "rationale": "<p>1 kg = 2.2 lb, and a kilogram is the larger unit, so divide by 2.2: 187 ÷ 2.2 = <b>85 kg</b>.</p><p>411.4 kg comes from multiplying by 2.2 instead of dividing. 93.5 kg comes from dividing by 2 instead of 2.2, and 8.5 kg from a slipped decimal point.</p><p><b>Takeaway:</b> lb → kg: divide by 2.2, so the number of kilograms is smaller than the number of pounds.</p>"
+    },
+    {
+      "id": "acl-69",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A child weighs 18 kg. How many pounds does the child weigh?",
+      "options": ["8.2 lb", "18 lb", "36 lb", "39.6 lb"],
+      "answer": 3,
+      "rationale": "<p>1 kg = 2.2 lb, so multiply by 2.2: 18 × 2.2 = <b>39.6 lb</b>.</p><p>8.2 lb comes from dividing by 2.2 instead of multiplying, 36 lb from multiplying by 2 instead of 2.2, and 18 lb leaves the kilograms unconverted.</p><p><b>Takeaway:</b> kg → lb: multiply by 2.2, so the number of pounds is larger than the number of kilograms.</p>"
+    },
+    {
+      "id": "acl-70",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "An IV medication is to infuse over 210 minutes. How many hours is this?",
+      "options": ["3.3 hours", "3.5 hours", "21 hours", "12,600 hours"],
+      "answer": 1,
+      "rationale": "<p>1 hour = 60 minutes, so divide by 60: 210 ÷ 60 = <b>3.5 hours</b> (3 hours and 30 minutes).</p><p>3.3 hours treats “3 hours 30 minutes” as 3.3, but 30 minutes is half an hour, 0.5. 21 hours comes from dividing by 10, and 12,600 hours from multiplying by 60 instead of dividing.</p><p><b>Takeaway:</b> Minutes → hours: divide by 60; 30 minutes is 0.5 hour, not 0.3.</p>"
+    },
+    {
+      "id": "acl-71",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "A unit of blood is to infuse over 1.75 hours. How many minutes is this?",
+      "options": ["17.5 minutes", "105 minutes", "135 minutes", "175 minutes"],
+      "answer": 1,
+      "rationale": "<p>1 hour = 60 minutes, so multiply by 60: 1.75 × 60 = <b>105 minutes</b>.</p><p>135 minutes reads 1.75 hours as 1 hour and 75 minutes, but 0.75 hour is 45 minutes. 175 minutes comes from multiplying by 100, and 17.5 minutes from multiplying by 10.</p><p><b>Takeaway:</b> Hours → minutes: multiply by 60; 0.75 hour is 45 minutes.</p>"
+    },
+    {
+      "id": "acl-72",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "The provider prescribes cyanocobalamin 1 mg PO daily. The tablets on hand contain 500 mcg each. How many tablets should the nurse give?",
+      "options": ["0.5 tablet", "1 tablet", "2 tablets", "20 tablets"],
+      "answer": 2,
+      "rationale": "<p>First, change the dose to the same unit as the tablets: 1 mg = 1,000 mcg. Then divide the desired dose by the dose on hand: 1,000 mcg ÷ 500 mcg = <b>2 tablets</b>.</p><p>1 tablet comes from skipping the conversion and treating 1 mg and 500 mcg as the same amount. 0.5 tablet comes from dividing the wrong way (500 ÷ 1,000), and 20 tablets from converting 1 mg to 10,000 mcg.</p><p><b>Takeaway:</b> Convert to the same unit first, then divide the desired dose by the dose on hand.</p>"
+    },
+    {
+      "id": "acl-73",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "The provider prescribes amoxicillin 400 mg PO. The oral suspension contains 250 mg per 5 mL. How many milliliters should the nurse give?",
+      "options": ["1.6 mL", "3.1 mL", "5 mL", "8 mL"],
+      "answer": 3,
+      "rationale": "<p>Desired dose ÷ dose on hand × volume: 400 mg ÷ 250 mg × 5 mL = 1.6 × 5 = <b>8 mL</b>.</p><p>1.6 mL forgets to multiply by the 5 mL that holds each 250 mg. 3.1 mL divides the wrong way (250 ÷ 400 × 5). 5 mL is the volume that holds 250 mg, not the 400 mg prescribed.</p><p><b>Takeaway:</b> For liquids, multiply by the volume that holds the dose on hand: desired ÷ have × volume.</p>"
+    },
+    {
+      "id": "acl-74",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "The provider prescribes 4 mg/kg of a medication for a child who weighs 55 lb. How many milligrams is the dose?",
+      "options": ["100 mg", "110 mg", "220 mg", "484 mg"],
+      "answer": 0,
+      "rationale": "<p>First, change the weight to kilograms: 55 lb ÷ 2.2 = 25 kg. Then multiply by the dose per kilogram: 25 kg × 4 mg/kg = <b>100 mg</b>.</p><p>220 mg multiplies the weight in pounds by 4, skipping the conversion. 484 mg converts the wrong way (55 × 2.2 = 121, then × 4). 110 mg divides the pounds by 2 instead of 2.2.</p><p><b>Takeaway:</b> For a dose per kilogram, change pounds to kilograms (÷ 2.2) before multiplying.</p>"
+    },
+    {
+      "id": "acl-75",
+      "type": "mc",
+      "topic": "Med math: multiple choice",
+      "stem": "The provider prescribes heparin 2,500 units subcut. The vial contains 5,000 units per mL. How many milliliters should the nurse give?",
+      "options": ["0.05 mL", "0.5 mL", "2 mL", "5 mL"],
+      "answer": 1,
+      "rationale": "<p>Desired dose ÷ dose on hand × volume: 2,500 units ÷ 5,000 units × 1 mL = <b>0.5 mL</b>, written with a zero before the decimal point.</p><p>2 mL comes from dividing the wrong way (5,000 ÷ 2,500). 0.05 mL and 5 mL come from a slipped decimal point. Half the strength in the vial must be less than 1 mL.</p><p><b>Takeaway:</b> Desired ÷ have × volume; check that the answer makes sense (half the dose on hand, half the volume).</p>"
+    },
+    {
+      "id": "acl-76",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse is checking four new medication orders. Which of the following orders is complete?",
+      "options": ["Carvedilol 6.25 PO BID", "Pantoprazole 40 mg daily", "Lisinopril 10 mg PO daily", "Cephalexin 500 mg PO"],
+      "answer": 2,
+      "rationale": "<p>A medication order needs the <b>drug</b>, the <b>dose</b> (a number <b>and</b> a unit of measure), the <b>route</b>, and the <b>time or frequency</b>, plus a reason if it's PRN. <b>Lisinopril 10 mg PO daily</b> has all of them.</p><p><b>Carvedilol 6.25 PO BID</b> has a number but no unit (mg? mcg?). <b>Pantoprazole 40 mg daily</b> has no route (by mouth or IV?). <b>Cephalexin 500 mg PO</b> doesn't say how often to give it.</p><p><b>Takeaway:</b> Check every order for the drug, a dose with its unit, the route, and the frequency.</p>"
+    },
+    {
+      "id": "acl-77",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse reviews this order: “Metoprolol tartrate 25 PO BID.” Which of the following elements is missing from the order?",
+      "options": ["The unit of measure of the dose", "The route", "The frequency", "The name of the medication"],
+      "answer": 0,
+      "rationale": "<p>A dose has two parts, a <b>number and a unit of measure</b>: 25 alone could mean 25 mg or 25 mcg, a 1,000-fold difference. The nurse clarifies the order with the prescriber instead of guessing the unit.</p><p>The order does name the drug (metoprolol tartrate), the route (<b>PO</b>, by mouth), and the frequency (<b>BID</b>, twice a day).</p><p><b>Takeaway:</b> A dose needs both a number and a unit, like 25 mg.</p>"
+    },
+    {
+      "id": "acl-78",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse reviews this order: “Acetaminophen 650 mg PO q6h PRN.” Which of the following elements is missing from the order?",
+      "options": ["The unit of measure of the dose", "The reason to give it as needed", "The route", "How often it may be given"],
+      "answer": 1,
+      "rationale": "<p>A <b>PRN</b> (as needed) order must say <b>why</b> the medication is to be given, such as “for pain” or “for a temperature over 38.3 °C.” Acetaminophen can be given for pain or fever, so the nurse can't tell when this order applies.</p><p>The order has a dose with its unit (650 <b>mg</b>), the route (<b>PO</b>), and how often it may be given (<b>q6h</b>, every 6 hours).</p><p><b>Takeaway:</b> Every PRN order needs a reason, like “PRN pain.”</p>"
+    },
+    {
+      "id": "acl-79",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse reviews this order: “Furosemide 40 mg BID.” Which of the following elements is missing from the order?",
+      "options": ["The name of the medication", "The unit of measure of the dose", "The route", "The frequency"],
+      "answer": 2,
+      "rationale": "<p>The order has no <b>route</b>. Furosemide can be given by mouth or IV, and the two routes act differently, so the nurse can't choose; the nurse clarifies the order with the prescriber.</p><p>The order does name the drug (furosemide), give the dose with its unit (40 <b>mg</b>), and the frequency (<b>BID</b>, twice a day).</p><p><b>Takeaway:</b> Every order needs a route, like PO or IV.</p>"
+    },
+    {
+      "id": "acl-80",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse reviews this order: “Ondansetron 4 mg IV PRN nausea.” Which of the following elements is missing from the order?",
+      "options": ["The reason to give it as needed", "The route", "The unit of measure of the dose", "How often it may be given"],
+      "answer": 3,
+      "rationale": "<p>The order doesn't say <b>how often</b> the dose may be given (for example, q8h, every 8 hours). Without it, the nurse doesn't know how soon a second dose is safe.</p><p>The order has the drug (ondansetron), the dose with its unit (4 <b>mg</b>), the route (<b>IV</b>), and the reason for the PRN dose (<b>nausea</b>).</p><p><b>Takeaway:</b> PRN orders still need a frequency, like q8h PRN nausea.</p>"
+    },
+    {
+      "id": "acl-81",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse finds this new order for a client who reports pain: “Hydromorphone 2 PO q4h PRN pain.” Which of the following actions should the nurse take?",
+      "options": ["Give 2 mg, since milligrams is the usual unit for this medication", "Ask the client how many milligrams they usually take at home", "Contact the prescriber to clarify the dose before giving it", "Give the dose and note in the record that the unit is missing"],
+      "answer": 2,
+      "rationale": "<p>The dose has a number but <b>no unit</b>, so the order is incomplete. The nurse <b>contacts the prescriber</b> to clarify it before giving the medication; only the prescriber can complete the order. Meanwhile, the nurse can use other comfort measures and tell the client when the medication will be available.</p><p><b>Assuming milligrams</b>, even if it's the usual unit, is guessing at a dose of an opioid. The <b>client's home dose</b> doesn't change what this order says. <b>Giving the dose and noting the problem</b> afterward still means giving a dose that was never clearly prescribed.</p><p><b>Takeaway:</b> When an order is missing an element, clarify it with the prescriber before giving the medication.</p>"
+    },
+    {
+      "id": "acl-82",
+      "type": "sata",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse reviews a client's new medication orders. Which of the following orders should the nurse clarify with the prescriber before carrying them out?",
+      "options": ["Metformin 500 mg PO BID with meals", "Sertraline 50 mg PO", "Docusate sodium 100 mg PO BID", "Oxycodone 5 mg PO q4h PRN", "Enoxaparin 40 subcut daily", "Atorvastatin 20 mg PO at bedtime"],
+      "answer": [1, 3, 4],
+      "rationale": "<p>Three orders are incomplete. <b>Sertraline 50 mg PO</b> has no frequency. <b>Oxycodone 5 mg PO q4h PRN</b> has no reason for the PRN dose (for example, PRN pain). <b>Enoxaparin 40 subcut daily</b> has no unit of measure for the dose (40 mg?).</p><p>The metformin, docusate sodium, and atorvastatin orders each have the drug, a dose with its unit, the route, and the frequency.</p><p><b>Takeaway:</b> Check each order for a dose with its unit, the route, the frequency, and a reason if it's PRN.</p>"
+    },
+    {
+      "id": "acl-83",
+      "type": "matrix",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse is checking a client's medication orders. For each order, click to specify whether it is complete or needs clarification.",
+      "rowHeader": "Order",
+      "columns": ["Complete", "Needs clarification"],
+      "rows": ["Levothyroxine 75 mcg PO daily before breakfast", "Prednisone 10 PO daily", "Morphine 2 mg IV q2h PRN severe pain", "Famotidine 20 mg BID", "Ibuprofen 400 mg PO q6h PRN"],
+      "answer": [0, 1, 0, 1, 1],
+      "rationale": "<p><b>Levothyroxine 75 mcg PO daily before breakfast</b> and <b>morphine 2 mg IV q2h PRN severe pain</b> are complete: each has the drug, a dose with its unit, the route, the frequency, and, for the PRN order, a reason.</p><p><b>Prednisone 10 PO daily</b> has no unit for the dose. <b>Famotidine 20 mg BID</b> has no route. <b>Ibuprofen 400 mg PO q6h PRN</b> has no reason for the PRN dose; ibuprofen can be given for pain, fever, or inflammation.</p><p><b>Takeaway:</b> An order is complete only with the drug, a dose and its unit, the route, the frequency, and a reason for PRN doses.</p>"
+    },
+    {
+      "id": "acl-84",
+      "type": "mc",
+      "topic": "Prescriber's orders",
+      "stem": "A nurse is teaching a nursing student about medication orders. Which of the following elements must a PRN order include that a scheduled order doesn't need?",
+      "options": ["The reason to give the medication", "The route of the medication", "The unit of measure of the dose", "The prescriber's signature"],
+      "answer": 0,
+      "rationale": "<p>A <b>PRN</b> order is given only when the client needs it, so it must state the <b>reason</b>, such as “PRN nausea” or “PRN pain,” to tell the nurse when it applies.</p><p>Every order, scheduled or PRN, needs the <b>route</b>, a dose with its <b>unit of measure</b>, and the <b>prescriber's signature</b>, along with the client's name, the date and time, the drug, and the frequency.</p><p><b>Takeaway:</b> PRN orders must include the reason; all orders need the drug, dose and unit, route, and frequency.</p>"
     }
   ]
 }

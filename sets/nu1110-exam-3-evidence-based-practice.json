@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-evidence-based-practice",
   "title": "Evidence-Based Practice",
-  "description": "Class 12 practice: how EBP evolved, its links to other concepts, research basics, the steps of EBP and PICOT questions, and individual and organizational EBP.",
+  "description": "Class 12 practice: how EBP evolved, its links to other concepts and how it differs from the nursing process, barriers and resistance to change, research basics, the steps of EBP and PICOT questions, and individual and organizational EBP, including following facility policy and procedure.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 75,
+  "timeMinutes": 84,
   "defaultCount": 25,
   "cases": {
     "delirium": {
@@ -650,6 +650,82 @@
       ],
       "answer": [0, 1, 2, 0],
       "rationale": "<p><b>New delirium fell</b> from 28% to 16%, and <b>sleeping-pill use dropped</b> from 61% to 22% of nights: both improved. <b>Length of stay didn't change</b>. <b>Training coverage on nights fell</b> to 70% after new hires, a decline that could erode the results.</p><p>Evaluation drives the next decision: keep the routine, since it's working, and modify the rollout by training the new staff, then keep monitoring.</p><p><b>Takeaway:</b> Evaluate outcomes and the process together, then accept, modify, or reject the change.</p>"
+    },
+    {
+      "id": "ebp-51", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse is starting an evidence-based practice project on the unit. Which of the following actions should the nurse take first?",
+      "options": [
+        "Write a focused clinical question in PICOT format",
+        "Assess an assigned client's vital signs for the care plan",
+        "Identify a clinical problem from the unit's data",
+        "Look for current research articles in nursing journals"
+      ],
+      "answer": 2,
+      "rationale": "<p>The EBP process <b>starts with the client</b>: the first step, <b>Assess</b>, is noticing and identifying a <b>clinical problem</b>, often from the unit's data, such as a rise in pressure injuries. Then the nurse asks a focused question (PICOT), acquires the evidence, appraises it, applies it, and evaluates the results.</p><p><b>Writing a PICOT question</b> is the second step, Ask; the question comes from the problem the nurse identified. <b>Looking for research articles</b> is Acquire, the third step. <b>Assessing a client's vital signs for the care plan</b> is the first step of the nursing process, a separate process that guides one client's care, not a step of EBP.</p><p><b>Takeaway:</b> EBP starts by identifying a clinical problem: Assess, Ask, Acquire, Appraise, Apply, Evaluate.</p>"
+    },
+    {
+      "id": "ebp-52", "type": "mc", "topic": "Steps of evidence-based practice",
+      "stem": "A nurse has written a focused PICOT question about preventing falls at night. Which of the following steps of the evidence-based practice process should the nurse take next?",
+      "options": [
+        "Search credible databases, such as CINAHL, for studies that answer the question",
+        "Judge the quality of the studies and how well they fit the unit's clients",
+        "Change the unit's night routine to match the newest study",
+        "Compare the unit's fall rates before and after a practice change"
+      ],
+      "answer": 0,
+      "rationale": "<p>After the <b>Ask</b> step (a focused PICOT question), the nurse <b>acquires</b> the evidence, also called retrieving it: searching credible databases, such as CINAHL and MEDLINE, for studies that answer the question.</p><p><b>Judging the studies</b> is Appraise, which needs studies in hand first. <b>Changing the routine</b> to match one study skips appraisal and the facility's process for changing practice. <b>Comparing fall rates</b> before and after a change is Evaluate, the last step.</p><p><b>Takeaway:</b> Ask, then Acquire: the PICOT question guides the search for evidence.</p>"
+    },
+    {
+      "id": "ebp-53", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "A nursing student asks whether the evidence-based practice process is part of the nursing process. Which of the following responses by the nurse is accurate?",
+      "options": [
+        "“No. EBP is a process that only nurse researchers use, so staff nurses don't need it.”",
+        "“Yes. EBP is the assessment step of the nursing process, where the nurse gathers evidence.”",
+        "“Yes. Each step of EBP happens during the matching step of the nursing process.”",
+        "“No. EBP uses evidence to improve practice; the nursing process plans each client's care.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>They're <b>separate processes</b> with different purposes. The <b>EBP process</b> (Assess, Ask, Acquire, Appraise, Apply, Evaluate) answers a clinical question with the best evidence and changes practice, often for a whole unit. The <b>nursing process</b> (assessment, diagnosis, planning, implementation, evaluation) guides the plan of care for one client. Evidence can shape the interventions a nurse chooses, but EBP isn't part of the nursing process.</p><p>EBP's first step, Assess, means identifying a clinical problem, not the <b>assessment step</b> of a client's care plan. Both processes begin by assessing and end by evaluating, but EBP's steps don't <b>happen inside</b> the nursing process. EBP isn't <b>only for researchers</b>: staff nurses use it every day.</p><p><b>Takeaway:</b> EBP and the nursing process are separate: EBP improves practice with evidence; the nursing process plans each client's care.</p>"
+    },
+    {
+      "id": "ebp-54", "type": "matrix", "topic": "EBP and other concepts",
+      "stem": "For each activity, specify whether it is part of the evidence-based practice process or the nursing process.",
+      "rowHeader": "Activity",
+      "columns": ["Evidence-based practice process", "Nursing process"],
+      "rows": [
+        "Writes a focused clinical question about preventing pressure injuries",
+        "Collects a newly admitted client's health history",
+        "Judges the quality of 5 studies on walking soon after surgery",
+        "Identifies acute pain as a priority problem in a client's care plan",
+        "Checks whether a client met the goal of walking 50 feet with a walker",
+        "Compares the unit's infection rate before and after a practice change"
+      ],
+      "answer": [0, 1, 0, 1, 1, 0],
+      "rationale": "<p>The <b>EBP process</b> works on a practice question for a group of clients: writing a <b>focused clinical question</b> (Ask), <b>judging the quality of studies</b> (Appraise), and <b>comparing the unit's infection rate</b> before and after a change (Evaluate).</p><p>The <b>nursing process</b> plans and evaluates one client's care: <b>collecting a health history</b> (assessment), <b>identifying acute pain as a priority problem</b> (diagnosis), and <b>checking whether the client met the goal</b> of walking 50 feet (evaluation).</p><p><b>Takeaway:</b> Both processes evaluate results, but EBP evaluates a practice change, while the nursing process evaluates one client's progress.</p>"
+    },
+    {
+      "id": "ebp-55", "type": "mc", "topic": "Individual and organizational EBP",
+      "stem": "A nurse who just started working at a new hospital is about to insert a urinary catheter. The nurse learned a slightly different method at a previous hospital. Which of the following actions should the nurse take?",
+      "options": [
+        "Use the previous hospital's method, since it worked well there",
+        "Check this hospital's policy and procedure, and follow it as written",
+        "Ask the client which of the two methods the client would prefer",
+        "Use the method that the nurse's coworkers say they usually use"
+      ],
+      "answer": 1,
+      "rationale": "<p>Nurses must follow the <b>policies and procedures</b> of the facility where they're working, <b>as written</b>. Before doing a procedure, the nurse checks this hospital's procedure. If the nurse believes another method is better, the nurse brings the evidence through the hospital's process for changing a policy, such as the practice council.</p><p>A <b>previous hospital's method</b> doesn't apply here, even if it worked there. Clients' preferences matter, but a client can't choose a <b>method the hospital hasn't approved</b>. What <b>coworkers usually do</b> may differ from the written procedure.</p><p><b>Takeaway:</b> Wherever you work, check that facility's policy and procedure, and follow it as written.</p>"
+    },
+    {
+      "id": "ebp-56", "type": "mc", "topic": "EBP and other concepts",
+      "stem": "Several nurses on a unit say they'd like to use research in their practice, but they don't know how to judge whether a study's findings are strong. Which of the following strategies should the nurse manager use?",
+      "options": [
+        "Adding computers with database access at each nurses' station",
+        "Asking the nurses to read more articles on their own time",
+        "Offering classes on appraising research, with an EBP mentor to help",
+        "Telling the nurses to follow whatever the newest study shows"
+      ],
+      "answer": 2,
+      "rationale": "<p>Not knowing how to judge a study is a <b>knowledge and skill barrier</b>. It's best addressed with <b>education</b>, such as classes on appraising research, and <b>support from an EBP mentor</b> (or a librarian) who helps nurses find and judge studies.</p><p><b>Database access</b> fixes an access barrier, but the nurses still couldn't judge what they find. <b>Reading more on their own time</b> adds to the workload without teaching the skill. <b>Following the newest study</b> skips appraisal; a new study isn't necessarily a strong one.</p><p><b>Takeaway:</b> Match the fix to the barrier: skill barriers need education and mentoring.</p>"
     }
   ]
 }
