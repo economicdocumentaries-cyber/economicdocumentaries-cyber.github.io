@@ -566,8 +566,10 @@ async function resultsView(root, { isCurrent }) {
   const set = withChanges(sets, cachedChanges(), courses).find(x => x.id === r.setId);
   const fullyCorrect = r.items.length - r.missed.length;
   const mode = { exam: 'Exam simulation', practice: 'Practice mode' }[r.settings?.preset] ?? 'Custom settings';
+  const early = r.reason === 'early';
   const scope = r.scope === 'missed' ? ' · Missed questions only'
     : r.scope === 'saved' ? ' · Saved questions only'
+    : early ? ` · Finished early: ${r.items.length} of ${r.total} answered`
     : r.scope === 'part' && set ? ` · ${r.items.length} of ${set.questions.length} questions` : '';
   const byType = groupBy(r.items, i => i.type)
     .sort((a, b) => QUESTION_TYPES.indexOf(a[0]) - QUESTION_TYPES.indexOf(b[0]))
@@ -577,6 +579,8 @@ async function resultsView(root, { isCurrent }) {
     h('h1.page-title', 'Exam Results'),
     h('p.lead', `${r.title} · ${fmtDate(r.finishedAt)} · ${mode}${scope}`),
     r.reason === 'time' ? h('p.notice', 'Time ran out, so your exam was submitted automatically.') : null,
+    early ? h('p.notice', `You finished early, so this score is for the ${r.items.length === 1 ? 'question' : `${r.items.length} questions`} you answered`
+      + `${r.total > r.items.length ? `, out of ${r.total}` : ''}. Questions you didn't answer aren't counted, and this attempt doesn't count toward your best score.`) : null,
     h('div.score-card',
       h('p.score-big', `${r.percent}%`),
       h('div.score-facts',

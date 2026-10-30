@@ -210,8 +210,10 @@ export function defaultCount(set) {
 }
 
 // "Best" on the homepage counts attempts of the whole set, or of at least its
-// default number of questions with every topic and type (SPEC 11.3).
+// default number of questions with every topic and type (SPEC 11.3). Exams
+// finished early never count.
 export function countsForBest(attempt, set) {
+  if (attempt.early) return false;
   if (attempt.scope === 'full') return true;
   return attempt.scope === 'part' && !attempt.settings?.topics && !attempt.settings?.types
     && attempt.count >= (defaultCount(set) ?? set.questions.length);
@@ -273,8 +275,13 @@ export function resumeExam() {
   location.hash = '#/exam';
 }
 
+// reason: 'submitted', 'time', or 'early' (Close, then Finish and see results).
+// Finishing early scores only the questions answered so far; the others stay
+// unseen, so they come first next time.
 function grade(st, reason) {
-  const items = st.questions.map(q => ({ id: q.id, type: q.type, topic: q.topic, ...scoreItem(q, st.responses[q.id]) }));
+  const early = reason === 'early';
+  const questions = early ? st.questions.filter(q => isAnswered(q, st.responses[q.id])) : st.questions;
+  const items = questions.map(q => ({ id: q.id, type: q.type, topic: q.topic, ...scoreItem(q, st.responses[q.id]) }));
   const earned = items.reduce((sum, i) => sum + i.earned, 0);
   const possible = items.reduce((sum, i) => sum + i.max, 0);
   const finishedAt = Date.now();
@@ -284,7 +291,8 @@ function grade(st, reason) {
     setId: st.setId,
     title: st.title,
     reason,
-    scope: st.scope ?? 'full',
+    scope: early && !['missed', 'saved'].includes(st.scope) ? 'part' : st.scope ?? 'full',
+    total: st.questions.length, // the exam's size, even when it was finished early
     startedAt: st.startedAt,
     finishedAt,
     timeUsedMs: st.limitMs ? Math.min(usedMs, st.limitMs) : usedMs,
@@ -294,7 +302,7 @@ function grade(st, reason) {
     items,
     missed: items.filter(i => i.earned < i.max).map(i => i.id), // "missed" = less than full points (SPEC 5.4)
     settings: st.settings,
-    questions: st.questions,
+    questions,
     layout: st.layout,
     responses: st.responses,
     cases: st.cases,
@@ -317,6 +325,7 @@ function saveResult(result) {
     ids: result.items.map(i => i.id), // for showing questions not seen yet first
     missed: result.missed,
     settings: result.settings,
+    ...(result.reason === 'early' ? { early: true } : {}),
   });
   all[result.setId] = list.slice(-HISTORY_LIMIT);
   store.set(HISTORY, all);
@@ -653,13 +662,23 @@ export function examView(root) {
     if (choice === 'submit') finish('submitted');
   }
 
+  // Stay, Leave exam (saved for later), or, once a question is answered,
+  // Finish and see results for the questions answered so far.
   async function confirmLeave() {
+    const answered = st.questions.filter(q => isAnswered(q, st.responses[q.id])).length;
     const choice = await modal({
       title: 'Leave this exam?',
-      message: `Your progress is saved and you can resume from the homepage.${timed ? ' The timer keeps running while you are away.' : ''}`,
-      buttons: [{ label: 'Stay', value: 'stay', accent: true }, { label: 'Leave exam', value: 'leave' }],
+      message: `Your progress is saved and you can resume from the homepage.${timed ? ' The timer keeps running while you are away.' : ''}`
+        + (answered ? ` Or finish now and see your results for the ${answered === 1 ? 'question' : `${answered} questions`} you've answered.` : ''),
+      buttons: [{ label: 'Stay', value: 'stay', accent: true }, { label: 'Leave exam', value: 'leave' },
+        ...(answered ? [{ label: 'Finish and see results', value: 'finish' }] : [])],
     });
-    if (choice !== 'leave' || finished) return;
+    if (finished) return;
+    if (choice === 'finish') {
+      finish('early');
+      return;
+    }
+    if (choice !== 'leave') return;
     leaving = true;
     leaveFullscreen();
     location.hash = '#/';
@@ -668,7 +687,8 @@ export function examView(root) {
   function finish(reason) {
     if (finished) return;
     track('exam-finish', {
-      set: st.setId, class: st.course ?? undefined, mode: s.preset, questions: st.questions.length, ended: reason === 'time' ? 'time-up' : 'submitted',
+      set: st.setId, class: st.course ?? undefined, mode: s.preset, questions: st.questions.length,
+      ended: reason === 'time' ? 'time-up' : reason === 'early' ? 'finished-early' : 'submitted',
       flagged: Object.keys(st.flags).length ? 'yes' : 'no', 'crossed-out': Object.keys(st.crossed ?? {}).length ? 'yes' : 'no',
     });
     saveResult(grade(st, reason));
