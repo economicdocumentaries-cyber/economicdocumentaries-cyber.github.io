@@ -164,8 +164,7 @@ export function siteFooter() {
       h('div.fs-notice', { hidden: true },
         h('img', { src: 'img/icon.svg', alt: '', width: 32, height: 32 }),
         h('p', h('b', 'Full screen mode is on for this practice exam.'), ' Press Esc to leave it.')),
-      h('p.disclaimer', 'Independent practice site for our class. Not affiliated with or endorsed by ATI.'),
-      h('p.disclaimer.stats-note', 'This site collects anonymous usage stats to help improve it.')));
+      h('p.disclaimer', 'Independent practice site for our class. Not affiliated with or endorsed by ATI.')));
 }
 
 // ---------- alert boxes (SPEC 3.4) ----------
