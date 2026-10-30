@@ -2,7 +2,7 @@
 // with its class tabs, setup, results, and saved questions. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon } from './util.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets } from './sets.js';
 import {
@@ -101,6 +101,7 @@ function timeLeft(st, now = Date.now()) {
 async function homeView(root, { args, isCurrent }) {
   document.title = SITE_NAME;
   const main = h('main.wrap.home', h('p.lead', 'Loading question sets…'));
+  onSwipe(main, way => main.querySelector('.classes')?.swipe(way)); // phones: change class (SPEC 11.8)
   root.replaceChildren(page(main));
   const { sets, courses, guides, problems } = await loadSets();
   if (!isCurrent()) return;
@@ -180,8 +181,12 @@ function classGroups(courses, sets, guides) {
 // shows them only when there are some.
 function homeLists(group, noSets) {
   const sets = arrange(group.sets, s => s.id, group.order?.sets, newestSet); // the host's order (SPEC 11.4)
+  const saved = savedCount();
   const exams = h('section.home-section',
-    h('h2.section-title', 'Practice exams'),
+    h('div.section-head',
+      h('h2.section-title', 'Practice exams'),
+      // Phones (SPEC 11.8): the Saved questions link, small, beside the heading.
+      saved ? h('a.saved-chip', { href: '#/saved' }, icon('bookmark'), `Saved (${saved})`) : null),
     sets.length ? h('ul.set-list', sets.map(setRow)) : h('p.empty-note', noSets));
   group.paintGuides = () => {};
   if (!group.course && !group.allClasses) return exams;
@@ -218,6 +223,19 @@ function classTabs(groups, wanted) {
   const panels = groups.map((g, i) => h('div.class-panel', { role: 'tabpanel', id: `class-panel-${i}`, 'aria-labelledby': `class-tab-${i}` },
     homeLists(g, 'No practice exams for this class yet.')));
   const tablist = h('div.tabs.class-tabs', { role: 'tablist', 'aria-label': 'Classes' }, tabs);
+  // Phones (SPEC 11.8): a swipe left or right anywhere on the page (homeView
+  // listens) shows the next or previous class; the dots show which one.
+  const dots = groups.map(() => h('span.dot'));
+  const hint = groups.length > 1 ? h('p.swipe-hint', { 'aria-hidden': 'true' }, h('span.dots-row', dots), 'Swipe for other classes') : null;
+  const box = h('div.classes', tablist, hint, panels);
+  box.swipe = way => {
+    const next = current + (way === 'left' ? 1 : way === 'right' ? -1 : 0);
+    if (next === current || !groups[next]) return;
+    choose(next);
+    panels[next].dataset.slide = way;
+    panels[next].addEventListener('animationend', () => delete panels[next].dataset.slide, { once: true });
+    if (tablist.getBoundingClientRect().top < 0) tablist.scrollIntoView({ block: 'start' });
+  };
   tablist.addEventListener('keydown', e => {
     const last = tabs.length - 1;
     const next = { ArrowRight: current === last ? 0 : current + 1, ArrowLeft: current === 0 ? last : current - 1, Home: 0, End: last }[e.key];
@@ -234,6 +252,7 @@ function classTabs(groups, wanted) {
       tab.tabIndex = j === i ? 0 : -1;
     });
     panels.forEach((panel, j) => (panel.hidden = j !== i));
+    dots.forEach((dot, j) => dot.classList.toggle('on', j === i));
   }
 
   function choose(i) {
@@ -243,7 +262,7 @@ function classTabs(groups, wanted) {
   }
 
   show(current);
-  return h('div.classes', tablist, panels);
+  return box;
 }
 
 function resumeBanner() {
@@ -293,20 +312,31 @@ function setRow(set) {
   const lastScope = last?.scope === 'missed' ? `, ${plural(last.count, 'missed question')}`
     : last?.scope === 'saved' ? `, ${plural(last.count, 'saved question')}`
     : last?.scope === 'part' ? `, ${plural(last.count, 'question')}` : '';
-  return h('li.set-row',
+  // Phones (SPEC 11.8): the description, and the size of the whole set, open under More details.
+  const desc = set.description ? h('p.set-desc', set.description) : null;
+  const more = desc || count < total ? h('button.more-details', { type: 'button', 'aria-expanded': 'false' }, 'More details') : null;
+  more?.addEventListener('click', () => {
+    const open = row.classList.toggle('show-details');
+    more.setAttribute('aria-expanded', String(open));
+    more.textContent = open ? 'Fewer details' : 'More details';
+  });
+  const row = h('li.set-row',
     h('div.set-info',
       set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
       h('h3', set.title),
-      set.description ? h('p.set-desc', set.description) : null,
+      desc,
       h('p.set-meta', count < total
-        ? `${plural(count, 'question')} per exam, from a set of ${total} · ${minutes} minutes`
+        ? [h('span.meta-wide', `${plural(count, 'question')} per exam, from a set of ${total} · ${minutes} minutes`),
+            h('span.meta-phone', `${plural(count, 'question')} · ${minutes} min`)] // phones: the whole line is under More details
         : `${plural(total, 'question')} · ${minutes} minutes`),
       last ? h('p.set-history',
         'Last score: ', h('b', `${last.percent}%`), ` (${fmtDate(last.at, true)}${lastScope})`,
         best != null ? [' · Best: ', h('b', `${best}%`)] : null) : null),
     h('div.set-actions',
       h('a.btn.btn-accent', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Start'),
-      missed.length ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, missed, last.settings) }, `Retake missed (${missed.length})`) : null));
+      missed.length ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, missed, last.settings) }, `Retake missed (${missed.length})`) : null,
+      more));
+  return row;
 }
 
 // A study guide (SPEC 11): its exam, title, and a Download button. The saved

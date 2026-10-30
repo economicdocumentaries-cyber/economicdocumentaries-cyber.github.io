@@ -2,7 +2,7 @@
 // pause, calculator, Continue, alerts, full screen, saved progress, the
 // case-study layout, practice feedback, going back and flagging, saving
 // questions (SPEC 11.7), and review mode.
-import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon } from './util.js';
+import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, onSwipe } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
@@ -392,6 +392,9 @@ export function questionArea(container, cases, tabs) {
 }
 
 // Intro sentence, exhibit tabs, and the selected exhibit, which scrolls on its own.
+// On phones (SPEC 11.8) the case folds into a "Client chart" card above the
+// question: Open shows the exhibits full screen, and Back to the question
+// folds them again, with the answers and the chosen tab kept.
 function casePanel({ intro, tabs = [] }, start, onSelect) {
   let current = Math.min(start, Math.max(tabs.length - 1, 0));
   const panel = h('div.tabpanel', { role: 'tabpanel', tabindex: '0' });
@@ -431,10 +434,30 @@ function casePanel({ intro, tabs = [] }, start, onSelect) {
   }
 
   show(current);
-  return h('aside.case-panel', { 'aria-label': 'Case study' },
+  const opener = h('button.btn.chart-open', { type: 'button', 'aria-expanded': 'false', onclick: () => setOpen(true) }, 'Open');
+  const aside = h('aside.case-panel', { 'aria-label': 'Case study' },
+    h('div.chart-card',
+      icon('chart'),
+      h('div.chart-name',
+        h('p.chart-title', 'Client chart'),
+        tabs.length ? h('p.chart-tabs', tabs.map((tab, i) => tab.title || `Exhibit ${i + 1}`).join(' · ')) : null),
+      tabs.length ? opener : null),
     intro ? h('p.case-intro', { html: intro }) : null,
     tabs.length ? tablist : null,
-    panel);
+    panel,
+    tabs.length ? h('button.chart-back', { type: 'button', onclick: () => setOpen(false) }, '← Back to the question') : null);
+
+  function setOpen(open) {
+    aside.classList.toggle('is-open', open);
+    opener.setAttribute('aria-expanded', String(open));
+    (open ? buttons[current] : opener).focus({ preventScroll: true });
+  }
+  aside.addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || !aside.classList.contains('is-open')) return;
+    e.preventDefault();
+    setOpen(false);
+  });
+  return aside;
 }
 
 // ---------- the exam screen ----------
@@ -477,7 +500,7 @@ export function examView(root) {
   const timeVal = h('span.val');
   const pauseVal = h('span.val');
   const timer = h('div.timer',
-    h('div', h('b', 'Time Remaining:'), ' ', timeVal),
+    h('div', icon('clock'), h('b', 'Time Remaining:'), ' ', timeVal),
     h('div', h('b', 'Pause Remaining:'), ' ', pauseVal));
   const pauseBtn = h('button.btn.btn-pause', { type: 'button', onclick: () => pause() }, 'Pause');
   const calcBtn = h('button.calc-toggle', { type: 'button', 'aria-label': 'Calculator', 'aria-pressed': 'false', title: 'Calculator' }, icon('calc'));
@@ -489,21 +512,42 @@ export function examView(root) {
   // Save (SPEC 11.7) appears when answers show after each question, as in
   // practice mode; exam simulation stays like test day.
   const saver = showsAnswers ? saveButton() : null;
+  // Continue, which on phones says what it does: Check answer, Next question...
+  const continueText = h('span.c-phone');
+  const continueBtn = h('button.btn-continue', { type: 'button', onclick: () => onContinue() }, h('span.c-wide', 'Continue'), continueText);
   const actions = h('div.exam-actions',
     canGoBack || saver ? h('div.nav-left', canGoBack ? [prevBtn, flagBtn] : null, saver?.el) : null,
-    h('button.btn-continue', { type: 'button', onclick: () => onContinue() }, 'Continue'));
+    continueBtn);
   const footer = siteFooter();
   const fsNotice = footer.querySelector('.fs-notice');
   const announcer = h('div.sr-only', { 'aria-live': 'polite' });
 
-  const page = h('div.page.exam', { 'data-text-size': s.textSize ?? 'standard' },
+  // Phones (SPEC 11.8): a bar with Close, the question chip (it opens the list
+  // of questions), and Flag, Save, and the calculator as icons, over a line
+  // that fills as questions are answered. The header and Continue's row hide.
+  const chip = h('button.m-chip', { type: 'button', 'aria-haspopup': 'dialog', onclick: () => showNavigator() });
+  const mFlag = canGoBack ? h('button.m-icon.m-flag', { type: 'button', 'aria-pressed': 'false', 'aria-label': 'Flag', title: 'Flag', onclick: () => toggleFlag() }, icon('flag')) : null;
+  const mSave = saver ? h('button.m-icon.m-save', { type: 'button', 'aria-pressed': 'false', 'aria-label': 'Save', title: 'Save', onclick: () => saver.el.click() }, icon('bookmark')) : null;
+  const mCalc = s.calculator ? h('button.m-icon.m-calc', { type: 'button', 'aria-pressed': 'false', 'aria-label': 'Calculator', title: 'Calculator' }, icon('calc')) : null;
+  const progress = h('span');
+  // Clicking Save (either one) repaints the bar's icon after the button's own handler.
+  saver?.el.addEventListener('click', () => mSave.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed')));
+  const sheetShade = h('div.sheet-shade', { 'aria-hidden': 'true', onclick: () => openSheet(false) });
+
+  const page = h('div.page.exam.taking', { 'data-text-size': s.textSize ?? 'standard' },
     siteHeader({ title: st.title, onClose: () => confirmLeave(), link: false }),
+    h('div.m-top',
+      h('div.m-top-row',
+        h('button.m-close', { type: 'button', 'aria-label': 'Close', title: 'Close', onclick: () => confirmLeave() }, icon('x')),
+        chip, mFlag, mSave, mCalc),
+      h('div.m-progress', { 'aria-hidden': 'true' }, progress)),
     h('main.wrap',
       h('div.info-row',
         h('div.counter-wrap', counter, s.preset === 'practice' ? h('span.mode-tag', 'Practice mode') : null),
         h('div.info-tools', timed ? [timer, pauseBtn] : null, s.calculator ? calcBtn : null)),
       question),
     footer,
+    sheetShade,
     announcer);
   root.replaceChildren(page);
 
@@ -511,17 +555,21 @@ export function examView(root) {
     ? createCalculator({
         onClose: () => {
           calcBtn.setAttribute('aria-pressed', 'false');
-          calcBtn.focus({ preventScroll: true });
+          mCalc.setAttribute('aria-pressed', 'false');
+          (phone.matches ? mCalc : calcBtn).focus({ preventScroll: true });
         },
       })
     : null;
   if (calc) {
     page.append(calc.el);
-    calcBtn.addEventListener('click', () => {
-      const open = calc.toggle(calcBtn);
+    const toggleCalc = button => {
+      const open = calc.toggle(button);
       calcBtn.setAttribute('aria-pressed', String(open));
+      mCalc.setAttribute('aria-pressed', String(open));
       if (open) once('calculator-open');
-    });
+    };
+    calcBtn.addEventListener('click', () => toggleCalc(calcBtn));
+    mCalc.addEventListener('click', () => toggleCalc(mCalc));
   }
 
   const area = questionArea(question, st.cases, {
@@ -533,15 +581,21 @@ export function examView(root) {
   });
 
   // --- questions ---
-  function showQuestion(moveFocus) {
+  // checked: the answer was just checked, so on phones its sheet opens; a
+  // question checked before (going back, or after a reload) shows it folded.
+  function showQuestion(moveFocus, checked = false) {
     st.onGrid = false;
+    page.classList.remove('on-grid');
     const q = st.questions[st.index];
     const revealed = showsAnswers && !!st.revealed[q.id];
     counter.textContent = `Question: ${st.index + 1} of ${st.questions.length}`;
+    paintChip(`Question ${st.index + 1} of ${st.questions.length}`);
     document.title = `${st.title} · Question ${st.index + 1}`;
     prevBtn.hidden = st.index === 0;
     paintFlag();
     saver?.show(st.setId, st.title, q.id);
+    mSave?.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed'));
+    const feedback = revealed ? rationaleSheet(feedbackPanel(q, st.responses[q.id], { report: st.setId })) : null;
     area.show(q, [
       ...questionParts(q, {
         response: st.responses[q.id],
@@ -550,6 +604,8 @@ export function examView(root) {
         onChange: r => {
           st.responses[q.id] = r;
           save();
+          paintProgress();
+          paintContinue();
         },
         crossed: st.crossed[q.id],
         onCross: list => {
@@ -558,13 +614,117 @@ export function examView(root) {
           save();
         },
       }),
-      revealed ? feedbackPanel(q, st.responses[q.id], { report: st.setId }) : null,
+      feedback,
       actions,
     ]);
+    sheet = feedback;
+    page.classList.toggle('has-sheet', !!feedback);
+    openSheet(checked);
+    paintProgress();
+    paintContinue();
     if (moveFocus) {
       window.scrollTo(0, 0);
       counter.focus({ preventScroll: true });
     }
+  }
+
+  // --- phones (SPEC 11.8) ---
+  function paintChip(text) {
+    chip.replaceChildren(text, h('span.m-chip-arrow', { 'aria-hidden': 'true' }, '▾'));
+    chip.setAttribute('aria-label', `${text}: show all questions`);
+  }
+
+  function paintProgress() {
+    const answered = st.questions.filter(q => isAnswered(q, st.responses[q.id])).length;
+    progress.style.width = `${(100 * answered) / st.questions.length}%`;
+  }
+
+  // What Continue will do, for its label on phones.
+  function paintContinue() {
+    const q = st.questions[st.index];
+    const last = st.index === st.questions.length - 1;
+    const label = showsAnswers && !st.revealed[q.id] && (isAnswered(q, st.responses[q.id]) || !st.flags[q.id]) ? 'Check answer'
+      : canGoBack && (st.reachedGrid || last) ? 'Review answers'
+      : last ? 'Submit exam' : 'Next question';
+    continueText.textContent = label;
+    continueBtn.classList.toggle('is-next', label === 'Next question');
+  }
+
+  // The answer and rationale slide up as a sheet over the question. Its grip
+  // (a tap, or a swipe down or up) folds it to one line, to see the question
+  // again, and opens it again; so does tapping the folded sheet or the shade.
+  let sheet = null;
+  function rationaleSheet(feedback) {
+    const grip = h('button.sheet-grip', {
+      type: 'button', 'aria-label': 'Rationale', onclick: () => openSheet(feedback.classList.contains('is-folded')),
+    }, h('span', { 'aria-hidden': 'true' }));
+    onSwipe(grip, (way, e) => {
+      if (way !== 'up' && way !== 'down') return;
+      e.preventDefault(); // no click after the swipe
+      openSheet(way === 'up');
+    });
+    feedback.addEventListener('click', e => {
+      if (feedback.classList.contains('is-folded') && !e.target.closest('button, a')) openSheet(true);
+    });
+    feedback.prepend(grip);
+    return feedback;
+  }
+
+  function openSheet(open) {
+    page.classList.toggle('sheet-open', !!sheet && open);
+    if (!sheet) return;
+    sheet.classList.toggle('is-folded', !open);
+    sheet.querySelector('.sheet-grip').setAttribute('aria-expanded', String(open));
+  }
+
+  // The question chip: every question in a grid (answered, flagged, still to
+  // do, and this one). With going back allowed, a tile goes to its question.
+  // Finish and see results submits once every question is answered, and
+  // otherwise finishes early (SPEC 4.4).
+  async function showNavigator() {
+    const done = q => isAnswered(q, st.responses[q.id]);
+    const answered = st.questions.filter(done).length;
+    const flagged = st.questions.filter(q => st.flags[q.id]).length;
+    const here = st.onGrid ? -1 : st.index;
+    let box = null, focus = null;
+    const tiles = st.questions.map((q, i) => {
+      const kind = `${done(q) ? 'answered' : 'unanswered'}${st.flags[q.id] ? ' flagged' : ''}${i === here ? ' current' : ''}`;
+      const status = `${done(q) ? 'answered' : 'not answered'}${st.flags[q.id] ? ', flagged' : ''}${i === here ? ', this question' : ''}`;
+      const kids = [String(i + 1), st.flags[q.id] ? icon('flag') : null];
+      if (!canGoBack) return h('li', h('span.qtile', { class: kind }, kids, h('span.sr-only', `: ${status}`)));
+      const tile = h('button.qtile', { type: 'button', class: kind, 'aria-label': `Question ${i + 1}: ${status}`, onclick: () => box.close(i) }, kids);
+      if (i === here) focus = tile;
+      return h('li', tile);
+    });
+    box = modal({
+      sheet: true,
+      title: 'All questions',
+      message: [
+        h('p.nav-counts', [`${answered} answered`, canGoBack ? `${flagged} flagged` : null, `${st.questions.length - answered} to go`].filter(Boolean).join(' · ')),
+        canGoBack ? null : h('p.nav-note', "Going back is off in this exam, so the list only shows how far you've come."),
+        h('ol.qgrid.nav-grid', tiles),
+      ],
+      buttons: [{ label: 'Back to question', value: 'back' }, ...(answered ? [{ label: 'Finish and see results', value: 'finish', accent: true }] : [])],
+      focus,
+    });
+    focus?.scrollIntoView({ block: 'nearest' });
+    const choice = await box;
+    if (finished) return;
+    if (Number.isInteger(choice)) goTo(choice);
+    else if (choice === 'finish') finishNow();
+  }
+
+  async function finishNow() {
+    const left = st.questions.filter(q => !isAnswered(q, st.responses[q.id])).length;
+    if (!left) return confirmSubmit();
+    const answered = st.questions.length - left;
+    const choice = await modal({
+      title: 'Finish Now?',
+      message: `You've answered ${answered} of ${st.questions.length} questions. Your results will score just ${answered === 1 ? 'that one' : `those ${answered}`}, `
+        + `and the ${left === 1 ? 'one' : left} you haven't answered will come first next time.`,
+      buttons: [{ label: 'Finish and see results', value: 'finish', accent: true }, { label: 'Keep going', value: 'stay' }],
+    });
+    if (choice === 'finish') finish('early');
   }
 
   function goTo(i) {
@@ -588,7 +748,7 @@ export function examView(root) {
       // flagged question that isn't answered yet moves on without them.)
       st.revealed[q.id] = true;
       save();
-      showQuestion(false);
+      showQuestion(false, true);
       const feedback = question.querySelector('.feedback');
       feedback?.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       feedback?.focus({ preventScroll: true });
@@ -603,6 +763,7 @@ export function examView(root) {
   function paintFlag() {
     const flagged = !!st.flags[st.questions[st.index].id];
     flagBtn.setAttribute('aria-pressed', String(flagged));
+    mFlag?.setAttribute('aria-pressed', String(flagged));
     flagLabel.textContent = flagged ? 'Flagged' : 'Flag';
   }
 
@@ -612,14 +773,21 @@ export function examView(root) {
     else st.flags[id] = true;
     save();
     paintFlag();
+    paintContinue();
   }
 
   // With going back allowed, a grid of every question comes before submitting.
   function showGrid(moveFocus) {
     st.onGrid = true;
+    page.classList.add('on-grid'); // phones: no Flag or Save on the bar here
     st.reachedGrid = true;
     save();
     counter.textContent = 'Review Your Answers';
+    paintChip('Review your answers');
+    openSheet(false);
+    sheet = null;
+    page.classList.remove('has-sheet');
+    paintProgress();
     document.title = `${st.title} · Review your answers`;
     const done = q => isAnswered(q, st.responses[q.id]);
     const answeredCount = st.questions.filter(done).length;

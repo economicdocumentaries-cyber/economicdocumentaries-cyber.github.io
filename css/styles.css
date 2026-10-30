@@ -946,6 +946,217 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .bt-right { order: 6; }
 }
 
+/* ---------- phones (SPEC 11.8) ---------- */
+
+/* Pieces only phones show. The heading row on the homepage keeps the
+   spacing the heading had alone. */
+.m-top, .c-phone, .sheet-grip, .sheet-shade, .chart-card, .chart-back, .cell-col, .timer svg,
+.swipe-hint, .saved-chip, .more-details, .meta-phone { display: none; }
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; margin: 0 0 10px; }
+.section-head .section-title { margin: 0; }
+
+@media (max-width: 700px) {
+  /* Homepage: the title and intro are for screen readers only, the class
+     tabs show just the class names (swipe between them), each set is a card
+     with its description under More details, and Saved sits by the heading. */
+  .home { padding-top: 14px; }
+  .home > .page-title { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .home > .lead, .home-saved { display: none; }
+  .classes { overflow-x: clip; }
+  .class-tab { min-width: 0; align-items: center; padding: 10px 6px 11px; text-align: center; }
+  .class-code { display: none; }
+  .class-name { font-size: 14.5px; line-height: 1.25; }
+  .class-tab[aria-selected="true"] .class-name { font-weight: 700; }
+  .swipe-hint { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 7px 0 0; font-size: 12px; color: var(--muted); }
+  .dots-row { display: inline-flex; gap: 5px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #C6C9CE; }
+  .dot.on { background: var(--accent-deep); }
+  .home-section { margin-top: 18px; }
+  .home-section + .home-section { margin-top: 28px; }
+  .section-head { margin-bottom: 12px; }
+  .saved-chip {
+    display: inline-flex; align-items: center; gap: 5px; flex: none; padding: 5px 12px;
+    background: #EEF7FC; border: 1px solid #BFE1F4; border-radius: 15px;
+    font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap;
+  }
+  .home-section .set-list { display: grid; gap: 12px; border-top: 0; }
+  .home-section .set-row { gap: 10px; padding: 14px 16px 12px; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 1px 3px rgba(31, 58, 95, .06); }
+  .home-section .set-row:not(.guide-row) .set-desc { display: none; margin: 6px 0 4px; }
+  .home-section .set-row.show-details .set-desc { display: block; }
+  .meta-wide { display: none; }
+  .meta-phone, .show-details .meta-wide { display: inline; }
+  .show-details .meta-phone { display: none; }
+  .home-section .set-actions { align-items: center; gap: 8px 14px; }
+  .home-section .set-actions .btn-accent { min-width: 116px; min-height: 44px; border-radius: 8px; font-size: 13.5px; }
+  .more-details { display: inline-flex; align-items: center; gap: 5px; padding: 10px 2px; background: none; border: 0; font-size: 14px; font-weight: 600; color: var(--accent-deep); }
+  .more-details::after { content: "▾"; font-size: 11px; }
+  .more-details[aria-expanded="true"]::after { content: "▴"; }
+
+  /* The exam (idea 2): a top bar with Close, the question chip, and icons;
+     a slim row with the mode or the time left; one big button at the
+     bottom; and the answer and rationale as a sheet over the question. */
+  .taking { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .taking.has-sheet { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
+  .taking .topbar { display: none; }
+  .taking .m-top { display: block; position: sticky; top: 0; z-index: 40; background: #fff; border-top: 4px solid var(--accent); }
+  .m-top-row { display: flex; align-items: center; gap: 2px; padding: 8px 8px 8px 12px; }
+  .m-close { display: grid; place-items: center; flex: none; width: 38px; height: 38px; padding: 0; background: #F1F3F5; border: 0; border-radius: 50%; color: var(--ink); }
+  .m-chip {
+    flex: 0 1 auto; min-width: 0; height: 38px; margin: 0 auto 0 8px; padding: 0 14px;
+    overflow: hidden; background: #F2F9FD; border: 1px solid #BFE1F4; border-radius: 19px;
+    font-size: 14px; font-weight: 700; color: var(--ink); text-overflow: ellipsis; white-space: nowrap;
+  }
+  .m-chip-arrow { margin-left: 6px; font-size: 12px; }
+  .m-icon { display: grid; place-items: center; flex: none; width: 40px; height: 40px; padding: 0; background: none; border: 1px solid transparent; border-radius: 10px; color: var(--muted); }
+  .m-icon svg { width: 18px; height: 18px; }
+  .m-icon[aria-pressed="true"] { background: #DCEEF9; border-color: var(--accent-deep); color: var(--ink); }
+  .m-flag[aria-pressed="true"] { background: var(--hl); border-color: #D9C55A; }
+  .m-save[aria-pressed="true"] svg path { fill: currentColor; }
+  .m-calc { color: var(--accent); }
+  .m-calc svg { width: 21px; height: 24px; }
+  .m-progress { height: 3px; background: #E7EBEF; }
+  .m-progress > span { display: block; width: 0; height: 100%; background: var(--accent); transition: width .2s; }
+  .taking .info-row { gap: 8px; padding-top: 12px; }
+  .taking .q-counter { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .taking .calc-toggle { display: none; }
+  .taking .timer { margin: 0; font-size: 13.5px; font-weight: 700; color: var(--ink); }
+  .taking .timer svg { display: inline-block; margin-right: 5px; vertical-align: -2px; }
+  .taking .timer b, .taking .timer > div + div { display: none; }
+  .taking .btn-pause { min-width: 0; height: 32px; padding: 0 10px; font-size: 11px; }
+  .taking .question { padding-top: 14px; }
+  .taking .exam-actions {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 34; flex-wrap: nowrap; gap: 10px;
+    margin: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: #fff; box-shadow: 0 -1px 0 var(--line), 0 -6px 16px rgba(31, 58, 95, .06);
+  }
+  .taking.on-grid .m-flag, .taking.on-grid .m-save { display: none; }
+  .taking .exam-actions .nav-left { width: auto; margin: 0; }
+  .taking .exam-actions .btn-flag, .taking .exam-actions .btn-save { display: none; }
+  .taking .exam-actions .nav-left:not(:has(.btn-nav:not([hidden]))) { display: none; }
+  .taking .btn-nav { flex-direction: column; gap: 2px; width: 64px; min-height: 52px; padding: 0; border-radius: 10px; font-size: 11px; letter-spacing: 0; text-transform: none; }
+  .taking .btn-nav::before { content: "◀"; font-size: 13px; line-height: 1; }
+  .taking .exam-actions > .btn { flex: 1 1 0; min-height: 52px; padding: 0 10px; border-radius: 10px; }
+  .taking .btn-continue {
+    flex: 1 1 auto; height: 52px; min-width: 0; padding: 0 16px; background: var(--ink); border-radius: 10px;
+    font-size: 15.5px; letter-spacing: .01em; text-transform: none; color: #fff;
+  }
+  .taking .btn-continue::before { display: none; }
+  .taking .btn-continue:active { background: #16304F; }
+  .taking .btn-continue.is-next { background: var(--accent); color: var(--ink); }
+  .taking .btn-continue.is-next::after { content: "→"; margin-left: 8px; }
+  .taking .c-wide { display: none; }
+  .taking .c-phone { display: inline; }
+  .taking .feedback {
+    position: fixed; left: 0; right: 0; bottom: calc(72px + env(safe-area-inset-bottom)); z-index: 33;
+    max-height: 66vh; overflow-y: auto; overscroll-behavior: contain;
+    margin: 0; padding: 0 18px 18px; background: #fff; border: 0; border-radius: 18px 18px 0 0;
+    box-shadow: 0 -8px 28px rgba(0, 0, 0, .18);
+  }
+  .taking .sheet-grip {
+    display: block; position: sticky; top: 0; z-index: 1; width: calc(100% + 36px); height: 28px;
+    margin: 0 -18px 4px; padding: 0; background: #fff; border: 0; border-radius: 18px 18px 0 0;
+  }
+  .taking .sheet-grip > span { display: block; width: 44px; height: 5px; margin: 0 auto; border-radius: 3px; background: #C6C9CE; }
+  .taking .feedback-result { font-size: 16px; }
+  .taking .feedback.is-folded { overflow: hidden; cursor: pointer; }
+  .taking .feedback.is-folded > :not(.sheet-grip, .feedback-result) { display: none; }
+  .taking .feedback.is-folded .feedback-result { margin: 0; }
+  .taking .feedback.is-folded .feedback-result::after { content: "Rationale ▴"; float: right; margin-left: 10px; font-size: 13.5px; font-weight: 700; color: var(--accent-deep); }
+  .taking.sheet-open .sheet-shade { display: block; position: fixed; inset: 0; z-index: 32; background: rgba(15, 30, 50, .35); }
+
+  /* Choices are cards. */
+  .choices { gap: 8px; }
+  .opt { padding: 12px; border-color: var(--line); border-radius: 10px; }
+  .opt:not(.reviewed):has(.ctl:checked) { background: #F2F9FD; border-color: var(--accent); }
+
+  /* Case studies (idea 3): a Client chart card above the question; Open
+     shows the exhibits full screen, with Back to the question at the bottom. */
+  .case-panel { margin-bottom: 16px; padding: 14px 16px; background: #F2F9FD; border: 1px solid #BFE1F4; border-radius: 12px; }
+  .chart-card { display: flex; align-items: center; gap: 10px; }
+  .chart-card > svg { flex: none; width: 26px; height: 26px; color: var(--accent-deep); }
+  .chart-name { flex: 1 1 auto; min-width: 0; }
+  .chart-title { margin: 0; font: 700 16px/1.3 var(--slab); color: var(--ink); }
+  .chart-tabs { margin: 1px 0 0; font-size: 12.5px; line-height: 1.35; color: var(--muted); }
+  .chart-open { flex: none; min-height: 36px; padding: 0 18px; background: var(--accent); border-color: var(--accent); border-radius: 18px; font-weight: 700; color: var(--ink); }
+  .case-panel .case-intro { margin: 10px 0 0; font-size: 14px; }
+  .case-panel:not(.is-open) > .tabs, .case-panel:not(.is-open) > .tabpanel { display: none; }
+  .case-panel.is-open { position: fixed; inset: 0; z-index: 60; display: flex; margin: 0; padding: 0; background: #fff; border: 0; border-radius: 0; }
+  .case-panel.is-open .chart-card { flex: none; padding: 12px 16px 10px; border-top: 4px solid var(--accent); }
+  .case-panel.is-open .chart-open, .case-panel.is-open .case-intro { display: none; }
+  .case-panel.is-open .tabs { flex-wrap: wrap; gap: 8px; margin: 0; padding: 2px 16px 12px; overflow: visible; }
+  .case-panel.is-open .tab { padding: 6px 14px; background: #F2F9FD; border: 1px solid #BFE1F4; border-radius: 18px; }
+  .case-panel.is-open .tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .case-panel.is-open .tabpanel { flex: 1 1 auto; overflow-y: auto; overscroll-behavior: contain; padding: 14px 16px 20px; border-top: 1px solid var(--line); font-size: 15px; }
+  .case-panel.is-open .chart-back {
+    display: block; flex: none; min-height: 52px; margin: 0 16px calc(12px + env(safe-area-inset-bottom));
+    background: var(--ink); border: 0; border-radius: 10px; font-size: 15.5px; font-weight: 700; color: #fff;
+  }
+
+  /* Highlight (idea 3): each line with phrases is a card; a card with one
+     phrase can be tapped anywhere. */
+  .passage { padding: 0; background: none; border: 0; font-size: 15.5px; line-height: 1.7; }
+  .hl-line { margin: 0 0 6px; }
+  .hl-line.has-hl { margin-bottom: 8px; padding: 10px 12px; background: #fff; border: 1px solid var(--line); border-radius: 10px; }
+  .hl-line.one-hl { cursor: pointer; }
+  .hl-line.one-hl:has(.hl[aria-pressed="true"]) { background: #FFFBEA; border-color: #E6CF4D; }
+  .hl { padding: 3px 1px; }
+  /* No hover on phones, so a faint dotted line shows what can be tapped. */
+  .hl[role="button"]:not([aria-pressed="true"]) { text-decoration: underline dotted #9AA1AA; text-decoration-thickness: 1.5px; text-underline-offset: 5px; }
+
+  /* Matrix (idea 3): one card per row, with a button per column. */
+  .matrix-wrap { overflow: visible; }
+  .matrix, .matrix tbody, .matrix th, .matrix td { display: block; }
+  .matrix thead { display: none; }
+  .matrix tbody { display: grid; gap: 10px; }
+  .matrix tbody tr { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; }
+  .matrix tbody th { flex: 1 1 100%; padding: 0 0 2px; border: 0; font-size: 15px; }
+  .matrix td { flex: 1 1 auto; width: auto; border: 0; }
+  .matrix tbody tr:hover > * { background: none; }
+  .matrix td.is-key, .matrix td.is-wrong { background: none; }
+  .cell { justify-content: flex-start; gap: 8px; min-width: 0; min-height: 46px; padding: 8px 12px; background: #F3F5F7; border: 1px solid #C6C9CE; border-radius: 8px; }
+  .cell-col { display: inline; font-size: 14px; font-weight: 600; line-height: 1.25; text-align: left; }
+  .cell:has(.ctl:checked) { background: #DCEEF9; border-color: var(--accent-deep); }
+  .matrix td.is-key .cell { background: #F2F9F4; border-color: #8CC5A1; }
+  .matrix td.is-wrong .cell { background: #FDF3F2; border-color: #E2A39C; }
+  .cell-mark { margin-left: auto; }
+
+  /* The list of questions slides up from the bottom. */
+  .modal-sheet { align-items: flex-end; padding: 0; }
+  .modal-sheet .modal { width: 100%; min-width: 0; max-width: none; max-height: 86vh; overflow-y: auto; padding: 16px 16px calc(16px + env(safe-area-inset-bottom)); border-radius: 18px 18px 0 0; }
+  .nav-counts { margin: 0 0 4px; color: var(--muted); }
+  .nav-note { margin: 0; font-size: 13.5px; color: var(--muted); }
+  .nav-grid { grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); gap: 8px; margin: 12px 0 4px; }
+  .nav-grid .qtile { height: 44px; font-size: 15px; }
+  .nav-grid .qtile.flagged { background: var(--hl); border-color: #D9C55A; }
+  .nav-grid .qtile.current { background: var(--ink); border-color: var(--ink); border-style: solid; color: #fff; }
+  .nav-grid .qtile.current svg { color: #fff; }
+  .modal-sheet .modal-actions .btn { flex: 1 1 auto; min-height: 48px; border-radius: 10px; }
+}
+
+/* Keeps a focused question or button out from under the exam's bars, and
+   toasts above the big button. Text size: the question's parts grow, but not
+   the boxes pinned to the screen (the bottom bar, the sheet, the open chart),
+   since browsers misplace pinned boxes inside a zoomed one. */
+@media (max-width: 700px) {
+  html:has(.taking) { scroll-padding: 64px 0 96px; }
+  body:has(.taking) .toasts { bottom: calc(88px + env(safe-area-inset-bottom)); }
+  .exam[data-text-size] .question { zoom: 1; }
+  .exam[data-text-size="large"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
+  .exam[data-text-size="large"] :is(.case-panel, .taking .feedback) > :not(.sheet-grip) { zoom: 1.12; }
+  .exam[data-text-size="larger"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
+  .exam[data-text-size="larger"] :is(.case-panel, .taking .feedback) > :not(.sheet-grip) { zoom: 1.25; }
+}
+
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .class-panel[data-slide="left"] { animation: from-right .22s ease-out; }
+  .class-panel[data-slide="right"] { animation: from-left .22s ease-out; }
+  @keyframes from-right { from { opacity: .4; transform: translateX(36px); } }
+  @keyframes from-left { from { opacity: .4; transform: translateX(-36px); } }
+  .taking .feedback:not(.is-folded) { animation: sheet-up .2s ease-out; }
+  .modal-sheet .modal { animation: sheet-up .2s ease-out; }
+  @keyframes sheet-up { from { transform: translateY(40px); opacity: .6; } }
+}
+
 /* ---------- motion and high contrast ---------- */
 
 @media (prefers-reduced-motion: no-preference) {

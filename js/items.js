@@ -2,7 +2,7 @@
 // the exam screen, scored, and marked in review. Responses always hold
 // original positions (indexes into the set file), so shuffled layouts never
 // change scoring.
-import { h, shuffle } from './util.js';
+import { h, shuffle, phone } from './util.js';
 
 const isText = v => typeof v === 'string' && v.trim() !== '';
 const isIndex = (v, n) => Number.isInteger(v) && v >= 0 && v < n;
@@ -455,10 +455,12 @@ function matrixUI(q, ctx) {
         onChange?.(value.map(v => (Array.isArray(v) ? v.slice() : v)));
       });
       input.addEventListener('click', () => input.focus({ preventScroll: true }));
-      if (!review) return h('td', h('label.cell', input));
+      // The column's name, shown on phones (SPEC 11.8), where each row is a card of buttons.
+      const name = h('span.cell-col', { 'aria-hidden': 'true', html: q.columns[c] });
+      if (!review) return h('td', h('label.cell', input, name));
       const right = multiple ? q.answer[r].includes(c) : q.answer[r] === c;
       return h('td', { class: right ? 'is-key' : mine ? 'is-wrong' : null },
-        h('label.cell', input,
+        h('label.cell', input, name,
           right ? h('span.cell-mark.ok', h('span', { 'aria-hidden': 'true' }, '✓'), h('span.sr-only', 'correct answer'))
             : mine ? h('span.cell-mark.bad', h('span', { 'aria-hidden': 'true' }, '✗'), h('span.sr-only', 'incorrect')) : null));
     }))));
@@ -596,6 +598,9 @@ function dragdropUI(q, ctx) {
 }
 
 // Highlight: click phrases in the passage to highlight them; click again to clear.
+// The passage is drawn a line at a time (a line ends at each <br>), which looks
+// the same; on phones (SPEC 11.8) a line with phrases is a card, and a card with
+// one phrase can be tapped anywhere.
 function highlightUI(q, ctx) {
   const { response, review = false, labelledBy, onChange } = ctx;
   const locked = ctx.locked || review;
@@ -619,7 +624,24 @@ function highlightUI(q, ctx) {
     });
     return span;
   });
-  const passage = h('div.passage', { role: 'group', 'aria-labelledby': labelledBy }, nodes);
+  const lines = [[]];
+  for (const node of nodes.flat()) {
+    if (node instanceof HTMLBRElement) lines.push([]);
+    else lines.at(-1).push(node);
+  }
+  const blank = line => line.every(node => typeof node === 'string' && !node.trim());
+  if (lines.length > 1 && blank(lines.at(-1))) lines.pop(); // a <br> at the very end adds no line
+  const passage = h('div.passage', { role: 'group', 'aria-labelledby': labelledBy }, lines.map(line => {
+    const phrases = line.filter(node => node instanceof Element && node.classList.contains('hl'));
+    const el = h('div.hl-line', { class: phrases.length ? 'has-hl' : null }, blank(line) ? h('br') : line);
+    if (phrases.length === 1 && !locked) {
+      el.classList.add('one-hl');
+      el.addEventListener('click', e => {
+        if (phone.matches && !e.target.closest('.hl')) phrases[0].click();
+      });
+    }
+    return el;
+  }));
   if (!review) return passage;
   if (ctx.answerKey) return h('div', passage, h('p.review-legend.hl-legend', h('span.hl.hl-right', 'Green'), ' items are the correct answers.'));
   return h('div', passage, h('p.review-legend.hl-legend',

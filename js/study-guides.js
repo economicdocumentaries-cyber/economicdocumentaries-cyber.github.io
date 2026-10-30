@@ -253,7 +253,7 @@ export function guidesConsole(section, db, { courses, sets, published }, account
       h('label.field-label', { for: 'guide-file' }, 'PDF file'), fileInput,
       h('p.field-help', `A PDF up to ${LIMIT_MB} MB. To turn a Word or PowerPoint file into a PDF: File > Save As (or Export) > PDF.`)),
     h('label.choice-line.own-work', ownWork,
-      h('span', 'I made this guide myself, or Claude wrote it from my notes in its own words. It isn\'t instructor slides, textbook pages, test questions, or files copied from the class folder.')),
+      h('span', 'I made this guide myself, or Claude wrote it from my notes in its own words (pictures from the class slides are fine). It isn\'t textbook pages, test questions, or a file copied from the class folder.')),
     problem,
     progressBox,
     h('div.form-actions', uploadBtn));

@@ -131,7 +131,14 @@ const ICONS = {
   flag: '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 1.5v13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.3 2.2h8.4l-2.1 3.3 2.1 3.3H4.3z" fill="currentColor"/></svg>',
   // Outlined; filled in by the CSS once the question is saved.
   bookmark: '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M4.2 1.7h7.6c.4 0 .7.3.7.7v11.9L8 11.2l-4.5 3.1V2.4c0-.4.3-.7.7-.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
+  // Phones only: Close on the exam's top bar, the time left, and a case study's client chart.
+  x: '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9m0-9l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  clock: '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="8" cy="9" r="5.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 5.8V9l2 1.4M6.2 1.5h3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+  chart: '<svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3.5" y="3" width="13" height="15.5" rx="1.8" fill="#fff" stroke="currentColor" stroke-width="1.5"/><rect x="7" y="1.5" width="6" height="3.4" rx="1" fill="currentColor"/><path d="M6.5 9h7M6.5 12h7M6.5 15h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
 };
+
+// True while the phone layout is showing (the small-screen CSS starts at the same width).
+export const phone = matchMedia('(max-width: 700px)');
 
 export function icon(name) {
   const t = document.createElement('template');
@@ -167,6 +174,24 @@ export function siteFooter() {
       h('p.disclaimer', 'Independent practice site for our class. Not affiliated with or endorsed by ATI.')));
 }
 
+// Calls fn('left', 'right', 'up', or 'down', the touchend event) when a finger
+// swipes across el: at least 50 pixels sideways or 30 up or down, mostly in
+// one direction. Taps and scrolling pass through.
+export function onSwipe(el, fn) {
+  let start = null;
+  el.addEventListener('touchstart', e => {
+    start = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+  }, { passive: true });
+  el.addEventListener('touchend', e => {
+    if (!start) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x, dy = t.clientY - start.y;
+    start = null;
+    if (Math.abs(dx) >= 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) fn(dx < 0 ? 'left' : 'right', e);
+    else if (Math.abs(dy) >= 30 && Math.abs(dy) > 1.5 * Math.abs(dx)) fn(dy < 0 ? 'up' : 'down', e);
+  });
+}
+
 // ---------- alert boxes (SPEC 3.4) ----------
 
 const openModals = [];
@@ -187,7 +212,9 @@ function syncModals() {
 // message can be text or elements (a small form, say). focus: the element to
 // start on (else the first button). check(value), if given, runs when a button
 // is clicked and can wait: the alert stays open when it returns false.
-export function modal({ title, message = '', buttons = [], closable = true, focus = null, check = null } = {}) {
+// sheet: a panel that slides up from the bottom on phones (the exam's list of
+// questions), not an alert, so its message isn't read out as one.
+export function modal({ title, message = '', buttons = [], closable = true, focus = null, check = null, sheet = false } = {}) {
   const n = ++modalCount;
   const returnFocus = document.activeElement;
   let resolve;
@@ -207,13 +234,15 @@ export function modal({ title, message = '', buttons = [], closable = true, focu
     }
     close(value);
   }
-  const box = h('div.modal', { role: 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': `modal-title-${n}`, 'aria-describedby': `modal-msg-${n}`, tabindex: '-1' },
+  const box = h('div.modal', {
+    role: sheet ? 'dialog' : 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': `modal-title-${n}`, 'aria-describedby': sheet ? null : `modal-msg-${n}`, tabindex: '-1',
+  },
     h('div.modal-head',
       h('h2.modal-title', { id: `modal-title-${n}` }, title),
       closable ? h('button.close-btn', { type: 'button', onclick: () => close('close') }, icon('close'), h('span', 'Close')) : null),
     h('div.modal-msg', { id: `modal-msg-${n}` }, message),
     actions.length ? h('div.modal-actions', actions) : null);
-  const backdrop = h('div.modal-backdrop', box);
+  const backdrop = h('div.modal-backdrop', { class: sheet ? 'modal-sheet' : null }, box);
   const entry = { backdrop, box, closable, close };
 
   function close(value) {
