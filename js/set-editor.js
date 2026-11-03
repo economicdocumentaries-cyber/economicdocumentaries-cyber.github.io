@@ -462,7 +462,7 @@ export function setsConsole(section, db, { sets, courses }, accountLine) {
           h('legend.field-label', 'Questions per exam'),
           h('label.choice-line', every, h('span', `Every question (${total})`)),
           h('div.choice-line', some, count, h('label', { for: 'set-count' }, 'questions')))),
-      h('p.field-help', 'Students get this many questions, spread across the topics, when they click Start and Begin in either mode. They can still choose another number under Customize settings.'),
+      h('p.field-help', 'Students get this many questions, spread across the topics, in an exam simulation. Practice mode gives the same or fewer: at most 25 on a laptop and 10 on a phone. They can still choose another number under Change settings.'),
       h('label.choice-line.show-line', shownBox, h('span', 'Show this set on the homepage')),
       note,
       h('div.form-actions',

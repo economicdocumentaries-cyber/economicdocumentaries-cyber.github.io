@@ -135,6 +135,11 @@ const ICONS = {
   x: '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9m0-9l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
   clock: '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="8" cy="9" r="5.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 5.8V9l2 1.4M6.2 1.5h3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
   chart: '<svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3.5" y="3" width="13" height="15.5" rx="1.8" fill="#fff" stroke="currentColor" stroke-width="1.5"/><rect x="7" y="1.5" width="6" height="3.4" rx="1" fill="currentColor"/><path d="M6.5 9h7M6.5 12h7M6.5 15h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
+  // The setup page: the two modes, Change settings, and rows that open.
+  bulb: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  timer: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  sliders: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></g></svg>',
+  chevron: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
 };
 
 // True while the phone layout is showing (the small-screen CSS starts at the same width).
@@ -213,14 +218,15 @@ function syncModals() {
 // start on (else the first button). check(value), if given, runs when a button
 // is clicked and can wait: the alert stays open when it returns false.
 // sheet: a panel that slides up from the bottom on phones (the exam's list of
-// questions), not an alert, so its message isn't read out as one.
-export function modal({ title, message = '', buttons = [], closable = true, focus = null, check = null, sheet = false } = {}) {
+// questions), not an alert, so its message isn't read out as one. kind: a
+// class for the box. A button with ink: true is dark blue, like a big Start.
+export function modal({ title, message = '', buttons = [], closable = true, focus = null, check = null, sheet = false, kind = null } = {}) {
   const n = ++modalCount;
   const returnFocus = document.activeElement;
   let resolve;
   const result = new Promise(r => (resolve = r));
 
-  const actions = buttons.map(b => h('button.btn', { type: 'button', class: b.accent ? 'btn-accent' : null, onclick: () => choose(b.value) }, b.label));
+  const actions = buttons.map(b => h('button.btn', { type: 'button', class: b.accent ? 'btn-accent' : b.ink ? 'btn-ink' : null, onclick: () => choose(b.value) }, b.label));
   async function choose(value) {
     if (check) {
       actions.forEach(a => (a.disabled = true));
@@ -235,6 +241,7 @@ export function modal({ title, message = '', buttons = [], closable = true, focu
     close(value);
   }
   const box = h('div.modal', {
+    class: kind,
     role: sheet ? 'dialog' : 'alertdialog', 'aria-modal': 'true', 'aria-labelledby': `modal-title-${n}`, 'aria-describedby': sheet ? null : `modal-msg-${n}`, tabindex: '-1',
   },
     h('div.modal-head',
@@ -268,6 +275,17 @@ export function closeModals() {
   for (const m of [...openModals].reverse()) m.close(undefined);
 }
 
+// What Tab can reach in el, in order: showing and enabled, and one radio
+// button per group (the checked one, or the first).
+function tabbables(el) {
+  return [...el.querySelectorAll('a[href], button, input, select, textarea, summary, [tabindex]')].filter(x => {
+    if (x.disabled || x.tabIndex < 0 || !x.getClientRects().length) return false;
+    if (x.type !== 'radio') return true;
+    const group = [...el.querySelectorAll('input[type="radio"]')].filter(r => r.name === x.name);
+    return x === (group.find(r => r.checked) ?? group[0]);
+  });
+}
+
 // Esc closes the top alert (when it has a Close button); Tab stays inside it.
 document.addEventListener('keydown', e => {
   const top = openModals.at(-1);
@@ -276,7 +294,7 @@ document.addEventListener('keydown', e => {
     e.preventDefault();
     if (top.closable) top.close('close');
   } else if (e.key === 'Tab') {
-    const items = [...top.box.querySelectorAll('button:not([disabled])')];
+    const items = tabbables(top.box);
     if (!items.length) return e.preventDefault();
     const first = items[0], last = items.at(-1), inside = top.box.contains(document.activeElement);
     if (e.shiftKey && (!inside || document.activeElement === first || document.activeElement === top.box)) {

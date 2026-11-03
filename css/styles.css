@@ -556,19 +556,7 @@ span.order-text { flex: 1; font-size: 15px; }
 .setup-box { max-width: 760px; margin: 0 0 24px; padding: 14px 18px; background: #F7FBFE; border: 1px solid var(--line); border-left: 5px solid var(--accent); }
 .setup-lead { margin: 0 0 6px; font-size: 16px; }
 .setup-box ul { margin: 0; padding-left: 20px; font-size: 14.5px; }
-.presets { min-width: 0; margin: 0 0 18px; padding: 0; border: 0; }
-.preset-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 760px; }
-.preset { display: flex; align-items: flex-start; gap: 12px; padding: 16px 18px; background: #fff; border: 2px solid var(--line); border-radius: 6px; cursor: pointer; }
-.preset:hover { border-color: #A9D3EC; }
-.preset:has(.ctl:checked) { background: #F2F9FD; border-color: var(--accent); }
-.preset .ctl { margin-top: 4px; }
-.preset-title { display: block; font: 700 18px/1.3 var(--slab); color: var(--ink); }
-.preset-points { margin: 6px 0 0; padding-left: 18px; font-size: 14px; }
-.custom-note { max-width: 760px; margin: 10px 0 0; font-size: 14px; color: var(--muted); }
-.customize { max-width: 760px; margin: 0 0 20px; background: #fff; border: 1px solid var(--line); border-radius: 4px; }
-.customize > summary { padding: 12px 16px; font-weight: 700; color: var(--ink); cursor: pointer; }
-.customize[open] > summary { border-bottom: 1px solid var(--line); }
-.settings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 32px; padding: 16px 18px 20px; }
+.custom-note { margin: 0; font-size: 14px; color: var(--muted); }
 .setting { min-width: 0; margin: 0; padding: 0; border: 0; }
 .setting legend { margin-bottom: 6px; padding: 0; font-weight: 700; color: var(--ink); }
 .choice-line { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; margin: 6px 0; font-size: 14.5px; cursor: pointer; }
@@ -577,8 +565,83 @@ span.order-text { flex: 1; font-size: 15px; }
 .setting-note { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
 .setup-problem { margin: 0 0 12px; font-weight: 600; color: var(--bad); }
 .setup-problem:empty { display: none; }
-.setup-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 8px; }
 .btn-big { min-height: 48px; padding: 0 32px; font-size: 14px; }
+.btn-ink { background: var(--ink); border-color: var(--ink); color: #fff; font-weight: 700; }
+.btn-ink:hover { background: #2B4D79; }
+.btn-ink:active { background: #18304F; }
+
+/* The setup page (SPEC 4.1–4.3): a card per mode, each with its own Start,
+   and Change settings, which opens the settings panel. */
+.setup-meta { margin: 2px 0 0; font-size: 14.5px; color: var(--muted); }
+.setup-meta b { color: var(--ink); }
+.setup .set-about { max-width: 760px; margin: 10px 0 0; }
+.about-btn { display: none; }
+.mode-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 760px; margin: 22px 0 0; }
+.mode-card { display: flex; flex-direction: column; padding: 18px 20px 20px; background: #fff; border: 2px solid var(--line); border-radius: 8px; }
+.mode-practice { background: #F2F9FD; border-color: #A9D3EC; }
+.mode-head { display: flex; align-items: center; gap: 12px; }
+.mode-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 42px; height: 42px; border-radius: 10px; background: var(--accent); color: #fff; }
+.mode-exam .mode-icon { background: var(--ink); }
+.mode-title { font-size: 19px; }
+.mode-facts { margin: 2px 0 0; font-size: 14.5px; font-weight: 700; color: var(--ink); }
+.mode-desc { flex: 1 0 auto; margin: 12px 0 16px; font-size: 14.5px; }
+.btn-start { width: 100%; min-height: 46px; font-size: 13.5px; }
+.settings-open { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 760px; margin: 16px 0 8px; padding: 10px 14px; background: #fff; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); text-align: left; }
+.settings-open:hover { border-color: #A9D3EC; }
+.settings-open .mode-icon { width: 36px; height: 36px; background: #EEF1F4; color: var(--ink); }
+.settings-text { display: flex; flex: 1; flex-direction: column; }
+.settings-text span { font-size: 13px; color: var(--muted); }
+.settings-open > svg { flex: none; color: #9AA3AF; }
+
+/* The settings panel: segments, a number box with − and +, rows that open,
+   and switches, with Start kept in view at the bottom. */
+.settings-sheet { width: min(560px, 100%); max-height: calc(100vh - 28px); overflow-y: auto; }
+.ready-sheet .setup-box { margin: 12px 0 0; }
+.settings-panel { display: grid; gap: 16px; margin-top: 12px; font-size: 14.5px; }
+.panel-top { display: flex; align-items: center; gap: 12px; }
+.panel-top .setting { flex: 1; }
+.reset-btn { flex: none; }
+.segs { display: flex; gap: 4px; padding: 4px; background: #EEF1F4; border-radius: 10px; }
+.seg { position: relative; display: flex; flex: 1 1 0; min-width: 0; }
+.seg-input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.seg span { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; min-height: 38px; padding: 4px 6px; border-radius: 7px; font-weight: 600; line-height: 1.2; text-align: center; color: #4B5563; }
+.seg-input:checked + span { background: #fff; color: var(--ink); font-weight: 700; box-shadow: 0 1px 3px rgba(15, 23, 42, .18); }
+.seg-input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 1px; }
+.seg small { font-size: 12px; font-weight: 400; }
+.seg-large span { font-size: 16px; }
+.seg-larger span { font-size: 18px; }
+.count-row { display: flex; align-items: center; gap: 10px; }
+.stepper { display: inline-flex; overflow: hidden; border: 1px solid #8F959E; border-radius: 8px; }
+.step-btn { width: 42px; min-height: 40px; padding: 0; background: #F3F5F7; border: 0; font-size: 20px; line-height: 1; color: var(--ink); }
+.step-btn:disabled { color: #B8BDC5; cursor: not-allowed; }
+.stepper .num-input { width: 4.2em; border: 0; border-left: 1px solid #C6C9CE; border-right: 1px solid #C6C9CE; border-radius: 0; font-weight: 700; text-align: center; }
+.count-of { color: var(--muted); }
+.picks { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
+.pick { padding: 4px 12px; background: #F3F5F7; border: 1px solid var(--line); border-radius: 14px; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.pick[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.custom-minutes { display: flex; align-items: center; gap: 8px; margin-top: -8px; }
+.filter-rows > details { border-top: 1px solid #E5E7EB; }
+.filter-rows > details:last-child { border-bottom: 1px solid #E5E7EB; }
+.filter-row > summary { display: flex; align-items: center; gap: 10px; padding: 11px 2px; list-style: none; font-weight: 700; color: var(--ink); cursor: pointer; }
+.filter-row > summary::-webkit-details-marker { display: none; }
+.row-val { margin-left: auto; font-weight: 400; color: var(--muted); }
+.filter-row > summary svg { flex: none; color: #9AA3AF; transition: transform .15s; }
+.filter-row[open] > summary svg { transform: rotate(90deg); }
+.filter-list { padding: 0 2px 10px; }
+.filter-list .choice-line { flex-wrap: nowrap; align-items: flex-start; }
+.filter-list .choice-line .ctl { margin-top: 1px; }
+.filter-list .link-btn { margin-top: 4px; }
+.switches { display: grid; }
+.switch-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 2px; border-top: 1px solid #EEF0F3; color: var(--ink); cursor: pointer; }
+.switch-line:first-child { border-top: 0; }
+.switch {
+  flex: none; width: 44px; height: 26px; margin: 0; border-radius: 13px; appearance: none; -webkit-appearance: none; cursor: pointer;
+  background: #C9CED6 radial-gradient(circle at 13px 50%, #fff 9px, transparent 10px);
+}
+.switch:checked { background: var(--accent-deep) radial-gradient(circle at calc(100% - 13px) 50%, #fff 9px, transparent 10px); }
+.switch:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.panel-actions { position: sticky; bottom: -18px; margin: 0 -20px -18px; padding: 10px 20px 18px; background: #fff; box-shadow: 0 -6px 16px rgba(31, 58, 95, .06); }
+.panel-actions .setup-problem { margin: 0 0 8px; }
 
 .notice { max-width: 760px; padding: 10px 14px; background: #FFF8E1; border: 1px solid #E8D48A; }
 .score-card { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; width: fit-content; max-width: 100%; margin-bottom: 14px; padding: 18px 24px; border: 1px solid var(--line); border-top: 4px solid var(--accent); }
@@ -914,7 +977,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .class-term { display: block; }
   .class-term::before { content: none; }
   .class-name { font-size: 14.5px; }
-  .order, .bt-lists, .preset-cards, .settings, .editor-grid { grid-template-columns: minmax(0, 1fr); }
+  .order, .bt-lists, .editor-grid { grid-template-columns: minmax(0, 1fr); }
   .host-card { padding: 14px 14px 16px; }
   .host-menu-link { flex: 1 1 0; padding: 9px 10px 10px; text-align: center; }
   .nav-left { width: 100%; }
@@ -991,6 +1054,28 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .more-details { display: inline-flex; align-items: center; gap: 5px; padding: 10px 2px; background: none; border: 0; font-size: 14px; font-weight: 600; color: var(--accent-deep); }
   .more-details::after { content: "▾"; font-size: 11px; }
   .more-details[aria-expanded="true"]::after { content: "▴"; }
+
+  /* The setup page (idea 1): the description under About this set, the
+     mode cards one above the other with big Start buttons, and the
+     settings panel sliding up with Start pinned at its bottom. */
+  .crumb-code { display: none; }
+  .about-btn { display: inline-flex; align-items: center; gap: 5px; margin: 4px 0 0; padding: 4px 0; background: none; border: 0; font-size: 14px; font-weight: 600; color: var(--accent-deep); }
+  .about-btn::after { content: "▾"; font-size: 11px; }
+  .about-btn[aria-expanded="true"]::after { content: "▴"; }
+  .setup .set-about { display: none; margin: 4px 0 0; }
+  .setup.show-about .set-about { display: block; }
+  .mode-cards { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-top: 14px; }
+  .mode-card { padding: 15px 16px 16px; border-width: 1.5px; border-radius: 16px; }
+  .mode-icon { width: 44px; height: 44px; border-radius: 12px; }
+  .mode-desc { margin: 10px 0 12px; }
+  .btn-start { min-height: 50px; border-radius: 12px; font-size: 16px; letter-spacing: .01em; text-transform: none; }
+  .settings-open { margin-top: 10px; padding: 12px 2px; border: 0; }
+  .settings-sheet.modal { max-height: 92vh; }
+  .settings-sheet .panel-actions {
+    bottom: calc(-16px - env(safe-area-inset-bottom)); margin: 0 -16px calc(-16px - env(safe-area-inset-bottom));
+    padding: 10px 16px calc(16px + env(safe-area-inset-bottom)); box-shadow: 0 -6px 16px rgba(31, 58, 95, .06);
+  }
+  .ready-sheet .modal-actions { flex-direction: row-reverse; }
 
   /* The exam (idea 2): a top bar with Close, the question chip, and icons;
      a slim row with the mode or the time left; one big button at the
@@ -1170,7 +1255,8 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .ctl { appearance: auto; -webkit-appearance: auto; background: none; border: 0; box-shadow: none; }
   .hl[aria-pressed="true"], .token[aria-pressed="true"], .bt-opt[aria-pressed="true"], .strike-btn[aria-pressed="true"],
   .drop.filled, .bt-slot.filled, .tab[aria-selected="true"], .btn-flag[aria-pressed="true"], .btn-save[aria-pressed="true"],
-  .qtile.answered, .preset:has(.ctl:checked) { outline: 2px solid Highlight; }
+  .qtile.answered, .seg-input:checked + span { outline: 2px solid Highlight; }
+  .switch { appearance: auto; -webkit-appearance: auto; background: none; }
   .opt:focus-within { outline: 2px solid Highlight; }
   .btn-continue { border: 1px solid ButtonText; }
   .tabs { border-bottom: 1px solid CanvasText; }

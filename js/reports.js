@@ -14,6 +14,7 @@ import { typeLabel } from './items.js';
 
 export const REASONS = {
   answer: 'The answer marked correct is wrong',
+  correct: 'The answer marked wrong is correct', // added 2026-11-02 (the owner's request)
   unclear: 'A typo, or the question or choices are unclear',
   rationale: 'The rationale is wrong or confusing',
   picture: 'A picture, table, or exhibit is wrong or missing',

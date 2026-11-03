@@ -2,12 +2,12 @@
 // with its class tabs, setup, results, and saved questions. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe } from './util.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets } from './sets.js';
 import {
   examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
-  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, countsForBest,
+  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, practiceCount, countsForBest,
   questionArea, questionParts, feedbackPanel,
 } from './exam.js';
 import { savedSets, savedCount, setSaved, forgetSet, saveButton } from './saved.js';
@@ -56,9 +56,9 @@ function begin(set, settings, onStart, scope = null) {
 
 // The usage stats for an exam started on the setup page: "exam-start", and
 // "settings-changed" with each setting that differs from the mode the student
-// chose (README "Usage stats").
-function trackStart(set, s, chosen, topicCount, typeCount) {
-  const base = { ...DEFAULT_SETTINGS, count: defaultCount(set), ...PRESETS[chosen] };
+// chose (README "Usage stats"). count: the number of questions that mode gives.
+function trackStart(set, s, chosen, count, topicCount, typeCount) {
+  const base = { ...DEFAULT_SETTINGS, count, ...PRESETS[chosen] };
   const on = v => (v ? 'on' : 'off');
   const changes = [];
   const differs = key => JSON.stringify(s[key] ?? null) !== JSON.stringify(base[key] ?? null);
@@ -299,14 +299,19 @@ function resumeBanner() {
   return banner;
 }
 
+// The best score on this browser (SPEC 11.3), or null.
+function bestScore(set, past = setHistory(set.id)) {
+  const counted = past.filter(a => countsForBest(a, set));
+  return counted.length ? Math.max(...counted.map(a => a.percent)) : null;
+}
+
 function setRow(set) {
   const total = set.questions.length;
   const count = defaultCount(set) ?? total; // what Start and Begin give (SPEC 11.3)
   const minutes = Math.round(timeLimitMs(set, count, { timer: 'standard' }) / 60000);
   const past = setHistory(set.id);
   const last = past.at(-1);
-  const counted = past.filter(a => countsForBest(a, set));
-  const best = counted.length ? Math.max(...counted.map(a => a.percent)) : null;
+  const best = bestScore(set, past);
   const known = new Set(set.questions.map(q => q.id));
   const missed = (last?.missed ?? []).filter(id => known.has(id));
   const lastScope = last?.scope === 'missed' ? `, ${plural(last.count, 'missed question')}`
@@ -385,6 +390,8 @@ function problemsPanel(problems) {
 
 // ---------- setup (SPEC 4.1–4.3) ----------
 
+// #/setup/<id>: a card per mode, each with its own Start, and Change settings
+// for everything else (the owner's choice from the mock-ups, 2026-11-02).
 async function setupView(root, { args, isCurrent }) {
   const main = h('main.wrap.setup', h('p.lead', 'Loading…'));
   root.replaceChildren(page(main));
@@ -403,41 +410,89 @@ async function setupView(root, { args, isCurrent }) {
   const course = courses.find(c => c.code === set.course);
   const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
-  // Practice mode first (the owner's choice, 2026-10-15).
-  const s = { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', count: defaultCount(set) };
-  let chosen = 'practice'; // the mode the student picked last, for the usage stats
+  // Each mode has its own number of questions: practice mode's is smaller on phones (SPEC 4.2).
+  const modeCount = { practice: practiceCount(set), exam: defaultCount(set) };
+  const modeSettings = name => ({ ...DEFAULT_SETTINGS, ...PRESETS[name], preset: name, count: modeCount[name] });
+  const size = settings => chooseQuestions(set, { ...settings, shuffleQuestions: false }).length;
   const topics = [...new Set(set.questions.map(q => q.topic))];
   const types = QUESTION_TYPES.filter(t => set.questions.some(q => q.type === t));
-  const matching = () => chooseQuestions(set, { ...s, count: null, shuffleQuestions: false }).length;
-  const syncs = []; // functions that copy s into the form
 
-  // A group of radio buttons that sets s[key].
-  function radios(key, legend, options) {
+  // The instruction box (SPEC 4.1): how many items, the time, and how the exam works.
+  function instructions(settings, n) {
+    const ms = timeLimitMs(set, n, settings);
+    return h('div.setup-box',
+      h('p.setup-lead', h('b', `This assessment has ${plural(n, 'item')}. `),
+        settings.timer === 'off' ? 'It is untimed.' : `You have ${minutesText(ms)} to complete it.`),
+      h('ul',
+        h('li', settings.reveal === 'each' ? 'You will see the answer and rationale after each question.' : 'You will see your score, answers, and rationales at the end.'),
+        h('li', settings.navigation === 'back' ? 'You can go back to earlier questions. Flag a question to skip it for now and come back to it later.' : 'Select Continue to move to the next question. You cannot go back.'),
+        ms ? h('li', 'You can pause the timer for up to 5 minutes in total.') : null,
+        settings.fullscreen && fullscreenAvailable() ? h('li', `The exam opens in full screen.${phone.matches ? '' : ' Press Esc to leave full screen.'}`) : null));
+  }
+
+  // Starts an exam with these settings, from a click. A timed one shows the
+  // instruction box first, with Begin, so the timer never starts by surprise.
+  // mode: the mode the settings came from, for the usage stats.
+  function go(settings, mode) {
+    const start = () => begin(set, settings, () => trackStart(set, settings, mode, modeCount[mode], topics.length, types.length));
+    const n = size(settings);
+    if (!timeLimitMs(set, n, settings)) return start();
+    modal({
+      title: settings.preset === 'exam' ? 'Exam Simulation' : 'Timed Exam',
+      message: instructions(settings, n),
+      buttons: [{ label: 'Begin', value: 'begin', ink: true }, { label: 'Not now', value: 'no' }],
+      sheet: true,
+      kind: 'ready-sheet',
+    }).then(choice => choice === 'begin' && start());
+  }
+
+  // --- a card per mode (SPEC 4.2) ---
+  function modeCard(name, title, iconName, desc, label, look) {
+    const settings = modeSettings(name);
+    const n = size(settings);
+    const ms = timeLimitMs(set, n, settings);
+    return h(`section.mode-card.mode-${name}`, { 'aria-labelledby': `mode-${name}` },
+      h('div.mode-head',
+        h('span.mode-icon', icon(iconName)),
+        h('div', h('h2.mode-title', { id: `mode-${name}` }, title), h('p.mode-facts', `${plural(n, 'question')} · ${ms ? minutesText(ms) : 'Untimed'}`))),
+      h('p.mode-desc', desc),
+      h(`button.btn.btn-start.${look}`, { type: 'button', onclick: () => go(modeSettings(name), name) }, label));
+  }
+
+  // --- Change settings (SPEC 4.3): every setting, in a panel with its own Start ---
+  const s = modeSettings('practice');
+  let chosen = 'practice'; // the mode the panel's settings started from, for the usage stats
+  let panel = null; // the open panel
+  const syncs = []; // functions that copy s into the panel
+
+  // Radio buttons drawn as a row of segments. pick(value) sets s; by default s[key].
+  function segments(key, legend, options, { pick = value => (s[key] = value), quiet = false } = {}) {
     const inputs = options.map(([value, label]) => {
-      const input = h('input.ctl', { type: 'radio', name: `set-${key}`, value });
+      const input = h('input.seg-input', { type: 'radio', name: key === 'preset' ? 'preset' : `set-${key}`, value });
       input.addEventListener('change', () => {
-        s[key] = value;
+        pick(value);
         changed();
       });
-      return [input, h('label.choice-line', input, typeof label === 'string' ? h('span', label) : label)];
+      return [input, h('label.seg', { class: `seg-${value}` }, input, typeof label === 'string' ? h('span', label) : label)];
     });
     syncs.push(() => inputs.forEach(([input]) => (input.checked = s[key] === input.value)));
-    return h('fieldset.setting', h('legend', legend), inputs.map(([, line]) => line));
+    return h('fieldset.setting', h(quiet ? 'legend.sr-only' : 'legend', legend), h('div.segs', inputs.map(([, label]) => label)));
   }
 
-  // A checkbox that turns s[key] on or off.
-  function toggle(key, label) {
-    const input = h('input.ctl', { type: 'checkbox' });
+  // A switch that sets s[key] to on or off.
+  function toggle(key, label, on = true, off = false) {
+    const input = h('input.switch', { type: 'checkbox', role: 'switch' });
     input.addEventListener('change', () => {
-      s[key] = input.checked;
+      s[key] = input.checked ? on : off;
       changed();
     });
-    syncs.push(() => (input.checked = !!s[key]));
-    return h('label.choice-line', input, h('span', label));
+    syncs.push(() => (input.checked = s[key] === on));
+    return h('label.switch-line', h('span', label), input);
   }
 
-  // Checkboxes for topics or question types; s[key] is null while every box is on.
-  function filterBoxes(key, legend, values, labelOf) {
+  // Check boxes for topics or question types, under a row that opens them;
+  // s[key] is null while every box is on.
+  function filterBoxes(key, title, values, labelOf) {
     const inputs = values.map(value => {
       const input = h('input.ctl', { type: 'checkbox', value });
       input.addEventListener('change', () => {
@@ -447,45 +502,56 @@ async function setupView(root, { args, isCurrent }) {
       });
       return input;
     });
-    syncs.push(() => inputs.forEach(i => (i.checked = !s[key] || s[key].includes(i.value))));
-    return h('fieldset.setting', h('legend', legend),
-      inputs.map((input, n) => h('label.choice-line', input, h('span', labelOf(values[n])))));
+    const shown = h('span.row-val');
+    const all = h('button.link-btn', {
+      type: 'button',
+      onclick: () => {
+        s[key] = null;
+        changed();
+      },
+    }, 'Select all');
+    syncs.push(() => {
+      inputs.forEach(i => (i.checked = !s[key] || s[key].includes(i.value)));
+      shown.textContent = s[key] ? `${s[key].length} of ${values.length}` : `All ${values.length}`;
+      all.hidden = !s[key];
+    });
+    return h('details.filter-row',
+      h('summary', h('span', title), shown, icon('chevron')),
+      h('div.filter-list', inputs.map((input, n) => h('label.choice-line', input, h('span', labelOf(values[n])))), all));
   }
 
-  // --- the instruction box (SPEC 4.1) ---
-  const summary = h('div.setup-box');
-
-  // --- the two presets (SPEC 4.2) ---
-  const presetInputs = {};
-  const presetCard = (name, title, points) => {
-    const input = h('input.ctl', { type: 'radio', name: 'preset', value: name });
-    input.addEventListener('change', () => {
-      Object.assign(s, PRESETS[name]);
-      chosen = name;
-      changed();
-    });
-    presetInputs[name] = input;
-    return h('label.preset', input,
-      h('span.preset-body', h('span.preset-title', title), h('ul.preset-points', points.map(p => h('li', p)))));
-  };
-  const customNote = h('p.custom-note', { hidden: true }, 'You changed some settings, so neither mode is selected. Your custom settings will be used.');
-
-  // --- Customize settings (SPEC 4.3) ---
+  // Number of questions: a box with − and +, and quick picks (each mode's number, and all).
+  const matching = () => size({ ...s, count: null });
   const countInput = h('input.num-input', { type: 'number', min: '1', step: '1', inputmode: 'numeric', 'aria-label': 'Number of questions' });
-  const countOf = h('span');
-  countInput.addEventListener('input', () => {
-    const n = parseInt(countInput.value, 10);
-    const most = matching();
-    s.count = !n || n >= most ? null : Math.max(1, n);
+  const countOf = h('span.count-of');
+  function setCount(n) {
+    s.count = !n || n >= matching() ? null : Math.max(1, n);
     changed();
-  });
+  }
+  countInput.addEventListener('input', () => setCount(parseInt(countInput.value, 10)));
+  const step = by => () => setCount(Math.max(1, Math.min(s.count ?? matching(), matching()) + by));
+  const fewer = h('button.step-btn', { type: 'button', 'aria-label': 'Fewer questions', onclick: step(-1) }, '−');
+  const more = h('button.step-btn', { type: 'button', 'aria-label': 'More questions', onclick: step(1) }, '+');
+  const picks = [...new Set([modeCount.practice, modeCount.exam].filter(Boolean))].sort((a, b) => a - b)
+    .map(n => [n, h('button.pick', { type: 'button', onclick: () => setCount(n) }, String(n))]);
+  const allPick = h('button.pick', { type: 'button', onclick: () => setCount(null) });
   syncs.push(() => {
     const most = matching();
+    const now = Math.min(s.count ?? most, most);
     countInput.max = String(most);
-    if (document.activeElement !== countInput) countInput.value = String(Math.min(s.count ?? most, most));
-    countOf.textContent = ` of ${most}`;
+    if (document.activeElement !== countInput) countInput.value = String(now);
+    countOf.textContent = `of ${most}`;
+    for (const [n, button] of picks) {
+      button.hidden = n >= most;
+      button.setAttribute('aria-pressed', String(now === n));
+    }
+    allPick.textContent = `All ${most}`;
+    allPick.setAttribute('aria-pressed', String(now === most));
+    fewer.disabled = now <= 1;
+    more.disabled = now >= most;
   });
 
+  // The timer: Off, the standard time, or a number of minutes.
   const minutesInput = h('input.num-input', { type: 'number', min: '1', max: '600', step: '1', inputmode: 'numeric', 'aria-label': 'Custom time in minutes' });
   minutesInput.addEventListener('input', () => {
     const m = parseInt(minutesInput.value, 10);
@@ -493,89 +559,114 @@ async function setupView(root, { args, isCurrent }) {
     s.timer = 'custom';
     changed();
   });
+  const customLine = h('label.custom-minutes', minutesInput, h('span', 'minutes'));
   syncs.push(() => {
     if (document.activeElement !== minutesInput) minutesInput.value = s.minutes ?? '';
+    customLine.hidden = s.timer !== 'custom';
   });
-  const standardLabel = h('span');
+  const standardTime = h('small');
+  const standardLabel = h('span', 'Standard', standardTime);
 
-  const settings = h('div.settings',
-    radios('reveal', 'Show answers', [['each', 'After each question'], ['end', 'At the end']]),
-    radios('navigation', 'Navigation', [['continue', 'Continue only (no going back)'], ['back', 'Allow going back and flagging']]),
-    radios('timer', 'Timer', [
-      ['standard', standardLabel],
-      ['custom', h('span', 'Custom: ', minutesInput, ' minutes')],
-      ['off', 'Off'],
-    ]),
+  const customNote = h('p.custom-note', { hidden: true }, 'You changed some settings, so neither mode is selected. These settings will be used.');
+  const reset = h('button.link-btn.reset-btn', {
+    type: 'button',
+    onclick: () => {
+      Object.assign(s, modeSettings(chosen));
+      changed();
+    },
+  }, 'Reset');
+  const problem = h('p.setup-problem', { role: 'alert' });
+  const startBtn = h('button.btn.btn-ink.btn-start', {
+    type: 'button',
+    onclick: () => {
+      panel?.close('start');
+      go({ ...s }, chosen);
+    },
+  });
+  const form = h('div.settings-panel',
+    h('div.panel-top',
+      segments('preset', 'Mode', [['practice', 'Practice mode'], ['exam', 'Exam simulation']], {
+        quiet: true,
+        pick: name => {
+          Object.assign(s, PRESETS[name], { count: modeCount[name] });
+          chosen = name;
+        },
+      }),
+      reset),
+    customNote,
     h('fieldset.setting',
       h('legend', 'Number of questions'),
-      h('div.choice-line', countInput, countOf),
-      h('p.setting-note', 'Questions are spread across the topics, and ones you haven\'t seen yet come first. Case-study questions stay together and in order.')),
-    filterBoxes('topics', 'Topics to include', topics, t => `${t} (${set.questions.filter(q => q.topic === t).length})`),
-    filterBoxes('types', 'Question types to include', types, t => `${typeLabel(t)} (${set.questions.filter(q => q.type === t).length})`),
-    h('fieldset.setting',
-      h('legend', 'Options'),
+      h('div.count-row', h('div.stepper', fewer, countInput, more), countOf),
+      h('div.picks', picks.map(([, button]) => button), allPick),
+      h('p.setting-note', "Questions are spread across the topics. Ones you haven't seen yet come first, with a few you missed before mixed in. Case-study questions stay together and in order.")),
+    segments('timer', 'Timer', [['off', 'Off'], ['standard', standardLabel], ['custom', 'Custom']]),
+    customLine,
+    segments('reveal', 'Show answers', [['each', 'After each question'], ['end', 'At the end']]),
+    h('div.filter-rows',
+      filterBoxes('topics', 'Topics', topics, t => `${t} (${set.questions.filter(q => q.topic === t).length})`),
+      filterBoxes('types', 'Question types', types, t => `${typeLabel(t)} (${set.questions.filter(q => q.type === t).length})`)),
+    segments('textSize', 'Text size', [['standard', 'Standard'], ['large', 'Large'], ['larger', 'Larger']]),
+    h('div.switches',
+      toggle('navigation', 'Go back and flag questions', 'back', 'continue'),
       toggle('shuffleQuestions', 'Shuffle question order'),
       toggle('shuffleChoices', 'Shuffle answer choices'),
       fullscreenAvailable() ? toggle('fullscreen', 'Full screen') : null,
-      toggle('calculator', 'Calculator available')),
-    radios('textSize', 'Text size', [['standard', 'Standard'], ['large', 'Large'], ['larger', 'Larger']]));
+      toggle('calculator', 'Calculator')),
+    h('div.panel-actions', problem, startBtn));
 
-  const problem = h('p.setup-problem', { role: 'alert' });
-  const beginBtn = h('button.btn.btn-accent.btn-big', {
-    type: 'button',
-    onclick: () => {
-      const settings = { ...s };
-      begin(set, settings, () => trackStart(set, settings, chosen, topics.length, types.length));
-    },
-  }, 'Begin');
-
-  // After any change: work out which preset still matches, then redraw.
+  // After any change: work out which mode still matches, then redraw.
   // (Boxes being typed in are left alone; see the sync functions above.)
   function changed() {
     if (s.timer === 'custom' && s.minutes == null && document.activeElement !== minutesInput) {
       // Start a custom timer from the standard time.
-      s.minutes = Math.max(1, Math.round(timeLimitMs(set, chooseQuestions(set, { ...s, shuffleQuestions: false }).length, { ...s, timer: 'standard' }) / 60000));
+      s.minutes = Math.max(1, Math.round(timeLimitMs(set, size(s), { ...s, timer: 'standard' }) / 60000));
     }
     s.preset = presetMatches(s, 'exam') ? 'exam' : presetMatches(s, 'practice') ? 'practice' : 'custom';
     syncs.forEach(fn => fn());
-    refresh();
-  }
-
-  function refresh() {
-    for (const [name, input] of Object.entries(presetInputs)) input.checked = s.preset === name;
+    const n = size(s);
+    standardTime.textContent = `${Math.round(timeLimitMs(set, n, { ...s, timer: 'standard' }) / 60000)} min`;
     customNote.hidden = s.preset !== 'custom';
-    const n = chooseQuestions(set, { ...s, shuffleQuestions: false }).length;
-    const ms = timeLimitMs(set, n, s);
-    standardLabel.textContent = `Standard (${minutesText(timeLimitMs(set, n, { ...s, timer: 'standard' }))})`;
-    fill(summary,
-      h('p.setup-lead', h('b', `This assessment has ${plural(n, 'item')}. `),
-        s.timer === 'off' ? 'It is untimed.' : ms ? `You have ${minutesText(ms)} to complete it.` : ''),
-      h('ul',
-        h('li', s.reveal === 'each' ? 'You will see the answer and rationale after each question.' : 'You will see your score, answers, and rationales at the end.'),
-        h('li', s.navigation === 'back' ? 'You can go back to earlier questions. Flag a question to skip it for now and come back to it later.' : 'Select Continue to move to the next question. You cannot go back.'),
-        ms ? h('li', 'You can pause the timer for up to 5 minutes in total.') : null,
-        s.fullscreen && fullscreenAvailable() ? h('li', 'The exam opens in full screen. Press Esc to leave full screen.') : null));
     const needMinutes = s.timer === 'custom' && !(s.minutes >= 1);
     problem.textContent = !n ? 'No questions match these settings. Turn on more topics or question types.'
       : needMinutes ? 'Enter how many minutes the custom timer should run.' : '';
-    beginBtn.disabled = !n || needMinutes;
+    startBtn.disabled = !n || needMinutes;
+    startBtn.textContent = n ? `Start · ${plural(n, 'question')}` : 'Start';
   }
 
+  const settingsBtn = h('button.settings-open', {
+    type: 'button',
+    'aria-haspopup': 'dialog',
+    onclick: () => {
+      changed();
+      panel = modal({ title: 'Settings', message: form, sheet: true, kind: 'settings-sheet' });
+      panel.then(() => (panel = null));
+    },
+  },
+  h('span.mode-icon', icon('sliders')),
+  h('span.settings-text', h('b', 'Change settings'), h('span', 'Questions, timer, topics, text size')),
+  icon('chevron'));
+
+  // Phones (SPEC 11.8): the description opens under About this set.
+  const about = set.description ? h('p.lead.set-about#set-about', set.description) : null;
+  const aboutBtn = about ? h('button.about-btn', { type: 'button', 'aria-expanded': 'false', 'aria-controls': 'set-about' }, 'About this set') : null;
+  aboutBtn?.addEventListener('click', () => aboutBtn.setAttribute('aria-expanded', String(main.classList.toggle('show-about'))));
+  const past = setHistory(set.id);
+  const best = bestScore(set, past);
+
   fill(main,
-    h('p.crumb', h('a', { href: back }, course ? `← ${course.code} ${course.name}` : '← All question sets')),
+    h('p.crumb', h('a', { href: back }, '← ', course ? [h('span.crumb-code', `${course.code} `), course.name] : 'All question sets')),
     set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
     h('h1.page-title', set.title),
-    set.description ? h('p.lead', set.description) : null,
-    summary,
-    h('fieldset.presets',
-      h('legend.section-title', 'Choose a mode'),
-      h('div.preset-cards',
-        presetCard('practice', 'Practice mode', ['Untimed', 'Answer and rationale after each question', 'Go back and flag questions', 'No full screen']),
-        presetCard('exam', 'Exam simulation', ['Timed, with up to 5 minutes of pause', 'Continue only: no going back', 'Answers and rationales at the end', 'Full screen, shuffled questions and choices'])),
-      customNote),
-    h('details.customize', h('summary', 'Customize settings'), settings),
-    problem,
-    h('div.setup-actions', beginBtn, h('a.btn', { href: back }, 'Back')));
+    h('p.setup-meta', `${plural(set.questions.length, 'question')} in this set`,
+      past.length ? [' · Last score ', h('b', `${past.at(-1).percent}%`)] : null,
+      best != null ? [' · Best ', h('b', `${best}%`)] : null),
+    aboutBtn,
+    about,
+    h('div.mode-cards',
+      modeCard('practice', 'Practice mode', 'bulb', 'See the answer and rationale after each question. Go back and flag questions anytime.', 'Start practice', 'btn-accent'),
+      modeCard('exam', 'Exam simulation', 'timer',
+        `Like test day: timed, ${fullscreenAvailable() ? 'full screen, ' : ''}no going back. Answers and rationales at the end.`, 'Start exam', 'btn-ink')),
+    settingsBtn);
   changed();
 }
 
