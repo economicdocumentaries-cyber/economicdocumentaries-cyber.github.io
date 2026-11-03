@@ -56,7 +56,7 @@
       "id": "inf-03", "type": "mc", "topic": "Informatics in nursing practice",
       "stem": "A nurse uses the electronic record's admission assessment screens, a care-planning module, and a dashboard that tracks the client's goals. Which of the following statements describes how informatics supports nursing practice?",
       "options": [
-        "Information systems support every step of the nursing process, from assessment to evaluation.",
+        "Information systems support every step of the nursing process.",
         "Information systems replace the nurse's need to assess the client.",
         "Information systems are used only for billing, not for client care.",
         "Information systems matter only after the client is discharged."
@@ -108,10 +108,10 @@
       "id": "inf-07", "type": "mc", "topic": "Informatics in nursing practice",
       "stem": "The hospital's electronic health record goes down for 4 hours of scheduled maintenance. Which of the following actions should the nurse take?",
       "options": [
-        "Stop documenting until the system is back, then chart from memory",
-        "Use the facility's downtime forms, then enter the information as policy directs when the system returns",
-        "Keep notes on personal paper and throw them away after the shift",
-        "Delay medications until the electronic MAR is available again"
+        "Stop documenting until the system is back, then chart everything from memory",
+        "Use the downtime forms, then enter the information when the system returns",
+        "Keep notes on personal paper, then throw them away at the end of the shift",
+        "Delay all medications until the electronic MAR is available again"
       ],
       "answer": 1,
       "rationale": "<p><b>Using the downtime forms, then entering the information as policy directs</b> is correct. Because systems can go down, facilities keep downtime procedures so documentation stays timely and complete and care continues safely.</p><p><b>Charting from memory later</b> risks errors and late, inaccurate entries. <b>Personal notes thrown away</b> create a privacy risk and leave no record of care. <b>Delaying medications</b> puts clients at risk; downtime procedures include a way to give and record medications.</p><p><b>Takeaway:</b> System downtime is a known risk of informatics: follow the downtime procedure, not a workaround.</p>"
@@ -145,10 +145,10 @@
       "id": "inf-10", "type": "mc", "topic": "Health information technology",
       "stem": "A hospital is changing from handwritten orders to computerized provider order entry (CPOE). Which of the following problems will this change most directly reduce?",
       "options": [
-        "Medication errors caused by illegible handwritten orders",
+        "Medication errors from illegible handwritten orders",
         "Client falls in the bathroom at night",
-        "Errors in handoff report between nurses",
-        "Delays in transporting clients to radiology"
+        "Errors in handoff report between nurses at shift change",
+        "Delays in transporting clients to radiology for imaging"
       ],
       "answer": 0,
       "rationale": "<p><b>Errors from illegible handwritten orders</b> is correct. With CPOE, providers enter orders electronically, which removes handwriting problems, and the system can check doses, allergies, and drug interactions as the order is entered.</p><p><b>Falls</b>, <b>handoff errors</b>, and <b>transport delays</b> have other causes and need other solutions, such as rounding, structured handoffs, and better scheduling.</p><p><b>Takeaway:</b> CPOE makes orders legible and checks them as they're written.</p>"
@@ -171,8 +171,8 @@
       "options": [
         "Scan a copy of the client's bar code taped to the medication cart",
         "Give the medication without scanning, since the nurse knows the client",
-        "Override the scan and document the reason afterward",
-        "Have a new ID band printed and applied per policy, then identify the client and scan the new band"
+        "Override the scan and document the reason in the record afterward",
+        "Apply a new ID band per policy, then identify the client and scan it"
       ],
       "answer": 3,
       "rationale": "<p><b>Replacing the band per policy, then identifying the client and scanning</b> is correct. The scan only protects the client when it's done on the band the client is actually wearing, after checking two identifiers.</p><p><b>A copy of the bar code taped to the cart</b> is a workaround that could be scanned for any client. <b>Giving the medication without scanning</b> because the nurse “knows the client” skips a safety check. <b>Overriding and documenting later</b> defeats the purpose of the system. Workarounds like these are a common cause of medication errors with bar-code systems.</p><p><b>Takeaway:</b> When bar-code scanning fails, fix the problem; never work around the safety check.</p>"
@@ -207,9 +207,9 @@
       "options": [
         "Easier access to care for clients who live in rural areas",
         "Fewer hospital readmissions through remote monitoring at home",
-        "No need to protect privacy during video visits",
+        "No need to protect privacy during video visits from home",
         "Care for clients whose limited mobility makes travel hard",
-        "No need for any in-person care again"
+        "No need for any in-person visits or hands-on care again"
       ],
       "answer": [0, 1, 3],
       "rationale": "<p>Telehealth, care delivered at a distance through video visits, phone calls, and remote monitoring, <b>improves access</b> for clients in rural areas and for <b>clients with limited mobility</b>, and remote monitoring can catch problems early and <b>reduce readmissions</b>.</p><p>Privacy <b>still</b> matters: video visits need secure platforms and a private space. Telehealth complements in-person care rather than <b>replacing all of it</b>, since some assessments and treatments need the client in person.</p><p><b>Takeaway:</b> Telehealth expands access and monitoring, with the same privacy and documentation duties as any other care.</p>"
@@ -230,22 +230,22 @@
       "id": "inf-17", "type": "mc", "topic": "E-health, decision support, and health literacy",
       "stem": "A client is learning to use the hospital's patient portal. Which of the following statements by the nurse is accurate?",
       "options": [
-        "“You can view your test results, request refills, and send secure messages to your care team.”",
-        "“You can change the diagnoses in your record if you disagree with them.”",
-        "“The portal is the place to report an emergency, like chest pain.”",
+        "“You can view your test results and send secure messages to your care team.”",
+        "“You can change the diagnoses in your record yourself if you disagree with them.”",
+        "“The portal is the place to report an emergency, like chest pain or trouble breathing.”",
         "“Anyone who knows your name can look up your record in the portal.”"
       ],
       "answer": 0,
-      "rationale": "<p><b>Viewing results, requesting refills, and sending secure messages</b> is correct. A patient portal is part of e-health, health information and services delivered through the internet, which helps clients take part in their care.</p><p>Clients can <b>request</b> corrections, but they can't <b>change their diagnoses</b> themselves. Portal messages aren't monitored around the clock, so an emergency calls for <b>911</b>, not the portal. Portals are protected by <b>secure logins</b>, so only the client and the people the client authorizes can see the record.</p><p><b>Takeaway:</b> Portals help clients see and manage their information securely, but they're not for emergencies.</p>"
+      "rationale": "<p><b>Viewing results and sending secure messages</b> is correct. A patient portal is part of e-health, health information and services delivered through the internet, which helps clients take part in their care.</p><p>Clients can <b>request</b> corrections, but they can't <b>change their diagnoses</b> themselves. Portal messages aren't monitored around the clock, so an emergency calls for <b>911</b>, not the portal. Portals are protected by <b>secure logins</b>, so only the client and the people the client authorizes can see the record.</p><p><b>Takeaway:</b> Portals help clients see and manage their information securely, but they're not for emergencies.</p>"
     },
     {
       "id": "inf-18", "type": "sata", "topic": "E-health, decision support, and health literacy",
       "stem": "A nurse is learning about clinical decision support systems. Which of the following are examples of clinical decision support?",
       "options": [
-        "An alert that a newly ordered antibiotic conflicts with the client's documented allergy",
-        "A patient portal where clients read their lab results",
+        "An alert that a new antibiotic order conflicts with the client's allergy",
+        "A patient portal where clients read their own lab results",
         "A sepsis warning triggered by the client's vital signs and lab values",
-        "A map of where flu cases are clustered in a county",
+        "A map showing where flu cases are clustered in a county",
         "A warning that an ordered dose is above the usual range",
         "A reminder that the client is due for a vaccine"
       ],
@@ -257,7 +257,7 @@
       "stem": "A nurse notices that staff on the unit override most low-priority alerts in the electronic record without reading them. Which of the following actions should the nurse take?",
       "options": [
         "Override the alerts quickly as well, since most of them turn out not to matter",
-        "Report the problem so the informatics team can reduce low-value alerts, and keep reading each alert until then",
+        "Report it so low-value alerts can be reduced, and keep reading each alert",
         "Ask the informatics team to turn off alerts for the nurse's own login only",
         "Stop reading alerts, since the nurse's own judgment is enough to keep clients safe"
       ],
@@ -280,9 +280,9 @@
       "id": "inf-21", "type": "mc", "topic": "E-health, decision support, and health literacy",
       "stem": "A nurse is assessing a client's health literacy. Which of the following definitions of health literacy should the nurse use?",
       "options": [
-        "The ability to read at a college level",
-        "Knowing the meaning of most medical terms",
-        "The ability to find, understand, and use health information to make health decisions",
+        "The ability to read and write at a college level",
+        "Knowing the meaning of most medical terms and abbreviations",
+        "The ability to find, understand, and use health information",
         "The ability to use a computer to look up health information"
       ],
       "answer": 2,
@@ -306,9 +306,9 @@
       "id": "inf-23", "type": "mc", "topic": "E-health, decision support, and health literacy",
       "stem": "A nurse has finished teaching a client how to take a new medication at home. Which of the following statements by the nurse best checks the client's understanding?",
       "options": [
-        "“Do you understand everything I just told you?”",
-        "“Do you have any questions for me?”",
-        "“This is pretty simple, isn't it?”",
+        "“Do you understand everything I just told you about this medicine?”",
+        "“Do you have any questions for me about taking this medicine?”",
+        "“This is pretty simple to remember, isn't it?”",
         "“Tell me in your own words how you'll take this medicine at home.”"
       ],
       "answer": 3,
@@ -319,9 +319,9 @@
       "stem": "A client who speaks Portuguese and very little English is going home today. The client's 15-year-old son offers to interpret the discharge teaching. Which of the following actions should the nurse take?",
       "options": [
         "Have the son interpret, since family members know the client best",
-        "Give the client written instructions in English to take home",
-        "Use a qualified medical interpreter, and document the interpreter's name or ID number",
-        "Speak slowly and loudly in English, using gestures"
+        "Give the client written discharge instructions in English to take home",
+        "Use a qualified medical interpreter and document who interpreted",
+        "Speak slowly and loudly in English, using gestures and pictures"
       ],
       "answer": 2,
       "rationale": "<p><b>Using a qualified medical interpreter and documenting it</b> is correct. Language is part of health literacy, and teaching only works if the client understands it. Qualified interpreters translate accurately and keep information confidential.</p><p><b>Family members, especially children,</b> may leave things out, change the meaning, or not know medical terms, and the client may not speak freely in front of them. <b>English instructions</b> won't be understood. <b>Speaking loudly</b> doesn't help someone who doesn't speak the language.</p><p><b>Takeaway:</b> Use a qualified interpreter, never a family member, and document who interpreted.</p>"
@@ -400,11 +400,11 @@
       "options": [
         "Squeeze a note about the dressing change into the space after the 1000 entry",
         "Write the note in the margin next to the 1000 entry and initial it",
-        "“1400: Late entry for 1000: Dressing to left lower leg changed; wound bed pink, no drainage. J. Lee, RN”",
+        "Write a new 1400 entry labeled “late entry for 1000,” then sign it",
         "Leave the dressing change out, since it's too late to chart it"
       ],
       "answer": 2,
-      "rationale": "<p><b>A dated, signed note at 1400 labeled “late entry for 1000”</b> is correct. Late entries are clearly identified as late, say which event they refer to, are signed and dated, and leave no blank lines.</p><p><b>Squeezing a note into an old entry</b> and <b>writing in the margin</b> make it look as if the record was altered. <b>Leaving it out</b> makes the record incomplete: legally, care that isn't documented wasn't done.</p><p><b>Takeaway:</b> A late entry is written now, labeled late, and points to the time of the care.</p>"
+      "rationale": "<p><b>A dated, signed note at 1400 labeled “late entry for 1000”</b> is correct, such as “1400: Late entry for 1000: Dressing to left lower leg changed; wound bed pink, no drainage. J. Lee, RN.” Late entries are clearly identified as late, say which event they refer to, are signed and dated, and leave no blank lines.</p><p><b>Squeezing a note into an old entry</b> and <b>writing in the margin</b> make it look as if the record was altered. <b>Leaving it out</b> makes the record incomplete: legally, care that isn't documented wasn't done.</p><p><b>Takeaway:</b> A late entry is written now, labeled late, and points to the time of the care.</p>"
     },
     {
       "id": "inf-32", "type": "matrix", "topic": "Documentation guidelines",
@@ -425,10 +425,10 @@
       "id": "inf-33", "type": "mc", "topic": "Documentation guidelines",
       "stem": "A unit uses charting by exception. Which of the following statements about this format is accurate?",
       "options": [
-        "Every assessment finding is written out in a full narrative note.",
-        "Only abnormal or unexpected findings are charted, so the unit needs clear written standards for what's normal.",
-        "It takes more charting time than any other format.",
-        "Normal findings must be described in detail every hour."
+        "Every assessment finding, normal or not, is written out in a full narrative note.",
+        "Only abnormal or unexpected findings are charted, against written standards.",
+        "It takes more charting time than any other documentation format.",
+        "Normal findings must be described in detail every hour on every client."
       ],
       "answer": 1,
       "rationale": "<p><b>Only abnormal or unexpected findings are charted, against clear standards</b> is correct. Charting by exception is a shorthand method: routine and normal findings are covered by well-defined standards, and only the exceptions are written. Its advantages are less charting time and abnormal findings that stand out right away.</p><p><b>Full narrative notes</b> and <b>hourly detail on normal findings</b> describe the opposite approach. Charting by exception <b>saves</b> charting time.</p><p><b>Takeaway:</b> Charting by exception means charting the abnormal and relying on standards for the normal.</p>"
@@ -460,10 +460,10 @@
       "id": "inf-36", "type": "mc", "topic": "Documentation guidelines",
       "stem": "A nurse calls a provider at night because a client has new chest pain. Which of the following actions follows guidelines for reporting a change in condition by telephone?",
       "options": [
-        "Identifying themselves and the client, and reporting the change, current vital signs, and what's been done, with the record at hand",
-        "Giving only the client's pain rating, so the call is short and the provider isn't kept long",
-        "Waiting until the provider makes morning rounds, since the provider is off duty overnight",
-        "Leaving a message with the answering service, then returning to the nurse's other clients"
+        "Identifying themselves and the client, then reporting the change, vital signs, and actions taken",
+        "Giving only the client's pain rating, so that the call stays short and the provider isn't kept long",
+        "Waiting until the provider makes morning rounds, since the provider is off duty for the night",
+        "Leaving a message with the answering service, then going back to care for the nurse's other clients"
       ],
       "answer": 0,
       "rationale": "<p><b>Identifying themselves and the client, and reporting the change, the current vital signs, and what's been done, with the record at hand</b> is correct. A clear, concise report, often in a structured format such as SBAR, lets the provider respond knowledgeably. Afterward, the nurse documents the time of the call, what was reported, and the provider's response.</p><p><b>Only the pain rating</b> leaves out what the provider needs to know. <b>Waiting until morning</b> delays care for a possibly serious change. <b>Leaving a message and walking away</b> doesn't make sure the provider got the report; the nurse must follow up.</p><p><b>Takeaway:</b> When calling about a change, be ready: who you are, who the client is, what changed, the vital signs, and what you've done.</p>"
@@ -472,10 +472,10 @@
       "id": "inf-37", "type": "mc", "topic": "Legal aspects of documentation",
       "stem": "A provider gives a nurse a telephone order for a new medication. Which of the following actions should the nurse take?",
       "options": [
-        "Write the order down, read it back to the provider, and follow policy for the provider's signature",
-        "Remember the order, then write it in the record at the end of the shift",
+        "Write the order down, read it back, and get the provider's signature per policy",
+        "Remember the order, then write it in the client's record at the end of the shift",
         "Have another nurse write the order down while the nurse goes to give the dose",
-        "Give the medication now and ask the provider to enter the order the next day"
+        "Give the medication now and ask the provider to enter the order the next morning"
       ],
       "answer": 0,
       "rationale": "<p><b>Writing it down, reading it back, and following policy for the provider's signature</b> is correct. Telephone and verbal orders follow facility policy: the nurse writes or enters the order, reads it back to confirm it, and the provider co-signs it within the set time.</p><p><b>Writing it later from memory</b> invites errors. <b>Another nurse writing it</b> means the person who heard the order isn't the one who recorded it. <b>Giving it without a documented order</b> leaves no legal order for the medication.</p><p><b>Takeaway:</b> Write it down, read it back, and get it signed.</p>"
@@ -484,10 +484,10 @@
       "id": "inf-38", "type": "mc", "topic": "Legal aspects of documentation",
       "stem": "Which of the following statements about documentation and the law is accurate?",
       "options": [
-        "Documentation can be edited later if a lawsuit is filed.",
-        "Only the provider's notes can be used as evidence in court.",
-        "Charting care before it's given saves time and is acceptable.",
-        "Accurate, complete documentation is the nurse's best defense if their care is questioned."
+        "Documentation can be edited later if a lawsuit is filed against the nurse.",
+        "Only the provider's notes can be used as evidence in a court case.",
+        "Charting care before it's given saves time and is legally acceptable.",
+        "Accurate, complete documentation is the nurse's best legal defense."
       ],
       "answer": 3,
       "rationale": "<p><b>Accurate, complete documentation is the nurse's best defense</b> is correct. The health record is a legal document that can be entered as evidence in court, where it can support a nurse or show that care fell short. Legally, care that isn't documented is treated as care that wasn't done.</p><p><b>Editing after a lawsuit</b> is tampering. The <b>whole record</b>, including nursing documentation, can be used as evidence. <b>Charting before care</b> is inaccurate and dangerous: plans change, and the record must show what actually happened.</p><p><b>Takeaway:</b> If it wasn't documented, it wasn't done.</p>"
@@ -554,7 +554,7 @@
         "“You're right; finding out which nurse was at fault is the main goal of this meeting.”",
         "“Let's skip the analysis and just retrain every nurse on the unit right away.”",
         "“We should focus on the pharmacy staff, since medication errors usually start there.”",
-        "“A root cause analysis looks for the system and process problems that allowed the error, not for someone to blame.”"
+        "“A root cause analysis looks for system and process problems, not someone to blame.”"
       ],
       "answer": 3,
       "rationale": "<p><b>Looking for system and process problems, not blame</b> is correct. A root cause analysis focuses on systems and processes, not individual performance. Most errors come from faulty systems, so blaming one person leaves the real cause in place and discourages others from reporting.</p><p><b>Finding the nurse at fault</b> is the blame approach that RCA avoids. <b>Retraining everyone without analysis</b> guesses at the cause. <b>Assuming it's the pharmacy</b> decides the answer before gathering the data.</p><p><b>Takeaway:</b> RCA asks what in the system let the error happen, not who to blame.</p>"
@@ -563,10 +563,10 @@
       "id": "inf-44", "type": "mc", "topic": "Legal aspects of documentation",
       "stem": "A float nurse's login isn't working, and they ask to use the nurse's login to chart for a few minutes. Which of the following responses should the nurse give?",
       "options": [
-        "“Sure, just log out when you're done charting.”",
-        "“I can't share my login, but I'll help you reach the IT help desk or the charge nurse to get access.”",
-        "“Tell me what to chart, and I'll enter it under my name.”",
-        "“Write your notes on paper, and throw them away after you chart them tomorrow.”"
+        "“Sure, just log out when you're done charting so no one else can use it.”",
+        "“I can't share my login, but I'll help you get access through the IT help desk.”",
+        "“Tell me what to chart, and I'll enter it under my own name for you.”",
+        "“Write your notes on paper, and throw them away after you chart them in the morning.”"
       ],
       "answer": 1,
       "rationale": "<p><b>Declining and helping the float nurse get access</b> is correct. Nurses never use anyone else's login or share their own: everything entered under a login is legally that person's documentation, and the EHR tracks every access.</p><p><b>Sharing the login</b> means the record would show the wrong author. <b>Charting someone else's care under your own name</b> documents care you didn't give. <b>Paper notes charted tomorrow and thrown away</b> delay documentation and risk privacy.</p><p><b>Takeaway:</b> Your login is your signature: never share it, and never chart care you didn't give.</p>"
@@ -575,10 +575,10 @@
       "id": "inf-45", "type": "mc", "topic": "Legal aspects of documentation",
       "stem": "A nurse manager is auditing paper charts. Which of the following findings creates the greatest legal risk?",
       "options": [
-        "A client's own words written in quotation marks",
-        "A late entry clearly labeled with the time it refers to",
-        "Several entries with no date or time, and blank lines left between notes",
-        "An error crossed out with a single line and initialed"
+        "A client's own words written down in quotation marks",
+        "A late entry clearly labeled with the time of the care it refers to",
+        "Entries with no date or time, and blank lines between notes",
+        "An error crossed out with a single line, initialed, and dated"
       ],
       "answer": 2,
       "rationale": "<p><b>Entries with no date or time, and blank lines between notes</b> is correct. Missing dates and times make it impossible to show when care happened, and blank lines invite later additions, which can look like tampering. Both weaken the record in court.</p><p><b>The client's own words in quotation marks</b>, <b>a properly labeled late entry</b>, and <b>an error corrected with one line and initials</b> all follow documentation guidelines.</p><p><b>Takeaway:</b> Every entry needs a date and time, and no blank space should be left behind.</p>"
@@ -611,7 +611,7 @@
       "text": "The program's automatic weight alert is an example of {{0}}, and the nurse's priority is to {{1}}.",
       "blanks": [
         { "options": ["a geographic information system", "computerized provider order entry", "clinical decision support", "a personal health record"], "answer": 2 },
-        { "options": ["wait for Saturday's reading to confirm the trend", "assess the client by video and notify the provider of the weight gain", "turn off the alert, since the client already knows", "tell the client to take two water pills today"], "answer": 1 }
+        { "options": ["wait for Saturday's weight reading to confirm the trend", "assess the client by video and notify the provider", "turn off the alert, since the client already knows about it", "tell the client to take two water pills today instead of one"], "answer": 1 }
       ],
       "rationale": "<p>An automatic alert that applies a rule to the client's data is <b>clinical decision support</b>. The priority is to <b>assess the client and notify the provider</b>: the weight gain, ankle swelling, tight shoes, and needing more pillows to sleep point to worsening fluid overload, and the order says to notify the provider.</p><p><b>Waiting for another reading</b> delays care, <b>turning off the alert</b> removes a safety net, and <b>telling the client to double the medication</b> changes the dose without an order. A geographic information system, CPOE, and a personal health record don't generate alerts like this one.</p><p><b>Takeaway:</b> An alert supports the nurse's judgment, but it still needs the nurse's assessment and action.</p>"
     },
@@ -619,10 +619,10 @@
       "id": "inf-49", "type": "mc", "case": "telehealth", "topic": "Legal aspects of documentation",
       "stem": "The client's daughter asks the nurse for her own login to the client's patient portal so she can help manage the client's medications. Which of the following responses should the nurse give?",
       "options": [
-        "“I can give you your parent's password now, since you're family.”",
-        "“Family members can never have access to a client's records.”",
-        "“You can log in with your parent's account whenever you need to.”",
-        "“Your parent can give written permission for you to have your own proxy access to the portal.”"
+        "“I can give you your parent's portal password right now, since you're family.”",
+        "“Family members can never have access to a client's portal or records.”",
+        "“You can just log in with your parent's account whenever you need to.”",
+        "“Your parent can give you your own proxy access with written permission.”"
       ],
       "answer": 3,
       "rationale": "<p><b>Written permission for proxy access</b> is correct. Family members don't automatically have a right to a client's records, but the client can authorize them. Most portals offer proxy access: the client gives written permission, and the family member gets their own login, so access is tracked and can be limited or ended.</p><p><b>Giving out the client's password</b> and <b>using the client's account</b> share a login and leave no record of who did what. <b>Family can never have access</b> is false: the client can authorize it.</p><p><b>Takeaway:</b> The client controls who sees their information, and proxy access with written permission is the safe route.</p>"
@@ -631,10 +631,10 @@
       "id": "inf-50", "type": "mc", "case": "telehealth", "topic": "Documentation guidelines",
       "stem": "After the visit, the nurse calls the provider, who increases the furosemide dose. Which of the following entries best documents the call?",
       "options": [
-        "“0930: Called the provider about the client's weight problem and noncompliance. New orders received and carried out. Client teaching done.”",
-        "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed furosemide doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”",
-        "“0930: Provider aware of wt gain. Furosemide increased per order. Client to weigh QD and verbalized understanding of all teaching.”",
-        "“0930: Provider seemed unconcerned about the client's weight gain but agreed to increase the dose. Client appears to understand.”"
+        "“0930: Called the provider about the client's weight problem, swollen ankles, and noncompliance with the medication schedule. New orders received and carried out. Client teaching done.”",
+        "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”",
+        "“0930: Provider aware of wt gain and ankle swelling since Monday. Furosemide increased per new order from provider. Client to weigh QD and verbalized understanding of all teaching about the new dose.”",
+        "“0930: Provider seemed unconcerned about the client's weight gain and swollen ankles since Monday but agreed to increase the furosemide dose. Client appears to understand the new dose and when to take it.”"
       ],
       "answer": 1,
       "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>"

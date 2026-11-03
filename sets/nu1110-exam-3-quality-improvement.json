@@ -30,10 +30,10 @@
       "id": "qi-01", "type": "mc", "topic": "The need for quality improvement",
       "stem": "A nurse is explaining what quality health care means. Which of the following definitions from the Institute of Medicine (IOM) should the nurse use?",
       "options": [
-        "Care that costs the client and the hospital as little as possible, in every case",
-        "Care that gives every client whatever services they request, when they request them",
-        "The degree to which health services increase the likelihood of desired outcomes and are consistent with current professional knowledge",
-        "Care that is provided only by the most experienced staff members on each unit"
+        "Care that costs the client and the hospital as little as possible, in every single case",
+        "Care that gives every client whatever tests and services they request, at the moment they request them",
+        "Care that increases the likelihood of desired outcomes and reflects current professional knowledge",
+        "Care that is provided only by the most experienced and highly trained staff on each unit"
       ],
       "answer": 2,
       "rationale": "<p><b>Increasing the likelihood of desired outcomes, consistent with current professional knowledge</b> is correct. That's the IOM's definition of quality: care that makes good outcomes more likely, for individuals and populations, and reflects current knowledge.</p><p><b>The lowest cost</b> isn't the measure of quality; quality management aims for cost-effective care by preventing overuse, misuse, and underuse, not by cutting corners. <b>Whatever clients request</b> may not be appropriate or evidence-based. <b>The most experienced staff</b> doesn't guarantee quality, and every nurse is expected to give quality care.</p><p><b>Takeaway:</b> Quality means better odds of good outcomes, based on current knowledge.</p>"
@@ -56,10 +56,10 @@
       "id": "qi-03", "type": "mc", "topic": "The need for quality improvement",
       "stem": "Which of the following statements defines quality improvement?",
       "options": [
-        "Systematic, continuous actions that lead to measurable improvements in health care services and in the health of targeted client groups",
-        "A one-time inspection of a unit to find staff members who aren't following policy",
-        "A research study that tests a new treatment and requires review board approval",
-        "A yearly survey that asks clients whether they liked their hospital room"
+        "Systematic, continuous actions that lead to measurable improvements in care and health",
+        "A one-time inspection of a unit to find the staff members who aren't following policy",
+        "A research study that tests a new treatment and requires institutional review board approval",
+        "A yearly survey that asks discharged clients whether they liked their hospital room"
       ],
       "answer": 0,
       "rationale": "<p><b>Systematic, continuous actions that lead to measurable improvements</b> is correct. This definition, from the Health Resources and Services Administration (HRSA), highlights what makes QI work: it's ongoing, it's organized, and its results are measured.</p><p><b>A one-time inspection to find staff at fault</b> isn't continuous and focuses on blame instead of systems. <b>A research study</b> generates new knowledge, while QI improves local processes using local data. <b>A yearly room survey</b> may collect some data, but on its own it isn't a systematic improvement process.</p><p><b>Takeaway:</b> QI is continuous, systematic, and measurable.</p>"
@@ -85,9 +85,9 @@
       "stem": "A nurse is explaining how the Institute of Medicine's report To Err Is Human changed the way hospitals respond to errors. Which of the following statements reflects the report's main message?",
       "options": [
         "Most errors are caused by careless individuals, who should be removed.",
-        "Errors are rare, so tracking them isn't worth the cost.",
-        "Only physicians make errors that harm clients.",
-        "Most errors come from faulty systems and processes, so the fix is to redesign the systems."
+        "Errors are rare, so tracking and reporting them isn't worth the cost.",
+        "Only physicians make the kinds of errors that harm clients.",
+        "Most errors come from faulty systems, which need to be redesigned."
       ],
       "answer": 3,
       "rationale": "<p><b>Most errors come from faulty systems, so the fix is to redesign them</b> is correct. To Err Is Human (2000) estimated that errors caused about 98,000 hospital deaths a year, and its central message was that good people working in bad systems make mistakes, so safety depends on better systems.</p><p><b>Blaming careless individuals</b> is the approach the report moved away from. Errors are <b>common</b>, not rare. And errors involve <b>every</b> discipline, not only physicians.</p><p><b>Takeaway:</b> Fix the system, not the blame.</p>"
@@ -107,8 +107,8 @@
       "id": "qi-07", "type": "mc", "topic": "The need for quality improvement",
       "stem": "Which of the following statements describes a conclusion of the Institute of Medicine's report Crossing the Quality Chasm?",
       "options": [
-        "The U.S. health care system was working well and needed only small adjustments to its funding.",
-        "The health care system was too disorganized to care well for people with several chronic illnesses, and needed redesign around six aims.",
+        "The U.S. health care system was working well and needed only small adjustments to its funding and staffing.",
+        "The health care system needed redesign around six aims to care well for people with chronic illnesses.",
         "Hospitals should stop measuring quality, because collecting data distracts staff from client care.",
         "Quality would improve on its own if hospitals simply hired more physicians and specialists."
       ],
@@ -131,10 +131,10 @@
       "id": "qi-09", "type": "mc", "topic": "The need for quality improvement",
       "stem": "A nurse is asked why the hospital invests so much in quality improvement. Which of the following explanations is most accurate?",
       "options": [
-        "It mainly helps the hospital look good in its advertisements.",
-        "It replaces the need for nurses to use clinical judgment.",
-        "Measuring care against standards and fixing processes reduces errors, infections, falls, and readmissions.",
-        "It's required only once, when the hospital first opens."
+        "It mainly helps the hospital look good in its advertisements and rankings.",
+        "It replaces the need for nurses to use their own clinical judgment.",
+        "Measuring care and fixing processes reduces errors, infections, and falls.",
+        "It's required only once, when the hospital first opens its doors."
       ],
       "answer": 2,
       "rationale": "<p><b>Measuring care and fixing processes reduces errors, infections, falls, and readmissions</b> is correct. QI connects directly to client outcomes: fewer complications and readmissions, safer care, lower costs, and more satisfied clients.</p><p>Good results may help a hospital's reputation, but <b>advertising</b> isn't the purpose. QI supports nurses' judgment rather than <b>replacing it</b>. And QI is <b>continuous</b>, not a one-time requirement.</p><p><b>Takeaway:</b> QI matters because it makes measurable differences in client outcomes.</p>"
@@ -155,10 +155,10 @@
       "id": "qi-11", "type": "mc", "topic": "The need for quality improvement",
       "stem": "Which of the following statements describes the main purpose of quality management?",
       "options": [
-        "Ranking nurses by how quickly they finish their tasks",
-        "Evaluating care processes against accepted standards to correct problems before they harm clients",
-        "Replacing the need for accreditation surveys",
-        "Finding staff members to discipline after errors"
+        "Ranking nurses by how quickly they finish their assigned tasks each shift",
+        "Evaluating care against standards to fix problems before harm occurs",
+        "Replacing the need for accreditation surveys by outside agencies",
+        "Finding the staff members to discipline after errors and near misses"
       ],
       "answer": 1,
       "rationale": "<p><b>Evaluating care against standards to correct problems before they harm clients</b> is correct. Quality management evaluates medical and nursing processes for quality and effectiveness, compared with accepted standards, to correct problems, prevent errors, and provide cost-effective care by preventing overuse, misuse, and underuse.</p><p><b>Speed rankings</b> don't measure quality. Quality management doesn't <b>replace accreditation</b>; it helps organizations meet accreditation standards. <b>Disciplining staff</b> focuses on blame instead of systems.</p><p><b>Takeaway:</b> Quality management compares care with standards to fix problems before clients are harmed.</p>"
@@ -168,9 +168,9 @@
       "stem": "A unit's QI team wants to know whether the quality of its nursing care is improving. Which of the following data would show this best?",
       "options": [
         "The unit's rates of falls and pressure injuries over the past year",
-        "The number of nurses hired over the past year",
-        "The total hours of overtime worked on the unit",
-        "The number of supplies the unit ordered"
+        "The number of nurses hired on the unit over the past year",
+        "The total hours of overtime that nurses worked on the unit this year",
+        "The number of supplies the unit ordered over the past year"
       ],
       "answer": 0,
       "rationale": "<p><b>Rates of falls and pressure injuries over time</b> is correct. QI depends on measurable outcomes, and falls and pressure injuries are nurse-sensitive outcomes that reflect the quality of nursing care. Tracking them over time shows whether care is improving.</p><p><b>Hiring</b>, <b>overtime</b>, and <b>supply orders</b> describe staffing and costs. They may affect quality, but they don't measure client outcomes.</p><p><b>Takeaway:</b> Judge the quality of care by client outcomes over time.</p>"
@@ -205,9 +205,9 @@
       "id": "qi-15", "type": "mc", "topic": "Quality initiatives and agencies",
       "stem": "A hospital requires staff to use two client identifiers, such as name and date of birth, before every medication and procedure. Which of the following initiatives most directly drives this requirement?",
       "options": [
-        "Healthy People 2030",
-        "OSHA's workplace safety standards",
-        "Medicare Part D drug coverage",
+        "Healthy People 2030's national health objectives",
+        "OSHA's workplace safety standards for hospital employees",
+        "Medicare Part D prescription drug coverage",
         "The Joint Commission's National Patient Safety Goals"
       ],
       "answer": 3,
@@ -246,10 +246,10 @@
       "id": "qi-18", "type": "mc", "topic": "Quality initiatives and agencies",
       "stem": "Which of the following statements explains how accreditation by The Joint Commission drives quality improvement in hospitals?",
       "options": [
-        "The Joint Commission manages each hospital's daily staffing.",
-        "Hospitals must meet evidence-based standards and show continuous improvement to keep their accreditation.",
-        "The Joint Commission licenses each nurse who works in an accredited hospital.",
-        "The Joint Commission pays for every hospital's QI projects."
+        "The Joint Commission manages each hospital's daily staffing and budget.",
+        "Hospitals must meet standards and show continuous improvement to stay accredited.",
+        "The Joint Commission licenses each nurse who works in one of its accredited hospitals.",
+        "The Joint Commission pays for every hospital's QI projects and staff."
       ],
       "answer": 1,
       "rationale": "<p><b>Meeting evidence-based standards and showing continuous improvement</b> is correct. To be reaccredited, an organization must show that it continuously evaluates its performance, corrects deficiencies, and improves, and on-site surveys check this. That makes QI an ongoing requirement.</p><p>The Joint Commission doesn't manage <b>daily staffing</b>, <b>license nurses</b> (the state board of nursing does), or <b>pay for QI projects</b>.</p><p><b>Takeaway:</b> Accreditation keeps QI going, because hospitals must keep proving that they meet standards and improve.</p>"
@@ -270,10 +270,10 @@
       "id": "qi-20", "type": "mc", "topic": "Quality initiatives and agencies",
       "stem": "A hospital reports its rates of central line infections to a national CDC system that lets it compare its rates with other hospitals' rates. Which of the following is the main purpose of this reporting?",
       "options": [
-        "To decide which nurses caused each infection",
-        "To replace the hospital's own infection-control program",
-        "To set the price that insurers pay for central lines",
-        "To track and compare health care-associated infections so hospitals can find and fix problems"
+        "To decide which nurses and providers caused each infection",
+        "To replace the hospital's own infection-control program and staff",
+        "To set the price that insurers pay for each central line inserted",
+        "To compare infection rates so hospitals can find and fix problems"
       ],
       "answer": 3,
       "rationale": "<p><b>Tracking and comparing infections so hospitals can find and fix problems</b> is correct. The CDC tracks health care-associated infections through its national reporting system and publishes infection-control guidelines. Comparing a hospital's rates with others' shows where it needs to improve.</p><p>The goal is system improvement, not finding <b>who caused</b> each infection. National data <b>support</b> the hospital's own program rather than replacing it, and they don't set <b>prices</b>.</p><p><b>Takeaway:</b> National infection data let hospitals compare themselves with others and focus their improvement work.</p>"
@@ -354,9 +354,9 @@
       "id": "qi-27", "type": "mc", "topic": "QI and other concepts",
       "stem": "A QI team is choosing a change to reduce catheter-associated infections on its unit. Which of the following approaches is best?",
       "options": [
-        "Choosing whatever change the most senior nurse prefers",
-        "Basing the change on the best available evidence, then testing it with the unit's own data",
-        "Copying another hospital's change without checking whether it worked",
+        "Choosing whatever change the most senior nurse on the unit prefers",
+        "Basing the change on the best evidence, then testing it with unit data",
+        "Copying another hospital's change without checking whether it worked there",
         "Making several changes at once without measuring any of them"
       ],
       "answer": 1,
@@ -379,10 +379,10 @@
       "id": "qi-29", "type": "mc", "topic": "The quality improvement process",
       "stem": "A client dies after a medication error in an accredited hospital. Which of the following statements describes The Joint Commission's role after this sentinel event?",
       "options": [
-        "It reviews how the hospital responded, including its root cause analysis and action plan, as part of accreditation.",
-        "It decides whether the nurse involved keeps their license.",
-        "It takes over the hospital's operations until the investigation ends.",
-        "It has no role, because each hospital handles its own errors privately."
+        "It reviews the hospital's root cause analysis and action plan as part of accreditation.",
+        "It decides whether the nurse involved in the error keeps their nursing license.",
+        "It takes over the hospital's daily operations until its own investigation ends.",
+        "It has no role, because each hospital handles its own errors privately, without reporting."
       ],
       "answer": 0,
       "rationale": "<p><b>It reviews the hospital's response, including the root cause analysis and action plan</b> is correct. A sentinel event, an unexpected occurrence involving death, serious physical or psychological injury, or the risk of it, requires immediate investigation and response. The Joint Commission expects a thorough root cause analysis and a plan to reduce future risk, and it reviews the response as part of accreditation.</p><p><b>Licensure decisions</b> belong to the state board of nursing. The Joint Commission doesn't <b>take over hospitals</b>. And sentinel events aren't handled <b>privately</b>: accreditors expect a documented response.</p><p><b>Takeaway:</b> After a sentinel event come a root cause analysis, an action plan, and The Joint Commission's review.</p>"
@@ -391,10 +391,10 @@
       "id": "qi-30", "type": "mc", "topic": "The quality improvement process",
       "stem": "Which of the following situations is a breach of care?",
       "options": [
-        "A nurse reports a near miss to the charge nurse.",
-        "A client who has been told the risks declines a bath.",
-        "A nurse doesn't reassess a client's pain after giving an opioid, although the policy requires it.",
-        "A nurse asks for help programming an unfamiliar infusion pump."
+        "A nurse reports a near miss to the charge nurse right away.",
+        "A client who has been told the risks declines a bath this morning.",
+        "A nurse skips the required pain reassessment after giving an opioid.",
+        "A nurse asks a coworker for help programming an unfamiliar infusion pump."
       ],
       "answer": 2,
       "rationale": "<p><b>Not reassessing after an opioid, as the policy requires</b> is correct. A breach of care occurs when a nurse does something that shouldn't have been done, or doesn't do something that should have been done. Missing a required reassessment is an omission, and nurses are most often involved in breaches around bedside assessment and monitoring.</p><p><b>Reporting a near miss</b> and <b>asking for help</b> with unfamiliar equipment are safe, expected practices. <b>A client's informed refusal</b> is the client's right, not a breach, as long as it's respected and documented.</p><p><b>Takeaway:</b> A breach of care is doing what shouldn't be done, or not doing what should be.</p>"
@@ -404,10 +404,10 @@
       "stem": "Which of the following actions help a nurse reduce the risk of a breach of care?",
       "options": [
         "Reporting problems to supervisors",
-        "Skipping documentation on busy shifts",
+        "Skipping documentation on busy shifts to save time for client care",
         "Staying current in skills and education",
-        "Basing care on a nursing model, and documenting the care and the client's response",
-        "Avoiding questions so they look competent"
+        "Basing care on a nursing model and documenting the client's response",
+        "Avoiding questions so they look competent to their coworkers"
       ],
       "answer": [0, 2, 3],
       "rationale": "<p>Nurses reduce the risk of a breach of care by <b>reporting problems to supervisors</b>, <b>staying current in skills and education</b>, and <b>basing all care on a nursing model and documenting the care and the client's response</b>.</p><p><b>Skipping documentation</b> leaves no proof that care was given. <b>Avoiding questions</b> leads to mistakes with unfamiliar tasks; asking is safe practice.</p><p><b>Takeaway:</b> Speak up, stay current, and document care and responses.</p>"
@@ -442,10 +442,10 @@
       "id": "qi-34", "type": "mc", "topic": "The quality improvement process",
       "stem": "A nurse completes an incident report after giving a client the wrong dose of a medication. Which of the following statements about the report is accurate?",
       "options": [
-        "It is placed in the client's medical record.",
-        "It is sent to risk management or the quality department per policy, and it isn't part of the medical record.",
-        "It is given to the client's family so they know what happened.",
-        "The nurse keeps a copy at home in case of a lawsuit."
+        "It is placed in the client's medical record with the nurse's notes.",
+        "It goes to risk management and stays out of the medical record.",
+        "It is given to the client's family so that they know what happened.",
+        "The nurse keeps a copy at home in case of a lawsuit or inquiry."
       ],
       "answer": 1,
       "rationale": "<p><b>It goes to risk management or the quality department, not into the medical record</b> is correct. An incident (occurrence) report documents any event out of the ordinary that harmed or could have harmed a client, employee, or visitor. It's a confidential QI and risk management tool, used to find patterns and fix systems, and access is limited to risk management, QI staff, and administrators.</p><p>It's <b>never placed in the client's record</b>, and the record shouldn't mention it. It isn't <b>given to the family</b>; the client and family are told what happened through the facility's disclosure process. <b>Copies taken home</b> break confidentiality.</p><p><b>Takeaway:</b> Chart the facts of the event in the record; send the incident report to risk management, never into the chart.</p>"
@@ -557,10 +557,10 @@
       "id": "qi-43", "type": "mc", "topic": "Quality management programs",
       "stem": "A 4-week test of a new medication-pass routine on one unit cut interruptions and errors in half, with no new problems. Which of the following actions belongs in the Act phase?",
       "options": [
-        "Running the same 4-week test again on the same unit",
-        "Adopting the routine, updating the policy, and spreading it to other units",
-        "Deciding which data to collect during the test",
-        "Ending the routine, since the test is over"
+        "Running the same 4-week test again on the same unit to be sure",
+        "Adopting the routine and spreading it to other units",
+        "Deciding which data the team will collect during the test",
+        "Ending the new routine, since the 4-week test is over"
       ],
       "answer": 1,
       "rationale": "<p><b>Adopting the routine, updating the policy, and spreading it</b> is correct. In the Act phase, the team decides to adopt, adapt (modify), or abandon the change. A successful test is adopted and standardized.</p><p><b>Repeating the same test</b> adds nothing when the results were clear. <b>Deciding which data to collect</b> belongs in Plan. <b>Ending a change that worked</b> throws away the improvement.</p><p><b>Takeaway:</b> In Act, adopt, adapt, or abandon the change, based on what Study showed.</p>"
@@ -569,7 +569,7 @@
       "id": "qi-44", "type": "mc", "topic": "Quality management programs",
       "stem": "Why does the Plan-Do-Study-Act cycle repeat instead of ending after one round?",
       "options": [
-        "Each round's results lead to the next test of change, so improvement keeps going.",
+        "Each round's results lead to the next test of change.",
         "The first round always fails, so the team has to try again.",
         "Accreditors require exactly three rounds for every change.",
         "Repeating the cycle lets the team skip measuring results."
@@ -583,7 +583,7 @@
       "options": [
         "A run chart",
         "A PICOT question",
-        "A fishbone (cause-and-effect) diagram",
+        "A fishbone diagram",
         "A pie chart of staffing"
       ],
       "answer": 2,
@@ -703,9 +703,9 @@
       "stem": "A small test of a new oral-care routine didn't lower the unit's rate of hospital-acquired pneumonia. Which of the following actions fits the Act phase of the PDSA cycle?",
       "options": [
         "Adapting or abandoning the change, then planning another test",
-        "Adopting the change on every unit",
-        "Stopping all work on preventing pneumonia",
-        "Repeating the same test with no changes"
+        "Adopting the new oral-care routine on every unit in the hospital",
+        "Stopping all of the unit's work on preventing pneumonia",
+        "Repeating the same 4-week test again with no changes"
       ],
       "answer": 0,
       "rationale": "<p>In the <b>Act</b> phase, the team decides what to do with what it learned: <b>adopt</b> a change that worked, <b>adapt</b> it, or <b>abandon</b> it. A change that didn't work is adapted or abandoned, and the cycle starts again with a <b>new plan</b>.</p><p><b>Adopting</b> a change that didn't help spreads it without benefit. <b>Stopping the work</b> leaves the problem unsolved. <b>Repeating the same test</b> unchanged is unlikely to give a different result.</p><p><b>Takeaway:</b> Act: adopt a change that worked; adapt or abandon one that didn't, and plan the next cycle.</p>"

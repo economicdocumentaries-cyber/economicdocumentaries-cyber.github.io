@@ -120,12 +120,12 @@
       "id": "hcs-08", "type": "emr", "topic": "Levels of prevention and care",
       "stem": "A nurse is reviewing the clients on a medical unit. Which 2 clients are the most appropriate for a referral to hospice?",
       "options": [
-        "A client who has metastatic pancreatic cancer, is expected to live about 3 months, and has decided to stop chemotherapy",
+        "A client who has metastatic pancreatic cancer with about 3 months to live and has stopped chemotherapy",
         "A client who has newly diagnosed breast cancer and wants help with nausea during chemotherapy",
-        "A client who has end-stage COPD, is expected to live less than 6 months, and wants to focus on comfort at home",
+        "A client who has end-stage COPD with less than 6 months to live and wants comfort care at home",
         "A client who is recovering from a hip fracture and needs physical therapy before going home",
         "A client who has heart failure and wants every available treatment, including an evaluation for a heart transplant",
-        "A client who had a stroke last week and is starting speech therapy"
+        "A client who had a stroke last week, is expected to recover, and is starting speech therapy"
       ],
       "answer": [0, 2],
       "select": 2,
@@ -160,9 +160,9 @@
       "id": "hcs-11", "type": "mc", "topic": "Factors affecting health care delivery",
       "stem": "A nurse reads a report showing that rural counties have far fewer primary care providers and nurses per resident than cities do. Which of the following factors affecting health care delivery does this describe?",
       "options": [
-        "Advances in technology",
-        "Efforts to contain the cost of care",
-        "Growth of the older adult population",
+        "Rapid advances in health care technology",
+        "Efforts to contain the rising cost of health care",
+        "Rapid growth of the older adult population",
         "Uneven distribution of the health care workforce"
       ],
       "answer": 3,
@@ -199,7 +199,7 @@
       "stem": "A hospital is adding robotic surgery and telehealth visits. Complete the following sentence.",
       "text": "Advances in technology like these can {{0}}, but they also tend to {{1}}.",
       "blanks": [
-        { "options": ["replace the need for nursing assessment", "lower the cost of every procedure", "shorten recovery and reach clients at a distance", "eliminate the need for hospitals"], "answer": 2 },
+        { "options": ["replace the need for nursing assessment and judgment", "lower the cost of every procedure and hospital stay", "shorten recovery and reach clients at a distance", "eliminate the need for hospitals in most communities"], "answer": 2 },
         { "options": ["reduce access for rural clients", "raise the cost of care", "make documentation unnecessary", "end the need for client teaching"], "answer": 1 }
       ],
       "rationale": "<p>New technology, such as minimally invasive or robotic surgery and telehealth, can <b>shorten recovery and reach clients at a distance</b>, but it also tends to <b>raise the cost of care</b> through equipment, training, and upkeep. The system must balance that against cost containment.</p><p>Technology supports nursing judgment but never <b>replaces nursing assessment</b>, and it doesn't <b>eliminate hospitals</b> or <b>lower the cost of every procedure</b>. Telehealth actually <b>improves</b> access for rural clients, and it doesn't remove the need for <b>documentation</b> or <b>teaching</b>.</p><p><b>Takeaway:</b> Technology cuts both ways in health care delivery: better care and access, at a higher cost.</p>"
@@ -221,9 +221,9 @@
       "stem": "A hospital's data show that clients who speak little English wait longer for pain medication and are readmitted more often than other clients. Which of the following factors affecting health care delivery does this reflect?",
       "options": [
         "Increasing diversity and health disparities",
-        "Advances in technology",
-        "Workforce shortages in rural areas",
-        "Growth of managed care"
+        "Advances in medical technology and telehealth",
+        "Workforce shortages in rural and remote areas",
+        "Growth of managed care and provider networks"
       ],
       "answer": 0,
       "rationale": "<p><b>Increasing diversity and health disparities</b> is correct. A health disparity is a difference in care or outcomes between groups, here linked to language. As the population grows more diverse, the system must provide interpreters and culturally responsive care so every client gets the same quality of care.</p><p><b>Technology</b>, <b>rural workforce shortages</b>, and <b>managed care</b> are real factors, but none of them explains why one group of clients in the same hospital gets slower care and worse outcomes.</p><p><b>Takeaway:</b> Worse care or outcomes for one group is a health disparity; the fix starts with equal access, such as qualified interpreters.</p>"
@@ -247,10 +247,10 @@
         "To give clients unlimited choice of providers, whatever the cost",
         "To have the federal government pay directly for all health care",
         "To move care into hospitals, where it can be closely monitored",
-        "To provide cost-effective, high-quality care that improves outcomes for groups of clients"
+        "To give cost-effective, high-quality care to groups of clients"
       ],
       "answer": 3,
-      "rationale": "<p><b>Cost-effective, high-quality care that improves outcomes for groups of clients</b> is correct. Managed care, which includes HMOs and PPOs, coordinates care to control cost while keeping quality high.</p><p><b>Unlimited choice at any cost</b> is the opposite of managed care, which uses provider networks and, in HMOs, a primary care gatekeeper. <b>The government paying for all care</b> describes a single-payer model, not managed care. <b>Moving care into hospitals</b> raises costs; managed care favors the most cost-effective setting, often outpatient.</p><p><b>Takeaway:</b> Managed care means coordinated care that controls cost while keeping quality.</p>"
+      "rationale": "<p><b>Cost-effective, high-quality care for groups of clients</b> is correct. Managed care, which includes HMOs and PPOs, coordinates care to control cost while keeping quality high.</p><p><b>Unlimited choice at any cost</b> is the opposite of managed care, which uses provider networks and, in HMOs, a primary care gatekeeper. <b>The government paying for all care</b> describes a single-payer model, not managed care. <b>Moving care into hospitals</b> raises costs; managed care favors the most cost-effective setting, often outpatient.</p><p><b>Takeaway:</b> Managed care means coordinated care that controls cost while keeping quality.</p>"
     },
     {
       "id": "hcs-19", "type": "mc", "topic": "Care delivery and payment models",
@@ -368,9 +368,9 @@
       "stem": "A nurse is teaching a class about social determinants of health. Which of the following definitions should the nurse use?",
       "options": [
         "The genetic traits and family history that raise a person's risk of disease",
-        "The personal habits, such as smoking and diet, that a person chooses",
-        "The services that a person's health insurance plan will pay for",
-        "The conditions where people are born, live, learn, work, play, and age that affect their health"
+        "The personal habits, such as smoking, diet, and exercise, that a person chooses",
+        "The health care services that a person's insurance plan will pay for",
+        "The conditions where people are born, live, learn, work, play, and age"
       ],
       "answer": 3,
       "rationale": "<p><b>The conditions where people are born, live, learn, work, play, and age</b> is correct. Social determinants of health (SDOH) are the social and environmental conditions that affect health, functioning, and quality-of-life outcomes and risks.</p><p><b>Genetic traits and family history</b> are biological risk factors that can't be changed, not SDOH. <b>Personal habits</b> like smoking and diet are individual behaviors, though SDOH strongly shape them. <b>Insurance benefits</b> are one part of health care access, too narrow to define SDOH.</p><p><b>Takeaway:</b> SDOH are about the conditions around a person, not their genes or their individual choices.</p>"
@@ -392,10 +392,10 @@
       "id": "hcs-30", "type": "mc", "topic": "Access to care and social determinants",
       "stem": "A client tells the nurse, “The last time I went to that clinic, the staff made fun of my accent, so I haven't gone back.” Which of the following barriers to care does this statement describe?",
       "options": [
-        "A geographic barrier",
+        "Distance from the nearest primary care clinic or hospital",
         "Discrimination and mistrust of the health care system",
-        "A financial barrier",
-        "Low health literacy"
+        "The cost of care and a lack of health insurance",
+        "Low health literacy and trouble reading health forms"
       ],
       "answer": 1,
       "rationale": "<p><b>Discrimination and mistrust</b> is correct. Being treated with disrespect because of an accent is discrimination, and it leads to mistrust and avoiding care: a barrier that limits access even when care is nearby and affordable.</p><p>A <b>geographic barrier</b> is distance, or living where few providers practice. A <b>financial barrier</b> is cost or a lack of insurance. <b>Low health literacy</b> is trouble finding, understanding, and using health information. None of these is what the client describes.</p><p><b>Takeaway:</b> Access barriers aren't only money and miles: discrimination and mistrust keep people away too.</p>"
@@ -476,9 +476,9 @@
       "id": "hcs-37", "type": "mc", "topic": "Health care systems and other concepts",
       "stem": "A nurse is floated to an unfamiliar unit that uses team nursing. Which of the following actions should the nurse take first?",
       "options": [
-        "Ask the team leader to clarify the nurse's assignment and which tasks are delegated to whom",
-        "Begin giving medications to the clients who seem the sickest",
-        "Ask the assistive personnel which tasks they would like to do",
+        "Ask the team leader to clarify the nurse's assignment and delegated tasks",
+        "Begin giving the scheduled medications to the clients who seem the sickest",
+        "Ask the assistive personnel which client care tasks they would like to do today",
         "Use the routines from the nurse's home unit until someone corrects them"
       ],
       "answer": 0,
@@ -525,10 +525,10 @@
       "stem": "Complete the following sentences about allocating limited health care resources.",
       "text": "Distributing scarce resources fairly reflects the ethical principle of {{0}}. During a disaster, the goal of allocation becomes {{1}}.",
       "blanks": [
-        { "options": ["autonomy", "veracity", "distributive justice", "fidelity"], "answer": 2 },
-        { "options": ["treating clients in the order they arrive", "doing the greatest good for the greatest number of people", "treating clients who can pay first", "saving every client, whatever it costs"], "answer": 1 }
+        { "options": ["autonomy", "veracity", "justice", "fidelity"], "answer": 2 },
+        { "options": ["treating clients in the order they arrive", "doing the most good for the most people", "treating the clients who can pay for care first", "saving every client, whatever it costs"], "answer": 1 }
       ],
-      "rationale": "<p><b>Distributive justice</b> is the fair, equitable distribution of resources. When demand far exceeds supply, as in a disaster, the goal shifts to <b>doing the greatest good for the greatest number</b>.</p><p><b>Autonomy</b> is the client's right to decide, <b>veracity</b> is truthfulness, and <b>fidelity</b> is keeping promises. <b>First come, first served</b> and <b>ability to pay</b> aren't fair or effective ways to allocate, and <b>saving everyone at any cost</b> isn't possible when resources run out.</p><p><b>Takeaway:</b> Scarce resources call for justice; disasters call for the greatest good for the greatest number.</p>"
+      "rationale": "<p><b>Justice</b>, here distributive justice, is the fair, equitable distribution of resources. When demand far exceeds supply, as in a disaster, the goal shifts to <b>doing the most good for the most people</b> (the greatest good for the greatest number).</p><p><b>Autonomy</b> is the client's right to decide, <b>veracity</b> is truthfulness, and <b>fidelity</b> is keeping promises. <b>First come, first served</b> and <b>ability to pay</b> aren't fair or effective ways to allocate, and <b>saving everyone at any cost</b> isn't possible when resources run out.</p><p><b>Takeaway:</b> Scarce resources call for justice; disasters call for the greatest good for the greatest number.</p>"
     },
     {
       "id": "hcs-42", "type": "matrix", "topic": "Allocation of resources",
@@ -549,9 +549,9 @@
       "stem": "A medical unit is two nurses short for the night shift, and no replacements are available. Which of the following actions should the staff nurse take?",
       "options": [
         "Refuse the assignment and leave at the end of the previous shift",
-        "Ask assistive personnel to give the oral medications",
-        "Skip documentation for the shift to save time",
-        "Report the unsafe staffing through the chain of command and help the charge nurse prioritize care"
+        "Ask assistive personnel to give the scheduled oral medications to all clients",
+        "Skip charting for the shift so that more time goes to client care",
+        "Report the unsafe staffing up the chain of command and help prioritize care"
       ],
       "answer": 3,
       "rationale": "<p><b>Reporting through the chain of command and helping prioritize</b> is correct. When resources are short, the nurse advocates for safe staffing through the proper channels, and helps prioritize care (airway, breathing, circulation; unstable before stable) with what's available.</p><p><b>Leaving without a replacement</b> can be client abandonment. <b>Assistive personnel giving medications</b> is outside their scope. <b>Skipping documentation</b> violates standards and puts clients and the nurse at legal risk.</p><p><b>Takeaway:</b> When short-staffed, speak up through the chain of command, then prioritize; never abandon clients or delegate outside someone's scope.</p>"
@@ -609,10 +609,10 @@
       "stem": "The nurse is analyzing why so few children in the neighborhood are up to date on their vaccines. Complete the following sentence.",
       "text": "The finding that best explains the low childhood vaccination rate is that {{0}}, so the nurse's first step should be to {{1}}.",
       "blanks": [
-        { "options": ["the nearest hospital is 18 miles away", "one in three households has an income below the poverty line", "the only clinic is open on weekdays during the hours parents work hourly jobs", "21% of adults have no health insurance"], "answer": 2 },
-        { "options": ["tell parents that vaccines are required for school", "offer vaccine clinics on evenings and weekends in the neighborhood", "build a new hospital closer to the neighborhood", "mail parents written vaccine schedules"], "answer": 1 }
+        { "options": ["the nearest hospital is 18 miles away from the neighborhood", "one in three households in the neighborhood has an income below the poverty line", "the only clinic is open only while parents are at their hourly jobs", "21% of the neighborhood's adults have no health insurance"], "answer": 2 },
+        { "options": ["tell parents that their children need vaccines for school", "hold vaccine clinics on evenings and weekends nearby", "build a new hospital closer to the neighborhood", "mail every family a written schedule of vaccines"], "answer": 1 }
       ],
-      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>offer vaccine clinics on evenings and weekends in the neighborhood</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
+      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>hold vaccine clinics on evenings and weekends nearby</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
     },
     {
       "id": "hcs-49", "type": "mc", "case": "community", "topic": "Allocation of resources",
@@ -620,7 +620,7 @@
       "options": [
         "A: Discounted memberships at a private gym 12 miles away",
         "B: Billboards about healthy eating along the highway",
-        "C: A mobile health van offering childhood vaccines and mammogram referrals on evenings and Saturdays",
+        "C: A mobile health van with evening and Saturday hours",
         "D: A new advanced imaging machine for the hospital 18 miles away"
       ],
       "answer": 2,

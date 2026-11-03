@@ -423,7 +423,7 @@
       "text": "This solution is given {{0}}, and it is stored {{1}}.",
       "blanks": [
         {"options": ["by injection into a vein", "by mouth", "by injection into a muscle"], "answer": 1},
-        {"options": ["in the refrigerator", "at room temperature, protected from light", "in the freezer"], "answer": 1}
+        {"options": ["in the refrigerator, protected from light", "at room temperature, protected from light", "in the freezer, in the original sealed carton"], "answer": 1}
       ],
       "rationale": "<p>The label says <b>“For oral use only,”</b> so the solution is given <b>by mouth</b>. Its storage directions say to keep it at <b>20° to 25°C (68° to 77°F)</b>, which is room temperature, and to <b>protect it from light</b>, with the bottle tightly closed.</p><p>Nothing on this label allows an injection, and it doesn't call for refrigeration or freezing. The label of a drug that must be refrigerated says so, often with a range such as 2° to 8°C.</p><p><b>Takeaway:</b> Read the route and the storage directions on every label; they are part of giving a drug safely.</p>"
     },
@@ -598,7 +598,7 @@
       "type": "mc",
       "topic": "Medical abbreviations",
       "stem": "A client has a dressing over an incision on the right forearm. Which of the following entries the nurse documented contains an incorrect abbreviation?",
-      "options": ["0800: AP 80, BP 124/78, RR 16.", "0900: Client A&O; denies pain.", "1000: Up ad lib in the room.", "1100: Dressing on RLE incision dry and intact."],
+      "options": ["0800: AP 80, BP 124/78, RR 16, temp 98.6°F.", "0900: Client A&O; denies pain at the incision.", "1000: Up ad lib in the room; steady gait.", "1100: Dressing on RLE incision dry, intact."],
       "answer": 3,
       "rationale": "<p><b>RLE</b> means <b>right lower extremity</b> (the right leg). The forearm is part of the arm, the <b>right upper extremity</b>, which is <b>RUE</b>. The entry places the incision on the wrong limb.</p><p><b>AP</b> (apical pulse), <b>BP</b>, <b>RR</b>, <b>A&amp;O</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> RUE and LUE are the arms; RLE and LLE are the legs.</p>"
     },
@@ -607,7 +607,7 @@
       "type": "mc",
       "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing four entries documented on admission. Which of the following entries contains an incorrect abbreviation?",
-      "options": ["0800: Client NPO for a 1300 procedure.", "0900: Allergies reviewed: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO.", "1100: I&O recorded for the shift."],
+      "options": ["0800: Client NPO after midnight for a 1300 procedure.", "0900: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO with a full glass of water.", "1100: I&O recorded for the shift; voided 350 mL."],
       "answer": 1,
       "rationale": "<p><b>NKDA</b> means <b>no known drug allergies</b>, but the same entry says the client gets <b>hives after taking penicillin</b>, which is a drug allergy. Recording NKDA could lead to the client being given penicillin. The allergy should be recorded: “Allergy: penicillin (hives).”</p><p><b>NPO</b> (nothing by mouth), <b>PO</b> (by mouth), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> NKDA means no known drug allergies; any reported drug reaction has to be recorded instead.</p>"
     },

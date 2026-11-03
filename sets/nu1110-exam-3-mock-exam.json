@@ -145,7 +145,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A nurse at a community health center is planning programs for clients. Which program is an example of tertiary prevention?",
-      "options": ["A smoking-prevention class for middle school students", "A free blood pressure screening at a grocery store", "A foot-care class for clients who have type 2 diabetes, to prevent ulcers and amputations", "A hepatitis B vaccination drive for health care workers"],
+      "options": ["A smoking-prevention class for middle school students", "A free blood pressure screening at a local grocery store", "A foot-care class for clients who have type 2 diabetes", "A hepatitis B vaccination drive for health care workers"],
       "answer": 2,
       "rationale": "<p><b>Tertiary prevention</b> limits complications and disability from a disease the client already has, and restores function. Clients with type 2 diabetes already have the disease, so a <b>foot-care class</b> that helps prevent complications such as ulcers and amputations is tertiary prevention.</p><p>A <b>smoking-prevention class</b> and a <b>hepatitis B vaccination drive</b> are <b>primary prevention</b>: they prevent disease before it starts. A <b>blood pressure screening</b> looks for disease early, which is <b>secondary prevention</b>; it isn't tertiary prevention in any case.</p>"
     },
@@ -201,7 +201,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A rehabilitation unit uses patient-focused care. Which action by the nurse best reflects this framework?",
-      "options": ["Assigning one nurse to give all medications so the work gets done quickly", "Requiring all clients to follow the unit's set schedule for baths and meals", "Limiting family members to visiting hours so care isn't interrupted", "Planning the client's therapy times around the client's preferences and when the family can take part"],
+      "options": ["Assigning one nurse to give all medications so that the work gets done quickly", "Requiring all clients to follow the unit's set schedule for baths, meals, and therapy", "Limiting family members to visiting hours so care isn't interrupted", "Planning therapy times around the client's preferences and the family's schedule"],
       "answer": 3,
       "rationale": "<p>In <b>patient-focused care</b>, health care is organized around the client's expressed physical and emotional needs, and clients and families are part of decisions about how care is delivered. <b>Planning therapy around the client's preferences and the family's availability</b> reflects this.</p><p>Assigning one nurse to <b>give all medications</b> is functional nursing, which organizes care around tasks. Making every client follow the <b>unit's set schedule</b> and <b>limiting family involvement</b> organize care around the staff's convenience rather than the client's needs.</p>"
     },
@@ -228,7 +228,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A new nurse asks why the unit no longer does some procedures “the way we've always done them.” Which explanation of how evidence-based practice (EBP) developed is accurate?",
-      "options": ["EBP grew from a shift away from care based on tradition and habit, toward care based on research evidence, clinical expertise, and client preferences.", "EBP replaced the nurse's clinical expertise with research findings alone.", "EBP is a temporary trend that applies only to nurse researchers.", "EBP began when hospitals required every nurse to conduct their own research studies."],
+      "options": ["EBP grew from a shift away from care based on tradition, toward care based on research evidence.", "EBP replaced the nurse's clinical expertise and judgment with research findings alone.", "EBP is a temporary trend that applies only to nurse researchers at universities.", "EBP began when hospitals required every nurse to conduct their own research studies on the unit."],
       "answer": 0,
       "rationale": "<p>Nursing care was once based largely on <b>tradition, habit, and authority</b>: “the way we've always done it.” EBP developed to close the <b>theory-practice gap</b> between what research shows and what nurses actually do. It combines three components: the <b>best current research evidence</b>, the <b>nurse's clinical expertise</b>, and the <b>client's preferences</b>, needs, and choices.</p><p>EBP doesn't <b>replace</b> clinical expertise; expertise is one of its three components. It isn't a passing trend, and it isn't only for researchers: every nurse is expected to use it. EBP means <b>using</b> research findings, not requiring every nurse to <b>conduct</b> studies.</p>"
     },
@@ -255,7 +255,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A nurse manager learns that staff aren't using a new evidence-based fall-prevention protocol because they say they don't have time to read research. Which strategy best addresses this barrier?",
-      "options": ["Disciplining staff who don't follow the protocol", "Returning to the previous protocol until staff have more time", "Requiring every nurse to complete a research study on falls", "Giving staff paid time for short in-services, led by a unit EBP champion who summarizes the evidence"],
+      "options": ["Disciplining the staff members who don't follow the new protocol", "Returning to the previous protocol until staff have more time to read", "Requiring every nurse to complete a research study on falls this year", "Giving staff paid time for short in-services by a unit EBP champion"],
       "answer": 3,
       "rationale": "<p><b>Lack of time</b> and limited skill in finding and evaluating evidence are common barriers to EBP. Leaders can overcome them by <b>providing paid time and support</b>, such as brief in-services and a unit <b>EBP champion</b> who summarizes the evidence. This builds staff knowledge and confidence.</p><p><b>Discipline</b> doesn't address the barrier and can increase resistance to change. <b>Going back</b> to the old protocol abandons a practice that improves client safety. <b>Requiring every nurse to conduct a study</b> adds to the time burden; staff nurses need to use evidence, not produce it.</p>"
     },
@@ -303,7 +303,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "Which statement by a nursing student shows an accurate understanding of nursing informatics?",
-      "options": ["“Informatics is the IT department's job, so it doesn't affect my nursing practice.”", "“Informatics just means typing my notes into a computer instead of writing them.”", "“Informatics combines nursing knowledge with technology to manage information and support my clinical decisions.”", "“The American Nurses Association hasn't recognized informatics as a nursing specialty.”"],
+      "options": ["“Informatics is the IT department's job, so it doesn't affect my nursing practice.”", "“Informatics just means typing my notes into a computer instead of writing them.”", "“Informatics combines nursing knowledge with technology to support my decisions.”", "“The American Nurses Association hasn't recognized informatics as a nursing specialty.”"],
       "answer": 2,
       "rationale": "<p><b>Nursing informatics</b> integrates technology and devices with nursing knowledge and clinical decision-making skills. More broadly, informatics is the use of information and technology to communicate, manage knowledge, reduce errors, and support decision making, which makes it a key part of every nurse's practice.</p><p>Informatics isn't only the <b>IT department's</b> concern, and it's much more than <b>typing notes</b> into a computer. The American Nurses Association <b>designated nursing informatics as its own specialty</b> in 1992.</p>"
     },
@@ -312,7 +312,7 @@
       "type": "sata",
       "topic": "Informatics and documentation",
       "stem": "A nurse is reviewing how informatics relates to other concepts. Which statements are accurate?",
-      "options": ["Bar-code scanning at the bedside supports client safety during medication administration.", "The electronic health record lets the interprofessional team communicate about the client.", "A client's health literacy affects how well they can use an online patient portal.", "Electronic alerts remove the need for the nurse to verify the client's identity.", "Informatics has little effect on clinical decision making."],
+      "options": ["Bar-code scanning at the bedside supports client safety during medication administration.", "The electronic health record helps the whole team communicate about the client.", "A client's health literacy affects how well they can use an online patient portal.", "Electronic alerts remove the need for the nurse to verify the client's identity first.", "Informatics has little effect on the clinical decisions that nurses make each day."],
       "answer": [0, 1, 2],
       "rationale": "<p>Informatics connects to <b>safety</b> (bar-code scanning matches the right client with the right medication), to <b>communication</b> (the electronic health record gives the whole team one shared record), and to <b>health literacy</b> (clients need reading and computer skills to use portals and online information, and nurses support clients with low health literacy).</p><p>Technology <b>supports</b> but doesn't replace the nurse's own checks, such as verifying the client's identity. And informatics strongly <b>supports</b> clinical decision making, for example through decision support alerts and quick access to data.</p>"
     },
@@ -321,7 +321,7 @@
       "type": "sata",
       "topic": "Informatics and documentation",
       "stem": "A nurse is comparing the advantages and disadvantages of electronic health records (EHRs). Which are disadvantages or risks of EHRs?",
-      "options": ["Alert fatigue, when frequent alerts lead staff to ignore or override them", "Illegible handwriting in providers' prescriptions", "Privacy breaches when staff share logins or leave screens open", "Copying earlier notes forward, which can carry outdated information into the record", "Loss of access to records when the system goes down", "Slower sharing of information between providers"],
+      "options": ["Alert fatigue, when staff start to ignore or override frequent alerts", "Illegible handwriting in providers' prescriptions and orders", "Privacy breaches when staff share logins or leave screens open", "Copying earlier notes forward, carrying outdated information along", "Loss of access to records when the system goes down", "Slower sharing of information between providers and units"],
       "answer": [0, 2, 3, 4],
       "rationale": "<p>EHRs make records legible and speed up the sharing of information, but they bring risks: <b>alert fatigue</b>, <b>privacy breaches</b> when security practices aren't followed, <b>copy-forward errors</b> that repeat outdated information, and <b>loss of access during downtime</b>, which is why facilities keep downtime procedures.</p><p><b>Illegible handwriting</b> is a problem with paper records that EHRs solve. EHRs make sharing information between providers <b>faster</b>, not slower.</p>"
     },
@@ -399,7 +399,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A nurse is taking part in risk management on a medical unit. Which activity is an example of proactive risk management?",
-      "options": ["Completing an incident report after a client falls", "Meeting with a family after a medication error to explain what happened", "Assessing every client's fall risk on admission and starting prevention measures for those at risk", "Reviewing a lawsuit filed after a client was injured"],
+      "options": ["Completing an incident report after a client falls in the bathroom", "Meeting with a family after a medication error to explain what happened", "Assessing each client's fall risk on admission and starting prevention", "Reviewing a lawsuit that was filed after a client was injured on the unit"],
       "answer": 2,
       "rationale": "<p>Risk management has <b>proactive</b> parts, which prevent adverse events before they happen, and <b>reactive</b> parts, which limit the damage after an event. <b>Assessing fall risk on admission and starting prevention measures</b> prevents falls before they occur, so it's proactive.</p><p><b>Completing an incident report</b> after a fall, <b>meeting with a family</b> after an error, and <b>reviewing a lawsuit</b> after an injury all respond to events that have already happened, so they're reactive.</p>"
     },
@@ -586,7 +586,7 @@
       "case": "dose",
       "topic": "Informatics and documentation",
       "stem": "The Medication Administration Record shows that the float nurse overrode a bar-code scanner alert at 1030. Which statement about this alert is accurate?",
-      "options": ["It was clinical decision support that should have prompted the nurse to stop and verify the 1000 dose before giving the medication.", "Alerts can be overridden whenever a client rates pain 7 or higher.", "Bar-code scanning replaces the nurse's responsibility to check the MAR before giving a medication.", "The alert most likely meant that the scanner needed repair."],
+      "options": ["It was clinical decision support that should have prompted the nurse to stop and verify the 1000 dose.", "Alerts like this one can be overridden whenever a client rates their pain 7 or higher.", "Bar-code scanning replaces the nurse's responsibility to check the MAR before giving any medication to the client.", "The alert most likely meant that the bar-code scanner needed repair or replacement."],
       "answer": 0,
       "rationale": "<p>The scanner's duplicate-dose warning is a form of <b>clinical decision support</b>: technology that checks the client's data and gives the nurse timely information for a safe decision. It should have prompted the nurse to <b>stop and verify</b> the 1000 dose in the MAR, which would have prevented the extra dose.</p><p>A high pain rating <b>doesn't justify</b> overriding a safety alert; the prescription allows a dose only every 4 hours. Decision support <b>supports, but doesn't replace</b>, the nurse's own checks. Assuming an alert is a <b>malfunction</b> without checking is how alert fatigue leads to errors.</p>"
     },
@@ -687,7 +687,7 @@
       "type": "emr",
       "topic": "Health care systems",
       "stem": "A nurse is reviewing the clients on a medical unit. Which 2 clients are the most appropriate for a referral to hospice?",
-      "options": ["A client who has metastatic pancreatic cancer, is expected to live about 3 months, and has decided to stop chemotherapy", "A client who has newly diagnosed breast cancer and wants help with nausea during chemotherapy", "A client who has end-stage COPD, is expected to live less than 6 months, and wants to focus on comfort at home", "A client who is recovering from a hip fracture and needs physical therapy before going home", "A client who has heart failure and wants every available treatment, including an evaluation for a heart transplant", "A client who had a stroke last week and is starting speech therapy"],
+      "options": ["A client who has metastatic pancreatic cancer with about 3 months to live and has stopped chemotherapy", "A client who has newly diagnosed breast cancer and wants help with nausea during chemotherapy", "A client who has end-stage COPD with less than 6 months to live and wants comfort care at home", "A client who is recovering from a hip fracture and needs physical therapy before going home", "A client who has heart failure and wants every available treatment, including an evaluation for a heart transplant", "A client who had a stroke last week, is expected to recover, and is starting speech therapy"],
       "answer": [0, 2],
       "select": 2,
       "rationale": "<p>Hospice is end-of-life comfort care, usually for clients with a prognosis of 6 months or less who are no longer seeking curative treatment. <b>The client with metastatic pancreatic cancer who stopped chemotherapy</b> and <b>the client with end-stage COPD who wants comfort care at home</b> both fit.</p><p><b>The client who wants help with nausea during chemotherapy</b> needs palliative care, which can be given along with curative treatment. <b>The client recovering from a hip fracture</b> and <b>the client starting speech therapy after a stroke</b> need rehabilitation to restore function. <b>The client who wants every available treatment</b> is still seeking curative care, so hospice doesn't match their goals.</p><p><b>Takeaway:</b> Hospice fits a prognosis of about 6 months or less plus a choice of comfort over cure.</p>"
@@ -715,7 +715,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A nurse reads a report showing that rural counties have far fewer primary care providers and nurses per resident than cities do. Which of the following factors affecting health care delivery does this describe?",
-      "options": ["Advances in technology", "Efforts to contain the cost of care", "Growth of the older adult population", "Uneven distribution of the health care workforce"],
+      "options": ["Rapid advances in health care technology", "Efforts to contain the rising cost of health care", "Rapid growth of the older adult population", "Uneven distribution of the health care workforce"],
       "answer": 3,
       "rationale": "<p><b>Uneven distribution of the health care workforce</b> is correct. Shortages of nurses and primary care providers are worse in some places than others, especially rural areas, which affects how and where care can be delivered.</p><p><b>Advances in technology</b> change what care is possible and what it costs, but don't explain fewer providers in rural areas. <b>Cost containment</b> drives changes like shorter hospital stays. <b>An aging population</b> raises the demand for care, but this report is about the supply of providers.</p><p><b>Takeaway:</b> Fewer providers in some areas means a workforce shortage and maldistribution, a factor that affects both delivery and access.</p>"
     },
@@ -744,7 +744,7 @@
       "stem": "A hospital is adding robotic surgery and telehealth visits. Complete the following sentence.",
       "text": "Advances in technology like these can {{0}}, but they also tend to {{1}}.",
       "blanks": [
-        {"options": ["replace the need for nursing assessment", "lower the cost of every procedure", "shorten recovery and reach clients at a distance", "eliminate the need for hospitals"], "answer": 2},
+        {"options": ["replace the need for nursing assessment and judgment", "lower the cost of every procedure and hospital stay", "shorten recovery and reach clients at a distance", "eliminate the need for hospitals in most communities"], "answer": 2},
         {"options": ["reduce access for rural clients", "raise the cost of care", "make documentation unnecessary", "end the need for client teaching"], "answer": 1}
       ],
       "rationale": "<p>New technology, such as minimally invasive or robotic surgery and telehealth, can <b>shorten recovery and reach clients at a distance</b>, but it also tends to <b>raise the cost of care</b> through equipment, training, and upkeep. The system must balance that against cost containment.</p><p>Technology supports nursing judgment but never <b>replaces nursing assessment</b>, and it doesn't <b>eliminate hospitals</b> or <b>lower the cost of every procedure</b>. Telehealth actually <b>improves</b> access for rural clients, and it doesn't remove the need for <b>documentation</b> or <b>teaching</b>.</p><p><b>Takeaway:</b> Technology cuts both ways in health care delivery: better care and access, at a higher cost.</p>"
@@ -763,7 +763,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A hospital's data show that clients who speak little English wait longer for pain medication and are readmitted more often than other clients. Which of the following factors affecting health care delivery does this reflect?",
-      "options": ["Increasing diversity and health disparities", "Advances in technology", "Workforce shortages in rural areas", "Growth of managed care"],
+      "options": ["Increasing diversity and health disparities", "Advances in medical technology and telehealth", "Workforce shortages in rural and remote areas", "Growth of managed care and provider networks"],
       "answer": 0,
       "rationale": "<p><b>Increasing diversity and health disparities</b> is correct. A health disparity is a difference in care or outcomes between groups, here linked to language. As the population grows more diverse, the system must provide interpreters and culturally responsive care so every client gets the same quality of care.</p><p><b>Technology</b>, <b>rural workforce shortages</b>, and <b>managed care</b> are real factors, but none of them explains why one group of clients in the same hospital gets slower care and worse outcomes.</p><p><b>Takeaway:</b> Worse care or outcomes for one group is a health disparity; the fix starts with equal access, such as qualified interpreters.</p>"
     },
@@ -781,9 +781,9 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A nurse is explaining managed care to a nursing student. Which of the following statements describes the goal of managed care?",
-      "options": ["To give clients unlimited choice of providers, whatever the cost", "To have the federal government pay directly for all health care", "To move care into hospitals, where it can be closely monitored", "To provide cost-effective, high-quality care that improves outcomes for groups of clients"],
+      "options": ["To give clients unlimited choice of providers, whatever the cost", "To have the federal government pay directly for all health care", "To move care into hospitals, where it can be closely monitored", "To give cost-effective, high-quality care to groups of clients"],
       "answer": 3,
-      "rationale": "<p><b>Cost-effective, high-quality care that improves outcomes for groups of clients</b> is correct. Managed care, which includes HMOs and PPOs, coordinates care to control cost while keeping quality high.</p><p><b>Unlimited choice at any cost</b> is the opposite of managed care, which uses provider networks and, in HMOs, a primary care gatekeeper. <b>The government paying for all care</b> describes a single-payer model, not managed care. <b>Moving care into hospitals</b> raises costs; managed care favors the most cost-effective setting, often outpatient.</p><p><b>Takeaway:</b> Managed care means coordinated care that controls cost while keeping quality.</p>"
+      "rationale": "<p><b>Cost-effective, high-quality care for groups of clients</b> is correct. Managed care, which includes HMOs and PPOs, coordinates care to control cost while keeping quality high.</p><p><b>Unlimited choice at any cost</b> is the opposite of managed care, which uses provider networks and, in HMOs, a primary care gatekeeper. <b>The government paying for all care</b> describes a single-payer model, not managed care. <b>Moving care into hospitals</b> raises costs; managed care favors the most cost-effective setting, often outpatient.</p><p><b>Takeaway:</b> Managed care means coordinated care that controls cost while keeping quality.</p>"
     },
     {
       "id": "hcs-19",
@@ -876,7 +876,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A nurse is teaching a class about social determinants of health. Which of the following definitions should the nurse use?",
-      "options": ["The genetic traits and family history that raise a person's risk of disease", "The personal habits, such as smoking and diet, that a person chooses", "The services that a person's health insurance plan will pay for", "The conditions where people are born, live, learn, work, play, and age that affect their health"],
+      "options": ["The genetic traits and family history that raise a person's risk of disease", "The personal habits, such as smoking, diet, and exercise, that a person chooses", "The health care services that a person's insurance plan will pay for", "The conditions where people are born, live, learn, work, play, and age"],
       "answer": 3,
       "rationale": "<p><b>The conditions where people are born, live, learn, work, play, and age</b> is correct. Social determinants of health (SDOH) are the social and environmental conditions that affect health, functioning, and quality-of-life outcomes and risks.</p><p><b>Genetic traits and family history</b> are biological risk factors that can't be changed, not SDOH. <b>Personal habits</b> like smoking and diet are individual behaviors, though SDOH strongly shape them. <b>Insurance benefits</b> are one part of health care access, too narrow to define SDOH.</p><p><b>Takeaway:</b> SDOH are about the conditions around a person, not their genes or their individual choices.</p>"
     },
@@ -894,7 +894,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A client tells the nurse, “The last time I went to that clinic, the staff made fun of my accent, so I haven't gone back.” Which of the following barriers to care does this statement describe?",
-      "options": ["A geographic barrier", "Discrimination and mistrust of the health care system", "A financial barrier", "Low health literacy"],
+      "options": ["Distance from the nearest primary care clinic or hospital", "Discrimination and mistrust of the health care system", "The cost of care and a lack of health insurance", "Low health literacy and trouble reading health forms"],
       "answer": 1,
       "rationale": "<p><b>Discrimination and mistrust</b> is correct. Being treated with disrespect because of an accent is discrimination, and it leads to mistrust and avoiding care: a barrier that limits access even when care is nearby and affordable.</p><p>A <b>geographic barrier</b> is distance, or living where few providers practice. A <b>financial barrier</b> is cost or a lack of insurance. <b>Low health literacy</b> is trouble finding, understanding, and using health information. None of these is what the client describes.</p><p><b>Takeaway:</b> Access barriers aren't only money and miles: discrimination and mistrust keep people away too.</p>"
     },
@@ -960,7 +960,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A nurse is floated to an unfamiliar unit that uses team nursing. Which of the following actions should the nurse take first?",
-      "options": ["Ask the team leader to clarify the nurse's assignment and which tasks are delegated to whom", "Begin giving medications to the clients who seem the sickest", "Ask the assistive personnel which tasks they would like to do", "Use the routines from the nurse's home unit until someone corrects them"],
+      "options": ["Ask the team leader to clarify the nurse's assignment and delegated tasks", "Begin giving the scheduled medications to the clients who seem the sickest", "Ask the assistive personnel which client care tasks they would like to do today", "Use the routines from the nurse's home unit until someone corrects them"],
       "answer": 0,
       "rationale": "<p><b>Clarifying the assignment with the team leader</b> is correct. In team nursing, the RN team leader is accountable for the team's clients and assigns tasks. A floating nurse must know their role, the unit's expectations, and who is doing what before acting, to keep care safe.</p><p><b>Starting medications on the sickest-looking clients</b> skips getting a report and an assignment. <b>Letting assistive personnel pick tasks</b> isn't how delegation works; the RN assigns tasks based on ability. <b>Using home-unit routines</b> ignores this unit's policies.</p><p><b>Takeaway:</b> On a new unit, know your role and the model first: clarify the assignment before you act.</p>"
     },
@@ -998,10 +998,10 @@
       "stem": "Complete the following sentences about allocating limited health care resources.",
       "text": "Distributing scarce resources fairly reflects the ethical principle of {{0}}. During a disaster, the goal of allocation becomes {{1}}.",
       "blanks": [
-        {"options": ["autonomy", "veracity", "distributive justice", "fidelity"], "answer": 2},
-        {"options": ["treating clients in the order they arrive", "doing the greatest good for the greatest number of people", "treating clients who can pay first", "saving every client, whatever it costs"], "answer": 1}
+        {"options": ["autonomy", "veracity", "justice", "fidelity"], "answer": 2},
+        {"options": ["treating clients in the order they arrive", "doing the most good for the most people", "treating the clients who can pay for care first", "saving every client, whatever it costs"], "answer": 1}
       ],
-      "rationale": "<p><b>Distributive justice</b> is the fair, equitable distribution of resources. When demand far exceeds supply, as in a disaster, the goal shifts to <b>doing the greatest good for the greatest number</b>.</p><p><b>Autonomy</b> is the client's right to decide, <b>veracity</b> is truthfulness, and <b>fidelity</b> is keeping promises. <b>First come, first served</b> and <b>ability to pay</b> aren't fair or effective ways to allocate, and <b>saving everyone at any cost</b> isn't possible when resources run out.</p><p><b>Takeaway:</b> Scarce resources call for justice; disasters call for the greatest good for the greatest number.</p>"
+      "rationale": "<p><b>Justice</b>, here distributive justice, is the fair, equitable distribution of resources. When demand far exceeds supply, as in a disaster, the goal shifts to <b>doing the most good for the most people</b> (the greatest good for the greatest number).</p><p><b>Autonomy</b> is the client's right to decide, <b>veracity</b> is truthfulness, and <b>fidelity</b> is keeping promises. <b>First come, first served</b> and <b>ability to pay</b> aren't fair or effective ways to allocate, and <b>saving everyone at any cost</b> isn't possible when resources run out.</p><p><b>Takeaway:</b> Scarce resources call for justice; disasters call for the greatest good for the greatest number.</p>"
     },
     {
       "id": "hcs-42",
@@ -1019,7 +1019,7 @@
       "type": "mc",
       "topic": "Health care systems",
       "stem": "A medical unit is two nurses short for the night shift, and no replacements are available. Which of the following actions should the staff nurse take?",
-      "options": ["Refuse the assignment and leave at the end of the previous shift", "Ask assistive personnel to give the oral medications", "Skip documentation for the shift to save time", "Report the unsafe staffing through the chain of command and help the charge nurse prioritize care"],
+      "options": ["Refuse the assignment and leave at the end of the previous shift", "Ask assistive personnel to give the scheduled oral medications to all clients", "Skip charting for the shift so that more time goes to client care", "Report the unsafe staffing up the chain of command and help prioritize care"],
       "answer": 3,
       "rationale": "<p><b>Reporting through the chain of command and helping prioritize</b> is correct. When resources are short, the nurse advocates for safe staffing through the proper channels, and helps prioritize care (airway, breathing, circulation; unstable before stable) with what's available.</p><p><b>Leaving without a replacement</b> can be client abandonment. <b>Assistive personnel giving medications</b> is outside their scope. <b>Skipping documentation</b> violates standards and puts clients and the nurse at legal risk.</p><p><b>Takeaway:</b> When short-staffed, speak up through the chain of command, then prioritize; never abandon clients or delegate outside someone's scope.</p>"
     },
@@ -1071,10 +1071,10 @@
       "stem": "The nurse is analyzing why so few children in the neighborhood are up to date on their vaccines. Complete the following sentence.",
       "text": "The finding that best explains the low childhood vaccination rate is that {{0}}, so the nurse's first step should be to {{1}}.",
       "blanks": [
-        {"options": ["the nearest hospital is 18 miles away", "one in three households has an income below the poverty line", "the only clinic is open on weekdays during the hours parents work hourly jobs", "21% of adults have no health insurance"], "answer": 2},
-        {"options": ["tell parents that vaccines are required for school", "offer vaccine clinics on evenings and weekends in the neighborhood", "build a new hospital closer to the neighborhood", "mail parents written vaccine schedules"], "answer": 1}
+        {"options": ["the nearest hospital is 18 miles away from the neighborhood", "one in three households in the neighborhood has an income below the poverty line", "the only clinic is open only while parents are at their hourly jobs", "21% of the neighborhood's adults have no health insurance"], "answer": 2},
+        {"options": ["tell parents that their children need vaccines for school", "hold vaccine clinics on evenings and weekends nearby", "build a new hospital closer to the neighborhood", "mail every family a written schedule of vaccines"], "answer": 1}
       ],
-      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>offer vaccine clinics on evenings and weekends in the neighborhood</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
+      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>hold vaccine clinics on evenings and weekends nearby</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
     },
     {
       "id": "hcs-49",
@@ -1082,7 +1082,7 @@
       "case": "community",
       "topic": "Health care systems",
       "stem": "The grant can fund only one of the coalition's proposals. Which proposal should the nurse recommend?",
-      "options": ["A: Discounted memberships at a private gym 12 miles away", "B: Billboards about healthy eating along the highway", "C: A mobile health van offering childhood vaccines and mammogram referrals on evenings and Saturdays", "D: A new advanced imaging machine for the hospital 18 miles away"],
+      "options": ["A: Discounted memberships at a private gym 12 miles away", "B: Billboards about healthy eating along the highway", "C: A mobile health van with evening and Saturday hours", "D: A new advanced imaging machine for the hospital 18 miles away"],
       "answer": 2,
       "rationale": "<p><b>The mobile health van</b> is correct. It targets the neighborhood's biggest gaps (low vaccination and mammogram rates, late-stage breast cancers), removes its main barriers (work hours, distance, transportation), and produces measurable results within a year. That's a fair allocation of limited resources that does the most good for the most people.</p><p><b>Gym memberships 12 miles away</b> help mostly residents who already have cars and money. <b>Billboards</b> don't remove any barrier and are hard to measure. <b>An imaging machine at a distant hospital</b> uses the whole grant on a service residents can't easily reach, and doesn't address the gaps in the data.</p><p><b>Takeaway:</b> When resources are limited, choose the option that meets the greatest need, removes real barriers, and reaches the most people.</p>"
     },
@@ -1112,7 +1112,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A nurse learns that research published several years ago found a better way to prevent a common complication, but most units still use the older method. Which of the following terms describes this situation?",
-      "options": ["The theory-practice gap", "Informed consent", "Benchmarking", "Peer review"],
+      "options": ["The theory-practice gap", "Informed consent", "External benchmarking", "Peer review of research articles"],
       "answer": 0,
       "rationale": "<p><b>The theory-practice gap</b> is correct. It's the delay between what research shows and what's actually done in practice. Evidence-based practice aims to close it by moving the best evidence into everyday care.</p><p><b>Informed consent</b> is a research participant's voluntary agreement to take part. <b>Benchmarking</b> compares an organization's outcomes with those of leaders in high-quality care, a quality improvement tool. <b>Peer review</b> is experts evaluating an article before it's published.</p><p><b>Takeaway:</b> When practice lags behind the evidence, that's the theory-practice gap, and EBP is the bridge.</p>"
     },
@@ -1121,7 +1121,7 @@
       "type": "sata",
       "topic": "Evidence-based practice",
       "stem": "A nurse manager is listening to staff discuss how they decide on care. Which of the following statements reflect evidence-based practice rather than tradition?",
-      "options": ["“We've always done it this way, and it seems to work fine.”", "“We changed our routine after reviewing current studies and asking clients what they prefer.”", "“The charge nurse prefers this method, so that's what we use.”", "“I combine the best evidence with my experience and what the client wants.”", "“Let's check what the latest guideline recommends for this situation.”"],
+      "options": ["“We've always done it this way, and it seems to work fine for our clients.”", "“We changed our routine after reviewing studies and asking clients.”", "“The charge nurse prefers this method, so that's what we use on this unit.”", "“I combine the best evidence with my experience and what the client wants.”", "“Let's check what the latest guideline recommends for this situation.”"],
       "answer": [1, 3, 4],
       "rationale": "<p>Evidence-based practice combines the <b>best current evidence</b>, the nurse's <b>clinical expertise</b>, and the <b>client's preferences</b>. <b>Changing a routine after reviewing studies and asking clients</b>, <b>combining evidence, experience, and the client's wishes</b>, and <b>checking the latest guideline</b> all reflect it.</p><p><b>“We've always done it this way”</b> and <b>“the charge nurse prefers it”</b> are tradition and authority, not evidence. Practices based on tradition can continue long after research shows a better way.</p><p><b>Takeaway:</b> EBP asks “What does the evidence show, and what does this client want?” instead of “How have we always done it?”</p>"
     },
@@ -1130,7 +1130,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A surgical unit still keeps all clients on bed rest for 24 hours after abdominal surgery “because we always have,” although current evidence supports getting clients up and walking early. Which of the following concerns is the most important for the nurse to raise?",
-      "options": ["Nurses on the unit may find the routine less convenient", "Clients may develop complications, such as blood clots and pneumonia, that early walking helps prevent", "The unit may spend more on bed linens", "Clients may ask why other hospitals do things differently"],
+      "options": ["Nurses on the unit may find the new routine less convenient", "Clients may develop blood clots that early walking helps prevent", "The unit may spend more money on bed linens and laundry", "Clients may ask why other hospitals get clients out of bed sooner"],
       "answer": 1,
       "rationale": "<p><b>Preventable complications</b> is correct. The main risk of practicing by tradition instead of evidence is that clients get less effective or even harmful care. Immobility raises the risk of blood clots, pneumonia, and other complications that early walking helps prevent.</p><p><b>Convenience for nurses</b>, <b>linen costs</b>, and <b>clients' questions</b> are minor next to harm to clients, and none of them is the reason EBP matters.</p><p><b>Takeaway:</b> Tradition's biggest risk is client harm: outdated care can cause complications that evidence-based care prevents.</p>"
     },
@@ -1151,9 +1151,9 @@
       "text": "In the early 2000s, reports from the {{0}} named evidence-based practice a core competency for all health professionals, and {{1}} listed it as one of six competencies for nurses.",
       "blanks": [
         {"options": ["American Hospital Association", "Food and Drug Administration", "Institute of Medicine (IOM)", "World Health Organization"], "answer": 2},
-        {"options": ["Healthy People", "QSEN (Quality and Safety Education for Nurses)", "OSHA", "Medicare"], "answer": 1}
+        {"options": ["Healthy People", "QSEN", "OSHA", "Medicare"], "answer": 1}
       ],
-      "rationale": "<p>The <b>Institute of Medicine (IOM)</b>, in reports such as Crossing the Quality Chasm and Health Professions Education, named EBP a core competency for all health professionals. <b>QSEN</b> then listed EBP as one of six competencies that nursing programs teach, along with patient-centered care, teamwork and collaboration, quality improvement, safety, and informatics.</p><p>The <b>American Hospital Association</b>, the <b>FDA</b>, and the <b>WHO</b> didn't set these competencies. <b>Healthy People</b> sets national health objectives, <b>OSHA</b> covers workplace safety, and <b>Medicare</b> is an insurance program.</p><p><b>Takeaway:</b> EBP went from Nightingale's data to a core competency (IOM, QSEN) expected of every nurse.</p>"
+      "rationale": "<p>The <b>Institute of Medicine (IOM)</b>, in reports such as Crossing the Quality Chasm and Health Professions Education, named EBP a core competency for all health professionals. <b>QSEN</b> (Quality and Safety Education for Nurses) then listed EBP as one of six competencies that nursing programs teach, along with patient-centered care, teamwork and collaboration, quality improvement, safety, and informatics.</p><p>The <b>American Hospital Association</b>, the <b>FDA</b>, and the <b>WHO</b> didn't set these competencies. <b>Healthy People</b> sets national health objectives, <b>OSHA</b> covers workplace safety, and <b>Medicare</b> is an insurance program.</p><p><b>Takeaway:</b> EBP went from Nightingale's data to a core competency (IOM, QSEN) expected of every nurse.</p>"
     },
     {
       "id": "ebp-07",
@@ -1218,7 +1218,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "Staff on a unit say they don't trust “the latest research” and prefer their traditional routine for preventing falls. Which of the following strategies should the nurse manager use first?",
-      "options": ["Order staff to adopt the new practice starting tomorrow", "Share the unit's own fall data along with the evidence, and involve staff in planning the change", "Wait until every staff member agrees before discussing the evidence", "Hire new nurses who already use evidence-based practice"],
+      "options": ["Order staff to adopt the new fall-prevention practice starting tomorrow", "Share the unit's fall data with the evidence and involve staff in planning", "Wait until every staff member agrees before sharing any of the new evidence", "Hire new nurses who already use evidence-based practice in their own care"],
       "answer": 1,
       "rationale": "<p><b>Sharing the unit's data with the evidence and involving staff</b> is correct. Resistance to change and not valuing EBP are attitude barriers. Seeing their own unit's outcomes makes the problem real, and involving staff early builds ownership of the change.</p><p><b>Ordering an immediate change</b> usually deepens resistance. <b>Waiting for everyone to agree</b> stalls the change while clients keep falling. <b>Hiring new nurses</b> doesn't address the current staff or the unit's culture.</p><p><b>Takeaway:</b> Overcome resistance with data and involvement, not orders.</p>"
     },
@@ -1236,7 +1236,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "Which of the following statements describes the role of accrediting organizations, such as The Joint Commission, in evidence-based practice?",
-      "options": ["They write each hospital's procedures for its nurses to follow.", "They conduct most of the nursing research that hospitals use.", "They license individual nurses to practice.", "They set evidence-based standards that organizations must meet, which pushes facilities to use current evidence."],
+      "options": ["They write each hospital's procedures for its nurses to follow.", "They conduct most of the nursing research that hospitals use.", "They license individual nurses to practice in each state.", "They set evidence-based standards that organizations must meet."],
       "answer": 3,
       "rationale": "<p><b>They set evidence-based standards that organizations must meet</b> is correct. Reputable accreditors base their standards on evidence, and organizations must show they meet them, which drives facilities to keep their practice current.</p><p><b>Each hospital writes its own procedures</b>, guided by those standards. <b>Most research</b> is done by researchers at universities, agencies, and health systems, not by accreditors. <b>Licensing nurses</b> is the state board of nursing's job.</p><p><b>Takeaway:</b> Accreditors raise the floor for practice by tying their standards to the evidence.</p>"
     },
@@ -1245,9 +1245,9 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A unit adopts a structured, evidence-based handoff tool for shift change. Which of the following outcomes is the main reason for this change?",
-      "options": ["Fewer communication errors and gaps in care, which improves client safety", "Shorter shifts for the nurses on the unit", "Less need to document care in the medical record", "Fewer clients admitted to the unit each week"],
+      "options": ["Fewer communication errors and gaps in care", "Shorter shifts for the nurses on the unit", "Less need to document care in the medical record", "Fewer clients admitted to the unit each week"],
       "answer": 0,
-      "rationale": "<p><b>Fewer communication errors, which improves safety</b> is correct. EBP relates to communication and safety: evidence shows that structured handoffs keep information from being lost between caregivers, which keeps care continuous across the team.</p><p>A handoff tool doesn't <b>shorten shifts</b>, replace <b>documentation</b>, or change <b>admissions</b>.</p><p><b>Takeaway:</b> Evidence-based communication tools make care safer by keeping information intact between caregivers.</p>"
+      "rationale": "<p><b>Fewer communication errors and gaps in care</b> is correct, and it makes care safer. EBP relates to communication and safety: evidence shows that structured handoffs keep information from being lost between caregivers, which keeps care continuous across the team.</p><p>A handoff tool doesn't <b>shorten shifts</b>, replace <b>documentation</b>, or change <b>admissions</b>.</p><p><b>Takeaway:</b> Evidence-based communication tools make care safer by keeping information intact between caregivers.</p>"
     },
     {
       "id": "ebp-17",
@@ -1306,7 +1306,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "In a study of a new mouthwash to prevent mouth sores during chemotherapy, one group of clients uses the mouthwash and another group receives usual mouth care. Which of the following statements describes the purpose of the usual-care group?",
-      "options": ["It gives the researchers a comparison, so they can tell whether the mouthwash made the difference.", "It lets the researchers give the mouthwash to more clients.", "It makes the study qualitative instead of quantitative.", "It protects the clients' confidentiality."],
+      "options": ["It gives a comparison, to show whether the mouthwash made the difference.", "It lets the researchers give the mouthwash to more of the clients in the study.", "It makes the study qualitative instead of quantitative.", "It protects the confidentiality of the clients in the study."],
       "answer": 0,
       "rationale": "<p><b>It gives a comparison</b> is correct. The control group gets usual care or no intervention. Comparing it with the group that got the intervention shows whether the intervention caused the difference in outcomes.</p><p>A control group means <b>fewer</b> clients get the new mouthwash, not more. It doesn't make a study <b>qualitative</b>; controlled comparisons are quantitative. <b>Confidentiality</b> is protected by how data are handled, not by group assignment.</p><p><b>Takeaway:</b> Without a comparison group, you can't tell whether the intervention worked.</p>"
     },
@@ -1406,7 +1406,7 @@
       "type": "sata",
       "topic": "Evidence-based practice",
       "stem": "A nurse is looking for credible evidence about preventing falls in older adults. Which of the following sources should the nurse use?",
-      "options": ["The CINAHL database of nursing and health literature", "A personal blog about home remedies", "The Cochrane Library of systematic reviews", "A video posted by a celebrity on social media", "A clinical practice guideline from a professional organization"],
+      "options": ["The CINAHL database of nursing and health literature", "A personal blog about home remedies for preventing falls", "The Cochrane Library of systematic reviews", "A video about fall prevention posted by a celebrity on social media", "A clinical practice guideline from a professional organization"],
       "answer": [0, 2, 4],
       "rationale": "<p>Credible sources include databases such as <b>CINAHL</b> (and MEDLINE or PubMed), the <b>Cochrane Library</b> of systematic reviews, and <b>clinical practice guidelines</b> from professional organizations and agencies. Nursing databases may give abstracts or full text, and many offer tutorials.</p><p><b>A personal blog</b> and <b>a celebrity's video</b> aren't peer-reviewed and often aren't based on research. Every source should be judged for credibility.</p><p><b>Takeaway:</b> Acquire evidence from peer-reviewed databases, systematic reviews, and professional guidelines.</p>"
     },
@@ -1433,7 +1433,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A unit tried a new routine for reassessing pain 1 hour after pain medication. After 3 months, clients' satisfaction with pain control rose on the day shift, but night-shift nurses often missed the reassessments. Which of the following actions should the team take?",
-      "options": ["Reject the routine, since it didn't work on every shift", "Accept the routine unchanged and spread it to every unit", "Modify the routine for the night shift and keep monitoring the results", "Stop collecting data, since satisfaction already improved"],
+      "options": ["Reject the routine, since it didn't work on every single shift", "Accept the routine unchanged and spread it to every unit", "Modify the routine for the night shift and keep monitoring", "Stop collecting data, since satisfaction has already improved"],
       "answer": 2,
       "rationale": "<p><b>Modify the routine for nights and keep monitoring</b> is correct. After evaluating a change, the team can accept, reject, or modify it. The routine helped when it was carried out, so the problem is how it fits the night shift, which calls for changing the process and then monitoring again.</p><p><b>Rejecting it</b> throws away a practice that worked. <b>Spreading it unchanged</b> carries the night-shift problem to every unit. <b>Stopping data collection</b> ends evaluation before the problem is fixed.</p><p><b>Takeaway:</b> Evaluation leads to accepting, rejecting, or modifying the change, and then the cycle continues.</p>"
     },
@@ -1442,7 +1442,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A nurse wants to find evidence on reducing anxiety in children having blood drawn. Which of the following questions is written in a focused, searchable PICOT format?",
-      "options": ["“What do pediatric nurses believe is the best way to calm children during blood draws?”", "“In school-age children having blood drawn, does a distraction toy, compared with no distraction, lower anxiety scores during the procedure?”", "“Is a distraction toy a good idea, and should every hospital buy them for children?”", "“How do children of all ages feel about needles and medical procedures in general?”"],
+      "options": ["“What do the pediatric nurses on our unit believe is the best way to calm school-age children during blood draws?”", "“In school-age children having blood drawn, does a distraction toy, compared with none, lower anxiety scores during the procedure?”", "“Is a distraction toy a good idea for school-age children who are having blood drawn, and should every hospital buy them?”", "“How do children and teenagers of all ages feel about needles, shots, blood draws, IV starts, and other medical procedures in general?”"],
       "answer": 1,
       "rationale": "<p><b>The question with all five parts</b> is correct: P = school-age children having blood drawn, I = a distraction toy, C = no distraction, O = anxiety scores, T = during the procedure. A focused PICOT question is specific and searchable.</p><p><b>What nurses believe</b> asks for opinion, not evidence about an intervention. <b>Is it a good idea, and should every hospital buy them</b> is vague and asks two questions at once. <b>How children feel about needles in general</b> is too broad to search well.</p><p><b>Takeaway:</b> A good clinical question names the population, intervention, comparison, outcome, and time.</p>"
     },
@@ -1451,7 +1451,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A 3-month pilot of a new oral-care routine lowered pneumonia rates on one unit, with no new problems found. Which of the following steps should come next to make the routine part of everyday care?",
-      "options": ["Ask each nurse to decide whether to use the routine", "Work with management to revise the facility's policy and procedure to include the routine", "End the routine, since the pilot is over", "Keep the routine on the pilot unit only, without telling other units"],
+      "options": ["Ask each nurse to decide whether to use the routine with clients", "Revise the facility's policy and procedure with management", "End the routine, since the 3-month pilot is now over", "Keep the routine on the pilot unit only, without telling other units"],
       "answer": 1,
       "rationale": "<p><b>Revising the facility's policy and procedure with management</b> is correct. If a change is beneficial, the team works with management to update the facility's policies and procedures, so the change becomes part of the nursing routine.</p><p><b>Leaving it to each nurse</b> makes care inconsistent. <b>Ending it</b> throws away a change that worked. <b>Keeping it on one unit in silence</b> withholds a benefit from other clients; successful methods should be shared.</p><p><b>Takeaway:</b> A successful pilot becomes routine through the facility's policies and procedures.</p>"
     },
@@ -1478,7 +1478,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "A hospital's evidence-based practice council uses the Iowa Model to guide its practice changes. Which of the following statements describes the purpose of a formal EBP model like this one?",
-      "options": ["It replaces the need for nurses to read research.", "It lets each nurse change unit procedures independently.", "It is a law that every hospital must follow.", "It gives a step-by-step structure for making practice changes across the organization."],
+      "options": ["It replaces the need for nurses to read and appraise research.", "It lets each nurse change unit procedures independently, without approval.", "It is a federal law that every hospital must follow.", "It gives a step-by-step structure for organization-wide practice changes."],
       "answer": 3,
       "rationale": "<p><b>A step-by-step structure for organization-wide change</b> is correct. Formal EBP models, such as the Iowa Model, the Johns Hopkins model, ACE Star, and Stetler, guide an organization through identifying a problem, finding and appraising evidence, piloting a change, and spreading it through policies and protocols.</p><p>A model doesn't <b>replace reading research</b>; it organizes how evidence is used. It doesn't let <b>individual nurses change procedures independently</b>; changes go through the organization's process. It's a framework, not a <b>law</b>.</p><p><b>Takeaway:</b> A formal EBP model is the organization's roadmap for evidence-based change.</p>"
     },
@@ -1514,7 +1514,7 @@
       "type": "mc",
       "topic": "Evidence-based practice",
       "stem": "Which of the following recognitions requires a hospital to show that evidence-based practice is built into the organization?",
-      "options": ["Healthy People 2030", "A state nursing license", "Medicare Part A eligibility", "Magnet recognition from the American Nurses Credentialing Center"],
+      "options": ["Healthy People 2030", "A state nursing license", "Medicare Part A eligibility", "Magnet recognition"],
       "answer": 3,
       "rationale": "<p><b>Magnet recognition</b> is correct. The American Nurses Credentialing Center's Magnet program recognizes nursing excellence, and it requires the organization to show that evidence-based practice and research are part of its nursing practice. Organizational EBP supports Magnet status.</p><p><b>Healthy People 2030</b> sets national health objectives. <b>A state nursing license</b> lets an individual practice. <b>Medicare Part A</b> is hospital insurance coverage for clients.</p><p><b>Takeaway:</b> Magnet status signals a hospital culture of nursing excellence, including evidence-based practice.</p>"
     },
@@ -1537,7 +1537,7 @@
       "text": "In {{0}}, does {{1}}, compared with {{2}}, reduce {{3}} during the hospital stay?",
       "blanks": [
         {"options": ["nurses on the medical unit", "hospitalized adults 70 and older", "all adults in the community", "family members of older adults"], "answer": 1},
-        {"options": ["a routine of reorientation, sleep, walking, and sensory aids, without medication", "a sleeping pill for every client at bedtime", "more vital-sign checks at night", "a larger calendar in each room"], "answer": 0},
+        {"options": ["a routine of reorientation, sleep, walking, and sensory aids", "a sleeping pill for every client at bedtime, to help them rest", "more frequent vital-sign checks throughout the night", "a larger calendar and clock on the wall of each room"], "answer": 0},
         {"options": ["no hospital stay", "a sleeping pill on request", "usual care", "family visits"], "answer": 2},
         {"options": ["the unit's costs", "nurses' overtime", "the number of visitors", "new cases of delirium"], "answer": 3}
       ],
@@ -1657,7 +1657,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse uses the electronic record's admission assessment screens, a care-planning module, and a dashboard that tracks the client's goals. Which of the following statements describes how informatics supports nursing practice?",
-      "options": ["Information systems support every step of the nursing process, from assessment to evaluation.", "Information systems replace the nurse's need to assess the client.", "Information systems are used only for billing, not for client care.", "Information systems matter only after the client is discharged."],
+      "options": ["Information systems support every step of the nursing process.", "Information systems replace the nurse's need to assess the client.", "Information systems are used only for billing, not for client care.", "Information systems matter only after the client is discharged."],
       "answer": 0,
       "rationale": "<p><b>Information systems support every step of the nursing process</b> is correct. Informatics lets nurses access health information to develop, implement, and evaluate care, supporting assessment, diagnosis, planning, implementation, and evaluation.</p><p>Systems support the nurse's assessment and judgment; they don't <b>replace</b> them. They serve client care, communication, and safety, not just <b>billing</b>. And they're used throughout care, not only <b>after discharge</b>.</p><p><b>Takeaway:</b> Informatics supports the whole nursing process, but the nurse still does the thinking.</p>"
     },
@@ -1695,7 +1695,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "The hospital's electronic health record goes down for 4 hours of scheduled maintenance. Which of the following actions should the nurse take?",
-      "options": ["Stop documenting until the system is back, then chart from memory", "Use the facility's downtime forms, then enter the information as policy directs when the system returns", "Keep notes on personal paper and throw them away after the shift", "Delay medications until the electronic MAR is available again"],
+      "options": ["Stop documenting until the system is back, then chart everything from memory", "Use the downtime forms, then enter the information when the system returns", "Keep notes on personal paper, then throw them away at the end of the shift", "Delay all medications until the electronic MAR is available again"],
       "answer": 1,
       "rationale": "<p><b>Using the downtime forms, then entering the information as policy directs</b> is correct. Because systems can go down, facilities keep downtime procedures so documentation stays timely and complete and care continues safely.</p><p><b>Charting from memory later</b> risks errors and late, inaccurate entries. <b>Personal notes thrown away</b> create a privacy risk and leave no record of care. <b>Delaying medications</b> puts clients at risk; downtime procedures include a way to give and record medications.</p><p><b>Takeaway:</b> System downtime is a known risk of informatics: follow the downtime procedure, not a workaround.</p>"
     },
@@ -1724,7 +1724,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A hospital is changing from handwritten orders to computerized provider order entry (CPOE). Which of the following problems will this change most directly reduce?",
-      "options": ["Medication errors caused by illegible handwritten orders", "Client falls in the bathroom at night", "Errors in handoff report between nurses", "Delays in transporting clients to radiology"],
+      "options": ["Medication errors from illegible handwritten orders", "Client falls in the bathroom at night", "Errors in handoff report between nurses at shift change", "Delays in transporting clients to radiology for imaging"],
       "answer": 0,
       "rationale": "<p><b>Errors from illegible handwritten orders</b> is correct. With CPOE, providers enter orders electronically, which removes handwriting problems, and the system can check doses, allergies, and drug interactions as the order is entered.</p><p><b>Falls</b>, <b>handoff errors</b>, and <b>transport delays</b> have other causes and need other solutions, such as rounding, structured handoffs, and better scheduling.</p><p><b>Takeaway:</b> CPOE makes orders legible and checks them as they're written.</p>"
     },
@@ -1741,7 +1741,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A client's ID band is smudged and won't scan before a scheduled medication. Which of the following actions should the nurse take?",
-      "options": ["Scan a copy of the client's bar code taped to the medication cart", "Give the medication without scanning, since the nurse knows the client", "Override the scan and document the reason afterward", "Have a new ID band printed and applied per policy, then identify the client and scan the new band"],
+      "options": ["Scan a copy of the client's bar code taped to the medication cart", "Give the medication without scanning, since the nurse knows the client", "Override the scan and document the reason in the record afterward", "Apply a new ID band per policy, then identify the client and scan it"],
       "answer": 3,
       "rationale": "<p><b>Replacing the band per policy, then identifying the client and scanning</b> is correct. The scan only protects the client when it's done on the band the client is actually wearing, after checking two identifiers.</p><p><b>A copy of the bar code taped to the cart</b> is a workaround that could be scanned for any client. <b>Giving the medication without scanning</b> because the nurse “knows the client” skips a safety check. <b>Overriding and documenting later</b> defeats the purpose of the system. Workarounds like these are a common cause of medication errors with bar-code systems.</p><p><b>Takeaway:</b> When bar-code scanning fails, fix the problem; never work around the safety check.</p>"
     },
@@ -1768,7 +1768,7 @@
       "type": "sata",
       "topic": "Informatics and documentation",
       "stem": "A nurse is explaining a new telehealth program to a group of clients. Which of the following are benefits of telehealth?",
-      "options": ["Easier access to care for clients who live in rural areas", "Fewer hospital readmissions through remote monitoring at home", "No need to protect privacy during video visits", "Care for clients whose limited mobility makes travel hard", "No need for any in-person care again"],
+      "options": ["Easier access to care for clients who live in rural areas", "Fewer hospital readmissions through remote monitoring at home", "No need to protect privacy during video visits from home", "Care for clients whose limited mobility makes travel hard", "No need for any in-person visits or hands-on care again"],
       "answer": [0, 1, 3],
       "rationale": "<p>Telehealth, care delivered at a distance through video visits, phone calls, and remote monitoring, <b>improves access</b> for clients in rural areas and for <b>clients with limited mobility</b>, and remote monitoring can catch problems early and <b>reduce readmissions</b>.</p><p>Privacy <b>still</b> matters: video visits need secure platforms and a private space. Telehealth complements in-person care rather than <b>replacing all of it</b>, since some assessments and treatments need the client in person.</p><p><b>Takeaway:</b> Telehealth expands access and monitoring, with the same privacy and documentation duties as any other care.</p>"
     },
@@ -1786,16 +1786,16 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A client is learning to use the hospital's patient portal. Which of the following statements by the nurse is accurate?",
-      "options": ["“You can view your test results, request refills, and send secure messages to your care team.”", "“You can change the diagnoses in your record if you disagree with them.”", "“The portal is the place to report an emergency, like chest pain.”", "“Anyone who knows your name can look up your record in the portal.”"],
+      "options": ["“You can view your test results and send secure messages to your care team.”", "“You can change the diagnoses in your record yourself if you disagree with them.”", "“The portal is the place to report an emergency, like chest pain or trouble breathing.”", "“Anyone who knows your name can look up your record in the portal.”"],
       "answer": 0,
-      "rationale": "<p><b>Viewing results, requesting refills, and sending secure messages</b> is correct. A patient portal is part of e-health, health information and services delivered through the internet, which helps clients take part in their care.</p><p>Clients can <b>request</b> corrections, but they can't <b>change their diagnoses</b> themselves. Portal messages aren't monitored around the clock, so an emergency calls for <b>911</b>, not the portal. Portals are protected by <b>secure logins</b>, so only the client and the people the client authorizes can see the record.</p><p><b>Takeaway:</b> Portals help clients see and manage their information securely, but they're not for emergencies.</p>"
+      "rationale": "<p><b>Viewing results and sending secure messages</b> is correct. A patient portal is part of e-health, health information and services delivered through the internet, which helps clients take part in their care.</p><p>Clients can <b>request</b> corrections, but they can't <b>change their diagnoses</b> themselves. Portal messages aren't monitored around the clock, so an emergency calls for <b>911</b>, not the portal. Portals are protected by <b>secure logins</b>, so only the client and the people the client authorizes can see the record.</p><p><b>Takeaway:</b> Portals help clients see and manage their information securely, but they're not for emergencies.</p>"
     },
     {
       "id": "inf-18",
       "type": "sata",
       "topic": "Informatics and documentation",
       "stem": "A nurse is learning about clinical decision support systems. Which of the following are examples of clinical decision support?",
-      "options": ["An alert that a newly ordered antibiotic conflicts with the client's documented allergy", "A patient portal where clients read their lab results", "A sepsis warning triggered by the client's vital signs and lab values", "A map of where flu cases are clustered in a county", "A warning that an ordered dose is above the usual range", "A reminder that the client is due for a vaccine"],
+      "options": ["An alert that a new antibiotic order conflicts with the client's allergy", "A patient portal where clients read their own lab results", "A sepsis warning triggered by the client's vital signs and lab values", "A map showing where flu cases are clustered in a county", "A warning that an ordered dose is above the usual range", "A reminder that the client is due for a vaccine"],
       "answer": [0, 2, 4, 5],
       "rationale": "<p><b>Clinical decision support systems (CDSS)</b> use a client's data plus a knowledge base to give alerts, reminders, and recommendations at the time of a decision: <b>drug-allergy alerts</b>, <b>sepsis warnings</b>, <b>dose-range checks</b>, and <b>reminders for overdue vaccines or screenings</b>. The goal is safer, more consistent, evidence-based decisions.</p><p><b>A patient portal</b> is e-health for clients, and <b>a map of flu clusters</b> is a geographic information system. Neither guides a decision about one client's care.</p><p><b>Takeaway:</b> If it gives an alert, reminder, or recommendation about a client's care, it's decision support.</p>"
     },
@@ -1804,7 +1804,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse notices that staff on the unit override most low-priority alerts in the electronic record without reading them. Which of the following actions should the nurse take?",
-      "options": ["Override the alerts quickly as well, since most of them turn out not to matter", "Report the problem so the informatics team can reduce low-value alerts, and keep reading each alert until then", "Ask the informatics team to turn off alerts for the nurse's own login only", "Stop reading alerts, since the nurse's own judgment is enough to keep clients safe"],
+      "options": ["Override the alerts quickly as well, since most of them turn out not to matter", "Report it so low-value alerts can be reduced, and keep reading each alert", "Ask the informatics team to turn off alerts for the nurse's own login only", "Stop reading alerts, since the nurse's own judgment is enough to keep clients safe"],
       "answer": 1,
       "rationale": "<p><b>Reporting the problem and still reading each alert</b> is correct. Alert fatigue, when so many alerts fire that staff ignore or override them, is a known risk of decision support. The fix is to reduce low-value alerts through the system, while every nurse keeps evaluating each alert, because the next one could matter.</p><p><b>Overriding quickly</b> is exactly how a real warning gets missed. <b>Turning off alerts for one login</b> removes a safety net. <b>Relying only on judgment</b> throws away a tool that catches what people miss.</p><p><b>Takeaway:</b> Never override an alert without evaluating it; fix alert fatigue through the system.</p>"
     },
@@ -1822,7 +1822,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse is assessing a client's health literacy. Which of the following definitions of health literacy should the nurse use?",
-      "options": ["The ability to read at a college level", "Knowing the meaning of most medical terms", "The ability to find, understand, and use health information to make health decisions", "The ability to use a computer to look up health information"],
+      "options": ["The ability to read and write at a college level", "Knowing the meaning of most medical terms and abbreviations", "The ability to find, understand, and use health information", "The ability to use a computer to look up health information"],
       "answer": 2,
       "rationale": "<p><b>Finding, understanding, and using health information to make decisions</b> is correct. Health literacy is about using information, not just reading it. From class: Healthy People 2020 listed health literacy under the social determinant of health and health care, and Healthy People 2030 describes both personal and organizational health literacy.</p><p><b>Reading at a college level</b> and <b>knowing medical terms</b> are narrower skills; clients who read well can still struggle with health information. <b>Using a computer</b> is digital skill, one small part of it.</p><p><b>Takeaway:</b> Health literacy means being able to find, understand, and use health information to make decisions.</p>"
     },
@@ -1840,7 +1840,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse has finished teaching a client how to take a new medication at home. Which of the following statements by the nurse best checks the client's understanding?",
-      "options": ["“Do you understand everything I just told you?”", "“Do you have any questions for me?”", "“This is pretty simple, isn't it?”", "“Tell me in your own words how you'll take this medicine at home.”"],
+      "options": ["“Do you understand everything I just told you about this medicine?”", "“Do you have any questions for me about taking this medicine?”", "“This is pretty simple to remember, isn't it?”", "“Tell me in your own words how you'll take this medicine at home.”"],
       "answer": 3,
       "rationale": "<p><b>“Tell me in your own words how you'll take this medicine”</b> is correct. This is teach-back: the client explains the instructions back, which shows what they understood and what needs to be retaught.</p><p><b>“Do you understand?”</b> and <b>“Any questions?”</b> invite a yes-or-no answer, and clients often say yes even when they don't understand, especially when their health literacy is low. <b>“This is simple, isn't it?”</b> pressures the client to agree.</p><p><b>Takeaway:</b> A nod or a “yes” isn't proof of learning; teach-back is.</p>"
     },
@@ -1849,7 +1849,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A client who speaks Portuguese and very little English is going home today. The client's 15-year-old son offers to interpret the discharge teaching. Which of the following actions should the nurse take?",
-      "options": ["Have the son interpret, since family members know the client best", "Give the client written instructions in English to take home", "Use a qualified medical interpreter, and document the interpreter's name or ID number", "Speak slowly and loudly in English, using gestures"],
+      "options": ["Have the son interpret, since family members know the client best", "Give the client written discharge instructions in English to take home", "Use a qualified medical interpreter and document who interpreted", "Speak slowly and loudly in English, using gestures and pictures"],
       "answer": 2,
       "rationale": "<p><b>Using a qualified medical interpreter and documenting it</b> is correct. Language is part of health literacy, and teaching only works if the client understands it. Qualified interpreters translate accurately and keep information confidential.</p><p><b>Family members, especially children,</b> may leave things out, change the meaning, or not know medical terms, and the client may not speak freely in front of them. <b>English instructions</b> won't be understood. <b>Speaking loudly</b> doesn't help someone who doesn't speak the language.</p><p><b>Takeaway:</b> Use a qualified interpreter, never a family member, and document who interpreted.</p>"
     },
@@ -1916,9 +1916,9 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "At 1400, a nurse realizes they forgot to document a dressing change done at 1000. Which of the following is the correct way to document it?",
-      "options": ["Squeeze a note about the dressing change into the space after the 1000 entry", "Write the note in the margin next to the 1000 entry and initial it", "“1400: Late entry for 1000: Dressing to left lower leg changed; wound bed pink, no drainage. J. Lee, RN”", "Leave the dressing change out, since it's too late to chart it"],
+      "options": ["Squeeze a note about the dressing change into the space after the 1000 entry", "Write the note in the margin next to the 1000 entry and initial it", "Write a new 1400 entry labeled “late entry for 1000,” then sign it", "Leave the dressing change out, since it's too late to chart it"],
       "answer": 2,
-      "rationale": "<p><b>A dated, signed note at 1400 labeled “late entry for 1000”</b> is correct. Late entries are clearly identified as late, say which event they refer to, are signed and dated, and leave no blank lines.</p><p><b>Squeezing a note into an old entry</b> and <b>writing in the margin</b> make it look as if the record was altered. <b>Leaving it out</b> makes the record incomplete: legally, care that isn't documented wasn't done.</p><p><b>Takeaway:</b> A late entry is written now, labeled late, and points to the time of the care.</p>"
+      "rationale": "<p><b>A dated, signed note at 1400 labeled “late entry for 1000”</b> is correct, such as “1400: Late entry for 1000: Dressing to left lower leg changed; wound bed pink, no drainage. J. Lee, RN.” Late entries are clearly identified as late, say which event they refer to, are signed and dated, and leave no blank lines.</p><p><b>Squeezing a note into an old entry</b> and <b>writing in the margin</b> make it look as if the record was altered. <b>Leaving it out</b> makes the record incomplete: legally, care that isn't documented wasn't done.</p><p><b>Takeaway:</b> A late entry is written now, labeled late, and points to the time of the care.</p>"
     },
     {
       "id": "inf-32",
@@ -1936,7 +1936,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A unit uses charting by exception. Which of the following statements about this format is accurate?",
-      "options": ["Every assessment finding is written out in a full narrative note.", "Only abnormal or unexpected findings are charted, so the unit needs clear written standards for what's normal.", "It takes more charting time than any other format.", "Normal findings must be described in detail every hour."],
+      "options": ["Every assessment finding, normal or not, is written out in a full narrative note.", "Only abnormal or unexpected findings are charted, against written standards.", "It takes more charting time than any other documentation format.", "Normal findings must be described in detail every hour on every client."],
       "answer": 1,
       "rationale": "<p><b>Only abnormal or unexpected findings are charted, against clear standards</b> is correct. Charting by exception is a shorthand method: routine and normal findings are covered by well-defined standards, and only the exceptions are written. Its advantages are less charting time and abnormal findings that stand out right away.</p><p><b>Full narrative notes</b> and <b>hourly detail on normal findings</b> describe the opposite approach. Charting by exception <b>saves</b> charting time.</p><p><b>Takeaway:</b> Charting by exception means charting the abnormal and relying on standards for the normal.</p>"
     },
@@ -1962,7 +1962,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse calls a provider at night because a client has new chest pain. Which of the following actions follows guidelines for reporting a change in condition by telephone?",
-      "options": ["Identifying themselves and the client, and reporting the change, current vital signs, and what's been done, with the record at hand", "Giving only the client's pain rating, so the call is short and the provider isn't kept long", "Waiting until the provider makes morning rounds, since the provider is off duty overnight", "Leaving a message with the answering service, then returning to the nurse's other clients"],
+      "options": ["Identifying themselves and the client, then reporting the change, vital signs, and actions taken", "Giving only the client's pain rating, so that the call stays short and the provider isn't kept long", "Waiting until the provider makes morning rounds, since the provider is off duty for the night", "Leaving a message with the answering service, then going back to care for the nurse's other clients"],
       "answer": 0,
       "rationale": "<p><b>Identifying themselves and the client, and reporting the change, the current vital signs, and what's been done, with the record at hand</b> is correct. A clear, concise report, often in a structured format such as SBAR, lets the provider respond knowledgeably. Afterward, the nurse documents the time of the call, what was reported, and the provider's response.</p><p><b>Only the pain rating</b> leaves out what the provider needs to know. <b>Waiting until morning</b> delays care for a possibly serious change. <b>Leaving a message and walking away</b> doesn't make sure the provider got the report; the nurse must follow up.</p><p><b>Takeaway:</b> When calling about a change, be ready: who you are, who the client is, what changed, the vital signs, and what you've done.</p>"
     },
@@ -1971,7 +1971,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A provider gives a nurse a telephone order for a new medication. Which of the following actions should the nurse take?",
-      "options": ["Write the order down, read it back to the provider, and follow policy for the provider's signature", "Remember the order, then write it in the record at the end of the shift", "Have another nurse write the order down while the nurse goes to give the dose", "Give the medication now and ask the provider to enter the order the next day"],
+      "options": ["Write the order down, read it back, and get the provider's signature per policy", "Remember the order, then write it in the client's record at the end of the shift", "Have another nurse write the order down while the nurse goes to give the dose", "Give the medication now and ask the provider to enter the order the next morning"],
       "answer": 0,
       "rationale": "<p><b>Writing it down, reading it back, and following policy for the provider's signature</b> is correct. Telephone and verbal orders follow facility policy: the nurse writes or enters the order, reads it back to confirm it, and the provider co-signs it within the set time.</p><p><b>Writing it later from memory</b> invites errors. <b>Another nurse writing it</b> means the person who heard the order isn't the one who recorded it. <b>Giving it without a documented order</b> leaves no legal order for the medication.</p><p><b>Takeaway:</b> Write it down, read it back, and get it signed.</p>"
     },
@@ -1980,7 +1980,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "Which of the following statements about documentation and the law is accurate?",
-      "options": ["Documentation can be edited later if a lawsuit is filed.", "Only the provider's notes can be used as evidence in court.", "Charting care before it's given saves time and is acceptable.", "Accurate, complete documentation is the nurse's best defense if their care is questioned."],
+      "options": ["Documentation can be edited later if a lawsuit is filed against the nurse.", "Only the provider's notes can be used as evidence in a court case.", "Charting care before it's given saves time and is legally acceptable.", "Accurate, complete documentation is the nurse's best legal defense."],
       "answer": 3,
       "rationale": "<p><b>Accurate, complete documentation is the nurse's best defense</b> is correct. The health record is a legal document that can be entered as evidence in court, where it can support a nurse or show that care fell short. Legally, care that isn't documented is treated as care that wasn't done.</p><p><b>Editing after a lawsuit</b> is tampering. The <b>whole record</b>, including nursing documentation, can be used as evidence. <b>Charting before care</b> is inaccurate and dangerous: plans change, and the record must show what actually happened.</p><p><b>Takeaway:</b> If it wasn't documented, it wasn't done.</p>"
     },
@@ -2026,7 +2026,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "During a root cause analysis of a medication error, a team member says, “We just need to find out which nurse made the mistake and discipline them.” Which of the following responses is best?",
-      "options": ["“You're right; finding out which nurse was at fault is the main goal of this meeting.”", "“Let's skip the analysis and just retrain every nurse on the unit right away.”", "“We should focus on the pharmacy staff, since medication errors usually start there.”", "“A root cause analysis looks for the system and process problems that allowed the error, not for someone to blame.”"],
+      "options": ["“You're right; finding out which nurse was at fault is the main goal of this meeting.”", "“Let's skip the analysis and just retrain every nurse on the unit right away.”", "“We should focus on the pharmacy staff, since medication errors usually start there.”", "“A root cause analysis looks for system and process problems, not someone to blame.”"],
       "answer": 3,
       "rationale": "<p><b>Looking for system and process problems, not blame</b> is correct. A root cause analysis focuses on systems and processes, not individual performance. Most errors come from faulty systems, so blaming one person leaves the real cause in place and discourages others from reporting.</p><p><b>Finding the nurse at fault</b> is the blame approach that RCA avoids. <b>Retraining everyone without analysis</b> guesses at the cause. <b>Assuming it's the pharmacy</b> decides the answer before gathering the data.</p><p><b>Takeaway:</b> RCA asks what in the system let the error happen, not who to blame.</p>"
     },
@@ -2035,7 +2035,7 @@
       "type": "mc",
       "topic": "Confidentiality of health information",
       "stem": "A float nurse's login isn't working, and they ask to use the nurse's login to chart for a few minutes. Which of the following responses should the nurse give?",
-      "options": ["“Sure, just log out when you're done charting.”", "“I can't share my login, but I'll help you reach the IT help desk or the charge nurse to get access.”", "“Tell me what to chart, and I'll enter it under my name.”", "“Write your notes on paper, and throw them away after you chart them tomorrow.”"],
+      "options": ["“Sure, just log out when you're done charting so no one else can use it.”", "“I can't share my login, but I'll help you get access through the IT help desk.”", "“Tell me what to chart, and I'll enter it under my own name for you.”", "“Write your notes on paper, and throw them away after you chart them in the morning.”"],
       "answer": 1,
       "rationale": "<p><b>Declining and helping the float nurse get access</b> is correct. Nurses never use anyone else's login or share their own: everything entered under a login is legally that person's documentation, and the EHR tracks every access.</p><p><b>Sharing the login</b> means the record would show the wrong author. <b>Charting someone else's care under your own name</b> documents care you didn't give. <b>Paper notes charted tomorrow and thrown away</b> delay documentation and risk privacy.</p><p><b>Takeaway:</b> Your login is your signature: never share it, and never chart care you didn't give.</p>"
     },
@@ -2044,7 +2044,7 @@
       "type": "mc",
       "topic": "Informatics and documentation",
       "stem": "A nurse manager is auditing paper charts. Which of the following findings creates the greatest legal risk?",
-      "options": ["A client's own words written in quotation marks", "A late entry clearly labeled with the time it refers to", "Several entries with no date or time, and blank lines left between notes", "An error crossed out with a single line and initialed"],
+      "options": ["A client's own words written down in quotation marks", "A late entry clearly labeled with the time of the care it refers to", "Entries with no date or time, and blank lines between notes", "An error crossed out with a single line, initialed, and dated"],
       "answer": 2,
       "rationale": "<p><b>Entries with no date or time, and blank lines between notes</b> is correct. Missing dates and times make it impossible to show when care happened, and blank lines invite later additions, which can look like tampering. Both weaken the record in court.</p><p><b>The client's own words in quotation marks</b>, <b>a properly labeled late entry</b>, and <b>an error corrected with one line and initials</b> all follow documentation guidelines.</p><p><b>Takeaway:</b> Every entry needs a date and time, and no blank space should be left behind.</p>"
     },
@@ -2079,7 +2079,7 @@
       "text": "The program's automatic weight alert is an example of {{0}}, and the nurse's priority is to {{1}}.",
       "blanks": [
         {"options": ["a geographic information system", "computerized provider order entry", "clinical decision support", "a personal health record"], "answer": 2},
-        {"options": ["wait for Saturday's reading to confirm the trend", "assess the client by video and notify the provider of the weight gain", "turn off the alert, since the client already knows", "tell the client to take two water pills today"], "answer": 1}
+        {"options": ["wait for Saturday's weight reading to confirm the trend", "assess the client by video and notify the provider", "turn off the alert, since the client already knows about it", "tell the client to take two water pills today instead of one"], "answer": 1}
       ],
       "rationale": "<p>An automatic alert that applies a rule to the client's data is <b>clinical decision support</b>. The priority is to <b>assess the client and notify the provider</b>: the weight gain, ankle swelling, tight shoes, and needing more pillows to sleep point to worsening fluid overload, and the order says to notify the provider.</p><p><b>Waiting for another reading</b> delays care, <b>turning off the alert</b> removes a safety net, and <b>telling the client to double the medication</b> changes the dose without an order. A geographic information system, CPOE, and a personal health record don't generate alerts like this one.</p><p><b>Takeaway:</b> An alert supports the nurse's judgment, but it still needs the nurse's assessment and action.</p>"
     },
@@ -2089,7 +2089,7 @@
       "case": "telehealth",
       "topic": "Confidentiality of health information",
       "stem": "The client's daughter asks the nurse for her own login to the client's patient portal so she can help manage the client's medications. Which of the following responses should the nurse give?",
-      "options": ["“I can give you your parent's password now, since you're family.”", "“Family members can never have access to a client's records.”", "“You can log in with your parent's account whenever you need to.”", "“Your parent can give written permission for you to have your own proxy access to the portal.”"],
+      "options": ["“I can give you your parent's portal password right now, since you're family.”", "“Family members can never have access to a client's portal or records.”", "“You can just log in with your parent's account whenever you need to.”", "“Your parent can give you your own proxy access with written permission.”"],
       "answer": 3,
       "rationale": "<p><b>Written permission for proxy access</b> is correct. Family members don't automatically have a right to a client's records, but the client can authorize them. Most portals offer proxy access: the client gives written permission, and the family member gets their own login, so access is tracked and can be limited or ended.</p><p><b>Giving out the client's password</b> and <b>using the client's account</b> share a login and leave no record of who did what. <b>Family can never have access</b> is false: the client can authorize it.</p><p><b>Takeaway:</b> The client controls who sees their information, and proxy access with written permission is the safe route.</p>"
     },
@@ -2099,7 +2099,7 @@
       "case": "telehealth",
       "topic": "Informatics and documentation",
       "stem": "After the visit, the nurse calls the provider, who increases the furosemide dose. Which of the following entries best documents the call?",
-      "options": ["“0930: Called the provider about the client's weight problem and noncompliance. New orders received and carried out. Client teaching done.”", "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed furosemide doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”", "“0930: Provider aware of wt gain. Furosemide increased per order. Client to weigh QD and verbalized understanding of all teaching.”", "“0930: Provider seemed unconcerned about the client's weight gain but agreed to increase the dose. Client appears to understand.”"],
+      "options": ["“0930: Called the provider about the client's weight problem, swollen ankles, and noncompliance with the medication schedule. New orders received and carried out. Client teaching done.”", "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”", "“0930: Provider aware of wt gain and ankle swelling since Monday. Furosemide increased per new order from provider. Client to weigh QD and verbalized understanding of all teaching about the new dose.”", "“0930: Provider seemed unconcerned about the client's weight gain and swollen ankles since Monday but agreed to increase the furosemide dose. Client appears to understand the new dose and when to take it.”"],
       "answer": 1,
       "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>"
     },
@@ -2292,7 +2292,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A nurse is explaining what quality health care means. Which of the following definitions from the Institute of Medicine (IOM) should the nurse use?",
-      "options": ["Care that costs the client and the hospital as little as possible, in every case", "Care that gives every client whatever services they request, when they request them", "The degree to which health services increase the likelihood of desired outcomes and are consistent with current professional knowledge", "Care that is provided only by the most experienced staff members on each unit"],
+      "options": ["Care that costs the client and the hospital as little as possible, in every single case", "Care that gives every client whatever tests and services they request, at the moment they request them", "Care that increases the likelihood of desired outcomes and reflects current professional knowledge", "Care that is provided only by the most experienced and highly trained staff on each unit"],
       "answer": 2,
       "rationale": "<p><b>Increasing the likelihood of desired outcomes, consistent with current professional knowledge</b> is correct. That's the IOM's definition of quality: care that makes good outcomes more likely, for individuals and populations, and reflects current knowledge.</p><p><b>The lowest cost</b> isn't the measure of quality; quality management aims for cost-effective care by preventing overuse, misuse, and underuse, not by cutting corners. <b>Whatever clients request</b> may not be appropriate or evidence-based. <b>The most experienced staff</b> doesn't guarantee quality, and every nurse is expected to give quality care.</p><p><b>Takeaway:</b> Quality means better odds of good outcomes, based on current knowledge.</p>"
     },
@@ -2310,7 +2310,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "Which of the following statements defines quality improvement?",
-      "options": ["Systematic, continuous actions that lead to measurable improvements in health care services and in the health of targeted client groups", "A one-time inspection of a unit to find staff members who aren't following policy", "A research study that tests a new treatment and requires review board approval", "A yearly survey that asks clients whether they liked their hospital room"],
+      "options": ["Systematic, continuous actions that lead to measurable improvements in care and health", "A one-time inspection of a unit to find the staff members who aren't following policy", "A research study that tests a new treatment and requires institutional review board approval", "A yearly survey that asks discharged clients whether they liked their hospital room"],
       "answer": 0,
       "rationale": "<p><b>Systematic, continuous actions that lead to measurable improvements</b> is correct. This definition, from the Health Resources and Services Administration (HRSA), highlights what makes QI work: it's ongoing, it's organized, and its results are measured.</p><p><b>A one-time inspection to find staff at fault</b> isn't continuous and focuses on blame instead of systems. <b>A research study</b> generates new knowledge, while QI improves local processes using local data. <b>A yearly room survey</b> may collect some data, but on its own it isn't a systematic improvement process.</p><p><b>Takeaway:</b> QI is continuous, systematic, and measurable.</p>"
     },
@@ -2330,7 +2330,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A nurse is explaining how the Institute of Medicine's report To Err Is Human changed the way hospitals respond to errors. Which of the following statements reflects the report's main message?",
-      "options": ["Most errors are caused by careless individuals, who should be removed.", "Errors are rare, so tracking them isn't worth the cost.", "Only physicians make errors that harm clients.", "Most errors come from faulty systems and processes, so the fix is to redesign the systems."],
+      "options": ["Most errors are caused by careless individuals, who should be removed.", "Errors are rare, so tracking and reporting them isn't worth the cost.", "Only physicians make the kinds of errors that harm clients.", "Most errors come from faulty systems, which need to be redesigned."],
       "answer": 3,
       "rationale": "<p><b>Most errors come from faulty systems, so the fix is to redesign them</b> is correct. To Err Is Human (2000) estimated that errors caused about 98,000 hospital deaths a year, and its central message was that good people working in bad systems make mistakes, so safety depends on better systems.</p><p><b>Blaming careless individuals</b> is the approach the report moved away from. Errors are <b>common</b>, not rare. And errors involve <b>every</b> discipline, not only physicians.</p><p><b>Takeaway:</b> Fix the system, not the blame.</p>"
     },
@@ -2352,7 +2352,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "Which of the following statements describes a conclusion of the Institute of Medicine's report Crossing the Quality Chasm?",
-      "options": ["The U.S. health care system was working well and needed only small adjustments to its funding.", "The health care system was too disorganized to care well for people with several chronic illnesses, and needed redesign around six aims.", "Hospitals should stop measuring quality, because collecting data distracts staff from client care.", "Quality would improve on its own if hospitals simply hired more physicians and specialists."],
+      "options": ["The U.S. health care system was working well and needed only small adjustments to its funding and staffing.", "The health care system needed redesign around six aims to care well for people with chronic illnesses.", "Hospitals should stop measuring quality, because collecting data distracts staff from client care.", "Quality would improve on its own if hospitals simply hired more physicians and specialists."],
       "answer": 1,
       "rationale": "<p><b>The system was too disorganized for people with several chronic illnesses and needed redesign around six aims</b> is correct. Crossing the Quality Chasm (IOM, 2001) proposed six aims for improvement: care that is safe, timely, effective, efficient, equitable, and patient-centered.</p><p>The report called for major redesign, not <b>small adjustments</b>. It called for <b>more</b> measurement, not less. And it found the problem was how care is organized, not simply the <b>number of physicians</b>.</p><p><b>Takeaway:</b> The six aims (STEEEP) define quality care: safe, timely, effective, efficient, equitable, and patient-centered.</p>"
     },
@@ -2370,7 +2370,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A nurse is asked why the hospital invests so much in quality improvement. Which of the following explanations is most accurate?",
-      "options": ["It mainly helps the hospital look good in its advertisements.", "It replaces the need for nurses to use clinical judgment.", "Measuring care against standards and fixing processes reduces errors, infections, falls, and readmissions.", "It's required only once, when the hospital first opens."],
+      "options": ["It mainly helps the hospital look good in its advertisements and rankings.", "It replaces the need for nurses to use their own clinical judgment.", "Measuring care and fixing processes reduces errors, infections, and falls.", "It's required only once, when the hospital first opens its doors."],
       "answer": 2,
       "rationale": "<p><b>Measuring care and fixing processes reduces errors, infections, falls, and readmissions</b> is correct. QI connects directly to client outcomes: fewer complications and readmissions, safer care, lower costs, and more satisfied clients.</p><p>Good results may help a hospital's reputation, but <b>advertising</b> isn't the purpose. QI supports nurses' judgment rather than <b>replacing it</b>. And QI is <b>continuous</b>, not a one-time requirement.</p><p><b>Takeaway:</b> QI matters because it makes measurable differences in client outcomes.</p>"
     },
@@ -2388,7 +2388,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "Which of the following statements describes the main purpose of quality management?",
-      "options": ["Ranking nurses by how quickly they finish their tasks", "Evaluating care processes against accepted standards to correct problems before they harm clients", "Replacing the need for accreditation surveys", "Finding staff members to discipline after errors"],
+      "options": ["Ranking nurses by how quickly they finish their assigned tasks each shift", "Evaluating care against standards to fix problems before harm occurs", "Replacing the need for accreditation surveys by outside agencies", "Finding the staff members to discipline after errors and near misses"],
       "answer": 1,
       "rationale": "<p><b>Evaluating care against standards to correct problems before they harm clients</b> is correct. Quality management evaluates medical and nursing processes for quality and effectiveness, compared with accepted standards, to correct problems, prevent errors, and provide cost-effective care by preventing overuse, misuse, and underuse.</p><p><b>Speed rankings</b> don't measure quality. Quality management doesn't <b>replace accreditation</b>; it helps organizations meet accreditation standards. <b>Disciplining staff</b> focuses on blame instead of systems.</p><p><b>Takeaway:</b> Quality management compares care with standards to fix problems before clients are harmed.</p>"
     },
@@ -2397,7 +2397,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A unit's QI team wants to know whether the quality of its nursing care is improving. Which of the following data would show this best?",
-      "options": ["The unit's rates of falls and pressure injuries over the past year", "The number of nurses hired over the past year", "The total hours of overtime worked on the unit", "The number of supplies the unit ordered"],
+      "options": ["The unit's rates of falls and pressure injuries over the past year", "The number of nurses hired on the unit over the past year", "The total hours of overtime that nurses worked on the unit this year", "The number of supplies the unit ordered over the past year"],
       "answer": 0,
       "rationale": "<p><b>Rates of falls and pressure injuries over time</b> is correct. QI depends on measurable outcomes, and falls and pressure injuries are nurse-sensitive outcomes that reflect the quality of nursing care. Tracking them over time shows whether care is improving.</p><p><b>Hiring</b>, <b>overtime</b>, and <b>supply orders</b> describe staffing and costs. They may affect quality, but they don't measure client outcomes.</p><p><b>Takeaway:</b> Judge the quality of care by client outcomes over time.</p>"
     },
@@ -2426,7 +2426,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A hospital requires staff to use two client identifiers, such as name and date of birth, before every medication and procedure. Which of the following initiatives most directly drives this requirement?",
-      "options": ["Healthy People 2030", "OSHA's workplace safety standards", "Medicare Part D drug coverage", "The Joint Commission's National Patient Safety Goals"],
+      "options": ["Healthy People 2030's national health objectives", "OSHA's workplace safety standards for hospital employees", "Medicare Part D prescription drug coverage", "The Joint Commission's National Patient Safety Goals"],
       "answer": 3,
       "rationale": "<p><b>The Joint Commission's National Patient Safety Goals</b> is correct. These goals target known safety problems, such as identifying clients correctly, and accredited organizations must meet them. Using two identifiers is a long-standing goal.</p><p><b>Healthy People 2030</b> sets national health objectives for the population. <b>OSHA</b> protects workers. <b>Medicare Part D</b> pays for prescription drugs.</p><p><b>Takeaway:</b> National Patient Safety Goals come from The Joint Commission, and identifying clients correctly is one of them.</p>"
     },
@@ -2455,7 +2455,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "Which of the following statements explains how accreditation by The Joint Commission drives quality improvement in hospitals?",
-      "options": ["The Joint Commission manages each hospital's daily staffing.", "Hospitals must meet evidence-based standards and show continuous improvement to keep their accreditation.", "The Joint Commission licenses each nurse who works in an accredited hospital.", "The Joint Commission pays for every hospital's QI projects."],
+      "options": ["The Joint Commission manages each hospital's daily staffing and budget.", "Hospitals must meet standards and show continuous improvement to stay accredited.", "The Joint Commission licenses each nurse who works in one of its accredited hospitals.", "The Joint Commission pays for every hospital's QI projects and staff."],
       "answer": 1,
       "rationale": "<p><b>Meeting evidence-based standards and showing continuous improvement</b> is correct. To be reaccredited, an organization must show that it continuously evaluates its performance, corrects deficiencies, and improves, and on-site surveys check this. That makes QI an ongoing requirement.</p><p>The Joint Commission doesn't manage <b>daily staffing</b>, <b>license nurses</b> (the state board of nursing does), or <b>pay for QI projects</b>.</p><p><b>Takeaway:</b> Accreditation keeps QI going, because hospitals must keep proving that they meet standards and improve.</p>"
     },
@@ -2473,7 +2473,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A hospital reports its rates of central line infections to a national CDC system that lets it compare its rates with other hospitals' rates. Which of the following is the main purpose of this reporting?",
-      "options": ["To decide which nurses caused each infection", "To replace the hospital's own infection-control program", "To set the price that insurers pay for central lines", "To track and compare health care-associated infections so hospitals can find and fix problems"],
+      "options": ["To decide which nurses and providers caused each infection", "To replace the hospital's own infection-control program and staff", "To set the price that insurers pay for each central line inserted", "To compare infection rates so hospitals can find and fix problems"],
       "answer": 3,
       "rationale": "<p><b>Tracking and comparing infections so hospitals can find and fix problems</b> is correct. The CDC tracks health care-associated infections through its national reporting system and publishes infection-control guidelines. Comparing a hospital's rates with others' shows where it needs to improve.</p><p>The goal is system improvement, not finding <b>who caused</b> each infection. National data <b>support</b> the hospital's own program rather than replacing it, and they don't set <b>prices</b>.</p><p><b>Takeaway:</b> National infection data let hospitals compare themselves with others and focus their improvement work.</p>"
     },
@@ -2539,7 +2539,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A QI team is choosing a change to reduce catheter-associated infections on its unit. Which of the following approaches is best?",
-      "options": ["Choosing whatever change the most senior nurse prefers", "Basing the change on the best available evidence, then testing it with the unit's own data", "Copying another hospital's change without checking whether it worked", "Making several changes at once without measuring any of them"],
+      "options": ["Choosing whatever change the most senior nurse on the unit prefers", "Basing the change on the best evidence, then testing it with unit data", "Copying another hospital's change without checking whether it worked there", "Making several changes at once without measuring any of them"],
       "answer": 1,
       "rationale": "<p><b>Basing the change on the best evidence, then testing it with local data</b> is correct. QI and evidence-based practice work together: the change should be built on the best evidence, and the unit's own data show whether it works there.</p><p><b>The senior nurse's preference</b> is tradition, not evidence. <b>Copying without checking results</b> skips both evidence and measurement. <b>Several unmeasured changes</b> make it impossible to tell what helped.</p><p><b>Takeaway:</b> Choose changes from the evidence, and prove them with your own data.</p>"
     },
@@ -2556,7 +2556,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A client dies after a medication error in an accredited hospital. Which of the following statements describes The Joint Commission's role after this sentinel event?",
-      "options": ["It reviews how the hospital responded, including its root cause analysis and action plan, as part of accreditation.", "It decides whether the nurse involved keeps their license.", "It takes over the hospital's operations until the investigation ends.", "It has no role, because each hospital handles its own errors privately."],
+      "options": ["It reviews the hospital's root cause analysis and action plan as part of accreditation.", "It decides whether the nurse involved in the error keeps their nursing license.", "It takes over the hospital's daily operations until its own investigation ends.", "It has no role, because each hospital handles its own errors privately, without reporting."],
       "answer": 0,
       "rationale": "<p><b>It reviews the hospital's response, including the root cause analysis and action plan</b> is correct. A sentinel event, an unexpected occurrence involving death, serious physical or psychological injury, or the risk of it, requires immediate investigation and response. The Joint Commission expects a thorough root cause analysis and a plan to reduce future risk, and it reviews the response as part of accreditation.</p><p><b>Licensure decisions</b> belong to the state board of nursing. The Joint Commission doesn't <b>take over hospitals</b>. And sentinel events aren't handled <b>privately</b>: accreditors expect a documented response.</p><p><b>Takeaway:</b> After a sentinel event come a root cause analysis, an action plan, and The Joint Commission's review.</p>"
     },
@@ -2565,7 +2565,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "Which of the following situations is a breach of care?",
-      "options": ["A nurse reports a near miss to the charge nurse.", "A client who has been told the risks declines a bath.", "A nurse doesn't reassess a client's pain after giving an opioid, although the policy requires it.", "A nurse asks for help programming an unfamiliar infusion pump."],
+      "options": ["A nurse reports a near miss to the charge nurse right away.", "A client who has been told the risks declines a bath this morning.", "A nurse skips the required pain reassessment after giving an opioid.", "A nurse asks a coworker for help programming an unfamiliar infusion pump."],
       "answer": 2,
       "rationale": "<p><b>Not reassessing after an opioid, as the policy requires</b> is correct. A breach of care occurs when a nurse does something that shouldn't have been done, or doesn't do something that should have been done. Missing a required reassessment is an omission, and nurses are most often involved in breaches around bedside assessment and monitoring.</p><p><b>Reporting a near miss</b> and <b>asking for help</b> with unfamiliar equipment are safe, expected practices. <b>A client's informed refusal</b> is the client's right, not a breach, as long as it's respected and documented.</p><p><b>Takeaway:</b> A breach of care is doing what shouldn't be done, or not doing what should be.</p>"
     },
@@ -2574,7 +2574,7 @@
       "type": "sata",
       "topic": "Quality improvement",
       "stem": "Which of the following actions help a nurse reduce the risk of a breach of care?",
-      "options": ["Reporting problems to supervisors", "Skipping documentation on busy shifts", "Staying current in skills and education", "Basing care on a nursing model, and documenting the care and the client's response", "Avoiding questions so they look competent"],
+      "options": ["Reporting problems to supervisors", "Skipping documentation on busy shifts to save time for client care", "Staying current in skills and education", "Basing care on a nursing model and documenting the client's response", "Avoiding questions so they look competent to their coworkers"],
       "answer": [0, 2, 3],
       "rationale": "<p>Nurses reduce the risk of a breach of care by <b>reporting problems to supervisors</b>, <b>staying current in skills and education</b>, and <b>basing all care on a nursing model and documenting the care and the client's response</b>.</p><p><b>Skipping documentation</b> leaves no proof that care was given. <b>Avoiding questions</b> leads to mistakes with unfamiliar tasks; asking is safe practice.</p><p><b>Takeaway:</b> Speak up, stay current, and document care and responses.</p>"
     },
@@ -2601,7 +2601,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "A nurse completes an incident report after giving a client the wrong dose of a medication. Which of the following statements about the report is accurate?",
-      "options": ["It is placed in the client's medical record.", "It is sent to risk management or the quality department per policy, and it isn't part of the medical record.", "It is given to the client's family so they know what happened.", "The nurse keeps a copy at home in case of a lawsuit."],
+      "options": ["It is placed in the client's medical record with the nurse's notes.", "It goes to risk management and stays out of the medical record.", "It is given to the client's family so that they know what happened.", "The nurse keeps a copy at home in case of a lawsuit or inquiry."],
       "answer": 1,
       "rationale": "<p><b>It goes to risk management or the quality department, not into the medical record</b> is correct. An incident (occurrence) report documents any event out of the ordinary that harmed or could have harmed a client, employee, or visitor. It's a confidential QI and risk management tool, used to find patterns and fix systems, and access is limited to risk management, QI staff, and administrators.</p><p>It's <b>never placed in the client's record</b>, and the record shouldn't mention it. It isn't <b>given to the family</b>; the client and family are told what happened through the facility's disclosure process. <b>Copies taken home</b> break confidentiality.</p><p><b>Takeaway:</b> Chart the facts of the event in the record; send the incident report to risk management, never into the chart.</p>"
     },
@@ -2684,7 +2684,7 @@
       "type": "mc",
       "topic": "PDSA cycle",
       "stem": "A 4-week test of a new medication-pass routine on one unit cut interruptions and errors in half, with no new problems. Which of the following actions belongs in the Act phase?",
-      "options": ["Running the same 4-week test again on the same unit", "Adopting the routine, updating the policy, and spreading it to other units", "Deciding which data to collect during the test", "Ending the routine, since the test is over"],
+      "options": ["Running the same 4-week test again on the same unit to be sure", "Adopting the routine and spreading it to other units", "Deciding which data the team will collect during the test", "Ending the new routine, since the 4-week test is over"],
       "answer": 1,
       "rationale": "<p><b>Adopting the routine, updating the policy, and spreading it</b> is correct. In the Act phase, the team decides to adopt, adapt (modify), or abandon the change. A successful test is adopted and standardized.</p><p><b>Repeating the same test</b> adds nothing when the results were clear. <b>Deciding which data to collect</b> belongs in Plan. <b>Ending a change that worked</b> throws away the improvement.</p><p><b>Takeaway:</b> In Act, adopt, adapt, or abandon the change, based on what Study showed.</p>"
     },
@@ -2693,7 +2693,7 @@
       "type": "mc",
       "topic": "PDSA cycle",
       "stem": "Why does the Plan-Do-Study-Act cycle repeat instead of ending after one round?",
-      "options": ["Each round's results lead to the next test of change, so improvement keeps going.", "The first round always fails, so the team has to try again.", "Accreditors require exactly three rounds for every change.", "Repeating the cycle lets the team skip measuring results."],
+      "options": ["Each round's results lead to the next test of change.", "The first round always fails, so the team has to try again.", "Accreditors require exactly three rounds for every change.", "Repeating the cycle lets the team skip measuring results."],
       "answer": 0,
       "rationale": "<p><b>Each round's results lead to the next test</b> is correct. Quality improvement is continuous: what the team learns in one cycle shapes the next plan, so changes are refined in small steps.</p><p>First rounds <b>often succeed</b>, and accreditors don't require a <b>set number</b> of cycles. Every cycle <b>includes</b> measuring results; that's the Study phase.</p><p><b>Takeaway:</b> PDSA is a loop: each cycle teaches something that starts the next one.</p>"
     },
@@ -2702,7 +2702,7 @@
       "type": "mc",
       "topic": "Quality improvement",
       "stem": "During a root cause analysis, a team draws a diagram that groups the possible causes of an error into categories, such as people, methods, equipment, and environment. Which tool is the team using?",
-      "options": ["A run chart", "A PICOT question", "A fishbone (cause-and-effect) diagram", "A pie chart of staffing"],
+      "options": ["A run chart", "A PICOT question", "A fishbone diagram", "A pie chart of staffing"],
       "answer": 2,
       "rationale": "<p><b>A fishbone (cause-and-effect) diagram</b> is correct. It sorts possible causes into categories, so a root cause analysis team can see every contributing factor, not just the most obvious one. Asking “why?” repeatedly (the 5 Whys) is another RCA tool.</p><p><b>A run chart</b> shows data over time. <b>A PICOT question</b> frames a clinical question for an evidence search. <b>A pie chart of staffing</b> shows proportions, not causes.</p><p><b>Takeaway:</b> Fishbone diagrams and the 5 Whys help an RCA dig past the obvious to the root cause.</p>"
     },
@@ -2804,7 +2804,7 @@
       "type": "mc",
       "topic": "PDSA cycle",
       "stem": "A small test of a new oral-care routine didn't lower the unit's rate of hospital-acquired pneumonia. Which of the following actions fits the Act phase of the PDSA cycle?",
-      "options": ["Adapting or abandoning the change, then planning another test", "Adopting the change on every unit", "Stopping all work on preventing pneumonia", "Repeating the same test with no changes"],
+      "options": ["Adapting or abandoning the change, then planning another test", "Adopting the new oral-care routine on every unit in the hospital", "Stopping all of the unit's work on preventing pneumonia", "Repeating the same 4-week test again with no changes"],
       "answer": 0,
       "rationale": "<p>In the <b>Act</b> phase, the team decides what to do with what it learned: <b>adopt</b> a change that worked, <b>adapt</b> it, or <b>abandon</b> it. A change that didn't work is adapted or abandoned, and the cycle starts again with a <b>new plan</b>.</p><p><b>Adopting</b> a change that didn't help spreads it without benefit. <b>Stopping the work</b> leaves the problem unsolved. <b>Repeating the same test</b> unchanged is unlikely to give a different result.</p><p><b>Takeaway:</b> Act: adopt a change that worked; adapt or abandon one that didn't, and plan the next cycle.</p>"
     },
@@ -2885,7 +2885,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A nurse is explaining health policy to a group of nursing students. Which of the following definitions should the nurse use?",
-      "options": ["Actions taken by government bodies and other groups in society to reach specific health care goals", "A list of the daily tasks that a hospital assigns to each nurse", "The rules that a single insurance company uses to pay claims", "A personal health goal that a client sets with the nurse"],
+      "options": ["Actions by governments and other groups to reach specific health care goals", "A list of the daily tasks that a hospital assigns to each nurse on every shift", "The rules that a single insurance company uses to pay its members' claims", "A personal health goal that a client sets with the nurse during care"],
       "answer": 0,
       "rationale": "<p><b>Actions taken by government bodies and other groups in society to reach health care goals</b> is correct. Health policy is both an entity, such as a law, regulation, guideline, or position statement, and a process: how those are developed and carried out.</p><p><b>A hospital's task list</b> is an assignment, not policy. <b>One insurer's claim rules</b> are far too narrow. <b>A client's personal goal</b> is part of a care plan.</p><p><b>Takeaway:</b> Health policy is what governments and other groups do to reach health care goals: both the rules and the process of making them.</p>"
     },
@@ -2903,7 +2903,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements best explains why nurses need to understand health policy?",
-      "options": ["Health policy affects only hospital administrators, not bedside care.", "Policies drive the availability, safety, and quality of care, and a missing or poorly written policy can harm people.", "Nurses must write every policy at their hospital themselves.", "Health policy matters only during election years."],
+      "options": ["Health policy affects only hospital administrators, not the care at the bedside.", "Policies drive the availability, safety, and quality of the care clients get.", "Nurses must write every policy and procedure at their hospital themselves.", "Health policy matters only during election years, when laws are voted on."],
       "answer": 1,
       "rationale": "<p><b>Policies drive the availability, safety, and quality of care</b> is correct. A poorly constructed policy, or the absence of a needed one, can seriously harm individuals and populations. Nurses need to understand how policy affects their clients, their own practice, and their organizations, and they can influence it.</p><p>Policy shapes <b>bedside care</b>, not just administration. Nurses help develop policies but don't write <b>every</b> one. And policy is made and changed <b>all the time</b>, not only in election years.</p><p><b>Takeaway:</b> Policy shapes what care is available, how safe it is, and how good it is.</p>"
     },
@@ -2915,7 +2915,7 @@
       "text": "Public health policy is established in {{0}} and enforced by {{1}}, while an organization's own policy {{2}}.",
       "blanks": [
         {"options": ["a hospital's handbook", "law and regulation", "professional opinion", "insurance contracts"], "answer": 1},
-        {"options": ["the government agency responsible for it", "each hospital's staff", "accrediting organizations only", "private citizens"], "answer": 0},
+        {"options": ["the responsible government agency", "each hospital's own nursing staff", "accrediting organizations only", "private citizens who file complaints"], "answer": 0},
         {"options": ["applies to every citizen in the state", "overrides federal law", "is binding only within that organization", "must be signed by the governor"], "answer": 2}
       ],
       "rationale": "<p><b>Public health policy</b> is established in <b>law and regulation</b> and is enforceable by <b>the government agency responsible for carrying it out</b>. It can be influenced by health care organizations, professional associations, accrediting agencies, and private citizens.</p><p>A private, <b>organizational policy</b>, from a hospital or a professional group, isn't established by law, so it's <b>binding only within that organization</b>, though it can directly or indirectly affect public policy.</p><p><b>Takeaway:</b> Public policy is backed by law and government; organizational policy is the organization's own rules.</p>"
@@ -2925,7 +2925,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "The American Nurses Association publishes a position statement on safe nurse staffing. Which of the following statements about this position statement is accurate?",
-      "options": ["It is a federal law that every hospital must follow.", "It has no effect, since only government bodies make policy.", "It isn't law, but it can influence public policy and the policies of health care organizations.", "It replaces each state's Nurse Practice Act."],
+      "options": ["It is a federal law that every hospital in the country must follow.", "It has no effect at all, since only government bodies can make policy.", "It isn't law, but it can influence public and organizational policy.", "It replaces each state's Nurse Practice Act for staffing rules."],
       "answer": 2,
       "rationale": "<p><b>It isn't law, but it can influence public and organizational policy</b> is correct. Private organizations, such as professional associations, develop policies that aren't established by law or regulation, but they can directly or indirectly shape public policy, for example by informing legislators and guiding hospitals.</p><p>It isn't a <b>federal law</b>. Saying it has <b>no effect</b> ignores how associations shape policy. And it doesn't replace a state's <b>Nurse Practice Act</b>, which is state law.</p><p><b>Takeaway:</b> Professional associations make policy without making law, and their positions can move lawmakers.</p>"
     },
@@ -2961,7 +2961,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A nursing student says, “Health policy is for politicians. Nurses don't really have a role in it.” Which of the following responses by the nurse is best?",
-      "options": ["“Nurses have a significant role. We see how policies affect clients, and we can influence them as citizens and through professional organizations.”", "“You're right. Nurses should leave policy to others and focus only on bedside care.”", "“Only nurses who are elected to public office are able to affect health policy.”", "“Nurses can influence their own hospital's policies, but never state or federal laws.”"],
+      "options": ["“Nurses have a significant role, as citizens and through professional organizations.”", "“You're right. Nurses should leave policy to others and focus only on bedside care.”", "“Only nurses who are elected to public office are able to affect health policy in any way.”", "“Nurses can influence their own hospital's policies, but never state or federal laws.”"],
       "answer": 0,
       "rationale": "<p><b>Nurses have a significant role</b> is correct. Nurses are the largest group of health care professionals and see the effects of policy firsthand. They can influence change by working with public officials at the local, state, and national levels, as individual citizens or as members of professional organizations.</p><p><b>Bedside care only</b> ignores how policy shapes that care. Nurses don't need to <b>hold office</b> to influence policy. And nurses <b>do</b> influence laws, through testimony, lobbying, and contact with legislators.</p><p><b>Takeaway:</b> The nurse's role in health policy is significant, from the bedside to the legislature.</p>"
     },
@@ -2970,7 +2970,7 @@
       "type": "sata",
       "topic": "Health policy",
       "stem": "A nurse wants to influence a proposed state health law. Which of the following actions should the nurse take?",
-      "options": ["Testify at a legislative hearing about what the nurse sees in practice", "Stay silent, so as not to seem political", "Contact legislators by letter, email, or a meeting", "Work through a professional association that lobbies on the issue", "Comment on the proposed regulations when they're open for public comment", "Wait until the law passes, and then complain on social media"],
+      "options": ["Testify at a legislative hearing about what the nurse sees in practice", "Stay silent about the bill, so as not to seem too political", "Contact legislators by letter, email, or a meeting", "Work through a professional association that lobbies on the issue", "Comment on the proposed regulations when they're open for public comment", "Wait until the law passes, and then complain about it on social media"],
       "answer": [0, 2, 3, 4],
       "rationale": "<p>Nurses influence policy by <b>testifying</b> as experts, <b>contacting legislators</b>, <b>working through professional associations</b> that lobby, and <b>commenting on proposed regulations</b>. Voting, staying informed, and serving on boards and committees help too.</p><p><b>Staying silent</b> leaves the nurse's expertise out of the decision. <b>Complaining after the law passes</b> misses the chance to shape it.</p><p><b>Takeaway:</b> Speak up early, through the channels that reach decision-makers.</p>"
     },
@@ -2987,7 +2987,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements describes how public health policy is usually made?",
-      "options": ["Strictly by following the scientific evidence, with no politics or compromise at any stage", "Through influence, negotiation, bargaining, and compromise among stakeholders, in a process that isn't always logical or linear", "By the president alone, without any input from legislators, agencies, or the public", "In a fixed, straight sequence of steps that always happens in the same order"],
+      "options": ["Strictly by following the scientific evidence, with no politics, bargaining, or compromise at any step of the process", "Through influence, negotiation, and compromise among stakeholders, in a process that isn't always linear", "By the president alone, without any input from legislators, agencies, or the public", "In a fixed, straight sequence of steps that always happens in the same order"],
       "answer": 1,
       "rationale": "<p><b>Through influence, negotiation, bargaining, and compromise, in a process that isn't always linear</b> is correct. Public policy is the product of both government processes and political forces. Relationships form among stakeholders inside and outside government, and decisions about how resources are allocated, and to whom, are made within a political framework.</p><p>Evidence matters, but policy also involves <b>politics and compromise</b>. Many people shape policy, not <b>the president alone</b>. And the stages of policymaking often overlap and repeat rather than following a <b>fixed sequence</b>.</p><p><b>Takeaway:</b> Policymaking is political and messy, which is why nurses' voices matter.</p>"
     },
@@ -3005,7 +3005,7 @@
       "type": "sata",
       "topic": "Health policy",
       "stem": "A nurse is explaining how the Affordable Care Act changed health coverage. Which of the following changes came from the ACA?",
-      "options": ["Insurers can no longer deny coverage because of pre-existing conditions", "Medicare was replaced by private insurance", "States could expand Medicaid to cover more adults with low incomes", "Health insurance marketplaces were created", "All hospitals became government-owned", "Many preventive services are covered without cost-sharing"],
+      "options": ["Insurers can no longer deny coverage because of pre-existing conditions", "Medicare was replaced by private insurance for adults over 65", "States could expand Medicaid to cover more adults with low incomes", "Health insurance marketplaces were created", "All hospitals became government-owned and government-run", "Many preventive services are covered without cost-sharing"],
       "answer": [0, 2, 3, 5],
       "rationale": "<p>The ACA <b>banned denials for pre-existing conditions</b>, let states <b>expand Medicaid</b>, created <b>insurance marketplaces</b>, and requires coverage of many <b>preventive services without cost-sharing</b>. It also tied more payment to quality and value. By expanding access, it aimed for better outcomes and more emphasis on prevention.</p><p>Medicare <b>still exists</b> alongside private plans, and the ACA didn't make hospitals <b>government-owned</b>.</p><p><b>Takeaway:</b> The ACA expanded access and protections; it didn't replace Medicare or take over hospitals.</p>"
     },
@@ -3014,7 +3014,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "On admission to a hospital, a client says they don't have an advance directive and asks what it is. Which of the following responses by the nurse is appropriate?",
-      "options": ["“You'll need to complete an advance directive before we can admit you to the hospital today.”", "“Advance directives are only meant for clients who are over 80 or who are terminally ill.”", "“Without an advance directive, your doctor will make all of your health care decisions for you.”", "“It states your care wishes, or names someone to decide for you if you can't. I can give you information, and it's your choice.”"],
+      "options": ["“You'll need to complete an advance directive before we can admit you to the hospital today.”", "“Advance directives are only meant for clients who are over 80 or who are terminally ill right now.”", "“Without an advance directive, your doctor will make all of your health care decisions for you.”", "“It states your care wishes or names someone to decide for you. Whether to have one is your choice.”"],
       "answer": 3,
       "rationale": "<p><b>Explaining what it is, and that the choice is the client's</b> is correct. Under the Patient Self-Determination Act (1990), facilities that receive Medicare or Medicaid must tell adult clients on admission, in writing, about their right to make health care decisions, including accepting or refusing treatment and creating advance directives such as a living will or a durable power of attorney for health care. They must document whether the client has one.</p><p>A facility <b>can't require</b> an advance directive as a condition of care. Advance directives are for <b>any adult</b>, not just older or dying clients. And without one, decisions aren't simply left to <b>the doctor</b>: the client decides while able to, and state law guides who decides if they can't.</p><p><b>Takeaway:</b> The PSDA requires informing clients about advance directives, never requiring them.</p>"
     },
@@ -3052,7 +3052,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following hospital policies best protects a client's right to make informed decisions about their own care?",
-      "options": ["A policy that lets the provider decide on procedures without discussing them", "A policy that limits clients' access to their own records", "A policy requiring that clients be told the risks, benefits, and alternatives before procedures", "A policy that allows family members to consent for any adult client"],
+      "options": ["A policy that lets the provider decide on procedures without discussing them", "A policy that limits clients' access to their own medical records", "A policy requiring that clients hear the risks, benefits, and alternatives", "A policy that allows family members to consent for any adult client"],
       "answer": 2,
       "rationale": "<p><b>Requiring that clients learn the risks, benefits, and alternatives</b> is correct. Informed consent policies protect clients' rights and autonomy, which health policy, such as the Patient Self-Determination Act, supports.</p><p><b>Deciding without discussion</b> takes away the client's choice. <b>Limiting access to their own records</b> conflicts with clients' right to see and get copies of them. <b>Family consent for any adult</b> overrides a competent client's right to decide.</p><p><b>Takeaway:</b> Policies that inform clients protect their right to decide.</p>"
     },
@@ -3061,7 +3061,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following examples best shows how a health policy can improve client outcomes?",
-      "options": ["A hospital policy that sets a dress code for all of the hospital's visitors", "A state law that moves the date when every nursing license expires each year", "A hospital policy that limits visitor parking near the emergency entrance", "A state law requiring sepsis screening in hospitals, leading to earlier treatment and fewer deaths"],
+      "options": ["A hospital policy that sets a dress code for all of the hospital's visitors and vendors", "A state law that moves the date when every nursing license expires each year", "A hospital policy that limits visitor parking near the emergency entrance", "A state law requiring sepsis screening in hospitals, which leads to earlier treatment"],
       "answer": 3,
       "rationale": "<p><b>A sepsis screening law that leads to earlier treatment and fewer deaths</b> is correct. It links a policy directly to safer care and a measurable outcome. Health policies contribute to positive outcomes by setting standards, expanding access, and requiring evidence-based practices.</p><p><b>A visitor dress code</b>, <b>a license expiration date</b>, and <b>parking rules</b> are real policies, but none of them directly changes client outcomes.</p><p><b>Takeaway:</b> The policies that matter most for outcomes require safer, evidence-based care or expand access.</p>"
     },
@@ -3070,7 +3070,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements describes a state's Nurse Practice Act?",
-      "options": ["It is a state law that defines the scope of nursing practice and the legal limits of a nurse's role.", "It is a hospital's policy describing which tasks nurses may delegate.", "It is a federal law that sets the same rules for nurses in every state.", "It is a position statement from a professional nursing association."],
+      "options": ["It is a state law that defines the scope and legal limits of nursing practice.", "It is a hospital's policy describing which tasks its nurses may delegate to others.", "It is a federal law that sets the same rules for nurses in every state.", "It is a position statement from a professional nursing association."],
       "answer": 0,
       "rationale": "<p><b>A state law defining the scope of nursing practice and the legal limits of a nurse's role</b> is correct. Each state's Nurse Practice Act sets the legal limits and responsibilities of nursing practice. The state board of nursing enforces it: it licenses nurses, approves nursing programs, and takes disciplinary action.</p><p><b>A hospital policy</b> must stay within the Nurse Practice Act but isn't the act itself. It's <b>state</b> law, so the details differ from state to state. <b>A position statement</b> isn't law.</p><p><b>Takeaway:</b> The Nurse Practice Act is state law, and the board of nursing enforces it.</p>"
     },
@@ -3101,7 +3101,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements about the Occupational Safety and Health Administration (OSHA) is accurate?",
-      "options": ["It is the federal agency that approves new medications.", "It ensures workplace health and safety, and its rules cover most private-sector employers, including health care employers.", "It accredits hospitals and long-term care facilities.", "It is a state agency that licenses nurses."],
+      "options": ["It is the federal agency that approves new medications and devices.", "It ensures workplace safety, including for health care workers.", "It accredits hospitals and long-term care facilities in each state.", "It is a state agency that licenses nurses and other health workers."],
       "answer": 1,
       "rationale": "<p><b>It ensures workplace health and safety, covering most private-sector employers</b> is correct. OSHA requires employers to provide a safe workplace and reduce or eliminate hazards, with standards that cover industrial and health care workplaces, and it helps employers meet them.</p><p><b>Approving medications</b> is the FDA's job. <b>Accrediting facilities</b> is done by organizations such as The Joint Commission. <b>Licensing nurses</b> is the state board of nursing's job.</p><p><b>Takeaway:</b> OSHA keeps workplaces, including hospitals, safe for workers.</p>"
     },
@@ -3130,7 +3130,7 @@
       "type": "sata",
       "topic": "Health policy",
       "stem": "Which of the following are roles of professional nursing associations?",
-      "options": ["Defining standards of practice and professional behavior", "Accrediting hospitals", "Issuing nursing licenses", "Supporting nursing research", "Taking part in policy development at the local, state, and national levels"],
+      "options": ["Defining standards of practice and professional behavior", "Accrediting hospitals and long-term care facilities", "Issuing and renewing nursing licenses", "Supporting and funding nursing research", "Taking part in policy development at every level"],
       "answer": [0, 3, 4],
       "rationale": "<p>Professional associations <b>define standards of practice and professional behavior</b>, establish codes of ethics, <b>support nursing research</b>, and <b>take part in policy development</b> at every level of government. Some exist to support specific groups within nursing.</p><p><b>Accrediting hospitals</b> is done by accreditors such as The Joint Commission. <b>Issuing licenses</b> is a government function, carried out by the state board of nursing.</p><p><b>Takeaway:</b> Associations handle standards, ethics, research, and advocacy; the state handles licensing.</p>"
     },
@@ -3139,7 +3139,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Why do organizations such as the National Association of Hispanic Nurses and the American Assembly for Men in Nursing exist?",
-      "options": ["To license nurses from those groups", "To accredit nursing programs that serve those groups", "To replace the American Nurses Association for their members", "To support and promote the interests of specific groups within the nursing profession"],
+      "options": ["To license the nurses who belong to those groups", "To accredit nursing programs that serve those groups", "To replace the American Nurses Association for their members", "To support and promote specific groups within nursing"],
       "answer": 3,
       "rationale": "<p><b>To support and promote the interests of specific groups within nursing</b> is correct. Several professional associations exist for particular groups of nurses, such as the Asian American/Pacific Islander Nurses Association, the American Assembly for Men in Nursing, and the National Association of Hispanic Nurses. Like other associations, they support their members and take part in policy.</p><p>They don't <b>license</b> nurses (the state board does) or <b>accredit</b> programs (accreditors such as CCNE and ACEN do), and they work alongside the ANA rather than <b>replacing</b> it.</p><p><b>Takeaway:</b> Specialty and demographic associations give specific groups of nurses a voice and support.</p>"
     },
@@ -3148,7 +3148,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A nurse wants to change a state's minimum requirements for nurse staffing in hospitals. Which of the following approaches is most likely to work?",
-      "options": ["Working through the state nurses association to support a bill, and testifying before the state legislature", "Posting complaints about staffing on the nurse's personal social media", "Asking the hospital's visitors to sign a petition at the front desk", "Waiting for the federal government to act on its own"],
+      "options": ["Working through the state nurses association and testifying on a bill", "Posting complaints about staffing on the nurse's personal social media pages", "Asking the hospital's visitors to sign a petition at the front desk", "Waiting for the federal government to act on staffing on its own"],
       "answer": 0,
       "rationale": "<p><b>Working through the state nurses association and testifying</b> is correct. Staffing requirements set by state law are changed through the state legislature, and professional associations have the organization, data, and lobbying experience to move a bill. Nurses' testimony gives legislators firsthand evidence.</p><p><b>Social media complaints</b> don't reach decision-makers in a structured way. <b>A petition at the front desk</b> may break hospital policy and doesn't reach legislators. <b>Waiting for the federal government</b> skips the level of government that sets these requirements.</p><p><b>Takeaway:</b> Take a policy goal to the right level of government, with allies such as professional associations.</p>"
     },
@@ -3157,7 +3157,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements describes accreditation?",
-      "options": ["It is a hospital's internal self-review, with no outside reviewers involved.", "It is a peer-review process that judges an organization against an accrediting body's standards, and it is private and voluntary.", "It is a requirement that every nurse complete continuing education each year.", "It is a federal law that every hospital must follow."],
+      "options": ["It is a hospital's internal self-review, with no outside reviewers involved at all.", "It is a private, voluntary peer review of an organization against set standards.", "It is a requirement that every nurse complete continuing education each year.", "It is a federal law that every hospital must follow to stay open."],
       "answer": 1,
       "rationale": "<p><b>A private, voluntary peer-review process that judges an organization against standards</b> is correct. Accreditation certifies that an organization meets quality criteria and is competent to provide its services, and accredited organizations are reevaluated periodically.</p><p>A self-review is part of accreditation, but <b>outside peer reviewers</b>, through an on-site survey, validate it. <b>Continuing education</b> requirements apply to individual nurses' licenses, not to organizations. And accreditation isn't a <b>federal law</b>; it's voluntary, though it brings benefits such as qualifying for Medicare and Medicaid payment.</p><p><b>Takeaway:</b> Accreditation applies to organizations and programs; licensure and certification apply to individuals.</p>"
     },
@@ -3166,7 +3166,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A hospital board is deciding whether to seek accreditation from The Joint Commission. Which of the following is a benefit of accreditation?",
-      "options": ["It lets the hospital skip the state's licensing requirements for health care facilities.", "It guarantees that no errors or adverse events will ever occur in the hospital.", "It builds public trust, gives credibility with private insurers, and helps the hospital qualify for Medicare and Medicaid payment.", "It means the hospital no longer needs to write any of its own policies or procedures."],
+      "options": ["It lets the hospital skip the state's licensing requirements for health care facilities.", "It guarantees that no errors or adverse events will ever occur in the hospital.", "It builds public trust and helps the hospital qualify for Medicare and Medicaid payment.", "It means the hospital no longer needs to write any of its own policies or procedures at all."],
       "answer": 2,
       "rationale": "<p><b>Public trust, credibility with private insurers, and qualifying for Medicare and Medicaid payment</b> is correct. Joint Commission accreditation enhances consumer trust and respectability, gives credibility with private third-party payers, and helps the organization meet the qualifications for Medicare and Medicaid reimbursement.</p><p>Accreditation doesn't replace <b>state licensing</b>, can't <b>guarantee</b> that errors never happen, and doesn't replace the hospital's <b>own policies</b>.</p><p><b>Takeaway:</b> Accreditation earns trust, credibility with payers, and Medicare and Medicaid eligibility.</p>"
     },
@@ -3195,7 +3195,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A nursing student asks, “Since our program is accredited by CCNE, does that mean the state board of nursing approved it?” Which of the following responses is accurate?",
-      "options": ["“No. State board approval is separate, and every state requires it for prelicensure programs; national accreditation is voluntary.”", "“Yes. National accreditation and state board approval are the same process with different names.”", "“No. State boards of nursing only license nurses and don't oversee nursing programs at all.”", "“Yes. CCNE is the office within each state board of nursing that approves programs.”"],
+      "options": ["“No. State board approval is separate and required; national accreditation is voluntary.”", "“Yes. National accreditation and state board approval are the same process with different names.”", "“No. State boards of nursing only license nurses and don't oversee nursing programs at all.”", "“Yes. CCNE is the office within each state board of nursing that approves programs.”"],
       "answer": 0,
       "rationale": "<p><b>No: state board approval is separate and required, and national accreditation is voluntary</b> is correct. Every state requires board of nursing approval for prelicensure programs. National accreditation, such as by CCNE or ACEN, is a separate, voluntary peer review, though most graduate programs require applicants to have graduated from an accredited program.</p><p>The two are <b>not the same process</b>. State boards <b>do</b> approve nursing programs, as well as licensing nurses. And CCNE is a national accreditor connected to the AACN, <b>not part of any state board</b>.</p><p><b>Takeaway:</b> State approval is mandatory; national accreditation is voluntary, but it matters for graduate school.</p>"
     },
@@ -3207,7 +3207,7 @@
       "text": "Reputable accrediting organizations set their standards through {{0}}, and an on-site survey is used to {{1}}.",
       "blanks": [
         {"options": ["a popular vote", "an evidence-based process", "each hospital's preferences", "insurance company rules"], "answer": 1},
-        {"options": ["hire the organization's staff", "write the organization's budget", "validate the organization's self-assessment and performance", "license the organization's nurses"], "answer": 2}
+        {"options": ["hire the organization's new staff members", "write the organization's yearly budget", "validate the organization's self-assessment", "license the organization's nurses and physicians"], "answer": 2}
       ],
       "rationale": "<p>Reputable accreditors set standards through <b>an evidence-based process</b>. Organizations seeking accreditation assess themselves, and an <b>on-site survey validates that self-assessment and their performance</b>. To be reaccredited, they must show that they've kept evaluating their performance, corrected deficiencies, and improved.</p><p>Standards aren't set by <b>a popular vote</b>, <b>each hospital's preferences</b>, or <b>insurers' rules</b>. Surveyors don't <b>hire staff</b>, <b>write budgets</b>, or <b>license nurses</b>.</p><p><b>Takeaway:</b> Evidence-based standards, a self-assessment, and an on-site survey to check it.</p>"
     },
@@ -3216,7 +3216,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Which of the following statements describes how The Joint Commission advances health care policy beyond the organizations it accredits?",
-      "options": ["It passes federal laws that apply to all hospitals.", "Its National Patient Safety Goals and sentinel event reporting system shape national safety and quality standards.", "It sets the price that Medicare pays for each diagnosis.", "It licenses physicians and nurses in every state."],
+      "options": ["It passes federal laws that apply to all of the hospitals in the country.", "Its National Patient Safety Goals shape national safety standards.", "It sets the price that Medicare pays hospitals for each diagnosis.", "It licenses physicians and nurses who work in every state."],
       "answer": 1,
       "rationale": "<p><b>Its National Patient Safety Goals and sentinel event reporting system shape national standards</b> is correct. The Joint Commission is an independent, nonprofit organization, and its standards influence quality and safety practices across health care, which advances health policy.</p><p>It doesn't <b>pass laws</b> (legislatures do), <b>set Medicare payments</b> (CMS does), or <b>license</b> clinicians (state boards do).</p><p><b>Takeaway:</b> The Joint Commission shapes national policy through its standards, not through law.</p>"
     },
@@ -3245,7 +3245,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "Under Medicare's prospective payment system, a hospital receives a set amount for each client's diagnosis-related group (DRG). Which of the following does this payment method encourage?",
-      "options": ["Longer hospital stays, since the hospital is paid for each extra day", "More tests for every client, since each test is paid separately", "Efficient care and shorter stays, since the hospital keeps any savings or absorbs any extra costs", "No change in care, since payment doesn't depend on how care is given"],
+      "options": ["Longer hospital stays, since the hospital is paid for each extra day of care", "More tests for every client, since each test is paid separately", "Efficient care, since the hospital keeps any savings or absorbs extra costs", "No change in care, since payment doesn't depend on how care is given"],
       "answer": 2,
       "rationale": "<p><b>Efficient care and shorter stays</b> is correct. With a set amount per diagnosis, a hospital that provides care for less keeps the difference, and one that spends more absorbs the loss, so DRGs encourage efficient care and shorter stays.</p><p><b>Paying for each extra day</b> and <b>paying for each test separately</b> describe fee-for-service incentives. And payment methods <b>do</b> change behavior, which is why policymakers design them carefully.</p><p><b>Takeaway:</b> A fixed payment per diagnosis rewards efficiency, which is also why discharge teaching and follow-up matter more than ever.</p>"
     },
@@ -3254,7 +3254,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A health policy analyst raises a concern about fee-for-service payment. Which of the following concerns is the analyst most likely to raise?",
-      "options": ["It pays providers too little for complex care.", "It keeps clients from choosing their own providers.", "It is used only by Medicaid programs.", "It can encourage overuse, because providers earn more by doing more."],
+      "options": ["It pays providers too little for complex care and procedures.", "It keeps clients from choosing their own providers and hospitals.", "It is used only by Medicaid programs in each state.", "It can encourage overuse, since doing more earns more."],
       "answer": 3,
       "rationale": "<p><b>It can encourage overuse</b> is correct. Fee-for-service pays for each service provided, so more tests and procedures mean more payment, whether or not they're needed. That's one reason payers have moved toward prospective and value-based payment.</p><p>Fee-for-service generally pays <b>more</b>, not less, as care becomes more complex. It doesn't limit <b>which providers</b> clients choose; networks and gatekeepers do that. And it's used by many payers, not <b>only Medicaid</b>.</p><p><b>Takeaway:</b> Fee-for-service rewards volume; value-based payment rewards results.</p>"
     },
@@ -3296,7 +3296,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A client who has Medicare says, “Part A covers my visits to my doctor's office.” Which of the following responses by the nurse is accurate?",
-      "options": ["“That's right. Part A covers all of your care.”", "“Part A covers only your prescription drugs.”", "“Part A is the private Medicare Advantage plan.”", "“Part A mainly covers hospital care. Office visits with your provider are covered by Part B.”"],
+      "options": ["“That's right. Part A covers all of your care, including office visits.”", "“Part A covers only your prescription drugs, not office visits.”", "“Part A is the private Medicare Advantage plan that covers visits.”", "“Part A mainly covers hospital care; Part B covers office visits.”"],
       "answer": 3,
       "rationale": "<p><b>Part A covers hospital care; Part B covers provider and outpatient services</b> is correct. Medicare Part A is hospital insurance, Part B covers outpatient and provider services such as office visits, Part C is Medicare Advantage (private plans that provide Medicare benefits), and Part D covers prescription drugs.</p><p>Part A doesn't cover <b>all</b> care, isn't <b>drug</b> coverage (that's Part D), and isn't <b>Medicare Advantage</b> (that's Part C).</p><p><b>Takeaway:</b> Medicare A, B, C, D: hospital, provider and outpatient care, Advantage plans, and drugs.</p>"
     },
@@ -3305,7 +3305,7 @@
       "type": "mc",
       "topic": "Health policy",
       "stem": "A client who has Medicaid is moving to another state and asks whether their coverage will continue. Which of the following responses by the nurse is accurate?",
-      "options": ["“Medicaid is a federal program, so your coverage moves with you automatically to any state.”", "“Medicaid coverage ends when a client turns 65, so moving won't change anything for you.”", "“Medicaid covers only children and pregnant women, so you'll need private insurance either way.”", "“Medicaid is run jointly by the federal government and each state, and eligibility varies, so you'll need to apply in your new state.”"],
+      "options": ["“Medicaid is a federal program, so your coverage moves with you automatically to any state you live in.”", "“Medicaid coverage ends when a client turns 65, so moving won't change anything for you.”", "“Medicaid covers only children and pregnant women, so you'll need private insurance either way.”", "“Medicaid is run by each state with the federal government, so you'll need to apply in your new state.”"],
       "answer": 3,
       "rationale": "<p><b>Medicaid is federal and state, eligibility varies, so apply in the new state</b> is correct. Medicaid is funded by the federal government and the states, and each state sets its own eligibility rules within federal guidelines, so coverage doesn't simply transfer.</p><p>It isn't purely <b>federal</b>. It doesn't <b>end at 65</b>: some older adults have both Medicare and Medicaid, and Medicaid is a major payer for long-term care. And it covers <b>adults</b> with low incomes too, not only children and pregnant women.</p><p><b>Takeaway:</b> Medicaid is a federal and state partnership, so eligibility depends on the state.</p>"
     },
@@ -3349,7 +3349,7 @@
       "case": "scooter",
       "topic": "Health policy",
       "stem": "After the governor signs the law, the state health department writes the regulations. Which of the following statements about these regulations is accurate?",
-      "options": ["They can add requirements the law doesn't authorize, such as banning scooters for everyone.", "They give the details of how the law will be carried out, and they must stay within the law's authority and intent.", "They don't need to refer to the law, since the agency is the expert.", "They have no force until a court approves each one."],
+      "options": ["They can add requirements the law doesn't authorize, such as banning scooters for everyone.", "They give the details of how the law is carried out, within its authority and intent.", "They don't need to refer to the law at all, since the agency is the expert.", "They have no force until a state court reviews and approves each one."],
       "answer": 1,
       "rationale": "<p><b>They give the details, and must stay within the law's authority and intent</b> is correct. Laws give broad mandates; regulations, written by the executive branch agency assigned to carry out the law, provide the details. Regulations must refer directly to the law, can't exceed the agency's authority, and must honor the law's original intent.</p><p><b>Adding requirements the law doesn't authorize</b>, like a total ban, would exceed the agency's authority. Regulations <b>must</b> refer to the law. And they don't need <b>court approval</b> to take effect.</p><p><b>Takeaway:</b> The law sets the mandate; regulations fill in the details, within the law's limits.</p>"
     },
@@ -3359,7 +3359,7 @@
       "case": "scooter",
       "topic": "Health policy",
       "stem": "One year after the law takes effect, which of the following data would best show whether the policy worked?",
-      "options": ["The number of scooter companies operating in the state", "How many legislators voted for the bill", "Head injuries among scooter riders under 18 in the year before and the year after the law", "The number of news stories written about the law"],
+      "options": ["The number of scooter rental companies operating in the state", "How many state legislators voted for the helmet bill", "Head injuries among riders under 18 before and after the law", "The number of news stories written about the new law"],
       "answer": 2,
       "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
     },
@@ -3886,7 +3886,7 @@
       "text": "This solution is given {{0}}, and it is stored {{1}}.",
       "blanks": [
         {"options": ["by injection into a vein", "by mouth", "by injection into a muscle"], "answer": 1},
-        {"options": ["in the refrigerator", "at room temperature, protected from light", "in the freezer"], "answer": 1}
+        {"options": ["in the refrigerator, protected from light", "at room temperature, protected from light", "in the freezer, in the original sealed carton"], "answer": 1}
       ],
       "rationale": "<p>The label says <b>“For oral use only,”</b> so the solution is given <b>by mouth</b>. Its storage directions say to keep it at <b>20° to 25°C (68° to 77°F)</b>, which is room temperature, and to <b>protect it from light</b>, with the bottle tightly closed.</p><p>Nothing on this label allows an injection, and it doesn't call for refrigeration or freezing. The label of a drug that must be refrigerated says so, often with a range such as 2° to 8°C.</p><p><b>Takeaway:</b> Read the route and the storage directions on every label; they are part of giving a drug safely.</p>"
     },
@@ -4061,7 +4061,7 @@
       "type": "mc",
       "topic": "Medical abbreviations",
       "stem": "A client has a dressing over an incision on the right forearm. Which of the following entries the nurse documented contains an incorrect abbreviation?",
-      "options": ["0800: AP 80, BP 124/78, RR 16.", "0900: Client A&O; denies pain.", "1000: Up ad lib in the room.", "1100: Dressing on RLE incision dry and intact."],
+      "options": ["0800: AP 80, BP 124/78, RR 16, temp 98.6°F.", "0900: Client A&O; denies pain at the incision.", "1000: Up ad lib in the room; steady gait.", "1100: Dressing on RLE incision dry, intact."],
       "answer": 3,
       "rationale": "<p><b>RLE</b> means <b>right lower extremity</b> (the right leg). The forearm is part of the arm, the <b>right upper extremity</b>, which is <b>RUE</b>. The entry places the incision on the wrong limb.</p><p><b>AP</b> (apical pulse), <b>BP</b>, <b>RR</b>, <b>A&amp;O</b>, and <b>ad lib</b> are used correctly in the other entries.</p><p><b>Takeaway:</b> RUE and LUE are the arms; RLE and LLE are the legs.</p>"
     },
@@ -4070,7 +4070,7 @@
       "type": "mc",
       "topic": "Medical abbreviations",
       "stem": "A nurse is reviewing four entries documented on admission. Which of the following entries contains an incorrect abbreviation?",
-      "options": ["0800: Client NPO for a 1300 procedure.", "0900: Allergies reviewed: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO.", "1100: I&O recorded for the shift."],
+      "options": ["0800: Client NPO after midnight for a 1300 procedure.", "0900: NKDA; reports hives after taking penicillin.", "1000: Gave aspirin 81 mg PO with a full glass of water.", "1100: I&O recorded for the shift; voided 350 mL."],
       "answer": 1,
       "rationale": "<p><b>NKDA</b> means <b>no known drug allergies</b>, but the same entry says the client gets <b>hives after taking penicillin</b>, which is a drug allergy. Recording NKDA could lead to the client being given penicillin. The allergy should be recorded: “Allergy: penicillin (hives).”</p><p><b>NPO</b> (nothing by mouth), <b>PO</b> (by mouth), and <b>I&amp;O</b> (intake and output) are used correctly in the other entries.</p><p><b>Takeaway:</b> NKDA means no known drug allergies; any reported drug reaction has to be recorded instead.</p>"
     },
