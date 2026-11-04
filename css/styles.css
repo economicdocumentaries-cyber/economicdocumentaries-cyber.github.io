@@ -398,6 +398,37 @@ span.order-text { flex: 1; font-size: 15px; }
 .stats-letter { font-weight: 700; }
 .stats-share { font-variant-numeric: tabular-nums; }
 
+/* Debriefs after a real exam (SPEC 11.10): the class tab's card, the students' form, and the host's page. */
+.debrief-cards:empty { display: none; }
+.debrief-card { margin: 18px 0 0; }
+.debrief-form { display: grid; gap: 4px; max-width: 640px; }
+.debrief-group { margin: 14px 0 0; padding: 0; border: 0; }
+.debrief-group > .field-help { margin-bottom: 2px; }
+.choice-line.debrief-choice { flex-wrap: nowrap; align-items: flex-start; margin: 7px 0; }
+.choice-line.debrief-choice .ctl, .debrief-set-boxes .ctl { flex: none; margin-top: 1px; }
+.debrief-score-row { display: flex; align-items: center; gap: 8px; }
+.text-input.debrief-real { width: 110px; }
+.debrief-share { margin-top: 6px; }
+.debrief-scores { margin: 4px 0 0; padding-left: 22px; font-size: 14px; }
+.debrief-note { min-height: 96px; }
+.debrief-topics { min-height: 150px; font-size: 14.5px; }
+.debrief-set-boxes .choice-line { flex-wrap: nowrap; align-items: flex-start; margin: 5px 0; }
+.debrief-open { margin-bottom: 30px; }
+.debrief-list { max-width: 980px; margin-bottom: 30px; border-top: 1px solid var(--line); }
+.debrief-item { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.debrief-item.is-chosen { padding-left: 12px; box-shadow: inset 4px 0 0 var(--accent); }
+.debrief-state { font-weight: 700; color: var(--muted); }
+.debrief-state.is-open { color: var(--ok); }
+.debrief-summary { max-width: 980px; }
+.debrief-part { margin: 20px 0 0; }
+.debrief-part-title { margin: 0 0 8px; font-size: 16px; }
+.debrief-bars th { width: 46%; font-weight: 600; }
+.perf.debrief-scores-table { width: auto; min-width: 280px; }
+.debrief-scores-table th, .debrief-scores-table td { padding-left: 18px; text-align: right; }
+.debrief-average { margin: 10px 0 4px; font-weight: 600; }
+.debrief-gaps { margin: 4px 0 0; padding-left: 22px; font-size: 14.5px; }
+.debrief-notes { max-width: 760px; }
+
 /* ---------- toasts ---------- */
 
 .toasts {

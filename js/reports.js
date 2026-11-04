@@ -11,6 +11,7 @@ import { groupStudyOn, connectStudent, problemText } from './firebase.js';
 import { track } from './analytics.js';
 import { withChanges, readChanges } from './set-changes.js';
 import { typeLabel } from './items.js';
+import { sample } from './vary.js';
 
 export const REASONS = {
   answer: 'The answer marked correct is wrong',
@@ -169,7 +170,7 @@ export function reportsConsole(section, db, { sets, courses }, accountLine) {
         h('p.q-row-head',
           h('b', set ? set.title : item.setId), course ? ` · ${course.code}` : '',
           q ? ` · question ${n + 1} (${item.qid}) · ${typeLabel(q.type)} · ${q.topic}` : ` · ${item.qid}`),
-        h('p.report-stem', q ? plainText(q.stem).slice(0, 260) : 'This question isn\'t in the set any more.'),
+        h('p.report-stem', q ? plainText(sample(q).stem).slice(0, 260) : 'This question isn\'t in the set any more.'),
         h('ul.report-reasons-list', counts.map(([r, c]) => h('li', h('b', `${c} ×`), ` ${REASONS[r]}`))),
         notes.length ? h('ul.report-notes', notes.map(r => h('li', h('span.report-date', fmtDate(r.at, true)), ' ', `“${r.note}”`))) : null,
         h('p.report-meta', `${item.reports.length === 1 ? '1 report' : `${item.reports.length} reports`}, the latest ${fmtDate(item.latest)}.`),

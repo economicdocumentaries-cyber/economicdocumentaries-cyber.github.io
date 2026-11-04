@@ -3,6 +3,7 @@
 // original positions (indexes into the set file), so shuffled layouts never
 // change scoring.
 import { h, shuffle, phone } from './util.js';
+import { isVaried, vary, varyProblems } from './vary.js';
 
 const isText = v => typeof v === 'string' && v.trim() !== '';
 const isIndex = (v, n) => Number.isInteger(v) && v >= 0 && v < n;
@@ -1150,8 +1151,14 @@ export function validateQuestion(q, cases = {}) {
   if (q.instruction != null && typeof q.instruction !== 'string') note('"instruction" must be text.');
   if (q.hidden != null && typeof q.hidden !== 'boolean') note('"hidden" must be true or false, with no quotes.');
   if (!type) return problems;
+  // Changing numbers (vary.js): the formulas are checked for every combination,
+  // then the question is checked as its type, with the first value of each number.
+  if (isVaried(q)) {
+    const varied = varyProblems(q);
+    if (varied.length) return [...problems, ...varied];
+  }
   try {
-    type.validate(q).forEach(note);
+    type.validate(isVaried(q) ? vary(q, () => 0) : q).forEach(note);
   } catch {
     note(`This ${type.label.toLowerCase()} question couldn't be checked. Compare it with a working question of the same type.`);
   }

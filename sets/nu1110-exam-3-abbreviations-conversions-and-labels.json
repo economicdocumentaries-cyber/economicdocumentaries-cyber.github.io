@@ -57,15 +57,13 @@
     },
     {
       "id": "acl-04",
-      "type": "dropdown",
+      "type": "mc",
       "topic": "Medical abbreviations",
-      "stem": "A prescription reads: “Timolol eye drops 1 drop OU BID.” Complete the following sentence.",
-      "text": "The nurse instills 1 drop in {{0}}, {{1}}.",
-      "blanks": [
-        {"options": ["the right eye", "the left eye", "both eyes"], "answer": 2},
-        {"options": ["twice a day", "every 2 hours", "at bedtime"], "answer": 0}
-      ],
-      "rationale": "<p><b>OU</b> means <b>both eyes</b>; <b>OD</b> is the right eye and <b>OS</b> the left eye. <b>BID</b> means <b>twice a day</b>. Every 2 hours would be written <b>q2h</b>, and at bedtime <b>HS</b>.</p><p><b>Takeaway:</b> OD is the right eye, OS the left eye, and OU both eyes.</p>"
+      "level": 2,
+      "stem": "A nurse gave a client timolol eye drops in the left eye, as prescribed. Which entry documents the medication safely?",
+      "options": ["0900: Timolol 1 drop OS; eye clear, no redness.", "0900: Timolol 1 drop OU; no redness or tearing.", "0900: Timolol 1 drop in left eye; no redness.", "0900: Timolol 1 drop OD; client tolerated well."],
+      "answer": 2,
+      "rationale": "<p>Writing the eye out, <b>left eye</b>, is the safe way. <b>OD</b> (right eye), <b>OS</b> (left eye), and <b>OU</b> (both eyes) are on the list of error-prone abbreviations: they're easily mixed up with each other, and with AD, AS, and AU, the ears.</p><p><b>OS</b> is the tempting choice, since it does mean the left eye, but the abbreviation itself is what the list says to avoid. <b>OD</b> would record the wrong eye, and <b>OU</b> both eyes.</p><p><b>Takeaway:</b> Write the eye out: right eye, left eye, both eyes. OD, OS, and OU are error-prone.</p>"
     },
     {
       "id": "acl-05",
@@ -126,10 +124,11 @@
       "id": "acl-11",
       "type": "mc",
       "topic": "Medication orders",
-      "stem": "A prescription reads: “Aluminum hydroxide suspension 30 mL PO PC and HS.” The client eats three meals a day. How many times a day will the client take this medication?",
-      "options": ["2 times a day", "3 times a day", "4 times a day", "6 times a day"],
+      "level": 3,
+      "stem": "A prescription reads: “Aluminum hydroxide suspension 30 mL PO pc and HS.” Which action should the nurse take?",
+      "options": ["Give 30 mL by mouth after each meal and at bedtime.", "Give 30 mL by mouth after each meal, half-strength.", "Ask the prescriber to clarify HS: bedtime or half-strength.", "Give 30 mL by mouth before each meal and at bedtime."],
       "answer": 2,
-      "rationale": "<p><b>PC</b> means after meals and <b>HS</b> means at the hour of sleep (bedtime). With three meals a day, the client takes it after breakfast, lunch, and dinner, and again at bedtime: <b>4 times a day</b>.</p><p>Three times a day leaves out the bedtime dose. Twice a day or six times a day doesn't match the order.</p><p><b>Takeaway:</b> PC means after meals, AC before meals, and HS at bedtime.</p>"
+      "rationale": "<p><b>HS</b> can mean <b>half-strength</b> or <b>bedtime</b> (hour of sleep), which is why it's on the list of error-prone abbreviations. Because the order can be read two ways, the nurse <b>clarifies it with the prescriber</b> before giving it, and never guesses which one was meant.</p><p><b>After each meal and at bedtime</b> is the tempting choice: it's what HS usually means, but an unclear abbreviation is clarified, not assumed. <b>Half-strength</b> assumes the other meaning. <b>Before each meal</b> mixes up pc (after meals) with ac (before meals).</p><p><b>Takeaway:</b> HS can mean bedtime or half-strength, so clarify it. The safe way to write it is “at bedtime.”</p>"
     },
     {
       "id": "acl-12",

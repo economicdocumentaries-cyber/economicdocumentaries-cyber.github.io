@@ -9,6 +9,7 @@ import { track } from './analytics.js';
 import { reportLine } from './reports.js';
 import { saveButton } from './saved.js';
 import { recordStats } from './stats.js';
+import { vary } from './vary.js';
 
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
@@ -286,7 +287,9 @@ export function timeLimitMs(set, count, s) {
 // practice exam of saved questions (SPEC 11.7); otherwise it's worked out.
 export function startExam(set, settings = {}, scope = null) {
   const s = { ...DEFAULT_SETTINGS, ...settings };
-  const questions = chooseQuestions(set, s, Math.random, lastSeen(set), lastMissed(set));
+  // A question with changing numbers gets its numbers now (vary.js), so the whole
+  // attempt, its review, and its history keep them; the next attempt gets new ones.
+  const questions = chooseQuestions(set, s, Math.random, lastSeen(set), lastMissed(set)).map(q => vary(q));
   if (!questions.length) return false;
   if (s.fullscreen) enterFullscreen();
   const limitMs = timeLimitMs(set, questions.length, s);

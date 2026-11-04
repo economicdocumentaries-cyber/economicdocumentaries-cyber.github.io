@@ -10,6 +10,7 @@
 import { SITE_NAME, HOST_UID } from './config.js';
 import { h, fill, store, modal, toast, siteHeader, siteFooter, seededRandom, icon, fmtDate, fmtClock } from './util.js';
 import { prepareItem, isAnswered, scoreItem, keyResponse, unansweredMessage } from './items.js';
+import { vary } from './vary.js';
 import { questionParts, questionArea, feedbackPanel, chooseQuestions } from './exam.js';
 import { createCalculator } from './calc.js';
 import { loadSets } from './sets.js';
@@ -20,6 +21,7 @@ import { setsConsole, questionsPage } from './set-editor.js';
 import { track, countThisBrowser } from './analytics.js';
 import { reportsConsole, reportedCount } from './reports.js';
 import { statsConsole } from './stats.js';
+import { debriefsConsole } from './debriefs.js';
 
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
@@ -131,7 +133,8 @@ function sessionQuestions(sets, live) {
   const set = sets.find(s => s.id === live.setId);
   if (!set || !Array.isArray(live.order) || !live.order.length) return null;
   const byId = new Map(set.questions.map(q => [q.id, q]));
-  const questions = live.order.map(id => byId.get(id));
+  // Changing numbers (vary.js) are seeded by the session, so everyone gets the same ones.
+  const questions = live.order.map(id => byId.get(id)).map(q => q && vary(q, seededRandom(`${live.sessionId}|${q.id}`)));
   if (!questions.every(Boolean)) return null;
   return { set, questions, layouts: questions.map(groupLayout) };
 }
@@ -824,8 +827,9 @@ function caseDetails({ intro, tabs = [] }) {
 
 // #/host is group study, #/host/sets the question sets (SPEC 11.3),
 // #/host/guides the study guides (SPEC 11.2), #/host/reports the problems
-// students reported (SPEC 11.6), and #/host/stats how students do on each
-// question (SPEC 11.9), with a menu at the top to switch between them.
+// students reported (SPEC 11.6), #/host/stats how students do on each
+// question (SPEC 11.9), and #/host/debriefs what students say after a real exam
+// (SPEC 11.10), with a menu at the top to switch between them.
 export async function hostView(root, { args = [], isCurrent }) {
   document.title = `Host console · ${SITE_NAME}`;
   leaveFullscreen();
@@ -846,7 +850,7 @@ export async function hostView(root, { args = [], isCurrent }) {
     return;
   }
   if (!isCurrent()) return;
-  const area = ['sets', 'guides', 'reports', 'stats'].includes(args[0]) ? args[0] : 'group';
+  const area = ['sets', 'guides', 'reports', 'stats', 'debriefs'].includes(args[0]) ? args[0] : 'group';
   return hostConsole(main, account, loaded, area, area === 'sets' ? args[1] : null, area === 'sets' ? args[2] : null);
 }
 
@@ -863,6 +867,7 @@ function hostMenu(area) {
     item('guides', '#/host/guides', 'Study guides'),
     reports,
     item('stats', '#/host/stats', 'Question stats'),
+    item('debriefs', '#/host/debriefs', 'Debriefs'),
     h('a.btn.btn-small.student-view', { href: '#/' }, 'Student view'));
   menu.setReports = n => fill(reports, 'Reports', n
     ? [h('span.menu-count', { 'aria-hidden': 'true' }, String(n)), h('span.sr-only', ` (${n === 1 ? '1 question' : `${n} questions`} reported)`)]
@@ -898,11 +903,12 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId, ques
       const db = account.database();
       const line = () => accountLine(user);
       const stopCount = db.watch('reports', value => menu.setReports(reportedCount(value)), () => {});
-      if (area === 'guides' || area === 'sets' || area === 'reports' || area === 'stats') {
+      if (area === 'guides' || area === 'sets' || area === 'reports' || area === 'stats' || area === 'debriefs') {
         const stopNotice = connectionNotice(db);
         const stopPage = area === 'guides' ? guidesConsole(section, db, { courses, sets, published: guides }, line)
           : area === 'reports' ? reportsConsole(section, db, { sets, courses }, line)
           : area === 'stats' ? statsConsole(section, db, { sets, courses }, line)
+          : area === 'debriefs' ? debriefsConsole(section, db, { sets, courses }, line)
             : setId ? questionsPage(section, db, { sets, courses }, line, setId, questionId)
               : setsConsole(section, db, { sets, courses }, line);
         stopConsole = () => {

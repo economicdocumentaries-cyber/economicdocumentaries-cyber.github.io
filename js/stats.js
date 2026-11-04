@@ -18,6 +18,7 @@ import { thisBrowserCounts } from './analytics.js';
 import { isAnswered, typeLabel } from './items.js';
 import { toKey, fromKey } from './reports.js';
 import { withChanges, readChanges } from './set-changes.js';
+import { sample } from './vary.js';
 
 const CHOICES = ['mc', 'sata', 'emr']; // types whose picks are counted
 const ENOUGH = 10; // first tries before a question is called too easy or very hard
@@ -157,7 +158,7 @@ export function statsConsole(section, db, { sets, courses }, accountLine) {
       + `${firsts} of them first tries.`);
     fill(list, rows.map(row => {
       const n = place(row.qid);
-      const q = n >= 0 ? set.questions[n] : null;
+      const q = n >= 0 ? sample(set.questions[n]) : null; // changing numbers: one fixed sample (vary.js)
       const flags = flagsFor(row, q);
       const right = q ? [q.answer].flat() : [];
       return h('section.stats-item',

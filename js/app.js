@@ -11,11 +11,13 @@ import {
   questionArea, questionParts, feedbackPanel,
 } from './exam.js';
 import { savedSets, savedCount, setSaved, forgetSet, saveButton } from './saved.js';
+import { sample } from './vary.js';
 import { groupView, hostView, liveBanner } from './group.js';
 import { watchUploadedGuides, downloadButton, guideFileName, formatSize } from './study-guides.js';
 import { withChanges, cachedChanges, watchChanges, currentChanges } from './set-changes.js';
 import { arrange, newestSet, newestGuide, guideKey, cachedOrder, watchOrder } from './order.js';
 import { hostSignedIn, HOST_HINT } from './firebase.js';
+import { watchOpenDebriefs, debriefCards, debriefPage } from './debriefs.js';
 import { trackPage, track, countThisBrowser, thisBrowserCounts } from './analytics.js';
 
 const app = document.getElementById('app');
@@ -107,7 +109,7 @@ async function homeView(root, { args, isCurrent }) {
   if (!isCurrent()) return;
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
   const lists = h('div.home-lists');
-  let groups = null, single = null, uploaded = [], painted = null;
+  let groups = null, single = null, uploaded = [], debriefs = [], painted = null;
   let changes = cachedChanges();
   let order = cachedOrder();
 
@@ -125,7 +127,10 @@ async function homeView(root, { args, isCurrent }) {
     const tab = /^#\/class\/([^/]+)/.exec(location.hash)?.[1]; // the tab showing now, after a repaint too
     fill(lists, groups ? classTabs(groups, tab ? decodeURIComponent(tab) : args[0])
       : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'));
-    (groups ?? [single]).forEach(g => g.paintGuides(uploaded));
+    (groups ?? [single]).forEach(g => {
+      g.paintGuides(uploaded);
+      g.paintDebriefs(debriefs);
+    });
   }
 
   const saved = savedLink();
@@ -151,11 +156,17 @@ async function homeView(root, { args, isCurrent }) {
     uploaded = list;
     (groups ?? [single]).forEach(g => g.paintGuides(list));
   });
+  // An open debrief after a real exam (SPEC 11.10) shows as a card at the top of its class's tab.
+  const stopDebriefs = watchOpenDebriefs(list => {
+    debriefs = list;
+    (groups ?? [single]).forEach(g => g.paintDebriefs(list));
+  });
   return () => {
     live.stop();
     stopChanges();
     stopOrder();
     stopGuides();
+    stopDebriefs();
   };
 }
 
@@ -189,7 +200,11 @@ function homeLists(group, noSets) {
       saved ? h('a.saved-chip', { href: '#/saved' }, icon('bookmark'), `Saved (${saved})`) : null),
     sets.length ? h('ul.set-list', sets.map(setRow)) : h('p.empty-note', noSets));
   group.paintGuides = () => {};
+  group.paintDebriefs = () => {};
   if (!group.course && !group.allClasses) return exams;
+  // A debrief after a real exam (SPEC 11.10), while the host has it open.
+  const debriefBox = h('div.debrief-cards');
+  group.paintDebriefs = (open = []) => fill(debriefBox, debriefCards(open.filter(d => group.allClasses || d.course === group.course.code)));
   const list = h('ul.set-list');
   const empty = h('p.empty-note', 'No study guides for this class yet.');
   const guides = h('section.home-section', h('h2.section-title', 'Study guides'), list, empty);
@@ -201,7 +216,7 @@ function homeLists(group, noSets) {
     guides.hidden = !group.course && !all.length;
   };
   group.paintGuides();
-  return [exams, guides];
+  return [debriefBox, exams, guides];
 }
 
 // The tab shown first is the one in the link (#/class/NU1120), else the one
@@ -842,7 +857,7 @@ async function savedView(root, ctx) {
           type: 'button',
           onclick: () => begin(set, { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', only: shown }, null, 'saved'),
         }, shown.length === 1 ? 'Practice this one' : `Practice these (${shown.length})`)) : null),
-      h('ul.saved-list', saved.map(([id, at]) => savedRow(set, byId.get(id), id, at))));
+      h('ul.saved-list', saved.map(([id, at]) => savedRow(set, sample(byId.get(id)), id, at))));
   }
 
   // One saved question: the start of its text, its type, topic, and the day
@@ -907,7 +922,8 @@ async function savedQuestionView(root, { args, isCurrent }) {
   if (!isCurrent()) return;
   const set = withChanges(loaded.sets, changes, loaded.courses).find(s => s.id === setId && !s.hidden);
   const byId = new Map((set?.questions ?? []).map(q => [q.id, q]));
-  const list = newestSaved(savedSets()[setId]).map(([id]) => byId.get(id)).filter(Boolean);
+  // A question with changing numbers shows one fixed sample of them (vary.js).
+  const list = newestSaved(savedSets()[setId]).map(([id]) => sample(byId.get(id))).filter(Boolean);
   if (!list.length) {
     document.title = `Saved questions · ${SITE_NAME}`;
     fill(root, page(h('main.wrap.plain-page',
@@ -973,6 +989,13 @@ async function savedQuestionView(root, { args, isCurrent }) {
 
 // #/stats-off and #/stats-on (README "Usage stats"): whether this browser's
 // visits count. Not linked anywhere; the host's sign-in turns it off too.
+// #/debrief/<id> (SPEC 11.10): the debrief's form, for students who took the real exam.
+async function debriefView(root, { args, isCurrent }) {
+  const main = h('main.wrap.plain-page.debrief-page', h('p.lead', 'Loading…'));
+  root.replaceChildren(page(main));
+  await debriefPage(main, args[0], { isCurrent });
+}
+
 function statsView(root, on) {
   countThisBrowser(on);
   document.title = `Usage stats · ${SITE_NAME}`;
@@ -988,6 +1011,7 @@ function statsView(root, on) {
 
 const routes = {
   '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, saved: savedView, group: groupView, host: hostView,
+  debrief: debriefView,
   'stats-off': root => statsView(root, false), 'stats-on': root => statsView(root, true),
 };
 const UNCOUNTED = new Set(['host', 'stats-off', 'stats-on']); // the host's pages, and the stats switch

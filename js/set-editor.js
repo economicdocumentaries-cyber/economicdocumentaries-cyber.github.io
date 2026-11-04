@@ -34,6 +34,8 @@ const MANAGED = {
   bowtie: ['condition', 'actions', 'parameters'],
 };
 const EDITABLE = Object.keys(MANAGED);
+// A question with changing numbers ("vars", vary.js) is written in its file, not here.
+const canEdit = q => EDITABLE.includes(q.type) && q.vars == null;
 const FIELD_NAMES = { title: 'name', description: 'description', course: 'class', exam: 'exam', defaultCount: 'questions per exam', hidden: 'shown or hidden' };
 const DETAILS = Object.keys(FIELD_NAMES);
 
@@ -599,7 +601,7 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
     if (questionId) {
       const q = s.questions.find(x => x.id === questionId);
       questionId = null; // only the first time
-      if (q) {
+      if (q && canEdit(q)) {
         openEditor(q);
         editing?.el.scrollIntoView({ block: 'start' });
         return;
@@ -785,7 +787,7 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
     if (editing && editing.id === q.id) return editing.el;
     const old = live.questions.find(x => x.id === q.id);
     const badges = [!old ? 'New' : bare(old) !== bare(q) ? 'Changed' : null, q.hidden ? 'Hidden' : null].filter(Boolean);
-    const editable = EDITABLE.includes(q.type);
+    const editable = canEdit(q);
     return h('li.q-row', { 'data-key': q.id, class: q.hidden ? 'is-hidden' : null },
       tools,
       h('div.q-row-info',
@@ -796,7 +798,9 @@ export function questionsPage(section, db, { sets, courses }, accountLine, setId
         editable ? h('button.btn', { type: 'button', 'aria-label': `Edit question ${n}`, onclick: () => openEditor(q) }, 'Edit') : null,
         h('button.btn', { type: 'button', 'aria-label': `${q.hidden ? 'Show' : 'Hide'} question ${n}`, onclick: () => setHidden(q, !q.hidden) }, q.hidden ? 'Show' : 'Hide'),
         h('button.btn', { type: 'button', 'aria-label': `Delete question ${n}`, onclick: () => remove(q, n) }, 'Delete')),
-      editable ? null : h('p.q-row-note', `${typeLabel(q.type)} questions can't be edited here yet. You can hide or delete this one.`));
+      editable ? null : h('p.q-row-note', q.vars
+        ? 'This question\'s numbers change on each attempt, so it\'s changed in its file: ask Claude. You can hide or delete it here.'
+        : `${typeLabel(q.type)} questions can't be edited here yet. You can hide or delete this one.`));
   }
 
   // Where the questions come from.
