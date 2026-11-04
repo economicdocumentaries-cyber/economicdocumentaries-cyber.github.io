@@ -89,7 +89,7 @@ export async function hostAccount() {
 // The few database actions group study uses. Paths are like "live" or
 // "sessions/abc/participants".
 function database(fb) {
-  const { ref, onValue, get, set, update, serverTimestamp } = fb.dbSdk;
+  const { ref, onValue, get, set, update, serverTimestamp, increment } = fb.dbSdk;
   const at = path => (path ? ref(fb.db, path) : ref(fb.db));
   return {
     get uid() {
@@ -102,6 +102,8 @@ function database(fb) {
     // changes: { "child/path": value, ... }, all saved together or not at all.
     update: (path, changes) => update(at(path), changes),
     serverTime: () => serverTimestamp(),
+    // Adds n to the number there (0 if there's none yet), on Firebase's side, so two students can't overwrite each other.
+    increment: n => increment(n),
   };
 }
 

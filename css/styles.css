@@ -378,6 +378,26 @@ span.order-text { flex: 1; font-size: 15px; }
 .report-date, .report-meta { font-size: 13px; color: var(--muted); }
 .report-meta { margin: 0 0 8px; }
 
+/* The first-try score on the results page, and the host's Question stats page (SPEC 11.9). */
+.first-try { max-width: 760px; margin: 14px 0 0; padding: 10px 14px; border-left: 4px solid var(--accent); background: #F3F8FC; font-size: 14.5px; }
+.stats-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 16px 0 6px; }
+.stats-controls .field-label { margin: 0; }
+.stats-controls .text-input { width: auto; max-width: 100%; }
+.stats-summary { margin: 6px 0 10px; font-size: 14px; color: var(--muted); }
+.stats-list { max-width: 980px; border-top: 1px solid var(--line); }
+.stats-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.stats-numbers { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0 0 6px; font-size: 14px; }
+.stats-flags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.stats-flag { padding: 1px 9px; border-radius: 10px; font-size: 12.5px; font-weight: 700; }
+.flag-easy { background: #FFF1D0; color: #6E4500; }
+.flag-hard { background: #FDE8E7; color: var(--bad); }
+.flag-rare { background: #E8F3FB; color: var(--ink); }
+.stats-choices { max-width: 760px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 14px; }
+.stats-choices li { display: grid; grid-template-columns: 22px 1fr auto; gap: 8px; padding: 3px 0; border-top: 1px dotted var(--line); }
+.stats-choices li.is-right { color: var(--ok); font-weight: 600; }
+.stats-letter { font-weight: 700; }
+.stats-share { font-variant-numeric: tabular-nums; }
+
 /* ---------- toasts ---------- */
 
 .toasts {

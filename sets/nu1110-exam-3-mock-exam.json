@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-3-mock-exam",
   "title": "Exam 3 Mock Exam",
-  "description": "A practice exam that follows the Exam 3 blueprint and the professor's review. Each exam gives 60 questions, split the way the real exam is, from a pool of 437: 10 each on health care systems, evidence-based practice, informatics and documentation (3 on confidentiality), quality improvement (2 on the PDSA cycle), and health policy (2 on the Mental Health Parity Act), plus 3 abbreviations, 6 med math (3 fill in the blank), and 1 prescriber's order. Label questions stay in the pool as extra practice.",
+  "description": "A practice exam that follows the Exam 3 blueprint and the professor's review. Each exam gives 60 questions, split the way the real exam is, from a pool of 403: 10 each on health care systems, evidence-based practice, informatics and documentation (3 on confidentiality), quality improvement (2 on the PDSA cycle), and health policy (2 on the Mental Health Parity Act), plus 3 abbreviations, 6 med math (3 fill in the blank), and 1 prescriber's order. Like the real exam, it has no case studies. Label questions stay in the pool as extra practice.",
   "course": "NU1110",
   "exam": "Exam 3",
-  "timeMinutes": 656,
+  "timeMinutes": 605,
   "defaultCount": 60,
   "topicWeights": {"Health care systems": 10, "Evidence-based practice": 10, "Informatics and documentation": 7, "Confidentiality of health information": 3, "Quality improvement": 8, "PDSA cycle": 2, "Health policy": 8, "Mental Health Parity Act": 2, "Medical abbreviations": 3, "Med math: fill in the blank": 3, "Med math: multiple choice": 3, "Prescriber's orders": 1, "Extra practice": 0},
   "cases": {
@@ -578,7 +578,8 @@
       "stem": "The float nurse's notes are shown below. Click to highlight the entries that don't follow documentation guidelines.",
       "passage": "1030: [[Client complaining of pain as usual]]. [[Rates pain 7 on a 0-to-10 scale in the right knee]]. [[Gave oxycodone 5.0 mg PO]]. [[Client seems drug-seeking]].<br>1130: [[Client drowsy but opens eyes to voice]]. [[Respiratory rate 12/min, SpO₂ 93% on room air]]. [[Provider notified]]. [[Incident report filed]].",
       "answer": [0, 2, 3, 6, 7],
-      "rationale": "<p>Documentation must be <b>FACT</b>: factual, accurate, complete, and timely. These entries need correcting:</p><ul><li>“<b>Complaining of pain as usual</b>” is a judgment, not a fact. Record what the client says and how they rate the pain.</li><li>“<b>5.0 mg</b>” has a trailing zero, which can be misread as 50 mg. Write 5 mg.</li><li>“<b>Seems drug-seeking</b>” is a subjective label. Document the behavior observed and the client's own words instead.</li><li>“<b>Provider notified</b>” is incomplete. Include the provider's name, the time, what was reported, and any new prescriptions.</li><li>“<b>Incident report filed</b>” doesn't belong in the medical record. Incident reports are confidential quality improvement documents, filed separately and never mentioned in the chart.</li></ul><p>The pain rating with its location, the level of consciousness, and the respiratory rate and oxygen saturation are objective, specific, and correctly documented.</p>"
+      "rationale": "<p>Documentation must be <b>FACT</b>: factual, accurate, complete, and timely. These entries need correcting:</p><ul><li>“<b>Complaining of pain as usual</b>” is a judgment, not a fact. Record what the client says and how they rate the pain.</li><li>“<b>5.0 mg</b>” has a trailing zero, which can be misread as 50 mg. Write 5 mg.</li><li>“<b>Seems drug-seeking</b>” is a subjective label. Document the behavior observed and the client's own words instead.</li><li>“<b>Provider notified</b>” is incomplete. Include the provider's name, the time, what was reported, and any new prescriptions.</li><li>“<b>Incident report filed</b>” doesn't belong in the medical record. Incident reports are confidential quality improvement documents, filed separately and never mentioned in the chart.</li></ul><p>The pain rating with its location, the level of consciousness, and the respiratory rate and oxygen saturation are objective, specific, and correctly documented.</p>",
+      "hidden": true
     },
     {
       "id": "pn3-48",
@@ -588,7 +589,8 @@
       "stem": "The Medication Administration Record shows that the float nurse overrode a bar-code scanner alert at 1030. Which statement about this alert is accurate?",
       "options": ["It was clinical decision support that should have prompted the nurse to stop and verify the 1000 dose.", "Alerts like this one can be overridden whenever a client rates their pain 7 or higher.", "Bar-code scanning replaces the nurse's responsibility to check the MAR before giving any medication to the client.", "The alert most likely meant that the bar-code scanner needed repair or replacement."],
       "answer": 0,
-      "rationale": "<p>The scanner's duplicate-dose warning is a form of <b>clinical decision support</b>: technology that checks the client's data and gives the nurse timely information for a safe decision. It should have prompted the nurse to <b>stop and verify</b> the 1000 dose in the MAR, which would have prevented the extra dose.</p><p>A high pain rating <b>doesn't justify</b> overriding a safety alert; the prescription allows a dose only every 4 hours. Decision support <b>supports, but doesn't replace</b>, the nurse's own checks. Assuming an alert is a <b>malfunction</b> without checking is how alert fatigue leads to errors.</p>"
+      "rationale": "<p>The scanner's duplicate-dose warning is a form of <b>clinical decision support</b>: technology that checks the client's data and gives the nurse timely information for a safe decision. It should have prompted the nurse to <b>stop and verify</b> the 1000 dose in the MAR, which would have prevented the extra dose.</p><p>A high pain rating <b>doesn't justify</b> overriding a safety alert; the prescription allows a dose only every 4 hours. Decision support <b>supports, but doesn't replace</b>, the nurse's own checks. Assuming an alert is a <b>malfunction</b> without checking is how alert fatigue leads to errors.</p>",
+      "hidden": true
     },
     {
       "id": "pn3-49",
@@ -600,7 +602,8 @@
       "columns": ["Indicated", "Not Indicated"],
       "rows": ["Complete an incident (occurrence) report about the extra dose.", "Write “incident report completed” in the client's medical record.", "Notify the provider, and document the provider's name, the time, what was reported, and any new prescriptions.", "Monitor the client's respiratory rate and level of consciousness closely.", "Delete the 1030 dose from the electronic MAR, because it was given by mistake.", "Place a copy of the incident report in the client's chart."],
       "answer": [0, 1, 0, 0, 1, 1],
-      "rationale": "<p><b>Indicated:</b> complete an <b>incident report</b>, which the facility's risk management and quality improvement staff use to find and fix system problems. <b>Notify the provider</b> and document the facts completely: the provider's name, the time, what was reported, and any new prescriptions. <b>Monitor</b> the client's breathing and level of consciousness closely, because an extra opioid dose can depress respirations.</p><p><b>Not indicated:</b> the incident report is a confidential administrative document. It's filed with risk management, not in the medical record, and the chart shouldn't mention it or hold a copy. The record must stay <b>accurate and complete</b>: a dose that was given is never deleted, because the medical record is a legal document. The nurse documents what happened and the client's condition instead.</p>"
+      "rationale": "<p><b>Indicated:</b> complete an <b>incident report</b>, which the facility's risk management and quality improvement staff use to find and fix system problems. <b>Notify the provider</b> and document the facts completely: the provider's name, the time, what was reported, and any new prescriptions. <b>Monitor</b> the client's breathing and level of consciousness closely, because an extra opioid dose can depress respirations.</p><p><b>Not indicated:</b> the incident report is a confidential administrative document. It's filed with risk management, not in the medical record, and the chart shouldn't mention it or hold a copy. The record must stay <b>accurate and complete</b>: a dose that was given is never deleted, because the medical record is a legal document. The nurse documents what happened and the client's condition instead.</p>",
+      "hidden": true
     },
     {
       "id": "pn3-50",
@@ -615,7 +618,8 @@
         {"options": ["a near miss", "a medication error", "a sentinel event"], "answer": 2},
         {"options": ["a staff performance review", "a root cause analysis", "a new hiring plan"], "answer": 1}
       ],
-      "rationale": "<p>A <b>medication error</b> is a preventable mistake that reaches the client, whether or not it causes harm, as the extra dose did here. A <b>near miss</b> is an error caught <b>before</b> it reaches the client, as it would have been if the nurse had stopped at the scanner alert. A <b>sentinel event</b> is an unexpected occurrence that causes death or serious physical or psychological harm; it needs immediate investigation.</p><p>The Joint Commission requires a <b>root cause analysis</b> after a sentinel event, and recommends one after any adverse event. It looks for problems in <b>systems and processes</b>, such as alert design or staffing, rather than blaming one person, and it leads to an action plan that names who is responsible, includes pilot testing and timelines, and measures whether the changes work. A staff performance review focuses on one person, which isn't the purpose of a root cause analysis.</p>"
+      "rationale": "<p>A <b>medication error</b> is a preventable mistake that reaches the client, whether or not it causes harm, as the extra dose did here. A <b>near miss</b> is an error caught <b>before</b> it reaches the client, as it would have been if the nurse had stopped at the scanner alert. A <b>sentinel event</b> is an unexpected occurrence that causes death or serious physical or psychological harm; it needs immediate investigation.</p><p>The Joint Commission requires a <b>root cause analysis</b> after a sentinel event, and recommends one after any adverse event. It looks for problems in <b>systems and processes</b>, such as alert design or staffing, rather than blaming one person, and it leads to an action plan that names who is responsible, includes pilot testing and timelines, and measures whether the changes work. A staff performance review focuses on one person, which isn't the purpose of a root cause analysis.</p>",
+      "hidden": true
     },
     {
       "id": "hcs-01",
@@ -1049,7 +1053,8 @@
       "stem": "Click to highlight the findings from the community assessment that are barriers limiting residents' access to health care.",
       "passage": "Most adults work [[hourly jobs with no paid time off]].<br>The only clinic is [[open Monday to Friday, 9:00 a.m. to 4:00 p.m.]]<br>The [[nearest hospital is 18 miles away]].<br>The bus runs [[every 90 minutes, with no service on Sundays]].<br>[[21% of adults have no health insurance]].<br>An [[active faith community runs a Saturday food pantry]].<br>The [[public library offers free internet]].<br>A [[new walking trail runs along the river]].",
       "answer": [0, 1, 2, 3, 4],
-      "rationale": "<p>The barriers are <b>hourly jobs with no paid time off</b> (a visit means lost pay), <b>a clinic open only during weekday working hours</b>, <b>a hospital 18 miles away</b>, <b>infrequent buses with no Sunday service</b> (and many households have no car), and <b>a high rate of uninsured adults</b>. Each one limits whether residents can get care, whatever their health needs.</p><p><b>The food pantry</b>, <b>free internet at the library</b>, and <b>the walking trail</b> are community strengths, resources a program can build on, not barriers.</p><p><b>Takeaway:</b> Access barriers include cost, distance, transportation, and service hours that don't fit people's lives; note the community's strengths too.</p>"
+      "rationale": "<p>The barriers are <b>hourly jobs with no paid time off</b> (a visit means lost pay), <b>a clinic open only during weekday working hours</b>, <b>a hospital 18 miles away</b>, <b>infrequent buses with no Sunday service</b> (and many households have no car), and <b>a high rate of uninsured adults</b>. Each one limits whether residents can get care, whatever their health needs.</p><p><b>The food pantry</b>, <b>free internet at the library</b>, and <b>the walking trail</b> are community strengths, resources a program can build on, not barriers.</p><p><b>Takeaway:</b> Access barriers include cost, distance, transportation, and service hours that don't fit people's lives; note the community's strengths too.</p>",
+      "hidden": true
     },
     {
       "id": "hcs-47",
@@ -1061,7 +1066,8 @@
       "columns": ["Primary prevention", "Secondary prevention", "Tertiary prevention"],
       "rows": ["Scheduling mammograms for women ages 50 to 74", "Teaching children who have asthma, and their families, to use an asthma action plan", "Offering childhood vaccines on evenings and Saturdays", "Running a support group for women being treated for breast cancer", "Teaching middle-school students how to avoid starting to smoke"],
       "answer": [1, 2, 0, 2, 0],
-      "rationale": "<p><b>Primary prevention</b> keeps disease from developing: <b>childhood vaccines</b> and <b>smoking-prevention teaching</b>.</p><p><b>Secondary prevention</b> finds disease early: <b>scheduling screening mammograms</b>, which could lower the high rate of breast cancers found at a late stage.</p><p><b>Tertiary prevention</b> limits complications and supports people with an established disease: <b>asthma action plans for children who have asthma</b>, which can cut emergency visits, and <b>a support group for women being treated for breast cancer</b>.</p><p><b>Takeaway:</b> Match the program to the disease's stage: none yet (primary), hidden or early (secondary), established (tertiary).</p>"
+      "rationale": "<p><b>Primary prevention</b> keeps disease from developing: <b>childhood vaccines</b> and <b>smoking-prevention teaching</b>.</p><p><b>Secondary prevention</b> finds disease early: <b>scheduling screening mammograms</b>, which could lower the high rate of breast cancers found at a late stage.</p><p><b>Tertiary prevention</b> limits complications and supports people with an established disease: <b>asthma action plans for children who have asthma</b>, which can cut emergency visits, and <b>a support group for women being treated for breast cancer</b>.</p><p><b>Takeaway:</b> Match the program to the disease's stage: none yet (primary), hidden or early (secondary), established (tertiary).</p>",
+      "hidden": true
     },
     {
       "id": "hcs-48",
@@ -1074,7 +1080,8 @@
         {"options": ["the nearest hospital is 18 miles away from the neighborhood", "one in three households in the neighborhood has an income below the poverty line", "the only clinic is open only while parents are at their hourly jobs", "21% of the neighborhood's adults have no health insurance"], "answer": 2},
         {"options": ["tell parents that their children need vaccines for school", "hold vaccine clinics on evenings and weekends nearby", "build a new hospital closer to the neighborhood", "mail every family a written schedule of vaccines"], "answer": 1}
       ],
-      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>hold vaccine clinics on evenings and weekends nearby</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>"
+      "rationale": "<p>The best explanation is that <b>the only clinic is open during the hours parents work hourly jobs with no paid time off</b>: getting a child vaccinated means losing pay. So the first step is to <b>hold vaccine clinics on evenings and weekends nearby</b>, which removes that barrier directly.</p><p><b>The hospital's distance</b> doesn't matter for vaccines, which are given in clinics. <b>Poverty</b> and <b>uninsured adults</b> are real problems, but children in low-income families can usually get vaccines through Medicaid, CHIP, or free public programs, so cost isn't the main barrier here. <b>Telling parents vaccines are required</b> and <b>mailing schedules</b> don't fix the hours problem, and a <b>new hospital</b> is far beyond the grant.</p><p><b>Takeaway:</b> Find the barrier that best explains the data, then remove that barrier.</p>",
+      "hidden": true
     },
     {
       "id": "hcs-49",
@@ -1084,7 +1091,8 @@
       "stem": "The grant can fund only one of the coalition's proposals. Which proposal should the nurse recommend?",
       "options": ["A: Discounted memberships at a private gym 12 miles away", "B: Billboards about healthy eating along the highway", "C: A mobile health van with evening and Saturday hours", "D: A new advanced imaging machine for the hospital 18 miles away"],
       "answer": 2,
-      "rationale": "<p><b>The mobile health van</b> is correct. It targets the neighborhood's biggest gaps (low vaccination and mammogram rates, late-stage breast cancers), removes its main barriers (work hours, distance, transportation), and produces measurable results within a year. That's a fair allocation of limited resources that does the most good for the most people.</p><p><b>Gym memberships 12 miles away</b> help mostly residents who already have cars and money. <b>Billboards</b> don't remove any barrier and are hard to measure. <b>An imaging machine at a distant hospital</b> uses the whole grant on a service residents can't easily reach, and doesn't address the gaps in the data.</p><p><b>Takeaway:</b> When resources are limited, choose the option that meets the greatest need, removes real barriers, and reaches the most people.</p>"
+      "rationale": "<p><b>The mobile health van</b> is correct. It targets the neighborhood's biggest gaps (low vaccination and mammogram rates, late-stage breast cancers), removes its main barriers (work hours, distance, transportation), and produces measurable results within a year. That's a fair allocation of limited resources that does the most good for the most people.</p><p><b>Gym memberships 12 miles away</b> help mostly residents who already have cars and money. <b>Billboards</b> don't remove any barrier and are hard to measure. <b>An imaging machine at a distant hospital</b> uses the whole grant on a service residents can't easily reach, and doesn't address the gaps in the data.</p><p><b>Takeaway:</b> When resources are limited, choose the option that meets the greatest need, removes real barriers, and reaches the most people.</p>",
+      "hidden": true
     },
     {
       "id": "hcs-50",
@@ -1096,7 +1104,8 @@
       "columns": ["Improved", "No change", "Declined"],
       "rows": ["Children up to date on vaccines by age 2: 68% → 86%", "Women ages 50 to 74 with a recent mammogram: 49% → 50%", "Emergency department visits for asthma, per 1,000 children: 24 → 31", "Adults with no health insurance: 21% → 14%"],
       "answer": [0, 1, 2, 0],
-      "rationale": "<p><b>Vaccination rates rose</b> from 68% to 86%, and <b>uninsured adults fell</b> from 21% to 14%: both improved. <b>Mammogram rates barely moved</b> (49% to 50%), so referrals alone didn't close that gap, and the nurse should look at what still stands in the way, such as getting to the imaging site. <b>Asthma emergency visits rose</b> from 24 to 31 per 1,000 children, a decline in health that needs attention in the next plan.</p><p><b>Takeaway:</b> Evaluate against the baseline data: keep what worked, and revise the plan where results didn't change or got worse.</p>"
+      "rationale": "<p><b>Vaccination rates rose</b> from 68% to 86%, and <b>uninsured adults fell</b> from 21% to 14%: both improved. <b>Mammogram rates barely moved</b> (49% to 50%), so referrals alone didn't close that gap, and the nurse should look at what still stands in the way, such as getting to the imaging site. <b>Asthma emergency visits rose</b> from 24 to 31 per 1,000 children, a decline in health that needs attention in the next plan.</p><p><b>Takeaway:</b> Evaluate against the baseline data: keep what worked, and revise the plan where results didn't change or got worse.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-01",
@@ -1526,7 +1535,8 @@
       "stem": "Click to highlight the findings from the unit observations that suggest a practice problem the nurse should address.",
       "passage": "[[28% of clients 70 and older developed delirium, compared with 15% on similar units]].<br>[[Overhead lights are turned on for vital signs at 0000 and 0400 for every client]].<br>[[Glasses and hearing aids are usually kept in bedside drawers]].<br>[[Sleeping pills are given on request]].<br>[[Families are encouraged to visit]].<br>[[A large clock and calendar hang in each room]].",
       "answer": [0, 1, 2, 3],
-      "rationale": "<p>The cues of a practice problem are <b>a delirium rate nearly double</b> that of similar units, <b>lights on for every client at 0000 and 0400</b> (broken sleep), <b>glasses and hearing aids left in drawers</b> (sensory deprivation, which raises confusion), and <b>sleeping pills on request</b> (sedating medications raise the risk of delirium in older adults).</p><p><b>Family visits</b> and <b>a clock and calendar</b> help orient clients; they're strengths to keep.</p><p><b>Takeaway:</b> EBP starts with assessing: compare your data with a benchmark, and look at current routines for the cause.</p>"
+      "rationale": "<p>The cues of a practice problem are <b>a delirium rate nearly double</b> that of similar units, <b>lights on for every client at 0000 and 0400</b> (broken sleep), <b>glasses and hearing aids left in drawers</b> (sensory deprivation, which raises confusion), and <b>sleeping pills on request</b> (sedating medications raise the risk of delirium in older adults).</p><p><b>Family visits</b> and <b>a clock and calendar</b> help orient clients; they're strengths to keep.</p><p><b>Takeaway:</b> EBP starts with assessing: compare your data with a benchmark, and look at current routines for the cause.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-47",
@@ -1541,7 +1551,8 @@
         {"options": ["no hospital stay", "a sleeping pill on request", "usual care", "family visits"], "answer": 2},
         {"options": ["the unit's costs", "nurses' overtime", "the number of visitors", "new cases of delirium"], "answer": 3}
       ],
-      "rationale": "<p>A useful PICOT question for this problem: <b>P</b> = hospitalized adults 70 and older; <b>I</b> = a routine of reorientation, sleep, walking, and sensory aids, without medication; <b>C</b> = usual care; <b>O</b> = new cases of delirium; <b>T</b> = during the hospital stay.</p><p><b>Nurses</b> and <b>family members</b> aren't the clients at risk, and <b>all adults in the community</b> is the wrong population. <b>Sleeping pills</b> and <b>more night checks</b> add risk instead of testing a solution, and <b>a bigger calendar</b> is too small to be the intervention. <b>Usual care</b> is the natural comparison. <b>Costs</b>, <b>overtime</b>, and <b>visitors</b> aren't the client outcome the nurse is worried about.</p><p><b>Takeaway:</b> Build the PICOT question from the assessed problem: the clients at risk, the intervention, usual care, and the outcome you want to change.</p>"
+      "rationale": "<p>A useful PICOT question for this problem: <b>P</b> = hospitalized adults 70 and older; <b>I</b> = a routine of reorientation, sleep, walking, and sensory aids, without medication; <b>C</b> = usual care; <b>O</b> = new cases of delirium; <b>T</b> = during the hospital stay.</p><p><b>Nurses</b> and <b>family members</b> aren't the clients at risk, and <b>all adults in the community</b> is the wrong population. <b>Sleeping pills</b> and <b>more night checks</b> add risk instead of testing a solution, and <b>a bigger calendar</b> is too small to be the intervention. <b>Usual care</b> is the natural comparison. <b>Costs</b>, <b>overtime</b>, and <b>visitors</b> aren't the client outcome the nurse is worried about.</p><p><b>Takeaway:</b> Build the PICOT question from the assessed problem: the clients at risk, the intervention, usual care, and the outcome you want to change.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-48",
@@ -1550,7 +1561,8 @@
       "topic": "Evidence-based practice",
       "stem": "Place the four sources the nurse found in order, from the strongest to the weakest evidence about whether a program reduces delirium.",
       "items": ["The systematic review and meta-analysis of 14 randomized controlled trials", "The single randomized controlled trial at one hospital", "The qualitative study of family members' experiences", "The opinion article by a hospital executive"],
-      "rationale": "<p>In the hierarchy of evidence for whether an intervention works, <b>a systematic review and meta-analysis of randomized controlled trials</b> is strongest (Level I), <b>a single well-designed RCT</b> is next (Level II), <b>a single qualitative study</b> is lower (Level VI), and <b>expert opinion</b> is weakest (Level VII).</p><p>The qualitative study is still valuable: it's the best evidence about what families experience, just not about whether the program works.</p><p><b>Takeaway:</b> For “Does it work?”, a meta-analysis of RCTs is strongest and opinion is weakest.</p>"
+      "rationale": "<p>In the hierarchy of evidence for whether an intervention works, <b>a systematic review and meta-analysis of randomized controlled trials</b> is strongest (Level I), <b>a single well-designed RCT</b> is next (Level II), <b>a single qualitative study</b> is lower (Level VI), and <b>expert opinion</b> is weakest (Level VII).</p><p>The qualitative study is still valuable: it's the best evidence about what families experience, just not about whether the program works.</p><p><b>Takeaway:</b> For “Does it work?”, a meta-analysis of RCTs is strongest and opinion is weakest.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-49",
@@ -1562,7 +1574,8 @@
       "columns": ["Indicated", "Not Indicated"],
       "rows": ["Make sure clients wear their glasses and hearing aids during the day", "Skip the 0000 and 0400 vital signs for clients who seem stable", "Dim the lights and keep noise down at night, while still doing the required checks", "Help clients walk in the hall during the day, as their condition allows", "Give every older adult a sleeping pill on admission, as the opinion article suggests", "Present the evidence to the unit's practice council and propose a change to the night vital-signs policy"],
       "answer": [0, 1, 0, 0, 1, 0],
-      "rationale": "<p>Individual EBP works within current policy. The nurse can <b>keep glasses and hearing aids in use</b>, <b>dim the lights and reduce noise while still doing the required checks</b>, and <b>help clients walk</b>: each is supported by the evidence and allowed by policy. To change the policy itself, the nurse <b>brings the evidence to the practice council</b>, which is the organization's process.</p><p><b>Skipping required vital signs</b> violates the policy as written, even with good evidence. <b>A sleeping pill for every older adult</b> follows the weakest source and contradicts the stronger evidence: sedating medications raise the risk of delirium.</p><p><b>Takeaway:</b> Use the evidence where policy allows, and change the policy through the organization's process.</p>"
+      "rationale": "<p>Individual EBP works within current policy. The nurse can <b>keep glasses and hearing aids in use</b>, <b>dim the lights and reduce noise while still doing the required checks</b>, and <b>help clients walk</b>: each is supported by the evidence and allowed by policy. To change the policy itself, the nurse <b>brings the evidence to the practice council</b>, which is the organization's process.</p><p><b>Skipping required vital signs</b> violates the policy as written, even with good evidence. <b>A sleeping pill for every older adult</b> follows the weakest source and contradicts the stronger evidence: sedating medications raise the risk of delirium.</p><p><b>Takeaway:</b> Use the evidence where policy allows, and change the policy through the organization's process.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-50",
@@ -1574,7 +1587,8 @@
       "columns": ["Improved", "No change", "Declined"],
       "rows": ["New delirium in clients 70 and older: 28% → 16%", "Average length of stay: 5.1 → 5.1 days", "Night-shift staff trained in the routine: 95% → 70%, after many new hires", "Nights on which clients 70 and older received a sleeping pill: 61% → 22%"],
       "answer": [0, 1, 2, 0],
-      "rationale": "<p><b>New delirium fell</b> from 28% to 16%, and <b>sleeping-pill use dropped</b> from 61% to 22% of nights: both improved. <b>Length of stay didn't change</b>. <b>Training coverage on nights fell</b> to 70% after new hires, a decline that could erode the results.</p><p>Evaluation drives the next decision: keep the routine, since it's working, and modify the rollout by training the new staff, then keep monitoring.</p><p><b>Takeaway:</b> Evaluate outcomes and the process together, then accept, modify, or reject the change.</p>"
+      "rationale": "<p><b>New delirium fell</b> from 28% to 16%, and <b>sleeping-pill use dropped</b> from 61% to 22% of nights: both improved. <b>Length of stay didn't change</b>. <b>Training coverage on nights fell</b> to 70% after new hires, a decline that could erode the results.</p><p>Evaluation drives the next decision: keep the routine, since it's working, and modify the rollout by training the new staff, then keep monitoring.</p><p><b>Takeaway:</b> Evaluate outcomes and the process together, then accept, modify, or reject the change.</p>",
+      "hidden": true
     },
     {
       "id": "ebp-51",
@@ -2056,7 +2070,8 @@
       "stem": "The nurse is reviewing a draft of the note for Friday's telehealth visit. Click to highlight the entries that need editing before the note is saved.",
       "passage": "0915 Telehealth video visit.<br>[[Client seems confused about meds.]]<br>[[Weight 182.0 lb, up 5.2 lb since Monday.]]<br>[[Wt way up, pt noncompliant.]]<br>[[Bilateral ankle edema, 2+.]]<br>[[Client states, “I skipped my water pill Tuesday and Wednesday.”]]<br>[[Instructed to weigh QD.]]<br>[[Teaching done.]]",
       "answer": [0, 2, 5, 6],
-      "rationale": "<p>The entries that need editing are <b>“seems confused about meds”</b> (an opinion: describe what the client said or did), <b>“Wt way up, pt noncompliant”</b> (vague, informal, and judgmental: give the numbers and the client's own words), <b>“weigh QD”</b> (QD is on The Joint Commission's Do-Not-Use list: write “daily”), and <b>“Teaching done”</b> (incomplete: what was taught, and how did the client respond?).</p><p>The <b>weight, with its change since Monday</b>, the <b>2+ bilateral ankle edema</b>, and <b>the client's own words in quotation marks</b> are factual and specific.</p><p><b>Takeaway:</b> Edit out opinions, labels, vague words, and Do-Not-Use abbreviations; keep measured findings and the client's own words.</p>"
+      "rationale": "<p>The entries that need editing are <b>“seems confused about meds”</b> (an opinion: describe what the client said or did), <b>“Wt way up, pt noncompliant”</b> (vague, informal, and judgmental: give the numbers and the client's own words), <b>“weigh QD”</b> (QD is on The Joint Commission's Do-Not-Use list: write “daily”), and <b>“Teaching done”</b> (incomplete: what was taught, and how did the client respond?).</p><p>The <b>weight, with its change since Monday</b>, the <b>2+ bilateral ankle edema</b>, and <b>the client's own words in quotation marks</b> are factual and specific.</p><p><b>Takeaway:</b> Edit out opinions, labels, vague words, and Do-Not-Use abbreviations; keep measured findings and the client's own words.</p>",
+      "hidden": true
     },
     {
       "id": "inf-47",
@@ -2068,7 +2083,8 @@
       "columns": ["Requires follow-up", "Doesn't require follow-up"],
       "rows": ["Weight up 2.4 lb from Wednesday to Thursday", "Blood pressure 124/76 mm Hg on Monday", "Weight up 5.2 lb since Monday", "Heart rate rising from 78/min to 94/min over the week", "Heart rate 78/min on Monday"],
       "answer": [0, 1, 0, 0, 1],
-      "rationale": "<p>Remote monitoring catches early warning signs at home, but only if someone reviews the trends and acts. Weight gain is the earliest sign of fluid retention in heart failure: <b>2.4 lb in one day</b> and <b>5.2 lb in a week</b> both exceed the order's call rules (more than 2 lb in a day or 5 lb in a week). A <b>heart rate climbing</b> from 78 to 94/min along with the weight gain suggests the heart is working harder.</p><p>Monday's <b>blood pressure</b> and <b>heart rate</b> were within expected ranges.</p><p><b>Takeaway:</b> Telehealth data matter as trends: compare each reading with the client's baseline and the ordered limits.</p>"
+      "rationale": "<p>Remote monitoring catches early warning signs at home, but only if someone reviews the trends and acts. Weight gain is the earliest sign of fluid retention in heart failure: <b>2.4 lb in one day</b> and <b>5.2 lb in a week</b> both exceed the order's call rules (more than 2 lb in a day or 5 lb in a week). A <b>heart rate climbing</b> from 78 to 94/min along with the weight gain suggests the heart is working harder.</p><p>Monday's <b>blood pressure</b> and <b>heart rate</b> were within expected ranges.</p><p><b>Takeaway:</b> Telehealth data matter as trends: compare each reading with the client's baseline and the ordered limits.</p>",
+      "hidden": true
     },
     {
       "id": "inf-48",
@@ -2081,7 +2097,8 @@
         {"options": ["a geographic information system", "computerized provider order entry", "clinical decision support", "a personal health record"], "answer": 2},
         {"options": ["wait for Saturday's weight reading to confirm the trend", "assess the client by video and notify the provider", "turn off the alert, since the client already knows about it", "tell the client to take two water pills today instead of one"], "answer": 1}
       ],
-      "rationale": "<p>An automatic alert that applies a rule to the client's data is <b>clinical decision support</b>. The priority is to <b>assess the client and notify the provider</b>: the weight gain, ankle swelling, tight shoes, and needing more pillows to sleep point to worsening fluid overload, and the order says to notify the provider.</p><p><b>Waiting for another reading</b> delays care, <b>turning off the alert</b> removes a safety net, and <b>telling the client to double the medication</b> changes the dose without an order. A geographic information system, CPOE, and a personal health record don't generate alerts like this one.</p><p><b>Takeaway:</b> An alert supports the nurse's judgment, but it still needs the nurse's assessment and action.</p>"
+      "rationale": "<p>An automatic alert that applies a rule to the client's data is <b>clinical decision support</b>. The priority is to <b>assess the client and notify the provider</b>: the weight gain, ankle swelling, tight shoes, and needing more pillows to sleep point to worsening fluid overload, and the order says to notify the provider.</p><p><b>Waiting for another reading</b> delays care, <b>turning off the alert</b> removes a safety net, and <b>telling the client to double the medication</b> changes the dose without an order. A geographic information system, CPOE, and a personal health record don't generate alerts like this one.</p><p><b>Takeaway:</b> An alert supports the nurse's judgment, but it still needs the nurse's assessment and action.</p>",
+      "hidden": true
     },
     {
       "id": "inf-49",
@@ -2091,7 +2108,8 @@
       "stem": "The client's daughter asks the nurse for her own login to the client's patient portal so she can help manage the client's medications. Which of the following responses should the nurse give?",
       "options": ["“I can give you your parent's portal password right now, since you're family.”", "“Family members can never have access to a client's portal or records.”", "“You can just log in with your parent's account whenever you need to.”", "“Your parent can give you your own proxy access with written permission.”"],
       "answer": 3,
-      "rationale": "<p><b>Written permission for proxy access</b> is correct. Family members don't automatically have a right to a client's records, but the client can authorize them. Most portals offer proxy access: the client gives written permission, and the family member gets their own login, so access is tracked and can be limited or ended.</p><p><b>Giving out the client's password</b> and <b>using the client's account</b> share a login and leave no record of who did what. <b>Family can never have access</b> is false: the client can authorize it.</p><p><b>Takeaway:</b> The client controls who sees their information, and proxy access with written permission is the safe route.</p>"
+      "rationale": "<p><b>Written permission for proxy access</b> is correct. Family members don't automatically have a right to a client's records, but the client can authorize them. Most portals offer proxy access: the client gives written permission, and the family member gets their own login, so access is tracked and can be limited or ended.</p><p><b>Giving out the client's password</b> and <b>using the client's account</b> share a login and leave no record of who did what. <b>Family can never have access</b> is false: the client can authorize it.</p><p><b>Takeaway:</b> The client controls who sees their information, and proxy access with written permission is the safe route.</p>",
+      "hidden": true
     },
     {
       "id": "inf-50",
@@ -2101,7 +2119,8 @@
       "stem": "After the visit, the nurse calls the provider, who increases the furosemide dose. Which of the following entries best documents the call?",
       "options": ["“0930: Called the provider about the client's weight problem, swollen ankles, and noncompliance with the medication schedule. New orders received and carried out. Client teaching done.”", "“0930: Provider notified of 5.2-lb weight gain since Monday, 2+ bilateral ankle edema, and 2 missed doses. New order: furosemide 40 mg PO twice daily; read back. Client repeated the new dose correctly.”", "“0930: Provider aware of wt gain and ankle swelling since Monday. Furosemide increased per new order from provider. Client to weigh QD and verbalized understanding of all teaching about the new dose.”", "“0930: Provider seemed unconcerned about the client's weight gain and swollen ankles since Monday but agreed to increase the furosemide dose. Client appears to understand the new dose and when to take it.”"],
       "answer": 1,
-      "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>"
+      "rationale": "<p><b>The entry with the findings reported, the exact new order, the read-back, and the client's teach-back</b> is correct. It gives the time of the call, what was reported, the provider's response, confirmation of the order, and evidence of the client's understanding: factual, accurate, complete, and timely.</p><p>The other entries are vague (“weight problem,” “teaching done”), judgmental (“noncompliance,” “seemed unconcerned”), use a Do-Not-Use abbreviation (QD), or rely on “appears to understand” instead of the client's own explanation.</p><p><b>Takeaway:</b> Document a call to a provider with the time, what you reported, the response or new order, the read-back, and the client's response.</p>",
+      "hidden": true
     },
     {
       "id": "inf-51",
@@ -2714,7 +2733,8 @@
       "stem": "Click to highlight the findings that point to areas the QI team should target.",
       "passage": "[[The pressure-injury rate rose from 1.1 to 2.4 per 1,000 client days, against a national average of 0.9]].<br>[[Every client has a risk score on admission]].<br>[[Skin assessments within 8 hours of admission fell to 64%]].<br>[[Night-shift repositioning documentation fell to 58%]].<br>[[95% of staff completed skin-care training this year]].<br>[[Pressure-relieving mattresses take a day to arrive]].",
       "answer": [0, 2, 3, 5],
-      "rationale": "<p>The targets are the <b>rising pressure-injury rate</b>, well above the national average, <b>skin assessments within 8 hours falling to 64%</b>, <b>night-shift repositioning falling to 58%</b>, and <b>a day's wait for pressure-relieving mattresses</b>. Each one shows a gap between current care and best practice.</p><p><b>Risk scores on admission</b> and <b>95% of staff trained</b> are strengths: the problem isn't knowledge or risk screening, but follow-through on assessments, repositioning, and equipment.</p><p><b>Takeaway:</b> QI targets the gaps between current performance and the benchmark, and notes the strengths to build on.</p>"
+      "rationale": "<p>The targets are the <b>rising pressure-injury rate</b>, well above the national average, <b>skin assessments within 8 hours falling to 64%</b>, <b>night-shift repositioning falling to 58%</b>, and <b>a day's wait for pressure-relieving mattresses</b>. Each one shows a gap between current care and best practice.</p><p><b>Risk scores on admission</b> and <b>95% of staff trained</b> are strengths: the problem isn't knowledge or risk screening, but follow-through on assessments, repositioning, and equipment.</p><p><b>Takeaway:</b> QI targets the gaps between current performance and the benchmark, and notes the strengths to build on.</p>",
+      "hidden": true
     },
     {
       "id": "qi-47",
@@ -2727,7 +2747,8 @@
         {"options": ["accreditation", "benchmarking", "triage", "randomization"], "answer": 1},
         {"options": ["wait another quarter to be sure", "stop documenting repositioning", "identify the causes and test a change", "transfer high-risk clients to other units"], "answer": 2}
       ],
-      "rationale": "<p>Comparing a unit's outcomes with those of leaders or similar units is <b>benchmarking</b>, a step in the QI process. A rising rate well above the benchmark calls for the team to <b>identify the causes and test a change</b>.</p><p><b>Accreditation</b> is an external review against standards, <b>triage</b> sorts clients by urgency, and <b>randomization</b> assigns research participants to groups. <b>Waiting another quarter</b> lets more clients be harmed, <b>stopping documentation</b> hides the problem, and <b>transferring high-risk clients</b> moves the problem instead of fixing it.</p><p><b>Takeaway:</b> Benchmark to see the gap, then find the causes and test a fix.</p>"
+      "rationale": "<p>Comparing a unit's outcomes with those of leaders or similar units is <b>benchmarking</b>, a step in the QI process. A rising rate well above the benchmark calls for the team to <b>identify the causes and test a change</b>.</p><p><b>Accreditation</b> is an external review against standards, <b>triage</b> sorts clients by urgency, and <b>randomization</b> assigns research participants to groups. <b>Waiting another quarter</b> lets more clients be harmed, <b>stopping documentation</b> hides the problem, and <b>transferring high-risk clients</b> moves the problem instead of fixing it.</p><p><b>Takeaway:</b> Benchmark to see the gap, then find the causes and test a fix.</p>",
+      "hidden": true
     },
     {
       "id": "qi-48",
@@ -2739,7 +2760,8 @@
       "columns": ["Indicated", "Not Indicated"],
       "rows": ["Test hourly rounding on one hallway for 6 weeks before deciding on more", "Start hourly rounding on every unit in the hospital next week", "Find out which night nurses missed repositioning and discipline them", "Move the repositioning log from the desk to each client's bedside", "Track repositioning documentation weekly and the injury rate monthly during the test", "Stop measuring once staff say they like the new routine"],
       "answer": [0, 1, 1, 0, 0, 1],
-      "rationale": "<p><b>Indicated:</b> testing the change on a small scale first (the Do phase of PDSA), fixing the process problem staff identified (the log kept at the desk), and measuring both the process (repositioning documentation) and the outcome (the injury rate).</p><p><b>Not indicated:</b> a <b>hospital-wide rollout</b> before the test shows results; <b>disciplining night nurses</b>, which blames individuals for a system problem (two nurses for 15 clients, and a log away from the bedside); and <b>stopping measurement</b> based on opinions instead of data.</p><p><b>Takeaway:</b> Test small, fix the process, and keep measuring; don't blame people or spread a change too soon.</p>"
+      "rationale": "<p><b>Indicated:</b> testing the change on a small scale first (the Do phase of PDSA), fixing the process problem staff identified (the log kept at the desk), and measuring both the process (repositioning documentation) and the outcome (the injury rate).</p><p><b>Not indicated:</b> a <b>hospital-wide rollout</b> before the test shows results; <b>disciplining night nurses</b>, which blames individuals for a system problem (two nurses for 15 clients, and a log away from the bedside); and <b>stopping measurement</b> based on opinions instead of data.</p><p><b>Takeaway:</b> Test small, fix the process, and keep measuring; don't blame people or spread a change too soon.</p>",
+      "hidden": true
     },
     {
       "id": "qi-49",
@@ -2749,7 +2771,8 @@
       "stem": "The nurse manager reviews the draft action plan. Which of the following elements should a complete action plan include?",
       "options": ["Who is responsible for carrying out and overseeing the changes", "A pilot test of the change", "A list of staff members who will be disciplined", "Timelines for putting the changes in place", "Strategies for measuring whether the changes work", "A promise that no client will ever develop a pressure injury"],
       "answer": [0, 1, 3, 4],
-      "rationale": "<p>A complete action plan identifies <b>who is responsible</b> for implementing and overseeing the improvements, includes <b>pilot testing</b>, sets <b>timelines</b>, and states <b>strategies for measuring effectiveness</b>. The draft has a goal, a change to test, and responsible people, but it still needs a timeline for each step and a measurement plan.</p><p><b>A list of staff to discipline</b> focuses on blame instead of systems, and <b>a promise of zero injuries</b> isn't a measurable plan.</p><p><b>Takeaway:</b> An action plan answers who, pilot, when, and how it will be measured.</p>"
+      "rationale": "<p>A complete action plan identifies <b>who is responsible</b> for implementing and overseeing the improvements, includes <b>pilot testing</b>, sets <b>timelines</b>, and states <b>strategies for measuring effectiveness</b>. The draft has a goal, a change to test, and responsible people, but it still needs a timeline for each step and a measurement plan.</p><p><b>A list of staff to discipline</b> focuses on blame instead of systems, and <b>a promise of zero injuries</b> isn't a measurable plan.</p><p><b>Takeaway:</b> An action plan answers who, pilot, when, and how it will be measured.</p>",
+      "hidden": true
     },
     {
       "id": "qi-50",
@@ -2761,7 +2784,8 @@
       "columns": ["Improved", "No change", "Declined"],
       "rows": ["Pressure injuries per 1,000 client days: 2.4 → 1.2", "Night-shift repositioning documentation: 58% → 88%", "Skin assessments within 8 hours of admission: 64% → 65%", "Days to get a wound care consult: 3 → 5"],
       "answer": [0, 0, 1, 2],
-      "rationale": "<p><b>The injury rate fell by half</b>, and <b>night-shift repositioning rose</b> to 88%: both improved, so the change is working on the problem it targeted. <b>Admission skin assessments barely moved</b>, so they need their own change in the next cycle. <b>Wound care consults got slower</b>, a decline to report and address.</p><p>In the Act phase, the team can adopt hourly rounding more widely and plan the next PDSA cycle for admission skin assessments and consult delays.</p><p><b>Takeaway:</b> Evaluate each measure separately: keep what worked, and plan the next cycle for what didn't change or got worse.</p>"
+      "rationale": "<p><b>The injury rate fell by half</b>, and <b>night-shift repositioning rose</b> to 88%: both improved, so the change is working on the problem it targeted. <b>Admission skin assessments barely moved</b>, so they need their own change in the next cycle. <b>Wound care consults got slower</b>, a decline to report and address.</p><p>In the Act phase, the team can adopt hourly rounding more widely and plan the next PDSA cycle for admission skin assessments and consult delays.</p><p><b>Takeaway:</b> Evaluate each measure separately: keep what worked, and plan the next cycle for what didn't change or got worse.</p>",
+      "hidden": true
     },
     {
       "id": "qi-51",
@@ -3319,7 +3343,8 @@
       "columns": ["Agenda setting", "Government response", "Implementation", "Evaluation"],
       "rows": ["A legislator drafts a bill requiring helmets for riders under 18", "The state health department writes regulations on helmet standards and fines", "The nurse and the state nurses association present the ED data to legislators", "The health department compares injury data with the year before the law", "The legislature passes the bill, and the governor signs it"],
       "answer": [1, 2, 0, 3, 1],
-      "rationale": "<p><b>Agenda setting</b> is when a problem gets attention: the nurse and the state nurses association bringing the injury data to legislators. <b>Government response</b> is when the government acts on it: drafting, passing, and signing the bill. <b>Implementation</b> is when an agency puts the law into action: the health department writing the regulations. <b>Evaluation</b> asks whether it worked: comparing injury data before and after.</p><p><b>Takeaway:</b> Agenda setting, government response, implementation, evaluation, though in real life the stages often overlap.</p>"
+      "rationale": "<p><b>Agenda setting</b> is when a problem gets attention: the nurse and the state nurses association bringing the injury data to legislators. <b>Government response</b> is when the government acts on it: drafting, passing, and signing the bill. <b>Implementation</b> is when an agency puts the law into action: the health department writing the regulations. <b>Evaluation</b> asks whether it worked: comparing injury data before and after.</p><p><b>Takeaway:</b> Agenda setting, government response, implementation, evaluation, though in real life the stages often overlap.</p>",
+      "hidden": true
     },
     {
       "id": "hp-47",
@@ -3329,7 +3354,8 @@
       "stem": "Before the first draft of the bill is written, which of the following should be determined?",
       "options": ["Which population will benefit from the policy", "Which nurse will get credit for the idea", "The policy's cost-benefit ratio", "Which stakeholders support or oppose the policy", "Whether scooter companies will be allowed to write the regulations", "The scientific evidence and successful similar models"],
       "answer": [0, 2, 3, 5],
-      "rationale": "<p>Before a bill is drafted, its supporters determine <b>the population that will benefit</b> (riders under 18), <b>the cost-benefit ratio</b>, <b>the stakeholders and their support</b>, and <b>the scientific evidence and successful similar models</b>, such as helmet laws for young bicycle riders.</p><p><b>Credit for the idea</b> doesn't belong in policy planning. And regulations are written by the government agency assigned to carry out the law, not by <b>the companies being regulated</b>.</p><p><b>Takeaway:</b> Before drafting, know who benefits, what it costs, who's for or against it, and what the evidence shows.</p>"
+      "rationale": "<p>Before a bill is drafted, its supporters determine <b>the population that will benefit</b> (riders under 18), <b>the cost-benefit ratio</b>, <b>the stakeholders and their support</b>, and <b>the scientific evidence and successful similar models</b>, such as helmet laws for young bicycle riders.</p><p><b>Credit for the idea</b> doesn't belong in policy planning. And regulations are written by the government agency assigned to carry out the law, not by <b>the companies being regulated</b>.</p><p><b>Takeaway:</b> Before drafting, know who benefits, what it costs, who's for or against it, and what the evidence shows.</p>",
+      "hidden": true
     },
     {
       "id": "hp-48",
@@ -3341,7 +3367,8 @@
       "columns": ["Inside government", "Outside government"],
       "rows": ["State legislators", "State health department staff", "Scooter rental companies", "The state courts", "A parents' safety group", "The state nurses association"],
       "answer": [0, 0, 1, 0, 1, 1],
-      "rationale": "<p>Stakeholders <b>inside government</b> include legislators, bureaucrats such as health department staff, the governor's staff, and the courts. Stakeholders <b>outside government</b> include interested citizens, institutions, professional associations such as the state nurses association, and special interest groups such as scooter companies and parents' groups.</p><p>At each stage, formal and informal relationships develop among all of them, and the final policy reflects their influence, negotiation, and compromise.</p><p><b>Takeaway:</b> Policy is shaped by people inside government and those outside it who work to influence it.</p>"
+      "rationale": "<p>Stakeholders <b>inside government</b> include legislators, bureaucrats such as health department staff, the governor's staff, and the courts. Stakeholders <b>outside government</b> include interested citizens, institutions, professional associations such as the state nurses association, and special interest groups such as scooter companies and parents' groups.</p><p>At each stage, formal and informal relationships develop among all of them, and the final policy reflects their influence, negotiation, and compromise.</p><p><b>Takeaway:</b> Policy is shaped by people inside government and those outside it who work to influence it.</p>",
+      "hidden": true
     },
     {
       "id": "hp-49",
@@ -3351,7 +3378,8 @@
       "stem": "After the governor signs the law, the state health department writes the regulations. Which of the following statements about these regulations is accurate?",
       "options": ["They can add requirements the law doesn't authorize, such as banning scooters for everyone.", "They give the details of how the law is carried out, within its authority and intent.", "They don't need to refer to the law at all, since the agency is the expert.", "They have no force until a state court reviews and approves each one."],
       "answer": 1,
-      "rationale": "<p><b>They give the details, and must stay within the law's authority and intent</b> is correct. Laws give broad mandates; regulations, written by the executive branch agency assigned to carry out the law, provide the details. Regulations must refer directly to the law, can't exceed the agency's authority, and must honor the law's original intent.</p><p><b>Adding requirements the law doesn't authorize</b>, like a total ban, would exceed the agency's authority. Regulations <b>must</b> refer to the law. And they don't need <b>court approval</b> to take effect.</p><p><b>Takeaway:</b> The law sets the mandate; regulations fill in the details, within the law's limits.</p>"
+      "rationale": "<p><b>They give the details, and must stay within the law's authority and intent</b> is correct. Laws give broad mandates; regulations, written by the executive branch agency assigned to carry out the law, provide the details. Regulations must refer directly to the law, can't exceed the agency's authority, and must honor the law's original intent.</p><p><b>Adding requirements the law doesn't authorize</b>, like a total ban, would exceed the agency's authority. Regulations <b>must</b> refer to the law. And they don't need <b>court approval</b> to take effect.</p><p><b>Takeaway:</b> The law sets the mandate; regulations fill in the details, within the law's limits.</p>",
+      "hidden": true
     },
     {
       "id": "hp-50",
@@ -3361,7 +3389,8 @@
       "stem": "One year after the law takes effect, which of the following data would best show whether the policy worked?",
       "options": ["The number of scooter rental companies operating in the state", "How many state legislators voted for the helmet bill", "Head injuries among riders under 18 before and after the law", "The number of news stories written about the new law"],
       "answer": 2,
-      "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>"
+      "rationale": "<p><b>Head injuries among young riders before and after the law</b> is correct. Evaluation asks whether a policy achieved its goal, here fewer head injuries in riders under 18, so it compares outcome data with the baseline. Helmet-use rates would also help.</p><p><b>The number of companies</b>, <b>the vote count</b>, and <b>news coverage</b> don't measure the policy's effect on health.</p><p><b>Takeaway:</b> Evaluate a policy by the outcome it was meant to change, compared with the baseline.</p>",
+      "hidden": true
     },
     {
       "id": "hp-51",
@@ -3948,7 +3977,8 @@
       "stem": "Click to highlight the orders that the nurse must clarify with the provider before carrying them out.",
       "passage": "[[Furosemide 40 mg q AM]]<br>[[Metoprolol tartrate 25 mg PO BID]]<br>[[Potassium chloride 20.0 mEq PO daily]]<br>[[Insulin lispro 4 U subcut AC]]<br>[[Docusate sodium 100 mg PO]]<br>[[Acetaminophen 650 mg PO q6h PRN pain]]<br>[[Fluid restriction: 1,500 mL a day]]<br>[[Weigh daily before breakfast]]<br>[[Activity: up ad lib]]",
       "answer": [0, 2, 3, 4],
-      "rationale": "<p>Four orders need clarifying. <b>Furosemide 40 mg q AM</b> has <b>no route</b>; furosemide can be given by mouth or IV, and the nurse can't choose. <b>Potassium chloride 20.0 mEq</b> has a <b>trailing zero</b>, which can be misread as 200 mEq, a 10-fold overdose. <b>Insulin lispro 4 U</b> uses <b>U</b> for units, which can be misread as a 0 (40 units); “units” must be written out. <b>Docusate sodium 100 mg PO</b> has <b>no frequency</b>.</p><p>The metoprolol and acetaminophen orders have every part: the drug, dose, route, and frequency (q6h PRN pain for the acetaminophen). The fluid restriction, daily weight, and activity orders are complete as written.</p><p><b>Takeaway:</b> Before carrying out an order, check that it has the drug, dose, route, and frequency, with no U, trailing zero, or missing leading zero.</p>"
+      "rationale": "<p>Four orders need clarifying. <b>Furosemide 40 mg q AM</b> has <b>no route</b>; furosemide can be given by mouth or IV, and the nurse can't choose. <b>Potassium chloride 20.0 mEq</b> has a <b>trailing zero</b>, which can be misread as 200 mEq, a 10-fold overdose. <b>Insulin lispro 4 U</b> uses <b>U</b> for units, which can be misread as a 0 (40 units); “units” must be written out. <b>Docusate sodium 100 mg PO</b> has <b>no frequency</b>.</p><p>The metoprolol and acetaminophen orders have every part: the drug, dose, route, and frequency (q6h PRN pain for the acetaminophen). The fluid restriction, daily weight, and activity orders are complete as written.</p><p><b>Takeaway:</b> Before carrying out an order, check that it has the drug, dose, route, and frequency, with no U, trailing zero, or missing leading zero.</p>",
+      "hidden": true
     },
     {
       "id": "acl-47",
@@ -3959,7 +3989,8 @@
       "answer": 900,
       "unit": "mL",
       "strictZeros": true,
-      "rationale": "<p>Count only what the client took <b>by mouth</b>, and convert to mL (1 oz = 30 mL, 1 cup = 240 mL, 1 tbsp = 15 mL): coffee, 8 oz = <b>240 mL</b>; apple juice, 4 oz = <b>120 mL</b>; water with medications, <b>90 mL</b>; tomato soup, 1 cup = <b>240 mL</b>; milk, 6 oz = <b>180 mL</b>; and water with medications, 2 tbsp = <b>30 mL</b>. Total: 240 + 120 + 90 + 240 + 180 + 30 = <b>900 mL</b>.</p><p>The two 10 mL IV flushes are IV intake, not oral intake, so they aren't added here, and urine is output. The nurse compares the day's total intake with the 1,500 mL fluid restriction.</p><p><b>Takeaway:</b> Convert every household measure to mL before adding, and keep oral intake, IV intake, and output separate.</p>"
+      "rationale": "<p>Count only what the client took <b>by mouth</b>, and convert to mL (1 oz = 30 mL, 1 cup = 240 mL, 1 tbsp = 15 mL): coffee, 8 oz = <b>240 mL</b>; apple juice, 4 oz = <b>120 mL</b>; water with medications, <b>90 mL</b>; tomato soup, 1 cup = <b>240 mL</b>; milk, 6 oz = <b>180 mL</b>; and water with medications, 2 tbsp = <b>30 mL</b>. Total: 240 + 120 + 90 + 240 + 180 + 30 = <b>900 mL</b>.</p><p>The two 10 mL IV flushes are IV intake, not oral intake, so they aren't added here, and urine is output. The nurse compares the day's total intake with the 1,500 mL fluid restriction.</p><p><b>Takeaway:</b> Convert every household measure to mL before adding, and keep oral intake, IV intake, and output separate.</p>",
+      "hidden": true
     },
     {
       "id": "acl-48",
@@ -3971,7 +4002,8 @@
       "unit": "kg",
       "round": "to the nearest tenth",
       "strictZeros": true,
-      "rationale": "<p>Subtract, then convert: 187 lb − 183.7 lb = <b>3.3 lb</b>, and 3.3 ÷ 2.2 = <b>1.5 kg</b>. Converting each weight first gives the same answer: 187 ÷ 2.2 = 85 kg, 183.7 ÷ 2.2 = 83.5 kg, and 85 − 83.5 = 1.5 kg.</p><p>Giving the loss in pounds (3.3) is the most common error. In a client with heart failure who is receiving a diuretic, a loss of about 1.5 kg in a day suggests that extra fluid is being removed; the nurse keeps comparing weights taken the same way each morning.</p><p><b>Takeaway:</b> 1 kg = 2.2 lb, so divide pounds by 2.2 to get kilograms.</p>"
+      "rationale": "<p>Subtract, then convert: 187 lb − 183.7 lb = <b>3.3 lb</b>, and 3.3 ÷ 2.2 = <b>1.5 kg</b>. Converting each weight first gives the same answer: 187 ÷ 2.2 = 85 kg, 183.7 ÷ 2.2 = 83.5 kg, and 85 − 83.5 = 1.5 kg.</p><p>Giving the loss in pounds (3.3) is the most common error. In a client with heart failure who is receiving a diuretic, a loss of about 1.5 kg in a day suggests that extra fluid is being removed; the nurse keeps comparing weights taken the same way each morning.</p><p><b>Takeaway:</b> 1 kg = 2.2 lb, so divide pounds by 2.2 to get kilograms.</p>",
+      "hidden": true
     },
     {
       "id": "acl-49",
@@ -3981,7 +4013,8 @@
       "stem": "It is 0730 on Day 2, and breakfast trays will arrive at 0800. Which of the following orders should the nurse clarify with the provider first?",
       "options": ["Docusate sodium 100 mg PO", "Insulin lispro 4 U subcut AC", "Furosemide 40 mg q AM", "Potassium chloride 20.0 mEq PO daily"],
       "answer": 1,
-      "rationale": "<p>The <b>insulin</b> order comes first. Insulin is a high-alert medication, an AC dose is due <b>before breakfast</b>, within the next 30 minutes, and “4 U” can be misread as 40 units, a 10-fold overdose that could cause severe hypoglycemia.</p><p>The other orders need clarifying too, but they come next. The <b>furosemide</b> and <b>potassium chloride</b> doses are due later in the morning, which leaves time to clarify them before they are given. The <b>docusate</b> order, for a stool softener with no frequency, is the least urgent.</p><p><b>Takeaway:</b> Clarify first the order that is due soonest and could do the most harm if misread, often a high-alert medication.</p>"
+      "rationale": "<p>The <b>insulin</b> order comes first. Insulin is a high-alert medication, an AC dose is due <b>before breakfast</b>, within the next 30 minutes, and “4 U” can be misread as 40 units, a 10-fold overdose that could cause severe hypoglycemia.</p><p>The other orders need clarifying too, but they come next. The <b>furosemide</b> and <b>potassium chloride</b> doses are due later in the morning, which leaves time to clarify them before they are given. The <b>docusate</b> order, for a stool softener with no frequency, is the least urgent.</p><p><b>Takeaway:</b> Clarify first the order that is due soonest and could do the most harm if misread, often a high-alert medication.</p>",
+      "hidden": true
     },
     {
       "id": "acl-50",
@@ -3991,7 +4024,8 @@
       "stem": "Which of the following actions should the nurse take to clarify the insulin order?",
       "options": ["Contact the provider, and ask for the order to be rewritten with “units” spelled out.", "Give 4 units, because that is the most likely meaning of the order as written.", "Ask another nurse to read the order and decide which dose the provider meant.", "Write “units” next to the U on the order, and then give the dose as corrected."],
       "answer": 0,
-      "rationale": "<p>Only the <b>prescriber</b> can change an order, so the nurse <b>contacts the provider</b> before the dose is due, explains the problem, and asks for the order to be rewritten with <b>“units” spelled out</b>. The nurse holds the dose until the order is clear and documents the clarification.</p><p>Giving the dose based on its <b>most likely</b> meaning is a guess, and guessing with insulin can be dangerous. <b>Another nurse</b> can't decide what the prescriber meant. And the nurse never <b>edits</b> an order, even to fix an abbreviation.</p><p><b>Takeaway:</b> Unclear orders go back to the prescriber; the nurse never guesses at them or rewrites them.</p>"
+      "rationale": "<p>Only the <b>prescriber</b> can change an order, so the nurse <b>contacts the provider</b> before the dose is due, explains the problem, and asks for the order to be rewritten with <b>“units” spelled out</b>. The nurse holds the dose until the order is clear and documents the clarification.</p><p>Giving the dose based on its <b>most likely</b> meaning is a guess, and guessing with insulin can be dangerous. <b>Another nurse</b> can't decide what the prescriber meant. And the nurse never <b>edits</b> an order, even to fix an abbreviation.</p><p><b>Takeaway:</b> Unclear orders go back to the prescriber; the nurse never guesses at them or rewrites them.</p>",
+      "hidden": true
     },
     {
       "id": "acl-51",

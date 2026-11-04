@@ -695,6 +695,17 @@ async function resultsView(root, { isCurrent }) {
   const byType = groupBy(r.items, i => i.type)
     .sort((a, b) => QUESTION_TYPES.indexOf(a[0]) - QUESTION_TYPES.indexOf(b[0]))
     .map(([type, g]) => [typeLabel(type), g]);
+  // The first-try score (SPEC 11.9): shown when some questions were ones this
+  // browser had seen before. When none were, the score above already is one.
+  const first = r.firstTry;
+  const repeats = first ? r.items.length - first.total : 0;
+  const easier = ' A question is easier the second time, so your first-try score is the better guide to the real exam.';
+  const firstTry = !repeats ? null
+    : first.total
+      ? h('p.first-try', h('b', `First try: ${first.right} of ${plural(first.total, 'new question')} fully correct (${Math.round((100 * first.right) / first.total)}%).`),
+        repeats === 1 ? ' The other question was one you\'d seen before.' : ` The other ${repeats} were questions you'd seen before.`, easier)
+      : h('p.first-try', h('b', r.items.length === 1 ? 'You\'d seen this question before.' : `You'd seen all ${r.items.length} of these questions before.`),
+        ' A question is easier the second time, so new questions are the better guide to the real exam.');
 
   fill(main,
     h('h1.page-title', 'Exam Results'),
@@ -708,6 +719,7 @@ async function resultsView(root, { isCurrent }) {
         h('p', h('b', `${r.earned} of ${r.possible} points`)),
         h('p', `${fullyCorrect} of ${plural(r.items.length, 'question')} fully correct`),
         h('p', `Time used: ${fmtClock(r.timeUsedMs)}`))),
+    firstTry,
     h('p.note', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'),
     h('div.result-actions',
       h('a.btn.btn-accent', { href: '#/review' }, 'Review all answers'),

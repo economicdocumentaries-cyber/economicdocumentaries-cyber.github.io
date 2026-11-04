@@ -23,9 +23,9 @@ export const REASONS = {
 const NOTE_MAX = 500; // the same as database.rules.json
 const SENT = 'pe.reported'; // { "<set id>|<question id>": true }: reported on this browser
 
-// Set and question ids as database keys, which can't hold . # $ [ ] or /.
-const toKey = id => String(id).replace(/[.#$[\]/%]/g, c => `%${c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0')}`);
-const fromKey = key => key.replace(/%([0-9A-F]{2})/g, (_, x) => String.fromCharCode(parseInt(x, 16)));
+// Set and question ids as database keys, which can't hold . # $ [ ] or / (the question stats use them too).
+export const toKey = id => String(id).replace(/[.#$[\]/%]/g, c => `%${c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0')}`);
+export const fromKey = key => key.replace(/%([0-9A-F]{2})/g, (_, x) => String.fromCharCode(parseInt(x, 16)));
 const sentKey = (setId, qid) => `${setId}|${qid}`;
 const plainText = html => {
   const t = document.createElement('template');

@@ -8,6 +8,7 @@ import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
 import { reportLine } from './reports.js';
 import { saveButton } from './saved.js';
+import { recordStats } from './stats.js';
 
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
@@ -227,6 +228,11 @@ export function lastSeen(set) {
   return seen;
 }
 
+// The questions this browser has seen in earlier attempts at a set. Any other
+// question in an attempt is a first try (SPEC 11.9): the honest measure of how
+// ready a student is, since remembering a question isn't knowing it.
+const seenBefore = setId => new Set(setHistory(setId).flatMap(a => a.ids ?? a.missed ?? []));
+
 // The questions whose latest result was a miss (less than full points), so new
 // exams bring some of them back (pickBlocks).
 export function lastMissed(set) {
@@ -324,11 +330,13 @@ export function resumeExam() {
 
 // reason: 'submitted', 'time', or 'early' (Close, then Finish and see results).
 // Finishing early scores only the questions answered so far; the others stay
-// unseen, so they come first next time.
-function grade(st, reason) {
+// unseen, so they come first next time. seen: seenBefore(), so each item knows
+// whether it was a first try.
+function grade(st, reason, seen = new Set()) {
   const early = reason === 'early';
   const questions = early ? st.questions.filter(q => isAnswered(q, st.responses[q.id])) : st.questions;
-  const items = questions.map(q => ({ id: q.id, type: q.type, topic: q.topic, ...scoreItem(q, st.responses[q.id]) }));
+  const items = questions.map(q => ({ id: q.id, type: q.type, topic: q.topic, first: !seen.has(q.id), ...scoreItem(q, st.responses[q.id]) }));
+  const firsts = items.filter(i => i.first);
   const earned = items.reduce((sum, i) => sum + i.earned, 0);
   const possible = items.reduce((sum, i) => sum + i.max, 0);
   const finishedAt = Date.now();
@@ -348,6 +356,7 @@ function grade(st, reason) {
     percent: possible ? Math.round((earned / possible) * 1000) / 10 : 0,
     items,
     missed: items.filter(i => i.earned < i.max).map(i => i.id), // "missed" = less than full points (SPEC 5.4)
+    firstTry: { right: firsts.filter(i => i.earned === i.max).length, total: firsts.length }, // SPEC 11.9
     settings: st.settings,
     questions,
     layout: st.layout,
@@ -906,7 +915,9 @@ export function examView(root) {
       ended: reason === 'time' ? 'time-up' : reason === 'early' ? 'finished-early' : 'submitted',
       flagged: Object.keys(st.flags).length ? 'yes' : 'no', 'crossed-out': Object.keys(st.crossed ?? {}).length ? 'yes' : 'no',
     });
-    saveResult(grade(st, reason));
+    const result = grade(st, reason, seenBefore(st.setId));
+    saveResult(result);
+    recordStats(result); // the anonymous question stats (SPEC 11.9)
     store.del(ACTIVE);
     finished = true;
     clearInterval(ticker);
