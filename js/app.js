@@ -19,13 +19,17 @@ import { arrange, newestSet, newestGuide, guideKey, cachedOrder, watchOrder } fr
 import { hostSignedIn, HOST_HINT } from './firebase.js';
 import { watchOpenDebriefs, debriefCards, debriefPage } from './debriefs.js';
 import { trackPage, track, countThisBrowser, thisBrowserCounts } from './analytics.js';
+import { feedbackButton, feedbackLine } from './feedback.js';
 
 const app = document.getElementById('app');
 
 // ---------- shared ----------
 
 function page(main) {
-  const el = h('div.page', siteHeader(), main, siteFooter());
+  const footer = siteFooter();
+  const line = feedbackLine(); // anonymous feedback (SPEC 11.12)
+  if (line) footer.querySelector('.wrap')?.prepend(line);
+  const el = h('div.page', siteHeader(), main, footer);
   // The host's "Student view" (SPEC 11.4): the host sees the pages exactly as
   // students do, plus a button back to the host console. Students never see it.
   if (store.get(HOST_HINT)) {
@@ -125,21 +129,36 @@ async function homeView(root, { args, isCurrent }) {
     single = groups ? null : { key: 'other', course: null, sets: visible, guides, allClasses: true }; // the one list without a class list
     for (const g of groups ?? [single]) g.order = order[g.key] ?? {};
     const tab = /^#\/class\/([^/]+)/.exec(location.hash)?.[1]; // the tab showing now, after a repaint too
-    fill(lists, groups ? classTabs(groups, tab ? decodeURIComponent(tab) : args[0])
+    fill(lists, groups ? classTabs(groups, tab ? decodeURIComponent(tab) : args[0], place)
       : homeLists(single, problems.length ? 'No question sets can be shown right now.' : 'There are no question sets yet.'));
+    if (!groups) place(null);
     (groups ?? [single]).forEach(g => {
       g.paintGuides(uploaded);
       g.paintDebriefs(debriefs);
     });
   }
 
-  const saved = savedLink();
+  // The top of the page follows the landing page mock-up (SPEC 11.11): the title is for screen readers only, Saved
+  // questions (SPEC 11.7) is a pill in the header's corner, and what the student was doing comes as a row of cards
+  // under the next exam's card (or at the top of a class's lists).
+  const saved = savedCount();
+  if (saved) {
+    root.querySelector('.topbar-inner')?.append(h('p.home-saved',
+      h('a.saved-pill', { href: '#/saved', 'aria-label': `Saved questions (${saved})` }, icon('bookmark'), `Saved (${saved})`)));
+  }
+  const corner = feedbackButton(); // the homepage's Feedback button (SPEC 11.12)
+  if (corner) root.querySelector('.page')?.append(corner);
+  const cont = continueRow();
+  function place(panel) {
+    if (!cont) return;
+    const hero = panel?.querySelector(':scope > .next-exam');
+    if (hero) hero.after(cont);
+    else if (panel) panel.prepend(cont);
+    else lists.prepend(cont);
+  }
   fill(main,
-    h('h1.page-title', 'Practice exams and study guides'),
-    h('p.lead', `Choose ${courses.length ? 'your class, then ' : ''}a question set or study guide. Exam simulation works like test day; practice mode shows the answer after each question.`),
+    h('h1.page-title.sr-only', 'Practice exams and study guides'),
     live.el,
-    resumeBanner(),
-    saved ? h('p.home-saved', saved) : null,
     lists,
     problems.length ? problemsPanel(problems) : null);
   paint();
@@ -191,6 +210,9 @@ function classGroups(courses, sets, guides) {
 // adds when they arrive. Other never has study guides; the no-classes list
 // shows them only when there are some.
 function homeLists(group, noSets) {
+  // A class whose next exam is in the class list, with a set or guide for it, gets that exam first (SPEC 11.11).
+  const next = group.course ? nextExam(group.course) : null;
+  if (next && [...group.sets, ...group.guides].some(x => sameExam(x.exam, next.exam))) return examLists(group, next);
   const sets = arrange(group.sets, s => s.id, group.order?.sets, newestSet); // the host's order (SPEC 11.4)
   const saved = savedCount();
   const exams = h('section.home-section',
@@ -219,10 +241,129 @@ function homeLists(group, noSets) {
   return [debriefBox, exams, guides];
 }
 
+// ---------- the next exam first (SPEC 11.11, the owner's choice of landing page, 2026-11-05) ----------
+
+const isoDay = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const sameExam = (a, b) => typeof a === 'string' && typeof b === 'string' && a.trim().toLowerCase() === b.trim().toLowerCase();
+
+// The class's next exam in sets/courses.json: the first whose date hasn't passed, or that has no date yet.
+function nextExam(course) {
+  const today = isoDay(new Date());
+  return course.exams?.find(e => !e.date || e.date >= today) ?? null;
+}
+
+// "Exam 4 · Tuesday, Nov 17", and the days until then (null without a date).
+function examWhen(exam) {
+  if (!exam.date) return { title: exam.exam, days: null };
+  const [y, m, d] = exam.date.split('-').map(Number);
+  const day = new Date(y, m - 1, d);
+  const now = new Date();
+  const days = Math.round((day - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
+  return { title: `${exam.exam} · ${day.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}`, days };
+}
+
+// A topic set as a card (SPEC 11.11): its week or class, from the start of its description ("Week 11: …",
+// "Class 17 practice: …"), as a tag above the title, and the rest of the description below it.
+function topicCard(set) {
+  const row = setRow(set);
+  const m = /^(Week \d+|Class \d+)\b[^:]{0,30}:\s*/i.exec(set.description ?? '');
+  if (m) {
+    const desc = row.querySelector('.set-desc');
+    if (desc) desc.textContent = desc.textContent.slice(m[0].length).replace(/^./, c => c.toUpperCase());
+    row.querySelector('.set-info')?.prepend(h('p.set-week', h('span.tag', m[1])));
+  }
+  return row;
+}
+
+// The next exam first: a card with its date and the ways to study for it, its
+// topic sets, and its study guides; earlier exams fold away below. The host's
+// order (SPEC 11.4) holds within each part.
+function examLists(group, next) {
+  const key = group.key.replace(/[^\w-]/g, '');
+  const sets = arrange(group.sets, s => s.id, group.order?.sets, newestSet);
+  const current = sets.filter(s => sameExam(s.exam, next.exam));
+  const practice = current.find(s => /practice-exam|mock-exam/i.test(s.id)) ?? null;
+  const topics = current.filter(s => s !== practice);
+  const earlierSets = sets.filter(s => !sameExam(s.exam, next.exam));
+  const when = examWhen(next);
+  const goTo = target => () => {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.querySelector('h2')?.focus({ preventScroll: true });
+  };
+
+  const saved = savedCount();
+  const topicsBox = h('section.home-section.exam-topics', { 'aria-labelledby': `topics-${key}` },
+    h('div.section-head',
+      h('h2.section-title', { id: `topics-${key}`, tabIndex: -1 }, 'Practice one topic'),
+      saved ? h('a.saved-chip', { href: '#/saved' }, icon('bookmark'), `Saved (${saved})`) : null),
+    topics.length ? h('ul.set-list.set-grid', topics.map(topicCard))
+      : h('p.empty-note', `Question sets for ${next.exam} appear here as the classes happen.`));
+  const guideList = h('ul.set-list');
+  const noGuides = h('p.empty-note', `Study guides for ${next.exam} appear here when they're ready.`);
+  const guidesBox = h('section.home-section.exam-guides', { 'aria-labelledby': `guides-${key}` },
+    h('h2.section-title', { id: `guides-${key}`, tabIndex: -1 }, `Study guides for ${next.exam}`), guideList, noGuides);
+  const arrow = sign => h('span.btn-arrow', { 'aria-hidden': 'true' }, sign);
+  const guidesLabel = h('span', 'Study guides');
+  const guidesButton = h('button.btn', { type: 'button', onclick: goTo(guidesBox) }, guidesLabel, arrow('↓'));
+  const topicButton = h(`button.btn${practice ? '' : '.btn-accent'}`, { type: 'button', onclick: goTo(topicsBox) },
+    h('span', 'Practice one topic'), arrow('↓'));
+  const days = when.days == null ? null
+    : when.days === 0 ? h('p.next-days', h('b', 'Today'))
+    : when.days === 1 ? h('p.next-days', h('b', 'Tomorrow'))
+    : h('p.next-days', h('b', String(when.days)), ' days to go');
+  const hero = h('section.next-exam', { 'aria-labelledby': `next-${key}` },
+    h('div.next-main',
+      h('p.next-eyebrow', 'Up next'),
+      h('h2.next-title', { id: `next-${key}` }, when.title),
+      days,
+      next.covers ? h('p.next-covers', next.covers) : null),
+    h('div.next-actions', practice
+      ? [h('a.btn.btn-accent', { href: `#/setup/${encodeURIComponent(practice.id)}` }, h('span', `Take the ${next.exam} practice exam`), arrow('→')),
+          guidesButton, topicButton]
+      : [topicButton, guidesButton]));
+
+  const earlier = h('details.earlier-exams.home-section');
+  const debriefBox = h('div.debrief-cards');
+  group.paintDebriefs = (open = []) => fill(debriefBox, debriefCards(open.filter(d => d.course === group.course.code)));
+  group.paintGuides = (uploaded = []) => {
+    const all = arrange([...group.guides, ...uploaded.filter(g => g.course === group.course.code)], guideKey, group.order?.guides, newestGuide);
+    const mine = all.filter(g => sameExam(g.exam, next.exam));
+    fill(guideList, mine.map(guideRow));
+    guideList.hidden = !mine.length;
+    noGuides.hidden = !!mine.length;
+    guidesLabel.textContent = mine.length ? `Study guides (${mine.length})` : 'Study guides';
+    paintEarlier(all.filter(g => !sameExam(g.exam, next.exam)));
+  };
+
+  // Earlier exams, newest first, each with its sets and then its guides.
+  function paintEarlier(guides) {
+    const byExam = new Map();
+    const add = (item, kind) => {
+      const name = typeof item.exam === 'string' && item.exam.trim() ? item.exam.trim() : 'Other practice';
+      if (!byExam.has(name)) byExam.set(name, { sets: [], guides: [] });
+      byExam.get(name)[kind].push(item);
+    };
+    earlierSets.forEach(s => add(s, 'sets'));
+    guides.forEach(g => add(g, 'guides'));
+    earlier.hidden = !byExam.size;
+    const nSets = earlierSets.length, nGuides = guides.length;
+    const names = [...byExam.keys()];
+    const counts = [nSets ? plural(nSets, 'question set') : null, nGuides ? plural(nGuides, 'study guide') : null].filter(Boolean).join(', ');
+    fill(earlier,
+      h('summary', h('span.earlier-title', 'Earlier exams'), ' ',
+        h('span.earlier-count', `${names.length === 1 ? names[0] : plural(names.length, 'exam')} · ${counts}`)),
+      h('div.earlier-body', [...byExam].map(([name, part]) => h('section.earlier-exam',
+        h('h3.earlier-exam-title', name),
+        h('ul.set-list', part.sets.map(setRow), part.guides.map(guideRow))))));
+  }
+  group.paintGuides();
+  return [debriefBox, hero, topicsBox, guidesBox, earlier];
+}
+
 // The tab shown first is the one in the link (#/class/NU1120), else the one
 // chosen last on this browser, else the first with sets or study guides.
 // Choosing a tab changes the link without reloading the page, so it can be shared.
-function classTabs(groups, wanted) {
+function classTabs(groups, wanted, onShow = null) {
   const find = key => (typeof key === 'string' ? groups.findIndex(g => g.key.toLowerCase() === key.toLowerCase()) : -1);
   const linked = find(wanted);
   let current = linked >= 0 ? linked : find(store.get(CLASS_KEY));
@@ -230,7 +371,7 @@ function classTabs(groups, wanted) {
   if (linked >= 0) store.set(CLASS_KEY, groups[linked].key);
   else if (wanted) history.replaceState(history.state, '', classLink(groups[current].key));
 
-  const tabs = groups.map((g, i) => h('button.tab.class-tab', {
+  const tabs = groups.map((g, i) => h(g.course ? 'button.tab.class-tab' : 'button.tab.class-tab.other-tab', {
     type: 'button', role: 'tab', id: `class-tab-${i}`, 'aria-controls': `class-panel-${i}`, onclick: () => choose(i),
   }, g.course
     ? [h('span.class-code', g.course.code, g.course.term ? h('span.class-term', g.course.term) : null), h('span.class-name', g.course.name)]
@@ -268,6 +409,7 @@ function classTabs(groups, wanted) {
     });
     panels.forEach((panel, j) => (panel.hidden = j !== i));
     dots.forEach((dot, j) => dot.classList.toggle('on', j === i));
+    onShow?.(panels[i]);
   }
 
   function choose(i) {
@@ -278,6 +420,26 @@ function classTabs(groups, wanted) {
 
   show(current);
   return box;
+}
+
+// What the student was doing (the landing page mock-up's row of cards, SPEC 11.11): the exam in progress (its banner),
+// the saved questions, and the last result. null when there's none of them.
+function continueRow() {
+  const n = savedCount();
+  const last = lastAttempt();
+  const missed = last?.missed?.length ?? 0;
+  const cards = [
+    resumeBanner(),
+    n ? h('div.continue-card',
+      h('p.continue-label', 'Saved questions'),
+      h('p.continue-what', `${plural(n, 'question')} you saved to review`),
+      h('a.continue-link', { href: '#/saved' }, 'Review them →')) : null,
+    typeof last?.title === 'string' && Number.isFinite(last.percent) ? h('div.continue-card',
+      h('p.continue-label', 'Last result'),
+      h('p.continue-what', `${last.title}: ${last.percent}%`),
+      h('a.continue-link', { href: missed ? '#/review/incorrect' : '#/results' }, missed ? 'See what you missed →' : 'See your results →')) : null,
+  ].filter(Boolean);
+  return cards.length ? h('div.continue-row', cards) : null;
 }
 
 function resumeBanner() {

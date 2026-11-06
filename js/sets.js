@@ -98,9 +98,21 @@ async function loadCourses() {
     else if (codes.has(c.code.trim().toLowerCase())) note(`Another class already uses the code "${c.code}". Each class needs its own code.`);
     if (!isText(c.name)) note('Missing "name" (the class name, like "Professional Nursing I").');
     if (c.term != null && !isText(c.term)) note('"term" must be text, like "Fall 2026".');
+    // The class's coming exams, in order (SPEC 11.11): the homepage shows the first one whose date hasn't passed.
+    const exams = [];
+    if (c.exams != null && !Array.isArray(c.exams)) note('"exams" must be a list in [ ], like [{ "exam": "Exam 4", "date": "2026-11-17" }].');
+    else (c.exams ?? []).forEach((e, j) => {
+      const which = `In "exams", exam ${j + 1}`;
+      if (!e || typeof e !== 'object' || Array.isArray(e) || !isText(e.exam)) return note(`${which} needs "exam": its name, like "Exam 4".`);
+      if (e.date != null && !(typeof e.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.date) && !Number.isNaN(Date.parse(e.date)))) {
+        return note(`${which} ("${e.exam}") has a "date" that isn't a day like "2026-11-17".`);
+      }
+      if (e.covers != null && !isText(e.covers)) return note(`${which} ("${e.exam}") has a "covers" that isn't text.`);
+      exams.push({ exam: e.exam.trim(), date: e.date ?? null, covers: isText(e.covers) ? e.covers.trim() : null });
+    });
     if (problems.length > before) return;
     codes.add(c.code.trim().toLowerCase());
-    courses.push({ code: c.code.trim(), name: c.name.trim(), term: isText(c.term) ? c.term.trim() : null });
+    courses.push({ code: c.code.trim(), name: c.name.trim(), term: isText(c.term) ? c.term.trim() : null, exams });
   });
   return { courses, problems };
 }
