@@ -1,0 +1,511 @@
+{
+  "id": "nu1110-exam-4-ethical-and-legal",
+  "title": "Ethical and Legal Considerations",
+  "description": "Class 17 practice: values and the ethical principles, codes of ethics and client rights, ethical decision making, the sources of law and the scope of practice, federal and state laws, informed consent and advance directives, torts, negligence, and malpractice, and staffing, delegation, and reducing legal risk.",
+  "course": "NU1110",
+  "exam": "Exam 4",
+  "timeMinutes": 75,
+  "defaultCount": 25,
+  "questions": [
+    {
+      "id": "el-01",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 1,
+      "stem": "Before a family meeting about a client's care, a nurse sorts the statements the family made into values, facts, and opinions. Which statement is a value?",
+      "options": ["“Her oxygen saturation dropped to 82% last night.”", "“Life should be preserved for as long as possible.”", "“She seems to be giving up too easily.”", "“Her daughter wants a second opinion.”"],
+      "answer": 1,
+      "rationale": "<p>A <b>value</b> is a deeply held belief about the worth of something, and it shapes choices: “Life should be preserved for as long as possible.”</p><p>“<b>Giving up too easily</b>” is the tempting choice: it sounds like a belief, but it's one person's judgment of this client in this situation, an opinion. The <b>oxygen saturation</b> and the <b>daughter's request</b> are facts: anyone can check them.</p><p><b>Takeaway:</b> Value: a belief about what matters. Fact: something anyone can check. Opinion: a judgment about this situation. Sort them out first when resolving an ethical conflict (values clarification).</p>"
+    },
+    {
+      "id": "el-02",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A client who is alert and oriented tells the nurse, “I've decided to stop dialysis. I'm tired of feeling sick three days a week.” The client's family is upset. Which response should the nurse make?",
+      "options": ["“Would you consider staying on dialysis a while longer, for your family's sake?”", "“Stopping dialysis isn't safe, so I'll ask your provider to explain the risks again.”", "“Tell me more about what led you to this decision, and I'll let your provider know.”", "“I'll ask the ethics committee to decide whether stopping dialysis is allowed.”"],
+      "answer": 2,
+      "rationale": "<p>A competent client has the right to refuse treatment, even treatment that keeps them alive (<b>autonomy</b>). The nurse <b>explores the client's reasons</b> (symptoms that could be eased, depression, or wrong information may be behind it), respects the decision, and <b>tells the provider</b>.</p><p>Asking the client to stay on dialysis <b>for the family's sake</b> is the tempting choice, since it sounds caring, but it pressures a competent adult with other people's values. Having the provider <b>explain the risks again</b> assumes the client didn't understand, and treats the decision as a mistake to correct. An <b>ethics committee</b> gives advice on hard cases; it doesn't decide, and it isn't a way to overrule a competent refusal.</p><p><b>Takeaway:</b> Respect a competent client's refusal: explore the reasons, tell the provider, and document. Don't persuade, and don't hand the decision to someone else.</p>"
+    },
+    {
+      "id": "el-03",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A client asks a nurse to come back after lunch to help write a letter to the client's grandson. The nurse's afternoon turns busy, but the nurse returns at 1:30 as planned and helps with the letter. Which ethical principle is the nurse upholding?",
+      "options": ["Beneficence", "Veracity", "Autonomy", "Fidelity"],
+      "answer": 3,
+      "rationale": "<p><b>Fidelity</b> is faithfulness: keeping promises and commitments. The nurse said they'd come back, and did, even on a busy afternoon.</p><p><b>Beneficence</b> is the tempting choice, since helping with the letter is doing good, but what the question describes is the promise kept. <b>Veracity</b> is truthfulness, and <b>autonomy</b> is respecting the client's own decisions: neither is what the nurse's return shows.</p><p><b>Takeaway:</b> Look at the action: keeping a promise is fidelity, telling the truth is veracity, doing good is beneficence, respecting a choice is autonomy, and fair sharing of care is justice.</p>"
+    },
+    {
+      "id": "el-04",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A client's family asks the nurse not to tell the client that a biopsy showed cancer. That afternoon, before the provider has talked with the client, the client asks, “Are my biopsy results back? What did they show?” Which response should the nurse make?",
+      "options": ["“They aren't back yet, so let's wait until your provider comes by.”", "“They're back. I'll ask your provider to come and go over them with you today.”", "“They showed some abnormal cells, and your provider will explain what that means.”", "“Your family asked me to let them talk with you about the results first.”"],
+      "answer": 1,
+      "rationale": "<p><b>Veracity</b> means being truthful. The results are back, so the nurse says so, and asks the provider, who shares a new diagnosis, to come and discuss them with the client <b>today</b>. The information belongs to the client, not the family.</p><p>Saying the results <b>aren't back yet</b> is the tempting choice, since it honors the family and seems to protect the client, but it's a lie. Describing <b>abnormal cells</b> starts giving the diagnosis before the provider does. Saying the <b>family</b> wants to talk first puts them in charge of a competent client's own information.</p><p><b>Takeaway:</b> Never deny or invent results. Say truthfully what you can, and get the provider to discuss a new diagnosis with the client.</p>"
+    },
+    {
+      "id": "el-05",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A charge nurse has one telemetry bed left, and two clients in the emergency department are waiting for it. Which of the following is the best basis for deciding which client gets the bed?",
+      "options": ["Which client arrived in the emergency department first", "Which client is likely to need the bed for the shorter time", "Which client's condition most needs cardiac monitoring now", "Which client's provider asked for the bed first"],
+      "answer": 2,
+      "rationale": "<p><b>Justice</b> means distributing care fairly: by <b>need</b>, whatever a client's insurance, status, or place in line. The client whose condition most needs monitoring gets the bed.</p><p><b>Arrival order</b> is the tempting choice, since “first come, first served” sounds fair, but care goes by need, as in triage. Choosing the <b>shorter stay</b> is an efficiency argument, and <b>which provider asked first</b> is about the order of the requests: neither says who needs the bed.</p><p><b>Takeaway:</b> Justice: share care and resources by need (acuity), not by insurance, status, arrival, or who asks first.</p>"
+    },
+    {
+      "id": "el-06",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A nurse receives a prescription for a dose that is twice the usual range for the client's age. The provider is known to be irritable when called. Which action should the nurse take?",
+      "options": ["Hold the dose, and call the provider to check it before giving it", "Give the dose, since the provider is accountable for the prescription", "Give half the dose, and document why the dose was reduced", "Hold the dose, and ask about it when the provider makes rounds"],
+      "answer": 0,
+      "rationale": "<p><b>Nonmaleficence</b> means doing no harm: a dose that could hurt the client is questioned <b>before</b> it's given, and settled <b>now</b>, whatever the provider's mood.</p><p>Giving it because <b>the provider is accountable</b> is the tempting choice, but the nurse who gives a drug is accountable for it too. Waiting for <b>rounds</b> has the right idea at the wrong time: the client goes without the medication, or gets it wrong, in the meantime. Changing the dose to <b>half</b> is outside the nurse's scope.</p><p><b>Takeaway:</b> Do no harm: the nurse who gives a drug is accountable for it. Question an unsafe order before giving it, and right away.</p>"
+    },
+    {
+      "id": "el-07",
+      "type": "sata",
+      "topic": "Values and ethical principles",
+      "level": 3,
+      "stem": "A competent adult client declines a blood transfusion for religious reasons. Which actions should the nurse take?",
+      "options": ["Ask the client's spouse whether they will consent to the transfusion.", "Make sure the client understands the risks of declining.", "Plan to transfuse if the client loses consciousness in an emergency.", "Tell the provider that the client declines the transfusion.", "Record the refusal and the information the client was given.", "Encourage the client to reconsider once the hemoglobin result is back."],
+      "answer": [1, 3, 4],
+      "rationale": "<p>A competent adult may refuse any treatment, including one that could save their life (<b>autonomy</b> and religious freedom). The nurse makes sure the refusal is <b>informed</b>, <b>tells the provider</b>, and <b>documents</b> the refusal and the teaching.</p><p>Planning to <b>transfuse in an emergency</b> is the tempting choice, since emergencies allow implied consent, but implied consent only fills in when the client's wishes are unknown. Transfusing against a known, competent refusal is battery. The <b>spouse</b> can't consent for a competent adult, and <b>encouraging the client to reconsider</b> puts the team's values on the client.</p><p><b>Takeaway:</b> A competent client's informed refusal stands, even in an emergency: make sure it's informed, tell the provider, and document.</p>"
+    },
+    {
+      "id": "el-08",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 3,
+      "stem": "An older adult client who has full decision-making capacity refuses to use a bed alarm, calling it humiliating. The client fell once at home last month. Which action should the nurse take first?",
+      "options": ["Turn on the bed alarm, since preventing a fall comes before comfort", "Ask the provider to prescribe the alarm so that the client must use it", "Tell the charge nurse, and move the client to a room near the station", "Ask what bothers the client about the alarm, and look for options together"],
+      "answer": 3,
+      "rationale": "<p>The client has capacity, so <b>autonomy</b> applies, and the nurse also owes <b>beneficence</b> (preventing a fall). The first step is to <b>assess</b>: find out what bothers the client (the noise, feeling watched) and agree on a safe option the client accepts, like a low bed, hourly rounding, and the call light in reach.</p><p>Turning on the alarm because <b>safety comes first</b> is the tempting choice, but overriding a competent client's refusal without even learning why isn't the first step, and dignity matters too. A <b>prescription</b> doesn't override a refusal. Telling the <b>charge nurse</b> and moving the client may come later, but acts before understanding the problem.</p><p><b>Takeaway:</b> When autonomy and safety pull apart, assess first: learn why the client refuses, then find a safe option the client accepts.</p>"
+    },
+    {
+      "id": "el-09",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 3,
+      "stem": "A nurse notices that a coworker has slurred speech and smells of alcohol while preparing medications for clients. Which action should the nurse take first?",
+      "options": ["Offer to give the coworker's medications for the rest of the shift", "Talk with the coworker privately after the shift about getting help", "Report what was seen to the charge nurse right away", "Report the coworker to the state board of nursing before the shift ends"],
+      "answer": 2,
+      "rationale": "<p><b>Nonmaleficence</b>, and the Code's duty to protect clients from unsafe practice: the nurse reports suspected impairment <b>right away</b>, through the chain of command, so the coworker is taken out of client care now.</p><p>Offering to <b>give the coworker's medications</b> is the tempting choice, since it feels kind and protects this shift's clients, but it hides the problem and leaves the coworker's other care, and later shifts, unsafe. <b>Talking privately</b> about help matters, but after the clients are safe. A <b>board of nursing</b> report may follow through the facility's process, but it doesn't remove the coworker from care today.</p><p><b>Takeaway:</b> Suspected impairment: protect clients first by reporting to the charge nurse or supervisor at once. Support for the coworker comes after.</p>"
+    },
+    {
+      "id": "el-10",
+      "type": "mc",
+      "topic": "Codes of ethics and client rights",
+      "level": 1,
+      "stem": "A nursing student asks how the ANA Code of Ethics for Nurses relates to the state's nurse practice act. Which statement by the nurse is accurate?",
+      "options": ["“The Code is a federal law, so it overrides the state's practice act.”", "“The Code is a guide to ethical practice, and the practice act is the law.”", "“The Code applies to ANA members, and the practice act to other nurses.”", "“The Code sets each nurse's scope, and the practice act sets the standards.”"],
+      "answer": 1,
+      "rationale": "<p>The <b>ANA Code of Ethics</b> sets the ethical standard for every nurse, in every setting, member or not, and guides ethical decisions. It isn't a law. The <b>nurse practice act</b> is a state law: it defines the scope of practice, and the board of nursing enforces it.</p><p>The <b>members only</b> choice is the tempting one, since the ANA is a membership organization, but its Code is the whole profession's. The Code isn't a <b>federal law</b>, and it's the practice act that sets <b>scope</b>: standards of care come from the ANA's scope and standards, the practice act, and facility policies.</p><p><b>Takeaway:</b> Ethics is what a nurse should do (the Code, for every nurse). Law is what a nurse must do (the practice act).</p>"
+    },
+    {
+      "id": "el-11",
+      "type": "mc",
+      "topic": "Codes of ethics and client rights",
+      "level": 3,
+      "stem": "At the end of a 12-hour shift, after handing off the clients, a nurse who slept poorly is asked to stay for another 8 hours because the unit is short-staffed. The nurse feels exhausted. Which action should the nurse take?",
+      "options": ["Accept the shift, since leaving a short-staffed unit is abandonment", "Accept the shift, and ask a coworker to double-check high-alert drugs", "Decline the shift, and explain that fatigue would make the care unsafe", "Decline the shift, and report the unit's staffing to the board of nursing"],
+      "answer": 2,
+      "rationale": "<p>The Code says nurses owe the <b>same duties to themselves</b> as to others, including their own health and safety (Provision 5), and an exhausted nurse puts clients at risk. Turning down extra hours after a handoff isn't abandonment.</p><p>The <b>abandonment</b> choice is the tempting one, since the unit is short, but abandonment is leaving an assignment already accepted without handing off to a qualified nurse. A <b>double-check</b> helps with one risk, but doesn't fix the fatigue. Staffing concerns go up the chain of command first, not straight to the <b>board</b>.</p><p><b>Takeaway:</b> The duty to self is part of the Code. Declining extra hours when too tired to be safe isn't abandonment; leaving an accepted assignment without a handoff is.</p>"
+    },
+    {
+      "id": "el-12",
+      "type": "mc",
+      "topic": "Codes of ethics and client rights",
+      "level": 2,
+      "stem": "A competent older adult client wants to go home after discharge. The client's adult children want the client moved to a nursing home, and ask the nurse to support them at the care conference. Which action by the nurse is best?",
+      "options": ["Help the client tell the children their own wishes at the meeting", "Support the children's plan, since they will provide most of the care", "Stay neutral, and let the client and the children work it out together", "Ask the provider to decide where the client should live after discharge"],
+      "answer": 0,
+      "rationale": "<p>The nurse's <b>primary commitment is to the client</b> (Provision 2), and <b>advocacy</b> means helping the client's wishes be heard, above all when others want something else. A competent client decides where to live; the team can still share its safety concerns and offer services at home.</p><p><b>Staying neutral</b> is the tempting choice, since it feels fair, but it leaves the client without an advocate. The <b>children's</b> help matters, but they don't decide for a competent parent, and neither does the <b>provider</b>.</p><p><b>Takeaway:</b> When family and a competent client disagree, the nurse advocates for the client's own wishes.</p>"
+    },
+    {
+      "id": "el-13",
+      "type": "mc",
+      "topic": "Codes of ethics and client rights",
+      "level": 2,
+      "stem": "A nurse sees that a coworker posted on a personal account, “Rough night with our ‘frequent flyer’ in room 12 again.” The post names no one. Which action should the nurse take?",
+      "options": ["Ask the coworker to limit the post so that just friends can see it", "Remind the coworker to leave room numbers out of future posts", "Comment on the post to remind staff that client names stay private", "Report the post to the nurse manager as a possible privacy breach"],
+      "answer": 3,
+      "rationale": "<p>A post can identify a client without a name: the room number, the nickname, the unit, and the date are enough for someone to know who it is. The nurse reports a <b>possible breach of confidentiality</b> through the chain of command, following the facility's policy.</p><p>Limiting the post to <b>friends</b> is the tempting choice, but privacy settings don't make a post private: friends can copy and share it. Leaving out the <b>room number</b> still leaves a post about a client, and a <b>public comment</b> draws more attention to it, while suggesting that only names matter.</p><p><b>Takeaway:</b> Any detail that could identify a client makes a post a privacy breach, whatever the settings. Report it through the chain of command.</p>"
+    },
+    {
+      "id": "el-14",
+      "type": "sata",
+      "topic": "Codes of ethics and client rights",
+      "level": 2,
+      "stem": "A nurse receives several requests from clients on a medical unit. Which requests should the nurse support?",
+      "options": ["A client asks for an itemized copy of the hospital bill.", "A client asks to be seen by a different provider.", "A client asks the nurse not to tell the provider about a fall in the bathroom.", "A client asks to see a chaplain of the client's own faith.", "A client asks the nurse to leave a refusal of care out of the chart.", "A client asks how to make a formal complaint about the care."],
+      "answer": [0, 1, 3, 5],
+      "rationale": "<p>Client rights include <b>accurate billing</b>, <b>choosing their own providers</b>, <b>religious freedom</b>, and <b>voicing complaints and being heard</b>. The nurse helps with each.</p><p>Keeping a <b>fall</b> from the provider is the tempting choice, since it sounds like privacy, but confidentiality keeps information from people outside the care team, not from the team: a fall needs assessment, a report, and documentation. A <b>refusal of care</b> is documented too, since the record must be accurate and complete.</p><p><b>Takeaway:</b> Client rights include privacy from outsiders, not secrets from the care team: safety events and refusals are shared with the team and documented.</p>"
+    },
+    {
+      "id": "el-15",
+      "type": "mc",
+      "topic": "Codes of ethics and client rights",
+      "level": 3,
+      "stem": "A nurse is assigned to help with a scheduled procedure that conflicts with the nurse's deeply held moral beliefs. It isn't an emergency. Which action should the nurse take?",
+      "options": ["Tell the charge nurse, and care for the client until another nurse takes over", "Take part in the procedure, since a nurse can't refuse an assigned task", "Explain to the client why the nurse won't take part in the procedure", "Tell the charge nurse, and leave the care to the next nurse who is free"],
+      "answer": 0,
+      "rationale": "<p>A nurse may <b>decline to take part</b> in a procedure that violates their moral beliefs (conscientious objection), when it isn't an emergency, but must still <b>keep the client safe</b>: tell the charge nurse, and keep caring for the client until another nurse takes over.</p><p>Telling the charge nurse and leaving the care to <b>whoever is free</b> is the tempting choice, since the nurse is right to speak up, but the client can't be left without a handoff. A nurse isn't required to take part in <b>every</b> assigned procedure, and <b>explaining the objection</b> to the client puts the nurse's values on the client.</p><p><b>Takeaway:</b> A nurse may opt out of a procedure for moral reasons, outside emergencies, but must tell the charge nurse and keep the client cared for until the handoff.</p>"
+    },
+    {
+      "id": "el-16",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 1,
+      "stem": "During a vaccine shortage, a public health nurse helps plan to give the limited doses first to the groups in which they will prevent the most deaths. Which approach to ethics guides this plan?",
+      "options": ["Deontology", "Utilitarianism", "Casuistry", "Ethics of care"],
+      "answer": 1,
+      "rationale": "<p><b>Utilitarianism</b> judges an action by its consequences: the greatest good for the greatest number, as in triage and sharing out scarce vaccines.</p><p><b>Deontology</b> is the tempting choice, since the nurse has a duty to the public, but deontology judges an action by duty and rules, whatever the outcome, and this plan is judged by its outcome: deaths prevented. <b>Casuistry</b> compares a case with similar past cases, and the <b>ethics of care</b> centers on relationships and each person's own story.</p><p><b>Takeaway:</b> Deontology: duty and rules. Utilitarianism: the most good for the most people. Casuistry: similar cases. Ethics of care: relationships and context. Feminist ethics: power and inequity.</p>"
+    },
+    {
+      "id": "el-17",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 2,
+      "stem": "A nurse believes a client in severe pain after surgery needs a stronger pain plan. The provider has declined twice to change it, and the nurse leaves each shift feeling powerless and upset. Which action should the nurse take?",
+      "options": ["Accept the provider's decision, since the pain plan is the provider's call", "Ask to care for other clients, so that the situation stops being upsetting", "Report the provider's refusal to change the plan to the state medical board", "Document the pain scores, and take the concern up the chain of command"],
+      "answer": 3,
+      "rationale": "<p>This is <b>moral distress</b>: the nurse knows the right action but is blocked from taking it, here by the hierarchy. The way through is to <b>speak up with data</b> (the documented pain assessments) and use the <b>chain of command</b>: the charge nurse, then the nurse manager, and an ethics consultation if it's still unresolved.</p><p>Accepting <b>the provider's call</b> is the tempting choice, since the provider prescribes, but advocacy (Provision 3) means speaking up for the client with assessment data. Asking for <b>other clients</b> eases the nurse's distress and leaves the client in pain. Going to the <b>medical board</b> skips the chain of command, and a disagreement over a pain plan isn't misconduct.</p><p><b>Takeaway:</b> Moral distress: you know what's right but are blocked. Speak up with your assessment data, and use the chain of command.</p>"
+    },
+    {
+      "id": "el-18",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 2,
+      "stem": "A client's adult children disagree about continuing their father's life support. He has no advance directive, and the team and family can't reach agreement. Which statement should the nurse make about asking the ethics committee for help?",
+      "options": ["“The committee will review the case and give all of you its recommendations.”", "“The committee will make a decision that the family and team must follow.”", "“The attending provider has to be the one who asks for a consultation.”", "“The committee reviews cases after a death to find out what went wrong.”"],
+      "answer": 0,
+      "rationale": "<p>An <b>ethics committee</b> is a multidisciplinary group that reviews hard cases and <b>advises</b>: it recommends, it doesn't decide. Any member of the team, the client, or the family can ask for a consultation.</p><p>A decision the family <b>must follow</b> is the tempting choice, since the committee's advice carries weight, but decisions stay with the client or the client's legal decision-maker. Asking isn't limited to the <b>attending provider</b>, and reviewing <b>what went wrong after a death</b> describes a quality review, like a root cause analysis.</p><p><b>Takeaway:</b> Ethics committee: anyone can ask for a consultation; it reviews and recommends, and doesn't decide.</p>"
+    },
+    {
+      "id": "el-19",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 2,
+      "stem": "A client's family wants “everything done,” but the client's living will declines CPR. The nurse recognizes this as an ethical problem. Which step of the decision-making process should the nurse take next?",
+      "options": ["Examine the nurse's own values about life support", "Name the problem, such as autonomy versus the family's wishes", "Gather the facts, including the client's wishes and condition", "List the possible courses of action and their likely results"],
+      "answer": 2,
+      "rationale": "<p>The seven steps follow the nursing process: (1) ask whether it's an ethical problem, (2) <b>gather the relevant information</b>, (3) identify the ethical elements and examine your own values, (4) name the problem, (5) list the possible actions, (6) make and carry out a plan, and (7) evaluate it. After step 1 comes assessment: the facts, the client's wishes, who decides, and the laws and policies that apply.</p><p>Examining <b>the nurse's own values</b> is the tempting choice, since values clarification matters, but it's step 3: the facts come first. <b>Naming the problem</b> and <b>listing actions</b> come later still.</p><p><b>Takeaway:</b> Ethical decisions follow the nursing process: assess (gather the facts) before naming the problem or planning.</p>"
+    },
+    {
+      "id": "el-20",
+      "type": "sata",
+      "topic": "Ethical decision making",
+      "level": 3,
+      "stem": "A newly licensed nurse asks how to prepare for the ethical problems that come up on the unit. Which strategies should the nurse recommend?",
+      "options": ["Follow the lead of the most experienced nurse on the unit.", "Clarify your own values and how they could affect your care.", "Learn the Code of Ethics and the facility's related policies.", "Set personal values aside, and avoid thinking about them at work.", "Use a step-by-step process, as with the nursing process.", "Ask for an ethics consultation when a case needs one."],
+      "answer": [1, 2, 4, 5],
+      "rationale": "<p>Strategies that make ethical decisions better: <b>values clarification</b> (knowing your own values and how they could color your care), knowing the <b>Code of Ethics</b> and the facility's <b>policies</b>, using a <b>step-by-step process</b>, and asking for an <b>ethics consultation</b> when a case needs one.</p><p>Setting values <b>aside</b> is the tempting choice, since it sounds neutral, but values can't be switched off: the strategy is to know them, so they don't steer care unnoticed. Following <b>the most experienced nurse</b> replaces the nurse's own reasoning with someone else's.</p><p><b>Takeaway:</b> Better ethical decisions: know your own values, the Code, and the policies, use a step-by-step process, and ask for help (an ethics consultation) when a case needs it.</p>"
+    },
+    {
+      "id": "el-21",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 2,
+      "stem": "A client with advanced COPD understands the benefits of a pulmonary rehabilitation program but declines it, saying, “I'd rather spend my energy on my garden and my grandkids.” A nursing student says rehab would improve the client's quality of life. Which response by the nurse is best?",
+      "options": ["“Let's show the client how rehab could improve breathing and quality of life.”", "“The client defines quality of life, so we support the plan the client chose.”", "“Let's ask the family to encourage the client to try a few sessions first.”", "“Let's chart the refusal as noncompliance so the provider can follow up.”"],
+      "answer": 1,
+      "rationale": "<p><b>Quality of life is defined by the client</b>, not the team. This client understands the benefits, has weighed them against what matters most to them, and has made an informed choice: the nurse supports it.</p><p><b>Showing how rehab helps</b> is the tempting choice, since teaching is part of nursing, but the client already understands: more persuasion puts the team's values on the client. Asking the <b>family</b> to push adds pressure, and calling an informed refusal <b>noncompliance</b> labels the client's choice as a failure. The refusal is documented as a refusal.</p><p><b>Takeaway:</b> The client defines their own quality of life. After an informed choice, support it: don't persuade, pressure, or label it.</p>"
+    },
+    {
+      "id": "el-22",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 3,
+      "stem": "A client who is dying of cancer is on a ventilator because the family insists on full treatment. The nurse believes the treatments only prolong the client's suffering, and feels distressed giving them. Which action by the nurse is best?",
+      "options": ["Tell the family that comfort care is what the nurse would choose", "Ask the charge nurse to assign the client to another nurse", "Keep giving the care, and keep the nurse's concerns to themselves", "Ask for an ethics consultation to review the plan of care"],
+      "answer": 3,
+      "rationale": "<p>The nurse is in <b>moral distress</b>: believing the care is wrong, but required to give it. An <b>ethics consultation</b> brings the team and family together to review the plan, and any team member can ask for one.</p><p>Keeping the concerns <b>to themselves</b> is the tempting choice, since it seems professional, but unspoken moral distress leads to burnout, and the Code expects nurses to raise ethical concerns. Telling the family what <b>the nurse would choose</b> puts the nurse's values on them. Asking for <b>another assignment</b> eases the nurse's distress, but leaves the concern about the plan unspoken.</p><p><b>Takeaway:</b> Moral distress over a plan of care: raise it, through an ethics consultation or the chain of command. Don't stay silent, and don't push your own values on the family.</p>"
+    },
+    {
+      "id": "el-23",
+      "type": "mc",
+      "topic": "Ethical decision making",
+      "level": 3,
+      "stem": "A client's daughter tells the nurse, “Don't let Dad sign the consent for the feeding tube. He doesn't really understand it.” The client, who is alert, agreed to the procedure with the provider this morning. Which action should the nurse take first?",
+      "options": ["Ask the client what he knows about the tube and what he wants", "Tell the daughter that her father has the right to decide for himself", "Tell the provider that the client's consent may not be valid", "Ask the daughter to sign the consent form along with her father"],
+      "answer": 0,
+      "rationale": "<p>In an ethical problem, the nurse <b>assesses before acting</b>. The daughter's concern may or may not be right, so the nurse first finds out from the client himself what he knows about the procedure and what he wants.</p><p>Telling the <b>provider</b> that consent may not be valid is the tempting choice, and it's the right next step if the client can't explain the procedure, but it comes after the nurse checks. Telling the daughter he <b>has the right to decide</b> is true for a competent client, but answers before anyone knows whether he understood. The <b>daughter's signature</b> adds nothing: a competent adult consents for himself.</p><p><b>Takeaway:</b> When a concern is raised about a decision, assess first: hear from the client before acting on what others say.</p>"
+    },
+    {
+      "id": "el-24",
+      "type": "mc",
+      "topic": "Sources of law and scope of practice",
+      "level": 1,
+      "stem": "A nurse asks where the state's rule on how many continuing education hours a nurse needs to renew a license comes from. The board of nursing wrote the rule under the state's nurse practice act. Which type of law is the rule?",
+      "options": ["Constitutional law", "Statutory law", "Administrative law", "Common law"],
+      "answer": 2,
+      "rationale": "<p><b>Administrative (regulatory) law</b> is made of the rules that government agencies write, like the board of nursing's rules on license renewal, or the rules of the Centers for Medicare &amp; Medicaid Services.</p><p><b>Statutory law</b> is the tempting choice, since the rule comes under the nurse practice act, which is a statute, but the legislature passes the act, and the detailed rules the board writes under it are administrative law. <b>Constitutional law</b> comes from the federal and state constitutions, like the right to privacy, and <b>common law</b> comes from earlier court decisions.</p><p><b>Takeaway:</b> Statutes are passed by legislatures (the nurse practice act, HIPAA). Agencies' rules are administrative law (the board of nursing's rules). Court decisions are common law.</p>"
+    },
+    {
+      "id": "el-25",
+      "type": "mc",
+      "topic": "Sources of law and scope of practice",
+      "level": 3,
+      "stem": "A clinic's new policy says its RNs may diagnose strep throat and start antibiotics when the provider is busy. The state's nurse practice act doesn't include diagnosing or prescribing in RN practice. Which action should the nurse take?",
+      "options": ["Follow the practice act, and raise the policy with the nurse manager", "Follow the clinic's policy, since the clinic is accountable for its policies", "Follow the policy until the board of nursing rules on the conflict", "Follow the policy, and tell the nurse manager about any concerns"],
+      "answer": 0,
+      "rationale": "<p>The <b>nurse practice act</b>, a state law, sets the scope of practice, and a facility's policy can't stretch it. When the two conflict, the nurse follows the <b>stricter</b> one, here the law, and raises the conflict with the nurse manager.</p><p>Following <b>the clinic's policy</b> is the tempting choice, since nurses are expected to follow policy, but a policy can't authorize what the law doesn't, and it's the nurse's own license at risk. Following it <b>until the board rules</b>, or while <b>telling the manager</b> about concerns, still means diagnosing and prescribing outside the RN scope.</p><p><b>Takeaway:</b> A facility policy can narrow a nurse's scope but can't widen it past the practice act. When they conflict, follow the stricter one, and raise the conflict.</p>"
+    },
+    {
+      "id": "el-26",
+      "type": "sata",
+      "topic": "Sources of law and scope of practice",
+      "level": 2,
+      "stem": "A nurse who holds a multistate license under the Nurse Licensure Compact asks how it works. Which statements are accurate?",
+      "options": ["The nurse must pass the NCLEX again for each new compact state.", "It lets the nurse practice in any state in the country.", "It's issued by the state that is the nurse's primary residence.", "It lets the nurse practice in other states that belong to the compact.", "The nurse follows the home state's practice act wherever care is given.", "The nurse follows the practice act of the state where the client is."],
+      "answer": [2, 3, 5],
+      "rationale": "<p>Under the <b>Nurse Licensure Compact</b>, the nurse's <b>primary state of residence</b> issues one multistate license, which lets the nurse practice in the <b>other compact states</b>, following the practice act of the state <b>where the client is</b> at the time of care, in person or by telehealth.</p><p>Following the <b>home state's act</b> everywhere is the tempting choice, since that state issued the license, but each state's law governs care given in that state. Not every state belongs to the compact (membership changes, so check the NCSBN's map), and the nurse doesn't retake the <b>NCLEX</b> for each one.</p><p><b>Takeaway:</b> Compact license: issued by the home state, good in the other compact states, and the nurse follows the law of the state where the client is.</p>"
+    },
+    {
+      "id": "el-27",
+      "type": "mc",
+      "topic": "Sources of law and scope of practice",
+      "level": 3,
+      "stem": "A nurse inserts a urinary catheter, a skill within the RN scope, but skips the sterile steps of the facility's procedure. The client develops a urinary tract infection. Which statement about the nurse's legal position is accurate?",
+      "options": ["The skill is within the RN scope, so the nurse met the legal standard.", "The facility, not the nurse, is liable when its procedure isn't followed.", "No law was broken, so the client can't bring a case against the nurse.", "The nurse was within scope, but can be found below the standard of care."],
+      "answer": 3,
+      "rationale": "<p><b>Scope</b> says what a nurse may do. <b>Standards of care</b> say how well it must be done: the knowledge and skill nurses ordinarily use, drawn from the ANA's standards, the practice act, facility policies, and accreditation standards. A task within scope, done below the standard, can be negligence.</p><p>Meeting the legal standard <b>because the skill is in scope</b> is the tempting choice, since it mixes up the two ideas. The <b>facility</b> may share liability, but nurses are accountable for their own actions. And a client can bring a civil case for harm without any <b>criminal law</b> being broken.</p><p><b>Takeaway:</b> Scope: what a nurse may do. Standards: how well it must be done. Doing an in-scope task below the standard can still be negligence.</p>"
+    },
+    {
+      "id": "el-28",
+      "type": "mc",
+      "topic": "Sources of law and scope of practice",
+      "level": 2,
+      "stem": "At the start of a shift, a nurse realizes that their license expired two days ago, because the renewal was never submitted. Which action should the nurse take?",
+      "options": ["Tell the nurse manager, and work while the renewal is processed", "Tell the nurse manager, and don't work until the renewal is complete", "Work the shift under the direct supervision of the charge nurse", "Work the shift, but leave the medication tasks to another nurse"],
+      "answer": 1,
+      "rationale": "<p>Practicing with an expired license is practicing <b>without a license</b>, which the nurse practice act forbids. The nurse tells the manager and doesn't work until the renewal is complete.</p><p>Working <b>under the charge nurse's supervision</b> is the tempting choice, since students practice under supervision, but supervision doesn't make a nurse licensed. Telling the manager but working <b>while the renewal is processed</b> is still working unlicensed, and leaving out <b>medication tasks</b> doesn't help: any nursing care counts as practice.</p><p><b>Takeaway:</b> No active license, no nursing practice: report it and don't work until the license is renewed. The board of nursing can deny, suspend, or revoke a license.</p>"
+    },
+    {
+      "id": "el-29",
+      "type": "mc",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "A client without health insurance comes to a private hospital's emergency department with chest pain. The registration clerk suggests sending the client to the county hospital across town. Which action should the nurse take?",
+      "options": ["Arrange the transfer, since the county hospital serves uninsured clients", "Make sure the client is screened and stabilized at this hospital", "Ask the social worker to find coverage before the client is examined", "Have the client sign a form accepting the costs before the exam"],
+      "answer": 1,
+      "rationale": "<p><b>EMTALA</b> requires every emergency department to give a <b>screening exam</b> and <b>stabilize</b> an emergency, whatever the client can pay, and it forbids transferring an unstable client from a private hospital to a public one for financial reasons.</p><p>Calling the <b>social worker</b> is the tempting choice, since a social worker is the right first call for a client without insurance in most situations, but in an emergency, payment questions can't delay the exam. A <b>transfer</b> for lack of insurance is what EMTALA forbids, and asking the client to <b>accept the costs</b> first delays care in the same way.</p><p><b>Takeaway:</b> EMTALA: screen and stabilize every emergency, whatever the client can pay. Coverage questions come after, never before.</p>"
+    },
+    {
+      "id": "el-30",
+      "type": "mc",
+      "topic": "Federal and state laws",
+      "level": 2,
+      "stem": "During an admission interview, a client says, “I don't have a living will or anything like that.” Which action should the nurse take?",
+      "options": ["Tell the client that an advance directive is needed before discharge", "Ask the client's next of kin to help fill one out for the client", "Ask the provider to bring up advance directives at the next visit", "Give the client written information about advance directives"],
+      "answer": 3,
+      "rationale": "<p>The <b>Patient Self-Determination Act</b> requires facilities to give clients <b>written information</b> on admission about their right to make decisions about their care, to refuse treatment, and to make an advance directive. The nurse gives the information and documents whether the client has one.</p><p>Leaving it to the <b>provider at the next visit</b> is the tempting choice, since providers discuss goals of care, but the law asks for the information at admission, and the nurse can give it now. An advance directive is the client's choice, so it isn't <b>required before discharge</b>, and <b>next of kin</b> can't make one for a client.</p><p><b>Takeaway:</b> Patient Self-Determination Act: on admission, ask about an advance directive, give written information, and document. Having one is the client's choice.</p>"
+    },
+    {
+      "id": "el-31",
+      "type": "mc",
+      "topic": "Federal and state laws",
+      "level": 1,
+      "stem": "A client dies in the intensive care unit. The client hadn't registered as an organ donor and left no instructions about donation. Who may give consent to donate the client's organs?",
+      "options": ["The client's family, such as the spouse or adult children", "The attending provider, who pronounced the death", "The hospital's ethics committee, after a review", "No one, since the client didn't register as a donor"],
+      "answer": 0,
+      "rationale": "<p>The <b>Uniform Anatomical Gift Act</b> is the basis of the organ donation system. Competent adults can choose to donate, and when a person dies without having decided either way, the <b>family</b> can consent to donation. (The Uniform Determination of Death Act defines death: the irreversible end of breathing and circulation, or of all brain function, including the brainstem.)</p><p><b>No one</b> is the tempting choice, since registering is how adults say yes, but when the client made no choice, the family can make it. The <b>provider</b> pronounces death but doesn't consent to donation, and an <b>ethics committee</b> advises rather than consents.</p><p><b>Takeaway:</b> Uniform Anatomical Gift Act: adults can choose to donate, and if they didn't decide, the family can consent after death.</p>"
+    },
+    {
+      "id": "el-32",
+      "type": "sata",
+      "topic": "Federal and state laws",
+      "level": 2,
+      "stem": "A nurse is caring for clients on a surgical unit. Which actions should the nurse take to protect the clients' health information?",
+      "options": ["Log off the electronic record before leaving the workstation.", "Read the client's lab results to the client's sister when she calls.", "Check a hospitalized neighbor's chart to see how the neighbor is doing.", "Share the client's diet orders and allergies with the dietitian.", "Give updates by phone to callers who give the client's passcode.", "Talk about the client's care with a coworker over lunch in the cafeteria."],
+      "answer": [0, 3, 4],
+      "rationale": "<p>Protecting health information means <b>logging off</b>, sharing the <b>minimum necessary</b> with the people directly involved in care (the dietitian needs the diet orders and allergies), and giving phone updates only to people the client authorized, like those with the <b>passcode</b>.</p><p>Checking a <b>neighbor's chart</b> is the tempting choice, since it comes from caring, but looking at any chart without a role in that client's care is a violation. The <b>sister</b> hasn't been authorized, and a <b>cafeteria</b> is a public place, however quietly the nurses talk.</p><p><b>Takeaway:</b> Minimum necessary, to people directly involved in care or authorized by the client. A caring reason doesn't make an unauthorized look at a chart acceptable.</p>"
+    },
+    {
+      "id": "el-33",
+      "type": "mc",
+      "topic": "Federal and state laws",
+      "level": 2,
+      "stem": "A client who is deaf and uses American Sign Language is admitted for surgery tomorrow. Which action should the nurse take for the preoperative teaching?",
+      "options": ["Ask the client's hearing daughter to interpret the teaching", "Write out the teaching, and have the client read it", "Arrange for a qualified medical interpreter who uses ASL", "Speak slowly while facing the client, so the client can lip-read"],
+      "answer": 2,
+      "rationale": "<p>The <b>Americans with Disabilities Act</b> requires reasonable accommodations, and for a client who uses ASL that means a <b>qualified medical interpreter</b>, for teaching and for consent.</p><p>The <b>daughter</b> is the tempting choice, since she's fluent and there, but family members may leave out or change information, and the client loses privacy. ASL is its own language, so <b>written English</b> may not be understood fully, and <b>lip-reading</b> catches only part of what's said.</p><p><b>Takeaway:</b> ADA: reasonable accommodations, like a qualified interpreter. Not family, not lip-reading, and not just written notes.</p>"
+    },
+    {
+      "id": "el-34",
+      "type": "mc",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "Driving home from a shift, a nurse stops at a car crash where a driver is bleeding heavily from a leg wound. A bystander has called 911. Which action should the nurse take?",
+      "options": ["Apply direct pressure, and stay until the paramedics take over", "Apply direct pressure, then leave once a bystander can hold it", "Give first aid, and accept the driver's offer to pay for the help", "Wait for the paramedics, since giving aid could create legal liability"],
+      "answer": 0,
+      "rationale": "<p><b>Good Samaritan laws</b> limit the liability of a nurse who helps at an emergency scene in good faith, without pay, within their training, and without gross negligence. Once the nurse starts, the nurse <b>stays until someone with equal or more training</b> takes over.</p><p>Leaving once a <b>bystander</b> can hold the pressure is the tempting choice, since the bleeding is controlled, but a bystander has less training, so leaving abandons the driver. <b>Accepting pay</b> can remove the law's protection, and <b>waiting</b> for fear of liability is the worry these laws exist to ease.</p><p><b>Takeaway:</b> Good Samaritan: help in good faith, within your training, without pay, and stay until someone with equal or more training takes over.</p>"
+    },
+    {
+      "id": "el-35",
+      "type": "sata",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "A nurse in an emergency department is caring for several clients. In which situations should the nurse share information without the client's consent, following the state's reporting laws?",
+      "options": ["A client who says they used cocaine before the crash", "A client with a gunshot wound to the thigh", "A 4-year-old with burns that don't fit the parent's story", "A client who leaves the department against medical advice", "A client with a new diagnosis of active tuberculosis"],
+      "answer": [1, 2, 4],
+      "rationale": "<p>Confidentiality has exceptions set by law: <b>mandatory reports</b> like <b>gunshot wounds</b>, <b>suspected abuse</b> (burns that don't match the story), and certain <b>communicable diseases</b>, like tuberculosis, to public health. A court order and a duty to warn are exceptions too.</p><p><b>Cocaine use</b> is the tempting choice, since it's illegal, but a client's report of drug use is protected health information, not something the nurse reports to the police. A client who leaves <b>against medical advice</b> signs a form when possible, and the nurse documents and tells the provider; it isn't reported outside the facility.</p><p><b>Takeaway:</b> Share without consent only when the law requires it: mandatory reports (abuse, gunshot wounds, reportable diseases), a court order, or a duty to warn.</p>"
+    },
+    {
+      "id": "el-36",
+      "type": "mc",
+      "topic": "Informed consent and advance directives",
+      "level": 2,
+      "stem": "A nurse brings a surgical consent form to a client to sign. The client asks, “Will they be taking out my whole colon, or just part of it?” Which action should the nurse take?",
+      "options": ["Explain the surgery, using the consent form's description", "Have the client sign, and tell the surgeon about the question", "Hold off on signing, and ask the surgeon to talk with the client", "Ask the charge nurse to answer the question before the client signs"],
+      "answer": 2,
+      "rationale": "<p>The <b>provider</b> explains the procedure and obtains consent. The <b>nurse witnesses</b> the signature, confirming that the client signs voluntarily, appears competent, and understands. A question about what will be removed shows the client doesn't fully understand, so the nurse stops and asks the surgeon to explain.</p><p>Explaining <b>from the form</b> is the tempting choice, since the nurse may know the answer, but explaining the procedure for consent is the surgeon's duty. Signing <b>first</b> means signing without understanding, and the <b>charge nurse</b> isn't the one doing the surgery either.</p><p><b>Takeaway:</b> The provider explains and obtains consent; the nurse witnesses. Questions or confusion: stop, and call the provider.</p>"
+    },
+    {
+      "id": "el-37",
+      "type": "mc",
+      "topic": "Informed consent and advance directives",
+      "level": 3,
+      "stem": "A client received IV morphine for pain 20 minutes ago and is drowsy. The surgeon now asks the nurse to witness the client's signature on the surgical consent. Which action should the nurse take?",
+      "options": ["Witness the signature, since the surgeon has explained the procedure", "Have the client sign, and note the morphine's time on the form", "Ask the client's spouse to sign the consent in the client's place", "Tell the surgeon about the morphine, since consent now may not be valid"],
+      "answer": 3,
+      "rationale": "<p>Valid consent needs <b>capacity</b>: an alert client who isn't under the effect of opioids or sedatives. That's why consent is signed before preoperative medications. The nurse tells the surgeon, so the signing can wait until the client is alert.</p><p>Witnessing <b>because the surgeon explained</b> is the tempting choice, but the witness confirms the client can understand <b>now</b>, and a drowsy client can't. Noting the <b>morphine's time</b> documents the problem without fixing it, and the <b>spouse</b> doesn't sign for a client who will soon be able to decide for themselves.</p><p><b>Takeaway:</b> Consent needs capacity: get it before opioids or sedatives. If they've been given, tell the provider and wait.</p>"
+    },
+    {
+      "id": "el-38",
+      "type": "mc",
+      "topic": "Informed consent and advance directives",
+      "level": 2,
+      "stem": "A 16-year-old client who is married comes to an urgent care clinic with a broken wrist. Who should the nurse ask to sign the consent for treatment?",
+      "options": ["The client's parent, since the client is under 18", "The client, since being married lets the client consent", "The client's spouse, since a spouse consents for a married minor", "The provider, since a fracture needs treatment right away"],
+      "answer": 1,
+      "rationale": "<p>A parent or guardian usually consents for a minor, but <b>emancipated minors</b>, such as those who are married, in the military, or self-supporting, consent for themselves (states add their own exceptions).</p><p>The <b>parent</b> is the tempting choice, since the client is under 18, but marriage emancipates the client. A <b>spouse</b> doesn't consent for a competent client, and a broken wrist isn't the kind of emergency in which consent is implied: that's for a threat to life when no one is available to consent.</p><p><b>Takeaway:</b> Minors: a parent or guardian consents, except emancipated minors (married, military, self-supporting) and the state's own exceptions.</p>"
+    },
+    {
+      "id": "el-39",
+      "type": "sata",
+      "topic": "Informed consent and advance directives",
+      "level": 3,
+      "stem": "A client with end-stage heart failure has a DNR order and develops pneumonia. Which actions should the nurse take?",
+      "options": ["Give the antibiotics the provider prescribed.", "Stop taking routine vital signs, since the order limits care.", "Start CPR if the heart stops and the family asks for it.", "Ask the provider to cancel the DNR so the pneumonia can be treated.", "Give oxygen to ease the client's shortness of breath.", "Keep giving pain medication and comfort measures."],
+      "answer": [0, 4, 5],
+      "rationale": "<p>A <b>DNR order means no CPR</b> if the heart or breathing stops. It doesn't mean “do not treat”: the client still gets the <b>antibiotics</b>, <b>oxygen</b>, <b>pain medication</b>, comfort measures, and monitoring the care plan calls for.</p><p>Canceling the DNR <b>so the pneumonia can be treated</b> is the tempting choice, since it treats DNR as “no treatment,” but nothing in the order stops the pneumonia treatment. Stopping <b>vital signs</b> makes the same mistake. The order stands if the heart stops, and the <b>family</b> can't override the client's decision.</p><p><b>Takeaway:</b> DNR means no CPR, not no care: keep treating, monitoring, and comforting the client.</p>"
+    },
+    {
+      "id": "el-40",
+      "type": "mc",
+      "topic": "Informed consent and advance directives",
+      "level": 2,
+      "stem": "A client's living will declines mechanical ventilation. The client, who is alert and oriented, now tells the nurse, “I've changed my mind. If I need a breathing machine, I want it.” Which action should the nurse take?",
+      "options": ["Follow the living will, since it was signed and witnessed", "Ask the client's health care proxy to confirm the change", "Ask the ethics committee which of the wishes to follow", "Tell the provider, and help the client update the directive"],
+      "answer": 3,
+      "rationale": "<p>A competent client can <b>change or revoke</b> an advance directive at any time, and the client's <b>current wishes</b> come first. The nurse tells the provider, helps the client update the directive, and documents.</p><p>Following the <b>signed living will</b> is the tempting choice, since it's a legal document, but it speaks for the client only when the client can't speak. A <b>health care proxy</b> decides only when the client can't, and an <b>ethics committee</b> isn't needed when a competent client states their wishes.</p><p><b>Takeaway:</b> Advance directives apply when the client can't decide. A competent client's current wishes win, and the client can change the directive at any time.</p>"
+    },
+    {
+      "id": "el-41",
+      "type": "mc",
+      "topic": "Informed consent and advance directives",
+      "level": 3,
+      "stem": "A client whose durable power of attorney for health care names a close friend is unconscious after a stroke. The client's spouse disagrees with the friend about placing a feeding tube. Whose decision should the nurse follow?",
+      "options": ["The person the client named as health care proxy", "The client's spouse, since a spouse is the legal next of kin", "The provider, since the client can no longer decide", "The client's adult children, together with the spouse"],
+      "answer": 0,
+      "rationale": "<p>A <b>durable power of attorney for health care</b> names the person who decides when the client can't: the <b>health care proxy</b>, who follows the client's known wishes. The client chose the friend.</p><p>The <b>spouse</b> is the tempting choice, since next of kin often decide when no one is named, but a named proxy comes first. The <b>provider</b> advises but doesn't make the client's choices, and the <b>adult children</b> don't outrank a proxy the client named.</p><p><b>Takeaway:</b> Durable power of attorney for health care: the named proxy decides when the client can't, ahead of family. Living will: written instructions.</p>"
+    },
+    {
+      "id": "el-42",
+      "type": "mc",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 2,
+      "stem": "A competent client admitted with chest pain, whose tests aren't finished, tells the nurse, “I'm leaving now. I've waited long enough.” Which action should the nurse take?",
+      "options": ["Stand in the doorway until the provider can talk with the client", "Tell the provider, and ask the client to sign the AMA form", "Ask security to keep the client on the unit until the tests are done", "Give the prescribed lorazepam so that the client will stay for the tests"],
+      "answer": 1,
+      "rationale": "<p>A competent client may leave <b>against medical advice</b>. The nurse tells the provider, explains the risks, asks the client to sign the AMA form, and documents. Keeping the client from leaving is <b>false imprisonment</b>.</p><p>Standing in the <b>doorway</b> until the provider comes is the tempting choice, since it seems to buy time for a talk, but blocking a competent client is detaining them without legal cause. So is having <b>security</b> hold the client, and giving a <b>sedative</b> to keep the client in place.</p><p><b>Takeaway:</b> False imprisonment: restraining or detaining without legal cause, by blocking, holding, restraints without a prescription, or sedation. A competent client may leave AMA.</p>"
+    },
+    {
+      "id": "el-43",
+      "type": "mc",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 2,
+      "stem": "A nurse tells a client who refuses an oral medication, “If you won't swallow it, I'll have to put it down a tube.” The nurse doesn't touch the client. Which tort does the nurse's statement represent?",
+      "options": ["Assault", "Battery", "False imprisonment", "Invasion of privacy"],
+      "answer": 0,
+      "rationale": "<p><b>Assault</b> is a threat, or an attempt to touch, that makes a person fear harmful contact. No touching is needed: the words alone can be assault.</p><p><b>Battery</b> is the tempting choice, since the threat is about forced treatment, but battery needs contact without consent, and nothing touched the client. <b>False imprisonment</b> is detaining without legal cause, and <b>invasion of privacy</b> is exposing private information.</p><p><b>Takeaway:</b> Assault = a threat (no touch). Battery = body contact without consent. Slander = spoken. Libel = written.</p>"
+    },
+    {
+      "id": "el-44",
+      "type": "mc",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 3,
+      "stem": "A nurse gives a client's scheduled insulin without checking the blood glucose first, as the policy requires. The client's glucose stays in the normal range, and the client has no ill effects. Which element of malpractice would a claim against the nurse lack?",
+      "options": ["Duty to the client", "Breach of the standard of care", "Foreseeability of harm", "Harm to the client"],
+      "answer": 3,
+      "rationale": "<p>Malpractice needs every element: <b>duty</b>, <b>breach</b>, <b>foreseeability</b>, <b>causation</b>, <b>harm</b>, and <b>damages</b>. The nurse had a duty to the client, skipping a required check breached the standard, and low blood glucose after insulin is foreseeable, but there was <b>no harm</b>.</p><p><b>Breach</b> is the tempting choice, since nothing went wrong, but skipping a required check is a breach whatever the outcome. Without harm there's no malpractice claim, but the error is still reported.</p><p><b>Takeaway:</b> Malpractice needs duty, breach, foreseeability, causation, harm, and damages. A breach without harm isn't malpractice, but it's still an error to report.</p>"
+    },
+    {
+      "id": "el-45",
+      "type": "sata",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 2,
+      "stem": "A nurse manager is reviewing events on the unit. Which actions by staff could lead to a claim of an intentional or quasi-intentional tort?",
+      "options": ["Applying wrist restraints to a calm client without a prescription", "Charting a client's exact words when the client swore at staff", "Giving a flu shot to a client after the client said no", "Telling other staff that a coworker “is always high,” with no facts", "Holding a client's arm to steady the client, after the client agreed", "Leaving a client's record open on a screen in the hallway"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>Restraints without a prescription are <b>false imprisonment</b>, a shot the client refused is <b>battery</b>, a damaging spoken claim with no facts is <b>slander</b> (defamation), and leaving a record open is <b>invasion of privacy</b>.</p><p>Charting the client's <b>exact words</b> is the tempting choice, since swearing sounds harmful to put in a record, but quoting what a client said is objective documentation, not defamation. Touching a client <b>who agreed</b> isn't battery: battery is touching without consent.</p><p><b>Takeaway:</b> Intentional torts: assault, battery, false imprisonment. Quasi-intentional: invasion of privacy and defamation (slander spoken, libel written). Consent and objective facts are the defenses.</p>"
+    },
+    {
+      "id": "el-46",
+      "type": "mc",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 3,
+      "stem": "A postoperative client's blood pressure has dropped from 128/80 to 92/58 over 2 hours, and the client is restless. The nurse called the provider 30 minutes ago, and the provider hasn't called back. Which action should the nurse take?",
+      "options": ["Document the readings, and wait for the provider to call back", "Recheck the blood pressure in 1 hour, and call again if it falls", "Notify the charge nurse, and use the chain of command to get help", "Report the provider's delay to the nurse manager after the shift"],
+      "answer": 2,
+      "rationale": "<p>A client getting worse needs care now. When the provider doesn't respond, the nurse uses the <b>chain of command</b>, starting with the charge nurse. Failing to report worsening findings, or to keep going until someone acts, is a classic example of <b>negligence</b>.</p><p><b>Waiting</b> for the call back is the tempting choice, since the nurse has already called, but the duty to the client continues until someone acts. Rechecking <b>in 1 hour</b> loses time a falling blood pressure may not allow, and reporting the delay <b>after the shift</b> deals with the provider, not with the client who needs help now.</p><p><b>Takeaway:</b> Worsening client, no response: go up the chain of command. Documenting and waiting can be negligence.</p>"
+    },
+    {
+      "id": "el-47",
+      "type": "mc",
+      "topic": "Workforce and legal risk",
+      "level": 2,
+      "stem": "A nurse finds a client on the floor beside the bed, assesses the client, and notifies the provider. Which entry should the nurse make in the client's record?",
+      "options": ["“Fall at 0215. Incident report filed with risk management.”", "“Found on floor by bed at 0215. No injuries seen. Provider notified.”", "“Fell at 0215 because the bed alarm hadn't been turned on.”", "“Climbed over the side rails onto the floor at 0215, it appears.”"],
+      "answer": 1,
+      "rationale": "<p>The record gets <b>objective facts</b>: what the nurse found, the assessment, and who was notified.</p><p>Noting the <b>incident report</b> is the tempting choice, since the report must be filed, but incident reports are for quality improvement: they're not part of the chart, and the chart doesn't mention them. Blaming the <b>bed alarm</b> and guessing that the client <b>climbed over the rails</b> are speculation, not what the nurse saw.</p><p><b>Takeaway:</b> Chart the facts you observed. File the incident report separately, and never mention it in the chart.</p>"
+    },
+    {
+      "id": "el-48",
+      "type": "sata",
+      "topic": "Workforce and legal risk",
+      "level": 3,
+      "stem": "A nurse is assigning tasks to an assistive personnel on a medical unit. Which tasks should the nurse delegate?",
+      "options": ["Teaching a client how to use an incentive spirometer", "Measuring vital signs for a client who is stable after surgery", "Helping a stable client with a bath and a linen change", "Assessing a client's skin for pressure injuries on admission", "Walking a client whose blood pressure dropped an hour ago", "Recording a client's intake and output at the end of the shift"],
+      "answer": [1, 2, 5],
+      "rationale": "<p>Assistive personnel can do routine tasks with predictable results for <b>stable</b> clients: <b>vital signs</b>, <b>hygiene</b>, and <b>intake and output</b>. The RN stays accountable, following the five rights of delegation: the right task, circumstance, person, direction, and supervision.</p><p>Walking the client whose <b>blood pressure dropped</b> is the tempting choice, since walking is a routine task, but this client is unstable, so the circumstance is wrong. <b>Teaching</b> and <b>assessment</b> stay with the RN.</p><p><b>Takeaway:</b> Don't delegate assessment, teaching, evaluation, or the care of unstable clients. The RN stays accountable for what's delegated.</p>"
+    },
+    {
+      "id": "el-49",
+      "type": "mc",
+      "topic": "Workforce and legal risk",
+      "level": 2,
+      "stem": "At the start of a shift, a nurse is assigned eight clients, three of them unstable, and believes the load is unsafe. Which action should the nurse take?",
+      "options": ["Decline the assignment until a safer ratio can be arranged", "Accept it, and raise the staffing at the next staff meeting", "Accept it, tell the charge nurse, and file an objection form", "Accept it, and report the staffing to the board of nursing"],
+      "answer": 2,
+      "rationale": "<p>With an unsafe assignment, the nurse <b>accepts</b> it, tells the <b>charge nurse</b> or supervisor right away (the chain of command), and documents the concern by the facility's process, such as an assignment despite objection form.</p><p><b>Declining</b> is the tempting choice, since the load is unsafe, but the clients still need a nurse, and refusing leaves them without one. The <b>next staff meeting</b> is too late for today's clients, and the <b>board of nursing</b> skips the chain of command.</p><p><b>Takeaway:</b> Unsafe assignment: accept it, raise it with the charge nurse now, and document the objection.</p>"
+    },
+    {
+      "id": "el-50",
+      "type": "mc",
+      "topic": "Workforce and legal risk",
+      "level": 3,
+      "stem": "A nurse notices that a coworker charts hourly rounds on clients that weren't done, saying, “Everyone does it, and the unit gets graded on it.” Which action should the nurse take?",
+      "options": ["Remind the coworker to chart rounds after doing them, from now on", "Do the coworker's missed rounds so that the clients are checked", "Ask the coworker to fix the earlier entries with late entries", "Report it to the nurse manager or the compliance hotline"],
+      "answer": 3,
+      "rationale": "<p>Charting care that wasn't given is <b>falsifying records</b>, a form of <b>fraud</b> (intentional deception for gain), and it can hide harm to clients. The nurse reports it through the chain of command or the compliance hotline. Whistleblowers are protected.</p><p><b>Reminding the coworker</b> is the tempting choice, since it feels collegial, but it leaves the false entries in place and the practice unreported. Doing the <b>missed rounds</b> helps today's clients but hides the problem, and <b>late entries</b> can't make up care that never happened.</p><p><b>Takeaway:</b> Fraud is intentional deception (billing or charting care never given). Waste is overuse; abuse is improper practice that adds cost. Report suspected fraud through the chain of command or the hotline.</p>"
+    }
+  ]
+}

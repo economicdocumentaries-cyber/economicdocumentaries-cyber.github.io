@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" font-family="Arial, Helvetica, sans-serif">
+  <title>The airways and lungs, front view</title>
+  <!-- An original drawing for the Practice Exam Center: the larynx, trachea,
+       main bronchi, lungs, and diaphragm seen from the front, so the client's
+       right is on the viewer's left. All five lobes share one color, so color
+       doesn't tell them apart; the fissures are drawn as lines between them.
+       Each clickable part is its own shape with an id (resp-larynx,
+       resp-trachea, resp-right-bronchus, resp-left-bronchus, resp-rul,
+       resp-rml, resp-rll, resp-lul, resp-lll, resp-diaphragm), so hot-spot
+       areas can be checked against them. The right main bronchus is drawn
+       wider, shorter, and more vertical than the left, as it is in the body,
+       and the left lung has the cardiac notch. -->
+  <rect width="480" height="560" fill="#FFFFFF"/>
+  <g font-size="15" font-weight="700" fill="#5C4A48" pointer-events="none">
+    <text x="18" y="30">R</text>
+    <text x="450" y="30">L</text>
+  </g>
+
+  <!-- the lungs: the right lung (viewer's left) in three lobes, the left lung in two -->
+  <g fill="#F4DCD6" stroke="#A86F68" stroke-width="2.5" stroke-linejoin="round">
+    <!-- right upper lobe: from the apex down to the horizontal fissure -->
+    <path id="resp-rul" d="M150 118 C120 122 92 160 80 214 C74 242 72 262 72 284 L208 284 C210 262 212 240 214 222 C215 206 212 190 206 176 C196 146 176 118 150 118 Z"/>
+    <!-- right middle lobe: between the horizontal fissure and the oblique fissure, toward the front and middle -->
+    <path id="resp-rml" d="M72 284 L208 284 C209 300 210 318 210 336 C211 362 212 392 214 424 L208 452 C176 400 128 336 72 300 Z"/>
+    <!-- right lower lobe: below the oblique fissure, toward the side and base -->
+    <path id="resp-rll" d="M72 300 C128 336 176 400 208 452 C176 462 132 468 96 470 C78 470 66 464 64 450 C60 410 62 360 66 330 C68 318 70 308 72 300 Z"/>
+    <!-- left upper lobe: above the oblique fissure, with the cardiac notch on its inner edge -->
+    <path id="resp-lul" d="M330 118 C360 122 388 160 400 214 C406 238 408 252 408 262 C376 300 336 352 300 420 C294 408 288 398 286 386 C298 370 304 350 298 330 C292 312 282 302 274 296 C272 270 268 240 266 222 C265 206 268 190 274 176 C284 146 304 118 330 118 Z"/>
+    <!-- left lower lobe: below the oblique fissure -->
+    <path id="resp-lll" d="M408 262 C412 300 414 350 414 400 C414 436 410 458 396 466 C372 474 330 470 300 460 L300 420 C336 352 376 300 408 262 Z"/>
+  </g>
+  <!-- the fissures, drawn over the lobe edges -->
+  <g fill="none" stroke="#8A5650" stroke-width="2" stroke-dasharray="7 5" pointer-events="none">
+    <path d="M72 284 L208 284"/>
+    <path d="M72 300 C128 336 176 400 208 452"/>
+    <path d="M408 262 C376 300 336 352 300 420"/>
+  </g>
+
+  <!-- the diaphragm under both lungs; the right dome sits a little higher (the liver is below it) -->
+  <path id="resp-diaphragm" fill="#D9A79C" stroke="#8E5B52" stroke-width="2.5" stroke-linejoin="round"
+    d="M40 494 C70 478 120 474 170 470 C190 468 204 462 212 460 C228 466 236 472 240 474 C246 470 262 466 300 466 C350 468 404 476 440 494 L440 514 C404 498 350 492 300 492 C262 492 248 496 240 500 C232 496 220 488 210 486 C180 488 120 496 40 514 Z"/>
+
+  <!-- the airway: larynx, trachea with its cartilage rings, and the main bronchi -->
+  <g fill="#E6ECF1" stroke="#6E7F8D" stroke-width="2.5" stroke-linejoin="round">
+    <path id="resp-larynx" d="M210 42 L270 42 L266 74 C262 90 252 98 240 100 C228 98 218 90 214 74 Z"/>
+    <path id="resp-trachea" d="M226 100 L254 100 L254 196 L240 206 L226 196 Z"/>
+    <path id="resp-right-bronchus" d="M224 192 L242 206 L236 274 L208 270 Z"/>
+    <path id="resp-left-bronchus" d="M256 192 L240 206 L304 262 L316 246 Z"/>
+  </g>
+  <g fill="none" stroke="#6E7F8D" stroke-width="1.6" pointer-events="none">
+    <path d="M228 114 L252 114 M228 128 L252 128 M228 142 L252 142 M228 156 L252 156 M228 170 L252 170 M228 184 L252 184"/>
+    <path d="M220 62 L260 62"/>
+  </g>
+</svg>

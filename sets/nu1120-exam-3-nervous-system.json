@@ -43,26 +43,29 @@
       "id": "ns-01",
       "type": "mc",
       "topic": "Nervous system organization",
+      "level": 1,
       "stem": "A nurse is reviewing how the nervous system is organized. Which of the following make up the central nervous system (CNS)?",
       "options": ["The brain and the 12 pairs of cranial nerves", "The sympathetic and parasympathetic divisions", "The brain and the spinal cord", "The spinal cord and the 31 pairs of spinal nerves"],
       "answer": 2,
-      "rationale": "<p><b>The brain and the spinal cord</b> make up the CNS. The CNS receives and integrates information and sends out motor commands.</p><p>The other options include parts of the <b>peripheral nervous system (PNS)</b>, which is everything outside the brain and spinal cord. The 12 pairs of cranial nerves and the 31 pairs of spinal nerves are peripheral nerves. The sympathetic and parasympathetic divisions belong to the autonomic nervous system, which is part of the PNS.</p>"
+      "rationale": "<p><b>The brain and the spinal cord</b> make up the CNS. The CNS receives and integrates information and sends out motor commands.</p><p>The other options include parts of the <b>peripheral nervous system (PNS)</b>, which is everything outside the brain and spinal cord. The 12 pairs of cranial nerves and the 31 pairs of spinal nerves are peripheral nerves. The sympathetic and parasympathetic divisions belong to the autonomic nervous system, which is part of the PNS.</p><p><b>The brain and the cranial nerves</b> is the tempting choice, since the cranial nerves start at the brain, but every nerve outside the brain and spinal cord, cranial or spinal, belongs to the peripheral nervous system.</p>"
     },
     {
       "id": "ns-02",
       "type": "matrix",
       "topic": "Nervous system organization",
+      "level": 2,
       "stem": "For each body function, specify whether it is controlled mainly by the somatic nervous system or the autonomic nervous system.",
       "rowHeader": "Body function",
       "columns": ["Somatic", "Autonomic"],
       "rows": ["Walking across the room", "Speeding up the heart rate during exercise", "Moving food through the intestines", "Raising a hand to ask a question", "Dilating the pupils in dim light", "Sweating in a hot room"],
       "answer": [0, 1, 1, 0, 1, 1],
-      "rationale": "<p>The <b>somatic</b> nervous system controls voluntary movement of skeletal muscles, such as <b>walking</b> and <b>raising a hand</b>.</p><p>The <b>autonomic</b> nervous system works automatically (involuntarily) on the heart, smooth muscle, and glands. <b>Speeding up the heart rate</b>, <b>moving food through the intestines</b> (peristalsis), <b>dilating the pupils</b>, and <b>sweating</b> are all automatic responses that a person doesn't consciously control.</p>"
+      "rationale": "<p>The <b>somatic</b> nervous system controls voluntary movement of skeletal muscles, such as <b>walking</b> and <b>raising a hand</b>.</p><p>The <b>autonomic</b> nervous system works automatically (involuntarily) on the heart, smooth muscle, and glands. <b>Speeding up the heart rate</b>, <b>moving food through the intestines</b> (peristalsis), <b>dilating the pupils</b>, and <b>sweating</b> are all automatic responses that a person doesn't consciously control.</p><p>The usual mix-up is thinking “automatic” means somatic. The somatic system controls voluntary skeletal muscle; the autonomic system runs the heart, smooth muscle, and glands without conscious effort.</p>"
     },
     {
       "id": "ns-03",
       "type": "dragdrop",
       "topic": "Nervous system organization",
+      "level": 2,
       "stem": "A nurse is reviewing how the peripheral nervous system carries information.",
       "text": "Fibers that carry signals from sensory receptors toward the central nervous system are {{0}} fibers. Fibers that carry commands from the central nervous system to muscles and glands are {{1}} fibers. Voluntary movement of skeletal muscles is controlled by the {{2}} nervous system.",
       "tokens": ["afferent", "efferent", "somatic", "autonomic", "parasympathetic", "central"],
@@ -73,24 +76,28 @@
       "id": "ns-04",
       "type": "mc",
       "topic": "Neurons and neuroglia",
+      "level": 2,
       "stem": "Which part of a neuron receives most of the incoming signals from other neurons?",
       "options": ["Axon terminal", "Dendrites", "Myelin sheath", "Axon"],
       "answer": 1,
-      "rationale": "<p><b>Dendrites</b> are the branching extensions of the neuron. They receive most of its input from other neurons and carry those impulses toward the cell body (soma).</p><p>The <b>axon</b> carries impulses <b>away</b> from the cell body, and the <b>axon terminal</b> at its end releases neurotransmitters to the next cell. The <b>myelin sheath</b> wraps and insulates the axon so impulses travel faster; it doesn't receive signals.</p>"
+      "rationale": "<p><b>Dendrites</b> are the branching extensions of the neuron. They receive most of its input from other neurons and carry those impulses toward the cell body (soma).</p><p>The <b>axon</b> carries impulses <b>away</b> from the cell body, and the <b>axon terminal</b> at its end releases neurotransmitters to the next cell. The <b>myelin sheath</b> wraps and insulates the axon so impulses travel faster; it doesn't receive signals.</p>",
+      "hidden": true
     },
     {
       "id": "ns-05",
       "type": "sata",
       "topic": "Neurons and neuroglia",
+      "level": 2,
       "stem": "A nurse is teaching a group of nursing students about the myelin sheath. Which of the following statements are accurate?",
       "options": ["It speeds up the movement of action potentials along the axon.", "Oligodendrocytes form it in the central nervous system.", "It is a protective layer of fat (lipids) and protein.", "Myelinated fibers make up the gray matter of the brain.", "Schwann cells form it in the peripheral nervous system.", "Damage to it makes nerve signals travel faster."],
       "answer": [0, 1, 2, 4],
-      "rationale": "<p>The myelin sheath is a protective layer of <b>fat and protein</b> wrapped around the axon. Like the insulation on an electrical wire, it <b>speeds up</b> the conduction of action potentials. <b>Oligodendrocytes</b> form myelin in the CNS, and <b>Schwann cells</b> form it in the PNS.</p><p><b>Myelinated fibers make up the white matter</b>, not the gray matter; gray matter is mostly nerve cell bodies and unmyelinated fibers. <b>Damaged myelin slows</b> nerve signals, or stops them altogether, as in multiple sclerosis.</p>"
+      "rationale": "<p>The myelin sheath is a protective layer of <b>fat and protein</b> wrapped around the axon. Like the insulation on an electrical wire, it <b>speeds up</b> the conduction of action potentials. <b>Oligodendrocytes</b> form myelin in the CNS, and <b>Schwann cells</b> form it in the PNS.</p><p><b>Myelinated fibers make up the white matter</b>, not the gray matter; gray matter is mostly nerve cell bodies and unmyelinated fibers. <b>Damaged myelin slows</b> nerve signals, or stops them altogether, as in multiple sclerosis.</p><p><b>Myelinated fibers in the gray matter</b> is the tempting choice, but myelin's fat is what makes white matter white. Gray matter is mostly cell bodies and unmyelinated fibers.</p>"
     },
     {
       "id": "ns-06",
       "type": "matrix",
       "topic": "Neurons and neuroglia",
+      "level": 1,
       "stem": "For each type of neuroglia (glial cell), specify its main function.",
       "rowHeader": "Glial cell",
       "columns": ["Helps form the blood–brain barrier", "Acts as the brain's immune cell", "Lines the ventricles and helps make cerebrospinal fluid", "Forms myelin in the central nervous system"],
@@ -102,24 +109,27 @@
       "id": "ns-07",
       "type": "mc",
       "topic": "Neurons and neuroglia",
+      "level": 1,
       "stem": "Which glial cell is the most numerous in the central nervous system and helps regulate the brain's internal environment?",
       "options": ["Schwann cell", "Microglia", "Satellite cell", "Astrocyte"],
       "answer": 3,
-      "rationale": "<p><b>Astrocytes</b> are the most numerous glial cells in the CNS. They regulate the brain's internal environment, including its energy supply and signal transmission, and their foot processes are part of the blood–brain barrier.</p><p><b>Microglia</b> are the immune cells (macrophages) of the CNS. <b>Satellite cells</b> surround nerve cell bodies in peripheral ganglia, where they regulate the microenvironment much as astrocytes do in the brain. <b>Schwann cells</b> form myelin in the peripheral nervous system.</p>"
+      "rationale": "<p><b>Astrocytes</b> are the most numerous glial cells in the CNS. They regulate the brain's internal environment, including its energy supply and signal transmission, and their foot processes are part of the blood–brain barrier.</p><p><b>Microglia</b> are the immune cells (macrophages) of the CNS. <b>Satellite cells</b> surround nerve cell bodies in peripheral ganglia, where they regulate the microenvironment much as astrocytes do in the brain. <b>Schwann cells</b> form myelin in the peripheral nervous system.</p><p><b>Microglia</b> are the tempting choice, since they're CNS glial cells too, but they're the brain's immune cells. Astrocytes are the most numerous, and they regulate the brain's internal environment.</p>"
     },
     {
       "id": "ns-08",
       "type": "mc",
       "topic": "Neurons and neuroglia",
+      "level": 2,
       "stem": "An action potential usually begins in which part of the neuron?",
       "options": ["The dendritic tree", "The nucleus of the cell body", "The axon hillock", "The myelin sheath"],
       "answer": 2,
-      "rationale": "<p>The <b>axon hillock</b>, where the axon leaves the cell body, has the most voltage-gated sodium channels. That makes it the most easily excited part of the neuron and the place where the action potential starts (the trigger zone).</p><p><b>Dendrites</b> receive incoming signals and carry them toward the cell body. The <b>nucleus</b> in the cell body directs protein synthesis. The <b>myelin sheath</b> insulates the axon; it doesn't start impulses.</p>"
+      "rationale": "<p>The <b>axon hillock</b>, where the axon leaves the cell body, has the most voltage-gated sodium channels. That makes it the most easily excited part of the neuron and the place where the action potential starts (the trigger zone).</p><p><b>Dendrites</b> receive incoming signals and carry them toward the cell body. The <b>nucleus</b> in the cell body directs protein synthesis. The <b>myelin sheath</b> insulates the axon; it doesn't start impulses.</p><p><b>The dendritic tree</b> is the tempting choice, since signals enter the neuron there, but dendrites receive. The action potential starts at the axon hillock, where the axon leaves the cell body.</p>"
     },
     {
       "id": "ns-09",
       "type": "mc",
       "topic": "Neurological disorders",
+      "level": 2,
       "stem": "A client who has multiple sclerosis asks the nurse why the disease affects movement and sensation. The nurse should explain that multiple sclerosis damages which of the following?",
       "options": ["The myelin sheath that insulates axons in the brain and spinal cord", "The dopamine-producing neurons of the midbrain", "The bones of the vertebral column", "The sensory receptors in the skin"],
       "answer": 0,
@@ -130,14 +140,16 @@
       "id": "ns-10",
       "type": "order",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing how a neuron fires. Place the events of an action potential in the order in which they occur, starting with the neuron at rest.",
       "items": ["The inside of the neuron rests at about −70 mV.", "A stimulus brings the membrane to threshold.", "Voltage-gated sodium channels open, and sodium rushes in (depolarization).", "Potassium channels open, and potassium flows out (repolarization).", "The membrane briefly becomes more negative than at rest (hyperpolarization).", "The membrane returns to its resting potential."],
-      "rationale": "<p>At rest, the inside of the neuron is about <b>−70 mV</b>. When a stimulus brings the membrane to <b>threshold</b>, voltage-gated <b>sodium channels open</b> and sodium rushes in, so the inside becomes positive (<b>depolarization</b>, peaking near +30 mV). The sodium channels then close, and slower <b>potassium channels open</b>; potassium flows out and brings the charge back down (<b>repolarization</b>). Because the potassium channels close slowly, the membrane briefly <b>overshoots</b> the resting value (<b>hyperpolarization</b>) before it <b>returns to rest</b>. The refractory period during this time keeps the impulse moving in one direction.</p>"
+      "rationale": "<p>At rest, the inside of the neuron is about <b>−70 mV</b>. When a stimulus brings the membrane to <b>threshold</b>, voltage-gated <b>sodium channels open</b> and sodium rushes in, so the inside becomes positive (<b>depolarization</b>, peaking near +30 mV). The sodium channels then close, and slower <b>potassium channels open</b>; potassium flows out and brings the charge back down (<b>repolarization</b>). Because the potassium channels close slowly, the membrane briefly <b>overshoots</b> the resting value (<b>hyperpolarization</b>) before it <b>returns to rest</b>. The refractory period during this time keeps the impulse moving in one direction.</p><p>The usual mix-up is the order of the ion flows: sodium rushes in first (depolarization), potassium flows out next (repolarization), and the overshoot (hyperpolarization) comes last.</p>"
     },
     {
       "id": "ns-11",
       "type": "dropdown",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing the resting membrane potential of a neuron. Complete the following sentences.",
       "text": "At rest, the inside of a neuron is {{0}} compared with the outside. Sodium ions are more concentrated {{1}} the cell, and the sodium-potassium pump moves {{2}}.",
       "blanks": [
@@ -151,15 +163,18 @@
       "id": "ns-12",
       "type": "mc",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing how action potentials work. Which statement describes the all-or-none principle?",
       "options": ["A stronger stimulus produces a larger action potential.", "An action potential travels in both directions along the axon at once.", "A neuron can fire again immediately after an action potential.", "Once threshold is reached, the action potential fires completely, at the same size every time."],
       "answer": 3,
-      "rationale": "<p>Under the <b>all-or-none</b> principle, a stimulus that reaches threshold triggers a <b>complete</b> action potential, and a stimulus below threshold triggers none. A <b>stronger stimulus doesn't make a bigger action potential</b>; the size is always the same.</p><p>During the <b>refractory period</b> after an action potential, the sodium channels can't reopen, so the neuron <b>can't fire again right away</b>, and the impulse travels in <b>only one direction</b> down the axon.</p>"
+      "rationale": "<p>Under the <b>all-or-none</b> principle, a stimulus that reaches threshold triggers a <b>complete</b> action potential, and a stimulus below threshold triggers none. A <b>stronger stimulus doesn't make a bigger action potential</b>; the size is always the same.</p><p>During the <b>refractory period</b> after an action potential, the sodium channels can't reopen, so the neuron <b>can't fire again right away</b>, and the impulse travels in <b>only one direction</b> down the axon.</p>",
+      "hidden": true
     },
     {
       "id": "ns-13",
       "type": "sata",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "Which of the following neurotransmitters are correctly matched with their functions?",
       "options": ["GABA: the main inhibitory neurotransmitter in the brain", "Norepinephrine: slows the heart rate during rest", "Dopamine: motor control, learning, and reward", "Serotonin: the neurotransmitter lost in Parkinson disease", "Acetylcholine: triggers skeletal muscle contraction at the neuromuscular junction"],
       "answer": [0, 2, 4],
@@ -170,6 +185,7 @@
       "id": "ns-14",
       "type": "mc",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "At the neuromuscular junction, which event directly causes the motor neuron to release acetylcholine into the synaptic cleft?",
       "options": ["Sodium entering the muscle fiber", "Calcium entering the nerve terminal", "Acetylcholinesterase breaking down acetylcholine", "Potassium leaving the muscle fiber"],
       "answer": 1,
@@ -180,16 +196,19 @@
       "id": "ns-15",
       "type": "hotspot",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is reviewing the functions of the cerebral lobes. Click the lobe that contains the primary visual cortex.",
       "image": "img/brain-lateral.svg",
       "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
       "regions": [{"x": 76.7, "y": 29, "w": 11.3, "h": 32}, {"x": 77.4, "y": 22, "w": 7.3, "h": 7}, {"x": 75.4, "y": 61, "w": 8.6, "h": 5}, {"x": 88, "y": 37, "w": 2, "h": 19}],
-      "rationale": "<p>The <b>occipital lobe</b>, at the back of the cerebrum, contains the primary visual cortex. It receives information from the retina and interprets what the person sees.</p><p>The <b>frontal lobe</b> (front) handles voluntary movement, problem-solving, attention, memory, and speech production. The <b>parietal lobe</b> (top, behind the central sulcus) processes touch and body position. The <b>temporal lobe</b> (side, below the lateral sulcus) processes hearing and language comprehension. The cerebellum, below the occipital lobe, coordinates movement and balance.</p>"
+      "rationale": "<p>The <b>occipital lobe</b>, at the back of the cerebrum, contains the primary visual cortex. It receives information from the retina and interprets what the person sees.</p><p>The <b>frontal lobe</b> (front) handles voluntary movement, problem-solving, attention, memory, and speech production. The <b>parietal lobe</b> (top, behind the central sulcus) processes touch and body position. The <b>temporal lobe</b> (side, below the lateral sulcus) processes hearing and language comprehension. The cerebellum, below the occipital lobe, coordinates movement and balance.</p>",
+      "hidden": true
     },
     {
       "id": "ns-16",
       "type": "hotspot",
       "topic": "Brain structures",
+      "level": 1,
       "stem": "Click the lobe that contains the auditory cortex, where hearing is processed.",
       "image": "img/brain-lateral.svg",
       "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
@@ -200,6 +219,7 @@
       "id": "ns-17",
       "type": "mc",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is caring for a client who had a stroke. The client speaks fluently, but the words make little sense, and the client can't follow spoken directions. The nurse should recognize that the stroke most likely damaged which area of the brain?",
       "options": ["Broca's area in the frontal lobe", "The primary visual cortex in the occipital lobe", "Wernicke's area in the temporal lobe", "The primary somatosensory cortex in the parietal lobe"],
       "answer": 2,
@@ -210,69 +230,81 @@
       "id": "ns-18",
       "type": "mc",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is assessing a client who has damage to the cerebellum. Which finding should the nurse expect?",
       "options": ["An unsteady, uncoordinated gait (ataxia)", "Loss of the sense of smell", "Inability to feel light touch on one side of the body", "Inability to understand spoken words"],
       "answer": 0,
-      "rationale": "<p>The <b>cerebellum</b> coordinates smooth voluntary movement, balance, and motor learning. Damage to it causes <b>ataxia</b> (lack of coordination), poor balance, and an unsteady, abnormal gait.</p><p>The <b>sense of smell</b> depends on the olfactory nerve (CN I) and the olfactory area. <b>Feeling light touch</b> is processed in the somatosensory cortex of the parietal lobe. <b>Understanding spoken words</b> depends on Wernicke's area in the temporal lobe.</p>"
+      "rationale": "<p>The <b>cerebellum</b> coordinates smooth voluntary movement, balance, and motor learning. Damage to it causes <b>ataxia</b> (lack of coordination), poor balance, and an unsteady, abnormal gait.</p><p>The <b>sense of smell</b> depends on the olfactory nerve (CN I) and the olfactory area. <b>Feeling light touch</b> is processed in the somatosensory cortex of the parietal lobe. <b>Understanding spoken words</b> depends on Wernicke's area in the temporal lobe.</p><p><b>Losing feeling on one side</b> is the tempting choice, since it's another neurologic deficit, but it points to the opposite parietal lobe. The cerebellum coordinates movement, so its damage shows as ataxia.</p>"
     },
     {
       "id": "ns-19",
       "type": "mc",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "Which part of the brainstem regulates breathing, heart rate, and blood pressure, and coordinates the coughing, swallowing, and vomiting reflexes?",
       "options": ["Pons", "Midbrain", "Thalamus", "Medulla oblongata"],
       "answer": 3,
-      "rationale": "<p>The <b>medulla oblongata</b>, the lowest part of the brainstem, is continuous with the spinal cord. It regulates functions needed for survival: breathing (in response to carbon dioxide and pH), heart rate, blood pressure, and cardiac contractility. It also coordinates protective reflexes such as vomiting, swallowing, coughing, and sneezing.</p><p>The <b>pons</b> relays signals between the cerebrum, cerebellum, and spinal cord. The <b>midbrain</b> is involved in movement and motivation, and its substantia nigra produces dopamine. The <b>thalamus</b> is part of the diencephalon, not the brainstem; it relays sensory information to the cortex.</p>"
+      "rationale": "<p>The <b>medulla oblongata</b>, the lowest part of the brainstem, is continuous with the spinal cord. It regulates functions needed for survival: breathing (in response to carbon dioxide and pH), heart rate, blood pressure, and cardiac contractility. It also coordinates protective reflexes such as vomiting, swallowing, coughing, and sneezing.</p><p>The <b>pons</b> relays signals between the cerebrum, cerebellum, and spinal cord. The <b>midbrain</b> is involved in movement and motivation, and its substantia nigra produces dopamine. The <b>thalamus</b> is part of the diencephalon, not the brainstem; it relays sensory information to the cortex.</p>",
+      "hidden": true
     },
     {
       "id": "ns-20",
       "type": "sata",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "Which functions does the hypothalamus regulate?",
       "options": ["Body temperature", "Smooth coordination of voluntary movement", "Thirst and appetite", "Hormone release by the pituitary gland", "Relaying sensory information to the cerebral cortex", "Sleep–wake (circadian) rhythms"],
       "answer": [0, 2, 3, 5],
-      "rationale": "<p>Although small, the <b>hypothalamus</b> is essential for homeostasis. It regulates <b>body temperature</b>, <b>thirst and appetite</b>, heart rate, blood pressure, and <b>circadian rhythms</b>, and it links the nervous system to the endocrine system by controlling <b>hormone release by the pituitary gland</b>. It also makes antidiuretic hormone (ADH) and oxytocin.</p><p>The <b>cerebellum</b> coordinates smooth voluntary movement. The <b>thalamus</b> is the main relay center that sends sensory information to the cerebral cortex.</p>"
+      "rationale": "<p>Although small, the <b>hypothalamus</b> is essential for homeostasis. It regulates <b>body temperature</b>, <b>thirst and appetite</b>, heart rate, blood pressure, and <b>circadian rhythms</b>, and it links the nervous system to the endocrine system by controlling <b>hormone release by the pituitary gland</b>. It also makes antidiuretic hormone (ADH) and oxytocin.</p><p>The <b>cerebellum</b> coordinates smooth voluntary movement. The <b>thalamus</b> is the main relay center that sends sensory information to the cerebral cortex.</p>",
+      "hidden": true
     },
     {
       "id": "ns-21",
       "type": "mc",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is caring for a client whose level of consciousness has decreased. The nurse recalls that which brain system keeps a person awake and alert?",
       "options": ["The limbic system", "The reticular activating system (RAS)", "The basal nuclei", "The cerebellum"],
       "answer": 1,
-      "rationale": "<p>The <b>reticular activating system</b>, part of the reticular formation in the brainstem, regulates <b>consciousness</b>. Sensory input keeps it active, which promotes wakefulness and alertness. It also filters out repetitive or unimportant stimuli, which prevents sensory overload.</p><p>The <b>limbic system</b> controls emotion, memory, and motivation. The <b>basal nuclei</b> help control voluntary movement and muscle tone. The <b>cerebellum</b> coordinates movement and balance.</p>"
+      "rationale": "<p>The <b>reticular activating system</b>, part of the reticular formation in the brainstem, regulates <b>consciousness</b>. Sensory input keeps it active, which promotes wakefulness and alertness. It also filters out repetitive or unimportant stimuli, which prevents sensory overload.</p><p>The <b>limbic system</b> controls emotion, memory, and motivation. The <b>basal nuclei</b> help control voluntary movement and muscle tone. The <b>cerebellum</b> coordinates movement and balance.</p>",
+      "hidden": true
     },
     {
       "id": "ns-22",
       "type": "hotspot",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "A nurse is reviewing a cross-section of the spinal cord. Click an area of gray matter that contains the cell bodies of the motor neurons that control skeletal muscles.",
       "image": "img/spinal-cord-section.svg",
       "alt": "Cross-section of the spinal cord, with the back (posterior) at the top and the front (anterior) at the bottom. Butterfly-shaped gray matter surrounds the central canal, and nerve roots with ganglia leave each side.",
       "regions": [{"x": 37.9, "y": 58, "w": 7.1, "h": 11}, {"x": 55, "y": 58, "w": 7.1, "h": 11}, {"x": 35, "y": 62, "w": 2.8, "h": 9}, {"x": 62.2, "y": 62, "w": 2.8, "h": 9}, {"x": 37.9, "y": 69, "w": 5, "h": 3}, {"x": 57.2, "y": 69, "w": 5, "h": 3}, {"x": 45, "y": 58, "w": 1.4, "h": 7}, {"x": 53.6, "y": 58, "w": 1.4, "h": 7}],
-      "rationale": "<p>The cell bodies of the motor neurons that control skeletal muscles are in the <b>ventral (anterior) horns</b> of the gray matter: the broad lower wings of the butterfly in this view. Their fibers leave through the <b>ventral roots</b> to reach skeletal muscles.</p><p>The <b>dorsal (posterior) horns</b>, at the top, process incoming sensory information. Sensory fibers enter through the <b>dorsal roots</b>, and the cell bodies of those sensory neurons sit in the <b>dorsal root ganglia</b>, outside the cord. The white matter around the gray matter holds the ascending and descending tracts.</p>"
+      "rationale": "<p>The cell bodies of the motor neurons that control skeletal muscles are in the <b>ventral (anterior) horns</b> of the gray matter: the broad lower wings of the butterfly in this view. Their fibers leave through the <b>ventral roots</b> to reach skeletal muscles.</p><p>The <b>dorsal (posterior) horns</b>, at the top, process incoming sensory information. Sensory fibers enter through the <b>dorsal roots</b>, and the cell bodies of those sensory neurons sit in the <b>dorsal root ganglia</b>, outside the cord. The white matter around the gray matter holds the ascending and descending tracts.</p>",
+      "hidden": true
     },
     {
       "id": "ns-23",
       "type": "order",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "A nurse is reviewing the protective layers around the spinal cord. Place the layers and spaces in order, starting at the vertebra and moving inward to the spinal cord.",
       "items": ["Epidural space", "Dura mater", "Subdural space", "Arachnoid mater", "Subarachnoid space", "Pia mater"],
-      "rationale": "<p>Just inside the bone of the vertebra is the <b>epidural space</b>, which holds fat (adipose tissue) and blood vessels. Next is the <b>dura mater</b>, the tough outer covering, then the <b>subdural space</b>. The <b>arachnoid mater</b> is the weblike middle layer. Beneath it, the <b>subarachnoid space</b> holds cerebrospinal fluid. The delicate <b>pia mater</b> clings directly to the surface of the spinal cord. A memory aid for the meninges from the outside in: <b>DAP</b> (dura, arachnoid, pia).</p>"
+      "rationale": "<p>Just inside the bone of the vertebra is the <b>epidural space</b>, which holds fat (adipose tissue) and blood vessels. Next is the <b>dura mater</b>, the tough outer covering, then the <b>subdural space</b>. The <b>arachnoid mater</b> is the weblike middle layer. Beneath it, the <b>subarachnoid space</b> holds cerebrospinal fluid. The delicate <b>pia mater</b> clings directly to the surface of the spinal cord. A memory aid for the meninges from the outside in: <b>DAP</b> (dura, arachnoid, pia).</p><p>The usual mix-up is the order of the layers. From the outside in: the dura mater, the arachnoid mater, then the pia mater, which clings to the cord, with the CSF-filled subarachnoid space between the arachnoid and the pia.</p>"
     },
     {
       "id": "ns-24",
       "type": "mc",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "A nurse is assisting with a lumbar puncture to collect cerebrospinal fluid (CSF). The nurse knows that the needle must reach which space?",
       "options": ["The epidural space", "The subdural space", "The subarachnoid space", "The central canal of the spinal cord"],
       "answer": 2,
-      "rationale": "<p>CSF circulates in the <b>subarachnoid space</b>, between the arachnoid mater and the pia mater, so that's where a lumbar puncture collects it. The needle goes in low in the lumbar spine, below the level where the spinal cord ends (around L1 to L2), so it doesn't touch the cord.</p><p>The <b>epidural space</b> lies outside the dura and holds fat and blood vessels, not CSF. The <b>subdural space</b> lies between the dura and the arachnoid. The <b>central canal</b> is inside the spinal cord itself, which a lumbar puncture must avoid.</p>"
+      "rationale": "<p>CSF circulates in the <b>subarachnoid space</b>, between the arachnoid mater and the pia mater, so that's where a lumbar puncture collects it. The needle goes in low in the lumbar spine, below the level where the spinal cord ends (around L1 to L2), so it doesn't touch the cord.</p><p>The <b>epidural space</b> lies outside the dura and holds fat and blood vessels, not CSF. The <b>subdural space</b> lies between the dura and the arachnoid. The <b>central canal</b> is inside the spinal cord itself, which a lumbar puncture must avoid.</p><p><b>The epidural space</b> is the tempting choice, since that's where epidural anesthesia goes, but it holds no CSF. The fluid is in the subarachnoid space, under the arachnoid mater.</p>"
     },
     {
       "id": "ns-25",
       "type": "fill",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "How many pairs of spinal nerves branch from the spinal cord?",
       "answer": 31,
       "unit": "pairs",
@@ -283,16 +315,19 @@
       "id": "ns-26",
       "type": "emr",
       "topic": "Cranial nerves",
+      "level": 2,
       "stem": "A nurse is preparing to test the cranial nerves that move the eyes. Which cranial nerves control eye movement?",
       "options": ["Oculomotor (CN III)", "Optic (CN II)", "Trochlear (CN IV)", "Facial (CN VII)", "Abducens (CN VI)", "Trigeminal (CN V)"],
       "answer": [0, 2, 4],
       "select": 3,
-      "rationale": "<p>Three cranial nerves move the eyes. The <b>oculomotor nerve (CN III)</b> moves most of the eye muscles, raises the eyelid, and constricts the pupil. The <b>trochlear nerve (CN IV)</b> moves the superior oblique muscle, which helps the eye look down. The <b>abducens nerve (CN VI)</b> moves the lateral rectus muscle, which turns the eye outward. A memory aid: <b>LR6, SO4</b>, and the rest are 3.</p><p>The <b>optic nerve (CN II)</b> carries vision, but it doesn't move the eye. The <b>trigeminal nerve (CN V)</b> carries sensation from the face and controls chewing. The <b>facial nerve (CN VII)</b> controls facial expression.</p>"
+      "rationale": "<p>Three cranial nerves move the eyes. The <b>oculomotor nerve (CN III)</b> moves most of the eye muscles, raises the eyelid, and constricts the pupil. The <b>trochlear nerve (CN IV)</b> moves the superior oblique muscle, which helps the eye look down. The <b>abducens nerve (CN VI)</b> moves the lateral rectus muscle, which turns the eye outward. A memory aid: <b>LR6, SO4</b>, and the rest are 3.</p><p>The <b>optic nerve (CN II)</b> carries vision, but it doesn't move the eye. The <b>trigeminal nerve (CN V)</b> carries sensation from the face and controls chewing. The <b>facial nerve (CN VII)</b> controls facial expression.</p>",
+      "hidden": true
     },
     {
       "id": "ns-27",
       "type": "matrix",
       "topic": "Cranial nerves",
+      "level": 1,
       "stem": "For each cranial nerve, specify whether it carries sensory signals, motor signals, or both.",
       "rowHeader": "Cranial nerve",
       "columns": ["Sensory", "Motor", "Both"],
@@ -304,33 +339,38 @@
       "id": "ns-28",
       "type": "mc",
       "topic": "Cranial nerves",
+      "level": 2,
       "stem": "A nurse is assessing a client's spinal accessory nerve (CN XI). Which instruction should the nurse give the client?",
-      "options": ["“Stick out your tongue and move it from side to side.”", "“Clench your teeth while I feel your jaw muscles.”", "“Smile, frown, and puff out your cheeks.”", "“Shrug your shoulders and turn your head while I push against them.”"],
+      "options": ["“Stick out your tongue, and move it side to side while I watch it.”", "“Clench your teeth while I feel the muscles of your jaw and temples.”", "“Smile, frown, and puff out your cheeks while I check for drooping.”", "“Shrug your shoulders and turn your head while I push against them.”"],
       "answer": 3,
-      "rationale": "<p>The <b>spinal accessory nerve (CN XI)</b> supplies the trapezius and sternocleidomastoid muscles, so the nurse tests it by having the client <b>shrug the shoulders</b> and <b>turn the head against resistance</b>, and compares the strength of both sides.</p><p>Moving the <b>tongue</b> tests the hypoglossal nerve (CN XII). <b>Clenching the teeth</b> tests the motor part of the trigeminal nerve (CN V). <b>Smiling, frowning, and puffing out the cheeks</b> test the facial nerve (CN VII).</p>"
+      "rationale": "<p>The <b>spinal accessory nerve (CN XI)</b> supplies the trapezius and sternocleidomastoid muscles, so the nurse tests it by having the client <b>shrug the shoulders</b> and <b>turn the head against resistance</b>, and compares the strength of both sides.</p><p>Moving the <b>tongue</b> tests the hypoglossal nerve (CN XII). <b>Clenching the teeth</b> tests the motor part of the trigeminal nerve (CN V). <b>Smiling, frowning, and puffing out the cheeks</b> test the facial nerve (CN VII).</p><p><b>Sticking out the tongue</b> is the tempting choice, since it's another test of a lower cranial nerve, but it checks the hypoglossal nerve (CN XII). CN XI moves the shoulders and turns the head.</p>"
     },
     {
       "id": "ns-29",
       "type": "mc",
       "topic": "Cranial nerves",
+      "level": 2,
       "stem": "A nurse notes that one side of a client's face droops when the client smiles, and the client reports that food tastes different on the front of the tongue. Which cranial nerve should the nurse suspect is affected?",
       "options": ["Facial (CN VII)", "Glossopharyngeal (CN IX)", "Trigeminal (CN V)", "Hypoglossal (CN XII)"],
       "answer": 0,
-      "rationale": "<p>The <b>facial nerve (CN VII)</b> controls the muscles of facial expression and carries taste from the <b>front two-thirds</b> of the tongue. It also controls the tear and saliva glands. Drooping on one side of the face with a change in taste points to this nerve.</p><p>The <b>glossopharyngeal nerve (CN IX)</b> carries taste from the <b>back third</b> of the tongue and controls throat muscles. The <b>trigeminal nerve (CN V)</b> carries facial sensation and controls chewing. The <b>hypoglossal nerve (CN XII)</b> moves the tongue.</p>"
+      "rationale": "<p>The <b>facial nerve (CN VII)</b> controls the muscles of facial expression and carries taste from the <b>front two-thirds</b> of the tongue. It also controls the tear and saliva glands. Drooping on one side of the face with a change in taste points to this nerve.</p><p>The <b>glossopharyngeal nerve (CN IX)</b> carries taste from the <b>back third</b> of the tongue and controls throat muscles. The <b>trigeminal nerve (CN V)</b> carries facial sensation and controls chewing. The <b>hypoglossal nerve (CN XII)</b> moves the tongue.</p><p><b>The trigeminal nerve</b> is the tempting choice, since it serves the face too, but it carries facial feeling and chewing. Drooping on smiling and changed taste at the front of the tongue point to the facial nerve.</p>"
     },
     {
       "id": "ns-30",
       "type": "sata",
       "topic": "Cranial nerves",
+      "level": 2,
       "stem": "Which of the following functions does the vagus nerve (CN X) control?",
       "options": ["Slowing the heart rate", "Turning the head", "Movement of the throat and voice box muscles", "Hearing and balance", "Digestion, including motility of the stomach and intestines", "Moving the tongue"],
       "answer": [0, 2, 4],
-      "rationale": "<p>The <b>vagus nerve (CN X)</b> is the main nerve of the parasympathetic nervous system. It controls organs in the chest and abdomen, so it <b>slows the heart rate</b> and supports <b>digestion</b>, and it moves the muscles of the <b>throat and voice box</b> for speech and swallowing.</p><p><b>Turning the head</b> is controlled by the spinal accessory nerve (CN XI), <b>hearing and balance</b> by the vestibulocochlear nerve (CN VIII), and <b>moving the tongue</b> by the hypoglossal nerve (CN XII).</p>"
+      "rationale": "<p>The <b>vagus nerve (CN X)</b> is the main nerve of the parasympathetic nervous system. It controls organs in the chest and abdomen, so it <b>slows the heart rate</b> and supports <b>digestion</b>, and it moves the muscles of the <b>throat and voice box</b> for speech and swallowing.</p><p><b>Turning the head</b> is controlled by the spinal accessory nerve (CN XI), <b>hearing and balance</b> by the vestibulocochlear nerve (CN VIII), and <b>moving the tongue</b> by the hypoglossal nerve (CN XII).</p>",
+      "hidden": true
     },
     {
       "id": "ns-31",
       "type": "order",
       "topic": "Reflexes",
+      "level": 2,
       "stem": "A nurse is reviewing how a reflex works. Place the parts of a reflex arc in the order in which the signal passes through them.",
       "items": ["Receptor", "Sensory neuron", "Integration center", "Motor neuron", "Effector"],
       "rationale": "<p>A reflex arc is a fast, automatic pathway. The <b>receptor</b> detects the stimulus; for a tendon reflex, the muscle spindle senses the stretch. The <b>sensory (afferent) neuron</b> carries the signal to the spinal cord. The <b>integration center</b> in the spinal cord connects it to the motor neuron, directly or through interneurons. The <b>motor (efferent) neuron</b> carries the command out, and the <b>effector</b>, a muscle or gland, responds.</p>",
@@ -340,6 +380,7 @@
       "id": "ns-32",
       "type": "mc",
       "topic": "Reflexes",
+      "level": 2,
       "stem": "A nurse taps the patellar tendon just below the kneecap with a reflex hammer. Which response should the nurse expect?",
       "options": ["The hamstrings contract, and the knee bends.", "The quadriceps contracts, and the lower leg kicks forward.", "The foot points downward (plantar flexion).", "The big toe moves up, and the other toes fan out."],
       "answer": 1,
@@ -350,6 +391,7 @@
       "id": "ns-33",
       "type": "matrix",
       "topic": "Reflexes",
+      "level": 2,
       "stem": "For each deep tendon reflex, specify the spinal cord segments it tests.",
       "rowHeader": "Reflex",
       "columns": ["C5–C6", "C7–C8", "L2–L4", "S1–S2"],
@@ -362,6 +404,7 @@
       "id": "ns-34",
       "type": "mc",
       "topic": "Reflexes",
+      "level": 2,
       "stem": "A nurse is assessing the reflexes of a healthy 9-month-old infant. Which reflex is still expected at this age?",
       "options": ["Moro (startle) reflex", "Rooting reflex", "Babinski reflex", "Stepping reflex"],
       "answer": 2,
@@ -372,6 +415,7 @@
       "id": "ns-35",
       "type": "mc",
       "topic": "Reflexes",
+      "level": 2,
       "stem": "While supporting a newborn's head and neck, a nurse lets the newborn's body drop a few centimeters. The newborn's arms extend and spread outward, and the fingers open. How should the nurse document this response?",
       "options": ["Moro (startle) reflex present", "Tonic neck reflex present", "Palmar grasp reflex present", "Rooting reflex present"],
       "answer": 0,
@@ -382,26 +426,30 @@
       "id": "ns-36",
       "type": "matrix",
       "topic": "Autonomic nervous system",
+      "level": 2,
       "stem": "For each effect, specify whether it results from sympathetic or parasympathetic stimulation.",
       "rowHeader": "Effect",
       "columns": ["Sympathetic", "Parasympathetic"],
       "rows": ["The bronchioles dilate.", "The pupils constrict for near vision.", "Gut motility increases.", "Blood flow to skeletal muscles increases.", "The detrusor muscle contracts to empty the bladder.", "The liver releases glucose.", "Tear and saliva glands increase their secretions."],
       "answer": [0, 1, 1, 0, 1, 0, 1],
-      "rationale": "<p>The <b>sympathetic</b> (fight-or-flight) division prepares the body for action: it <b>dilates the bronchioles</b>, <b>increases blood flow to skeletal muscles</b>, and makes the <b>liver release glucose</b> for energy.</p><p>The <b>parasympathetic</b> (rest-and-digest) division supports routine body functions: it <b>constricts the pupils</b> for near vision, <b>increases gut motility</b>, <b>contracts the detrusor muscle</b> (while relaxing the urethral sphincters) to empty the bladder, and <b>increases tear and saliva secretion</b>.</p>"
+      "rationale": "<p>The <b>sympathetic</b> (fight-or-flight) division prepares the body for action: it <b>dilates the bronchioles</b>, <b>increases blood flow to skeletal muscles</b>, and makes the <b>liver release glucose</b> for energy.</p><p>The <b>parasympathetic</b> (rest-and-digest) division supports routine body functions: it <b>constricts the pupils</b> for near vision, <b>increases gut motility</b>, <b>contracts the detrusor muscle</b> (while relaxing the urethral sphincters) to empty the bladder, and <b>increases tear and saliva secretion</b>.</p><p>The usual mix-up is digestion: sympathetic stimulation slows it, as blood goes to the muscles, and parasympathetic stimulation speeds it up (“rest and digest”).</p>"
     },
     {
       "id": "ns-37",
       "type": "mc",
       "topic": "Autonomic nervous system",
+      "level": 2,
       "stem": "Which neurotransmitter do most sympathetic postganglionic neurons release at their target organs?",
       "options": ["Acetylcholine", "Dopamine", "GABA", "Norepinephrine"],
       "answer": 3,
-      "rationale": "<p>Most <b>sympathetic postganglionic</b> neurons release <b>norepinephrine</b>, which activates adrenergic receptors on target organs. The adrenal medulla also releases epinephrine into the blood.</p><p><b>Acetylcholine</b> is released by the <b>preganglionic</b> neurons of both divisions and by <b>parasympathetic postganglionic</b> neurons. <b>Dopamine</b> works mainly in the brain (motor control and reward), and <b>GABA</b> is the brain's main inhibitory neurotransmitter.</p>"
+      "rationale": "<p>Most <b>sympathetic postganglionic</b> neurons release <b>norepinephrine</b>, which activates adrenergic receptors on target organs. The adrenal medulla also releases epinephrine into the blood.</p><p><b>Acetylcholine</b> is released by the <b>preganglionic</b> neurons of both divisions and by <b>parasympathetic postganglionic</b> neurons. <b>Dopamine</b> works mainly in the brain (motor control and reward), and <b>GABA</b> is the brain's main inhibitory neurotransmitter.</p>",
+      "hidden": true
     },
     {
       "id": "ns-38",
       "type": "dragdrop",
       "topic": "Autonomic nervous system",
+      "level": 2,
       "stem": "A nurse is reviewing the two divisions of the autonomic nervous system.",
       "text": "The sympathetic division is called the {{0}} system, and its preganglionic nerve cell bodies lie in the thoracic and upper lumbar spinal cord. The parasympathetic division is called the {{1}} system, and its fibers travel in cranial nerves III, VII, IX, and X and in the sacral spinal nerves {{2}}.",
       "tokens": ["fight-or-flight", "rest-and-digest", "S2 to S4", "C5 to T1", "L1 to L5", "sense-and-respond"],
@@ -412,15 +460,17 @@
       "id": "ns-39",
       "type": "sata",
       "topic": "Autonomic nervous system",
+      "level": 3,
       "stem": "A client is having a strong sympathetic (fight-or-flight) response. Which findings should the nurse expect?",
       "options": ["Dilated pupils", "Constricted bronchioles", "Increased heart rate", "Increased urine output", "Increased sweating", "Decreased bowel sounds"],
       "answer": [0, 2, 4, 5],
-      "rationale": "<p>The sympathetic response readies the body for action: the <b>pupils dilate</b>, the <b>heart rate</b> and contractility increase, <b>sweat glands</b> secrete more, and <b>digestion slows</b>, so bowel sounds decrease.</p><p>The bronchioles <b>dilate</b>, not constrict, to bring in more air. <b>Urine output decreases</b>, because the detrusor muscle relaxes and the urethral sphincters contract. Constricting the bronchioles and emptying the bladder are parasympathetic effects.</p>"
+      "rationale": "<p>The sympathetic response readies the body for action: the <b>pupils dilate</b>, the <b>heart rate</b> and contractility increase, <b>sweat glands</b> secrete more, and <b>digestion slows</b>, so bowel sounds decrease.</p><p>The bronchioles <b>dilate</b>, not constrict, to bring in more air. <b>Urine output decreases</b>, because the detrusor muscle relaxes and the urethral sphincters contract. Constricting the bronchioles and emptying the bladder are parasympathetic effects.</p><p><b>Constricted bronchioles</b> is the tempting choice, but fight-or-flight opens the airways to bring in more air; parasympathetic stimulation constricts them. Urine output drops, too.</p>"
     },
     {
       "id": "ns-40",
       "type": "mc",
       "topic": "Neurological disorders",
+      "level": 2,
       "stem": "A client has Parkinson disease. The nurse recalls that the client's symptoms result from the loss of neurons that produce which neurotransmitter?",
       "options": ["Acetylcholine", "Dopamine", "Serotonin", "GABA"],
       "answer": 1,
@@ -431,6 +481,7 @@
       "id": "ns-41",
       "type": "matrix",
       "topic": "Neurological disorders",
+      "level": 2,
       "stem": "For each finding, specify the term the nurse should use to document it.",
       "rowHeader": "Finding",
       "columns": ["Dysarthria", "Dysphagia", "Ataxia", "Apraxia"],
@@ -443,6 +494,7 @@
       "id": "ns-42",
       "type": "mc",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "During a mental status examination, a client says, “I feel hopeless.” The nurse observes that the client's facial expression doesn't change during the interview. How should the nurse document these findings?",
       "options": ["Mood: flat. Affect: hopeless.", "Thought process: hopeless. Thought content: flat.", "Mood: hopeless. Affect: flat.", "Insight: poor. Judgment: flat."],
       "answer": 2,
@@ -453,6 +505,7 @@
       "id": "ns-43",
       "type": "sata",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "A nurse is giving a client the Montreal Cognitive Assessment (MoCA). Which tasks are part of this test?",
       "options": ["Drawing a clock that shows 10 past 11", "Reading an eye chart from 20 feet away", "Subtracting 7 from 100, and continuing to subtract 7", "Recalling a list of 5 words after a delay", "Touching the nose with the eyes closed", "Naming pictured animals, such as a lion and a camel"],
       "answer": [0, 2, 3, 5],
@@ -463,6 +516,7 @@
       "id": "ns-44",
       "type": "highlight",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "A nurse is reviewing the neurological assessment of an older adult client. Click to highlight the findings that require follow-up.",
       "passage": "[[Alert and oriented to person, place, and time]]. Speech is clear. [[Recalls 1 of 5 words after 5 minutes]]. [[Pupils are equal, round, and reactive to light]]. [[Gait is wide-based and unsteady]], and [[client reports falling twice this month]]. [[Hand grips are strong and equal]].",
       "answer": [1, 3, 4],
@@ -473,6 +527,7 @@
       "id": "ns-45",
       "type": "mc",
       "topic": "Communication and culture",
+      "level": 2,
       "stem": "A nurse is using the BATHE technique to interview a client who is anxious about upcoming tests. Which question addresses the H in BATHE?",
       "options": ["“What is going on in your life right now?”", "“How is this affecting you?”", "“What troubles you most about this situation?”", "“How are you handling all of this?”"],
       "answer": 3,
@@ -484,6 +539,7 @@
       "type": "highlight",
       "case": "confusion",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "Click to highlight the findings in the 1900 nurses' note that show a change from the client's usual mental status.",
       "passage": "Client is [[restless and pulling at the IV tubing]], and [[keeps asking where she is]]. Through the phone interpreter, the client [[does not know the day or the name of the hospital]], and [[has trouble following directions]]. [[Speech is clear]]. [[Hand grips are strong and equal]]. The daughter states that her mother [[lives alone and manages her own medications]], and that [[the confusion started this afternoon]].",
       "answer": [0, 1, 2, 3, 7],
@@ -495,6 +551,7 @@
       "type": "matrix",
       "case": "confusion",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "For each finding, specify whether the client's status has improved, has not changed, or has declined since 0800.",
       "rowHeader": "Finding",
       "columns": ["Improved", "No Change", "Declined"],
@@ -508,6 +565,7 @@
       "type": "matrix",
       "case": "confusion",
       "topic": "Communication and culture",
+      "level": 2,
       "stem": "For each potential nursing action, specify whether it is indicated or not indicated for the client at this time.",
       "rowHeader": "Potential nursing action",
       "columns": ["Indicated", "Not Indicated"],
@@ -521,6 +579,7 @@
       "type": "dropdown",
       "case": "confusion",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "Complete the following sentences.",
       "text": "The client's findings are most consistent with {{0}}, because the confusion {{1}}. To judge this change, the nurse compares the client's current mental status with {{2}}.",
       "blanks": [
@@ -536,6 +595,7 @@
       "type": "bowtie",
       "case": "confusion",
       "topic": "Neurological assessment",
+      "level": 2,
       "stem": "A nurse is reviewing the client's findings at 1900.",
       "condition": {"options": ["Delirium", "Dementia", "Expressive aphasia", "Cerebellar ataxia"], "answer": 0},
       "actions": {"options": ["Arrange a professional medical interpreter for assessments", "Apply wrist restraints to protect the IV", "Notify the provider of the change using SBAR", "Have the daughter answer the assessment questions", "Withhold oral fluids until the confusion clears"], "answer": [0, 2], "select": 2},
@@ -547,6 +607,7 @@
       "id": "ns-51",
       "type": "order",
       "topic": "Neurons and neuroglia",
+      "level": 2,
       "stem": "A nurse is reviewing how a signal travels through a single neuron. Place the parts of the neuron in the order in which the signal passes through them.",
       "items": ["Dendrites", "Soma (cell body)", "Axon hillock", "Axon", "Synaptic terminal"],
       "rationale": "<p>A signal is <b>received by the dendrites</b> and carried to the <b>soma</b> (cell body), which holds the nucleus and combines the incoming signals. If they are strong enough, an action potential starts at the <b>axon hillock</b>, the trigger zone. The impulse travels down the <b>axon</b>, away from the soma, to the <b>synaptic terminal</b>, which releases neurotransmitters to signal the next cell.</p><p><b>Takeaway:</b> Dendrite, soma, hillock, axon, terminal: dendrites detect, and axons send the signal away.</p>"
@@ -555,15 +616,17 @@
       "id": "ns-52",
       "type": "mc",
       "topic": "Neurons and neuroglia",
+      "level": 2,
       "stem": "A nurse is reviewing the glial cells of the peripheral nervous system. Which of the following cells control the microenvironment around the neurons of the sympathetic ganglia, much as astrocytes do in the CNS?",
       "options": ["Ependymal cells", "Satellite cells", "Microglia", "Oligodendrocytes"],
       "answer": 1,
-      "rationale": "<p><b>Satellite cells</b> are glial cells of the <b>peripheral nervous system</b>. They surround the neuron cell bodies in ganglia, such as the sympathetic ganglia, and <b>control their microenvironment</b>, much as astrocytes do in the CNS.</p><p><b>Ependymal cells</b> line the ventricles and the central canal and help make CSF, <b>microglia</b> are the CNS's resident macrophages, and <b>oligodendrocytes</b> make myelin in the CNS; all three are CNS cells.</p><p><b>Takeaway:</b> The PNS glia are Schwann cells (myelin) and satellite cells (ganglia); the rest are CNS glia.</p>"
+      "rationale": "<p><b>Satellite cells</b> are glial cells of the <b>peripheral nervous system</b>. They surround the neuron cell bodies in ganglia, such as the sympathetic ganglia, and <b>control their microenvironment</b>, much as astrocytes do in the CNS.</p><p><b>Ependymal cells</b> line the ventricles and the central canal and help make CSF, <b>microglia</b> are the CNS's resident macrophages, and <b>oligodendrocytes</b> make myelin in the CNS; all three are CNS cells.</p><p><b>Oligodendrocytes</b> are the tempting choice, since they're glial cells that support neurons, but they make myelin in the CNS. Satellite cells surround the cell bodies in the peripheral ganglia.</p><p><b>Takeaway:</b> The PNS glia are Schwann cells (myelin) and satellite cells (ganglia); the rest are CNS glia.</p>"
     },
     {
       "id": "ns-53",
       "type": "dropdown",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing the charges of a neuron during an action potential. Complete the following sentences.",
       "text": "A stimulus must raise the inside of the neuron to about {{0}}, the threshold, to start an action potential. At the peak of the action potential, the inside of the neuron reaches about {{1}}.",
       "blanks": [
@@ -576,15 +639,17 @@
       "id": "ns-54",
       "type": "mc",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing the hyperpolarization that follows repolarization. Which of the following describes its purpose?",
       "options": ["It lets the neuron fire again right away, at a faster rate than before.", "It makes the next action potential larger than the one before it.", "It briefly stops the neuron from firing again, so the signal moves one way.", "It opens the sodium channels again so that sodium can leave the cell."],
       "answer": 2,
-      "rationale": "<p>After repolarization, the potassium channels close slowly, so the charge <b>overshoots below −70 mV</b>. During this <b>refractory period</b>, the neuron can't fire again right away, which keeps the impulse <b>moving in one direction</b> down the axon.</p><p>Hyperpolarization makes firing harder, not faster. Action potentials are all-or-none, so they don't grow larger. Sodium enters the cell during depolarization; it doesn't leave through sodium channels.</p><p><b>Takeaway:</b> Hyperpolarization is the refractory period: it prevents immediate re-firing and keeps the signal moving one way.</p>"
+      "rationale": "<p>After repolarization, the potassium channels close slowly, so the charge <b>overshoots below −70 mV</b>. During this <b>refractory period</b>, the neuron can't fire again right away, which keeps the impulse <b>moving in one direction</b> down the axon.</p><p>Hyperpolarization makes firing harder, not faster. Action potentials are all-or-none, so they don't grow larger. Sodium enters the cell during depolarization; it doesn't leave through sodium channels.</p><p>Letting the neuron <b>fire again right away</b> is the tempting choice, but hyperpolarization does the opposite: by making the inside briefly more negative, it makes the neuron harder to fire, so the signal can't turn back.</p><p><b>Takeaway:</b> Hyperpolarization is the refractory period: it prevents immediate re-firing and keeps the signal moving one way.</p>"
     },
     {
       "id": "ns-55",
       "type": "order",
       "topic": "Nerve impulses and synapses",
+      "level": 2,
       "stem": "A nurse is reviewing how a neuron passes its message across a synapse. Place the events in order.",
       "items": ["The impulse arrives at the presynaptic terminal.", "Vesicles release the neurotransmitter.", "The neurotransmitter crosses the synaptic cleft.", "The neurotransmitter binds to receptors on the postsynaptic cell.", "The neurotransmitter is broken down or taken back up, stopping the signal."],
       "rationale": "<p>When the impulse reaches the <b>presynaptic terminal</b>, <b>vesicles release the neurotransmitter</b> into the <b>synaptic cleft</b>, the gap between the cells. The neurotransmitter crosses the cleft and <b>binds receptors</b> on the postsynaptic cell, which changes that cell's chance of firing. Then the neurotransmitter is <b>broken down or recycled</b>, which <b>stops</b> the signal so that the next one comes through clearly.</p><p><b>Takeaway:</b> Terminal, vesicles, cleft, receptors, and then the signal is stopped.</p>"
@@ -593,35 +658,41 @@
       "id": "ns-56",
       "type": "mc",
       "topic": "Nerve impulses and synapses",
+      "level": 3,
       "stem": "A client is given a medication that increases the effect of GABA at synapses in the brain. Which of the following effects should the nurse expect?",
       "options": ["More excitement, because GABA makes neurons more likely to fire", "A faster heart rate, because GABA is the main sympathetic neurotransmitter", "Stronger muscle contractions, because GABA triggers skeletal muscle", "Calming and drowsiness, because GABA makes neurons less likely to fire"],
       "answer": 3,
-      "rationale": "<p><b>GABA</b> is the brain's main <b>inhibitory</b> neurotransmitter. At an <b>inhibitory synapse</b>, it hyperpolarizes the next neuron and makes it <b>less likely to fire</b>, so boosting GABA's effect brings <b>calming and drowsiness</b>. The nurse watches for sedation and teaches fall safety.</p><p>An <b>excitatory</b> synapse makes the next neuron more likely to fire, which GABA doesn't do. The main sympathetic chemicals are norepinephrine and epinephrine, and acetylcholine triggers skeletal muscle contraction.</p><p><b>Takeaway:</b> Excitatory synapses send the signal on; inhibitory synapses, such as those using GABA, hold it back.</p>"
+      "rationale": "<p><b>GABA</b> is the brain's main <b>inhibitory</b> neurotransmitter. At an <b>inhibitory synapse</b>, it hyperpolarizes the next neuron and makes it <b>less likely to fire</b>, so boosting GABA's effect brings <b>calming and drowsiness</b>. The nurse watches for sedation and teaches fall safety.</p><p>An <b>excitatory</b> synapse makes the next neuron more likely to fire, which GABA doesn't do. The main sympathetic chemicals are norepinephrine and epinephrine, and acetylcholine triggers skeletal muscle contraction.</p><p><b>More excitement</b> is the tempting choice for a drug that “increases” something, but GABA is the brain's main inhibitory neurotransmitter, so more GABA effect means calming and drowsiness.</p><p><b>Takeaway:</b> Excitatory synapses send the signal on; inhibitory synapses, such as those using GABA, hold it back.</p>"
     },
     {
       "id": "ns-57",
       "type": "hotspot",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A client has had a stroke and knows what to say but has great trouble forming the words. Click the lobe that contains Broca's area, which plans the movements of speech.",
       "image": "img/brain-lateral.svg",
       "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
       "regions": [{"x": 20, "y": 20, "w": 23.3, "h": 34}, {"x": 14.7, "y": 29, "w": 5.3, "h": 30}, {"x": 30.7, "y": 12, "w": 17.3, "h": 8}],
-      "rationale": "<p><b>Broca's area</b>, in the <b>frontal lobe</b> (usually on the left), handles the <b>motor planning for speech</b>. When it is damaged, the client knows what to say but struggles to form the words. The frontal lobe also controls motor function, problem-solving, attention, memory, and language.</p><p>The <b>parietal lobe</b> processes touch and body position, the <b>temporal lobe</b> processes hearing, and the <b>occipital lobe</b> processes vision.</p><p><b>Takeaway:</b> Broca's area, in the frontal lobe, plans the movements of speech.</p>"
+      "rationale": "<p><b>Broca's area</b>, in the <b>frontal lobe</b> (usually on the left), handles the <b>motor planning for speech</b>. When it is damaged, the client knows what to say but struggles to form the words. The frontal lobe also controls motor function, problem-solving, attention, memory, and language.</p><p>The <b>parietal lobe</b> processes touch and body position, the <b>temporal lobe</b> processes hearing, and the <b>occipital lobe</b> processes vision.</p><p><b>Takeaway:</b> Broca's area, in the frontal lobe, plans the movements of speech.</p>",
+      "hidden": true
     },
     {
       "id": "ns-58",
       "type": "hotspot",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "With the eyes closed, a client can't tell which finger the nurse is touching or whether a toe is pointing up or down. Click the lobe that processes touch and body position.",
       "image": "img/brain-lateral.svg",
       "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
       "regions": [{"x": 49.4, "y": 13, "w": 26, "h": 33}, {"x": 50, "y": 9, "w": 16, "h": 4}, {"x": 46.7, "y": 35, "w": 2.6, "h": 17}],
-      "rationale": "<p>The <b>parietal lobe</b> processes <b>sensation and proprioception</b>: touch and body position. A client with parietal lobe damage may not be able to tell where a touch is, or where a body part is, without looking.</p><p>The <b>frontal lobe</b> handles movement, planning, and Broca's speech area, the <b>temporal lobe</b> hearing, and the <b>occipital lobe</b> vision. The <b>cerebellum</b> coordinates movement and balance.</p><p><b>Takeaway:</b> The parietal lobe processes touch and body position.</p>"
+      "rationale": "<p>The <b>parietal lobe</b> processes <b>sensation and proprioception</b>: touch and body position. A client with parietal lobe damage may not be able to tell where a touch is, or where a body part is, without looking.</p><p>The <b>frontal lobe</b> handles movement, planning, and Broca's speech area, the <b>temporal lobe</b> hearing, and the <b>occipital lobe</b> vision. The <b>cerebellum</b> coordinates movement and balance.</p><p><b>Takeaway:</b> The parietal lobe processes touch and body position.</p>",
+      "hidden": true
     },
     {
       "id": "ns-59",
       "type": "matrix",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is reviewing the structures of the brain. For each function, click to specify the structure that performs it.",
       "rowHeader": "Function",
       "columns": ["Thalamus", "Limbic system", "Pons", "Insula"],
@@ -633,6 +704,7 @@
       "id": "ns-60",
       "type": "dropdown",
       "topic": "Brain structures",
+      "level": 2,
       "stem": "A nurse is reviewing the surface of the cerebrum and the parts of the midbrain. Complete the following sentences.",
       "text": "The ridges of the cerebral cortex are called {{0}}, and the grooves between them are called {{1}}. The dorsal (back) part of the midbrain is the {{2}}, and the {{3}} attach the cerebrum to the brainstem.",
       "blanks": [
@@ -647,6 +719,7 @@
       "id": "ns-61",
       "type": "matrix",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "A nurse is reviewing the roots of the spinal nerves. For each description, click to specify the root it describes.",
       "rowHeader": "Description",
       "columns": ["Dorsal root", "Ventral root"],
@@ -658,24 +731,27 @@
       "id": "ns-62",
       "type": "mc",
       "topic": "Spinal cord and meninges",
+      "level": 2,
       "stem": "A client has a subdural hematoma after a fall. Which of the following describes where the blood has collected?",
       "options": ["Between the dura mater and the arachnoid mater", "Between the skull and the dura mater", "In the subarachnoid space, with the cerebrospinal fluid", "Inside the pia mater, on the surface of the brain"],
       "answer": 0,
-      "rationale": "<p>The <b>subdural space</b> is the thin space <b>between the dura mater and the arachnoid mater</b>, and that is where a subdural hematoma collects.</p><p>Blood <b>between the skull and the dura</b> is in the <b>epidural</b> space. The <b>subarachnoid space</b>, below the arachnoid, holds CSF. The <b>pia mater</b> is the delicate innermost layer, stuck to the brain; a hematoma doesn't collect inside it.</p><p><b>Takeaway:</b> The epidural space is between bone and dura; the subdural space is between dura and arachnoid.</p>"
+      "rationale": "<p>The <b>subdural space</b> is the thin space <b>between the dura mater and the arachnoid mater</b>, and that is where a subdural hematoma collects.</p><p>Blood <b>between the skull and the dura</b> is in the <b>epidural</b> space. The <b>subarachnoid space</b>, below the arachnoid, holds CSF. The <b>pia mater</b> is the delicate innermost layer, stuck to the brain; a hematoma doesn't collect inside it.</p><p><b>Between the skull and the dura</b> is the tempting choice, since that's also a bleed after a head injury, but that's an epidural hematoma. A subdural one lies beneath the dura, between it and the arachnoid.</p><p><b>Takeaway:</b> The epidural space is between bone and dura; the subdural space is between dura and arachnoid.</p>"
     },
     {
       "id": "ns-63",
       "type": "mc",
       "topic": "Cranial nerves",
+      "level": 3,
       "stem": "A client can't feel a wisp of cotton on the right cheek and has weakness when biting down, but can smile, frown, and raise the eyebrows normally. Which of the following cranial nerves is most likely affected?",
       "options": ["Facial (CN VII)", "Trigeminal (CN V)", "Glossopharyngeal (CN IX)", "Hypoglossal (CN XII)"],
       "answer": 1,
-      "rationale": "<p>The <b>trigeminal nerve (CN V)</b> carries <b>facial sensation</b> through its three branches (ophthalmic V1, maxillary V2, and mandibular V3) and controls the muscles for <b>biting and chewing</b>. Lost sensation on the cheek with a weak bite points to CN V.</p><p>The <b>facial nerve (CN VII)</b> controls <b>facial expression</b>, which is normal here; mixing up V and VII is a common error. The <b>glossopharyngeal nerve (CN IX)</b> serves the back of the tongue and the pharynx (taste, swallowing, and the gag reflex), and the <b>hypoglossal nerve (CN XII)</b> moves the tongue.</p><p><b>Takeaway:</b> Facial sensation and chewing are CN V; facial expression is CN VII.</p>"
+      "rationale": "<p>The <b>trigeminal nerve (CN V)</b> carries <b>facial sensation</b> through its three branches (ophthalmic V1, maxillary V2, and mandibular V3) and controls the muscles for <b>biting and chewing</b>. Lost sensation on the cheek with a weak bite points to CN V.</p><p>The <b>facial nerve (CN VII)</b> controls <b>facial expression</b>, which is normal here; mixing up V and VII is a common error. The <b>glossopharyngeal nerve (CN IX)</b> serves the back of the tongue and the pharynx (taste, swallowing, and the gag reflex), and the <b>hypoglossal nerve (CN XII)</b> moves the tongue.</p><p><b>The facial nerve</b> is the tempting choice, since the problem is on the face, but this client's facial movements are normal. A numb cheek and a weak bite point to the trigeminal nerve.</p><p><b>Takeaway:</b> Facial sensation and chewing are CN V; facial expression is CN VII.</p>"
     },
     {
       "id": "ns-64",
       "type": "fill",
       "topic": "Glasgow Coma Scale",
+      "level": 2,
       "stem": "A nurse is assessing a client with a head injury. The client opens the eyes when the nurse speaks, says words that don't fit the conversation, and pulls the hand away when it is pinched. What is the client's Glasgow Coma Scale (GCS) score?",
       "answer": 10,
       "unit": "points",
@@ -686,25 +762,28 @@
       "id": "ns-65",
       "type": "mc",
       "topic": "Glasgow Coma Scale",
+      "level": 1,
       "stem": "A client's Glasgow Coma Scale score is 8. Which of the following classifications applies to this score?",
       "options": ["Normal", "Minor", "Moderate", "Severe"],
       "answer": 3,
-      "rationale": "<p>The GCS ranges from <b>3 to 15</b>. A score of <b>8 or less</b> is <b>severe</b>, <b>9 to 12</b> is <b>moderate</b>, and <b>13 or more</b> is <b>minor</b>. A score of 8 means a severe injury, which the nurse reports right away.</p><p>A fully alert, oriented client who follows commands scores 15; a score of 8 is far below that.</p><p><b>Takeaway:</b> A GCS of 8 or less is severe, 9 to 12 moderate, and 13 or more minor.</p>"
+      "rationale": "<p>The GCS ranges from <b>3 to 15</b>. A score of <b>8 or less</b> is <b>severe</b>, <b>9 to 12</b> is <b>moderate</b>, and <b>13 or more</b> is <b>minor</b>. A score of 8 means a severe injury, which the nurse reports right away.</p><p>A fully alert, oriented client who follows commands scores 15; a score of 8 is far below that.</p><p><b>Moderate</b> is the tempting choice, since 8 is near the middle of the scale, but a score of 8 or less means a severe brain injury (moderate is 9 to 12, and minor 13 to 15).</p><p><b>Takeaway:</b> A GCS of 8 or less is severe, 9 to 12 moderate, and 13 or more minor.</p>"
     },
     {
       "id": "ns-66",
       "type": "mc",
       "topic": "Neurological disorders",
+      "level": 3,
       "stem": "A client has a fever, a severe headache, a stiff neck, and sensitivity to light. Which of the following actions should the nurse take?",
       "options": ["Start droplet precautions, and report the findings to the provider now.", "Dim the lights, and recheck the client in 4 hours to see whether it passes.", "Encourage the client to bend the neck forward several times to loosen it.", "Give the client warm blankets, and offer fluids for the fever and chills."],
       "answer": 0,
-      "rationale": "<p>Fever, a severe headache, a <b>stiff neck (nuchal rigidity)</b>, and sensitivity to light point to <b>meningitis</b>, inflammation of the meninges. Bacterial meningitis is an emergency, so the nurse starts <b>droplet precautions</b> and <b>reports</b> the findings right away, so that testing and antibiotics can start fast.</p><p>Waiting 4 hours delays treatment of a possible emergency. Bending a stiff neck doesn't help and can hurt. Blankets and fluids don't address the cause. <b>Encephalitis</b>, inflammation of the brain itself, also causes fever and headache, with confusion or seizures.</p><p><b>Takeaway:</b> Fever, a severe headache, and a stiff neck mean possible meningitis: start droplet precautions and report it right away.</p>"
+      "rationale": "<p>Fever, a severe headache, a <b>stiff neck (nuchal rigidity)</b>, and sensitivity to light point to <b>meningitis</b>, inflammation of the meninges. Bacterial meningitis is an emergency, so the nurse starts <b>droplet precautions</b> and <b>reports</b> the findings right away, so that testing and antibiotics can start fast.</p><p>Waiting 4 hours delays treatment of a possible emergency. Bending a stiff neck doesn't help and can hurt. Blankets and fluids don't address the cause. <b>Encephalitis</b>, inflammation of the brain itself, also causes fever and headache, with confusion or seizures.</p><p><b>Dimming the lights and rechecking later</b> is the tempting choice, since light sensitivity is one of the findings, but fever, a severe headache, a stiff neck, and light sensitivity together suggest meningitis, which needs droplet precautions and the provider now.</p><p><b>Takeaway:</b> Fever, a severe headache, and a stiff neck mean possible meningitis: start droplet precautions and report it right away.</p>"
     },
     {
       "id": "ns-67",
       "type": "highlight",
       "case": "headinjury",
       "topic": "Neurological disorders",
+      "level": 3,
       "stem": "Click to highlight the findings in the 2000 nurses' note that suggest rising intracranial pressure.",
       "passage": "Client is [[restless and keeps trying to get out of bed]]. [[Opens the eyes only when the nurse speaks]], and [[is confused about where they are and why]]. [[Reports a worse headache]] and [[vomited once]]. [[Right pupil is larger than the left and reacts slowly to light]]. [[Lungs are clear]]. [[Skin is warm and dry]]. [[Moves all four extremities]].",
       "answer": [0, 1, 2, 3, 4, 5],
@@ -715,6 +794,7 @@
       "type": "fill",
       "case": "headinjury",
       "topic": "Glasgow Coma Scale",
+      "level": 2,
       "stem": "Using the 2000 nurses' note, what is the client's Glasgow Coma Scale score?",
       "answer": 12,
       "unit": "points",
@@ -726,30 +806,158 @@
       "type": "mc",
       "case": "headinjury",
       "topic": "Neurological disorders",
+      "level": 3,
       "stem": "Which of the client's findings is typically the earliest sign of increasing intracranial pressure?",
       "options": ["The rise in blood pressure since 1600", "The drop in heart rate since 1600", "The change in level of consciousness", "The larger right pupil that reacts slowly"],
       "answer": 2,
-      "rationale": "<p>The <b>earliest sign</b> of increasing intracranial pressure is a <b>change in level of consciousness</b>: restlessness, confusion, or drowsiness. That is why the nurse compares each neurological check with the last one.</p><p>A <b>rising blood pressure</b>, a <b>slowing heart rate</b>, and irregular breathing are <b>late signs</b>, and pupil changes usually come after the level of consciousness has changed. In this client, the blood pressure has risen to 146/72 and the heart rate has fallen to 66, so the pressure may be rising quickly.</p><p><b>Takeaway:</b> A change in level of consciousness comes first; a higher blood pressure and slower heart rate come late.</p>"
+      "rationale": "<p>The <b>earliest sign</b> of increasing intracranial pressure is a <b>change in level of consciousness</b>: restlessness, confusion, or drowsiness. That is why the nurse compares each neurological check with the last one.</p><p>A <b>rising blood pressure</b>, a <b>slowing heart rate</b>, and irregular breathing are <b>late signs</b>, and pupil changes usually come after the level of consciousness has changed. In this client, the blood pressure has risen to 146/72 and the heart rate has fallen to 66, so the pressure may be rising quickly.</p><p><b>The larger, slow pupil</b> is the tempting choice, since it's alarming, but pupil changes come later. A change in the level of consciousness is the earliest sign that intracranial pressure is rising.</p><p><b>Takeaway:</b> A change in level of consciousness comes first; a higher blood pressure and slower heart rate come late.</p>"
     },
     {
       "id": "ns-70",
       "type": "mc",
       "case": "headinjury",
       "topic": "Neurological disorders",
+      "level": 3,
       "stem": "Which of the following actions should the nurse take first?",
       "options": ["Lay the bed flat to increase blood flow to the brain.", "Report the changes to the provider right away.", "Recheck the client's neurological status in 4 hours.", "Ask the provider for a sleep aid to calm the restlessness."],
       "answer": 1,
-      "rationale": "<p>A falling level of consciousness, a worse headache, vomiting, a larger pupil, and a rising blood pressure with a slower heart rate are signs of <b>rising intracranial pressure</b>, an emergency. The nurse <b>reports the changes right away</b>, keeps the head of the bed raised about 30° with the head midline, and keeps checking.</p><p>Laying the bed flat can raise intracranial pressure further. Waiting 4 hours delays care for a worsening brain injury. A sleep aid would hide the changes in level of consciousness that the nurse needs to watch.</p><p><b>Takeaway:</b> Signs of rising ICP are reported right away; keep the head of the bed at about 30°, with the head midline.</p>"
+      "rationale": "<p>A falling level of consciousness, a worse headache, vomiting, a larger pupil, and a rising blood pressure with a slower heart rate are signs of <b>rising intracranial pressure</b>, an emergency. The nurse <b>reports the changes right away</b>, keeps the head of the bed raised about 30° with the head midline, and keeps checking.</p><p>Laying the bed flat can raise intracranial pressure further. Waiting 4 hours delays care for a worsening brain injury. A sleep aid would hide the changes in level of consciousness that the nurse needs to watch.</p><p><b>Rechecking in 4 hours</b> is the tempting choice, since neuro checks are routine, but these are signs of rising intracranial pressure, and waiting loses time the client may not have.</p><p><b>Takeaway:</b> Signs of rising ICP are reported right away; keep the head of the bed at about 30°, with the head midline.</p>"
     },
     {
       "id": "ns-71",
       "type": "sata",
       "case": "headinjury",
       "topic": "Neurological disorders",
+      "level": 3,
       "stem": "At 2030, the client has a seizure. Which of the following actions should the nurse take?",
       "options": ["Note the time the seizure starts.", "Place a bite block in the client's mouth.", "Turn the client onto the side.", "Hold the client's arms down to stop the jerking.", "Protect the client's head from injury.", "Loosen any tight clothing."],
       "answer": [0, 2, 4, 5],
-      "rationale": "<p>During a seizure, a sudden burst of abnormal electrical activity in the brain, safety comes first: the nurse <b>times the seizure</b>, <b>protects the head</b>, <b>turns the client onto the side</b> so that saliva drains and the airway stays open, and <b>loosens tight clothing</b>. Afterward, the client may be drowsy and confused (post-ictal).</p><p>The nurse puts <b>nothing in the mouth</b>: a bite block can break teeth or block the airway. And the nurse <b>doesn't restrain</b> the client, because holding the limbs down can cause injury.</p><p><b>Takeaway:</b> During a seizure, time it, protect the head, turn the client on the side, and loosen clothing; put nothing in the mouth, and don't restrain.</p>"
+      "rationale": "<p>During a seizure, a sudden burst of abnormal electrical activity in the brain, safety comes first: the nurse <b>times the seizure</b>, <b>protects the head</b>, <b>turns the client onto the side</b> so that saliva drains and the airway stays open, and <b>loosens tight clothing</b>. Afterward, the client may be drowsy and confused (post-ictal).</p><p>The nurse puts <b>nothing in the mouth</b>: a bite block can break teeth or block the airway. And the nurse <b>doesn't restrain</b> the client, because holding the limbs down can cause injury.</p><p><b>A bite block</b> is the tempting choice, since people fear the client will bite the tongue, but anything put in the mouth during a seizure can break teeth or block the airway. Turning the client to the side protects the airway.</p><p><b>Takeaway:</b> During a seizure, time it, protect the head, turn the client on the side, and loosen clothing; put nothing in the mouth, and don't restrain.</p>"
+    },
+    {
+      "id": "ns-72",
+      "type": "mc",
+      "topic": "Neurons and neuroglia",
+      "level": 2,
+      "stem": "A toxin damages the dendrites of a group of neurons. Which change in those neurons should the nurse expect?",
+      "options": ["They take in fewer signals from other cells", "They release less neurotransmitter at the synapse", "Their signals travel more slowly along the axon", "They can't start action potentials at the hillock"],
+      "answer": 0,
+      "rationale": "<p><b>Dendrites</b> are the branching extensions that <b>receive</b> most of the signals from other neurons and carry them toward the cell body, so damaged dendrites mean fewer incoming signals.</p><p>Releasing less <b>neurotransmitter</b> is the tempting choice, since it also weakens communication, but release happens at the axon terminals, at the other end of the neuron. Slower travel along the axon comes from damaged <b>myelin</b>, and action potentials start at the <b>axon hillock</b>.</p><p><b>Takeaway:</b> Dendrites receive, the axon hillock starts the action potential, the axon carries it, and the axon terminals release the neurotransmitter.</p>"
+    },
+    {
+      "id": "ns-73",
+      "type": "mc",
+      "topic": "Nerve impulses and synapses",
+      "level": 3,
+      "stem": "A nurse presses lightly on a client's fingertip, then harder, and the client feels the harder press more. Since a neuron's action potentials are all the same size, which explains the stronger sensation?",
+      "options": ["The neurons fire more often, and more of them fire", "Each action potential grows larger with the pressure", "The action potentials travel both ways along the axon", "The neurons skip the refractory period between signals"],
+      "answer": 0,
+      "rationale": "<p>Under the <b>all-or-none principle</b>, a stimulus that reaches threshold triggers a complete action potential, the same size every time. So the nervous system signals a stronger stimulus by <b>how often</b> each neuron fires, and <b>how many</b> neurons fire.</p><p>A <b>larger action potential</b> is the tempting choice, since a harder press feels bigger, but the size doesn't change once threshold is reached. Action potentials travel <b>one way</b> along the axon, and the <b>refractory period</b> can't be skipped: it's what keeps the signal moving forward.</p><p><b>Takeaway:</b> All or none: every action potential is the same size. A stronger stimulus means more frequent firing and more neurons firing.</p>"
+    },
+    {
+      "id": "ns-74",
+      "type": "hotspot",
+      "topic": "Brain structures",
+      "level": 2,
+      "stem": "A client was hit hard on the back of the head and has lost part of the vision in both eyes, though the eyes themselves are healthy. Click the lobe where the injury most likely is.",
+      "image": "img/brain-lateral.svg",
+      "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
+      "regions": [{"x": 76.7, "y": 29, "w": 11.3, "h": 32}, {"x": 77.4, "y": 22, "w": 7.3, "h": 7}, {"x": 75.4, "y": 61, "w": 8.6, "h": 5}, {"x": 88, "y": 37, "w": 2, "h": 19}],
+      "rationale": "<p>Vision that's lost while the eyes are healthy points to the brain's visual cortex, in the occipital lobe at the back of the head.</p><p>The <b>occipital lobe</b>, at the back of the cerebrum, contains the primary visual cortex. It receives information from the retina and interprets what the person sees.</p><p>The <b>frontal lobe</b> (front) handles voluntary movement, problem-solving, attention, memory, and speech production. The <b>parietal lobe</b> (top, behind the central sulcus) processes touch and body position. The <b>temporal lobe</b> (side, below the lateral sulcus) processes hearing and language comprehension. The cerebellum, below the occipital lobe, coordinates movement and balance.</p>"
+    },
+    {
+      "id": "ns-75",
+      "type": "mc",
+      "topic": "Brain structures",
+      "level": 2,
+      "stem": "After a brainstem injury, a client has irregular breathing, swings in heart rate and blood pressure, and no cough or gag reflex. Damage to which part most likely explains these findings?",
+      "options": ["The pons", "The midbrain", "The medulla", "The thalamus"],
+      "answer": 3,
+      "rationale": "<p>Breathing, heart rate, blood pressure, and the cough and gag reflexes are all run by the medulla, the lowest part of the brainstem, so damage there threatens survival.</p><p>The <b>medulla oblongata</b>, the lowest part of the brainstem, is continuous with the spinal cord. It regulates functions needed for survival: breathing (in response to carbon dioxide and pH), heart rate, blood pressure, and cardiac contractility. It also coordinates protective reflexes such as vomiting, swallowing, coughing, and sneezing.</p><p>The <b>pons</b> relays signals between the cerebrum, cerebellum, and spinal cord. The <b>midbrain</b> is involved in movement and motivation, and its substantia nigra produces dopamine. The <b>thalamus</b> is part of the diencephalon, not the brainstem; it relays sensory information to the cortex.</p><p><b>The pons</b> is the tempting choice, since it helps adjust breathing, but it fine-tunes the rhythm. The medulla controls breathing, the heart, blood pressure, and these reflexes together.</p>"
+    },
+    {
+      "id": "ns-76",
+      "type": "sata",
+      "topic": "Brain structures",
+      "level": 2,
+      "stem": "A client has a tumor pressing on the hypothalamus. Which changes should the nurse expect?",
+      "options": ["Unstable body temperature", "Clumsy, poorly coordinated movements", "Changes in thirst and appetite", "Changes in hormone release by the pituitary", "Loss of sensation relayed to the cortex", "A disrupted sleep–wake cycle"],
+      "answer": [0, 2, 3, 5],
+      "rationale": "<p>The <b>hypothalamus</b> keeps the body's internal balance: it regulates <b>body temperature</b>, <b>thirst and appetite</b>, and <b>sleep–wake rhythms</b>, and it controls the <b>pituitary gland's hormone release</b>. Pressure on it can disturb any of these.</p><p>Loss of <b>sensation relayed to the cortex</b> is the tempting choice, since the thalamus sits right next to the hypothalamus, but relaying sensations is the thalamus's job. <b>Clumsy, uncoordinated movement</b> points to the cerebellum.</p><p><b>Takeaway:</b> Hypothalamus: temperature, thirst, appetite, sleep, and the pituitary. Thalamus: the sensory relay. Cerebellum: coordination.</p>"
+    },
+    {
+      "id": "ns-77",
+      "type": "mc",
+      "topic": "Brain structures",
+      "level": 3,
+      "stem": "After a brainstem injury, a client is hard to wake and drifts back to sleep, though imaging shows no damage to the cerebral cortex. Damage to which system most likely explains this?",
+      "options": ["The limbic system of the cerebrum", "The reticular activating system", "The basal nuclei of the cerebrum", "The cerebellum behind the brainstem"],
+      "answer": 1,
+      "rationale": "<p>Staying awake and alert depends on the reticular activating system, a network in the brainstem that keeps the cortex aroused. Damage there makes a person hard to wake even when the cortex is healthy.</p><p>The <b>reticular activating system</b>, part of the reticular formation in the brainstem, regulates <b>consciousness</b>. Sensory input keeps it active, which promotes wakefulness and alertness. It also filters out repetitive or unimportant stimuli, which prevents sensory overload.</p><p>The <b>limbic system</b> controls emotion, memory, and motivation. The <b>basal nuclei</b> help control voluntary movement and muscle tone. The <b>cerebellum</b> coordinates movement and balance.</p><p><b>The limbic system</b> is the tempting choice, since it shapes mood and drive, but it handles emotion and memory, not wakefulness.</p>"
+    },
+    {
+      "id": "ns-78",
+      "type": "hotspot",
+      "topic": "Spinal cord and meninges",
+      "level": 2,
+      "stem": "A client has a disease that destroys the motor neurons serving the skeletal muscles, causing weakness and muscle wasting. On this cross-section of the spinal cord, click an area where these neurons' cell bodies most likely are.",
+      "image": "img/spinal-cord-section.svg",
+      "alt": "Cross-section of the spinal cord, with the back (posterior) at the top and the front (anterior) at the bottom. Butterfly-shaped gray matter surrounds the central canal, and nerve roots with ganglia leave each side.",
+      "regions": [{"x": 37.9, "y": 58, "w": 7.1, "h": 11}, {"x": 55, "y": 58, "w": 7.1, "h": 11}, {"x": 35, "y": 62, "w": 2.8, "h": 9}, {"x": 62.2, "y": 62, "w": 2.8, "h": 9}, {"x": 37.9, "y": 69, "w": 5, "h": 3}, {"x": 57.2, "y": 69, "w": 5, "h": 3}, {"x": 45, "y": 58, "w": 1.4, "h": 7}, {"x": 53.6, "y": 58, "w": 1.4, "h": 7}],
+      "rationale": "<p>The cell bodies of the motor neurons that control skeletal muscles sit in the anterior (ventral) horns of the spinal cord's gray matter, so diseases that destroy these neurons damage that area.</p><p>The cell bodies of the motor neurons that control skeletal muscles are in the <b>ventral (anterior) horns</b> of the gray matter: the broad lower wings of the butterfly in this view. Their fibers leave through the <b>ventral roots</b> to reach skeletal muscles.</p><p>The <b>dorsal (posterior) horns</b>, at the top, process incoming sensory information. Sensory fibers enter through the <b>dorsal roots</b>, and the cell bodies of those sensory neurons sit in the <b>dorsal root ganglia</b>, outside the cord. The white matter around the gray matter holds the ascending and descending tracts.</p>"
+    },
+    {
+      "id": "ns-79",
+      "type": "emr",
+      "topic": "Cranial nerves",
+      "level": 2,
+      "stem": "A nurse checks a client's eye movements by having the client follow a finger in six directions. Which cranial nerves should the nurse expect this test to check?",
+      "options": ["Oculomotor (CN III)", "Optic (CN II)", "Trochlear (CN IV)", "Facial (CN VII)", "Abducens (CN VI)", "Trigeminal (CN V)"],
+      "answer": [0, 2, 4],
+      "select": 3,
+      "rationale": "<p>Following a finger through the six directions of gaze tests the three nerves that move the eye muscles: the oculomotor (III), trochlear (IV), and abducens (VI) nerves.</p><p>Three cranial nerves move the eyes. The <b>oculomotor nerve (CN III)</b> moves most of the eye muscles, raises the eyelid, and constricts the pupil. The <b>trochlear nerve (CN IV)</b> moves the superior oblique muscle, which helps the eye look down. The <b>abducens nerve (CN VI)</b> moves the lateral rectus muscle, which turns the eye outward. A memory aid: <b>LR6, SO4</b>, and the rest are 3.</p><p>The <b>optic nerve (CN II)</b> carries vision, but it doesn't move the eye. The <b>trigeminal nerve (CN V)</b> carries sensation from the face and controls chewing. The <b>facial nerve (CN VII)</b> controls facial expression.</p>"
+    },
+    {
+      "id": "ns-80",
+      "type": "sata",
+      "topic": "Cranial nerves",
+      "level": 2,
+      "stem": "A nurse is assessing a client's vagus nerve (CN X). Which findings should the nurse expect if the nerve is working normally?",
+      "options": ["The uvula and soft palate rise evenly when the client says “ah.”", "The client shrugs both shoulders against resistance.", "The voice sounds clear, with no hoarseness.", "The client repeats words whispered into each ear.", "The client gags when the back of the throat is touched.", "The tongue stays in the midline when stuck out."],
+      "answer": [0, 2, 4],
+      "rationale": "<p>The <b>vagus nerve</b> moves the muscles of the soft palate, throat, and voice box, so a working CN X shows as a <b>palate and uvula that rise evenly</b> on “ah,” a <b>clear voice</b>, and a <b>gag reflex</b> (shared with CN IX). It also slows the heart and supports digestion.</p><p><b>The tongue in the midline</b> is the tempting choice, since the tongue is in the same area, but it tests the hypoglossal nerve (CN XII). <b>Shrugging the shoulders</b> tests the spinal accessory nerve (CN XI), and <b>hearing whispers</b> tests the vestibulocochlear nerve (CN VIII).</p><p><b>Takeaway:</b> CN X: the palate rises evenly on “ah,” the voice is clear, and the gag reflex works (with CN IX). CN XI: shrug. CN XII: tongue.</p>"
+    },
+    {
+      "id": "ns-81",
+      "type": "mc",
+      "topic": "Autonomic nervous system",
+      "level": 2,
+      "stem": "A frightened client has a racing heart and dilated pupils. Release of which neurotransmitter at the heart and the iris most likely explains these effects?",
+      "options": ["Acetylcholine", "Dopamine", "GABA", "Norepinephrine"],
+      "answer": 3,
+      "rationale": "<p>Fear triggers the sympathetic system, whose postganglionic neurons release norepinephrine at most target organs: it speeds the heart and dilates the pupils.</p><p>Most <b>sympathetic postganglionic</b> neurons release <b>norepinephrine</b>, which activates adrenergic receptors on target organs. The adrenal medulla also releases epinephrine into the blood.</p><p><b>Acetylcholine</b> is released by the <b>preganglionic</b> neurons of both divisions and by <b>parasympathetic postganglionic</b> neurons. <b>Dopamine</b> works mainly in the brain (motor control and reward), and <b>GABA</b> is the brain's main inhibitory neurotransmitter.</p><p><b>Acetylcholine</b> is the tempting choice, since it's the other autonomic neurotransmitter, but at the heart and the iris it's the parasympathetic messenger, which slows the heart and constricts the pupils.</p>"
+    },
+    {
+      "id": "ns-82",
+      "type": "hotspot",
+      "topic": "Brain structures",
+      "level": 2,
+      "stem": "After a stroke, a client knows what to say but has great trouble forming the words, and speech is slow and halting. Click the lobe where the damage most likely is.",
+      "image": "img/brain-lateral.svg",
+      "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
+      "regions": [{"x": 20, "y": 20, "w": 23.3, "h": 34}, {"x": 14.7, "y": 29, "w": 5.3, "h": 30}, {"x": 30.7, "y": 12, "w": 17.3, "h": 8}],
+      "rationale": "<p>Knowing what to say but struggling to form the words is expressive aphasia, from damage to Broca's area, which plans the movements of speech in the frontal lobe.</p><p><b>Broca's area</b>, in the <b>frontal lobe</b> (usually on the left), handles the <b>motor planning for speech</b>. When it is damaged, the client knows what to say but struggles to form the words. The frontal lobe also controls motor function, problem-solving, attention, memory, and language.</p><p>The <b>parietal lobe</b> processes touch and body position, the <b>temporal lobe</b> processes hearing, and the <b>occipital lobe</b> processes vision.</p><p><b>Takeaway:</b> Broca's area, in the frontal lobe, plans the movements of speech.</p>"
+    },
+    {
+      "id": "ns-83",
+      "type": "hotspot",
+      "topic": "Brain structures",
+      "level": 2,
+      "stem": "With the eyes closed, a client can't tell which finger the nurse is touching or whether a toe is pointing up or down. Click the lobe where damage most likely explains these findings.",
+      "image": "img/brain-lateral.svg",
+      "alt": "Side view of the left side of a brain, with the front of the head on the viewer's left. Lines divide the cerebrum into four lobes. The cerebellum and brainstem are below the back of the cerebrum.",
+      "regions": [{"x": 49.4, "y": 13, "w": 26, "h": 33}, {"x": 50, "y": 9, "w": 16, "h": 4}, {"x": 46.7, "y": 35, "w": 2.6, "h": 17}],
+      "rationale": "<p>Touch and body position are interpreted in the parietal lobe's sensory cortex, so damage there leaves the client unable to locate a touch or a body part without looking.</p><p>The <b>parietal lobe</b> processes <b>sensation and proprioception</b>: touch and body position. A client with parietal lobe damage may not be able to tell where a touch is, or where a body part is, without looking.</p><p>The <b>frontal lobe</b> handles movement, planning, and Broca's speech area, the <b>temporal lobe</b> hearing, and the <b>occipital lobe</b> vision. The <b>cerebellum</b> coordinates movement and balance.</p><p><b>Takeaway:</b> The parietal lobe processes touch and body position.</p>"
     }
   ]
 }
