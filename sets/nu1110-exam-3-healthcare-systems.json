@@ -415,12 +415,12 @@
       "rationale": "<p>Each correct strategy removes a barrier: <b>video or phone visits</b> (distance and transportation), <b>qualified interpreters</b> (language), <b>bus passes or rides</b> (transportation), <b>plain-language materials at a 5th- to 6th-grade level</b> (health literacy), and <b>sliding-scale fees</b> (cost).</p><p><b>Requiring payment in full before each visit</b> adds a financial barrier, and keeps clients with low incomes away.</p><p><b>Takeaway:</b> Match each strategy to a barrier: distance, transportation, language, literacy, or cost.</p>"
     },
     {
-      "id": "hcs-32", "type": "dragdrop", "topic": "Access to care and social determinants",
+      "id": "hcs-32", "type": "dragdrop", "topic": "Access to care and social determinants", "level": 1,
       "stem": "A nurse is reviewing how Healthy People 2030 groups the social determinants of health. Complete the sentence.",
-      "text": "The five domains are economic stability, {{0}}, health care access and quality, {{1}}, and social and community context.",
+      "text": "The five domains are economic stability, {{0}} (like schooling, literacy, and early childhood education), health care access and quality, {{1}} (like housing, transportation, and safe places to live and play), and social and community context.",
       "tokens": ["education access and quality", "neighborhood and built environment", "genetics and family history", "personal health behaviors", "insurance plan benefits"],
       "answer": [0, 1],
-      "rationale": "<p>The five domains are <b>economic stability</b>, <b>education access and quality</b>, <b>health care access and quality</b>, <b>neighborhood and built environment</b>, and <b>social and community context</b>.</p><p><b>Genetics and family history</b> are biological factors, and <b>personal health behaviors</b> are individual choices; neither is a domain of the social determinants. <b>Insurance plan benefits</b> fall within health care access, not a separate domain.</p><p><b>Takeaway:</b> The five SDOH domains: economic stability, education, health care access, neighborhood and built environment, and social and community context.</p>"
+      "rationale": "<p>The five domains are <b>economic stability</b>, <b>education access and quality</b>, <b>health care access and quality</b>, <b>neighborhood and built environment</b>, and <b>social and community context</b>. Schooling, literacy, and early childhood education belong to education; housing, transportation, and safe places to live and play belong to the neighborhood and built environment.</p><p><b>Genetics and family history</b> are biological factors, and <b>personal health behaviors</b> are individual choices; neither is a domain of the social determinants. <b>Insurance plan benefits</b> fall within health care access, not a separate domain.</p><p><b>Takeaway:</b> The five SDOH domains: economic stability, education, health care access, neighborhood and built environment, and social and community context.</p>"
     },
     {
       "id": "hcs-33", "type": "mc", "topic": "Access to care and social determinants",

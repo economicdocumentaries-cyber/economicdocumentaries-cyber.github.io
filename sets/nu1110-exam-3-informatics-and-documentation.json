@@ -327,12 +327,12 @@
       "rationale": "<p><b>Using a qualified medical interpreter and documenting it</b> is correct. Language is part of health literacy, and teaching only works if the client understands it. Qualified interpreters translate accurately and keep information confidential.</p><p><b>Family members, especially children,</b> may leave things out, change the meaning, or not know medical terms, and the client may not speak freely in front of them. <b>English instructions</b> won't be understood. <b>Speaking loudly</b> doesn't help someone who doesn't speak the language.</p><p><b>Takeaway:</b> Use a qualified interpreter, never a family member, and document who interpreted.</p>"
     },
     {
-      "id": "inf-25", "type": "dragdrop", "topic": "Documentation guidelines",
+      "id": "inf-25", "type": "dragdrop", "topic": "Documentation guidelines", "level": 1,
       "stem": "A nurse educator reminds staff of the FACT acronym for documentation. Complete the sentence.",
-      "text": "All charting should be {{0}}, {{1}}, {{2}}, and {{3}}.",
+      "text": "All charting should be F: {{0}}, A: {{1}}, C: {{2}}, and T: {{3}}.",
       "tokens": ["formal", "factual", "abbreviated", "accurate", "complete", "typed", "timely", "confidential"],
       "answer": [1, 3, 4, 6],
-      "rationale": "<p>FACT stands for <b>factual</b> (objective: what was seen, heard, or measured), <b>accurate</b> (exact measurements, no guessing), <b>complete</b> (all relevant information, with no blank lines), and <b>timely</b> (as soon as possible after care).</p><p><b>Formal</b>, <b>abbreviated</b>, <b>typed</b>, and <b>confidential</b> aren't part of FACT. Abbreviations in particular should be limited to approved ones, and confidentiality, though essential, is protected by other rules.</p><p><b>Takeaway:</b> Chart the FACTs: factual, accurate, complete, and timely.</p>"
+      "rationale": "<p>Each letter of FACT decides its blank. FACT stands for <b>factual</b> (objective: what was seen, heard, or measured), <b>accurate</b> (exact measurements, no guessing), <b>complete</b> (all relevant information, with no blank lines), and <b>timely</b> (as soon as possible after care).</p><p><b>Formal</b>, <b>abbreviated</b>, <b>typed</b>, and <b>confidential</b> aren't part of FACT. Abbreviations in particular should be limited to approved ones, and confidentiality, though essential, is protected by other rules.</p><p><b>Takeaway:</b> Chart the FACTs: factual, accurate, complete, and timely.</p>"
     },
     {
       "id": "inf-26", "type": "mc", "topic": "Documentation guidelines",
