@@ -4,7 +4,7 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 79.5,
   "defaultCount": 25,
   "questions": [
     {
@@ -29,7 +29,7 @@
       "level": 2,
       "stem": "During a busy night, a staff nurse with no charge role notices a new nurse falling behind, rallies two coworkers to help, and the unit runs smoothly. Coworkers often go to this nurse for advice. Which explanation fits this nurse's role best?",
       "options": [
-        "A formal leader acting on authority the unit gave her",
+        "A formal leader acting on authority from the unit",
         "A manager carrying out the organizing function for the shift",
         "An informal leader whose influence comes from peers' trust",
         "A charge nurse acting through the chain of command"
@@ -505,7 +505,7 @@
       "stem": "A nurse manager wants to improve staff engagement and the unit's outcome measures. Which actions should the nurse manager take?",
       "options": [
         "Involve staff in choosing how to improve a quality measure",
-        "Make unit decisions herself so staff can focus on care",
+        "Make unit decisions alone so staff can focus on care",
         "Help each team member understand the group's purpose",
         "Address conflicts between staff members early",
         "Wait for staff to ask for help before stepping in",
@@ -539,7 +539,7 @@
       "type": "mc",
       "topic": "Interprofessional collaboration",
       "level": 2,
-      "stem": "A client's primary care provider sends the client to a wound specialist, who will now manage the client's foot ulcer, while the primary care provider keeps managing the client's other conditions. A family member asks the nurse what happened. Which statement by the nurse is accurate?",
+      "stem": "A client's primary care provider sends the client to a wound specialist, who will now manage the client's foot ulcer, while the primary care provider keeps managing the client's other conditions. The client's daughter asks the nurse what happened. Which statement by the nurse is accurate?",
       "options": [
         "“Your mother has been referred to the specialist for her ulcer.”",
         "“The specialist is consulting, so your mother's provider decides.”",
@@ -748,7 +748,7 @@
       "type": "mc",
       "topic": "Team tools and conflict",
       "level": 3,
-      "stem": "A nurse thinks a client with a new oxygen requirement isn't safe to discharge today. The nurse's first concern was brushed aside by the provider. Which statement should the nurse make next?",
+      "stem": "A nurse thinks a client with a new oxygen requirement isn't safe to discharge today. The nurse has told the provider, “I'm concerned about this discharge,” and then, “I'm uncomfortable with it,” and both statements were brushed aside. Which statement should the nurse make next?",
       "options": [
         "“I'm a little worried about the discharge plan.”",
         "“Could we think again about the discharge plan?”",
@@ -756,7 +756,7 @@
         "“This is a safety issue. I can't support the discharge.”"
       ],
       "answer": 3,
-      "rationale": "<p><b>CUS</b> gives assertive statements in rising order: “I'm <b>Concerned</b>,” “I'm <b>Uncomfortable</b>,” and “This is a <b>Safety</b> issue.” After a concern is brushed aside, the nurse moves up to naming the safety issue, which signals that the plan should stop.</p><p>“<b>I'm uncomfortable</b>” is the tempting choice, since it's the next step up. But ending with “it's your decision” takes the challenge back. The first two choices repeat the level of concern that was already dismissed.</p><p><b>Takeaway:</b> CUS climbs from Concerned to Uncomfortable to Safety issue; “safety issue” means stop and address it.</p>"
+      "rationale": "<p><b>CUS</b> gives assertive statements in rising order: “I'm <b>Concerned</b>,” “I'm <b>Uncomfortable</b>,” and “This is a <b>Safety</b> issue.” This nurse has already used the first two, and both were brushed aside, so the next step is naming the <b>safety issue</b>, which signals that the plan should stop.</p><p>“<b>I'm uncomfortable</b>” is the tempting choice, since it sounds firm, but the nurse has already said it, and ending with “it's your decision” takes the challenge back. The first two choices drop back to a level of concern that was already dismissed.</p><p><b>Takeaway:</b> CUS climbs from Concerned to Uncomfortable to Safety issue; “safety issue” means stop and address it.</p>"
     },
     {
       "id": "lt-48",
@@ -811,6 +811,51 @@
       ],
       "answer": 1,
       "rationale": "<p><b>Cross-monitoring</b> and <b>mutual support</b> mean watching each other's back: noticing a teammate's fatigue and workload (the I'M SAFE checklist), and offering help right away, so mistakes are caught before they reach a client.</p><p><b>The incident report</b> is the tempting choice: near misses should be reported, but reporting can wait until the client is safe, and it doesn't protect this shift's clients. <b>Telling the manager after the shift</b> also leaves the rest of the shift unprotected, and <b>fewer shifts next week</b> doesn't help today.</p><p><b>Takeaway:</b> When a teammate is at risk of error, back them up now; report and fix the system after the clients are safe.</p>"
+    },
+    {
+      "id": "lt-51",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "stem": "Before surgery, a nurse has twice told the surgeon that the sedated client's consent form lists the left knee, but the surgeon marked the other knee, didn't respond either time, and is calling for the time-out. Which action should the nurse take?",
+      "options": [
+        "Stop the line, and call the charge nurse or supervisor now",
+        "Restate the concern a third time and wait for an answer",
+        "Note both concerns in the record, and assist as directed",
+        "Ask the anesthesia provider to raise it with the surgeon after the case"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>two-challenge rule</b>: the nurse has voiced the concern twice and it's still ignored, so it's time for <b>stronger action</b>. Anyone can <b>stop the line</b> for a safety breach, and the nurse brings in the <b>chain of command</b>, the charge nurse or supervisor, before the procedure goes on.</p><p><b>Restating it a third time</b> is the tempting choice, since restating was the right move after the first challenge, but after two challenges the rule calls for escalation. <b>Noting it and assisting</b> lets a possible wrong-site surgery go ahead, and <b>raising it after the case</b> is too late.</p><p><b>Takeaway:</b> Challenge twice; if the concern is still ignored, stop the line and go up the chain of command.</p>"
+    },
+    {
+      "id": "lt-52",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "stem": "A nurse has told the provider, “I'm concerned,” then “I'm uncomfortable,” and finally “This is a safety issue,” about discharging a client with a new oxygen requirement. The provider writes the discharge order anyway. Which action should the nurse take?",
+      "options": [
+        "Prepare the discharge, since the provider has written the order",
+        "Ask the client whether they feel ready to go home today",
+        "Document the disagreement, and give the discharge teaching",
+        "Take the concern up the chain of command before the client leaves"
+      ],
+      "answer": 3,
+      "rationale": "<p>The nurse has used all three <b>CUS</b> statements, ending with “This is a safety issue,” and the provider is going ahead anyway. The next step is the <b>chain of command</b>, the charge nurse and then the nursing supervisor, <b>before the client leaves</b>, since an unsafe discharge can't be undone afterward.</p><p><b>Asking the client</b> is the tempting choice, since it sounds like assessing first, but how the client feels doesn't settle a safety concern about oxygen needs. <b>Preparing the discharge</b> and <b>documenting while teaching</b> both let the unsafe plan go ahead.</p><p><b>Takeaway:</b> When “This is a safety issue” is still ignored, use the chain of command before the harm happens.</p>"
+    },
+    {
+      "id": "lt-53",
+      "type": "mc",
+      "topic": "Principles of management",
+      "level": 3,
+      "stem": "A nurse used DESC to talk privately with a coworker who keeps leaving tasks undone at handoff. Two weeks later nothing has changed, and today a client missed a scheduled dose because of it. Which action should the nurse take now?",
+      "options": [
+        "Use DESC with the coworker again at the next handoff",
+        "Finish the coworker's tasks at each handoff from now on",
+        "Bring the pattern to the nurse manager, with dates and facts",
+        "Ask the other nurses to raise it with the coworker too"
+      ],
+      "answer": 2,
+      "rationale": "<p>The nurse started the right way, with a private, direct conversation using <b>DESC</b>. It didn't work, and now the pattern has <b>affected a client's care</b>, so it goes to the <b>nurse manager</b>, whose role includes managing conflict and staff performance. Bringing dates and facts keeps it about the behavior, not the person. (The missed dose is also reported through the facility's incident reporting.)</p><p><b>Using DESC again</b> is the tempting choice, since it's the right tool for a first conversation, but repeating it after a client was affected leaves clients at risk. <b>Finishing the coworker's tasks</b> hides the problem, and <b>asking other nurses to step in</b> turns a work problem into a group conflict.</p><p><b>Takeaway:</b> Try a direct, private conversation first; when it doesn't work, or a client is affected, go up the chain of command with the facts.</p>"
     }
   ]
 }
