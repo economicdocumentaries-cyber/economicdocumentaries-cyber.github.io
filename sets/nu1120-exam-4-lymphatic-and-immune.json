@@ -1,12 +1,30 @@
 {
   "id": "nu1120-exam-4-lymphatic-and-immune",
   "title": "The Lymphatic and Immune Systems",
-  "description": "Week 12, matched to the instructor's Exam 4 study guide: the lymph nodes and vessels, the thymus, tonsils, and spleen, the white blood cells and what each does, antibodies, memory cells, and vaccines, and inflammation.",
+  "description": "Week 12, matched to the instructor's Exam 4 study guide: the lymph nodes and vessels, the bone marrow, thymus, tonsils, and spleen, the white blood cells and what each does, antibodies, memory cells, and vaccines, inflammation and its markers, and supporting immune health, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 42.0,
+  "timeMinutes": 75.0,
   "defaultCount": 25,
-  "cases": {},
+  "cases": {
+    "wound": {
+      "intro": "A nurse in an urgent care clinic is caring for a 68-year-old client with a painful, swollen lower leg.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>Day 1, 0900:</b> Client scraped the left shin on a garden fence 4 days ago. The area is now red, warm, swollen, and painful, about 10 cm across, with yellow drainage. Reports chills last night. Takes an herbal supplement “for immunity” and drinks two energy drinks a day. Has never had a pneumococcal vaccine. Walks the dog every day. Strong pulses in both ankles.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><tr><th>Temperature</th><td>38.6&nbsp;°C (101.5&nbsp;°F)</td></tr><tr><th>Heart rate</th><td>104/min</td></tr><tr><th>Respiratory rate</th><td>20/min</td></tr><tr><th>Blood pressure</th><td>128/78&nbsp;mm&nbsp;Hg</td></tr><tr><th>Oxygen saturation</th><td>97% on room air</td></tr></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results, Day 1</h4><table><tr><th>White blood cells</th><td>15,800/mm³</td><td>(5,000–10,000)</td></tr><tr><th>Neutrophils</th><td>82%</td><td>(55–70%)</td></tr><tr><th>C-reactive protein</th><td>9.6&nbsp;mg/dL</td><td>(under 1.0)</td></tr><tr><th>Erythrocyte sedimentation rate</th><td>48&nbsp;mm/hr</td><td>(under 20)</td></tr><tr><th>Procalcitonin</th><td>1.8&nbsp;ng/mL</td><td>(under 0.1)</td></tr><tr><th>Hemoglobin</th><td>14.2&nbsp;g/dL</td><td>(13.5–17.5)</td></tr></table>"
+        }
+      ]
+    }
+  },
   "questions": [
     {
       "id": "li-01",
@@ -553,6 +571,435 @@
       ],
       "answer": 0,
       "rationale": "<p>HIV invades <b>helper (CD4+) T cells</b>. As their number falls, B cells and killer T cells aren't activated well, and cell-mediated immunity weakens, so other infections take hold.</p><p><b>Too many antibodies</b> is the tempting choice, since the immune system is clearly involved, but the problem is the loss of helper T cells that coordinate the response.</p><p><b>Takeaway:</b> HIV destroys CD4+ helper T cells, which weakens the whole adaptive response.</p>"
+    },
+    {
+      "id": "li-51",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 3,
+      "stem": "Leukemia cells have filled a client's bone marrow, crowding out the normal cells. Which findings should the nurse expect?",
+      "options": [
+        "Fatigue from fewer red cells, with normal white cells",
+        "Clots in the legs from too many platelets",
+        "Frequent infections, easy bruising, and fatigue",
+        "Swollen neck nodes, with normal blood counts"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>bone marrow</b> makes all the blood cells: red cells, white cells, and platelets. When it's crowded out, all three fall: fewer white cells (<b>infections</b>), fewer platelets (<b>bruising and bleeding</b>), and fewer red cells (<b>fatigue</b>).</p><p><b>Fatigue with normal white cells</b> is the tempting choice, since anemia is the best-known effect, but the marrow makes every blood cell line, so all of them drop.</p><p><b>Takeaway:</b> Bone marrow failure lowers red cells, white cells, and platelets together.</p>"
+    },
+    {
+      "id": "li-52",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A client scheduled for a bone marrow biopsy asks what the marrow does. Which explanation should the nurse give?",
+      "options": [
+        "“It makes all your blood cells, and it's where B cells mature.”",
+        "“It filters your blood and removes your old red cells.”",
+        "“It's where your T cells mature and learn to spare your body.”",
+        "“It filters lymph and traps germs before they reach the blood.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>All blood cells form from stem cells in the <b>bone marrow</b>, and <b>B cells</b> also mature there.</p><p><b>Where T cells mature</b> is the tempting choice, since T cells do form in the marrow, but they mature in the <b>thymus</b>. Filtering the blood is the spleen's job, and filtering lymph is the lymph nodes'.</p><p><b>Takeaway:</b> Bone marrow: all blood cells form there; B cells mature there; T cells mature in the thymus.</p>"
+    },
+    {
+      "id": "li-53",
+      "type": "matrix",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A nurse is reviewing where white blood cells mature. For each cell, click to specify where it finishes maturing.",
+      "rowHeader": "Cell",
+      "columns": [
+        "Bone marrow",
+        "Thymus",
+        "Body tissues"
+      ],
+      "rows": [
+        "Mast cell",
+        "Neutrophil",
+        "T cell",
+        "Macrophage (from a monocyte)",
+        "B cell"
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "rationale": "<p>Every white cell starts in the <b>bone marrow</b>. Neutrophils and B cells finish maturing there; <b>T cells</b> finish in the <b>thymus</b>; mast cell precursors and monocytes leave the blood and mature in the <b>tissues</b> (monocytes become macrophages).</p><p>The tempting mistake is putting T cells in the bone marrow, since that's where they're made. Their training happens in the thymus.</p><p><b>Takeaway:</b> Marrow: neutrophils, B cells. Thymus: T cells. Tissues: mast cells, macrophages.</p>"
+    },
+    {
+      "id": "li-54",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client with allergic asthma has a high eosinophil count. Which explanation should the nurse give?",
+      "options": [
+        "Eosinophils join in allergy and asthma reactions, so they rise",
+        "Eosinophils fight bacteria, so the asthma must be from an infection",
+        "Eosinophils make antibodies, so the body is building immunity",
+        "Eosinophils carry oxygen, so they rise when breathing is hard"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Eosinophils</b> fight parasites and take part in <b>allergic reactions and asthma</b>, so a high count fits allergic asthma.</p><p><b>Fighting bacteria</b> is the tempting choice, since a high white count often means infection, but bacteria raise <b>neutrophils</b>.</p><p><b>Takeaway:</b> Eosinophils: parasites, allergies, asthma.</p>"
+    },
+    {
+      "id": "li-55",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 3,
+      "stem": "A nurse is comparing basophils and mast cells, since both release histamine. Which statement about them is accurate?",
+      "options": [
+        "Basophils stay in the tissues; mast cells circulate in the blood",
+        "Both are lymphocytes that make antibodies against allergens",
+        "Both mature in the thymus before they enter the bloodstream",
+        "Basophils circulate in the blood; mast cells stay in the tissues"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Basophils</b> travel in the <b>blood</b>; <b>mast cells</b> live in the <b>tissues</b> (skin, airways, gut) as sentinels. Both release histamine, which makes vessels leaky and causes itching and swelling.</p><p>The reversed pair is the tempting choice, since the two cells are so alike. Remember that mast cells sit in place, guarding the tissues.</p><p><b>Takeaway:</b> Basophils in the blood, mast cells in the tissues: both release histamine.</p>"
+    },
+    {
+      "id": "li-56",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client has had a long-lasting infection, and the monocyte count is high. Which role should the nurse expect these monocytes to play once they reach the infected tissue?",
+      "options": [
+        "They become plasma cells that release antibodies",
+        "They become macrophages that engulf germs and dead cells",
+        "They release histamine that makes the nearby vessels leaky",
+        "They kill virus-infected cells without engulfing them"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Monocytes</b> leave the blood and become <b>macrophages</b> (or dendritic cells) in the tissues. Macrophages engulf germs, dead cells, and debris, and show antigens to T cells.</p><p><b>Plasma cells</b> are the tempting choice, since they also develop from cells in the blood, but plasma cells come from <b>B cells</b>.</p><p><b>Takeaway:</b> Monocytes become macrophages: the big eaters of the tissues.</p>"
+    },
+    {
+      "id": "li-57",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client's infected wound is draining thick, yellow pus. Which explanation of what pus is made of should the nurse give?",
+      "options": [
+        "Dead red blood cells mixed with plasma",
+        "Antibodies that have bound tightly to the bacteria",
+        "Extra lymph that leaked from nearby nodes",
+        "Dead neutrophils, bacteria, and damaged tissue"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Neutrophils</b> are the first white cells to arrive and engulf bacteria; they die quickly, and their remains, with the bacteria and damaged tissue, form <b>pus</b>.</p><p><b>Antibodies</b> is the tempting choice, since they bind bacteria too, but they're proteins dissolved in fluid, not the thick material of pus.</p><p><b>Takeaway:</b> Pus is mostly dead neutrophils: a sign they've been fighting bacteria.</p>"
+    },
+    {
+      "id": "li-58",
+      "type": "matrix",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A nurse is reviewing the stages of inflammation. For each description, click to specify the stage.",
+      "rowHeader": "Description",
+      "columns": [
+        "Acute",
+        "Subacute",
+        "Chronic"
+      ],
+      "rows": [
+        "Lasts about 2 to 6 weeks as healing continues",
+        "Is often quiet, but is linked to heart disease and diabetes",
+        "Starts within minutes of a cut, with redness, warmth, and swelling",
+        "Neutrophils are the first white cells to arrive",
+        "Goes on for months, with macrophages and lymphocytes causing slow damage"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "rationale": "<p><b>Acute</b> inflammation starts within minutes to hours and lasts days: redness, warmth, swelling, and pain, with <b>neutrophils</b> arriving first, then macrophages. <b>Subacute</b> inflammation lasts about <b>2 to 6 weeks</b>. <b>Chronic</b> inflammation lasts months or longer; macrophages and lymphocytes keep it going, and it's linked to heart disease, diabetes, and arthritis.</p><p>The tempting mistake is calling chronic inflammation the red, swollen kind. Chronic inflammation is usually low-grade and quiet.</p><p><b>Takeaway:</b> Acute: fast and red, neutrophils. Subacute: 2 to 6 weeks. Chronic: quiet and long, macrophages and lymphocytes.</p>"
+    },
+    {
+      "id": "li-59",
+      "type": "matrix",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A nurse is reviewing the cytokines of inflammation. For each action, click to specify the cytokine group that performs it.",
+      "rowHeader": "Action",
+      "columns": [
+        "Chemokines",
+        "Interferons",
+        "Interleukins",
+        "Tumor necrosis factor"
+      ],
+      "rows": [
+        "Released by virus-infected cells to warn the cells nearby",
+        "Form a trail that draws neutrophils to an infection",
+        "Made mostly by macrophages; very large amounts can cause shock",
+        "Carry messages between white cells; some cause fever"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "rationale": "<p><b>Interferons</b> come from virus-infected cells and help nearby cells resist the virus. <b>Chemokines</b> call white cells to a site. <b>Tumor necrosis factor</b>, mostly from macrophages, drives inflammation and fever, and too much at once can cause shock. <b>Interleukins</b> pass messages between white cells; IL-1 and IL-6 cause fever.</p><p>The tempting mix-up is between chemokines and interleukins, since both are messages. Chemokines specifically make cells <b>move</b> toward the site.</p><p><b>Takeaway:</b> Chemokines call, interferons fight viruses, interleukins message, TNF inflames.</p>"
+    },
+    {
+      "id": "li-60",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 3,
+      "stem": "A client asks how the immune system can recognize a new virus it has never met before. Which explanation should the nurse give?",
+      "options": [
+        "“Your immune cells copy the virus's shape after it infects you, and then attack it.”",
+        "“Each of your B and T cells has its own receptor, so some match almost any germ.”",
+        "“The antibodies from your past infections attach to any new virus that enters.”",
+        "“Your body spots a new virus by its size, since viruses look alike.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>This is the result of <b>heterogeneity</b>: as lymphocytes develop, their receptor genes are shuffled and mutated, so each B and T cell carries a <b>unique</b> receptor. With so much variety, some cells match almost any germ, and those cells multiply when it appears.</p><p><b>Copying the virus's shape</b> is the tempting choice, since the response is so specific, but the matching receptors already exist before the virus arrives; the virus selects them.</p><p><b>Takeaway:</b> Receptor variety (heterogeneity) lets the immune system recognize germs it has never seen.</p>"
+    },
+    {
+      "id": "li-61",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "Two coworkers get the same vaccine. One makes high antibody levels, and the other makes much lower levels. Which explanation should the nurse give?",
+      "options": [
+        "People's immune responses vary with their genes, age, and health",
+        "The coworker with low levels must have had the infection already",
+        "The coworker with low levels is likely allergic to the vaccine",
+        "Antibody levels depend on which arm the vaccine was given in"
+      ],
+      "answer": 0,
+      "rationale": "<p>The immune response is <b>heterogeneous</b>: people differ in their receptor genes, age, and health (for example, older adults and people on immune-suppressing drugs often respond less strongly), so the same vaccine can give different antibody levels.</p><p><b>A past infection</b> is the tempting choice, but that would usually make the response <b>stronger</b>, since memory cells are already there.</p><p><b>Takeaway:</b> People respond differently to the same germ or vaccine: one result of heterogeneity.</p>"
+    },
+    {
+      "id": "li-62",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "Two days after starting antibiotics for an infection, a client's C-reactive protein (CRP) has fallen by half, but the erythrocyte sedimentation rate (ESR) is still high. How should the nurse interpret this?",
+      "options": [
+        "The infection is getting worse, since the ESR is still high",
+        "The inflammation is easing; the ESR falls more slowly than CRP",
+        "The CRP result must be wrong, since both should fall together",
+        "A new infection has started, since the two results disagree"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>CRP</b> rises within hours and falls quickly once inflammation settles. The <b>ESR</b> rises and falls more <b>slowly</b>, so it often lags behind. A falling CRP with a still-high ESR fits inflammation that's improving.</p><p><b>The infection is getting worse</b> is the tempting choice, since the ESR is still high, but the faster-moving CRP is the better sign of the current trend.</p><p><b>Takeaway:</b> CRP changes fast; ESR changes slowly. Follow the trend.</p>"
+    },
+    {
+      "id": "li-63",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 2,
+      "stem": "A client has a fever and a cough, and the provider orders a procalcitonin level. Which explanation of the test should the nurse give?",
+      "options": [
+        "“It measures how fast your red cells settle in a tube, which shows inflammation.”",
+        "“It's a stress hormone level that shows how your body is coping.”",
+        "“It rises mostly with bacterial infections, which helps guide antibiotics.”",
+        "“It shows whether your prostate is inflamed or enlarged.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Procalcitonin</b> stays very low in health and rises sharply in <b>bacterial</b> infections and sepsis, while staying low in most viral infections. It helps the provider decide whether antibiotics are likely to help.</p><p><b>How fast red cells settle</b> is the tempting choice, since it's another inflammation test, but that's the <b>ESR</b>, which doesn't tell bacteria from other causes.</p><p><b>Takeaway:</b> Procalcitonin points toward bacterial infection; CRP and ESR show inflammation of any cause.</p>"
+    },
+    {
+      "id": "li-64",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "A 58-year-old client with a fever, pain on urination, and a tender prostate has a high prostate-specific antigen (PSA) level. The client asks whether this means cancer. Which response should the nurse give?",
+      "options": [
+        "“Yes; a high PSA level confirms that you have prostate cancer.”",
+        "“No; PSA rises with age and isn't linked to the prostate.”",
+        "“PSA rises with infections anywhere in the body, so it says little about the prostate.”",
+        "“An inflamed prostate can raise PSA too; the provider will follow up.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>PSA</b> is made by normal and cancerous prostate cells. Cancer can raise it, but so can <b>prostatitis</b> (inflammation) and an enlarged prostate (BPH). With signs of prostatitis, the high PSA needs follow-up, not a conclusion.</p><p><b>“A high PSA confirms cancer”</b> is the tempting choice, since PSA is used to screen for prostate cancer, but it isn't specific to cancer.</p><p><b>Takeaway:</b> PSA rises with prostate cancer, BPH, and prostatitis.</p>"
+    },
+    {
+      "id": "li-65",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A healthy 68-year-old client had all childhood vaccines. Which vaccines should the nurse recommend now?",
+      "options": [
+        "No more vaccines, since childhood vaccines protect for a lifetime",
+        "Pneumococcal, shingles, and yearly flu and COVID-19 vaccines",
+        "A shingles vaccine alone, since it also protects against pneumonia",
+        "A tetanus booster alone, since the others are for children"
+      ],
+      "answer": 1,
+      "rationale": "<p>The instructor's list: keep up with vaccines and a record of them: childhood vaccines, <b>yearly</b> flu and COVID-19 vaccines, and <b>pneumococcal and shingles</b> vaccines for older adults.</p><p><b>No more vaccines</b> is the tempting choice, since the client is healthy, but protection from some childhood vaccines fades, and older adults face new risks like shingles and pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal and shingles, plus yearly flu and COVID-19.</p>"
+    },
+    {
+      "id": "li-66",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A college student drinks three energy drinks a day to stay awake for studying. Which explanation of how this affects health should the nurse give?",
+      "options": [
+        "“Their caffeine strengthens your white cells against infection.”",
+        "“They supply the vitamins your immune cells need, so diet matters less.”",
+        "“Their sugar and artificial ingredients can promote inflammation.”",
+        "“They affect your sleep, but they have no effect on inflammation.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The instructor's guide names <b>energy drinks</b> as a lifestyle choice that harms health: they're high in <b>sugar and artificial ingredients</b>, which can lead to inflammation.</p><p><b>Supplying vitamins</b> is the tempting choice, since some drinks add vitamins, but they don't replace whole foods, and the sugar works against the immune system.</p><p><b>Takeaway:</b> Energy drinks: sugar and additives that promote inflammation.</p>"
+    },
+    {
+      "id": "li-67",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 3,
+      "stem": "A client says, “I take an herbal supplement for my immune system, so I don't need a flu shot.” Which response should the nurse give?",
+      "options": [
+        "“Use supplements only with your provider's guidance, and keep getting vaccines.”",
+        "“That's fine; herbal supplements protect you just as well as the flu shot does.”",
+        "“Herbal supplements are natural, so you can take as much as you like.”",
+        "“Stop the supplement, since herbs weaken the immune system.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>The instructor's guide: herbal supplements can support immune health <b>with the provider's guidance</b>, as <b>part of</b> other healthy choices (exercise, a healthy diet, and vaccinations), never in place of them. Some interact with medications.</p><p><b>“Stop the supplement”</b> is the tempting choice, since it sounds cautious, but the nurse's role is to involve the provider, not to forbid it; the key teaching is that it doesn't replace the vaccine.</p><p><b>Takeaway:</b> Supplements: with the provider's guidance, alongside vaccines, diet, and exercise.</p>"
+    },
+    {
+      "id": "li-68",
+      "type": "highlight",
+      "case": "wound",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "Client [[scraped the left shin on a garden fence 4 days ago]]. The area is now [[red, warm, swollen, and painful]], [[about 10 cm across]], with [[yellow drainage]]. [[Reports chills last night]]. [[Takes an herbal supplement “for immunity”]] and [[drinks two energy drinks a day]]. [[Has never had a pneumococcal vaccine]]. [[Walks the dog every day]]. [[Strong pulses in both ankles]].",
+      "answer": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "rationale": "<p>The red, warm, swollen, painful area with drainage and chills shows <b>acute inflammation</b> from an infection that's spreading into the body; its size is a baseline to track. The supplement needs the provider's review, the energy drinks feed inflammation, and the missing pneumococcal vaccine is a prevention gap.</p><p><b>The scrape on the fence</b> is the tempting one to highlight, since it started everything, but it's the history, not something to act on now. Daily walks and strong pulses are reassuring.</p><p><b>Takeaway:</b> Act on the signs of inflammation and infection, then the gaps in immune health.</p>"
+    },
+    {
+      "id": "li-69",
+      "type": "matrix",
+      "case": "wound",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "For each laboratory result, click to specify what it most likely shows.",
+      "rowHeader": "Result",
+      "columns": [
+        "Inflammation, from any cause",
+        "A bacterial infection in particular",
+        "Within the normal range"
+      ],
+      "rows": [
+        "White blood cells 15,800/mm³, with 82% neutrophils",
+        "C-reactive protein 9.6 mg/dL",
+        "Erythrocyte sedimentation rate 48 mm/hr",
+        "Procalcitonin 1.8 ng/mL",
+        "Hemoglobin 14.2 g/dL"
+      ],
+      "answer": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>A high white count driven by <b>neutrophils</b>, and a high <b>procalcitonin</b>, point to a <b>bacterial</b> infection. <b>CRP</b> and <b>ESR</b> show that inflammation is present but not its cause. The hemoglobin is normal.</p><p>The tempting mistake is reading a high CRP as proof of bacteria. CRP rises with any inflammation; procalcitonin is the more specific clue.</p><p><b>Takeaway:</b> Neutrophils and procalcitonin: bacteria. CRP and ESR: inflammation of any cause.</p>"
+    },
+    {
+      "id": "li-70",
+      "type": "dropdown",
+      "case": "wound",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "Complete the following sentences.",
+      "text": "The red, warm, swollen leg shows {{0}} inflammation. The white cells that arrive first are {{1}}, drawn to the site by {{2}}.",
+      "blanks": [
+        {
+          "options": [
+            "chronic",
+            "acute",
+            "subacute"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "macrophages",
+            "lymphocytes",
+            "neutrophils"
+          ],
+          "answer": 2
+        },
+        {
+          "options": [
+            "chemokines",
+            "interferons",
+            "antibodies"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>Redness, warmth, swelling, and pain within days of an injury are <b>acute</b> inflammation. <b>Neutrophils</b> arrive first, followed by macrophages, following the trail of <b>chemokines</b> to the site.</p><p><b>Macrophages</b> is the tempting choice, since they're key to inflammation, but they arrive after the neutrophils and clean up.</p><p><b>Takeaway:</b> Acute inflammation: neutrophils first, called in by chemokines.</p>"
+    },
+    {
+      "id": "li-71",
+      "type": "sata",
+      "case": "wound",
+      "topic": "Immune health and lifestyle",
+      "level": 3,
+      "stem": "Before the client leaves, which teaching about immune health should the nurse include?",
+      "options": [
+        "Ask the provider before continuing the herbal supplement",
+        "Replace the energy drinks with water",
+        "Ask about getting the pneumococcal vaccine",
+        "Eat mostly whole foods, like vegetables, fruits, and whole grains",
+        "Stop walking the dog for the next month",
+        "Double the herbal supplement while the infection lasts"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "<p>The instructor's interventions: <b>supplements with the provider's guidance</b>, <b>vaccinations</b> (pneumococcal for older adults), a <b>whole-food diet</b>, and <b>regular exercise</b>; energy drinks promote inflammation.</p><p><b>Stopping the walks</b> is the tempting choice, since the leg is sore, but regular exercise supports immune health; the client can rest the leg as the provider directs without giving up activity for a month.</p><p><b>Takeaway:</b> Teach vaccines, whole foods, exercise, and supplements only with the provider's guidance.</p>"
+    },
+    {
+      "id": "li-72",
+      "type": "matrix",
+      "case": "wound",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "Three days after starting antibiotics, the client returns. For each finding, click to specify whether it has improved, not changed, or gotten worse.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Improved",
+        "Not changed",
+        "Gotten worse"
+      ],
+      "rows": [
+        "Temperature: 38.6 °C then, 37.0 °C now",
+        "C-reactive protein: 9.6 mg/dL then, 3.1 mg/dL now",
+        "Procalcitonin: 1.8 ng/mL then, 0.4 ng/mL now",
+        "Erythrocyte sedimentation rate: 48 mm/hr then, 47 mm/hr now",
+        "Red area: 10 cm across then, 14 cm across now"
+      ],
+      "answer": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>The fever, CRP, and procalcitonin are all falling, which fits an infection responding to treatment. The ESR hasn't changed, which is expected, since it falls slowly. But the <b>red area has grown</b>, so the infection may be spreading at the edges: report it.</p><p>The tempting mistake is calling everything improved because the labs are better. A spreading area of redness needs follow-up even when the numbers improve.</p><p><b>Takeaway:</b> Read every finding: improving markers don't cancel a spreading infection.</p>"
     }
   ]
 }

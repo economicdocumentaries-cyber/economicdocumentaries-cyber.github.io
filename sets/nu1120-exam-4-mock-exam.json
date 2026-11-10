@@ -4,7 +4,7 @@
   "description": "Exam 4 practice on the endocrine, cardiovascular, respiratory, and lymphatic and immune systems (Weeks 9 to 12), matched to the instructor's Exam 4 study guide and written a level beyond the real exam, with case studies and the next-generation question types. Each exam gives 50, split evenly across the four systems.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 213.0,
+  "timeMinutes": 300.0,
   "defaultCount": 50,
   "topicWeights": {
     "Endocrine system": 1,
@@ -61,6 +61,23 @@
         {
           "title": "Medications",
           "html": "<h4>Medications</h4><ul><li>Albuterol inhaler, 2 puffs every 4 hours as needed for wheezing</li><li>Fluticasone inhaler (an inhaled corticosteroid), 2 puffs twice a day</li></ul>"
+        }
+      ]
+    },
+    "wellness": {
+      "intro": "A nurse at a primary care clinic is seeing a 70-year-old client for a yearly wellness visit.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>1000:</b> Client feels well. Drinks 2 to 3 energy drinks a day “for energy.” Takes an echinacea supplement every day “to boost immunity”; hasn't told the provider. Walks about 15 minutes twice a week. Eats fast food most days, with few vegetables. Lives with a spouse and volunteers at a daycare center twice a week.</p>"
+        },
+        {
+          "title": "Immunization Record",
+          "html": "<h4>Immunization Record</h4><table><tr><th>Influenza</th><td>2 years ago</td></tr><tr><th>COVID-19</th><td>3 years ago</td></tr><tr><th>Pneumococcal</th><td>None</td></tr><tr><th>Shingles (zoster)</th><td>None</td></tr><tr><th>Tetanus-diphtheria</th><td>4 years ago</td></tr></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results</h4><table><tr><th>High-sensitivity C-reactive protein</th><td>4.2&nbsp;mg/L</td><td>(under 1.0 low risk; over 3.0 high risk)</td></tr><tr><th>White blood cells</th><td>7,200/mm³</td><td>(5,000–10,000)</td></tr><tr><th>Fasting glucose</th><td>108&nbsp;mg/dL</td><td>(70–99)</td></tr></table>"
         }
       ]
     }
@@ -2749,6 +2766,1009 @@
       ],
       "answer": 0,
       "rationale": "<p>A rising PaCO₂ with growing drowsiness means the client is no longer moving enough air: carbon dioxide builds up and dulls the brain. This is a worsening <b>respiratory acidosis</b> that needs to be reported right away.</p><p><b>Finally resting</b> is the tempting choice, since a calmer client can look better, but drowsiness with a rising CO₂ is a danger sign, not relief.</p><p><b>Takeaway:</b> Drowsiness plus a rising CO₂ in a client in distress means breathing is failing.</p>"
+    },
+    {
+      "id": "m4l-51",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client on bed rest asks why the nurse encourages moving the legs to help the lymph flow. Which explanation should the nurse give?",
+      "options": [
+        "The heart pumps lymph through its own separate set of lymph arteries",
+        "Lymph flows downhill, so it moves best when the legs hang down off the bed",
+        "The lymph nodes pump the lymph along on their own, like small hearts",
+        "Working muscles squeeze the vessels, and valves keep lymph flowing one way"
+      ],
+      "answer": 3,
+      "rationale": "<p>Lymph vessels have no pump of their own. <b>Skeletal muscles</b> squeeze them as they work, and <b>one-way valves</b> keep the lymph moving toward the ducts in the chest. Breathing movements help too.</p><p><b>The heart pumping lymph</b> is the tempting choice, since the heart moves the blood, but the lymphatic system is a separate, low-pressure system.</p><p><b>Takeaway:</b> Lymph moves by muscle squeeze, breathing, and one-way valves.</p>"
+    },
+    {
+      "id": "m4l-52",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "An older adult asks why the thymus is much smaller now than it was in childhood. Which explanation should the nurse give?",
+      "options": [
+        "It shrinks once the body's B cells have finished maturing inside it",
+        "It trains most of the T cells early in life, then shrinks after puberty",
+        "It shrinks as it releases the red blood cells it stored for emergencies",
+        "It shrinks because of a long-lasting infection in the chest"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>thymus</b> is where <b>T cells</b> mature. It's largest and most active in childhood, when the body builds its supply of T cells, then slowly shrinks and is replaced by fat after puberty.</p><p><b>B cells</b> is the tempting choice for students who mix up the two lymphocytes; B cells mature in the bone marrow, not the thymus.</p><p><b>Takeaway:</b> The thymus trains T cells, mostly in childhood, and shrinks with age.</p>"
+    },
+    {
+      "id": "m4l-53",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client's bone marrow is suppressed by chemotherapy. Which finding should the nurse report first?",
+      "options": [
+        "A temperature of 38.3 °C (101 °F)",
+        "Feeling more tired than usual this week",
+        "A few small bruises on the arms",
+        "Thinning hair on the scalp"
+      ],
+      "answer": 0,
+      "rationale": "<p>Suppressed <b>bone marrow</b> makes too few white cells, so an infection can become serious quickly, and a <b>fever</b> may be its only sign. It's reported right away.</p><p><b>Bruising</b> is the tempting choice, since low platelets can cause bleeding, but a few small bruises are less urgent than a possible infection without white cells to fight it.</p><p><b>Takeaway:</b> With marrow suppression, a fever is an emergency: few white cells are left to fight infection.</p>"
+    },
+    {
+      "id": "m4l-54",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "In the first hours after a cut becomes infected, which white blood cells should the nurse expect to arrive at the site first?",
+      "options": [
+        "Macrophages",
+        "Lymphocytes",
+        "Eosinophils",
+        "Neutrophils"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Neutrophils</b> are the most common white cells and the <b>first responders</b>: they leave the blood within hours to engulf bacteria. Macrophages follow and clean up.</p><p><b>Macrophages</b> is the tempting choice, since they're powerful eaters, but they arrive after the neutrophils.</p><p><b>Takeaway:</b> Neutrophils first, then macrophages.</p>"
+    },
+    {
+      "id": "m4l-55",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "During an allergic reaction, a client's basophil count is high. Which substances should the nurse expect these cells to release?",
+      "options": [
+        "Antibodies and complement",
+        "Interferons and surfactant",
+        "Histamine and heparin",
+        "Insulin and glucagon"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Basophils</b>, like mast cells, release <b>histamine</b> (leaky vessels, itching, swelling) and <b>heparin</b> during allergic and inflammatory reactions.</p><p><b>Antibodies</b> is the tempting choice, since antibodies take part in allergies, but they come from B cells (plasma cells).</p><p><b>Takeaway:</b> Basophils and mast cells release histamine; B cells make antibodies.</p>"
+    },
+    {
+      "id": "m4l-56",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A biopsy of a long-lasting infection shows many large cells, which developed from blood monocytes, filled with engulfed bacteria. Which cells should the nurse recognize these as?",
+      "options": [
+        "Plasma cells",
+        "Macrophages",
+        "Mast cells",
+        "Neutrophils"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Monocytes</b> leave the blood and become <b>macrophages</b> in the tissues: large cells that engulf germs, dead cells, and debris. They're prominent in long-lasting infections.</p><p><b>Neutrophils</b> is the tempting choice, since they also engulf bacteria, but they don't develop from monocytes, and they're short-lived first responders.</p><p><b>Takeaway:</b> Monocytes in the blood become macrophages in the tissues.</p>"
+    },
+    {
+      "id": "m4l-57",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A virus is hiding inside a client's cells, where antibodies can't reach it. Which cells should the nurse expect to destroy the infected cells?",
+      "options": [
+        "Cytotoxic (CD8+) T cells",
+        "Helper (CD4+) T cells",
+        "B cells and their antibodies",
+        "Basophils releasing histamine"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Cytotoxic (CD8+) T cells</b> recognize body cells infected with a virus (or cancer cells) and kill them directly, so the virus can't keep multiplying inside.</p><p><b>Helper T cells</b> is the tempting choice, since they're essential, but they <b>direct</b> the response; they don't kill infected cells themselves.</p><p><b>Takeaway:</b> Cytotoxic T cells kill infected cells; helper T cells direct.</p>"
+    },
+    {
+      "id": "m4l-58",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client's CD4+ T-cell count is very low. Which explanation of why this weakens most of the immune response should the nurse give?",
+      "options": [
+        "CD4+ cells are the cells that make the body's antibodies",
+        "CD4+ cells are the main phagocytes that engulf bacteria",
+        "Helper T cells activate B cells, cytotoxic T cells, and macrophages",
+        "CD4+ cells release the histamine that starts and spreads inflammation"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Helper (CD4+) T cells</b> direct the immune response: they activate B cells to make antibodies, cytotoxic T cells to kill infected cells, and macrophages to destroy what they engulf. Without them, most of the response weakens.</p><p><b>Making antibodies</b> is the tempting choice, since antibody production does fall, but B cells make the antibodies; helper T cells switch them on.</p><p><b>Takeaway:</b> Helper T cells are the immune system's coordinators.</p>"
+    },
+    {
+      "id": "m4l-59",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client asks why a tetanus booster protects better than the first dose did years ago. Which explanation should the nurse give?",
+      "options": [
+        "“The booster's antibodies stay in your blood for the rest of your life.”",
+        "“The booster contains a stronger toxin than the first dose did.”",
+        "“Memory cells from the earlier doses respond faster and stronger.”",
+        "“Boosters work by raising the number of neutrophils you have.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The first doses left <b>memory B and T cells</b>. A booster calls them back into action, giving a faster, stronger response and higher antibody levels than a first exposure.</p><p><b>Antibodies that last for life</b> is the tempting choice, but antibody levels fade over years, which is why boosters are needed; the lasting part is the memory cells.</p><p><b>Takeaway:</b> Memory cells make every later exposure faster and stronger.</p>"
+    },
+    {
+      "id": "m4l-60",
+      "type": "matrix",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing the white blood cells. For each cell, click to specify its group.",
+      "rowHeader": "Cell",
+      "columns": [
+        "Granulocyte",
+        "Agranulocyte"
+      ],
+      "rows": [
+        "Neutrophil",
+        "Lymphocyte",
+        "Eosinophil",
+        "Monocyte",
+        "Basophil"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Granulocytes</b> have visible granules: neutrophils, eosinophils, and basophils. <b>Agranulocytes</b> don't: lymphocytes and monocytes. (Platelets aren't white cells at all.)</p><p>The tempting mistake is putting monocytes with the lymphocytes' subtypes, as the instructor's list does. Both are agranulocytes, but they're separate cell types.</p><p><b>Takeaway:</b> Granulocytes: neutrophils, eosinophils, basophils. Agranulocytes: lymphocytes, monocytes.</p>"
+    },
+    {
+      "id": "m4l-61",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks why an inflamed knee is red and warm. Which explanation should the nurse give?",
+      "options": [
+        "“The vessels leak fluid into the tissue that surrounds the joint.”",
+        "“White cells give off heat as they engulf the germs.”",
+        "“The small vessels widen, so more blood flows to the area.”",
+        "“The nerves around the joint are firing more often.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>In acute inflammation, chemicals like histamine <b>widen</b> the small vessels, so more blood reaches the area, making it <b>red and warm</b>.</p><p><b>Leaking fluid</b> is the tempting choice, since it happens at the same time, but leaky vessels cause the <b>swelling</b>, not the redness and warmth.</p><p><b>Takeaway:</b> Widened vessels: redness and heat. Leaky vessels: swelling.</p>"
+    },
+    {
+      "id": "m4l-62",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client asks why the provider is concerned about long-lasting, low-grade inflammation when there's no pain or redness. Which explanation should the nurse give?",
+      "options": [
+        "“It's harmless, since inflammation without symptoms doesn't affect the body.”",
+        "“It slowly damages tissue and is linked to heart disease and diabetes.”",
+        "“It means an acute infection is about to start in the next few days.”",
+        "“It affects the joints and nothing else, so arthritis is the concern.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Chronic</b> inflammation is often quiet, but it goes on for months or years, with macrophages and lymphocytes slowly damaging tissue. It's linked to heart disease, diabetes, and other long-term illnesses.</p><p><b>Harmless without symptoms</b> is the tempting choice, since acute inflammation is the kind people notice, but chronic inflammation does its damage silently.</p><p><b>Takeaway:</b> Chronic inflammation is quiet but harmful over time.</p>"
+    },
+    {
+      "id": "m4l-63",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client with a viral infection asks what interferons do. Which explanation should the nurse give?",
+      "options": [
+        "“Infected cells release them to warn nearby cells and slow the virus.”",
+        "“They're antibodies that coat the virus so white cells can engulf it.”",
+        "“They draw neutrophils to bacteria at the site of an infection.”",
+        "“They signal the liver to make C-reactive protein.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Interferons</b> are cytokines released by virus-infected cells. They warn nearby cells to resist the virus and activate immune cells, slowing its spread.</p><p><b>Drawing neutrophils to a site</b> is the tempting choice, since it's another cytokine job, but that's what <b>chemokines</b> do. Signaling the liver is IL-6's job.</p><p><b>Takeaway:</b> Interferons interfere with viruses.</p>"
+    },
+    {
+      "id": "m4l-64",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Within hours of a serious injury, a client's C-reactive protein and fibrinogen levels rise. Which explanation of where these acute phase proteins come from should the nurse give?",
+      "options": [
+        "The spleen releases them when histamine signals it",
+        "The liver makes them when interleukin-6 signals it",
+        "The bone marrow makes them when interferons signal it",
+        "The lymph nodes release them when antibodies signal them"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Acute phase proteins</b>, such as CRP and fibrinogen, are made by the <b>liver</b> within hours of injury or infection, mainly in response to the cytokine <b>interleukin-6</b>.</p><p><b>The bone marrow</b> is the tempting choice, since it makes blood cells, but these are proteins dissolved in the plasma, made by the liver.</p><p><b>Takeaway:</b> IL-6 tells the liver to make acute phase proteins like CRP.</p>"
+    },
+    {
+      "id": "m4l-65",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Because lymphocyte receptors are made in random variety, some lymphocytes could react against the body's own tissues. Which keeps them in check?",
+      "options": [
+        "Neutrophils find and destroy them as they circulate through the bloodstream",
+        "Antibodies coat them so they can't leave the lymph nodes",
+        "The spleen stores them until they die of old age",
+        "The thymus removes most of them, and regulatory T cells restrain the rest"
+      ],
+      "answer": 3,
+      "rationale": "<p>The random variety of receptors (<b>heterogeneity</b>) has a risk: some cells may match the body's own markers. The <b>thymus</b> destroys most of these T cells as they mature, and <b>regulatory T cells</b> hold back the rest. When this fails, autoimmune disease can result.</p><p><b>Neutrophils destroying them</b> is the tempting choice, since neutrophils destroy harmful things, but they target germs, not the body's own lymphocytes.</p><p><b>Takeaway:</b> Thymus selection and regulatory T cells keep self-reactive cells in check.</p>"
+    },
+    {
+      "id": "m4l-66",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nursing student asks how the body can make antibodies against germs that didn't exist when the person was born. Which explanation should the nurse give?",
+      "options": [
+        "B cells copy the shape of each new germ after it enters the body",
+        "The mother's antibodies keep covering the child against new germs throughout life",
+        "B cells shuffle their receptor genes, making a huge variety of receptors in advance",
+        "The liver makes a new antibody to order for each new germ"
+      ],
+      "answer": 2,
+      "rationale": "<p>As B cells develop, their receptor genes are shuffled and mutated, creating a <b>huge variety</b> (heterogeneity). Some cell is likely to match a new germ, and that cell multiplies and makes the antibody.</p><p><b>The mother's antibodies</b> is the tempting choice, since babies do get antibodies from their mothers, but those last only months and cover germs the mother has met.</p><p><b>Takeaway:</b> Receptor variety lets B cells match germs they've never seen.</p>"
+    },
+    {
+      "id": "m4l-67",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client's erythrocyte sedimentation rate (ESR) is 52 mm/hr. Which explanation of the test should the nurse give?",
+      "options": [
+        "“It counts the white blood cells in your blood that are fighting an infection.”",
+        "“It measures a hormone from the adrenal glands that affects sleep.”",
+        "“It measures a protein made by the cells of the prostate gland.”",
+        "“It measures how fast red cells settle; a fast rate suggests inflammation.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>ESR</b> measures how far red cells settle in a tube in an hour. Inflammation proteins make the cells clump, so they fall <b>faster</b>; a high rate suggests an inflammatory condition, though not its cause.</p><p><b>Counting white cells</b> is the tempting choice, since that's another sign of infection, but it's a separate test (the white blood cell count).</p><p><b>Takeaway:</b> ESR: a faster settling rate means inflammation.</p>"
+    },
+    {
+      "id": "m4l-68",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client had surgery yesterday, and today's C-reactive protein (CRP) level is high. How should the nurse interpret this?",
+      "options": [
+        "An operation inflames tissue, so a rise is expected; watch the trend",
+        "It proves a wound infection has started and needs antibiotics",
+        "It means the blood sample was drawn incorrectly and needs repeating",
+        "It shows the client's cortisol level has fallen too low"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>CRP</b> rises within hours of <b>any</b> inflammation, and surgery itself is tissue injury. A high level the day after surgery is expected; what matters is whether it falls over the next days or rises again.</p><p><b>Proof of a wound infection</b> is the tempting choice, since CRP rises with infection, but it isn't specific; a rising trend days later would be more concerning.</p><p><b>Takeaway:</b> CRP shows inflammation of any cause; watch the trend.</p>"
+    },
+    {
+      "id": "m4l-69",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client with a cough and fever has a very low procalcitonin level. Which explanation of the result should the nurse give?",
+      "options": [
+        "A bacterial infection is certain, so antibiotics should start now",
+        "A bacterial infection is less likely, so antibiotics may not help",
+        "The inflammation is too severe for the level to be measured",
+        "The client's prostate is inflamed, which lowers the level"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Procalcitonin</b> rises sharply in bacterial infections and stays low in most viral ones. A very low level makes a bacterial cause <b>less likely</b>, so the provider may hold antibiotics, which don't treat viruses.</p><p><b>A bacterial infection is certain</b> is the tempting choice, since the client has a fever, but a low procalcitonin points the other way.</p><p><b>Takeaway:</b> Low procalcitonin: bacteria less likely. High: bacteria more likely.</p>"
+    },
+    {
+      "id": "m4l-70",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Which explanation of the link between interleukin-6 (IL-6) and C-reactive protein (CRP) should the nurse give?",
+      "options": [
+        "CRP signals the liver to make IL-6, so CRP rises first",
+        "IL-6 breaks CRP down, so a high IL-6 means a low CRP",
+        "IL-6 signals the liver to make CRP, so both rise with inflammation",
+        "They aren't linked; IL-6 rises with bacteria, and CRP rises with viruses"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>IL-6</b> is a cytokine released in inflammation; it signals the <b>liver</b> to make acute phase proteins such as <b>CRP</b>. Both rise together in inflammation and infection.</p><p><b>“Not linked”</b> is the tempting choice for students who learned them as separate tests, but CRP is largely made because of IL-6.</p><p><b>Takeaway:</b> IL-6 drives the liver's CRP.</p>"
+    },
+    {
+      "id": "m4l-71",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A 62-year-old client's prostate-specific antigen (PSA) level rose during an episode of prostatitis. Which plan should the nurse expect?",
+      "options": [
+        "Start prostate cancer treatment right away",
+        "Disregard the result, since PSA has no meaning after age 60",
+        "Measure a cortisol level instead of the PSA",
+        "Recheck the PSA after the inflammation has settled"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Prostatitis</b> (inflammation of the prostate) can raise the <b>PSA</b>, just as cancer and BPH can. The usual plan is to treat the inflammation and recheck the PSA once it has settled.</p><p><b>Starting cancer treatment</b> is the tempting choice, since PSA is a cancer screening test, but a high PSA during prostatitis doesn't show cancer.</p><p><b>Takeaway:</b> Inflammation raises PSA: recheck after it settles.</p>"
+    },
+    {
+      "id": "m4l-72",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A provider orders a blood cortisol level at 0800. The client asks why the time matters. Which explanation should the nurse give?",
+      "options": [
+        "“Cortisol follows a daily rhythm and is highest in the early morning.”",
+        "“Cortisol is made while you sleep and stops by noon.”",
+        "“Food raises cortisol, so it must be checked before breakfast.”",
+        "“Cortisol drops during exercise, so it's checked before any activity in the day.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Cortisol</b>, a steroid hormone that affects metabolism, blood pressure, inflammation, and sleep, follows a <b>daily rhythm</b>: highest in the early morning and lowest around midnight. Testing at a set time makes the result meaningful.</p><p><b>Checking before breakfast</b> is the tempting choice, since many blood tests are drawn fasting, but the timing here is about the daily rhythm.</p><p><b>Takeaway:</b> Cortisol: highest in the morning, lowest at night, so the time of the test matters.</p>"
+    },
+    {
+      "id": "m4l-73",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks how much exercise helps support the immune system. Which goal should the nurse give?",
+      "options": [
+        "One long 2-hour session each weekend",
+        "Ten minutes once a week, so the body isn't stressed",
+        "As much exercise as possible each day, even on days when you feel sick",
+        "About 150 minutes a week, such as 20 to 30 minutes on most days"
+      ],
+      "answer": 3,
+      "rationale": "<p>The instructor's guide: regular exercise of about <b>150 minutes a week</b>, for example 20 to 30 minutes on 5 to 7 days.</p><p><b>One 2-hour session a week</b> is the tempting choice, since it's close to the total, but the benefit comes from regular activity spread over most days.</p><p><b>Takeaway:</b> Exercise: about 150 minutes a week, spread over most days.</p>"
+    },
+    {
+      "id": "m4l-74",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Which explanation of why a client should keep a record of immunizations should the nurse give?",
+      "options": [
+        "“It lets each dose be checked, so none are missed or repeated.”",
+        "“Vaccines can't legally be given to you without a paper vaccine card.”",
+        "“The record replaces the need for any future boosters.”",
+        "“The record shows your blood type for emergencies.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>The instructor's guide pairs getting vaccinations with <b>keeping a record</b> of them: childhood vaccines, yearly flu and COVID-19 vaccines, and pneumococcal and shingles vaccines for older adults. A record shows what's due.</p><p><b>“The record replaces boosters”</b> is the tempting choice for a client who wants to skip shots, but a record only tracks doses; boosters are still needed.</p><p><b>Takeaway:</b> A vaccine record keeps every dose on schedule.</p>"
+    },
+    {
+      "id": "m4l-75",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Which meal plan best supports a client's immune health?",
+      "options": [
+        "A daily multivitamin pill taken in place of most fruits and vegetables",
+        "Mostly vegetables, fruits, whole grains, beans, and lean proteins",
+        "Energy bars and sports drinks for fast, ready nutrients",
+        "A low-protein diet to give the immune system a rest"
+      ],
+      "answer": 1,
+      "rationale": "<p>The instructor's guide: a healthy diet of <b>whole foods</b>, which supply the protein, vitamins, and minerals immune cells need.</p><p><b>A daily multivitamin</b> is the tempting choice, since it supplies vitamins, but it doesn't replace whole foods; a supplement is best used with the provider's guidance.</p><p><b>Takeaway:</b> Whole foods support immune health.</p>"
+    },
+    {
+      "id": "m4l-76",
+      "type": "highlight",
+      "case": "wellness",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "[[Client feels well]]. [[Drinks 2 to 3 energy drinks a day “for energy.”]] [[Takes an echinacea supplement every day “to boost immunity”; hasn't told the provider]]. [[Walks about 15 minutes twice a week]]. [[Eats fast food most days, with few vegetables]]. [[Lives with a spouse]] and volunteers at a daycare center twice a week.",
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>Each highlighted finding works against immune health: <b>energy drinks</b> promote inflammation, a <b>supplement</b> should be used only with the provider's guidance, <b>30 minutes</b> of exercise a week is far below 150, and a fast-food diet lacks the <b>whole foods</b> the immune system needs.</p><p><b>Feeling well</b> is the tempting one to highlight in a wellness visit, but it's reassuring; the risks here are in the habits, not the symptoms.</p><p><b>Takeaway:</b> At a wellness visit, look for the habits that weaken immune health.</p>"
+    },
+    {
+      "id": "m4l-77",
+      "type": "matrix",
+      "case": "wellness",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "The nurse reviews the client's immunization record. For each vaccine, click to specify whether the client is due for it now.",
+      "rowHeader": "Vaccine",
+      "columns": [
+        "Due now",
+        "Up to date"
+      ],
+      "rows": [
+        "Influenza",
+        "Tetanus-diphtheria",
+        "Pneumococcal",
+        "Shingles (zoster)",
+        "COVID-19"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "rationale": "<p>The <b>flu</b> vaccine is yearly (last one 2 years ago), and so is the updated <b>COVID-19</b> vaccine. <b>Pneumococcal</b> and <b>shingles</b> vaccines are recommended for older adults and haven't been given. The <b>tetanus-diphtheria</b> booster is every 10 years, so a dose 4 years ago is up to date.</p><p>The tempting mistake is marking tetanus as due because the client is older. It's given every 10 years, regardless of age.</p><p><b>Takeaway:</b> Older adults: yearly flu and COVID-19, plus pneumococcal and shingles; tetanus every 10 years.</p>"
+    },
+    {
+      "id": "m4l-78",
+      "type": "dropdown",
+      "case": "wellness",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Complete the following sentences.",
+      "text": "The client's high-sensitivity CRP of 4.2 mg/L suggests {{0}}. The client's {{1}} may be feeding it, and it's linked to a higher risk of {{2}}.",
+      "blanks": [
+        {
+          "options": [
+            "an acute bacterial infection",
+            "low-grade, chronic inflammation",
+            "a normal result at age 70"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "energy drinks and fast-food meals",
+            "volunteering at the daycare",
+            "tetanus booster 4 years ago"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "a broken bone",
+            "hearing loss",
+            "heart disease"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p>A high-sensitivity CRP above 3.0 mg/L in a client who feels well, with a normal white count, suggests <b>low-grade chronic inflammation</b>. Energy drinks (sugar and additives) and a diet low in whole foods can feed it, and chronic inflammation is linked to <b>heart disease</b>.</p><p><b>An acute bacterial infection</b> is the tempting choice, since CRP rises with infection, but the client has no symptoms and a normal white count.</p><p><b>Takeaway:</b> A mildly high CRP without infection points to chronic inflammation and heart risk.</p>"
+    },
+    {
+      "id": "m4l-79",
+      "type": "sata",
+      "case": "wellness",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Which of the following should the nurse include in the client's teaching?",
+      "options": [
+        "Build up to about 150 minutes of exercise a week",
+        "Replace the energy drinks with water or other unsweetened drinks",
+        "Tell the provider about the echinacea before continuing it",
+        "Get the flu, COVID-19, pneumococcal, and shingles vaccines",
+        "Eat more whole foods, like vegetables, fruits, and whole grains",
+        "Double the echinacea in flu season in place of the flu vaccine",
+        "Stop volunteering at the daycare to avoid germs"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>Every right choice is one of the instructor's interventions: <b>exercise</b> (150 minutes a week), <b>avoiding energy drinks</b>, supplements only with the <b>provider's guidance</b>, <b>vaccinations</b> on schedule, and a <b>whole-food</b> diet.</p><p><b>Stopping the volunteering</b> is the tempting choice, since daycare centers spread germs, but vaccines and healthy habits protect the client without giving up a meaningful activity. A supplement never replaces a vaccine.</p><p><b>Takeaway:</b> Teach exercise, whole foods, vaccines, no energy drinks, and supplements only with the provider's guidance.</p>"
+    },
+    {
+      "id": "m4l-80",
+      "type": "matrix",
+      "case": "wellness",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Six months later, the client returns. For each finding, click to specify whether it has improved, not changed, or gotten worse.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Improved",
+        "Not changed",
+        "Gotten worse"
+      ],
+      "rows": [
+        "Exercise: 30 minutes a week then, 150 minutes a week now",
+        "Energy drinks: 2 to 3 a day then, none now",
+        "High-sensitivity CRP: 4.2 mg/L then, 2.1 mg/L now",
+        "Fasting glucose: 108 mg/dL then, 115 mg/dL now",
+        "Vegetables: few then, few now"
+      ],
+      "answer": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "rationale": "<p>More exercise, no energy drinks, and a falling CRP show the changes are working. The diet <b>hasn't changed</b>, and the fasting glucose has <b>risen</b> further above normal, so both need follow-up.</p><p>The tempting mistake is calling the glucose improved because the other numbers are better. It moved farther from the normal range (70 to 99).</p><p><b>Takeaway:</b> Judge each finding on its own; one good trend doesn't cover another going the wrong way.</p>"
+    },
+    {
+      "id": "m4c-51",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client has an infection of the smooth inner lining of the heart, the layer that also covers the valves. Which layer is infected?",
+      "options": [
+        "The myocardium",
+        "The pericardium",
+        "The epicardium",
+        "The endocardium"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>endocardium</b> is the heart's smooth inner lining, and it covers the valves, so an infection there can damage them (and cause a new murmur).</p><p><b>The myocardium</b> is the tempting choice, since it's the main layer of the heart wall, but it's the muscle in the middle, not the lining.</p><p><b>Takeaway:</b> Endocardium inside (and over the valves), myocardium in the middle, pericardium around the outside.</p>"
+    },
+    {
+      "id": "m4c-52",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "On a client's ECG, each P wave is followed by a QRS complex. What does the P wave show?",
+      "options": [
+        "The atria depolarizing, just before they contract",
+        "The ventricles contracting to push out blood",
+        "The ventricles repolarizing as they relax",
+        "The heart valves closing at the end of a beat"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>P wave</b> is the electrical signal spreading through the <b>atria</b> (depolarization); the atria contract right after it, topping off the ventricles.</p><p><b>The valves closing</b> is the tempting choice, since valves are part of each beat, but the ECG records electrical signals, not valve movement or sounds.</p><p><b>Takeaway:</b> P wave: the atria depolarize, then contract.</p>"
+    },
+    {
+      "id": "m4c-53",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A nurse is reviewing the ECG. For each moment in the heartbeat, click to specify the wave that comes just before it.",
+      "rowHeader": "Moment",
+      "columns": [
+        "P wave",
+        "QRS complex",
+        "T wave"
+      ],
+      "rows": [
+        "The ventricles push blood into the arteries",
+        "The ventricles relax and begin to refill",
+        "The atria squeeze blood into the ventricles",
+        "The pulse can be felt at the wrist"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "rationale": "<p>Each wave is the electrical signal; the mechanical event follows. The <b>P wave</b> comes before the atria contract, the <b>QRS</b> before the ventricles contract (and the pulse), and the <b>T wave</b> as the ventricles recover and relax.</p><p>The tempting mistake is linking the T wave to the ventricles contracting. The T wave is their recovery; contraction follows the QRS.</p><p><b>Takeaway:</b> P → atria squeeze; QRS → ventricles squeeze; T → ventricles relax.</p>"
+    },
+    {
+      "id": "m4c-54",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A nurse is reviewing the proteins in plasma. For each description, click to specify the protein.",
+      "rowHeader": "Description",
+      "columns": [
+        "Albumin",
+        "Fibrinogen",
+        "Antibodies (IgG, IgM)"
+      ],
+      "rows": [
+        "Becomes fibrin to hold a clot together",
+        "Holds water in the blood vessels by oncotic pressure",
+        "Binds germs so they can be destroyed",
+        "The most plentiful protein in plasma",
+        "Made by plasma cells, which develop from B cells"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "rationale": "<p><b>Albumin</b> is the most plentiful plasma protein and holds water in the vessels (oncotic pressure). <b>Fibrinogen</b> becomes fibrin in a clot. <b>Antibodies</b> such as IgG and IgM come from plasma cells (from B cells) and bind germs.</p><p>The tempting mistake is calling fibrinogen the most plentiful protein, since clotting is so important. Albumin is far more plentiful.</p><p><b>Takeaway:</b> Albumin: fluid. Fibrinogen: clots. IgG and IgM: germs.</p>"
+    },
+    {
+      "id": "m4c-55",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client's potassium level is very low. Given potassium's role in the plasma, which problem should the nurse watch for most closely?",
+      "options": [
+        "Bleeding that's hard to stop",
+        "An irregular heart rhythm",
+        "Swelling of the feet and ankles",
+        "A rise in the body temperature"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Potassium</b>, one of the plasma salts, is essential for the heart's electrical activity and for muscle contraction. Too little (or too much) can cause dangerous <b>heart rhythm</b> changes, so it's watched most closely.</p><p><b>Bleeding</b> is the tempting choice, since plasma salts include calcium, which helps clotting, but potassium's main risk is to the heart's rhythm.</p><p><b>Takeaway:</b> Potassium: heart rhythm and muscles. Calcium: clotting and contraction.</p>"
+    },
+    {
+      "id": "m4c-56",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with type B-negative blood needs a transfusion of red blood cells. Which donor types are compatible?",
+      "options": [
+        "B-negative or O-negative",
+        "B-positive or O-positive",
+        "AB-negative or B-negative",
+        "A-negative or O-negative"
+      ],
+      "answer": 0,
+      "rationale": "<p>A type B client has anti-A antibodies, so the red cells must have no A antigen: type <b>B or O</b>. An Rh-<b>negative</b> client needs Rh-negative cells. So: B-negative or O-negative.</p><p><b>AB-negative</b> is the tempting choice, since it includes B, but AB cells carry the A antigen too, which the client's anti-A antibodies would attack.</p><p><b>Takeaway:</b> Match ABO (no foreign antigens) and give Rh-negative cells to Rh-negative clients.</p>"
+    },
+    {
+      "id": "m4c-57",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A nurse is comparing leg ulcers. For each feature, click to specify the type of ulcer it fits.",
+      "rowHeader": "Feature",
+      "columns": [
+        "Arterial ulcer",
+        "Venous ulcer"
+      ],
+      "rows": [
+        "Near the inner ankle",
+        "On the toes or the top of the foot",
+        "Pale base, and very painful",
+        "Shallow and irregular, with a lot of drainage",
+        "Deep and round, with punched-out edges"
+      ],
+      "answer": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Arterial ulcers</b> form where blood supply is poorest: the toes and feet; they're deep, round, punched out, pale, and painful. <b>Venous ulcers</b> form near the inner ankle, where blood pools; they're shallow, irregular, and drain a lot.</p><p>The tempting mistake is linking heavy drainage to arterial ulcers because they're more serious. Drainage comes with the extra fluid of venous pooling.</p><p><b>Takeaway:</b> Arterial: toes, deep, pale, painful. Venous: inner ankle, shallow, wet.</p>"
+    },
+    {
+      "id": "m4c-58",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with arterial insufficiency asks how to position the legs when they ache at night. Which response should the nurse give?",
+      "options": [
+        "“Raise your legs on two pillows, above your heart.”",
+        "“Keep your legs crossed at the knees for support.”",
+        "“Wrap your legs snugly in elastic bandages at night.”",
+        "“Let your legs rest level, or hang them slightly down.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>In <b>arterial insufficiency</b>, too little blood gets <b>in</b>. Keeping the legs level or slightly down lets gravity help blood reach the feet, which eases the pain.</p><p><b>Raising the legs</b> is the tempting choice, since it's the usual advice for leg swelling, but that's for venous problems; it makes arterial pain worse. Tight wraps and crossed legs block flow.</p><p><b>Takeaway:</b> Arterial: legs down. Venous: legs up.</p>"
+    },
+    {
+      "id": "m4c-59",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "Which instruction should the nurse give a client with venous insufficiency of the legs?",
+      "options": [
+        "“Keep your legs down so blood can reach your feet.”",
+        "“Sit with your legs crossed to support the veins.”",
+        "“Raise your legs above heart level several times a day.”",
+        "“Stand still for long periods to strengthen the veins.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>In <b>venous insufficiency</b>, leaky valves let blood pool in the legs. Raising the legs above the heart helps it drain back, easing swelling and aching.</p><p><b>Keeping the legs down</b> is the tempting choice, since it's the right advice for arterial problems, but here it makes the pooling worse.</p><p><b>Takeaway:</b> Venous insufficiency: elevate the legs; avoid crossing them and standing still.</p>"
+    },
+    {
+      "id": "m4c-60",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client asks why sitting for a long flight raises the risk of a blood clot in the legs. Which explanation should the nurse give?",
+      "options": [
+        "“Sitting still slows the blood flow in your leg veins.”",
+        "“The cabin air thins your blood, so it clots more easily.”",
+        "“Sitting stretches your veins until their walls tear.”",
+        "“Flying raises your blood pressure, which forces clots to form.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Thrombus formation</b> is more likely when blood <b>moves slowly</b>, when it clots too easily, or when a vessel wall is injured. Sitting still means the calf muscles aren't squeezing the veins, so blood pools and slows.</p><p><b>Thinner blood</b> is the tempting choice, since clotting is the issue, but thin blood clots <b>less</b>; dehydration on a flight thickens it, which adds to the risk.</p><p><b>Takeaway:</b> Slow flow (immobility), easy clotting, and vessel injury cause clots.</p>"
+    },
+    {
+      "id": "m4c-61",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' histories. Which client has the greatest risk of an aortic aneurysm?",
+      "options": [
+        "A 70-year-old man who smokes and has high blood pressure",
+        "A 50-year-old woman with diabetes and a normal blood pressure",
+        "A 40-year-old man who exercises daily and has a high LDL",
+        "A 65-year-old woman who doesn't smoke, with a normal blood pressure"
+      ],
+      "answer": 0,
+      "rationale": "<p>An <b>aneurysm</b> is a weak spot that bulges in an artery wall. The biggest risks are <b>smoking</b>, <b>high blood pressure</b>, plaque, and older age, especially in men.</p><p><b>The woman with diabetes</b> is the tempting choice, since diabetes harms blood vessels, but smoking and high blood pressure are the strongest risks for an aneurysm.</p><p><b>Takeaway:</b> Aneurysm risk: older age, male sex, smoking, high blood pressure.</p>"
+    },
+    {
+      "id": "m4c-62",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client has had crushing chest pressure for 30 minutes that rest hasn't relieved. Which explanation of what is happening to the heart should the nurse give?",
+      "options": [
+        "A heart valve is leaking blood backward into the chamber with each beat",
+        "A blocked artery is starving part of the heart muscle of oxygen",
+        "The sac around the heart is inflamed and rubbing",
+        "The heart's electrical signal is slowing as it ages"
+      ],
+      "answer": 1,
+      "rationale": "<p>Chest pressure that lasts and isn't relieved by rest suggests a <b>myocardial infarction</b>: a clot on a plaque blocks a coronary artery, and the heart muscle beyond it dies without oxygen. It's an emergency: time is muscle.</p><p><b>A leaking valve</b> is the tempting choice, since it's another heart problem, but it causes a murmur and slowly worsening symptoms, not sudden lasting pressure.</p><p><b>Takeaway:</b> Lasting chest pressure not relieved by rest: think heart attack.</p>"
+    },
+    {
+      "id": "m4c-63",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client's daughter calls the clinic: her father's face is drooping on one side, and his speech is slurred. Which instruction should the nurse give?",
+      "options": [
+        "“Give him an aspirin and wait an hour to see if it passes.”",
+        "“Call 911 now, and note the time his symptoms started.”",
+        "“Have him lie down and rest, and call back tomorrow.”",
+        "“Drive him to the clinic for the next open appointment.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>Face drooping and speech trouble are signs of a <b>cerebrovascular accident</b> (stroke): <b>BE FAST</b>, for Balance, Eyes, Face, Arms, Speech, and Time to call 911. Treatment depends on how long ago it started.</p><p><b>Giving an aspirin</b> is the tempting choice, since aspirin is used for clots, but a stroke can be a bleed, and waiting loses treatment time.</p><p><b>Takeaway:</b> Stroke signs: call 911 and note the time they began.</p>"
+    },
+    {
+      "id": "m4c-64",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client's aortic valve has become narrowed and stiff. Which finding should the nurse expect?",
+      "options": [
+        "A slower heart rate as the vagus nerve is stimulated",
+        "Swelling of the ankles from leaky leg veins",
+        "A murmur from turbulent blood flow across it",
+        "A narrow, normal QRS complex that grows wider"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>murmur</b> is the sound of turbulent blood flow. Blood forced through a narrowed (<b>stenotic</b>) valve swirls, making a whooshing sound with each beat.</p><p><b>Ankle swelling</b> is the tempting choice, since valve disease can lead to heart failure over time, but the direct finding of a narrowed valve is the murmur.</p><p><b>Takeaway:</b> A narrowed or leaky valve makes a murmur.</p>"
+    },
+    {
+      "id": "m4c-65",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "During exercise, which autonomic change makes each heartbeat stronger?",
+      "options": [
+        "Parasympathetic signals increase the force of each beat",
+        "The vagus nerve releases more signals to the heart muscle",
+        "Sympathetic signals relax the heart muscle between beats",
+        "Sympathetic signals increase the heart's contractility"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Sympathetic</b> signals (and the adrenal medulla's epinephrine) raise <b>contractility</b>, the strength of each beat, along with the heart rate, so more blood is pumped during exercise.</p><p><b>The vagus nerve</b> is the tempting choice, since it's the heart's main nerve, but it's parasympathetic and slows the heart.</p><p><b>Takeaway:</b> Sympathetic: faster and stronger beats.</p>"
+    },
+    {
+      "id": "m4c-66",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "During a sudden fright, a client's blood vessels narrow. Which change should the nurse expect?",
+      "options": [
+        "A lower blood pressure, since the vessels hold less blood",
+        "No change in pressure, since the heart slows to match",
+        "A higher blood pressure, from more resistance to flow",
+        "A lower blood pressure, from parasympathetic signals"
+      ],
+      "answer": 2,
+      "rationale": "<p>A fright triggers the <b>sympathetic</b> system: vessels narrow (a smaller <b>caliber</b>), which raises the resistance to flow, and the heart beats faster and harder, so the <b>blood pressure rises</b>.</p><p><b>No change, since the heart slows</b> is the tempting choice, since the body does balance pressure, but in a fright the heart speeds up too.</p><p><b>Takeaway:</b> Narrower vessels and a faster heart → higher blood pressure.</p>"
+    },
+    {
+      "id": "m4c-67",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A woman's findings are a waist of 37 in., triglycerides of 160 mg/dL, an HDL of 46 mg/dL, a blood pressure of 128/80 mm Hg, and a fasting glucose of 96 mg/dL. Which statement about metabolic syndrome is accurate?",
+      "options": [
+        "She doesn't meet the criteria, since her fasting glucose is in the normal range",
+        "She meets the criteria, with three of the five values out of range",
+        "She meets the criteria, mainly because of her blood pressure",
+        "She doesn't meet the criteria, since she doesn't have diabetes"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Metabolic syndrome</b> is three or more of: a large waist (35 in. or more for women), triglycerides of 150 or more, a low HDL (under 50 for women), a blood pressure of 130/85 or more, and a fasting glucose of 100 or more. She has three: waist, triglycerides, and HDL.</p><p><b>Not meeting the criteria because her glucose is normal</b> is the tempting choice, but glucose is only one of five; any three are enough.</p><p><b>Takeaway:</b> Metabolic syndrome needs any 3 of the 5 criteria.</p>"
+    },
+    {
+      "id": "m4e-51",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client has a pituitary tumor that releases too much prolactin. Which findings should the nurse expect?",
+      "options": [
+        "Heat intolerance, and a fast heart rate",
+        "Milk leaking from the breasts, and missed periods",
+        "Larger hands and feet, and coarser facial features",
+        "Large amounts of dilute urine, and thirst"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Prolactin</b>, from the anterior pituitary, drives milk production. Too much causes milk leaking from the breasts and disrupts the menstrual cycle.</p><p><b>Larger hands and feet</b> is the tempting choice, since it's another pituitary tumor, but that's too much <b>growth hormone</b> (acromegaly).</p><p><b>Takeaway:</b> Too much prolactin: milk production and missed periods.</p>"
+    },
+    {
+      "id": "m4e-52",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "Damage to a client's hypothalamus has stopped the release of thyrotropin-releasing hormone (TRH). Which laboratory pattern should the nurse expect?",
+      "options": [
+        "A high TSH, with low T3 and T4",
+        "A low TSH, with high T3 and T4",
+        "A low TSH, with low T3 and T4",
+        "A normal TSH, with normal T3 and T4"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>TRH</b> tells the anterior pituitary to release <b>TSH</b>, which tells the thyroid to release T3 and T4. Without TRH, TSH falls, and so do T3 and T4.</p><p><b>A high TSH with low T3 and T4</b> is the tempting choice, since it's the classic hypothyroid pattern, but that happens when the <b>thyroid</b> fails and the pituitary is working.</p><p><b>Takeaway:</b> TRH → TSH → T3, T4: a problem higher up lowers everything below it.</p>"
+    },
+    {
+      "id": "m4e-53",
+      "type": "matrix",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A nurse is comparing the hormones that control blood calcium. For each description, click to specify the hormone.",
+      "rowHeader": "Description",
+      "columns": [
+        "Calcitonin",
+        "Parathyroid hormone"
+      ],
+      "rows": [
+        "Released when blood calcium is high",
+        "Takes calcium out of bone",
+        "Made by the thyroid gland",
+        "Released when blood calcium is low",
+        "Activates vitamin D so the gut absorbs more calcium",
+        "Moves calcium into bone"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Calcitonin</b>, from the thyroid, is released when calcium is high and moves calcium into bone. <b>Parathyroid hormone</b> is released when calcium is low; it takes calcium from bone, makes the kidneys keep it, and activates vitamin D.</p><p>The tempting mistake is assigning calcitonin to the parathyroid glands because of where they sit. Calcitonin comes from the thyroid; PTH from the parathyroids.</p><p><b>Takeaway:</b> Calcitonin: down, into bone. PTH: up, out of bone.</p>"
+    },
+    {
+      "id": "m4e-54",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client has trouble falling asleep. Which teaching helps the client's body release melatonin at bedtime?",
+      "options": [
+        "“Keep bright lights on in the bedroom until you fall asleep.”",
+        "“Exercise hard in the hour right before you go to bed.”",
+        "“Take a long nap in a bright room late in the afternoon.”",
+        "“Dim the lights and put away bright screens an hour before bed.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>pineal gland</b> releases <b>melatonin</b> in darkness; light reaching the eyes holds it back. Dim light and fewer bright screens before bed let melatonin rise.</p><p><b>A late afternoon nap</b> is the tempting choice, since resting seems helpful, but a long late nap in bright light can delay sleep further.</p><p><b>Takeaway:</b> Darkness releases melatonin; light holds it back.</p>"
+    },
+    {
+      "id": "m4e-55",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client's glucose 2 hours after a 75-g glucose drink is 205 mg/dL. How should the nurse interpret this result?",
+      "options": [
+        "It's in the prediabetes range",
+        "It's in the diabetes range",
+        "It's normal after a sugary drink",
+        "It's too low to be meaningful"
+      ],
+      "answer": 1,
+      "rationale": "<p>For the 2-hour glucose test, <b>200 mg/dL or higher</b> is in the diabetes range, 140 to 199 is prediabetes, and under 140 is normal.</p><p><b>Normal after a sugary drink</b> is the tempting choice, since glucose rises after a drink, but a healthy body brings it back under 140 within 2 hours.</p><p><b>Takeaway:</b> 2-hour glucose: under 140 normal, 140–199 prediabetes, 200 or higher diabetes.</p>"
+    },
+    {
+      "id": "m4e-56",
+      "type": "matrix",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A nurse is reviewing clients' screening results. For each finding, click to specify whether it is a risk factor for diabetes mellitus.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Risk factor",
+        "Not a risk factor"
+      ],
+      "rows": [
+        "Body mass index (BMI) of 22",
+        "Hemoglobin A1C of 5.8%",
+        "Hemoglobin A1C of 5.3%",
+        "Had gestational diabetes in a past pregnancy",
+        "Body mass index (BMI) of 27"
+      ],
+      "answer": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "rationale": "<p>The instructor's risk factors: an <b>A1C above 5.7%</b>, a <b>BMI over 25</b>, and a history of <b>gestational diabetes</b>. A BMI of 22 and an A1C of 5.3% are normal.</p><p>The tempting mistake is calling an A1C of 5.8% normal because it's under 6.5%. Between 5.7% and 6.4% is prediabetes, a risk factor.</p><p><b>Takeaway:</b> Diabetes risk: A1C over 5.7%, BMI over 25, past gestational diabetes.</p>"
+    },
+    {
+      "id": "m4e-57",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client is told they have metabolic syndrome. Which conditions is the client at higher risk of?",
+      "options": [
+        "Type 2 diabetes and heart disease",
+        "Hypothyroidism and kidney stones",
+        "Asthma and seasonal allergies",
+        "Anemia and easy bleeding"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Metabolic syndrome</b> (three or more of a large waist, high triglycerides, low HDL, high blood pressure, and high fasting glucose) raises the risk of <b>type 2 diabetes</b> and <b>cardiovascular disease</b>.</p><p><b>Kidney stones</b> is the tempting choice, since obesity is linked to many problems, but the syndrome is defined by its link to diabetes and heart disease.</p><p><b>Takeaway:</b> Metabolic syndrome → type 2 diabetes and heart disease.</p>"
+    },
+    {
+      "id": "m4e-58",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "After months of heavy stress, a client has trouble sleeping, a rising blood pressure, and a high blood glucose. Which hormone's effects do these findings fit?",
+      "options": [
+        "Cortisol",
+        "Melatonin",
+        "Aldosterone",
+        "Insulin"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Cortisol</b>, the long-term stress hormone from the adrenal cortex, affects <b>metabolism</b> (raises glucose), <b>blood pressure</b> (raises it), inflammation, and <b>sleep</b>. Months of stress keep it high.</p><p><b>Aldosterone</b> is the tempting choice, since it raises blood pressure, but it doesn't raise glucose or disturb sleep.</p><p><b>Takeaway:</b> Long-term stress: high cortisol → high glucose, high pressure, poor sleep.</p>"
+    },
+    {
+      "id": "m4e-59",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A woman's adrenal cortex has failed. Which finding should the nurse expect from the loss of adrenal androgens?",
+      "options": [
+        "A deepening voice and new facial hair",
+        "Hot flashes and night sweats",
+        "Milk leaking from the breasts",
+        "Thinning hair in the armpits and pubic area"
+      ],
+      "answer": 3,
+      "rationale": "<p>The adrenal cortex makes <b>DHEA and androgens</b>; in women they're an important source of the hormones that maintain armpit and pubic hair and sex drive. When the cortex fails, that hair thins.</p><p><b>A deepening voice and facial hair</b> is the tempting choice, since it involves androgens, but those are signs of <b>too much</b> androgen, not too little.</p><p><b>Takeaway:</b> Adrenal androgens maintain body hair in women; losing them thins it.</p>"
+    },
+    {
+      "id": "m4e-60",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A client's posterior pituitary is releasing too much vasopressin (antidiuretic hormone). Which findings should the nurse expect?",
+      "options": [
+        "A low sodium level, with small amounts of concentrated urine",
+        "Large amounts of very dilute urine, with constant thirst",
+        "A high sodium level, with signs of dehydration",
+        "A high blood glucose, with frequent urination"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Vasopressin (ADH)</b> makes the kidneys return water to the blood. Too much keeps too much water: the urine becomes scant and concentrated, and the extra water dilutes the blood's <b>sodium</b>.</p><p><b>Large amounts of dilute urine</b> is the tempting choice, since it's the ADH finding students know best, but that's <b>too little</b> ADH.</p><p><b>Takeaway:</b> Too much ADH: water kept, low sodium. Too little: water lost, dilute urine.</p>"
+    },
+    {
+      "id": "m4e-61",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client has just eaten a large meal. Which effect of insulin should the nurse expect?",
+      "options": [
+        "The liver releases its stored glucose into the blood",
+        "Glucose stays in the blood until the next meal",
+        "Glucose moves into the cells, and the liver stores the extra",
+        "Fat cells release their fat for the body to burn"
+      ],
+      "answer": 2,
+      "rationale": "<p>After a meal, the beta cells release <b>insulin</b>, which moves glucose from the blood <b>into the cells</b> and helps the liver and muscles store the extra (as glycogen), so blood glucose falls.</p><p><b>The liver releasing stored glucose</b> is the tempting choice, since the liver is involved, but that happens between meals, the opposite of insulin's job.</p><p><b>Takeaway:</b> Insulin moves glucose into cells and storage, lowering blood glucose.</p>"
     }
   ]
 }

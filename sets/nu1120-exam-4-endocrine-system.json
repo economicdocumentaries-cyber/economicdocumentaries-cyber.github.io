@@ -1,10 +1,10 @@
 {
   "id": "nu1120-exam-4-endocrine-system",
   "title": "The Endocrine System",
-  "description": "Week 9, matched to the instructor's Exam 4 study guide: the hormones of the hypothalamus, pituitary, thyroid, parathyroid, adrenal glands, pancreas, pineal gland, and gonads, the TSH test, diabetes mellitus (diagnosis, risk factors, and signs), and the signs and symptoms of endocrine problems.",
+  "description": "Week 9, matched to the instructor's Exam 4 study guide: the hormones of the hypothalamus, pituitary, thyroid, parathyroid, adrenal glands, pancreas, pineal gland, and gonads, the TSH test, cortisol and how it's measured, diabetes mellitus (diagnosis, risk factors, and signs), metabolic syndrome, and the signs and symptoms of endocrine problems, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 60,
+  "timeMinutes": 75,
   "defaultCount": 25,
   "cases": {
     "screening": {
@@ -543,6 +543,108 @@
       "options": ["“The A1c shows your glucose today, so your meter must be reading too low this week.”", "“The A1c reflects the past 2 to 3 months, so your glucose was likely higher before this week.”", "“The A1c measures the insulin your pancreas has stored, not the glucose in your blood.”", "“The A1c jumps after one high reading, so a single bad day before the test explains it.”"],
       "answer": 1,
       "rationale": "<p>The <b>HbA1c</b> shows the average glucose over the past <b>2 to 3 months</b>, the life span of red blood cells, since glucose attaches to hemoglobin over time. One good week can't undo weeks of higher glucose before it, so an HbA1c of 8.9% means the glucose was high for much of that time.</p><p><b>“A single bad day explains it”</b> is the tempting choice, since one high reading feels important, but one day changes a 3-month average very little. The A1c doesn't show today's glucose or stored insulin.</p><p><b>Takeaway:</b> HbA1c = the average over 2 to 3 months. A fingerstick = right now.</p>"
+    },
+    {
+      "id": "es-59",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "A client starts a medication that blocks dopamine. Weeks later, the client notices milk leaking from the breasts and irregular periods. Which explanation should the nurse give?",
+      "options": ["The medication raised oxytocin, which made the breasts produce milk", "The medication lowered TSH, which slowed the thyroid and the periods", "The hypothalamus's brake on prolactin was blocked, so prolactin rose", "The medication raised cortisol, which changed the menstrual cycle"],
+      "answer": 2,
+      "rationale": "<p>The hypothalamus releases <b>dopamine</b> to hold back <b>prolactin</b> from the anterior pituitary. When dopamine is blocked, prolactin rises: milk is produced, and high prolactin disrupts the menstrual cycle.</p><p><b>Oxytocin</b> is the tempting choice, since it's linked to breastfeeding, but oxytocin causes milk <b>let-down</b>; prolactin makes the milk.</p><p><b>Takeaway:</b> Dopamine is the brake on prolactin.</p>"
+    },
+    {
+      "id": "es-60",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A client with acromegaly receives a medication that acts like somatostatin. Which effect should the nurse expect?",
+      "options": ["More growth hormone released by the anterior pituitary", "More insulin released by the beta cells", "Less growth hormone released by the anterior pituitary", "More prolactin released by the anterior pituitary"],
+      "answer": 2,
+      "rationale": "<p><b>Somatostatin</b>, from the hypothalamus, <b>stops</b> the release of growth hormone (and TSH); in the pancreas it holds back insulin and glucagon. A medication that acts like it lowers the excess growth hormone in acromegaly.</p><p><b>More growth hormone</b> is the tempting choice for students who confuse somatostatin with <b>GHRH</b>, which stimulates growth hormone.</p><p><b>Takeaway:</b> GHRH turns growth hormone on; somatostatin turns it off.</p>"
+    },
+    {
+      "id": "es-61",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "A client's medication suppresses the release of gonadotropin-releasing hormone (GnRH). Which change should the nurse expect?",
+      "options": ["Lower FSH and LH, and lower testosterone or estrogen", "Higher FSH and LH, and higher testosterone or estrogen", "Lower TSH, and lower thyroid hormone levels", "Lower ACTH, and lower cortisol levels"],
+      "answer": 0,
+      "rationale": "<p><b>GnRH</b> from the hypothalamus tells the anterior pituitary to release <b>FSH and LH</b>, which drive the ovaries and testes. Less GnRH means less FSH and LH, so estrogen or testosterone falls.</p><p><b>Lower TSH</b> is the tempting choice, since it's another pituitary hormone, but TSH is controlled by TRH, not GnRH.</p><p><b>Takeaway:</b> GnRH → FSH and LH → estrogen, progesterone, testosterone.</p>"
+    },
+    {
+      "id": "es-62",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A nurse is reviewing calcitonin. When the blood calcium level rises, which effect of calcitonin should the nurse expect?",
+      "options": ["It moves calcium into bone, lowering the blood calcium", "It releases calcium from bone, raising the blood calcium", "It makes the kidneys keep more calcium in the blood", "It activates vitamin D so the gut absorbs more calcium"],
+      "answer": 0,
+      "rationale": "<p><b>Calcitonin</b>, from the thyroid, <b>lowers</b> blood calcium by moving it into bone. It's released when calcium is high.</p><p><b>Activating vitamin D</b> is the tempting choice, since it's part of calcium control, but that's <b>parathyroid hormone</b>, which raises calcium; releasing calcium from bone and keeping it in the kidneys are PTH's jobs too.</p><p><b>Takeaway:</b> Calcitonin tones calcium down; PTH pulls it up.</p>"
+    },
+    {
+      "id": "es-63",
+      "type": "mc",
+      "topic": "Endocrine signs and symptoms",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' TSH results (normal about 0.4 to 4.0 mIU/L). Which client's findings fit an underactive thyroid?",
+      "options": ["TSH 0.1 mIU/L, with weight loss and a tremor", "TSH 9.2 mIU/L, with fatigue and feeling cold", "TSH 2.1 mIU/L, with normal energy and weight", "TSH 0.2 mIU/L, with palpitations and sweating"],
+      "answer": 1,
+      "rationale": "<p>When the thyroid underproduces, the pituitary pushes harder, so <b>TSH rises</b>. A TSH of 9.2 with fatigue and feeling cold fits <b>hypothyroidism</b>.</p><p><b>TSH 0.1 with weight loss</b> is the tempting choice, since an abnormal TSH stands out, but a <b>low</b> TSH with weight loss and tremor fits an <b>overactive</b> thyroid.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>"
+    },
+    {
+      "id": "es-64",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 3,
+      "stem": "A client's adrenal cortex is making too little aldosterone. Which findings should the nurse expect?",
+      "options": ["High blood pressure and a low potassium level", "High blood glucose, and weight gain around the trunk", "Heat intolerance, a tremor, and frequent stools", "Low blood pressure, a high potassium level, and craving salt"],
+      "answer": 3,
+      "rationale": "<p><b>Aldosterone</b> makes the kidneys keep sodium and water and excrete potassium. Too little means sodium and water are lost (low blood pressure, salt craving) and <b>potassium builds up</b>.</p><p><b>High blood pressure with a low potassium</b> is the tempting choice, since it's the aldosterone pattern students memorize, but that's <b>too much</b> aldosterone.</p><p><b>Takeaway:</b> Too little aldosterone: low pressure, high potassium. Too much: high pressure, low potassium.</p>"
+    },
+    {
+      "id": "es-65",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 3,
+      "stem": "A woman's adrenal glands are making too many androgens. Which findings should the nurse expect?",
+      "options": ["Hot flashes, night sweats, and vaginal dryness", "Acne, new facial hair, and irregular periods", "Milk leaking from the breasts", "Weight loss and heat intolerance"],
+      "answer": 1,
+      "rationale": "<p>The adrenal cortex makes <b>DHEA and androgens</b>, which are an important source of male-type hormones in women. Too much causes acne, male-pattern hair growth, and irregular periods.</p><p><b>Hot flashes</b> is the tempting choice, since it's a sex-hormone change too, but it comes from <b>falling estrogen</b>, not extra androgens.</p><p><b>Takeaway:</b> Excess adrenal androgens in women: acne, facial hair, irregular periods.</p>"
+    },
+    {
+      "id": "es-66",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "A client is collecting a 24-hour urine sample to measure cortisol. Which instruction should the nurse give?",
+      "options": ["“Save one sample at bedtime, when your cortisol is at its highest.”", "“Collect urine right after each meal, when cortisol peaks.”", "“Stop drinking fluids, so the urine is concentrated enough.”", "“Discard the first morning urine, then save all urine for the next 24 hours.”"],
+      "answer": 3,
+      "rationale": "<p>A <b>24-hour urine</b> shows the total cortisol made in a day: start with an empty bladder (discard the first void), then save <b>every</b> drop for 24 hours, keeping it cold. Cortisol can also be measured in a morning blood sample or late-night saliva.</p><p><b>One bedtime sample</b> is the tempting choice, since it's simpler, but cortisol is <b>lowest</b> around midnight; a single sample can't show the day's total.</p><p><b>Takeaway:</b> 24-hour urine: discard the first void, then collect everything for 24 hours.</p>"
+    },
+    {
+      "id": "es-67",
+      "type": "matrix",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 3,
+      "stem": "A nurse is checking a 54-year-old man for metabolic syndrome. For each finding, click to specify whether it meets that criterion.",
+      "rowHeader": "Finding",
+      "columns": ["Meets the criterion", "Doesn't meet the criterion"],
+      "rows": ["Waist of 41 in.", "HDL of 44 mg/dL", "Triglycerides of 172 mg/dL", "Blood pressure of 126/80 mm Hg", "Fasting glucose of 104 mg/dL"],
+      "answer": [0, 1, 0, 1, 0],
+      "rationale": "<p>For a man, the criteria are a waist of about 40 in. or more, triglycerides of 150 or more, an HDL <b>under 40</b>, a blood pressure of 130/85 or more, and a fasting glucose of 100 or more. He meets three (waist, triglycerides, glucose), so he has <b>metabolic syndrome</b>, which raises his risk of type 2 diabetes and heart disease.</p><p>The tempting mistake is counting the HDL of 44 as low. For a man, low means under 40; under 50 is the cutoff for women.</p><p><b>Takeaway:</b> Metabolic syndrome: any 3 of waist, triglycerides, low HDL, blood pressure, fasting glucose.</p>"
+    },
+    {
+      "id": "es-68",
+      "type": "sata",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 2,
+      "stem": "A nurse is screening clients at a health fair. Which of the following findings are risk factors for diabetes mellitus?",
+      "options": ["Gestational diabetes 8 years ago", "Hemoglobin A1C of 5.9%", "Body mass index (BMI) of 29", "Body mass index (BMI) of 23", "Hemoglobin A1C of 5.2%", "Fasting plasma glucose of 88 mg/dL this morning"],
+      "answer": [0, 1, 2],
+      "rationale": "<p>The instructor's risk factors for diabetes: a history of <b>gestational diabetes</b>, an <b>A1C above 5.7%</b> (prediabetes), and a <b>BMI over 25</b>.</p><p><b>A BMI of 23</b> is the tempting choice, since it's close to the cutoff, but it's in the normal range; an A1C of 5.2% and a fasting glucose of 88 are normal too.</p><p><b>Takeaway:</b> Diabetes risk: past gestational diabetes, A1C over 5.7%, BMI over 25.</p>"
     }
   ]
 }

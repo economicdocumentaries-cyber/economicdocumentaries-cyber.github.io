@@ -1,11 +1,30 @@
 {
   "id": "nu1120-exam-4-cardiovascular-system",
   "title": "The Cardiovascular System",
-  "description": "Week 10, matched to the instructor's Exam 4 study guide: blood flow through the heart, its valves, chambers, and wall, the ECG's waves, blood components and blood type compatibility, autonomic control of the heart and blood pressure, stroke, the risk factors for cardiovascular disease, and the lymphatic system.",
+  "description": "Week 10, matched to the instructor's Exam 4 study guide: blood flow through the heart, its valves, chambers, and membranes, the ECG's waves, blood components and blood type compatibility, capillary refill and arterial and venous insufficiency, thrombus, aneurysm, heart attack, murmurs, and stroke, autonomic control of the heart and blood pressure, heart-healthy habits, metabolic syndrome, and the risk factors for cardiovascular disease, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 37.5,
+  "timeMinutes": 75,
   "defaultCount": 25,
+  "cases": {
+    "legpain": {
+      "intro": "A nurse at a primary care clinic is assessing a 66-year-old client who reports pain in the left leg.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>1030:</b> Client reports cramping pain in the left calf after walking about 2 blocks, which eases after a few minutes of rest. Smokes 1 pack a day. Has type 2 diabetes. Left foot cool, pale, and shiny, with no hair; thick toenails. Weak (1+) pulse on top of the left foot. Capillary refill 4 seconds in the left toes, 2 seconds in the right toes. No swelling in either leg. A small, round sore with a pale base on the left little toe.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><tr><th>Blood pressure</th><td>152/94&nbsp;mm&nbsp;Hg</td></tr><tr><th>Heart rate</th><td>78/min</td></tr><tr><th>Respiratory rate</th><td>16/min</td></tr><tr><th>Body mass index (BMI)</th><td>31</td></tr></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results</h4><table><tr><th>Total cholesterol</th><td>236&nbsp;mg/dL</td></tr><tr><th>LDL</th><td>148&nbsp;mg/dL</td></tr><tr><th>HDL</th><td>36&nbsp;mg/dL</td></tr><tr><th>Hemoglobin A1C</th><td>7.9%</td></tr></table>"
+        }
+      ]
+    }
+  },
   "questions": [
     {
       "id": "cv-01",
@@ -372,6 +391,277 @@
       "options": ["Coronary artery disease", "Peripheral artery disease", "Cerebrovascular disease", "Heart failure"],
       "answer": 2,
       "rationale": "<p>A narrowed <b>carotid artery</b>, which supplies the brain, is a <b>cerebrovascular disease</b>, and brief episodes of one-sided weakness are warning signs of a stroke.</p><p><b>Peripheral artery disease</b> is the tempting choice, since the carotid is outside the heart, but that term covers the arteries to the limbs; arteries to the brain are cerebrovascular, and arteries to the heart muscle are coronary.</p><p><b>Takeaway:</b> Coronary: the heart muscle. Cerebrovascular: the brain (like the carotids). Peripheral: the limbs.</p>"
+    },
+    {
+      "id": "cv-60",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A client has an inflamed pericardium, and each heartbeat now makes a scratchy sound. Which explanation of the pericardium's normal role should the nurse give?",
+      "options": ["The thick muscle layer of the heart that contracts to pump blood", "The smooth inner lining of the heart that also covers the valves", "A two-layer sac with fluid that lets the heart beat without rubbing", "A flap of tissue that keeps blood moving forward through the heart"],
+      "answer": 2,
+      "rationale": "<p>The <b>pericardium</b> is the sac around the heart: a tough fibrous outer layer and a serous layer with a small amount of fluid between its two sheets, so the heart can beat without rubbing. When it's inflamed, the roughened layers rub.</p><p><b>The smooth inner lining</b> is the tempting choice, since it's also a membrane, but that's the <b>endocardium</b>, inside the heart. The muscle layer is the myocardium.</p><p><b>Takeaway:</b> Pericardium outside, myocardium in the middle, endocardium inside.</p>"
+    },
+    {
+      "id": "cv-61",
+      "type": "matrix",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nurse is reviewing the heart's valves. For each item, click to specify the type of valve it describes.",
+      "rowHeader": "Item",
+      "columns": ["Atrioventricular valve", "Semilunar valve"],
+      "rows": ["Aortic valve", "Mitral (bicuspid) valve", "Held in place by chordae tendineae", "Pulmonic valve", "Tricuspid valve", "Closes as the ventricles relax"],
+      "answer": [1, 0, 0, 1, 0, 1],
+      "rationale": "<p>The <b>atrioventricular</b> valves (tricuspid and mitral) sit between the atria and ventricles and are anchored by <b>chordae tendineae</b>; they close as the ventricles contract. The <b>semilunar</b> valves (pulmonic and aortic) sit where the ventricles empty into their arteries and close as the ventricles <b>relax</b>.</p><p>The tempting mistake is calling the mitral valve semilunar because it's on the left with the aortic valve. Mitral and tricuspid are both atrioventricular.</p><p><b>Takeaway:</b> AV valves: tricuspid, mitral (chordae). Semilunar valves: pulmonic, aortic.</p>"
+    },
+    {
+      "id": "cv-62",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 2,
+      "stem": "On a client's ECG, the P waves are missing, but each QRS complex is narrow and normal. Which part of the heart do these findings suggest isn't depolarizing in an organized way?",
+      "options": ["The atria", "The ventricles", "The heart valves", "The pericardium"],
+      "answer": 0,
+      "rationale": "<p>The <b>P wave</b> shows the <b>atria</b> depolarizing (just before they contract). Missing P waves mean the atria aren't depolarizing in an organized way; a normal, narrow QRS shows the ventricles are still depolarizing normally.</p><p><b>The ventricles</b> is the tempting choice, since they do the main pumping, but their wave, the QRS, is normal here.</p><p><b>Takeaway:</b> P wave = atria; QRS = ventricles; T wave = ventricles recovering.</p>"
+    },
+    {
+      "id": "cv-63",
+      "type": "matrix",
+      "topic": "The ECG",
+      "level": 2,
+      "stem": "A nurse is matching the ECG to the heartbeat. For each event, click to specify the wave it goes with.",
+      "rowHeader": "Event",
+      "columns": ["P wave", "QRS complex", "T wave"],
+      "rows": ["The ventricles depolarize, then contract", "The atria depolarize, then contract", "The ventricles repolarize and relax", "The atria repolarize, hidden inside another wave", "The pulse is felt just after this wave"],
+      "answer": [1, 0, 2, 1, 1],
+      "rationale": "<p>The <b>P wave</b>: atria depolarize, then contract. The <b>QRS complex</b>: ventricles depolarize, then contract, which makes the pulse; the atria repolarize at the same time, hidden. The <b>T wave</b>: ventricles repolarize as they relax and refill.</p><p>The tempting mistake is giving the atria's repolarization its own wave. It happens during the much larger QRS, so it can't be seen.</p><p><b>Takeaway:</b> Each wave is the electrical signal; the contraction follows it.</p>"
+    },
+    {
+      "id": "cv-64",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 3,
+      "stem": "A client with kidney failure has a potassium level of 6.8 mmol/L, and the ECG shows tall, peaked T waves. Which part of the heartbeat does this finding suggest the potassium is affecting?",
+      "options": ["The atria's depolarization", "The ventricles' repolarization", "The closing of the semilunar valves", "The filling of the coronary arteries"],
+      "answer": 1,
+      "rationale": "<p>The <b>T wave</b> shows the <b>ventricles repolarizing</b>, and potassium is the key salt in repolarization. A high potassium makes the T waves tall and peaked (and can widen the QRS): a dangerous change to report right away.</p><p><b>The atria's depolarization</b> is the tempting choice, since it's another electrical event, but that's the P wave.</p><p><b>Takeaway:</b> High potassium shows first in the T wave: the ventricles' repolarization.</p>"
+    },
+    {
+      "id": "cv-65",
+      "type": "matrix",
+      "topic": "Blood components and blood types",
+      "level": 1,
+      "stem": "A nurse is reviewing the parts of the blood. For each item, click to specify whether it's part of the plasma or one of the formed elements.",
+      "rowHeader": "Item",
+      "columns": ["Plasma", "Formed elements"],
+      "rows": ["Platelets", "Albumin", "Neutrophils", "Fibrinogen", "Sodium and potassium", "Red blood cells", "IgG antibodies"],
+      "answer": [1, 0, 1, 0, 0, 1, 0],
+      "rationale": "<p><b>Plasma</b> (about 55%) is the liquid part: water carrying salts (sodium, potassium, calcium, and others), proteins (<b>albumin</b>, <b>fibrinogen</b>, and antibodies such as IgG and IgM), hormones, and vitamins. The <b>formed elements</b> (about 45%) are the cells and cell fragments: red cells, white cells, and platelets.</p><p>The tempting mistake is putting antibodies with the white cells, since white cells make them. The antibodies themselves are proteins dissolved in the plasma.</p><p><b>Takeaway:</b> Plasma: water, salts, proteins, hormones, vitamins. Formed elements: red cells, white cells, platelets.</p>"
+    },
+    {
+      "id": "cv-66",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A client's fibrinogen level is very low. Which finding should the nurse watch for?",
+      "options": ["Bleeding that's hard to stop", "Swelling in both legs and feet", "Frequent infections", "Fatigue with exertion"],
+      "answer": 0,
+      "rationale": "<p><b>Fibrinogen</b>, a plasma protein made by the liver, becomes <b>fibrin</b>, the mesh that holds a clot together. Too little means clots form poorly, so bleeding is hard to stop.</p><p><b>Swelling</b> is the tempting choice, since it comes from a low plasma protein too, but that's <b>albumin</b>, which holds fluid in the vessels.</p><p><b>Takeaway:</b> Low fibrinogen: bleeding. Low albumin: swelling.</p>"
+    },
+    {
+      "id": "cv-67",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 3,
+      "stem": "A client's blood calcium level is low. Given calcium's roles in the blood, which problems should the nurse watch for?",
+      "options": ["Swelling of the legs from a low oncotic pressure", "Frequent infections from too few antibodies", "Shortness of breath from too few red blood cells", "Muscle cramps and spasms, and slower clotting"],
+      "answer": 3,
+      "rationale": "<p><b>Calcium</b>, one of the plasma salts, is needed for <b>muscle contraction</b> and <b>blood clotting</b>. A low level makes nerves and muscles overexcitable (tingling, cramps, spasms) and can slow clotting.</p><p><b>Swelling from a low oncotic pressure</b> is the tempting choice, since it's another plasma problem, but oncotic pressure comes from <b>albumin</b>, not calcium.</p><p><b>Takeaway:</b> Calcium: muscle contraction and clotting.</p>"
+    },
+    {
+      "id": "cv-68",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 2,
+      "stem": "A nurse is checking a client's capillary refill. Which action is correct?",
+      "options": ["Press the skin over the shin for 5 seconds, and then check whether a pit remains", "Count the pulse on the top of the foot for a full 30 seconds", "Raise the leg and time how long it takes the foot to turn pale", "Press the nail bed until it blanches, release, and time the color's return"],
+      "answer": 3,
+      "rationale": "<p>Capillary refill tests <b>peripheral perfusion</b>, how well blood reaches the tissues: press the nail bed until it blanches, release, and time the return of color. Color back in about 2 seconds (no more than 3) is normal.</p><p><b>Raising the leg until it pales</b> is the tempting choice, since it's also a circulation check, but that's a test for arterial insufficiency, not capillary refill. Pressing the shin checks for pitting edema.</p><p><b>Takeaway:</b> Capillary refill: press the nail bed, release, count the seconds.</p>"
+    },
+    {
+      "id": "cv-69",
+      "type": "sata",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "Which findings should the nurse expect in a client with venous insufficiency of the legs?",
+      "options": ["Swelling that's worse at the end of the day", "Brown discoloration of the skin around the ankles", "Aching that eases when the legs are raised", "A shallow, draining sore near the inner ankle", "Weak or absent pulses on the top of the feet", "Calf pain with walking that eases with rest", "Feet that turn pale when raised"],
+      "answer": [0, 1, 2, 3],
+      "rationale": "<p>In <b>venous insufficiency</b>, leaky vein valves let blood pool: swelling by evening, brown skin around the ankles, aching that eases with elevation, and shallow, draining ulcers near the inner ankle.</p><p><b>Calf pain with walking</b> and <b>weak pulses</b> are the tempting choices, since they're leg circulation problems too, but they belong to <b>arterial</b> insufficiency, as does pallor when the feet are raised.</p><p><b>Takeaway:</b> Venous: swelling, brown skin, relief with elevation. Arterial: claudication, weak pulses, pallor.</p>"
+    },
+    {
+      "id": "cv-70",
+      "type": "sata",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A nurse is reviewing clients' charts. Which clients are at higher risk of thrombus formation?",
+      "options": ["A client on bed rest for a week after surgery", "A client who smokes and takes an estrogen birth control pill", "A client who is dehydrated after days of vomiting", "A client who walks 30 minutes a day and drinks plenty of water", "A client who takes a daily aspirin as prescribed", "A 25-year-old with a sprained wrist"],
+      "answer": [0, 1, 2],
+      "rationale": "<p>Clots form when blood <b>moves slowly</b> (bed rest), when the blood <b>clots too easily</b> (estrogen, especially with smoking; dehydration, which concentrates the blood), or when a vessel wall is <b>injured</b>.</p><p><b>The daily aspirin</b> is the tempting choice, since it's a medication taken by people with heart disease, but aspirin makes platelets less sticky, lowering the risk. A sprained wrist doesn't slow blood flow in the legs.</p><p><b>Takeaway:</b> Slow flow, easy clotting, and vessel injury cause thrombus formation.</p>"
+    },
+    {
+      "id": "cv-71",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A client with a deep vein clot in the calf suddenly becomes short of breath, with chest pain and a fast heart rate. Which explanation should the nurse give?",
+      "options": ["Part of the clot broke off and traveled to the lungs", "The clot grew up the leg and is pressing on the heart", "The clot is blocking air from reaching the lower lungs", "The clot dissolved and released chemicals that tighten the airways"],
+      "answer": 0,
+      "rationale": "<p>A <b>thrombus</b> stays where it forms; a piece that breaks off and travels is an <b>embolus</b>. From a leg vein, it travels through the right heart into the lung arteries, blocking blood flow there: sudden shortness of breath, chest pain, and a fast heart rate.</p><p><b>The clot growing up the leg</b> is the tempting choice, since clots can extend, but sudden lung symptoms point to an embolus that has already traveled.</p><p><b>Takeaway:</b> A thrombus stays; an embolus travels (leg vein → lungs).</p>"
+    },
+    {
+      "id": "cv-72",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A 72-year-old client who smokes and has high blood pressure has a known abdominal aortic aneurysm. Which finding should the nurse report immediately?",
+      "options": ["A pulsing mass felt in the middle of the abdomen", "Mild ankle swelling at the end of the day", "Sudden, severe back pain with a falling blood pressure", "A blood pressure of 148/88 mm Hg at a routine yearly visit"],
+      "answer": 2,
+      "rationale": "<p>An <b>aneurysm</b> is a weak, bulging spot in an artery wall. Sudden severe back or abdominal pain with a falling blood pressure suggests it's <b>rupturing</b>, an emergency with heavy internal bleeding.</p><p><b>A pulsing abdominal mass</b> is the tempting choice, since it's a sign of the aneurysm, but in a client with a known aneurysm it's an expected finding, not a new emergency.</p><p><b>Takeaway:</b> Aneurysm rupture: sudden severe pain and falling blood pressure.</p>"
+    },
+    {
+      "id": "cv-73",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A 74-year-old woman with diabetes has felt unusually tired, nauseated, and short of breath for the past hour, with no chest pain. Which condition should the nurse be concerned about?",
+      "options": ["A stroke, since she has no chest pain or pressure", "A heart attack, which may cause no chest pain in some clients", "An aneurysm, since nausea is the first and main warning sign of one", "A murmur, since valve problems cause sudden nausea"],
+      "answer": 1,
+      "rationale": "<p>A <b>myocardial infarction</b> happens when a blocked coronary artery starves heart muscle of oxygen. Women, older adults, and people with diabetes often have <b>atypical</b> symptoms: fatigue, nausea, and shortness of breath without classic chest pain.</p><p><b>A stroke</b> is the tempting choice, since it's another emergency, but stroke signs are face drooping, arm weakness, and speech trouble, which she doesn't have.</p><p><b>Takeaway:</b> Heart attacks in women, older adults, and people with diabetes can be silent: think MI with sudden fatigue, nausea, and breathlessness.</p>"
+    },
+    {
+      "id": "cv-74",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 2,
+      "stem": "A client's new murmur is caused by a mitral valve that doesn't close fully. Which explanation of the sound should the nurse give?",
+      "options": ["Blood leaking backward through the valve flows turbulently", "The valve snaps shut too loudly with each heartbeat", "Blood moves too smoothly through a valve that has become too wide", "The pericardium rubs against the heart with each beat"],
+      "answer": 0,
+      "rationale": "<p>A <b>murmur</b> is the sound of <b>turbulent</b> blood flow. A valve that doesn't close fully lets blood leak backward (<b>regurgitation</b>); a narrowed valve (stenosis) or a hole between chambers can also cause one.</p><p><b>The pericardium rubbing</b> is the tempting choice, since it also makes an extra sound, but that's a friction rub from an inflamed pericardium, not a murmur.</p><p><b>Takeaway:</b> Murmur = turbulent flow: a leaky valve, a narrowed valve, or a hole.</p>"
+    },
+    {
+      "id": "cv-75",
+      "type": "matrix",
+      "topic": "Autonomic control and blood pressure",
+      "level": 2,
+      "stem": "A nurse is reviewing autonomic control of the heart and vessels. For each effect, click to specify the system that causes it.",
+      "rowHeader": "Effect",
+      "columns": ["Sympathetic", "Parasympathetic"],
+      "rows": ["Speeds up the heart rate", "Slows the heart rate through the vagus nerve", "Makes each heartbeat stronger", "Narrows most blood vessels", "Lowers the blood pressure"],
+      "answer": [0, 1, 0, 0, 1],
+      "rationale": "<p>The <b>sympathetic</b> system speeds up the heart, strengthens each beat (contractility), and narrows most vessels, so blood pressure rises. The <b>parasympathetic</b> system, through the vagus nerve, slows the heart, so blood pressure falls.</p><p>The tempting mistake is giving the parasympathetic system the job of widening vessels directly. Most vessels widen when sympathetic signals <b>fall</b>.</p><p><b>Takeaway:</b> Sympathetic: faster, stronger, narrower, higher pressure. Parasympathetic: slower.</p>"
+    },
+    {
+      "id": "cv-76",
+      "type": "mc",
+      "topic": "Autonomic control and blood pressure",
+      "level": 3,
+      "stem": "A client receives a medication that widens the arterioles. Which change in blood pressure should the nurse expect, and why?",
+      "options": ["It rises, because more blood can now flow through the vessels", "It stays the same, because the heart rate rises to match", "It rises, because the wider vessels can hold more blood", "It falls, because wider vessels offer less resistance to flow"],
+      "answer": 3,
+      "rationale": "<p>Blood pressure depends on how much blood the heart pumps and how much the vessels <b>resist</b> its flow. Widening the arterioles (a bigger <b>caliber</b>) lowers resistance, so the pressure falls.</p><p><b>It stays the same</b> is the tempting choice, since the heart rate often rises a little to compensate, but it doesn't fully offset the drop.</p><p><b>Takeaway:</b> Wider vessels → less resistance → lower pressure; narrower → higher.</p>"
+    },
+    {
+      "id": "cv-77",
+      "type": "sata",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A client asks which foods fit a heart-healthy eating plan. Which of the following should the nurse include?",
+      "options": ["Cooking with extra-virgin olive oil", "Oatmeal and brown rice", "Skim milk and low-fat yogurt", "Fresh vegetables seasoned with herbs", "Cooking with coconut oil", "Canned soups and deli meats"],
+      "answer": [0, 1, 2, 3],
+      "rationale": "<p>The instructor's heart-healthy habits: <b>unsaturated fats</b> (extra-virgin olive oil, avocado oil, other non-tropical vegetable oils), <b>whole grains</b>, <b>low-fat dairy</b>, and <b>low sodium</b> (fresh foods seasoned with herbs).</p><p><b>Coconut oil</b> is the tempting choice, since it's a plant oil, but it's a <b>tropical</b> oil, high in saturated fat. Canned soups and deli meats are high in sodium.</p><p><b>Takeaway:</b> Unsaturated non-tropical oils, whole grains, low-fat dairy, low sodium.</p>"
+    },
+    {
+      "id": "cv-78",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' findings. Which client should the nurse identify as meeting the criteria for metabolic syndrome?",
+      "options": ["A man with a 36-in. waist, a blood pressure of 134/86 mm Hg, and an HDL of 52 mg/dL, who smokes", "A man with a 42-in. waist, triglycerides of 190 mg/dL, and a fasting glucose of 108 mg/dL", "A woman with a 33-in. waist, triglycerides of 140 mg/dL, and an HDL of 46 mg/dL", "A woman with a fasting glucose of 112 mg/dL and an otherwise normal checkup"],
+      "answer": 1,
+      "rationale": "<p><b>Metabolic syndrome</b> is three or more of: a large waist (about 40 in. or more in men, 35 in. in women), triglycerides of 150 or more, a low HDL (under 40 in men, under 50 in women), a blood pressure of 130/85 or more, and a fasting glucose of 100 or more. The first man has three.</p><p>The woman with an <b>HDL of 46</b> is the tempting choice, since that's low for a woman, but it's her only criterion; her waist and triglycerides are within range.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, and fasting glucose.</p>"
+    },
+    {
+      "id": "cv-79",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A 50-year-old woman's fasting lipid results are total cholesterol 186 mg/dL, LDL 92 mg/dL, and HDL 44 mg/dL. Which result should the nurse identify as a risk factor for cardiovascular disease?",
+      "options": ["The total cholesterol, since it's over 180 mg/dL", "The LDL, since it's over 90 mg/dL", "The HDL, since it's under 50 mg/dL for women", "No result here is a risk factor"],
+      "answer": 2,
+      "rationale": "<p>The instructor's cutoffs: total cholesterol over <b>200</b>, LDL over <b>100</b>, and HDL under <b>40 for men and 50 for women</b>. Her total cholesterol and LDL are fine, but an HDL of 44 is low for a woman.</p><p><b>No risk factor</b> is the tempting choice for students who use the men's HDL cutoff of 40. Check the client's sex before reading the HDL.</p><p><b>Takeaway:</b> HDL: under 40 (men) or under 50 (women) is a risk factor.</p>"
+    },
+    {
+      "id": "cv-80",
+      "type": "highlight",
+      "case": "legpain",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "Client reports [[cramping pain in the left calf after walking about 2 blocks, which eases after a few minutes of rest]]. [[Smokes 1 pack a day]]. [[Has type 2 diabetes]]. [[Left foot cool, pale, and shiny, with no hair]]; [[thick toenails]]. [[Weak (1+) pulse on top of the left foot]]. [[Capillary refill 4 seconds in the left toes]], [[2 seconds in the right toes]]. [[No swelling in either leg]]. [[A small, round sore with a pale base on the left little toe]].",
+      "answer": [0, 1, 3, 4, 5, 6, 9],
+      "rationale": "<p>Calf pain with walking that eases with rest (<b>claudication</b>), a cool, pale, hairless foot with thick nails, a weak pulse, a slow capillary refill, and a round, pale toe sore all point to poor <b>arterial</b> blood flow. Active smoking needs follow-up as a risk factor that can change.</p><p><b>Type 2 diabetes</b> is the tempting one to highlight, since it's a risk factor, but it's a known diagnosis in the history; the right toes' 2-second refill and the absence of swelling are normal.</p><p><b>Takeaway:</b> Claudication, pallor, weak pulses, slow refill, and toe sores: arterial insufficiency.</p>"
+    },
+    {
+      "id": "cv-81",
+      "type": "matrix",
+      "case": "legpain",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "For each finding, click to specify the problem it fits.",
+      "rowHeader": "Finding",
+      "columns": ["Arterial insufficiency", "Venous insufficiency"],
+      "rows": ["Calf pain with walking that eases with rest", "Weak pulse on top of the foot", "Brown skin around the ankles", "A small, round toe sore with a pale base", "Swelling that's worse at the end of the day"],
+      "answer": [0, 0, 1, 0, 1],
+      "rationale": "<p><b>Arterial insufficiency</b>: claudication, weak pulses, and deep, round, pale sores on the toes. <b>Venous insufficiency</b>: brown skin around the ankles and swelling by evening.</p><p>The tempting mistake is calling any leg sore venous, since venous ulcers are common. A round, pale sore on a toe is arterial; venous ulcers are shallow, irregular, and near the inner ankle.</p><p><b>Takeaway:</b> Sort leg findings into arterial (too little in) and venous (can't get out).</p>"
+    },
+    {
+      "id": "cv-82",
+      "type": "dropdown",
+      "case": "legpain",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "Complete the following sentences.",
+      "text": "The client's findings most likely show {{0}} in the left leg, caused by {{1}}. When the leg aches at rest, the nurse should keep it {{2}}.",
+      "blanks": [
+        {"options": ["venous insufficiency", "arterial insufficiency", "a deep vein thrombosis"], "answer": 1},
+        {"options": ["leaky valves in the leg veins", "a clot in a deep leg vein", "arteries narrowed by plaque"], "answer": 2},
+        {"options": ["raised above the heart", "level or slightly down", "crossed at the knees"], "answer": 1}
+      ],
+      "rationale": "<p>The findings show <b>arterial insufficiency</b>: plaque narrows the leg arteries (smoking, diabetes, high LDL, and high blood pressure all speed this up). Keeping the leg <b>level or slightly down</b> lets gravity help blood reach the foot.</p><p><b>Raised above the heart</b> is the tempting choice, since raising the legs helps swelling, but that's for <b>venous</b> problems; it makes arterial pain and pallor worse.</p><p><b>Takeaway:</b> Arterial insufficiency: legs level or down, never raised.</p>"
+    },
+    {
+      "id": "cv-83",
+      "type": "sata",
+      "case": "legpain",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 3,
+      "stem": "Which teaching should the nurse include for this client?",
+      "options": ["Stop smoking, with help from a quit plan", "Follow a heart-healthy diet with unsaturated fats and whole grains", "Walk regularly, resting when the pain starts and then continuing", "Check both feet each day for sores or color changes", "Report a foot that suddenly turns cold, pale, or numb", "Raise the legs on pillows to ease the pain", "Soak the feet in hot water to improve circulation"],
+      "answer": [0, 1, 2, 3, 4],
+      "rationale": "<p>Smoking, high LDL, low HDL, high blood pressure, diabetes, a BMI over 25, and age are the client's risk factors; quitting smoking and a heart-healthy diet address several. A walking program builds circulation, daily foot checks catch sores early, and a suddenly cold, pale limb is an emergency.</p><p><b>Soaking in hot water</b> is the tempting choice, since warmth seems to help circulation, but feet with poor blood flow (and diabetes) burn easily. Raising the legs worsens arterial pain.</p><p><b>Takeaway:</b> Treat the risk factors, walk, protect the feet, and report a sudden cold, pale limb.</p>"
+    },
+    {
+      "id": "cv-84",
+      "type": "matrix",
+      "case": "legpain",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "Three months later, the client returns. For each finding, click to specify whether it has improved, not changed, or gotten worse.",
+      "rowHeader": "Finding",
+      "columns": ["Improved", "Not changed", "Gotten worse"],
+      "rows": ["Walking before calf pain starts: 2 blocks then, 5 blocks now", "LDL: 148 mg/dL then, 104 mg/dL now", "Smoking: 1 pack a day then, 1 pack a day now", "Capillary refill, left toes: 4 seconds then, 4 seconds now", "Toe sore: 0.5 cm across then, 1.2 cm across now"],
+      "answer": [0, 0, 1, 1, 2],
+      "rationale": "<p>Walking farther before pain and a lower LDL show progress. The smoking and the slow capillary refill haven't changed, and the <b>toe sore is larger</b>: a wound that isn't healing because too little blood reaches it, which needs to be reported.</p><p>The tempting mistake is calling the LDL normal now. It's much better, but 104 is still just over the instructor's cutoff of 100.</p><p><b>Takeaway:</b> Track each finding: improved walking and LDL don't offset a growing sore.</p>"
     }
   ]
 }
