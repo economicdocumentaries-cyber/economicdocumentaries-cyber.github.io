@@ -1,0 +1,1487 @@
+{
+  "id": "nu1120-exam-4-blood-gas-drill",
+  "title": "Blood Gas Practice",
+  "description": "Exam 4 drill, matched to the instructor's study guide: reading arterial blood gases. Every attempt brings new numbers: say whether each value is normal, name the imbalance, and match it to its cause.",
+  "course": "NU1120",
+  "exam": "Exam 4",
+  "timeMinutes": 43.5,
+  "defaultCount": 15,
+  "questions": [
+    {
+      "id": "bg-01",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.19, PaCO₂ 70 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.33, PaCO₂ 47 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.24, PaCO₂ 60 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. How should the nurse interpret these results?",
+      "options": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 0,
+      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-02",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.50, PaCO₂ 29 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.47, PaCO₂ 34 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.55, PaCO₂ 26 mm Hg, and HCO₃⁻ 22 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. How should the nurse interpret these results?",
+      "options": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 1,
+      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>.</p><p><b>Metabolic alkalosis</b> is the tempting choice, since the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-03",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.31, PaCO₂ 39 mm Hg, and HCO₃⁻ 19 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.22, PaCO₂ 36 mm Hg, and HCO₃⁻ 14 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.33, PaCO₂ 41 mm Hg, and HCO₃⁻ 21 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. How should the nurse interpret these results?",
+      "options": [
+        "Respiratory acidosis",
+        "Metabolic acidosis",
+        "Respiratory alkalosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 1,
+      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>.</p><p><b>Respiratory acidosis</b> is the tempting choice, since the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-04",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.52, PaCO₂ 41 mm Hg, and HCO₃⁻ 32 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.47, PaCO₂ 44 mm Hg, and HCO₃⁻ 31 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.53, PaCO₂ 45 mm Hg, and HCO₃⁻ 36 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. How should the nurse interpret these results?",
+      "options": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic alkalosis",
+        "Metabolic acidosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-05",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.27, PaCO₂ 56 mm Hg, HCO₃⁻ 25 mEq/L, base excess +1 mEq/L, and PaO₂ 68 mm Hg"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 62 mm Hg, HCO₃⁻ 26 mEq/L, base excess +2 mEq/L, and PaO₂ 61 mm Hg"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.31, PaCO₂ 49 mm Hg, HCO₃⁻ 24 mEq/L, base excess 0 mEq/L, and PaO₂ 74 mm Hg"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.27, PaCO₂ 59 mm Hg, HCO₃⁻ 26 mEq/L, base excess +1 mEq/L, and PaO₂ 65 mm Hg"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 54 mm Hg, HCO₃⁻ 25 mEq/L, base excess 0 mEq/L, and PaO₂ 70 mm Hg"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which imbalance should the nurse recognize?",
+      "options": [
+        "Respiratory alkalosis",
+        "Respiratory acidosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 1,
+      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>. The base excess is normal and the PaO₂ is low, since the slow breathing also brings in less oxygen.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-06",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 29 mm Hg, HCO₃⁻ 22 mEq/L, base excess −1 mEq/L, and PaO₂ 98 mm Hg"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.48, PaCO₂ 32 mm Hg, HCO₃⁻ 23 mEq/L, base excess 0 mEq/L, and PaO₂ 95 mm Hg"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, HCO₃⁻ 22 mEq/L, base excess −1 mEq/L, and PaO₂ 99 mm Hg"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 26 mm Hg, HCO₃⁻ 22 mEq/L, base excess −1 mEq/L, and PaO₂ 97 mm Hg"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.47, PaCO₂ 33 mm Hg, HCO₃⁻ 23 mEq/L, base excess 0 mEq/L, and PaO₂ 92 mm Hg"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which imbalance should the nurse recognize?",
+      "options": [
+        "Respiratory acidosis",
+        "Metabolic acidosis",
+        "Respiratory alkalosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>. The base excess is normal; the PaO₂ is normal.</p><p><b>Metabolic alkalosis</b> is the tempting choice, since the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-07",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, HCO₃⁻ 18 mEq/L, base excess −7 mEq/L, and PaO₂ 92 mm Hg"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, HCO₃⁻ 15 mEq/L, base excess −11 mEq/L, and PaO₂ 88 mm Hg"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, HCO₃⁻ 20 mEq/L, base excess −5 mEq/L, and PaO₂ 95 mm Hg"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, HCO₃⁻ 17 mEq/L, base excess −8 mEq/L, and PaO₂ 90 mm Hg"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.22, PaCO₂ 36 mm Hg, HCO₃⁻ 14 mEq/L, base excess −13 mEq/L, and PaO₂ 86 mm Hg"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which imbalance should the nurse recognize?",
+      "options": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>. The base excess is <b>below −2</b>, which also points to a metabolic acidosis.</p><p><b>Respiratory acidosis</b> is the tempting choice, since the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-08",
+      "type": "mc",
+      "topic": "Naming the imbalance",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, HCO₃⁻ 33 mEq/L, base excess +8 mEq/L, and PaO₂ 88 mm Hg"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, HCO₃⁻ 35 mEq/L, base excess +10 mEq/L, and PaO₂ 91 mm Hg"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, HCO₃⁻ 30 mEq/L, base excess +5 mEq/L, and PaO₂ 94 mm Hg"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.52, PaCO₂ 41 mm Hg, HCO₃⁻ 32 mEq/L, base excess +7 mEq/L, and PaO₂ 89 mm Hg"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, HCO₃⁻ 38 mEq/L, base excess +13 mEq/L, and PaO₂ 85 mm Hg"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which imbalance should the nurse recognize?",
+      "options": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic alkalosis",
+        "Metabolic acidosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>. The base excess is <b>above +2</b>, which also points to a metabolic alkalosis.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-09",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "ph": [
+          {
+            "value": 7.21,
+            "text": "7.21"
+          },
+          {
+            "value": 7.26,
+            "text": "7.26"
+          },
+          {
+            "value": 7.3,
+            "text": "7.30"
+          },
+          {
+            "value": 7.33,
+            "text": "7.33"
+          }
+        ]
+      },
+      "stem": "A client's arterial pH is {ph}. How should the nurse interpret this value?",
+      "options": [
+        "Within the normal range",
+        "Above the normal range (alkalosis)",
+        "It can't be judged without the PaCO₂",
+        "Below the normal range (acidosis)"
+      ],
+      "answer": 3,
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is below it: <b>acidosis</b>, with more hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> is the tempting choice, since the CO₂ tells you the cause, but the pH alone tells you acidosis or alkalosis.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+    },
+    {
+      "id": "bg-10",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "ph": [
+          {
+            "value": 7.36,
+            "text": "7.36"
+          },
+          {
+            "value": 7.38,
+            "text": "7.38"
+          },
+          {
+            "value": 7.4,
+            "text": "7.40"
+          },
+          {
+            "value": 7.42,
+            "text": "7.42"
+          },
+          {
+            "value": 7.44,
+            "text": "7.44"
+          }
+        ]
+      },
+      "stem": "A client's arterial pH is {ph}. How should the nurse interpret this value?",
+      "options": [
+        "Within the normal range",
+        "Below the normal range (acidosis)",
+        "Above the normal range (alkalosis)",
+        "It can't be judged without the PaCO₂"
+      ],
+      "answer": 0,
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>; {ph} is within it.</p><p><b>Below the normal range</b> is the tempting choice for a pH under 7.40, but 7.35 is the line; 7.40 is just the middle of the range.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+    },
+    {
+      "id": "bg-11",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "ph": [
+          {
+            "value": 7.47,
+            "text": "7.47"
+          },
+          {
+            "value": 7.5,
+            "text": "7.50"
+          },
+          {
+            "value": 7.53,
+            "text": "7.53"
+          },
+          {
+            "value": 7.56,
+            "text": "7.56"
+          }
+        ]
+      },
+      "stem": "A client's arterial pH is {ph}. How should the nurse interpret this value?",
+      "options": [
+        "Below the normal range (acidosis)",
+        "Above the normal range (alkalosis)",
+        "Within the normal range",
+        "It can't be judged without the PaCO₂"
+      ],
+      "answer": 1,
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is above it: <b>alkalosis</b>, with fewer hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> is the tempting choice, but the pH alone shows alkalosis; the CO₂ and HCO₃⁻ tell you the cause.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+    },
+    {
+      "id": "bg-12",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "v": [
+          26,
+          29,
+          31,
+          33
+        ]
+      },
+      "stem": "A client's PaCO₂ is {v} mm Hg. How should the nurse interpret this value?",
+      "options": [
+        "Within the normal range",
+        "Above the normal range",
+        "It can't be judged without the pH",
+        "Below the normal range"
+      ],
+      "answer": 3,
+      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is below it, so carbon dioxide is being blown off (as in hyperventilation).</p><p><b>It can't be judged without the pH</b> is the tempting choice, since the pH decides acidosis or alkalosis, but the PaCO₂ has its own normal range.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
+    },
+    {
+      "id": "bg-13",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "v": [
+          48,
+          52,
+          57,
+          63
+        ]
+      },
+      "stem": "A client's PaCO₂ is {v} mm Hg. How should the nurse interpret this value?",
+      "options": [
+        "Below the normal range",
+        "Within the normal range",
+        "It can't be judged without the pH",
+        "Above the normal range"
+      ],
+      "answer": 3,
+      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is above it, so carbon dioxide is being kept (as with a blocked airway).</p><p><b>Within the normal range</b> is the tempting choice if you confuse it with the HCO₃⁻ range, but 45 is the PaCO₂'s upper line.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
+    },
+    {
+      "id": "bg-14",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "v": [
+          14,
+          17,
+          19,
+          21
+        ]
+      },
+      "stem": "A client's HCO₃⁻ is {v} mEq/L. How should the nurse interpret this value?",
+      "options": [
+        "Below the normal range",
+        "Within the normal range",
+        "Above the normal range",
+        "It can't be judged without the pH"
+      ],
+      "answer": 0,
+      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is below it, so base has been lost or used up (as in diarrhea or ketoacidosis).</p><p><b>Within the normal range</b> is the tempting choice for a number near 22, but the range starts at 22.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
+    },
+    {
+      "id": "bg-15",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "v": [
+          28,
+          30,
+          33,
+          36
+        ]
+      },
+      "stem": "A client's HCO₃⁻ is {v} mEq/L. How should the nurse interpret this value?",
+      "options": [
+        "Above the normal range",
+        "Below the normal range",
+        "Within the normal range",
+        "It can't be judged without the pH"
+      ],
+      "answer": 0,
+      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is above it, so there's extra base (as after vomiting or NG suction).</p><p><b>Within the normal range</b> is the tempting choice if you remember the PaCO₂ range (35 to 45), but the HCO₃⁻ range is 22 to 26.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
+    },
+    {
+      "id": "bg-16",
+      "type": "mc",
+      "topic": "Normal or not",
+      "level": 1,
+      "vars": {
+        "v": [
+          58,
+          63,
+          68,
+          72,
+          76
+        ]
+      },
+      "stem": "A 30-year-old client breathing room air has a PaO₂ of {v} mm Hg. How should the nurse interpret this value?",
+      "options": [
+        "Within the normal range",
+        "Above the normal range",
+        "Below the normal range",
+        "It can't be judged without the pH"
+      ],
+      "answer": 2,
+      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {v} is below it, so the blood is carrying too little oxygen.</p><p><b>Within the normal range</b> is the tempting choice if you confuse the PaO₂ with the oxygen saturation, which is normally 95% or more.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
+    },
+    {
+      "id": "bg-17",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 2,
+      "vars": {
+        "cause": [
+          {
+            "value": 1,
+            "text": "has vomited for 3 days"
+          },
+          {
+            "value": 2,
+            "text": "has had a nasogastric tube to suction for 4 days"
+          },
+          {
+            "value": 3,
+            "text": "has taken a thiazide diuretic for months and has a low potassium level"
+          }
+        ],
+        "alk": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          }
+        ],
+        "acid": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          }
+        ],
+        "racid": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ],
+        "ralk": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client {cause}. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "{acid}",
+        "{racid}",
+        "{ralk}",
+        "{alk}"
+      ],
+      "answer": 3,
+      "rationale": "<p>Vomiting and NG suction remove stomach <b>acid</b>, and thiazide diuretics are on the instructor's list too: all cause a <b>metabolic alkalosis</b>, with a high pH and a high HCO₃⁻, like {alk}.</p><p>The <b>metabolic acidosis</b> set is the tempting choice for students who think of every fluid loss as acidosis; losing stomach acid leaves extra base.</p><p><b>Takeaway:</b> Vomiting, NG suction, thiazides → metabolic alkalosis.</p>"
+    },
+    {
+      "id": "bg-18",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 2,
+      "vars": {
+        "cause": [
+          {
+            "value": 1,
+            "text": "has diabetic ketoacidosis"
+          },
+          {
+            "value": 2,
+            "text": "has eaten almost nothing for 10 days and has ketones in the urine"
+          },
+          {
+            "value": 3,
+            "text": "is in shock, with poor oxygen delivery to the tissues"
+          },
+          {
+            "value": 4,
+            "text": "has kidney failure"
+          },
+          {
+            "value": 5,
+            "text": "has had severe watery diarrhea for 3 days"
+          },
+          {
+            "value": 6,
+            "text": "is severely dehydrated"
+          }
+        ],
+        "alk": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          }
+        ],
+        "acid": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          }
+        ],
+        "racid": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ],
+        "ralk": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client {cause}. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "{alk}",
+        "{acid}",
+        "{racid}",
+        "{ralk}"
+      ],
+      "answer": 1,
+      "rationale": "<p>Ketones (diabetic ketoacidosis, starvation), lactic acid (hypoxia, shock, dehydration), kidney failure, and diarrhea's loss of bicarbonate all cause a <b>metabolic acidosis</b>: a low pH and a low HCO₃⁻, like {acid}.</p><p>The <b>respiratory acidosis</b> set is the tempting choice, since it's also an acidosis, but here the problem is the bicarbonate, not the lungs.</p><p><b>Takeaway:</b> DKA, starvation, hypoxia, kidney failure, dehydration, diarrhea → metabolic acidosis.</p>"
+    },
+    {
+      "id": "bg-19",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 2,
+      "vars": {
+        "cause": [
+          {
+            "value": 1,
+            "text": "has thick secretions partly blocking the airways"
+          },
+          {
+            "value": 2,
+            "text": "choked on food that is still partly blocking the airway"
+          },
+          {
+            "value": 3,
+            "text": "has fluid-filled alveoli that can't exchange gas well"
+          }
+        ],
+        "alk": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          }
+        ],
+        "acid": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          }
+        ],
+        "racid": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ],
+        "ralk": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client {cause}. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "{alk}",
+        "{acid}",
+        "{racid}",
+        "{ralk}"
+      ],
+      "answer": 2,
+      "rationale": "<p>An <b>airway obstruction</b>, or lungs that can't exchange (diffuse) gas well, keep carbon dioxide: a <b>respiratory acidosis</b>, with a low pH and a high PaCO₂, like {racid}.</p><p>The <b>metabolic acidosis</b> set is the tempting choice, since it's also acidic, but its HCO₃⁻ is low and its CO₂ normal; here the CO₂ is the problem.</p><p><b>Takeaway:</b> Blocked airways or poor gas exchange → respiratory acidosis.</p>"
+    },
+    {
+      "id": "bg-20",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 2,
+      "vars": {
+        "cause": [
+          {
+            "value": 1,
+            "text": "is breathing 32 times a minute during a panic attack"
+          },
+          {
+            "value": 2,
+            "text": "is breathing fast because of severe pain"
+          },
+          {
+            "value": 3,
+            "text": "is on a ventilator set to too high a rate"
+          },
+          {
+            "value": 4,
+            "text": "has a fever of 39.8 °C (103.6 °F) and is breathing fast"
+          }
+        ],
+        "alk": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          }
+        ],
+        "acid": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          }
+        ],
+        "racid": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ],
+        "ralk": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client {cause}. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "{ralk}",
+        "{alk}",
+        "{acid}",
+        "{racid}"
+      ],
+      "answer": 0,
+      "rationale": "<p>Breathing too fast or too deeply (anxiety, pain, fever, or a ventilator set too high) blows off carbon dioxide: a <b>respiratory alkalosis</b>, with a high pH and a low PaCO₂, like {ralk}.</p><p>The <b>metabolic alkalosis</b> set is the tempting choice, since its pH is high too, but its HCO₃⁻ is high and its CO₂ normal.</p><p><b>Takeaway:</b> Hyperventilation, pain, fever, a ventilator set too fast → respiratory alkalosis.</p>"
+    },
+    {
+      "id": "bg-21",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.48, PaCO₂ 40 mm Hg, and HCO₃⁻ 29 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.52, PaCO₂ 41 mm Hg, and HCO₃⁻ 32 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.47, PaCO₂ 44 mm Hg, and HCO₃⁻ 31 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.53, PaCO₂ 45 mm Hg, and HCO₃⁻ 36 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which condition most likely caused these results?",
+      "options": [
+        "Several days of watery diarrhea",
+        "Several days of vomiting",
+        "Anxious, rapid breathing",
+        "Thick secretions in the airways"
+      ],
+      "answer": 1,
+      "rationale": "<p>A high pH with a high HCO₃⁻ is a <b>metabolic alkalosis</b>; vomiting removes stomach acid and leaves extra base.</p><p><b>Diarrhea</b> is the tempting choice, since it's also a fluid loss from the gut, but it removes <b>base</b>, causing acidosis.</p><p><b>Takeaway:</b> Vomiting → metabolic alkalosis; diarrhea → metabolic acidosis.</p>"
+    },
+    {
+      "id": "bg-22",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 37 mm Hg, and HCO₃⁻ 17 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.31, PaCO₂ 39 mm Hg, and HCO₃⁻ 19 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.22, PaCO₂ 36 mm Hg, and HCO₃⁻ 14 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.33, PaCO₂ 41 mm Hg, and HCO₃⁻ 21 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which condition most likely caused these results?",
+      "options": [
+        "Prolonged nasogastric suction",
+        "A fever with fast breathing",
+        "A partly blocked airway",
+        "Diabetic ketoacidosis"
+      ],
+      "answer": 3,
+      "rationale": "<p>A low pH with a low HCO₃⁻ is a <b>metabolic acidosis</b>; in diabetic ketoacidosis, ketones (acids) use up the bicarbonate.</p><p><b>A partly blocked airway</b> is the tempting choice, since it also lowers the pH, but it raises the CO₂; here the CO₂ is normal.</p><p><b>Takeaway:</b> Low pH + low HCO₃⁻: think DKA, starvation, hypoxia, kidney failure, diarrhea.</p>"
+    },
+    {
+      "id": "bg-23",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.29, PaCO₂ 55 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.19, PaCO₂ 70 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.33, PaCO₂ 47 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.24, PaCO₂ 60 mm Hg, and HCO₃⁻ 25 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which condition most likely caused these results?",
+      "options": [
+        "Diabetic ketoacidosis",
+        "A partly blocked airway",
+        "A panic attack with fast breathing",
+        "A thiazide diuretic"
+      ],
+      "answer": 1,
+      "rationale": "<p>A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: a partly blocked airway traps carbon dioxide.</p><p><b>Diabetic ketoacidosis</b> is the tempting choice, since it's a classic acidosis, but it lowers the HCO₃⁻; here the CO₂ is high.</p><p><b>Takeaway:</b> Low pH + high CO₂: an airway or gas-exchange problem.</p>"
+    },
+    {
+      "id": "bg-24",
+      "type": "mc",
+      "topic": "Finding the cause",
+      "level": 3,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.49, PaCO₂ 31 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.50, PaCO₂ 29 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.47, PaCO₂ 34 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.55, PaCO₂ 26 mm Hg, and HCO₃⁻ 22 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which condition most likely caused these results?",
+      "options": [
+        "A panic attack with fast breathing",
+        "Kidney failure",
+        "Thick secretions in the airways",
+        "Prolonged vomiting"
+      ],
+      "answer": 0,
+      "rationale": "<p>A high pH with a low PaCO₂ is a <b>respiratory alkalosis</b>: fast breathing in a panic attack blows off carbon dioxide.</p><p><b>Prolonged vomiting</b> is the tempting choice, since it also raises the pH, but it raises the HCO₃⁻; here the CO₂ is low.</p><p><b>Takeaway:</b> High pH + low CO₂: hyperventilation, pain, fever, or a ventilator set too fast.</p>"
+    },
+    {
+      "id": "bg-25",
+      "type": "mc",
+      "topic": "Reading the values",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 25 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.27, PaCO₂ 58 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 48 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.23, PaCO₂ 64 mm Hg, and HCO₃⁻ 26 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.51, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.53, PaCO₂ 27 mm Hg, and HCO₃⁻ 22 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.48, PaCO₂ 33 mm Hg, and HCO₃⁻ 24 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.57, PaCO₂ 25 mm Hg, and HCO₃⁻ 22 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which value explains the change in the pH?",
+      "options": [
+        "The PaCO₂",
+        "The HCO₃⁻",
+        "The PaO₂",
+        "The base excess"
+      ],
+      "answer": 0,
+      "rationale": "<p>The pH is out of range, and the <b>PaCO₂</b> has moved opposite to it (high with acidosis, low with alkalosis), while the HCO₃⁻ is normal. The cause is respiratory.</p><p><b>The HCO₃⁻</b> is the tempting choice, since it's part of every reading, but here it's within 22 to 26.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-26",
+      "type": "mc",
+      "topic": "Reading the values",
+      "level": 2,
+      "vars": {
+        "abg": [
+          {
+            "value": 1,
+            "text": "pH 7.30, PaCO₂ 38 mm Hg, and HCO₃⁻ 18 mEq/L"
+          },
+          {
+            "value": 2,
+            "text": "pH 7.25, PaCO₂ 36 mm Hg, and HCO₃⁻ 15 mEq/L"
+          },
+          {
+            "value": 3,
+            "text": "pH 7.32, PaCO₂ 40 mm Hg, and HCO₃⁻ 20 mEq/L"
+          },
+          {
+            "value": 4,
+            "text": "pH 7.19, PaCO₂ 35 mm Hg, and HCO₃⁻ 13 mEq/L"
+          },
+          {
+            "value": 5,
+            "text": "pH 7.50, PaCO₂ 44 mm Hg, and HCO₃⁻ 33 mEq/L"
+          },
+          {
+            "value": 6,
+            "text": "pH 7.53, PaCO₂ 43 mm Hg, and HCO₃⁻ 35 mEq/L"
+          },
+          {
+            "value": 7,
+            "text": "pH 7.48, PaCO₂ 42 mm Hg, and HCO₃⁻ 30 mEq/L"
+          },
+          {
+            "value": 8,
+            "text": "pH 7.55, PaCO₂ 45 mm Hg, and HCO₃⁻ 38 mEq/L"
+          }
+        ]
+      },
+      "stem": "A client's arterial blood gases are {abg}. Which value explains the change in the pH?",
+      "options": [
+        "The PaCO₂",
+        "The PaO₂",
+        "The base excess",
+        "The HCO₃⁻"
+      ],
+      "answer": 3,
+      "rationale": "<p>The pH is out of range, and the <b>HCO₃⁻</b> has moved the same way (low with acidosis, high with alkalosis), while the PaCO₂ is normal. The cause is metabolic.</p><p><b>The PaCO₂</b> is the tempting choice, since it's the first gas listed, but here it's within 35 to 45.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+    },
+    {
+      "id": "bg-27",
+      "type": "mc",
+      "topic": "Reading the values",
+      "level": 2,
+      "vars": {
+        "be": [
+          {
+            "value": -3,
+            "text": "−3"
+          },
+          {
+            "value": -5,
+            "text": "−5"
+          },
+          {
+            "value": -7,
+            "text": "−7"
+          },
+          {
+            "value": -9,
+            "text": "−9"
+          },
+          {
+            "value": -12,
+            "text": "−12"
+          }
+        ]
+      },
+      "stem": "A client's base excess is {be} mEq/L. How should the nurse interpret this value?",
+      "options": [
+        "Too much base, as in a metabolic alkalosis",
+        "Within the normal range",
+        "Too much CO₂, as in a respiratory acidosis",
+        "Too little base, as in a metabolic acidosis"
+      ],
+      "answer": 3,
+      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} is a base <b>deficit</b>: too little bicarbonate, as in a <b>metabolic acidosis</b>.</p><p><b>Too much base</b> is the tempting choice, since the name is “excess”, but a negative excess means a shortage.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
+    },
+    {
+      "id": "bg-28",
+      "type": "mc",
+      "topic": "Reading the values",
+      "level": 2,
+      "vars": {
+        "be": [
+          {
+            "value": 3,
+            "text": "+3"
+          },
+          {
+            "value": 5,
+            "text": "+5"
+          },
+          {
+            "value": 7,
+            "text": "+7"
+          },
+          {
+            "value": 9,
+            "text": "+9"
+          },
+          {
+            "value": 12,
+            "text": "+12"
+          }
+        ]
+      },
+      "stem": "A client's base excess is {be} mEq/L. How should the nurse interpret this value?",
+      "options": [
+        "Too little base, as in a metabolic acidosis",
+        "Within the normal range",
+        "Too much base, as in a metabolic alkalosis",
+        "Too much CO₂, as in a respiratory acidosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} means <b>too much base</b>, as in a <b>metabolic alkalosis</b>.</p><p><b>Too much CO₂</b> is the tempting choice, since a high number sounds like a buildup, but the base excess measures base, not carbon dioxide.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
+    },
+    {
+      "id": "bg-29",
+      "type": "mc",
+      "topic": "Reading the values",
+      "level": 2,
+      "stem": "Compared with normal blood, which statement about the blood in alkalosis is accurate?",
+      "options": [
+        "It has fewer hydrogen ions, so the pH is higher",
+        "It has more hydrogen ions, so the pH is higher",
+        "It has more hydrogen ions, so the pH is lower",
+        "It has the same hydrogen ions, but more bicarbonate"
+      ],
+      "answer": 0,
+      "rationale": "<p>The pH tracks hydrogen ions the opposite way: <b>fewer</b> hydrogen ions mean a <b>higher</b> pH (alkalosis), and more mean a lower pH (acidosis).</p><p><b>More hydrogen ions with a higher pH</b> is the tempting choice, since the instructor's list says this for respiratory alkalosis, but a higher pH always means fewer hydrogen ions.</p><p><b>Takeaway:</b> Acidosis: more H⁺, lower pH. Alkalosis: fewer H⁺, higher pH.</p>"
+    }
+  ]
+}
