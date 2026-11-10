@@ -422,7 +422,7 @@ export function feedbackPanel(q, response, { answered = true, report = null, ans
       : [h('b', 'No answer locked in'), ` · 0 of ${max} point${max === 1 ? '' : 's'}`]),
     h('h2.feedback-title', 'Rationale'),
     h('div.rationale', { html: q.rationale }),
-    report ? reportLine(report, q) : null);
+    report ? reportLine(report, q.src ? { ...q, id: q.src.id } : q) : null);
 }
 
 // The question part of the screen. Case questions get the two-column layout
@@ -652,9 +652,9 @@ export function examView(root) {
     document.title = `${st.title} · Question ${st.index + 1}`;
     prevBtn.hidden = st.index === 0;
     paintFlag();
-    saver?.show(st.setId, st.title, q.id);
+    saver?.show(q.src?.set ?? st.setId, q.src?.title ?? st.title, q.src?.id ?? q.id); // src: from a search (SPEC 11.14)
     mSave?.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed'));
-    const feedback = revealed ? rationaleSheet(feedbackPanel(q, st.responses[q.id], { report: st.setId })) : null;
+    const feedback = revealed ? rationaleSheet(feedbackPanel(q, st.responses[q.id], { report: q.src?.set ?? st.setId })) : null;
     area.show(q, [
       ...questionParts(q, {
         response: st.responses[q.id],
@@ -918,7 +918,10 @@ export function examView(root) {
       ended: reason === 'time' ? 'time-up' : reason === 'early' ? 'finished-early' : 'submitted',
       flagged: Object.keys(st.flags).length ? 'yes' : 'no', 'crossed-out': Object.keys(st.crossed ?? {}).length ? 'yes' : 'no',
     });
-    const result = grade(st, reason, seenBefore(st.setId));
+    // A question practiced from a search (SPEC 11.14) is a first try only if its own set hasn't shown it before.
+    const seen = seenBefore(st.setId);
+    for (const q of st.questions) if (q.src && seenBefore(q.src.set).has(q.src.id)) seen.add(q.id);
+    const result = grade(st, reason, seen);
     saveResult(result);
     recordStats(result); // the anonymous question stats (SPEC 11.9)
     store.del(ACTIVE);
@@ -1163,10 +1166,10 @@ export function reviewView(root, { args = [] } = {}) {
     document.title = `Review · ${r.title}`;
     prevBtn.hidden = index === 0;
     nextBtn.textContent = index === list.length - 1 ? 'Finish' : 'Next';
-    saver.show(r.setId, r.title, q.id);
+    saver.show(q.src?.set ?? r.setId, q.src?.title ?? r.title, q.src?.id ?? q.id);
     area.show(q, [
       ...questionParts(q, { response: r.responses[q.id], layout: r.layout?.[q.id], review: true }),
-      feedbackPanel(q, r.responses[q.id], { report: r.setId }),
+      feedbackPanel(q, r.responses[q.id], { report: q.src?.set ?? r.setId }),
       actions,
     ]);
     if (moveFocus) {

@@ -43,7 +43,8 @@ export function recordStats(result) {
       const q = byId.get(item.id);
       const r = result.responses?.[item.id];
       if (!q || !isAnswered(q, r)) continue;
-      const at = `itemStats/${toKey(result.setId)}/${toKey(item.id)}`;
+      // A question practiced from a search (SPEC 11.14) counts for its own set and id.
+      const at = `itemStats/${toKey(q.src?.set ?? result.setId)}/${toKey(q.src?.id ?? item.id)}`;
       const right = item.earned === item.max;
       changes[`${at}/n`] = one;
       if (right) changes[`${at}/ok`] = one;

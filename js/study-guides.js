@@ -4,7 +4,7 @@
 // /guideFiles/<id>/<n>, and its details are in /guides/<id>. Students see
 // uploaded guides on their class's tab right away, next to the guides that
 // are published with the site files (SPEC 11.1).
-import { h, fill, modal, toast, fmtDate } from './util.js';
+import { h, fill, modal, toast, fmtDate, heartbeat } from './util.js';
 import { groupStudyOn, connectStudent, problemText } from './firebase.js';
 import { arrange, newestGuide, guideKey, orderTools, dragSort, moved, readOrder, keepOrder } from './order.js';
 import { track } from './analytics.js';
@@ -105,12 +105,16 @@ export function downloadButton(guide, { accent = true } = {}) {
   button.addEventListener('click', async () => {
     button.disabled = true;
     button.textContent = 'Downloading…';
+    // The heartbeat line over the page while the pieces download (SPEC 11.13).
+    const overlay = h('div.loading-overlay', heartbeat('Downloading the study guide…'));
+    document.body.append(overlay);
     try {
       await downloadUploaded(guide);
       track('guide-download', { class: guide.course, guide: guide.title, kind: 'uploaded' });
     } catch (err) {
       toast(err.code ? `The study guide didn't download. ${problemText(err)}` : err.message, 9000);
     } finally {
+      overlay.remove();
       button.disabled = false;
       button.textContent = 'Download';
     }

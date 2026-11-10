@@ -21,6 +21,7 @@ import { setsConsole, questionsPage } from './set-editor.js';
 import { track, countThisBrowser } from './analytics.js';
 import { reportsConsole, reportedCount } from './reports.js';
 import { feedbackConsole, feedbackCount } from './feedback.js';
+import { searchesConsole } from './search.js';
 import { statsConsole } from './stats.js';
 import { debriefsConsole } from './debriefs.js';
 
@@ -830,8 +831,9 @@ function caseDetails({ intro, tabs = [] }) {
 // #/host/guides the study guides (SPEC 11.2), #/host/reports the problems
 // students reported (SPEC 11.6), #/host/stats how students do on each
 // question (SPEC 11.9), #/host/debriefs what students say after a real exam
-// (SPEC 11.10), and #/host/feedback the anonymous messages about the site
-// (SPEC 11.12), with a menu at the top to switch between them.
+// (SPEC 11.10), #/host/feedback the anonymous messages about the site
+// (SPEC 11.12), and #/host/searches what students search for (SPEC 11.14),
+// with a menu at the top to switch between them.
 export async function hostView(root, { args = [], isCurrent }) {
   document.title = `Host console · ${SITE_NAME}`;
   leaveFullscreen();
@@ -852,7 +854,7 @@ export async function hostView(root, { args = [], isCurrent }) {
     return;
   }
   if (!isCurrent()) return;
-  const area = ['sets', 'guides', 'reports', 'stats', 'debriefs', 'feedback'].includes(args[0]) ? args[0] : 'group';
+  const area = ['sets', 'guides', 'reports', 'stats', 'debriefs', 'feedback', 'searches'].includes(args[0]) ? args[0] : 'group';
   return hostConsole(main, account, loaded, area, area === 'sets' ? args[1] : null, area === 'sets' ? args[2] : null);
 }
 
@@ -872,6 +874,7 @@ function hostMenu(area) {
     item('stats', '#/host/stats', 'Question stats'),
     item('debriefs', '#/host/debriefs', 'Debriefs'),
     feedback,
+    item('searches', '#/host/searches', 'Searches'),
     h('a.btn.btn-small.student-view', { href: '#/' }, 'Student view'));
   menu.setFeedback = n => fill(feedback, 'Feedback', n
     ? [h('span.menu-count', { 'aria-hidden': 'true' }, String(n)), h('span.sr-only', ` (${n === 1 ? '1 message' : `${n} messages`})`)]
@@ -915,13 +918,14 @@ function hostConsole(main, account, { sets, courses, guides }, area, setId, ques
         stopReports();
         stopFeedback();
       };
-      if (area === 'guides' || area === 'sets' || area === 'reports' || area === 'stats' || area === 'debriefs' || area === 'feedback') {
+      if (area === 'guides' || area === 'sets' || area === 'reports' || area === 'stats' || area === 'debriefs' || area === 'feedback' || area === 'searches') {
         const stopNotice = connectionNotice(db);
         const stopPage = area === 'guides' ? guidesConsole(section, db, { courses, sets, published: guides }, line)
           : area === 'reports' ? reportsConsole(section, db, { sets, courses }, line)
           : area === 'stats' ? statsConsole(section, db, { sets, courses }, line)
           : area === 'debriefs' ? debriefsConsole(section, db, { sets, courses }, line)
           : area === 'feedback' ? feedbackConsole(section, db, line)
+          : area === 'searches' ? searchesConsole(section, db, line)
             : setId ? questionsPage(section, db, { sets, courses }, line, setId, questionId)
               : setsConsole(section, db, { sets, courses }, line);
         stopConsole = () => {

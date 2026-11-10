@@ -170,6 +170,26 @@ export function siteHeader({ title = '', onClose = null, link = true } = {}) {
 
 // The full screen notice starts hidden; the exam screen shows it while
 // full screen is on (SPEC 3.2 item 7).
+// Loading screens (SPEC 11.13, the owner's choice): the homepage's shape in soft gray while the sets load, and the
+// logo's heartbeat line while an exam gets ready or a study guide downloads. Both stay invisible for the first third
+// of a second (CSS), so fast loads don't flash, and stand still when the device asks for less motion.
+export function homeSkeleton() {
+  return h('div.loading.skeleton', { role: 'status' },
+    h('span.sr-only', 'Loading question sets…'),
+    h('div.sk-row', h('div.sk.sk-tab'), h('div.sk.sk-tab')),
+    h('div.sk.sk-hero'),
+    h('div.sk-grid', h('div.sk.sk-card'), h('div.sk.sk-card'), h('div.sk.sk-card')));
+}
+
+export function heartbeat(text) {
+  return h('div.loading.heartbeat', { role: 'status' },
+    h('span.beat-line', {
+      'aria-hidden': 'true',
+      html: '<svg viewBox="0 0 200 70" width="200" height="70"><path d="M4 40 H60 L72 40 L82 14 L94 62 L106 26 L114 40 H196"/></svg>',
+    }),
+    h('p.beat-text', text));
+}
+
 export function siteFooter() {
   return h('footer.site-footer',
     h('div.wrap',

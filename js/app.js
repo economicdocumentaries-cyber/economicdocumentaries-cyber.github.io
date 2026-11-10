@@ -2,7 +2,7 @@
 // with its class tabs, setup, results, and saved questions. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone } from './util.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone, homeSkeleton, heartbeat } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets } from './sets.js';
 import {
@@ -20,6 +20,7 @@ import { hostSignedIn, HOST_HINT } from './firebase.js';
 import { watchOpenDebriefs, debriefCards, debriefPage } from './debriefs.js';
 import { trackPage, track, countThisBrowser, thisBrowserCounts } from './analytics.js';
 import { feedbackButton, feedbackLine } from './feedback.js';
+import { searchView, searchBox } from './search.js';
 
 const app = document.getElementById('app');
 
@@ -106,9 +107,10 @@ function timeLeft(st, now = Date.now()) {
 // #/ and #/class/<code>: the class tabs, or one list when there's no class list.
 async function homeView(root, { args, isCurrent }) {
   document.title = SITE_NAME;
-  const main = h('main.wrap.home', h('p.lead', 'Loading question sets…'));
+  const main = h('main.wrap.home', homeSkeleton()); // the page's shape while the sets load (SPEC 11.13)
   onSwipe(main, way => main.querySelector('.classes')?.swipe(way)); // phones: change class (SPEC 11.8)
   root.replaceChildren(page(main));
+  root.querySelector('.topbar-inner')?.append(searchBox().form); // search both classes, even while the sets load (SPEC 11.14)
   const { sets, courses, guides, problems } = await loadSets();
   if (!isCurrent()) return;
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
@@ -570,7 +572,7 @@ function problemsPanel(problems) {
 // #/setup/<id>: a card per mode, each with its own Start, and Change settings
 // for everything else (the owner's choice from the mock-ups, 2026-11-02).
 async function setupView(root, { args, isCurrent }) {
-  const main = h('main.wrap.setup', h('p.lead', 'Loading…'));
+  const main = h('main.wrap.setup', heartbeat('Getting your practice exam ready…')); // SPEC 11.13
   root.replaceChildren(page(main));
   const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
   if (!isCurrent()) return;
@@ -862,6 +864,11 @@ async function resultsView(root, { isCurrent }) {
   const { sets, courses } = await loadSets();
   if (!isCurrent()) return;
   const set = withChanges(sets, cachedChanges(), courses).find(x => x.id === r.setId);
+  // A practice exam from a search (SPEC 11.14) isn't a set on the site: its questions came with the result, so its
+  // missed questions can still be retaken.
+  const searched = !set && String(r.setId).startsWith('search--') && Array.isArray(r.questions)
+    ? { id: r.setId, title: r.title, course: r.setId.replace(/^search--/, '').replace(/^other$/, '') || null, questions: r.questions, cases: r.cases ?? {} }
+    : null;
   const fullyCorrect = r.items.length - r.missed.length;
   const mode = { exam: 'Exam simulation', practice: 'Practice mode' }[r.settings?.preset] ?? 'Custom settings';
   const early = r.reason === 'early';
@@ -903,8 +910,8 @@ async function resultsView(root, { isCurrent }) {
       r.missed.length
         ? h('a.btn', { href: '#/review/incorrect' }, `Review incorrect only (${r.missed.length})`)
         : h('button.btn', { type: 'button', disabled: true }, 'No incorrect answers'),
-      set && r.missed.length
-        ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
+      (set ?? searched) && r.missed.length
+        ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set ?? searched, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
         : null,
       set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
       savedLink(),
@@ -975,6 +982,7 @@ async function savedView(root, ctx) {
   document.title = `Saved questions · ${SITE_NAME}`;
   const main = h('main.wrap.saved-page', h('p.lead', 'Loading…'));
   root.replaceChildren(page(main));
+  root.querySelector('.topbar-inner')?.append(searchBox().form); // SPEC 11.14
   const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
   if (!ctx.isCurrent()) return;
   const { courses } = loaded;
@@ -1174,6 +1182,7 @@ function statsView(root, on) {
 const routes = {
   '': homeView, class: homeView, setup: setupView, exam: examView, results: resultsView, review: reviewView, saved: savedView, group: groupView, host: hostView,
   debrief: debriefView,
+  search: (root, ctx) => searchView(root, ctx, { page, begin, guideRow }),
   'stats-off': root => statsView(root, false), 'stats-on': root => statsView(root, true),
 };
 const UNCOUNTED = new Set(['host', 'stats-off', 'stats-on']); // the host's pages, and the stats switch
@@ -1191,8 +1200,9 @@ async function route() {
   if (id === routeCount && typeof done === 'function') cleanup = done;
   else if (typeof done === 'function') done();
   // One page view per page change, counted as a path: "/", "/class/NU1120", "/exam".
-  // A saved question's page counts as its set's: "/saved/<set id>".
-  const counted = name === 'saved' ? args.slice(0, 1) : args;
+  // A saved question's page counts as its set's: "/saved/<set id>". The search page counts as "/search", without the
+  // words typed (they go only to the host's Searches page, SPEC 11.14).
+  const counted = name === 'saved' ? args.slice(0, 1) : name === 'search' ? [] : args;
   if (id === routeCount && !UNCOUNTED.has(name)) trackPage(`/${[name, ...counted].filter(Boolean).map(encodeURIComponent).join('/')}`);
 }
 

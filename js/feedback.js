@@ -23,11 +23,12 @@ const newId = () => `${Date.now().toString(36)}${Math.random().toString(36).slic
 // The page the message came from, as a path without anything a student typed: "/class/NU1120", "/setup/<set id>".
 const pageNow = () => (location.hash.replace(/^#/, '') || '/').split('?')[0].slice(0, 100);
 
-export async function openFeedback() {
+export async function openFeedback(initial = '') {
   const radios = Object.entries(KINDS).map(([value, label], i) => h('label.choice-line.feedback-kind',
     h('input.ctl', { type: 'radio', name: 'feedback-kind', value, checked: i === 0 }), h('span', label)));
   const text = h('textarea.text-input.feedback-text#feedback-text', { rows: '5', maxlength: String(TEXT_MAX) });
-  const count = h('span.feedback-count', `0 / ${TEXT_MAX}`);
+  if (typeof initial === 'string') text.value = initial.slice(0, TEXT_MAX); // from search: "Could you add questions about …?"
+  const count = h('span.feedback-count', `${text.value.length} / ${TEXT_MAX}`);
   text.addEventListener('input', () => (count.textContent = `${text.value.length} / ${TEXT_MAX}`));
   const problem = h('p.form-problem', { role: 'alert' });
   const form = h('div.feedback-form',
