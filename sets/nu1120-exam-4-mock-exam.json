@@ -1,11 +1,17 @@
 {
   "id": "nu1120-exam-4-mock-exam",
   "title": "Exam 4 Mock Exam",
-  "description": "150 new questions for Exam 4: 50 each on the endocrine, cardiovascular, and respiratory systems (Weeks 9 to 11), written a level beyond the real exam, with a case study for each system and the next-generation question types. Each exam gives 50, split evenly across the three systems.",
+  "description": "Exam 4 practice on the endocrine, cardiovascular, respiratory, and lymphatic and immune systems (Weeks 9 to 12), matched to the instructor's Exam 4 study guide and written a level beyond the real exam, with case studies and the next-generation question types. Each exam gives 50, split evenly across the four systems.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 225,
+  "timeMinutes": 168.0,
   "defaultCount": 50,
+  "topicWeights": {
+    "Endocrine system": 1,
+    "Cardiovascular system": 1,
+    "Respiratory system": 1,
+    "Lymphatic and immune system": 1
+  },
   "cases": {
     "dorm": {
       "intro": "A nurse at a college health center is caring for a 19-year-old student who came in with a friend.",
@@ -95,36 +101,6 @@
         5
       ],
       "rationale": "<p>The HPA axis is linked to <b>Cushing syndrome</b> (too much cortisol, often from long-term steroids or a tumor), <b>depression and anxiety</b> (irregular cortisol affects the brain areas for mood and memory), <b>PTSD</b> (trauma changes how the axis responds to stress), and alcohol dependence (cortisol interacts with the brain's reward system).</p><p><b>Graves disease</b> and <b>Hashimoto thyroiditis</b> are the tempting choices, since they're also problems of a hypothalamic-pituitary axis, but they involve the thyroid axis. <b>Acromegaly</b> comes from too much growth hormone.</p><p><b>Takeaway:</b> HPA axis problems show up as cortisol excess, and as stress-linked mood, trauma, and dependence disorders.</p>"
-    },
-    {
-      "id": "m4e-03",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "Thyroid-stimulating hormone (TSH) travels in the blood to every organ, yet it acts on the thyroid gland and not on the liver. Which of the following explains this?",
-      "options": [
-        "Thyroid cells have receptors for TSH, and liver cells don't",
-        "The liver breaks TSH down before it can act on liver cells",
-        "TSH reaches the thyroid through a duct that bypasses other organs",
-        "The liver responds to pancreatic hormones, not pituitary ones"
-      ],
-      "answer": 0,
-      "rationale": "<p>A hormone acts only on <b>target cells that have receptors</b> for it. Every organ is exposed to TSH, but only thyroid cells have TSH receptors, so only the thyroid responds.</p><p>The <b>duct</b> is the tempting choice for students who mix up the two kinds of glands: ducts belong to exocrine glands, while hormones travel in the blood. The liver does break down hormones, but that isn't why TSH skips it, and the liver responds to many hormones besides the pancreas's.</p><p><b>Takeaway:</b> Hormones reach every tissue, but only cells with matching receptors respond.</p>"
-    },
-    {
-      "id": "m4e-04",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 1,
-      "stem": "Norepinephrine is released by the adrenal medulla as a hormone. Which other role does norepinephrine have in the body?",
-      "options": [
-        "It carries signals across synapses as a neurotransmitter",
-        "It stimulates the thyroid gland to release T3 and T4",
-        "It is a steroid hormone that is made from cholesterol",
-        "It is stored in, and released by, the posterior pituitary gland"
-      ],
-      "answer": 0,
-      "rationale": "<p>Norepinephrine is a <b>monoamine</b>: it acts as a hormone when the adrenal medulla releases it into the blood, and as a <b>neurotransmitter</b> when nerve cells release it across a synapse.</p><p>The <b>steroid</b> choice is tempting, since the adrenal cortex makes steroid hormones like cortisol, but norepinephrine comes from the medulla and is made from an amino acid. TSH stimulates the thyroid, and the posterior pituitary stores oxytocin and vasopressin.</p><p><b>Takeaway:</b> Monoamines like norepinephrine, dopamine, and serotonin can work as hormones and as neurotransmitters.</p>"
     },
     {
       "id": "m4e-05",
@@ -291,21 +267,6 @@
       "rationale": "<p>Aldosterone makes the kidneys keep sodium and water, which raises blood volume and <b>blood pressure</b>, and lose potassium, which <b>lowers the potassium</b> level.</p><p><b>Low blood pressure with a high potassium</b> is the tempting choice for students who reverse the effects: it's the picture of too <b>little</b> aldosterone. High glucose and infections come from too much cortisol, and tremors and heat intolerance from too much thyroid hormone.</p><p><b>Takeaway:</b> Aldosterone keeps sodium and water and gets rid of potassium: too much raises blood pressure and lowers potassium.</p>"
     },
     {
-      "id": "m4e-14",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A nurse measures children's heights at a school screening. Which child's finding fits the definition of short stature that needs further evaluation?",
-      "options": [
-        "A height 5 cm (2 in) below the average of the child's classmates",
-        "The shortest height in the child's class of 25 students",
-        "A height below what each of the child's parents measured at the same age",
-        "A height more than 2 standard deviations below the mean for age and sex"
-      ],
-      "answer": 3,
-      "rationale": "<p><b>Short stature</b> is a height more than 2 standard deviations below the mean for the child's age, sex, and population (about the 2.3rd percentile; many guidelines use the 3rd). Evaluation looks at nutrition, hormones such as growth hormone, and bone age.</p><p>Being the <b>shortest in the class</b> is the tempting choice, but every class has a shortest child: the definition compares the child with population norms. Being a few centimeters below classmates, or shorter than the parents were, isn't the cutoff.</p><p><b>Takeaway:</b> Short stature: more than 2 standard deviations below the mean for age, sex, and population.</p>"
-    },
-    {
       "id": "m4e-15",
       "type": "mc",
       "topic": "Endocrine system",
@@ -437,48 +398,6 @@
       "rationale": "<p>ADH (vasopressin) makes the kidneys reabsorb water. With too little, water is lost in <b>large amounts of dilute urine</b>, and the client becomes dehydrated and <b>thirsty</b>.</p><p><b>Small amounts of concentrated urine</b> is the tempting choice for students who reverse the effect: that's what <b>too much</b> ADH causes. High blood pressure with low potassium fits too much aldosterone, and high glucose with infections fits too much cortisol.</p><p><b>Takeaway:</b> ADH saves water: too little means a flood of dilute urine, and thirst.</p>"
     },
     {
-      "id": "m4e-22",
-      "type": "matrix",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A nurse is reviewing how hormone levels are controlled. For each example, click to specify the type of feedback.",
-      "rowHeader": "Example",
-      "columns": [
-        "Negative feedback",
-        "Positive feedback"
-      ],
-      "rows": [
-        "A rise in blood glucose triggers insulin release, which lowers the glucose",
-        "High T3 and T4 levels slow the release of TSH",
-        "The baby's head pressing on the cervix releases oxytocin, which strengthens contractions and the pressure",
-        "A low blood calcium level triggers PTH release, which raises the calcium",
-        "A falling blood pressure triggers renin release, which raises the pressure"
-      ],
-      "answer": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "rationale": "<p><b>Negative feedback</b> reverses a change and brings the level back: glucose and insulin, T3 and T4 and TSH, calcium and PTH, and blood pressure and renin. <b>Positive feedback</b> amplifies a change until an event ends, like labor contractions and oxytocin.</p><p>The tempting mistake is calling a loop positive because a hormone is released in response. Ask whether the result reverses the original change (negative) or makes it bigger (positive).</p><p><b>Takeaway:</b> Most hormones use negative feedback; childbirth is the classic positive loop.</p>"
-    },
-    {
-      "id": "m4e-23",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A nurse is teaching how the body keeps its temperature near 37° C (98.6° F). On a hot day, which part of this control system are the sweat glands?",
-      "options": [
-        "The sensor, which detects the change in body temperature",
-        "The effector, which acts to bring the temperature back toward the set point",
-        "The controller, which compares the body's core temperature with the set point",
-        "The set point, the temperature that the body aims to keep"
-      ],
-      "answer": 1,
-      "rationale": "<p>Homeostasis uses a sensor, a set point, an error detector and controller, and an <b>effector</b>. The sweat glands carry out the response that cools the body, so they're the effector.</p><p>The <b>sensor</b> is the tempting choice, since the sweat glands sit in the skin with the temperature receptors, but they don't detect the change; they act on it. The hypothalamus compares the temperature with the set point and sends the signal.</p><p><b>Takeaway:</b> The sensor detects, the controller compares, and the effector acts.</p>"
-    },
-    {
       "id": "m4e-24",
       "type": "hotspot",
       "topic": "Endocrine system",
@@ -525,60 +444,6 @@
       ],
       "answer": 3,
       "rationale": "<p>Delta cells release <b>somatostatin</b>, which inhibits the release of <b>both insulin and glucagon</b>, so too much of it lowers both.</p><p>A mix of more of one and less of the other is the tempting choice for students who think somatostatin acts like one of them. It's a brake on both, which fits its other name: growth hormone-inhibiting hormone, from the hypothalamus.</p><p><b>Takeaway:</b> Somatostatin is a brake: from the delta cells, it slows both insulin and glucagon.</p>"
-    },
-    {
-      "id": "m4e-27",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 1,
-      "stem": "The epsilon cells of a client's pancreas release ghrelin. Which effect should the nurse expect ghrelin to have?",
-      "options": [
-        "A feeling of fullness",
-        "Increased appetite",
-        "A lower blood glucose",
-        "Slower stomach emptying"
-      ],
-      "answer": 1,
-      "rationale": "<p><b>Ghrelin</b> stimulates appetite, increases fat storage, and stimulates the release of growth hormone.</p><p>A <b>feeling of fullness</b> is the tempting choice, since it's also a pancreatic hormone's effect, but that's pancreatic polypeptide, the satiety hormone, which also slows stomach emptying. Insulin lowers the blood glucose.</p><p><b>Takeaway:</b> Ghrelin makes you hungry; pancreatic polypeptide makes you feel full.</p>"
-    },
-    {
-      "id": "m4e-28",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A client skipped breakfast and lunch, yet the blood glucose at 3:00 p.m. is 82 mg/dL. Which process is keeping the glucose in the normal range?",
-      "options": [
-        "Insulin is signaling the liver to store glucose as glycogen",
-        "Somatostatin is signaling the liver to release stored glucose",
-        "Glucagon is signaling the liver to break down stored glycogen",
-        "Ghrelin is signaling the muscles to release their stored glucose"
-      ],
-      "answer": 2,
-      "rationale": "<p>During fasting, the alpha cells release <b>glucagon</b>, which makes the liver break down glycogen into glucose (glycogenolysis) and make new glucose (gluconeogenesis), holding the glucose steady.</p><p><b>Insulin</b> is the tempting choice, since it's the best-known glucose hormone, but it lowers glucose by moving it into cells and storage, the opposite of what fasting needs. Somatostatin inhibits insulin and glucagon, and ghrelin stimulates appetite.</p><p><b>Takeaway:</b> Fasting: glucagon tells the liver to release glucose. After a meal: insulin stores it.</p>"
-    },
-    {
-      "id": "m4e-29",
-      "type": "hotspot",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "After a meal, insulin signals an organ to store extra glucose as glycogen; between meals, glucagon signals the same organ to break the glycogen down. Click this organ.",
-      "image": "img/endocrine-body.svg",
-      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: the windpipe in the neck with a red gland of two side parts joined by a darker band across the front, a blue gland in the upper chest above the heart, the faint lungs and heart, a brown organ under the right side of the diaphragm, a dashed outline of the stomach, a long yellow organ crossing the upper abdomen behind it, and two kidneys with a green cap on top of each.",
-      "regions": [
-        {
-          "x": 17.7,
-          "y": 58.8,
-          "w": 25.9,
-          "h": 4.8
-        },
-        {
-          "x": 44.5,
-          "y": 58.4,
-          "w": 4.5,
-          "h": 3.5
-        }
-      ],
-      "rationale": "<p>The <b>liver</b> stores glucose as glycogen (glycogenesis) and breaks it down again (glycogenolysis). It's the brown organ under the right side of the diaphragm, on the viewer's left.</p><p>The <b>pancreas</b> is the tempting choice, since it makes insulin and glucagon, but it sends the signals; the liver acts on them.</p><p><b>Takeaway:</b> The pancreas sends the signals; the liver stores and releases the glucose.</p>"
     },
     {
       "id": "m4e-30",
@@ -696,51 +561,6 @@
       ],
       "answer": 3,
       "rationale": "<p>Diabetes damages the small blood vessels of the retina (<b>retinopathy</b>), and vision loss can begin without symptoms. A yearly exam finds it early.</p><p>The <b>average glucose</b> choice is tempting, since diabetes care has a yearly test for that, but it's the A1c, a blood test. Nerve damage in the feet is checked with a monofilament.</p><p><b>Takeaway:</b> Diabetic retinopathy starts silently; yearly eye exams catch it before vision is lost.</p>"
-    },
-    {
-      "id": "m4e-36",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A nurse is screening a client for type 2 diabetes mellitus. Which question addresses the client's social drivers of health?",
-      "options": [
-        "“Has anyone in your family been diagnosed with type 2 diabetes?”",
-        "“Is there a store near your home where you can buy fresh food?”",
-        "“How many days a week do you get some exercise?”",
-        "“Did you have diabetes during any of your pregnancies?”"
-      ],
-      "answer": 1,
-      "rationale": "<p><b>Social drivers</b> of health, like income, insurance, food access, and social ties, shape a client's risk and what the client can change.</p><p>The <b>exercise</b> question is the tempting choice, since inactivity is a risk factor, but it asks about a behavior, not the client's surroundings; asking whether there's a safe place to walk would address a social driver. Family history and gestational diabetes are personal risk factors.</p><p><b>Takeaway:</b> Social drivers are about the client's surroundings and resources: food, money, insurance, and support.</p>"
-    },
-    {
-      "id": "m4e-37",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A hospital's electronic health record shows a pop-up alert every time any client's glucose is outside the normal range, and nurses have started closing the alerts without reading them. Which problem with clinical decision support does this show?",
-      "options": [
-        "Too many alerts are fatiguing the staff, which can compromise care",
-        "The decision support system isn't tied to the health record",
-        "The alerts are a violation of the clients' privacy rights under HIPAA",
-        "The system can't be used for clients seen by telehealth"
-      ],
-      "answer": 0,
-      "rationale": "<p>Clinical decision support is tied to the health record to support decisions, but its pitfalls include <b>fatiguing the staff</b>: when alerts are constant, staff dismiss them, and an important one can be missed.</p><p><b>Not tied to the health record</b> is the tempting choice, since something is clearly wrong with the system, but these alerts come from inside the record. Showing results to the care team isn't a privacy violation.</p><p><b>Takeaway:</b> Decision support helps only when its alerts are few and meaningful; too many get ignored.</p>"
-    },
-    {
-      "id": "m4e-38",
-      "type": "mc",
-      "topic": "Endocrine system",
-      "level": 2,
-      "stem": "A client will send her glucose meter readings to her provider through a phone app between telehealth visits. Which concern should the nurse discuss with her?",
-      "options": [
-        "Making sure the app also measures her hemoglobin A1c",
-        "Keeping her health data private and secure when it's sent",
-        "Planning office visits, since telehealth can't use readings",
-        "Paying more, since telehealth costs more than office visits"
-      ],
-      "answer": 1,
-      "rationale": "<p>Telehealth saves money and travel, and helps clients in rural areas or with limited mobility, but the <b>security of health data sent electronically</b> is a concern to plan for.</p><p><b>Planning office visits</b> is the tempting choice, since some visits do need to be in person, but readings like these are exactly what telehealth can use. The A1c is a lab test, not an app reading, and telehealth usually lowers costs.</p><p><b>Takeaway:</b> Telehealth saves time and money: protect the data, and know which visits must be in person.</p>"
     },
     {
       "id": "m4e-39",
@@ -1073,148 +893,6 @@
       "rationale": "<p>The <b>aortic valve</b> is the semilunar valve between the left ventricle and the aorta. When it closes at the start of diastole, it keeps blood in the aorta from flowing back; a leaking aortic valve lets it back.</p><p>The <b>mitral valve</b> is the tempting choice, since it's also a left-sided valve, but it sits between the left atrium and the left ventricle, and it's open during diastole to let the ventricle fill.</p><p><b>Takeaway:</b> Each valve guards one doorway: the aortic valve keeps aortic blood out of the left ventricle during diastole.</p>"
     },
     {
-      "id": "m4c-05",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 3,
-      "stem": "A client is having a heart attack caused by a blocked right coronary artery. Which finding should the nurse watch for because of the area this artery supplies?",
-      "options": [
-        "A slow pulse, or a block in conduction from the atria",
-        "A wide QRS complex from a damaged left bundle branch",
-        "A rising blood glucose from the release of stress hormones",
-        "A loud murmur from a leaking aortic valve"
-      ],
-      "answer": 0,
-      "rationale": "<p>The <b>right coronary artery</b> supplies the right atrium and ventricle, and the <b>SA and AV nodes</b>. Losing blood flow to them can slow the heart rate or block conduction from the atria to the ventricles.</p><p>The <b>wide QRS</b> is the tempting choice, since a heart attack can damage the conduction system, but the left bundle branch is supplied mostly by the left anterior descending artery, a branch of the left coronary artery. A rising glucose doesn't depend on which artery is blocked.</p><p><b>Takeaway:</b> Right coronary artery: the right heart and the SA and AV nodes, so watch the rate and rhythm.</p>"
-    },
-    {
-      "id": "m4c-06",
-      "type": "fill",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "vars": {
-        "sys": [
-          128,
-          136,
-          142,
-          150,
-          158
-        ],
-        "dia": [
-          70,
-          76,
-          82,
-          88
-        ]
-      },
-      "stem": "A client's blood pressure is {sys}/{dia} mm Hg. Using the formula mean arterial pressure (MAP) = diastolic pressure + 1/3 of the pulse pressure, what is the client's MAP?",
-      "answer": "=dia + (sys - dia) / 3",
-      "decimals": 0,
-      "unit": "mm Hg",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>The pulse pressure is the systolic minus the diastolic pressure: {sys} − {dia} = {=sys - dia} mm Hg. One third of it is {=round((sys - dia) / 3, 1)}, so the MAP = {dia} + {=round((sys - dia) / 3, 1)} = <b>{answer} mm Hg</b>, rounded to the nearest whole number.</p><p>The usual mistake is taking a third of the systolic pressure instead of the pulse pressure, or averaging the two numbers ({=(sys + dia) / 2} mm Hg). The MAP is closer to the diastolic pressure, since the heart spends longer in diastole.</p><p><b>Takeaway:</b> MAP = diastolic + (systolic − diastolic) ÷ 3, and it sits closer to the diastolic number.</p>"
-    },
-    {
-      "id": "m4c-07",
-      "type": "fill",
-      "topic": "Cardiovascular system",
-      "level": 3,
-      "vars": {
-        "edv": [
-          110,
-          125,
-          135,
-          140
-        ],
-        "esv": [
-          45,
-          50,
-          60,
-          70
-        ]
-      },
-      "stem": "A client's left ventricle holds {edv} mL at the end of filling (end-diastolic volume) and {esv} mL at the end of contraction (end-systolic volume). What is the client's ejection fraction?",
-      "answer": "=(edv - esv) / edv * 100",
-      "decimals": 0,
-      "unit": "%",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>First find the stroke volume: end-diastolic − end-systolic volume = {edv} − {esv} = {=edv - esv} mL. The ejection fraction is the stroke volume ÷ the end-diastolic volume: {=edv - esv} ÷ {edv} × 100 = <b>{answer}%</b>. A normal ejection fraction is more than 55%.</p><p>The trap is dividing by the wrong volume, like the end-systolic volume, or dividing the end-systolic volume by the end-diastolic volume ({=round(esv / edv * 100)}%), which gives the share left behind, not the share pumped out.</p><p><b>Takeaway:</b> Ejection fraction = (end-diastolic − end-systolic volume) ÷ end-diastolic volume; above 55% is normal.</p>"
-    },
-    {
-      "id": "m4c-08",
-      "type": "fill",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "vars": {
-        "sv": [
-          60,
-          70,
-          80
-        ],
-        "hr": [
-          62,
-          74,
-          86,
-          98,
-          104
-        ]
-      },
-      "stem": "A client's stroke volume is {sv} mL, and the heart rate is {hr}/min. Using cardiac output = stroke volume × heart rate, what is the client's cardiac output in liters per minute?",
-      "answer": "=sv * hr / 1000",
-      "decimals": 1,
-      "unit": "L/min",
-      "round": "to the nearest tenth",
-      "strictZeros": true,
-      "rationale": "<p>Cardiac output = {sv} mL × {hr}/min = {=sv * hr} mL/min. There are 1,000 mL in a liter, so {=sv * hr} ÷ 1,000 = <b>{answer} L/min</b>.</p><p>The trap is stopping at mL/min, or moving the decimal the wrong way when changing milliliters to liters.</p><p><b>Takeaway:</b> Cardiac output = stroke volume × heart rate; divide mL by 1,000 for liters.</p>"
-    },
-    {
-      "id": "m4c-09",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "Which change increases the afterload of a client's left ventricle?",
-      "options": [
-        "Narrowed arteries that raise the diastolic pressure",
-        "More blood returning to the heart during diastole",
-        "A slower heart rate that lengthens the ventricles' filling time",
-        "Stronger contraction from more calcium in the cells"
-      ],
-      "answer": 0,
-      "rationale": "<p><b>Afterload</b> is the pressure the left ventricle must overcome to open the aortic valve and push blood out, best estimated by the diastolic pressure. Narrowed arteries raise that pressure, so the afterload rises.</p><p><b>More blood returning</b> is the tempting choice, but that raises the <b>preload</b>, the stretch from the volume at the end of filling. A slower rate lengthens filling, and stronger contraction is contractility.</p><p><b>Takeaway:</b> Preload is the volume that stretches the ventricle; afterload is the pressure it pushes against.</p>"
-    },
-    {
-      "id": "m4c-10",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A healthy client receives a bolus of IV fluid, and more blood returns to the heart. Which change in the client's stroke volume should the nurse expect, and why?",
-      "options": [
-        "It increases, because more stretch of the ventricle gives a stronger contraction",
-        "It decreases, because the overfilled ventricle can't contract fully",
-        "It stays the same, because stroke volume depends on the heart rate, not on filling",
-        "It increases, because the extra fluid lowers the blood pressure"
-      ],
-      "answer": 0,
-      "rationale": "<p>By the <b>Frank-Starling law</b>, a healthy heart matches its output to the return: more blood filling the ventricle stretches the muscle, which contracts more strongly, so the <b>stroke volume rises</b>.</p><p><b>Overfilling</b> is the tempting choice, since a failing heart can be overstretched, but a healthy ventricle responds to more filling with a stronger beat. Stroke volume depends on preload, afterload, and contractility, not on the heart rate alone.</p><p><b>Takeaway:</b> Frank-Starling: more filling, more stretch, stronger contraction, bigger stroke volume.</p>"
-    },
-    {
-      "id": "m4c-11",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 3,
-      "stem": "A client's ECG shows a heart rate of 72/min, a P wave before each QRS complex, a PR interval of 240 ms, and a QRS complex of 90 ms. Which interpretation is accurate?",
-      "options": [
-        "The impulse is delayed longer than normal at the AV node",
-        "The ventricles are depolarizing more slowly than normal",
-        "The SA node is firing faster than its normal rate",
-        "The impulses are starting in the ventricles, not the atria"
-      ],
-      "answer": 0,
-      "rationale": "<p>The <b>PR interval</b> (normally 120 to 200 ms) is the time from atrial depolarization to ventricular depolarization, including the pause at the AV node. A PR of 240 ms means the <b>AV node is holding the impulse too long</b>: a first-degree AV block.</p><p><b>Slow ventricular depolarization</b> is the tempting choice, since something is “too long”, but that would widen the QRS, which is normal here at 90 ms. A rate of 72 is normal for the SA node, and P waves before each QRS show the impulses start in the atria.</p><p><b>Takeaway:</b> Long PR: a delay at the AV node. Wide QRS: slow depolarization of the ventricles.</p>"
-    },
-    {
       "id": "m4c-12",
       "type": "mc",
       "topic": "Cardiovascular system",
@@ -1243,54 +921,6 @@
       ],
       "answer": 0,
       "rationale": "<p>A normal QRS is under 120 ms. A <b>prolonged QRS</b> can come from <b>hyperkalemia</b> or a bundle branch block; with a potassium of 6.6 mmol/L (normal 3.5 to 5.0), the ventricles are depolarizing more slowly. This is dangerous and needs to be reported at once.</p><p>An <b>AV node delay</b> is the tempting choice, but that lengthens the PR interval, not the QRS. Disorganized atrial activity is atrial fibrillation, which has no clear P waves.</p><p><b>Takeaway:</b> A wide QRS with a high potassium is an emergency: potassium changes how the heart's cells depolarize.</p>"
-    },
-    {
-      "id": "m4c-14",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A client's SA and AV nodes have both stopped working, and the ventricles are now being paced by the Purkinje fibers. Which heart rate should the nurse expect?",
-      "options": [
-        "40 to 60/min",
-        "20 to 40/min",
-        "60 to 100/min",
-        "100 to 120/min"
-      ],
-      "answer": 1,
-      "rationale": "<p>Each part of the conduction system can pace the heart at its own rate: the SA node at 60 to 100, the AV node at 40 to 60, and the <b>Purkinje fibers at 20 to 40</b>.</p><p><b>40 to 60</b> is the tempting choice, since it's the backup rate students remember, but that's the AV node's rate, and here the AV node isn't working either.</p><p><b>Takeaway:</b> The farther down the backup pacemaker, the slower the rate: SA 60 to 100, AV 40 to 60, Purkinje 20 to 40.</p>"
-    },
-    {
-      "id": "m4c-15",
-      "type": "hotspot",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A nurse is teaching how each heartbeat starts. Click the chamber where the heart's natural pacemaker is located.",
-      "image": "img/heart-section.svg",
-      "alt": "Front view of a heart cut open to show its inside, with the client's right on the viewer's left, marked R and L: two upper chambers and two lower chambers, all the same color, with a valve between each upper and lower chamber; a large vein entering the upper chamber on the viewer's left from above and another from below; two veins entering the upper chamber on the viewer's right from the side; and two large arteries rising from the lower chambers and crossing, one of them arching over the top of the heart.",
-      "regions": [
-        {
-          "x": 22.1,
-          "y": 30.2,
-          "w": 20.6,
-          "h": 23.7
-        }
-      ],
-      "rationale": "<p>The <b>SA node</b>, the natural pacemaker, sits in the wall of the <b>right atrium</b>, near where the superior vena cava enters. In the drawing, that's the upper chamber on the viewer's left.</p><p>The <b>left atrium</b> is the tempting choice for students who forget that a front view flips the sides: the client's right atrium is on the viewer's left.</p><p><b>Takeaway:</b> The SA node is in the right atrium, which is on your left in a front view.</p>"
-    },
-    {
-      "id": "m4c-16",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A nurse is reviewing how blood pressure changes as blood moves through the body. In which vessels does the pressure drop the most?",
-      "options": [
-        "The large arteries",
-        "The arterioles",
-        "The capillaries",
-        "The large veins"
-      ],
-      "answer": 1,
-      "rationale": "<p>The <b>arterioles</b>, with their layers of smooth muscle, create the most resistance in the circulation, so the pressure falls the most as blood passes through them. That's why they control peripheral resistance.</p><p>The <b>capillaries</b> are the tempting choice, since they're the smallest vessels, but the pressure has already dropped by the time blood reaches them; their job is exchange.</p><p><b>Takeaway:</b> Arterioles are the resistance vessels: the biggest pressure drop happens there.</p>"
     },
     {
       "id": "m4c-17",
@@ -1434,33 +1064,6 @@
       "rationale": "<p><b>Chemoreceptors</b>, in the carotid bodies and aortic arch (peripheral) and the medulla (central), respond to low oxygen, high carbon dioxide, and a low pH.</p><p><b>Baroreceptors</b> are the tempting choice, since they sit in nearly the same places, but they sense stretch from blood pressure, not chemistry.</p><p><b>Takeaway:</b> Chemoreceptors sense oxygen, carbon dioxide, and pH; baroreceptors sense pressure.</p>"
     },
     {
-      "id": "m4c-25",
-      "type": "matrix",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A nurse is reviewing antiarrhythmic medications. For each medication, click to specify its class.",
-      "rowHeader": "Medication",
-      "columns": [
-        "Class I: sodium channel blocker",
-        "Class II: beta blocker",
-        "Class III: potassium channel blocker",
-        "Class IV: calcium channel blocker"
-      ],
-      "rows": [
-        "Metoprolol",
-        "Verapamil",
-        "Quinidine",
-        "Amiodarone"
-      ],
-      "answer": [
-        1,
-        3,
-        0,
-        2
-      ],
-      "rationale": "<p>Antiarrhythmics are grouped by what they block: <b>class I</b> sodium channels (quinidine), <b>class II</b> beta receptors (metoprolol), <b>class III</b> potassium channels (amiodarone), and <b>class IV</b> calcium channels (verapamil).</p><p>The tempting mistake is placing <b>verapamil</b> with the beta blockers, since both slow the heart rate, but verapamil slows it by blocking calcium channels.</p><p><b>Takeaway:</b> Classes I to IV block sodium, beta, potassium, and calcium, in that order.</p>"
-    },
-    {
       "id": "m4c-26",
       "type": "mc",
       "topic": "Cardiovascular system",
@@ -1474,56 +1077,6 @@
       ],
       "answer": 3,
       "rationale": "<p>In atrial fibrillation, disorganized activity makes the atria quiver instead of contracting, so <b>blood pools</b> in them and can <b>form clots</b>. A clot that leaves the heart can block an artery to the brain.</p><p><b>A burst brain artery</b> is the tempting choice, since stroke can come from bleeding, but the rhythm itself causes strokes through clots, not through high pressure.</p><p><b>Takeaway:</b> Atrial fibrillation: blood stagnates, clots form, and a clot can travel to the brain.</p>"
-    },
-    {
-      "id": "m4c-27",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A client's monitor shows a regular tachycardia at 180/min with wide QRS complexes of 160 ms. Which rhythm does this describe?",
-      "options": [
-        "Atrial fibrillation",
-        "Supraventricular tachycardia",
-        "First-degree AV block",
-        "Ventricular tachycardia"
-      ],
-      "answer": 3,
-      "rationale": "<p>A fast rhythm with a <b>wide QRS (more than 120 ms)</b> starts in the ventricles: <b>ventricular tachycardia</b>, which can cause fainting and death if not treated.</p><p><b>Supraventricular tachycardia</b> is the tempting choice, since it's also fast and regular, but it starts above the ventricles, so the QRS is narrow. Atrial fibrillation is irregularly irregular with no P waves.</p><p><b>Takeaway:</b> Fast and wide QRS: ventricular. Fast and narrow QRS: supraventricular.</p>"
-    },
-    {
-      "id": "m4c-28",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 3,
-      "stem": "A client has complete (third-degree) heart block, and the pulse is 34/min. Which explanation for the slow rate is accurate?",
-      "options": [
-        "The SA node has slowed down to 34 impulses a minute because the block is pressing on it",
-        "Some impulses from the SA node are stopped at the AV node, and the others pass through",
-        "Impulses can't pass from the atria, so a slow backup pacemaker in the ventricles sets the rate",
-        "The impulses take longer to cross the AV node, though each one reaches the ventricles"
-      ],
-      "answer": 2,
-      "rationale": "<p>In <b>complete heart block</b>, no impulses pass from the atria to the ventricles, so a backup pacemaker in the ventricles, like the Purkinje fibers at 20 to 40/min, sets the pulse.</p><p><b>Every second impulse blocked</b> is the tempting choice, but that describes a second-degree block, where some impulses get through. A delay with every impulse getting through is a first-degree block, and the SA node keeps firing normally in complete block.</p><p><b>Takeaway:</b> First degree: delayed. Second degree: some dropped. Third degree: none get through, so a slow backup pacemaker takes over.</p>"
-    },
-    {
-      "id": "m4c-29",
-      "type": "sata",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A client asks why the body needs cholesterol at all. Which of the following functions of cholesterol should the nurse include?",
-      "options": [
-        "Storing glucose in the liver between meals",
-        "Forming part of the cell membrane around each cell",
-        "Carrying oxygen inside the red blood cells",
-        "Fighting off bacteria that enter the bloodstream",
-        "Serving as a building block for sex hormones",
-        "Forming the clots that stop bleeding from a cut"
-      ],
-      "answer": [
-        1,
-        4
-      ],
-      "rationale": "<p>Cholesterol gives <b>structure to cell membranes</b>, helps the liver make <b>bile</b>, and is a building block for <b>hormones</b>, including sex hormones, and <b>vitamin D</b>.</p><p><b>Forming clots</b> is the tempting choice, since cholesterol builds plaques that can lead to clots in disease, but clotting is the job of platelets and clotting factors. The liver stores glucose as glycogen, hemoglobin carries oxygen, and white cells fight bacteria.</p><p><b>Takeaway:</b> Cholesterol builds membranes, bile, steroid hormones, and vitamin D; the problem is too much of it.</p>"
     },
     {
       "id": "m4c-30",
@@ -1604,21 +1157,6 @@
       ],
       "answer": 0,
       "rationale": "<p>The <b>interventricular septum</b> separates the right and left ventricles; an opening in it lets blood pass between them.</p><p>The <b>interatrial septum</b> is the tempting choice, since it's the other wall inside the heart, but it separates the two atria.</p><p><b>Takeaway:</b> Interatrial septum: between the atria. Interventricular septum: between the ventricles.</p>"
-    },
-    {
-      "id": "m4c-35",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A nurse is assessing a client's apical pulse. Where should the nurse place the stethoscope?",
-      "options": [
-        "Over the base, at the 2nd intercostal space at the right sternal border",
-        "Over the apex, at the 2nd intercostal space at the left sternal border",
-        "Over the apex, at the 5th intercostal space at the left midclavicular line",
-        "Over the base, at the 5th intercostal space at the right midclavicular line"
-      ],
-      "answer": 2,
-      "rationale": "<p>The <b>apex</b> of the heart points down and to the left, so the apical pulse is heard best at the <b>5th intercostal space, left midclavicular line</b>.</p><p>The <b>base at the 2nd intercostal space</b> is the tempting choice, since that's a standard listening spot too, but the base is the top of the heart, where the great vessels attach; the apical pulse is at the bottom tip.</p><p><b>Takeaway:</b> The base is at the top, where the great vessels are; the apex is the tip, at the 5th intercostal space on the left.</p>"
     },
     {
       "id": "m4c-36",
@@ -1726,42 +1264,6 @@
       ],
       "answer": 2,
       "rationale": "<p>A <b>slow rate with symptoms</b>, like dizziness and pallor, means the heart isn't pumping enough blood, so this client comes first.</p><p>The <b>marathon runner</b> is the tempting choice, since 54 is low, but a trained heart pumps more with each beat, so a slow rate is expected and causes no symptoms. Sleep and metoprolol also lower the rate without causing harm here.</p><p><b>Takeaway:</b> A slow heart rate matters when it causes symptoms; judge the client, not the number.</p>"
-    },
-    {
-      "id": "m4c-42",
-      "type": "mc",
-      "topic": "Cardiovascular system",
-      "level": 3,
-      "stem": "Between heartbeats, while the aortic valve is closed, blood keeps flowing forward through the client's arteries. Which explains this?",
-      "options": [
-        "The stretched aorta springs back and pushes the blood along",
-        "The left atrium contracts and pushes blood into the aorta",
-        "The veins squeeze blood back toward the arteries",
-        "The coronary arteries pump blood out to the body"
-      ],
-      "answer": 0,
-      "rationale": "<p>During systole, the <b>elastic aorta stretches</b> and stores energy; during diastole, it <b>recoils</b>, pushing blood forward and keeping up the diastolic pressure.</p><p><b>The left atrium</b> is the tempting choice, since it contracts during diastole, but it fills the left ventricle; it can't send blood past the closed aortic valve.</p><p><b>Takeaway:</b> The aorta works like a spring: it stretches in systole and recoils in diastole.</p>"
-    },
-    {
-      "id": "m4c-43",
-      "type": "sata",
-      "topic": "Cardiovascular system",
-      "level": 2,
-      "stem": "A client is admitted with a new arrhythmia. Which actions should the nurse include in the client's care?",
-      "options": [
-        "Check the vital signs often",
-        "Monitor the client's rhythm on telemetry",
-        "Teach the client and the family about the arrhythmia",
-        "Ask the client to report palpitations or dizziness",
-        "Limit the client's fluids to 500 mL a day"
-      ],
-      "answer": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "rationale": "<p>Nursing care for arrhythmias includes <b>frequent vital signs</b>, <b>telemetry</b> monitoring, <b>teaching the client and family</b>, and asking the client to <b>report symptoms</b> such as palpitations or dizziness.</p><p><b>Limiting fluids</b> is the tempting choice, since some heart conditions need it, but it isn't part of arrhythmia care and could cause dehydration.</p><p><b>Takeaway:</b> Arrhythmia care: watch the vital signs and the monitor, teach, and ask about symptoms.</p>"
     },
     {
       "id": "m4c-44",
@@ -2080,21 +1582,6 @@
       "rationale": "<p>The trachea and bronchi have <b>cartilage</b> that keeps them open, but the <b>bronchioles</b> (about 1 mm across) have none: when their smooth muscle tightens and the walls swell, they can narrow sharply.</p><p><b>Swelling cilia</b> is the tempting choice, since asthma does involve inflammation, but the narrowing comes from muscle tightening around tubes with no cartilage. The pleura covers the lung's outer surface, not the airways.</p><p><b>Takeaway:</b> No cartilage, nothing to hold them open: bronchioles are where asthma narrows the airways.</p>"
     },
     {
-      "id": "m4r-08",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse is reviewing the blood supply of the lungs. Which vessels bring oxygen-rich blood to the lung tissue itself?",
-      "options": [
-        "The pulmonary arteries, from the right ventricle",
-        "The pulmonary veins, from the alveoli",
-        "The bronchial arteries, from the aorta",
-        "The coronary arteries, from the aortic root"
-      ],
-      "answer": 2,
-      "rationale": "<p>The <b>bronchial arteries</b>, branches of the aorta, are part of the systemic circulation and bring oxygen-rich blood to the lung tissue so it can survive.</p><p>The <b>pulmonary arteries</b> are the tempting choice, since they carry all the blood to the lungs, but their blood is oxygen-poor: it goes to the alveoli to pick up oxygen, not to feed the lung tissue.</p><p><b>Takeaway:</b> Pulmonary arteries bring blood to be oxygenated; bronchial arteries feed the lung tissue.</p>"
-    },
-    {
       "id": "m4r-09",
       "type": "mc",
       "topic": "Respiratory system",
@@ -2108,270 +1595,6 @@
       ],
       "answer": 0,
       "rationale": "<p>The lungs' <b>parasympathetic</b> nerves come from the vagus, and they tighten the airways. A <b>muscarinic antagonist</b> blocks those signals, so the airways stay more open.</p><p><b>Acting like the sympathetic nervous system</b> is the tempting choice, since that also opens the airways, but that's how beta-agonists (SABA and LABA) work. Reducing inflammation over weeks is the job of inhaled corticosteroids.</p><p><b>Takeaway:</b> Beta-agonists push the airways open; muscarinic antagonists stop the vagus from pulling them shut.</p>"
-    },
-    {
-      "id": "m4r-10",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse is reviewing the pleura. Which describes the role of the fluid in the pleural space?",
-      "options": [
-        "It lets the lungs glide against the chest wall during breathing",
-        "It carries oxygen from the alveoli into the blood",
-        "It traps inhaled dust before it reaches the alveoli",
-        "It keeps the alveoli from collapsing at the end of each breath out"
-      ],
-      "answer": 0,
-      "rationale": "<p>The pleural space between the <b>visceral pleura</b> (on the lung) and the <b>parietal pleura</b> (on the chest wall) holds a thin layer of fluid that lets the surfaces <b>glide</b> as the lungs expand.</p><p><b>Keeping the alveoli from collapsing</b> is the tempting choice, but that's surfactant, made in the alveoli, not pleural fluid.</p><p><b>Takeaway:</b> Pleural fluid lets the lungs slide; surfactant keeps the alveoli open.</p>"
-    },
-    {
-      "id": "m4r-11",
-      "type": "fill",
-      "topic": "Respiratory system",
-      "level": 2,
-      "vars": {
-        "tv": [
-          400,
-          450,
-          500,
-          550
-        ],
-        "irv": [
-          2600,
-          2900,
-          3100
-        ],
-        "erv": [
-          900,
-          1100,
-          1200
-        ]
-      },
-      "stem": "A client's spirometry shows a tidal volume of {tv} mL, an inspiratory reserve volume of {irv} mL, and an expiratory reserve volume of {erv} mL. What is the client's inspiratory capacity?",
-      "answer": "=tv + irv",
-      "decimals": 0,
-      "unit": "mL",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>The <b>inspiratory capacity</b> is the most air that can be breathed in after a normal breath out: tidal volume + inspiratory reserve volume = {tv} + {irv} = <b>{answer} mL</b>.</p><p>The trap is adding the expiratory reserve volume too ({=tv + irv + erv} mL), which gives the vital capacity instead.</p><p><b>Takeaway:</b> Inspiratory capacity = TV + IRV. Vital capacity = IRV + TV + ERV.</p>"
-    },
-    {
-      "id": "m4r-12",
-      "type": "fill",
-      "topic": "Respiratory system",
-      "level": 2,
-      "vars": {
-        "erv": [
-          900,
-          1000,
-          1100,
-          1200
-        ],
-        "rv": [
-          1100,
-          1200,
-          1300
-        ]
-      },
-      "stem": "A client's expiratory reserve volume is {erv} mL, and the residual volume is {rv} mL. What is the client's functional residual capacity?",
-      "answer": "=erv + rv",
-      "decimals": 0,
-      "unit": "mL",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>The <b>functional residual capacity</b> is the air left in the lungs after a normal breath out: expiratory reserve volume + residual volume = {erv} + {rv} = <b>{answer} mL</b>.</p><p>The usual mistake is leaving out the residual volume, since it can't be breathed out; but it's still in the lungs, and it can't be measured by spirometry, so the functional residual capacity can't be either.</p><p><b>Takeaway:</b> FRC = ERV + RV: what stays in the lungs after a normal breath out.</p>"
-    },
-    {
-      "id": "m4r-13",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A client with a long smoking history has a residual volume and a total lung capacity that are both higher than expected. Which condition do these results most likely show?",
-      "options": [
-        "Emphysema, with air trapped in overstretched air spaces",
-        "Pulmonary fibrosis, with scarred and stiffened lung tissue",
-        "Pneumonia, with fluid filling many of the alveoli",
-        "A pleural effusion pressing on the base of the lung"
-      ],
-      "answer": 0,
-      "rationale": "<p>In <b>emphysema</b>, the air spaces are enlarged and lose their elasticity, so they can't empty: <b>air is trapped</b>, raising the residual volume and the total lung capacity.</p><p><b>Pulmonary fibrosis</b> is the tempting choice, since it's also a chronic lung disease, but its stiff, scarred lungs hold <b>less</b> air, so the volumes fall. Pneumonia and an effusion take up space and lower the volumes too.</p><p><b>Takeaway:</b> Too much air left in the lungs points to air trapping, as in emphysema; small volumes point to restriction.</p>"
-    },
-    {
-      "id": "m4r-14",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A client's diffusing capacity for carbon monoxide (DLCO) is higher than expected. Which condition could explain this result?",
-      "options": [
-        "Emphysema",
-        "Pulmonary fibrosis",
-        "Anemia",
-        "Asthma"
-      ],
-      "answer": 3,
-      "rationale": "<p>A <b>high DLCO</b> is linked to <b>asthma</b>, obesity, and bleeding into the lungs.</p><p><b>Emphysema</b> and <b>pulmonary fibrosis</b> are the tempting choices, since they're lung diseases that affect gas exchange, but they <b>lower</b> the DLCO by destroying or thickening the alveolar walls. Anemia lowers it too, since there's less hemoglobin to take up the gas.</p><p><b>Takeaway:</b> High DLCO: asthma, obesity, or bleeding in the lungs. Low DLCO: damaged alveolar walls or anemia.</p>"
-    },
-    {
-      "id": "m4r-15",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client with COPD is scheduled for a six-minute walk test. Which purpose of this test should the nurse explain?",
-      "options": [
-        "It measures how fast the client can breathe out in 1 second",
-        "It measures how far the client can walk, to judge exercise capacity",
-        "It shows how well oxygen and other gases cross from the alveoli into the blood",
-        "It shows how strongly the airways react to methacholine"
-      ],
-      "answer": 1,
-      "rationale": "<p>The <b>six-minute walk test</b> objectively measures <b>exercise capacity</b> and helps judge the outlook in COPD, pulmonary fibrosis, pulmonary hypertension, and heart failure.</p><p><b>Breathing out in 1 second</b> is the tempting choice, since it's the best-known lung test, but that's the FEV1, from spirometry. Gas transfer is the diffusing capacity, and methacholine is bronchoprovocation testing.</p><p><b>Takeaway:</b> The six-minute walk test measures exercise capacity, not airflow.</p>"
-    },
-    {
-      "id": "m4r-16",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client with a neuromuscular disease has a low maximal inspiratory pressure. Which does this result show?",
-      "options": [
-        "The diaphragm and other breathing-in muscles are weak",
-        "The airways are narrowed and obstructing the flow of air",
-        "The alveoli are filled with fluid",
-        "The lungs are stiff from scar tissue"
-      ],
-      "answer": 0,
-      "rationale": "<p><b>Maximal inspiratory pressure</b> measures the strength of the <b>diaphragm</b> and the other muscles of breathing in, so a low value means they're weak, as in neuromuscular disease.</p><p><b>Stiff lungs</b> is the tempting choice, since both make breathing in hard, but stiffness is a problem of the lung tissue, while this test measures the muscles' strength.</p><p><b>Takeaway:</b> Low maximal inspiratory pressure means weak breathing muscles.</p>"
-    },
-    {
-      "id": "m4r-17",
-      "type": "matrix",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse is reviewing lung diseases. For each description, click to specify the disease it fits.",
-      "rowHeader": "Description",
-      "columns": [
-        "Asthma",
-        "Chronic bronchitis",
-        "Emphysema",
-        "Pulmonary fibrosis"
-      ],
-      "rows": [
-        "Long-term airway inflammation with excessive cough and sputum",
-        "Airflow limitation that mostly reverses after a beta-agonist",
-        "Scarred, thickened lung tissue that makes deep breaths hard",
-        "Enlarged air spaces that lose their elasticity and trap air"
-      ],
-      "answer": [
-        1,
-        0,
-        3,
-        2
-      ],
-      "rationale": "<p><b>Chronic bronchitis</b> brings long-term cough and sputum. <b>Asthma</b> is mostly reversible with a beta-agonist. <b>Emphysema</b> destroys the elastic air spaces, which trap air, and <b>pulmonary fibrosis</b> scars the tissue, which restricts expansion.</p><p>The tempting mistake is putting <b>reversible airflow</b> under chronic bronchitis or emphysema, which also obstruct airflow; in COPD, the obstruction doesn't fully reverse.</p><p><b>Takeaway:</b> Asthma reverses; chronic bronchitis coughs; emphysema traps air; fibrosis restricts.</p>"
-    },
-    {
-      "id": "m4r-18",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A retired coal miner with worsening shortness of breath is diagnosed with pneumoconiosis. Which spirometry pattern should the nurse expect?",
-      "options": [
-        "A low FEV1/FVC ratio that improves after albuterol",
-        "A low FEV1/FVC ratio that doesn't improve much after albuterol is inhaled",
-        "A low forced vital capacity, with a normal or high FEV1/FVC ratio",
-        "Normal results, since coal dust affects the airways and not the lung tissue"
-      ],
-      "answer": 2,
-      "rationale": "<p>Pneumoconiosis (black lung, from coal dust) is a <b>restrictive</b> disease: scarred lungs can't expand fully, so the FVC falls, and the FEV1 falls with it, leaving the <b>FEV1/FVC ratio normal or high</b>.</p><p><b>A low ratio that doesn't improve</b> is the tempting choice, since a smoker or miner might have COPD, but a low ratio is the pattern of obstruction. A low ratio that improves after albuterol fits asthma.</p><p><b>Takeaway:</b> Restrictive: small volumes, normal or high FEV1/FVC. Obstructive: low FEV1/FVC.</p>"
-    },
-    {
-      "id": "m4r-19",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client's cough and shortness of breath began a few months after the client started keeping pet birds. Which condition should the nurse suspect?",
-      "options": [
-        "Idiopathic pulmonary fibrosis",
-        "Hypersensitivity pneumonitis",
-        "Pneumoconiosis (black lung)",
-        "Pulmonary embolism"
-      ],
-      "answer": 1,
-      "rationale": "<p>Exposure to <b>pets</b>, like birds, can cause <b>hypersensitivity pneumonitis</b>, an inflammation of the lungs from an immune reaction to the inhaled material.</p><p><b>Pneumoconiosis</b> is the tempting choice, since it's also caused by inhaling something, but it comes from mineral dust at work, like coal or asbestos. Idiopathic pulmonary fibrosis has no known cause, and a pulmonary embolism is a clot.</p><p><b>Takeaway:</b> Ask about pets and hobbies: birds and other pets can cause hypersensitivity pneumonitis.</p>"
-    },
-    {
-      "id": "m4r-20",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client has had a dry, tickling cough for 6 weeks, with no fever, sputum, or shortness of breath. Which medication in the client's history should the nurse ask the provider about?",
-      "options": [
-        "Atorvastatin, a statin",
-        "Metformin, for diabetes",
-        "Lisinopril, an ACE inhibitor",
-        "Loratadine, an antihistamine for allergies"
-      ],
-      "answer": 2,
-      "rationale": "<p><b>ACE inhibitors</b>, like lisinopril, can cause a <b>dry cough</b>. A lasting dry cough without signs of infection is a reason to ask the provider about the medication.</p><p><b>Loratadine</b> is the tempting choice, since antihistamines are tied to respiratory symptoms, but it treats allergy symptoms; it doesn't cause a cough.</p><p><b>Takeaway:</b> A dry cough with no other cause: check for an ACE inhibitor.</p>"
-    },
-    {
-      "id": "m4r-21",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client with severe COPD has taken prednisone every day for several years. Which assessment is most important to add because of this long-term use?",
-      "options": [
-        "Asking about a dry cough and checking the blood pressure",
-        "Asking about fractures and checking for bone loss",
-        "Checking for a dry mouth and vision changes",
-        "Checking for a ringing in the ears and hearing loss"
-      ],
-      "answer": 1,
-      "rationale": "<p>Long-term oral steroids like prednisone can cause <b>bone loss and osteoporosis</b>, so the nurse asks about fractures and bone health.</p><p>A <b>dry cough</b> is the tempting choice, since the client has a lung disease, but that side effect belongs to ACE inhibitors.</p><p><b>Takeaway:</b> Long-term steroids thin the bones: ask about fractures.</p>"
-    },
-    {
-      "id": "m4r-22",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client with asthma takes theophylline. Which part of the client's history should the nurse check?",
-      "options": [
-        "Whether the client also takes an ACE inhibitor for blood pressure",
-        "Whether the client has a dry cough at night",
-        "Whether the client's blood levels of it are being monitored",
-        "Whether the client has received a pneumococcal vaccine this year"
-      ],
-      "answer": 2,
-      "rationale": "<p><b>Theophylline</b>, a xanthine, needs its <b>blood levels monitored</b>, so the nurse checks that the levels are being followed.</p><p>The <b>vaccine</b> is the tempting choice, since immunizations belong in every respiratory history, but the question is about this medication.</p><p><b>Takeaway:</b> Theophylline is a medication with monitored blood levels.</p>"
-    },
-    {
-      "id": "m4r-23",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A client who has taken amiodarone for an arrhythmia for 2 years reports a new dry cough and getting short of breath more easily. Which action should the nurse take?",
-      "options": [
-        "Teach the client to use a humidifier at night for the cough",
-        "Reassure the client that the symptoms are from the arrhythmia",
-        "Ask the client to take the amiodarone with food to reduce the cough",
-        "Tell the provider, since amiodarone can damage the lung tissue"
-      ],
-      "answer": 3,
-      "rationale": "<p><b>Amiodarone</b>, like methotrexate, can cause <b>interstitial lung disease</b> and pleural effusion. New shortness of breath and a dry cough need to be reported.</p><p><b>A humidifier</b> is the tempting choice, since it eases a dry cough, but it would hide a possible drug reaction instead of reporting it.</p><p><b>Takeaway:</b> Amiodarone and methotrexate can harm the lungs; new breathlessness on them needs reporting.</p>"
-    },
-    {
-      "id": "m4r-24",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse is taking the history of a client with COPD. Which question best helps the nurse judge how stable the client's disease has been?",
-      "options": [
-        "“Do you use a short-acting inhaler before you exercise?”",
-        "“How many courses of antibiotics have you needed this year?”",
-        "“Has anyone in your family had a lung disease?”",
-        "“How many cigarettes a day did you smoke, and when did you quit?”"
-      ],
-      "answer": 1,
-      "rationale": "<p>The number of <b>antibiotic courses</b> in a year, and whether the client has a rescue pack at home, shows how often the disease flares, so it indicates how <b>stable</b> it has been.</p><p>The <b>smoking</b> question is the tempting choice, since smoking causes COPD, but it measures the cause, not how stable the disease is now.</p><p><b>Takeaway:</b> Flares needing antibiotics or steroids tell you how stable a chronic lung disease is.</p>"
     },
     {
       "id": "m4r-25",
@@ -2395,36 +1618,6 @@
       "rationale": "<p>The respiratory immunization history covers <b>influenza</b>, <b>COVID-19</b>, <b>pneumococcus</b>, and <b>tuberculosis</b> (BCG, given in some countries).</p><p><b>HPV</b> is the tempting choice, since it's a common vaccine, but it prevents infections that cause cancers of the cervix, throat, and genitals, not lung infections.</p><p><b>Takeaway:</b> Respiratory immunizations: influenza, COVID-19, pneumococcus, and TB.</p>"
     },
     {
-      "id": "m4r-26",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A 34-year-old client who has never smoked has emphysema. The client's brother developed emphysema in his 30s too. Which cause should the nurse expect the provider to look for?",
-      "options": [
-        "Asthma that began in childhood and went untreated",
-        "Pneumoconiosis from dust at a job the client once held",
-        "Cor pulmonale from long-standing pulmonary hypertension",
-        "Alpha-1 antitrypsin deficiency, an inherited condition"
-      ],
-      "answer": 3,
-      "rationale": "<p>Emphysema in a young person who has never smoked, with an affected brother, suggests <b>alpha-1 antitrypsin deficiency</b>, an <b>inherited</b> (recessive) condition that leaves the lungs unprotected.</p><p><b>Childhood asthma</b> is the tempting choice, since it also runs in families, but it causes reversible airway narrowing, not emphysema in young adults.</p><p><b>Takeaway:</b> Emphysema that's early, in a nonsmoker, and in the family: think alpha-1 antitrypsin deficiency.</p>"
-    },
-    {
-      "id": "m4r-27",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client's history includes eczema and hay fever as a child. Which respiratory condition is the client more likely to have?",
-      "options": [
-        "Pulmonary fibrosis",
-        "Pneumothorax",
-        "Asthma",
-        "Tuberculosis"
-      ],
-      "answer": 2,
-      "rationale": "<p><b>Eczema, hay fever</b>, and childhood wheezing go together with <b>asthma</b>, so they're part of a respiratory history.</p><p><b>Tuberculosis</b> is the tempting choice, since it's also part of the past history, but it's an infection, unrelated to allergies.</p><p><b>Takeaway:</b> Eczema and hay fever point to an allergic tendency, and to asthma.</p>"
-    },
-    {
       "id": "m4r-28",
       "type": "mc",
       "topic": "Respiratory system",
@@ -2440,111 +1633,6 @@
       "rationale": "<p>Recent <b>surgery</b> and <b>immobility</b>, like travel, cancer, and pregnancy, raise the risk of blood clots that can travel to the lungs.</p><p><b>The pets</b> are the tempting choice, since exposures belong in the history, but pets cause allergies and hypersensitivity pneumonitis, not clots.</p><p><b>Takeaway:</b> Surgery, immobility, travel, cancer, pregnancy, and estrogen raise the risk of a pulmonary embolism.</p>"
     },
     {
-      "id": "m4r-29",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "While assessing tactile fremitus, the nurse feels the vibrations more strongly over the client's right lower lobe than over the left. Which finding does this suggest?",
-      "options": [
-        "Denser lung tissue, as with consolidation from pneumonia",
-        "Air in the pleural space, as with a pneumothorax",
-        "Fluid in the pleural space, as with a large pleural effusion",
-        "Trapped air in the lung, as with emphysema"
-      ],
-      "answer": 0,
-      "rationale": "<p>Vibrations travel better through dense tissue, so <b>increased fremitus</b> points to <b>consolidation</b>, as in pneumonia.</p><p><b>A pleural effusion</b> is the tempting choice, since fluid is denser than air, but fluid in the pleural space separates the lung from the chest wall and <b>decreases</b> fremitus, as air in the pleural space does.</p><p><b>Takeaway:</b> More fremitus: solid lung (consolidation). Less fremitus: air or fluid between the lung and the chest wall.</p>"
-    },
-    {
-      "id": "m4r-30",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "Over a client's large airways, the nurse hears low-pitched, continuous, snoring sounds that change after the client coughs. How should the nurse document this finding?",
-      "options": [
-        "Wheezes",
-        "Crackles",
-        "Stridor",
-        "Rhonchi"
-      ],
-      "answer": 3,
-      "rationale": "<p><b>Rhonchi</b> are low-pitched, continuous sounds from fluid or mucus in the airways; they often change after a cough moves the mucus.</p><p><b>Wheezes</b> are the tempting choice, since both are continuous sounds, but wheezes are high-pitched.</p><p><b>Takeaway:</b> Continuous and low: rhonchi. Continuous and high: wheezes. Brief and popping: crackles.</p>"
-    },
-    {
-      "id": "m4r-31",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "Over a client's left lower lobe, the nurse hears loud, high-pitched, hollow sounds like those normally heard over the trachea. Which condition could this finding suggest?",
-      "options": [
-        "Consolidation of the left lower lobe",
-        "A normal finding over the lower lobes",
-        "A pneumothorax on the left side",
-        "Air trapping from emphysema"
-      ],
-      "answer": 0,
-      "rationale": "<p>Over the outer lungs, normal breath sounds are soft (vesicular). Loud, high-pitched <b>bronchial (tubular) sounds</b> there mean sound is carried through solid tissue, as with <b>consolidation</b>.</p><p><b>A normal finding</b> is the tempting choice, since bronchial sounds are normal over the trachea, but they're abnormal over the lung fields.</p><p><b>Takeaway:</b> Bronchial sounds in the wrong place, over the lung fields, point to consolidation.</p>"
-    },
-    {
-      "id": "m4r-32",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse asks a client to say “ee” while listening over the lungs, and hears it as “ay” over the right lower lobe. Which condition does this suggest?",
-      "options": [
-        "Air in the pleural space",
-        "Consolidation, as in pneumonia",
-        "Narrowed airways, as in an asthma attack",
-        "A normal finding in adults"
-      ],
-      "answer": 1,
-      "rationale": "<p>When “ee” sounds like “ay”, it's <b>egophony</b>, which, like increased tactile fremitus, suggests <b>consolidation</b>, as in pneumonia.</p><p><b>Narrowed airways</b> are the tempting choice, since they also change lung sounds, but they cause wheezes, not changes to spoken sounds.</p><p><b>Takeaway:</b> Egophony and increased fremitus both point to consolidation.</p>"
-    },
-    {
-      "id": "m4r-33",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 1,
-      "stem": "During inspection, a nurse sees that a client's sternum is sunken into the chest. How should the nurse document this finding?",
-      "options": [
-        "Pectus carinatum",
-        "Barrel chest",
-        "Pectus excavatum",
-        "Kyphosis"
-      ],
-      "answer": 2,
-      "rationale": "<p>A <b>sunken sternum</b> is pectus excavatum, the most common bony chest abnormality.</p><p><b>Pectus carinatum</b> is the tempting choice, since the names are alike, but it's the opposite: a sternum that sticks out.</p><p><b>Takeaway:</b> Excavatum is excavated (sunken); carinatum sticks out like a keel.</p>"
-    },
-    {
-      "id": "m4r-34",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "After forceful vomiting, a client has shortness of breath, neck pain, pain with swallowing, and a crackling feeling under the skin of the neck. Which condition should the nurse suspect?",
-      "options": [
-        "Spontaneous pneumothorax",
-        "Pleurisy",
-        "Pneumomediastinum",
-        "Pneumonia"
-      ],
-      "answer": 2,
-      "rationale": "<p>Air that escapes into the mediastinum, a <b>pneumomediastinum</b>, causes shortness of breath, coughing, neck pain, and pain or trouble swallowing; air can track under the skin of the neck.</p><p><b>A pneumothorax</b> is the tempting choice, since it's also air where it doesn't belong, but that air is in the pleural space, causing chest pain and quiet breath sounds, not pain with swallowing. <b>Pleurisy</b>'s pain is sharp with each breath in.</p><p><b>Takeaway:</b> Neck pain, painful swallowing, and air under the skin after forceful vomiting point to a pneumomediastinum.</p>"
-    },
-    {
-      "id": "m4r-35",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client's tuberculosis test is positive, but the client has no symptoms, and the chest x-ray is normal. Which statement about this client's latent tuberculosis is accurate?",
-      "options": [
-        "The client needs airborne isolation until three tests are negative",
-        "The client will have night sweats and weight loss within a few weeks",
-        "The client's positive test means active tuberculosis in the lungs",
-        "The client feels well and can't spread it to others"
-      ],
-      "answer": 3,
-      "rationale": "<p>In <b>latent tuberculosis</b>, the bacteria are present but inactive: the client has <b>no symptoms</b> and isn't contagious, though treatment may be offered to prevent active disease.</p><p><b>Airborne isolation</b> is the tempting choice, since tuberculosis is airborne, but it's needed for active disease, with cough, fever, night sweats, weight loss, and hemoptysis.</p><p><b>Takeaway:</b> Latent TB: positive test, no symptoms, not contagious. Active TB: symptoms, and contagious.</p>"
-    },
-    {
       "id": "m4r-36",
       "type": "mc",
       "topic": "Respiratory system",
@@ -2558,21 +1646,6 @@
       ],
       "answer": 3,
       "rationale": "<p><b>Ventilation</b> is the movement of air in and out of the lungs. <b>Respiration</b> is gas exchange: oxygen into the blood and carbon dioxide out, in the lungs and at the tissues.</p><p><b>Reversing the two</b> is the tempting choice, since people use “breathing” and “respiration” for the same thing.</p><p><b>Takeaway:</b> Ventilation moves the air; respiration exchanges the gases.</p>"
-    },
-    {
-      "id": "m4r-37",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client reports a cough that began 3 weeks ago. Which question explores the history of the presenting complaint?",
-      "options": [
-        "“Did you have whooping cough or measles as a child?”",
-        "“What makes the cough better or worse?”",
-        "“Do you have any pets at home?”",
-        "“Has anyone in your family had asthma?”"
-      ],
-      "answer": 1,
-      "rationale": "<p>The <b>history of the presenting complaint</b> expands on the main symptom: how long it has lasted, what <b>makes it better or worse</b>, and how it has changed.</p><p><b>Childhood illnesses</b> are the tempting choice, since they're part of the respiratory history, but they belong to the past history. Pets are social history, and asthma in a relative is family history.</p><p><b>Takeaway:</b> History of the presenting complaint: the symptom's timing, triggers, and what helps.</p>"
     },
     {
       "id": "m4r-38",
@@ -2631,51 +1704,6 @@
       "rationale": "<p>Air passes through the <b>nasal cavity</b>, <b>pharynx</b>, <b>larynx</b>, <b>trachea</b>, a <b>main bronchus</b>, smaller and smaller branches to the <b>bronchioles</b>, and finally the <b>alveoli</b>, where gas exchange happens.</p><p>The tempting mistake is placing the larynx before the pharynx, since the larynx is the better-known structure, but air passes the pharynx first.</p><p><b>Takeaway:</b> Nose, pharynx, larynx, trachea, bronchi, bronchioles, alveoli.</p>"
     },
     {
-      "id": "m4r-41",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "A client with pulmonary sarcoidosis is seen for a follow-up visit. Which other assessments should the nurse expect the provider to include?",
-      "options": [
-        "The thyroid gland and blood glucose",
-        "The kidneys and the urine output",
-        "The eyes, skin, heart, and nervous system",
-        "The lungs and chest, since sarcoidosis stays in the chest"
-      ],
-      "answer": 2,
-      "rationale": "<p><b>Sarcoidosis</b> is a multisystem granulomatous disease: it mainly affects the lungs and lymph nodes, but it can involve the <b>heart, eyes, nervous system, and skin</b>.</p><p><b>The lungs and chest</b> is the tempting choice, since the client's diagnosis is pulmonary, but sarcoidosis can spread beyond the chest.</p><p><b>Takeaway:</b> Sarcoidosis isn't only a lung disease: check the heart, eyes, nerves, and skin.</p>"
-    },
-    {
-      "id": "m4r-42",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 3,
-      "stem": "After a fall that fractured several ribs on the left, a client's left chest rises less than the right with each breath. Which other findings on the left should the nurse expect if a pneumothorax has developed?",
-      "options": [
-        "Dullness to percussion, with increased tactile fremitus over the area",
-        "Bronchial breath sounds, with egophony",
-        "Fine crackles at the base, with a pleural friction rub",
-        "Hyperresonance to percussion, with decreased or absent breath sounds"
-      ],
-      "answer": 3,
-      "rationale": "<p>In a <b>pneumothorax</b>, air in the pleural space lets the lung collapse: the chest expands unevenly, percussion is <b>hyperresonant</b>, fremitus decreases, and <b>breath sounds are decreased or absent</b>.</p><p><b>Dullness with increased fremitus</b> is the tempting choice, since the lung isn't working normally, but that's consolidation, as in pneumonia: solid tissue, not air.</p><p><b>Takeaway:</b> Air in the chest: hyperresonant, with quiet breath sounds and less fremitus. Solid lung: dull, with more fremitus.</p>"
-    },
-    {
-      "id": "m4r-43",
-      "type": "mc",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A client says, “I think it's just a cold.” Which finding is more typical of influenza than of a common cold?",
-      "options": [
-        "Fever with body aches that came on over a day",
-        "A runny nose and sneezing for several days",
-        "A mild sore throat that's worse in the morning",
-        "A stuffy nose that makes it hard to sleep"
-      ],
-      "answer": 0,
-      "rationale": "<p><b>Influenza</b> typically brings <b>fever</b>, <b>muscle aches</b>, headache, and fatigue, often coming on quickly, along with a cough and sore throat.</p><p><b>A runny nose</b> is the tempting choice, since influenza can cause it too, but nasal symptoms on their own are typical of a cold; fever and body aches point to influenza.</p><p><b>Takeaway:</b> Fever and body aches that come on fast suggest influenza, not a cold.</p>"
-    },
-    {
       "id": "m4r-44",
       "type": "mc",
       "topic": "Respiratory system",
@@ -2689,26 +1717,6 @@
       ],
       "answer": 2,
       "rationale": "<p>The <b>maxillary sinuses</b> lie in the cheekbones, below the eyes, so tenderness over the cheeks points to them.</p><p>The <b>frontal sinuses</b> are the tempting choice, since they're the other sinuses the nurse can press on, but they're in the forehead, above the eyes. The ethmoid and sphenoid sinuses lie deeper.</p><p><b>Takeaway:</b> Cheeks: maxillary. Forehead: frontal.</p>"
-    },
-    {
-      "id": "m4r-45",
-      "type": "sata",
-      "topic": "Respiratory system",
-      "level": 2,
-      "stem": "A nurse is taking a client's past respiratory history. Which past illnesses should the nurse ask about?",
-      "options": [
-        "Chickenpox",
-        "Whooping cough",
-        "Ear infections as a toddler",
-        "Pneumonia",
-        "Tuberculosis"
-      ],
-      "answer": [
-        1,
-        3,
-        4
-      ],
-      "rationale": "<p>The past respiratory history includes <b>whooping cough, measles, pneumonia</b>, pleurisy, <b>tuberculosis</b>, and childhood asthma or wheezing, since they can leave lasting lung damage.</p><p><b>Chickenpox</b> is the tempting choice, since it's a common childhood illness, but it's a skin and nerve infection; it's not on the list of past respiratory illnesses, and neither are ear infections.</p><p><b>Takeaway:</b> Ask about whooping cough, measles, pneumonia, pleurisy, TB, and childhood asthma.</p>"
     },
     {
       "id": "m4r-46",
@@ -2847,6 +1855,364 @@
         1
       ],
       "rationale": "<p>Fewer wheezes, full sentences, a higher saturation, and a slower respiratory rate show the airways have <b>opened</b>. The chest tightness <b>hasn't changed</b> yet, so the nurse keeps watching her.</p><p>The <b>faint wheezes</b> are the tempting ones to call no change, since she still wheezes, but wheezes that went from every field to faint at the end of exhalation are clearly better.</p><p><b>Takeaway:</b> After a rescue inhaler, judge the trend: work of breathing, speech, saturation, and wheezes.</p>"
+    },
+    {
+      "id": "m4l-01",
+      "type": "hotspot",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Lymph carrying fats absorbed from the intestines collects in a sac in the upper abdomen before it travels up to the chest. Click this sac.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 48.5,
+          "y": 74.8,
+          "w": 4.1,
+          "h": 4.6
+        }
+      ],
+      "rationale": "<p>The <b>cisterna chyli</b>, a small sac in the upper abdomen in front of the spine, collects lymph from the intestines (including the fat-rich lymph from the lacteals) and from the lower body. It's where the thoracic duct begins.</p><p>The <b>spleen</b> is the tempting choice, since it's the other lymphatic structure in the abdomen, but it filters blood, not intestinal lymph.</p><p><b>Takeaway:</b> Intestinal and lower-body lymph gathers in the cisterna chyli, then rises in the thoracic duct.</p>"
+    },
+    {
+      "id": "m4l-02",
+      "type": "hotspot",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "During breast cancer surgery, a client had lymph nodes removed from the left armpit, and her left arm has since become swollen. Click the node group that was removed.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 80.0,
+          "y": 24.4,
+          "w": 6.8,
+          "h": 6.7
+        }
+      ],
+      "rationale": "<p>The <b>axillary</b> nodes in the armpit drain the arm and the breast. Removing the <b>left</b> axillary nodes, on the viewer's <b>right</b> in a front view, leaves the left arm's lymph with fewer ways to drain, so the arm swells.</p><p>The axillary group on the viewer's left is the tempting choice for students who forget to flip the sides: that's the client's right.</p><p><b>Takeaway:</b> Arm and breast drain to the axillary nodes; in a front view, the client's left is on your right.</p>"
+    },
+    {
+      "id": "m4l-03",
+      "type": "hotspot",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client with an infected ingrown toenail on the right big toe has tender, enlarged lymph nodes. Click the node group shown here that is most likely enlarged.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 25.2,
+          "y": 89.5,
+          "w": 8.4,
+          "h": 4.8
+        },
+        {
+          "x": 34.6,
+          "y": 91.0,
+          "w": 1.8,
+          "h": 3.7
+        }
+      ],
+      "rationale": "<p>Lymph from the foot and leg drains to the <b>inguinal</b> nodes in the groin on the same side: the client's <b>right</b>, on the viewer's <b>left</b>.</p><p>The <b>axillary</b> nodes are the tempting choice for students who think of the largest node groups, but they drain the arms and chest.</p><p><b>Takeaway:</b> Foot and leg: inguinal nodes on the same side.</p>"
+    },
+    {
+      "id": "m4l-04",
+      "type": "hotspot",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client has an abscessed tooth on the right side of the lower jaw, and tender, swollen nodes have appeared in the neck. Click the node group shown here that is most likely swollen.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 43.8,
+          "y": 4.1,
+          "w": 3.6,
+          "h": 9.0
+        }
+      ],
+      "rationale": "<p>Infections of the mouth, teeth, and throat drain to the <b>cervical</b> nodes on the same side: the <b>right</b> side of the neck, on the viewer's <b>left</b>.</p><p>The cervical group on the viewer's right is the tempting choice for students who forget to flip the sides.</p><p><b>Takeaway:</b> Head and neck infections drain to the cervical nodes on the same side.</p>"
+    },
+    {
+      "id": "m4l-05",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks why the lymph nodes in the neck swell during a throat infection. Which explanation should the nurse give?",
+      "options": [
+        "“The nodes swell up to block the infection from spreading to the brain and the rest of the body.”",
+        "“The nodes fill with blood to bring more oxygen to the infection.”",
+        "“The lymphocytes in the nodes multiply as they respond to germs filtered from the lymph.”",
+        "“The nodes stop draining lymph until the infection is gone.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Lymph nodes <b>filter</b> the lymph. When germs arrive, the <b>lymphocytes</b> and other immune cells in the node multiply and respond, so the node enlarges and becomes tender.</p><p><b>Blocking the infection</b> is the tempting choice, since the nodes do trap germs, but they swell because of the immune cells working inside them, not to form a wall.</p><p><b>Takeaway:</b> Swollen nodes near an infection are working nodes: their lymphocytes are multiplying.</p>"
+    },
+    {
+      "id": "m4l-13",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks how natural killer (NK) cells protect the body. Which explanation should the nurse give?",
+      "options": [
+        "They make antibodies against a specific germ after a vaccine",
+        "They kill virus-infected and tumor cells without needing earlier exposure",
+        "They mature in the thymus as T cells and remember germs for years",
+        "They release heparin and histamine from their granules in allergic reactions"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Natural killer cells</b> are lymphocytes of the <b>innate</b> immune system: they destroy virus-infected and tumor cells <b>without prior exposure</b>.</p><p><b>Remembering germs for years</b> is the tempting choice, since NK cells are lymphocytes like T cells, but memory belongs to the adaptive B and T cells.</p><p><b>Takeaway:</b> NK cells: innate lymphocytes that kill infected and tumor cells right away.</p>"
+    },
+    {
+      "id": "m4l-14",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A parent asks why a healthy 5-year-old should be vaccinated against measles when the family's newborn is too young for the vaccine. Which response should the nurse give?",
+      "options": [
+        "“Vaccinating your older child passes antibodies to the baby through the air.”",
+        "“When most people around the baby are immune, the virus has a hard time reaching her.”",
+        "“The vaccine gives your older child passive immunity that protects the whole family.”",
+        "“Your newborn will get the measles vaccine's protection through your older child's saliva.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Herd immunity</b>: when most people in a community are immune, a germ can't spread easily, which protects those who can't be vaccinated yet, like newborns.</p><p><b>Passive immunity</b> is the tempting choice, since the baby is protected without being vaccinated, but passive immunity means receiving antibodies directly, as from the mother.</p><p><b>Takeaway:</b> Vaccinating those around a vulnerable person protects them through herd immunity.</p>"
+    },
+    {
+      "id": "m4l-15",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks how an mRNA vaccine works. Which explanation should the nurse give?",
+      "options": [
+        "“It puts a weakened form of the virus into your body to cause a mild infection.”",
+        "“It gives you antibodies taken from people who have already recovered from this virus.”",
+        "“It changes the genes in your cells so the virus can't enter them.”",
+        "“It teaches your cells to make one harmless viral protein, which trains your immunity.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>An <b>mRNA vaccine</b> delivers messenger RNA that your cells use as a blueprint to make a harmless <b>viral protein</b>, the antigen. The immune system responds to it and builds memory.</p><p><b>A weakened form of the virus</b> is the tempting choice, since that's how many vaccines work, but mRNA vaccines contain no virus at all. The mRNA doesn't change the body's genes.</p><p><b>Takeaway:</b> mRNA vaccines teach cells to make one viral protein so the immune system learns to recognize it.</p>"
+    },
+    {
+      "id": "m4l-18",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "During a transfusion of the wrong blood type, a client's red blood cells begin to break down. Which mechanism explains this reaction?",
+      "options": [
+        "IgE on mast cells releases histamine within minutes",
+        "Antigen-antibody complexes deposit in the kidneys and the joints over weeks",
+        "Sensitized T cells cause a reaction over 2 to 3 days",
+        "Antibodies bind the donor cells' antigens, and complement destroys them"
+      ],
+      "answer": 3,
+      "rationale": "<p>A transfusion reaction is a <b>Type II</b> (antibody-dependent cytotoxic) hypersensitivity: the client's <b>antibodies bind antigens on the donor cells</b>, activating <b>complement</b>, which destroys them.</p><p><b>Histamine within minutes</b> is the tempting choice, since the reaction is fast, but that's Type I, from IgE on mast cells.</p><p><b>Takeaway:</b> Antibodies against antigens on cells, with complement destroying them: Type II.</p>"
+    },
+    {
+      "id": "m4l-20",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client has seasonal allergic rhinitis, with sneezing and itchy eyes every spring. Which antibody drives this reaction?",
+      "options": [
+        "IgA",
+        "IgG",
+        "IgM",
+        "IgE"
+      ],
+      "answer": 3,
+      "rationale": "<p>Allergic rhinitis is a <b>Type I</b> hypersensitivity: <b>IgE</b> antibodies on mast cells and basophils release histamine when the allergen, like pollen, returns.</p><p><b>IgA</b> is the tempting choice, since it protects the nose and eyes' secretions, but allergic reactions are driven by IgE.</p><p><b>Takeaway:</b> Allergies and parasites: IgE.</p>"
+    },
+    {
+      "id": "m4l-21",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A new mother asks why breastfeeding in the first days protects her newborn's gut from infection. Which antibody in colostrum provides this protection?",
+      "options": [
+        "IgE",
+        "IgA",
+        "IgD",
+        "IgM"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>IgA</b> is the main antibody in secretions, including <b>colostrum</b>, tears, and saliva. It protects the mucous membranes of the digestive, respiratory, and genital tracts, and gives the baby natural passive immunity.</p><p><b>IgM</b> is the tempting choice, since it's the first antibody made in a new response, but it's made by the person responding, not passed in milk.</p><p><b>Takeaway:</b> Antibodies in secretions and breast milk: IgA.</p>"
+    },
+    {
+      "id": "m4l-22",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client's blood test shows IgM antibodies against a virus but no IgG antibodies. Which interpretation is most likely?",
+      "options": [
+        "The client was infected many years ago",
+        "The client's immune system can't make antibodies",
+        "The client recently received antibodies from someone else",
+        "The infection is recent, since IgM is made first"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>IgM</b> is the <b>first</b> antibody made after a new exposure; IgG follows and lasts. IgM without IgG points to a <b>recent</b> infection.</p><p><b>An infection years ago</b> is the tempting choice, since antibodies show past exposure, but an old infection would leave IgG, not IgM alone.</p><p><b>Takeaway:</b> IgM: recent. IgG: later or past.</p>"
+    },
+    {
+      "id": "m4l-24",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Which cytokines draw neutrophils and macrophages to the site of an infection?",
+      "options": [
+        "Chemokines",
+        "Interferons",
+        "Prostaglandins",
+        "Kinins"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Chemokines</b> are cytokines that act as <b>chemical attractants</b>, drawing neutrophils and macrophages to an inflamed area.</p><p><b>Kinins</b> are the tempting choice, since they're also inflammatory mediators, but they cause pain and make vessels leaky.</p><p><b>Takeaway:</b> Chemokines call the cells in; kinins cause pain; histamine makes vessels leak.</p>"
+    },
+    {
+      "id": "m4l-27",
+      "type": "matrix",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing the mediators of acute inflammation. For each effect, click to specify the mediator that mainly causes it.",
+      "rowHeader": "Effect",
+      "columns": [
+        "Histamine",
+        "Kinins",
+        "Prostaglandins",
+        "Chemokines"
+      ],
+      "rows": [
+        "Pain sensation at the injured area",
+        "Itching and leaky vessels at the site",
+        "Drawing neutrophils and macrophages to the area",
+        "Widening of the local blood vessels, and fever"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "rationale": "<p><b>Histamine</b> makes vessels leaky and is the main cause of itching; <b>kinins</b> cause pain and add to the leakiness; <b>prostaglandins</b> widen vessels and drive fever; and <b>chemokines</b> attract neutrophils and macrophages.</p><p>The tempting mistake is giving the <b>pain</b> to histamine, since histamine is the best-known mediator, but it mainly causes itching; kinins cause pain.</p><p><b>Takeaway:</b> Histamine itches and leaks, kinins hurt, prostaglandins widen and heat, chemokines recruit.</p>"
+    },
+    {
+      "id": "m4l-33",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client's regulatory T cells aren't working properly. Which problem is this client more likely to develop?",
+      "options": [
+        "Lymphedema",
+        "A Type I allergy to pollen",
+        "An autoimmune disease",
+        "Anemia"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Regulatory T cells</b> provide tolerance: they keep immune cells from attacking the body's own cells. When they fail, <b>autoimmune disease</b> is more likely.</p><p><b>A pollen allergy</b> is the tempting choice, since it's also an unwanted immune reaction, but allergies are IgE responses to outside substances, not attacks on the body's own cells.</p><p><b>Takeaway:</b> Regulatory T cells keep the peace; when they fail, the body attacks itself.</p>"
+    },
+    {
+      "id": "m4l-34",
+      "type": "fill",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "vars": {
+        "wbc": [
+          2400,
+          3200,
+          4000,
+          5600,
+          6800
+        ],
+        "pct": [
+          30,
+          45,
+          55,
+          65
+        ]
+      },
+      "stem": "A client's white blood cell count is {wbc}/mm³, and {pct}% of the white cells are neutrophils. What is the client's absolute neutrophil count?",
+      "answer": "=wbc * pct / 100",
+      "decimals": 0,
+      "unit": "cells/mm³",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>The absolute neutrophil count is the white cell count × the share that are neutrophils: {wbc} × {pct}% = {wbc} × {=pct / 100} = <b>{answer} cells/mm³</b>.</p><p>The usual mistake is multiplying by {pct} instead of {pct}% ({=wbc * pct}), which forgets that a percentage is a part of 100.</p><p><b>Takeaway:</b> Absolute count = total white cells × (percentage ÷ 100).</p>"
+    },
+    {
+      "id": "m4l-36",
+      "type": "dragdrop",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing how lymph returns to the blood. Complete the following sentence.",
+      "text": "Lymph from the right arm drains into the {{0}}, while lymph from the intestines first collects in the {{1}} and then travels up the {{2}}, which empties into a vein at the base of the neck on the {{3}} side.",
+      "tokens": [
+        "lacteals",
+        "thoracic duct",
+        "left",
+        "right lymphatic duct",
+        "aorta",
+        "cisterna chyli",
+        "right"
+      ],
+      "answer": [
+        3,
+        5,
+        1,
+        2
+      ],
+      "rationale": "<p>The <b>right lymphatic duct</b> drains the right arm and right upper body. Intestinal lymph collects in the <b>cisterna chyli</b>, rises in the <b>thoracic duct</b>, and empties into a vein at the base of the neck on the <b>left</b>.</p><p>The <b>lacteals</b> are the tempting choice for the second blank, since they absorb intestinal fat, but they're the small vessels in the intestinal lining that feed into the cisterna chyli.</p><p><b>Takeaway:</b> Right upper body: right lymphatic duct. Everything else: cisterna chyli, thoracic duct, left neck veins.</p>"
+    },
+    {
+      "id": "m4l-41",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client has lost a large amount of blood after an injury. Which role does the spleen play in the body's response?",
+      "options": [
+        "It produces new red blood cells within minutes",
+        "It releases stored platelets and white blood cells into the blood",
+        "It makes clotting proteins to seal the injured vessels",
+        "It pumps extra lymph into the blood to replace the lost volume quickly"
+      ],
+      "answer": 1,
+      "rationale": "<p>The spleen's <b>red pulp</b> holds a <b>reserve of white blood cells and platelets</b>, which can be released quickly to sites of injury.</p><p><b>Producing new red cells within minutes</b> is the tempting choice, since blood was lost, but red cells are made in the bone marrow, and that takes days.</p><p><b>Takeaway:</b> The spleen is a storehouse of platelets and white cells, released when they're needed.</p>"
+    },
+    {
+      "id": "m4l-42",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 1,
+      "stem": "A nurse is reviewing the lymphatic system. Which of the following are lymphoid organs or tissues?",
+      "options": [
+        "Thymus",
+        "Pancreas",
+        "Spleen",
+        "Thyroid gland",
+        "Liver",
+        "Lymph nodes"
+      ],
+      "answer": [
+        0,
+        2,
+        5
+      ],
+      "rationale": "<p>Lymphoid organs and tissues include the <b>thymus</b>, <b>spleen</b>, <b>tonsils</b>, and <b>lymph nodes</b>.</p><p><b>The liver</b> is the tempting choice, since its lymphatic vessels carry liver proteins and it contains macrophages (Kupffer cells), but it isn't a lymphoid organ. The pancreas is an endocrine and digestive gland, and the thyroid is an endocrine gland.</p><p><b>Takeaway:</b> Lymphoid organs: thymus, spleen, tonsils, and lymph nodes.</p>"
+    },
+    {
+      "id": "m4l-43",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A child had the tonsils removed after repeated infections. Which function did the tonsils perform?",
+      "options": [
+        "Producing the hormones that control growth",
+        "Making the red blood cells that carry oxygen",
+        "Trapping germs that enter through the mouth and nose",
+        "Filtering old and damaged red blood cells out of the blood"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>tonsils</b> are lymphoid tissue in the throat, part of the first immune defenses against germs entering through the mouth and nose. Other lymphoid tissue continues this work after they're removed.</p><p><b>Filtering old red blood cells</b> is the tempting choice, since it's another lymphoid organ's job, but that's the spleen's red pulp.</p><p><b>Takeaway:</b> Tonsils guard the throat; the spleen filters the blood.</p>"
     }
   ]
 }

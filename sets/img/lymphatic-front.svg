@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 520" width="440" height="520" font-family="Arial, Helvetica, sans-serif">
+  <title>Lymphatic structures of the neck and trunk, front view</title>
+  <!-- An original drawing for the Practice Exam Center: the neck and trunk
+       seen from the front, so the client's right is on the viewer's left.
+       The structures are drawn larger than life so they are easy to click.
+       Each clickable structure is its own shape with an id, so hot-spot areas
+       can be checked against it: the cervical, axillary, and inguinal lymph
+       node groups on each side (lymph-cervical-right, lymph-cervical-left,
+       lymph-axillary-right, lymph-axillary-left, lymph-inguinal-right,
+       lymph-inguinal-left), the thymus (lymph-thymus), the spleen
+       (lymph-spleen), the cisterna chyli (lymph-cisterna), the thoracic duct
+       (lymph-thoracic-duct), and the right lymphatic duct (lymph-right-duct).
+       The veins and the thin lymphatic vessels are only for orientation, and
+       can't be clicked. -->
+  <rect width="440" height="520" fill="#FFFFFF"/>
+  <!-- outline of the body -->
+  <path fill="#FAF1EA" stroke="#C9AE9A" stroke-width="2.5"
+    d="M186 0 L254 0 L258 54 C300 66 360 72 392 96 C412 112 416 140 414 172 L404 300 C400 360 408 420 418 520 L22 520 C32 420 40 360 36 300 L26 172 C24 140 28 112 48 96 C80 72 140 66 182 54 Z"/>
+  <!-- lungs and heart, faint, for orientation -->
+  <path fill="#F4ECEF" stroke="#DDCCD2" stroke-width="2" d="M190 150 C150 150 112 190 104 250 C100 282 110 300 134 302 C164 300 186 290 196 270 Z"/>
+  <path fill="#F4ECEF" stroke="#DDCCD2" stroke-width="2" d="M250 150 C290 150 328 190 336 250 C340 282 330 300 306 302 C276 300 254 290 244 270 Z"/>
+  <path fill="#F5E4E4" stroke="#DDC4C4" stroke-width="2" d="M206 232 C230 224 262 232 270 254 C276 276 258 298 232 302 C214 302 200 288 200 266 C200 250 202 238 206 232 Z"/>
+  <!-- diaphragm -->
+  <path fill="none" stroke="#DCC7B8" stroke-width="2" d="M70 306 C140 290 300 290 370 306"/>
+  <!-- the veins at the base of the neck, where the ducts empty (blue) -->
+  <g pointer-events="none" fill="none" stroke="#8FB3D9" stroke-width="7" stroke-linecap="round">
+    <path d="M196 8 L190 96 L120 104"/>
+    <path d="M244 8 L250 96 L320 104"/>
+    <path d="M190 96 C200 112 210 126 214 150"/>
+    <path d="M250 96 C240 112 230 126 226 150"/>
+  </g>
+  <!-- groin creases -->
+  <path pointer-events="none" fill="none" stroke="#D9C3B2" stroke-width="2" d="M70 440 C110 470 160 498 206 516"/>
+  <path pointer-events="none" fill="none" stroke="#D9C3B2" stroke-width="2" d="M370 440 C330 470 280 498 234 516"/>
+  <!-- thin lymphatic vessels, for orientation (green) -->
+  <g pointer-events="none" fill="none" stroke="#A9CFA9" stroke-width="2" stroke-dasharray="5 4">
+    <path d="M90 160 C120 140 150 120 176 100"/>
+    <path d="M350 160 C320 140 290 120 262 100"/>
+    <path d="M138 486 C160 450 190 430 214 412"/>
+    <path d="M302 486 C280 450 250 430 228 412"/>
+    <path d="M200 66 C196 80 190 90 182 96"/>
+    <path d="M240 66 C246 80 252 88 260 94"/>
+  </g>
+  <!-- thymus, in the upper chest above the heart -->
+  <path id="lymph-thymus" fill="#C9D9EA" stroke="#5F86A3" stroke-width="2"
+    d="M218 166 C200 164 192 182 194 202 C196 218 206 226 218 222 L220 194 L222 222 C234 226 244 218 246 202 C248 182 240 164 222 166 Z"/>
+  <!-- cervical lymph nodes, along each side of the neck -->
+  <path id="lymph-cervical-right" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M200 16 C190 16 186 26 188 38 C184 48 186 60 192 66 C190 76 196 84 206 80 C216 76 218 62 212 54 C218 44 216 30 210 24 C210 18 206 14 200 16 Z"/>
+  <path id="lymph-cervical-left" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M240 16 C250 16 254 26 252 38 C256 48 254 60 248 66 C250 76 244 84 234 80 C224 76 222 62 228 54 C222 44 224 30 230 24 C230 18 234 14 240 16 Z"/>
+  <!-- right lymphatic duct: short, at the base of the neck on the client's right -->
+  <path id="lymph-right-duct" fill="#7DB97D" stroke="#4E8A5A" stroke-width="1.5" stroke-linejoin="round"
+    d="M170 100 L172 88 L180 78 L190 70 L198 78 L188 86 L182 94 L182 102 Z"/>
+  <!-- cisterna chyli, in the upper abdomen in front of the spine -->
+  <path id="lymph-cisterna" fill="#B8DDB0" stroke="#4E8A5A" stroke-width="2"
+    d="M220 384 C210 384 206 394 208 404 C210 414 216 420 222 420 C228 420 234 414 236 404 C238 394 232 384 224 384 Z"/>
+  <!-- thoracic duct: from the cisterna chyli up to the base of the neck on the client's left -->
+  <path id="lymph-thoracic-duct" fill="#7DB97D" stroke="#4E8A5A" stroke-width="1.5" stroke-linejoin="round"
+    d="M211 384 L225 338 L239 298 L245 250 L247 200 L249 150 L251 120 L253 96 L262 86 L275 92 L273 120 L271 150 L269 200 L267 250 L261 302 L247 342 L233 386 Z"/>
+  <!-- axillary lymph nodes, in each armpit -->
+  <path id="lymph-axillary-right" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M62 116 C52 122 50 136 56 146 C52 156 58 168 70 168 C78 176 92 172 94 162 C102 156 100 142 92 138 C94 126 84 116 74 118 C70 114 66 114 62 116 Z"/>
+  <path id="lymph-axillary-left" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M378 116 C388 122 390 136 384 146 C388 156 382 168 370 168 C362 176 348 172 346 162 C338 156 340 142 348 138 C346 126 356 116 366 118 C370 114 374 114 378 116 Z"/>
+  <!-- spleen, under the diaphragm on the client's left -->
+  <path id="lymph-spleen" fill="#C4808C" stroke="#8C4A57" stroke-width="2"
+    d="M342 302 C326 306 318 322 322 338 C326 354 342 362 356 356 C370 350 382 334 380 318 C378 302 362 296 342 302 Z"/>
+  <!-- inguinal lymph nodes, along each groin crease -->
+  <path id="lymph-inguinal-right" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M108 462 C98 464 96 476 104 482 C108 494 122 498 132 494 C142 502 158 500 162 490 C170 484 166 472 156 470 C148 460 134 460 126 464 C120 458 112 458 108 462 Z"/>
+  <path id="lymph-inguinal-left" fill="#9FCF9F" stroke="#4E8A5A" stroke-width="2"
+    d="M332 462 C342 464 344 476 336 482 C332 494 318 498 308 494 C298 502 282 500 278 490 C270 484 274 472 284 470 C292 460 306 460 314 464 C320 458 328 458 332 462 Z"/>
+  <text x="38" y="510" font-size="13" fill="#6B7684">CLIENT'S RIGHT</text>
+  <text x="402" y="510" font-size="13" fill="#6B7684" text-anchor="end">CLIENT'S LEFT</text>
+</svg>

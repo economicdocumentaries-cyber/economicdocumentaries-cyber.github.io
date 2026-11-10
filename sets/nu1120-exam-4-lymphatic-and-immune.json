@@ -1,0 +1,558 @@
+{
+  "id": "nu1120-exam-4-lymphatic-and-immune",
+  "title": "The Lymphatic and Immune Systems",
+  "description": "Week 12, matched to the instructor's Exam 4 study guide: the lymph nodes and vessels, the thymus, tonsils, and spleen, the white blood cells and what each does, antibodies, memory cells, and vaccines, and inflammation.",
+  "course": "NU1120",
+  "exam": "Exam 4",
+  "timeMinutes": 42.0,
+  "defaultCount": 25,
+  "cases": {},
+  "questions": [
+    {
+      "id": "li-01",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is teaching how the body handles the small amount of fluid that leaks out of the blood capillaries into the tissues each day. Which explanation should the nurse give?",
+      "options": [
+        "Arterioles pull it back in at the start of the next heartbeat",
+        "The kidneys draw it out of the tissues and excrete it",
+        "Sweat glands carry it to the skin, where it evaporates",
+        "Lymphatic vessels collect it and return it to the veins"
+      ],
+      "answer": 3,
+      "rationale": "<p>Fluid that leaks into the tissues is picked up by <b>lymphatic capillaries</b>, which begin as dead-end tubes in the tissues. As lymph, it's filtered through nodes and <b>returned to the veins</b>, keeping fluid in balance.</p><p><b>The kidneys</b> are the tempting choice, since they control the body's fluid, but they work on the blood, not directly on the fluid in the tissues.</p><p><b>Takeaway:</b> The lymphatic system returns leaked tissue fluid to the blood; when it can't, the tissue swells.</p>"
+    },
+    {
+      "id": "li-02",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "After a client eats a meal high in fat, the lymph coming from the small intestine looks milky. Which explanation should the nurse give?",
+      "options": [
+        "White blood cells gather in the intestinal lining to digest the extra fat",
+        "Lacteals in the intestinal lining absorb dietary fats into the lymph",
+        "The liver sends bile into the lymph to break the fat down",
+        "The spleen releases stored fat into the lymph after a meal"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Lacteals</b> are lymphatic capillaries in the lining of the small intestine. They <b>absorb dietary fats</b>, which make the lymph there milky (chyle), and carry them toward the bloodstream.</p><p><b>Bile</b> is the tempting choice, since bile helps digest fat, but it's released into the intestine, not into the lymph.</p><p><b>Takeaway:</b> Fat absorption is one of the lymphatic system's three jobs, through the lacteals.</p>"
+    },
+    {
+      "id": "li-03",
+      "type": "matrix",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing how lymph moves. For each description, click to specify the structure it describes.",
+      "rowHeader": "Description",
+      "columns": [
+        "Afferent vessel",
+        "Efferent vessel",
+        "Right lymphatic duct",
+        "Thoracic duct"
+      ],
+      "rows": [
+        "Carries filtered lymph away from a lymph node",
+        "Drains lymph from the right arm and the right side of the head",
+        "Carries unfiltered lymph toward a lymph node",
+        "Drains lymph from both legs, the abdomen, and the left arm"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "rationale": "<p><b>Afferent</b> vessels carry unfiltered lymph <b>toward</b> a node, and <b>efferent</b> vessels carry filtered lymph <b>away</b>. The <b>right lymphatic duct</b> drains the right upper body: the right arm, right upper trunk, and right side of the head and neck. The <b>thoracic duct</b> drains everything else.</p><p>The tempting mistake is swapping afferent and efferent. Think of <b>a</b>fferent as <b>a</b>rriving at the node and <b>e</b>fferent as <b>e</b>xiting it.</p><p><b>Takeaway:</b> Afferent arrives, efferent exits. The right duct drains the right upper body; the thoracic duct drains the rest.</p>"
+    },
+    {
+      "id": "li-04",
+      "type": "order",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "Place the path of fluid that leaves a capillary in the foot and returns to the blood in order.",
+      "items": [
+        "Interstitial fluid around the cells of the foot",
+        "A lymphatic capillary",
+        "An afferent lymphatic vessel",
+        "A lymph node",
+        "An efferent lymphatic vessel",
+        "The thoracic duct",
+        "A vein at the base of the neck"
+      ],
+      "rationale": "<p>Tissue fluid enters a <b>lymphatic capillary</b>, travels in an <b>afferent</b> vessel to a <b>lymph node</b> for filtering, leaves in an <b>efferent</b> vessel, and joins the <b>thoracic duct</b>, which empties into a <b>vein at the base of the neck</b>.</p><p>The tempting mistake is placing the duct before the node; the lymph is filtered in nodes along the way before it reaches the large ducts.</p><p><b>Takeaway:</b> Tissue fluid, lymphatic capillary, afferent vessel, node, efferent vessel, duct, vein.</p>"
+    },
+    {
+      "id": "li-05",
+      "type": "hotspot",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A client with strep throat has tender, swollen lymph nodes. Click a group of lymph nodes that would most likely be swollen.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 43.8,
+          "y": 4.1,
+          "w": 3.6,
+          "h": 9.0
+        },
+        {
+          "x": 52.8,
+          "y": 3.9,
+          "w": 3.4,
+          "h": 10.4
+        }
+      ],
+      "rationale": "<p>Lymph from the throat drains to the <b>cervical</b> nodes along the sides of the neck, which swell as their lymphocytes respond to the infection. Either side counts.</p><p>The <b>axillary</b> nodes are the tempting choice, since they're another familiar group, but they drain the arms and the chest wall, not the throat.</p><p><b>Takeaway:</b> Nodes swell near the infection they drain: throat to cervical, arm to axillary, leg to inguinal.</p>"
+    },
+    {
+      "id": "li-06",
+      "type": "hotspot",
+      "topic": "Lymph nodes and vessels",
+      "level": 3,
+      "stem": "A client has an infected cut on the left foot, with red streaks running up the leg. Click the lymph node group shown here that is most likely to swell.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 65.9,
+          "y": 89.8,
+          "w": 8.9,
+          "h": 4.6
+        },
+        {
+          "x": 63.8,
+          "y": 91.0,
+          "w": 1.1,
+          "h": 3.7
+        },
+        {
+          "x": 75.6,
+          "y": 89.8,
+          "w": 1.1,
+          "h": 2.3
+        }
+      ],
+      "rationale": "<p>Lymph from the foot and leg drains to the <b>inguinal</b> nodes in the groin, on the same side: the <b>left</b>, which is on the viewer's <b>right</b> in a front view. Red streaks show lymphangitis, inflammation of the lymph vessels carrying the infection toward those nodes.</p><p>The inguinal group on the viewer's left is the tempting choice for students who forget to flip the sides: that's the client's right.</p><p><b>Takeaway:</b> Leg infections drain to the inguinal nodes on the same side; in a front view, the client's left is on your right.</p>"
+    },
+    {
+      "id": "li-07",
+      "type": "hotspot",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "Click the vessel that returns most of the body's lymph to the blood.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 57.7,
+          "y": 19.4,
+          "w": 2.7,
+          "h": 29.6
+        },
+        {
+          "x": 55.9,
+          "y": 49.8,
+          "w": 3.0,
+          "h": 9.0
+        },
+        {
+          "x": 51.4,
+          "y": 65.6,
+          "w": 2.0,
+          "h": 7.1
+        },
+        {
+          "x": 53.9,
+          "y": 59.6,
+          "w": 2.5,
+          "h": 5.2
+        }
+      ],
+      "rationale": "<p>The <b>thoracic duct</b>, the large vessel rising from the cisterna chyli in the abdomen, carries lymph from the legs, the abdomen, the left arm, and the left side of the head and chest, and empties into a vein at the base of the neck on the client's left.</p><p>The short <b>right lymphatic duct</b> is the tempting choice, since it's also a duct, but it drains only the right upper part of the body.</p><p><b>Takeaway:</b> The thoracic duct drains most of the body; the right lymphatic duct drains the right upper part.</p>"
+    },
+    {
+      "id": "li-08",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 3,
+      "stem": "A tumor is blocking a client's thoracic duct. Which area should the nurse expect to still drain normally?",
+      "options": [
+        "The left arm and the left side of the head, neck, and chest",
+        "Both legs and the lower abdomen",
+        "The right arm and the right side of the head and neck",
+        "The small intestine, including the lacteals"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>right lymphatic duct</b> drains the right arm, the right upper trunk, and the right side of the head and neck, so lymph from there doesn't pass through the thoracic duct and still drains.</p><p><b>The left arm and left side of the head</b> are the tempting choice, since they're also the upper body, but they drain through the thoracic duct, as do the legs, abdomen, and intestines.</p><p><b>Takeaway:</b> Only the right upper body bypasses the thoracic duct, through the right lymphatic duct.</p>"
+    },
+    {
+      "id": "li-09",
+      "type": "hotspot",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "Click the largest organ of the lymphatic system.",
+      "image": "img/lymphatic-front.svg",
+      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
+      "regions": [
+        {
+          "x": 75.9,
+          "y": 59.2,
+          "w": 8.4,
+          "h": 6.9
+        },
+        {
+          "x": 75.7,
+          "y": 66.9,
+          "w": 6.4,
+          "h": 1.0
+        },
+        {
+          "x": 73.9,
+          "y": 61.3,
+          "w": 1.1,
+          "h": 4.6
+        }
+      ],
+      "rationale": "<p>The <b>spleen</b>, the largest lymphatic organ, lies in the upper left abdomen (the left hypochondriac region), between the stomach and the diaphragm, on the viewer's right in a front view.</p><p>The <b>thymus</b> is the tempting choice, since it's also a lymphoid organ, but it's a small gland in the upper chest.</p><p><b>Takeaway:</b> The spleen: the largest lymphatic organ, in the left upper abdomen under the diaphragm.</p>"
+    },
+    {
+      "id": "li-10",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 3,
+      "stem": "After a car crash, a client has fractures of the left 9th to 11th ribs, pain in the left upper abdomen, a heart rate of 124/min, and a blood pressure of 88/52 mm Hg. Which organ should the nurse suspect is bleeding?",
+      "options": [
+        "The liver",
+        "The appendix",
+        "The gallbladder",
+        "The spleen"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>spleen</b> sits in the left upper abdomen, behind the left 9th to 11th ribs. It's spongy and full of blood, so an injury can bleed heavily, causing a fast heart rate and a falling blood pressure.</p><p><b>The liver</b> is the tempting choice, since it also bleeds heavily when injured, but it sits on the right side, under the right ribs.</p><p><b>Takeaway:</b> Left lower rib fractures with signs of bleeding: think of the spleen.</p>"
+    },
+    {
+      "id": "li-11",
+      "type": "matrix",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A nurse is reviewing the spleen. For each function, click to specify the part of the spleen that carries it out.",
+      "rowHeader": "Function",
+      "columns": [
+        "White pulp",
+        "Red pulp"
+      ],
+      "rows": [
+        "Filters old and damaged red blood cells out of the blood",
+        "Produces and matures lymphocytes",
+        "Stores platelets and white blood cells for release when needed",
+        "Processes antigens to start an immune response"
+      ],
+      "answer": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>White pulp</b> is the spleen's immune tissue: it produces and matures lymphocytes and processes antigens. <b>Red pulp</b> filters the blood, removing old red cells, and holds a reserve of white cells and platelets.</p><p>The tempting mistake is linking <b>stored white blood cells</b> with the white pulp, since the names match, but the reserve is held in the red pulp.</p><p><b>Takeaway:</b> White pulp: immune work. Red pulp: filtering and storage.</p>"
+    },
+    {
+      "id": "li-12",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "In the thymus, developing T cells that react strongly against the body's own tissues are destroyed. What does this process protect against?",
+      "options": [
+        "Autoimmune disease",
+        "Allergic reactions to pollen",
+        "Viral infections",
+        "Lymphedema"
+      ],
+      "answer": 0,
+      "rationale": "<p>This is <b>negative selection</b>: the thymus screens out T cells that would attack the body's own tissues, protecting against <b>autoimmune disease</b>.</p><p><b>Allergic reactions</b> are the tempting choice, since they're also unwanted immune responses, but they're overreactions to outside substances, like pollen, not attacks on the body's own cells.</p><p><b>Takeaway:</b> The thymus removes self-attacking T cells, guarding against autoimmunity.</p>"
+    },
+    {
+      "id": "li-13",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 1,
+      "stem": "A child has frequent sore throats, and the provider mentions the tonsils. Which explanation of the tonsils' role should the nurse give?",
+      "options": [
+        "They make the saliva that begins digesting food",
+        "They close the airway when the child swallows",
+        "They're lymphoid tissue that traps germs from the mouth and nose",
+        "They warm and moisten the air before it moves down into the lungs"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>tonsils</b> are lymphoid tissue at the back of the throat. They trap pathogens entering through the mouth and nose and start immune responses.</p><p><b>Closing the airway</b> is the tempting choice, since the tonsils sit near the throat, but that's the epiglottis's job.</p><p><b>Takeaway:</b> Tonsils guard the entrance of the throat as lymphoid tissue.</p>"
+    },
+    {
+      "id": "li-14",
+      "type": "dropdown",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A nurse is reviewing how T cells mature in the thymus. Complete the following sentence.",
+      "text": "In the thymus, {{0}} keeps the T cells that can recognize the body's own markers, and {{1}} destroys the T cells that would attack the body's own tissues.",
+      "blanks": [
+        {
+          "options": [
+            "clonal expansion",
+            "positive selection",
+            "phagocytosis"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "negative selection",
+            "opsonization",
+            "antigen presentation"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p><b>Positive selection</b> keeps T cells that can recognize the body's own markers, and <b>negative selection</b> removes those that react against the body's own tissues. Most developing T cells don't pass, and only those that pass both leave the thymus.</p><p><b>Clonal expansion</b> is the tempting choice for the first blank, since it also increases useful T cells, but it happens later, when mature T cells meet a pathogen.</p><p><b>Takeaway:</b> Positive selection keeps useful T cells; negative selection removes self-attacking ones.</p>"
+    },
+    {
+      "id": "li-17",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A client asks why an inflamed ankle is swollen. Which explanation should the nurse give?",
+      "options": [
+        "“The injured muscle swells up as it gets stronger during healing.”",
+        "“Blood vessels in the ankle tighten up, which traps extra blood and fluid in the area.”",
+        "“The ankle's lymph nodes fill with fluid to fight the injury.”",
+        "“Chemicals like histamine make the small vessels leaky, so fluid moves into the tissue.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>Inflammatory mediators, like <b>histamine</b> and kinins, increase the <b>permeability</b> of the small vessels, so fluid and proteins leak into the tissue, causing swelling. Widened vessels also bring redness and warmth.</p><p><b>Vessels tightening</b> is the tempting choice, since it sounds like a way to trap fluid, but inflammation widens the vessels; that's what makes the area red and warm.</p><p><b>Takeaway:</b> Inflammation: wider vessels bring redness and heat; leaky vessels bring swelling.</p>"
+    },
+    {
+      "id": "li-18",
+      "type": "order",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "Place the steps by which white blood cells leave the blood to reach an infection in order.",
+      "items": [
+        "Chemical signals attract white blood cells to the area",
+        "The cells roll along the inner wall of the vessel",
+        "The cells stick tightly to the vessel wall",
+        "The cells squeeze through the vessel wall into the tissue"
+      ],
+      "rationale": "<p>Leukocyte extravasation goes: <b>chemoattraction</b>, <b>rolling adhesion</b>, <b>tight adhesion</b>, and <b>transmigration</b> through the vessel wall into the tissue.</p><p>The tempting mistake is putting the tight adhesion first; cells have to slow down by rolling before they can stick firmly.</p><p><b>Takeaway:</b> Attract, roll, stick, squeeze through.</p>"
+    },
+    {
+      "id": "li-21",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client develops itchy, raised welts (hives) after eating shellfish. Which cells should the nurse recognize as the source of the histamine causing the itching and swelling?",
+      "options": [
+        "Red blood cells in the circulation",
+        "Mast cells in the skin and tissues",
+        "Platelets at the site of the welts",
+        "Neutrophils arriving from the blood"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Mast cells</b> are resident cells in the tissues that act as sentinels. When triggered, they release <b>histamine</b>, which makes vessels leaky and causes itching and swelling, as in hives.</p><p><b>Neutrophils</b> are the tempting choice, since they're the most common white cells, but they fight acute bacterial infection by phagocytosis; histamine comes from mast cells and basophils.</p><p><b>Takeaway:</b> Histamine comes from mast cells and basophils: itching, leaky vessels, and swelling.</p>"
+    },
+    {
+      "id": "li-22",
+      "type": "sata",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A nurse is assessing a client's wound for signs of acute inflammation. Which findings should the nurse expect?",
+      "options": [
+        "Redness",
+        "Coolness of the skin",
+        "Swelling",
+        "Numbness",
+        "Pain",
+        "Warmth"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>The signs of <b>acute inflammation</b> are redness and warmth (from widened vessels), swelling (from leaky vessels), pain (from mediators like kinins), and loss of function.</p><p><b>Numbness</b> is the tempting choice, since swelling can press on nerves, but inflammation typically causes pain, not numbness. Coolness is the opposite of what widened vessels bring.</p><p><b>Takeaway:</b> Inflammation: redness, heat, swelling, pain, and loss of function.</p>"
+    },
+    {
+      "id": "li-23",
+      "type": "matrix",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A nurse is reviewing the lymphocytes. For each function, click to specify the lymphocyte that carries it out.",
+      "rowHeader": "Function",
+      "columns": [
+        "Killer (CD8+) T cell",
+        "Helper (CD4+) T cell",
+        "B cell",
+        "Regulatory T cell"
+      ],
+      "rows": [
+        "Makes antibodies after it becomes a plasma cell",
+        "Directly kills virus-infected and cancer cells",
+        "Keeps immune cells from attacking the body's own cells",
+        "Activates B cells and killer T cells"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "rationale": "<p><b>B cells</b> become plasma cells that make antibodies (humoral immunity). <b>Killer (CD8+) T cells</b> directly kill infected and cancer cells. <b>Helper (CD4+) T cells</b> activate B cells and killer T cells. <b>Regulatory T cells</b> keep the immune system from attacking the body.</p><p>The tempting mistake is giving antibody production to the helper T cells, since they're needed for it, but they activate the B cells, which make the antibodies.</p><p><b>Takeaway:</b> B cells make antibodies; CD8+ T cells kill; CD4+ T cells help; regulatory T cells restrain.</p>"
+    },
+    {
+      "id": "li-24",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 1,
+      "stem": "Which cells in the lungs engulf inhaled dust and microbes?",
+      "options": [
+        "Alveolar macrophages",
+        "Kupffer cells",
+        "Microglia",
+        "Plasma cells"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Macrophages</b>, which develop from monocytes, have different names in different tissues: <b>alveolar macrophages</b> in the lungs, Kupffer cells in the liver, and microglia in the nervous system.</p><p><b>Kupffer cells</b> are the tempting choice, since they're also macrophages, but they live in the liver.</p><p><b>Takeaway:</b> Macrophages by location: alveolar (lungs), Kupffer (liver), microglia (nervous system).</p>"
+    },
+    {
+      "id": "li-25",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A nurse is reviewing dendritic cells. Which description of their role should the nurse give?",
+      "options": [
+        "They make antibodies that circulate in the blood and lymph",
+        "They release heparin to keep the blood from clotting at an infection site",
+        "They form scar tissue after an infection heals",
+        "They capture antigens in the tissues and carry them to the lymph nodes"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Dendritic cells</b> live in tissues that meet the outside world, like the skin, nose, lungs, and intestines. They capture antigens, <b>migrate to the lymph nodes</b>, and <b>present</b> them to T cells, linking innate and adaptive immunity.</p><p><b>Making antibodies</b> is the tempting choice, since dendritic cells start the specific response, but antibodies come from B cells (plasma cells).</p><p><b>Takeaway:</b> Dendritic cells are messengers: they carry antigens from the tissues to T cells in the nodes.</p>"
+    },
+    {
+      "id": "li-26",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client receiving chemotherapy has a very low neutrophil count. Which risk should the nurse focus on?",
+      "options": [
+        "Bleeding, since neutrophils help blood clot",
+        "Allergic reactions, since neutrophils control the release of histamine",
+        "Anemia, since neutrophils carry oxygen",
+        "Infection, since neutrophils are the first defense against bacteria"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Neutrophils</b>, 50% to 70% of white cells, are the first to reach an infection and destroy bacteria by phagocytosis. Too few means a high risk of <b>infection</b>.</p><p><b>Bleeding</b> is the tempting choice, since chemotherapy can lower platelets too, but platelets, not neutrophils, help blood clot.</p><p><b>Takeaway:</b> Low neutrophils mean high infection risk; low platelets mean bleeding risk.</p>"
+    },
+    {
+      "id": "li-28",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A client vaccinated against measles is exposed to the virus but doesn't get sick. Which explanation should the nurse give?",
+      "options": [
+        "The vaccine's antibodies stay in the blood for life",
+        "The vaccine made the client's innate defenses stronger and faster",
+        "Memory cells from the vaccine respond quickly to the virus",
+        "The virus can't enter the cells of a vaccinated person"
+      ],
+      "answer": 2,
+      "rationale": "<p>A vaccine trains the adaptive immune system, which keeps <b>memory B and T cells</b>. On exposure, they recognize the virus and respond quickly and strongly, before it can cause illness.</p><p><b>Antibodies staying for life</b> is the tempting choice, but antibodies fade over time; protection lasts because memory cells can quickly make more.</p><p><b>Takeaway:</b> Vaccines work through memory: a faster, stronger response the next time.</p>"
+    },
+    {
+      "id": "li-29",
+      "type": "matrix",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A nurse is reviewing the classes of antibodies (immunoglobulins). For each description, click to specify the antibody.",
+      "rowHeader": "Description",
+      "columns": [
+        "IgA",
+        "IgE",
+        "IgG",
+        "IgM"
+      ],
+      "rows": [
+        "Found in tears, saliva, and breast milk",
+        "The first antibody made after a new exposure",
+        "The most common antibody in the blood",
+        "Defends against parasites and triggers allergic reactions"
+      ],
+      "answer": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "rationale": "<p><b>IgA</b> protects body secretions, like tears, saliva, and colostrum. <b>IgM</b> is the first antibody made in a new response. <b>IgG</b> is the most common antibody in the blood, about 75%. <b>IgE</b> defends against parasites and drives allergic reactions.</p><p>The tempting mistake is calling <b>IgG</b> the first antibody, since it's the most common, but IgM comes first and IgG follows.</p><p><b>Takeaway:</b> IgA in secretions, IgM first, IgG most common, IgE for parasites and allergy.</p>"
+    },
+    {
+      "id": "li-30",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 1,
+      "stem": "A nursing student asks the difference between an antigen and an antibody. Which response is accurate?",
+      "options": [
+        "“An antigen is a protein made by B cells, and an antibody is a marker found on a germ.”",
+        "“An antigen is a marker on a germ or cell; an antibody is a protein that binds it.”",
+        "“Antigens and antibodies are two names for the same protective protein.”",
+        "“An antigen is a type of white blood cell; an antibody is what it releases.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>An <b>antigen</b> is a marker, found on viruses, bacteria, tumors, and the body's own cells, that the immune system recognizes. An <b>antibody</b> (immunoglobulin) is a protective protein that binds to a specific antigen.</p><p><b>Reversing the two</b> is the tempting choice, since the words sound alike; remember that the <b>anti</b>body acts <b>against</b> the antigen.</p><p><b>Takeaway:</b> Antigen: the marker. Antibody: the protein that binds it.</p>"
+    },
+    {
+      "id": "li-31",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 3,
+      "stem": "A client asks, “Why did I get so sick from a new virus before my body fought it off?” Which response should the nurse give?",
+      "options": [
+        "“Your body had no defenses against it until you took a medicine for it.”",
+        "“The virus shut down your immune system for the whole first week of the illness.”",
+        "“Your body's specific defenses take 4 to 7 days to build up against a new germ.”",
+        "“Your body starts fighting a virus after you've had a fever for several days.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>innate</b> immune system responds right away, but the <b>adaptive</b> system, which targets a specific germ, takes about <b>4 to 7 days</b> to mount a strong response the first time. After that, memory cells make later responses faster.</p><p><b>No defenses until the medicine</b> is the tempting choice, since the client felt so sick, but innate defenses were working from the start; the specific response just takes days.</p><p><b>Takeaway:</b> First exposure: innate right away, adaptive in about 4 to 7 days. Later exposures: memory makes it fast.</p>"
+    },
+    {
+      "id": "li-37",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "A client with severe influenza develops a high fever, widespread inflammation, and failing organs. The provider describes a cytokine storm. Which explanation should the nurse give?",
+      "options": [
+        "The immune system releases cytokines out of control, harming its own tissues",
+        "The virus releases toxins that keep the client's cytokines from working normally",
+        "The client's immune system has stopped producing cytokines",
+        "The client's antibodies are attacking the influenza vaccine"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>cytokine storm</b> (hypercytokinemia) is an <b>uncontrolled release of cytokines</b> by the immune system. The inflammation it causes can damage organs; it has been seen in severe influenza, COVID-19, and acute pancreatitis.</p><p><b>Stopped producing cytokines</b> is the tempting choice, since the client is so sick, but the problem is too much of the immune response, not too little.</p><p><b>Takeaway:</b> A cytokine storm is the immune system overreacting, harming the body it's protecting.</p>"
+    },
+    {
+      "id": "li-44",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client with HIV asks why the infection makes it hard to fight off other germs. Which explanation should the nurse give?",
+      "options": [
+        "“HIV infects and destroys helper T cells, which direct the rest of the immune system.”",
+        "“HIV destroys your red blood cells, so less oxygen reaches the immune cells.”",
+        "“HIV blocks your skin from acting as a barrier against germs.”",
+        "“HIV makes your body produce too many antibodies, which slowly wear out the immune system.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>HIV invades <b>helper (CD4+) T cells</b>. As their number falls, B cells and killer T cells aren't activated well, and cell-mediated immunity weakens, so other infections take hold.</p><p><b>Too many antibodies</b> is the tempting choice, since the immune system is clearly involved, but the problem is the loss of helper T cells that coordinate the response.</p><p><b>Takeaway:</b> HIV destroys CD4+ helper T cells, which weakens the whole adaptive response.</p>"
+    }
+  ]
+}

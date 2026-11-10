@@ -1,31 +1,16 @@
 {
   "id": "nu1120-exam-4-respiratory-system",
   "title": "The Respiratory System",
-  "description": "Week 11: the upper and lower airways, the lungs and pleura, the breathing muscles and their nerves, ventilation, gas exchange, and oxygen transport, pulmonary function tests, the respiratory history and lung exam, common respiratory disorders, and influenza with infection control.",
+  "description": "Week 11, matched to the instructor's Exam 4 study guide: the upper and lower airways, the alveoli and the lobes, the breathing muscles and the nervous control of breathing, ventilation, respiration, and perfusion, risk factors and prevention, and respiratory distress.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 31.5,
   "defaultCount": 25,
-  "cases": {
-    "outbreak": {
-      "intro": "A nurse at a long-term care facility is caring for an 81-year-old resident during an outbreak of influenza A on the unit.",
-      "tabs": [
-        {
-          "title": "Nurses' Notes",
-          "html": "<h4>Nurses' Notes</h4><p><b>Day 1, 0900:</b> Rapid influenza test positive for influenza A. Reports muscle aches, a sore throat, and a headache. Dry cough. Moved to a private room on droplet precautions. Provider notified; antiviral medication prescribed.</p><p><b>Day 4, 0800:</b> Resident is newly confused about the day and place, and is coughing up thick, rust-colored sputum. Reports a sharp pain in the right lower chest when breathing in. Ate 25% of breakfast. Respirations labored. Right lower posterior chest: dull to percussion, increased tactile fremitus, bronchial breath sounds and crackles. Left lung: vesicular breath sounds. Lips pink.</p>"
-        },
-        {
-          "title": "Vital Signs",
-          "html": "<h4>Vital Signs</h4><table><thead><tr><th>Vital sign</th><th>Day 1, 0900</th><th>Day 4, 0800</th></tr></thead><tbody><tr><td>Temperature</td><td>38.6&nbsp;°C (101.5&nbsp;°F)</td><td>39.3&nbsp;°C (102.7&nbsp;°F)</td></tr><tr><td>Heart rate</td><td>96/min</td><td>118/min</td></tr><tr><td>Respiratory rate</td><td>20/min</td><td>30/min</td></tr><tr><td>Blood pressure</td><td>128/76&nbsp;mm&nbsp;Hg</td><td>104/62&nbsp;mm&nbsp;Hg</td></tr><tr><td>Oxygen saturation</td><td>95% on room air</td><td>88% on room air</td></tr></tbody></table>"
-        }
-      ]
-    }
-  },
   "questions": [
     {
       "id": "rs-01",
       "type": "mc",
-      "topic": "Upper airway",
+      "topic": "Upper respiratory tract",
       "level": 2,
       "stem": "A client with a head cold says, “My voice sounds muffled and flat, and my cheeks and forehead ache.” Which structures should the nurse suspect are swollen?",
       "options": ["The paranasal sinuses, which help give the voice its resonance", "The vocal folds of the larynx, which vibrate to make the sound of the voice", "The turbinates, which make the air swirl so that it's warmed and filtered", "The epiglottis, which closes over the larynx during swallowing"],
@@ -35,7 +20,7 @@
     {
       "id": "rs-02",
       "type": "mc",
-      "topic": "Upper airway",
+      "topic": "Upper respiratory tract",
       "level": 2,
       "stem": "During an oral exam, a nurse sees swollen tonsils at the back of the mouth, just behind the arch at the back of the oral cavity. Which part of the pharynx is the nurse looking at?",
       "options": ["The nasopharynx, behind the nasal cavity and above the palate", "The hypopharynx, which leads into both the larynx and the esophagus", "The oropharynx, between the palate and the hyoid bone", "The larynx, where the vocal folds form the glottic opening"],
@@ -45,7 +30,7 @@
     {
       "id": "rs-03",
       "type": "mc",
-      "topic": "Upper airway",
+      "topic": "Upper respiratory tract",
       "level": 2,
       "stem": "A client recovering from a stroke coughs and sputters whenever drinking thin liquids. Which structure should the nurse suspect isn't sealing off the airway in time during swallowing?",
       "options": ["The soft palate, which rises to close off the nasal cavity", "The thyroid cartilage, the largest cartilage at the front of the neck", "The cricoid cartilage, the ring at the bottom of the larynx", "The epiglottis, which folds down over the opening of the larynx"],
@@ -55,7 +40,7 @@
     {
       "id": "rs-04",
       "type": "hotspot",
-      "topic": "Upper airway",
+      "topic": "Upper respiratory tract",
       "level": 3,
       "stem": "A few minutes after a bee sting, a client develops a loud, high-pitched sound on every breath in, which the nurse can hear without a stethoscope. Click the structure where the airway is most likely narrowed.",
       "image": "img/respiratory-front.svg",
@@ -66,7 +51,7 @@
     {
       "id": "rs-05",
       "type": "hotspot",
-      "topic": "Lower airway and lungs",
+      "topic": "Lower respiratory tract",
       "level": 2,
       "stem": "An adult inhales a piece of peanut while laughing, and it passes through the larynx and trachea. Click the airway where it most likely lodges.",
       "image": "img/respiratory-front.svg",
@@ -77,7 +62,7 @@
     {
       "id": "rs-06",
       "type": "hotspot",
-      "topic": "Lower airway and lungs",
+      "topic": "Lower respiratory tract",
       "level": 3,
       "stem": "A client who was sitting upright vomited and aspirated some of it. Three days later, the nurse hears crackles over one lobe. Click the lobe most likely affected.",
       "image": "img/respiratory-front.svg",
@@ -88,7 +73,7 @@
     {
       "id": "rs-07",
       "type": "hotspot",
-      "topic": "Lower airway and lungs",
+      "topic": "Lower respiratory tract",
       "level": 3,
       "stem": "A nurse auscultates a client's back and hears clear breath sounds over every area. A chest x-ray, however, shows pneumonia in the one lobe that can be heard only from the front and the right side of the chest. Click that lobe.",
       "image": "img/respiratory-front.svg",
@@ -99,7 +84,7 @@
     {
       "id": "rs-08",
       "type": "matrix",
-      "topic": "Lower airway and lungs",
+      "topic": "Lower respiratory tract",
       "level": 1,
       "stem": "A nurse is comparing the two lungs. For each feature, specify the lung it describes.",
       "rowHeader": "Feature",
@@ -109,19 +94,9 @@
       "rationale": "<p>The <b>right lung</b> has three lobes (upper, middle, lower), separated by the horizontal and oblique fissures, and its main bronchus is wider, shorter, and more vertical. The <b>left lung</b> has two lobes, separated only by the oblique fissure, and a <b>cardiac notch</b> that makes room for the heart. <b>Both</b> lungs are covered by visceral pleura; the parietal pleura lines the chest wall.</p><p>The bronchus is the row most often missed: the right one is the more vertical, which is why aspiration goes right.</p><p><b>Takeaway:</b> Right: 3 lobes, 2 fissures, the vertical bronchus. Left: 2 lobes, 1 fissure, the cardiac notch.</p>"
     },
     {
-      "id": "rs-09",
-      "type": "mc",
-      "topic": "Lower airway and lungs",
-      "level": 3,
-      "stem": "A client's chest x-ray shows fluid collecting between the visceral and parietal pleura at the base of the left lung. Which findings should the nurse expect over that area?",
-      "options": ["Dull percussion, and decreased tactile fremitus", "Dull percussion, and increased tactile fremitus with crackles", "Hyperresonant percussion, and decreased tactile fremitus", "Resonant percussion, and soft, low-pitched vesicular breath sounds"],
-      "answer": 0,
-      "rationale": "<p>Fluid in the pleural space (a <b>pleural effusion</b>) sounds <b>dull</b> when percussed, and it separates the lung from the chest wall, which damps the vibrations of the voice: <b>tactile fremitus decreases</b>.</p><p><b>Dull percussion with increased fremitus</b> is the tempting choice, since the dullness is right, but fremitus increases only when the lung tissue itself is denser, as in pneumonia. <b>Hyperresonance</b> means air in the pleural space (a pneumothorax), and resonance with vesicular sounds is normal.</p><p><b>Takeaway:</b> Fremitus goes up with denser lung tissue (consolidation), and down when something separates the lung from the chest wall (fluid or air).</p>"
-    },
-    {
       "id": "rs-10",
       "type": "mc",
-      "topic": "Breathing muscles and nerves",
+      "topic": "Breathing muscles and nervous control",
       "level": 3,
       "stem": "Nerve damage at the C3 to C5 level has paralyzed a client's diaphragm. Which finding should the nurse expect?",
       "options": ["Breathing that stays normal at rest, since the intercostal muscles do most of the work", "Rapid, shallow breathing, with the neck muscles tightening on each breath", "Slow, deep breathing, since each breath takes longer to draw in", "Labored breathing out, while breathing in stays easy"],
@@ -131,7 +106,7 @@
     {
       "id": "rs-11",
       "type": "mc",
-      "topic": "Breathing muscles and nerves",
+      "topic": "Respiratory distress",
       "level": 2,
       "stem": "During an assessment, a client sits leaning forward with both hands on the knees, and the muscles of the neck tighten with each breath. How should the nurse interpret these findings?",
       "options": ["The client is working hard to breathe, and is using the accessory muscles", "The client is in a position of comfort that doesn't point to a breathing problem", "The neck muscles are tense from coughing, not from the work of breathing", "The client is guarding against back pain, so the nurse should assess the spine"],
@@ -141,7 +116,7 @@
     {
       "id": "rs-12",
       "type": "dropdown",
-      "topic": "Breathing muscles and nerves",
+      "topic": "Breathing muscles and nervous control",
       "level": 2,
       "stem": "Complete the following sentence about breathing in.",
       "text": "During inspiration, the diaphragm {{0}} and moves {{1}}, which {{2}} the volume of the chest, so air flows into the lungs.",
@@ -153,29 +128,9 @@
       "rationale": "<p>The <b>diaphragm</b> is the main muscle of inspiration and forms the floor of the chest. When it <b>contracts</b>, it flattens and moves <b>downward</b>, which <b>increases</b> the volume of the chest, and air flows in. When it relaxes, it rises again, and air flows out.</p><p>The trap is picturing the diaphragm pushing up to breathe in; it's the other way around.</p><p><b>Takeaway:</b> Breathing in: the diaphragm contracts and moves down, and the chest gets bigger.</p>"
     },
     {
-      "id": "rs-13",
-      "type": "mc",
-      "topic": "Breathing muscles and nerves",
-      "level": 2,
-      "stem": "A client with emphysema breathes out slowly through pursed lips. What does this breathing pattern do for the client?",
-      "options": ["It pulls more oxygen into the lungs with each breath in", "It strengthens the diaphragm so that it can push the air out", "It narrows the airways to keep dust out of the alveoli", "It keeps the airways open longer, so trapped air can leave"],
-      "answer": 3,
-      "rationale": "<p>In <b>emphysema</b>, the alveoli lose their elasticity, so air gets <b>trapped</b> and the small airways collapse when the client breathes out. Breathing out slowly through <b>pursed lips</b> keeps a little pressure in the airways, holding them open longer so more of the trapped air leaves.</p><p><b>Pulling in more oxygen</b> is the tempting choice, since the client is short of breath, but pursed lips act on breathing <b>out</b>. They don't strengthen the diaphragm or filter dust.</p><p><b>Takeaway:</b> Emphysema traps air; pursed-lip breathing helps get it out.</p>"
-    },
-    {
-      "id": "rs-14",
-      "type": "mc",
-      "topic": "Gas exchange and oxygen transport",
-      "level": 3,
-      "stem": "A client with severe anemia (hemoglobin 7 g/dL) has an oxygen saturation of 98% but feels short of breath and tired. Which explanation should the nurse give?",
-      "options": ["A saturation of 98% means the tissues are getting enough oxygen, so the symptoms have another cause", "Most oxygen travels dissolved in the plasma, so a low hemoglobin has little effect on oxygen delivery", "The saturation shows how full the hemoglobin is, but with so little hemoglobin, the blood carries less oxygen", "A pulse oximeter can't read a hemoglobin this low, so the 98% is probably wrong"],
-      "answer": 2,
-      "rationale": "<p>Oxygen content depends mostly on <b>hemoglobin</b>: CaO₂ = 1.34 × Hgb × (SaO₂ ÷ 100) + 0.003 × PaO₂. Saturation is only the <b>percentage</b> of hemoglobin carrying oxygen. With little hemoglobin, a full 98% still adds up to much less oxygen for the tissues.</p><p><b>“98% means enough oxygen”</b> is the tempting choice, since saturation is the number nurses watch most, but it says nothing about how much hemoglobin there is. Dissolved oxygen (0.003 × PaO₂) is only a tiny part of the total, and a normal saturation reading isn't an error.</p><p><b>Takeaway:</b> Oxygen content = mostly hemoglobin × saturation. A normal SpO₂ can hide low oxygen delivery in anemia.</p>"
-    },
-    {
       "id": "rs-15",
       "type": "mc",
-      "topic": "Gas exchange and oxygen transport",
+      "topic": "Lower respiratory tract",
       "level": 2,
       "stem": "A newborn born at 28 weeks has alveoli that collapse at the end of each breath. Which cells are most likely not making enough of their secretion yet?",
       "options": ["Type I pneumocytes, which line the alveoli for gas exchange", "Type II pneumocytes, which secrete surfactant", "Alveolar macrophages, which defend against pathogens and irritants", "Ciliated cells of the trachea, which move mucus toward the throat"],
@@ -185,7 +140,7 @@
     {
       "id": "rs-16",
       "type": "mc",
-      "topic": "Gas exchange and oxygen transport",
+      "topic": "Functions of the respiratory system",
       "level": 3,
       "stem": "A client's respiratory rate is 18/min, and the chest rises fully and evenly with each breath, but the oxygen saturation keeps falling as fluid builds up in the alveoli. Which process is most impaired?",
       "options": ["Ventilation, the movement of air into and out of the alveoli", "The nerves' control of the breathing muscles", "Perfusion, the flow of blood through the pulmonary arteries", "Gas exchange between the alveoli and the blood (respiration)"],
@@ -195,7 +150,7 @@
     {
       "id": "rs-17",
       "type": "mc",
-      "topic": "Gas exchange and oxygen transport",
+      "topic": "Functions of the respiratory system",
       "level": 2,
       "stem": "A blood clot blocks blood flow to part of a client's lung (a pulmonary embolism), but air still moves in and out of those alveoli. Which describes the affected area?",
       "options": ["Ventilated but not perfused, so no gas exchange happens there", "Perfused but not ventilated, so blood passes through without picking up oxygen", "Neither ventilated nor perfused, because the alveoli have collapsed", "Ventilated and perfused normally, since the clot is in a blood vessel"],
@@ -203,21 +158,9 @@
       "rationale": "<p>Gas exchange needs both <b>ventilation</b> (air reaching the alveoli) and <b>perfusion</b> (blood reaching their capillaries). A clot blocks the blood, so the area is <b>ventilated but not perfused</b>: air comes and goes without any exchange, a ventilation-perfusion mismatch.</p><p><b>Perfused but not ventilated</b> is the tempting choice, since it's the other common mismatch, but that's the pattern of blocked or fluid-filled alveoli, as in pneumonia. Here the air moves; the blood doesn't.</p><p><b>Takeaway:</b> Clot: air without blood. Pneumonia or a mucus plug: blood without air. Either way, oxygenation suffers.</p>"
     },
     {
-      "id": "rs-18",
-      "type": "matrix",
-      "topic": "Gas exchange and oxygen transport",
-      "level": 3,
-      "stem": "A nurse is reviewing what determines how much oxygen the blood carries. For each change, specify its effect on the blood's oxygen content.",
-      "rowHeader": "Change",
-      "columns": ["Raises it", "Lowers it", "Barely changes it"],
-      "rows": ["Hemoglobin falls from 14 to 8 g/dL, with the oxygen saturation still 98%", "Oxygen saturation falls from 98% to 80%, with a normal hemoglobin", "Hemoglobin rises from 9 to 14 g/dL after a blood transfusion", "PaO₂ rises from 95 to 110 mm Hg, with the saturation already 99%", "Supplemental oxygen raises the saturation from 84% to 95%"],
-      "answer": [1, 1, 0, 2, 0],
-      "rationale": "<p>Oxygen content (CaO₂ = 1.34 × Hgb × SaO₂ + 0.003 × PaO₂) depends mostly on <b>hemoglobin</b> and <b>saturation</b>. A falling hemoglobin or saturation lowers it, and a rising one (after a transfusion, or with oxygen for a low saturation) raises it.</p><p>The <b>PaO₂</b> row is the trap: a higher PaO₂ looks like more oxygen, but when the hemoglobin is already almost fully saturated, the only gain is dissolved oxygen, which is multiplied by just 0.003, so the content barely changes.</p><p><b>Takeaway:</b> To raise oxygen content: more hemoglobin, or a higher saturation. PaO₂ alone adds little once hemoglobin is full.</p>"
-    },
-    {
       "id": "rs-19",
       "type": "mc",
-      "topic": "Breathing muscles and nerves",
+      "topic": "Breathing muscles and nervous control",
       "level": 2,
       "stem": "A client with asthma uses an inhaler that acts like the sympathetic nervous system on the airways. Which effect should the nurse expect?",
       "options": ["The airways narrow, and the glands make more mucus", "The diaphragm contracts harder, so each breath is deeper", "The airways widen, and the wheezing eases", "The heart rate slows, so the client feels calmer"],
@@ -227,7 +170,7 @@
     {
       "id": "rs-20",
       "type": "mc",
-      "topic": "Respiratory history",
+      "topic": "Breathing muscles and nervous control",
       "level": 3,
       "stem": "A client who has asthma is prescribed propranolol, a beta blocker, for high blood pressure. What should the nurse do?",
       "options": ["Give the first dose, and teach the client to keep the rescue inhaler close by", "Check with the prescriber, since beta blockers can narrow the airways", "Give it with food, since beta blockers irritate the stomach and set off coughing", "Hold the client's asthma inhaler, and ask the prescriber whether it can still be used"],
@@ -235,80 +178,9 @@
       "rationale": "<p><b>Beta blockers</b> (and NSAIDs) can cause <b>bronchoconstriction</b>, which in a client with asthma can set off an attack. The nurse checks with the prescriber before giving it.</p><p><b>Giving it with the rescue inhaler close by</b> is the tempting choice, since it sounds like a safe compromise, but it plans for an attack instead of preventing one. Food has nothing to do with the problem, and holding the client's asthma inhaler would make it worse; the question for the prescriber is about the beta blocker.</p><p><b>Takeaway:</b> Drug history for breathing problems: beta blockers and NSAIDs (bronchoconstriction), ACE inhibitors (dry cough), estrogen (clots).</p>"
     },
     {
-      "id": "rs-21",
-      "type": "dragdrop",
-      "topic": "Pulmonary function tests",
-      "level": 2,
-      "stem": "A nurse is reviewing lung volumes and capacities. Complete the following sentences.",
-      "text": "The {{0}} is the air left in the lungs after a maximal breath out, which spirometry can't measure. Adding it to the vital capacity gives the {{1}}. The air breathed in and out in a normal breath is the {{2}}.",
-      "tokens": ["residual volume", "tidal volume", "total lung capacity", "functional residual capacity", "expiratory reserve volume", "inspiratory capacity"],
-      "answer": [0, 2, 1],
-      "rationale": "<p>The <b>residual volume</b> stays in the lungs even after a maximal exhalation, so spirometry, which measures air moved, can't measure it. <b>Vital capacity + residual volume = total lung capacity</b>, the air in the lungs after a maximal breath in. A normal breath is the <b>tidal volume</b>.</p><p>The <b>functional residual capacity</b> is the tempting token for the first blank, but it's the air left after a <b>normal</b> breath out (the expiratory reserve volume plus the residual volume).</p><p><b>Takeaway:</b> Residual volume: left after a maximal exhale, can't be measured by spirometry. TLC = VC + RV.</p>"
-    },
-    {
-      "id": "rs-22",
-      "type": "fill",
-      "topic": "Pulmonary function tests",
-      "level": 2,
-      "vars": {"irv": [2800, 3000, 3100], "tv": [400, 500, 600], "erv": [1000, 1100, 1200], "rv": [1100, 1200]},
-      "stem": "A client's spirometry shows an inspiratory reserve volume of {irv} mL, a tidal volume of {tv} mL, and an expiratory reserve volume of {erv} mL. The residual volume, measured another way, is {rv} mL. What vital capacity should the nurse record?",
-      "answer": "=irv + tv + erv",
-      "decimals": 0,
-      "unit": "mL",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>Vital capacity is the most air the client can breathe out after a maximal breath in: the inspiratory reserve volume + the tidal volume + the expiratory reserve volume = {irv} + {tv} + {erv} = <b>{answer} mL</b>.</p><p>The residual volume is the trap: it stays in the lungs, so it isn't part of the vital capacity. Adding it ({=irv + tv + erv + rv} mL) gives the total lung capacity instead.</p><p><b>Takeaway:</b> Vital capacity = IRV + TV + ERV. Total lung capacity = vital capacity + residual volume.</p>"
-    },
-    {
-      "id": "rs-23",
-      "type": "fill",
-      "topic": "Pulmonary function tests",
-      "level": 3,
-      "vars": {"fev1": [1.6, 1.8, 2.1, 2.4], "fvc": [3.2, 3.5, 3.8]},
-      "stem": "A client's spirometry shows a forced expiratory volume in 1 second (FEV1) of {fev1} L and a forced vital capacity (FVC) of {fvc} L. What FEV1/FVC ratio, as a percentage, should the nurse record?",
-      "answer": "=fev1 / fvc * 100",
-      "decimals": 0,
-      "unit": "%",
-      "round": "to the nearest whole number",
-      "strictZeros": true,
-      "rationale": "<p>FEV1/FVC = {fev1} L ÷ {fvc} L × 100 = {=round(fev1 / fvc * 100, 2)}%, which rounds to <b>{answer}%</b>.</p><p>Reading it: in <b>obstructive</b> disease (asthma, COPD), air can't get out quickly, so the FEV1 falls much more than the FVC and the ratio drops well below normal. In <b>restrictive</b> disease, both fall, so the ratio stays normal or rises. The usual mistake is dividing the other way ({=round(fvc / fev1 * 100)}%).</p><p><b>Takeaway:</b> FEV1/FVC = FEV1 ÷ FVC × 100. A ratio well below normal points to obstruction.</p>"
-    },
-    {
-      "id": "rs-24",
-      "type": "mc",
-      "topic": "Pulmonary function tests",
-      "level": 3,
-      "stem": "A client's spirometry shows a low forced vital capacity and a low FEV1, with an FEV1/FVC ratio higher than normal. Which condition fits this pattern?",
-      "options": ["Asthma, with airways that narrow and swell in attacks", "Emphysema, with alveoli that lose their elasticity", "Pulmonary fibrosis, with scarred, stiffened lung tissue", "Chronic bronchitis, with inflamed, mucus-filled airways"],
-      "answer": 2,
-      "rationale": "<p>This is a <b>restrictive</b> pattern: the lungs can't expand fully, so the FVC falls even more than the FEV1, and the ratio stays normal or rises. <b>Idiopathic pulmonary fibrosis</b>, scarring that stiffens the lung tissue, is a restrictive disease.</p><p><b>Asthma</b> is the tempting choice, since its FEV1 is low too, but asthma, emphysema, and chronic bronchitis are <b>obstructive</b>: air can't get out, so the FEV1/FVC ratio drops sharply.</p><p><b>Takeaway:</b> Obstructive: ratio down (air can't get out). Restrictive: ratio normal or up (the lungs can't fill).</p>"
-    },
-    {
-      "id": "rs-25",
-      "type": "mc",
-      "topic": "Pulmonary function tests",
-      "level": 2,
-      "stem": "A nurse is preparing a client for a methacholine challenge test to check for asthma. Which item should the nurse have ready at the bedside before the test starts?",
-      "options": ["An incentive spirometer, for deep breathing after the test", "A rapid-acting bronchodilator, such as albuterol", "An epinephrine auto-injector, for a possible allergic reaction", "A sterile cup, for a sputum specimen during the test"],
-      "answer": 1,
-      "rationale": "<p>A <b>methacholine challenge</b> (bronchoprovocation) deliberately narrows the airways to see how reactive they are, so <b>severe bronchospasm</b> can happen. A <b>rapid-acting beta-agonist, like albuterol</b>, must be at hand, along with resuscitation equipment, and the FEV1 must be back to baseline before the client leaves.</p><p><b>An epinephrine auto-injector</b> is the tempting choice, since a strong reaction is expected, but the reaction is bronchospasm, not an allergy, and albuterol reverses it. An incentive spirometer and a sputum cup aren't part of the test's safety plan.</p><p><b>Takeaway:</b> Bronchoprovocation tests provoke bronchospasm on purpose: albuterol ready, and FEV1 back to baseline before the client leaves.</p>"
-    },
-    {
-      "id": "rs-26",
-      "type": "matrix",
-      "topic": "Pulmonary function tests",
-      "level": 1,
-      "stem": "For each condition, specify whether it is an obstructive or a restrictive lung disease.",
-      "rowHeader": "Condition",
-      "columns": ["Obstructive", "Restrictive"],
-      "rows": ["Asthma", "Emphysema", "Idiopathic pulmonary fibrosis", "Chronic bronchitis", "Sarcoidosis", "Pneumoconiosis (black lung)"],
-      "answer": [0, 0, 1, 0, 1, 1],
-      "rationale": "<p><b>Obstructive</b> diseases make it hard to get air <b>out</b>: asthma, and the two parts of COPD, emphysema and chronic bronchitis. <b>Restrictive</b> diseases keep the lungs from <b>expanding</b>: idiopathic pulmonary fibrosis, pneumoconiosis (dust diseases like black lung), and sarcoidosis.</p><p>The trap is calling every chronic, worsening disease obstructive; the question is whether the trouble is emptying the lungs or filling them.</p><p><b>Takeaway:</b> Obstructive: asthma, emphysema, chronic bronchitis. Restrictive: pulmonary fibrosis, pneumoconiosis, sarcoidosis.</p>"
-    },
-    {
       "id": "rs-27",
       "type": "fill",
-      "topic": "Respiratory history",
+      "topic": "Risk factors and prevention",
       "level": 2,
       "vars": {"cig": [10, 20, 30, 40], "years": [6, 12, 20, 25, 30]},
       "stem": "A client has smoked {cig} cigarettes a day for {years} years. How many pack-years is this?",
@@ -320,19 +192,9 @@
       "rationale": "<p>A pack is 20 cigarettes, so {cig} cigarettes a day is {=cig / 20} pack(s) a day. Pack-years = packs a day × years smoked = {=cig / 20} × {years} = <b>{answer}</b>.</p><p>The usual mistake is multiplying the cigarettes by the years ({=cig * years}), which leaves out turning cigarettes into packs.</p><p><b>Takeaway:</b> Pack-years = (cigarettes a day ÷ 20) × years.</p>"
     },
     {
-      "id": "rs-28",
-      "type": "sata",
-      "topic": "Respiratory history",
-      "level": 3,
-      "stem": "A client reports new wheezing and chest tightness. Which medications in the client's history should the nurse report as possible causes?",
-      "options": ["Propranolol, a beta blocker", "Lisinopril, an ACE inhibitor", "Ibuprofen, an NSAID", "Amiodarone, an antiarrhythmic", "Acetaminophen, for headaches", "An estrogen-containing birth control pill"],
-      "answer": [0, 2],
-      "rationale": "<p>Wheezing and tightness mean narrowed airways. <b>Beta blockers</b> and <b>NSAIDs</b> can cause <b>bronchoconstriction</b>, so both are worth reporting.</p><p><b>Lisinopril</b> is the tempting one, since ACE inhibitors are known for respiratory side effects, but theirs is a <b>dry cough</b>, not wheezing. <b>Amiodarone</b> can cause lung disease (interstitial lung disease, pleural effusion) over time, <b>estrogen</b> raises the risk of a pulmonary embolism, and acetaminophen doesn't affect the airways.</p><p><b>Takeaway:</b> Wheezing: beta blockers and NSAIDs. Dry cough: ACE inhibitors. Clots: estrogen. Lung scarring: amiodarone and methotrexate.</p>"
-    },
-    {
       "id": "rs-29",
       "type": "mc",
-      "topic": "Respiratory history",
+      "topic": "Risk factors and prevention",
       "level": 2,
       "stem": "A client who worked in a shipyard for 30 years has had worsening shortness of breath for a year. Given this occupational history, which condition should the nurse consider?",
       "options": ["Coal workers' pneumoconiosis (black lung)", "Byssinosis, from cotton and other fabric dust", "Farmer's lung, an allergic reaction to moldy hay", "Asbestosis, from asbestos fibers"],
@@ -342,7 +204,7 @@
     {
       "id": "rs-30",
       "type": "mc",
-      "topic": "Respiratory history",
+      "topic": "Risk factors and prevention",
       "level": 2,
       "stem": "A client has sudden shortness of breath and chest pain. Which finding in the client's history should the nurse report as raising the risk of a pulmonary embolism?",
       "options": ["Has hay fever each spring", "Takes an estrogen-containing birth control pill", "Had whooping cough as a child", "Takes lisinopril for high blood pressure"],
@@ -350,51 +212,9 @@
       "rationale": "<p>Medicines that contain <b>estrogen</b> raise the risk of blood clots, and so of a <b>pulmonary embolism</b>, along with recent travel, immobility, surgery, cancer, and pregnancy.</p><p><b>Lisinopril</b> is the tempting choice, since it's a medication with respiratory side effects, but its side effect is a dry cough, not clots. Hay fever and childhood whooping cough belong in the respiratory history but don't point to an embolism.</p><p><b>Takeaway:</b> Clot risks in a respiratory history: estrogen, travel, immobility, surgery, cancer, pregnancy.</p>"
     },
     {
-      "id": "rs-31",
-      "type": "mc",
-      "topic": "Respiratory history",
-      "level": 2,
-      "stem": "A client says, “I've been coughing up streaks of blood for two days.” Which part of the medication history should the nurse ask about first?",
-      "options": ["Whether the client uses an inhaled corticosteroid", "Whether the client takes an ACE inhibitor for blood pressure", "Whether the client takes warfarin, or aspirin", "Whether the client recently finished a course of antibiotics"],
-      "answer": 2,
-      "rationale": "<p>Coughing up blood (<b>hemoptysis</b>) can be made worse, or even caused, by medicines that affect clotting: <b>anticoagulants like warfarin</b>, and <b>aspirin</b>.</p><p><b>An ACE inhibitor</b> is the tempting choice, since the client is coughing, but ACE inhibitors cause a dry cough, not bleeding. Inhaled corticosteroids and recent antibiotics belong in the history but don't explain the blood.</p><p><b>Takeaway:</b> Hemoptysis: ask about anticoagulants and aspirin.</p>"
-    },
-    {
-      "id": "rs-32",
-      "type": "matrix",
-      "topic": "Physical assessment of the lungs",
-      "level": 3,
-      "stem": "For each set of findings over one area of the chest, specify the condition it most likely shows.",
-      "rowHeader": "Findings",
-      "columns": ["Pneumonia (consolidation)", "Pneumothorax", "Pleural effusion"],
-      "rows": ["Dull percussion, increased tactile fremitus, and crackles", "Hyperresonant percussion, decreased tactile fremitus, and absent breath sounds", "Dull percussion, decreased tactile fremitus, and decreased breath sounds", "Bronchial breath sounds and egophony where vesicular sounds are expected"],
-      "answer": [0, 1, 2, 0],
-      "rationale": "<p><b>Pneumonia</b> fills the alveoli, so the lung is denser: dull percussion, <b>increased</b> fremitus, crackles, and bronchial breath sounds with egophony. A <b>pneumothorax</b> puts air in the pleural space: hyperresonance, decreased fremitus, and absent or decreased breath sounds. A <b>pleural effusion</b> puts fluid there: dullness with <b>decreased</b> fremitus and breath sounds.</p><p>The effusion row is the trap: it's dull like pneumonia, but fluid outside the lung damps the vibrations instead of carrying them.</p><p><b>Takeaway:</b> Dull + fremitus up = consolidation. Dull + fremitus down = fluid. Hyperresonant + fremitus down = air.</p>"
-    },
-    {
-      "id": "rs-33",
-      "type": "mc",
-      "topic": "Physical assessment of the lungs",
-      "level": 2,
-      "stem": "A nurse places both hands on a client's back to assess tactile fremitus. Which instruction should the nurse give the client?",
-      "options": ["“Breathe in and out through your mouth, a little deeper than normal.”", "“Take a deep breath, and hold it until I tell you to let it out.”", "“Cough each time I move my hands to a new spot.”", "“Say ‘ninety-nine’ each time I move my hands.”"],
-      "answer": 3,
-      "rationale": "<p>Tactile fremitus is the vibration of the voice felt through the chest wall, so the client <b>speaks</b> (“99”) while the nurse's hands move from side to side and top to bottom.</p><p><b>Breathing through the mouth</b> is the tempting choice, since it's the instruction for auscultation, but fremitus needs the voice. Holding a breath or coughing makes no voice vibration to feel.</p><p><b>Takeaway:</b> Tactile fremitus: hands on the chest, client says “99.”</p>"
-    },
-    {
-      "id": "rs-34",
-      "type": "mc",
-      "topic": "Physical assessment of the lungs",
-      "level": 2,
-      "stem": "Over a client's right lower lobe, the nurse hears brief, popping, non-musical sounds during inspiration. How should the nurse document them?",
-      "options": ["Crackles", "Rhonchi", "Wheezes", "Pleural friction rub"],
-      "answer": 0,
-      "rationale": "<p>Brief, popping, <b>discontinuous</b>, non-musical sounds are <b>crackles</b>, heard in pneumonia, heart failure, and COPD.</p><p><b>Rhonchi</b> are the tempting choice, since both come from secretions, but rhonchi are <b>continuous</b>, low-pitched, musical sounds. Wheezes are continuous and high-pitched, and a friction rub is a grating sound from inflamed pleura.</p><p><b>Takeaway:</b> Crackles pop (discontinuous). Rhonchi and wheezes are continuous: rhonchi low, wheezes high.</p>"
-    },
-    {
       "id": "rs-35",
       "type": "mc",
-      "topic": "Physical assessment of the lungs",
+      "topic": "Respiratory distress",
       "level": 3,
       "stem": "A nurse auscultates the lungs of four clients. Which client's finding should the nurse report first?",
       "options": ["Crackles at both lung bases in a client with heart failure, unchanged from yesterday", "Scattered rhonchi that clear after a client coughs", "A loud, high-pitched sound on each breath in, in a client whose lips are swelling", "Expiratory wheezes in a client with asthma who used a rescue inhaler 5 minutes ago"],
@@ -402,161 +222,14 @@
       "rationale": "<p>A loud, high-pitched sound on breathing in is <b>stridor</b>, from a narrowing <b>upper airway</b>, and with swelling lips it points to an allergic reaction that can close the airway. Airway comes first.</p><p><b>The wheezes</b> are the tempting choice, since asthma can be serious, but the client just used a rescue inhaler, which takes a few minutes to work; that's a reassessment, not the first call. Unchanged crackles and rhonchi that clear with coughing are stable findings.</p><p><b>Takeaway:</b> Stridor is an airway emergency. Airway, breathing, circulation decide who comes first.</p>"
     },
     {
-      "id": "rs-36",
-      "type": "mc",
-      "topic": "Physical assessment of the lungs",
-      "level": 2,
-      "stem": "A 70-year-old client with a 50 pack-year smoking history has a chest whose front-to-back diameter about equals its side-to-side diameter. How should the nurse interpret this finding?",
-      "options": ["It's a normal finding, as it is in young children", "It shows a depressed sternum (pectus excavatum)", "It suggests hyperinflation of the lungs, as in COPD", "It points to a sideways curve of the spine (scoliosis)"],
-      "answer": 2,
-      "rationale": "<p>A <b>barrel chest</b>, with a front-to-back diameter about equal to the side-to-side diameter, suggests <b>hyperinflation</b> in an adult: trapped air, as in COPD, which fits a 50 pack-year history.</p><p><b>“Normal, as in young children”</b> is the tempting choice, since a barrel chest is normal in children, but in an adult it's a finding to note. Pectus excavatum is a sunken sternum, and scoliosis is a sideways curve of the spine.</p><p><b>Takeaway:</b> Barrel chest: normal in children; in adults, think air trapping (COPD).</p>"
-    },
-    {
-      "id": "rs-37",
-      "type": "mc",
-      "topic": "Physical assessment of the lungs",
-      "level": 1,
-      "stem": "Over most of a healthy adult's lung fields, the nurse hears soft, low-pitched breath sounds. How should the nurse document them?",
-      "options": ["Diminished breath sounds, which need follow-up", "Vesicular breath sounds, which are normal", "Bronchial breath sounds, which are normal there", "Wheezes, which need follow-up"],
-      "answer": 1,
-      "rationale": "<p>Soft, low-pitched sounds over most of the lung fields are <b>vesicular</b> breath sounds, the normal sound of air moving through the smaller airways.</p><p><b>Diminished</b> is the tempting choice, since the sounds are soft, but soft is normal over the lung fields. Bronchial sounds are loud and high-pitched (normal only over the trachea), and wheezes are musical.</p><p><b>Takeaway:</b> Vesicular = normal over the lung fields. Bronchial sounds there are abnormal (consolidation).</p>"
-    },
-    {
-      "id": "rs-38",
-      "type": "order",
-      "topic": "Physical assessment of the lungs",
-      "level": 1,
-      "stem": "Place the steps of the chest and lung exam in the order the nurse performs them.",
-      "items": ["Inspection", "Palpation", "Percussion", "Auscultation"],
-      "rationale": "<p>The chest is examined by <b>inspection</b> (breathing pattern, accessory muscles, position, chest shape), <b>palpation</b> (masses, tactile fremitus), <b>percussion</b> (resonance or dullness), then <b>auscultation</b> (breath sounds).</p><p>The trap is the abdominal exam's order, which moves auscultation up to second; for the chest, it stays last.</p><p><b>Takeaway:</b> Chest: inspect, palpate, percuss, auscultate.</p>"
-    },
-    {
-      "id": "rs-39",
-      "type": "mc",
-      "topic": "Respiratory disorders",
-      "level": 3,
-      "stem": "A client's spirometry shows a low FEV1/FVC ratio. After the client inhales albuterol, the FEV1 improves markedly. Which condition does this pattern suggest?",
-      "options": ["Asthma", "Emphysema", "Idiopathic pulmonary fibrosis", "A pneumothorax"],
-      "answer": 0,
-      "rationale": "<p>A low FEV1/FVC ratio means <b>obstruction</b>, and an obstruction that <b>reverses</b> with a beta-agonist like albuterol is the mark of <b>asthma</b>.</p><p><b>Emphysema</b> is the tempting choice, since it's obstructive too, but its damage (lost alveolar elasticity) doesn't reverse with a bronchodilator. Pulmonary fibrosis is restrictive, with a normal or high ratio.</p><p><b>Takeaway:</b> Obstruction that reverses with albuterol: asthma. Obstruction that doesn't: COPD.</p>"
-    },
-    {
-      "id": "rs-40",
-      "type": "mc",
-      "topic": "Influenza and infection control",
-      "level": 3,
-      "stem": "A client who recently arrived from a country where tuberculosis is common has had a cough for 2 months, night sweats, weight loss, and blood-streaked sputum. What should the nurse do first?",
-      "options": ["Collect a sputum specimen for testing", "Ask about family members and close contacts who have been sick", "Place a mask on the client, and arrange an airborne isolation room", "Teach the client to cover the mouth and nose when coughing"],
-      "answer": 2,
-      "rationale": "<p>Cough, night sweats, weight loss, and hemoptysis in a client from a high-risk area point to active <b>tuberculosis</b>, which spreads through the <b>air</b>. Before anything else, the nurse protects others: a mask on the client, and an airborne isolation room (staff wear fitted N95 respirators).</p><p><b>Collecting a sputum specimen</b> is the tempting choice, since it confirms the diagnosis, but it comes after the client is isolated. Asking about contacts and teaching cough etiquette matter too, but don't protect people right now.</p><p><b>Takeaway:</b> Suspected TB: isolate first (airborne precautions), then test.</p>"
-    },
-    {
-      "id": "rs-41",
-      "type": "mc",
-      "topic": "Respiratory disorders",
-      "level": 2,
-      "stem": "A tall, thin 22-year-old suddenly has sharp right-sided chest pain and shortness of breath. Which findings should the nurse expect on the right side of the chest?",
-      "options": ["Dull percussion, and bronchial breath sounds", "Dull percussion, with a grating pleural friction rub", "Resonant percussion, with expiratory wheezes", "Hyperresonant percussion, and absent or decreased breath sounds"],
-      "answer": 3,
-      "rationale": "<p>Sudden sharp chest pain and dyspnea in a tall, thin young adult suggest a spontaneous <b>pneumothorax</b>: air in the pleural space. Air is <b>hyperresonant</b>, and it keeps sound from reaching the chest wall, so breath sounds are decreased or absent, and so is fremitus.</p><p><b>Dull percussion with bronchial breath sounds</b> is the tempting choice, since it's a classic set of findings, but it means denser lung (consolidation), the opposite of air. A friction rub comes from inflamed pleura, and wheezes from narrowed airways.</p><p><b>Takeaway:</b> Air in the chest: hyperresonance, with decreased breath sounds and fremitus.</p>"
-    },
-    {
-      "id": "rs-42",
-      "type": "mc",
-      "topic": "Respiratory disorders",
-      "level": 2,
-      "stem": "A client has sharp chest pain that gets worse with each deep breath. Over the painful area, the nurse hears a grating sound during both inspiration and expiration. Which condition do these findings suggest?",
-      "options": ["A pneumothorax", "Pleurisy", "Pneumonia", "An asthma attack"],
-      "answer": 1,
-      "rationale": "<p><b>Pleurisy</b> (inflamed pleura) causes sharp pain that worsens with breathing in, and the inflamed layers rub together, making a grating <b>pleural friction rub</b> in both phases of breathing.</p><p><b>A pneumothorax</b> is the tempting choice, since it also causes sudden, sharp pleuritic pain, but air separates the pleural layers, so breath sounds are decreased, with no rub. Pneumonia brings crackles, and asthma brings wheezes.</p><p><b>Takeaway:</b> Pleural friction rub: inflamed pleura rubbing together (pleurisy).</p>"
-    },
-    {
-      "id": "rs-43",
-      "type": "sata",
-      "topic": "Influenza and infection control",
-      "level": 3,
-      "stem": "A client with influenza is recovering at home. Which findings should the nurse teach the client's family to report right away, as signs that the illness is becoming severe?",
-      "options": ["Shortness of breath", "Aching muscles in the back and legs", "A fast heart rate", "Dizziness or fainting on standing, from low blood pressure", "A runny nose, sneezing, and a sore throat", "A headache behind the eyes, with sensitivity to light"],
-      "answer": [0, 2, 3],
-      "rationale": "<p>Severe influenza can bring <b>shortness of breath</b>, a <b>fast heart rate</b>, and <b>low blood pressure</b>, and it can get there within about 48 hours, so the family reports these right away.</p><p><b>A headache behind the eyes</b> is the tempting one, since it sounds worrying, but a frontal or behind-the-eyes headache is a common part of ordinary influenza, along with muscle aches, a runny nose, and a sore throat.</p><p><b>Takeaway:</b> Influenza turning severe: shortness of breath, a fast heart rate, low blood pressure.</p>"
-    },
-    {
-      "id": "rs-44",
-      "type": "mc",
-      "topic": "Influenza and infection control",
-      "level": 2,
-      "stem": "A nurse is about to assess a hospitalized client who has influenza. Which personal protective equipment should the nurse wear, beyond standard precautions?",
-      "options": ["A face mask, for droplet precautions", "A fitted N95 respirator, for airborne precautions", "A gown and gloves, for contact precautions", "Nothing more, since standard precautions cover influenza"],
-      "answer": 0,
-      "rationale": "<p>Influenza spreads mainly by <b>droplets</b> from coughs and sneezes, so the nurse follows <b>droplet precautions</b>: a face mask when entering the room, on top of standard precautions like hand hygiene.</p><p><b>A fitted N95 respirator</b> is the tempting choice, since it gives the most protection, but that's for diseases spread through the air over longer distances, like tuberculosis. Contact precautions are for infections spread by touch.</p><p><b>Takeaway:</b> Influenza: droplet precautions (face mask). Tuberculosis: airborne precautions (N95 respirator).</p>"
-    },
-    {
       "id": "rs-45",
       "type": "mc",
-      "topic": "Influenza and infection control",
+      "topic": "Risk factors and prevention",
       "level": 2,
       "stem": "A 70-year-old client asks, “Why do I need a flu shot every year?” Which response should the nurse give?",
       "options": ["“Flu viruses change, so each season's vaccine is updated, and vaccinated people tend to have milder illness.”", "“Your immunity from last year's shot has worn off, and the same vaccine is given each year to renew it.”", "“The vaccine treats the flu if you catch it, so you need it before each flu season.”", "“Adults over 65 need it yearly, while younger adults need it once in 5 years.”"],
       "answer": 0,
       "rationale": "<p>Many strains of influenza virus circulate, and they change, so each season's vaccine is updated to match. People who get the seasonal vaccine tend to have <b>milder</b> symptoms and fewer complications.</p><p><b>“The same vaccine renews your immunity”</b> is the tempting choice, since protection does wane, but the vaccine itself changes each year. It prevents illness rather than treating it, and yearly vaccination is advised for adults of every age.</p><p><b>Takeaway:</b> Flu vaccine: every year, because the viruses change; vaccinated people have milder illness.</p>"
-    },
-    {
-      "id": "rs-46",
-      "type": "highlight",
-      "case": "outbreak",
-      "topic": "Respiratory disorders",
-      "level": 3,
-      "stem": "Click to highlight the findings in the Day 4 note that point to pneumonia in the right lower lobe.",
-      "passage": "Resident is [[newly confused about the day and place]], and is [[coughing up thick, rust-colored sputum]]. Reports a [[sharp pain in the right lower chest when breathing in]]. [[Ate 25% of breakfast]]. [[Respirations labored]]. Right lower posterior chest: [[dull to percussion]], [[increased tactile fremitus]], [[bronchial breath sounds and crackles]]. Left lung: [[vesicular breath sounds]]. [[Lips pink]].",
-      "answer": [1, 2, 5, 6, 7],
-      "rationale": "<p>Pneumonia fills the alveoli of a lobe (consolidation). Over the <b>right lower lobe</b>, that shows as <b>dull percussion</b>, <b>increased tactile fremitus</b>, and <b>bronchial breath sounds with crackles</b>, and the <b>rust-colored sputum</b> and <b>pain on breathing in</b> on that side fit a bacterial pneumonia that involves the pleura.</p><p><b>New confusion</b> and <b>labored breathing</b> are the tempting ones: they're serious and need reporting, but they don't point to the right lower lobe. The left lung's vesicular sounds are normal, and pink lips show no cyanosis.</p><p><b>Takeaway:</b> Consolidation over a lobe: dull, fremitus up, bronchial sounds and crackles, plus purulent or rust-colored sputum.</p>"
-    },
-    {
-      "id": "rs-47",
-      "type": "matrix",
-      "case": "outbreak",
-      "topic": "Respiratory disorders",
-      "level": 3,
-      "stem": "For each finding, specify whether it fits influenza alone or a new pneumonia in the right lower lobe.",
-      "rowHeader": "Finding",
-      "columns": ["Influenza alone", "New pneumonia in the right lower lobe"],
-      "rows": ["Muscle aches and a sore throat on Day 1", "Dull percussion over the right lower lobe on Day 4", "Dry cough on Day 1", "Bronchial breath sounds over the right lower lobe on Day 4", "Thick, rust-colored sputum on Day 4"],
-      "answer": [0, 1, 0, 1, 1],
-      "rationale": "<p>Day 1's <b>muscle aches</b>, <b>sore throat</b>, and <b>dry cough</b> are typical of influenza itself. Day 4's <b>dullness</b> and <b>bronchial breath sounds</b> over one lobe, with <b>rust-colored sputum</b>, show a consolidation: pneumonia, a common complication of influenza in older adults.</p><p>The cough is the trap: both illnesses cause one, but influenza's is dry, while a bacterial pneumonia brings up purulent or rust-colored sputum.</p><p><b>Takeaway:</b> Influenza that gets worse after a few days, with new lobar findings, suggests a pneumonia on top of it.</p>"
-    },
-    {
-      "id": "rs-48",
-      "type": "bowtie",
-      "case": "outbreak",
-      "topic": "Respiratory disorders",
-      "level": 3,
-      "stem": "A nurse is reviewing the resident's Day 4 findings and vital signs.",
-      "condition": {"options": ["Pneumothorax", "Pneumonia", "Pleural effusion", "An asthma attack"], "answer": 1},
-      "actions": {"options": ["Report the Day 4 findings to the provider", "Lay the resident flat to rest", "Keep the resident on droplet precautions", "Encourage fluids, and recheck in the afternoon", "Stop the droplet precautions, since the problem is now pneumonia"], "answer": [0, 2], "select": 2},
-      "parameters": {"options": ["Oxygen saturation", "Bowel sounds in each quadrant", "Respiratory rate and effort", "Blood glucose before meals", "Pupil size and reaction to light"], "answer": [0, 2], "select": 2},
-      "rationale": "<p>Dullness, increased fremitus, bronchial sounds, crackles, rust-colored sputum, and a new fever spike point to <b>pneumonia</b>. The nurse <b>reports</b> it now (the saturation is 88% and the blood pressure is falling) and <b>keeps droplet precautions</b>, since the resident still has influenza. The nurse watches the <b>oxygen saturation</b> and the <b>respiratory rate and effort</b>.</p><p><b>Encouraging fluids and rechecking later</b> is the tempting action, since fluids help, but waiting hours with these findings delays treatment. Lying flat makes breathing harder, and pneumonia doesn't end the influenza precautions. A pneumothorax or effusion would make breath sounds decrease, not turn bronchial.</p><p><b>Takeaway:</b> Lobar consolidation with worsening vital signs: report now, keep the precautions, and watch the oxygenation closely.</p>"
-    },
-    {
-      "id": "rs-49",
-      "type": "mc",
-      "case": "outbreak",
-      "topic": "Influenza and infection control",
-      "level": 2,
-      "stem": "The resident's daughter arrives on Day 4 and wants to sit at the bedside. Which instruction should the nurse give her?",
-      "options": ["“Wear a fitted N95 respirator, since influenza can spread through the air across the room.”", "“Wear a gown and gloves, and sit at least 3 feet from the bed instead of wearing a mask.”", "“Wear a face mask in the room, and clean your hands when you leave.”", "“You won't need any precautions, since you had a flu shot this year.”"],
-      "answer": 2,
-      "rationale": "<p>The resident is on <b>droplet precautions</b>: visitors wear a <b>face mask</b> in the room, and everyone cleans their hands on the way out.</p><p><b>“You had a flu shot”</b> is the tempting choice, since vaccination does lower her risk, but it doesn't make her immune, and the precautions also keep her from carrying the virus to others. An N95 respirator is for airborne diseases, and distance plus a gown doesn't replace the mask.</p><p><b>Takeaway:</b> Droplet precautions apply to visitors too: a face mask in the room, and hand hygiene.</p>"
-    },
-    {
-      "id": "rs-50",
-      "type": "sata",
-      "case": "outbreak",
-      "topic": "Respiratory disorders",
-      "level": 3,
-      "stem": "Which Day 4 findings should the nurse report as signs that the resident's oxygenation is getting worse?",
-      "options": ["Oxygen saturation of 88% on room air", "New confusion about the day and place", "Respiratory rate of 30/min, labored", "Temperature of 39.3 °C (102.7 °F), up from 38.6 °C", "Ate 25% of breakfast that morning", "Lips pink, with no bluish color"],
-      "answer": [0, 1, 2],
-      "rationale": "<p>A <b>saturation of 88%</b> (down from 95%), <b>new confusion</b> (the brain is sensitive to low oxygen, especially in older adults), and a <b>fast, labored respiratory rate</b> all show worsening oxygenation.</p><p><b>The fever</b> is the tempting one, since it rose too, but it shows infection, not oxygenation. A poor appetite is common in illness, and pink lips mean no cyanosis yet, which shouldn't reassure the nurse given the other findings.</p><p><b>Takeaway:</b> Signs of worsening oxygenation: a falling SpO₂, new confusion, a rising respiratory rate and effort.</p>"
     }
   ]
 }

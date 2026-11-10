@@ -1,10 +1,10 @@
 {
   "id": "nu1120-exam-4-endocrine-system",
   "title": "The Endocrine System",
-  "description": "Week 9: hormones and how they act, feedback and the control of hormone levels, the hypothalamus and pituitary, the thyroid, parathyroid, and adrenal glands, the pancreas and glucose control, growth and sex hormones, diabetes mellitus, and diabetes screening and assessment.",
+  "description": "Week 9, matched to the instructor's Exam 4 study guide: the hormones of the hypothalamus, pituitary, thyroid, parathyroid, adrenal glands, pancreas, pineal gland, and gonads, the TSH test, diabetes mellitus (diagnosis, risk factors, and signs), and the signs and symptoms of endocrine problems.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 60,
   "defaultCount": 25,
   "cases": {
     "screening": {
@@ -38,21 +38,9 @@
       "hidden": true
     },
     {
-      "id": "es-02",
-      "type": "matrix",
-      "topic": "Hormones and neurotransmitters",
-      "level": 2,
-      "stem": "A nurse is reviewing how the body sends signals. For each response, click to specify the type of chemical messenger mainly responsible for it.",
-      "rowHeader": "Response",
-      "columns": ["Hormone", "Neurotransmitter"],
-      "rows": ["A blink within a fraction of a second when dust blows toward the eye", "A gradual rise in the metabolic rate over several weeks", "Growth in height during the teenage years", "A quick jerk of the lower leg when the tendon below the kneecap is tapped", "Milk production that continues for months after childbirth"],
-      "answer": [1, 0, 0, 1, 0],
-      "rationale": "<p><b>Neurotransmitters</b> are released by nerve cells and act across a synapse, so their effects are <b>fast and brief</b>: the <b>blink</b> when dust comes toward the eye and the <b>knee-jerk reflex</b> happen within a fraction of a second and are over just as quickly.</p><p><b>Hormones</b> travel in the blood to distant target organs, so their effects start <b>more slowly and last longer</b>: thyroid hormone raises the <b>metabolic rate</b> over weeks, growth hormone and the sex hormones drive the <b>growth in height</b> of the teenage years, and prolactin keeps <b>milk production</b> going for months.</p><p>The <b>milk production</b> row is the trap: it starts soon after birth, but it goes on for months, which only a hormone (prolactin) can keep up.</p><p><b>Takeaway:</b> Fast and short-lived points to a neurotransmitter; slow and long-lasting points to a hormone.</p>"
-    },
-    {
       "id": "es-03",
       "type": "sata",
-      "topic": "Hormones and neurotransmitters",
+      "topic": "Endocrine signs and symptoms",
       "level": 2,
       "stem": "A nurse is completing a health history for a client. Which of the following findings could be linked to a problem of the endocrine system?",
       "options": ["Gaining 15 lb (6.8 kg) over 4 months without eating more", "A rash on both hands after using a new dish soap", "Menstrual periods that have become irregular", "Pain and swelling of the ankle after a fall", "Feeling hot and sweaty when others are comfortable"],
@@ -62,24 +50,12 @@
     {
       "id": "es-04",
       "type": "mc",
-      "topic": "Hormones and neurotransmitters",
+      "topic": "Endocrine signs and symptoms",
       "level": 3,
       "stem": "A nurse is reviewing the histories of two clients. Client 1 developed weakness of the right arm and face 1 hour ago. Client 2 has gained weight, felt tired, and felt cold more often over the past 3 months. Which of the following statements best explains the difference between the two clients' findings?",
       "options": ["Client 2's findings fit a hormone problem, because hormone effects build slowly and reach many organs.", "Client 1's findings fit a hormone problem, because hormone effects start within seconds in one area.", "Both clients' findings fit a nerve problem, because nerve signals are what control body weight.", "Both clients' findings fit a hormone problem, because hormones are what control muscle strength."],
       "answer": 0,
       "rationale": "<p>Nerve signals are <b>fast and targeted</b>: weakness of one arm and the face that started within the hour fits the nervous system (this pattern is a warning sign of a stroke). Hormones travel in the blood to <b>many organs</b>, and their effects <b>build slowly and last</b>: months of weight gain, tiredness, and feeling cold, all at once, fit a hormone problem, such as too little thyroid hormone.</p><p>Hormones don't act within seconds on one small area, so Client 1's pattern doesn't fit a hormone problem. Body weight depends largely on hormones such as thyroid hormone and insulin, so Client 2's findings don't point to the nerves. And hormones don't directly control muscle strength the way motor nerves do.</p><p><b>“Client 1's findings fit a hormone problem”</b> is the tempting choice if the timing is mixed up: findings that start within the hour, in one area, are the nervous system's pattern; hormone effects build slowly, across many organs.</p><p><b>Takeaway:</b> Sudden changes in one area suggest the nervous system; gradual changes across several body systems suggest the endocrine system.</p>"
-    },
-    {
-      "id": "es-05",
-      "type": "matrix",
-      "topic": "Hormone action and classes",
-      "level": 1,
-      "stem": "A nurse is reviewing the classes of hormones. For each hormone, click to specify its class.",
-      "rowHeader": "Hormone",
-      "columns": ["Steroid (lipid-soluble)", "Amino acid–based (water-soluble)"],
-      "rows": ["Cortisol", "Growth hormone", "Testosterone", "Parathyroid hormone", "Norepinephrine", "Aldosterone"],
-      "answer": [0, 1, 0, 1, 1, 0],
-      "rationale": "<p><b>Steroid hormones</b> are made from <b>cholesterol</b>, so they are lipid-soluble. They include the corticosteroids, such as <b>cortisol</b> (a glucocorticoid) and <b>aldosterone</b> (a mineralocorticoid), and the sex hormones, such as <b>testosterone</b>, the estrogens, and the progestogens.</p><p><b>Amino acid–based hormones</b> are water-soluble. They include the peptide hormones, such as <b>growth hormone</b>, <b>parathyroid hormone</b>, ACTH, and LH, and the monoamines, such as <b>norepinephrine</b>, dopamine, and serotonin.</p><p><b>Norepinephrine</b> is the row most often missed: it acts as a hormone too, but it's an amino acid–based (amine) hormone, not a steroid.</p><p><b>Takeaway:</b> Corticosteroids and sex hormones are steroids made from cholesterol; peptides and monoamines are amino acid–based.</p>"
     },
     {
       "id": "es-06",
@@ -93,19 +69,9 @@
       "hidden": true
     },
     {
-      "id": "es-07",
-      "type": "mc",
-      "topic": "Hormone action and classes",
-      "level": 2,
-      "stem": "A client is prescribed a medication that attaches to the receptors for a hormone without activating them. Which of the following effects should the nurse expect?",
-      "options": ["The target cells respond more strongly, because more receptors are filled.", "The hormone can't act on the target cells, even at a normal level.", "The target cells start to respond to a different hormone instead.", "The gland stops releasing the hormone, so its blood level falls."],
-      "answer": 1,
-      "rationale": "<p>A drug that fills a hormone's receptors <b>without activating them</b> is a hormone <b>antagonist</b> (blocker). With the receptors taken, the hormone can't bind, so its <b>effect is blocked</b>, even when the gland releases a normal amount.</p><p>A drug that binds the receptor and <b>does</b> activate it is a hormone <b>mimic</b>, which causes the hormone's response; a blocker causes no response, so the cells don't respond more strongly. Blocking a receptor doesn't make the cells respond to a <b>different hormone</b>, and it doesn't stop the gland from <b>releasing</b> the hormone: the hormone is still in the blood, it just can't act.</p><p><b>“The gland stops releasing the hormone”</b> is the tempting choice, since less effect sounds like less hormone, but a receptor blocker leaves the hormone level normal; the hormone just can't act.</p><p><b>Takeaway:</b> A blocker (antagonist) on the receptor stops the hormone's effect; a mimic on the receptor produces it.</p>"
-    },
-    {
       "id": "es-08",
       "type": "mc",
-      "topic": "Hormone action and classes",
+      "topic": "Pancreas and insulin",
       "level": 3,
       "stem": "A client's blood test shows a higher-than-expected insulin level along with a high blood glucose level. Which of the following best explains these findings?",
       "options": ["The beta cells of the pancreas have stopped making insulin.", "Insulin is moving glucose out of the cells and into the blood.", "Body cells aren't responding normally to insulin at its receptors.", "The extra insulin in the blood is causing the glucose to rise."],
@@ -126,7 +92,7 @@
     {
       "id": "es-10",
       "type": "dropdown",
-      "topic": "Feedback and hormone control",
+      "topic": "Hypothalamus and pituitary",
       "level": 1,
       "stem": "A nurse is reviewing how thyroid hormone levels are controlled. Complete the following sentences.",
       "text": "When the levels of T3 and T4 in the blood fall, the hypothalamus releases {{0}}. When T3 and T4 levels rise above normal, they {{1}} the release of thyroid-stimulating hormone (TSH).",
@@ -137,21 +103,9 @@
       "rationale": "<p>The hypothalamus senses <b>low</b> T3 and T4 and releases <b>thyrotropin-releasing hormone (TRH)</b>. TRH makes the anterior pituitary release <b>thyroid-stimulating hormone (TSH)</b>, and TSH makes the thyroid release T3 and T4. When the levels rise above normal, T3 and T4 <b>inhibit</b> the release of TRH and TSH. This negative feedback keeps thyroid hormone in a narrow range.</p><p><b>TSH</b> comes from the pituitary, not the hypothalamus, and <b>ACTH</b> is the pituitary hormone of the adrenal (stress) axis. High T3 and T4 don't stimulate TSH or leave it unchanged; if they did, the levels would keep climbing.</p><p>The trap is reversing the order: the hypothalamus's TRH comes first, then the pituitary's TSH, then the thyroid's T3 and T4.</p><p><b>Takeaway:</b> Hypothalamus (TRH) → anterior pituitary (TSH) → thyroid (T3 and T4), and high T3 and T4 turn TRH and TSH down.</p>"
     },
     {
-      "id": "es-11",
-      "type": "matrix",
-      "topic": "Feedback and hormone control",
-      "level": 2,
-      "stem": "A nurse is reviewing how the release of hormones is triggered. For each example, click to specify the type of stimulus.",
-      "rowHeader": "Example",
-      "columns": ["Humoral (a level in the blood)", "Neural (nerve signals)", "Hormonal (another hormone)"],
-      "rows": ["Gonadotropin-releasing hormone triggers the release of FSH and LH.", "A drop in blood pressure triggers the kidneys to release renin.", "A rise in blood glucose triggers the release of insulin.", "Sympathetic nerve signals during a sudden fright trigger the release of epinephrine.", "Growth hormone–releasing hormone triggers the release of growth hormone."],
-      "answer": [2, 0, 0, 1, 2],
-      "rationale": "<p>Hormone release is triggered in three main ways. A <b>humoral</b> stimulus is a change in something carried in the blood: a <b>drop in blood pressure</b> triggers <b>renin</b> from the kidneys (the start of the renin–angiotensin–aldosterone system), and a <b>rise in blood glucose</b> triggers <b>insulin</b>. A <b>neural</b> stimulus is nerve signals: in a sudden fright, <b>sympathetic nerves</b> trigger the release of <b>epinephrine</b> within seconds, the short-term stress response. A <b>hormonal</b> stimulus is another hormone: the hypothalamus's <b>gonadotropin-releasing hormone</b> and <b>growth hormone–releasing hormone</b> trigger the pituitary to release FSH, LH, and growth hormone.</p><p>The <b>renin</b> row is the trap: nerves also affect blood pressure, but here the kidneys respond to a change in the blood itself, a humoral stimulus.</p><p><b>Takeaway:</b> Humoral means a blood level changes; neural means nerves fire; hormonal means one hormone triggers another.</p>"
-    },
-    {
       "id": "es-12",
       "type": "mc",
-      "topic": "Feedback and hormone control",
+      "topic": "Hypothalamus and pituitary",
       "level": 2,
       "stem": "A nurse is caring for a client who is in labor. The client asks why the contractions keep getting stronger. Which of the following responses by the nurse is correct?",
       "options": ["Each contraction lowers the oxytocin level, and the uterus squeezes harder to make up for it.", "Oxytocin softens the cervix, so each contraction meets less resistance than the one before.", "Thyroid hormone rises during labor and makes the muscle of the uterus grow stronger with each contraction.", "Pressure of the baby on the cervix releases more oxytocin, which makes the next contraction stronger."],
@@ -161,7 +115,7 @@
     {
       "id": "es-13",
       "type": "mc",
-      "topic": "Feedback and hormone control",
+      "topic": "Hypothalamus and pituitary",
       "level": 3,
       "stem": "A client has a tumor of the pituitary gland that releases thyroid-stimulating hormone (TSH) no matter how much thyroid hormone is in the blood. Which of the following laboratory findings should the nurse expect?",
       "options": ["High TSH and high T3 and T4", "High TSH and low T3 and T4", "Low TSH and high T3 and T4", "Low TSH and low T3 and T4"],
@@ -290,7 +244,7 @@
     {
       "id": "es-25",
       "type": "hotspot",
-      "topic": "Adrenal glands and stress",
+      "topic": "Adrenal glands",
       "level": 2,
       "stem": "A client's provider suspects that the client's body is making too little aldosterone. Click one of the glands that release aldosterone.",
       "image": "img/endocrine-body.svg",
@@ -301,7 +255,7 @@
     {
       "id": "es-26",
       "type": "order",
-      "topic": "Adrenal glands and stress",
+      "topic": "Adrenal glands",
       "level": 2,
       "stem": "A client has been caring for a parent with dementia for several months and reports feeling stressed every day. Place the events of the client's long-term (slow) stress response in order.",
       "items": ["The hypothalamus releases corticotropin-releasing hormone (CRH).", "The anterior pituitary releases adrenocorticotropic hormone (ACTH).", "The adrenal cortex releases cortisol.", "High cortisol levels slow the release of CRH and ACTH."],
@@ -310,7 +264,7 @@
     {
       "id": "es-27",
       "type": "matrix",
-      "topic": "Adrenal glands and stress",
+      "topic": "Adrenal glands",
       "level": 1,
       "stem": "A nurse is comparing the body's fast (short-term) and slow (long-term) stress responses. For each description, click to specify the response it describes.",
       "rowHeader": "Description",
@@ -322,7 +276,7 @@
     {
       "id": "es-28",
       "type": "sata",
-      "topic": "Adrenal glands and stress",
+      "topic": "Adrenal glands",
       "level": 2,
       "stem": "A client has taken a high-dose glucocorticoid medication, which acts like cortisol, every day for 6 months. Which of the following findings should the nurse expect from the medication's effects?",
       "options": ["Low blood glucose levels", "High blood glucose levels", "More swelling and redness than usual around minor cuts", "Mood swings or irritability", "Feeling cold when others are comfortable"],
@@ -332,7 +286,7 @@
     {
       "id": "es-29",
       "type": "mc",
-      "topic": "Adrenal glands and stress",
+      "topic": "Adrenal glands",
       "level": 3,
       "stem": "A client with an autoimmune condition has taken prednisone, a glucocorticoid, every day for a year. Which of the following findings should the nurse report to the provider first?",
       "options": ["Reports having trouble falling asleep most nights", "A temperature of 38.3 °C (101 °F) and a new cough", "Reports feeling irritable more often than before", "Has gained 1.8 kg (4 lb) over the past 3 months"],
@@ -342,7 +296,7 @@
     {
       "id": "es-30",
       "type": "hotspot",
-      "topic": "Pancreas and glucose control",
+      "topic": "Pancreas and insulin",
       "level": 1,
       "stem": "A nurse is reviewing the organs that control blood glucose. Click the organ that contains the islets of Langerhans.",
       "image": "img/endocrine-body.svg",
@@ -351,21 +305,9 @@
       "rationale": "<p>The <b>pancreas</b> lies across the upper abdomen, behind the stomach, with its head near the start of the small intestine and its tail toward the left side. Scattered through it are the <b>islets of Langerhans</b>, clusters of endocrine cells: alpha cells release glucagon, beta cells release insulin, and delta cells release somatostatin. Most of the pancreas is acinar tissue, which makes digestive enzymes.</p><p>The <b>liver</b>, under the right side of the diaphragm, stores and releases glucose in response to insulin and glucagon, but it doesn't make either hormone.</p><p><b>The liver</b> is the tempting choice, since it stores and releases glucose, but insulin and glucagon come from the islets in the pancreas.</p><p><b>Takeaway:</b> The islets of Langerhans, which release insulin and glucagon, are in the pancreas, behind the stomach.</p>"
     },
     {
-      "id": "es-31",
-      "type": "matrix",
-      "topic": "Pancreas and glucose control",
-      "level": 2,
-      "stem": "A nurse is reviewing how the liver helps control blood glucose. For each situation, click to specify the process taking place.",
-      "rowHeader": "Situation",
-      "columns": ["Glycogenesis", "Glycogenolysis", "Gluconeogenesis"],
-      "rows": ["During an overnight fast, glucagon signals the liver to break down its stored glycogen.", "After a large meal, the liver stores the extra glucose as glycogen.", "After 2 days without food, the liver makes new glucose from amino acids and other non-carbohydrate sources.", "Between meals, the liver releases glucose from its glycogen into the blood."],
-      "answer": [1, 0, 2, 1],
-      "rationale": "<p>The word parts give the meanings: <b>glyco-</b> (sugar), <b>-genesis</b> (making), <b>-lysis</b> (breaking down), and <b>neo-</b> (new). <b>Glycogenesis</b> is building glycogen: after a meal, with help from insulin, the liver stores extra glucose as glycogen. <b>Glycogenolysis</b> is breaking glycogen down: between meals and during an overnight fast, glucagon signals the liver to break down its stored glycogen and release glucose into the blood. <b>Gluconeogenesis</b> is making <b>new</b> glucose from non-carbohydrate sources, such as amino acids, which the liver relies on once its glycogen runs low during a longer fast.</p><p>The <b>overnight fast</b> row is the trap: the liver first releases its stored glycogen (glycogenolysis); making new glucose (gluconeogenesis) takes over after longer without food.</p><p><b>Takeaway:</b> Glycogenesis stores glucose, glycogenolysis releases it from glycogen, and gluconeogenesis makes new glucose.</p>"
-    },
-    {
       "id": "es-32",
       "type": "mc",
-      "topic": "Pancreas and glucose control",
+      "topic": "Pancreas and insulin",
       "level": 2,
       "stem": "A client who has type 1 diabetes mellitus asks why insulin is needed when the client's blood already has plenty of glucose. Which of the following responses by the nurse is correct?",
       "options": ["Without insulin, glucose can't move from the blood into most of your body's cells.", "Insulin breaks glucose down in the blood so that it can't damage your organs.", "Insulin signals your liver to release the glucose that it has stored.", "Insulin helps your pancreas release the enzymes that digest the sugar in your meals."],
@@ -375,7 +317,7 @@
     {
       "id": "es-33",
       "type": "mc",
-      "topic": "Pancreas and glucose control",
+      "topic": "Pancreas and insulin",
       "level": 2,
       "stem": "A client has a tumor of the pancreatic beta cells that releases insulin even when the blood glucose level is already low. Which of the following findings should the nurse expect?",
       "options": ["Increased thirst and frequent urination", "A fruity odor to the breath", "Unintentional weight loss and heat intolerance", "Shakiness, hunger, and a headache"],
@@ -397,7 +339,7 @@
     {
       "id": "es-35",
       "type": "mc",
-      "topic": "Growth, sex hormones, pineal, and thymus",
+      "topic": "Pineal gland and gonads",
       "level": 2,
       "stem": "A client who works night shifts sleeps during the day in a bright bedroom and has trouble falling asleep. Which of the following best explains this problem?",
       "options": ["Darkness at night stops melatonin release, so the client stays alert after work.", "Daytime light raises the melatonin level, which keeps the client awake.", "Light reaching the eyes signals the brain to hold back melatonin, the hormone of darkness.", "The thymus releases less melatonin during the day, so the client can't fall asleep."],
@@ -407,7 +349,7 @@
     {
       "id": "es-36",
       "type": "mc",
-      "topic": "Growth, sex hormones, pineal, and thymus",
+      "topic": "Hypothalamus and pituitary",
       "level": 2,
       "stem": "A 42-year-old client says that over several years the client's ring size and shoe size have increased, and old photos show that the client's facial features have become coarser. Which of the following conditions is most likely?",
       "options": ["Gigantism", "Acromegaly", "Growth hormone deficiency", "Cushing syndrome"],
@@ -417,7 +359,7 @@
     {
       "id": "es-37",
       "type": "mc",
-      "topic": "Growth, sex hormones, pineal, and thymus",
+      "topic": "Pineal gland and gonads",
       "level": 2,
       "stem": "A nurse is reviewing the findings of four clients. Which client's findings suggest a low testosterone level?",
       "options": ["A 52-year-old man with loss of muscle mass, more body fat, and a depressed mood", "A 28-year-old woman with irregular periods, acne, and new hair growth on the chin", "A 51-year-old woman with hot flashes, night sweats, and vaginal dryness", "A 24-year-old man with acne, more muscle mass, and aggressive mood changes"],
@@ -480,19 +422,9 @@
       "hidden": true
     },
     {
-      "id": "es-43",
-      "type": "mc",
-      "topic": "Diabetes screening and assessment",
-      "level": 2,
-      "stem": "A nurse is performing a 10-g monofilament test on the feet of a client who has diabetes mellitus. Which of the following actions by the nurse is correct?",
-      "options": ["Asks the client to watch the foot closely and say each time it is touched", "Slides the monofilament slowly across the sole of the foot", "Presses the monofilament straight against the skin until it bends", "Presses lightly enough that the monofilament stays straight"],
-      "answer": 2,
-      "rationale": "<p>The 10-g monofilament tests <b>protective sensation</b>, which is lost early in diabetic neuropathy. The nurse holds it <b>perpendicular (straight) to the skin</b> and <b>presses until it bends (buckles)</b>, which applies a set pressure of 10 g, holds it in place for about <b>1 second</b>, and then releases it, at each test site.</p><p>The client's <b>eyes are closed</b> during the test, so the answers come from feeling, not seeing. <b>Sliding</b> the monofilament across the skin doesn't apply the set pressure. Pressing so lightly that it <b>stays straight</b> applies less than 10 g, so a client with normal sensation might not feel it and the result can't be trusted.</p><p><b>Pressing lightly so the filament stays straight</b> is the tempting choice, since it seems gentler, but the test depends on the set pressure of 10 g, which is reached only when the filament bends.</p><p><b>Takeaway:</b> For the monofilament test, the client's eyes are closed, and the nurse holds the filament perpendicular, presses until it bends, and holds it for about 1 second.</p>"
-    },
-    {
       "id": "es-44",
       "type": "sata",
-      "topic": "Diabetes screening and assessment",
+      "topic": "Diabetes risk and metabolic syndrome",
       "level": 2,
       "stem": "A nurse is screening clients for type 2 diabetes mellitus at a community health fair. Which of the following findings in a client's history are risk factors for type 2 diabetes?",
       "options": ["Walks for 30 minutes 5 days a week", "Had gestational diabetes during a pregnancy", "Has a body mass index (BMI) of 22", "Is 51 years old", "Is allergic to penicillin", "Has a brother with type 2 diabetes"],
@@ -500,20 +432,10 @@
       "rationale": "<p>Risk factors for type 2 diabetes include <b>family history</b> (a parent or sibling with type 2 diabetes) and genes, <b>age over 45</b>, overweight and obesity, <b>physical inactivity</b> (exercising fewer than 3 times a week), non-alcoholic fatty liver disease, a history of <b>gestational diabetes</b>, and social and built drivers of health, such as limited access to healthy food.</p><p>Walking 30 minutes, 5 days a week, is regular physical activity, which <b>lowers</b> the risk. A BMI of 22 is in the <b>healthy</b> range. A penicillin allergy has no link to diabetes.</p><p><b>Walking 30 minutes 5 days a week</b> is the tempting one, since activity belongs in the history, but regular activity lowers the risk; inactivity is the risk factor.</p><p><b>Takeaway:</b> Risk factors for type 2 diabetes include family history, age over 45, excess weight, inactivity, fatty liver disease, and past gestational diabetes.</p>"
     },
     {
-      "id": "es-45",
-      "type": "mc",
-      "topic": "Diabetes screening and assessment",
-      "level": 3,
-      "stem": "A client with type 2 diabetes mellitus lives in a rural area far from the clinic and has follow-up visits by telehealth. Which of the following parts of the client's follow-up requires an in-person visit?",
-      "options": ["Reviewing the readings from the client's continuous glucose monitor", "Asking about thirst, urination, and changes in vision", "Teaching about meal planning and physical activity", "Testing sensation on the feet with a 10-g monofilament"],
-      "answer": 3,
-      "rationale": "<p>Telehealth saves travel and cost and brings care to clients in <b>rural areas</b> or with limited mobility, but <b>not every part of a visit can be done remotely</b>. A <b>monofilament foot exam</b> needs hands-on assessment: someone has to press the monofilament against the client's skin at each site. Inspecting and touching the feet also works best in person.</p><p><b>Glucose monitor readings</b> can be uploaded and reviewed from a distance, <b>symptoms</b> can be asked about by video or phone, and <b>teaching</b> about meals and activity works well by video. Because personal health data travels electronically, it must be kept secure.</p><p><b>Reviewing the CGM readings</b> is the tempting choice, since they're important data, but they can be shared electronically; only the monofilament exam needs someone to touch the feet.</p><p><b>Takeaway:</b> Telehealth can cover history, data review, and teaching, but hands-on assessments such as the monofilament foot exam need an in-person visit.</p>"
-    },
-    {
       "id": "es-46",
       "type": "highlight",
       "case": "screening",
-      "topic": "Diabetes screening and assessment",
+      "topic": "Diabetes mellitus",
       "level": 3,
       "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
       "passage": "Client came in for a required driver health exam and has not eaten since 2000 last night. Reports [[feeling thirsty all the time]] and keeps a large water jug in the truck. [[Gets up 3 to 4 times a night to urinate]]. [[Says vision is blurry late in the day]], which makes night driving harder. Eats most meals at truck stops and walks about once a week. [[Alert and oriented]]. [[Denies chest pain]]. [[Lungs clear]]. Skin warm and dry; [[dark, velvety patches of skin on the back of the neck and in both armpits]]. Feet: [[pedal pulses present in both feet]]; skin intact, no sores. 10-g monofilament: [[did not feel the monofilament at 3 of 10 sites on each foot]]. Reports [[tingling in both feet at night]].",
@@ -546,17 +468,6 @@
       "rationale": "<p>The client most likely has <b>type 2 diabetes mellitus</b>: classic symptoms (thirst, frequent urination, blurry vision), a fasting glucose of 156 mg/dL and an HbA1c of 7.6% (both in the diabetes range), a gradual rise through prediabetes over years, and signs of insulin resistance (dark, velvety skin folds), in an older adult with obesity, little activity, and a family history. <b>Type 1 diabetes</b> is an autoimmune loss of insulin that often starts in younger people, who tend to be underweight. <b>Hypoglycemia</b> is low glucose, the opposite of these results. <b>Hyperthyroidism</b> causes weight loss and heat intolerance.</p><p>The nurse <b>reports the findings and results to the provider</b>, so a diabetes care plan can start, and <b>encourages walking at least 3 days a week</b>, building up gradually, because regular activity improves how the body uses insulin. Limiting fluids would add to the water the client is already losing in the urine. Skipping meals can cause swings in glucose. Hot water can burn feet that have lost sensation.</p><p>The nurse monitors the <b>HbA1c</b>, which shows the average glucose over months, and <b>sensation in both feet</b>, since the client already has signs of neuropathy. TSH, oxygen saturation, and hearing aren't affected here.</p><p><b>Takeaway:</b> A gradual onset with obesity, inactivity, family history, and insulin-resistance skin changes points to type 2 diabetes; follow the HbA1c and the feet.</p>"
     },
     {
-      "id": "es-49",
-      "type": "mc",
-      "case": "screening",
-      "topic": "Diabetes screening and assessment",
-      "level": 2,
-      "stem": "The provider prescribes a continuous glucose monitor (CGM) and telehealth visits while the client is on the road. Which of the following statements by the client shows an understanding of the CGM?",
-      "options": ["“It checks the glucose in the fluid under my skin, and I'll change the sensor about every 10 to 15 days.”", "“It measures the glucose in a drop of blood each time I prick my finger with the lancet.”", "“It shows my average glucose for the month, so I'll look at it at the end of each month.”", "“It sends my readings to the clinic, so I can stop watching for signs of high glucose.”"],
-      "answer": 0,
-      "rationale": "<p>A <b>continuous glucose monitor (CGM)</b> has a small sensor under the skin that measures the glucose in the <b>interstitial fluid</b> (the fluid around the cells) every few minutes, day and night, and shows the level and its trend. The sensor stays in place for about <b>10 to 15 days</b> before it is replaced. Readings can be shared with the clinic, which suits a client who is often on the road.</p><p>A <b>fingerstick</b> measures capillary blood at one moment, with a different device. A CGM shows readings all day, not just a <b>monthly average</b>. And a CGM doesn't replace the client's own attention to <b>signs of high glucose</b>, such as thirst and frequent urination; alarms and readings add to it.</p><p><b>“It shows my average glucose for the month”</b> is the tempting choice, since that sounds like the HbA1c, but a CGM shows the level and its trend all day, every few minutes.</p><p><b>Takeaway:</b> A CGM measures glucose in the fluid under the skin around the clock, and its sensor is changed every 10 to 15 days.</p>"
-    },
-    {
       "id": "es-50",
       "type": "matrix",
       "case": "screening",
@@ -570,29 +481,9 @@
       "rationale": "<p>The client's diabetes care is working: the <b>HbA1c fell from 7.6% to 6.8%</b>, so the average glucose over the past months is lower (improved, though still above 6.5%); <b>getting up at night to urinate</b> dropped to once, as less glucose is pulling water into the urine (improved); and the client <b>lost 5 kg</b>, which lowers insulin resistance (improved). <b>Pedal pulses</b> are still present in both feet (no change).</p><p>But foot sensation is <b>worse</b>: the client now can't feel the monofilament at <b>4 of 10 sites</b> on each foot instead of 3 (declined). Nerve damage can keep progressing even as glucose improves, and feet without protective sensation can be injured without the client noticing, so the nurse reports the change and teaches the client to protect the feet.</p><p><b>Takeaway:</b> Judge each finding on its own: better glucose control doesn't guarantee that nerve damage has stopped.</p>"
     },
     {
-      "id": "es-51",
-      "type": "mc",
-      "topic": "Hormones and neurotransmitters",
-      "level": 2,
-      "stem": "A client with chronic pancreatitis has greasy stools from too few digestive enzymes, and high blood glucose from too little insulin. Which explains how the pancreas normally delivers these two products?",
-      "options": ["Both go into the blood, which carries them to the intestine and to the cells", "The enzymes travel through a duct into the intestine, and the insulin enters the blood", "Both travel through ducts: one into the intestine, and the other into the liver", "The insulin travels through a duct into the intestine, and the enzymes enter the bloodstream"],
-      "answer": 1,
-      "rationale": "<p>The pancreas is both an <b>exocrine</b> and an <b>endocrine</b> gland. Its digestive enzymes travel through a <b>duct</b> into the small intestine (exocrine), while its islets release <b>insulin into the blood</b>, which carries it to target cells throughout the body (endocrine). Damage to the gland can cut off both.</p><p><b>“The insulin travels through a duct”</b> is the tempting choice if the two are swapped, but hormones don't use ducts: they enter the blood. Enzymes don't reach the intestine through the blood.</p><p><b>Takeaway:</b> Hormones travel in the blood to distant targets; exocrine products, like digestive enzymes, travel through ducts.</p>"
-    },
-    {
-      "id": "es-52",
-      "type": "mc",
-      "topic": "Hormone action and classes",
-      "level": 3,
-      "stem": "A client with severe swelling from an allergic reaction receives epinephrine and an IV glucocorticoid. An hour later, the client asks why the glucocorticoid “isn't working yet.” Which response should the nurse give?",
-      "options": ["“It's a steroid: it enters your cells and changes which proteins they make, which takes hours.”", "“It acts on receptors on the outside of your cells, like epinephrine, so it's about to start working.”", "“Your liver has to turn it into epinephrine before it can act on the swelling.”", "“It starts working on the swelling once the epinephrine wears off.”"],
-      "answer": 0,
-      "rationale": "<p>Glucocorticoids are <b>steroid</b> hormones: lipid-soluble, they pass through the cell membrane, bind <b>receptors inside the cell</b>, and change which genes are active and which proteins are made. That takes hours, so their effect builds slowly. <b>Epinephrine</b>, an amino acid–based (amine) hormone, binds receptors on the <b>cell surface</b> and acts within minutes, which is why it's given first.</p><p><b>“It acts on receptors outside your cells, like epinephrine”</b> is the tempting choice, since both drugs treat the same reaction, but steroid and amine hormones act in different ways. A glucocorticoid isn't turned into epinephrine, and it doesn't wait for epinephrine to wear off.</p><p><b>Takeaway:</b> Steroid hormones act inside the cell, on genes: slower, longer-lasting effects. Water-soluble hormones act on surface receptors: fast effects.</p>"
-    },
-    {
       "id": "es-53",
       "type": "mc",
-      "topic": "Feedback and hormone control",
+      "topic": "Thyroid and parathyroid",
       "level": 2,
       "stem": "A client with a low blood calcium level receives IV calcium. As the client's calcium rises back to normal, which change in the release of parathyroid hormone (PTH) should the nurse expect?",
       "options": ["PTH release rises, to move even more calcium into the blood", "PTH release falls, since the low calcium that triggered it is gone", "PTH release stays the same until the calcium rises above normal", "PTH release stops, and the thyroid releases more T3 and T4 instead"],
@@ -624,7 +515,7 @@
     {
       "id": "es-56",
       "type": "hotspot",
-      "topic": "Growth, sex hormones, pineal, and thymus",
+      "topic": "Pineal gland and gonads",
       "level": 2,
       "stem": "A client's tumor has damaged the small gland that releases the hormone timing the body's daily cycle of sleep and waking, and the client now sleeps at odd hours. Click the gland that was damaged.",
       "image": "img/endocrine-brain.svg",
@@ -646,7 +537,7 @@
     {
       "id": "es-58",
       "type": "mc",
-      "topic": "Diabetes screening and assessment",
+      "topic": "Diabetes mellitus",
       "level": 3,
       "stem": "A client's fingerstick glucose readings this week were between 110 and 130 mg/dL, but today's hemoglobin A1c is 8.9%. Which explanation should the nurse give?",
       "options": ["“The A1c shows your glucose today, so your meter must be reading too low this week.”", "“The A1c reflects the past 2 to 3 months, so your glucose was likely higher before this week.”", "“The A1c measures the insulin your pancreas has stored, not the glucose in your blood.”", "“The A1c jumps after one high reading, so a single bad day before the test explains it.”"],
