@@ -4,8 +4,23 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 79.5,
+  "timeMinutes": 82.5,
   "defaultCount": 25,
+  "cases": {
+    "newgrad": {
+      "intro": "A charge nurse is leading the day shift on a busy surgical unit.",
+      "tabs": [
+        {
+          "title": "Charge Nurse Notes",
+          "html": "<h4>Charge Nurse Notes</h4><p><b>0830:</b> A newly licensed RN, three weeks into orientation, reports that a senior nurse said to her in front of a client, “Didn't they teach you anything in school?” and refused to help with a complex dressing. The new RN is tearful, and says it has happened several times.</p><p><b>0950:</b> The same new RN says she hasn't called the surgeon about her client in room 12 “because he yelled at me last week.”</p>"
+        },
+        {
+          "title": "Room 12",
+          "html": "<h4>Room 12: postoperative day 1 after a bowel resection</h4><table><tr><th></th><th>0800</th><th>0930</th></tr><tr><th>Heart rate</th><td>92/min</td><td>118/min</td></tr><tr><th>Blood pressure</th><td>124/78 mm Hg</td><td>102/64 mm Hg</td></tr><tr><th>Respirations</th><td>18/min</td><td>22/min</td></tr><tr><th>Temperature</th><td>37.2° C</td><td>37.4° C</td></tr><tr><th>Urine output</th><td>45 mL/hr</td><td>20 mL/hr</td></tr></table><p>Abdominal dressing: bright red drainage, outlined at 0800, now past the outline. The client says the pain is the same as earlier.</p>"
+        }
+      ]
+    }
+  },
   "questions": [
     {
       "id": "lt-01",
@@ -856,6 +871,44 @@
       ],
       "answer": 2,
       "rationale": "<p>The nurse started the right way, with a private, direct conversation using <b>DESC</b>. It didn't work, and now the pattern has <b>affected a client's care</b>, so it goes to the <b>nurse manager</b>, whose role includes managing conflict and staff performance. Bringing dates and facts keeps it about the behavior, not the person. (The missed dose is also reported through the facility's incident reporting.)</p><p><b>Using DESC again</b> is the tempting choice, since it's the right tool for a first conversation, but repeating it after a client was affected leaves clients at risk. <b>Finishing the coworker's tasks</b> hides the problem, and <b>asking other nurses to step in</b> turns a work problem into a group conflict.</p><p><b>Takeaway:</b> Try a direct, private conversation first; when it doesn't work, or a client is affected, go up the chain of command with the facts.</p>"
+    },
+    {
+      "id": "lt-54",
+      "type": "mc",
+      "topic": "Team communication",
+      "level": 3,
+      "case": "newgrad",
+      "stem": "Which action should the charge nurse take first?",
+      "options": [
+        "Assess the client in room 12 personally before anyone calls the surgeon",
+        "Meet privately with the senior nurse about her comments to the new RN",
+        "Tell the new RN to call the surgeon now, since the client has to come first",
+        "Go with the new RN to call the surgeon now, using SBAR to report on room 12"
+      ],
+      "answer": 3,
+      "rationale": "<p>The client in room 12 shows signs of bleeding and early shock: a rising heart rate, a falling blood pressure, low urine output, and drainage past the outline. The surgeon must hear now. The new RN's fear of the surgeon is what's stopping the call, so the charge nurse goes with her and makes the call with <b>SBAR</b>: the client gets care, and the new RN is coached.</p><p><b>Assessing the client personally</b> is the tempting choice, since assessing before acting is often right, but the new RN's findings are recent and clear, and another assessment only delays the call. <b>Telling the new RN to call</b> doesn't remove what has stopped her so far. Meeting with the <b>senior nurse</b> is needed, but after the client is safe.</p><p><b>Takeaway:</b> The client's safety comes before the team's problems. When fear blocks a call, the leader removes the barrier by making the call with the nurse.</p>"
+    },
+    {
+      "id": "lt-55",
+      "type": "sata",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "case": "newgrad",
+      "stem": "Which actions should the charge nurse take about the senior nurse's behavior toward the new RN?",
+      "options": [
+        "Bring up the behavior at the next staff huddle, so the whole team hears it addressed",
+        "Meet with the senior nurse privately and soon, and describe the specific behaviors",
+        "Move the new RN to another unit, so she doesn't have to work with the senior nurse",
+        "Follow the unit's code of conduct, and tell the nurse manager about the pattern",
+        "Write down what the new RN reported, with the dates and the words that were used",
+        "Wait to act until the charge nurse sees the behavior personally"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>Belittling a new nurse in front of a client, and refusing to help, is bullying, which harms teamwork and client safety. The charge nurse addresses it <b>privately and soon</b>, naming the specific behaviors; <b>writes down</b> what was reported, with dates and words; and follows the unit's <b>code of conduct</b>, bringing in the manager, since it's a pattern.</p><p><b>Waiting to see it personally</b> is the tempting choice, since it seems fair to the senior nurse, but a reported pattern of bullying needs action now, and the private meeting gives the senior nurse a chance to respond. Raising it at a <b>huddle</b> shames her in public, and <b>moving the new RN</b> punishes the person who was bullied.</p><p><b>Takeaway:</b> Address bullying privately, promptly, and specifically; document it; and follow the policy. Don't make the target move.</p>"
     }
   ]
 }

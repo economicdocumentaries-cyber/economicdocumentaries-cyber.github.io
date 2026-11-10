@@ -4,8 +4,23 @@
   "description": "Class 17 practice: values and the ethical principles, codes of ethics and client rights, ethical decision making, the sources of law and the scope of practice, federal and state laws, informed consent and advance directives, torts, negligence, and malpractice, and staffing, delegation, and reducing legal risk.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 78,
   "defaultCount": 25,
+  "cases": {
+    "student": {
+      "intro": "A nurse on a medical-surgical unit is precepting a nursing student during a short-staffed day shift.",
+      "tabs": [
+        {
+          "title": "Unit Notes",
+          "html": "<h4>Unit Notes</h4><p><b>0700:</b> Five RNs for 30 clients; six is usual. The nurse is assigned six clients and the student. The student's clinical instructor is on the unit, supervising four other students.</p><p><b>The school's rules for students:</b> students give IV medications only with the instructor or the RN present, and don't take verbal or phone orders.</p>"
+        },
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>0930:</b> The student reports that the client in room 4, admitted with a blood glucose of 486 mg/dL, said he has been skipping his insulin at home to save money, and asked the student not to tell anyone. The student promised.</p><p><b>1015:</b> The student reports giving the client in room 6 her 1000 IV antibiotic, cefazolin, alone, “because you were busy, and I've done it lots of times.” The dose and the rate match the prescription. The client in room 6 has no rash, itching, or trouble breathing, and her vital signs are unchanged from 0800.</p>"
+        }
+      ]
+    }
+  },
   "questions": [
     {
       "id": "el-01",
@@ -506,6 +521,28 @@
       "options": ["Remind the coworker to chart rounds after doing them, from now on", "Do the coworker's missed rounds so that the clients are checked", "Ask the coworker to fix the earlier entries with late entries", "Report it to the nurse manager or the compliance hotline"],
       "answer": 3,
       "rationale": "<p>Charting care that wasn't given is <b>falsifying records</b>, a form of <b>fraud</b> (intentional deception for gain), and it can hide harm to clients. The nurse reports it through the chain of command or the compliance hotline. Whistleblowers are protected.</p><p><b>Reminding the coworker</b> is the tempting choice, since it feels collegial, but it leaves the false entries in place and the practice unreported. Doing the <b>missed rounds</b> helps today's clients but hides the problem, and <b>late entries</b> can't make up care that never happened.</p><p><b>Takeaway:</b> Fraud is intentional deception (billing or charting care never given). Waste is overuse; abuse is improper practice that adds cost. Report suspected fraud through the chain of command or the hotline.</p>"
+    },
+    {
+      "id": "el-51",
+      "type": "sata",
+      "topic": "Workforce and legal risk",
+      "level": 3,
+      "case": "student",
+      "stem": "Which actions should the nurse take about the IV antibiotic the student gave in room 6?",
+      "options": ["Check the client in room 6 for a reaction, and check the IV line and site", "Report the student to the state board of nursing", "Tell the clinical instructor what the student did", "Hold the client's next antibiotic dose until the provider has been told", "Complete an incident report, following the facility's policy", "Wait until the end of the shift to tell the instructor, so the student stays calm"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>The client comes first: <b>check her</b> for a reaction, and check the line and site. The student went beyond what the school allows, so the nurse tells the <b>clinical instructor</b> now, and completes an <b>incident report</b> as policy requires, since a rule was broken even though no harm is seen. Students are accountable for their own actions; the nurse is accountable for the client.</p><p><b>Waiting until the end of the shift</b> is the tempting choice, since it spares the student for now, but the instructor supervises the student today and needs to know before the student gives anything else. A student isn't licensed, so the school, not the <b>board of nursing</b>, deals with the student. The dose and rate were right and the client is stable, so <b>holding the next dose</b> would delay her treatment for no reason.</p><p><b>Takeaway:</b> When a student goes beyond the rules: the client first, then the instructor and an incident report, right away.</p>"
+    },
+    {
+      "id": "el-52",
+      "type": "mc",
+      "topic": "Values and ethical principles",
+      "level": 3,
+      "case": "student",
+      "stem": "Which response by the nurse to the student about the client in room 4 is best?",
+      "options": ["“You promised him, so keep it to yourself. Breaking his trust could stop him from telling us things.”", "“Tell the provider yourself, and leave him out of it so he doesn't feel that you betrayed him.”", "“His team needs to know, since it affects his safety. Let's talk with him together about why.”", "“Let's wait and see if he brings it up with his provider before we decide what to do about it.”"],
+      "answer": 2,
+      "rationale": "<p>Skipping insulin to save money affects the client's safety, his diabetes plan, and his discharge, so his care team needs to know. Confidentiality keeps information within the team, not from it. Talking with the client together explains why it's shared and keeps his trust, and the team can look for help with the cost.</p><p><b>Keeping the promise</b> is the tempting choice, since fidelity is a real principle, but a promise of secrecy can't outweigh a client's safety, which is why nurses don't make one. <b>Going around the client</b> gets the information to the provider, but damages his trust when he finds out, and <b>waiting</b> leaves a dangerous gap in his plan.</p><p><b>Takeaway:</b> Confidentiality means within the care team, not a secret from it. Explain to the client why it's shared, with him, not behind his back.</p>"
     }
   ]
 }
