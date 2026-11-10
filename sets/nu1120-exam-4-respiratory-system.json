@@ -1,11 +1,30 @@
 {
   "id": "nu1120-exam-4-respiratory-system",
   "title": "The Respiratory System",
-  "description": "Week 11, matched to the instructor's Exam 4 study guide: the upper and lower airways, the alveoli and the lobes, the breathing muscles and the nervous control of breathing, ventilation, respiration, and perfusion, risk factors and prevention, and respiratory distress.",
+  "description": "Week 11, matched to the instructor's Exam 4 study guide: the upper and lower airways, the alveoli and the lobes, the breathing muscles and the nervous control of breathing, ventilation, respiration, perfusion, diffusion, and mucociliary clearance, arterial blood gases, risk factors and prevention, and respiratory distress, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 31.5,
+  "timeMinutes": 75,
   "defaultCount": 25,
+  "cases": {
+    "smoker": {
+      "intro": "A nurse on a medical unit is caring for a 71-year-old client who was admitted with shortness of breath that has been getting worse.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>0800:</b> Client reports getting more short of breath over 3 days and coughing up thick, yellow mucus. Smoked 1 pack a day for 45 years; quit 2 years ago. Worked 30 years in a coal mine. Drinks “maybe two cups of water a day.” Sitting on the edge of the bed, leaning forward with hands on knees; neck muscles tighten with each breath. Speaks in 3- to 4-word phrases. Restless, and keeps asking what day it is; daughter says this is new. Received a flu vaccine last month; has never had a pneumococcal vaccine.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><tr><th>Heart rate</th><td>112/min</td></tr><tr><th>Respiratory rate</th><td>30/min</td></tr><tr><th>Blood pressure</th><td>148/86&nbsp;mm&nbsp;Hg</td></tr><tr><th>Oxygen saturation</th><td>86% on room air</td></tr><tr><th>Temperature</th><td>37.8&nbsp;°C (100&nbsp;°F)</td></tr></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Arterial Blood Gases, 0815</h4><table><tr><th>pH</th><td>7.28</td><td>(7.35–7.45)</td></tr><tr><th>PaCO₂</th><td>62&nbsp;mm&nbsp;Hg</td><td>(35–45)</td></tr><tr><th>HCO₃⁻</th><td>26&nbsp;mEq/L</td><td>(22–26)</td></tr><tr><th>Base excess</th><td>+1&nbsp;mEq/L</td><td>(−2 to +2)</td></tr><tr><th>PaO₂</th><td>54&nbsp;mm&nbsp;Hg</td><td>(80–100)</td></tr></table>"
+        }
+      ]
+    }
+  },
   "questions": [
     {
       "id": "rs-01",
@@ -230,6 +249,330 @@
       "options": ["“Flu viruses change, so each season's vaccine is updated, and vaccinated people tend to have milder illness.”", "“Your immunity from last year's shot has worn off, and the same vaccine is given each year to renew it.”", "“The vaccine treats the flu if you catch it, so you need it before each flu season.”", "“Adults over 65 need it yearly, while younger adults need it once in 5 years.”"],
       "answer": 0,
       "rationale": "<p>Many strains of influenza virus circulate, and they change, so each season's vaccine is updated to match. People who get the seasonal vaccine tend to have <b>milder</b> symptoms and fewer complications.</p><p><b>“The same vaccine renews your immunity”</b> is the tempting choice, since protection does wane, but the vaccine itself changes each year. It prevents illness rather than treating it, and yearly vaccination is advised for adults of every age.</p><p><b>Takeaway:</b> Flu vaccine: every year, because the viruses change; vaccinated people have milder illness.</p>"
+    },
+    {
+      "id": "rs-51",
+      "type": "matrix",
+      "topic": "Upper respiratory tract",
+      "level": 1,
+      "stem": "A nurse is reviewing the upper respiratory tract. For each function, click to specify the structure that performs it.",
+      "rowHeader": "Function",
+      "columns": ["Nasal cavity", "Turbinates", "Paranasal sinuses", "Pharynx", "Larynx"],
+      "rows": ["Holds the vocal cords, and is covered by the epiglottis during swallowing", "Swirl the incoming air so more of it touches the moist lining", "Traps particles in hairs and mucus as air first enters", "Carries both air and food, behind the nose and mouth", "Add resonance to the voice and make mucus that drains into the nose"],
+      "answer": [4, 1, 0, 3, 2],
+      "rationale": "<p>The <b>turbinates</b> (nasal conchae) are curled shelves that make the air swirl, so it's filtered, warmed, and moistened. The <b>paranasal sinuses</b> are air spaces that make mucus and give the voice resonance. The <b>pharynx</b> is the shared path for air and food. The <b>larynx</b> holds the vocal cords and is sealed by the epiglottis during swallowing. The <b>nasal cavity</b>'s hairs and mucus catch particles first.</p><p>The tempting mix-up is giving the sinuses the job of warming the air. That's the nasal cavity and turbinates; the sinuses mostly make mucus and add resonance.</p><p><b>Takeaway:</b> Nasal cavity and turbinates condition the air; sinuses add resonance; the pharynx is shared; the larynx makes the voice.</p>"
+    },
+    {
+      "id": "rs-52",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A client who works in a dusty warehouse asks what happens to the tiny dust particles that get past the mucus and reach the alveoli. Which explanation should the nurse give?",
+      "options": ["Type 2 alveolar cells dissolve the particles in surfactant", "Alveolar macrophages engulf the particles and clear them away", "Cilia in the alveoli sweep the particles back up to the throat", "Type 1 alveolar cells pass the particles into the bloodstream"],
+      "answer": 1,
+      "rationale": "<p><b>Alveolar macrophages</b>, sometimes called dust cells, roam the alveoli and engulf dust, microbes, and debris. They're the cleanup crew where the airways' cilia don't reach.</p><p><b>Cilia</b> are the tempting choice, since they clear the airways, but they line the trachea and bronchi, not the alveoli. Type 2 cells make surfactant, and type 1 cells form the gas-exchange wall.</p><p><b>Takeaway:</b> Cilia clean the airways; alveolar macrophages clean the alveoli.</p>"
+    },
+    {
+      "id": "rs-53",
+      "type": "matrix",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A nurse is reviewing the cells of the alveoli. For each job, click to specify the cell that does it.",
+      "rowHeader": "Job",
+      "columns": ["Type 1 alveolar cell", "Type 2 alveolar cell", "Alveolar macrophage"],
+      "rows": ["Forms most of the thin wall where oxygen and carbon dioxide cross", "Releases surfactant, which keeps the alveoli from collapsing", "Engulfs bacteria that reach the alveoli", "Divides to repair the lining after an injury", "Is also called a dust cell"],
+      "answer": [0, 1, 2, 1, 2],
+      "rationale": "<p><b>Type 1</b> cells are thin and flat and cover most of the alveolar surface: the wall gases cross. <b>Type 2</b> cells make <b>surfactant</b>, which lowers surface tension so alveoli stay open, and they divide to repair the lining. <b>Alveolar macrophages</b> (dust cells) engulf germs and particles.</p><p>The tempting mistake is giving repair to type 1 cells, since they're the main lining. Type 1 cells can't divide; type 2 cells divide and replace them.</p><p><b>Takeaway:</b> Type 1: exchange. Type 2: surfactant and repair. Macrophages: cleanup.</p>"
+    },
+    {
+      "id": "rs-54",
+      "type": "dropdown",
+      "topic": "Lower respiratory tract",
+      "level": 1,
+      "stem": "A nurse is reviewing the lobes and segments of the lungs. Complete the following sentence.",
+      "text": "The right lung has {{0}} lobes and about {{1}} segments, and the left lung has {{2}} lobes and 8 to 9 segments, which leaves room for the {{3}}.",
+      "blanks": [
+        {"options": ["2", "3"], "answer": 1},
+        {"options": ["10", "12", "14"], "answer": 0},
+        {"options": ["2", "3", "4"], "answer": 0},
+        {"options": ["liver", "stomach", "heart"], "answer": 2}
+      ],
+      "rationale": "<p>The <b>right</b> lung has <b>3 lobes</b> (superior, middle, and inferior) and <b>10 segments</b>. The <b>left</b> lung has <b>2 lobes</b> and <b>8 to 9 segments</b>; it's smaller because the heart sits to the left, in the cardiac notch.</p><p>The tempting mistake is giving the left lung three lobes. The lingula is part of the left upper lobe, not a third lobe.</p><p><b>Takeaway:</b> Right: 3 lobes, 10 segments. Left: 2 lobes, 8 to 9 segments.</p>"
+    },
+    {
+      "id": "rs-55",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "A client has had a stroke in the medulla oblongata. Which finding should the nurse watch for most closely?",
+      "options": ["An irregular breathing pattern, with pauses in breathing", "Loss of the sense of smell on both sides of the nose", "A hoarse voice from swelling of the vocal cords", "Wheezing from narrowed bronchioles in both lungs"],
+      "answer": 0,
+      "rationale": "<p>The <b>medulla oblongata</b> holds the brainstem's breathing center, which sets the automatic rhythm of breathing. Damage there can make breathing irregular or stop it, so the nurse watches the breathing pattern closely.</p><p><b>Wheezing</b> is the tempting choice, since it's a breathing finding, but it comes from narrowed airways, not from damage to the breathing center.</p><p><b>Takeaway:</b> The medulla sets the rhythm of breathing; damage there threatens breathing itself.</p>"
+    },
+    {
+      "id": "rs-56",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 3,
+      "stem": "A client's airways are narrowing, and the PaCO₂ rises from 40 to 52 mm Hg. Which response from the brainstem should the nurse expect?",
+      "options": ["The medulla slows breathing so the narrowed airways can rest", "The breathing stays the same, since the medulla responds to oxygen alone", "The medulla signals faster, deeper breaths to blow off CO₂", "The medulla stops signaling the diaphragm until the CO₂ falls"],
+      "answer": 2,
+      "rationale": "<p>Sensors in the <b>medulla</b> respond mainly to rising <b>carbon dioxide</b> and the acid it forms. When the PaCO₂ rises, the medulla drives faster, deeper breathing to remove it.</p><p><b>Responding to oxygen alone</b> is the tempting choice, since low oxygen does stimulate breathing too, but in most people carbon dioxide is the main signal.</p><p><b>Takeaway:</b> Rising CO₂ is the main trigger for faster, deeper breathing.</p>"
+    },
+    {
+      "id": "rs-57",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "A nurse teaches a client after chest surgery to hug a pillow against the incision while coughing. Which muscles mainly produce the forceful breath out in a cough?",
+      "options": ["The diaphragm muscle, which contracts and moves downward", "The external intercostal muscles, which lift the ribs", "The scalene muscles, which raise the first two ribs", "The abdominal muscles, which push the diaphragm up"],
+      "answer": 3,
+      "rationale": "<p>A forced breath out uses the <b>abdominal muscles</b> (with the internal intercostals). They squeeze the abdomen, which raises the pressure there and pushes the relaxed diaphragm up, so the pressure in the chest rises and air rushes out.</p><p><b>The diaphragm</b> is the tempting choice, since it's the main breathing muscle, but its contraction pulls air <b>in</b>; it relaxes to let air out.</p><p><b>Takeaway:</b> The diaphragm and external intercostals breathe in; the abdominal muscles force air out.</p>"
+    },
+    {
+      "id": "rs-58",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 2,
+      "stem": "A client who smokes asks why smokers get more chest infections. Which explanation should the nurse give?",
+      "options": ["“Smoke thins your mucus, so it can no longer trap germs in the airways.”", "“Smoke damages the cilia that sweep germ-filled mucus out of your airways.”", "“Smoke kills the germs in your lungs, so your body stops building defenses.”", "“Smoke narrows your blood vessels, so less blood reaches your alveoli.”"],
+      "answer": 1,
+      "rationale": "<p><b>Mucociliary clearance</b> is a key protective function: cilia beat to push mucus, with the germs and irritants trapped in it, up and out of the airways. Smoke paralyzes and destroys cilia, so mucus and germs stay in the lungs.</p><p><b>Narrowed blood vessels</b> is the tempting choice, since nicotine does narrow vessels, but the infections come from the damaged cleanup system. Smoke also makes <b>more</b> mucus, not thinner mucus.</p><p><b>Takeaway:</b> Smoking breaks the mucociliary escalator, so germs stay in the airways.</p>"
+    },
+    {
+      "id": "rs-59",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "A client's alveolar walls have become thick and scarred, but the client breathes at a normal rate and the heart pumps normally. Which process is mainly impaired, and which finding should the nurse expect?",
+      "options": ["Ventilation; the PaCO₂ rises because air can't move in", "Perfusion; blood can't flow through the lung capillaries", "Diffusion; the PaO₂ falls, especially with activity", "Mucociliary clearance; mucus collects in the airways"],
+      "answer": 2,
+      "rationale": "<p>Gases cross the alveolar and capillary walls by <b>diffusion</b>. A thick, scarred wall slows it, and oxygen is affected first, since carbon dioxide crosses much more easily. The PaO₂ falls, most of all with activity, when the blood moves past the alveoli faster.</p><p><b>Ventilation</b> is the tempting choice, since breathing feels harder, but this client moves air normally; the problem is getting the gas across the wall.</p><p><b>Takeaway:</b> Thick alveolar walls impair diffusion, and oxygen suffers first.</p>"
+    },
+    {
+      "id": "rs-60",
+      "type": "matrix",
+      "topic": "Functions of the respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing four clients. For each finding, click to specify which function of the respiratory system the nurse should expect to be impaired.",
+      "rowHeader": "Finding",
+      "columns": ["Ventilation", "Perfusion", "Diffusion", "Mucociliary clearance"],
+      "rows": ["Fluid thickens the walls between the alveoli and the capillaries", "An opioid overdose has slowed the breathing to 6 breaths a minute", "Years of smoking have destroyed the hair-like cells lining the airways", "A weak heart pumps too little blood through the lungs", "A broken rib makes deep breaths so painful that the client takes shallow ones"],
+      "answer": [2, 0, 3, 1, 0],
+      "rationale": "<p><b>Ventilation</b> is moving air in and out, so slow or shallow breathing impairs it. <b>Perfusion</b> is blood flow past the alveoli, which a weak heart reduces. <b>Diffusion</b> is gas crossing the alveolar and capillary walls, slowed by fluid or scarring. <b>Mucociliary clearance</b> depends on the cilia.</p><p>The tempting mistake is calling the broken rib a perfusion problem because of the injury. The pain limits how much air moves, so it's ventilation.</p><p><b>Takeaway:</b> Ventilation moves air, perfusion moves blood, diffusion crosses the wall, and cilia clear the airways.</p>"
+    },
+    {
+      "id": "rs-61",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A nurse is reviewing four clients' arterial blood gases. Which client's results are all within the normal ranges?",
+      "options": ["pH 7.41, PaCO₂ 38 mm Hg, HCO₃⁻ 24 mEq/L", "pH 7.33, PaCO₂ 44 mm Hg, HCO₃⁻ 21 mEq/L", "pH 7.44, PaCO₂ 33 mm Hg, HCO₃⁻ 23 mEq/L", "pH 7.37, PaCO₂ 46 mm Hg, HCO₃⁻ 27 mEq/L"],
+      "answer": 0,
+      "rationale": "<p>The normal ranges are <b>pH 7.35 to 7.45</b>, <b>PaCO₂ 35 to 45 mm Hg</b>, and <b>HCO₃⁻ 22 to 26 mEq/L</b>. Only pH 7.41, PaCO₂ 38, and HCO₃⁻ 24 are all inside them.</p><p>The last set is the tempting choice, since its pH is normal, but its PaCO₂ (46) and HCO₃⁻ (27) are both just above normal. Check every value, not only the pH.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26: check each value against its range.</p>"
+    },
+    {
+      "id": "rs-62",
+      "type": "matrix",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A nurse reviews a client's arterial blood gas results. For each result, click to specify whether it is below, within, or above the normal range.",
+      "rowHeader": "Result",
+      "columns": ["Below the normal range", "Within the normal range", "Above the normal range"],
+      "rows": ["pH 7.33", "PaCO₂ 50 mm Hg", "HCO₃⁻ 26 mEq/L", "Base excess −1 mEq/L", "PaO₂ 72 mm Hg"],
+      "answer": [0, 2, 1, 1, 0],
+      "rationale": "<p>Normal ranges: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>, <b>base excess −2 to +2 mEq/L</b>, and <b>PaO₂ 80–100 mm Hg</b>. A pH of 7.33 is low, a PaCO₂ of 50 is high, and a PaO₂ of 72 is low; the HCO₃⁻ and base excess are normal. Together they fit a respiratory acidosis with a low oxygen level.</p><p>The tempting mistake is calling an HCO₃⁻ of 26 high. It's the top of the normal range, 22 to 26.</p><p><b>Takeaway:</b> Learn the five ABG ranges; a value at the edge of a range is still normal.</p>"
+    },
+    {
+      "id": "rs-63",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A client's arterial blood gases are pH 7.30, PaCO₂ 58 mm Hg, and HCO₃⁻ 25 mEq/L. How should the nurse interpret these results?",
+      "options": ["Respiratory acidosis", "Metabolic acidosis", "Respiratory alkalosis", "Metabolic alkalosis"],
+      "answer": 0,
+      "rationale": "<p>The pH is low (<b>acidosis</b>). The PaCO₂ is high, moving <b>opposite</b> to the pH, so the cause is <b>respiratory</b>: the lungs are keeping carbon dioxide. The HCO₃⁻ is normal.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's normal and the CO₂ is the abnormal value.</p><p><b>Takeaway:</b> ROME: in respiratory problems, pH and CO₂ move in opposite directions.</p>"
+    },
+    {
+      "id": "rs-64",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client's arterial blood gases are pH 7.49, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L. Which finding in the client's history most likely explains these results?",
+      "options": ["Three days of vomiting after eating spoiled food", "Large amounts of watery diarrhea for two days", "Breathing 30 times a minute during a panic attack", "Thick secretions that partly block the airways"],
+      "answer": 2,
+      "rationale": "<p>The pH is high (<b>alkalosis</b>) and the PaCO₂ is low, moving opposite to the pH: a <b>respiratory alkalosis</b>. Breathing fast during a panic attack blows off too much carbon dioxide.</p><p><b>Vomiting</b> is the tempting choice, since it also causes alkalosis, but that's a metabolic alkalosis, with a high HCO₃⁻. Here the HCO₃⁻ is normal and the CO₂ is low.</p><p><b>Takeaway:</b> Low CO₂ with a high pH: think hyperventilation (anxiety, pain, fever, a ventilator set too fast).</p>"
+    },
+    {
+      "id": "rs-65",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A client has had severe watery diarrhea for 3 days. Which arterial blood gas results should the nurse expect?",
+      "options": ["pH 7.29, PaCO₂ 37 mm Hg, HCO₃⁻ 16 mEq/L", "pH 7.50, PaCO₂ 44 mm Hg, HCO₃⁻ 32 mEq/L", "pH 7.31, PaCO₂ 55 mm Hg, HCO₃⁻ 26 mEq/L", "pH 7.48, PaCO₂ 31 mm Hg, HCO₃⁻ 23 mEq/L"],
+      "answer": 0,
+      "rationale": "<p>Diarrhea carries <b>bicarbonate</b> out of the body, so the HCO₃⁻ falls and the pH falls with it: a <b>metabolic acidosis</b> (pH 7.29, HCO₃⁻ 16).</p><p>The high-pH, high-HCO₃⁻ set is the tempting choice, since losing fluid from the gut sounds like vomiting. Vomiting loses <b>acid</b> (alkalosis); diarrhea loses <b>base</b> (acidosis).</p><p><b>Takeaway:</b> Diarrhea: metabolic acidosis. Vomiting: metabolic alkalosis.</p>"
+    },
+    {
+      "id": "rs-66",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A client has had a nasogastric tube to suction for 4 days. Which imbalance should the nurse expect, and why?",
+      "options": ["Metabolic acidosis, from the loss of bicarbonate", "Metabolic alkalosis, from the loss of stomach acid", "Respiratory alkalosis, from breathing fast with pain", "Respiratory acidosis, from shallow breathing with the tube"],
+      "answer": 1,
+      "rationale": "<p>Suction removes stomach contents, which are rich in <b>acid</b>. Losing acid leaves extra bicarbonate behind, so the pH and HCO₃⁻ rise: a <b>metabolic alkalosis</b>, the same as prolonged vomiting.</p><p><b>Metabolic acidosis from bicarbonate loss</b> is the tempting choice, but that's what diarrhea causes; stomach fluid is acid.</p><p><b>Takeaway:</b> Prolonged vomiting or NG suction causes metabolic alkalosis.</p>"
+    },
+    {
+      "id": "rs-67",
+      "type": "matrix",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nurse is reviewing clients' histories. For each condition, click to specify the acid–base imbalance it most likely causes.",
+      "rowHeader": "Condition",
+      "columns": ["Respiratory acidosis", "Respiratory alkalosis", "Metabolic acidosis", "Metabolic alkalosis"],
+      "rows": ["Diabetic ketoacidosis", "Several days of vomiting", "A piece of food partly blocking the airway", "Anxious, rapid breathing", "Kidney failure", "A thiazide diuretic, with a low potassium level", "A fever of 39.8 °C (103.6 °F) with fast breathing"],
+      "answer": [2, 3, 0, 1, 2, 3, 1],
+      "rationale": "<p><b>Metabolic acidosis</b>: diabetic ketoacidosis (ketones) and kidney failure (acid builds up and less bicarbonate is made). <b>Metabolic alkalosis</b>: vomiting (acid lost) and thiazide diuretics. <b>Respiratory acidosis</b>: an airway obstruction that traps CO₂. <b>Respiratory alkalosis</b>: anxious hyperventilation and fever, which blow off CO₂.</p><p>The tempting mistake is calling fever a metabolic problem because the body is sick. Fever speeds up breathing, which blows off CO₂: a respiratory alkalosis.</p><p><b>Takeaway:</b> Match the cause to the system: lungs (CO₂) or metabolism and kidneys (HCO₃⁻).</p>"
+    },
+    {
+      "id": "rs-68",
+      "type": "sata",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nurse is reviewing clients at risk of metabolic acidosis. Which of the following conditions raise this risk?",
+      "options": ["Starvation", "Prolonged vomiting", "Severe hypoxia", "Nasogastric suction", "Watery diarrhea", "A thiazide diuretic"],
+      "answer": [0, 2, 4],
+      "rationale": "<p>Metabolic acidosis comes from <b>extra acid</b> or <b>lost bicarbonate</b>: starvation makes ketones, severe hypoxia makes lactic acid, and diarrhea carries bicarbonate out. Diabetic ketoacidosis, kidney failure, and dehydration are other causes.</p><p><b>Prolonged vomiting</b> and <b>nasogastric suction</b> are the tempting choices, since they're fluid losses too, but they remove stomach acid and cause <b>alkalosis</b>, as thiazide diuretics can.</p><p><b>Takeaway:</b> Acidosis: starvation, DKA, hypoxia, kidney failure, dehydration, diarrhea. Alkalosis: vomiting, NG suction, thiazides.</p>"
+    },
+    {
+      "id": "rs-69",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nursing student says, “In respiratory alkalosis, the blood has more hydrogen ions than normal.” Which response should the nurse give?",
+      "options": ["“That's right; the extra hydrogen ions are what raise the pH.”", "“It has fewer hydrogen ions; that's why the pH is higher.”", "“It has the same number; the bicarbonate level is what changes.”", "“That's right; carbon dioxide adds hydrogen ions as it builds up.”"],
+      "answer": 1,
+      "rationale": "<p>The pH reflects the hydrogen ions in the blood: <b>more</b> hydrogen ions mean a <b>lower</b> pH (acidosis), and <b>fewer</b> mean a <b>higher</b> pH (alkalosis). In respiratory alkalosis, carbon dioxide is blown off, less carbonic acid forms, and hydrogen ions fall.</p><p><b>“Carbon dioxide adds hydrogen ions as it builds up”</b> is the tempting choice, since it's true, but in respiratory alkalosis the CO₂ is <b>low</b>, not building up. (The instructor's list has this slip too; a higher pH always means fewer hydrogen ions.)</p><p><b>Takeaway:</b> Acidosis = more hydrogen ions, lower pH. Alkalosis = fewer hydrogen ions, higher pH.</p>"
+    },
+    {
+      "id": "rs-70",
+      "type": "dropdown",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A nurse is teaching how to read arterial blood gases. Complete the following sentences.",
+      "text": "In a respiratory imbalance, the pH and the PaCO₂ move in {{0}}. In a metabolic imbalance, the pH and the HCO₃⁻ move in {{1}}. A base excess of −7 mEq/L points to {{2}}.",
+      "blanks": [
+        {"options": ["opposite directions", "the same direction"], "answer": 0},
+        {"options": ["opposite directions", "the same direction"], "answer": 1},
+        {"options": ["a metabolic alkalosis", "a respiratory acidosis", "a metabolic acidosis"], "answer": 2}
+      ],
+      "rationale": "<p><b>ROME</b>: in <b>R</b>espiratory imbalances the pH and CO₂ move <b>O</b>pposite (pH down, CO₂ up); in <b>M</b>etabolic imbalances the pH and HCO₃⁻ move the same way, <b>E</b>qual. A <b>base excess</b> below −2 means too little base: a metabolic acidosis.</p><p>The tempting mistake is reading a negative base excess as alkalosis. Negative means a <b>deficit</b> of base, so the blood is more acidic.</p><p><b>Takeaway:</b> ROME, and a base excess below −2 means metabolic acidosis.</p>"
+    },
+    {
+      "id": "rs-71",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client with diabetic ketoacidosis is breathing deeply at 32 breaths a minute. The arterial blood gases are pH 7.30, PaCO₂ 28 mm Hg, and HCO₃⁻ 14 mEq/L. Which explanation of the low PaCO₂ should the nurse give?",
+      "options": ["A respiratory alkalosis is the client's main problem right now", "The ketones are breaking down the carbon dioxide in the blood", "The lungs are blowing off CO₂ to offset the acid from the ketones", "Anxiety is speeding up the breathing, with no link to the acid"],
+      "answer": 2,
+      "rationale": "<p>The pH is low and the HCO₃⁻ is low: a <b>metabolic acidosis</b> from the ketones. The medulla senses the acid and drives deep, fast breathing to blow off CO₂, which pulls the pH back toward normal. The low PaCO₂ is the lungs helping, not the main problem.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the PaCO₂ is low, but the pH is <b>acidic</b>, so the main problem can't be an alkalosis.</p><p><b>Takeaway:</b> In metabolic acidosis, deep, fast breathing lowers the CO₂ to help balance the pH.</p>"
+    },
+    {
+      "id": "rs-72",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nurse is reviewing the arterial blood gases of four clients. Which client needs follow-up first?",
+      "options": ["A client with pH 7.46 and PaCO₂ 34 mm Hg who is anxious about surgery", "A client with pH 7.36 and HCO₃⁻ 21 mEq/L who is eating breakfast", "A client with PaO₂ 82 mm Hg who is walking in the hallway", "A client with pH 7.24 and PaCO₂ 64 mm Hg who is hard to wake"],
+      "answer": 3,
+      "rationale": "<p>A pH of 7.24 with a PaCO₂ of 64 is a severe <b>respiratory acidosis</b>, and drowsiness shows carbon dioxide building up as breathing fails. That's a threat to breathing, so it comes first.</p><p>The <b>anxious client</b> is the tempting choice, since the pH is slightly high, but a mild alkalosis in an alert client isn't as urgent. The other two results are normal or nearly normal.</p><p><b>Takeaway:</b> Severe acidosis with a falling level of consciousness is a breathing emergency.</p>"
+    },
+    {
+      "id": "rs-73",
+      "type": "matrix",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's risk factors for respiratory illness. For each finding, click to specify whether the risk factor can be changed.",
+      "rowHeader": "Finding",
+      "columns": ["Modifiable", "Non-modifiable"],
+      "rows": ["Is 79 years old", "Smokes a pack of cigarettes a day", "Sands and paints boats for a living", "Drinks little water, and the mucus is thick", "Belongs to an ethnic group with higher rates of asthma"],
+      "answer": [1, 0, 0, 0, 1],
+      "rationale": "<p><b>Age</b> and <b>ethnicity</b> can't be changed. <b>Smoking</b>, <b>work exposures</b> (dust and fumes, with protective gear), and <b>hydration</b> can. Dehydration thickens mucus and slows its clearance. (The instructor's list labels both groups “non-modifiable”; the second group is the modifiable one.)</p><p>The tempting mistake is calling a job non-modifiable. The client may not change jobs, but exposure can be reduced with ventilation and a fitted respirator.</p><p><b>Takeaway:</b> Non-modifiable: age, ethnicity. Modifiable: smoking, hydration, work exposures.</p>"
+    },
+    {
+      "id": "rs-74",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A 67-year-old client asks which vaccines can help prevent pneumonia and other chest infections. Which response should the nurse give?",
+      "options": ["“A shingles vaccine, which also protects against pneumonia.”", "“One flu vaccine at 65, which protects for the rest of your life.”", "“A pneumococcal vaccine, which replaces the yearly flu vaccine.”", "“A pneumococcal vaccine, plus a flu vaccine every year.”"],
+      "answer": 3,
+      "rationale": "<p>The instructor's list for preventing respiratory infections: <b>exercise</b>, the <b>pneumococcal vaccine</b>, and the <b>influenza vaccine</b>. Flu viruses change each season, so the flu vaccine is needed <b>every year</b>; the pneumococcal vaccine protects against a common cause of pneumonia.</p><p><b>The shingles vaccine</b> is the tempting choice, since it's recommended for older adults too, but it protects against shingles, not pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal vaccine, and a flu vaccine every year.</p>"
+    },
+    {
+      "id": "rs-75",
+      "type": "highlight",
+      "case": "smoker",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "Client reports [[getting more short of breath over 3 days]] and [[coughing up thick, yellow mucus]]. [[Smoked 1 pack a day for 45 years; quit 2 years ago]]. [[Worked 30 years in a coal mine]]. [[Drinks “maybe two cups of water a day”]]. Sitting on the edge of the bed, [[leaning forward with hands on knees; neck muscles tighten with each breath]]. [[Speaks in 3- to 4-word phrases]]. [[Restless, and keeps asking what day it is]]; daughter says this is new. [[Received a flu vaccine last month]]; [[has never had a pneumococcal vaccine]].",
+      "answer": [0, 1, 4, 5, 6, 7, 9],
+      "rationale": "<p>Worsening shortness of breath, thick yellow mucus, the tripod position with neck muscles working, short phrases, and <b>new</b> restlessness and confusion are signs of <b>respiratory distress</b> that's getting worse. Low fluid intake thickens mucus, and the missing pneumococcal vaccine is a gap in prevention to address.</p><p>The <b>smoking and coal-mine history</b> are the tempting ones to highlight, since they're risk factors, but they're background that explains the illness, not findings to act on now. The recent flu vaccine is up to date.</p><p><b>Takeaway:</b> In respiratory distress, act on the work of breathing, the mental status, and the gaps in prevention.</p>"
+    },
+    {
+      "id": "rs-76",
+      "type": "matrix",
+      "case": "smoker",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "For each finding, click to specify what it most likely shows.",
+      "rowHeader": "Finding",
+      "columns": ["Respiratory distress", "A risk factor for lung disease", "Respiratory acidosis"],
+      "rows": ["Neck muscles tightening with each breath", "A pH of 7.28 with a PaCO₂ of 62 mm Hg", "45 years of smoking", "Speaking in 3- to 4-word phrases", "30 years of work in a coal mine"],
+      "answer": [0, 2, 1, 0, 1],
+      "rationale": "<p>Using the neck (accessory) muscles and speaking in short phrases show <b>respiratory distress</b>. A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: carbon dioxide is being kept. Smoking and coal dust are <b>risk factors</b> that damaged the lungs over years.</p><p>The tempting mistake is calling the blood gas a sign of distress. It's a lab finding that shows the <b>result</b> of the failing breathing: carbon dioxide building up.</p><p><b>Takeaway:</b> Sort findings into what you see (distress), what the labs show (acidosis), and why it happened (risk factors).</p>"
+    },
+    {
+      "id": "rs-77",
+      "type": "dropdown",
+      "case": "smoker",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "Complete the following sentences.",
+      "text": "The client's arterial blood gases show {{0}}. It's most likely caused by {{1}}, and the new confusion most likely comes from {{2}}.",
+      "blanks": [
+        {"options": ["a respiratory acidosis", "a metabolic acidosis", "a respiratory alkalosis"], "answer": 0},
+        {"options": ["rapid breathing that blows off too much CO₂", "the kidneys losing too much bicarbonate", "narrowed, mucus-filled airways that trap CO₂"], "answer": 2},
+        {"options": ["a reaction to the recent flu vaccine", "high CO₂ and low oxygen in the blood", "a small stroke in the medulla oblongata"], "answer": 1}
+      ],
+      "rationale": "<p>A pH of 7.28 with a PaCO₂ of 62 and a normal HCO₃⁻ is a <b>respiratory acidosis</b>. The instructor's causes are an <b>airway obstruction</b> or lungs that can't exchange gas well; here, thick mucus and damaged airways trap CO₂. High CO₂ and a PaO₂ of 54 both affect the brain, causing restlessness and confusion.</p><p><b>Rapid breathing that blows off too much CO₂</b> is the tempting choice, since the client is breathing 30 times a minute, but the PaCO₂ is high: the breaths aren't moving enough air to clear it.</p><p><b>Takeaway:</b> Fast breathing doesn't always mean low CO₂: blocked airways can keep it high.</p>"
+    },
+    {
+      "id": "rs-78",
+      "type": "sata",
+      "case": "smoker",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "Which actions should the nurse take?",
+      "options": ["Raise the head of the bed to high Fowler's position", "Give oxygen as prescribed and recheck the oxygen saturation", "Report the blood gas results and the new confusion to the provider", "Lay the client flat to rest the breathing muscles", "Encourage fluids, unless they're restricted, to thin the mucus", "Give the as-needed sleeping pill to calm the restlessness", "Plan teaching about the pneumococcal vaccine"],
+      "answer": [0, 1, 2, 4, 6],
+      "rationale": "<p>Sitting up lets the diaphragm move and the lungs expand. Oxygen as prescribed treats the low PaO₂, and the provider needs to know about the acidosis and the new confusion. Fluids thin the mucus so it can be cleared, and the missing pneumococcal vaccine is worth teaching about once the client is stable.</p><p><b>The sleeping pill</b> is the tempting choice, since the client is restless, but sedatives slow breathing, and the restlessness is a sign of low oxygen and high CO₂. Lying flat makes breathing harder.</p><p><b>Takeaway:</b> Position upright, oxygenate, report, and never sedate restlessness from poor breathing.</p>"
+    },
+    {
+      "id": "rs-79",
+      "type": "matrix",
+      "case": "smoker",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "Four hours later, the nurse reassesses the client. For each finding, click to specify whether it has improved, not changed, or gotten worse.",
+      "rowHeader": "Finding",
+      "columns": ["Improved", "Not changed", "Gotten worse"],
+      "rows": ["Respiratory rate: 30/min then, 22/min now", "Oxygen saturation: 86% then, 92% now", "Speech: 3- to 4-word phrases then, full sentences now", "Orientation: unsure of the day then, unsure of the day now", "PaCO₂: 62 mm Hg then, 66 mm Hg now"],
+      "answer": [0, 0, 0, 1, 2],
+      "rationale": "<p>A slower respiratory rate, a higher oxygen saturation, and full sentences show the <b>work of breathing</b> has improved. The confusion hasn't changed, and the PaCO₂ has <b>risen</b>, so carbon dioxide is still building up and needs to be reported.</p><p>The tempting mistake is calling everything improved because the client looks more comfortable. A rising PaCO₂ means the acidosis is getting worse, even as the oxygen improves.</p><p><b>Takeaway:</b> Judge the blood gases, not just the comfort: a rising CO₂ is worse.</p>"
     }
   ]
 }

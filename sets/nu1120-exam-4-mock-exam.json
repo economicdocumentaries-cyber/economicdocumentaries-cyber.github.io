@@ -4,7 +4,7 @@
   "description": "Exam 4 practice on the endocrine, cardiovascular, respiratory, and lymphatic and immune systems (Weeks 9 to 12), matched to the instructor's Exam 4 study guide and written a level beyond the real exam, with case studies and the next-generation question types. Each exam gives 50, split evenly across the four systems.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 168.0,
+  "timeMinutes": 213.0,
   "defaultCount": 50,
   "topicWeights": {
     "Endocrine system": 1,
@@ -2213,6 +2213,542 @@
       ],
       "answer": 2,
       "rationale": "<p>The <b>tonsils</b> are lymphoid tissue in the throat, part of the first immune defenses against germs entering through the mouth and nose. Other lymphoid tissue continues this work after they're removed.</p><p><b>Filtering old red blood cells</b> is the tempting choice, since it's another lymphoid organ's job, but that's the spleen's red pulp.</p><p><b>Takeaway:</b> Tonsils guard the throat; the spleen filters the blood.</p>"
+    },
+    {
+      "id": "m4r-51",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client's breathing tube was removed this morning after surgery, and the client's voice is hoarse. Which structure was most likely irritated by the tube?",
+      "options": [
+        "The nasal turbinates, which swirl the air",
+        "The larynx, which holds the vocal cords",
+        "The frontal sinuses, which add resonance",
+        "The bronchioles, which carry air to the alveoli"
+      ],
+      "answer": 1,
+      "rationale": "<p>A breathing tube passes through the <b>larynx</b>, between the vocal cords, so irritation or swelling there makes the voice hoarse for a day or two.</p><p><b>The sinuses</b> are the tempting choice, since they affect how the voice sounds, but the tube doesn't pass through them; the voice itself comes from the vocal cords in the larynx.</p><p><b>Takeaway:</b> Hoarseness after intubation points to the larynx and vocal cords.</p>"
+    },
+    {
+      "id": "m4r-52",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client breathed in hot smoke in a house fire, which injured the type 1 alveolar cells. Which effect should the nurse expect first?",
+      "options": [
+        "Surfactant falls, so the alveoli collapse right away",
+        "The airway cilia stop moving, so mucus builds up",
+        "The medulla stops signaling, so breathing slows",
+        "Less oxygen crosses into the blood, so the PaO₂ falls"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Type 1</b> cells form most of the thin wall where gases cross. When they're injured, the wall thickens and leaks, so <b>diffusion</b> fails and less oxygen reaches the blood.</p><p><b>Surfactant loss</b> is the tempting choice, since it's an alveolar problem, but surfactant comes from <b>type 2</b> cells.</p><p><b>Takeaway:</b> Type 1 cells are the gas-exchange wall; damage lowers the PaO₂.</p>"
+    },
+    {
+      "id": "m4r-53",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client has taken a high-dose corticosteroid (which acts like cortisol) every day for a year. Which explanation of the client's higher risk of pneumonia should the nurse give?",
+      "options": [
+        "It thickens the mucus so that the cilia move it more slowly out of the airways",
+        "It shrinks the alveoli so that less air reaches the deepest parts of the lungs",
+        "It narrows the bronchioles so that bacteria get trapped in the airways",
+        "It weakens the alveolar macrophages that engulf germs reaching the alveoli"
+      ],
+      "answer": 3,
+      "rationale": "<p>Cortisol holds down inflammation and immune responses, including the <b>alveolar macrophages</b> that engulf germs reaching the alveoli. With weaker defenders, bacteria can take hold.</p><p><b>Thicker mucus</b> is the tempting choice, since mucus clearance matters for infection, but steroids don't thicken mucus; the problem is the weakened immune cells.</p><p><b>Takeaway:</b> Long-term steroids weaken the lung's defenders, so watch for infection.</p>"
+    },
+    {
+      "id": "m4r-54",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A chest CT report describes a small nodule in the lingula. Which part of the lungs should the nurse expect this to be?",
+      "options": [
+        "The left upper lobe",
+        "The right middle lobe",
+        "The left lower lobe",
+        "The right upper lobe"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>lingula</b> is a tongue-shaped part of the <b>left upper (superior) lobe</b>. It sits where the right lung's middle lobe would be, but the left lung has only two lobes.</p><p><b>The right middle lobe</b> is the tempting choice, since the lingula is in a matching spot, but the lingula belongs to the left lung.</p><p><b>Takeaway:</b> The left lung has 2 lobes; the lingula is part of the left upper lobe.</p>"
+    },
+    {
+      "id": "m4r-55",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "During a quiet, relaxed breath in, which muscles contract to enlarge the chest?",
+      "options": [
+        "The scalenes and the sternocleidomastoids",
+        "The diaphragm and the external intercostals",
+        "The abdominal muscles and the internal intercostals",
+        "The diaphragm and the abdominal muscles"
+      ],
+      "answer": 1,
+      "rationale": "<p>A quiet breath in uses the <b>diaphragm</b> (it flattens and moves down) and the <b>external intercostals</b> (they lift the ribs up and out). Breathing out at rest is passive: the muscles relax.</p><p><b>The scalenes and sternocleidomastoids</b> are the tempting choice, since they lift the chest too, but they're accessory muscles used only when breathing is hard.</p><p><b>Takeaway:</b> Quiet breathing: diaphragm and external intercostals. Accessory muscles mean extra effort.</p>"
+    },
+    {
+      "id": "m4r-56",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client is given a medication that strongly stimulates the parasympathetic nervous system and soon starts to wheeze and cough up more secretions. Which explanation should the nurse give?",
+      "options": [
+        "Parasympathetic signals widen the airways, which makes the wheeze",
+        "Parasympathetic signals narrow the airways and add mucus",
+        "The medication blocked the medulla's control of breathing",
+        "The medication weakened the diaphragm and the intercostals"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>parasympathetic</b> system (the vagus nerve) narrows the airways (bronchoconstriction) and adds mucus. Strong stimulation can cause wheezing; the <b>sympathetic</b> system widens the airways.</p><p><b>Widened airways</b> is the tempting choice for students who mix up the two systems; widening is sympathetic, and it relieves wheezing rather than causing it.</p><p><b>Takeaway:</b> Parasympathetic: narrower airways, more mucus. Sympathetic: wider airways.</p>"
+    },
+    {
+      "id": "m4r-57",
+      "type": "matrix",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing the breathing muscles. For each muscle, click to specify when it mainly works.",
+      "rowHeader": "Muscle",
+      "columns": [
+        "Quiet breathing in",
+        "Forced breathing in (accessory)",
+        "Forced breathing out"
+      ],
+      "rows": [
+        "Scalenes",
+        "Diaphragm",
+        "Abdominal muscles",
+        "External intercostals",
+        "Sternocleidomastoid",
+        "Internal intercostals"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>The <b>diaphragm</b> and <b>external intercostals</b> do every quiet breath in. The <b>scalenes</b> and <b>sternocleidomastoids</b> are accessory muscles that help only with hard breathing. The <b>internal intercostals</b> and <b>abdominal muscles</b> push air out when breathing out is forced, as in coughing.</p><p>The tempting mistake is putting the abdominal muscles with breathing in. They raise the pressure in the abdomen and push the diaphragm up, forcing air out.</p><p><b>Takeaway:</b> In: diaphragm, external intercostals (plus scalenes and SCM when hard). Out, forced: internal intercostals and abdominals.</p>"
+    },
+    {
+      "id": "m4r-58",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client's heart is pumping weakly, so less blood flows through the lung capillaries, though the client breathes normally. Which respiratory function is mainly reduced?",
+      "options": [
+        "Ventilation",
+        "Mucociliary clearance",
+        "Diffusion",
+        "Perfusion"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Perfusion</b> is blood flow through the lung capillaries past the alveoli. A weak heart reduces it, so less blood picks up oxygen, even though air moves in and out normally.</p><p><b>Ventilation</b> is the tempting choice, since the client may feel short of breath, but this client moves air normally; the problem is the blood flow.</p><p><b>Takeaway:</b> Ventilation = air; perfusion = blood flow past the alveoli.</p>"
+    },
+    {
+      "id": "m4r-59",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client with thick, sticky secretions asks why the nurse keeps encouraging fluids. Which explanation should the nurse give?",
+      "options": [
+        "“Fluids raise your oxygen level by adding water to the blood.”",
+        "“Fluids keep the mucus thin, so the cilia can sweep it out.”",
+        "“Fluids rinse the germs out of your alveoli and into the blood.”",
+        "“Fluids relax the airway muscles, so the airways open wider.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Hydration</b> is a modifiable factor in lung health: enough fluid keeps mucus thin, so the cilia can move it up and out (<b>mucociliary clearance</b>). Dehydration makes it thick and hard to clear.</p><p><b>Relaxing the airway muscles</b> is the tempting choice, since the client may feel tight, but fluids don't widen the airways; they make the mucus easier to clear.</p><p><b>Takeaway:</b> Fluids thin mucus so the mucociliary escalator works.</p>"
+    },
+    {
+      "id": "m4r-60",
+      "type": "dropdown",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing gas exchange. Complete the following sentence.",
+      "text": "Oxygen moves by diffusion from the {{0}} into the {{1}}, because its pressure is {{2}}; carbon dioxide moves the opposite way.",
+      "blanks": [
+        {
+          "options": [
+            "blood in the capillaries",
+            "air in the alveoli"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "blood in the capillaries",
+            "air in the alveoli"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "higher in the alveoli",
+            "higher in the blood",
+            "the same on both sides"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>Gases <b>diffuse</b> from higher to lower pressure. Oxygen's pressure is higher in the <b>alveoli</b> than in the blood arriving from the body, so it moves into the <b>capillary blood</b>; carbon dioxide is higher in the blood, so it moves into the alveoli to be breathed out.</p><p>The tempting mistake is thinking gases need a pump to move. Diffusion only needs a pressure difference and a thin wall.</p><p><b>Takeaway:</b> Diffusion: from higher to lower pressure across the alveolar and capillary walls.</p>"
+    },
+    {
+      "id": "m4r-61",
+      "type": "order",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "Place the steps by which oxygen gets from the outside air to a muscle cell in order.",
+      "items": [
+        "Air moves into the alveoli (ventilation)",
+        "Oxygen diffuses across the alveolar and capillary walls",
+        "Blood flowing past the alveoli carries the oxygen away (perfusion)",
+        "The heart pumps the oxygen-rich blood to the body",
+        "Oxygen moves from the blood into the muscle cell"
+      ],
+      "rationale": "<p>Oxygen needs every step: <b>ventilation</b> brings air into the alveoli, <b>diffusion</b> moves oxygen across the wall, <b>perfusion</b> carries it away in the blood, the heart pumps it to the tissues, and it moves into the cells (internal respiration).</p><p>The tempting mistake is putting perfusion before diffusion. Blood is flowing all the time, but the oxygen has to cross into it before it can be carried away.</p><p><b>Takeaway:</b> Ventilation, diffusion, perfusion, transport, then exchange at the cells.</p>"
+    },
+    {
+      "id": "m4r-62",
+      "type": "matrix",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing four sets of arterial blood gases. For each set, click to specify the imbalance it shows.",
+      "rowHeader": "Results",
+      "columns": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "rows": [
+        "pH 7.50, PaCO₂ 42 mm Hg, HCO₃⁻ 32 mEq/L",
+        "pH 7.31, PaCO₂ 52 mm Hg, HCO₃⁻ 25 mEq/L",
+        "pH 7.30, PaCO₂ 39 mm Hg, HCO₃⁻ 17 mEq/L",
+        "pH 7.48, PaCO₂ 31 mm Hg, HCO₃⁻ 24 mEq/L"
+      ],
+      "answer": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "rationale": "<p>Read the pH first, then find the value that explains it. Low pH with a high CO₂ (opposite): <b>respiratory acidosis</b>. High pH with a low CO₂: <b>respiratory alkalosis</b>. Low pH with a low HCO₃⁻ (same direction): <b>metabolic acidosis</b>. High pH with a high HCO₃⁻: <b>metabolic alkalosis</b>.</p><p>The tempting mistake is naming the imbalance from the CO₂ alone. In the third set the CO₂ is normal; the low HCO₃⁻ explains the low pH.</p><p><b>Takeaway:</b> pH first, then ROME: Respiratory Opposite, Metabolic Equal.</p>"
+    },
+    {
+      "id": "m4r-63",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client with severe pneumonia is tiring, and the breathing has become slow and shallow. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "pH 7.47, PaCO₂ 32 mm Hg, HCO₃⁻ 24 mEq/L",
+        "pH 7.28, PaCO₂ 60 mm Hg, HCO₃⁻ 25 mEq/L",
+        "pH 7.30, PaCO₂ 38 mm Hg, HCO₃⁻ 16 mEq/L",
+        "pH 7.49, PaCO₂ 45 mm Hg, HCO₃⁻ 33 mEq/L"
+      ],
+      "answer": 1,
+      "rationale": "<p>Lungs that can't exchange gas well, plus slow, shallow breathing, keep <b>carbon dioxide</b>: a <b>respiratory acidosis</b> (pH 7.28, PaCO₂ 60).</p><p>The low-CO₂ set is the tempting choice, since clients with pneumonia often breathe fast at first and blow off CO₂. Once the client tires and breathing slows, the CO₂ climbs.</p><p><b>Takeaway:</b> A tiring client with failing gas exchange develops respiratory acidosis.</p>"
+    },
+    {
+      "id": "m4r-64",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client on a mechanical ventilator has arterial blood gases of pH 7.52 and PaCO₂ 28 mm Hg, with a normal HCO₃⁻. Which explanation should the nurse give?",
+      "options": [
+        "The kidneys are holding on to too much bicarbonate",
+        "The client's lungs are keeping CO₂ because they can't diffuse it",
+        "The client is losing acid through the stomach tube",
+        "The machine's settings move too much air, blowing off CO₂"
+      ],
+      "answer": 3,
+      "rationale": "<p>A high pH with a low PaCO₂ and a normal HCO₃⁻ is a <b>respiratory alkalosis</b>. The instructor's causes include <b>mechanical ventilation</b>: a rate or volume set too high blows off too much carbon dioxide.</p><p><b>Losing acid through a stomach tube</b> is the tempting choice, since it also raises the pH, but that's a metabolic alkalosis, with a high HCO₃⁻.</p><p><b>Takeaway:</b> Too much ventilation (by the client or a machine) causes respiratory alkalosis.</p>"
+    },
+    {
+      "id": "m4r-65",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client has a temperature of 39.6 °C (103.3 °F) and is breathing 28 times a minute. Which arterial blood gas change should the nurse expect?",
+      "options": [
+        "A low PaCO₂ with a high pH",
+        "A high PaCO₂ with a low pH",
+        "A low HCO₃⁻ with a low pH",
+        "A high HCO₃⁻ with a high pH"
+      ],
+      "answer": 0,
+      "rationale": "<p>Fever speeds up breathing, which blows off carbon dioxide: the PaCO₂ falls and the pH rises, a <b>respiratory alkalosis</b>.</p><p><b>A low HCO₃⁻ with a low pH</b> is the tempting choice, since a sick client could become acidotic, but fever and fast breathing on their own blow off CO₂.</p><p><b>Takeaway:</b> Fever with fast breathing → low CO₂, high pH.</p>"
+    },
+    {
+      "id": "m4r-66",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client has taken hydrochlorothiazide, a thiazide diuretic, for months and now has a low potassium level. Which arterial blood gas results should the nurse expect?",
+      "options": [
+        "pH 7.31, PaCO₂ 38 mm Hg, HCO₃⁻ 17 mEq/L",
+        "pH 7.48, PaCO₂ 31 mm Hg, HCO₃⁻ 23 mEq/L",
+        "pH 7.32, PaCO₂ 51 mm Hg, HCO₃⁻ 26 mEq/L",
+        "pH 7.49, PaCO₂ 44 mm Hg, HCO₃⁻ 31 mEq/L"
+      ],
+      "answer": 3,
+      "rationale": "<p>Thiazide diuretics are on the instructor's list of causes of <b>metabolic alkalosis</b>: losing fluid, potassium, and hydrogen ions in the urine leaves extra bicarbonate. The pH and HCO₃⁻ both rise.</p><p>The high-pH, low-CO₂ set is the tempting choice, since it's also an alkalosis, but that's respiratory; the diuretic changes the bicarbonate.</p><p><b>Takeaway:</b> Thiazides, vomiting, and NG suction: metabolic alkalosis.</p>"
+    },
+    {
+      "id": "m4r-67",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client has eaten almost nothing for 10 days, and the urine shows ketones. Which imbalance should the nurse expect?",
+      "options": [
+        "Metabolic acidosis",
+        "Metabolic alkalosis",
+        "Respiratory acidosis",
+        "Respiratory alkalosis"
+      ],
+      "answer": 0,
+      "rationale": "<p>Without food, the body burns fat and makes <b>ketones</b>, which are acids. Acid builds up, bicarbonate is used up, and the pH falls: a <b>metabolic acidosis</b>, as in diabetic ketoacidosis.</p><p><b>Metabolic alkalosis</b> is the tempting choice, since a client who isn't eating might seem to be losing acid, but starvation adds acid (ketones).</p><p><b>Takeaway:</b> Starvation and DKA make ketones: metabolic acidosis.</p>"
+    },
+    {
+      "id": "m4r-68",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client in shock has poor blood flow to the tissues, and the lactate level is rising. Which explanation of the client's acid–base status should the nurse give?",
+      "options": [
+        "The kidneys keep extra bicarbonate in shock, causing metabolic alkalosis",
+        "Cells without enough oxygen make lactic acid, causing metabolic acidosis",
+        "Fast breathing in shock blows off CO₂, which is the main imbalance here",
+        "The lungs keep CO₂ in shock, so the acidosis is respiratory"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Hypoxia</b> is on the instructor's list of causes of <b>metabolic acidosis</b>: cells without enough oxygen switch to a backup way of making energy that produces <b>lactic acid</b>.</p><p><b>Fast breathing blowing off CO₂</b> is the tempting choice, since clients in shock do breathe fast, but that's the body trying to make up for the acid, not the main problem.</p><p><b>Takeaway:</b> Low oxygen in the tissues → lactic acid → metabolic acidosis.</p>"
+    },
+    {
+      "id": "m4r-69",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A nurse is reviewing a client's chart. Which of the following findings fit a metabolic alkalosis?",
+      "options": [
+        "pH 7.49",
+        "HCO₃⁻ 31 mEq/L",
+        "Base excess +6 mEq/L",
+        "Several days of vomiting",
+        "Base excess −6 mEq/L",
+        "PaCO₂ 30 mm Hg with a normal HCO₃⁻"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "<p>Metabolic alkalosis has a <b>high pH</b>, a <b>high HCO₃⁻</b>, and a <b>positive base excess</b> (above +2); <b>vomiting</b>, which removes stomach acid, is a classic cause.</p><p><b>A low PaCO₂ with a normal HCO₃⁻</b> is the tempting choice, since it comes with a high pH, but that pattern is a <b>respiratory</b> alkalosis. A base excess of −6 points to acidosis.</p><p><b>Takeaway:</b> Metabolic alkalosis: high pH, high HCO₃⁻, positive base excess.</p>"
+    },
+    {
+      "id": "m4r-70",
+      "type": "dropdown",
+      "topic": "Respiratory system",
+      "level": 1,
+      "stem": "A nurse is reviewing the normal arterial blood gas values for an adult. Complete the following sentence.",
+      "text": "A normal arterial pH is {{0}}, a normal PaCO₂ is {{1}}, and a normal HCO₃⁻ is {{2}}.",
+      "blanks": [
+        {
+          "options": [
+            "7.25 to 7.35",
+            "7.35 to 7.45",
+            "7.45 to 7.55"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "35 to 45 mm Hg",
+            "45 to 55 mm Hg",
+            "80 to 100 mm Hg"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "18 to 22 mEq/L",
+            "22 to 26 mEq/L",
+            "26 to 30 mEq/L"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>Normal values: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>, base excess −2 to +2 mEq/L, and PaO₂ 80–100 mm Hg.</p><p>The tempting mistake is picking 80 to 100 for the PaCO₂. That's the normal <b>PaO₂</b>, the oxygen level.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26, PaO₂ 80–100.</p>"
+    },
+    {
+      "id": "m4r-71",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client with kidney failure has these results: pH 7.31, PaCO₂ 36 mm Hg, HCO₃⁻ 17 mEq/L, and base excess −8 mEq/L. Which explanation of the results should the nurse give?",
+      "options": [
+        "The failing kidneys can't remove acid or make enough bicarbonate",
+        "The lungs are keeping too much carbon dioxide in the blood",
+        "The kidneys are holding on to too much bicarbonate",
+        "Fast breathing has removed too much carbon dioxide"
+      ],
+      "answer": 0,
+      "rationale": "<p>A low pH with a low HCO₃⁻ and a negative base excess is a <b>metabolic acidosis</b>. Healthy kidneys remove acid and make bicarbonate; failing kidneys can't, so acid builds up.</p><p><b>The lungs keeping CO₂</b> is the tempting choice, since the pH is low, but the PaCO₂ is normal; the abnormal value is the bicarbonate.</p><p><b>Takeaway:</b> Kidney failure: metabolic acidosis from acid that can't be removed.</p>"
+    },
+    {
+      "id": "m4r-72",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client's base excess is −10 mEq/L. How should the nurse interpret this result?",
+      "options": [
+        "There's too much base, as in a metabolic alkalosis",
+        "There's too much carbon dioxide, as in a respiratory acidosis",
+        "There's too little base, as in a metabolic acidosis",
+        "It's within the normal range for an adult"
+      ],
+      "answer": 2,
+      "rationale": "<p>The normal <b>base excess</b> is −2 to +2 mEq/L. A value of −10 is a <b>base deficit</b>: too little bicarbonate, as in a <b>metabolic acidosis</b>.</p><p><b>Too much base</b> is the tempting choice, since the word is “excess”, but a negative excess means a shortage.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
+    },
+    {
+      "id": "m4r-73",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "Two clients have had fluid losses for 3 days: one has had watery diarrhea, and the other has been vomiting. Which statement about their acid–base status is accurate?",
+      "options": [
+        "Both clients have a metabolic acidosis, since each is dehydrated",
+        "The vomiting client has a metabolic acidosis; the client with diarrhea, an alkalosis",
+        "The client with diarrhea has a metabolic acidosis; the vomiting client, a metabolic alkalosis",
+        "Both clients have a metabolic alkalosis, from losing fluid from the gut"
+      ],
+      "answer": 2,
+      "rationale": "<p>Diarrhea carries <b>bicarbonate</b> out of the body (<b>metabolic acidosis</b>). Vomiting removes stomach <b>acid</b> (<b>metabolic alkalosis</b>). The direction depends on which fluid is lost.</p><p><b>Both acidotic from dehydration</b> is the tempting choice, since dehydration is on the list of causes of metabolic acidosis, but vomiting's loss of acid pushes the pH up.</p><p><b>Takeaway:</b> Lose base (diarrhea) → acidosis; lose acid (vomiting) → alkalosis.</p>"
+    },
+    {
+      "id": "m4r-74",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A 78-year-old client asks why chest infections are more of a risk at this age. Which explanation should the nurse give?",
+      "options": [
+        "“With age, the lungs make more surfactant, which traps germs inside the alveoli.”",
+        "“With age, the airways widen, so germs travel deeper into the lungs.”",
+        "“With age, the cough gets weaker and the lungs less elastic, and immunity declines.”",
+        "“With age, the medulla speeds up breathing, which dries out the airways.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Age</b> is a non-modifiable risk factor: older adults have a weaker cough, stiffer chest walls, less elastic lungs, and declining immune responses, so germs are cleared less well.</p><p><b>Wider airways</b> is the tempting choice, since it sounds like it would let germs in, but the age-related changes that matter are the weaker cough and defenses.</p><p><b>Takeaway:</b> Age is a non-modifiable risk: weaker cough, less elastic lungs, weaker immunity.</p>"
+    },
+    {
+      "id": "m4r-75",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is teaching a community group how to prevent respiratory infections. Which of the following should the nurse include?",
+      "options": [
+        "Exercise regularly",
+        "Get a flu vaccine every year",
+        "Ask about the pneumococcal vaccine if you're an older adult",
+        "Take leftover antibiotics when a cold starts",
+        "Stay indoors in cold weather to avoid catching a chill"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>The instructor's list for preventing respiratory infections: <b>exercise</b>, the <b>influenza vaccine</b> (every year), and the <b>pneumococcal vaccine</b> (recommended for older adults and people with chronic conditions).</p><p><b>Staying indoors in cold weather</b> is the tempting choice, since it feels protective, but cold air doesn't cause infections; germs spread from person to person, often indoors. Leftover antibiotics don't treat colds, which are viral.</p><p><b>Takeaway:</b> Prevention: exercise, a yearly flu vaccine, and the pneumococcal vaccine.</p>"
+    },
+    {
+      "id": "m4r-76",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client cuts and polishes stone countertops for a living. Which teaching best reduces the client's risk of lung disease from work?",
+      "options": [
+        "Take a daily vitamin to strengthen the lungs against the dust",
+        "Cough hard at the end of each shift to clear the day's dust",
+        "Wear a properly fitted respirator and keep the dust down with water",
+        "Get a chest x-ray once a month to catch problems early"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Occupation</b> is a modifiable risk factor: fine silica dust from stone scars the lungs. The best protection is keeping the dust out of the lungs with a fitted respirator and wet-cutting methods.</p><p><b>Monthly chest x-rays</b> is the tempting choice, since early detection sounds helpful, but they don't prevent the damage, and the x-ray exposure adds up. Coughing can't clear dust that has reached the alveoli.</p><p><b>Takeaway:</b> For work exposures, prevent the breathing in of dust: respirators and dust control.</p>"
+    },
+    {
+      "id": "m4r-77",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A nurse is caring for a client whose breathing is getting worse. Which finding is an early sign that the client isn't getting enough oxygen?",
+      "options": [
+        "New restlessness and anxiety",
+        "Bluish lips and fingertips",
+        "A slow heart rate of 48/min",
+        "No response to a voice"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Restlessness and anxiety</b> are early signs of low oxygen, along with a rising respiratory rate and heart rate. They call for a check of the breathing and oxygen saturation.</p><p><b>Bluish lips</b> (cyanosis) is the tempting choice, since it's the classic sign of low oxygen, but it's a <b>late</b> sign. A slow heart rate and unresponsiveness are also late signs.</p><p><b>Takeaway:</b> Early hypoxia: restlessness, anxiety, fast breathing. Cyanosis and a slow heart rate are late.</p>"
+    },
+    {
+      "id": "m4r-78",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A nurse is assessing an adult client. Which of the following findings are signs of respiratory distress?",
+      "options": [
+        "Nasal flaring",
+        "Retractions between the ribs",
+        "Sitting and leaning forward on the over-bed table",
+        "Speaking 3 or 4 words between breaths",
+        "A respiratory rate of 34/min",
+        "A respiratory rate of 16/min while speaking in full sentences",
+        "An oxygen saturation of 98% on room air"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Respiratory distress</b> shows in the work of breathing: nasal flaring, retractions, the tripod position, speaking only a few words at a time, and a fast respiratory rate.</p><p><b>A rate of 16 with full sentences</b> is the tempting choice to include, since it's a breathing finding, but it's normal, as is a saturation of 98%.</p><p><b>Takeaway:</b> Distress: flaring, retractions, tripod position, short phrases, fast breathing.</p>"
+    },
+    {
+      "id": "m4r-79",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client is short of breath, the neck muscles tighten with each breath, and the oxygen saturation is 86%. Which action should the nurse take first?",
+      "options": [
+        "Review the client's most recent arterial blood gas results",
+        "Teach the client pursed-lip breathing for future episodes",
+        "Raise the head of the bed to high Fowler's position",
+        "Ask about the client's history of smoking and work exposures"
+      ],
+      "answer": 2,
+      "rationale": "<p>Sitting the client upright lets the diaphragm move down and the lungs expand: a fast, safe action that eases breathing right away, while the nurse also gets oxygen as prescribed and calls for help.</p><p><b>Reviewing the blood gases</b> is the tempting choice, since it gives more information, but this client is already in distress; act on the breathing first, then gather data.</p><p><b>Takeaway:</b> In respiratory distress, position upright first; history and teaching come later.</p>"
+    },
+    {
+      "id": "m4r-80",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client in respiratory distress is becoming drowsy, and the PaCO₂ has risen from 48 to 70 mm Hg over an hour. How should the nurse interpret these findings?",
+      "options": [
+        "Carbon dioxide is building up as breathing fails, a sign of decline",
+        "The client is finally resting, a sign that the breathing is easier",
+        "The rising CO₂ is the lungs making up for a metabolic problem",
+        "The drowsiness is from fatigue, and the CO₂ change is expected"
+      ],
+      "answer": 0,
+      "rationale": "<p>A rising PaCO₂ with growing drowsiness means the client is no longer moving enough air: carbon dioxide builds up and dulls the brain. This is a worsening <b>respiratory acidosis</b> that needs to be reported right away.</p><p><b>Finally resting</b> is the tempting choice, since a calmer client can look better, but drowsiness with a rising CO₂ is a danger sign, not relief.</p><p><b>Takeaway:</b> Drowsiness plus a rising CO₂ in a client in distress means breathing is failing.</p>"
     }
   ]
 }
