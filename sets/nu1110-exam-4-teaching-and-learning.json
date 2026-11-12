@@ -72,7 +72,7 @@
       "type": "sata",
       "topic": "Domains of learning",
       "level": 2,
-      "stem": "A nurse is writing affective-domain objectives for a client recovering from a myocardial infarction. Which objectives should the nurse include? Select all that apply.",
+      "stem": "A nurse is writing affective-domain objectives for a client recovering from a myocardial infarction. Which objectives should the nurse include?",
       "options": [
         "The client expresses feelings about returning to work.",
         "The client states that quitting smoking is worth the effort.",
@@ -123,7 +123,7 @@
       "type": "sata",
       "topic": "Teach-back and evaluation",
       "level": 3,
-      "stem": "A nurse taught a client with a new ileostomy how to care for it. Which observations should the nurse document as evidence that learning occurred? Select all that apply.",
+      "stem": "A nurse taught a client with a new ileostomy how to care for it. Which observations should the nurse document as evidence that learning occurred?",
       "options": [
         "Changes the pouch correctly while the nurse watches",
         "Describes, in his own words, when to call the provider",
@@ -189,7 +189,7 @@
       "type": "sata",
       "topic": "Readiness to learn",
       "level": 2,
-      "stem": "A nurse is assessing whether a client with newly diagnosed diabetes is ready to learn about insulin. Which findings suggest readiness? Select all that apply.",
+      "stem": "A nurse is assessing whether a client with newly diagnosed diabetes is ready to learn about insulin. Which findings suggest readiness?",
       "options": [
         "Asks how the insulin will fit with her work schedule",
         "Changes the subject whenever the diagnosis comes up",
@@ -375,7 +375,7 @@
       "type": "sata",
       "topic": "Planning teaching",
       "level": 3,
-      "stem": "A nurse is reviewing the unit's handout on inhaler use before teaching a 70-year-old client whose primary language is Spanish. Which findings mean the handout shouldn't be used as it is? Select all that apply.",
+      "stem": "A nurse is reviewing the unit's handout on inhaler use before teaching a 70-year-old client whose primary language is Spanish. Which findings mean the handout shouldn't be used as it is?",
       "options": [
         "It is printed only in English.",
         "It shows an inhaler model the unit no longer stocks.",
@@ -471,7 +471,7 @@
       "type": "sata",
       "topic": "Teach-back and evaluation",
       "level": 1,
-      "stem": "A nurse is documenting a teaching session with a client who has a new prescription for an inhaler. Which information should the nurse include? Select all that apply.",
+      "stem": "A nurse is documenting a teaching session with a client who has a new prescription for an inhaler. Which information should the nurse include?",
       "options": [
         "The client's response to the teaching",
         "The learning needs that were identified",
@@ -658,7 +658,7 @@
       "type": "sata",
       "topic": "Teaching across the lifespan",
       "level": 2,
-      "stem": "A nurse is planning teaching for a 79-year-old client who has new chronic obstructive pulmonary disease. Which actions should the nurse include? Select all that apply.",
+      "stem": "A nurse is planning teaching for a 79-year-old client who has new chronic obstructive pulmonary disease. Which actions should the nurse include?",
       "options": [
         "Allow extra time to process each new piece of information",
         "Repeat the key points during and at the end of each session",
@@ -831,7 +831,7 @@
       "topic": "Readiness to learn",
       "level": 3,
       "case": "discharge",
-      "stem": "Which findings in the nurse's notes support the client's readiness to learn the insulin pen at 1400? Select all that apply.",
+      "stem": "Which findings in the nurse's notes support the client's readiness to learn the insulin pen at 1400?",
       "options": [
         "Picks up the pen from the tray and asks to hold it",
         "Says he wants to take care of himself at home",
@@ -867,7 +867,7 @@
       "topic": "Teach-back and evaluation",
       "level": 3,
       "case": "discharge",
-      "stem": "The next morning, the nurse evaluates the insulin teaching. Which findings show the teaching plan's outcomes have been met? Select all that apply.",
+      "stem": "The next morning, the nurse evaluates the insulin teaching. Which findings show the teaching plan's outcomes have been met?",
       "options": [
         "Primes the pen with 2 units before dialing his dose",
         "Says “I understand” after each step the nurse reviews",
