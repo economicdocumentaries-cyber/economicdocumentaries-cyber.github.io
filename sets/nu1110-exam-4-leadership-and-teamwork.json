@@ -4,7 +4,7 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 82.5,
+  "timeMinutes": 90.0,
   "defaultCount": 25,
   "cases": {
     "newgrad": {
@@ -909,6 +909,81 @@
         4
       ],
       "rationale": "<p>Belittling a new nurse in front of a client, and refusing to help, is bullying, which harms teamwork and client safety. The charge nurse addresses it <b>privately and soon</b>, naming the specific behaviors; <b>writes down</b> what was reported, with dates and words; and follows the unit's <b>code of conduct</b>, bringing in the manager, since it's a pattern.</p><p><b>Waiting to see it personally</b> is the tempting choice, since it seems fair to the senior nurse, but a reported pattern of bullying needs action now, and the private meeting gives the senior nurse a chance to respond. Raising it at a <b>huddle</b> shames her in public, and <b>moving the new RN</b> punishes the person who was bullied.</p><p><b>Takeaway:</b> Address bullying privately, promptly, and specifically; document it; and follow the policy. Don't make the target move.</p>"
+    },
+    {
+      "id": "lt-56",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 1,
+      "stem": "A hospital is starting TeamSTEPPS training on every unit. A staff nurse asks what the program is meant to do. Which response by the nurse educator is accurate?",
+      "options": [
+        "“It sets the staffing ratios each unit has to follow.”",
+        "“It gives managers a tool to rate each nurse's work.”",
+        "“It teaches team skills that make care safer for clients.”",
+        "“It replaces SBAR with one new handoff format.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>TeamSTEPPS</b> (Team Strategies and Tools to Enhance Performance and Patient Safety) is an <b>evidence-based framework</b> for teamwork across health care. It teaches four skills (<b>communication, team leadership, situation monitoring, and mutual support</b>) so teams give safe, reliable care and build a lasting culture of safety.</p><p><b>A tool to rate each nurse's work</b> is the tempting choice, because the program includes a team performance observation tool, but that tool looks at how a team works together, not at one nurse's evaluation. TeamSTEPPS doesn't set <b>staffing ratios</b>, and it doesn't <b>replace SBAR</b>: SBAR is one of its communication tools.</p><p><b>Takeaway:</b> TeamSTEPPS is an evidence-based teamwork program for client safety, built on communication, team leadership, situation monitoring, and mutual support.</p>"
+    },
+    {
+      "id": "lt-57",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "During a busy shift, a nurse notices that a coworker is staying with a client in respiratory distress while three of her other clients' call lights are on. Which action should the nurse take?",
+      "options": [
+        "Offer to see her other clients while she stays with this one",
+        "Tell the charge nurse that the coworker has fallen behind with her clients",
+        "Remind the coworker to call for help sooner the next time she's this busy",
+        "Ask the coworker what she needs once the client in distress is stable"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Mutual support</b>, one of the TeamSTEPPS skills, means anticipating and meeting teammates' needs through awareness of their workload. The nurse sees the overload and <b>steps in with specific help now</b>, so the coworker can stay with the unstable client and the other clients are seen.</p><p><b>Telling the charge nurse</b> is the tempting choice, since the charge nurse manages the workload, but it reports a problem the nurse can help with right away, and it frames the coworker as falling behind. <b>Asking once the client is stable</b> waits while call lights go unanswered, and <b>advice for next time</b> doesn't help anyone now.</p><p><b>Takeaway:</b> When a teammate is overloaded, offer specific help now; mutual support is part of keeping every client safe.</p>"
+    },
+    {
+      "id": "lt-58",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "A client in a small rural hospital needs heart surgery that the hospital doesn't offer. The surgical team at a regional heart center will take over all of the client's care there. Which statement by the nurse to the client is accurate?",
+      "options": [
+        "“The surgeon will advise your doctor here, who stays in charge of your care.”",
+        "“Your doctor here will manage your care except for your heart problem.”",
+        "“The surgeon will see you by video while you stay here for your care.”",
+        "“Your care will be turned over to the surgeons where you're going.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>This is a <b>transfer of care</b>: care is systematically turned over to another provider, here the surgical team at the heart center. The client's care moves with the client.</p><p><b>The doctor here managing all but the heart problem</b> is the tempting choice: that's a <b>referral</b>, where one provider hands over management of one condition while keeping the rest. <b>The surgeon advising the doctor here</b>, or <b>seeing the client by video</b> while the local team stays in charge, describes a <b>consultation</b>: advice only.</p><p><b>Takeaway:</b> Consult = advice, and the first provider keeps the client. Refer = another provider manages one condition. Transfer = care is turned over to another provider.</p>"
+    },
+    {
+      "id": "lt-59",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 2,
+      "stem": "On a medical unit, a council of staff nurses reviewed the evidence and voted to change how bedside shift report is done. A new nurse asks why staff nurses, not the manager, made the decision. Which response by the charge nurse is accurate?",
+      "options": [
+        "“Our manager is a laissez-faire leader who leaves decisions to the staff.”",
+        "“Our hospital uses shared governance, so staff help decide on practice.”",
+        "“Our manager is a bureaucratic leader, so policy changes go through staff.”",
+        "“Our unit uses team nursing, so the team leaders decide on practice.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>In <b>shared governance</b>, staff nurses share decision-making with management about their own practice, quality, and education, usually through councils. A staff council reviewing evidence and deciding on the shift report process is shared governance at work. It's a structure of the organization, not one leader's personal style.</p><p><b>Laissez-faire</b> is the tempting choice, because staff are making the decision, but laissez-faire is a hands-off leader's style, while shared governance is a formal structure in which staff hold real responsibility, with the manager still involved. A <b>bureaucratic</b> leader holds to rules and procedures with little flexibility, and <b>team nursing</b> is a way of assigning care, not of deciding practice.</p><p><b>Takeaway:</b> Shared governance is a formal structure where nurses share decisions about their practice; don't confuse it with a hands-off leader.</p>"
+    },
+    {
+      "id": "lt-60",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 3,
+      "stem": "After interprofessional rounds, a new nurse who stayed silent while the team planned a client's discharge says, “With all the specialists there, I didn't think my input was needed.” Which guidance should the charge nurse give?",
+      "options": [
+        "Suggest reading the other disciplines' notes before the next rounds",
+        "Suggest sharing any concerns with the charge nurse after rounds end",
+        "Point out that the provider makes the final call on the discharge plan",
+        "Point out what the nurse knows about the client that the others don't"
+      ],
+      "answer": 3,
+      "rationale": "<p>The IPEC core competencies include <b>roles and responsibilities</b>: each member knows their own role and the others', and brings it to the team. The nurse spends the most time with the client and knows things the specialists may not (how the client manages self-care, who is at home, what the client understands). Showing the new nurse <b>what nursing adds</b> prepares them to speak up.</p><p><b>Sharing concerns with the charge nurse after rounds</b> is the tempting choice, because it feels safe for a new nurse, but it keeps the nurse's knowledge out of the team's plan. <b>Reading the other disciplines' notes</b> helps a nurse understand their roles, but not the nurse's own. <b>Pointing out that the provider decides</b> reinforces the idea that the nurse's voice doesn't matter.</p><p><b>Takeaway:</b> On an interprofessional team, every member brings their own role's knowledge to the plan, and the nurse's view of the whole client is part of it.</p>"
     }
   ]
 }
