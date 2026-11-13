@@ -4,14 +4,17 @@
 // /guideText. Results come grouped by class, with Practice these for the matching questions (a practice exam that can
 // mix sets: each copied question keeps its set and id in `src`, so Save, Report, and the question stats still go to
 // the original). Each search is saved without a name in /searches, for the host console's Searches page (the owner
-// asked for what students search; nothing else about the student is saved).
+// asked for what students search; nothing else about the student is saved). Results start on each class's next exam,
+// with All exams a tap away; words that name a class or an exam ("ha exam 3") narrow the results instead of being
+// searched for; and a match inside an uploaded guide names its pages, which open the guide there (the owner's ideas 4
+// and 5, 2026-11-13).
 import { SITE_NAME } from './config.js';
 import { h, fill, modal, toast, store, fmtDate, heartbeat } from './util.js';
 import { groupStudyOn, connectStudent, problemText } from './firebase.js';
-import { loadSets } from './sets.js';
+import { loadSets, nextExam, sameExam } from './sets.js';
 import { withChanges, cachedChanges } from './set-changes.js';
 import { thisBrowserCounts } from './analytics.js';
-import { watchUploadedGuides } from './study-guides.js';
+import { watchUploadedGuides, openUploadedAt } from './study-guides.js';
 import { DEFAULT_SETTINGS, PRESETS } from './exam.js';
 import { openFeedback } from './feedback.js';
 import { sample } from './vary.js';
@@ -119,42 +122,135 @@ function buildIndex(sets, courses, guides) {
       text: textOf(set.title, set.description, set.exam, [...new Set(set.questions.map(q => q.topic))]),
       questions: set.questions.filter(q => !q.hidden).map(q => ({ q, text: questionText(q) })),
     })),
-    guides: guides.map(g => ({ g, text: textOf(g.title, g.description, g.exam) })),
+    guides: guides.map(g => ({ g, text: guideText(g) })),
   };
+}
+const guideText = g => textOf(g.title, g.description, g.exam);
+
+// ---------- classes and exams named in the query (idea 4, the owner's choice, 2026-11-13) ----------
+
+// "Exam 3" as "exam 3", "Final Exam" as "final exam".
+const examKey = name => words(name).join(' ');
+// Is this set's or guide's exam the one the query named ("exam 3", or "final" for any final)?
+const examIs = (name, want) => (want === 'final' ? words(name).includes('final') : examKey(name) === want);
+
+// The words of the query that name classes or an exam, and the rest. A class is named by its code ("NU1120", "nu 1120",
+// "1120"), its name without a closing number ("health assessment", when that's two words or more, so one common word
+// is still searched for), or a nickname in sets/courses.json ("HA"); an exam by "exam 3" (or "exam3") or "final".
+// "ha exam 3" is { classes: NU1120, exam: "exam 3", rest: "" }.
+export function parseScope(query, courses) {
+  const all = words(String(query ?? '').replace(/\bnu\s+(\d{4})\b/gi, 'nu$1'));
+  const names = courses.flatMap(c => {
+    const name = words(c.name);
+    if (name.length > 1 && /^(i|ii|iii|iv|v|\d)$/.test(name.at(-1))) name.pop();
+    const digits = c.code.replace(/\D/g, '');
+    return [words(c.code), digits.length >= 3 ? [digits] : [], name.length > 1 ? name : [], ...(c.nicknames ?? []).map(words)]
+      .filter(key => key.length).map(key => [key, c.code]);
+  }).sort((a, b) => b[0].length - a[0].length);
+  const used = all.map(() => false);
+  const classes = new Set();
+  for (const [key, code] of names) {
+    for (let i = 0; i + key.length <= all.length; i++) {
+      if (key.every((w, k) => all[i + k] === w && !used[i + k])) {
+        key.forEach((_, k) => { used[i + k] = true; });
+        classes.add(code);
+      }
+    }
+  }
+  let exam = null;
+  all.forEach((w, i) => {
+    if (used[i] || exam) return;
+    const glued = /^exam(\d+)$/.exec(w);
+    if (glued) {
+      exam = `exam ${glued[1]}`;
+      used[i] = true;
+    } else if (w === 'exam' && /^\d+$/.test(all[i + 1] ?? '') && !used[i + 1]) {
+      exam = `exam ${all[i + 1]}`;
+      used[i] = used[i + 1] = true;
+    } else if (w === 'final' || w === 'finals') {
+      exam = 'final';
+      used[i] = true;
+      if (all[i + 1] === 'exam' && !used[i + 1]) used[i + 1] = true;
+    }
+  });
+  return { classes: classes.size ? classes : null, exam, rest: all.filter((_, i) => !used[i]).join(' ') };
 }
 
 // The results, by class (in the class list's order, then Other): each set with its matching questions, and guides.
-export function search(index, courses, query, guideWords = {}) {
+// A scope (from parseScope) keeps only the classes and exam it names; with no words left to search ("ha exam 3"), the
+// results list every set and guide in it.
+export function search(index, courses, query, guideWords = {}, scope = null) {
   const groups = parseQuery(query);
-  const classes = [...courses.map(c => ({ key: c.code, course: c })), { key: 'other', course: null }]
+  const listing = !groups.length && Boolean(scope?.classes || scope?.exam);
+  // The class whose next exam comes first leads, as on the homepage (SPEC 11.11); then the class list's order.
+  const soonest = c => nextExam(c)?.date || '9999-12-31';
+  const ordered = courses.map((c, i) => [c, i]).sort((a, b) => soonest(a[0]).localeCompare(soonest(b[0])) || a[1] - b[1]).map(([c]) => c);
+  const classes = [...ordered.map(c => ({ key: c.code, course: c })), { key: 'other', course: null }]
     .map(c => ({ ...c, sets: [], guides: [], count: 0 }));
   const forCourse = code => classes.find(c => c.course && code && c.course.code.toLowerCase() === code.toLowerCase()) ?? classes.at(-1);
-  if (!groups.length) return { groups, classes: [] };
+  if (!groups.length && !listing) return { groups, listing, classes: [] };
+  const inScope = x => (!scope?.classes || [...scope.classes].some(code => code.toLowerCase() === String(x.course ?? '').trim().toLowerCase()))
+    && (!scope?.exam || examIs(x.exam, scope.exam));
   for (const { set, text, questions } of index.sets) {
-    const hits = questions.filter(x => matches(x.text, groups)).map(x => x.q);
-    const setHit = matches(text, groups);
-    if (!hits.length && !setHit) continue;
+    if (!inScope(set)) continue;
+    const hits = listing ? [] : questions.filter(x => matches(x.text, groups)).map(x => x.q);
+    if (!listing && !hits.length && !matches(text, groups)) continue;
     forCourse(set.course).sets.push({ set, hits });
   }
   // A guide matches by its title and description, or by the distinct words inside it (/guideText), where a phrase
   // counts when each of its words is there.
   for (const { g, text } of index.guides) {
+    if (!inScope(g)) continue;
     const inside = g.id && guideWords[g.id] ? ` ${guideWords[g.id]} ` : '';
     const has = alt => found(text, alt) || (inside && alt.split(' ').every(w => found(inside, w)));
-    if (groups.every(alts => alts.some(has))) forCourse(g.course).guides.push(g);
+    if (listing || groups.every(alts => alts.some(has))) forCourse(g.course).guides.push(g);
   }
-  // A practice exam or mock exam copies questions from the topic sets, keeping their ids: the class's count and its
-  // Practice these give each question once, from its topic set.
-  const combined = set => (/practice-exam|mock-exam/.test(set.id) ? 1 : 0);
-  for (const c of classes) {
-    c.sets.sort((a, b) => b.hits.length - a.hits.length);
-    const seen = new Set();
-    c.unique = [...c.sets].sort((a, b) => combined(a.set) - combined(b.set))
-      .map(({ set, hits }) => ({ set, hits: hits.filter(q => !seen.has(`${q.id}|${q.stem}`) && seen.add(`${q.id}|${q.stem}`)) }))
-      .filter(x => x.hits.length);
-    c.count = c.unique.reduce((n, x) => n + x.hits.length, 0);
+  classes.forEach(tally);
+  return { groups, listing, classes: classes.filter(c => c.sets.length || c.guides.length) };
+}
+
+// A class's count of matching questions. A practice exam or mock exam copies questions from the topic sets, keeping
+// their ids: the count and Practice these give each question once, from its topic set.
+const combined = set => (/practice-exam|mock-exam/.test(set.id) ? 1 : 0);
+function tally(c) {
+  c.sets.sort((a, b) => b.hits.length - a.hits.length);
+  const seen = new Set();
+  c.unique = [...c.sets].sort((a, b) => combined(a.set) - combined(b.set))
+    .map(({ set, hits }) => ({ set, hits: hits.filter(q => !seen.has(`${q.id}|${q.stem}`) && seen.add(`${q.id}|${q.stem}`)) }))
+    .filter(x => x.hits.length);
+  c.count = c.unique.reduce((n, x) => n + x.hits.length, 0);
+  return c;
+}
+
+// The exam a class's results narrow to under Next exam: its next exam (SPEC 11.11), but not a final, which covers the
+// whole course, and nothing for a class without a coming exam.
+export function narrowsTo(course) {
+  const next = course ? nextExam(course) : null;
+  return next && !words(next.exam).includes('final') ? next : null;
+}
+
+// The results with each class narrowed to its next exam. Sets without a class are left out.
+export function nextOnly(result) {
+  const classes = result.classes.flatMap(c => {
+    if (!c.course) return [];
+    const next = narrowsTo(c.course);
+    if (!next) return [c];
+    const narrowed = tally({ ...c, next, sets: c.sets.filter(x => sameExam(x.set.exam, next.exam)), guides: c.guides.filter(g => sameExam(g.exam, next.exam)) });
+    return narrowed.sets.length || narrowed.guides.length ? [narrowed] : [];
+  });
+  return { ...result, classes };
+}
+
+// How many questions, sets, and guides a result has, for the note about what Next exam leaves out and for the saved
+// search. A list of sets counts their questions.
+export function totals(result) {
+  const t = { questions: 0, sets: 0, guides: 0 };
+  for (const c of result.classes) {
+    t.questions += result.listing ? c.sets.reduce((n, x) => n + x.set.questions.filter(q => !q.hidden).length, 0) : c.count;
+    t.sets += c.sets.length;
+    t.guides += c.guides.length;
   }
-  return { groups, classes: classes.filter(c => c.sets.length || c.guides.length) };
+  return t;
 }
 
 // ---------- "Did you mean …?" (the owner's request, 2026-11-13) ----------
@@ -234,7 +330,9 @@ export function suggestQuery(query, vocab) {
 
 // ---------- previews (the owner's request, 2026-11-13) ----------
 
-const plainOf = html => new DOMParser().parseFromString(String(html ?? ''), 'text/html').body.textContent.replace(/\s+/g, ' ').trim();
+// A space at each paragraph, line, or list item, so "…thyroid.</p><p>Takeaway…" doesn't read "thyroid.Takeaway".
+const plainOf = html => new DOMParser().parseFromString(String(html ?? '').replace(/<\/?(?:p|div|li|ul|ol|br|tr|td|th|h\d)\b[^>]*>/gi, ' $& '), 'text/html')
+  .body.textContent.replace(/\s+/g, ' ').trim();
 const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // The query's words, found the way search finds them: a short word whole, a longer one at the start of a word, and a
@@ -337,6 +435,42 @@ function loadGuideWords() {
   return guideWordsLoading;
 }
 
+// ---------- pages inside uploaded guides (idea 5, the owner's choice, 2026-11-13) ----------
+
+// The words on each page of an uploaded guide, from /guidePages/<id>/pages (one line of words per page), read the first
+// time the guide turns up in the results. null when there are none: a guide saved before pages were, or no Firebase.
+const pagesLoading = new Map();
+function loadGuidePages(id) {
+  if (!pagesLoading.has(id)) {
+    pagesLoading.set(id, !groupStudyOn() ? Promise.resolve(null) : connectStudent()
+      .then(db => db.read(`guidePages/${id}`))
+      .then(value => (typeof value?.pages === 'string' ? value.pages.split('\n').map(p => ` ${p} `) : null))
+      .catch(() => null));
+  }
+  return pagesLoading.get(id);
+}
+
+// The pages (counting from 1) that have the query's words. A word the guide's title already has counts as found (the
+// whole guide is about it: "ethics" in "Class 17 - Ethics"), so the pages are the ones with the rest; none when the
+// title has every word. The description doesn't count: it lists topics, and students want their pages.
+export function pagesFound(groups, title, pages) {
+  const text = textOf(title);
+  const needed = groups.filter(alts => !alts.some(a => found(text, a)));
+  if (!needed.length) return [];
+  return pages.flatMap((page, i) => (needed.every(alts => alts.some(a => a.split(' ').every(w => found(page, w)))) ? [i + 1] : []));
+}
+
+const MAX_PAGES = 8;
+
+// "Found on pages [4] [7] [12]": each number a round button, big enough to tap, that opens the guide at that page.
+function pagesLine(guide, numbers) {
+  const shown = numbers.slice(0, MAX_PAGES).map(n => h('button.guide-page', {
+    type: 'button', 'aria-label': `Open ${guide.title} at page ${n}`, onclick: () => openUploadedAt(guide, n),
+  }, String(n)));
+  const more = numbers.length - shown.length;
+  return [h('span', numbers.length === 1 ? 'Found on page' : 'Found on pages'), ...shown, more ? h('span', `and ${more} more`) : null];
+}
+
 // ---------- the box ----------
 
 const ICON = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>';
@@ -398,7 +532,20 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
   });
   root.querySelector('.topbar-inner')?.append(box.form);
   const note = groupStudyOn() ? h('p.search-note', 'Searches are saved without names, so the site can add more of what students look for.') : null;
-  fill(main, title, results, note);
+  // Next exam | All exams (idea 4). It starts on Next exam each time the page opens.
+  let mode = 'next';
+  const choice = (value, label) => h('label', h('input', {
+    type: 'radio', name: 'search-scope', value, checked: value === mode,
+    onchange: () => { mode = value; paint(); },
+  }), label);
+  const scopeBar = h('fieldset.search-scope', { hidden: true }, h('legend.sr-only', 'Show matches from'),
+    choice('next', 'Next exam'), choice('all', 'All exams'));
+  const showAll = () => h('button.link-button', { type: 'button', onclick: () => {
+    mode = 'all';
+    scopeBar.querySelector('input[value="all"]').checked = true;
+    paint();
+  } }, 'Show all exams');
+  fill(main, title, scopeBar, results, note);
   let last = null;
   let saved = '';
   let saveTimer = null;
@@ -419,22 +566,37 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
     saveTimer = null;
     if (!last || words(query).join(' ') === saved) return;
     saved = words(query).join(' ');
-    recordSearch(query, last.classes.reduce((n, c) => n + c.count, 0), last.classes.reduce((n, c) => n + c.guides.length, 0));
+    const t = totals(last);
+    recordSearch(query, t.questions, t.guides);
+  }
+
+  // The search as typed. Words that name a class or an exam narrow it ("ha exam 3"), unless that finds nothing; then
+  // they're searched for like any other words.
+  function run(q) {
+    let scope = parseScope(q, courses);
+    let all = search(index, courses, scope.rest, guideWords, scope);
+    if (!all.classes.length && (scope.classes || scope.exam)) {
+      scope = { classes: null, exam: null, rest: q };
+      all = search(index, courses, q, guideWords);
+    }
+    return { scope, all };
   }
 
   function paint() {
     title.textContent = query ? `Results for “${query}”` : 'Search';
+    scopeBar.hidden = true;
     if (!query) {
       fill(results, h('p.lead', 'Type a word or two, like HIPAA, consent, or heart sounds. Both classes are searched.'));
       last = null;
       return;
     }
-    last = search(index, courses, query, guideWords);
-    if (!last.classes.length) {
+    const { scope, all } = run(query);
+    last = all;
+    if (!all.classes.length) {
       // A misspelled word gets a suggestion, offered only when the suggestion finds something.
       vocab ??= vocabulary(index, guideWords);
       const better = suggestQuery(query, vocab);
-      const helps = better && search(index, courses, better, guideWords).classes.length > 0;
+      const helps = better && run(better).all.classes.length > 0;
       fill(results,
         h('p.lead', `Nothing matched “${query}”.`, helps
           ? [' Did you mean ', h('button.link-button.search-suggest', { type: 'button', onclick: () => useQuery(better) }, better), '?']
@@ -443,34 +605,75 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
           'Ask for questions on this topic')) : null);
       return;
     }
-    const pattern = wordPattern(last.groups);
-    fill(results, last.classes.map(c => {
-      // Previews come from the questions a set adds to the class's count, so a practice exam doesn't repeat its topic
-      // sets' questions.
-      const fresh = new Map(c.unique.map(x => [x.set, x.hits]));
-      const name = c.course ? c.course.name : 'More practice';
-      const inSets = c.unique;
-      const summary = [c.count ? `${plural(c.count, 'question')} in ${plural(inSets.length, 'set')}` : null,
-        c.guides.length ? plural(c.guides.length, 'study guide') : null].filter(Boolean).join(' · ');
-      const all = practiceSet(c.course, inSets, query);
-      return h('section.search-class', { 'aria-label': name },
-        h('div.search-class-head',
-          h('div', h('h2.section-title', name), c.course ? h('p.set-meta', `${c.course.code} · ${summary}`) : h('p.set-meta', summary)),
-          c.count ? h('button.btn.btn-accent', { type: 'button', onclick: () => begin(all, practiceSettings(all.questions.map(q => q.id)), null, 'search') },
-            `Practice these ${c.count}`) : null),
-        c.sets.length ? h('ul.set-list', c.sets.map(({ set, hits }) => h('li.set-row.search-row',
-          h('div.set-info',
-            set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
-            h('h3', set.title),
-            h('p.set-meta', hits.length ? `${hits.length} of ${set.questions.length} questions match` : 'The title or topics match'),
-            previewList(fresh.get(set) ?? [], pattern)),
-          // A set with all the class's matches leaves Practice these to the class's button above.
-          h('div.set-actions',
-            hits.length && hits.length !== c.count ? h('button.btn.btn-accent', { type: 'button', onclick: () => begin(set, practiceSettings(hits.map(q => q.id)), null, 'search') },
-              `Practice these ${hits.length}`) : null,
-            h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Start the set'))))) : null,
-        c.guides.length ? [h('h3.search-sub', 'Study guides'), h('ul.set-list', c.guides.map(guideRow))] : null);
-    }));
+    // Next exam narrows each class to its next exam, unless the search names an exam itself.
+    const narrows = !scope.exam && courses.some(narrowsTo);
+    scopeBar.hidden = !narrows;
+    const view = narrows && mode === 'next' ? nextOnly(all) : all;
+    const more = view === all ? null : leftOut(all, view);
+    if (!view.classes.length) {
+      fill(results, h('p.lead', `Nothing for the next exam matched “${query}”. `, more, ' ', showAll()));
+      return;
+    }
+    const pattern = all.listing ? null : wordPattern(all.groups);
+    fill(results, view.classes.map(c => classResults(c, all, pattern)), more ? h('p.search-more', more, ' ', showAll()) : null);
+  }
+
+  // What Next exam leaves out: "Other exams have 25 more matching questions and 2 study guides." ("more" only when
+  // Next exam shows something, and "matching" only for a search, not a list). Null for nothing.
+  function leftOut(all, view) {
+    const a = totals(all);
+    const v = totals(view);
+    const [q, s, g] = [a.questions - v.questions, a.sets - v.sets, a.guides - v.guides];
+    const [n, noun] = !all.listing && q ? [q, 'question'] : s ? [s, 'set'] : g ? [g, 'study guide'] : [0, ''];
+    if (!n) return null;
+    const first = `${n} ${view.classes.length ? 'more ' : ''}${all.listing ? '' : 'matching '}${noun}${n === 1 ? '' : 's'}`;
+    const guides = noun !== 'study guide' && g ? ` and ${plural(g, 'study guide')}` : '';
+    return `Other exams have ${first}${guides}.`;
+  }
+
+  // One class's results: its heading with Practice these, its sets with previews, and its study guides.
+  function classResults(c, result, pattern) {
+    // Previews come from the questions a set adds to the class's count, so a practice exam doesn't repeat its topic
+    // sets' questions.
+    const fresh = new Map(c.unique.map(x => [x.set, x.hits]));
+    const name = c.course ? c.course.name : 'More practice';
+    const summary = [c.count ? `${plural(c.count, 'question')} in ${plural(c.unique.length, 'set')}` : result.listing && c.sets.length ? plural(c.sets.length, 'set') : null,
+      c.guides.length ? plural(c.guides.length, 'study guide') : null].filter(Boolean).join(' · ');
+    const all = practiceSet(c.course, c.unique, query);
+    return h('section.search-class', { 'aria-label': name },
+      h('div.search-class-head',
+        h('div', h('h2.section-title', name), h('p.set-meta', [c.course?.code, c.next?.exam, summary].filter(Boolean).join(' · '))),
+        c.count ? h('button.btn.btn-accent', { type: 'button', onclick: () => begin(all, practiceSettings(all.questions.map(q => q.id)), null, 'search') },
+          `Practice these ${c.count}`) : null),
+      c.sets.length ? h('ul.set-list', c.sets.map(({ set, hits }) => h('li.set-row.search-row',
+        h('div.set-info',
+          set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
+          h('h3', set.title),
+          h('p.set-meta', result.listing ? plural(set.questions.filter(q => !q.hidden).length, 'question')
+            : hits.length ? `${hits.length} of ${set.questions.length} questions match` : 'The title or topics match'),
+          pattern ? previewList(fresh.get(set) ?? [], pattern) : null),
+        // A set with all the class's matches leaves Practice these to the class's button above.
+        h('div.set-actions',
+          hits.length && hits.length !== c.count ? h('button.btn.btn-accent', { type: 'button', onclick: () => begin(set, practiceSettings(hits.map(q => q.id)), null, 'search') },
+            `Practice these ${hits.length}`) : null,
+          h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Start the set'))))) : null,
+      c.guides.length ? [h('h3.search-sub', 'Study guides'), h('ul.set-list', c.guides.map(g => guideResult(g, result)))] : null);
+  }
+
+  // A study guide in the results. When the words are inside an uploaded guide, the pages they're on (idea 5) appear
+  // under it once its pages arrive.
+  function guideResult(g, result) {
+    const row = guideRow(g);
+    if (!g.uploaded || !g.id || result.listing || !result.groups.length) return row;
+    const line = h('p.set-meta.guide-pages', { hidden: true });
+    row.querySelector('.set-info')?.append(line);
+    loadGuidePages(g.id).then(pages => {
+      const numbers = pages ? pagesFound(result.groups, g.title, pages) : [];
+      if (!numbers.length) return;
+      fill(line, pagesLine(g, numbers));
+      line.hidden = false;
+    });
+    return row;
   }
 
   paint();

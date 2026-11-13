@@ -1,10 +1,10 @@
 [
-  { "code": "NU1110", "name": "Professional Nursing I", "term": "Fall 2026",
+  { "code": "NU1110", "name": "Professional Nursing I", "term": "Fall 2026", "nicknames": ["PN"],
     "exams": [
       { "exam": "Exam 4", "date": "2026-11-24", "covers": "Classes 17 to 19: ethics and law, leadership and teamwork, and teaching and learning, plus abbreviations and math." },
       { "exam": "Final Exam", "covers": "The whole course, with Classes 20 to 23: hygiene, sleep, and mobility, skin integrity, self-care and stress management, and the course review." }
     ] },
-  { "code": "NU1120", "name": "Health Assessment I", "term": "Fall 2026",
+  { "code": "NU1120", "name": "Health Assessment I", "term": "Fall 2026", "nicknames": ["HA"],
     "exams": [
       { "exam": "Exam 4", "date": "2026-11-17", "covers": "Weeks 9 to 12: the endocrine, cardiovascular, respiratory, and lymphatic and immune systems." },
       { "exam": "Final Exam", "date": "2026-12-10", "covers": "The whole course." }

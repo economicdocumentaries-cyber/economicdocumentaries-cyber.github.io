@@ -4,7 +4,7 @@
 import { SITE_NAME } from './config.js';
 import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone, homeSkeleton, heartbeat } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
-import { loadSets } from './sets.js';
+import { loadSets, nextExam, sameExam } from './sets.js';
 import {
   examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
   DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, practiceCount, countsForBest,
@@ -255,15 +255,6 @@ function homeLists(group, noSets) {
 }
 
 // ---------- the next exam first (SPEC 11.11, the owner's choice of landing page, 2026-11-05) ----------
-
-const isoDay = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-const sameExam = (a, b) => typeof a === 'string' && typeof b === 'string' && a.trim().toLowerCase() === b.trim().toLowerCase();
-
-// The class's next exam in sets/courses.json: the first whose date hasn't passed, or that has no date yet.
-function nextExam(course) {
-  const today = isoDay(new Date());
-  return course.exams?.find(e => !e.date || e.date >= today) ?? null;
-}
 
 // "Exam 4 · Tuesday, Nov 17", and the days until then (null without a date).
 function examWhen(exam) {

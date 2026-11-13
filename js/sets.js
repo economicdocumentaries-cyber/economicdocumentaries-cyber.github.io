@@ -110,11 +110,29 @@ async function loadCourses() {
       if (e.covers != null && !isText(e.covers)) return note(`${which} ("${e.exam}") has a "covers" that isn't text.`);
       exams.push({ exam: e.exam.trim(), date: e.date ?? null, covers: isText(e.covers) ? e.covers.trim() : null });
     });
+    // Short names students use for the class in a search, like "HA" (SPEC 11.14).
+    if (c.nicknames != null && !(Array.isArray(c.nicknames) && c.nicknames.every(n => isText(n) && n.trim().length <= 30))) {
+      note('"nicknames" must be a list of short names in [ ], like ["HA"].');
+    }
     if (problems.length > before) return;
     codes.add(c.code.trim().toLowerCase());
-    courses.push({ code: c.code.trim(), name: c.name.trim(), term: isText(c.term) ? c.term.trim() : null, exams });
+    courses.push({
+      code: c.code.trim(), name: c.name.trim(), term: isText(c.term) ? c.term.trim() : null, exams,
+      nicknames: (c.nicknames ?? []).map(n => n.trim()),
+    });
   });
   return { courses, problems };
+}
+
+// ---------- the next exam (SPEC 11.11) ----------
+
+const isoDay = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+export const sameExam = (a, b) => typeof a === 'string' && typeof b === 'string' && a.trim().toLowerCase() === b.trim().toLowerCase();
+
+// The class's next exam in sets/courses.json: the first whose date hasn't passed, or that has no date yet.
+export function nextExam(course) {
+  const today = isoDay(new Date());
+  return course.exams?.find(e => !e.date || e.date >= today) ?? null;
 }
 
 // The class a "course" names, matched without regard to capital letters.

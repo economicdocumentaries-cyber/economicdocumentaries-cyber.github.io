@@ -83,20 +83,58 @@ function fromBase64(text) {
   return bytes;
 }
 
-// Fetches an uploaded guide's pieces and saves it as a PDF.
-async function downloadUploaded(guide) {
+// Fetches an uploaded guide's pieces, as a PDF's address in this page (a blob: URL).
+async function fetchUploaded(guide) {
   const db = await connectStudent();
   const raw = await db.read(`guideFiles/${guide.id}`);
   const pieces = Array.isArray(raw) ? raw : Object.keys(raw ?? {}).sort((a, b) => a - b).map(key => raw[key]);
   if (pieces.length !== guide.chunks || !pieces.every(p => typeof p === 'string')) {
     throw new Error('This study guide is missing part of its file. Ask the host to upload it again.');
   }
-  const url = URL.createObjectURL(new Blob(pieces.map(fromBase64), { type: 'application/pdf' }));
+  return URL.createObjectURL(new Blob(pieces.map(fromBase64), { type: 'application/pdf' }));
+}
+
+function saveFile(url, guide) {
   const link = h('a', { href: url, download: guideFileName(guide), hidden: true });
   document.body.append(link);
   link.click();
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+// Fetches an uploaded guide's pieces and saves it as a PDF.
+async function downloadUploaded(guide) {
+  saveFile(await fetchUploaded(guide), guide);
+}
+
+// Opens an uploaded guide at a page, from the search results (SPEC 11.14, the owner's idea 5, 2026-11-13). On a
+// computer it opens in a new tab, whose PDF viewer goes to the page (#page=N). A phone or tablet can't open a PDF at a
+// page, so there, or if the browser blocks the new tab, it downloads like Download and says which page to look at.
+export async function openUploadedAt(guide, pageNo) {
+  // The tab opens right away, while the click still counts, or the browser would block it.
+  const tab = matchMedia('(pointer: coarse)').matches ? null : window.open('', '_blank');
+  if (tab) {
+    tab.document.title = guide.title;
+    tab.document.body.textContent = 'Opening the study guide…';
+  }
+  const overlay = h('div.loading-overlay', heartbeat('Opening the study guide…'));
+  document.body.append(overlay);
+  try {
+    const url = await fetchUploaded(guide);
+    if (tab && !tab.closed) {
+      tab.location.href = `${url}#page=${pageNo}`;
+      setTimeout(() => URL.revokeObjectURL(url), 10 * 60000);
+    } else {
+      saveFile(url, guide);
+      toast(`The study guide downloaded. Look on page ${pageNo}.`, 7000);
+    }
+    track('guide-download', { class: guide.course, guide: guide.title, kind: 'page' });
+  } catch (err) {
+    tab?.close();
+    toast(err.code ? `The study guide didn't open. ${problemText(err)}` : err.message, 9000);
+  } finally {
+    overlay.remove();
+  }
 }
 
 // The Download button for an uploaded guide.
@@ -377,6 +415,9 @@ export function guidesConsole(section, db, { courses, sets, published }, account
     if (choice !== 'delete') return;
     try {
       await db.update('', { [`guides/${guide.id}`]: null, [`guideFiles/${guide.id}`]: null });
+      // Its words and pages for search go too (SPEC 11.14). Search shows only guides that are there, so this can fail
+      // without harm.
+      db.update('', { [`guideText/${guide.id}`]: null, [`guidePages/${guide.id}`]: null }).catch(() => {});
       toast('Deleted.');
     } catch (err) {
       toast(`It wasn't deleted. ${problemText(err)}`, 9000);
