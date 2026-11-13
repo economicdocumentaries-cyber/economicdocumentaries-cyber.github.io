@@ -1,8 +1,8 @@
 [
   { "code": "NU1110", "name": "Professional Nursing I", "term": "Fall 2026",
     "exams": [
-      { "exam": "Exam 4", "date": "2026-11-24", "covers": "Classes 17 to 21: ethics and law, leadership and teamwork, teaching and learning, hygiene, sleep, and mobility, and skin integrity." },
-      { "exam": "Final Exam", "covers": "The whole course, with Classes 22 and 23: self-care, stress management, and the course review." }
+      { "exam": "Exam 4", "date": "2026-11-24", "covers": "Classes 17 to 19: ethics and law, leadership and teamwork, and teaching and learning, plus abbreviations and math." },
+      { "exam": "Final Exam", "covers": "The whole course, with Classes 20 to 23: hygiene, sleep, and mobility, skin integrity, self-care and stress management, and the course review." }
     ] },
   { "code": "NU1120", "name": "Health Assessment I", "term": "Fall 2026",
     "exams": [

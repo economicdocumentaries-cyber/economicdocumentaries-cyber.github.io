@@ -1130,6 +1130,22 @@ export function validateSet(set) {
   if (set.caseStudies != null && !(Number.isInteger(set.caseStudies) && set.caseStudies >= 0)) {
     add('"caseStudies" must be a whole number of case studies for each exam, like 1, with no quotes.');
   }
+  // Topic minimums (SPEC 11.3): { topic: [[exam size from, at least], ...] }.
+  if (set.topicMinimums != null) {
+    const mins = set.topicMinimums;
+    const topics = new Set(set.questions.map(q => q?.topic).filter(isText));
+    const pair = r => Array.isArray(r) && r.length === 2 && r.every(n => Number.isInteger(n) && n >= 1);
+    if (typeof mins !== 'object' || Array.isArray(mins)) {
+      add('"topicMinimums" must give topics their minimums, like { "Ice chips": [[1, 1], [26, 2]] }.');
+    } else {
+      for (const [topic, rules] of Object.entries(mins)) {
+        if (!topics.has(topic)) add(`"topicMinimums" names "${topic}", but no question has that topic. Check the spelling.`);
+        if (!Array.isArray(rules) || !rules.length || !rules.every(pair)) {
+          add(`"topicMinimums": "${topic}" needs pairs of whole numbers, [exam size from, at least], like [[1, 1], [26, 2]].`);
+        }
+      }
+    }
+  }
   return problems;
 }
 

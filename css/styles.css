@@ -278,7 +278,9 @@ span.order-text { flex: 1; font-size: 15px; }
 .matrix td { width: 1%; padding: 0; text-align: center; }
 .matrix tbody tr:hover > * { background: #F8FAFB; }
 .cell { display: flex; align-items: center; justify-content: center; min-width: 104px; min-height: 44px; padding: 8px; cursor: pointer; }
-.cell:focus-within { box-shadow: inset 0 0 0 1px var(--accent); }
+/* No line around a clicked or tapped cell (the owner's change, 2026-11-13), as with answer rows; the keyboard
+   still outlines the focused cell. */
+.cell:has(input:focus-visible) { box-shadow: inset 0 0 0 1px var(--accent); }
 
 /* ---------- drop-down and drag-and-drop sentences ---------- */
 
@@ -1452,6 +1454,11 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 .search-class-head .section-title { margin: 0; }
 .search-class-head .set-meta { margin: 2px 0 0; }
 .search-sub { margin: 16px 0 6px; font-size: 16px; color: var(--muted); }
+/* Previews of matching questions, with the search words marked (the owner's request, 2026-11-13). */
+.search-previews { margin: 8px 0 0; padding: 0; list-style: none; }
+.search-preview { margin-top: 6px; padding-left: 10px; border-left: 2px solid var(--line); font-size: 14px; line-height: 1.45; color: #4B5563; overflow-wrap: anywhere; }
+.search-preview mark { padding: 0 2px; border-radius: 2px; background: #FFF0B3; color: var(--ink); font-weight: 600; }
+.search-suggest { font-weight: 700; }
 .search-note { margin-top: 28px; font-size: 13px; color: var(--muted); }
 .searches-table { width: 100%; max-width: 560px; margin: 6px 0 22px; border-collapse: collapse; font-size: 14px; }
 .searches-table th, .searches-table td { padding: 6px 10px; border-bottom: 1px solid var(--line); text-align: left; }

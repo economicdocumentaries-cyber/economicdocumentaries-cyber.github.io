@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-4-abbreviations-and-math",
   "title": "Abbreviations and Math Review",
-  "description": "Exam 4 review, matched to the professor's Exam 4 study guide: the class's common abbreviations, unit conversions, and intake in mL, with the rounding and zero rules. The numbers change on every attempt.",
+  "description": "Exam 4 review, matched to the professor's Exam 4 study guide: the class's common abbreviations, unit conversions, and intake in mL, including ice chips, with the rounding and zero rules. The numbers change on every attempt.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 46.5,
+  "timeMinutes": 61.5,
   "defaultCount": 15,
   "questions": [
     {
@@ -720,6 +720,272 @@
       "round": "to the nearest whole number",
       "strictZeros": true,
       "rationale": "<p>Milk: {m} × 30 = {=m * 30} mL, all of it. Soup: {part} of {s} mL = {=s * part} mL. Total: <b>{answer} mL</b>.</p><p>Recording the whole bowl of soup is a mistake: count only the part the client ate.</p><p><b>Takeaway:</b> Convert each item, count what was actually taken, then add.</p>"
+    },
+    {
+      "id": "mx4-32",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "c": [
+          120,
+          180,
+          240,
+          300
+        ]
+      },
+      "stem": "A client ate {c} mL of ice chips. How many milliliters of fluid intake should the nurse record?",
+      "answer": "=c / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Ice chips melt down to about <b>half their volume</b> in water, so the nurse records half: {c} ÷ 2 = <b>{answer} mL</b>.</p><p>Recording the full {c} mL is a mistake: the ice takes up about twice the space the water will.</p><p><b>Takeaway:</b> Ice chips: record half the volume.</p>"
+    },
+    {
+      "id": "mx4-33",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "n": [
+          {
+            "value": 1,
+            "text": "1 cup"
+          },
+          {
+            "value": 2,
+            "text": "2 cups"
+          },
+          {
+            "value": 3,
+            "text": "3 cups"
+          }
+        ]
+      },
+      "stem": "A client in labor had {n} of ice chips this shift. How many milliliters of intake should the nurse record? (1 cup = 240 mL)",
+      "answer": "=n * 240 / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{n} × 240 = {=n * 240} mL of ice chips, and ice chips count as half: {=n * 240} ÷ 2 = <b>{answer} mL</b>.</p><p>Counting the cups at their full volume is a mistake: convert to mL, then halve the ice chips.</p><p><b>Takeaway:</b> Convert to mL first, then halve the ice chips.</p>"
+    },
+    {
+      "id": "mx4-34",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "a": [
+          4,
+          6,
+          8
+        ],
+        "b": [
+          4,
+          6,
+          8
+        ]
+      },
+      "stem": "A client ate {a} oz of ice chips and drank {b} oz of water. How many milliliters of intake should the nurse record?",
+      "answer": "=a * 30 / 2 + b * 30",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Ice chips: {a} × 30 = {=a * 30} mL, and half of that is {=a * 15} mL. Water: {b} × 30 = {=b * 30} mL. Total: <b>{answer} mL</b>.</p><p>Halving the water too is a mistake: only the ice chips are halved.</p><p><b>Takeaway:</b> Halve the ice chips, not the other fluids.</p>"
+    },
+    {
+      "id": "mx4-35",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          200,
+          240
+        ],
+        "j": [
+          4,
+          6
+        ],
+        "b": [
+          120,
+          180
+        ]
+      },
+      "stem": "After surgery, a client had {c} mL of ice chips, {j} oz of apple juice, and {b} mL of broth. How many milliliters of intake should the nurse record?",
+      "answer": "=c / 2 + j * 30 + b",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Ice chips: {c} ÷ 2 = {=c / 2} mL. Juice: {j} × 30 = {=j * 30} mL. Broth: {b} mL. Total: <b>{answer} mL</b>.</p><p>Adding the ice chips at their full volume is a mistake: they count as half.</p><p><b>Takeaway:</b> List each item in mL, halve the ice chips, then add.</p>"
+    },
+    {
+      "id": "mx4-36",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "cup": [
+          160,
+          200,
+          240
+        ],
+        "part": [
+          {
+            "value": 0.5,
+            "text": "half"
+          },
+          {
+            "value": 0.75,
+            "text": "3/4"
+          }
+        ]
+      },
+      "stem": "A client ate {part} of a cup of ice chips that holds {cup} mL. How many milliliters of intake should the nurse record?",
+      "answer": "=cup * part / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>The client ate {part} of {cup} mL = {=cup * part} mL of ice chips, and ice chips count as half: <b>{answer} mL</b>.</p><p>Halving only once is the key: take the part eaten, then halve it for ice. Halving the cup and skipping the part eaten is a mistake.</p><p><b>Takeaway:</b> Part eaten first, then half for ice chips.</p>"
+    },
+    {
+      "id": "mx4-37",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          200,
+          240,
+          300
+        ],
+        "w": [
+          120,
+          180,
+          240
+        ]
+      },
+      "stem": "A client's intake for the shift was {c} mL of ice chips and {w} mL of water. Which total should the nurse record?",
+      "options": [
+        "{=c + w} mL",
+        "{=(c + w) / 2} mL",
+        "{=c / 2 + w} mL",
+        "{=c / 2} mL"
+      ],
+      "answer": 2,
+      "rationale": "<p>Ice chips count as half: {c} ÷ 2 = {=c / 2} mL. Water counts in full: {w} mL. Total: <b>{=c / 2 + w} mL</b>.</p><p><b>{=(c + w) / 2} mL</b> isn't the right answer: it halves the water too. {=c + w} mL counts the ice chips at full volume, and {=c / 2} mL leaves out the water.</p><p><b>Takeaway:</b> Halve the ice chips only, then add the other fluids.</p>"
+    },
+    {
+      "id": "mx4-38",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "lim": [
+          1000,
+          1200,
+          1500
+        ],
+        "w": [
+          8,
+          10,
+          12
+        ],
+        "c": [
+          120,
+          240
+        ]
+      },
+      "stem": "A client on a fluid restriction of {lim} mL a day has had {w} oz of water and {c} mL of ice chips so far. How many more milliliters may the client have today?",
+      "answer": "=lim - (w * 30 + c / 2)",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>So far: water {w} × 30 = {=w * 30} mL, and ice chips {c} ÷ 2 = {=c / 2} mL, for {=w * 30 + c / 2} mL. Left for today: {lim} − {=w * 30 + c / 2} = <b>{answer} mL</b>.</p><p>Counting the ice chips at full volume is a mistake: it would cut the client's remaining fluids by more than it should.</p><p><b>Takeaway:</b> Ice chips count as half toward a fluid restriction too.</p>"
+    },
+    {
+      "id": "mx4-39",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          180,
+          240
+        ],
+        "j": [
+          4,
+          6,
+          8
+        ],
+        "v": [
+          100,
+          150
+        ]
+      },
+      "stem": "A client ate {c} mL of ice chips and drank {j} oz of ginger ale, then vomited {v} mL. How many milliliters of intake should the nurse record?",
+      "answer": "=c / 2 + j * 30",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Intake only: ice chips {c} ÷ 2 = {=c / 2} mL and ginger ale {j} × 30 = {=j * 30} mL, for <b>{answer} mL</b>. The {v} mL of vomit is <b>output</b>, recorded on its own.</p><p>Subtracting the vomit from the intake is a mistake: intake and output are separate totals.</p><p><b>Takeaway:</b> Halve the ice chips; record output separately.</p>"
+    },
+    {
+      "id": "mx4-40",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 2,
+      "stem": "A nurse is recording a client's intake. Why does the nurse record ice chips as half of their measured volume?",
+      "options": [
+        "About half of the ice chips melt before the client eats them",
+        "Ice chips melt down to about half as much water",
+        "Half of the water from ice chips leaves the body as output",
+        "The body absorbs just half of the water in ice chips"
+      ],
+      "answer": 1,
+      "rationale": "<p>Ice is mostly air spaces between the chips, so a cup of ice chips <b>melts down to about half a cup of water</b>. The nurse records the water the client actually took in.</p><p><b>Melting before the client eats them</b> isn't the right answer: the half counts because of the space between the chips, not because of melting in the cup. Output and absorption have nothing to do with how intake is recorded.</p><p><b>Takeaway:</b> Ice chips = half their volume in water.</p>"
+    },
+    {
+      "id": "mx4-41",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c1": [
+          120,
+          160
+        ],
+        "c2": [
+          80,
+          200
+        ],
+        "t": [
+          {
+            "value": 1,
+            "text": "1 cup"
+          },
+          {
+            "value": 2,
+            "text": "2 cups"
+          }
+        ]
+      },
+      "stem": "Over 8 hours, a client ate {c1} mL of ice chips in the morning and {c2} mL in the afternoon, and drank {t} of tea. How many milliliters of intake should the nurse record? (1 cup = 240 mL)",
+      "answer": "=(c1 + c2) / 2 + t * 240",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Ice chips: {c1} + {c2} = {=c1 + c2} mL, halved = {=(c1 + c2) / 2} mL. Tea: {t} × 240 = {=t * 240} mL. Total: <b>{answer} mL</b>.</p><p>Halving only one of the two servings of ice chips is a mistake: every serving of ice chips counts as half.</p><p><b>Takeaway:</b> Add all the ice chips, halve them, then add the other fluids.</p>"
     }
   ]
 }

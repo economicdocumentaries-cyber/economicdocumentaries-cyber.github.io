@@ -99,7 +99,8 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
     }
   }
   const limit = s.count ?? Infinity;
-  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen, set.topicWeights, missed, set.caseStudies) : blocks;
+  const picked = limit < blocks.flat().length
+    ? pickBlocks(blocks, limit, random, seen, set.topicWeights, missed, set.caseStudies, set.topicMinimums) : blocks;
   const place = new Map(blocks.map((b, i) => [b, i]));
   const ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => (place.get(a) ?? -1) - (place.get(b) ?? -1));
   return ordered.flat();
@@ -123,7 +124,11 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
 // since the real exam may have one): exactly that many, the ones whose turn
 // comes first, as long as they take at most half the exam. Without it, case
 // studies come up when their turn comes, so an exam may have none or several.
-function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null) {
+// minimums: the set's "topicMinimums", { topic: [[from, atLeast], ...] }: in an
+// exam of `from` questions or more, the topic gets at least `atLeast` places,
+// taken from the topics with the most (the owner's request, 2026-11-13: one ice
+// chip question in every NU1110 Exam 4 practice, and two past 25 questions).
+function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
   const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
@@ -137,6 +142,25 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   const share = exact.map(Math.floor);
   const roundUp = topics.map((_, i) => i).sort((i, j) => exact[j] - share[j] - (exact[i] - share[i]));
   for (const i of roundUp.slice(0, limit - share.reduce((a, b) => a + b, 0))) share[i]++;
+  // A topic's minimum for an exam this size, as far as its questions go; the places come from the
+  // topics with the most, one at a time.
+  const floor = new Map(); // topic -> its minimum in this exam
+  for (const [t, rules] of Object.entries(minimums && typeof minimums === 'object' ? minimums : {})) {
+    const i = topics.indexOf(t);
+    if (i < 0 || !Array.isArray(rules)) continue;
+    const need = Math.max(0, ...rules.filter(r => Array.isArray(r) && limit >= r[0]).map(r => r[1]));
+    const target = Math.min(need, all.filter(q => q.topic === t).length, limit);
+    floor.set(t, target);
+    while (share[i] < target) {
+      let from = -1;
+      share.forEach((n, k) => {
+        if (k !== i && n > 0 && (from < 0 || n > share[from])) from = k;
+      });
+      if (from < 0) break;
+      share[from]--;
+      share[i]++;
+    }
+  }
   const left = new Map(topics.map((t, i) => [t, share[i]])); // what each topic still needs
   // A case study that would take its topics more than 2 past their shares, or has a topic
   // weighted 0 (blueprint sets only).
@@ -197,7 +221,13 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     if (open.reduce((sum, t) => sum + left.get(t), 0) > places) {
       const given = new Map(open.map(t => [t, 0]));
       let rest = places;
-      let active = open;
+      // A topic's minimum (topicMinimums) is kept first.
+      for (const t of open) {
+        const keep = Math.min(left.get(t), floor.get(t) ?? 0, rest);
+        given.set(t, keep);
+        rest -= keep;
+      }
+      let active = open.filter(t => given.get(t) < left.get(t));
       // By weight, never past what a topic still needs; places a full topic can't take go round again.
       while (rest > 0 && active.length) {
         const total = active.reduce((sum, t) => sum + weights[t], 0);

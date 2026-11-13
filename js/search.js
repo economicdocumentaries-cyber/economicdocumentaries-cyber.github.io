@@ -14,25 +14,52 @@ import { thisBrowserCounts } from './analytics.js';
 import { watchUploadedGuides } from './study-guides.js';
 import { DEFAULT_SETTINGS, PRESETS } from './exam.js';
 import { openFeedback } from './feedback.js';
+import { sample } from './vary.js';
 
 const SEARCHED = 'pe.searches'; // when this browser saved searches (times), for the daily limit
 const PER_DAY = 40;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const STOP = new Set('a an and are as at be by for from how in into is it of on or the to what when which who why with'.split(' '));
-// Abbreviations and their spelled-out forms, found either way ("hipaa" finds "health insurance portability").
-const SYNONYMS = [
+// Words that mean the same thing, found either way: abbreviations and their spelled-out forms ("hipaa" finds "health
+// insurance portability"), and everyday words for the terms the sets use ("heart attack" finds "myocardial infarction",
+// "water pill" finds "diuretic"; the owner's request, 2026-11-13). A term of several words is found when a question
+// has those words in a row. To add more, look at the host console's Searches page, under "Searched, but nothing found".
+const SAME = [
+  // Abbreviations
   ['hipaa', 'health insurance portability'], ['phi', 'protected health information'], ['ebp', 'evidence based'],
   ['qi', 'quality improvement'], ['pdsa', 'plan do study act'], ['sdoh', 'social determinants'],
   ['ada', 'americans with disabilities'], ['emtala', 'emergency medical treatment'], ['psda', 'patient self determination'],
   ['dnr', 'do not resuscitate'], ['ama', 'against medical advice'], ['sbar', 'situation background'],
-  ['copd', 'chronic obstructive pulmonary'], ['chf', 'heart failure'], ['mi', 'myocardial infarction'],
-  ['dka', 'diabetic ketoacidosis'], ['bp', 'blood pressure'], ['hr', 'heart rate'], ['ecg', 'electrocardiogram'],
-  ['ekg', 'electrocardiogram'], ['ecg', 'ekg'], ['abg', 'arterial blood gas'], ['adh', 'antidiuretic hormone'],
+  ['copd', 'chronic obstructive pulmonary'], ['chf', 'heart failure'], ['mi', 'myocardial infarction', 'heart attack'],
+  ['dka', 'diabetic ketoacidosis'], ['bp', 'blood pressure'], ['hr', 'heart rate'], ['ecg', 'ekg', 'electrocardiogram'],
+  ['abg', 'arterial blood gas', 'blood gas'], ['adh', 'antidiuretic hormone', 'vasopressin'],
   ['tsh', 'thyroid stimulating'], ['uti', 'urinary tract infection'], ['icp', 'intracranial pressure'],
   ['loc', 'level of consciousness'], ['gcs', 'glasgow coma'], ['rom', 'range of motion'], ['bmi', 'body mass index'],
   ['cpr', 'cardiopulmonary resuscitation'], ['iv', 'intravenous'], ['npo', 'nothing by mouth'], ['prn', 'as needed'],
   ['cns', 'central nervous system'], ['pns', 'peripheral nervous system'], ['csf', 'cerebrospinal fluid'],
+  ['cva', 'cerebrovascular accident', 'stroke'], ['ppaca', 'affordable care act'], ['npa', 'nurse practice act'],
+  ['tsp', 'teaspoon'], ['tbsp', 'tablespoon'], ['oz', 'ounce'], ['kg', 'kilogram'], ['lb', 'pound'], ['ml', 'milliliter'],
+  ['mg', 'milligram'], ['mcg', 'microgram'], ['ldl', 'bad cholesterol'], ['hdl', 'good cholesterol'],
+  ['spo2', 'oxygen saturation', 'pulse oximetry'],
+  // Everyday words
+  ['high blood pressure', 'high bp', 'hypertension'], ['low blood pressure', 'low bp', 'hypotension'], ['blood sugar', 'sugar', 'glucose'],
+  ['low blood sugar', 'hypoglycemia'], ['high blood sugar', 'hyperglycemia'], ['blood clot', 'clot', 'thrombus', 'embolism'],
+  ['water pill', 'diuretic'], ['blood thinner', 'anticoagulant'], ['kidney', 'renal'], ['swelling', 'edema'],
+  ['short of breath', 'shortness of breath', 'dyspnea'], ['fast heart rate', 'tachycardia'], ['slow heart rate', 'bradycardia'],
+  ['fast breathing', 'tachypnea'], ['sweating', 'sweaty', 'diaphoresis', 'diaphoretic'], ['fainting', 'passing out', 'syncope'],
+  ['bruise', 'ecchymosis'], ['itching', 'itchy', 'pruritus'], ['yellow skin', 'jaundice'], ['blue lips', 'bluish', 'cyanosis'],
+  ['bed sore', 'bedsore', 'pressure injury', 'pressure ulcer'], ['white blood cell', 'leukocyte'],
+  ['red blood cell', 'erythrocyte'], ['platelet', 'thrombocyte'], ['adrenaline', 'epinephrine'],
+  ['noradrenaline', 'norepinephrine'], ['windpipe', 'trachea'], ['voice box', 'larynx'], ['throat', 'pharynx'],
+  ['armpit', 'axilla', 'axillary'], ['groin', 'inguinal'], ['belly', 'abdomen', 'abdominal'], ['nosebleed', 'epistaxis'],
+  ['pink eye', 'conjunctivitis'], ['ear infection', 'otitis media'], ['ringing in the ears', 'tinnitus'],
+  ['nearsighted', 'myopia'], ['farsighted', 'hyperopia'], ['hives', 'urticaria'], ['bleeding', 'hemorrhage'],
+  ['throwing up', 'throw up', 'vomiting'], ['fever', 'febrile'], ['high cholesterol', 'hyperlipidemia'], ['flu', 'influenza'],
+  ['tired', 'tiredness', 'fatigue'], ['sleep hormone', 'melatonin'], ['stress hormone', 'cortisol'], ['heart', 'cardiac'],
+  ['lung', 'pulmonary'], ['brain', 'cerebral'], ['tylenol', 'acetaminophen'],
 ];
+// A term's words as the query has them: without the small words ("short of breath" is "short breath").
+const keyOf = term => term.split(' ').filter(w => !STOP.has(w));
 
 // ---------- matching ----------
 
@@ -50,27 +77,32 @@ function questionText(q) {
 }
 
 // The query as groups of alternatives: every group must be found. A short word must be a whole word; a longer one can
-// start a word ("consent" finds "consents"); an abbreviation or its spelled-out form finds either.
+// start a word ("consent" finds "consents"); a term in SAME finds the others in its group. Terms of several words come
+// first, the longest first ("high blood pressure" before "blood pressure"), matched to the query's words in a row.
+const PHRASES = SAME.flatMap(group => group.map(term => [keyOf(term), group]).filter(([key]) => key.length > 1))
+  .sort((a, b) => b[0].length - a[0].length);
+
 export function parseQuery(query) {
   let all = words(query);
   const kept = all.filter(w => !STOP.has(w));
   if (kept.length) all = kept;
-  const joined = ` ${all.join(' ')} `;
   const groups = [];
-  const used = new Set();
-  for (const [abbr, phrase] of SYNONYMS) {
-    if (joined.includes(` ${phrase} `)) {
-      groups.push([phrase, abbr]);
-      phrase.split(' ').forEach(w => used.add(w));
+  const used = all.map(() => false);
+  for (const [key, group] of PHRASES) {
+    for (let i = 0; i + key.length <= all.length; i++) {
+      if (key.every((w, k) => all[i + k] === w && !used[i + k])) {
+        key.forEach((_, k) => { used[i + k] = true; });
+        groups.push([...group]);
+      }
     }
   }
-  for (const w of all) {
-    if (used.has(w)) continue;
+  all.forEach((w, i) => {
+    if (used[i]) return;
     const alts = new Set([w]);
     if (w.length > 3 && w.endsWith('s')) alts.add(w.slice(0, -1));
-    for (const [abbr, phrase] of SYNONYMS) if (abbr === w) alts.add(phrase);
+    for (const group of SAME) if (group.some(term => alts.has(term))) group.forEach(term => alts.add(term));
     groups.push([...alts]);
-  }
+  });
   return groups;
 }
 
@@ -123,6 +155,130 @@ export function search(index, courses, query, guideWords = {}) {
     c.count = c.unique.reduce((n, x) => n + x.hits.length, 0);
   }
   return { groups, classes: classes.filter(c => c.sets.length || c.guides.length) };
+}
+
+// ---------- "Did you mean …?" (the owner's request, 2026-11-13) ----------
+
+// Every word the index has, with how often it appears, for suggesting a spelling.
+export function vocabulary(index, guideWords = {}) {
+  const counts = new Map();
+  const add = text => {
+    for (const w of String(text).split(' ')) if (w.length > 1) counts.set(w, (counts.get(w) ?? 0) + 1);
+  };
+  for (const s of index.sets) {
+    add(s.text);
+    for (const x of s.questions) add(x.text);
+  }
+  for (const g of index.guides) add(g.text);
+  Object.values(guideWords).forEach(add);
+  SAME.flat().forEach(add);
+  return counts;
+}
+
+// The number of one-letter changes (add, drop, replace, or swap two side by side) between two words, up to max + 1.
+function distance(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let before = null;
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const row = [i];
+    let least = i;
+    for (let j = 1; j <= b.length; j++) {
+      let d = Math.min(prev[j] + 1, row[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (before && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d = Math.min(d, before[j - 2] + 1);
+      row[j] = d;
+      least = Math.min(least, d);
+    }
+    if (least > max) return max + 1;
+    before = prev;
+    prev = row;
+  }
+  return prev[b.length];
+}
+
+// Spellings that sound alike, the usual way medical words get misspelled: "diafram" for diaphragm, "hipoglycemia",
+// "oedema", "trakea".
+const sound = w => w.replace(/ph/g, 'f').replace(/ae|oe/g, 'e').replace(/y/g, 'i').replace(/ck|ch/g, 'k');
+
+// The query with each word that nothing on the site starts with replaced by the closest word the site has: one change
+// away for a word of 4 or 5 letters, two for a longer one, counting a sound-alike spelling as no change. A tie goes to
+// the word that sounds alike, then the one with the same first letter, then the more common one. Null when no word
+// needed it, or none was close enough. Short words and numbers are left alone.
+export function suggestQuery(query, vocab) {
+  const keys = [...vocab.keys()];
+  let changed = false;
+  const out = words(query).map(w => {
+    if (STOP.has(w) || w.length < 4 || /\d/.test(w) || keys.some(v => v.startsWith(w))) return w;
+    const max = w.length <= 5 ? 1 : 2;
+    const ws = sound(w);
+    let best = null;
+    let rank = null;
+    for (const [v, n] of vocab) {
+      if (v.length < 3 || Math.abs(v.length - w.length) > max + 1) continue;
+      const plain = distance(w, v, max);
+      const alike = distance(ws, sound(v), max);
+      const d = Math.min(plain, alike);
+      if (d > max) continue;
+      const r = [d, alike < plain ? 0 : 1, v[0] === w[0] ? 0 : 1, -n];
+      const k = r.findIndex((x, i) => x !== rank?.[i]);
+      if (!rank || (k >= 0 && r[k] < rank[k])) {
+        best = v;
+        rank = r;
+      }
+    }
+    if (best) changed = true;
+    return best ?? w;
+  });
+  return changed ? out.join(' ') : null;
+}
+
+// ---------- previews (the owner's request, 2026-11-13) ----------
+
+const plainOf = html => new DOMParser().parseFromString(String(html ?? ''), 'text/html').body.textContent.replace(/\s+/g, ' ').trim();
+const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// The query's words, found the way search finds them: a short word whole, a longer one at the start of a word, and a
+// phrase's words in a row, with anything but letters and digits between them.
+export function wordPattern(groups) {
+  const alts = [...new Set(groups.flat())].sort((a, b) => b.length - a.length)
+    .map(a => a.split(' ').map(escapeRe).join('[^a-z0-9]+') + (a.length <= 2 ? '(?![a-z0-9])' : ''));
+  return alts.length ? new RegExp(`(^|[^a-z0-9])(${alts.join('|')})`, 'gi') : null;
+}
+
+// Text with the pattern's matches in <mark>.
+function marked(text, pattern) {
+  const out = [];
+  let last = 0;
+  pattern.lastIndex = 0; // matchAll starts where the pattern's last search stopped
+  for (const m of text.matchAll(pattern)) {
+    const at = m.index + m[1].length;
+    if (at > last) out.push(text.slice(last, at));
+    out.push(h('mark', m[2]));
+    last = at + m[2].length;
+  }
+  out.push(text.slice(last));
+  return out;
+}
+
+// A short piece of a question, around the first place the query matches it (the stem first, then its sentence, choices,
+// rows, steps, passage, and rationale), with the query's words marked. Numbers that change show their sample.
+export function preview(q, pattern) {
+  const shown = sample(q);
+  const parts = [shown.stem, String(shown.text ?? '').replace(/\{\{\d+\}\}/g, '___'), shown.options, shown.rows, shown.items,
+    String(shown.passage ?? '').replace(/\[\[|\]\]/g, ''), shown.rationale];
+  for (const part of parts) {
+    const text = Array.isArray(part) ? part.map(plainOf).join(' · ') : plainOf(part);
+    pattern.lastIndex = 0;
+    const m = pattern.exec(text);
+    if (!m) continue;
+    const at = m.index + m[1].length;
+    let start = Math.max(0, at - 60);
+    if (start > 0) start = text.indexOf(' ', start) + 1 || start;
+    let end = Math.min(text.length, start + 170);
+    if (end < text.length) end = Math.max(text.lastIndexOf(' ', end), at + m[2].length);
+    return [start > 0 ? '…' : '', ...marked(text.slice(start, end), pattern), end < text.length ? '…' : ''];
+  }
+  return null;
 }
 
 // ---------- practice from the results ----------
@@ -208,6 +364,12 @@ export function searchBox(value = '', onType = null) {
 
 const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
+// Up to 3 previews of a set's matching questions, each a short piece with the search words marked.
+function previewList(questions, pattern) {
+  const items = pattern ? questions.slice(0, 3).map(q => preview(q, pattern)).filter(Boolean) : [];
+  return items.length ? h('ul.search-previews', items.map(p => h('li.search-preview', p))) : null;
+}
+
 // #/search/<words>. helpers: { page, begin, guideRow } from app.js.
 export async function searchView(root, { args, isCurrent }, { page, begin, guideRow }) {
   let query = (args[0] ?? '').trim();
@@ -240,6 +402,17 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
   let last = null;
   let saved = '';
   let saveTimer = null;
+  let vocab = null; // the site's words, for "Did you mean", made the first time a search finds nothing
+
+  // Runs a suggested search as if the student had typed it and pressed Enter.
+  function useQuery(q) {
+    query = q;
+    box.input.value = q;
+    history.replaceState(history.state, '', `#/search/${encodeURIComponent(q)}`);
+    paint();
+    save();
+    box.input.focus();
+  }
 
   function save() {
     clearTimeout(saveTimer);
@@ -258,13 +431,23 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
     }
     last = search(index, courses, query, guideWords);
     if (!last.classes.length) {
+      // A misspelled word gets a suggestion, offered only when the suggestion finds something.
+      vocab ??= vocabulary(index, guideWords);
+      const better = suggestQuery(query, vocab);
+      const helps = better && search(index, courses, better, guideWords).classes.length > 0;
       fill(results,
-        h('p.lead', `Nothing matched “${query}”. Check the spelling, or try fewer or shorter words.`),
+        h('p.lead', `Nothing matched “${query}”.`, helps
+          ? [' Did you mean ', h('button.link-button.search-suggest', { type: 'button', onclick: () => useQuery(better) }, better), '?']
+          : ' Check the spelling, or try fewer or shorter words.'),
         groupStudyOn() ? h('p', h('button.link-button', { type: 'button', onclick: () => openFeedback(`Could you add questions about ${query}?`) },
           'Ask for questions on this topic')) : null);
       return;
     }
+    const pattern = wordPattern(last.groups);
     fill(results, last.classes.map(c => {
+      // Previews come from the questions a set adds to the class's count, so a practice exam doesn't repeat its topic
+      // sets' questions.
+      const fresh = new Map(c.unique.map(x => [x.set, x.hits]));
       const name = c.course ? c.course.name : 'More practice';
       const inSets = c.unique;
       const summary = [c.count ? `${plural(c.count, 'question')} in ${plural(inSets.length, 'set')}` : null,
@@ -279,7 +462,8 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
           h('div.set-info',
             set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
             h('h3', set.title),
-            h('p.set-meta', hits.length ? `${hits.length} of ${set.questions.length} questions match` : 'The title or topics match')),
+            h('p.set-meta', hits.length ? `${hits.length} of ${set.questions.length} questions match` : 'The title or topics match'),
+            previewList(fresh.get(set) ?? [], pattern)),
           // A set with all the class's matches leaves Practice these to the class's button above.
           h('div.set-actions',
             hits.length && hits.length !== c.count ? h('button.btn.btn-accent', { type: 'button', onclick: () => begin(set, practiceSettings(hits.map(q => q.id)), null, 'search') },
@@ -295,10 +479,12 @@ export async function searchView(root, { args, isCurrent }, { page, begin, guide
   const stopGuides = watchUploadedGuides(courses, list => {
     uploaded = list;
     index = buildIndex(sets, courses, [...guides, ...uploaded]);
+    vocab = null;
     paint();
   });
   loadGuideWords().then(w => {
     guideWords = w;
+    vocab = null;
     if (isCurrent()) paint();
   });
   box.input.focus();
