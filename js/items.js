@@ -1126,6 +1126,10 @@ export function validateSet(set) {
       if (!Object.values(weights).some(n => n > 0)) add('"topicWeights" needs at least one weight greater than 0.');
     }
   }
+  // Case studies per exam (SPEC 11.3): every exam of fewer questions than the set has gets exactly this many.
+  if (set.caseStudies != null && !(Number.isInteger(set.caseStudies) && set.caseStudies >= 0)) {
+    add('"caseStudies" must be a whole number of case studies for each exam, like 1, with no quotes.');
+  }
   return problems;
 }
 

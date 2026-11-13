@@ -45,18 +45,7 @@
       "level": 1,
       "stem": "Blood that is low in oxygen returns from the body to the heart through the venae cavae. Place the structures in the order that blood passes through them on its way to the aorta.",
       "items": ["Right atrium", "Right ventricle", "Pulmonary arteries", "Pulmonary veins", "Left atrium", "Left ventricle"],
-      "rationale": "<p>Blood from the body enters the <b>right atrium</b> through the superior and inferior venae cavae, passes the tricuspid valve into the <b>right ventricle</b>, and is pumped through the pulmonic valve into the pulmonary trunk and <b>pulmonary arteries</b> to the lungs (the pulmonary circulation). In the lungs, it picks up oxygen and gives off carbon dioxide. The <b>pulmonary veins</b> carry the oxygen-rich blood to the <b>left atrium</b>; it passes the mitral valve into the <b>left ventricle</b>, which pumps it through the aortic valve into the aorta and out to the body (the systemic circulation).</p><p>Common mistakes are sending blood from the right side straight to the left side, skipping the lungs, and mixing up the pulmonary arteries, which carry blood away from the heart to the lungs, with the pulmonary veins, which bring it back.</p><p>The trap is putting the pulmonary veins before the pulmonary arteries: arteries carry blood away from the heart, to the lungs, and veins bring it back.</p><p><b>Takeaway:</b> Right atrium → right ventricle → pulmonary arteries → lungs → pulmonary veins → left atrium → left ventricle → aorta.</p>"
-    },
-    {
-      "id": "cv-03",
-      "type": "hotspot",
-      "topic": "Blood flow and heart structures",
-      "level": 2,
-      "stem": "A client has a heart valve that doesn't close completely, so blood leaks backward from the right ventricle into the right atrium when the ventricles contract. Click the valve that is leaking.",
-      "image": "img/heart-section.svg",
-      "alt": "Front view of a heart cut open to show its inside, with the client's right on the viewer's left, marked R and L: two upper chambers and two lower chambers, all the same color, with a valve between each upper and lower chamber; a large vein entering the upper chamber on the viewer's left from above and another from below; two veins entering the upper chamber on the viewer's right from the side; and two large arteries rising from the lower chambers and crossing, one of them arching over the top of the heart.",
-      "regions": [{"x": 30.9, "y": 54.9, "w": 10.8, "h": 5.1}],
-      "rationale": "<p>The valve between the <b>right atrium and the right ventricle</b> is the <b>tricuspid valve</b>, one of the two atrioventricular (AV) valves. It should close when the ventricles contract (systole), so blood goes forward into the pulmonary trunk instead of back into the atrium. On a front view, the client's right is on the viewer's left, so it's the valve between the two chambers on the viewer's left.</p><p>The <b>mitral valve</b>, on the viewer's right, is the AV valve between the left atrium and left ventricle. The <b>pulmonic and aortic valves</b> (the semilunar valves) sit where the pulmonary trunk and the aorta leave the ventricles; they keep blood from flowing back into the ventricles during diastole.</p><p><b>The mitral valve</b> is the tempting choice, since it's the better-known valve, but it sits between the left atrium and the left ventricle; on the right side, that valve is the tricuspid.</p><p><b>Takeaway:</b> Backflow from the right ventricle into the right atrium means a leaking tricuspid valve, the AV valve on the client's right.</p>"
+      "rationale": "<p>Blood from the body enters the <b>right atrium</b> through the superior and inferior venae cavae, passes the tricuspid valve into the <b>right ventricle</b>, and is pumped through the pulmonic valve into the pulmonary trunk and <b>pulmonary arteries</b> to the lungs (the pulmonary circulation). In the lungs, it picks up oxygen and gives off carbon dioxide. The <b>pulmonary veins</b> carry the oxygen-rich blood to the <b>left atrium</b>; it passes the mitral valve into the <b>left ventricle</b>, which pumps it through the aortic valve into the aorta and out to the body (the systemic circulation).</p><p>Common mistakes are sending blood from the right side straight to the left side, skipping the lungs, and mixing up the pulmonary arteries, which carry blood away from the heart to the lungs, with the pulmonary veins, which bring it back.</p><p>Putting the pulmonary veins before the pulmonary arteries is a mistake: arteries carry blood away from the heart, to the lungs, and veins bring it back.</p><p><b>Takeaway:</b> Right atrium → right ventricle → pulmonary arteries → lungs → pulmonary veins → left atrium → left ventricle → aorta.</p>"
     },
     {
       "id": "cv-04",
@@ -89,7 +78,7 @@
       "stem": "A client's right ventricle is no longer pumping effectively. Which of the following describes where blood backs up first?",
       "options": ["Into the veins that bring blood from the lungs", "Into the arteries that carry blood to the body", "Into the veins that bring blood from the body", "Into the arteries that carry blood to the lungs"],
       "answer": 2,
-      "rationale": "<p>Blood reaches the <b>right ventricle</b> from the right atrium, which collects it from the body through the venae cavae. When the right ventricle can't pump all of it forward into the pulmonary arteries, blood backs up behind it: into the right atrium and the <b>veins that bring blood from the body</b>, where the pressure rises.</p><p>Backup into the <b>veins from the lungs</b> (the pulmonary veins) happens when the <b>left</b> ventricle fails, since the lungs drain into the left side of the heart. The <b>arteries to the lungs</b> and the <b>arteries to the body</b> are downstream of the ventricles: blood is pumped into them, so it doesn't back up into them.</p><p><b>“Into the veins that bring blood from the lungs”</b> is the tempting choice, since backup sounds like the lungs, but that's left-sided failure; a failing right ventricle backs blood up into the veins from the body.</p><p><b>Takeaway:</b> Blood backs up behind a failing ventricle: right-sided failure backs up into the veins from the body, and left-sided failure backs up into the lungs.</p>"
+      "rationale": "<p>Blood reaches the <b>right ventricle</b> from the right atrium, which collects it from the body through the venae cavae. When the right ventricle can't pump all of it forward into the pulmonary arteries, blood backs up behind it: into the right atrium and the <b>veins that bring blood from the body</b>, where the pressure rises.</p><p>Backup into the <b>veins from the lungs</b> (the pulmonary veins) happens when the <b>left</b> ventricle fails, since the lungs drain into the left side of the heart. The <b>arteries to the lungs</b> and the <b>arteries to the body</b> are downstream of the ventricles: blood is pumped into them, so it doesn't back up into them.</p><p><b>“Into the veins that bring blood from the lungs”</b> isn't the right answer: backup sounds like the lungs, but that's left-sided failure; a failing right ventricle backs blood up into the veins from the body.</p><p><b>Takeaway:</b> Blood backs up behind a failing ventricle: right-sided failure backs up into the veins from the body, and left-sided failure backs up into the lungs.</p>"
     },
     {
       "id": "cv-09",
@@ -101,7 +90,7 @@
       "columns": ["Ventricular diastole", "Ventricular systole"],
       "rows": ["The ventricles fill with blood", "The aortic and pulmonic valves are open", "The mitral and tricuspid valves are open", "Blood is pushed into the aorta and pulmonary arteries", "The ventricular muscle relaxes"],
       "answer": [0, 1, 0, 1, 0],
-      "rationale": "<p><b>Ventricular diastole</b> is relaxation and filling: the ventricular muscle <b>relaxes</b>, the <b>mitral and tricuspid valves are open</b>, and the ventricles <b>fill with blood</b> from the atria. It begins when the aortic and pulmonic valves close and ends when the mitral and tricuspid valves close.</p><p><b>Ventricular systole</b> is contraction and ejection: once the pressure in the ventricles rises above the pressure in the arteries, the <b>aortic and pulmonic valves open</b>, and blood is <b>pushed into the aorta and pulmonary arteries</b>. It begins when the mitral and tricuspid valves close and ends when the aortic and pulmonic valves close.</p><p>The valve rows are the trap: the mitral and tricuspid valves are open while the ventricles fill (diastole), and the aortic and pulmonic valves open when the ventricles pump (systole).</p><p><b>Takeaway:</b> Diastole: ventricles relax and fill, AV valves open. Systole: ventricles contract and eject, semilunar valves open.</p>"
+      "rationale": "<p><b>Ventricular diastole</b> is relaxation and filling: the ventricular muscle <b>relaxes</b>, the <b>mitral and tricuspid valves are open</b>, and the ventricles <b>fill with blood</b> from the atria. It begins when the aortic and pulmonic valves close and ends when the mitral and tricuspid valves close.</p><p><b>Ventricular systole</b> is contraction and ejection: once the pressure in the ventricles rises above the pressure in the arteries, the <b>aortic and pulmonic valves open</b>, and blood is <b>pushed into the aorta and pulmonary arteries</b>. It begins when the mitral and tricuspid valves close and ends when the aortic and pulmonic valves close.</p><p>For the valve rows, the mitral and tricuspid valves are open while the ventricles fill (diastole), and the aortic and pulmonic valves open when the ventricles pump (systole).</p><p><b>Takeaway:</b> Diastole: ventricles relax and fill, AV valves open. Systole: ventricles contract and eject, semilunar valves open.</p>"
     },
     {
       "id": "cv-10",
@@ -135,7 +124,7 @@
       "text": "On an ECG, the P wave shows {{0}}, the QRS complex shows {{1}}, and the T wave shows {{2}}.",
       "tokens": ["ventricular repolarization", "atrial depolarization", "the AV node's delay", "ventricular depolarization", "atrial repolarization"],
       "answer": [1, 3, 0],
-      "rationale": "<p>The <b>P wave</b>, the first wave, is <b>atrial depolarization</b>, which starts at the SA node just before the atria contract. The <b>QRS complex</b> is <b>ventricular depolarization</b>: the Q wave is the septum, the R wave is the main mass of the ventricles (they contract at its peak), and the S wave is the last of the Purkinje fibers. The <b>T wave</b> is <b>ventricular repolarization</b>.</p><p>The <b>AV node's delay</b> is part of the PR interval, the time from the start of the P wave to the start of the QRS complex (120 to 200 ms); it isn't a wave of its own. <b>Atrial repolarization</b> happens at the same time as the QRS complex, so it doesn't show as a separate wave.</p><p>The trap is the T wave: it shows ventricular repolarization; atrial repolarization is hidden in the QRS complex.</p><p><b>Takeaway:</b> P = the atria depolarize; QRS = the ventricles depolarize; T = the ventricles repolarize.</p>"
+      "rationale": "<p>The <b>P wave</b>, the first wave, is <b>atrial depolarization</b>, which starts at the SA node just before the atria contract. The <b>QRS complex</b> is <b>ventricular depolarization</b>: the Q wave is the septum, the R wave is the main mass of the ventricles (they contract at its peak), and the S wave is the last of the Purkinje fibers. The <b>T wave</b> is <b>ventricular repolarization</b>.</p><p>The <b>AV node's delay</b> is part of the PR interval, the time from the start of the P wave to the start of the QRS complex (120 to 200 ms); it isn't a wave of its own. <b>Atrial repolarization</b> happens at the same time as the QRS complex, so it doesn't show as a separate wave.</p><p>The T wave isn't the right answer: it shows ventricular repolarization; atrial repolarization is hidden in the QRS complex.</p><p><b>Takeaway:</b> P = the atria depolarize; QRS = the ventricles depolarize; T = the ventricles repolarize.</p>"
     },
     {
       "id": "cv-16",
@@ -145,7 +134,7 @@
       "stem": "A nurse reviews a client's ECG: heart rate 78/min, an upright P wave before each QRS complex, PR interval 160 ms, and QRS complex 140 ms. Which of the following findings should the nurse report to the provider?",
       "options": ["Heart rate of 78/min", "PR interval of 160 ms", "QRS complex of 140 ms", "Upright P wave before each QRS complex"],
       "answer": 2,
-      "rationale": "<p>A normal <b>QRS complex</b> lasts <b>less than 120 ms</b> (usually 60 to 100 ms), because the impulse spreads quickly through the bundle branches and Purkinje fibers. At <b>140 ms</b>, this client's QRS is <b>wide</b>, so the ventricles are depolarizing slowly or by an abnormal path, as with a bundle branch block, a high potassium level, or a rhythm that starts in the ventricles. It needs follow-up.</p><p>A <b>PR interval of 160 ms</b> is within the normal 120 to 200 ms, so the AV node's delay is normal. A <b>heart rate of 78/min</b> is within 60 to 100, and an <b>upright P wave before each QRS complex</b> shows that each beat starts in the SA node.</p><p><b>The PR interval of 160 ms</b> is the tempting choice, since intervals are easy to mix up, but it's normal; a QRS over 120 ms is wide.</p><p><b>Takeaway:</b> PR interval 120 to 200 ms; QRS under 120 ms. A wider QRS means slow or abnormal spread through the ventricles.</p>"
+      "rationale": "<p>A normal <b>QRS complex</b> lasts <b>less than 120 ms</b> (usually 60 to 100 ms), because the impulse spreads quickly through the bundle branches and Purkinje fibers. At <b>140 ms</b>, this client's QRS is <b>wide</b>, so the ventricles are depolarizing slowly or by an abnormal path, as with a bundle branch block, a high potassium level, or a rhythm that starts in the ventricles. It needs follow-up.</p><p>A <b>PR interval of 160 ms</b> is within the normal 120 to 200 ms, so the AV node's delay is normal. A <b>heart rate of 78/min</b> is within 60 to 100, and an <b>upright P wave before each QRS complex</b> shows that each beat starts in the SA node.</p><p><b>The PR interval of 160 ms</b> isn't the right answer: intervals are easy to mix up, but it's normal; a QRS over 120 ms is wide.</p><p><b>Takeaway:</b> PR interval 120 to 200 ms; QRS under 120 ms. A wider QRS means slow or abnormal spread through the ventricles.</p>"
     },
     {
       "id": "cv-18",
@@ -189,7 +178,7 @@
       "stem": "A client's platelet count is very low. Which of the following findings should the nurse monitor for?",
       "options": ["Bleeding gums", "Fever and frequent infections", "Easy bruising", "Nosebleeds", "Fatigue and shortness of breath", "Blood in the urine"],
       "answer": [0, 2, 3, 5],
-      "rationale": "<p><b>Platelets</b> (thrombocytes) are small cell fragments without a nucleus. They're made in the bone marrow, live 7 to 10 days, and plug damaged vessels to start <b>clotting</b>. With very few platelets, small injuries keep bleeding, so the nurse watches for <b>bleeding gums</b>, <b>easy bruising</b>, <b>nosebleeds</b>, and <b>blood in the urine</b>.</p><p><b>Fever and frequent infections</b> point to a problem with the white blood cells, and <b>fatigue and shortness of breath</b> to a problem with the red blood cells.</p><p><b>Fatigue and shortness of breath</b> are the tempting ones, since they come with blood problems, but they point to too few red blood cells (anemia), not platelets.</p><p><b>Takeaway:</b> A low platelet count means a risk of bleeding: check the gums, skin, nose, and urine.</p>"
+      "rationale": "<p><b>Platelets</b> (thrombocytes) are small cell fragments without a nucleus. They're made in the bone marrow, live 7 to 10 days, and plug damaged vessels to start <b>clotting</b>. With very few platelets, small injuries keep bleeding, so the nurse watches for <b>bleeding gums</b>, <b>easy bruising</b>, <b>nosebleeds</b>, and <b>blood in the urine</b>.</p><p><b>Fever and frequent infections</b> point to a problem with the white blood cells, and <b>fatigue and shortness of breath</b> to a problem with the red blood cells.</p><p><b>Fatigue and shortness of breath</b> don't fit a low platelet count: they come with blood problems, but they point to too few red blood cells (anemia), not platelets.</p><p><b>Takeaway:</b> A low platelet count means a risk of bleeding: check the gums, skin, nose, and urine.</p>"
     },
     {
       "id": "cv-24",
@@ -199,7 +188,7 @@
       "stem": "A client with liver failure has a low albumin level and new swelling in both legs. Which of the following explains the swelling?",
       "options": ["Less albumin makes the blood clot more easily", "Less albumin blocks the client's lymphatic vessels", "Less albumin raises the pressure in the client's arteries", "Less albumin lets fluid move out of the blood vessels"],
       "answer": 3,
-      "rationale": "<p><b>Albumin</b>, the main protein in plasma, is made by the liver. It keeps fluid inside the blood vessels by osmotic pressure: it draws water into the blood. When the liver fails and the albumin level drops, less water is held in the vessels, so <b>fluid moves out into the tissues</b> and causes swelling (edema), often in the legs.</p><p>Clotting depends on platelets and clotting proteins such as <b>fibrinogen</b>, not albumin. A low albumin level doesn't <b>block lymphatic vessels</b>, and it doesn't <b>raise the pressure in the arteries</b>.</p><p><b>“Less albumin blocks the lymphatic vessels”</b> is the tempting choice, since blocked lymph also causes swelling, but albumin's job is to hold fluid inside the blood vessels.</p><p><b>Takeaway:</b> Albumin holds fluid in the vessels; a low albumin level lets fluid leak into the tissues as edema.</p>"
+      "rationale": "<p><b>Albumin</b>, the main protein in plasma, is made by the liver. It keeps fluid inside the blood vessels by osmotic pressure: it draws water into the blood. When the liver fails and the albumin level drops, less water is held in the vessels, so <b>fluid moves out into the tissues</b> and causes swelling (edema), often in the legs.</p><p>Clotting depends on platelets and clotting proteins such as <b>fibrinogen</b>, not albumin. A low albumin level doesn't <b>block lymphatic vessels</b>, and it doesn't <b>raise the pressure in the arteries</b>.</p><p><b>“Less albumin blocks the lymphatic vessels”</b> isn't the right answer: blocked lymph also causes swelling, but albumin's job is to hold fluid inside the blood vessels.</p><p><b>Takeaway:</b> Albumin holds fluid in the vessels; a low albumin level lets fluid leak into the tissues as edema.</p>"
     },
     {
       "id": "cv-25",
@@ -209,7 +198,7 @@
       "stem": "A client with type A-negative blood needs a transfusion of red blood cells. Which of the following donor blood types is compatible?",
       "options": ["O-negative", "A-positive", "B-negative", "AB-negative"],
       "answer": 0,
-      "rationale": "<p>Type A blood has the <b>A antigen</b> on its red blood cells and <b>anti-B antibodies</b> in its plasma, so the client can receive red blood cells without the B antigen: type A or type O. The client is also <b>Rh-negative</b>, with no Rh factor on the red blood cells, so the cells given should be <b>Rh-negative</b> too. <b>O-negative</b> red blood cells have no A, B, or Rh antigens, so they're compatible (A-negative cells would be too).</p><p><b>A-positive</b> cells carry the Rh factor, which an Rh-negative client can make antibodies against. <b>B-negative</b> and <b>AB-negative</b> cells carry the B antigen, which the client's anti-B antibodies would attack.</p><p><b>A-positive</b> is the tempting choice, since it matches the A, but an Rh-negative client should receive Rh-negative red cells; O-negative works for any recipient's red cells.</p><p><b>Takeaway:</b> Donor red cells must not carry an antigen the client lacks: A, B, or the Rh factor.</p>"
+      "rationale": "<p>Type A blood has the <b>A antigen</b> on its red blood cells and <b>anti-B antibodies</b> in its plasma, so the client can receive red blood cells without the B antigen: type A or type O. The client is also <b>Rh-negative</b>, with no Rh factor on the red blood cells, so the cells given should be <b>Rh-negative</b> too. <b>O-negative</b> red blood cells have no A, B, or Rh antigens, so they're compatible (A-negative cells would be too).</p><p><b>A-positive</b> cells carry the Rh factor, which an Rh-negative client can make antibodies against. <b>B-negative</b> and <b>AB-negative</b> cells carry the B antigen, which the client's anti-B antibodies would attack.</p><p><b>A-positive</b> isn't the right answer: it matches the A, but an Rh-negative client should receive Rh-negative red cells; O-negative works for any recipient's red cells.</p><p><b>Takeaway:</b> Donor red cells must not carry an antigen the client lacks: A, B, or the Rh factor.</p>"
     },
     {
       "id": "cv-26",
@@ -219,7 +208,7 @@
       "stem": "A nurse is preparing to give red blood cell transfusions to 4 clients. Which of the following transfusions should the nurse clarify with the provider?",
       "options": ["Type B-negative cells for a client with type B-positive blood", "Type A-negative cells for a client with type AB-positive blood", "Type B-positive cells for a client with type A-positive blood", "Type O-positive cells for a client with type O-positive blood"],
       "answer": 2,
-      "rationale": "<p>A client can safely receive red blood cells only if the cells carry no A, B, or Rh antigen that the client's own cells lack, since the client's antibodies would attack it. A client with <b>type A-positive</b> blood has <b>anti-B antibodies</b>, so <b>type B-positive</b> cells, which carry the B antigen, aren't compatible. The nurse should clarify this transfusion before giving it.</p><p>The other transfusions are compatible. <b>B-negative</b> cells carry the B antigen and no Rh factor, and a <b>B-positive</b> client has both. <b>A-negative</b> cells carry only the A antigen, and an <b>AB-positive</b> client has A, B, and Rh antigens and no anti-A or anti-B antibodies. <b>O-positive</b> cells carry only the Rh factor, which an <b>O-positive</b> client has too.</p><p><b>B-negative cells for a B-positive client</b> is the tempting one to question, since the Rh doesn't match, but Rh-negative cells are safe for an Rh-positive client; giving type B cells to a type A client is the dangerous mismatch.</p><p><b>Takeaway:</b> Before a transfusion, check that the donor's red cells carry no antigen the client lacks: A, B, or Rh.</p>"
+      "rationale": "<p>A client can safely receive red blood cells only if the cells carry no A, B, or Rh antigen that the client's own cells lack, since the client's antibodies would attack it. A client with <b>type A-positive</b> blood has <b>anti-B antibodies</b>, so <b>type B-positive</b> cells, which carry the B antigen, aren't compatible. The nurse should clarify this transfusion before giving it.</p><p>The other transfusions are compatible. <b>B-negative</b> cells carry the B antigen and no Rh factor, and a <b>B-positive</b> client has both. <b>A-negative</b> cells carry only the A antigen, and an <b>AB-positive</b> client has A, B, and Rh antigens and no anti-A or anti-B antibodies. <b>O-positive</b> cells carry only the Rh factor, which an <b>O-positive</b> client has too.</p><p><b>B-negative cells for a B-positive client</b> don't need clarifying: the Rh doesn't match, but Rh-negative cells are safe for an Rh-positive client; giving type B cells to a type A client is the dangerous mismatch.</p><p><b>Takeaway:</b> Before a transfusion, check that the donor's red cells carry no antigen the client lacks: A, B, or Rh.</p>"
     },
     {
       "id": "cv-27",
@@ -244,7 +233,7 @@
         {"options": ["sympathetic", "parasympathetic", "somatic"], "answer": 0},
         {"options": ["slows the heart rate and widens", "speeds up the heart rate and narrows", "slows the heart rate and narrows", "speeds up the heart rate and widens"], "answer": 1}
       ],
-      "rationale": "<p>Baroreceptors sense the stretch of the artery walls. When the blood pressure falls, they're stretched less and send <b>fewer signals</b> to the vasomotor center in the <b>medulla oblongata</b>. The medulla responds by increasing <b>sympathetic</b> activity and decreasing parasympathetic activity, which <b>speeds up the heart rate</b>, strengthens each contraction, and <b>narrows the blood vessels</b> (vasoconstriction), raising the blood pressure within seconds.</p><p>The <b>parasympathetic</b> system does the opposite when the pressure is high: it slows the heart and widens the vessels. The <b>somatic</b> system controls skeletal muscle, not the heart or vessels. The <b>hypothalamus</b>, <b>cerebellum</b>, and <b>pituitary gland</b> aren't the center for this reflex.</p><p>The trap is the parasympathetic choice: falling pressure means fewer baroreceptor signals, which increases sympathetic activity.</p><p><b>Takeaway:</b> Low blood pressure → fewer baroreceptor signals → the medulla raises sympathetic activity → faster heart rate and narrower vessels.</p>"
+      "rationale": "<p>Baroreceptors sense the stretch of the artery walls. When the blood pressure falls, they're stretched less and send <b>fewer signals</b> to the vasomotor center in the <b>medulla oblongata</b>. The medulla responds by increasing <b>sympathetic</b> activity and decreasing parasympathetic activity, which <b>speeds up the heart rate</b>, strengthens each contraction, and <b>narrows the blood vessels</b> (vasoconstriction), raising the blood pressure within seconds.</p><p>The <b>parasympathetic</b> system does the opposite when the pressure is high: it slows the heart and widens the vessels. The <b>somatic</b> system controls skeletal muscle, not the heart or vessels. The <b>hypothalamus</b>, <b>cerebellum</b>, and <b>pituitary gland</b> aren't the center for this reflex.</p><p>The parasympathetic choice isn't the right answer: falling pressure means fewer baroreceptor signals, which increases sympathetic activity.</p><p><b>Takeaway:</b> Low blood pressure → fewer baroreceptor signals → the medulla raises sympathetic activity → faster heart rate and narrower vessels.</p>"
     },
     {
       "id": "cv-30",
@@ -254,7 +243,7 @@
       "stem": "A nurse reviews the arterial blood gas and electrolyte results of a 72-year-old client: pH 7.34, PaCO₂ 46 mm Hg, PaO₂ 78 mm Hg, and K⁺ 6.3 mmol/L. Which of the following results should the nurse report to the provider first?",
       "options": ["pH 7.34", "PaCO₂ 46 mm Hg", "PaO₂ 78 mm Hg", "Potassium 6.3 mmol/L"],
       "answer": 3,
-      "rationale": "<p>A <b>potassium level of 6.3 mmol/L</b> is above both the normal range (3.5 to 5.0) and the <b>critical limit of 6.0</b>. A high potassium level can cause dangerous heart rhythms, so it's reported first.</p><p>The <b>pH of 7.34</b> (normal 7.35 to 7.45) and the <b>PaCO₂ of 46 mm Hg</b> (normal 35 to 45) are only slightly out of range and far from their critical limits (a pH below 7.20, a PaCO₂ above 65). A <b>PaO₂ of 78 mm Hg</b> is within the expected range for an adult over 65 (75 to 85), even though it's below the 80 to 100 expected for younger adults.</p><p><b>The pH of 7.34</b> is the tempting choice, since it's out of range, but it's only mildly low; a potassium of 6.3 can cause dangerous arrhythmias, so it comes first.</p><p><b>Takeaway:</b> Report a result past its critical limit first, such as a potassium level over 6.0 mmol/L, and compare the PaO₂ with the range for the client's age.</p>"
+      "rationale": "<p>A <b>potassium level of 6.3 mmol/L</b> is above both the normal range (3.5 to 5.0) and the <b>critical limit of 6.0</b>. A high potassium level can cause dangerous heart rhythms, so it's reported first.</p><p>The <b>pH of 7.34</b> (normal 7.35 to 7.45) and the <b>PaCO₂ of 46 mm Hg</b> (normal 35 to 45) are only slightly out of range and far from their critical limits (a pH below 7.20, a PaCO₂ above 65). A <b>PaO₂ of 78 mm Hg</b> is within the expected range for an adult over 65 (75 to 85), even though it's below the 80 to 100 expected for younger adults.</p><p><b>The pH of 7.34</b> isn't the right answer: it's out of range, but it's only mildly low; a potassium of 6.3 can cause dangerous arrhythmias, so it comes first.</p><p><b>Takeaway:</b> Report a result past its critical limit first, such as a potassium level over 6.0 mmol/L, and compare the PaO₂ with the range for the client's age.</p>"
     },
     {
       "id": "cv-37",
@@ -275,7 +264,7 @@
       "stem": "A nurse is reviewing a 66-year-old client's health record. Which of the following findings are risk factors for cardiovascular disease?",
       "options": ["Blood pressure of 152/94 mm Hg", "Blood type O-positive, like both of the client's parents", "Type 2 diabetes mellitus", "Smokes a pack of cigarettes a day", "Father had a heart attack at age 50", "Body mass index (BMI) of 34"],
       "answer": [0, 2, 3, 4, 5],
-      "rationale": "<p>Risk factors for cardiovascular disease include <b>high blood pressure</b> (152/94 is above the expected 120/80 or less), <b>diabetes</b>, <b>smoking</b>, a <b>family history</b> of heart disease, especially at a young age, and <b>obesity</b> (a BMI of 34 is above the expected 18.5 to 25). Others are high cholesterol, older age, and physical inactivity. Hypertension accounts for more deaths from cardiovascular disease in the United States than any other modifiable risk factor: a rise of 20 mm Hg in systolic pressure, or 10 mm Hg in diastolic pressure, doubles the risk of death from stroke or heart disease.</p><p><b>Blood type O-positive</b> isn't a risk factor for cardiovascular disease.</p><p><b>Blood type O-positive</b> is the tempting one, since it's in the health record, but blood type isn't a risk factor for cardiovascular disease.</p><p><b>Takeaway:</b> High blood pressure, diabetes, smoking, obesity, high cholesterol, inactivity, and family history raise the risk of cardiovascular disease; hypertension is the leading modifiable one.</p>"
+      "rationale": "<p>Risk factors for cardiovascular disease include <b>high blood pressure</b> (152/94 is above the expected 120/80 or less), <b>diabetes</b>, <b>smoking</b>, a <b>family history</b> of heart disease, especially at a young age, and <b>obesity</b> (a BMI of 34 is above the expected 18.5 to 25). Others are high cholesterol, older age, and physical inactivity. Hypertension accounts for more deaths from cardiovascular disease in the United States than any other modifiable risk factor: a rise of 20 mm Hg in systolic pressure, or 10 mm Hg in diastolic pressure, doubles the risk of death from stroke or heart disease.</p><p><b>Blood type O-positive</b> isn't a risk factor for cardiovascular disease.</p><p><b>Blood type O-positive</b> isn't the right answer: it's in the health record, but blood type isn't a risk factor for cardiovascular disease.</p><p><b>Takeaway:</b> High blood pressure, diabetes, smoking, obesity, high cholesterol, inactivity, and family history raise the risk of cardiovascular disease; hypertension is the leading modifiable one.</p>"
     },
     {
       "id": "cv-40",
@@ -296,7 +285,7 @@
       "stem": "A nurse reviews the fasting lipid results of 4 clients. Which of the following sets of results needs follow-up?",
       "options": ["Total cholesterol 168 mg/dL, LDL 112 mg/dL", "Total cholesterol 176 mg/dL, LDL 92 mg/dL", "Total cholesterol 188 mg/dL, LDL 96 mg/dL", "Total cholesterol 196 mg/dL, LDL 84 mg/dL"],
       "answer": 0,
-      "rationale": "<p>An <b>LDL above 100 mg/dL</b> is elevated, even when the <b>total cholesterol is below 200 mg/dL</b>. LDL is the cholesterol that builds plaque in the arteries, which leads to coronary artery disease and carotid artery disease, so an LDL of <b>112 mg/dL</b> needs follow-up.</p><p>The other three clients have a total cholesterol under 200 and an LDL under 100. A total of 196 is close to the limit, but it isn't high, and that client's LDL of 84 is in range.</p><p><b>The highest total cholesterol, 196</b>, is the tempting choice, but it's under 200 with an LDL of 84; the LDL of 112 is the result above 100.</p><p><b>Takeaway:</b> Check the LDL on its own: a total cholesterol over 200 mg/dL or an LDL over 100 mg/dL is high.</p>"
+      "rationale": "<p>An <b>LDL above 100 mg/dL</b> is elevated, even when the <b>total cholesterol is below 200 mg/dL</b>. LDL is the cholesterol that builds plaque in the arteries, which leads to coronary artery disease and carotid artery disease, so an LDL of <b>112 mg/dL</b> needs follow-up.</p><p>The other three clients have a total cholesterol under 200 and an LDL under 100. A total of 196 is close to the limit, but it isn't high, and that client's LDL of 84 is in range.</p><p><b>The highest total cholesterol, 196</b>, isn't the right answer: it's under 200 with an LDL of 84; the LDL of 112 is the result above 100.</p><p><b>Takeaway:</b> Check the LDL on its own: a total cholesterol over 200 mg/dL or an LDL over 100 mg/dL is high.</p>"
     },
     {
       "id": "cv-43",
@@ -306,7 +295,7 @@
       "stem": "A client had several lymph nodes removed from under the right arm during cancer surgery and now has swelling of the right arm. Which of the following explains the swelling?",
       "options": ["Less oxygen-rich blood reaches the arm", "Extra tissue fluid can't drain back into the blood", "The veins of the arm have lost their valves", "The arm's capillaries can't exchange nutrients"],
       "answer": 1,
-      "rationale": "<p>Capillaries leak some fluid into the tissues, and the <b>lymphatic system</b> collects the extra and returns it to the blood, which keeps the fluid balanced and <b>prevents edema</b>. When lymph nodes and vessels are removed, <b>extra tissue fluid can't drain</b> from that area, so it builds up as swelling (lymphedema).</p><p>The surgery doesn't block the <b>arteries</b>, so oxygen-rich blood still reaches the arm. The <b>veins</b> keep their valves, and the <b>capillaries</b> still exchange oxygen and nutrients.</p><p><b>“The veins of the arm have lost their valves”</b> is the tempting choice, since failing valves also cause swelling, but here the lymph nodes were removed, so tissue fluid can't drain.</p><p><b>Takeaway:</b> The lymphatic system returns extra tissue fluid to the blood; when it's damaged or removed, swelling follows.</p>"
+      "rationale": "<p>Capillaries leak some fluid into the tissues, and the <b>lymphatic system</b> collects the extra and returns it to the blood, which keeps the fluid balanced and <b>prevents edema</b>. When lymph nodes and vessels are removed, <b>extra tissue fluid can't drain</b> from that area, so it builds up as swelling (lymphedema).</p><p>The surgery doesn't block the <b>arteries</b>, so oxygen-rich blood still reaches the arm. The <b>veins</b> keep their valves, and the <b>capillaries</b> still exchange oxygen and nutrients.</p><p><b>“The veins of the arm have lost their valves”</b> isn't the right answer: failing valves also cause swelling, but here the lymph nodes were removed, so tissue fluid can't drain.</p><p><b>Takeaway:</b> The lymphatic system returns extra tissue fluid to the blood; when it's damaged or removed, swelling follows.</p>"
     },
     {
       "id": "cv-44",
@@ -318,18 +307,7 @@
       "columns": ["Spleen", "Thymus", "Lymph nodes"],
       "rows": ["Where T lymphocytes mature", "Stores red blood cells and platelets", "Filters lymph and holds immune cells along the lymphatic vessels", "Helps recycle iron from old red blood cells"],
       "answer": [1, 0, 2, 0],
-      "rationale": "<p>The <b>thymus</b>, in the upper chest, is where lymphocytes from the bone marrow mature into <b>T lymphocytes</b> (T cells). The <b>spleen</b> filters the blood, helps prevent infection, <b>stores red blood cells and platelets</b>, and takes part in <b>iron metabolism</b> by recycling the iron from old red blood cells. The <b>lymph nodes</b> sit along the lymphatic vessels; they <b>filter lymph</b> and hold immune cells, which is why they can swell during an infection and are checked in a lymph node exam.</p><p>The <b>spleen</b>'s two rows are the trap: it stores red blood cells and platelets and recycles iron from old red cells; T cells mature in the thymus.</p><p><b>Takeaway:</b> Thymus: T cells mature. Spleen: filters blood, stores red cells and platelets, recycles iron. Lymph nodes: filter lymph.</p>"
-    },
-    {
-      "id": "cv-51",
-      "type": "hotspot",
-      "topic": "Blood flow and heart structures",
-      "level": 3,
-      "stem": "After a heart attack, a client has crackles in both lungs and is short of breath when lying flat, because one chamber can no longer pump out the blood returning from the lungs. Click that chamber.",
-      "image": "img/heart-section.svg",
-      "alt": "Front view of a heart cut open to show its inside, with the client's right on the viewer's left, marked R and L: two upper chambers and two lower chambers, all the same color, with a valve between each upper and lower chamber; a large vein entering the upper chamber on the viewer's left from above and another from below; two veins entering the upper chamber on the viewer's right from the side; and two large arteries rising from the lower chambers and crossing, one of them arching over the top of the heart.",
-      "regions": [{"x": 59.2, "y": 60.8, "w": 15, "h": 21.4}, {"x": 60.9, "y": 82.3, "w": 7.5, "h": 5.1}, {"x": 56.7, "y": 60, "w": 2.5, "h": 13.3}],
-      "rationale": "<p>Blood returning from the lungs passes through the left atrium into the <b>left ventricle</b>, which pumps it out to the body. When a heart attack weakens the left ventricle, blood backs up into the lungs: crackles and shortness of breath when lying flat (left-sided heart failure). On a front view, it's the lower chamber on the viewer's right.</p><p><b>The left atrium</b> is the tempting choice, since it receives the blood from the lungs, but the chamber that pumps it out is the left ventricle. A failing <b>right ventricle</b> backs blood up into the body instead, with swelling of the legs and abdomen.</p><p><b>Takeaway:</b> Left ventricle fails: backup into the lungs. Right ventricle fails: backup into the body.</p>"
+      "rationale": "<p>The <b>thymus</b>, in the upper chest, is where lymphocytes from the bone marrow mature into <b>T lymphocytes</b> (T cells). The <b>spleen</b> filters the blood, helps prevent infection, <b>stores red blood cells and platelets</b>, and takes part in <b>iron metabolism</b> by recycling the iron from old red blood cells. The <b>lymph nodes</b> sit along the lymphatic vessels; they <b>filter lymph</b> and hold immune cells, which is why they can swell during an infection and are checked in a lymph node exam.</p><p>The <b>spleen</b> fits two rows: it stores red blood cells and platelets and recycles iron from old red cells; T cells mature in the thymus.</p><p><b>Takeaway:</b> Thymus: T cells mature. Spleen: filters blood, stores red cells and platelets, recycles iron. Lymph nodes: filter lymph.</p>"
     },
     {
       "id": "cv-52",
@@ -339,7 +317,7 @@
       "stem": "After a heart attack, an area of a client's heart wall no longer contracts. Which layer of the wall was damaged?",
       "options": ["The endocardium, the smooth lining inside the chambers", "The myocardium, the thick muscle of the wall", "The epicardium, the outer layer where the coronary arteries run", "The fibrous pericardium, the tough sac around the heart"],
       "answer": 1,
-      "rationale": "<p>The <b>myocardium</b> is the cardiac muscle that contracts to pump blood. A heart attack (myocardial infarction) kills part of it, so that area no longer contracts.</p><p><b>The epicardium</b> is the tempting choice, since the coronary arteries that get blocked run along it, but the damage happens in the muscle they supply. The endocardium lines the chambers and valves, and the pericardium surrounds the heart.</p><p><b>Takeaway:</b> Myocardium = the muscle that pumps. A myocardial infarction damages it.</p>"
+      "rationale": "<p>The <b>myocardium</b> is the cardiac muscle that contracts to pump blood. A heart attack (myocardial infarction) kills part of it, so that area no longer contracts.</p><p><b>The epicardium</b> isn't the right answer: the coronary arteries that get blocked run along it, but the damage happens in the muscle they supply. The endocardium lines the chambers and valves, and the pericardium surrounds the heart.</p><p><b>Takeaway:</b> Myocardium = the muscle that pumps. A myocardial infarction damages it.</p>"
     },
     {
       "id": "cv-53",
@@ -349,18 +327,7 @@
       "stem": "A nurse measures a client's blood pressure as 136/84 mm Hg. The client asks, “What does the 84 mean?” Which response should the nurse give?",
       "options": ["“It's the highest pressure in your arteries, while your heart squeezes.”", "“It's the difference between the top and bottom numbers.”", "“It's the lowest pressure in your arteries, while your heart relaxes and fills.”", "“It's the average pressure your organs get over each whole heartbeat, top and bottom together.”"],
       "answer": 2,
-      "rationale": "<p>The bottom number is the <b>diastolic pressure</b>: the lowest pressure in the arteries, while the ventricles relax and fill between beats. The top number, the systolic pressure, is the peak while the ventricles contract.</p><p><b>“The average pressure your organs get”</b> is the tempting choice, since it sounds like a fuller answer, but that's the mean arterial pressure, which is worked out from both numbers. The difference between the numbers is the pulse pressure.</p><p><b>Takeaway:</b> Systolic: the peak, during contraction. Diastolic: the lowest, during relaxation and filling.</p>"
-    },
-    {
-      "id": "cv-54",
-      "type": "hotspot",
-      "topic": "The ECG",
-      "level": 3,
-      "stem": "A client's ECG shows a regular rhythm at 50/min with no P waves before the QRS complexes. Click the structure that has most likely stopped firing.",
-      "image": "img/heart-conduction.svg",
-      "alt": "Front view of a heart cut open to show its four chambers, with the client's right on the viewer's left, marked R and L: a large vein entering the upper chamber on the viewer's left from above and another from below, two veins entering the upper chamber on the viewer's right, a valve between each upper and lower chamber, and yellow structures in the walls of the heart: two yellow ovals, a short yellow band, and yellow lines running down the wall between the lower chambers and up along their outer walls.",
-      "regions": [{"x": 32.5, "y": 29.7, "w": 8.3, "h": 3.7}, {"x": 33.4, "y": 33.4, "w": 6.6, "h": 0.7}, {"x": 34.2, "y": 28.9, "w": 5, "h": 0.7}],
-      "rationale": "<p>A P wave shows the atria depolarizing after the <b>SA node</b> fires. With no P waves and a regular rate of 50/min, the SA node has most likely stopped firing, and the <b>AV node</b>, with its own rate of 40 to 60, has taken over.</p><p><b>The AV node</b> is the tempting choice, since the rate of 50 points to it, but it's the structure now pacing the heart, not the one that stopped.</p><p><b>Takeaway:</b> No P waves: the SA node isn't starting the beats. The next pacemaker, the AV node, fires at 40 to 60.</p>"
+      "rationale": "<p>The bottom number is the <b>diastolic pressure</b>: the lowest pressure in the arteries, while the ventricles relax and fill between beats. The top number, the systolic pressure, is the peak while the ventricles contract.</p><p><b>“The average pressure your organs get”</b> isn't the right answer: it sounds like a fuller answer, but that's the mean arterial pressure, which is worked out from both numbers. The difference between the numbers is the pulse pressure.</p><p><b>Takeaway:</b> Systolic: the peak, during contraction. Diastolic: the lowest, during relaxation and filling.</p>"
     },
     {
       "id": "cv-56",
@@ -370,7 +337,7 @@
       "stem": "A client with a low red blood cell count reports getting tired and short of breath while climbing stairs. Which explanation should the nurse give?",
       "options": ["“With fewer red blood cells, your blood carries less oxygen to your muscles.”", "“With fewer red blood cells, your blood clots too slowly when you exert yourself.”", "“With fewer red blood cells, you have fewer cells to fight off infections.”", "“With fewer red blood cells, fluid leaks out of your blood vessels and into your lungs.”"],
       "answer": 0,
-      "rationale": "<p>Red blood cells carry <b>oxygen</b> on their hemoglobin. With fewer of them (anemia), the blood delivers less oxygen to working muscles, so exertion brings fatigue and shortness of breath.</p><p><b>“Fluid leaks into your lungs”</b> is the tempting choice, since it would explain the shortness of breath, but holding fluid in the vessels is albumin's job, not the red cells'. Clotting depends on platelets, and fighting infection on white blood cells.</p><p><b>Takeaway:</b> Red blood cells carry oxygen; platelets clot; white blood cells fight infection; albumin holds fluid in the vessels.</p>"
+      "rationale": "<p>Red blood cells carry <b>oxygen</b> on their hemoglobin. With fewer of them (anemia), the blood delivers less oxygen to working muscles, so exertion brings fatigue and shortness of breath.</p><p><b>“Fluid leaks into your lungs”</b> isn't the right answer: it would explain the shortness of breath, but holding fluid in the vessels is albumin's job, not the red cells'. Clotting depends on platelets, and fighting infection on white blood cells.</p><p><b>Takeaway:</b> Red blood cells carry oxygen; platelets clot; white blood cells fight infection; albumin holds fluid in the vessels.</p>"
     },
     {
       "id": "cv-57",
@@ -380,7 +347,7 @@
       "stem": "An older adult stands up quickly after lying down. The blood pressure drops for a moment, and within seconds the heart rate rises and the blood pressure recovers. Which structures sensed the drop?",
       "options": ["The kidneys, which release renin when blood flow to them falls", "The baroreceptors in the carotid sinus and aortic arch", "The chemoreceptors that sense oxygen and carbon dioxide in the blood", "The hypothalamus, which releases more antidiuretic hormone"],
       "answer": 1,
-      "rationale": "<p>The <b>baroreceptors</b> in the carotid sinus and aortic arch sense the stretch of the artery walls. When the pressure drops on standing, they send fewer signals to the medulla oblongata, which raises sympathetic activity: the heart speeds up and the vessels narrow, within seconds.</p><p><b>The kidneys</b> are the tempting choice, since renin raises blood pressure too, but the renin–angiotensin–aldosterone system takes minutes to hours; a correction within seconds is the baroreceptor reflex. Chemoreceptors sense blood gases, and ADH acts more slowly.</p><p><b>Takeaway:</b> Blood pressure changes within seconds: baroreceptors. Slower ones: the kidneys (RAAS) and ADH.</p>"
+      "rationale": "<p>The <b>baroreceptors</b> in the carotid sinus and aortic arch sense the stretch of the artery walls. When the pressure drops on standing, they send fewer signals to the medulla oblongata, which raises sympathetic activity: the heart speeds up and the vessels narrow, within seconds.</p><p><b>The kidneys</b> aren't the right answer: renin raises blood pressure too, but the renin–angiotensin–aldosterone system takes minutes to hours; a correction within seconds is the baroreceptor reflex. Chemoreceptors sense blood gases, and ADH acts more slowly.</p><p><b>Takeaway:</b> Blood pressure changes within seconds: baroreceptors. Slower ones: the kidneys (RAAS) and ADH.</p>"
     },
     {
       "id": "cv-58",
@@ -390,7 +357,7 @@
       "stem": "A client has had brief episodes of weakness in one arm, and an ultrasound shows a narrowed artery in the neck that supplies the brain. Which kind of cardiovascular disease does the client have?",
       "options": ["Coronary artery disease", "Peripheral artery disease", "Cerebrovascular disease", "Heart failure"],
       "answer": 2,
-      "rationale": "<p>A narrowed <b>carotid artery</b>, which supplies the brain, is a <b>cerebrovascular disease</b>, and brief episodes of one-sided weakness are warning signs of a stroke.</p><p><b>Peripheral artery disease</b> is the tempting choice, since the carotid is outside the heart, but that term covers the arteries to the limbs; arteries to the brain are cerebrovascular, and arteries to the heart muscle are coronary.</p><p><b>Takeaway:</b> Coronary: the heart muscle. Cerebrovascular: the brain (like the carotids). Peripheral: the limbs.</p>"
+      "rationale": "<p>A narrowed <b>carotid artery</b>, which supplies the brain, is a <b>cerebrovascular disease</b>, and brief episodes of one-sided weakness are warning signs of a stroke.</p><p><b>Peripheral artery disease</b> isn't the right answer: the carotid is outside the heart, but that term covers the arteries to the limbs; arteries to the brain are cerebrovascular, and arteries to the heart muscle are coronary.</p><p><b>Takeaway:</b> Coronary: the heart muscle. Cerebrovascular: the brain (like the carotids). Peripheral: the limbs.</p>"
     },
     {
       "id": "cv-60",
@@ -400,7 +367,7 @@
       "stem": "A client has an inflamed pericardium, and each heartbeat now makes a scratchy sound. Which explanation of the pericardium's normal role should the nurse give?",
       "options": ["The thick muscle layer of the heart that contracts to pump blood", "The smooth inner lining of the heart that also covers the valves", "A two-layer sac with fluid that lets the heart beat without rubbing", "A flap of tissue that keeps blood moving forward through the heart"],
       "answer": 2,
-      "rationale": "<p>The <b>pericardium</b> is the sac around the heart: a tough fibrous outer layer and a serous layer with a small amount of fluid between its two sheets, so the heart can beat without rubbing. When it's inflamed, the roughened layers rub.</p><p><b>The smooth inner lining</b> is the tempting choice, since it's also a membrane, but that's the <b>endocardium</b>, inside the heart. The muscle layer is the myocardium.</p><p><b>Takeaway:</b> Pericardium outside, myocardium in the middle, endocardium inside.</p>"
+      "rationale": "<p>The <b>pericardium</b> is the sac around the heart: a tough fibrous outer layer and a serous layer with a small amount of fluid between its two sheets, so the heart can beat without rubbing. When it's inflamed, the roughened layers rub.</p><p><b>The smooth inner lining</b> isn't the right answer: it's also a membrane, but that's the <b>endocardium</b>, inside the heart. The muscle layer is the myocardium.</p><p><b>Takeaway:</b> Pericardium outside, myocardium in the middle, endocardium inside.</p>"
     },
     {
       "id": "cv-61",
@@ -412,7 +379,7 @@
       "columns": ["Atrioventricular valve", "Semilunar valve"],
       "rows": ["Aortic valve", "Mitral (bicuspid) valve", "Held in place by chordae tendineae", "Pulmonic valve", "Tricuspid valve", "Closes as the ventricles relax"],
       "answer": [1, 0, 0, 1, 0, 1],
-      "rationale": "<p>The <b>atrioventricular</b> valves (tricuspid and mitral) sit between the atria and ventricles and are anchored by <b>chordae tendineae</b>; they close as the ventricles contract. The <b>semilunar</b> valves (pulmonic and aortic) sit where the ventricles empty into their arteries and close as the ventricles <b>relax</b>.</p><p>The tempting mistake is calling the mitral valve semilunar because it's on the left with the aortic valve. Mitral and tricuspid are both atrioventricular.</p><p><b>Takeaway:</b> AV valves: tricuspid, mitral (chordae). Semilunar valves: pulmonic, aortic.</p>"
+      "rationale": "<p>The <b>atrioventricular</b> valves (tricuspid and mitral) sit between the atria and ventricles and are anchored by <b>chordae tendineae</b>; they close as the ventricles contract. The <b>semilunar</b> valves (pulmonic and aortic) sit where the ventricles empty into their arteries and close as the ventricles <b>relax</b>.</p><p>Calling the mitral valve semilunar because it's on the left with the aortic valve is a mistake. Mitral and tricuspid are both atrioventricular.</p><p><b>Takeaway:</b> AV valves: tricuspid, mitral (chordae). Semilunar valves: pulmonic, aortic.</p>"
     },
     {
       "id": "cv-62",
@@ -422,7 +389,7 @@
       "stem": "On a client's ECG, the P waves are missing, but each QRS complex is narrow and normal. Which part of the heart do these findings suggest isn't depolarizing in an organized way?",
       "options": ["The atria", "The ventricles", "The heart valves", "The pericardium"],
       "answer": 0,
-      "rationale": "<p>The <b>P wave</b> shows the <b>atria</b> depolarizing (just before they contract). Missing P waves mean the atria aren't depolarizing in an organized way; a normal, narrow QRS shows the ventricles are still depolarizing normally.</p><p><b>The ventricles</b> is the tempting choice, since they do the main pumping, but their wave, the QRS, is normal here.</p><p><b>Takeaway:</b> P wave = atria; QRS = ventricles; T wave = ventricles recovering.</p>"
+      "rationale": "<p>The <b>P wave</b> shows the <b>atria</b> depolarizing (just before they contract). Missing P waves mean the atria aren't depolarizing in an organized way; a normal, narrow QRS shows the ventricles are still depolarizing normally.</p><p><b>The ventricles</b> isn't the right answer: they do the main pumping, but their wave, the QRS, is normal here.</p><p><b>Takeaway:</b> P wave = atria; QRS = ventricles; T wave = ventricles recovering.</p>"
     },
     {
       "id": "cv-63",
@@ -434,7 +401,7 @@
       "columns": ["P wave", "QRS complex", "T wave"],
       "rows": ["The ventricles depolarize, then contract", "The atria depolarize, then contract", "The ventricles repolarize and relax", "The atria repolarize, hidden inside another wave", "The pulse is felt just after this wave"],
       "answer": [1, 0, 2, 1, 1],
-      "rationale": "<p>The <b>P wave</b>: atria depolarize, then contract. The <b>QRS complex</b>: ventricles depolarize, then contract, which makes the pulse; the atria repolarize at the same time, hidden. The <b>T wave</b>: ventricles repolarize as they relax and refill.</p><p>The tempting mistake is giving the atria's repolarization its own wave. It happens during the much larger QRS, so it can't be seen.</p><p><b>Takeaway:</b> Each wave is the electrical signal; the contraction follows it.</p>"
+      "rationale": "<p>The <b>P wave</b>: atria depolarize, then contract. The <b>QRS complex</b>: ventricles depolarize, then contract, which makes the pulse; the atria repolarize at the same time, hidden. The <b>T wave</b>: ventricles repolarize as they relax and refill.</p><p>Giving the atria's repolarization its own wave is a mistake. It happens during the much larger QRS, so it can't be seen.</p><p><b>Takeaway:</b> Each wave is the electrical signal; the contraction follows it.</p>"
     },
     {
       "id": "cv-64",
@@ -444,7 +411,7 @@
       "stem": "A client with kidney failure has a potassium level of 6.8 mmol/L, and the ECG shows tall, peaked T waves. Which part of the heartbeat does this finding suggest the potassium is affecting?",
       "options": ["The atria's depolarization", "The ventricles' repolarization", "The closing of the semilunar valves", "The filling of the coronary arteries"],
       "answer": 1,
-      "rationale": "<p>The <b>T wave</b> shows the <b>ventricles repolarizing</b>, and potassium is the key salt in repolarization. A high potassium makes the T waves tall and peaked (and can widen the QRS): a dangerous change to report right away.</p><p><b>The atria's depolarization</b> is the tempting choice, since it's another electrical event, but that's the P wave.</p><p><b>Takeaway:</b> High potassium shows first in the T wave: the ventricles' repolarization.</p>"
+      "rationale": "<p>The <b>T wave</b> shows the <b>ventricles repolarizing</b>, and potassium is the key salt in repolarization. A high potassium makes the T waves tall and peaked (and can widen the QRS): a dangerous change to report right away.</p><p><b>The atria's depolarization</b> isn't the right answer: it's another electrical event, but that's the P wave.</p><p><b>Takeaway:</b> High potassium shows first in the T wave: the ventricles' repolarization.</p>"
     },
     {
       "id": "cv-65",
@@ -456,7 +423,7 @@
       "columns": ["Plasma", "Formed elements"],
       "rows": ["Platelets", "Albumin", "Neutrophils", "Fibrinogen", "Sodium and potassium", "Red blood cells", "IgG antibodies"],
       "answer": [1, 0, 1, 0, 0, 1, 0],
-      "rationale": "<p><b>Plasma</b> (about 55%) is the liquid part: water carrying salts (sodium, potassium, calcium, and others), proteins (<b>albumin</b>, <b>fibrinogen</b>, and antibodies such as IgG and IgM), hormones, and vitamins. The <b>formed elements</b> (about 45%) are the cells and cell fragments: red cells, white cells, and platelets.</p><p>The tempting mistake is putting antibodies with the white cells, since white cells make them. The antibodies themselves are proteins dissolved in the plasma.</p><p><b>Takeaway:</b> Plasma: water, salts, proteins, hormones, vitamins. Formed elements: red cells, white cells, platelets.</p>"
+      "rationale": "<p><b>Plasma</b> (about 55%) is the liquid part: water carrying salts (sodium, potassium, calcium, and others), proteins (<b>albumin</b>, <b>fibrinogen</b>, and antibodies such as IgG and IgM), hormones, and vitamins. The <b>formed elements</b> (about 45%) are the cells and cell fragments: red cells, white cells, and platelets.</p><p>Putting antibodies with the white cells is a mistake, even though white cells make them. The antibodies themselves are proteins dissolved in the plasma.</p><p><b>Takeaway:</b> Plasma: water, salts, proteins, hormones, vitamins. Formed elements: red cells, white cells, platelets.</p>"
     },
     {
       "id": "cv-66",
@@ -466,7 +433,7 @@
       "stem": "A client's fibrinogen level is very low. Which finding should the nurse watch for?",
       "options": ["Bleeding that's hard to stop", "Swelling in both legs and feet", "Frequent infections", "Fatigue with exertion"],
       "answer": 0,
-      "rationale": "<p><b>Fibrinogen</b>, a plasma protein made by the liver, becomes <b>fibrin</b>, the mesh that holds a clot together. Too little means clots form poorly, so bleeding is hard to stop.</p><p><b>Swelling</b> is the tempting choice, since it comes from a low plasma protein too, but that's <b>albumin</b>, which holds fluid in the vessels.</p><p><b>Takeaway:</b> Low fibrinogen: bleeding. Low albumin: swelling.</p>"
+      "rationale": "<p><b>Fibrinogen</b>, a plasma protein made by the liver, becomes <b>fibrin</b>, the mesh that holds a clot together. Too little means clots form poorly, so bleeding is hard to stop.</p><p><b>Swelling</b> isn't the right answer: it comes from a low plasma protein too, but that's <b>albumin</b>, which holds fluid in the vessels.</p><p><b>Takeaway:</b> Low fibrinogen: bleeding. Low albumin: swelling.</p>"
     },
     {
       "id": "cv-67",
@@ -476,7 +443,7 @@
       "stem": "A client's blood calcium level is low. Given calcium's roles in the blood, which problems should the nurse watch for?",
       "options": ["Swelling of the legs from a low oncotic pressure", "Frequent infections from too few antibodies", "Shortness of breath from too few red blood cells", "Muscle cramps and spasms, and slower clotting"],
       "answer": 3,
-      "rationale": "<p><b>Calcium</b>, one of the plasma salts, is needed for <b>muscle contraction</b> and <b>blood clotting</b>. A low level makes nerves and muscles overexcitable (tingling, cramps, spasms) and can slow clotting.</p><p><b>Swelling from a low oncotic pressure</b> is the tempting choice, since it's another plasma problem, but oncotic pressure comes from <b>albumin</b>, not calcium.</p><p><b>Takeaway:</b> Calcium: muscle contraction and clotting.</p>"
+      "rationale": "<p><b>Calcium</b>, one of the plasma salts, is needed for <b>muscle contraction</b> and <b>blood clotting</b>. A low level makes nerves and muscles overexcitable (tingling, cramps, spasms) and can slow clotting.</p><p><b>Swelling from a low oncotic pressure</b> isn't the right answer: it's another plasma problem, but oncotic pressure comes from <b>albumin</b>, not calcium.</p><p><b>Takeaway:</b> Calcium: muscle contraction and clotting.</p>"
     },
     {
       "id": "cv-68",
@@ -486,7 +453,7 @@
       "stem": "A nurse is checking a client's capillary refill. Which action is correct?",
       "options": ["Press the skin over the shin for 5 seconds, and then check whether a pit remains", "Count the pulse on the top of the foot for a full 30 seconds", "Raise the leg and time how long it takes the foot to turn pale", "Press the nail bed until it blanches, release, and time the color's return"],
       "answer": 3,
-      "rationale": "<p>Capillary refill tests <b>peripheral perfusion</b>, how well blood reaches the tissues: press the nail bed until it blanches, release, and time the return of color. Color back in about 2 seconds (no more than 3) is normal.</p><p><b>Raising the leg until it pales</b> is the tempting choice, since it's also a circulation check, but that's a test for arterial insufficiency, not capillary refill. Pressing the shin checks for pitting edema.</p><p><b>Takeaway:</b> Capillary refill: press the nail bed, release, count the seconds.</p>"
+      "rationale": "<p>Capillary refill tests <b>peripheral perfusion</b>, how well blood reaches the tissues: press the nail bed until it blanches, release, and time the return of color. Color back in about 2 seconds (no more than 3) is normal.</p><p><b>Raising the leg until it pales</b> isn't the right answer: it's also a circulation check, but that's a test for arterial insufficiency, not capillary refill. Pressing the shin checks for pitting edema.</p><p><b>Takeaway:</b> Capillary refill: press the nail bed, release, count the seconds.</p>"
     },
     {
       "id": "cv-69",
@@ -496,7 +463,7 @@
       "stem": "Which findings should the nurse expect in a client with venous insufficiency of the legs?",
       "options": ["Swelling that's worse at the end of the day", "Brown discoloration of the skin around the ankles", "Aching that eases when the legs are raised", "A shallow, draining sore near the inner ankle", "Weak or absent pulses on the top of the feet", "Calf pain with walking that eases with rest", "Feet that turn pale when raised"],
       "answer": [0, 1, 2, 3],
-      "rationale": "<p>In <b>venous insufficiency</b>, leaky vein valves let blood pool: swelling by evening, brown skin around the ankles, aching that eases with elevation, and shallow, draining ulcers near the inner ankle.</p><p><b>Calf pain with walking</b> and <b>weak pulses</b> are the tempting choices, since they're leg circulation problems too, but they belong to <b>arterial</b> insufficiency, as does pallor when the feet are raised.</p><p><b>Takeaway:</b> Venous: swelling, brown skin, relief with elevation. Arterial: claudication, weak pulses, pallor.</p>"
+      "rationale": "<p>In <b>venous insufficiency</b>, leaky vein valves let blood pool: swelling by evening, brown skin around the ankles, aching that eases with elevation, and shallow, draining ulcers near the inner ankle.</p><p><b>Calf pain with walking</b> and <b>weak pulses</b> don't fit venous insufficiency: they're leg circulation problems too, but they belong to <b>arterial</b> insufficiency, as does pallor when the feet are raised.</p><p><b>Takeaway:</b> Venous: swelling, brown skin, relief with elevation. Arterial: claudication, weak pulses, pallor.</p>"
     },
     {
       "id": "cv-70",
@@ -506,7 +473,7 @@
       "stem": "A nurse is reviewing clients' charts. Which clients are at higher risk of thrombus formation?",
       "options": ["A client on bed rest for a week after surgery", "A client who smokes and takes an estrogen birth control pill", "A client who is dehydrated after days of vomiting", "A client who walks 30 minutes a day and drinks plenty of water", "A client who takes a daily aspirin as prescribed", "A 25-year-old with a sprained wrist"],
       "answer": [0, 1, 2],
-      "rationale": "<p>Clots form when blood <b>moves slowly</b> (bed rest), when the blood <b>clots too easily</b> (estrogen, especially with smoking; dehydration, which concentrates the blood), or when a vessel wall is <b>injured</b>.</p><p><b>The daily aspirin</b> is the tempting choice, since it's a medication taken by people with heart disease, but aspirin makes platelets less sticky, lowering the risk. A sprained wrist doesn't slow blood flow in the legs.</p><p><b>Takeaway:</b> Slow flow, easy clotting, and vessel injury cause thrombus formation.</p>"
+      "rationale": "<p>Clots form when blood <b>moves slowly</b> (bed rest), when the blood <b>clots too easily</b> (estrogen, especially with smoking; dehydration, which concentrates the blood), or when a vessel wall is <b>injured</b>.</p><p><b>The daily aspirin</b> isn't the right answer: it's a medication taken by people with heart disease, but aspirin makes platelets less sticky, lowering the risk. A sprained wrist doesn't slow blood flow in the legs.</p><p><b>Takeaway:</b> Slow flow, easy clotting, and vessel injury cause thrombus formation.</p>"
     },
     {
       "id": "cv-71",
@@ -516,7 +483,7 @@
       "stem": "A client with a deep vein clot in the calf suddenly becomes short of breath, with chest pain and a fast heart rate. Which explanation should the nurse give?",
       "options": ["Part of the clot broke off and traveled to the lungs", "The clot grew up the leg and is pressing on the heart", "The clot is blocking air from reaching the lower lungs", "The clot dissolved and released chemicals that tighten the airways"],
       "answer": 0,
-      "rationale": "<p>A <b>thrombus</b> stays where it forms; a piece that breaks off and travels is an <b>embolus</b>. From a leg vein, it travels through the right heart into the lung arteries, blocking blood flow there: sudden shortness of breath, chest pain, and a fast heart rate.</p><p><b>The clot growing up the leg</b> is the tempting choice, since clots can extend, but sudden lung symptoms point to an embolus that has already traveled.</p><p><b>Takeaway:</b> A thrombus stays; an embolus travels (leg vein → lungs).</p>"
+      "rationale": "<p>A <b>thrombus</b> stays where it forms; a piece that breaks off and travels is an <b>embolus</b>. From a leg vein, it travels through the right heart into the lung arteries, blocking blood flow there: sudden shortness of breath, chest pain, and a fast heart rate.</p><p><b>The clot growing up the leg</b> isn't the right answer: clots can extend, but sudden lung symptoms point to an embolus that has already traveled.</p><p><b>Takeaway:</b> A thrombus stays; an embolus travels (leg vein → lungs).</p>"
     },
     {
       "id": "cv-72",
@@ -526,7 +493,7 @@
       "stem": "A 72-year-old client who smokes and has high blood pressure has a known abdominal aortic aneurysm. Which finding should the nurse report immediately?",
       "options": ["A pulsing mass felt in the middle of the abdomen", "Mild ankle swelling at the end of the day", "Sudden, severe back pain with a falling blood pressure", "A blood pressure of 148/88 mm Hg at a routine yearly visit"],
       "answer": 2,
-      "rationale": "<p>An <b>aneurysm</b> is a weak, bulging spot in an artery wall. Sudden severe back or abdominal pain with a falling blood pressure suggests it's <b>rupturing</b>, an emergency with heavy internal bleeding.</p><p><b>A pulsing abdominal mass</b> is the tempting choice, since it's a sign of the aneurysm, but in a client with a known aneurysm it's an expected finding, not a new emergency.</p><p><b>Takeaway:</b> Aneurysm rupture: sudden severe pain and falling blood pressure.</p>"
+      "rationale": "<p>An <b>aneurysm</b> is a weak, bulging spot in an artery wall. Sudden severe back or abdominal pain with a falling blood pressure suggests it's <b>rupturing</b>, an emergency with heavy internal bleeding.</p><p><b>A pulsing abdominal mass</b> isn't the right answer: it's a sign of the aneurysm, but in a client with a known aneurysm it's an expected finding, not a new emergency.</p><p><b>Takeaway:</b> Aneurysm rupture: sudden severe pain and falling blood pressure.</p>"
     },
     {
       "id": "cv-73",
@@ -536,7 +503,7 @@
       "stem": "A 74-year-old woman with diabetes has felt unusually tired, nauseated, and short of breath for the past hour, with no chest pain. Which condition should the nurse be concerned about?",
       "options": ["A stroke, since she has no chest pain or pressure", "A heart attack, which may cause no chest pain in some clients", "An aneurysm, since nausea is the first and main warning sign of one", "A murmur, since valve problems cause sudden nausea"],
       "answer": 1,
-      "rationale": "<p>A <b>myocardial infarction</b> happens when a blocked coronary artery starves heart muscle of oxygen. Women, older adults, and people with diabetes often have <b>atypical</b> symptoms: fatigue, nausea, and shortness of breath without classic chest pain.</p><p><b>A stroke</b> is the tempting choice, since it's another emergency, but stroke signs are face drooping, arm weakness, and speech trouble, which she doesn't have.</p><p><b>Takeaway:</b> Heart attacks in women, older adults, and people with diabetes can be silent: think MI with sudden fatigue, nausea, and breathlessness.</p>"
+      "rationale": "<p>A <b>myocardial infarction</b> happens when a blocked coronary artery starves heart muscle of oxygen. Women, older adults, and people with diabetes often have <b>atypical</b> symptoms: fatigue, nausea, and shortness of breath without classic chest pain.</p><p><b>A stroke</b> isn't the right answer: it's another emergency, but stroke signs are face drooping, arm weakness, and speech trouble, which she doesn't have.</p><p><b>Takeaway:</b> Heart attacks in women, older adults, and people with diabetes can be silent: think MI with sudden fatigue, nausea, and breathlessness.</p>"
     },
     {
       "id": "cv-74",
@@ -546,7 +513,7 @@
       "stem": "A client's new murmur is caused by a mitral valve that doesn't close fully. Which explanation of the sound should the nurse give?",
       "options": ["Blood leaking backward through the valve flows turbulently", "The valve snaps shut too loudly with each heartbeat", "Blood moves too smoothly through a valve that has become too wide", "The pericardium rubs against the heart with each beat"],
       "answer": 0,
-      "rationale": "<p>A <b>murmur</b> is the sound of <b>turbulent</b> blood flow. A valve that doesn't close fully lets blood leak backward (<b>regurgitation</b>); a narrowed valve (stenosis) or a hole between chambers can also cause one.</p><p><b>The pericardium rubbing</b> is the tempting choice, since it also makes an extra sound, but that's a friction rub from an inflamed pericardium, not a murmur.</p><p><b>Takeaway:</b> Murmur = turbulent flow: a leaky valve, a narrowed valve, or a hole.</p>"
+      "rationale": "<p>A <b>murmur</b> is the sound of <b>turbulent</b> blood flow. A valve that doesn't close fully lets blood leak backward (<b>regurgitation</b>); a narrowed valve (stenosis) or a hole between chambers can also cause one.</p><p><b>The pericardium rubbing</b> isn't the right answer: it also makes an extra sound, but that's a friction rub from an inflamed pericardium, not a murmur.</p><p><b>Takeaway:</b> Murmur = turbulent flow: a leaky valve, a narrowed valve, or a hole.</p>"
     },
     {
       "id": "cv-75",
@@ -558,7 +525,7 @@
       "columns": ["Sympathetic", "Parasympathetic"],
       "rows": ["Speeds up the heart rate", "Slows the heart rate through the vagus nerve", "Makes each heartbeat stronger", "Narrows most blood vessels", "Lowers the blood pressure"],
       "answer": [0, 1, 0, 0, 1],
-      "rationale": "<p>The <b>sympathetic</b> system speeds up the heart, strengthens each beat (contractility), and narrows most vessels, so blood pressure rises. The <b>parasympathetic</b> system, through the vagus nerve, slows the heart, so blood pressure falls.</p><p>The tempting mistake is giving the parasympathetic system the job of widening vessels directly. Most vessels widen when sympathetic signals <b>fall</b>.</p><p><b>Takeaway:</b> Sympathetic: faster, stronger, narrower, higher pressure. Parasympathetic: slower.</p>"
+      "rationale": "<p>The <b>sympathetic</b> system speeds up the heart, strengthens each beat (contractility), and narrows most vessels, so blood pressure rises. The <b>parasympathetic</b> system, through the vagus nerve, slows the heart, so blood pressure falls.</p><p>Giving the parasympathetic system the job of widening vessels directly is a mistake. Most vessels widen when sympathetic signals <b>fall</b>.</p><p><b>Takeaway:</b> Sympathetic: faster, stronger, narrower, higher pressure. Parasympathetic: slower.</p>"
     },
     {
       "id": "cv-76",
@@ -568,7 +535,7 @@
       "stem": "A client receives a medication that widens the arterioles. Which change in blood pressure should the nurse expect, and why?",
       "options": ["It rises, because more blood can now flow through the vessels", "It stays the same, because the heart rate rises to match", "It rises, because the wider vessels can hold more blood", "It falls, because wider vessels offer less resistance to flow"],
       "answer": 3,
-      "rationale": "<p>Blood pressure depends on how much blood the heart pumps and how much the vessels <b>resist</b> its flow. Widening the arterioles (a bigger <b>caliber</b>) lowers resistance, so the pressure falls.</p><p><b>It stays the same</b> is the tempting choice, since the heart rate often rises a little to compensate, but it doesn't fully offset the drop.</p><p><b>Takeaway:</b> Wider vessels → less resistance → lower pressure; narrower → higher.</p>"
+      "rationale": "<p>Blood pressure depends on how much blood the heart pumps and how much the vessels <b>resist</b> its flow. Widening the arterioles (a bigger <b>caliber</b>) lowers resistance, so the pressure falls.</p><p><b>It stays the same</b> isn't the right answer: the heart rate often rises a little to compensate, but it doesn't fully offset the drop.</p><p><b>Takeaway:</b> Wider vessels → less resistance → lower pressure; narrower → higher.</p>"
     },
     {
       "id": "cv-77",
@@ -578,7 +545,7 @@
       "stem": "A client asks which foods fit a heart-healthy eating plan. Which of the following should the nurse include?",
       "options": ["Cooking with extra-virgin olive oil", "Oatmeal and brown rice", "Skim milk and low-fat yogurt", "Fresh vegetables seasoned with herbs", "Cooking with coconut oil", "Canned soups and deli meats"],
       "answer": [0, 1, 2, 3],
-      "rationale": "<p>The instructor's heart-healthy habits: <b>unsaturated fats</b> (extra-virgin olive oil, avocado oil, other non-tropical vegetable oils), <b>whole grains</b>, <b>low-fat dairy</b>, and <b>low sodium</b> (fresh foods seasoned with herbs).</p><p><b>Coconut oil</b> is the tempting choice, since it's a plant oil, but it's a <b>tropical</b> oil, high in saturated fat. Canned soups and deli meats are high in sodium.</p><p><b>Takeaway:</b> Unsaturated non-tropical oils, whole grains, low-fat dairy, low sodium.</p>"
+      "rationale": "<p>The instructor's heart-healthy habits: <b>unsaturated fats</b> (extra-virgin olive oil, avocado oil, other non-tropical vegetable oils), <b>whole grains</b>, <b>low-fat dairy</b>, and <b>low sodium</b> (fresh foods seasoned with herbs).</p><p><b>Coconut oil</b> isn't the right answer: it's a plant oil, but it's a <b>tropical</b> oil, high in saturated fat. Canned soups and deli meats are high in sodium.</p><p><b>Takeaway:</b> Unsaturated non-tropical oils, whole grains, low-fat dairy, low sodium.</p>"
     },
     {
       "id": "cv-78",
@@ -588,7 +555,7 @@
       "stem": "A nurse is reviewing four clients' findings. Which client should the nurse identify as meeting the criteria for metabolic syndrome?",
       "options": ["A man with a 36-in. waist, a blood pressure of 134/86 mm Hg, and an HDL of 52 mg/dL, who smokes", "A man with a 42-in. waist, triglycerides of 190 mg/dL, and a fasting glucose of 108 mg/dL", "A woman with a 33-in. waist, triglycerides of 140 mg/dL, and an HDL of 46 mg/dL", "A woman with a fasting glucose of 112 mg/dL and an otherwise normal checkup"],
       "answer": 1,
-      "rationale": "<p><b>Metabolic syndrome</b> is three or more of: a large waist (about 40 in. or more in men, 35 in. in women), triglycerides of 150 or more, a low HDL (under 40 in men, under 50 in women), a blood pressure of 130/85 or more, and a fasting glucose of 100 or more. The first man has three.</p><p>The woman with an <b>HDL of 46</b> is the tempting choice, since that's low for a woman, but it's her only criterion; her waist and triglycerides are within range.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, and fasting glucose.</p>"
+      "rationale": "<p><b>Metabolic syndrome</b> is three or more of: a large waist (about 40 in. or more in men, 35 in. in women), triglycerides of 150 or more, a low HDL (under 40 in men, under 50 in women), a blood pressure of 130/85 or more, and a fasting glucose of 100 or more. The first man has three.</p><p>The woman with an <b>HDL of 46</b> isn't the right answer: that's low for a woman, but it's her only criterion; her waist and triglycerides are within range.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, and fasting glucose.</p>"
     },
     {
       "id": "cv-79",
@@ -598,7 +565,7 @@
       "stem": "A 50-year-old woman's fasting lipid results are total cholesterol 186 mg/dL, LDL 92 mg/dL, and HDL 44 mg/dL. Which result should the nurse identify as a risk factor for cardiovascular disease?",
       "options": ["The total cholesterol, since it's over 180 mg/dL", "The LDL, since it's over 90 mg/dL", "The HDL, since it's under 50 mg/dL for women", "No result here is a risk factor"],
       "answer": 2,
-      "rationale": "<p>The instructor's cutoffs: total cholesterol over <b>200</b>, LDL over <b>100</b>, and HDL under <b>40 for men and 50 for women</b>. Her total cholesterol and LDL are fine, but an HDL of 44 is low for a woman.</p><p><b>No risk factor</b> is the tempting choice for students who use the men's HDL cutoff of 40. Check the client's sex before reading the HDL.</p><p><b>Takeaway:</b> HDL: under 40 (men) or under 50 (women) is a risk factor.</p>"
+      "rationale": "<p>The instructor's cutoffs: total cholesterol over <b>200</b>, LDL over <b>100</b>, and HDL under <b>40 for men and 50 for women</b>. Her total cholesterol and LDL are fine, but an HDL of 44 is low for a woman.</p><p><b>No risk factor</b> isn't the right answer: it would be with the men's HDL cutoff of 40. Check the client's sex before reading the HDL.</p><p><b>Takeaway:</b> HDL: under 40 (men) or under 50 (women) is a risk factor.</p>"
     },
     {
       "id": "cv-80",
@@ -609,7 +576,7 @@
       "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
       "passage": "Client reports [[cramping pain in the left calf after walking about 2 blocks, which eases after a few minutes of rest]]. [[Smokes 1 pack a day]]. [[Has type 2 diabetes]]. [[Left foot cool, pale, and shiny, with no hair]]; [[thick toenails]]. [[Weak (1+) pulse on top of the left foot]]. [[Capillary refill 4 seconds in the left toes]], [[2 seconds in the right toes]]. [[No swelling in either leg]]. [[A small, round sore with a pale base on the left little toe]].",
       "answer": [0, 1, 3, 4, 5, 6, 9],
-      "rationale": "<p>Calf pain with walking that eases with rest (<b>claudication</b>), a cool, pale, hairless foot with thick nails, a weak pulse, a slow capillary refill, and a round, pale toe sore all point to poor <b>arterial</b> blood flow. Active smoking needs follow-up as a risk factor that can change.</p><p><b>Type 2 diabetes</b> is the tempting one to highlight, since it's a risk factor, but it's a known diagnosis in the history; the right toes' 2-second refill and the absence of swelling are normal.</p><p><b>Takeaway:</b> Claudication, pallor, weak pulses, slow refill, and toe sores: arterial insufficiency.</p>"
+      "rationale": "<p>Calf pain with walking that eases with rest (<b>claudication</b>), a cool, pale, hairless foot with thick nails, a weak pulse, a slow capillary refill, and a round, pale toe sore all point to poor <b>arterial</b> blood flow. Active smoking needs follow-up as a risk factor that can change.</p><p><b>Type 2 diabetes</b> doesn't need follow-up today: it's a risk factor, but it's a known diagnosis in the history; the right toes' 2-second refill and the absence of swelling are normal.</p><p><b>Takeaway:</b> Claudication, pallor, weak pulses, slow refill, and toe sores: arterial insufficiency.</p>"
     },
     {
       "id": "cv-81",
@@ -622,7 +589,7 @@
       "columns": ["Arterial insufficiency", "Venous insufficiency"],
       "rows": ["Calf pain with walking that eases with rest", "Weak pulse on top of the foot", "Brown skin around the ankles", "A small, round toe sore with a pale base", "Swelling that's worse at the end of the day"],
       "answer": [0, 0, 1, 0, 1],
-      "rationale": "<p><b>Arterial insufficiency</b>: claudication, weak pulses, and deep, round, pale sores on the toes. <b>Venous insufficiency</b>: brown skin around the ankles and swelling by evening.</p><p>The tempting mistake is calling any leg sore venous, since venous ulcers are common. A round, pale sore on a toe is arterial; venous ulcers are shallow, irregular, and near the inner ankle.</p><p><b>Takeaway:</b> Sort leg findings into arterial (too little in) and venous (can't get out).</p>"
+      "rationale": "<p><b>Arterial insufficiency</b>: claudication, weak pulses, and deep, round, pale sores on the toes. <b>Venous insufficiency</b>: brown skin around the ankles and swelling by evening.</p><p>Calling any leg sore venous is a mistake, even though venous ulcers are common. A round, pale sore on a toe is arterial; venous ulcers are shallow, irregular, and near the inner ankle.</p><p><b>Takeaway:</b> Sort leg findings into arterial (too little in) and venous (can't get out).</p>"
     },
     {
       "id": "cv-82",
@@ -637,7 +604,7 @@
         {"options": ["leaky valves in the leg veins", "a clot in a deep leg vein", "arteries narrowed by plaque"], "answer": 2},
         {"options": ["raised above the heart", "level or slightly down", "crossed at the knees"], "answer": 1}
       ],
-      "rationale": "<p>The findings show <b>arterial insufficiency</b>: plaque narrows the leg arteries (smoking, diabetes, high LDL, and high blood pressure all speed this up). Keeping the leg <b>level or slightly down</b> lets gravity help blood reach the foot.</p><p><b>Raised above the heart</b> is the tempting choice, since raising the legs helps swelling, but that's for <b>venous</b> problems; it makes arterial pain and pallor worse.</p><p><b>Takeaway:</b> Arterial insufficiency: legs level or down, never raised.</p>"
+      "rationale": "<p>The findings show <b>arterial insufficiency</b>: plaque narrows the leg arteries (smoking, diabetes, high LDL, and high blood pressure all speed this up). Keeping the leg <b>level or slightly down</b> lets gravity help blood reach the foot.</p><p><b>Raised above the heart</b> isn't the right answer: raising the legs helps swelling, but that's for <b>venous</b> problems; it makes arterial pain and pallor worse.</p><p><b>Takeaway:</b> Arterial insufficiency: legs level or down, never raised.</p>"
     },
     {
       "id": "cv-83",
@@ -648,7 +615,7 @@
       "stem": "Which teaching should the nurse include for this client?",
       "options": ["Stop smoking, with help from a quit plan", "Follow a heart-healthy diet with unsaturated fats and whole grains", "Walk regularly, resting when the pain starts and then continuing", "Check both feet each day for sores or color changes", "Report a foot that suddenly turns cold, pale, or numb", "Raise the legs on pillows to ease the pain", "Soak the feet in hot water to improve circulation"],
       "answer": [0, 1, 2, 3, 4],
-      "rationale": "<p>Smoking, high LDL, low HDL, high blood pressure, diabetes, a BMI over 25, and age are the client's risk factors; quitting smoking and a heart-healthy diet address several. A walking program builds circulation, daily foot checks catch sores early, and a suddenly cold, pale limb is an emergency.</p><p><b>Soaking in hot water</b> is the tempting choice, since warmth seems to help circulation, but feet with poor blood flow (and diabetes) burn easily. Raising the legs worsens arterial pain.</p><p><b>Takeaway:</b> Treat the risk factors, walk, protect the feet, and report a sudden cold, pale limb.</p>"
+      "rationale": "<p>Smoking, high LDL, low HDL, high blood pressure, diabetes, a BMI over 25, and age are the client's risk factors; quitting smoking and a heart-healthy diet address several. A walking program builds circulation, daily foot checks catch sores early, and a suddenly cold, pale limb is an emergency.</p><p><b>Soaking in hot water</b> isn't the right answer: warmth seems to help circulation, but feet with poor blood flow (and diabetes) burn easily. Raising the legs worsens arterial pain.</p><p><b>Takeaway:</b> Treat the risk factors, walk, protect the feet, and report a sudden cold, pale limb.</p>"
     },
     {
       "id": "cv-84",
@@ -661,7 +628,45 @@
       "columns": ["Improved", "Not changed", "Gotten worse"],
       "rows": ["Walking before calf pain starts: 2 blocks then, 5 blocks now", "LDL: 148 mg/dL then, 104 mg/dL now", "Smoking: 1 pack a day then, 1 pack a day now", "Capillary refill, left toes: 4 seconds then, 4 seconds now", "Toe sore: 0.5 cm across then, 1.2 cm across now"],
       "answer": [0, 0, 1, 1, 2],
-      "rationale": "<p>Walking farther before pain and a lower LDL show progress. The smoking and the slow capillary refill haven't changed, and the <b>toe sore is larger</b>: a wound that isn't healing because too little blood reaches it, which needs to be reported.</p><p>The tempting mistake is calling the LDL normal now. It's much better, but 104 is still just over the instructor's cutoff of 100.</p><p><b>Takeaway:</b> Track each finding: improved walking and LDL don't offset a growing sore.</p>"
+      "rationale": "<p>Walking farther before pain and a lower LDL show progress. The smoking and the slow capillary refill haven't changed, and the <b>toe sore is larger</b>: a wound that isn't healing because too little blood reaches it, which needs to be reported.</p><p>Calling the LDL normal now is a mistake. It's much better, but 104 is still just over the instructor's cutoff of 100.</p><p><b>Takeaway:</b> Track each finding: improved walking and LDL don't offset a growing sore.</p>"
+    },
+    {
+      "id": "cv-85",
+      "type": "dropdown",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A client's heart valve doesn't close completely, so blood leaks backward from the right ventricle into the right atrium when the ventricles contract. Complete the following sentence.",
+      "text": "The leaking valve is the {{0}} valve, one of the {{1}} valves, which should close during {{2}}.",
+      "blanks": [
+        {"options": ["mitral", "tricuspid", "pulmonic"], "answer": 1},
+        {"options": ["semilunar", "atrioventricular"], "answer": 1},
+        {"options": ["ventricular systole", "ventricular diastole", "atrial contraction"], "answer": 0}
+      ],
+      "rationale": "<p>The valve between the right atrium and the right ventricle is the <b>tricuspid</b> valve, one of the two <b>atrioventricular (AV)</b> valves. AV valves close when the ventricles contract (<b>ventricular systole</b>), so blood goes forward into the pulmonary trunk instead of back into the atrium.</p><p>The <b>mitral</b> valve isn't the right answer: it's the other AV valve, but it sits between the left atrium and the left ventricle. The semilunar valves (pulmonic and aortic) guard the exits of the ventricles and close in diastole, and during atrial contraction the AV valves are open, letting blood into the ventricles.</p><p><b>Takeaway:</b> Tricuspid: right AV valve. Mitral: left AV valve. AV valves close in systole, semilunar valves in diastole.</p>"
+    },
+    {
+      "id": "cv-86",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 3,
+      "stem": "After a heart attack, a client has crackles in both lungs and is short of breath when lying flat. Which part of the heart is most likely failing to pump out the blood returning from the lungs?",
+      "options": ["The left atrium", "The left ventricle", "The right ventricle", "The right atrium"],
+      "answer": 1,
+      "rationale": "<p>Blood from the lungs passes through the left atrium into the <b>left ventricle</b>, which pumps it out to the body. When a heart attack weakens the left ventricle, blood backs up into the lungs: crackles, and shortness of breath when lying flat (left-sided heart failure).</p><p><b>The left atrium</b> isn't the right answer: it receives the blood from the lungs, but the chamber that pumps it out is the left ventricle. A failing right ventricle backs blood up into the body's veins instead, with swollen ankles and distended neck veins.</p><p><b>Takeaway:</b> Left ventricle fails → blood backs up into the lungs; right ventricle fails → into the body's veins.</p>"
+    },
+    {
+      "id": "cv-87",
+      "type": "dropdown",
+      "topic": "The ECG",
+      "level": 3,
+      "stem": "A client's ECG shows a regular rhythm at 50/min with no P waves before the QRS complexes. Complete the following sentences.",
+      "text": "The P wave normally shows the {{0}}. Without P waves, the {{1}} has most likely stopped firing, and the {{2}} has taken over pacing the heart.",
+      "blanks": [
+        {"options": ["ventricles depolarizing", "ventricles repolarizing", "atria depolarizing"], "answer": 2},
+        {"options": ["AV node", "SA node", "bundle of His"], "answer": 1},
+        {"options": ["AV node", "Purkinje fibers", "SA node"], "answer": 0}
+      ],
+      "rationale": "<p>The <b>P wave</b> shows the <b>atria depolarizing</b> after the <b>SA node</b> fires. With no P waves, the SA node has most likely stopped, and the <b>AV node</b>, the next pacemaker, has taken over at its own slower rate of 40 to 60, which fits a rate of 50.</p><p>The <b>AV node</b> isn't the right answer for the second blank: the rate of 50 points to it, but it's the structure now pacing the heart, not the one that stopped. The QRS shows the ventricles depolarizing, and the T wave their repolarization.</p><p><b>Takeaway:</b> P = atria depolarizing (from the SA node), QRS = ventricles depolarizing, T = ventricles repolarizing.</p>"
     }
   ]
 }

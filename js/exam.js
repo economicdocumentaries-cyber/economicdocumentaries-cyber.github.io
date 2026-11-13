@@ -99,7 +99,7 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
     }
   }
   const limit = s.count ?? Infinity;
-  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen, set.topicWeights, missed) : blocks;
+  const picked = limit < blocks.flat().length ? pickBlocks(blocks, limit, random, seen, set.topicWeights, missed, set.caseStudies) : blocks;
   const place = new Map(blocks.map((b, i) => [b, i]));
   const ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => (place.get(a) ?? -1) - (place.get(b) ?? -1));
   return ordered.flat();
@@ -118,9 +118,15 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
 // missed: questions whose latest result was a miss. About one place in five
 // goes to them (the owner's request, 2026-11-02), so a missed question comes
 // back soon; questions answered right wait until the others have been seen.
-function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set()) {
+// caseStudies: the set's "caseStudies", how many case studies every exam has
+// (SPEC 11.3; the owner's request for the NU1120 Exam 4 Mock Exam, 2026-11-12,
+// since the real exam may have one): exactly that many, the ones whose turn
+// comes first, as long as they take at most half the exam. Without it, case
+// studies come up when their turn comes, so an exam may have none or several.
+function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
+  const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
   // Each topic's share of the limit, rounded so the shares add up to it.
   const all = blocks.flat();
   const topics = [...new Set(all.map(q => q.topic))];
@@ -141,10 +147,12 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   const review = new Set();
   let places = Math.round(limit / 5);
   const room = new Map(left);
+  let reviewCases = 0; // with caseStudies, no more missed case studies come back than an exam has
   for (const b of shuffle(blocks.filter(wasMissed), random).sort((a, b) => age(a) - age(b))) {
-    if (b.length > places || (b.length === 1 ? room.get(b[0].topic) < 1 : tooBig(b))) continue;
+    if (b.length > places || (b.length === 1 ? room.get(b[0].topic) < 1 : tooBig(b) || (wanted !== null && reviewCases >= wanted))) continue;
     review.add(b);
     places -= b.length;
+    if (b.length > 1) reviewCases++;
     for (const q of b) room.set(q.topic, room.get(q.topic) - 1);
   }
   // The order to pick in: those missed questions, then questions never seen, then the ones
@@ -160,12 +168,25 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     for (const q of b) left.set(q.topic, left.get(q.topic) - 1);
     count += b.length;
   };
-  // Case studies whose turn it is: the ones starting within the first `limit` questions of the queue.
-  let start = 0;
-  for (const b of queue.slice()) {
-    if (start >= limit) break;
-    start += b.length;
-    if (b.length > 1 && count + b.length <= limit && !tooBig(b)) take(b);
+  if (wanted === null) {
+    // Case studies whose turn it is: the ones starting within the first `limit` questions of the queue.
+    let start = 0;
+    for (const b of queue.slice()) {
+      if (start >= limit) break;
+      start += b.length;
+      if (b.length > 1 && count + b.length <= limit && !tooBig(b)) take(b);
+    }
+  } else {
+    // Exactly `wanted` case studies, the first in the queue (a missed one, then one never seen,
+    // then the one seen longest ago), so they take turns; fewer if too few fit in half the exam.
+    let taken = 0;
+    for (const b of queue.slice()) {
+      if (taken >= wanted) break;
+      if (b.length > 1 && count + b.length <= limit / 2 && !tooBig(b)) {
+        take(b);
+        taken++;
+      }
+    }
   }
   // In a blueprint set, a case study that went past its topics' shares leaves fewer open
   // places than the other topics still need: those places are shared out again by weight,
@@ -1049,9 +1070,10 @@ export function examView(root) {
     else if (wantsFullscreen()) askFullscreen('Full Screen Mode Ended');
   }
 
-  // Clicking or tapping anywhere outside the answer just picked removes its
-  // outline box; the choice stays selected. Phones can keep focus after a
-  // tap on empty space, so let go of it here.
+  // Clicking or tapping anywhere outside the answer just picked lets go of its
+  // focus (and of the keyboard outline, if it had one); the choice stays
+  // selected. Phones can keep focus after a tap on empty space, so let go of
+  // it here.
   const onPointerDown = e => {
     const active = document.activeElement;
     if (active?.matches('.opt input') && !active.closest('.opt').contains(e.target)) active.blur();

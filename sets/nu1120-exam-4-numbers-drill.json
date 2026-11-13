@@ -30,7 +30,7 @@
         "The hypoglycemia range"
       ],
       "answer": 1,
-      "rationale": "<p>A fasting plasma glucose of <b>126 mg/dL or higher</b> is in the <b>diabetes</b> range; {g} mg/dL is over that line.</p><p><b>Prediabetes</b> is the tempting choice when the number is close to the line, but prediabetes stops at 125.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
+      "rationale": "<p>A fasting plasma glucose of <b>126 mg/dL or higher</b> is in the <b>diabetes</b> range; {g} mg/dL is over that line.</p><p><b>Prediabetes</b> isn't the right answer, even when the number is close to the line: prediabetes stops at 125.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
     },
     {
       "id": "nd-02",
@@ -56,7 +56,7 @@
         "The prediabetes range"
       ],
       "answer": 3,
-      "rationale": "<p>A fasting glucose of <b>100 to 125 mg/dL</b> is <b>prediabetes</b>; {g} mg/dL falls in it.</p><p><b>Normal</b> is the tempting choice, since the number is close to 100, but normal is <b>under</b> 100.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
+      "rationale": "<p>A fasting glucose of <b>100 to 125 mg/dL</b> is <b>prediabetes</b>; {g} mg/dL falls in it.</p><p><b>Normal</b> isn't the right answer: the number is close to 100, but normal is <b>under</b> 100.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
     },
     {
       "id": "nd-03",
@@ -81,7 +81,7 @@
         "The hypoglycemia range"
       ],
       "answer": 0,
-      "rationale": "<p>A fasting glucose <b>under 100 mg/dL</b> (and at least 70) is normal; {g} mg/dL is in that range.</p><p><b>Prediabetes</b> is the tempting choice when the number is in the high 90s, but prediabetes starts at 100.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
+      "rationale": "<p>A fasting glucose <b>under 100 mg/dL</b> (and at least 70) is normal; {g} mg/dL is in that range.</p><p><b>Prediabetes</b> isn't the right answer, even when the number is in the high 90s: prediabetes starts at 100.</p><p><b>Takeaway:</b> Fasting glucose: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes; under 70 is low.</p>"
     },
     {
       "id": "nd-04",
@@ -106,7 +106,7 @@
         "The hypoglycemia range"
       ],
       "answer": 0,
-      "rationale": "<p>An A1C of <b>6.5% or higher</b> is in the <b>diabetes</b> range; {a}% is at or over that line.</p><p><b>Prediabetes</b> is the tempting choice for a number just over 6.4, but 6.5% is already diabetes.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
+      "rationale": "<p>An A1C of <b>6.5% or higher</b> is in the <b>diabetes</b> range; {a}% is at or over that line.</p><p><b>Prediabetes</b> isn't the right answer, even for a number just over 6.4: 6.5% is already diabetes.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
     },
     {
       "id": "nd-05",
@@ -134,7 +134,7 @@
         "The hypoglycemia range"
       ],
       "answer": 1,
-      "rationale": "<p>An A1C of <b>5.7% to 6.4%</b> is <b>prediabetes</b>, and the instructor's guide lists an A1C over 5.7% as a risk factor for diabetes; {a}% is in that range.</p><p><b>Normal</b> is the tempting choice, since the number is under 6.5, but normal is <b>under 5.7%</b>.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
+      "rationale": "<p>An A1C of <b>5.7% to 6.4%</b> is <b>prediabetes</b>, and the instructor's guide lists an A1C over 5.7% as a risk factor for diabetes; {a}% is in that range.</p><p><b>Normal</b> isn't the right answer: the number is under 6.5, but normal is <b>under 5.7%</b>.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
     },
     {
       "id": "nd-06",
@@ -161,7 +161,7 @@
         "The normal range"
       ],
       "answer": 3,
-      "rationale": "<p>An A1C <b>under 5.7%</b> is normal; {a}% is in that range.</p><p><b>Prediabetes</b> is the tempting choice when the number is in the mid-5s, but prediabetes starts at 5.7%.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
+      "rationale": "<p>An A1C <b>under 5.7%</b> is normal; {a}% is in that range.</p><p><b>Prediabetes</b> isn't the right answer, even when the number is in the mid-5s: prediabetes starts at 5.7%.</p><p><b>Takeaway:</b> A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes.</p>"
     },
     {
       "id": "nd-07",
@@ -185,7 +185,7 @@
         "The hypoglycemia range"
       ],
       "answer": 0,
-      "rationale": "<p>Two hours after the glucose drink, <b>200 mg/dL or higher</b> is in the <b>diabetes</b> range; {g} mg/dL is at or over it.</p><p><b>Prediabetes</b> is the tempting choice, since the fasting cutoffs are lower, but the 2-hour test has its own: 140 to 199 is prediabetes.</p><p><b>Takeaway:</b> 2-hour glucose: under 140 normal, 140 to 199 prediabetes, 200 or higher diabetes.</p>"
+      "rationale": "<p>Two hours after the glucose drink, <b>200 mg/dL or higher</b> is in the <b>diabetes</b> range; {g} mg/dL is at or over it.</p><p><b>Prediabetes</b> isn't the right answer. The fasting cutoffs are lower, but the 2-hour test has its own: 140 to 199 is prediabetes.</p><p><b>Takeaway:</b> 2-hour glucose: under 140 normal, 140 to 199 prediabetes, 200 or higher diabetes.</p>"
     },
     {
       "id": "nd-08",
@@ -209,7 +209,7 @@
         "The prediabetes range"
       ],
       "answer": 3,
-      "rationale": "<p>Two hours after the glucose drink, <b>140 to 199 mg/dL</b> is <b>prediabetes</b>; {g} mg/dL falls in it.</p><p><b>The diabetes range</b> is the tempting choice, since {g} is well over the fasting cutoff of 126, but the 2-hour test's diabetes line is 200.</p><p><b>Takeaway:</b> 2-hour glucose: under 140 normal, 140 to 199 prediabetes, 200 or higher diabetes.</p>"
+      "rationale": "<p>Two hours after the glucose drink, <b>140 to 199 mg/dL</b> is <b>prediabetes</b>; {g} mg/dL falls in it.</p><p><b>The diabetes range</b> isn't the right answer: {g} is well over the fasting cutoff of 126, but the 2-hour test's diabetes line is 200.</p><p><b>Takeaway:</b> 2-hour glucose: under 140 normal, 140 to 199 prediabetes, 200 or higher diabetes.</p>"
     },
     {
       "id": "nd-09",
@@ -233,7 +233,7 @@
         "The normal range"
       ],
       "answer": 1,
-      "rationale": "<p>A glucose <b>under 70 mg/dL</b> is low (<b>hypoglycemia</b>), and sweating and shakiness are its classic signs; {g} mg/dL is in that range.</p><p><b>The normal range</b> is the tempting choice for a number in the 60s, but normal starts at 70.</p><p><b>Takeaway:</b> Under 70 mg/dL is hypoglycemia: treat it quickly.</p>"
+      "rationale": "<p>A glucose <b>under 70 mg/dL</b> is low (<b>hypoglycemia</b>), and sweating and shakiness are its classic signs; {g} mg/dL is in that range.</p><p><b>The normal range</b> isn't the right answer, even for a number in the 60s: normal starts at 70.</p><p><b>Takeaway:</b> Under 70 mg/dL is hypoglycemia: treat it quickly.</p>"
     },
     {
       "id": "nd-10",
@@ -257,7 +257,7 @@
         "It's in the diabetes range, since the client has symptoms"
       ],
       "answer": 3,
-      "rationale": "<p>A <b>random glucose of 200 mg/dL or higher with classic symptoms</b> (thirst, frequent urination, weight loss) meets the criteria for diabetes; {g} mg/dL with these symptoms does.</p><p><b>Needing a fasting test</b> is the tempting choice, since one random result usually isn't enough, but symptoms plus a random glucose of 200 or more is one of the four criteria.</p><p><b>Takeaway:</b> Random glucose 200 or higher with symptoms = diabetes range.</p>"
+      "rationale": "<p>A <b>random glucose of 200 mg/dL or higher with classic symptoms</b> (thirst, frequent urination, weight loss) meets the criteria for diabetes; {g} mg/dL with these symptoms does.</p><p><b>Needing a fasting test</b> isn't the right answer: one random result usually isn't enough, but symptoms plus a random glucose of 200 or more is one of the four criteria.</p><p><b>Takeaway:</b> Random glucose 200 or higher with symptoms = diabetes range.</p>"
     },
     {
       "id": "nd-11",
@@ -281,7 +281,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 2,
-      "rationale": "<p>The instructor's guide lists a total cholesterol <b>over 200 mg/dL</b> as a risk factor for cardiovascular disease; {tc} mg/dL is over it.</p><p><b>Borderline</b> is the tempting choice for a number just over 200, but the guide's line is 200: anything over it counts.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>The instructor's guide lists a total cholesterol <b>over 200 mg/dL</b> as a risk factor for cardiovascular disease; {tc} mg/dL is over it.</p><p><b>Borderline</b> isn't the right answer, even for a number just over 200. The guide's line is 200: anything over it counts.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-12",
@@ -305,7 +305,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 2,
-      "rationale": "<p>A total cholesterol <b>under 200 mg/dL</b> isn't a risk factor by the instructor's cutoff; {tc} mg/dL is under it.</p><p><b>A risk factor</b> is the tempting choice when the number is in the 190s, but the line is 200.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>A total cholesterol <b>under 200 mg/dL</b> isn't a risk factor by the instructor's cutoff; {tc} mg/dL is under it.</p><p><b>A risk factor</b> isn't the right answer, even when the number is in the 190s: the line is 200.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-13",
@@ -329,7 +329,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 0,
-      "rationale": "<p>An LDL <b>over 100 mg/dL</b> is a risk factor for cardiovascular disease; {ldl} mg/dL is over it.</p><p><b>Within the desired range</b> is the tempting choice if you use the total cholesterol line (200), but LDL has its own: 100.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>An LDL <b>over 100 mg/dL</b> is a risk factor for cardiovascular disease; {ldl} mg/dL is over it.</p><p><b>Within the desired range</b> isn't the right answer: it would be with the total cholesterol line (200), but LDL has its own line, 100.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-14",
@@ -353,7 +353,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 0,
-      "rationale": "<p>An LDL <b>under 100 mg/dL</b> isn't a risk factor by the instructor's cutoff; {ldl} mg/dL is under it.</p><p><b>Too low</b> is the tempting choice for a low number, but a low LDL is the goal, not a problem.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>An LDL <b>under 100 mg/dL</b> isn't a risk factor by the instructor's cutoff; {ldl} mg/dL is under it.</p><p><b>Too low</b> isn't the right answer, even for a low number: a low LDL is the goal, not a problem.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-15",
@@ -376,7 +376,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 1,
-      "rationale": "<p>For women, an HDL <b>under 50 mg/dL</b> is a risk factor; {hdl} mg/dL is under it.</p><p><b>Within the desired range</b> is the tempting choice if you use the men's line (40), but for women it's 50.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>For women, an HDL <b>under 50 mg/dL</b> is a risk factor; {hdl} mg/dL is under it.</p><p><b>Within the desired range</b> isn't the right answer: it would be with the men's line (40), but for women the line is 50.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-16",
@@ -399,7 +399,7 @@
         "Too low, a sign of poor nutrition"
       ],
       "answer": 2,
-      "rationale": "<p>For men, an HDL <b>under 40 mg/dL</b> is a risk factor; {hdl} mg/dL is above it, so it isn't one.</p><p><b>A risk factor</b> is the tempting choice if you use the women's line (50), but for men it's 40.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
+      "rationale": "<p>For men, an HDL <b>under 40 mg/dL</b> is a risk factor; {hdl} mg/dL is above it, so it isn't one.</p><p><b>A risk factor</b> isn't the right answer: it would be with the women's line (50), but for men the line is 40.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women).</p>"
     },
     {
       "id": "nd-17",
@@ -423,7 +423,7 @@
         "A risk factor for diabetes but not heart disease"
       ],
       "answer": 0,
-      "rationale": "<p>The instructor's guide lists a <b>BMI over 25</b> as a risk factor for both diabetes and cardiovascular disease; {b} is over it.</p><p><b>A risk factor for diabetes but not heart disease</b> is the tempting choice, since BMI comes up in diabetes screening, but the guide lists it for heart disease too.</p><p><b>Takeaway:</b> BMI over 25: a risk factor for diabetes and cardiovascular disease.</p>"
+      "rationale": "<p>The instructor's guide lists a <b>BMI over 25</b> as a risk factor for both diabetes and cardiovascular disease; {b} is over it.</p><p><b>A risk factor for diabetes but not heart disease</b> isn't the right answer: BMI comes up in diabetes screening, but the guide lists it for heart disease too.</p><p><b>Takeaway:</b> BMI over 25: a risk factor for diabetes and cardiovascular disease.</p>"
     },
     {
       "id": "nd-18",
@@ -447,7 +447,7 @@
         "A risk factor for diabetes but not heart disease"
       ],
       "answer": 0,
-      "rationale": "<p>A BMI of <b>25 or under</b> isn't on the instructor's list of risk factors; {b} is under it.</p><p><b>A risk factor</b> is the tempting choice when the number is close to 25, but the line is <b>over</b> 25.</p><p><b>Takeaway:</b> BMI over 25: a risk factor for diabetes and cardiovascular disease.</p>"
+      "rationale": "<p>A BMI of <b>25 or under</b> isn't on the instructor's list of risk factors; {b} is under it.</p><p><b>A risk factor</b> isn't the right answer, even when the number is close to 25: the line is <b>over</b> 25.</p><p><b>Takeaway:</b> BMI over 25: a risk factor for diabetes and cardiovascular disease.</p>"
     },
     {
       "id": "nd-19",
@@ -494,7 +494,7 @@
         "2, so he doesn't have metabolic syndrome"
       ],
       "answer": 3,
-      "rationale": "<p>He meets two: a waist of {w} in. (about 40 or more for men) and triglycerides of {tg} (150 or more). His HDL of {hdl} isn't low for a man (under 40), his blood pressure is under 130/85, and his glucose is under 100. Metabolic syndrome needs <b>3 or more</b>.</p><p><b>3</b> is the tempting choice if you count his HDL as low, but for men the line is 40.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, fasting glucose.</p>"
+      "rationale": "<p>He meets two: a waist of {w} in. (about 40 or more for men) and triglycerides of {tg} (150 or more). His HDL of {hdl} isn't low for a man (under 40), his blood pressure is under 130/85, and his glucose is under 100. Metabolic syndrome needs <b>3 or more</b>.</p><p><b>3</b> isn't the right answer: it counts his HDL as low, but for men the line is 40.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, fasting glucose.</p>"
     },
     {
       "id": "nd-20",
@@ -541,7 +541,7 @@
         "1, so she doesn't have metabolic syndrome"
       ],
       "answer": 1,
-      "rationale": "<p>She meets three: a waist of {w} in. (35 or more for women), an HDL of {hdl} (under 50 for women), and a blood pressure of {sbp}/{dbp} (130/85 or more). Her triglycerides are under 150 and her glucose under 100. Three criteria means <b>metabolic syndrome</b>.</p><p><b>2</b> is the tempting choice if you use the men's HDL line (40), which would make her HDL normal.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, fasting glucose.</p>"
+      "rationale": "<p>She meets three: a waist of {w} in. (35 or more for women), an HDL of {hdl} (under 50 for women), and a blood pressure of {sbp}/{dbp} (130/85 or more). Her triglycerides are under 150 and her glucose under 100. Three criteria means <b>metabolic syndrome</b>.</p><p><b>2</b> isn't the right answer: it uses the men's HDL line (40), which would make her HDL normal.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 or more of waist, triglycerides, low HDL, blood pressure, fasting glucose.</p>"
     },
     {
       "id": "nd-21",
@@ -563,7 +563,7 @@
         "Too fast, a sign of high blood pressure"
       ],
       "answer": 2,
-      "rationale": "<p>Capillary refill measures <b>peripheral perfusion</b>. Color should return in about <b>2 seconds</b> (no more than 3); {s} seconds is slow, so blood flow to the tissues is reduced.</p><p><b>Expected in older adults</b> is the tempting choice, but a slow refill needs follow-up at any age.</p><p><b>Takeaway:</b> Capillary refill: about 2 seconds, no more than 3.</p>"
+      "rationale": "<p>Capillary refill measures <b>peripheral perfusion</b>. Color should return in about <b>2 seconds</b> (no more than 3); {s} seconds is slow, so blood flow to the tissues is reduced.</p><p><b>Expected in older adults</b> isn't the right answer: a slow refill needs follow-up at any age.</p><p><b>Takeaway:</b> Capillary refill: about 2 seconds, no more than 3.</p>"
     },
     {
       "id": "nd-22",
@@ -584,7 +584,7 @@
         "Normal: blood flow to the tissues is good"
       ],
       "answer": 3,
-      "rationale": "<p>Color returning in about <b>2 seconds or less</b> shows good blood flow to the tissues; {s} seconds is normal.</p><p><b>Too fast</b> is the tempting choice, since quick sounds abnormal, but a quick refill just means good perfusion.</p><p><b>Takeaway:</b> Capillary refill: about 2 seconds, no more than 3.</p>"
+      "rationale": "<p>Color returning in about <b>2 seconds or less</b> shows good blood flow to the tissues; {s} seconds is normal.</p><p><b>Too fast</b> isn't the right answer: quick sounds abnormal, but a quick refill just means good perfusion.</p><p><b>Takeaway:</b> Capillary refill: about 2 seconds, no more than 3.</p>"
     },
     {
       "id": "nd-23",
@@ -619,7 +619,7 @@
         "Wider than normal; report it"
       ],
       "answer": 3,
-      "rationale": "<p>The QRS shows the ventricles depolarizing and is normally <b>under 0.12 seconds</b> (120 ms); {q} seconds is wide, so the ventricles are depolarizing slowly: report it.</p><p><b>Within the normal width</b> is the tempting choice, since the number is small, but the QRS line is 0.12.</p><p><b>Takeaway:</b> QRS under 0.12 seconds is normal; wider needs follow-up.</p>"
+      "rationale": "<p>The QRS shows the ventricles depolarizing and is normally <b>under 0.12 seconds</b> (120 ms); {q} seconds is wide, so the ventricles are depolarizing slowly: report it.</p><p><b>Within the normal width</b> isn't the right answer: the number is small, but the QRS line is 0.12.</p><p><b>Takeaway:</b> QRS under 0.12 seconds is normal; wider needs follow-up.</p>"
     },
     {
       "id": "nd-24",
@@ -654,7 +654,7 @@
         "Normal for a P wave, not a QRS"
       ],
       "answer": 0,
-      "rationale": "<p>A QRS <b>under 0.12 seconds</b> is normal; {q} seconds is within it.</p><p><b>Narrower than normal</b> is the tempting choice for a small number, but a narrow QRS is the normal finding.</p><p><b>Takeaway:</b> QRS under 0.12 seconds is normal; wider needs follow-up.</p>"
+      "rationale": "<p>A QRS <b>under 0.12 seconds</b> is normal; {q} seconds is within it.</p><p><b>Narrower than normal</b> isn't the right answer, even for a small number: a narrow QRS is the normal finding.</p><p><b>Takeaway:</b> QRS under 0.12 seconds is normal; wider needs follow-up.</p>"
     },
     {
       "id": "nd-25",
@@ -681,7 +681,7 @@
           "answer": 1
         }
       ],
-      "rationale": "<p>Plasma, the liquid part (mostly water, with salts, proteins, hormones, and vitamins), is about <b>55%</b> of the blood; the formed elements are about 45%. Red cells live about <b>120 days</b>.</p><p>The tempting mistake is 90%: that's about how much of the <b>plasma</b> is water.</p><p><b>Takeaway:</b> Plasma about 55%; red cells live about 120 days.</p>"
+      "rationale": "<p>Plasma, the liquid part (mostly water, with salts, proteins, hormones, and vitamins), is about <b>55%</b> of the blood; the formed elements are about 45%. Red cells live about <b>120 days</b>.</p><p><b>90%</b> isn't the right answer: that's about how much of the <b>plasma</b> is water.</p><p><b>Takeaway:</b> Plasma about 55%; red cells live about 120 days.</p>"
     },
     {
       "id": "nd-26",
@@ -716,7 +716,7 @@
           "answer": 1
         }
       ],
-      "rationale": "<p>Normal: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>.</p><p>The tempting mistake is 80 to 100 for the PaCO₂: that's the normal PaO₂ (oxygen).</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26.</p>"
+      "rationale": "<p>Normal: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>.</p><p><b>80 to 100</b> isn't the right answer for the PaCO₂: that's the normal PaO₂ (oxygen).</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26.</p>"
     },
     {
       "id": "nd-27",
@@ -743,7 +743,7 @@
           "answer": 0
         }
       ],
-      "rationale": "<p>Normal: <b>PaO₂ 80–100 mm Hg</b> and <b>base excess −2 to +2 mEq/L</b>. Below −2 means too little base (metabolic acidosis); above +2, too much (metabolic alkalosis).</p><p>The tempting mistake is a base excess range of 0 to +4, since “excess” sounds positive; normal is centered on zero.</p><p><b>Takeaway:</b> PaO₂ 80–100; base excess −2 to +2.</p>"
+      "rationale": "<p>Normal: <b>PaO₂ 80–100 mm Hg</b> and <b>base excess −2 to +2 mEq/L</b>. Below −2 means too little base (metabolic acidosis); above +2, too much (metabolic alkalosis).</p><p>A base excess range of <b>0 to +4</b> isn't the right answer, even though “excess” sounds positive; normal is centered on zero.</p><p><b>Takeaway:</b> PaO₂ 80–100; base excess −2 to +2.</p>"
     },
     {
       "id": "nd-28",
@@ -784,7 +784,7 @@
           "answer": 0
         }
       ],
-      "rationale": "<p>Right lung: <b>3 lobes, 10 segments</b>. Left lung: <b>2 lobes, 8 to 9 segments</b>, leaving room for the heart.</p><p>The tempting mistake is giving the left lung 3 lobes; the lingula is part of the left upper lobe.</p><p><b>Takeaway:</b> Right 3 and 10; left 2 and 8 to 9.</p>"
+      "rationale": "<p>Right lung: <b>3 lobes, 10 segments</b>. Left lung: <b>2 lobes, 8 to 9 segments</b>, leaving room for the heart.</p><p>Giving the left lung 3 lobes is a mistake; the lingula is part of the left upper lobe.</p><p><b>Takeaway:</b> Right 3 and 10; left 2 and 8 to 9.</p>"
     },
     {
       "id": "nd-29",
@@ -808,7 +808,7 @@
         "It can't be judged without the pH"
       ],
       "answer": 1,
-      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {p} is below it, so the blood is carrying too little oxygen.</p><p><b>It can't be judged without the pH</b> is the tempting choice, since blood gases are read together, but each value has its own normal range.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
+      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {p} is below it, so the blood is carrying too little oxygen.</p><p><b>It can't be judged without the pH</b> isn't the right answer: blood gases are read together, but each value has its own normal range.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
     },
     {
       "id": "nd-30",
@@ -832,7 +832,7 @@
         "It can't be judged without the pH"
       ],
       "answer": 2,
-      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {p} is within it.</p><p><b>Below the normal range</b> is the tempting choice for a number in the 80s, but normal starts at 80.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
+      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {p} is within it.</p><p><b>Below the normal range</b> isn't the right answer, even for a number in the 80s: normal starts at 80.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
     },
     {
       "id": "nd-31",
@@ -847,7 +847,7 @@
         "C7 to T1"
       ],
       "answer": 2,
-      "rationale": "<p>The <b>phrenic nerve</b> comes from <b>C3 to C5</b> in the neck, which is why a high neck injury can stop the diaphragm.</p><p><b>T1 to T4</b> is the tempting choice, since the diaphragm sits in the trunk, but its nerve starts high in the neck.</p><p><b>Takeaway:</b> “C3, 4, 5 keeps the diaphragm alive.”</p>"
+      "rationale": "<p>The <b>phrenic nerve</b> comes from <b>C3 to C5</b> in the neck, which is why a high neck injury can stop the diaphragm.</p><p><b>T1 to T4</b> isn't the right answer: the diaphragm sits in the trunk, but its nerve starts high in the neck.</p><p><b>Takeaway:</b> “C3, 4, 5 keeps the diaphragm alive.”</p>"
     },
     {
       "id": "nd-32",
@@ -872,7 +872,7 @@
       "unit": "minutes",
       "round": "to the nearest whole number",
       "strictZeros": true,
-      "rationale": "<p>The client walks {m} × {d} = {=m * d} minutes a week. The instructor's goal is <b>150 minutes a week</b> (for example 20 to 30 minutes on 5 to 7 days), so the client needs 150 − {=m * d} = <b>{answer} more minutes</b>.</p><p>The tempting mistake is subtracting the daily minutes ({m}) instead of the weekly total.</p><p><b>Takeaway:</b> Exercise goal: about 150 minutes a week.</p>"
+      "rationale": "<p>The client walks {m} × {d} = {=m * d} minutes a week. The instructor's goal is <b>150 minutes a week</b> (for example 20 to 30 minutes on 5 to 7 days), so the client needs 150 − {=m * d} = <b>{answer} more minutes</b>.</p><p>Subtracting the daily minutes ({m}) instead of the weekly total is a mistake.</p><p><b>Takeaway:</b> Exercise goal: about 150 minutes a week.</p>"
     },
     {
       "id": "nd-33",
@@ -896,7 +896,7 @@
         "A problem with the parathyroid glands"
       ],
       "answer": 2,
-      "rationale": "<p>TSH is the pituitary's signal to the thyroid. A <b>high</b> TSH ({t}) means the pituitary is pushing harder because the thyroid isn't keeping up: an <b>underactive thyroid</b>.</p><p><b>An overactive thyroid</b> is the tempting choice, since a high number sounds like “too much”, but a high TSH usually means too little thyroid hormone.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>"
+      "rationale": "<p>TSH is the pituitary's signal to the thyroid. A <b>high</b> TSH ({t}) means the pituitary is pushing harder because the thyroid isn't keeping up: an <b>underactive thyroid</b>.</p><p><b>An overactive thyroid</b> isn't the right answer: a high number sounds like “too much”, but a high TSH usually means too little thyroid hormone.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>"
     },
     {
       "id": "nd-34",
@@ -922,7 +922,7 @@
         "A problem with the parathyroid glands"
       ],
       "answer": 1,
-      "rationale": "<p>A <b>low</b> TSH ({t}) means the pituitary has backed off because there's plenty of thyroid hormone: an <b>overactive thyroid</b>.</p><p><b>An underactive thyroid</b> is the tempting choice, since a low number sounds like “too little”, but the thyroid hormone itself is high.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>"
+      "rationale": "<p>A <b>low</b> TSH ({t}) means the pituitary has backed off because there's plenty of thyroid hormone: an <b>overactive thyroid</b>.</p><p><b>An underactive thyroid</b> isn't the right answer: a low number sounds like “too little”, but the thyroid hormone itself is high.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>"
     },
     {
       "id": "nd-35",
@@ -957,7 +957,7 @@
           "answer": 2
         }
       ],
-      "rationale": "<p><b>Acute</b> inflammation starts within minutes to hours and lasts days; <b>subacute</b> lasts about <b>2 to 6 weeks</b>; <b>chronic</b> lasts months or longer.</p><p>The tempting mistake is 2 to 6 days for subacute, which is still the acute stage.</p><p><b>Takeaway:</b> Acute: days. Subacute: 2 to 6 weeks. Chronic: months or longer.</p>"
+      "rationale": "<p><b>Acute</b> inflammation starts within minutes to hours and lasts days; <b>subacute</b> lasts about <b>2 to 6 weeks</b>; <b>chronic</b> lasts months or longer.</p><p><b>2 to 6 days</b> isn't the right answer for subacute: that's still the acute stage.</p><p><b>Takeaway:</b> Acute: days. Subacute: 2 to 6 weeks. Chronic: months or longer.</p>"
     },
     {
       "id": "nd-36",
@@ -992,7 +992,7 @@
           "answer": 1
         }
       ],
-      "rationale": "<p>The adaptive response to a new germ takes about <b>4 to 7 days</b> to build. The flu vaccine is given <b>every year</b> (the viruses change), and the exercise goal is about <b>150 minutes a week</b>.</p><p>The tempting mistake is 1 to 2 days: that's how fast the innate defenses (like inflammation) respond.</p><p><b>Takeaway:</b> Adaptive response 4 to 7 days; flu vaccine yearly; exercise 150 minutes a week.</p>"
+      "rationale": "<p>The adaptive response to a new germ takes about <b>4 to 7 days</b> to build. The flu vaccine is given <b>every year</b> (the viruses change), and the exercise goal is about <b>150 minutes a week</b>.</p><p><b>1 to 2 days</b> isn't the right answer: that's how fast the innate defenses (like inflammation) respond.</p><p><b>Takeaway:</b> Adaptive response 4 to 7 days; flu vaccine yearly; exercise 150 minutes a week.</p>"
     },
     {
       "id": "nd-37",
@@ -1027,7 +1027,7 @@
           "answer": 0
         }
       ],
-      "rationale": "<p>Cortisol follows a <b>daily rhythm</b>: highest in the <b>early morning</b>, lowest around <b>midnight</b>. A morning blood test (about <b>8 a.m.</b>) catches the peak.</p><p>The tempting mistake is the evening, when people often feel most stressed; cortisol is actually falling then.</p><p><b>Takeaway:</b> Cortisol: high in the morning, low at midnight.</p>"
+      "rationale": "<p>Cortisol follows a <b>daily rhythm</b>: highest in the <b>early morning</b>, lowest around <b>midnight</b>. A morning blood test (about <b>8 a.m.</b>) catches the peak.</p><p><b>The evening</b> isn't the right answer, even though people often feel most stressed then; cortisol is actually falling at that time.</p><p><b>Takeaway:</b> Cortisol: high in the morning, low at midnight.</p>"
     }
   ]
 }

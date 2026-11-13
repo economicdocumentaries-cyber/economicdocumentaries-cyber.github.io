@@ -39,7 +39,7 @@
         "Lymphatic vessels collect it and return it to the veins"
       ],
       "answer": 3,
-      "rationale": "<p>Fluid that leaks into the tissues is picked up by <b>lymphatic capillaries</b>, which begin as dead-end tubes in the tissues. As lymph, it's filtered through nodes and <b>returned to the veins</b>, keeping fluid in balance.</p><p><b>The kidneys</b> are the tempting choice, since they control the body's fluid, but they work on the blood, not directly on the fluid in the tissues.</p><p><b>Takeaway:</b> The lymphatic system returns leaked tissue fluid to the blood; when it can't, the tissue swells.</p>"
+      "rationale": "<p>Fluid that leaks into the tissues is picked up by <b>lymphatic capillaries</b>, which begin as dead-end tubes in the tissues. As lymph, it's filtered through nodes and <b>returned to the veins</b>, keeping fluid in balance.</p><p><b>The kidneys</b> aren't the right answer: they control the body's fluid, but they work on the blood, not directly on the fluid in the tissues.</p><p><b>Takeaway:</b> The lymphatic system returns leaked tissue fluid to the blood; when it can't, the tissue swells.</p>"
     },
     {
       "id": "li-02",
@@ -54,7 +54,7 @@
         "The spleen releases stored fat into the lymph after a meal"
       ],
       "answer": 1,
-      "rationale": "<p><b>Lacteals</b> are lymphatic capillaries in the lining of the small intestine. They <b>absorb dietary fats</b>, which make the lymph there milky (chyle), and carry them toward the bloodstream.</p><p><b>Bile</b> is the tempting choice, since bile helps digest fat, but it's released into the intestine, not into the lymph.</p><p><b>Takeaway:</b> Fat absorption is one of the lymphatic system's three jobs, through the lacteals.</p>"
+      "rationale": "<p><b>Lacteals</b> are lymphatic capillaries in the lining of the small intestine. They <b>absorb dietary fats</b>, which make the lymph there milky (chyle), and carry them toward the bloodstream.</p><p><b>Bile</b> isn't the right answer: bile helps digest fat, but it's released into the intestine, not into the lymph.</p><p><b>Takeaway:</b> Fat absorption is one of the lymphatic system's three jobs, through the lacteals.</p>"
     },
     {
       "id": "li-03",
@@ -81,7 +81,7 @@
         0,
         3
       ],
-      "rationale": "<p><b>Afferent</b> vessels carry unfiltered lymph <b>toward</b> a node, and <b>efferent</b> vessels carry filtered lymph <b>away</b>. The <b>right lymphatic duct</b> drains the right upper body: the right arm, right upper trunk, and right side of the head and neck. The <b>thoracic duct</b> drains everything else.</p><p>The tempting mistake is swapping afferent and efferent. Think of <b>a</b>fferent as <b>a</b>rriving at the node and <b>e</b>fferent as <b>e</b>xiting it.</p><p><b>Takeaway:</b> Afferent arrives, efferent exits. The right duct drains the right upper body; the thoracic duct drains the rest.</p>"
+      "rationale": "<p><b>Afferent</b> vessels carry unfiltered lymph <b>toward</b> a node, and <b>efferent</b> vessels carry filtered lymph <b>away</b>. The <b>right lymphatic duct</b> drains the right upper body: the right arm, right upper trunk, and right side of the head and neck. The <b>thoracic duct</b> drains everything else.</p><p>Swapping afferent and efferent is a mistake. Think of <b>a</b>fferent as <b>a</b>rriving at the node and <b>e</b>fferent as <b>e</b>xiting it.</p><p><b>Takeaway:</b> Afferent arrives, efferent exits. The right duct drains the right upper body; the thoracic duct drains the rest.</p>"
     },
     {
       "id": "li-04",
@@ -98,97 +98,7 @@
         "The thoracic duct",
         "A vein at the base of the neck"
       ],
-      "rationale": "<p>Tissue fluid enters a <b>lymphatic capillary</b>, travels in an <b>afferent</b> vessel to a <b>lymph node</b> for filtering, leaves in an <b>efferent</b> vessel, and joins the <b>thoracic duct</b>, which empties into a <b>vein at the base of the neck</b>.</p><p>The tempting mistake is placing the duct before the node; the lymph is filtered in nodes along the way before it reaches the large ducts.</p><p><b>Takeaway:</b> Tissue fluid, lymphatic capillary, afferent vessel, node, efferent vessel, duct, vein.</p>"
-    },
-    {
-      "id": "li-05",
-      "type": "hotspot",
-      "topic": "Lymph nodes and vessels",
-      "level": 2,
-      "stem": "A client with strep throat has tender, swollen lymph nodes. Click a group of lymph nodes that would most likely be swollen.",
-      "image": "img/lymphatic-front.svg",
-      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
-      "regions": [
-        {
-          "x": 43.8,
-          "y": 4.1,
-          "w": 3.6,
-          "h": 9.0
-        },
-        {
-          "x": 52.8,
-          "y": 3.9,
-          "w": 3.4,
-          "h": 10.4
-        }
-      ],
-      "rationale": "<p>Lymph from the throat drains to the <b>cervical</b> nodes along the sides of the neck, which swell as their lymphocytes respond to the infection. Either side counts.</p><p>The <b>axillary</b> nodes are the tempting choice, since they're another familiar group, but they drain the arms and the chest wall, not the throat.</p><p><b>Takeaway:</b> Nodes swell near the infection they drain: throat to cervical, arm to axillary, leg to inguinal.</p>"
-    },
-    {
-      "id": "li-06",
-      "type": "hotspot",
-      "topic": "Lymph nodes and vessels",
-      "level": 3,
-      "stem": "A client has an infected cut on the left foot, with red streaks running up the leg. Click the lymph node group shown here that is most likely to swell.",
-      "image": "img/lymphatic-front.svg",
-      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
-      "regions": [
-        {
-          "x": 65.9,
-          "y": 89.8,
-          "w": 8.9,
-          "h": 4.6
-        },
-        {
-          "x": 63.8,
-          "y": 91.0,
-          "w": 1.1,
-          "h": 3.7
-        },
-        {
-          "x": 75.6,
-          "y": 89.8,
-          "w": 1.1,
-          "h": 2.3
-        }
-      ],
-      "rationale": "<p>Lymph from the foot and leg drains to the <b>inguinal</b> nodes in the groin, on the same side: the <b>left</b>, which is on the viewer's <b>right</b> in a front view. Red streaks show lymphangitis, inflammation of the lymph vessels carrying the infection toward those nodes.</p><p>The inguinal group on the viewer's left is the tempting choice for students who forget to flip the sides: that's the client's right.</p><p><b>Takeaway:</b> Leg infections drain to the inguinal nodes on the same side; in a front view, the client's left is on your right.</p>"
-    },
-    {
-      "id": "li-07",
-      "type": "hotspot",
-      "topic": "Lymph nodes and vessels",
-      "level": 2,
-      "stem": "Click the vessel that returns most of the body's lymph to the blood.",
-      "image": "img/lymphatic-front.svg",
-      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
-      "regions": [
-        {
-          "x": 57.7,
-          "y": 19.4,
-          "w": 2.7,
-          "h": 29.6
-        },
-        {
-          "x": 55.9,
-          "y": 49.8,
-          "w": 3.0,
-          "h": 9.0
-        },
-        {
-          "x": 51.4,
-          "y": 65.6,
-          "w": 2.0,
-          "h": 7.1
-        },
-        {
-          "x": 53.9,
-          "y": 59.6,
-          "w": 2.5,
-          "h": 5.2
-        }
-      ],
-      "rationale": "<p>The <b>thoracic duct</b>, the large vessel rising from the cisterna chyli in the abdomen, carries lymph from the legs, the abdomen, the left arm, and the left side of the head and chest, and empties into a vein at the base of the neck on the client's left.</p><p>The short <b>right lymphatic duct</b> is the tempting choice, since it's also a duct, but it drains only the right upper part of the body.</p><p><b>Takeaway:</b> The thoracic duct drains most of the body; the right lymphatic duct drains the right upper part.</p>"
+      "rationale": "<p>Tissue fluid enters a <b>lymphatic capillary</b>, travels in an <b>afferent</b> vessel to a <b>lymph node</b> for filtering, leaves in an <b>efferent</b> vessel, and joins the <b>thoracic duct</b>, which empties into a <b>vein at the base of the neck</b>.</p><p>Placing the duct before the node is a mistake; the lymph is filtered in nodes along the way before it reaches the large ducts.</p><p><b>Takeaway:</b> Tissue fluid, lymphatic capillary, afferent vessel, node, efferent vessel, duct, vein.</p>"
     },
     {
       "id": "li-08",
@@ -203,37 +113,7 @@
         "The small intestine, including the lacteals"
       ],
       "answer": 2,
-      "rationale": "<p>The <b>right lymphatic duct</b> drains the right arm, the right upper trunk, and the right side of the head and neck, so lymph from there doesn't pass through the thoracic duct and still drains.</p><p><b>The left arm and left side of the head</b> are the tempting choice, since they're also the upper body, but they drain through the thoracic duct, as do the legs, abdomen, and intestines.</p><p><b>Takeaway:</b> Only the right upper body bypasses the thoracic duct, through the right lymphatic duct.</p>"
-    },
-    {
-      "id": "li-09",
-      "type": "hotspot",
-      "topic": "Lymphoid organs",
-      "level": 2,
-      "stem": "Click the largest organ of the lymphatic system.",
-      "image": "img/lymphatic-front.svg",
-      "alt": "Front view of the neck and trunk, with the client's right on the viewer's left: clusters of green nodes on each side of the neck, in each armpit, and along each groin crease; a short green vessel at the base of the neck on the viewer's left; a long, wide green vessel rising from a small green sac in the upper abdomen to the base of the neck on the viewer's right; a blue gland in the upper chest above the heart; a purple-red organ under the diaphragm on the viewer's right; blue veins at the base of the neck; and the faint lungs and heart.",
-      "regions": [
-        {
-          "x": 75.9,
-          "y": 59.2,
-          "w": 8.4,
-          "h": 6.9
-        },
-        {
-          "x": 75.7,
-          "y": 66.9,
-          "w": 6.4,
-          "h": 1.0
-        },
-        {
-          "x": 73.9,
-          "y": 61.3,
-          "w": 1.1,
-          "h": 4.6
-        }
-      ],
-      "rationale": "<p>The <b>spleen</b>, the largest lymphatic organ, lies in the upper left abdomen (the left hypochondriac region), between the stomach and the diaphragm, on the viewer's right in a front view.</p><p>The <b>thymus</b> is the tempting choice, since it's also a lymphoid organ, but it's a small gland in the upper chest.</p><p><b>Takeaway:</b> The spleen: the largest lymphatic organ, in the left upper abdomen under the diaphragm.</p>"
+      "rationale": "<p>The <b>right lymphatic duct</b> drains the right arm, the right upper trunk, and the right side of the head and neck, so lymph from there doesn't pass through the thoracic duct and still drains.</p><p><b>The left arm and left side of the head</b> aren't the right answer: they're also the upper body, but they drain through the thoracic duct, as do the legs, abdomen, and intestines.</p><p><b>Takeaway:</b> Only the right upper body bypasses the thoracic duct, through the right lymphatic duct.</p>"
     },
     {
       "id": "li-10",
@@ -248,7 +128,7 @@
         "The spleen"
       ],
       "answer": 3,
-      "rationale": "<p>The <b>spleen</b> sits in the left upper abdomen, behind the left 9th to 11th ribs. It's spongy and full of blood, so an injury can bleed heavily, causing a fast heart rate and a falling blood pressure.</p><p><b>The liver</b> is the tempting choice, since it also bleeds heavily when injured, but it sits on the right side, under the right ribs.</p><p><b>Takeaway:</b> Left lower rib fractures with signs of bleeding: think of the spleen.</p>"
+      "rationale": "<p>The <b>spleen</b> sits in the left upper abdomen, behind the left 9th to 11th ribs. It's spongy and full of blood, so an injury can bleed heavily, causing a fast heart rate and a falling blood pressure.</p><p><b>The liver</b> isn't the right answer: it also bleeds heavily when injured, but it sits on the right side, under the right ribs.</p><p><b>Takeaway:</b> Left lower rib fractures with signs of bleeding: think of the spleen.</p>"
     },
     {
       "id": "li-11",
@@ -273,7 +153,7 @@
         1,
         0
       ],
-      "rationale": "<p><b>White pulp</b> is the spleen's immune tissue: it produces and matures lymphocytes and processes antigens. <b>Red pulp</b> filters the blood, removing old red cells, and holds a reserve of white cells and platelets.</p><p>The tempting mistake is linking <b>stored white blood cells</b> with the white pulp, since the names match, but the reserve is held in the red pulp.</p><p><b>Takeaway:</b> White pulp: immune work. Red pulp: filtering and storage.</p>"
+      "rationale": "<p><b>White pulp</b> is the spleen's immune tissue: it produces and matures lymphocytes and processes antigens. <b>Red pulp</b> filters the blood, removing old red cells, and holds a reserve of white cells and platelets.</p><p>Linking <b>stored white blood cells</b> with the white pulp is a mistake: the names match, but the reserve is held in the red pulp.</p><p><b>Takeaway:</b> White pulp: immune work. Red pulp: filtering and storage.</p>"
     },
     {
       "id": "li-12",
@@ -288,7 +168,7 @@
         "Lymphedema"
       ],
       "answer": 0,
-      "rationale": "<p>This is <b>negative selection</b>: the thymus screens out T cells that would attack the body's own tissues, protecting against <b>autoimmune disease</b>.</p><p><b>Allergic reactions</b> are the tempting choice, since they're also unwanted immune responses, but they're overreactions to outside substances, like pollen, not attacks on the body's own cells.</p><p><b>Takeaway:</b> The thymus removes self-attacking T cells, guarding against autoimmunity.</p>"
+      "rationale": "<p>This is <b>negative selection</b>: the thymus screens out T cells that would attack the body's own tissues, protecting against <b>autoimmune disease</b>.</p><p><b>Allergic reactions</b> aren't the right answer: they're also unwanted immune responses, but they're overreactions to outside substances, like pollen, not attacks on the body's own cells.</p><p><b>Takeaway:</b> The thymus removes self-attacking T cells, guarding against autoimmunity.</p>"
     },
     {
       "id": "li-13",
@@ -303,7 +183,7 @@
         "They warm and moisten the air before it moves down into the lungs"
       ],
       "answer": 2,
-      "rationale": "<p>The <b>tonsils</b> are lymphoid tissue at the back of the throat. They trap pathogens entering through the mouth and nose and start immune responses.</p><p><b>Closing the airway</b> is the tempting choice, since the tonsils sit near the throat, but that's the epiglottis's job.</p><p><b>Takeaway:</b> Tonsils guard the entrance of the throat as lymphoid tissue.</p>"
+      "rationale": "<p>The <b>tonsils</b> are lymphoid tissue at the back of the throat. They trap pathogens entering through the mouth and nose and start immune responses.</p><p><b>Closing the airway</b> isn't the right answer: the tonsils sit near the throat, but that's the epiglottis's job.</p><p><b>Takeaway:</b> Tonsils guard the entrance of the throat as lymphoid tissue.</p>"
     },
     {
       "id": "li-14",
@@ -330,7 +210,7 @@
           "answer": 0
         }
       ],
-      "rationale": "<p><b>Positive selection</b> keeps T cells that can recognize the body's own markers, and <b>negative selection</b> removes those that react against the body's own tissues. Most developing T cells don't pass, and only those that pass both leave the thymus.</p><p><b>Clonal expansion</b> is the tempting choice for the first blank, since it also increases useful T cells, but it happens later, when mature T cells meet a pathogen.</p><p><b>Takeaway:</b> Positive selection keeps useful T cells; negative selection removes self-attacking ones.</p>"
+      "rationale": "<p><b>Positive selection</b> keeps T cells that can recognize the body's own markers, and <b>negative selection</b> removes those that react against the body's own tissues. Most developing T cells don't pass, and only those that pass both leave the thymus.</p><p><b>Clonal expansion</b> isn't the right answer for the first blank: it also increases useful T cells, but it happens later, when mature T cells meet a pathogen.</p><p><b>Takeaway:</b> Positive selection keeps useful T cells; negative selection removes self-attacking ones.</p>"
     },
     {
       "id": "li-17",
@@ -345,7 +225,7 @@
         "“Chemicals like histamine make the small vessels leaky, so fluid moves into the tissue.”"
       ],
       "answer": 3,
-      "rationale": "<p>Inflammatory mediators, like <b>histamine</b> and kinins, increase the <b>permeability</b> of the small vessels, so fluid and proteins leak into the tissue, causing swelling. Widened vessels also bring redness and warmth.</p><p><b>Vessels tightening</b> is the tempting choice, since it sounds like a way to trap fluid, but inflammation widens the vessels; that's what makes the area red and warm.</p><p><b>Takeaway:</b> Inflammation: wider vessels bring redness and heat; leaky vessels bring swelling.</p>"
+      "rationale": "<p>Inflammatory mediators, like <b>histamine</b> and kinins, increase the <b>permeability</b> of the small vessels, so fluid and proteins leak into the tissue, causing swelling. Widened vessels also bring redness and warmth.</p><p><b>Vessels tightening</b> isn't the right answer: it sounds like a way to trap fluid, but inflammation widens the vessels; that's what makes the area red and warm.</p><p><b>Takeaway:</b> Inflammation: wider vessels bring redness and heat; leaky vessels bring swelling.</p>"
     },
     {
       "id": "li-18",
@@ -359,7 +239,7 @@
         "The cells stick tightly to the vessel wall",
         "The cells squeeze through the vessel wall into the tissue"
       ],
-      "rationale": "<p>Leukocyte extravasation goes: <b>chemoattraction</b>, <b>rolling adhesion</b>, <b>tight adhesion</b>, and <b>transmigration</b> through the vessel wall into the tissue.</p><p>The tempting mistake is putting the tight adhesion first; cells have to slow down by rolling before they can stick firmly.</p><p><b>Takeaway:</b> Attract, roll, stick, squeeze through.</p>"
+      "rationale": "<p>Leukocyte extravasation goes: <b>chemoattraction</b>, <b>rolling adhesion</b>, <b>tight adhesion</b>, and <b>transmigration</b> through the vessel wall into the tissue.</p><p>Putting the tight adhesion first is a mistake; cells have to slow down by rolling before they can stick firmly.</p><p><b>Takeaway:</b> Attract, roll, stick, squeeze through.</p>"
     },
     {
       "id": "li-21",
@@ -374,7 +254,7 @@
         "Neutrophils arriving from the blood"
       ],
       "answer": 1,
-      "rationale": "<p><b>Mast cells</b> are resident cells in the tissues that act as sentinels. When triggered, they release <b>histamine</b>, which makes vessels leaky and causes itching and swelling, as in hives.</p><p><b>Neutrophils</b> are the tempting choice, since they're the most common white cells, but they fight acute bacterial infection by phagocytosis; histamine comes from mast cells and basophils.</p><p><b>Takeaway:</b> Histamine comes from mast cells and basophils: itching, leaky vessels, and swelling.</p>"
+      "rationale": "<p><b>Mast cells</b> are resident cells in the tissues that act as sentinels. When triggered, they release <b>histamine</b>, which makes vessels leaky and causes itching and swelling, as in hives.</p><p><b>Neutrophils</b> aren't the right answer: they're the most common white cells, but they fight acute bacterial infection by phagocytosis; histamine comes from mast cells and basophils.</p><p><b>Takeaway:</b> Histamine comes from mast cells and basophils: itching, leaky vessels, and swelling.</p>"
     },
     {
       "id": "li-22",
@@ -396,7 +276,7 @@
         4,
         5
       ],
-      "rationale": "<p>The signs of <b>acute inflammation</b> are redness and warmth (from widened vessels), swelling (from leaky vessels), pain (from mediators like kinins), and loss of function.</p><p><b>Numbness</b> is the tempting choice, since swelling can press on nerves, but inflammation typically causes pain, not numbness. Coolness is the opposite of what widened vessels bring.</p><p><b>Takeaway:</b> Inflammation: redness, heat, swelling, pain, and loss of function.</p>"
+      "rationale": "<p>The signs of <b>acute inflammation</b> are redness and warmth (from widened vessels), swelling (from leaky vessels), pain (from mediators like kinins), and loss of function.</p><p><b>Numbness</b> isn't the right answer: swelling can press on nerves, but inflammation typically causes pain, not numbness. Coolness is the opposite of what widened vessels bring.</p><p><b>Takeaway:</b> Inflammation: redness, heat, swelling, pain, and loss of function.</p>"
     },
     {
       "id": "li-23",
@@ -423,7 +303,7 @@
         3,
         1
       ],
-      "rationale": "<p><b>B cells</b> become plasma cells that make antibodies (humoral immunity). <b>Killer (CD8+) T cells</b> directly kill infected and cancer cells. <b>Helper (CD4+) T cells</b> activate B cells and killer T cells. <b>Regulatory T cells</b> keep the immune system from attacking the body.</p><p>The tempting mistake is giving antibody production to the helper T cells, since they're needed for it, but they activate the B cells, which make the antibodies.</p><p><b>Takeaway:</b> B cells make antibodies; CD8+ T cells kill; CD4+ T cells help; regulatory T cells restrain.</p>"
+      "rationale": "<p><b>B cells</b> become plasma cells that make antibodies (humoral immunity). <b>Killer (CD8+) T cells</b> directly kill infected and cancer cells. <b>Helper (CD4+) T cells</b> activate B cells and killer T cells. <b>Regulatory T cells</b> keep the immune system from attacking the body.</p><p>Giving antibody production to the helper T cells is a mistake: they're needed for it, but they activate the B cells, which make the antibodies.</p><p><b>Takeaway:</b> B cells make antibodies; CD8+ T cells kill; CD4+ T cells help; regulatory T cells restrain.</p>"
     },
     {
       "id": "li-24",
@@ -438,7 +318,7 @@
         "Plasma cells"
       ],
       "answer": 0,
-      "rationale": "<p><b>Macrophages</b>, which develop from monocytes, have different names in different tissues: <b>alveolar macrophages</b> in the lungs, Kupffer cells in the liver, and microglia in the nervous system.</p><p><b>Kupffer cells</b> are the tempting choice, since they're also macrophages, but they live in the liver.</p><p><b>Takeaway:</b> Macrophages by location: alveolar (lungs), Kupffer (liver), microglia (nervous system).</p>"
+      "rationale": "<p><b>Macrophages</b>, which develop from monocytes, have different names in different tissues: <b>alveolar macrophages</b> in the lungs, Kupffer cells in the liver, and microglia in the nervous system.</p><p><b>Kupffer cells</b> aren't the right answer: they're also macrophages, but they live in the liver.</p><p><b>Takeaway:</b> Macrophages by location: alveolar (lungs), Kupffer (liver), microglia (nervous system).</p>"
     },
     {
       "id": "li-25",
@@ -453,7 +333,7 @@
         "They capture antigens in the tissues and carry them to the lymph nodes"
       ],
       "answer": 3,
-      "rationale": "<p><b>Dendritic cells</b> live in tissues that meet the outside world, like the skin, nose, lungs, and intestines. They capture antigens, <b>migrate to the lymph nodes</b>, and <b>present</b> them to T cells, linking innate and adaptive immunity.</p><p><b>Making antibodies</b> is the tempting choice, since dendritic cells start the specific response, but antibodies come from B cells (plasma cells).</p><p><b>Takeaway:</b> Dendritic cells are messengers: they carry antigens from the tissues to T cells in the nodes.</p>"
+      "rationale": "<p><b>Dendritic cells</b> live in tissues that meet the outside world, like the skin, nose, lungs, and intestines. They capture antigens, <b>migrate to the lymph nodes</b>, and <b>present</b> them to T cells, linking innate and adaptive immunity.</p><p><b>Making antibodies</b> isn't the right answer: dendritic cells start the specific response, but antibodies come from B cells (plasma cells).</p><p><b>Takeaway:</b> Dendritic cells are messengers: they carry antigens from the tissues to T cells in the nodes.</p>"
     },
     {
       "id": "li-26",
@@ -468,7 +348,7 @@
         "Infection, since neutrophils are the first defense against bacteria"
       ],
       "answer": 3,
-      "rationale": "<p><b>Neutrophils</b>, 50% to 70% of white cells, are the first to reach an infection and destroy bacteria by phagocytosis. Too few means a high risk of <b>infection</b>.</p><p><b>Bleeding</b> is the tempting choice, since chemotherapy can lower platelets too, but platelets, not neutrophils, help blood clot.</p><p><b>Takeaway:</b> Low neutrophils mean high infection risk; low platelets mean bleeding risk.</p>"
+      "rationale": "<p><b>Neutrophils</b>, 50% to 70% of white cells, are the first to reach an infection and destroy bacteria by phagocytosis. Too few means a high risk of <b>infection</b>.</p><p><b>Bleeding</b> isn't the right answer: chemotherapy can lower platelets too, but platelets, not neutrophils, help blood clot.</p><p><b>Takeaway:</b> Low neutrophils mean high infection risk; low platelets mean bleeding risk.</p>"
     },
     {
       "id": "li-28",
@@ -483,7 +363,7 @@
         "The virus can't enter the cells of a vaccinated person"
       ],
       "answer": 2,
-      "rationale": "<p>A vaccine trains the adaptive immune system, which keeps <b>memory B and T cells</b>. On exposure, they recognize the virus and respond quickly and strongly, before it can cause illness.</p><p><b>Antibodies staying for life</b> is the tempting choice, but antibodies fade over time; protection lasts because memory cells can quickly make more.</p><p><b>Takeaway:</b> Vaccines work through memory: a faster, stronger response the next time.</p>"
+      "rationale": "<p>A vaccine trains the adaptive immune system, which keeps <b>memory B and T cells</b>. On exposure, they recognize the virus and respond quickly and strongly, before it can cause illness.</p><p><b>Antibodies staying for life</b> isn't the right answer: antibodies fade over time; protection lasts because memory cells can quickly make more.</p><p><b>Takeaway:</b> Vaccines work through memory: a faster, stronger response the next time.</p>"
     },
     {
       "id": "li-29",
@@ -510,7 +390,7 @@
         2,
         1
       ],
-      "rationale": "<p><b>IgA</b> protects body secretions, like tears, saliva, and colostrum. <b>IgM</b> is the first antibody made in a new response. <b>IgG</b> is the most common antibody in the blood, about 75%. <b>IgE</b> defends against parasites and drives allergic reactions.</p><p>The tempting mistake is calling <b>IgG</b> the first antibody, since it's the most common, but IgM comes first and IgG follows.</p><p><b>Takeaway:</b> IgA in secretions, IgM first, IgG most common, IgE for parasites and allergy.</p>"
+      "rationale": "<p><b>IgA</b> protects body secretions, like tears, saliva, and colostrum. <b>IgM</b> is the first antibody made in a new response. <b>IgG</b> is the most common antibody in the blood, about 75%. <b>IgE</b> defends against parasites and drives allergic reactions.</p><p>Calling <b>IgG</b> the first antibody is a mistake: it's the most common, but IgM comes first and IgG follows.</p><p><b>Takeaway:</b> IgA in secretions, IgM first, IgG most common, IgE for parasites and allergy.</p>"
     },
     {
       "id": "li-30",
@@ -525,7 +405,7 @@
         "“An antigen is a type of white blood cell; an antibody is what it releases.”"
       ],
       "answer": 1,
-      "rationale": "<p>An <b>antigen</b> is a marker, found on viruses, bacteria, tumors, and the body's own cells, that the immune system recognizes. An <b>antibody</b> (immunoglobulin) is a protective protein that binds to a specific antigen.</p><p><b>Reversing the two</b> is the tempting choice, since the words sound alike; remember that the <b>anti</b>body acts <b>against</b> the antigen.</p><p><b>Takeaway:</b> Antigen: the marker. Antibody: the protein that binds it.</p>"
+      "rationale": "<p>An <b>antigen</b> is a marker, found on viruses, bacteria, tumors, and the body's own cells, that the immune system recognizes. An <b>antibody</b> (immunoglobulin) is a protective protein that binds to a specific antigen.</p><p><b>Reversing the two</b> isn't the right answer, even though the words sound alike; remember that the <b>anti</b>body acts <b>against</b> the antigen.</p><p><b>Takeaway:</b> Antigen: the marker. Antibody: the protein that binds it.</p>"
     },
     {
       "id": "li-31",
@@ -540,7 +420,7 @@
         "“Your body starts fighting a virus after you've had a fever for several days.”"
       ],
       "answer": 2,
-      "rationale": "<p>The <b>innate</b> immune system responds right away, but the <b>adaptive</b> system, which targets a specific germ, takes about <b>4 to 7 days</b> to mount a strong response the first time. After that, memory cells make later responses faster.</p><p><b>No defenses until the medicine</b> is the tempting choice, since the client felt so sick, but innate defenses were working from the start; the specific response just takes days.</p><p><b>Takeaway:</b> First exposure: innate right away, adaptive in about 4 to 7 days. Later exposures: memory makes it fast.</p>"
+      "rationale": "<p>The <b>innate</b> immune system responds right away, but the <b>adaptive</b> system, which targets a specific germ, takes about <b>4 to 7 days</b> to mount a strong response the first time. After that, memory cells make later responses faster.</p><p><b>No defenses until the medicine</b> isn't the right answer: the client felt so sick, but innate defenses were working from the start; the specific response just takes days.</p><p><b>Takeaway:</b> First exposure: innate right away, adaptive in about 4 to 7 days. Later exposures: memory makes it fast.</p>"
     },
     {
       "id": "li-37",
@@ -555,7 +435,7 @@
         "The client's antibodies are attacking the influenza vaccine"
       ],
       "answer": 0,
-      "rationale": "<p>A <b>cytokine storm</b> (hypercytokinemia) is an <b>uncontrolled release of cytokines</b> by the immune system. The inflammation it causes can damage organs; it has been seen in severe influenza, COVID-19, and acute pancreatitis.</p><p><b>Stopped producing cytokines</b> is the tempting choice, since the client is so sick, but the problem is too much of the immune response, not too little.</p><p><b>Takeaway:</b> A cytokine storm is the immune system overreacting, harming the body it's protecting.</p>"
+      "rationale": "<p>A <b>cytokine storm</b> (hypercytokinemia) is an <b>uncontrolled release of cytokines</b> by the immune system. The inflammation it causes can damage organs; it has been seen in severe influenza, COVID-19, and acute pancreatitis.</p><p><b>Stopped producing cytokines</b> isn't the right answer: the client is so sick, but the problem is too much of the immune response, not too little.</p><p><b>Takeaway:</b> A cytokine storm is the immune system overreacting, harming the body it's protecting.</p>"
     },
     {
       "id": "li-44",
@@ -570,7 +450,7 @@
         "“HIV makes your body produce too many antibodies, which slowly wear out the immune system.”"
       ],
       "answer": 0,
-      "rationale": "<p>HIV invades <b>helper (CD4+) T cells</b>. As their number falls, B cells and killer T cells aren't activated well, and cell-mediated immunity weakens, so other infections take hold.</p><p><b>Too many antibodies</b> is the tempting choice, since the immune system is clearly involved, but the problem is the loss of helper T cells that coordinate the response.</p><p><b>Takeaway:</b> HIV destroys CD4+ helper T cells, which weakens the whole adaptive response.</p>"
+      "rationale": "<p>HIV invades <b>helper (CD4+) T cells</b>. As their number falls, B cells and killer T cells aren't activated well, and cell-mediated immunity weakens, so other infections take hold.</p><p><b>Too many antibodies</b> isn't the right answer: the immune system is clearly involved, but the problem is the loss of helper T cells that coordinate the response.</p><p><b>Takeaway:</b> HIV destroys CD4+ helper T cells, which weakens the whole adaptive response.</p>"
     },
     {
       "id": "li-51",
@@ -585,7 +465,7 @@
         "Swollen neck nodes, with normal blood counts"
       ],
       "answer": 2,
-      "rationale": "<p>The <b>bone marrow</b> makes all the blood cells: red cells, white cells, and platelets. When it's crowded out, all three fall: fewer white cells (<b>infections</b>), fewer platelets (<b>bruising and bleeding</b>), and fewer red cells (<b>fatigue</b>).</p><p><b>Fatigue with normal white cells</b> is the tempting choice, since anemia is the best-known effect, but the marrow makes every blood cell line, so all of them drop.</p><p><b>Takeaway:</b> Bone marrow failure lowers red cells, white cells, and platelets together.</p>"
+      "rationale": "<p>The <b>bone marrow</b> makes all the blood cells: red cells, white cells, and platelets. When it's crowded out, all three fall: fewer white cells (<b>infections</b>), fewer platelets (<b>bruising and bleeding</b>), and fewer red cells (<b>fatigue</b>).</p><p><b>Fatigue with normal white cells</b> isn't the right answer: anemia is the best-known effect, but the marrow makes every blood cell line, so all of them drop.</p><p><b>Takeaway:</b> Bone marrow failure lowers red cells, white cells, and platelets together.</p>"
     },
     {
       "id": "li-52",
@@ -600,7 +480,7 @@
         "“It filters lymph and traps germs before they reach the blood.”"
       ],
       "answer": 0,
-      "rationale": "<p>All blood cells form from stem cells in the <b>bone marrow</b>, and <b>B cells</b> also mature there.</p><p><b>Where T cells mature</b> is the tempting choice, since T cells do form in the marrow, but they mature in the <b>thymus</b>. Filtering the blood is the spleen's job, and filtering lymph is the lymph nodes'.</p><p><b>Takeaway:</b> Bone marrow: all blood cells form there; B cells mature there; T cells mature in the thymus.</p>"
+      "rationale": "<p>All blood cells form from stem cells in the <b>bone marrow</b>, and <b>B cells</b> also mature there.</p><p><b>Where T cells mature</b> isn't the right answer: T cells do form in the marrow, but they mature in the <b>thymus</b>. Filtering the blood is the spleen's job, and filtering lymph is the lymph nodes'.</p><p><b>Takeaway:</b> Bone marrow: all blood cells form there; B cells mature there; T cells mature in the thymus.</p>"
     },
     {
       "id": "li-53",
@@ -628,7 +508,7 @@
         2,
         0
       ],
-      "rationale": "<p>Every white cell starts in the <b>bone marrow</b>. Neutrophils and B cells finish maturing there; <b>T cells</b> finish in the <b>thymus</b>; mast cell precursors and monocytes leave the blood and mature in the <b>tissues</b> (monocytes become macrophages).</p><p>The tempting mistake is putting T cells in the bone marrow, since that's where they're made. Their training happens in the thymus.</p><p><b>Takeaway:</b> Marrow: neutrophils, B cells. Thymus: T cells. Tissues: mast cells, macrophages.</p>"
+      "rationale": "<p>Every white cell starts in the <b>bone marrow</b>. Neutrophils and B cells finish maturing there; <b>T cells</b> finish in the <b>thymus</b>; mast cell precursors and monocytes leave the blood and mature in the <b>tissues</b> (monocytes become macrophages).</p><p>Putting T cells in the bone marrow is a mistake, even though that's where they're made. Their training happens in the thymus.</p><p><b>Takeaway:</b> Marrow: neutrophils, B cells. Thymus: T cells. Tissues: mast cells, macrophages.</p>"
     },
     {
       "id": "li-54",
@@ -643,7 +523,7 @@
         "Eosinophils carry oxygen, so they rise when breathing is hard"
       ],
       "answer": 0,
-      "rationale": "<p><b>Eosinophils</b> fight parasites and take part in <b>allergic reactions and asthma</b>, so a high count fits allergic asthma.</p><p><b>Fighting bacteria</b> is the tempting choice, since a high white count often means infection, but bacteria raise <b>neutrophils</b>.</p><p><b>Takeaway:</b> Eosinophils: parasites, allergies, asthma.</p>"
+      "rationale": "<p><b>Eosinophils</b> fight parasites and take part in <b>allergic reactions and asthma</b>, so a high count fits allergic asthma.</p><p><b>Fighting bacteria</b> isn't the right answer: a high white count often means infection, but bacteria raise <b>neutrophils</b>.</p><p><b>Takeaway:</b> Eosinophils: parasites, allergies, asthma.</p>"
     },
     {
       "id": "li-55",
@@ -658,7 +538,7 @@
         "Basophils circulate in the blood; mast cells stay in the tissues"
       ],
       "answer": 3,
-      "rationale": "<p><b>Basophils</b> travel in the <b>blood</b>; <b>mast cells</b> live in the <b>tissues</b> (skin, airways, gut) as sentinels. Both release histamine, which makes vessels leaky and causes itching and swelling.</p><p>The reversed pair is the tempting choice, since the two cells are so alike. Remember that mast cells sit in place, guarding the tissues.</p><p><b>Takeaway:</b> Basophils in the blood, mast cells in the tissues: both release histamine.</p>"
+      "rationale": "<p><b>Basophils</b> travel in the <b>blood</b>; <b>mast cells</b> live in the <b>tissues</b> (skin, airways, gut) as sentinels. Both release histamine, which makes vessels leaky and causes itching and swelling.</p><p>The reversed pair isn't the right answer, even though the two cells are so alike. Remember that mast cells sit in place, guarding the tissues.</p><p><b>Takeaway:</b> Basophils in the blood, mast cells in the tissues: both release histamine.</p>"
     },
     {
       "id": "li-56",
@@ -673,7 +553,7 @@
         "They kill virus-infected cells without engulfing them"
       ],
       "answer": 1,
-      "rationale": "<p><b>Monocytes</b> leave the blood and become <b>macrophages</b> (or dendritic cells) in the tissues. Macrophages engulf germs, dead cells, and debris, and show antigens to T cells.</p><p><b>Plasma cells</b> are the tempting choice, since they also develop from cells in the blood, but plasma cells come from <b>B cells</b>.</p><p><b>Takeaway:</b> Monocytes become macrophages: the big eaters of the tissues.</p>"
+      "rationale": "<p><b>Monocytes</b> leave the blood and become <b>macrophages</b> (or dendritic cells) in the tissues. Macrophages engulf germs, dead cells, and debris, and show antigens to T cells.</p><p><b>Plasma cells</b> aren't the right answer: they also develop from cells in the blood, but plasma cells come from <b>B cells</b>.</p><p><b>Takeaway:</b> Monocytes become macrophages: the big eaters of the tissues.</p>"
     },
     {
       "id": "li-57",
@@ -688,7 +568,7 @@
         "Dead neutrophils, bacteria, and damaged tissue"
       ],
       "answer": 3,
-      "rationale": "<p><b>Neutrophils</b> are the first white cells to arrive and engulf bacteria; they die quickly, and their remains, with the bacteria and damaged tissue, form <b>pus</b>.</p><p><b>Antibodies</b> is the tempting choice, since they bind bacteria too, but they're proteins dissolved in fluid, not the thick material of pus.</p><p><b>Takeaway:</b> Pus is mostly dead neutrophils: a sign they've been fighting bacteria.</p>"
+      "rationale": "<p><b>Neutrophils</b> are the first white cells to arrive and engulf bacteria; they die quickly, and their remains, with the bacteria and damaged tissue, form <b>pus</b>.</p><p><b>Antibodies</b> isn't the right answer: they bind bacteria too, but they're proteins dissolved in fluid, not the thick material of pus.</p><p><b>Takeaway:</b> Pus is mostly dead neutrophils: a sign they've been fighting bacteria.</p>"
     },
     {
       "id": "li-58",
@@ -716,7 +596,7 @@
         0,
         2
       ],
-      "rationale": "<p><b>Acute</b> inflammation starts within minutes to hours and lasts days: redness, warmth, swelling, and pain, with <b>neutrophils</b> arriving first, then macrophages. <b>Subacute</b> inflammation lasts about <b>2 to 6 weeks</b>. <b>Chronic</b> inflammation lasts months or longer; macrophages and lymphocytes keep it going, and it's linked to heart disease, diabetes, and arthritis.</p><p>The tempting mistake is calling chronic inflammation the red, swollen kind. Chronic inflammation is usually low-grade and quiet.</p><p><b>Takeaway:</b> Acute: fast and red, neutrophils. Subacute: 2 to 6 weeks. Chronic: quiet and long, macrophages and lymphocytes.</p>"
+      "rationale": "<p><b>Acute</b> inflammation starts within minutes to hours and lasts days: redness, warmth, swelling, and pain, with <b>neutrophils</b> arriving first, then macrophages. <b>Subacute</b> inflammation lasts about <b>2 to 6 weeks</b>. <b>Chronic</b> inflammation lasts months or longer; macrophages and lymphocytes keep it going, and it's linked to heart disease, diabetes, and arthritis.</p><p>Calling chronic inflammation the red, swollen kind is a mistake. Chronic inflammation is usually low-grade and quiet.</p><p><b>Takeaway:</b> Acute: fast and red, neutrophils. Subacute: 2 to 6 weeks. Chronic: quiet and long, macrophages and lymphocytes.</p>"
     },
     {
       "id": "li-59",
@@ -743,7 +623,7 @@
         3,
         2
       ],
-      "rationale": "<p><b>Interferons</b> come from virus-infected cells and help nearby cells resist the virus. <b>Chemokines</b> call white cells to a site. <b>Tumor necrosis factor</b>, mostly from macrophages, drives inflammation and fever, and too much at once can cause shock. <b>Interleukins</b> pass messages between white cells; IL-1 and IL-6 cause fever.</p><p>The tempting mix-up is between chemokines and interleukins, since both are messages. Chemokines specifically make cells <b>move</b> toward the site.</p><p><b>Takeaway:</b> Chemokines call, interferons fight viruses, interleukins message, TNF inflames.</p>"
+      "rationale": "<p><b>Interferons</b> come from virus-infected cells and help nearby cells resist the virus. <b>Chemokines</b> call white cells to a site. <b>Tumor necrosis factor</b>, mostly from macrophages, drives inflammation and fever, and too much at once can cause shock. <b>Interleukins</b> pass messages between white cells; IL-1 and IL-6 cause fever.</p><p>Mixing up chemokines and interleukins is a mistake, even though both are messages. Chemokines specifically make cells <b>move</b> toward the site.</p><p><b>Takeaway:</b> Chemokines call, interferons fight viruses, interleukins message, TNF inflames.</p>"
     },
     {
       "id": "li-60",
@@ -758,7 +638,7 @@
         "“Your body spots a new virus by its size, since viruses look alike.”"
       ],
       "answer": 1,
-      "rationale": "<p>This is the result of <b>heterogeneity</b>: as lymphocytes develop, their receptor genes are shuffled and mutated, so each B and T cell carries a <b>unique</b> receptor. With so much variety, some cells match almost any germ, and those cells multiply when it appears.</p><p><b>Copying the virus's shape</b> is the tempting choice, since the response is so specific, but the matching receptors already exist before the virus arrives; the virus selects them.</p><p><b>Takeaway:</b> Receptor variety (heterogeneity) lets the immune system recognize germs it has never seen.</p>"
+      "rationale": "<p>This is the result of <b>heterogeneity</b>: as lymphocytes develop, their receptor genes are shuffled and mutated, so each B and T cell carries a <b>unique</b> receptor. With so much variety, some cells match almost any germ, and those cells multiply when it appears.</p><p><b>Copying the virus's shape</b> isn't the right answer: the response is so specific, but the matching receptors already exist before the virus arrives; the virus selects them.</p><p><b>Takeaway:</b> Receptor variety (heterogeneity) lets the immune system recognize germs it has never seen.</p>"
     },
     {
       "id": "li-61",
@@ -773,7 +653,7 @@
         "Antibody levels depend on which arm the vaccine was given in"
       ],
       "answer": 0,
-      "rationale": "<p>The immune response is <b>heterogeneous</b>: people differ in their receptor genes, age, and health (for example, older adults and people on immune-suppressing drugs often respond less strongly), so the same vaccine can give different antibody levels.</p><p><b>A past infection</b> is the tempting choice, but that would usually make the response <b>stronger</b>, since memory cells are already there.</p><p><b>Takeaway:</b> People respond differently to the same germ or vaccine: one result of heterogeneity.</p>"
+      "rationale": "<p>The immune response is <b>heterogeneous</b>: people differ in their receptor genes, age, and health (for example, older adults and people on immune-suppressing drugs often respond less strongly), so the same vaccine can give different antibody levels.</p><p><b>A past infection</b> isn't the right answer: that would usually make the response <b>stronger</b>, since memory cells are already there.</p><p><b>Takeaway:</b> People respond differently to the same germ or vaccine: one result of heterogeneity.</p>"
     },
     {
       "id": "li-62",
@@ -788,7 +668,7 @@
         "A new infection has started, since the two results disagree"
       ],
       "answer": 1,
-      "rationale": "<p><b>CRP</b> rises within hours and falls quickly once inflammation settles. The <b>ESR</b> rises and falls more <b>slowly</b>, so it often lags behind. A falling CRP with a still-high ESR fits inflammation that's improving.</p><p><b>The infection is getting worse</b> is the tempting choice, since the ESR is still high, but the faster-moving CRP is the better sign of the current trend.</p><p><b>Takeaway:</b> CRP changes fast; ESR changes slowly. Follow the trend.</p>"
+      "rationale": "<p><b>CRP</b> rises within hours and falls quickly once inflammation settles. The <b>ESR</b> rises and falls more <b>slowly</b>, so it often lags behind. A falling CRP with a still-high ESR fits inflammation that's improving.</p><p><b>The infection is getting worse</b> isn't the right answer: the ESR is still high, but the faster-moving CRP is the better sign of the current trend.</p><p><b>Takeaway:</b> CRP changes fast; ESR changes slowly. Follow the trend.</p>"
     },
     {
       "id": "li-63",
@@ -803,7 +683,7 @@
         "“It shows whether your prostate is inflamed or enlarged.”"
       ],
       "answer": 2,
-      "rationale": "<p><b>Procalcitonin</b> stays very low in health and rises sharply in <b>bacterial</b> infections and sepsis, while staying low in most viral infections. It helps the provider decide whether antibiotics are likely to help.</p><p><b>How fast red cells settle</b> is the tempting choice, since it's another inflammation test, but that's the <b>ESR</b>, which doesn't tell bacteria from other causes.</p><p><b>Takeaway:</b> Procalcitonin points toward bacterial infection; CRP and ESR show inflammation of any cause.</p>"
+      "rationale": "<p><b>Procalcitonin</b> stays very low in health and rises sharply in <b>bacterial</b> infections and sepsis, while staying low in most viral infections. It helps the provider decide whether antibiotics are likely to help.</p><p><b>How fast red cells settle</b> isn't the right answer: it's another inflammation test, but that's the <b>ESR</b>, which doesn't tell bacteria from other causes.</p><p><b>Takeaway:</b> Procalcitonin points toward bacterial infection; CRP and ESR show inflammation of any cause.</p>"
     },
     {
       "id": "li-64",
@@ -818,7 +698,7 @@
         "“An inflamed prostate can raise PSA too; the provider will follow up.”"
       ],
       "answer": 3,
-      "rationale": "<p><b>PSA</b> is made by normal and cancerous prostate cells. Cancer can raise it, but so can <b>prostatitis</b> (inflammation) and an enlarged prostate (BPH). With signs of prostatitis, the high PSA needs follow-up, not a conclusion.</p><p><b>“A high PSA confirms cancer”</b> is the tempting choice, since PSA is used to screen for prostate cancer, but it isn't specific to cancer.</p><p><b>Takeaway:</b> PSA rises with prostate cancer, BPH, and prostatitis.</p>"
+      "rationale": "<p><b>PSA</b> is made by normal and cancerous prostate cells. Cancer can raise it, but so can <b>prostatitis</b> (inflammation) and an enlarged prostate (BPH). With signs of prostatitis, the high PSA needs follow-up, not a conclusion.</p><p><b>“A high PSA confirms cancer”</b> isn't the right answer: PSA is used to screen for prostate cancer, but it isn't specific to cancer.</p><p><b>Takeaway:</b> PSA rises with prostate cancer, BPH, and prostatitis.</p>"
     },
     {
       "id": "li-65",
@@ -833,7 +713,7 @@
         "A tetanus booster alone, since the others are for children"
       ],
       "answer": 1,
-      "rationale": "<p>The instructor's list: keep up with vaccines and a record of them: childhood vaccines, <b>yearly</b> flu and COVID-19 vaccines, and <b>pneumococcal and shingles</b> vaccines for older adults.</p><p><b>No more vaccines</b> is the tempting choice, since the client is healthy, but protection from some childhood vaccines fades, and older adults face new risks like shingles and pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal and shingles, plus yearly flu and COVID-19.</p>"
+      "rationale": "<p>The instructor's list: keep up with vaccines and a record of them: childhood vaccines, <b>yearly</b> flu and COVID-19 vaccines, and <b>pneumococcal and shingles</b> vaccines for older adults.</p><p><b>No more vaccines</b> isn't the right answer: the client is healthy, but protection from some childhood vaccines fades, and older adults face new risks like shingles and pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal and shingles, plus yearly flu and COVID-19.</p>"
     },
     {
       "id": "li-66",
@@ -848,7 +728,7 @@
         "“They affect your sleep, but they have no effect on inflammation.”"
       ],
       "answer": 2,
-      "rationale": "<p>The instructor's guide names <b>energy drinks</b> as a lifestyle choice that harms health: they're high in <b>sugar and artificial ingredients</b>, which can lead to inflammation.</p><p><b>Supplying vitamins</b> is the tempting choice, since some drinks add vitamins, but they don't replace whole foods, and the sugar works against the immune system.</p><p><b>Takeaway:</b> Energy drinks: sugar and additives that promote inflammation.</p>"
+      "rationale": "<p>The instructor's guide names <b>energy drinks</b> as a lifestyle choice that harms health: they're high in <b>sugar and artificial ingredients</b>, which can lead to inflammation.</p><p><b>Supplying vitamins</b> isn't the right answer: some drinks add vitamins, but they don't replace whole foods, and the sugar works against the immune system.</p><p><b>Takeaway:</b> Energy drinks: sugar and additives that promote inflammation.</p>"
     },
     {
       "id": "li-67",
@@ -863,7 +743,7 @@
         "“Stop the supplement, since herbs weaken the immune system.”"
       ],
       "answer": 0,
-      "rationale": "<p>The instructor's guide: herbal supplements can support immune health <b>with the provider's guidance</b>, as <b>part of</b> other healthy choices (exercise, a healthy diet, and vaccinations), never in place of them. Some interact with medications.</p><p><b>“Stop the supplement”</b> is the tempting choice, since it sounds cautious, but the nurse's role is to involve the provider, not to forbid it; the key teaching is that it doesn't replace the vaccine.</p><p><b>Takeaway:</b> Supplements: with the provider's guidance, alongside vaccines, diet, and exercise.</p>"
+      "rationale": "<p>The instructor's guide: herbal supplements can support immune health <b>with the provider's guidance</b>, as <b>part of</b> other healthy choices (exercise, a healthy diet, and vaccinations), never in place of them. Some interact with medications.</p><p><b>“Stop the supplement”</b> isn't the right answer: it sounds cautious, but the nurse's role is to involve the provider, not to forbid it; the key teaching is that it doesn't replace the vaccine.</p><p><b>Takeaway:</b> Supplements: with the provider's guidance, alongside vaccines, diet, and exercise.</p>"
     },
     {
       "id": "li-68",
@@ -882,7 +762,7 @@
         6,
         7
       ],
-      "rationale": "<p>The red, warm, swollen, painful area with drainage and chills shows <b>acute inflammation</b> from an infection that's spreading into the body; its size is a baseline to track. The supplement needs the provider's review, the energy drinks feed inflammation, and the missing pneumococcal vaccine is a prevention gap.</p><p><b>The scrape on the fence</b> is the tempting one to highlight, since it started everything, but it's the history, not something to act on now. Daily walks and strong pulses are reassuring.</p><p><b>Takeaway:</b> Act on the signs of inflammation and infection, then the gaps in immune health.</p>"
+      "rationale": "<p>The red, warm, swollen, painful area with drainage and chills shows <b>acute inflammation</b> from an infection that's spreading into the body; its size is a baseline to track. The supplement needs the provider's review, the energy drinks feed inflammation, and the missing pneumococcal vaccine is a prevention gap.</p><p><b>The scrape on the fence</b> doesn't need follow-up: it started everything, but it's the history, not something to act on now. Daily walks and strong pulses are reassuring.</p><p><b>Takeaway:</b> Act on the signs of inflammation and infection, then the gaps in immune health.</p>"
     },
     {
       "id": "li-69",
@@ -911,7 +791,7 @@
         1,
         2
       ],
-      "rationale": "<p>A high white count driven by <b>neutrophils</b>, and a high <b>procalcitonin</b>, point to a <b>bacterial</b> infection. <b>CRP</b> and <b>ESR</b> show that inflammation is present but not its cause. The hemoglobin is normal.</p><p>The tempting mistake is reading a high CRP as proof of bacteria. CRP rises with any inflammation; procalcitonin is the more specific clue.</p><p><b>Takeaway:</b> Neutrophils and procalcitonin: bacteria. CRP and ESR: inflammation of any cause.</p>"
+      "rationale": "<p>A high white count driven by <b>neutrophils</b>, and a high <b>procalcitonin</b>, point to a <b>bacterial</b> infection. <b>CRP</b> and <b>ESR</b> show that inflammation is present but not its cause. The hemoglobin is normal.</p><p>Reading a high CRP as proof of bacteria is a mistake. CRP rises with any inflammation; procalcitonin is the more specific clue.</p><p><b>Takeaway:</b> Neutrophils and procalcitonin: bacteria. CRP and ESR: inflammation of any cause.</p>"
     },
     {
       "id": "li-70",
@@ -947,7 +827,7 @@
           "answer": 0
         }
       ],
-      "rationale": "<p>Redness, warmth, swelling, and pain within days of an injury are <b>acute</b> inflammation. <b>Neutrophils</b> arrive first, followed by macrophages, following the trail of <b>chemokines</b> to the site.</p><p><b>Macrophages</b> is the tempting choice, since they're key to inflammation, but they arrive after the neutrophils and clean up.</p><p><b>Takeaway:</b> Acute inflammation: neutrophils first, called in by chemokines.</p>"
+      "rationale": "<p>Redness, warmth, swelling, and pain within days of an injury are <b>acute</b> inflammation. <b>Neutrophils</b> arrive first, followed by macrophages, following the trail of <b>chemokines</b> to the site.</p><p><b>Macrophages</b> isn't the right answer: they're key to inflammation, but they arrive after the neutrophils and clean up.</p><p><b>Takeaway:</b> Acute inflammation: neutrophils first, called in by chemokines.</p>"
     },
     {
       "id": "li-71",
@@ -970,7 +850,7 @@
         2,
         3
       ],
-      "rationale": "<p>The instructor's interventions: <b>supplements with the provider's guidance</b>, <b>vaccinations</b> (pneumococcal for older adults), a <b>whole-food diet</b>, and <b>regular exercise</b>; energy drinks promote inflammation.</p><p><b>Stopping the walks</b> is the tempting choice, since the leg is sore, but regular exercise supports immune health; the client can rest the leg as the provider directs without giving up activity for a month.</p><p><b>Takeaway:</b> Teach vaccines, whole foods, exercise, and supplements only with the provider's guidance.</p>"
+      "rationale": "<p>The instructor's interventions: <b>supplements with the provider's guidance</b>, <b>vaccinations</b> (pneumococcal for older adults), a <b>whole-food diet</b>, and <b>regular exercise</b>; energy drinks promote inflammation.</p><p><b>Stopping the walks</b> isn't the right answer: the leg is sore, but regular exercise supports immune health; the client can rest the leg as the provider directs without giving up activity for a month.</p><p><b>Takeaway:</b> Teach vaccines, whole foods, exercise, and supplements only with the provider's guidance.</p>"
     },
     {
       "id": "li-72",
@@ -999,7 +879,99 @@
         1,
         2
       ],
-      "rationale": "<p>The fever, CRP, and procalcitonin are all falling, which fits an infection responding to treatment. The ESR hasn't changed, which is expected, since it falls slowly. But the <b>red area has grown</b>, so the infection may be spreading at the edges: report it.</p><p>The tempting mistake is calling everything improved because the labs are better. A spreading area of redness needs follow-up even when the numbers improve.</p><p><b>Takeaway:</b> Read every finding: improving markers don't cancel a spreading infection.</p>"
+      "rationale": "<p>The fever, CRP, and procalcitonin are all falling, which fits an infection responding to treatment. The ESR hasn't changed, which is expected, since it falls slowly. But the <b>red area has grown</b>, so the infection may be spreading at the edges: report it.</p><p>Calling everything improved because the labs are better is a mistake. A spreading area of redness needs follow-up even when the numbers improve.</p><p><b>Takeaway:</b> Read every finding: improving markers don't cancel a spreading infection.</p>"
+    },
+    {
+      "id": "li-73",
+      "type": "matrix",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing where lymph drains. For each infection, click to specify the lymph node group most likely to swell.",
+      "rowHeader": "Infection",
+      "columns": [
+        "Cervical",
+        "Axillary",
+        "Inguinal"
+      ],
+      "rows": [
+        "Strep throat",
+        "An infected cut on the hand",
+        "An infected ingrown toenail",
+        "An abscessed tooth",
+        "A skin infection on the lower leg"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0,
+        2
+      ],
+      "rationale": "<p>Nodes swell near the area they drain: the throat, mouth, and teeth drain to the <b>cervical</b> nodes in the neck; the hand and arm to the <b>axillary</b> nodes in the armpit; and the foot and leg to the <b>inguinal</b> nodes in the groin.</p><p>Putting the toenail with the axillary nodes is a mistake: the axillary group is large, but the foot drains to the inguinal nodes.</p><p><b>Takeaway:</b> Throat and teeth → cervical, arm → axillary, leg → inguinal.</p>"
+    },
+    {
+      "id": "li-74",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 3,
+      "stem": "A client has an infected cut on the left foot, with red streaks running up the leg. Which finding should the nurse expect when palpating the lymph nodes?",
+      "options": [
+        "Tender, enlarged nodes in the right groin",
+        "Tender, enlarged nodes in the left armpit",
+        "Tender, enlarged nodes in the left groin",
+        "Tender, enlarged nodes on the left side of the neck"
+      ],
+      "answer": 2,
+      "rationale": "<p>Lymph from the foot and leg drains to the <b>inguinal</b> nodes in the groin on the <b>same side</b>, so a left-foot infection enlarges the left groin nodes, which become tender as their lymphocytes respond. The red streaks are <b>lymphangitis</b>, inflammation of the lymph vessels carrying the infection toward those nodes.</p><p><b>The right groin</b> isn't the right answer: lymph drains to the nodes on the same side. The armpit and neck nodes drain the arm and the head.</p><p><b>Takeaway:</b> Foot and leg infections: inguinal nodes, on the same side.</p>"
+    },
+    {
+      "id": "li-75",
+      "type": "dropdown",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing how lymph returns to the blood. Complete the following sentences.",
+      "text": "Lymph from the legs, the abdomen, the left arm, and the left side of the head and chest returns to the blood through the {{0}}, which empties into a vein at the base of the neck on the {{1}} side. The {{2}} drains the right upper part of the body.",
+      "blanks": [
+        {
+          "options": [
+            "thoracic duct",
+            "right lymphatic duct",
+            "cisterna chyli"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "right",
+            "left"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "cisterna chyli",
+            "right lymphatic duct",
+            "thoracic duct"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>The <b>thoracic duct</b> rises from the cisterna chyli in the abdomen and carries lymph from the legs, abdomen, left arm, and left side of the head and chest, emptying into a vein at the base of the neck on the <b>left</b>. The short <b>right lymphatic duct</b> drains the right arm and the right side of the head and chest.</p><p>The <b>cisterna chyli</b> isn't the right answer for the first blank: it collects lymph from the intestines and lower body, but it's where the thoracic duct begins, not where lymph returns to the blood.</p><p><b>Takeaway:</b> Thoracic duct: most of the body, into the left side of the neck. Right lymphatic duct: the right upper part.</p>"
+    },
+    {
+      "id": "li-76",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "After a blow to the left side of the abdomen, a client has tenderness in the left upper quadrant, under the ribs. Which lymphatic organ lies in this area?",
+      "options": [
+        "The thymus",
+        "The spleen",
+        "The liver",
+        "The appendix"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>spleen</b>, the largest lymphatic organ, lies in the left upper quadrant, under the lower left ribs and the diaphragm. It filters the blood, holds lymphocytes and macrophages, and stores red cells and platelets, and a blow there can injure it and cause bleeding.</p><p><b>The liver</b> isn't the right answer: it lies mostly on the right side, and it isn't a lymphatic organ. The thymus is in the upper chest, and the appendix, which has lymphoid tissue, is in the right lower quadrant.</p><p><b>Takeaway:</b> The spleen: the largest lymphatic organ, in the left upper quadrant under the ribs.</p>"
     }
   ]
 }

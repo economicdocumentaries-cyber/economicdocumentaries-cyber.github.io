@@ -56,7 +56,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 0,
-      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>.</p><p><b>Metabolic acidosis</b> isn't the right answer: the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-02",
@@ -107,7 +107,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 1,
-      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>.</p><p><b>Metabolic alkalosis</b> is the tempting choice, since the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>.</p><p><b>Metabolic alkalosis</b> isn't the right answer: the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-03",
@@ -158,7 +158,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 1,
-      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>.</p><p><b>Respiratory acidosis</b> is the tempting choice, since the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>{abg}: The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>.</p><p><b>Respiratory acidosis</b> isn't the right answer: the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-04",
@@ -209,7 +209,7 @@
         "Metabolic acidosis"
       ],
       "answer": 2,
-      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>{abg}: The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>.</p><p><b>Respiratory alkalosis</b> isn't the right answer: the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-05",
@@ -248,7 +248,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 1,
-      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>. The base excess is normal and the PaO₂ is low, since the slow breathing also brings in less oxygen.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the PaCO₂ is <b>above 45</b>: it moved opposite to the pH, so the lungs are keeping carbon dioxide. The HCO₃⁻ is normal (22 to 26). That's a <b>respiratory acidosis</b>. The base excess is normal and the PaO₂ is low, since the slow breathing also brings in less oxygen.</p><p><b>Metabolic acidosis</b> isn't the right answer: the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's the CO₂ that's abnormal. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-06",
@@ -287,7 +287,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 2,
-      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>. The base excess is normal; the PaO₂ is normal.</p><p><b>Metabolic alkalosis</b> is the tempting choice, since the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the PaCO₂ is <b>below 35</b>: it moved opposite to the pH, so too much carbon dioxide is being breathed off. The HCO₃⁻ is normal. That's a <b>respiratory alkalosis</b>. The base excess is normal; the PaO₂ is normal.</p><p><b>Metabolic alkalosis</b> isn't the right answer: the pH is high, but in a metabolic alkalosis the HCO₃⁻ rises; here it's normal and the CO₂ is low. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-07",
@@ -326,7 +326,7 @@
         "Metabolic alkalosis"
       ],
       "answer": 2,
-      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>. The base excess is <b>below −2</b>, which also points to a metabolic acidosis.</p><p><b>Respiratory acidosis</b> is the tempting choice, since the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is <b>below 7.35</b> (acidosis), and the HCO₃⁻ is <b>below 22</b>: it moved the same way as the pH, so base has been lost or acid added. The PaCO₂ is normal. That's a <b>metabolic acidosis</b>. The base excess is <b>below −2</b>, which also points to a metabolic acidosis.</p><p><b>Respiratory acidosis</b> isn't the right answer: the pH is low, but the PaCO₂ is normal; the low HCO₃⁻ explains the acid. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-08",
@@ -365,7 +365,7 @@
         "Metabolic acidosis"
       ],
       "answer": 2,
-      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>. The base excess is <b>above +2</b>, which also points to a metabolic alkalosis.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is <b>above 7.45</b> (alkalosis), and the HCO₃⁻ is <b>above 26</b>: it moved the same way as the pH, so there's extra base (or acid was lost). The PaCO₂ is normal. That's a <b>metabolic alkalosis</b>. The base excess is <b>above +2</b>, which also points to a metabolic alkalosis.</p><p><b>Respiratory alkalosis</b> isn't the right answer: the pH is high, but the PaCO₂ is normal; the high HCO₃⁻ explains it. Read the pH first, then the value that explains it.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-09",
@@ -400,7 +400,7 @@
         "Below the normal range (acidosis)"
       ],
       "answer": 3,
-      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is below it: <b>acidosis</b>, with more hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> is the tempting choice, since the CO₂ tells you the cause, but the pH alone tells you acidosis or alkalosis.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is below it: <b>acidosis</b>, with more hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> isn't the right answer: the CO₂ tells you the cause, but the pH alone tells you acidosis or alkalosis.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
     },
     {
       "id": "bg-10",
@@ -439,7 +439,7 @@
         "It can't be judged without the PaCO₂"
       ],
       "answer": 0,
-      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>; {ph} is within it.</p><p><b>Below the normal range</b> is the tempting choice for a pH under 7.40, but 7.35 is the line; 7.40 is just the middle of the range.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>; {ph} is within it.</p><p><b>Below the normal range</b> isn't the right answer, even for a pH under 7.40: 7.35 is the line; 7.40 is just the middle of the range.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
     },
     {
       "id": "bg-11",
@@ -474,7 +474,7 @@
         "It can't be judged without the PaCO₂"
       ],
       "answer": 1,
-      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is above it: <b>alkalosis</b>, with fewer hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> is the tempting choice, but the pH alone shows alkalosis; the CO₂ and HCO₃⁻ tell you the cause.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
+      "rationale": "<p>A normal pH is <b>7.35 to 7.45</b>. A pH of {ph} is above it: <b>alkalosis</b>, with fewer hydrogen ions than normal.</p><p><b>It can't be judged without the PaCO₂</b> isn't the right answer: the pH alone shows alkalosis; the CO₂ and HCO₃⁻ tell you the cause.</p><p><b>Takeaway:</b> pH below 7.35 = acidosis; above 7.45 = alkalosis.</p>"
     },
     {
       "id": "bg-12",
@@ -497,7 +497,7 @@
         "Below the normal range"
       ],
       "answer": 3,
-      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is below it, so carbon dioxide is being blown off (as in hyperventilation).</p><p><b>It can't be judged without the pH</b> is the tempting choice, since the pH decides acidosis or alkalosis, but the PaCO₂ has its own normal range.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
+      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is below it, so carbon dioxide is being blown off (as in hyperventilation).</p><p><b>It can't be judged without the pH</b> isn't the right answer: the pH decides acidosis or alkalosis, but the PaCO₂ has its own normal range.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
     },
     {
       "id": "bg-13",
@@ -520,7 +520,7 @@
         "Above the normal range"
       ],
       "answer": 3,
-      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is above it, so carbon dioxide is being kept (as with a blocked airway).</p><p><b>Within the normal range</b> is the tempting choice if you confuse it with the HCO₃⁻ range, but 45 is the PaCO₂'s upper line.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
+      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>; {v} is above it, so carbon dioxide is being kept (as with a blocked airway).</p><p><b>Within the normal range</b> isn't the right answer: 45 is the PaCO₂'s upper line.</p><p><b>Takeaway:</b> PaCO₂ 35 to 45 mm Hg.</p>"
     },
     {
       "id": "bg-14",
@@ -543,7 +543,7 @@
         "It can't be judged without the pH"
       ],
       "answer": 0,
-      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is below it, so base has been lost or used up (as in diarrhea or ketoacidosis).</p><p><b>Within the normal range</b> is the tempting choice for a number near 22, but the range starts at 22.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
+      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is below it, so base has been lost or used up (as in diarrhea or ketoacidosis).</p><p><b>Within the normal range</b> isn't the right answer, even for a number near 22: the range starts at 22.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
     },
     {
       "id": "bg-15",
@@ -566,7 +566,7 @@
         "It can't be judged without the pH"
       ],
       "answer": 0,
-      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is above it, so there's extra base (as after vomiting or NG suction).</p><p><b>Within the normal range</b> is the tempting choice if you remember the PaCO₂ range (35 to 45), but the HCO₃⁻ range is 22 to 26.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
+      "rationale": "<p>A normal HCO₃⁻ is <b>22 to 26 mEq/L</b>; {v} is above it, so there's extra base (as after vomiting or NG suction).</p><p><b>Within the normal range</b> isn't the right answer: the HCO₃⁻ range is 22 to 26, not the PaCO₂'s 35 to 45.</p><p><b>Takeaway:</b> HCO₃⁻ 22 to 26 mEq/L.</p>"
     },
     {
       "id": "bg-16",
@@ -590,7 +590,7 @@
         "It can't be judged without the pH"
       ],
       "answer": 2,
-      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {v} is below it, so the blood is carrying too little oxygen.</p><p><b>Within the normal range</b> is the tempting choice if you confuse the PaO₂ with the oxygen saturation, which is normally 95% or more.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
+      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; {v} is below it, so the blood is carrying too little oxygen.</p><p><b>Within the normal range</b> isn't the right answer: the PaO₂'s range starts at 80 mm Hg, and the oxygen saturation (normally 95% or more) is a different measure.</p><p><b>Takeaway:</b> PaO₂ 80 to 100 mm Hg.</p>"
     },
     {
       "id": "bg-17",
@@ -709,7 +709,7 @@
         "{alk}"
       ],
       "answer": 3,
-      "rationale": "<p>Vomiting and NG suction remove stomach <b>acid</b>, and thiazide diuretics are on the instructor's list too: all cause a <b>metabolic alkalosis</b>, with a high pH and a high HCO₃⁻, like {alk}.</p><p>The <b>metabolic acidosis</b> set is the tempting choice for students who think of every fluid loss as acidosis; losing stomach acid leaves extra base.</p><p><b>Takeaway:</b> Vomiting, NG suction, thiazides → metabolic alkalosis.</p>"
+      "rationale": "<p>Vomiting and NG suction remove stomach <b>acid</b>, and thiazide diuretics are on the instructor's list too: all cause a <b>metabolic alkalosis</b>, with a high pH and a high HCO₃⁻, like {alk}.</p><p>The <b>metabolic acidosis</b> set isn't the right answer: losing stomach acid leaves extra base, so not every fluid loss is an acidosis.</p><p><b>Takeaway:</b> Vomiting, NG suction, thiazides → metabolic alkalosis.</p>"
     },
     {
       "id": "bg-18",
@@ -840,7 +840,7 @@
         "{ralk}"
       ],
       "answer": 1,
-      "rationale": "<p>Ketones (diabetic ketoacidosis, starvation), lactic acid (hypoxia, shock, dehydration), kidney failure, and diarrhea's loss of bicarbonate all cause a <b>metabolic acidosis</b>: a low pH and a low HCO₃⁻, like {acid}.</p><p>The <b>respiratory acidosis</b> set is the tempting choice, since it's also an acidosis, but here the problem is the bicarbonate, not the lungs.</p><p><b>Takeaway:</b> DKA, starvation, hypoxia, kidney failure, dehydration, diarrhea → metabolic acidosis.</p>"
+      "rationale": "<p>Ketones (diabetic ketoacidosis, starvation), lactic acid (hypoxia, shock, dehydration), kidney failure, and diarrhea's loss of bicarbonate all cause a <b>metabolic acidosis</b>: a low pH and a low HCO₃⁻, like {acid}.</p><p>The <b>respiratory acidosis</b> set isn't the right answer: it's also an acidosis, but here the problem is the bicarbonate, not the lungs.</p><p><b>Takeaway:</b> DKA, starvation, hypoxia, kidney failure, dehydration, diarrhea → metabolic acidosis.</p>"
     },
     {
       "id": "bg-19",
@@ -959,7 +959,7 @@
         "{ralk}"
       ],
       "answer": 2,
-      "rationale": "<p>An <b>airway obstruction</b>, or lungs that can't exchange (diffuse) gas well, keep carbon dioxide: a <b>respiratory acidosis</b>, with a low pH and a high PaCO₂, like {racid}.</p><p>The <b>metabolic acidosis</b> set is the tempting choice, since it's also acidic, but its HCO₃⁻ is low and its CO₂ normal; here the CO₂ is the problem.</p><p><b>Takeaway:</b> Blocked airways or poor gas exchange → respiratory acidosis.</p>"
+      "rationale": "<p>An <b>airway obstruction</b>, or lungs that can't exchange (diffuse) gas well, keep carbon dioxide: a <b>respiratory acidosis</b>, with a low pH and a high PaCO₂, like {racid}.</p><p>The <b>metabolic acidosis</b> set isn't the right answer: it's also acidic, but its HCO₃⁻ is low and its CO₂ normal; here the CO₂ is the problem.</p><p><b>Takeaway:</b> Blocked airways or poor gas exchange → respiratory acidosis.</p>"
     },
     {
       "id": "bg-20",
@@ -1082,7 +1082,7 @@
         "{racid}"
       ],
       "answer": 0,
-      "rationale": "<p>Breathing too fast or too deeply (anxiety, pain, fever, or a ventilator set too high) blows off carbon dioxide: a <b>respiratory alkalosis</b>, with a high pH and a low PaCO₂, like {ralk}.</p><p>The <b>metabolic alkalosis</b> set is the tempting choice, since its pH is high too, but its HCO₃⁻ is high and its CO₂ normal.</p><p><b>Takeaway:</b> Hyperventilation, pain, fever, a ventilator set too fast → respiratory alkalosis.</p>"
+      "rationale": "<p>Breathing too fast or too deeply (anxiety, pain, fever, or a ventilator set too high) blows off carbon dioxide: a <b>respiratory alkalosis</b>, with a high pH and a low PaCO₂, like {ralk}.</p><p>The <b>metabolic alkalosis</b> set isn't the right answer: its pH is high too, but its HCO₃⁻ is high and its CO₂ normal.</p><p><b>Takeaway:</b> Hyperventilation, pain, fever, a ventilator set too fast → respiratory alkalosis.</p>"
     },
     {
       "id": "bg-21",
@@ -1133,7 +1133,7 @@
         "Thick secretions in the airways"
       ],
       "answer": 1,
-      "rationale": "<p>A high pH with a high HCO₃⁻ is a <b>metabolic alkalosis</b>; vomiting removes stomach acid and leaves extra base.</p><p><b>Diarrhea</b> is the tempting choice, since it's also a fluid loss from the gut, but it removes <b>base</b>, causing acidosis.</p><p><b>Takeaway:</b> Vomiting → metabolic alkalosis; diarrhea → metabolic acidosis.</p>"
+      "rationale": "<p>A high pH with a high HCO₃⁻ is a <b>metabolic alkalosis</b>; vomiting removes stomach acid and leaves extra base.</p><p><b>Diarrhea</b> isn't the right answer: it's also a fluid loss from the gut, but it removes <b>base</b>, causing acidosis.</p><p><b>Takeaway:</b> Vomiting → metabolic alkalosis; diarrhea → metabolic acidosis.</p>"
     },
     {
       "id": "bg-22",
@@ -1184,7 +1184,7 @@
         "Diabetic ketoacidosis"
       ],
       "answer": 3,
-      "rationale": "<p>A low pH with a low HCO₃⁻ is a <b>metabolic acidosis</b>; in diabetic ketoacidosis, ketones (acids) use up the bicarbonate.</p><p><b>A partly blocked airway</b> is the tempting choice, since it also lowers the pH, but it raises the CO₂; here the CO₂ is normal.</p><p><b>Takeaway:</b> Low pH + low HCO₃⁻: think DKA, starvation, hypoxia, kidney failure, diarrhea.</p>"
+      "rationale": "<p>A low pH with a low HCO₃⁻ is a <b>metabolic acidosis</b>; in diabetic ketoacidosis, ketones (acids) use up the bicarbonate.</p><p><b>A partly blocked airway</b> isn't the right answer: it also lowers the pH, but it raises the CO₂; here the CO₂ is normal.</p><p><b>Takeaway:</b> Low pH + low HCO₃⁻: think DKA, starvation, hypoxia, kidney failure, diarrhea.</p>"
     },
     {
       "id": "bg-23",
@@ -1235,7 +1235,7 @@
         "A thiazide diuretic"
       ],
       "answer": 1,
-      "rationale": "<p>A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: a partly blocked airway traps carbon dioxide.</p><p><b>Diabetic ketoacidosis</b> is the tempting choice, since it's a classic acidosis, but it lowers the HCO₃⁻; here the CO₂ is high.</p><p><b>Takeaway:</b> Low pH + high CO₂: an airway or gas-exchange problem.</p>"
+      "rationale": "<p>A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: a partly blocked airway traps carbon dioxide.</p><p><b>Diabetic ketoacidosis</b> isn't the right answer: it's a classic acidosis, but it lowers the HCO₃⁻; here the CO₂ is high.</p><p><b>Takeaway:</b> Low pH + high CO₂: an airway or gas-exchange problem.</p>"
     },
     {
       "id": "bg-24",
@@ -1286,7 +1286,7 @@
         "Prolonged vomiting"
       ],
       "answer": 0,
-      "rationale": "<p>A high pH with a low PaCO₂ is a <b>respiratory alkalosis</b>: fast breathing in a panic attack blows off carbon dioxide.</p><p><b>Prolonged vomiting</b> is the tempting choice, since it also raises the pH, but it raises the HCO₃⁻; here the CO₂ is low.</p><p><b>Takeaway:</b> High pH + low CO₂: hyperventilation, pain, fever, or a ventilator set too fast.</p>"
+      "rationale": "<p>A high pH with a low PaCO₂ is a <b>respiratory alkalosis</b>: fast breathing in a panic attack blows off carbon dioxide.</p><p><b>Prolonged vomiting</b> isn't the right answer: it also raises the pH, but it raises the HCO₃⁻; here the CO₂ is low.</p><p><b>Takeaway:</b> High pH + low CO₂: hyperventilation, pain, fever, or a ventilator set too fast.</p>"
     },
     {
       "id": "bg-25",
@@ -1337,7 +1337,7 @@
         "The base excess"
       ],
       "answer": 0,
-      "rationale": "<p>The pH is out of range, and the <b>PaCO₂</b> has moved opposite to it (high with acidosis, low with alkalosis), while the HCO₃⁻ is normal. The cause is respiratory.</p><p><b>The HCO₃⁻</b> is the tempting choice, since it's part of every reading, but here it's within 22 to 26.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is out of range, and the <b>PaCO₂</b> has moved opposite to it (high with acidosis, low with alkalosis), while the HCO₃⁻ is normal. The cause is respiratory.</p><p><b>The HCO₃⁻</b> isn't the right answer: it's part of every reading, but here it's within 22 to 26.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-26",
@@ -1388,7 +1388,7 @@
         "The HCO₃⁻"
       ],
       "answer": 3,
-      "rationale": "<p>The pH is out of range, and the <b>HCO₃⁻</b> has moved the same way (low with acidosis, high with alkalosis), while the PaCO₂ is normal. The cause is metabolic.</p><p><b>The PaCO₂</b> is the tempting choice, since it's the first gas listed, but here it's within 35 to 45.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
+      "rationale": "<p>The pH is out of range, and the <b>HCO₃⁻</b> has moved the same way (low with acidosis, high with alkalosis), while the PaCO₂ is normal. The cause is metabolic.</p><p><b>The PaCO₂</b> isn't the right answer: it's the first gas listed, but here it's within 35 to 45.</p><p><b>Takeaway:</b> ROME: in Respiratory problems, pH and CO₂ move Opposite; in Metabolic problems, pH and HCO₃⁻ move Equal (the same way).</p>"
     },
     {
       "id": "bg-27",
@@ -1427,7 +1427,7 @@
         "Too little base, as in a metabolic acidosis"
       ],
       "answer": 3,
-      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} is a base <b>deficit</b>: too little bicarbonate, as in a <b>metabolic acidosis</b>.</p><p><b>Too much base</b> is the tempting choice, since the name is “excess”, but a negative excess means a shortage.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
+      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} is a base <b>deficit</b>: too little bicarbonate, as in a <b>metabolic acidosis</b>.</p><p><b>Too much base</b> isn't the right answer: the name is “excess”, but a negative excess means a shortage.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
     },
     {
       "id": "bg-28",
@@ -1466,7 +1466,7 @@
         "Too much CO₂, as in a respiratory acidosis"
       ],
       "answer": 2,
-      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} means <b>too much base</b>, as in a <b>metabolic alkalosis</b>.</p><p><b>Too much CO₂</b> is the tempting choice, since a high number sounds like a buildup, but the base excess measures base, not carbon dioxide.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
+      "rationale": "<p>A normal base excess is <b>−2 to +2 mEq/L</b>. A value of {be} means <b>too much base</b>, as in a <b>metabolic alkalosis</b>.</p><p><b>Too much CO₂</b> isn't the right answer: a high number sounds like a buildup, but the base excess measures base, not carbon dioxide.</p><p><b>Takeaway:</b> Base excess below −2: metabolic acidosis; above +2: metabolic alkalosis.</p>"
     },
     {
       "id": "bg-29",
@@ -1481,7 +1481,7 @@
         "It has the same hydrogen ions, but more bicarbonate"
       ],
       "answer": 0,
-      "rationale": "<p>The pH tracks hydrogen ions the opposite way: <b>fewer</b> hydrogen ions mean a <b>higher</b> pH (alkalosis), and more mean a lower pH (acidosis).</p><p><b>More hydrogen ions with a higher pH</b> is the tempting choice, since the instructor's list says this for respiratory alkalosis, but a higher pH always means fewer hydrogen ions.</p><p><b>Takeaway:</b> Acidosis: more H⁺, lower pH. Alkalosis: fewer H⁺, higher pH.</p>"
+      "rationale": "<p>The pH tracks hydrogen ions the opposite way: <b>fewer</b> hydrogen ions mean a <b>higher</b> pH (alkalosis), and more mean a lower pH (acidosis).</p><p><b>More hydrogen ions with a higher pH</b> isn't the right answer: the instructor's list says this for respiratory alkalosis, but a higher pH always means fewer hydrogen ions.</p><p><b>Takeaway:</b> Acidosis: more H⁺, lower pH. Alkalosis: fewer H⁺, higher pH.</p>"
     }
   ]
 }

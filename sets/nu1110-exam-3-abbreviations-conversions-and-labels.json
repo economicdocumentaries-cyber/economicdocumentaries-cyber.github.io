@@ -63,7 +63,7 @@
       "stem": "A nurse gave a client timolol eye drops in the left eye, as prescribed. Which entry documents the medication safely?",
       "options": ["0900: Timolol 1 drop OS; eye clear, no redness.", "0900: Timolol 1 drop OU; no redness or tearing.", "0900: Timolol 1 drop in left eye; no redness.", "0900: Timolol 1 drop OD; client tolerated well."],
       "answer": 2,
-      "rationale": "<p>Writing the eye out, <b>left eye</b>, is the safe way. <b>OD</b> (right eye), <b>OS</b> (left eye), and <b>OU</b> (both eyes) are on the list of error-prone abbreviations: they're easily mixed up with each other, and with AD, AS, and AU, the ears.</p><p><b>OS</b> is the tempting choice, since it does mean the left eye, but the abbreviation itself is what the list says to avoid. <b>OD</b> would record the wrong eye, and <b>OU</b> both eyes.</p><p><b>Takeaway:</b> Write the eye out: right eye, left eye, both eyes. OD, OS, and OU are error-prone.</p>"
+      "rationale": "<p>Writing the eye out, <b>left eye</b>, is the safe way. <b>OD</b> (right eye), <b>OS</b> (left eye), and <b>OU</b> (both eyes) are on the list of error-prone abbreviations: they're easily mixed up with each other, and with AD, AS, and AU, the ears.</p><p><b>OS</b> isn't the right answer: it does mean the left eye, but the abbreviation itself is what the list says to avoid. <b>OD</b> would record the wrong eye, and <b>OU</b> both eyes.</p><p><b>Takeaway:</b> Write the eye out: right eye, left eye, both eyes. OD, OS, and OU are error-prone.</p>"
     },
     {
       "id": "acl-05",
@@ -128,7 +128,7 @@
       "stem": "A prescription reads: “Aluminum hydroxide suspension 30 mL PO pc and HS.” Which action should the nurse take?",
       "options": ["Give 30 mL by mouth after each meal and at bedtime.", "Give 30 mL by mouth after each meal, half-strength.", "Ask the prescriber to clarify HS: bedtime or half-strength.", "Give 30 mL by mouth before each meal and at bedtime."],
       "answer": 2,
-      "rationale": "<p><b>HS</b> can mean <b>half-strength</b> or <b>bedtime</b> (hour of sleep), which is why it's on the list of error-prone abbreviations. Because the order can be read two ways, the nurse <b>clarifies it with the prescriber</b> before giving it, and never guesses which one was meant.</p><p><b>After each meal and at bedtime</b> is the tempting choice: it's what HS usually means, but an unclear abbreviation is clarified, not assumed. <b>Half-strength</b> assumes the other meaning. <b>Before each meal</b> mixes up pc (after meals) with ac (before meals).</p><p><b>Takeaway:</b> HS can mean bedtime or half-strength, so clarify it. The safe way to write it is “at bedtime.”</p>"
+      "rationale": "<p><b>HS</b> can mean <b>half-strength</b> or <b>bedtime</b> (hour of sleep), which is why it's on the list of error-prone abbreviations. Because the order can be read two ways, the nurse <b>clarifies it with the prescriber</b> before giving it, and never guesses which one was meant.</p><p><b>After each meal and at bedtime</b> isn't the right answer: it's what HS usually means, but an unclear abbreviation is clarified, not assumed. <b>Half-strength</b> assumes the other meaning. <b>Before each meal</b> mixes up pc (after meals) with ac (before meals).</p><p><b>Takeaway:</b> HS can mean bedtime or half-strength, so clarify it. The safe way to write it is “at bedtime.”</p>"
     },
     {
       "id": "acl-12",

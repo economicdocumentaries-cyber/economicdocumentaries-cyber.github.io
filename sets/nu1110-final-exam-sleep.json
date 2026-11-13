@@ -35,7 +35,7 @@
         "“Darkness slows growth hormone, so the body is able to rest.”"
       ],
       "answer": 2,
-      "rationale": "<p><b>Melatonin</b> is the hormone of darkness: its secretion starts in the evening as light fades (around 2100 on the class's circadian clock) and stops in the morning. Bright light, including screens, holds it back, so dimming lights lets it rise.</p><p><b>Cortisol</b> is the tempting choice, since it does follow a daily rhythm, but it's lowest around bedtime and rises toward morning, not the reverse. <b>Serotonin</b> promotes calm and relaxation (the reason for a light carbohydrate snack), not alertness, and <b>growth hormone</b> is released mostly during deep sleep, not slowed by darkness.</p><p><b>Takeaway:</b> Darkness turns melatonin on and light turns it off; protect the evening from bright light.</p>"
+      "rationale": "<p><b>Melatonin</b> is the hormone of darkness: its secretion starts in the evening as light fades (around 2100 on the class's circadian clock) and stops in the morning. Bright light, including screens, holds it back, so dimming lights lets it rise.</p><p><b>Cortisol</b> isn't the right answer: it does follow a daily rhythm, but it's lowest around bedtime and rises toward morning, not the reverse. <b>Serotonin</b> promotes calm and relaxation (the reason for a light carbohydrate snack), not alertness, and <b>growth hormone</b> is released mostly during deep sleep, not slowed by darkness.</p><p><b>Takeaway:</b> Darkness turns melatonin on and light turns it off; protect the evening from bright light.</p>"
     },
     {
       "id": "sl-02",
@@ -50,7 +50,7 @@
         "Take a long walk outdoors in the morning light before going to bed"
       ],
       "answer": 0,
-      "rationale": "<p>Light is the strongest cue that sets the circadian clock, and <b>morning light</b> pushes the body toward wakefulness. A night worker who wants to sleep in the morning <b>blocks light</b> on the way home and sleeps in a dark room, so the clock isn't told it's daytime.</p><p><b>A long walk in the morning light</b> is the tempting choice, because exercise and fresh air sound healthy, but morning light is exactly the cue that wakes the clock up. <b>Sitting in sunlight</b> does the same, and a <b>bright bedroom</b> keeps signaling day.</p><p><b>Takeaway:</b> Light tells the body it's time to be awake; to sleep in the daytime, keep the light out.</p>"
+      "rationale": "<p>Light is the strongest cue that sets the circadian clock, and <b>morning light</b> pushes the body toward wakefulness. A night worker who wants to sleep in the morning <b>blocks light</b> on the way home and sleeps in a dark room, so the clock isn't told it's daytime.</p><p><b>A long walk in the morning light</b> isn't the right answer: exercise and fresh air sound healthy, but morning light is exactly the cue that wakes the clock up. <b>Sitting in sunlight</b> does the same, and a <b>bright bedroom</b> keeps signaling day.</p><p><b>Takeaway:</b> Light tells the body it's time to be awake; to sleep in the daytime, keep the light out.</p>"
     },
     {
       "id": "sl-03",
@@ -65,7 +65,7 @@
         "Document it as an expected daily variation"
       ],
       "answer": 3,
-      "rationale": "<p>Body temperature follows a <b>circadian rhythm</b>: it's lowest in the early morning (around 0430) and highest in the early evening (around 1900). A drop of less than 1° C between those times, in a comfortable client with no other changes, is <b>expected</b>.</p><p><b>Rechecking with a different thermometer</b> is the tempting choice, because a careful nurse confirms unexpected readings, but this one isn't unexpected; the value is normal and matches the daily low. A <b>warming blanket</b> and a <b>report of hypothermia</b> treat a normal value as a problem.</p><p><b>Takeaway:</b> Temperature, heart rate, blood pressure, and hormones rise and fall on a 24-hour rhythm; compare readings with the time of day.</p>"
+      "rationale": "<p>Body temperature follows a <b>circadian rhythm</b>: it's lowest in the early morning (around 0430) and highest in the early evening (around 1900). A drop of less than 1° C between those times, in a comfortable client with no other changes, is <b>expected</b>.</p><p><b>Rechecking with a different thermometer</b> isn't the right answer: a careful nurse confirms unexpected readings, but this one isn't unexpected; the value is normal and matches the daily low. A <b>warming blanket</b> and a <b>report of hypothermia</b> treat a normal value as a problem.</p><p><b>Takeaway:</b> Temperature, heart rate, blood pressure, and hormones rise and fall on a 24-hour rhythm; compare readings with the time of day.</p>"
     },
     {
       "id": "sl-04",
@@ -80,7 +80,7 @@
         "Have a glass of wine in the evening to help her relax"
       ],
       "answer": 1,
-      "rationale": "<p>Light <b>late in the evening</b> easily nudges the circadian clock later (a delay), and a bright screen in bed also keeps the brain alert. Removing that light is the change that lets her sleep start earlier, so it comes first.</p><p><b>Sleeping later on weekends</b> is the tempting choice, because she truly is short on sleep, but irregular wake times shift the clock even later and make Monday worse. A <b>nap after work</b> makes it harder to fall asleep at night, and <b>wine</b> makes sleep worse in the second half of the night.</p><p><b>Takeaway:</b> Evening light pushes the body clock later; dim screens and lights well before bed, and keep wake times regular.</p>"
+      "rationale": "<p>Light <b>late in the evening</b> easily nudges the circadian clock later (a delay), and a bright screen in bed also keeps the brain alert. Removing that light is the change that lets her sleep start earlier, so it comes first.</p><p><b>Sleeping later on weekends</b> isn't the right answer: she truly is short on sleep, but irregular wake times shift the clock even later and make Monday worse. A <b>nap after work</b> makes it harder to fall asleep at night, and <b>wine</b> makes sleep worse in the second half of the night.</p><p><b>Takeaway:</b> Evening light pushes the body clock later; dim screens and lights well before bed, and keep wake times regular.</p>"
     },
     {
       "id": "sl-05",
@@ -95,7 +95,7 @@
         "Leftover pepperoni pizza"
       ],
       "answer": 1,
-      "rationale": "<p>A <b>light carbohydrate snack</b> before bed affects brain <b>serotonin</b> levels, which promotes calmness and relaxation. A few crackers fits.</p><p><b>Hot cocoa</b> is the tempting choice, because a warm drink at bedtime sounds soothing, but chocolate contains caffeine, a stimulant. <b>Chili</b> and <b>pepperoni pizza</b> are heavy, spicy, and fatty: heavy meals within about 3 hours of bed disturb sleep.</p><p><b>Takeaway:</b> Before bed: a light carbohydrate snack (it raises serotonin), not caffeine and not a heavy meal.</p>"
+      "rationale": "<p>A <b>light carbohydrate snack</b> before bed affects brain <b>serotonin</b> levels, which promotes calmness and relaxation. A few crackers fits.</p><p><b>Hot cocoa</b> isn't the right answer: a warm drink at bedtime sounds soothing, but chocolate contains caffeine, a stimulant. <b>Chili</b> and <b>pepperoni pizza</b> are heavy, spicy, and fatty: heavy meals within about 3 hours of bed disturb sleep.</p><p><b>Takeaway:</b> Before bed: a light carbohydrate snack (it raises serotonin), not caffeine and not a heavy meal.</p>"
     },
     {
       "id": "sl-06",
@@ -110,7 +110,7 @@
         "“Most growth hormone is released during deep sleep.”"
       ],
       "answer": 3,
-      "rationale": "<p><b>Growth hormone</b> is released mostly during <b>deep, slow-wave (NREM stage III and IV) sleep</b>, early in the night. Too little sleep can suppress growth, one of the effects of missing sleep shown in class.</p><p><b>REM sleep</b> is the tempting choice, because REM is often called the most important sleep, but REM's job is mental and emotional balance; growth hormone belongs to deep NREM sleep. <b>Melatonin</b> signals sleep timing, it doesn't build tissue, and <b>cortisol</b> rises toward morning, not in deep sleep.</p><p><b>Takeaway:</b> Deep slow-wave sleep is when most growth hormone is released; REM supports the mind and emotions.</p>"
+      "rationale": "<p><b>Growth hormone</b> is released mostly during <b>deep, slow-wave (NREM stage III and IV) sleep</b>, early in the night. Too little sleep can suppress growth, one of the effects of missing sleep shown in class.</p><p><b>REM sleep</b> isn't the right answer: REM is often called the most important sleep, but REM's job is mental and emotional balance; growth hormone belongs to deep NREM sleep. <b>Melatonin</b> signals sleep timing, it doesn't build tissue, and <b>cortisol</b> rises toward morning, not in deep sleep.</p><p><b>Takeaway:</b> Deep slow-wave sleep is when most growth hormone is released; REM supports the mind and emotions.</p>"
     },
     {
       "id": "sl-07",
@@ -125,7 +125,7 @@
         "REM sleep"
       ],
       "answer": 2,
-      "rationale": "<p><b>NREM stage I</b> is the transition between wakefulness and sleep: the person is relaxed but aware, may have involuntary muscle jerks, is <b>easily aroused</b>, and stays there only minutes (about 5% of sleep).</p><p><b>Stage II</b> is the tempting choice, since it's also light and the person can be aroused with relative ease, but in stage II the person has fallen asleep and is no longer aware of the surroundings. <b>Stage IV</b> is the deepest sleep, with difficult arousal, and <b>REM</b> sleep is hard to wake from, with large muscles nearly paralyzed.</p><p><b>Takeaway:</b> Aware, jerking, and wakes instantly: stage I, the doorway between waking and sleep.</p>"
+      "rationale": "<p><b>NREM stage I</b> is the transition between wakefulness and sleep: the person is relaxed but aware, may have involuntary muscle jerks, is <b>easily aroused</b>, and stays there only minutes (about 5% of sleep).</p><p><b>Stage II</b> isn't the right answer: it's also light and the person can be aroused with relative ease, but in stage II the person has fallen asleep and is no longer aware of the surroundings. <b>Stage IV</b> is the deepest sleep, with difficult arousal, and <b>REM</b> sleep is hard to wake from, with large muscles nearly paralyzed.</p><p><b>Takeaway:</b> Aware, jerking, and wakes instantly: stage I, the doorway between waking and sleep.</p>"
     },
     {
       "id": "sl-08",
@@ -140,7 +140,7 @@
         "The client was in the deepest stage of NREM sleep"
       ],
       "answer": 3,
-      "rationale": "<p><b>NREM stage IV</b> (delta, slow-wave sleep) is the greatest depth of sleep: temperature, heart rate, respirations, blood pressure, and metabolism all <b>decrease</b>, and <b>arousal is difficult</b>. A client who is slow to rouse, then fully oriented, fits this.</p><p><b>REM sleep</b> is the tempting choice, because REM is also hard to wake from, but in REM the pulse becomes rapid and irregular and blood pressure rises or fluctuates; it doesn't slow. <b>Stage I</b> and <b>stage II</b> are light sleep, from which a client is aroused easily.</p><p><b>Takeaway:</b> Slow vital signs and hard to wake: deep NREM (stage IV). Fast, irregular vital signs and hard to wake: REM.</p>"
+      "rationale": "<p><b>NREM stage IV</b> (delta, slow-wave sleep) is the greatest depth of sleep: temperature, heart rate, respirations, blood pressure, and metabolism all <b>decrease</b>, and <b>arousal is difficult</b>. A client who is slow to rouse, then fully oriented, fits this.</p><p><b>REM sleep</b> isn't the right answer: REM is also hard to wake from, but in REM the pulse becomes rapid and irregular and blood pressure rises or fluctuates; it doesn't slow. <b>Stage I</b> and <b>stage II</b> are light sleep, from which a client is aroused easily.</p><p><b>Takeaway:</b> Slow vital signs and hard to wake: deep NREM (stage IV). Fast, irregular vital signs and hard to wake: REM.</p>"
     },
     {
       "id": "sl-09",
@@ -155,7 +155,7 @@
         "Count the respirations for a minute, and call the provider"
       ],
       "answer": 1,
-      "rationale": "<p>These are the findings of <b>REM sleep</b>: rapid eye movements, small muscle twitching (as on the face), <b>large muscle immobility</b> resembling paralysis, irregular respirations, and a rapid or irregular pulse. They're expected, so the nurse lets the client sleep.</p><p><b>Waking the client to assess for a seizure</b> is the tempting choice, because twitching and irregular breathing can look worrying, but a seizure doesn't leave the large muscles limp, and waking the client takes away REM sleep. <b>Oxygen</b> and <b>calling the provider</b> treat normal REM findings as an emergency.</p><p><b>Takeaway:</b> Darting eyes, facial twitches, irregular breathing, a faster pulse, and limp limbs: REM sleep, which is expected.</p>"
+      "rationale": "<p>These are the findings of <b>REM sleep</b>: rapid eye movements, small muscle twitching (as on the face), <b>large muscle immobility</b> resembling paralysis, irregular respirations, and a rapid or irregular pulse. They're expected, so the nurse lets the client sleep.</p><p><b>Waking the client to assess for a seizure</b> isn't the right answer: twitching and irregular breathing can look worrying, but a seizure doesn't leave the large muscles limp, and waking the client takes away REM sleep. <b>Oxygen</b> and <b>calling the provider</b> treat normal REM findings as an emergency.</p><p><b>Takeaway:</b> Darting eyes, facial twitches, irregular breathing, a faster pulse, and limp limbs: REM sleep, which is expected.</p>"
     },
     {
       "id": "sl-10",
@@ -177,7 +177,7 @@
         3,
         5
       ],
-      "rationale": "<p>REM sleep is an active state: the <b>pulse is rapid or irregular</b>, <b>blood pressure rises or fluctuates</b>, <b>gastric secretions increase</b>, metabolism increases, the EEG is active, and the <b>large muscles are nearly paralyzed</b>.</p><p><b>The lowest metabolic rate</b> is the tempting choice, because the body is so still in REM, but the lowest metabolism, along with the <b>slowest brain waves</b>, belongs to deep NREM stage IV. In REM, metabolism and brain activity rise.</p><p><b>Takeaway:</b> REM: the brain and the heart are busy while the large muscles are still. Deep NREM: everything slows.</p>"
+      "rationale": "<p>REM sleep is an active state: the <b>pulse is rapid or irregular</b>, <b>blood pressure rises or fluctuates</b>, <b>gastric secretions increase</b>, metabolism increases, the EEG is active, and the <b>large muscles are nearly paralyzed</b>.</p><p><b>The lowest metabolic rate</b> isn't the right answer: the body is so still in REM, but the lowest metabolism, along with the <b>slowest brain waves</b>, belongs to deep NREM stage IV. In REM, metabolism and brain activity rise.</p><p><b>Takeaway:</b> REM: the brain and the heart are busy while the large muscles are still. Deep NREM: everything slows.</p>"
     },
     {
       "id": "sl-11",
@@ -192,7 +192,7 @@
         "Leave the TV on low to give a familiar sound"
       ],
       "answer": 2,
-      "rationale": "<p>Being woken every hour prevents full sleep cycles, which last about <b>90 minutes</b>. REM periods come late in each cycle, so the client loses REM sleep, which is <b>essential to mental and emotional equilibrium</b>: irritability, anxiety, and poor concentration follow. <b>Grouping care</b> so the stable client gets uninterrupted 90-minute blocks restores full cycles.</p><p><b>A sleeping pill</b> is the tempting choice, because the client clearly needs sleep, but sleep medications are a last resort, and they don't fix hourly waking. <b>Lights on</b> and <b>the TV on</b> add the light and noise that disturb sleep in the hospital.</p><p><b>Takeaway:</b> Protect full 90-minute sleep cycles by clustering care; constant waking costs REM sleep and emotional balance.</p>"
+      "rationale": "<p>Being woken every hour prevents full sleep cycles, which last about <b>90 minutes</b>. REM periods come late in each cycle, so the client loses REM sleep, which is <b>essential to mental and emotional equilibrium</b>: irritability, anxiety, and poor concentration follow. <b>Grouping care</b> so the stable client gets uninterrupted 90-minute blocks restores full cycles.</p><p><b>A sleeping pill</b> isn't the right answer: the client clearly needs sleep, but sleep medications are a last resort, and they don't fix hourly waking. <b>Lights on</b> and <b>the TV on</b> add the light and noise that disturb sleep in the hospital.</p><p><b>Takeaway:</b> Protect full 90-minute sleep cycles by clustering care; constant waking costs REM sleep and emotional balance.</p>"
     },
     {
       "id": "sl-12",
@@ -207,7 +207,7 @@
         "“About half of sleep is the stage I transition.”"
       ],
       "answer": 0,
-      "rationale": "<p><b>NREM stage II</b> makes up about <b>50% to 55%</b> of total sleep. Stage I is about 5%, stages III and IV about 10% each, and REM about 20% to 25%.</p><p><b>REM</b> is the tempting choice, because REM is the best-known stage, but it's only about a fifth to a quarter of the night. The <b>deepest stage</b> is about 10%, and <b>stage I</b> lasts only minutes.</p><p><b>Takeaway:</b> Stage II is about half of sleep, REM about a quarter, and the deepest stages and stage I much less.</p>"
+      "rationale": "<p><b>NREM stage II</b> makes up about <b>50% to 55%</b> of total sleep. Stage I is about 5%, stages III and IV about 10% each, and REM about 20% to 25%.</p><p><b>REM</b> isn't the right answer: REM is the best-known stage, but it's only about a fifth to a quarter of the night. The <b>deepest stage</b> is about 10%, and <b>stage I</b> lasts only minutes.</p><p><b>Takeaway:</b> Stage II is about half of sleep, REM about a quarter, and the deepest stages and stage I much less.</p>"
     },
     {
       "id": "sl-13",
@@ -222,7 +222,7 @@
         "Stage II sleep, which mostly comes early in the night"
       ],
       "answer": 0,
-      "rationale": "<p>Sleep cycles change through the night: deep NREM sleep is concentrated in the first cycles, while <b>REM periods get longer as morning approaches</b>. Cutting the end of the night therefore cuts a <b>disproportionate amount of REM sleep</b>, the sleep tied to memory and emotional balance.</p><p><b>Deep NREM sleep</b> is the tempting choice, since deep sleep feels like the most important, but it comes mostly early in the night and is largely kept. <b>Stage I</b> lasts only minutes per cycle, and <b>stage II</b> is spread across the whole night.</p><p><b>Takeaway:</b> Deep sleep comes early in the night and REM comes late, so cutting the morning short costs REM.</p>"
+      "rationale": "<p>Sleep cycles change through the night: deep NREM sleep is concentrated in the first cycles, while <b>REM periods get longer as morning approaches</b>. Cutting the end of the night therefore cuts a <b>disproportionate amount of REM sleep</b>, the sleep tied to memory and emotional balance.</p><p><b>Deep NREM sleep</b> isn't the right answer: deep sleep feels like the most important, but it comes mostly early in the night and is largely kept. <b>Stage I</b> lasts only minutes per cycle, and <b>stage II</b> is spread across the whole night.</p><p><b>Takeaway:</b> Deep sleep comes early in the night and REM comes late, so cutting the morning short costs REM.</p>"
     },
     {
       "id": "sl-14",
@@ -237,7 +237,7 @@
         "“It keeps helping your sleep as long as the amount stays the same.”"
       ],
       "answer": 1,
-      "rationale": "<p>Alcohol <b>may help people fall asleep</b>, but it leads to <b>poor-quality sleep in the second half of the night</b> and less deep sleep overall. People also become <b>tolerant</b> to its sedating effect and drink more to get the same result.</p><p><b>Keeping the amount the same</b> is the tempting choice, because a steady dose sounds controlled, but tolerance means the same amount helps less over time. Stopping <b>an hour before bed</b> is too close (the class teaches at least 4 hours), and alcohol gives <b>less</b> deep sleep, not more.</p><p><b>Takeaway:</b> Alcohol helps you fall asleep but wrecks the second half of the night, and tolerance builds.</p>"
+      "rationale": "<p>Alcohol <b>may help people fall asleep</b>, but it leads to <b>poor-quality sleep in the second half of the night</b> and less deep sleep overall. People also become <b>tolerant</b> to its sedating effect and drink more to get the same result.</p><p><b>Keeping the amount the same</b> isn't the right answer: a steady dose sounds controlled, but tolerance means the same amount helps less over time. Stopping <b>an hour before bed</b> is too close (the class teaches at least 4 hours), and alcohol gives <b>less</b> deep sleep, not more.</p><p><b>Takeaway:</b> Alcohol helps you fall asleep but wrecks the second half of the night, and tolerance builds.</p>"
     },
     {
       "id": "sl-15",
@@ -252,7 +252,7 @@
         "“Nicotine wears off overnight, and the withdrawal disturbs sleep.”"
       ],
       "answer": 3,
-      "rationale": "<p>Heavy smokers tend to sleep very lightly, have <b>less REM sleep</b>, and <b>wake every 3 to 4 hours because of nicotine withdrawal</b>. That's the likely cause of this client's waking.</p><p><b>Lower oxygen</b> is the tempting choice, because smoking does harm the lungs, but the class's explanation for the regular waking is nicotine withdrawal. Smoking makes sleep <b>lighter</b>, not deeper, and it <b>reduces</b> REM sleep.</p><p><b>Takeaway:</b> Heavy smoking means light sleep, less REM, and waking every 3 to 4 hours from withdrawal.</p>"
+      "rationale": "<p>Heavy smokers tend to sleep very lightly, have <b>less REM sleep</b>, and <b>wake every 3 to 4 hours because of nicotine withdrawal</b>. That's the likely cause of this client's waking.</p><p><b>Lower oxygen</b> isn't the right answer: smoking does harm the lungs, but the class's explanation for the regular waking is nicotine withdrawal. Smoking makes sleep <b>lighter</b>, not deeper, and it <b>reduces</b> REM sleep.</p><p><b>Takeaway:</b> Heavy smoking means light sleep, less REM, and waking every 3 to 4 hours from withdrawal.</p>"
     },
     {
       "id": "sl-16",
@@ -274,7 +274,7 @@
         4,
         5
       ],
-      "rationale": "<p>Factors that affect sleep include the <b>environment</b> (noise above all: <b>alarms</b>), <b>illness, pain, and medications</b> (an <b>incision</b>; a <b>diuretic</b> in the evening causes nighttime urination), and <b>psychological stress</b> (<b>worry about results</b>).</p><p><b>The carbohydrate snack</b> is the tempting choice, because eating near bedtime can disturb sleep, but a <b>light</b> carbohydrate snack is recommended: it raises serotonin. A <b>warm bath 90 minutes before bed</b> is also on the class's sleep hygiene list.</p><p><b>Takeaway:</b> Look for noise, pain, medications, and worry; a light carbohydrate snack and a bath 90 minutes before bed help sleep.</p>"
+      "rationale": "<p>Factors that affect sleep include the <b>environment</b> (noise above all: <b>alarms</b>), <b>illness, pain, and medications</b> (an <b>incision</b>; a <b>diuretic</b> in the evening causes nighttime urination), and <b>psychological stress</b> (<b>worry about results</b>).</p><p><b>The carbohydrate snack</b> isn't the right answer. Eating near bedtime can disturb sleep, but a <b>light</b> carbohydrate snack is recommended: it raises serotonin. A <b>warm bath 90 minutes before bed</b> is also on the class's sleep hygiene list.</p><p><b>Takeaway:</b> Look for noise, pain, medications, and worry; a light carbohydrate snack and a bath 90 minutes before bed help sleep.</p>"
     },
     {
       "id": "sl-17",
@@ -289,7 +289,7 @@
         "Teach her to avoid taking naps during the day"
       ],
       "answer": 2,
-      "rationale": "<p>When pain is likely to interrupt sleep, the nurse gives the <b>analgesic before bedtime</b>, so relief is in place before the pain wakes her.</p><p><b>Giving it when she wakes</b> is the tempting choice, because it treats the pain when it happens, but by then her sleep is already broken. A <b>sleeping medication</b> doesn't treat pain and is a last resort, and <b>avoiding naps</b> doesn't address what wakes her.</p><p><b>Takeaway:</b> If pain is likely to wake the client, give the analgesic before bed.</p>"
+      "rationale": "<p>When pain is likely to interrupt sleep, the nurse gives the <b>analgesic before bedtime</b>, so relief is in place before the pain wakes her.</p><p><b>Giving it when she wakes</b> isn't the right answer: it treats the pain when it happens, but by then her sleep is already broken. A <b>sleeping medication</b> doesn't treat pain and is a last resort, and <b>avoiding naps</b> doesn't address what wakes her.</p><p><b>Takeaway:</b> If pain is likely to wake the client, give the analgesic before bed.</p>"
     },
     {
       "id": "sl-18",
@@ -304,7 +304,7 @@
         "“I'll switch my after-dinner coffee to hot cocoa.”"
       ],
       "answer": 0,
-      "rationale": "<p>Caffeine is a stimulant, and clients should avoid it for <b>at least 4 to 6 hours before bed</b>. Stopping by early afternoon leaves plenty of time.</p><p><b>Hot cocoa</b> is the tempting choice, because it seems like a swap away from coffee, but chocolate has caffeine too, as does <b>cola</b>. Feeling that coffee \"doesn't affect me\" doesn't mean it doesn't disturb sleep quality.</p><p><b>Takeaway:</b> Stop caffeine (coffee, tea, cola, chocolate) at least 4 to 6 hours before bed.</p>"
+      "rationale": "<p>Caffeine is a stimulant, and clients should avoid it for <b>at least 4 to 6 hours before bed</b>. Stopping by early afternoon leaves plenty of time.</p><p><b>Hot cocoa</b> isn't the right answer: it seems like a swap away from coffee, but chocolate has caffeine too, as does <b>cola</b>. Feeling that coffee \"doesn't affect me\" doesn't mean it doesn't disturb sleep quality.</p><p><b>Takeaway:</b> Stop caffeine (coffee, tea, cola, chocolate) at least 4 to 6 hours before bed.</p>"
     },
     {
       "id": "sl-19",
@@ -319,7 +319,7 @@
         "Close the door, dim the lights, and group nighttime care"
       ],
       "answer": 3,
-      "rationale": "<p>Noise and light are major environmental barriers to sleep in the hospital. <b>Closing the door, dimming lights, and grouping care</b> reduce both, and grouping care allows longer stretches of sleep.</p><p><b>Leaving the door open</b> is the tempting choice, because staff want to hear the client, but the call light serves that purpose, and hallway noise keeps the client awake. <b>The TV</b> adds light and sound, and a <b>sleeping medication</b> every night isn't a first step.</p><p><b>Takeaway:</b> In the hospital: dark, quiet, door closed, and care grouped to protect sleep.</p>"
+      "rationale": "<p>Noise and light are major environmental barriers to sleep in the hospital. <b>Closing the door, dimming lights, and grouping care</b> reduce both, and grouping care allows longer stretches of sleep.</p><p><b>Leaving the door open</b> isn't the right answer: staff want to hear the client, but the call light serves that purpose, and hallway noise keeps the client awake. <b>The TV</b> adds light and sound, and a <b>sleeping medication</b> every night isn't a first step.</p><p><b>Takeaway:</b> In the hospital: dark, quiet, door closed, and care grouped to protect sleep.</p>"
     },
     {
       "id": "sl-20",
@@ -334,7 +334,7 @@
         "Explain that most people don't sleep well before surgery"
       ],
       "answer": 1,
-      "rationale": "<p><b>Psychological stress</b> is a common cause of poor sleep, and the nurse <b>assesses before acting</b>. Asking what's on her mind finds the cause and may relieve it.</p><p><b>A warm drink and dim lights</b> is the tempting choice, because both are comforting, but they skip assessing the worry that is keeping her awake. <b>The sleeping medication</b> is a last resort, and <b>explaining that it's common</b> dismisses her concern.</p><p><b>Takeaway:</b> When stress keeps a client awake, assess the worry first; medications are a last resort.</p>"
+      "rationale": "<p><b>Psychological stress</b> is a common cause of poor sleep, and the nurse <b>assesses before acting</b>. Asking what's on her mind finds the cause and may relieve it.</p><p><b>A warm drink and dim lights</b> isn't the right answer: both are comforting, but they skip assessing the worry that is keeping her awake. <b>The sleeping medication</b> is a last resort, and <b>explaining that it's common</b> dismisses her concern.</p><p><b>Takeaway:</b> When stress keeps a client awake, assess the worry first; medications are a last resort.</p>"
     },
     {
       "id": "sl-21",
@@ -349,7 +349,7 @@
         "Take the prescribed diuretic with dinner instead of breakfast"
       ],
       "answer": 1,
-      "rationale": "<p>The class teaches <b>decreasing fluid intake 2 to 4 hours before bed</b>. Moving fluids earlier keeps daily intake adequate while cutting nighttime urination.</p><p><b>Cutting total fluids in half</b> is the tempting choice, because less fluid means less urine, but it risks dehydration. <b>A full glass at bedtime</b> fills the bladder overnight, and a <b>diuretic with dinner</b> works through the night.</p><p><b>Takeaway:</b> Keep total fluids up, but drink most of them earlier in the day, cutting back 2 to 4 hours before bed.</p>"
+      "rationale": "<p>The class teaches <b>decreasing fluid intake 2 to 4 hours before bed</b>. Moving fluids earlier keeps daily intake adequate while cutting nighttime urination.</p><p><b>Cutting total fluids in half</b> isn't the right answer: less fluid means less urine, but it risks dehydration. <b>A full glass at bedtime</b> fills the bladder overnight, and a <b>diuretic with dinner</b> works through the night.</p><p><b>Takeaway:</b> Keep total fluids up, but drink most of them earlier in the day, cutting back 2 to 4 hours before bed.</p>"
     },
     {
       "id": "sl-22",
@@ -364,7 +364,7 @@
         "“Newborns sleep most of the day, much of it in REM sleep.”"
       ],
       "answer": 3,
-      "rationale": "<p>Newborns and infants average <b>16 to 24 hours</b> of sleep a day, and their sleep is <b>mainly REM</b>, with its eye movements and twitches. This baby's pattern is expected.</p><p><b>Twitching means the sleep is too light</b> is the tempting choice, because the movements look restless, but they're signs of REM sleep, which makes up most of a newborn's sleep. Babies aren't awake <b>half the day</b> at 3 weeks, and they usually sleep through the night at about 8 to 16 weeks, not 3.</p><p><b>Takeaway:</b> Newborns sleep 16 to 24 hours a day, mostly in REM.</p>"
+      "rationale": "<p>Newborns and infants average <b>16 to 24 hours</b> of sleep a day, and their sleep is <b>mainly REM</b>, with its eye movements and twitches. This baby's pattern is expected.</p><p><b>Twitching means the sleep is too light</b> isn't the right answer: the movements look restless, but they're signs of REM sleep, which makes up most of a newborn's sleep. Babies aren't awake <b>half the day</b> at 3 weeks, and they usually sleep through the night at about 8 to 16 weeks, not 3.</p><p><b>Takeaway:</b> Newborns sleep 16 to 24 hours a day, mostly in REM.</p>"
     },
     {
       "id": "sl-23",
@@ -379,7 +379,7 @@
         "“A sleeping pill can bring back the deep sleep you've lost.”"
       ],
       "answer": 0,
-      "rationale": "<p>Older adults average <b>5 to 7 hours</b> of sleep; their sleep is less sound, deep (stage IV) sleep is absent or much decreased, REM periods shorten, and they <b>wake earlier</b>. A client who feels rested during the day is getting enough.</p><p><b>Needing a sleep study</b> is the tempting choice, because sleep complaints deserve attention, but these findings are expected for age and the client feels rested. Expecting <b>8 hours</b> applies a younger adult's norm, and sleeping pills don't restore deep sleep and carry fall risks in older adults.</p><p><b>Takeaway:</b> Older adults sleep less, wake more, rise earlier, and lose deep sleep; judge by how rested they feel.</p>"
+      "rationale": "<p>Older adults average <b>5 to 7 hours</b> of sleep; their sleep is less sound, deep (stage IV) sleep is absent or much decreased, REM periods shorten, and they <b>wake earlier</b>. A client who feels rested during the day is getting enough.</p><p><b>Needing a sleep study</b> isn't the right answer: sleep complaints deserve attention, but these findings are expected for age and the client feels rested. Expecting <b>8 hours</b> applies a younger adult's norm, and sleeping pills don't restore deep sleep and carry fall risks in older adults.</p><p><b>Takeaway:</b> Older adults sleep less, wake more, rise earlier, and lose deep sleep; judge by how rested they feel.</p>"
     },
     {
       "id": "sl-24",
@@ -400,7 +400,7 @@
         3,
         5
       ],
-      "rationale": "<p>In older adults, <b>stage IV sleep is absent or much decreased</b>, sleep is less sound, REM periods shorten (so REM time doesn't grow), they have <b>more difficulty falling asleep</b>, and they <b>arise earlier</b>.</p><p><b>More total sleep</b> is the tempting choice, because older adults may nap more or spend longer in bed, but average nighttime sleep is shorter (about 5 to 7 hours), and it's lighter, not <b>sounder</b>. <b>More REM</b> is also wrong: REM periods shorten with age.</p><p><b>Takeaway:</b> With age: less deep sleep, shorter REM, harder to fall asleep, earlier waking, and fewer total hours.</p>"
+      "rationale": "<p>In older adults, <b>stage IV sleep is absent or much decreased</b>, sleep is less sound, REM periods shorten (so REM time doesn't grow), they have <b>more difficulty falling asleep</b>, and they <b>arise earlier</b>.</p><p><b>More total sleep</b> isn't the right answer: older adults may nap more or spend longer in bed, but average nighttime sleep is shorter (about 5 to 7 hours), and it's lighter, not <b>sounder</b>. <b>More REM</b> is also wrong: REM periods shorten with age.</p><p><b>Takeaway:</b> With age: less deep sleep, shorter REM, harder to fall asleep, earlier waking, and fewer total hours.</p>"
     },
     {
       "id": "sl-25",
@@ -415,7 +415,7 @@
         "“Most people need more sleep in their 40s than in their 20s.”"
       ],
       "answer": 2,
-      "rationale": "<p>In <b>middle-aged adults</b>, time awake in bed increases (it takes longer to fall asleep), <b>stage IV sleep decreases</b>, and they become <b>more aware of sleep disturbances</b>. Reviewing her habits finds what she can change.</p><p><b>A sleep study</b> is the tempting choice, because the complaints are real, but they match expected changes, and habits come first. Deep sleep <b>decreases</b> in middle age, which is why noise wakes her more, and sleep needs don't rise in the 40s.</p><p><b>Takeaway:</b> Middle age: slower to fall asleep, less deep sleep, and more aware of disturbances.</p>"
+      "rationale": "<p>In <b>middle-aged adults</b>, time awake in bed increases (it takes longer to fall asleep), <b>stage IV sleep decreases</b>, and they become <b>more aware of sleep disturbances</b>. Reviewing her habits finds what she can change.</p><p><b>A sleep study</b> isn't the right answer: the complaints are real, but they match expected changes, and habits come first. Deep sleep <b>decreases</b> in middle age, which is why noise wakes her more, and sleep needs don't rise in the 40s.</p><p><b>Takeaway:</b> Middle age: slower to fall asleep, less deep sleep, and more aware of disturbances.</p>"
     },
     {
       "id": "sl-26",
@@ -430,7 +430,7 @@
         "Keep the same routine each night: bath, teeth, then a story"
       ],
       "answer": 3,
-      "rationale": "<p>A <b>regular bedtime routine</b> is especially important for children: a warm bath, brushing teeth, quiet music or a story, at the same time each night.</p><p><b>Letting her fall asleep on her own</b> is the tempting choice, because it avoids the struggle, but it removes the regular bedtime that sets her body clock. A <b>tablet</b> in bed adds bright light and stimulation, and a <b>late, long nap</b> pushes bedtime later.</p><p><b>Takeaway:</b> Children sleep best with the same bedtime and the same routine every night.</p>"
+      "rationale": "<p>A <b>regular bedtime routine</b> is especially important for children: a warm bath, brushing teeth, quiet music or a story, at the same time each night.</p><p><b>Letting her fall asleep on her own</b> isn't the right answer: it avoids the struggle, but it removes the regular bedtime that sets her body clock. A <b>tablet</b> in bed adds bright light and stimulation, and a <b>late, long nap</b> pushes bedtime later.</p><p><b>Takeaway:</b> Children sleep best with the same bedtime and the same routine every night.</p>"
     },
     {
       "id": "sl-27",
@@ -445,7 +445,7 @@
         "Record how rested you feel each morning for a month"
       ],
       "answer": 2,
-      "rationale": "<p>A <b>sleep diary</b> is a diagnostic tool kept for <b>14 days</b>: the time to bed, the <b>time it takes to fall asleep</b>, the number and times of awakenings, wake time, total hours, food, drink, and medications, activities, and worries.</p><p><b>Recording only the bad nights</b> is the tempting choice, because those are the problem, but the good nights show what helps. <b>Two nights</b> are too few to see a pattern, and <b>how rested you feel</b> alone leaves out the timing data.</p><p><b>Takeaway:</b> A sleep diary covers every night for 14 days, with times, wakings, intake, activities, and worries.</p>"
+      "rationale": "<p>A <b>sleep diary</b> is a diagnostic tool kept for <b>14 days</b>: the time to bed, the <b>time it takes to fall asleep</b>, the number and times of awakenings, wake time, total hours, food, drink, and medications, activities, and worries.</p><p><b>Recording only the bad nights</b> isn't the right answer: those are the problem, but the good nights show what helps. <b>Two nights</b> are too few to see a pattern, and <b>how rested you feel</b> alone leaves out the timing data.</p><p><b>Takeaway:</b> A sleep diary covers every night for 14 days, with times, wakings, intake, activities, and worries.</p>"
     },
     {
       "id": "sl-28",
@@ -466,7 +466,7 @@
         3,
         4
       ],
-      "rationale": "<p>The class's sleep diary includes the times of going to bed, falling asleep, waking at night, and waking in the morning; <b>food, drink, and medications</b>; physical and mental activities; <b>activities 2 to 3 hours before bedtime</b>, rituals, and changes in the environment; and worries or anxieties.</p><p><b>Remembered dreams</b> is the tempting choice, because dreams feel connected to sleep, but they aren't part of the diary and don't show the patterns it looks for. <b>Daily weight</b> and <b>blood pressure</b> aren't part of it.</p><p><b>Takeaway:</b> The diary tracks timing, intake, activities before bed, the environment, and worries.</p>"
+      "rationale": "<p>The class's sleep diary includes the times of going to bed, falling asleep, waking at night, and waking in the morning; <b>food, drink, and medications</b>; physical and mental activities; <b>activities 2 to 3 hours before bedtime</b>, rituals, and changes in the environment; and worries or anxieties.</p><p><b>Remembered dreams</b> isn't the right answer: dreams feel connected to sleep, but they aren't part of the diary and don't show the patterns it looks for. <b>Daily weight</b> and <b>blood pressure</b> aren't part of it.</p><p><b>Takeaway:</b> The diary tracks timing, intake, activities before bed, the environment, and worries.</p>"
     },
     {
       "id": "sl-29",
@@ -481,7 +481,7 @@
         "“On weekends I get up within an hour of my usual time.”"
       ],
       "answer": 0,
-      "rationale": "<p>The sleep assessment asks whether the client reads, watches TV, texts, or eats in bed. <b>Screens in bed</b> add light and stimulation and teach the brain that bed is for being awake, so this needs follow-up and teaching.</p><p><b>Falling asleep in 15 minutes</b> is the tempting choice, because the nurse is asking about time to fall asleep, but 15 minutes is well within the normal range. <b>Regular bed and wake times</b>, even on weekends, are good sleep hygiene.</p><p><b>Takeaway:</b> Ask what the client does in bed; screens, work, and eating in bed need teaching.</p>"
+      "rationale": "<p>The sleep assessment asks whether the client reads, watches TV, texts, or eats in bed. <b>Screens in bed</b> add light and stimulation and teach the brain that bed is for being awake, so this needs follow-up and teaching.</p><p><b>Falling asleep in 15 minutes</b> isn't the right answer: the nurse is asking about time to fall asleep, but 15 minutes is well within the normal range. <b>Regular bed and wake times</b>, even on weekends, are good sleep hygiene.</p><p><b>Takeaway:</b> Ask what the client does in bed; screens, work, and eating in bed need teaching.</p>"
     },
     {
       "id": "sl-30",
@@ -496,7 +496,7 @@
         "Ask the provider about a sleeping medication at bedtime"
       ],
       "answer": 0,
-      "rationale": "<p>Lengthy naps take away the sleep drive the client needs at night. The class teaches <b>eliminating lengthy naps</b>; a short nap, if any, is far less disruptive.</p><p><b>Going to bed earlier</b> is the tempting choice, because it seems to give more time for sleep, but it means more time lying awake in bed. <b>Staying in bed until sleep comes</b> goes against the 20-minute rule, and <b>medication</b> is a last resort.</p><p><b>Takeaway:</b> Long daytime naps steal night sleep; shorten or drop them before anything else.</p>"
+      "rationale": "<p>Lengthy naps take away the sleep drive the client needs at night. The class teaches <b>eliminating lengthy naps</b>; a short nap, if any, is far less disruptive.</p><p><b>Going to bed earlier</b> isn't the right answer: it seems to give more time for sleep, but it means more time lying awake in bed. <b>Staying in bed until sleep comes</b> goes against the 20-minute rule, and <b>medication</b> is a last resort.</p><p><b>Takeaway:</b> Long daytime naps steal night sleep; shorten or drop them before anything else.</p>"
     },
     {
       "id": "sl-31",
@@ -511,7 +511,7 @@
         "Get up and exercise until you feel tired enough to fall back asleep"
       ],
       "answer": 1,
-      "rationale": "<p>Sleep hygiene says: if you can't sleep <b>within 20 minutes, get up and do something boring</b>, and return when sleepy. Lying awake teaches the brain that bed is for worrying.</p><p><b>Staying in bed with eyes closed</b> is the tempting choice, because resting seems better than nothing, but it strengthens the link between bed and wakefulness. <b>TV in bed</b> breaks the rule that the bed is only for sleep, and <b>exercise</b> at night is stimulating.</p><p><b>Takeaway:</b> Can't sleep in 20 minutes? Get up, do something boring, and go back when sleepy.</p>"
+      "rationale": "<p>Sleep hygiene says: if you can't sleep <b>within 20 minutes, get up and do something boring</b>, and return when sleepy. Lying awake teaches the brain that bed is for worrying.</p><p><b>Staying in bed with eyes closed</b> isn't the right answer: resting seems better than nothing, but it strengthens the link between bed and wakefulness. <b>TV in bed</b> breaks the rule that the bed is only for sleep, and <b>exercise</b> at night is stimulating.</p><p><b>Takeaway:</b> Can't sleep in 20 minutes? Get up, do something boring, and go back when sleepy.</p>"
     },
     {
       "id": "sl-32",
@@ -526,7 +526,7 @@
         "Do the laptop work in another room, and keep the bed for sleep"
       ],
       "answer": 3,
-      "rationale": "<p>Sleep hygiene: <b>use the bed only for sleep and sex</b>. Moving the work out of the bed lets the bed become a cue for sleep again.</p><p><b>Stopping an hour before lights out</b> is the tempting choice, because it removes the screen before sleep, but the bed is still where work happens. <b>Dimming the screen</b> and <b>sitting upright</b> also keep working in bed.</p><p><b>Takeaway:</b> Keep the bed for sleep (and sex) only, so it becomes a cue for sleep.</p>"
+      "rationale": "<p>Sleep hygiene: <b>use the bed only for sleep and sex</b>. Moving the work out of the bed lets the bed become a cue for sleep again.</p><p><b>Stopping an hour before lights out</b> isn't the right answer: it removes the screen before sleep, but the bed is still where work happens. <b>Dimming the screen</b> and <b>sitting upright</b> also keep working in bed.</p><p><b>Takeaway:</b> Keep the bed for sleep (and sex) only, so it becomes a cue for sleep.</p>"
     },
     {
       "id": "sl-33",
@@ -549,7 +549,7 @@
         4,
         5
       ],
-      "rationale": "<p>The class's sleep hygiene teaching includes <b>regular wake and bed times</b>, <b>morning sunlight</b> to set the biological clock, <b>avoiding heavy meals 3 hours before bed</b>, a <b>warm bath 90 minutes before bed</b>, and a <b>quiet, comfortable bedroom</b>.</p><p><b>Sleeping in on weekends</b> is the tempting choice, because it seems to repay the week's sleep debt, but it shifts the body clock later and makes Sunday and Monday nights harder.</p><p><b>Takeaway:</b> Same times every day, light evenings, morning sunlight, a bath 90 minutes before bed, and a quiet bedroom; no weekend sleeping in.</p>"
+      "rationale": "<p>The class's sleep hygiene teaching includes <b>regular wake and bed times</b>, <b>morning sunlight</b> to set the biological clock, <b>avoiding heavy meals 3 hours before bed</b>, a <b>warm bath 90 minutes before bed</b>, and a <b>quiet, comfortable bedroom</b>.</p><p><b>Sleeping in on weekends</b> isn't the right answer: it seems to repay the week's sleep debt, but it shifts the body clock later and makes Sunday and Monday nights harder.</p><p><b>Takeaway:</b> Same times every day, light evenings, morning sunlight, a bath 90 minutes before bed, and a quiet bedroom; no weekend sleeping in.</p>"
     },
     {
       "id": "sl-34",
@@ -564,7 +564,7 @@
         "Offer to turn on the TV until he feels drowsy"
       ],
       "answer": 2,
-      "rationale": "<p>Sleeping medications are a <b>last resort</b>, and the nurse assesses first. Asking what helps at home (a routine, a snack, reading, a pillow) lets the nurse recreate it in the hospital.</p><p><b>Explaining that pills are a last resort</b> is the tempting choice, because it's true, but it tells him no without offering help or finding out what works for him. <b>Giving the medication</b> skips the nondrug measures, and <b>the TV</b> adds light and noise.</p><p><b>Takeaway:</b> Before a sleeping pill, assess the client's usual routine and use nondrug measures first.</p>"
+      "rationale": "<p>Sleeping medications are a <b>last resort</b>, and the nurse assesses first. Asking what helps at home (a routine, a snack, reading, a pillow) lets the nurse recreate it in the hospital.</p><p><b>Explaining that pills are a last resort</b> isn't the right answer: it's true, but it tells him no without offering help or finding out what works for him. <b>Giving the medication</b> skips the nondrug measures, and <b>the TV</b> adds light and noise.</p><p><b>Takeaway:</b> Before a sleeping pill, assess the client's usual routine and use nondrug measures first.</p>"
     },
     {
       "id": "sl-35",
@@ -579,7 +579,7 @@
         "Shorten the run to 15 minutes at 2100"
       ],
       "answer": 0,
-      "rationale": "<p>Exercise helps sleep, but <b>not close to bedtime</b>: the class teaches stopping hours before bed. Moving the run earlier keeps the benefit without the stimulation.</p><p><b>A shorter run at 2100</b> is the tempting choice, because less exercise sounds less stimulating, but it's still right before bed. <b>Running harder</b> adds stimulation, and <b>stopping exercise</b> loses its benefits for sleep.</p><p><b>Takeaway:</b> Keep exercising, but finish hours before bedtime.</p>"
+      "rationale": "<p>Exercise helps sleep, but <b>not close to bedtime</b>: the class teaches stopping hours before bed. Moving the run earlier keeps the benefit without the stimulation.</p><p><b>A shorter run at 2100</b> isn't the right answer: less exercise sounds less stimulating, but it's still right before bed. <b>Running harder</b> adds stimulation, and <b>stopping exercise</b> loses its benefits for sleep.</p><p><b>Takeaway:</b> Keep exercising, but finish hours before bedtime.</p>"
     },
     {
       "id": "sl-36",
@@ -594,7 +594,7 @@
         "“I'll get up at the same time every morning, weekends too.”"
       ],
       "answer": 3,
-      "rationale": "<p><b>Getting up and going to bed at the same time every day</b> anchors the circadian clock and is a core sleep hygiene rule.</p><p><b>A small glass of wine</b> is the tempting choice, because a small amount sounds harmless, but alcohol disrupts the second half of the night and should be avoided at least 4 hours before bed. <b>Sleeping in</b> and <b>long naps</b> both disrupt the schedule.</p><p><b>Takeaway:</b> The same wake time every day, weekends included, is the anchor of sleep hygiene.</p>"
+      "rationale": "<p><b>Getting up and going to bed at the same time every day</b> anchors the circadian clock and is a core sleep hygiene rule.</p><p><b>A small glass of wine</b> isn't the right answer: a small amount sounds harmless, but alcohol disrupts the second half of the night and should be avoided at least 4 hours before bed. <b>Sleeping in</b> and <b>long naps</b> both disrupt the schedule.</p><p><b>Takeaway:</b> The same wake time every day, weekends included, is the anchor of sleep hygiene.</p>"
     },
     {
       "id": "sl-37",
@@ -609,7 +609,7 @@
         "Sleep with the TV on to block out daytime noise in the house"
       ],
       "answer": 1,
-      "rationale": "<p>Daytime sleep after night shift needs the same hygiene as night sleep: a <b>dark, quiet room</b> and <b>regular sleep hours</b>, even when the shift moves sleep into the day.</p><p><b>Coffee at 0500</b> is the tempting choice, because staying alert on the drive home matters, but caffeine that late keeps the nurse from sleeping in the morning. <b>Errands before sleep</b> delay sleep and add morning light, and <b>the TV</b> adds light and sound.</p><p><b>Takeaway:</b> Night workers protect daytime sleep with darkness, quiet, and a regular schedule.</p>"
+      "rationale": "<p>Daytime sleep after night shift needs the same hygiene as night sleep: a <b>dark, quiet room</b> and <b>regular sleep hours</b>, even when the shift moves sleep into the day.</p><p><b>Coffee at 0500</b> isn't the right answer: staying alert on the drive home matters, but caffeine that late keeps the nurse from sleeping in the morning. <b>Errands before sleep</b> delay sleep and add morning light, and <b>the TV</b> adds light and sound.</p><p><b>Takeaway:</b> Night workers protect daytime sleep with darkness, quiet, and a regular schedule.</p>"
     },
     {
       "id": "sl-38",
@@ -624,7 +624,7 @@
         "Take a short nap or a brisk walk on the next break"
       ],
       "answer": 3,
-      "rationale": "<p>Fatigue-related errors rise with consecutive night shifts and long hours. To stay alert, the class suggests <b>napping on the job when allowed</b>, staying <b>active during breaks</b>, and a caffeinated drink. A short nap or brisk walk is the safe step now.</p><p><b>Leaving the charting until 0600</b> is the tempting choice, because the nurse is trying to plan around drowsiness, but tedious tasks shouldn't be left for the end of the shift, when drowsiness peaks around 0400 to 0500 and continues. <b>A large meal</b> adds sluggishness, and <b>skipping the break</b> removes the chance to recover.</p><p><b>Takeaway:</b> Drowsy on nights: nap or move on your break, and don't save tedious work for the end of the shift.</p>"
+      "rationale": "<p>Fatigue-related errors rise with consecutive night shifts and long hours. To stay alert, the class suggests <b>napping on the job when allowed</b>, staying <b>active during breaks</b>, and a caffeinated drink. A short nap or brisk walk is the safe step now.</p><p><b>Leaving the charting until 0600</b> isn't the right answer: the nurse is trying to plan around drowsiness, but tedious tasks shouldn't be left for the end of the shift, when drowsiness peaks around 0400 to 0500 and continues. <b>A large meal</b> adds sluggishness, and <b>skipping the break</b> removes the chance to recover.</p><p><b>Takeaway:</b> Drowsy on nights: nap or move on your break, and don't save tedious work for the end of the shift.</p>"
     },
     {
       "id": "sl-39",
@@ -645,7 +645,7 @@
         3,
         4
       ],
-      "rationale": "<p>Missing sleep raises the risk of <b>type 2 diabetes</b>, <b>obesity</b>, and <b>heart disease and stroke</b>, and it impairs the immune system.</p><p><b>Lower blood pressure</b> is the tempting choice, because people think of sleep as rest for the heart, but short sleep raises cardiovascular risk. Sleep loss <b>slows</b> reaction time, and it <b>weakens</b> immunity rather than strengthening it.</p><p><b>Takeaway:</b> Short sleep raises the risk of diabetes, obesity, heart disease and stroke, and infections.</p>"
+      "rationale": "<p>Missing sleep raises the risk of <b>type 2 diabetes</b>, <b>obesity</b>, and <b>heart disease and stroke</b>, and it impairs the immune system.</p><p><b>Lower blood pressure</b> isn't the right answer: people think of sleep as rest for the heart, but short sleep raises cardiovascular risk. Sleep loss <b>slows</b> reaction time, and it <b>weakens</b> immunity rather than strengthening it.</p><p><b>Takeaway:</b> Short sleep raises the risk of diabetes, obesity, heart disease and stroke, and infections.</p>"
     },
     {
       "id": "sl-40",
@@ -660,7 +660,7 @@
         "“A strong coffee will fully undo the effects of sleep loss.”"
       ],
       "answer": 0,
-      "rationale": "<p>Short-term effects of sleep loss include <b>increased reaction time</b>, decreased accuracy, and cognitive impairment. Drowsy driving causes about 100,000 crashes a year, and feeling alert doesn't mean the effects are gone.</p><p><b>A strong coffee</b> is the tempting choice, because caffeine does help alertness for a while, but it doesn't fully reverse the effects of lost sleep. Even <b>one short night</b> slows reactions, and feeling fine isn't a reliable sign of recovery.</p><p><b>Takeaway:</b> Even one short night slows reaction time; feeling alert isn't proof of being safe.</p>"
+      "rationale": "<p>Short-term effects of sleep loss include <b>increased reaction time</b>, decreased accuracy, and cognitive impairment. Drowsy driving causes about 100,000 crashes a year, and feeling alert doesn't mean the effects are gone.</p><p><b>A strong coffee</b> isn't the right answer: caffeine does help alertness for a while, but it doesn't fully reverse the effects of lost sleep. Even <b>one short night</b> slows reactions, and feeling fine isn't a reliable sign of recovery.</p><p><b>Takeaway:</b> Even one short night slows reaction time; feeling alert isn't proof of being safe.</p>"
     },
     {
       "id": "sl-41",
@@ -675,7 +675,7 @@
         "Take a route with more traffic lights"
       ],
       "answer": 2,
-      "rationale": "<p>Nurses on night and rotating shifts are much more likely to doze off driving home. When a nurse is too drowsy to drive safely, <b>a short nap before driving</b> treats the cause: the sleep debt.</p><p><b>A large coffee before leaving</b> is the tempting choice, because caffeine is a recommended alertness tool on the job, but it doesn't make a drowsy driver safe, and it disrupts the day's sleep that follows. <b>Open windows and loud music</b> don't restore alertness, and <b>a route with more lights</b> adds stops where she nearly fell asleep.</p><p><b>Takeaway:</b> Too drowsy to drive after a night shift? Nap first; tricks to stay awake don't make it safe.</p>"
+      "rationale": "<p>Nurses on night and rotating shifts are much more likely to doze off driving home. When a nurse is too drowsy to drive safely, <b>a short nap before driving</b> treats the cause: the sleep debt.</p><p><b>A large coffee before leaving</b> isn't the right answer: caffeine is a recommended alertness tool on the job, but it doesn't make a drowsy driver safe, and it disrupts the day's sleep that follows. <b>Open windows and loud music</b> don't restore alertness, and <b>a route with more lights</b> adds stops where she nearly fell asleep.</p><p><b>Takeaway:</b> Too drowsy to drive after a night shift? Nap first; tricks to stay awake don't make it safe.</p>"
     },
     {
       "id": "sl-42",
@@ -698,7 +698,7 @@
         3,
         4
       ],
-      "rationale": "<p><b>Coffee at 1900</b> is caffeine within 4 hours of bed. <b>Wine at 2100</b> breaks up sleep in the second half of the night, which fits waking at 0300. <b>Phone use in bed</b> adds light and keeps the bed linked to wakefulness. <b>Sleeping until 1000</b> on weekends shifts the body clock.</p><p><b>The crackers</b> are the tempting choice, because eating late can disturb sleep, but a light carbohydrate snack is recommended. A <b>walk at 1700</b> is exercise well before bedtime, which helps sleep.</p><p><b>Takeaway:</b> Read a sleep diary for caffeine and alcohol timing, screens in bed, and irregular wake times; light snacks and early exercise help.</p>"
+      "rationale": "<p><b>Coffee at 1900</b> is caffeine within 4 hours of bed. <b>Wine at 2100</b> breaks up sleep in the second half of the night, which fits waking at 0300. <b>Phone use in bed</b> adds light and keeps the bed linked to wakefulness. <b>Sleeping until 1000</b> on weekends shifts the body clock.</p><p><b>The crackers</b> aren't the right answer: eating late can disturb sleep, but a light carbohydrate snack is recommended. A <b>walk at 1700</b> is exercise well before bedtime, which helps sleep.</p><p><b>Takeaway:</b> Read a sleep diary for caffeine and alcohol timing, screens in bed, and irregular wake times; light snacks and early exercise help.</p>"
     },
     {
       "id": "sl-43",
@@ -714,7 +714,7 @@
         "Suggest going to bed at 2100 to allow more time to sleep"
       ],
       "answer": 1,
-      "rationale": "<p>The notes show <b>psychological stress</b> (the layoffs) keeping the client awake. Exploring the worries and ways to cope addresses a cause the hygiene teaching doesn't reach.</p><p><b>A sleeping medication</b> is the tempting choice, because the client is exhausted after 3 months, but medications are a last resort, and the stress and habits come first. <b>A longer nap</b> worsens night sleep, and <b>an earlier bedtime</b> means more time awake in bed.</p><p><b>Takeaway:</b> When worry keeps a client awake, address the stress along with the sleep habits.</p>"
+      "rationale": "<p>The notes show <b>psychological stress</b> (the layoffs) keeping the client awake. Exploring the worries and ways to cope addresses a cause the hygiene teaching doesn't reach.</p><p><b>A sleeping medication</b> isn't the right answer: the client is exhausted after 3 months, but medications are a last resort, and the stress and habits come first. <b>A longer nap</b> worsens night sleep, and <b>an earlier bedtime</b> means more time awake in bed.</p><p><b>Takeaway:</b> When worry keeps a client awake, address the stress along with the sleep habits.</p>"
     },
     {
       "id": "sl-44",
@@ -730,7 +730,7 @@
         "Has the wine at 2000 instead of at 2100"
       ],
       "answer": 2,
-      "rationale": "<p>The goal is better sleep, and <b>falling asleep within about 20 minutes</b> on most nights shows the changes are working.</p><p><b>Wine at 2000</b> is the tempting choice, because it's an hour earlier, but it's still within 4 hours of bed, so it still disrupts sleep. <b>Sleeping until 1100</b> and <b>2-hour naps</b> are habits the plan was meant to change.</p><p><b>Takeaway:</b> Evaluate with the sleep diary: faster sleep onset and fewer wakings show success; small shifts in bad habits don't.</p>"
+      "rationale": "<p>The goal is better sleep, and <b>falling asleep within about 20 minutes</b> on most nights shows the changes are working.</p><p><b>Wine at 2000</b> isn't the right answer: it's an hour earlier, but it's still within 4 hours of bed, so it still disrupts sleep. <b>Sleeping until 1100</b> and <b>2-hour naps</b> are habits the plan was meant to change.</p><p><b>Takeaway:</b> Evaluate with the sleep diary: faster sleep onset and fewer wakings show success; small shifts in bad habits don't.</p>"
     },
     {
       "id": "sl-45",
@@ -745,7 +745,7 @@
         "Take a long nap tomorrow afternoon to catch up"
       ],
       "answer": 0,
-      "rationale": "<p>Flying east means the body clock must move <b>earlier</b>. The clock is easily nudged in the advance direction by <b>light in the early morning</b>, so morning sunlight at the new location resets it fastest. The class's sleep hygiene list says it simply: use sunlight to set the biological clock.</p><p><b>Sleeping late</b> is the tempting choice, because the client is short on sleep, but sleeping through the morning skips the light cue and keeps the client on California time. A <b>dim morning</b> does the same, and a <b>long afternoon nap</b> makes the next night harder.</p><p><b>Takeaway:</b> Morning light moves the body clock earlier; evening light moves it later.</p>"
+      "rationale": "<p>Flying east means the body clock must move <b>earlier</b>. The clock is easily nudged in the advance direction by <b>light in the early morning</b>, so morning sunlight at the new location resets it fastest. The class's sleep hygiene list says it simply: use sunlight to set the biological clock.</p><p><b>Sleeping late</b> isn't the right answer: the client is short on sleep, but sleeping through the morning skips the light cue and keeps the client on California time. A <b>dim morning</b> does the same, and a <b>long afternoon nap</b> makes the next night harder.</p><p><b>Takeaway:</b> Morning light moves the body clock earlier; evening light moves it later.</p>"
     },
     {
       "id": "sl-46",
@@ -760,7 +760,7 @@
         "“That means you skipped the lighter sleep stages.”"
       ],
       "answer": 2,
-      "rationale": "<p>Involuntary muscle jerking is a feature of <b>NREM stage I</b>, the transition from wakefulness to sleep, when the person is easily aroused. It's common and harmless.</p><p><b>REM sleep</b> is the tempting choice, because a falling feeling sounds like a dream, but in REM the large muscles are nearly paralyzed, and REM comes later in the cycle. <b>The deepest stage</b> is hard to wake from, and the jerk shows the client is in the lightest stage, not skipping it.</p><p><b>Takeaway:</b> Jerks while drifting off happen in stage I, the lightest sleep.</p>"
+      "rationale": "<p>Involuntary muscle jerking is a feature of <b>NREM stage I</b>, the transition from wakefulness to sleep, when the person is easily aroused. It's common and harmless.</p><p><b>REM sleep</b> isn't the right answer: a falling feeling sounds like a dream, but in REM the large muscles are nearly paralyzed, and REM comes later in the cycle. <b>The deepest stage</b> is hard to wake from, and the jerk shows the client is in the lightest stage, not skipping it.</p><p><b>Takeaway:</b> Jerks while drifting off happen in stage I, the lightest sleep.</p>"
     },
     {
       "id": "sl-47",
@@ -775,7 +775,7 @@
         "“It usually starts once a baby eats solid foods.”"
       ],
       "answer": 1,
-      "rationale": "<p>Each baby is different, but infants usually <b>sleep through the night at about 8 to 16 weeks</b> (2 to 4 months).</p><p><b>Starting solid foods</b> is the tempting choice, because it's a popular belief, but it isn't what the class teaches, and most babies sleep through earlier. <b>Five weeks</b> is too early, and <b>a year</b> is much later than usual.</p><p><b>Takeaway:</b> Babies usually begin sleeping through the night at about 8 to 16 weeks.</p>"
+      "rationale": "<p>Each baby is different, but infants usually <b>sleep through the night at about 8 to 16 weeks</b> (2 to 4 months).</p><p><b>Starting solid foods</b> isn't the right answer: it's a popular belief, but it isn't what the class teaches, and most babies sleep through earlier. <b>Five weeks</b> is too early, and <b>a year</b> is much later than usual.</p><p><b>Takeaway:</b> Babies usually begin sleeping through the night at about 8 to 16 weeks.</p>"
     },
     {
       "id": "sl-48",
@@ -790,7 +790,7 @@
         "“Short sleep weakens the immune system over time.”"
       ],
       "answer": 3,
-      "rationale": "<p>An <b>impaired immune system</b> is one of the effects of missing sleep, so frequent colds fit this student's short sleep.</p><p><b>Short sleep mainly affects mood</b> is the tempting choice, because irritability is the most noticeable effect, but sleep loss affects the whole body, including immunity. Sleep loss tends to <b>lower</b> body temperature, and napping isn't a cause of colds.</p><p><b>Takeaway:</b> Missing sleep weakens immunity, along with mood, memory, and metabolism.</p>"
+      "rationale": "<p>An <b>impaired immune system</b> is one of the effects of missing sleep, so frequent colds fit this student's short sleep.</p><p><b>Short sleep mainly affects mood</b> isn't the right answer: irritability is the most noticeable effect, but sleep loss affects the whole body, including immunity. Sleep loss tends to <b>lower</b> body temperature, and napping isn't a cause of colds.</p><p><b>Takeaway:</b> Missing sleep weakens immunity, along with mood, memory, and metabolism.</p>"
     },
     {
       "id": "sl-49",
@@ -805,7 +805,7 @@
         "Sleep on the living room couch, where it's darker"
       ],
       "answer": 1,
-      "rationale": "<p>The bedroom should be <b>dark, quiet, and comfortable</b>. Room-darkening shades block the light that suppresses melatonin, and a comfortable temperature helps sleep.</p><p><b>Sleeping on the couch</b> is the tempting choice, because the room is darker, but it trades one problem for an uncomfortable bed and a room used for other activities. <b>A lamp</b> and <b>the TV</b> add more light.</p><p><b>Takeaway:</b> Make the bedroom dark, quiet, and comfortable rather than working around light.</p>"
+      "rationale": "<p>The bedroom should be <b>dark, quiet, and comfortable</b>. Room-darkening shades block the light that suppresses melatonin, and a comfortable temperature helps sleep.</p><p><b>Sleeping on the couch</b> isn't the right answer: the room is darker, but it trades one problem for an uncomfortable bed and a room used for other activities. <b>A lamp</b> and <b>the TV</b> add more light.</p><p><b>Takeaway:</b> Make the bedroom dark, quiet, and comfortable rather than working around light.</p>"
     },
     {
       "id": "sl-50",
@@ -820,7 +820,7 @@
         "“Do your naps help you feel better?”"
       ],
       "answer": 2,
-      "rationale": "<p>The class's sleep assessment asks about naps: <b>how often and how long</b>. Frequency and length decide whether naps help or interfere with night sleep.</p><p><b>Whether the naps help</b> is the tempting choice, because it asks about the client's experience, but a long nap can feel good and still ruin the night. Being <b>tired in the afternoon</b> and <b>always napping</b> don't give the facts the nurse needs.</p><p><b>Takeaway:</b> For naps, assess how often and how long.</p>"
+      "rationale": "<p>The class's sleep assessment asks about naps: <b>how often and how long</b>. Frequency and length decide whether naps help or interfere with night sleep.</p><p><b>Whether the naps help</b> isn't the right answer: it asks about the client's experience, but a long nap can feel good and still ruin the night. Being <b>tired in the afternoon</b> and <b>always napping</b> don't give the facts the nurse needs.</p><p><b>Takeaway:</b> For naps, assess how often and how long.</p>"
     }
   ]
 }

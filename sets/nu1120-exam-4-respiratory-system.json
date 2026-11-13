@@ -34,7 +34,7 @@
       "stem": "A client with a head cold says, “My voice sounds muffled and flat, and my cheeks and forehead ache.” Which structures should the nurse suspect are swollen?",
       "options": ["The paranasal sinuses, which help give the voice its resonance", "The vocal folds of the larynx, which vibrate to make the sound of the voice", "The turbinates, which make the air swirl so that it's warmed and filtered", "The epiglottis, which closes over the larynx during swallowing"],
       "answer": 0,
-      "rationale": "<p>The <b>paranasal sinuses</b> (frontal, maxillary, ethmoid, and sphenoid) help give the voice its resonance and condition the air. Swollen, blocked sinuses make the voice sound muffled and flat, and aching cheeks and forehead point to the maxillary and frontal sinuses.</p><p><b>The vocal folds</b> are the tempting choice, since they make the voice, but swollen vocal folds make a voice <b>hoarse</b>, not muffled, and wouldn't explain the facial pain. <b>The turbinates</b> warm, moisten, and filter air, and <b>the epiglottis</b> protects the airway during swallowing.</p><p><b>Takeaway:</b> Sinuses: resonance of the voice. Larynx (vocal folds): the sound itself, so hoarseness.</p>"
+      "rationale": "<p>The <b>paranasal sinuses</b> (frontal, maxillary, ethmoid, and sphenoid) help give the voice its resonance and condition the air. Swollen, blocked sinuses make the voice sound muffled and flat, and aching cheeks and forehead point to the maxillary and frontal sinuses.</p><p><b>The vocal folds</b> aren't the right answer: they make the voice, but swollen vocal folds make a voice <b>hoarse</b>, not muffled, and wouldn't explain the facial pain. <b>The turbinates</b> warm, moisten, and filter air, and <b>the epiglottis</b> protects the airway during swallowing.</p><p><b>Takeaway:</b> Sinuses: resonance of the voice. Larynx (vocal folds): the sound itself, so hoarseness.</p>"
     },
     {
       "id": "rs-02",
@@ -44,7 +44,7 @@
       "stem": "During an oral exam, a nurse sees swollen tonsils at the back of the mouth, just behind the arch at the back of the oral cavity. Which part of the pharynx is the nurse looking at?",
       "options": ["The nasopharynx, behind the nasal cavity and above the palate", "The hypopharynx, which leads into both the larynx and the esophagus", "The oropharynx, between the palate and the hyoid bone", "The larynx, where the vocal folds form the glottic opening"],
       "answer": 2,
-      "rationale": "<p>The <b>oropharynx</b> lies between the palate and the hyoid bone, and is separated from the mouth by the tonsillar arch, so tonsils seen at the back of the mouth are in the oropharynx.</p><p><b>The nasopharynx</b> is the tempting choice, since it holds lymphoid tissue too (the adenoids), but it sits above the palate, behind the nose, out of sight in an oral exam. <b>The hypopharynx</b> begins below the hyoid bone, and <b>the larynx</b> isn't part of the pharynx.</p><p><b>Takeaway:</b> Nasopharynx (behind the nose, above the palate), oropharynx (behind the mouth, to the hyoid), hypopharynx (below the hyoid, into the larynx and esophagus).</p>"
+      "rationale": "<p>The <b>oropharynx</b> lies between the palate and the hyoid bone, and is separated from the mouth by the tonsillar arch, so tonsils seen at the back of the mouth are in the oropharynx.</p><p><b>The nasopharynx</b> isn't the right answer: it holds lymphoid tissue too (the adenoids), but it sits above the palate, behind the nose, out of sight in an oral exam. <b>The hypopharynx</b> begins below the hyoid bone, and <b>the larynx</b> isn't part of the pharynx.</p><p><b>Takeaway:</b> Nasopharynx (behind the nose, above the palate), oropharynx (behind the mouth, to the hyoid), hypopharynx (below the hyoid, into the larynx and esophagus).</p>"
     },
     {
       "id": "rs-03",
@@ -54,51 +54,7 @@
       "stem": "A client recovering from a stroke coughs and sputters whenever drinking thin liquids. Which structure should the nurse suspect isn't sealing off the airway in time during swallowing?",
       "options": ["The soft palate, which rises to close off the nasal cavity", "The thyroid cartilage, the largest cartilage at the front of the neck", "The cricoid cartilage, the ring at the bottom of the larynx", "The epiglottis, which folds down over the opening of the larynx"],
       "answer": 3,
-      "rationale": "<p>During swallowing, the <b>epiglottis</b> folds down over the opening of the larynx (the glottis), so liquid goes into the esophagus instead of the airway. When it closes late, liquid slips into the larynx and triggers coughing.</p><p><b>The soft palate</b> is the tempting choice, since it also closes during swallowing, but it seals off the <b>nasal cavity</b>, not the airway to the lungs. <b>The thyroid</b> and <b>cricoid cartilages</b> form the framework of the larynx; they don't close over it.</p><p><b>Takeaway:</b> Swallowing: the soft palate closes the nose, and the epiglottis covers the larynx.</p>"
-    },
-    {
-      "id": "rs-04",
-      "type": "hotspot",
-      "topic": "Upper respiratory tract",
-      "level": 3,
-      "stem": "A few minutes after a bee sting, a client develops a loud, high-pitched sound on every breath in, which the nurse can hear without a stethoscope. Click the structure where the airway is most likely narrowed.",
-      "image": "img/respiratory-front.svg",
-      "alt": "Front view of the airways and lungs, with the client's right on the viewer's left, marked R and L: the larynx at the top, the trachea below it dividing into two main bronchi, a right lung divided by two fissure lines into three parts and a left lung divided by one fissure line into two parts, all the same color, and a curved band of muscle under both lungs.",
-      "regions": [{"x": 45.8, "y": 7.9, "w": 8.5, "h": 7.5}, {"x": 47.9, "y": 16.1, "w": 4.4, "h": 1.1}],
-      "rationale": "<p>A loud, high-pitched sound on <b>inspiration</b> is <b>stridor</b>, a sign of <b>upper airway obstruction</b>. Heard on breathing in, it means the narrowing is above the chest, as in swelling of the <b>larynx</b> during an allergic reaction. It's an emergency: the airway can close.</p><p>The <b>bronchi</b> are the tempting choice, since narrowed bronchi make high-pitched sounds too, but those are <b>wheezes</b>, from the lower airways, usually heard on breathing out.</p><p><b>Takeaway:</b> Stridor = upper airway obstruction (on breathing in: above the chest, like the larynx). Wheezes = lower airways.</p>"
-    },
-    {
-      "id": "rs-05",
-      "type": "hotspot",
-      "topic": "Lower respiratory tract",
-      "level": 2,
-      "stem": "An adult inhales a piece of peanut while laughing, and it passes through the larynx and trachea. Click the airway where it most likely lodges.",
-      "image": "img/respiratory-front.svg",
-      "alt": "Front view of the airways and lungs, with the client's right on the viewer's left, marked R and L: the larynx at the top, the trachea below it dividing into two main bronchi, a right lung divided by two fissure lines into three parts and a left lung divided by one fissure line into two parts, all the same color, and a curved band of muscle under both lungs.",
-      "regions": [{"x": 46.5, "y": 36.2, "w": 2.7, "h": 12.3}],
-      "rationale": "<p>The <b>right main bronchus</b> is wider, shorter, and more vertical than the left, almost a straight line down from the trachea, so inhaled objects and aspirated material most often go to the right.</p><p><b>The left main bronchus</b> is the tempting choice, since it's the longer passage, but it leaves the trachea at a sharper angle, so objects tend to bypass it.</p><p><b>Takeaway:</b> Right main bronchus: wider, shorter, more vertical, so more prone to aspiration.</p>"
-    },
-    {
-      "id": "rs-06",
-      "type": "hotspot",
-      "topic": "Lower respiratory tract",
-      "level": 3,
-      "stem": "A client who was sitting upright vomited and aspirated some of it. Three days later, the nurse hears crackles over one lobe. Click the lobe most likely affected.",
-      "image": "img/respiratory-front.svg",
-      "alt": "Front view of the airways and lungs, with the client's right on the viewer's left, marked R and L: the larynx at the top, the trachea below it dividing into two main bronchi, a right lung divided by two fissure lines into three parts and a left lung divided by one fissure line into two parts, all the same color, and a curved band of muscle under both lungs.",
-      "regions": [{"x": 14.1, "y": 66.1, "w": 16.7, "h": 15.7}, {"x": 13.9, "y": 59.3, "w": 9.2, "h": 6.1}, {"x": 31.6, "y": 73.9, "w": 6.2, "h": 8.0}],
-      "rationale": "<p>Aspirated material follows <b>gravity</b> and the straightest path. Upright, it runs down the wider, more vertical <b>right main bronchus</b> to the lowest part of the right lung, the <b>right lower lobe</b>.</p><p>The <b>right middle lobe</b> is the tempting choice, since it's on the right side too, but its bronchus branches off toward the front, while the material falls straight down. The <b>upper lobes</b> are more often involved when a client aspirates lying down.</p><p><b>Takeaway:</b> Aspiration while upright: the right lower lobe (gravity plus the vertical right bronchus).</p>"
-    },
-    {
-      "id": "rs-07",
-      "type": "hotspot",
-      "topic": "Lower respiratory tract",
-      "level": 3,
-      "stem": "A nurse auscultates a client's back and hears clear breath sounds over every area. A chest x-ray, however, shows pneumonia in the one lobe that can be heard only from the front and the right side of the chest. Click that lobe.",
-      "image": "img/respiratory-front.svg",
-      "alt": "Front view of the airways and lungs, with the client's right on the viewer's left, marked R and L: the larynx at the top, the trachea below it dividing into two main bronchi, a right lung divided by two fissure lines into three parts and a left lung divided by one fissure line into two parts, all the same color, and a curved band of muscle under both lungs.",
-      "regions": [{"x": 30.0, "y": 51.1, "w": 13.3, "h": 13.0}, {"x": 38.1, "y": 64.8, "w": 5.8, "h": 8.0}, {"x": 21.2, "y": 51.1, "w": 7.9, "h": 5.7}, {"x": 34.4, "y": 64.8, "w": 2.9, "h": 3.8}],
-      "rationale": "<p>The <b>right middle lobe</b>, between the horizontal and oblique fissures, lies toward the front of the right chest. It's heard from the front and the right side, not from the back, which is why a back-only assessment missed it.</p><p>The <b>right lower lobe</b> is the tempting choice, since it's also on the right, but most of it lies toward the back: pneumonia there would have changed the sounds on the client's back.</p><p><b>Takeaway:</b> A complete lung exam covers the front and sides too: the right middle lobe can't be heard from the back.</p>"
+      "rationale": "<p>During swallowing, the <b>epiglottis</b> folds down over the opening of the larynx (the glottis), so liquid goes into the esophagus instead of the airway. When it closes late, liquid slips into the larynx and triggers coughing.</p><p><b>The soft palate</b> isn't the right answer: it also closes during swallowing, but it seals off the <b>nasal cavity</b>, not the airway to the lungs. <b>The thyroid</b> and <b>cricoid cartilages</b> form the framework of the larynx; they don't close over it.</p><p><b>Takeaway:</b> Swallowing: the soft palate closes the nose, and the epiglottis covers the larynx.</p>"
     },
     {
       "id": "rs-08",
@@ -120,7 +76,7 @@
       "stem": "Nerve damage at the C3 to C5 level has paralyzed a client's diaphragm. Which finding should the nurse expect?",
       "options": ["Breathing that stays normal at rest, since the intercostal muscles do most of the work", "Rapid, shallow breathing, with the neck muscles tightening on each breath", "Slow, deep breathing, since each breath takes longer to draw in", "Labored breathing out, while breathing in stays easy"],
       "answer": 1,
-      "rationale": "<p>The <b>diaphragm</b>, supplied by the <b>phrenic nerve (C3 to C5)</b>, is the main muscle of inspiration. Without it, breaths are shallow, the rate rises to make up for it, and the <b>accessory muscles</b> of the neck (the sternocleidomastoid and scalenes) work on every breath.</p><p><b>“The intercostals do most of the work”</b> is the tempting choice, since they do help, but they work mainly during exercise and distress; at rest the diaphragm does most of the work. Breathing <b>in</b> is what's impaired, not breathing out.</p><p><b>Takeaway:</b> C3, C4, and C5 keep the diaphragm alive: the phrenic nerve. Without it, the accessory muscles take over.</p>"
+      "rationale": "<p>The <b>diaphragm</b>, supplied by the <b>phrenic nerve (C3 to C5)</b>, is the main muscle of inspiration. Without it, breaths are shallow, the rate rises to make up for it, and the <b>accessory muscles</b> of the neck (the sternocleidomastoid and scalenes) work on every breath.</p><p><b>“The intercostals do most of the work”</b> isn't the right answer: they do help, but they work mainly during exercise and distress; at rest the diaphragm does most of the work. Breathing <b>in</b> is what's impaired, not breathing out.</p><p><b>Takeaway:</b> C3, C4, and C5 keep the diaphragm alive: the phrenic nerve. Without it, the accessory muscles take over.</p>"
     },
     {
       "id": "rs-11",
@@ -130,7 +86,7 @@
       "stem": "During an assessment, a client sits leaning forward with both hands on the knees, and the muscles of the neck tighten with each breath. How should the nurse interpret these findings?",
       "options": ["The client is working hard to breathe, and is using the accessory muscles", "The client is in a position of comfort that doesn't point to a breathing problem", "The neck muscles are tense from coughing, not from the work of breathing", "The client is guarding against back pain, so the nurse should assess the spine"],
       "answer": 0,
-      "rationale": "<p>Leaning forward with the hands on the knees is the <b>tripod position</b>, which clients in respiratory distress take, and neck muscles that tighten with each breath are <b>accessory muscles</b> (the sternocleidomastoid and scalenes) helping to breathe. Together, they show a high <b>work of breathing</b>.</p><p><b>Tense from coughing</b> is the tempting choice, since coughing does use these muscles, but tightening with <b>every breath</b>, while leaning forward, is accessory muscle use. A position of comfort or back pain doesn't explain the neck muscles.</p><p><b>Takeaway:</b> Tripod position plus accessory muscles = working hard to breathe.</p>"
+      "rationale": "<p>Leaning forward with the hands on the knees is the <b>tripod position</b>, which clients in respiratory distress take, and neck muscles that tighten with each breath are <b>accessory muscles</b> (the sternocleidomastoid and scalenes) helping to breathe. Together, they show a high <b>work of breathing</b>.</p><p><b>Tense from coughing</b> isn't the right answer: coughing does use these muscles, but tightening with <b>every breath</b>, while leaning forward, is accessory muscle use. A position of comfort or back pain doesn't explain the neck muscles.</p><p><b>Takeaway:</b> Tripod position plus accessory muscles = working hard to breathe.</p>"
     },
     {
       "id": "rs-12",
@@ -144,7 +100,7 @@
         {"options": ["downward", "upward"], "answer": 0},
         {"options": ["decreases", "increases"], "answer": 1}
       ],
-      "rationale": "<p>The <b>diaphragm</b> is the main muscle of inspiration and forms the floor of the chest. When it <b>contracts</b>, it flattens and moves <b>downward</b>, which <b>increases</b> the volume of the chest, and air flows in. When it relaxes, it rises again, and air flows out.</p><p>The trap is picturing the diaphragm pushing up to breathe in; it's the other way around.</p><p><b>Takeaway:</b> Breathing in: the diaphragm contracts and moves down, and the chest gets bigger.</p>"
+      "rationale": "<p>The <b>diaphragm</b> is the main muscle of inspiration and forms the floor of the chest. When it <b>contracts</b>, it flattens and moves <b>downward</b>, which <b>increases</b> the volume of the chest, and air flows in. When it relaxes, it rises again, and air flows out.</p><p>Picturing the diaphragm pushing up to breathe in is a mistake; it's the other way around.</p><p><b>Takeaway:</b> Breathing in: the diaphragm contracts and moves down, and the chest gets bigger.</p>"
     },
     {
       "id": "rs-15",
@@ -154,7 +110,7 @@
       "stem": "A newborn born at 28 weeks has alveoli that collapse at the end of each breath. Which cells are most likely not making enough of their secretion yet?",
       "options": ["Type I pneumocytes, which line the alveoli for gas exchange", "Type II pneumocytes, which secrete surfactant", "Alveolar macrophages, which defend against pathogens and irritants", "Ciliated cells of the trachea, which move mucus toward the throat"],
       "answer": 1,
-      "rationale": "<p><b>Type II pneumocytes</b> secrete <b>surfactant</b>, which lowers the surface tension inside the alveoli so they don't collapse at the end of each breath. In a very premature newborn, these cells don't make enough yet.</p><p><b>Type I pneumocytes</b> are the tempting choice, since they line the alveoli, but they're the thin cells where gas exchange happens; they don't make surfactant. <b>Macrophages</b> (dust cells) defend the alveoli, and <b>ciliated cells</b> clear mucus from the airways.</p><p><b>Takeaway:</b> Type I: gas exchange. Type II: surfactant, which keeps the alveoli open.</p>"
+      "rationale": "<p><b>Type II pneumocytes</b> secrete <b>surfactant</b>, which lowers the surface tension inside the alveoli so they don't collapse at the end of each breath. In a very premature newborn, these cells don't make enough yet.</p><p><b>Type I pneumocytes</b> aren't the right answer: they line the alveoli, but they're the thin cells where gas exchange happens; they don't make surfactant. <b>Macrophages</b> (dust cells) defend the alveoli, and <b>ciliated cells</b> clear mucus from the airways.</p><p><b>Takeaway:</b> Type I: gas exchange. Type II: surfactant, which keeps the alveoli open.</p>"
     },
     {
       "id": "rs-16",
@@ -164,7 +120,7 @@
       "stem": "A client's respiratory rate is 18/min, and the chest rises fully and evenly with each breath, but the oxygen saturation keeps falling as fluid builds up in the alveoli. Which process is most impaired?",
       "options": ["Ventilation, the movement of air into and out of the alveoli", "The nerves' control of the breathing muscles", "Perfusion, the flow of blood through the pulmonary arteries", "Gas exchange between the alveoli and the blood (respiration)"],
       "answer": 3,
-      "rationale": "<p><b>Ventilation</b> is the movement of air in and out, and here it's working: a normal rate and full, even chest rise. <b>Respiration</b>, the exchange of gases by diffusion between the alveoli and the capillary blood, is what's failing: fluid in the alveoli thickens the barrier oxygen must cross.</p><p><b>Ventilation</b> is the tempting choice, since the client has a lung problem and a falling saturation, but air is still moving. Nothing points to the nerves or to blocked blood flow.</p><p><b>Takeaway:</b> Ventilation moves air; respiration exchanges gases. A client can ventilate well and still not oxygenate.</p>"
+      "rationale": "<p><b>Ventilation</b> is the movement of air in and out, and here it's working: a normal rate and full, even chest rise. <b>Respiration</b>, the exchange of gases by diffusion between the alveoli and the capillary blood, is what's failing: fluid in the alveoli thickens the barrier oxygen must cross.</p><p><b>Ventilation</b> isn't the right answer: the client has a lung problem and a falling saturation, but air is still moving. Nothing points to the nerves or to blocked blood flow.</p><p><b>Takeaway:</b> Ventilation moves air; respiration exchanges gases. A client can ventilate well and still not oxygenate.</p>"
     },
     {
       "id": "rs-17",
@@ -174,7 +130,7 @@
       "stem": "A blood clot blocks blood flow to part of a client's lung (a pulmonary embolism), but air still moves in and out of those alveoli. Which describes the affected area?",
       "options": ["Ventilated but not perfused, so no gas exchange happens there", "Perfused but not ventilated, so blood passes through without picking up oxygen", "Neither ventilated nor perfused, because the alveoli have collapsed", "Ventilated and perfused normally, since the clot is in a blood vessel"],
       "answer": 0,
-      "rationale": "<p>Gas exchange needs both <b>ventilation</b> (air reaching the alveoli) and <b>perfusion</b> (blood reaching their capillaries). A clot blocks the blood, so the area is <b>ventilated but not perfused</b>: air comes and goes without any exchange, a ventilation-perfusion mismatch.</p><p><b>Perfused but not ventilated</b> is the tempting choice, since it's the other common mismatch, but that's the pattern of blocked or fluid-filled alveoli, as in pneumonia. Here the air moves; the blood doesn't.</p><p><b>Takeaway:</b> Clot: air without blood. Pneumonia or a mucus plug: blood without air. Either way, oxygenation suffers.</p>"
+      "rationale": "<p>Gas exchange needs both <b>ventilation</b> (air reaching the alveoli) and <b>perfusion</b> (blood reaching their capillaries). A clot blocks the blood, so the area is <b>ventilated but not perfused</b>: air comes and goes without any exchange, a ventilation-perfusion mismatch.</p><p><b>Perfused but not ventilated</b> isn't the right answer: it's the other common mismatch, but that's the pattern of blocked or fluid-filled alveoli, as in pneumonia. Here the air moves; the blood doesn't.</p><p><b>Takeaway:</b> Clot: air without blood. Pneumonia or a mucus plug: blood without air. Either way, oxygenation suffers.</p>"
     },
     {
       "id": "rs-19",
@@ -184,7 +140,7 @@
       "stem": "A client with asthma uses an inhaler that acts like the sympathetic nervous system on the airways. Which effect should the nurse expect?",
       "options": ["The airways narrow, and the glands make more mucus", "The diaphragm contracts harder, so each breath is deeper", "The airways widen, and the wheezing eases", "The heart rate slows, so the client feels calmer"],
       "answer": 2,
-      "rationale": "<p>The lungs' nerves come from the pulmonary plexus. <b>Sympathetic</b> stimulation causes <b>bronchodilation</b> (and less gland secretion), so an inhaler that acts like it widens the airways and eases wheezing.</p><p><b>Narrowed airways and more mucus</b> is the tempting choice, since it's the textbook pairing, but it's the effect of the <b>parasympathetic</b> (vagus) nerves. The phrenic nerve, not the sympathetic system, drives the diaphragm, and sympathetic effects speed the heart rather than slow it.</p><p><b>Takeaway:</b> Airways: sympathetic = bronchodilation; parasympathetic (vagus) = bronchoconstriction and more secretions.</p>"
+      "rationale": "<p>The lungs' nerves come from the pulmonary plexus. <b>Sympathetic</b> stimulation causes <b>bronchodilation</b> (and less gland secretion), so an inhaler that acts like it widens the airways and eases wheezing.</p><p><b>Narrowed airways and more mucus</b> isn't the right answer: it's the textbook pairing, but it's the effect of the <b>parasympathetic</b> (vagus) nerves. The phrenic nerve, not the sympathetic system, drives the diaphragm, and sympathetic effects speed the heart rather than slow it.</p><p><b>Takeaway:</b> Airways: sympathetic = bronchodilation; parasympathetic (vagus) = bronchoconstriction and more secretions.</p>"
     },
     {
       "id": "rs-20",
@@ -194,7 +150,7 @@
       "stem": "A client who has asthma is prescribed propranolol, a beta blocker, for high blood pressure. What should the nurse do?",
       "options": ["Give the first dose, and teach the client to keep the rescue inhaler close by", "Check with the prescriber, since beta blockers can narrow the airways", "Give it with food, since beta blockers irritate the stomach and set off coughing", "Hold the client's asthma inhaler, and ask the prescriber whether it can still be used"],
       "answer": 1,
-      "rationale": "<p><b>Beta blockers</b> (and NSAIDs) can cause <b>bronchoconstriction</b>, which in a client with asthma can set off an attack. The nurse checks with the prescriber before giving it.</p><p><b>Giving it with the rescue inhaler close by</b> is the tempting choice, since it sounds like a safe compromise, but it plans for an attack instead of preventing one. Food has nothing to do with the problem, and holding the client's asthma inhaler would make it worse; the question for the prescriber is about the beta blocker.</p><p><b>Takeaway:</b> Drug history for breathing problems: beta blockers and NSAIDs (bronchoconstriction), ACE inhibitors (dry cough), estrogen (clots).</p>"
+      "rationale": "<p><b>Beta blockers</b> (and NSAIDs) can cause <b>bronchoconstriction</b>, which in a client with asthma can set off an attack. The nurse checks with the prescriber before giving it.</p><p><b>Giving it with the rescue inhaler close by</b> isn't the right answer: it sounds like a safe compromise, but it plans for an attack instead of preventing one. Food has nothing to do with the problem, and holding the client's asthma inhaler would make it worse; the question for the prescriber is about the beta blocker.</p><p><b>Takeaway:</b> Drug history for breathing problems: beta blockers and NSAIDs (bronchoconstriction), ACE inhibitors (dry cough), estrogen (clots).</p>"
     },
     {
       "id": "rs-27",
@@ -218,7 +174,7 @@
       "stem": "A client who worked in a shipyard for 30 years has had worsening shortness of breath for a year. Given this occupational history, which condition should the nurse consider?",
       "options": ["Coal workers' pneumoconiosis (black lung)", "Byssinosis, from cotton and other fabric dust", "Farmer's lung, an allergic reaction to moldy hay", "Asbestosis, from asbestos fibers"],
       "answer": 3,
-      "rationale": "<p>Shipyard and construction work often meant exposure to <b>asbestos</b>, and <b>asbestosis</b>, a pneumoconiosis (dust disease of the lung), causes slowly worsening shortness of breath years later.</p><p><b>Black lung</b> is the tempting choice, since it's the best-known pneumoconiosis, but it comes from coal mining. <b>Byssinosis</b> comes from fabric factories, and <b>farmer's lung</b> (extrinsic alveolitis) from farm dusts.</p><p><b>Takeaway:</b> Ask about occupation: coal mining (black lung), shipyards and construction (asbestosis), fabric work (byssinosis), farming (extrinsic alveolitis).</p>"
+      "rationale": "<p>Shipyard and construction work often meant exposure to <b>asbestos</b>, and <b>asbestosis</b>, a pneumoconiosis (dust disease of the lung), causes slowly worsening shortness of breath years later.</p><p><b>Black lung</b> isn't the right answer: it's the best-known pneumoconiosis, but it comes from coal mining. <b>Byssinosis</b> comes from fabric factories, and <b>farmer's lung</b> (extrinsic alveolitis) from farm dusts.</p><p><b>Takeaway:</b> Ask about occupation: coal mining (black lung), shipyards and construction (asbestosis), fabric work (byssinosis), farming (extrinsic alveolitis).</p>"
     },
     {
       "id": "rs-30",
@@ -228,7 +184,7 @@
       "stem": "A client has sudden shortness of breath and chest pain. Which finding in the client's history should the nurse report as raising the risk of a pulmonary embolism?",
       "options": ["Has hay fever each spring", "Takes an estrogen-containing birth control pill", "Had whooping cough as a child", "Takes lisinopril for high blood pressure"],
       "answer": 1,
-      "rationale": "<p>Medicines that contain <b>estrogen</b> raise the risk of blood clots, and so of a <b>pulmonary embolism</b>, along with recent travel, immobility, surgery, cancer, and pregnancy.</p><p><b>Lisinopril</b> is the tempting choice, since it's a medication with respiratory side effects, but its side effect is a dry cough, not clots. Hay fever and childhood whooping cough belong in the respiratory history but don't point to an embolism.</p><p><b>Takeaway:</b> Clot risks in a respiratory history: estrogen, travel, immobility, surgery, cancer, pregnancy.</p>"
+      "rationale": "<p>Medicines that contain <b>estrogen</b> raise the risk of blood clots, and so of a <b>pulmonary embolism</b>, along with recent travel, immobility, surgery, cancer, and pregnancy.</p><p><b>Lisinopril</b> isn't the right answer: it's a medication with respiratory side effects, but its side effect is a dry cough, not clots. Hay fever and childhood whooping cough belong in the respiratory history but don't point to an embolism.</p><p><b>Takeaway:</b> Clot risks in a respiratory history: estrogen, travel, immobility, surgery, cancer, pregnancy.</p>"
     },
     {
       "id": "rs-35",
@@ -238,7 +194,7 @@
       "stem": "A nurse auscultates the lungs of four clients. Which client's finding should the nurse report first?",
       "options": ["Crackles at both lung bases in a client with heart failure, unchanged from yesterday", "Scattered rhonchi that clear after a client coughs", "A loud, high-pitched sound on each breath in, in a client whose lips are swelling", "Expiratory wheezes in a client with asthma who used a rescue inhaler 5 minutes ago"],
       "answer": 2,
-      "rationale": "<p>A loud, high-pitched sound on breathing in is <b>stridor</b>, from a narrowing <b>upper airway</b>, and with swelling lips it points to an allergic reaction that can close the airway. Airway comes first.</p><p><b>The wheezes</b> are the tempting choice, since asthma can be serious, but the client just used a rescue inhaler, which takes a few minutes to work; that's a reassessment, not the first call. Unchanged crackles and rhonchi that clear with coughing are stable findings.</p><p><b>Takeaway:</b> Stridor is an airway emergency. Airway, breathing, circulation decide who comes first.</p>"
+      "rationale": "<p>A loud, high-pitched sound on breathing in is <b>stridor</b>, from a narrowing <b>upper airway</b>, and with swelling lips it points to an allergic reaction that can close the airway. Airway comes first.</p><p><b>The wheezes</b> aren't the right answer: asthma can be serious, but the client just used a rescue inhaler, which takes a few minutes to work; that's a reassessment, not the first call. Unchanged crackles and rhonchi that clear with coughing are stable findings.</p><p><b>Takeaway:</b> Stridor is an airway emergency. Airway, breathing, circulation decide who comes first.</p>"
     },
     {
       "id": "rs-45",
@@ -248,7 +204,7 @@
       "stem": "A 70-year-old client asks, “Why do I need a flu shot every year?” Which response should the nurse give?",
       "options": ["“Flu viruses change, so each season's vaccine is updated, and vaccinated people tend to have milder illness.”", "“Your immunity from last year's shot has worn off, and the same vaccine is given each year to renew it.”", "“The vaccine treats the flu if you catch it, so you need it before each flu season.”", "“Adults over 65 need it yearly, while younger adults need it once in 5 years.”"],
       "answer": 0,
-      "rationale": "<p>Many strains of influenza virus circulate, and they change, so each season's vaccine is updated to match. People who get the seasonal vaccine tend to have <b>milder</b> symptoms and fewer complications.</p><p><b>“The same vaccine renews your immunity”</b> is the tempting choice, since protection does wane, but the vaccine itself changes each year. It prevents illness rather than treating it, and yearly vaccination is advised for adults of every age.</p><p><b>Takeaway:</b> Flu vaccine: every year, because the viruses change; vaccinated people have milder illness.</p>"
+      "rationale": "<p>Many strains of influenza virus circulate, and they change, so each season's vaccine is updated to match. People who get the seasonal vaccine tend to have <b>milder</b> symptoms and fewer complications.</p><p><b>“The same vaccine renews your immunity”</b> isn't the right answer: protection does wane, but the vaccine itself changes each year. It prevents illness rather than treating it, and yearly vaccination is advised for adults of every age.</p><p><b>Takeaway:</b> Flu vaccine: every year, because the viruses change; vaccinated people have milder illness.</p>"
     },
     {
       "id": "rs-51",
@@ -260,7 +216,7 @@
       "columns": ["Nasal cavity", "Turbinates", "Paranasal sinuses", "Pharynx", "Larynx"],
       "rows": ["Holds the vocal cords, and is covered by the epiglottis during swallowing", "Swirl the incoming air so more of it touches the moist lining", "Traps particles in hairs and mucus as air first enters", "Carries both air and food, behind the nose and mouth", "Add resonance to the voice and make mucus that drains into the nose"],
       "answer": [4, 1, 0, 3, 2],
-      "rationale": "<p>The <b>turbinates</b> (nasal conchae) are curled shelves that make the air swirl, so it's filtered, warmed, and moistened. The <b>paranasal sinuses</b> are air spaces that make mucus and give the voice resonance. The <b>pharynx</b> is the shared path for air and food. The <b>larynx</b> holds the vocal cords and is sealed by the epiglottis during swallowing. The <b>nasal cavity</b>'s hairs and mucus catch particles first.</p><p>The tempting mix-up is giving the sinuses the job of warming the air. That's the nasal cavity and turbinates; the sinuses mostly make mucus and add resonance.</p><p><b>Takeaway:</b> Nasal cavity and turbinates condition the air; sinuses add resonance; the pharynx is shared; the larynx makes the voice.</p>"
+      "rationale": "<p>The <b>turbinates</b> (nasal conchae) are curled shelves that make the air swirl, so it's filtered, warmed, and moistened. The <b>paranasal sinuses</b> are air spaces that make mucus and give the voice resonance. The <b>pharynx</b> is the shared path for air and food. The <b>larynx</b> holds the vocal cords and is sealed by the epiglottis during swallowing. The <b>nasal cavity</b>'s hairs and mucus catch particles first.</p><p>Giving the sinuses the job of warming the air is a mistake. That's the nasal cavity and turbinates; the sinuses mostly make mucus and add resonance.</p><p><b>Takeaway:</b> Nasal cavity and turbinates condition the air; sinuses add resonance; the pharynx is shared; the larynx makes the voice.</p>"
     },
     {
       "id": "rs-52",
@@ -270,7 +226,7 @@
       "stem": "A client who works in a dusty warehouse asks what happens to the tiny dust particles that get past the mucus and reach the alveoli. Which explanation should the nurse give?",
       "options": ["Type 2 alveolar cells dissolve the particles in surfactant", "Alveolar macrophages engulf the particles and clear them away", "Cilia in the alveoli sweep the particles back up to the throat", "Type 1 alveolar cells pass the particles into the bloodstream"],
       "answer": 1,
-      "rationale": "<p><b>Alveolar macrophages</b>, sometimes called dust cells, roam the alveoli and engulf dust, microbes, and debris. They're the cleanup crew where the airways' cilia don't reach.</p><p><b>Cilia</b> are the tempting choice, since they clear the airways, but they line the trachea and bronchi, not the alveoli. Type 2 cells make surfactant, and type 1 cells form the gas-exchange wall.</p><p><b>Takeaway:</b> Cilia clean the airways; alveolar macrophages clean the alveoli.</p>"
+      "rationale": "<p><b>Alveolar macrophages</b>, sometimes called dust cells, roam the alveoli and engulf dust, microbes, and debris. They're the cleanup crew where the airways' cilia don't reach.</p><p><b>Cilia</b> aren't the right answer: they clear the airways, but they line the trachea and bronchi, not the alveoli. Type 2 cells make surfactant, and type 1 cells form the gas-exchange wall.</p><p><b>Takeaway:</b> Cilia clean the airways; alveolar macrophages clean the alveoli.</p>"
     },
     {
       "id": "rs-53",
@@ -282,7 +238,7 @@
       "columns": ["Type 1 alveolar cell", "Type 2 alveolar cell", "Alveolar macrophage"],
       "rows": ["Forms most of the thin wall where oxygen and carbon dioxide cross", "Releases surfactant, which keeps the alveoli from collapsing", "Engulfs bacteria that reach the alveoli", "Divides to repair the lining after an injury", "Is also called a dust cell"],
       "answer": [0, 1, 2, 1, 2],
-      "rationale": "<p><b>Type 1</b> cells are thin and flat and cover most of the alveolar surface: the wall gases cross. <b>Type 2</b> cells make <b>surfactant</b>, which lowers surface tension so alveoli stay open, and they divide to repair the lining. <b>Alveolar macrophages</b> (dust cells) engulf germs and particles.</p><p>The tempting mistake is giving repair to type 1 cells, since they're the main lining. Type 1 cells can't divide; type 2 cells divide and replace them.</p><p><b>Takeaway:</b> Type 1: exchange. Type 2: surfactant and repair. Macrophages: cleanup.</p>"
+      "rationale": "<p><b>Type 1</b> cells are thin and flat and cover most of the alveolar surface: the wall gases cross. <b>Type 2</b> cells make <b>surfactant</b>, which lowers surface tension so alveoli stay open, and they divide to repair the lining. <b>Alveolar macrophages</b> (dust cells) engulf germs and particles.</p><p>Giving repair to type 1 cells is a mistake, even though they're the main lining. Type 1 cells can't divide; type 2 cells divide and replace them.</p><p><b>Takeaway:</b> Type 1: exchange. Type 2: surfactant and repair. Macrophages: cleanup.</p>"
     },
     {
       "id": "rs-54",
@@ -297,7 +253,7 @@
         {"options": ["2", "3", "4"], "answer": 0},
         {"options": ["liver", "stomach", "heart"], "answer": 2}
       ],
-      "rationale": "<p>The <b>right</b> lung has <b>3 lobes</b> (superior, middle, and inferior) and <b>10 segments</b>. The <b>left</b> lung has <b>2 lobes</b> and <b>8 to 9 segments</b>; it's smaller because the heart sits to the left, in the cardiac notch.</p><p>The tempting mistake is giving the left lung three lobes. The lingula is part of the left upper lobe, not a third lobe.</p><p><b>Takeaway:</b> Right: 3 lobes, 10 segments. Left: 2 lobes, 8 to 9 segments.</p>"
+      "rationale": "<p>The <b>right</b> lung has <b>3 lobes</b> (superior, middle, and inferior) and <b>10 segments</b>. The <b>left</b> lung has <b>2 lobes</b> and <b>8 to 9 segments</b>; it's smaller because the heart sits to the left, in the cardiac notch.</p><p>Giving the left lung three lobes is a mistake. The lingula is part of the left upper lobe, not a third lobe.</p><p><b>Takeaway:</b> Right: 3 lobes, 10 segments. Left: 2 lobes, 8 to 9 segments.</p>"
     },
     {
       "id": "rs-55",
@@ -307,7 +263,7 @@
       "stem": "A client has had a stroke in the medulla oblongata. Which finding should the nurse watch for most closely?",
       "options": ["An irregular breathing pattern, with pauses in breathing", "Loss of the sense of smell on both sides of the nose", "A hoarse voice from swelling of the vocal cords", "Wheezing from narrowed bronchioles in both lungs"],
       "answer": 0,
-      "rationale": "<p>The <b>medulla oblongata</b> holds the brainstem's breathing center, which sets the automatic rhythm of breathing. Damage there can make breathing irregular or stop it, so the nurse watches the breathing pattern closely.</p><p><b>Wheezing</b> is the tempting choice, since it's a breathing finding, but it comes from narrowed airways, not from damage to the breathing center.</p><p><b>Takeaway:</b> The medulla sets the rhythm of breathing; damage there threatens breathing itself.</p>"
+      "rationale": "<p>The <b>medulla oblongata</b> holds the brainstem's breathing center, which sets the automatic rhythm of breathing. Damage there can make breathing irregular or stop it, so the nurse watches the breathing pattern closely.</p><p><b>Wheezing</b> isn't the right answer: it's a breathing finding, but it comes from narrowed airways, not from damage to the breathing center.</p><p><b>Takeaway:</b> The medulla sets the rhythm of breathing; damage there threatens breathing itself.</p>"
     },
     {
       "id": "rs-56",
@@ -317,7 +273,7 @@
       "stem": "A client's airways are narrowing, and the PaCO₂ rises from 40 to 52 mm Hg. Which response from the brainstem should the nurse expect?",
       "options": ["The medulla slows breathing so the narrowed airways can rest", "The breathing stays the same, since the medulla responds to oxygen alone", "The medulla signals faster, deeper breaths to blow off CO₂", "The medulla stops signaling the diaphragm until the CO₂ falls"],
       "answer": 2,
-      "rationale": "<p>Sensors in the <b>medulla</b> respond mainly to rising <b>carbon dioxide</b> and the acid it forms. When the PaCO₂ rises, the medulla drives faster, deeper breathing to remove it.</p><p><b>Responding to oxygen alone</b> is the tempting choice, since low oxygen does stimulate breathing too, but in most people carbon dioxide is the main signal.</p><p><b>Takeaway:</b> Rising CO₂ is the main trigger for faster, deeper breathing.</p>"
+      "rationale": "<p>Sensors in the <b>medulla</b> respond mainly to rising <b>carbon dioxide</b> and the acid it forms. When the PaCO₂ rises, the medulla drives faster, deeper breathing to remove it.</p><p><b>Responding to oxygen alone</b> isn't the right answer: low oxygen does stimulate breathing too, but in most people carbon dioxide is the main signal.</p><p><b>Takeaway:</b> Rising CO₂ is the main trigger for faster, deeper breathing.</p>"
     },
     {
       "id": "rs-57",
@@ -327,7 +283,7 @@
       "stem": "A nurse teaches a client after chest surgery to hug a pillow against the incision while coughing. Which muscles mainly produce the forceful breath out in a cough?",
       "options": ["The diaphragm muscle, which contracts and moves downward", "The external intercostal muscles, which lift the ribs", "The scalene muscles, which raise the first two ribs", "The abdominal muscles, which push the diaphragm up"],
       "answer": 3,
-      "rationale": "<p>A forced breath out uses the <b>abdominal muscles</b> (with the internal intercostals). They squeeze the abdomen, which raises the pressure there and pushes the relaxed diaphragm up, so the pressure in the chest rises and air rushes out.</p><p><b>The diaphragm</b> is the tempting choice, since it's the main breathing muscle, but its contraction pulls air <b>in</b>; it relaxes to let air out.</p><p><b>Takeaway:</b> The diaphragm and external intercostals breathe in; the abdominal muscles force air out.</p>"
+      "rationale": "<p>A forced breath out uses the <b>abdominal muscles</b> (with the internal intercostals). They squeeze the abdomen, which raises the pressure there and pushes the relaxed diaphragm up, so the pressure in the chest rises and air rushes out.</p><p><b>The diaphragm</b> isn't the right answer: it's the main breathing muscle, but its contraction pulls air <b>in</b>; it relaxes to let air out.</p><p><b>Takeaway:</b> The diaphragm and external intercostals breathe in; the abdominal muscles force air out.</p>"
     },
     {
       "id": "rs-58",
@@ -337,7 +293,7 @@
       "stem": "A client who smokes asks why smokers get more chest infections. Which explanation should the nurse give?",
       "options": ["“Smoke thins your mucus, so it can no longer trap germs in the airways.”", "“Smoke damages the cilia that sweep germ-filled mucus out of your airways.”", "“Smoke kills the germs in your lungs, so your body stops building defenses.”", "“Smoke narrows your blood vessels, so less blood reaches your alveoli.”"],
       "answer": 1,
-      "rationale": "<p><b>Mucociliary clearance</b> is a key protective function: cilia beat to push mucus, with the germs and irritants trapped in it, up and out of the airways. Smoke paralyzes and destroys cilia, so mucus and germs stay in the lungs.</p><p><b>Narrowed blood vessels</b> is the tempting choice, since nicotine does narrow vessels, but the infections come from the damaged cleanup system. Smoke also makes <b>more</b> mucus, not thinner mucus.</p><p><b>Takeaway:</b> Smoking breaks the mucociliary escalator, so germs stay in the airways.</p>"
+      "rationale": "<p><b>Mucociliary clearance</b> is a key protective function: cilia beat to push mucus, with the germs and irritants trapped in it, up and out of the airways. Smoke paralyzes and destroys cilia, so mucus and germs stay in the lungs.</p><p><b>Narrowed blood vessels</b> isn't the right answer: nicotine does narrow vessels, but the infections come from the damaged cleanup system. Smoke also makes <b>more</b> mucus, not thinner mucus.</p><p><b>Takeaway:</b> Smoking breaks the mucociliary escalator, so germs stay in the airways.</p>"
     },
     {
       "id": "rs-59",
@@ -347,7 +303,7 @@
       "stem": "A client's alveolar walls have become thick and scarred, but the client breathes at a normal rate and the heart pumps normally. Which process is mainly impaired, and which finding should the nurse expect?",
       "options": ["Ventilation; the PaCO₂ rises because air can't move in", "Perfusion; blood can't flow through the lung capillaries", "Diffusion; the PaO₂ falls, especially with activity", "Mucociliary clearance; mucus collects in the airways"],
       "answer": 2,
-      "rationale": "<p>Gases cross the alveolar and capillary walls by <b>diffusion</b>. A thick, scarred wall slows it, and oxygen is affected first, since carbon dioxide crosses much more easily. The PaO₂ falls, most of all with activity, when the blood moves past the alveoli faster.</p><p><b>Ventilation</b> is the tempting choice, since breathing feels harder, but this client moves air normally; the problem is getting the gas across the wall.</p><p><b>Takeaway:</b> Thick alveolar walls impair diffusion, and oxygen suffers first.</p>"
+      "rationale": "<p>Gases cross the alveolar and capillary walls by <b>diffusion</b>. A thick, scarred wall slows it, and oxygen is affected first, since carbon dioxide crosses much more easily. The PaO₂ falls, most of all with activity, when the blood moves past the alveoli faster.</p><p><b>Ventilation</b> isn't the right answer: breathing feels harder, but this client moves air normally; the problem is getting the gas across the wall.</p><p><b>Takeaway:</b> Thick alveolar walls impair diffusion, and oxygen suffers first.</p>"
     },
     {
       "id": "rs-60",
@@ -359,7 +315,7 @@
       "columns": ["Ventilation", "Perfusion", "Diffusion", "Mucociliary clearance"],
       "rows": ["Fluid thickens the walls between the alveoli and the capillaries", "An opioid overdose has slowed the breathing to 6 breaths a minute", "Years of smoking have destroyed the hair-like cells lining the airways", "A weak heart pumps too little blood through the lungs", "A broken rib makes deep breaths so painful that the client takes shallow ones"],
       "answer": [2, 0, 3, 1, 0],
-      "rationale": "<p><b>Ventilation</b> is moving air in and out, so slow or shallow breathing impairs it. <b>Perfusion</b> is blood flow past the alveoli, which a weak heart reduces. <b>Diffusion</b> is gas crossing the alveolar and capillary walls, slowed by fluid or scarring. <b>Mucociliary clearance</b> depends on the cilia.</p><p>The tempting mistake is calling the broken rib a perfusion problem because of the injury. The pain limits how much air moves, so it's ventilation.</p><p><b>Takeaway:</b> Ventilation moves air, perfusion moves blood, diffusion crosses the wall, and cilia clear the airways.</p>"
+      "rationale": "<p><b>Ventilation</b> is moving air in and out, so slow or shallow breathing impairs it. <b>Perfusion</b> is blood flow past the alveoli, which a weak heart reduces. <b>Diffusion</b> is gas crossing the alveolar and capillary walls, slowed by fluid or scarring. <b>Mucociliary clearance</b> depends on the cilia.</p><p>Calling the broken rib a perfusion problem because of the injury is a mistake. The pain limits how much air moves, so it's ventilation.</p><p><b>Takeaway:</b> Ventilation moves air, perfusion moves blood, diffusion crosses the wall, and cilia clear the airways.</p>"
     },
     {
       "id": "rs-61",
@@ -369,7 +325,7 @@
       "stem": "A nurse is reviewing four clients' arterial blood gases. Which client's results are all within the normal ranges?",
       "options": ["pH 7.41, PaCO₂ 38 mm Hg, HCO₃⁻ 24 mEq/L", "pH 7.33, PaCO₂ 44 mm Hg, HCO₃⁻ 21 mEq/L", "pH 7.44, PaCO₂ 33 mm Hg, HCO₃⁻ 23 mEq/L", "pH 7.37, PaCO₂ 46 mm Hg, HCO₃⁻ 27 mEq/L"],
       "answer": 0,
-      "rationale": "<p>The normal ranges are <b>pH 7.35 to 7.45</b>, <b>PaCO₂ 35 to 45 mm Hg</b>, and <b>HCO₃⁻ 22 to 26 mEq/L</b>. Only pH 7.41, PaCO₂ 38, and HCO₃⁻ 24 are all inside them.</p><p>The last set is the tempting choice, since its pH is normal, but its PaCO₂ (46) and HCO₃⁻ (27) are both just above normal. Check every value, not only the pH.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26: check each value against its range.</p>"
+      "rationale": "<p>The normal ranges are <b>pH 7.35 to 7.45</b>, <b>PaCO₂ 35 to 45 mm Hg</b>, and <b>HCO₃⁻ 22 to 26 mEq/L</b>. Only pH 7.41, PaCO₂ 38, and HCO₃⁻ 24 are all inside them.</p><p>The last set isn't the right answer: its pH is normal, but its PaCO₂ (46) and HCO₃⁻ (27) are both just above normal. Check every value, not only the pH.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26: check each value against its range.</p>"
     },
     {
       "id": "rs-62",
@@ -381,7 +337,7 @@
       "columns": ["Below the normal range", "Within the normal range", "Above the normal range"],
       "rows": ["pH 7.33", "PaCO₂ 50 mm Hg", "HCO₃⁻ 26 mEq/L", "Base excess −1 mEq/L", "PaO₂ 72 mm Hg"],
       "answer": [0, 2, 1, 1, 0],
-      "rationale": "<p>Normal ranges: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>, <b>base excess −2 to +2 mEq/L</b>, and <b>PaO₂ 80–100 mm Hg</b>. A pH of 7.33 is low, a PaCO₂ of 50 is high, and a PaO₂ of 72 is low; the HCO₃⁻ and base excess are normal. Together they fit a respiratory acidosis with a low oxygen level.</p><p>The tempting mistake is calling an HCO₃⁻ of 26 high. It's the top of the normal range, 22 to 26.</p><p><b>Takeaway:</b> Learn the five ABG ranges; a value at the edge of a range is still normal.</p>"
+      "rationale": "<p>Normal ranges: <b>pH 7.35–7.45</b>, <b>PaCO₂ 35–45 mm Hg</b>, <b>HCO₃⁻ 22–26 mEq/L</b>, <b>base excess −2 to +2 mEq/L</b>, and <b>PaO₂ 80–100 mm Hg</b>. A pH of 7.33 is low, a PaCO₂ of 50 is high, and a PaO₂ of 72 is low; the HCO₃⁻ and base excess are normal. Together they fit a respiratory acidosis with a low oxygen level.</p><p>Calling an HCO₃⁻ of 26 high is a mistake. It's the top of the normal range, 22 to 26.</p><p><b>Takeaway:</b> Learn the five ABG ranges; a value at the edge of a range is still normal.</p>"
     },
     {
       "id": "rs-63",
@@ -391,7 +347,7 @@
       "stem": "A client's arterial blood gases are pH 7.30, PaCO₂ 58 mm Hg, and HCO₃⁻ 25 mEq/L. How should the nurse interpret these results?",
       "options": ["Respiratory acidosis", "Metabolic acidosis", "Respiratory alkalosis", "Metabolic alkalosis"],
       "answer": 0,
-      "rationale": "<p>The pH is low (<b>acidosis</b>). The PaCO₂ is high, moving <b>opposite</b> to the pH, so the cause is <b>respiratory</b>: the lungs are keeping carbon dioxide. The HCO₃⁻ is normal.</p><p><b>Metabolic acidosis</b> is the tempting choice, since the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's normal and the CO₂ is the abnormal value.</p><p><b>Takeaway:</b> ROME: in respiratory problems, pH and CO₂ move in opposite directions.</p>"
+      "rationale": "<p>The pH is low (<b>acidosis</b>). The PaCO₂ is high, moving <b>opposite</b> to the pH, so the cause is <b>respiratory</b>: the lungs are keeping carbon dioxide. The HCO₃⁻ is normal.</p><p><b>Metabolic acidosis</b> isn't the right answer: the pH is low, but in a metabolic acidosis the HCO₃⁻ falls; here it's normal and the CO₂ is the abnormal value.</p><p><b>Takeaway:</b> ROME: in respiratory problems, pH and CO₂ move in opposite directions.</p>"
     },
     {
       "id": "rs-64",
@@ -401,7 +357,7 @@
       "stem": "A client's arterial blood gases are pH 7.49, PaCO₂ 30 mm Hg, and HCO₃⁻ 23 mEq/L. Which finding in the client's history most likely explains these results?",
       "options": ["Three days of vomiting after eating spoiled food", "Large amounts of watery diarrhea for two days", "Breathing 30 times a minute during a panic attack", "Thick secretions that partly block the airways"],
       "answer": 2,
-      "rationale": "<p>The pH is high (<b>alkalosis</b>) and the PaCO₂ is low, moving opposite to the pH: a <b>respiratory alkalosis</b>. Breathing fast during a panic attack blows off too much carbon dioxide.</p><p><b>Vomiting</b> is the tempting choice, since it also causes alkalosis, but that's a metabolic alkalosis, with a high HCO₃⁻. Here the HCO₃⁻ is normal and the CO₂ is low.</p><p><b>Takeaway:</b> Low CO₂ with a high pH: think hyperventilation (anxiety, pain, fever, a ventilator set too fast).</p>"
+      "rationale": "<p>The pH is high (<b>alkalosis</b>) and the PaCO₂ is low, moving opposite to the pH: a <b>respiratory alkalosis</b>. Breathing fast during a panic attack blows off too much carbon dioxide.</p><p><b>Vomiting</b> isn't the right answer: it also causes alkalosis, but that's a metabolic alkalosis, with a high HCO₃⁻. Here the HCO₃⁻ is normal and the CO₂ is low.</p><p><b>Takeaway:</b> Low CO₂ with a high pH: think hyperventilation (anxiety, pain, fever, a ventilator set too fast).</p>"
     },
     {
       "id": "rs-65",
@@ -411,7 +367,7 @@
       "stem": "A client has had severe watery diarrhea for 3 days. Which arterial blood gas results should the nurse expect?",
       "options": ["pH 7.29, PaCO₂ 37 mm Hg, HCO₃⁻ 16 mEq/L", "pH 7.50, PaCO₂ 44 mm Hg, HCO₃⁻ 32 mEq/L", "pH 7.31, PaCO₂ 55 mm Hg, HCO₃⁻ 26 mEq/L", "pH 7.48, PaCO₂ 31 mm Hg, HCO₃⁻ 23 mEq/L"],
       "answer": 0,
-      "rationale": "<p>Diarrhea carries <b>bicarbonate</b> out of the body, so the HCO₃⁻ falls and the pH falls with it: a <b>metabolic acidosis</b> (pH 7.29, HCO₃⁻ 16).</p><p>The high-pH, high-HCO₃⁻ set is the tempting choice, since losing fluid from the gut sounds like vomiting. Vomiting loses <b>acid</b> (alkalosis); diarrhea loses <b>base</b> (acidosis).</p><p><b>Takeaway:</b> Diarrhea: metabolic acidosis. Vomiting: metabolic alkalosis.</p>"
+      "rationale": "<p>Diarrhea carries <b>bicarbonate</b> out of the body, so the HCO₃⁻ falls and the pH falls with it: a <b>metabolic acidosis</b> (pH 7.29, HCO₃⁻ 16).</p><p>The high-pH, high-HCO₃⁻ set isn't the right answer, even though losing fluid from the gut sounds like vomiting. Vomiting loses <b>acid</b> (alkalosis); diarrhea loses <b>base</b> (acidosis).</p><p><b>Takeaway:</b> Diarrhea: metabolic acidosis. Vomiting: metabolic alkalosis.</p>"
     },
     {
       "id": "rs-66",
@@ -421,7 +377,7 @@
       "stem": "A client has had a nasogastric tube to suction for 4 days. Which imbalance should the nurse expect, and why?",
       "options": ["Metabolic acidosis, from the loss of bicarbonate", "Metabolic alkalosis, from the loss of stomach acid", "Respiratory alkalosis, from breathing fast with pain", "Respiratory acidosis, from shallow breathing with the tube"],
       "answer": 1,
-      "rationale": "<p>Suction removes stomach contents, which are rich in <b>acid</b>. Losing acid leaves extra bicarbonate behind, so the pH and HCO₃⁻ rise: a <b>metabolic alkalosis</b>, the same as prolonged vomiting.</p><p><b>Metabolic acidosis from bicarbonate loss</b> is the tempting choice, but that's what diarrhea causes; stomach fluid is acid.</p><p><b>Takeaway:</b> Prolonged vomiting or NG suction causes metabolic alkalosis.</p>"
+      "rationale": "<p>Suction removes stomach contents, which are rich in <b>acid</b>. Losing acid leaves extra bicarbonate behind, so the pH and HCO₃⁻ rise: a <b>metabolic alkalosis</b>, the same as prolonged vomiting.</p><p><b>Metabolic acidosis from bicarbonate loss</b> isn't the right answer: that's what diarrhea causes; stomach fluid is acid.</p><p><b>Takeaway:</b> Prolonged vomiting or NG suction causes metabolic alkalosis.</p>"
     },
     {
       "id": "rs-67",
@@ -433,7 +389,7 @@
       "columns": ["Respiratory acidosis", "Respiratory alkalosis", "Metabolic acidosis", "Metabolic alkalosis"],
       "rows": ["Diabetic ketoacidosis", "Several days of vomiting", "A piece of food partly blocking the airway", "Anxious, rapid breathing", "Kidney failure", "A thiazide diuretic, with a low potassium level", "A fever of 39.8 °C (103.6 °F) with fast breathing"],
       "answer": [2, 3, 0, 1, 2, 3, 1],
-      "rationale": "<p><b>Metabolic acidosis</b>: diabetic ketoacidosis (ketones) and kidney failure (acid builds up and less bicarbonate is made). <b>Metabolic alkalosis</b>: vomiting (acid lost) and thiazide diuretics. <b>Respiratory acidosis</b>: an airway obstruction that traps CO₂. <b>Respiratory alkalosis</b>: anxious hyperventilation and fever, which blow off CO₂.</p><p>The tempting mistake is calling fever a metabolic problem because the body is sick. Fever speeds up breathing, which blows off CO₂: a respiratory alkalosis.</p><p><b>Takeaway:</b> Match the cause to the system: lungs (CO₂) or metabolism and kidneys (HCO₃⁻).</p>"
+      "rationale": "<p><b>Metabolic acidosis</b>: diabetic ketoacidosis (ketones) and kidney failure (acid builds up and less bicarbonate is made). <b>Metabolic alkalosis</b>: vomiting (acid lost) and thiazide diuretics. <b>Respiratory acidosis</b>: an airway obstruction that traps CO₂. <b>Respiratory alkalosis</b>: anxious hyperventilation and fever, which blow off CO₂.</p><p>Calling fever a metabolic problem because the body is sick is a mistake. Fever speeds up breathing, which blows off CO₂: a respiratory alkalosis.</p><p><b>Takeaway:</b> Match the cause to the system: lungs (CO₂) or metabolism and kidneys (HCO₃⁻).</p>"
     },
     {
       "id": "rs-68",
@@ -443,7 +399,7 @@
       "stem": "A nurse is reviewing clients at risk of metabolic acidosis. Which of the following conditions raise this risk?",
       "options": ["Starvation", "Prolonged vomiting", "Severe hypoxia", "Nasogastric suction", "Watery diarrhea", "A thiazide diuretic"],
       "answer": [0, 2, 4],
-      "rationale": "<p>Metabolic acidosis comes from <b>extra acid</b> or <b>lost bicarbonate</b>: starvation makes ketones, severe hypoxia makes lactic acid, and diarrhea carries bicarbonate out. Diabetic ketoacidosis, kidney failure, and dehydration are other causes.</p><p><b>Prolonged vomiting</b> and <b>nasogastric suction</b> are the tempting choices, since they're fluid losses too, but they remove stomach acid and cause <b>alkalosis</b>, as thiazide diuretics can.</p><p><b>Takeaway:</b> Acidosis: starvation, DKA, hypoxia, kidney failure, dehydration, diarrhea. Alkalosis: vomiting, NG suction, thiazides.</p>"
+      "rationale": "<p>Metabolic acidosis comes from <b>extra acid</b> or <b>lost bicarbonate</b>: starvation makes ketones, severe hypoxia makes lactic acid, and diarrhea carries bicarbonate out. Diabetic ketoacidosis, kidney failure, and dehydration are other causes.</p><p><b>Prolonged vomiting</b> and <b>nasogastric suction</b> don't raise this risk: they're fluid losses too, but they remove stomach acid and cause <b>alkalosis</b>, as thiazide diuretics can.</p><p><b>Takeaway:</b> Acidosis: starvation, DKA, hypoxia, kidney failure, dehydration, diarrhea. Alkalosis: vomiting, NG suction, thiazides.</p>"
     },
     {
       "id": "rs-69",
@@ -453,7 +409,7 @@
       "stem": "A nursing student says, “In respiratory alkalosis, the blood has more hydrogen ions than normal.” Which response should the nurse give?",
       "options": ["“That's right; the extra hydrogen ions are what raise the pH.”", "“It has fewer hydrogen ions; that's why the pH is higher.”", "“It has the same number; the bicarbonate level is what changes.”", "“That's right; carbon dioxide adds hydrogen ions as it builds up.”"],
       "answer": 1,
-      "rationale": "<p>The pH reflects the hydrogen ions in the blood: <b>more</b> hydrogen ions mean a <b>lower</b> pH (acidosis), and <b>fewer</b> mean a <b>higher</b> pH (alkalosis). In respiratory alkalosis, carbon dioxide is blown off, less carbonic acid forms, and hydrogen ions fall.</p><p><b>“Carbon dioxide adds hydrogen ions as it builds up”</b> is the tempting choice, since it's true, but in respiratory alkalosis the CO₂ is <b>low</b>, not building up. (The instructor's list has this slip too; a higher pH always means fewer hydrogen ions.)</p><p><b>Takeaway:</b> Acidosis = more hydrogen ions, lower pH. Alkalosis = fewer hydrogen ions, higher pH.</p>"
+      "rationale": "<p>The pH reflects the hydrogen ions in the blood: <b>more</b> hydrogen ions mean a <b>lower</b> pH (acidosis), and <b>fewer</b> mean a <b>higher</b> pH (alkalosis). In respiratory alkalosis, carbon dioxide is blown off, less carbonic acid forms, and hydrogen ions fall.</p><p><b>“Carbon dioxide adds hydrogen ions as it builds up”</b> isn't the right answer: it's true, but in respiratory alkalosis the CO₂ is <b>low</b>, not building up. (The instructor's list has this slip too; a higher pH always means fewer hydrogen ions.)</p><p><b>Takeaway:</b> Acidosis = more hydrogen ions, lower pH. Alkalosis = fewer hydrogen ions, higher pH.</p>"
     },
     {
       "id": "rs-70",
@@ -467,7 +423,7 @@
         {"options": ["opposite directions", "the same direction"], "answer": 1},
         {"options": ["a metabolic alkalosis", "a respiratory acidosis", "a metabolic acidosis"], "answer": 2}
       ],
-      "rationale": "<p><b>ROME</b>: in <b>R</b>espiratory imbalances the pH and CO₂ move <b>O</b>pposite (pH down, CO₂ up); in <b>M</b>etabolic imbalances the pH and HCO₃⁻ move the same way, <b>E</b>qual. A <b>base excess</b> below −2 means too little base: a metabolic acidosis.</p><p>The tempting mistake is reading a negative base excess as alkalosis. Negative means a <b>deficit</b> of base, so the blood is more acidic.</p><p><b>Takeaway:</b> ROME, and a base excess below −2 means metabolic acidosis.</p>"
+      "rationale": "<p><b>ROME</b>: in <b>R</b>espiratory imbalances the pH and CO₂ move <b>O</b>pposite (pH down, CO₂ up); in <b>M</b>etabolic imbalances the pH and HCO₃⁻ move the same way, <b>E</b>qual. A <b>base excess</b> below −2 means too little base: a metabolic acidosis.</p><p>Reading a negative base excess as alkalosis is a mistake. Negative means a <b>deficit</b> of base, so the blood is more acidic.</p><p><b>Takeaway:</b> ROME, and a base excess below −2 means metabolic acidosis.</p>"
     },
     {
       "id": "rs-71",
@@ -477,7 +433,7 @@
       "stem": "A client with diabetic ketoacidosis is breathing deeply at 32 breaths a minute. The arterial blood gases are pH 7.30, PaCO₂ 28 mm Hg, and HCO₃⁻ 14 mEq/L. Which explanation of the low PaCO₂ should the nurse give?",
       "options": ["A respiratory alkalosis is the client's main problem right now", "The ketones are breaking down the carbon dioxide in the blood", "The lungs are blowing off CO₂ to offset the acid from the ketones", "Anxiety is speeding up the breathing, with no link to the acid"],
       "answer": 2,
-      "rationale": "<p>The pH is low and the HCO₃⁻ is low: a <b>metabolic acidosis</b> from the ketones. The medulla senses the acid and drives deep, fast breathing to blow off CO₂, which pulls the pH back toward normal. The low PaCO₂ is the lungs helping, not the main problem.</p><p><b>Respiratory alkalosis</b> is the tempting choice, since the PaCO₂ is low, but the pH is <b>acidic</b>, so the main problem can't be an alkalosis.</p><p><b>Takeaway:</b> In metabolic acidosis, deep, fast breathing lowers the CO₂ to help balance the pH.</p>"
+      "rationale": "<p>The pH is low and the HCO₃⁻ is low: a <b>metabolic acidosis</b> from the ketones. The medulla senses the acid and drives deep, fast breathing to blow off CO₂, which pulls the pH back toward normal. The low PaCO₂ is the lungs helping, not the main problem.</p><p><b>Respiratory alkalosis</b> isn't the right answer: the PaCO₂ is low, but the pH is <b>acidic</b>, so the main problem can't be an alkalosis.</p><p><b>Takeaway:</b> In metabolic acidosis, deep, fast breathing lowers the CO₂ to help balance the pH.</p>"
     },
     {
       "id": "rs-72",
@@ -487,7 +443,7 @@
       "stem": "A nurse is reviewing the arterial blood gases of four clients. Which client needs follow-up first?",
       "options": ["A client with pH 7.46 and PaCO₂ 34 mm Hg who is anxious about surgery", "A client with pH 7.36 and HCO₃⁻ 21 mEq/L who is eating breakfast", "A client with PaO₂ 82 mm Hg who is walking in the hallway", "A client with pH 7.24 and PaCO₂ 64 mm Hg who is hard to wake"],
       "answer": 3,
-      "rationale": "<p>A pH of 7.24 with a PaCO₂ of 64 is a severe <b>respiratory acidosis</b>, and drowsiness shows carbon dioxide building up as breathing fails. That's a threat to breathing, so it comes first.</p><p>The <b>anxious client</b> is the tempting choice, since the pH is slightly high, but a mild alkalosis in an alert client isn't as urgent. The other two results are normal or nearly normal.</p><p><b>Takeaway:</b> Severe acidosis with a falling level of consciousness is a breathing emergency.</p>"
+      "rationale": "<p>A pH of 7.24 with a PaCO₂ of 64 is a severe <b>respiratory acidosis</b>, and drowsiness shows carbon dioxide building up as breathing fails. That's a threat to breathing, so it comes first.</p><p>The <b>anxious client</b> isn't the right answer: the pH is slightly high, but a mild alkalosis in an alert client isn't as urgent. The other two results are normal or nearly normal.</p><p><b>Takeaway:</b> Severe acidosis with a falling level of consciousness is a breathing emergency.</p>"
     },
     {
       "id": "rs-73",
@@ -499,7 +455,7 @@
       "columns": ["Modifiable", "Non-modifiable"],
       "rows": ["Is 79 years old", "Smokes a pack of cigarettes a day", "Sands and paints boats for a living", "Drinks little water, and the mucus is thick", "Belongs to an ethnic group with higher rates of asthma"],
       "answer": [1, 0, 0, 0, 1],
-      "rationale": "<p><b>Age</b> and <b>ethnicity</b> can't be changed. <b>Smoking</b>, <b>work exposures</b> (dust and fumes, with protective gear), and <b>hydration</b> can. Dehydration thickens mucus and slows its clearance. (The instructor's list labels both groups “non-modifiable”; the second group is the modifiable one.)</p><p>The tempting mistake is calling a job non-modifiable. The client may not change jobs, but exposure can be reduced with ventilation and a fitted respirator.</p><p><b>Takeaway:</b> Non-modifiable: age, ethnicity. Modifiable: smoking, hydration, work exposures.</p>"
+      "rationale": "<p><b>Age</b> and <b>ethnicity</b> can't be changed. <b>Smoking</b>, <b>work exposures</b> (dust and fumes, with protective gear), and <b>hydration</b> can. Dehydration thickens mucus and slows its clearance. (The instructor's list labels both groups “non-modifiable”; the second group is the modifiable one.)</p><p>Calling a job non-modifiable is a mistake. The client may not change jobs, but exposure can be reduced with ventilation and a fitted respirator.</p><p><b>Takeaway:</b> Non-modifiable: age, ethnicity. Modifiable: smoking, hydration, work exposures.</p>"
     },
     {
       "id": "rs-74",
@@ -509,7 +465,7 @@
       "stem": "A 67-year-old client asks which vaccines can help prevent pneumonia and other chest infections. Which response should the nurse give?",
       "options": ["“A shingles vaccine, which also protects against pneumonia.”", "“One flu vaccine at 65, which protects for the rest of your life.”", "“A pneumococcal vaccine, which replaces the yearly flu vaccine.”", "“A pneumococcal vaccine, plus a flu vaccine every year.”"],
       "answer": 3,
-      "rationale": "<p>The instructor's list for preventing respiratory infections: <b>exercise</b>, the <b>pneumococcal vaccine</b>, and the <b>influenza vaccine</b>. Flu viruses change each season, so the flu vaccine is needed <b>every year</b>; the pneumococcal vaccine protects against a common cause of pneumonia.</p><p><b>The shingles vaccine</b> is the tempting choice, since it's recommended for older adults too, but it protects against shingles, not pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal vaccine, and a flu vaccine every year.</p>"
+      "rationale": "<p>The instructor's list for preventing respiratory infections: <b>exercise</b>, the <b>pneumococcal vaccine</b>, and the <b>influenza vaccine</b>. Flu viruses change each season, so the flu vaccine is needed <b>every year</b>; the pneumococcal vaccine protects against a common cause of pneumonia.</p><p><b>The shingles vaccine</b> isn't the right answer: it's recommended for older adults too, but it protects against shingles, not pneumonia.</p><p><b>Takeaway:</b> Older adults: pneumococcal vaccine, and a flu vaccine every year.</p>"
     },
     {
       "id": "rs-75",
@@ -520,7 +476,7 @@
       "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
       "passage": "Client reports [[getting more short of breath over 3 days]] and [[coughing up thick, yellow mucus]]. [[Smoked 1 pack a day for 45 years; quit 2 years ago]]. [[Worked 30 years in a coal mine]]. [[Drinks “maybe two cups of water a day”]]. Sitting on the edge of the bed, [[leaning forward with hands on knees; neck muscles tighten with each breath]]. [[Speaks in 3- to 4-word phrases]]. [[Restless, and keeps asking what day it is]]; daughter says this is new. [[Received a flu vaccine last month]]; [[has never had a pneumococcal vaccine]].",
       "answer": [0, 1, 4, 5, 6, 7, 9],
-      "rationale": "<p>Worsening shortness of breath, thick yellow mucus, the tripod position with neck muscles working, short phrases, and <b>new</b> restlessness and confusion are signs of <b>respiratory distress</b> that's getting worse. Low fluid intake thickens mucus, and the missing pneumococcal vaccine is a gap in prevention to address.</p><p>The <b>smoking and coal-mine history</b> are the tempting ones to highlight, since they're risk factors, but they're background that explains the illness, not findings to act on now. The recent flu vaccine is up to date.</p><p><b>Takeaway:</b> In respiratory distress, act on the work of breathing, the mental status, and the gaps in prevention.</p>"
+      "rationale": "<p>Worsening shortness of breath, thick yellow mucus, the tripod position with neck muscles working, short phrases, and <b>new</b> restlessness and confusion are signs of <b>respiratory distress</b> that's getting worse. Low fluid intake thickens mucus, and the missing pneumococcal vaccine is a gap in prevention to address.</p><p>The <b>smoking and coal-mine history</b> don't need follow-up: they're risk factors, but they're background that explains the illness, not findings to act on now. The recent flu vaccine is up to date.</p><p><b>Takeaway:</b> In respiratory distress, act on the work of breathing, the mental status, and the gaps in prevention.</p>"
     },
     {
       "id": "rs-76",
@@ -533,7 +489,7 @@
       "columns": ["Respiratory distress", "A risk factor for lung disease", "Respiratory acidosis"],
       "rows": ["Neck muscles tightening with each breath", "A pH of 7.28 with a PaCO₂ of 62 mm Hg", "45 years of smoking", "Speaking in 3- to 4-word phrases", "30 years of work in a coal mine"],
       "answer": [0, 2, 1, 0, 1],
-      "rationale": "<p>Using the neck (accessory) muscles and speaking in short phrases show <b>respiratory distress</b>. A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: carbon dioxide is being kept. Smoking and coal dust are <b>risk factors</b> that damaged the lungs over years.</p><p>The tempting mistake is calling the blood gas a sign of distress. It's a lab finding that shows the <b>result</b> of the failing breathing: carbon dioxide building up.</p><p><b>Takeaway:</b> Sort findings into what you see (distress), what the labs show (acidosis), and why it happened (risk factors).</p>"
+      "rationale": "<p>Using the neck (accessory) muscles and speaking in short phrases show <b>respiratory distress</b>. A low pH with a high PaCO₂ is a <b>respiratory acidosis</b>: carbon dioxide is being kept. Smoking and coal dust are <b>risk factors</b> that damaged the lungs over years.</p><p>Calling the blood gas a sign of distress is a mistake. It's a lab finding that shows the <b>result</b> of the failing breathing: carbon dioxide building up.</p><p><b>Takeaway:</b> Sort findings into what you see (distress), what the labs show (acidosis), and why it happened (risk factors).</p>"
     },
     {
       "id": "rs-77",
@@ -548,7 +504,7 @@
         {"options": ["rapid breathing that blows off too much CO₂", "the kidneys losing too much bicarbonate", "narrowed, mucus-filled airways that trap CO₂"], "answer": 2},
         {"options": ["a reaction to the recent flu vaccine", "high CO₂ and low oxygen in the blood", "a small stroke in the medulla oblongata"], "answer": 1}
       ],
-      "rationale": "<p>A pH of 7.28 with a PaCO₂ of 62 and a normal HCO₃⁻ is a <b>respiratory acidosis</b>. The instructor's causes are an <b>airway obstruction</b> or lungs that can't exchange gas well; here, thick mucus and damaged airways trap CO₂. High CO₂ and a PaO₂ of 54 both affect the brain, causing restlessness and confusion.</p><p><b>Rapid breathing that blows off too much CO₂</b> is the tempting choice, since the client is breathing 30 times a minute, but the PaCO₂ is high: the breaths aren't moving enough air to clear it.</p><p><b>Takeaway:</b> Fast breathing doesn't always mean low CO₂: blocked airways can keep it high.</p>"
+      "rationale": "<p>A pH of 7.28 with a PaCO₂ of 62 and a normal HCO₃⁻ is a <b>respiratory acidosis</b>. The instructor's causes are an <b>airway obstruction</b> or lungs that can't exchange gas well; here, thick mucus and damaged airways trap CO₂. High CO₂ and a PaO₂ of 54 both affect the brain, causing restlessness and confusion.</p><p><b>Rapid breathing that blows off too much CO₂</b> isn't the right answer. The client is breathing 30 times a minute, but the PaCO₂ is high: the breaths aren't moving enough air to clear it.</p><p><b>Takeaway:</b> Fast breathing doesn't always mean low CO₂: blocked airways can keep it high.</p>"
     },
     {
       "id": "rs-78",
@@ -559,7 +515,7 @@
       "stem": "Which actions should the nurse take?",
       "options": ["Raise the head of the bed to high Fowler's position", "Give oxygen as prescribed and recheck the oxygen saturation", "Report the blood gas results and the new confusion to the provider", "Lay the client flat to rest the breathing muscles", "Encourage fluids, unless they're restricted, to thin the mucus", "Give the as-needed sleeping pill to calm the restlessness", "Plan teaching about the pneumococcal vaccine"],
       "answer": [0, 1, 2, 4, 6],
-      "rationale": "<p>Sitting up lets the diaphragm move and the lungs expand. Oxygen as prescribed treats the low PaO₂, and the provider needs to know about the acidosis and the new confusion. Fluids thin the mucus so it can be cleared, and the missing pneumococcal vaccine is worth teaching about once the client is stable.</p><p><b>The sleeping pill</b> is the tempting choice, since the client is restless, but sedatives slow breathing, and the restlessness is a sign of low oxygen and high CO₂. Lying flat makes breathing harder.</p><p><b>Takeaway:</b> Position upright, oxygenate, report, and never sedate restlessness from poor breathing.</p>"
+      "rationale": "<p>Sitting up lets the diaphragm move and the lungs expand. Oxygen as prescribed treats the low PaO₂, and the provider needs to know about the acidosis and the new confusion. Fluids thin the mucus so it can be cleared, and the missing pneumococcal vaccine is worth teaching about once the client is stable.</p><p><b>The sleeping pill</b> isn't the right answer: the client is restless, but sedatives slow breathing, and the restlessness is a sign of low oxygen and high CO₂. Lying flat makes breathing harder.</p><p><b>Takeaway:</b> Position upright, oxygenate, report, and never sedate restlessness from poor breathing.</p>"
     },
     {
       "id": "rs-79",
@@ -572,7 +528,51 @@
       "columns": ["Improved", "Not changed", "Gotten worse"],
       "rows": ["Respiratory rate: 30/min then, 22/min now", "Oxygen saturation: 86% then, 92% now", "Speech: 3- to 4-word phrases then, full sentences now", "Orientation: unsure of the day then, unsure of the day now", "PaCO₂: 62 mm Hg then, 66 mm Hg now"],
       "answer": [0, 0, 0, 1, 2],
-      "rationale": "<p>A slower respiratory rate, a higher oxygen saturation, and full sentences show the <b>work of breathing</b> has improved. The confusion hasn't changed, and the PaCO₂ has <b>risen</b>, so carbon dioxide is still building up and needs to be reported.</p><p>The tempting mistake is calling everything improved because the client looks more comfortable. A rising PaCO₂ means the acidosis is getting worse, even as the oxygen improves.</p><p><b>Takeaway:</b> Judge the blood gases, not just the comfort: a rising CO₂ is worse.</p>"
+      "rationale": "<p>A slower respiratory rate, a higher oxygen saturation, and full sentences show the <b>work of breathing</b> has improved. The confusion hasn't changed, and the PaCO₂ has <b>risen</b>, so carbon dioxide is still building up and needs to be reported.</p><p>Calling everything improved because the client looks more comfortable is a mistake. A rising PaCO₂ means the acidosis is getting worse, even as the oxygen improves.</p><p><b>Takeaway:</b> Judge the blood gases, not just the comfort: a rising CO₂ is worse.</p>"
+    },
+    {
+      "id": "rs-80",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 3,
+      "stem": "A few minutes after a bee sting, a client develops a loud, high-pitched sound on every breath in, heard without a stethoscope. Which interpretation should the nurse make?",
+      "options": ["Narrowed lower airways are making wheezes, which can wait for the provider's next visit", "Fluid in the alveoli is making crackles, which repositioning will clear", "Secretions in the large airways are making rhonchi, which coughing will clear", "Swelling is narrowing the upper airway at the larynx, an emergency"],
+      "answer": 3,
+      "rationale": "<p>A loud, high-pitched sound on breathing in is <b>stridor</b>, a sign of <b>upper airway obstruction</b>: here, swelling of the larynx from an allergic reaction. It's an emergency, since the airway can close.</p><p>The <b>wheezes</b> choice isn't the right answer: narrowed lower airways also make high-pitched sounds, but wheezes are usually heard on breathing out, and this sound comes with each breath in, from above the chest. Crackles and rhonchi are popping and low-pitched sounds from fluid and secretions.</p><p><b>Takeaway:</b> Stridor on breathing in = upper airway obstruction: an emergency.</p>"
+    },
+    {
+      "id": "rs-81",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "While laughing, an adult inhales a piece of peanut, which passes through the larynx and trachea. Where is it most likely to lodge, and why?",
+      "options": ["The right main bronchus, which is wider, shorter, and more vertical", "The left main bronchus, which is longer and has more room", "The right main bronchus, which is narrower and traps objects", "The left main bronchus, which leaves the trachea at a straighter angle"],
+      "answer": 0,
+      "rationale": "<p>The <b>right main bronchus</b> is <b>wider, shorter, and more vertical</b> than the left, almost a straight line down from the trachea, so inhaled objects most often go right.</p><p>The <b>left main bronchus</b> choices aren't the right answer: the left bronchus is longer, but it leaves the trachea at a sharper angle, which makes objects pass it by. The right bronchus is the wider one, not the narrower.</p><p><b>Takeaway:</b> Right main bronchus: wider, shorter, more vertical, so aspiration goes right more often.</p>"
+    },
+    {
+      "id": "rs-82",
+      "type": "dropdown",
+      "topic": "Lower respiratory tract",
+      "level": 3,
+      "stem": "A client who was sitting upright vomited and aspirated some of it. Complete the following sentence.",
+      "text": "The aspirated material most likely went down the {{0}} main bronchus to the {{1}} lobe, so the nurse should listen most closely over the {{2}}.",
+      "blanks": [
+        {"options": ["left", "right"], "answer": 1},
+        {"options": ["upper", "middle", "lower"], "answer": 2},
+        {"options": ["lower back on the right", "front of the chest under the right collarbone", "front of the chest between the right 4th and 6th ribs"], "answer": 0}
+      ],
+      "rationale": "<p>Aspirated material follows gravity and the straightest path: down the wider, more vertical <b>right</b> main bronchus to the lowest part of the right lung, the right <b>lower</b> lobe, which is heard best over the <b>lower back on the right</b>.</p><p>The <b>middle</b> lobe isn't the right answer: it's on the right too, but its bronchus branches toward the front, while the material falls straight down. The area under the right collarbone is the upper lobe, and the area between the 4th and 6th ribs at the front is the middle lobe.</p><p><b>Takeaway:</b> Aspiration while upright: the right lower lobe, heard over the right lower back.</p>"
+    },
+    {
+      "id": "rs-83",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 3,
+      "stem": "A nurse listens over a client's back only and hears clear breath sounds in every area, but a chest x-ray shows pneumonia in one lobe. Which lobe is most likely affected?",
+      "options": ["The right lower lobe", "The left lower lobe", "The right middle lobe", "The left upper lobe"],
+      "answer": 2,
+      "rationale": "<p>The <b>right middle lobe</b>, between the horizontal and oblique fissures, lies toward the front of the right chest, so it's heard from the front and the right side, not the back. That's how a back-only exam can miss it.</p><p><b>The right lower lobe</b> isn't the right answer: it's on the right too, but most of it lies toward the back, so pneumonia there would change the sounds over the back. Both left lobes reach the back as well.</p><p><b>Takeaway:</b> A complete lung exam covers the front and sides: the right middle lobe can't be heard from the back.</p>"
     }
   ]
 }

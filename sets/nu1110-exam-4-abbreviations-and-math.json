@@ -1,0 +1,725 @@
+{
+  "id": "nu1110-exam-4-abbreviations-and-math",
+  "title": "Abbreviations and Math Review",
+  "description": "Exam 4 review, matched to the professor's Exam 4 study guide: the class's common abbreviations, unit conversions, and intake in mL, with the rounding and zero rules. The numbers change on every attempt.",
+  "course": "NU1110",
+  "exam": "Exam 4",
+  "timeMinutes": 46.5,
+  "defaultCount": 15,
+  "questions": [
+    {
+      "id": "mx4-01",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a new prescription: “Metoprolol 25 mg PO bid.” Which instruction should the nurse give the client?",
+      "options": [
+        "“Take one dose by mouth three times a day.”",
+        "“Take one dose by mouth on alternate days.”",
+        "“Let one dose dissolve under your tongue twice a day.”",
+        "“Take one dose by mouth twice a day.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>PO</b> means by mouth, and <b>bid</b> means twice a day.</p><p><b>Three times a day</b> isn't the right answer: that's <b>tid</b>, and four times a day is <b>qid</b>. Alternate days aren't what bid means, and dissolving a dose under the tongue is a different route (sublingual), not PO.</p><p><b>Takeaway:</b> bid = twice a day, tid = three times, qid = four times; PO = by mouth.</p>"
+    },
+    {
+      "id": "mx4-02",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client is scheduled for surgery tomorrow morning, and the order reads “NPO after midnight.” Which instruction should the nurse give the client?",
+      "options": [
+        "“After midnight, you may have ice chips, but no food.”",
+        "“After midnight, you may have water, but no food.”",
+        "“Don't eat or drink anything after midnight.”",
+        "“After midnight, you may have clear liquids, like broth and juice.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>NPO</b> means nothing by mouth: no food or fluids, starting at the time in the order.</p><p><b>Ice chips</b> aren't the right answer: they melt into water, which is a fluid taken by mouth. Water and clear liquids are fluids too, and an exception would need the provider's order.</p><p><b>Takeaway:</b> NPO = nothing by mouth: no food, no fluids, no ice chips, unless the provider orders otherwise.</p>"
+    },
+    {
+      "id": "mx4-03",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "At the start of a shift, a nurse finds four new medication orders for a client. Which order should the nurse carry out first?",
+      "options": [
+        "Acetaminophen 650 mg PO q6h PRN pain",
+        "Docusate sodium 100 mg PO bid",
+        "Furosemide 40 mg PO qam",
+        "Ondansetron 4 mg IV STAT"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>STAT</b> means immediately, so that order comes first.</p><p><b>The acetaminophen</b> isn't the right answer: <b>PRN</b> means as needed, so it's given when the client has pain, and the client hasn't reported any. <b>bid</b> (twice a day) and <b>qam</b> (every morning) are scheduled doses that follow the unit's schedule.</p><p><b>Takeaway:</b> STAT = now; PRN = as needed; scheduled doses (bid, qam) follow the schedule.</p>"
+    },
+    {
+      "id": "mx4-04",
+      "type": "matrix",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's medication orders. For each order, click to specify when the nurse should give the medication.",
+      "rowHeader": "Order",
+      "columns": [
+        "Before meals",
+        "After meals",
+        "Every morning",
+        "Every evening",
+        "Only when needed"
+      ],
+      "rows": [
+        "Insulin lispro 6 units subcut ac",
+        "Atorvastatin 40 mg PO qpm",
+        "Simethicone 80 mg PO pc",
+        "Ondansetron 4 mg PO q8h PRN nausea",
+        "Furosemide 40 mg PO qam"
+      ],
+      "answer": [
+        0,
+        3,
+        1,
+        4,
+        2
+      ],
+      "rationale": "<p><b>ac</b> means before meals and <b>pc</b> after meals (<i>a</i> for before, <i>p</i> for after). <b>qam</b> is every morning, <b>qpm</b> every evening, and <b>PRN</b> as needed. In “q8h PRN,” PRN means the dose is given only when needed, and q8h sets the shortest time between doses.</p><p>Putting the ondansetron on a schedule of every 8 hours is a mistake: PRN means it's given only for nausea, no more often than every 8 hours.</p><p><b>Takeaway:</b> ac before meals, pc after meals, qam every morning, qpm every evening, PRN as needed.</p>"
+    },
+    {
+      "id": "mx4-05",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "On admission, a client says, “I'm not allergic to any medicines, but I break out in hives when I eat peanuts.” Which entry should the nurse document?",
+      "options": [
+        "NKDA; food allergy: peanuts (hives)",
+        "NKA; food reaction: peanuts (hives)",
+        "NKDA; no other allergies reported",
+        "NKA; drug allergy: peanuts (hives)"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>NKDA</b> means no known <b>drug</b> allergies, which fits this client, and the peanut allergy is recorded too, with the reaction.</p><p><b>NKA</b> isn't the right answer: it means no known allergies of any kind, and this client has a food allergy. Leaving out the peanut allergy hides a real risk, and peanuts aren't a drug.</p><p><b>Takeaway:</b> NKDA = no known drug allergies; NKA = no known allergies at all. Record every allergy and its reaction.</p>"
+    },
+    {
+      "id": "mx4-06",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A prescription reads “Acetaminophen 650 mg PO x1 for headache.” Six hours after the dose, the client's headache returns. Which action should the nurse take?",
+      "options": [
+        "Give another dose, since 6 hours have passed",
+        "Give another dose, since the order lists it for headache",
+        "Contact the provider for a new order",
+        "Wait 2 more hours, then give another dose"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>x1</b> means one time. The order was for a single dose, so it's complete, and another dose needs a new order.</p><p><b>Giving another dose since 6 hours have passed</b> isn't the right answer: that would fit an order like “q6h PRN,” but this order gives no frequency. The headache is the reason for the dose, not permission to repeat it.</p><p><b>Takeaway:</b> x1 = one time; a repeat dose needs a new order.</p>"
+    },
+    {
+      "id": "mx4-07",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A prescription reads “Timolol eye drops, 1 drop OU bid.” How should the nurse give this medication?",
+      "options": [
+        "One drop in each eye, three times a day",
+        "One drop in each eye, twice a day",
+        "One drop in the left eye, twice a day",
+        "One drop in each ear, twice a day"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>OU</b> means both eyes, and <b>bid</b> means twice a day.</p><p><b>The left eye</b> isn't the right answer: that's <b>OS</b>, and the right eye is <b>OD</b>. Three times a day is tid, and the ears have their own abbreviations, which are easy to mix up with the eyes'.</p><p><b>Takeaway:</b> OD right eye, OS left eye, OU both eyes.</p>"
+    },
+    {
+      "id": "mx4-08",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client's orders include “I&O” and “Fluids ad lib.” Which action should the nurse take?",
+      "options": [
+        "Limit fluids to a set amount, and measure all intake and output",
+        "Let the client drink freely, and measure all intake and output",
+        "Let the client drink freely, and measure only the IV fluids",
+        "Offer fluids only at meals, and measure all intake and output"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Ad lib</b> means as much as desired, so the client may drink freely, and <b>I&O</b> means intake and output, so every amount in and out is measured and recorded.</p><p><b>Limiting fluids</b> isn't the right answer: a fluid restriction needs its own order, and ad lib means the opposite. I&O covers everything taken in and put out, not just IV fluids, and meals aren't the only time to drink.</p><p><b>Takeaway:</b> ad lib = as desired; I&O = measure and record intake and output.</p>"
+    },
+    {
+      "id": "mx4-09",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse reads this entry in a client's record: “A&O x3. RLE edema. Lungs WNL.” Which statement in the hand-off report is accurate?",
+      "options": [
+        "“The client is alert and oriented, with swelling in the right arm.”",
+        "“The client is alert and oriented, with swelling in the left leg.”",
+        "“The client is alert and oriented, with swelling in the right leg.”",
+        "“The client is alert and oriented, with abnormal lung sounds.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>A&O x3</b> means alert and oriented to person, place, and time; <b>RLE</b> is the right lower extremity, the right leg; and <b>WNL</b> means within normal limits.</p><p><b>The right arm</b> isn't the right answer: that's <b>RUE</b>, the right upper extremity. The left leg is LLE, and WNL means the lungs are normal.</p><p><b>Takeaway:</b> RUE right arm, LUE left arm, RLE right leg, LLE left leg.</p>"
+    },
+    {
+      "id": "mx4-10",
+      "type": "sata",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "stem": "A nurse is checking a classmate's answers on a medication math worksheet. Which answers are written correctly?",
+      "options": [
+        "0.75 mL",
+        "1.50 g",
+        "20 mg",
+        ".5 mg",
+        "2.0 mL",
+        "0.33 mg"
+      ],
+      "answer": [
+        0,
+        2,
+        5
+      ],
+      "rationale": "<p>Two rules apply: <b>no trailing zero</b> after a decimal point, and a <b>leading zero</b> before a decimal point for any amount less than 1. <b>0.75 mL</b>, <b>20 mg</b>, and <b>0.33 mg</b> follow both.</p><p><b>1.50 g</b> isn't written correctly: the trailing zero should go (1.5 g). <b>2.0 mL</b> has a trailing zero too (2 mL), and <b>.5 mg</b> needs its leading zero (0.5 mg). A missed decimal point turns 2.0 into 20 and .5 into 5, a 10-fold error.</p><p><b>Takeaway:</b> No trailing zeros, and a leading zero before every decimal point.</p>"
+    },
+    {
+      "id": "mx4-11",
+      "type": "mc",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "vars": {
+        "v": [
+          0.427,
+          0.758,
+          0.316,
+          0.869,
+          0.643
+        ]
+      },
+      "stem": "A nurse calculates that a client's dose is {v} mL. How should the nurse write the amount to give?",
+      "options": [
+        "{=round(v, 2)} mL",
+        "{=round(v, 1)} mL",
+        ".{=round(v * 100)} mL",
+        "{v} mL"
+      ],
+      "answer": 0,
+      "rationale": "<p>The class's rule: an amount <b>less than 1 mL</b> is rounded to the <b>hundredth</b>, with a <b>leading zero</b>. {v} rounds to <b>{=round(v, 2)} mL</b>.</p><p><b>{=round(v, 1)} mL</b> isn't the right answer: rounding to the tenth is the rule for amounts over 1 mL. <b>.{=round(v * 100)} mL</b> leaves out the leading zero, and {v} mL isn't rounded at all.</p><p><b>Takeaway:</b> Under 1 mL: round to the hundredth, with a leading zero.</p>"
+    },
+    {
+      "id": "mx4-12",
+      "type": "mc",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "vars": {
+        "v": [
+          1.46,
+          1.87,
+          2.38,
+          2.69,
+          3.27
+        ]
+      },
+      "stem": "A nurse's calculation for an oral liquid comes to {v} mL. Which amount should the nurse prepare?",
+      "options": [
+        "{v} mL",
+        "{=round(v, 1)} mL",
+        "{=floor(v * 10) / 10} mL",
+        "{=round(v)} mL"
+      ],
+      "answer": 1,
+      "rationale": "<p>The class's rule: an amount <b>over 1 mL</b> is rounded to the <b>tenth</b>. {v} rounds to <b>{=round(v, 1)} mL</b>.</p><p><b>{=floor(v * 10) / 10} mL</b> isn't the right answer: it drops the hundredths instead of rounding, and a hundredths digit of 5 or more rounds up. {v} mL isn't rounded, and {=round(v)} mL rounds too far, to a whole number.</p><p><b>Takeaway:</b> Over 1 mL: round to the tenth; 5 or more rounds up.</p>"
+    },
+    {
+      "id": "mx4-13",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 1,
+      "vars": {
+        "g": [
+          0.25,
+          0.5,
+          0.75,
+          1.5,
+          2
+        ]
+      },
+      "stem": "A client is prescribed {g} g of an antibiotic. How many milligrams should the nurse prepare?",
+      "answer": "=g * 1000",
+      "decimals": 0,
+      "unit": "mg",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>1 g = 1,000 mg, and a gram is the larger unit, so multiply: {g} × 1,000 = <b>{answer} mg</b>.</p><p>Dividing by 1,000 is a mistake: changing to a smaller unit gives a bigger number.</p><p><b>Takeaway:</b> g to mg: × 1,000.</p>"
+    },
+    {
+      "id": "mx4-14",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 1,
+      "vars": {
+        "mg": [
+          300,
+          500,
+          750,
+          1500,
+          2500
+        ]
+      },
+      "stem": "A client is prescribed {mg} mg of a medication. How many grams is this dose?",
+      "answer": "=mg / 1000",
+      "decimals": 2,
+      "unit": "g",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>1,000 mg = 1 g, so divide: {mg} ÷ 1,000 = <b>{answer} g</b>. An answer under 1 needs a leading zero, and one like 1.5 is written without a trailing zero.</p><p>Multiplying by 1,000 is a mistake: a gram is the larger unit, so the number of grams is smaller.</p><p><b>Takeaway:</b> mg to g: ÷ 1,000.</p>"
+    },
+    {
+      "id": "mx4-15",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 1,
+      "vars": {
+        "mcg": [
+          50,
+          200,
+          250,
+          400,
+          750
+        ]
+      },
+      "stem": "A client is prescribed {mcg} mcg of a medication. How many milligrams is this dose?",
+      "answer": "=mcg / 1000",
+      "decimals": 2,
+      "unit": "mg",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>1,000 mcg = 1 mg, so divide: {mcg} ÷ 1,000 = <b>{answer} mg</b>, with a leading zero.</p><p>Multiplying is a mistake: micrograms are the smaller unit, so the number of milligrams is smaller.</p><p><b>Takeaway:</b> mcg to mg: ÷ 1,000.</p>"
+    },
+    {
+      "id": "mx4-16",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 1,
+      "vars": {
+        "mg": [
+          0.1,
+          0.125,
+          0.25,
+          0.4
+        ]
+      },
+      "stem": "A client is prescribed {mg} mg of a medication. How many micrograms is this dose?",
+      "answer": "=mg * 1000",
+      "decimals": 0,
+      "unit": "mcg",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>1 mg = 1,000 mcg, so multiply: {mg} × 1,000 = <b>{answer} mcg</b>.</p><p>Dividing is a mistake: micrograms are smaller, so there are more of them.</p><p><b>Takeaway:</b> mg to mcg: × 1,000.</p>"
+    },
+    {
+      "id": "mx4-17",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "b": [
+          3200,
+          3500,
+          3800
+        ],
+        "loss": [
+          150,
+          220,
+          260
+        ]
+      },
+      "stem": "A newborn weighed {b} g at birth and has lost {loss} g by day 2. What is the newborn's weight on day 2 in kilograms?",
+      "answer": "=(b - loss) / 1000",
+      "decimals": 2,
+      "unit": "kg",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>Subtract first: {b} − {loss} = {=b - loss} g. Then 1,000 g = 1 kg, so divide: {=b - loss} ÷ 1,000 = <b>{answer} kg</b>.</p><p>Converting the birth weight alone is a mistake: the question asks for today's weight.</p><p><b>Takeaway:</b> g to kg: ÷ 1,000; subtract in one unit first.</p>"
+    },
+    {
+      "id": "mx4-18",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "ml": [
+          1250,
+          1500,
+          1800,
+          2000,
+          2450
+        ]
+      },
+      "stem": "A client's total intake for the day is {ml} mL. How many liters is this?",
+      "answer": "=ml / 1000",
+      "decimals": 2,
+      "unit": "L",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>1,000 mL = 1 L, so divide: {ml} ÷ 1,000 = <b>{answer} L</b>. Whole numbers and tenths are written without trailing zeros (2, not 2.00; 1.5, not 1.50).</p><p>Multiplying is a mistake: liters are the larger unit, so the number of liters is smaller.</p><p><b>Takeaway:</b> mL to L: ÷ 1,000.</p>"
+    },
+    {
+      "id": "mx4-19",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "lb": [
+          134,
+          150,
+          163,
+          176,
+          205
+        ]
+      },
+      "stem": "A client weighs {lb} lb. How many kilograms does the client weigh?",
+      "answer": "=lb / 2.2",
+      "decimals": 1,
+      "unit": "kg",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 2.2 lb, so divide by 2.2: {lb} ÷ 2.2 = {=round(lb / 2.2, 2)}, which rounds to <b>{answer} kg</b>.</p><p>Multiplying by 2.2 is a mistake: it gives a number bigger than the pounds, and a weight in kilograms is the smaller number.</p><p><b>Takeaway:</b> lb to kg: ÷ 2.2.</p>"
+    },
+    {
+      "id": "mx4-20",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "kg": [
+          3.5,
+          12,
+          18.5,
+          25
+        ]
+      },
+      "stem": "A child weighs {kg} kg. How many pounds does the child weigh?",
+      "answer": "=kg * 2.2",
+      "decimals": 1,
+      "unit": "lb",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 2.2 lb, so multiply: {kg} × 2.2 = <b>{answer} lb</b>. A whole number is written without a trailing zero.</p><p>Dividing by 2.2 is a mistake: pounds are the smaller unit, so there are more of them.</p><p><b>Takeaway:</b> kg to lb: × 2.2.</p>"
+    },
+    {
+      "id": "mx4-21",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 1,
+      "vars": {
+        "t": [
+          {
+            "value": 0.5,
+            "text": "1/2"
+          },
+          1,
+          {
+            "value": 1.5,
+            "text": "1 1/2"
+          },
+          2
+        ]
+      },
+      "stem": "A client is to take {t} tsp of a liquid medication. How many milliliters is this dose?",
+      "answer": "=t * 5",
+      "decimals": 1,
+      "unit": "mL",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 tsp = 5 mL: {t} × 5 = <b>{answer} mL</b>.</p><p>Using 15 mL is a mistake: that's a tablespoon.</p><p><b>Takeaway:</b> 1 tsp = 5 mL; 1 tbsp = 15 mL.</p>"
+    },
+    {
+      "id": "mx4-22",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "c": [
+          37.8,
+          38.3,
+          38.9,
+          39.4
+        ]
+      },
+      "stem": "A client's temperature is {c} °C. What is this temperature in degrees Fahrenheit?",
+      "answer": "=c * 9 / 5 + 32",
+      "decimals": 1,
+      "unit": "°F",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>°F = °C × 9/5 + 32. First multiply: {c} × 9/5 = {=round(c * 9 / 5, 2)}. Then add 32: {=round(c * 9 / 5 + 32, 2)}, which rounds to <b>{answer} °F</b>. A whole-number answer is written without a trailing zero.</p><p>Adding 32 before multiplying is a mistake: multiply first, then add.</p><p><b>Takeaway:</b> °F = °C × 9/5 + 32.</p>"
+    },
+    {
+      "id": "mx4-23",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "m": [
+          20,
+          40,
+          50,
+          90
+        ]
+      },
+      "stem": "An IV medication is to infuse over {m} minutes. How many hours is this?",
+      "answer": "=m / 60",
+      "decimals": 2,
+      "unit": "hours",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>60 minutes = 1 hour, so divide: {m} ÷ 60 = {=round(m / 60, 4)}, which rounds to <b>{answer} hours</b>, with a leading zero for an answer under 1.</p><p>Dividing by 100 is a mistake: an hour has 60 minutes, not 100.</p><p><b>Takeaway:</b> Minutes to hours: ÷ 60.</p>"
+    },
+    {
+      "id": "mx4-24",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "oz": [
+          8,
+          12
+        ],
+        "part": [
+          {
+            "value": 0.25,
+            "text": "1/4"
+          },
+          {
+            "value": 0.5,
+            "text": "half"
+          },
+          {
+            "value": 0.75,
+            "text": "3/4"
+          }
+        ]
+      },
+      "stem": "A client drank {part} of a can of ginger ale that holds {oz} oz. How many milliliters should the nurse record?",
+      "answer": "=oz * 30 * part",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{oz} oz × 30 = {=oz * 30} mL in the can, and the client drank {part} of it: <b>{answer} mL</b>.</p><p>Recording the whole can is a mistake: intake is what the client actually drank.</p><p><b>Takeaway:</b> 1 oz = 30 mL; record only what was taken in.</p>"
+    },
+    {
+      "id": "mx4-25",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "a": [
+          4,
+          6
+        ],
+        "b": [
+          {
+            "value": 1,
+            "text": "1 cup"
+          },
+          {
+            "value": 2,
+            "text": "2 cups"
+          }
+        ],
+        "c": [
+          120,
+          180,
+          240
+        ]
+      },
+      "stem": "At breakfast, a client drank {a} oz of orange juice and {b} of coffee, and had {c} mL of broth. How many milliliters of intake should the nurse record?",
+      "answer": "=a * 30 + b * 240 + c",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Juice: {a} × 30 = {=a * 30} mL. Coffee: {b} × 240 = {=b * 240} mL (1 cup = 8 oz = 240 mL). Broth: {c} mL. Total: <b>{answer} mL</b>.</p><p>Counting a cup as 30 mL is a mistake: 30 mL is one ounce, and a cup is 8 ounces.</p><p><b>Takeaway:</b> 1 cup = 8 oz = 240 mL.</p>"
+    },
+    {
+      "id": "mx4-26",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "lim": [
+          1200,
+          1500,
+          1800
+        ],
+        "a": [
+          4,
+          6
+        ],
+        "b": [
+          {
+            "value": 1,
+            "text": "1 cup"
+          },
+          {
+            "value": 2,
+            "text": "2 cups"
+          }
+        ]
+      },
+      "stem": "A client on a fluid restriction of {lim} mL a day has had {a} oz of juice and {b} of tea so far. How many more milliliters may the client have today?",
+      "answer": "=lim - (a * 30 + b * 240)",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Intake so far: juice {a} × 30 = {=a * 30} mL and tea {b} × 240 = {=b * 240} mL, for {=a * 30 + b * 240} mL. Left for today: {lim} − {=a * 30 + b * 240} = <b>{answer} mL</b>.</p><p>Subtracting the ounces and cups before converting them is a mistake: change everything to mL first.</p><p><b>Takeaway:</b> Convert to mL, add up the intake, then subtract it from the limit.</p>"
+    },
+    {
+      "id": "mx4-27",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "l": [
+          2,
+          2.5
+        ],
+        "ml": [
+          650,
+          900,
+          1150,
+          1350
+        ]
+      },
+      "stem": "A client's goal is to drink {l} L of fluid today. So far, the client has had {ml} mL. How many more milliliters does the client need?",
+      "answer": "=l * 1000 - ml",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{l} L = {=l * 1000} mL, and {=l * 1000} − {ml} = <b>{answer} mL</b>.</p><p>Subtracting before converting the liters is a mistake: change to the same unit first.</p><p><b>Takeaway:</b> Convert to the same unit before you subtract.</p>"
+    },
+    {
+      "id": "mx4-28",
+      "type": "mc",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "oz": [
+          8,
+          12,
+          16
+        ],
+        "part": [
+          {
+            "value": 0.25,
+            "text": "1/4"
+          },
+          {
+            "value": 0.75,
+            "text": "3/4"
+          }
+        ]
+      },
+      "stem": "A client drank {part} of a bottle of water that holds {oz} oz. Which amount should the nurse record as intake?",
+      "options": [
+        "{=oz * 30 * part} mL",
+        "{=oz * 30} mL",
+        "{=oz * 30 * (1 - part)} mL",
+        "{=oz * 15 * part} mL"
+      ],
+      "answer": 0,
+      "rationale": "<p>{oz} oz × 30 = {=oz * 30} mL in the bottle, and {part} of it is <b>{=oz * 30 * part} mL</b>.</p><p><b>{=oz * 30 * (1 - part)} mL</b> isn't the right answer: that's what's left in the bottle, not what the client drank. {=oz * 30} mL is the whole bottle, and {=oz * 15 * part} mL uses 15 mL for each ounce, which is a tablespoon.</p><p><b>Takeaway:</b> Intake is the amount the client drank, with 1 oz = 30 mL.</p>"
+    },
+    {
+      "id": "mx4-29",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "t": [
+          2,
+          3,
+          4
+        ],
+        "oz": [
+          4,
+          6,
+          8
+        ]
+      },
+      "stem": "A client took {t} tablespoons of a liquid supplement and drank {oz} oz of milk. How many milliliters should the nurse record?",
+      "answer": "=t * 15 + oz * 30",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Supplement: {t} × 15 = {=t * 15} mL. Milk: {oz} × 30 = {=oz * 30} mL. Total: <b>{answer} mL</b>.</p><p>Using 5 mL for each tablespoon is a mistake: 5 mL is a teaspoon.</p><p><b>Takeaway:</b> 1 tbsp = 15 mL; 1 oz = 30 mL.</p>"
+    },
+    {
+      "id": "mx4-30",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "a": [
+          8,
+          10,
+          12
+        ],
+        "b": [
+          4,
+          6
+        ],
+        "c": [
+          150,
+          200,
+          250
+        ],
+        "v": [
+          100,
+          150
+        ]
+      },
+      "stem": "Over a shift, a client drank {a} oz of water and {b} oz of juice, ate {c} mL of soup, and vomited {v} mL. How many milliliters of intake should the nurse record?",
+      "answer": "=a * 30 + b * 30 + c",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Intake only: water {a} × 30 = {=a * 30} mL, juice {b} × 30 = {=b * 30} mL, and soup {c} mL, for <b>{answer} mL</b>. The {v} mL of vomit is <b>output</b>, recorded on its own.</p><p>Subtracting the vomit from the intake is a mistake: intake and output are separate totals.</p><p><b>Takeaway:</b> Record intake and output separately; never subtract one from the other.</p>"
+    },
+    {
+      "id": "mx4-31",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "m": [
+          4,
+          8
+        ],
+        "s": [
+          180,
+          240
+        ],
+        "part": [
+          {
+            "value": 0.5,
+            "text": "half"
+          },
+          {
+            "value": 0.75,
+            "text": "3/4"
+          }
+        ]
+      },
+      "stem": "On a lunch tray, a client has a carton holding {m} oz of milk and a bowl with {s} mL of soup. The client drinks all the milk and eats {part} of the soup. How many milliliters should the nurse record?",
+      "answer": "=m * 30 + s * part",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Milk: {m} × 30 = {=m * 30} mL, all of it. Soup: {part} of {s} mL = {=s * part} mL. Total: <b>{answer} mL</b>.</p><p>Recording the whole bowl of soup is a mistake: count only the part the client ate.</p><p><b>Takeaway:</b> Convert each item, count what was actually taken, then add.</p>"
+    }
+  ]
+}

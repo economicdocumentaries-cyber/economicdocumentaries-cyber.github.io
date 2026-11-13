@@ -525,7 +525,7 @@
         "Making the tool part of hospital policy"
       ],
       "answer": 2,
-      "rationale": "<p><b>Using the tool on one unit for 2 weeks and recording problems</b> is correct. The Do phase carries out the change on a small scale, as a pilot test, while collecting data and noting problems.</p><p><b>Using it hospital-wide right away</b> is the common trap: spreading the change comes in Act, after Study shows it works. <b>Comparing error rates</b> is Study. <b>Making it policy</b> is Act.</p><p><b>Takeaway:</b> “Do” means a small test first, never the full rollout.</p>"
+      "rationale": "<p><b>Using the tool on one unit for 2 weeks and recording problems</b> is correct. The Do phase carries out the change on a small scale, as a pilot test, while collecting data and noting problems.</p><p><b>Using it hospital-wide right away</b> isn't the right answer: spreading the change comes in Act, after Study shows it works. <b>Comparing error rates</b> is Study. <b>Making it policy</b> is Act.</p><p><b>Takeaway:</b> “Do” means a small test first, never the full rollout.</p>"
     },
     {
       "id": "qi-41", "type": "matrix", "topic": "Quality management programs",

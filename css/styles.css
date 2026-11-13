@@ -149,9 +149,12 @@ a { color: var(--ink); }
   border: 1px solid transparent; border-radius: 2px; cursor: pointer;
   font-size: 15px; line-height: 1.45;
 }
-/* Like ATI: the answer just clicked gets a thin outline box. Clicking
-   anywhere else removes the box; the dot or check mark stays. */
-.opt:focus-within { border-color: var(--accent); box-shadow: 0 1px 3px rgba(31, 58, 95, .08); }
+/* Clicking or tapping an answer shows only its dot or check mark, with no box
+   around the row (the owner's change, 2026-11-12). Moving with the keyboard
+   (Tab, arrow keys) still outlines the focused answer, so keyboard users can
+   see where they are; browsers don't count a click on a radio or checkbox as
+   :focus-visible. */
+.opt:has(input:focus-visible) { border-color: var(--accent); box-shadow: 0 1px 3px rgba(31, 58, 95, .08); }
 .opt-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 
 /* Gray, slightly raised radios and checkboxes like the reference. */
@@ -1313,7 +1316,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .drop.filled, .bt-slot.filled, .tab[aria-selected="true"], .btn-flag[aria-pressed="true"], .btn-save[aria-pressed="true"],
   .qtile.answered, .seg-input:checked + span { outline: 2px solid Highlight; }
   .switch { appearance: auto; -webkit-appearance: auto; background: none; }
-  .opt:focus-within { outline: 2px solid Highlight; }
+  .opt:has(input:focus-visible) { outline: 2px solid Highlight; }
   .btn-continue { border: 1px solid ButtonText; }
   .tabs { border-bottom: 1px solid CanvasText; }
 }
