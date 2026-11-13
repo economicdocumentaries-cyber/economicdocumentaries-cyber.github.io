@@ -79,12 +79,17 @@ function leaveFullscreen() {
 
 // ---------- starting and resuming ----------
 
-// SPEC 4.3: filters, then which questions, then their order. The questions in
-// a case study stay together and in order (a case study is one block). With
-// fewer questions than match, they're picked by pickBlocks (SPEC 11.3).
+// SPEC 4.3: filters, then which questions, then their order. A case study's
+// questions come a few at a time (caseRunLength), together and in their order:
+// an exam has one run of each case study it uses, and its other questions wait
+// for later exams, unless the exam needs them to have enough questions (then
+// the runs are spread out, with other questions between them). With fewer
+// questions than match, they're picked by pickBlocks (SPEC 11.3).
 // seen: from lastSeen(), so questions seen longest ago (or never) come first.
 // missed: from lastMissed(), so some of the questions missed before come back.
-export function chooseQuestions(set, s, random = Math.random, seen = new Map(), missed = new Set()) {
+// device: 'phone' or 'laptop', for how long a run is; null keeps every case
+// study whole (group study, where the host leads).
+export function chooseQuestions(set, s, random = Math.random, seen = new Map(), missed = new Set(), device = phone.matches ? 'phone' : 'laptop') {
   const keep = q => (!s.only || s.only.includes(q.id))
     && (!s.topics || s.topics.includes(q.topic))
     && (!s.types || s.types.includes(q.type));
@@ -98,18 +103,142 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
       blocks.push(caseBlocks.get(q.case));
     }
   }
+  const position = new Map(set.questions.map((q, i) => [q, i]));
+  const at = b => position.get(b[0]) ?? -1;
+  const units = [];
+  const later = []; // the case studies' other runs, for an exam that needs more questions
+  const partSeen = new Set(); // runs of a case study some of whose other questions were seen before
+  for (const b of blocks) {
+    if (!device || b.length < 2) {
+      units.push(b);
+      continue;
+    }
+    const [first, ...rest] = caseRuns(b, device, random, seen, missed);
+    if (b.some(q => seen.has(q.id)) && !first.some(q => seen.has(q.id))) partSeen.add(first);
+    units.push(first);
+    later.push(...rest);
+  }
   const limit = s.count ?? Infinity;
-  const picked = limit < blocks.flat().length
-    ? pickBlocks(blocks, limit, random, seen, set.topicWeights, missed, set.caseStudies, set.topicMinimums) : blocks;
-  const place = new Map(blocks.map((b, i) => [b, i]));
-  const ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => (place.get(a) ?? -1) - (place.get(b) ?? -1));
-  return ordered.flat();
+  // Each topic's share comes from all the questions that match, the case studies' other runs included.
+  const picked = limit < units.flat().length
+    ? pickBlocks(units, limit, random, seen, set.topicWeights, missed, set.caseStudies, set.topicMinimums, partSeen, blocks.flat()) : units.slice();
+  // Too few questions without them: more runs of the case studies (part of one to finish).
+  let count = picked.flat().length;
+  let more = false;
+  for (const run of later) {
+    if (count >= limit) break;
+    const part = run.slice(0, limit - count);
+    part.whole = run.whole;
+    picked.push(part);
+    count += part.length;
+    more = true;
+  }
+  let ordered = s.shuffleQuestions ? shuffle(picked, random) : picked.slice().sort((a, b) => at(a) - at(b));
+  ordered = inCaseOrder(ordered, q => position.get(q) ?? -1);
+  if (more) ordered = spreadRuns(ordered);
+  return apart(ordered).flat();
 }
 
-// Whole blocks adding up to `limit` questions: the ones seen longest ago (or
-// never) first, and each topic getting its share in the same proportions as
-// all the questions, so a set written to a blueprint keeps its balance.
-// A case study's questions count toward their own topics.
+// ---------- case studies a few questions at a time (the owner's request, 2026-11-13) ----------
+
+// How many of a case study's questions come in a row: on a phone 1, or 2 about
+// 4 times in 10; on a laptop 2 or 3, and 4 about 1 time in 10. A case study
+// with fewer questions gives what it has.
+export function caseRunLength(device, random = Math.random) {
+  const r = random();
+  if (device === 'phone') return r < 0.4 ? 2 : 1;
+  return r < 0.1 ? 4 : r < 0.55 ? 3 : 2;
+}
+
+// A case study's questions as runs, the one for this exam first: questions
+// missed before, then ones never seen, then the ones seen longest ago. The
+// first run doesn't add a question answered right while new ones are left, so
+// students see new questions first; each run keeps the case study's order.
+// Every run remembers its whole case study (run.whole), for topic weights.
+function caseRuns(block, device, random, seen, missed) {
+  const tier = q => (missed.has(q.id) ? 0 : seen.has(q.id) ? 2 : 1);
+  const ranked = shuffle(block, random).sort((a, b) => tier(a) - tier(b) || (seen.get(a.id) ?? -1) - (seen.get(b.id) ?? -1));
+  const fresh = ranked.filter(q => tier(q) < 2).length;
+  const runs = [];
+  for (let i = 0; i < ranked.length;) {
+    let n = caseRunLength(device, random);
+    if (i === 0 && fresh) n = Math.min(n, fresh);
+    runs.push(ranked.slice(i, i + n));
+    i += n;
+  }
+  const order = new Map(block.map((q, i) => [q, i]));
+  for (const run of runs) {
+    run.sort((a, b) => order.get(a) - order.get(b));
+    run.whole = block;
+  }
+  return runs;
+}
+
+const isCase = b => !!b?.[0]?.case;
+
+// An exam with more than one run of a case study: its questions in the case
+// study's order across them, each run keeping its place and length.
+function inCaseOrder(order, pos) {
+  const places = new Map();
+  order.forEach((b, i) => {
+    if (isCase(b)) places.set(b[0].case, [...(places.get(b[0].case) ?? []), i]);
+  });
+  const out = order.slice();
+  for (const idx of places.values()) {
+    if (idx.length < 2) continue;
+    const questions = idx.flatMap(i => order[i]).sort((a, b) => pos(a) - pos(b));
+    let k = 0;
+    for (const i of idx) {
+      const run = questions.slice(k, k + order[i].length);
+      run.whole = order[i].whole;
+      out[i] = run;
+      k += run.length;
+    }
+  }
+  return out;
+}
+
+// An exam with more than one run of a case study: the single questions in
+// order, and the runs at even intervals among them.
+function spreadRuns(order) {
+  const singles = order.filter(b => !isCase(b));
+  const runs = order.filter(isCase);
+  const out = [];
+  let s = 0;
+  runs.forEach((run, j) => {
+    const upto = Math.round(((j + 1) * singles.length) / (runs.length + 1));
+    while (s < upto) out.push(singles[s++]);
+    out.push(run);
+  });
+  while (s < singles.length) out.push(singles[s++]);
+  return out;
+}
+
+// No two runs of case studies back to back while a single question can go
+// between them: the next single question moves up, or else one from earlier
+// that isn't keeping two runs apart.
+function apart(order) {
+  const out = [];
+  const rest = order.slice();
+  while (rest.length) {
+    const b = rest.shift();
+    if (isCase(b) && isCase(out.at(-1))) {
+      const k = rest.findIndex(x => !isCase(x));
+      if (k >= 0) out.push(...rest.splice(k, 1));
+      else {
+        const j = out.findLastIndex((x, i) => i < out.length - 1 && !isCase(x) && !(isCase(out[i - 1]) && isCase(out[i + 1])));
+        if (j >= 0) out.push(...out.splice(j, 1));
+      }
+    }
+    out.push(b);
+  }
+  return out;
+}
+
+// Whole blocks (single questions, and case studies' runs) adding up to `limit`
+// questions: the ones seen longest ago (or never) first, and each topic getting
+// its share in the same proportions as all the questions, so a set written to a
+// blueprint keeps its balance. A case study's questions count toward their own topics.
 // weights: the set's topicWeights, when its exams must follow a blueprint
 // whatever the size of each topic's pool (SPEC 11.3). Then each topic's share
 // comes first, with its questions seen longest ago, and a case study may go
@@ -128,12 +257,17 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
 // exam of `from` questions or more, the topic gets at least `atLeast` places,
 // taken from the topics with the most (the owner's request, 2026-11-13: one ice
 // chip question in every NU1110 Exam 4 practice, and two past 25 questions).
-function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null) {
-  const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)); // -1: never seen
+// partSeen: runs of case studies whose other questions were seen before; they
+// come after case studies never seen, so the case studies take turns.
+// everyQuestion: all the questions that match, for each topic's share when there
+// are no weights (the blocks hold only one run of each case study).
+function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null, partSeen = new Set(), everyQuestion = null) {
+  const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)) + (partSeen.has(b) ? 0.5 : 0); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
   const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
   // Each topic's share of the limit, rounded so the shares add up to it.
-  const all = blocks.flat();
+  const pool = blocks.flat(); // what this exam can take
+  const all = everyQuestion ?? pool;
   const topics = [...new Set(all.map(q => q.topic))];
   const blueprint = !!weights && topics.every(t => weights[t] >= 0) && topics.some(t => weights[t] > 0);
   const weightOf = t => (blueprint ? weights[t] : all.filter(q => q.topic === t).length);
@@ -149,7 +283,7 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     const i = topics.indexOf(t);
     if (i < 0 || !Array.isArray(rules)) continue;
     const need = Math.max(0, ...rules.filter(r => Array.isArray(r) && limit >= r[0]).map(r => r[1]));
-    const target = Math.min(need, all.filter(q => q.topic === t).length, limit);
+    const target = Math.min(need, pool.filter(q => q.topic === t).length, limit);
     floor.set(t, target);
     while (share[i] < target) {
       let from = -1;
@@ -162,21 +296,22 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     }
   }
   const left = new Map(topics.map((t, i) => [t, share[i]])); // what each topic still needs
-  // A case study that would take its topics more than 2 past their shares, or has a topic
-  // weighted 0 (blueprint sets only).
-  const tooBig = b => blueprint && [...new Set(b.map(q => q.topic))].some(t => weights[t] === 0 || b.filter(q => q.topic === t).length > left.get(t) + 2);
+  // A case study's run that would take its topics more than 2 past their shares, or whose case
+  // study has a topic weighted 0 (blueprint sets only).
+  const tooBig = b => blueprint && ([...new Set((b.whole ?? b).map(q => q.topic))].some(t => weights[t] === 0)
+    || [...new Set(b.map(q => q.topic))].some(t => b.filter(q => q.topic === t).length > left.get(t) + 2));
   // The missed questions that come back: up to a fifth of the exam, the ones seen longest
-  // ago first. A single question needs a place left in its topic's share; a case study
-  // comes back whole, when it fits in the places left for them.
+  // ago first. A single question needs a place left in its topic's share; a case study's run
+  // comes back when it fits in the places left for them.
   const review = new Set();
   let places = Math.round(limit / 5);
   const room = new Map(left);
   let reviewCases = 0; // with caseStudies, no more missed case studies come back than an exam has
   for (const b of shuffle(blocks.filter(wasMissed), random).sort((a, b) => age(a) - age(b))) {
-    if (b.length > places || (b.length === 1 ? room.get(b[0].topic) < 1 : tooBig(b) || (wanted !== null && reviewCases >= wanted))) continue;
+    if (b.length > places || (!isCase(b) ? room.get(b[0].topic) < 1 : tooBig(b) || (wanted !== null && reviewCases >= wanted))) continue;
     review.add(b);
     places -= b.length;
-    if (b.length > 1) reviewCases++;
+    if (isCase(b)) reviewCases++;
     for (const q of b) room.set(q.topic, room.get(q.topic) - 1);
   }
   // The order to pick in: those missed questions, then questions never seen, then the ones
@@ -198,7 +333,7 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     for (const b of queue.slice()) {
       if (start >= limit) break;
       start += b.length;
-      if (b.length > 1 && count + b.length <= limit && !tooBig(b)) take(b);
+      if (isCase(b) && count + b.length <= limit && !tooBig(b)) take(b);
     }
   } else {
     // Exactly `wanted` case studies, the first in the queue (a missed one, then one never seen,
@@ -206,7 +341,7 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     let taken = 0;
     for (const b of queue.slice()) {
       if (taken >= wanted) break;
-      if (b.length > 1 && count + b.length <= limit / 2 && !tooBig(b)) {
+      if (isCase(b) && count + b.length <= limit / 2 && !tooBig(b)) {
         take(b);
         taken++;
       }
@@ -253,7 +388,7 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   // In a blueprint set, topics that still need some come first, then the order above among them.
   const full = b => (left.get(b[0].topic) > 0 ? 0 : 1);
   while (count < limit) {
-    const singles = queue.filter(b => b.length === 1);
+    const singles = queue.filter(b => !isCase(b));
     if (!singles.length) break;
     const needed = blueprint ? singles.filter(b => !full(b)) : [];
     const pool = needed.length ? needed : singles;

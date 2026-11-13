@@ -1097,7 +1097,8 @@ function runConsole(main, db, sets, courses, accountLine) {
         e.preventDefault();
         const set = sets.find(x => x.id === select.value);
         const reveal = revealInputs.find(([input]) => input.checked)?.[0].value ?? 'each';
-        const order = chooseQuestions(set, { shuffleQuestions: shuffleBox.checked }).map(q => q.id);
+        // Every question, with each case study whole: the host leads the class through it (no runs, SPEC 4.3).
+        const order = chooseQuestions(set, { shuffleQuestions: shuffleBox.checked }, Math.random, new Map(), new Set(), null).map(q => q.id);
         const changes = {
           live: {
             active: true,
