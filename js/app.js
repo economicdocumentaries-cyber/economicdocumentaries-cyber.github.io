@@ -6,8 +6,8 @@ import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets, nextExam, sameExam } from './sets.js';
 import {
-  examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory,
-  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, defaultCount, practiceCount, countsForBest,
+  examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory, lastSeen, lastMissed,
+  DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, examCount, practiceCount, countsForBest,
   questionArea, questionParts, feedbackPanel,
 } from './exam.js';
 import { savedSets, savedCount, setSaved, forgetSet, saveButton } from './saved.js';
@@ -501,8 +501,10 @@ function bestScore(set, past = setHistory(set.id)) {
 
 function setRow(set) {
   const total = set.questions.length;
-  const count = defaultCount(set) ?? total; // what Start and Begin give (SPEC 11.3)
+  const count = examCount(set, false) ?? total; // what exam simulation gives (SPEC 11.3)
   const minutes = Math.round(timeLimitMs(set, count, { timer: 'standard' }) / 60000);
+  const phoneCount = examCount(set, true) ?? total; // on a phone: 30 of a 60-question exam
+  const phoneMinutes = Math.round(timeLimitMs(set, phoneCount, { timer: 'standard' }) / 60000);
   const past = setHistory(set.id);
   const last = past.at(-1);
   const best = bestScore(set, past);
@@ -526,7 +528,7 @@ function setRow(set) {
       desc,
       h('p.set-meta', count < total
         ? [h('span.meta-wide', `${plural(count, 'question')} per exam, from a set of ${total} · ${minutes} minutes`),
-            h('span.meta-phone', `${plural(count, 'question')} · ${minutes} min`)] // phones: the whole line is under More details
+            h('span.meta-phone', `${plural(phoneCount, 'question')} · ${phoneMinutes} min`)] // phones: the whole line is under More details
         : `${plural(total, 'question')} · ${minutes} minutes`),
       last ? h('p.set-history',
         'Last score: ', h('b', `${last.percent}%`), ` (${fmtDate(last.at, true)}${lastScope})`,
@@ -605,7 +607,7 @@ async function setupView(root, { args, isCurrent }) {
   const back = course ? classLink(course.code) : courses.length ? classLink('other') : '#/';
 
   // Each mode has its own number of questions: practice mode's is smaller on phones (SPEC 4.2).
-  const modeCount = { practice: practiceCount(set), exam: defaultCount(set) };
+  const modeCount = { practice: practiceCount(set), exam: examCount(set) };
   const modeSettings = name => ({ ...DEFAULT_SETTINGS, ...PRESETS[name], preset: name, count: modeCount[name] });
   const size = settings => chooseQuestions(set, { ...settings, shuffleQuestions: false }).length;
   const topics = [...new Set(set.questions.map(q => q.topic))];
@@ -792,7 +794,7 @@ async function setupView(root, { args, isCurrent }) {
       h('legend', 'Number of questions'),
       h('div.count-row', h('div.stepper', fewer, countInput, more), countOf),
       h('div.picks', picks.map(([, button]) => button), allPick),
-      h('p.setting-note', "Questions are spread across the topics. Ones you haven't seen yet come first, with a few you missed before mixed in. Case-study questions stay together and in order.")),
+      h('p.setting-note', "Questions are spread across the topics. Ones you haven't seen yet come first, with a few you missed before mixed in. A case study's questions come a few at a time, in order.")),
     segments('timer', 'Timer', [['off', 'Off'], ['standard', standardLabel], ['custom', 'Custom']]),
     customLine,
     segments('reveal', 'Show answers', [['each', 'After each question'], ['end', 'At the end']]),
@@ -847,6 +849,37 @@ async function setupView(root, { args, isCurrent }) {
   const past = setHistory(set.id);
   const best = bestScore(set, past);
 
+  // How far the student has got in this set, from this browser's history (the owner's choice, 2026-11-13).
+  const seenIds = lastSeen(set);
+  const missedIds = lastMissed(set);
+  const seenCount = set.questions.filter(q => seenIds.has(q.id)).length;
+  const missedCount = set.questions.filter(q => missedIds.has(q.id)).length;
+  const progressBox = seenCount ? h('div.set-progress',
+    h('p.progress-line', h('b', `You've seen ${seenCount} of ${plural(set.questions.length, 'question')}`),
+      missedCount ? ` · ${missedCount} missed the last time you saw ${missedCount === 1 ? 'it' : 'them'}` : ''),
+    h('div.progress-track', {
+      role: 'progressbar', 'aria-label': 'Questions seen', 'aria-valuemin': '0',
+      'aria-valuemax': String(set.questions.length), 'aria-valuenow': String(seenCount),
+    }, h('span.progress-fill', { style: `width: ${Math.round((100 * seenCount) / set.questions.length)}%` }))) : null;
+
+  // Practice one topic, weakest first (the owner's choice, 2026-11-13): each topic with how the student did on its
+  // questions the last time they saw them, the weakest at the top, then the topics not tried yet.
+  const topicRows = topics.length < 2 ? [] : topics.map(t => {
+    const qs = set.questions.filter(q => q.topic === t);
+    const seen = qs.filter(q => seenIds.has(q.id)).length;
+    return { t, total: qs.length, seen, right: seen - qs.filter(q => missedIds.has(q.id)).length };
+  }).sort((a, b) => (a.seen ? a.right / a.seen : 2) - (b.seen ? b.right / b.seen : 2) || b.seen - a.seen || a.t.localeCompare(b.t));
+  const topicBox = topicRows.length ? h('section.topic-practice', { 'aria-labelledby': 'topic-practice-title' },
+    h('h2.section-title#topic-practice-title', 'Practice one topic'),
+    h('p.topic-note', seenCount ? 'Your weakest topics come first, by your latest answer to each question.' : 'Practice just the questions on one topic.'),
+    h('ul.topic-list', topicRows.map(r => h('li.topic-row',
+      h('div.topic-info',
+        h('span.topic-name', r.t),
+        h('span.topic-score', r.seen ? `${r.right} of ${r.seen} right` : `${plural(r.total, 'question')} · not tried yet`),
+        r.seen ? h('span.topic-track', { 'aria-hidden': 'true' }, h('span.topic-fill', { style: `width: ${Math.round((100 * r.right) / r.seen)}%` })) : null),
+      h('button.btn.btn-small', { type: 'button', 'aria-label': `Practice ${r.t}`, onclick: () => go({ ...modeSettings('practice'), topics: [r.t] }, 'practice') },
+        'Practice'))))) : null;
+
   fill(main,
     h('p.crumb', h('a', { href: back }, '← ', course ? [h('span.crumb-code', `${course.code} `), course.name] : 'All question sets')),
     set.exam ? h('p.set-exam', h('span.tag', set.exam)) : null,
@@ -856,11 +889,13 @@ async function setupView(root, { args, isCurrent }) {
       best != null ? [' · Best ', h('b', `${best}%`)] : null),
     aboutBtn,
     about,
+    progressBox,
     h('div.mode-cards',
       modeCard('practice', 'Practice mode', 'bulb', 'See the answer and rationale after each question. Go back and flag questions anytime.', 'Start practice', 'btn-accent'),
       modeCard('exam', 'Exam simulation', 'timer',
         `Like test day: timed, ${fullscreenAvailable() ? 'full screen, ' : ''}no going back. Answers and rationales at the end.`, 'Start exam', 'btn-ink')),
-    settingsBtn);
+    settingsBtn,
+    topicBox);
   changed();
 }
 
@@ -905,6 +940,20 @@ async function resultsView(root, { isCurrent }) {
         repeats === 1 ? ' The other question was one you\'d seen before.' : ` The other ${repeats} were questions you'd seen before.`, easier)
       : h('p.first-try', h('b', r.items.length === 1 ? 'You\'d seen this question before.' : `You'd seen all ${r.items.length} of these questions before.`),
         ' A question is easier the second time, so new questions are the better guide to the real exam.');
+  // The questions that were back because they were missed before (the owner's choice, 2026-11-13).
+  const again = Array.isArray(r.again) ? r.again : [];
+  const againRight = again.filter(a => a.right).length;
+  const againLine = !again.length ? null : h('p.again-line', icon('redo'), h('span', again.length === 1
+    ? againRight ? "You got the question you'd missed before right this time." : "The question you'd missed before is still one to work on."
+    : `You got ${againRight} of the ${again.length} questions you'd missed before right this time.`));
+  // Practice a topic from its row (the owner's choice, 2026-11-13).
+  const practiceTopic = set ? topic => (set.questions.some(q => q.topic === topic)
+    ? h('button.btn.btn-small', {
+        type: 'button', 'aria-label': `Practice ${topic}`,
+        onclick: () => begin(set, { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', topics: [topic], count: practiceCount(set) },
+          () => track('practice-topic', { set: set.id, class: set.course ?? 'other', from: 'results' })),
+      }, 'Practice')
+    : null) : null;
 
   fill(main,
     h('h1.page-title', 'Exam Results'),
@@ -919,6 +968,7 @@ async function resultsView(root, { isCurrent }) {
         h('p', `${fullyCorrect} of ${plural(r.items.length, 'question')} fully correct`),
         h('p', `Time used: ${fmtClock(r.timeUsedMs)}`))),
     firstTry,
+    againLine,
     h('p.note', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'),
     h('div.result-actions',
       h('a.btn.btn-accent', { href: '#/review' }, 'Review all answers'),
@@ -931,7 +981,7 @@ async function resultsView(root, { isCurrent }) {
       set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
       savedLink(),
       h('a.btn', { href: '#/' }, 'Home')),
-    perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0]))),
+    perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0])), practiceTopic),
     perfTable('Performance by question type', 'Question type', byType));
 }
 
@@ -948,7 +998,8 @@ function groupBy(items, keyOf) {
   return [...groups];
 }
 
-function perfTable(title, firstHeader, rows) {
+// action: a button for a row (Practice, on the topics), or null.
+function perfTable(title, firstHeader, rows, action = null) {
   return h('section.perf-section',
     h('h2.section-title', title),
     h('div.table-scroll', h('table.perf',
@@ -956,7 +1007,8 @@ function perfTable(title, firstHeader, rows) {
         h('th', { scope: 'col' }, firstHeader),
         h('th.num.q-col', { scope: 'col' }, 'Questions'),
         h('th.num', { scope: 'col' }, 'Points'),
-        h('th', { scope: 'col' }, 'Score'))),
+        h('th', { scope: 'col' }, 'Score'),
+        action ? h('td.act-cell') : null)),
       h('tbody', rows.map(([name, g]) => {
         const pct = g.max ? Math.round((g.earned / g.max) * 100) : 0;
         return h('tr',
@@ -965,7 +1017,8 @@ function perfTable(title, firstHeader, rows) {
           h('td.num', `${g.earned} / ${g.max}`),
           h('td.bar-cell', h('div.bar',
             h('span.bar-track', { 'aria-hidden': 'true' }, h('span.bar-fill', { style: `width: ${pct}%` })),
-            h('span.bar-pct', `${pct}%`))));
+            h('span.bar-pct', `${pct}%`))),
+          action ? h('td.act-cell', action(name)) : null);
       })))));
 }
 

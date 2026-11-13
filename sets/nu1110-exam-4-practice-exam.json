@@ -1,14 +1,14 @@
 {
   "id": "nu1110-exam-4-practice-exam",
   "title": "Exam 4 Practice Exam",
-  "description": "Exam 4 practice, weighted like the professor's blueprint: 60 questions on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math, with one short case study and at least one ice chip question.",
+  "description": "Exam 4 practice, weighted like the professor's blueprint: 60 questions on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math, with one short case study and ice chip questions (one in every exam past 10 questions, two past 25).",
   "course": "NU1110",
   "exam": "Exam 4",
   "timeMinutes": 310.5,
   "defaultCount": 60,
   "topicWeights": {"Ethical and legal": 17, "Leadership": 12, "Teamwork and collaboration": 12, "Teaching and learning": 12, "Abbreviations": 2, "Unit conversions and intake": 3, "Ice chips": 2},
   "caseStudies": 1,
-  "topicMinimums": {"Ice chips": [[1, 1], [26, 2]]},
+  "topicMinimums": { "Ice chips": [[1, 0.5], [11, 1], [26, 2]] },
   "cases": {
     "student": {
       "intro": "A nurse on a medical-surgical unit is precepting a nursing student during a short-staffed day shift.",

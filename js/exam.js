@@ -235,6 +235,59 @@ function apart(order) {
   return out;
 }
 
+// ---------- an exam of any size follows the blueprint (the owner's request, 2026-11-13) ----------
+
+// Whole shares that add up to the limit: each topic gets its exact share
+// rounded down, and the places left go to topics in turn, each about as often
+// as its fraction (systematic sampling, from a random start and in a random
+// order). So an exam of 10 from a 60-question blueprint is one of a few
+// blueprints, each topic one place over or under at most, and over several
+// exams each topic gets its exact share on average.
+export function roundShares(exact, limit, random = Math.random) {
+  const share = exact.map(Math.floor);
+  let extra = limit - share.reduce((a, b) => a + b, 0);
+  const start = random();
+  let at = 0;
+  for (const i of shuffle(exact.map((_, i) => i), random)) {
+    const to = at + exact[i] - share[i];
+    if (extra > 0 && Math.ceil(to - start) > Math.ceil(at - start)) {
+      share[i]++;
+      extra--;
+    }
+    at = to;
+  }
+  // Rounding in the sums can leave a place: it goes to the biggest fraction still rounded down.
+  while (extra > 0) {
+    let best = 0;
+    exact.forEach((x, i) => {
+      if (x - share[i] > exact[best] - share[best]) best = i;
+    });
+    share[best]++;
+    extra--;
+  }
+  return share;
+}
+
+// How much more each topic weighs for this student: up to half again, by the
+// part of the topic's questions they've seen whose latest result was a miss
+// (once they've seen 3 or more of them). An exam leans toward the topics they
+// struggle with, but the blueprint still holds most of it (the owner's request,
+// 2026-11-13).
+export const LEAN = 0.5;
+export function leanToward(questions, seen, missed) {
+  const tally = new Map();
+  for (const q of questions) {
+    if (!seen.has(q.id)) continue;
+    const t = tally.get(q.topic) ?? { seen: 0, missed: 0 };
+    t.seen++;
+    if (missed.has(q.id)) t.missed++;
+    tally.set(q.topic, t);
+  }
+  const lean = new Map();
+  for (const [topic, t] of tally) if (t.seen >= 3) lean.set(topic, 1 + LEAN * (t.missed / t.seen));
+  return lean;
+}
+
 // Whole blocks (single questions, and case studies' runs) adding up to `limit`
 // questions: the ones seen longest ago (or never) first, and each topic getting
 // its share in the same proportions as all the questions, so a set written to a
@@ -265,30 +318,51 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)) + (partSeen.has(b) ? 0.5 : 0); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
   const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
-  // Each topic's share of the limit, rounded so the shares add up to it.
+  // Each topic's share of the limit: its weight (or its number of questions), leaning toward the
+  // topics this student keeps missing (leanToward), rounded so the shares add up to the limit.
   const pool = blocks.flat(); // what this exam can take
   const all = everyQuestion ?? pool;
   const topics = [...new Set(all.map(q => q.topic))];
   const blueprint = !!weights && topics.every(t => weights[t] >= 0) && topics.some(t => weights[t] > 0);
-  const weightOf = t => (blueprint ? weights[t] : all.filter(q => q.topic === t).length);
+  const lean = leanToward(all, seen, missed);
+  const weightOf = t => (blueprint ? weights[t] : all.filter(q => q.topic === t).length) * (lean.get(t) ?? 1);
   const total = topics.reduce((sum, t) => sum + weightOf(t), 0);
   const exact = topics.map(t => (weightOf(t) * limit) / total);
-  const share = exact.map(Math.floor);
-  const roundUp = topics.map((_, i) => i).sort((i, j) => exact[j] - share[j] - (exact[i] - share[i]));
-  for (const i of roundUp.slice(0, limit - share.reduce((a, b) => a + b, 0))) share[i]++;
-  // A topic's minimum for an exam this size, as far as its questions go; the places come from the
-  // topics with the most, one at a time.
+  const share = roundShares(exact, limit, random);
+  // A topic's minimum for an exam this size, as far as its questions go; each place comes from the
+  // topic furthest above its exact share (then the one with the most), never below its own minimum.
+  // A minimum below 1 is a chance (the owner's choice, 2026-11-13: an ice chip question in half of the
+  // exams of 10): the topic gets one question in that share of exams, and none in the others, its
+  // places going to the topics furthest below their exact shares.
   const floor = new Map(); // topic -> its minimum in this exam
   for (const [t, rules] of Object.entries(minimums && typeof minimums === 'object' ? minimums : {})) {
     const i = topics.indexOf(t);
     if (i < 0 || !Array.isArray(rules)) continue;
-    const need = Math.max(0, ...rules.filter(r => Array.isArray(r) && limit >= r[0]).map(r => r[1]));
+    let need = Math.max(0, ...rules.filter(r => Array.isArray(r) && limit >= r[0]).map(r => r[1]));
+    if (need > 0 && need < 1) {
+      if (random() < need) need = 1;
+      else {
+        while (share[i] > 0) {
+          let to = -1;
+          share.forEach((n, k) => {
+            if (k !== i && weightOf(topics[k]) > 0 && (to < 0 || exact[k] - n > exact[to] - share[to])) to = k;
+          });
+          if (to < 0) break;
+          share[i]--;
+          share[to]++;
+        }
+        floor.set(t, 0);
+        continue;
+      }
+    }
     const target = Math.min(need, pool.filter(q => q.topic === t).length, limit);
     floor.set(t, target);
     while (share[i] < target) {
       let from = -1;
       share.forEach((n, k) => {
-        if (k !== i && n > 0 && (from < 0 || n > share[from])) from = k;
+        if (k === i || n <= (floor.get(topics[k]) ?? 0)) return;
+        const over = n - exact[k];
+        if (from < 0 || over > share[from] - exact[from] || (over === share[from] - exact[from] && n > share[from])) from = k;
       });
       if (from < 0) break;
       share[from]--;
@@ -441,22 +515,33 @@ export function defaultCount(set) {
   return Number.isInteger(n) && n >= 1 && n < set.questions.length ? n : null;
 }
 
-// How many questions practice mode gives (SPEC 4.2; the owner's choice, 2026-11-02):
-// 10 on a phone and 25 on a laptop, never more than the set's questions per exam.
-// null for every question.
+// A set whose exams have 60 questions or more, like the real NU1110 exams (the
+// owner's choice, 2026-11-13): shorter on a phone, and a shorter practice on a laptop.
+const LONG_EXAM = 60;
+const longExam = set => (defaultCount(set) ?? 0) >= LONG_EXAM;
+
+// How many questions practice mode gives (SPEC 4.2; the owner's choices, 2026-11-02
+// and 2026-11-13): 10 on a phone, and 25 on a laptop (15 for a 60-question exam),
+// never more than the set's questions per exam. null for every question.
 export function practiceCount(set, onPhone = phone.matches) {
-  const n = Math.min(onPhone ? 10 : 25, defaultCount(set) ?? set.questions.length);
+  const n = Math.min(onPhone ? 10 : longExam(set) ? 15 : 25, defaultCount(set) ?? set.questions.length);
   return n < set.questions.length ? n : null;
 }
 
+// How many questions exam simulation gives: the set's questions per exam, but 30
+// on a phone for a 60-question exam. null for every question.
+export function examCount(set, onPhone = phone.matches) {
+  return longExam(set) && onPhone ? 30 : defaultCount(set);
+}
+
 // "Best" on the homepage counts attempts of the whole set, or of at least its
-// default number of questions with every topic and type (SPEC 11.3). Exams
-// finished early never count.
+// exam simulation's number of questions (a phone's, the smaller) with every topic
+// and type (SPEC 11.3). Exams finished early never count.
 export function countsForBest(attempt, set) {
   if (attempt.early) return false;
   if (attempt.scope === 'full') return true;
   return attempt.scope === 'part' && !attempt.settings?.topics && !attempt.settings?.types
-    && attempt.count >= (defaultCount(set) ?? set.questions.length);
+    && attempt.count >= (examCount(set, true) ?? set.questions.length);
 }
 
 // Standard time is the set's timeMinutes scaled to the number of questions,
@@ -475,7 +560,8 @@ export function startExam(set, settings = {}, scope = null) {
   const s = { ...DEFAULT_SETTINGS, ...settings };
   // A question with changing numbers gets its numbers now (vary.js), so the whole
   // attempt, its review, and its history keep them; the next attempt gets new ones.
-  const questions = chooseQuestions(set, s, Math.random, lastSeen(set), lastMissed(set)).map(q => vary(q));
+  const missedBefore = lastMissed(set);
+  const questions = chooseQuestions(set, s, Math.random, lastSeen(set), missedBefore).map(q => vary(q));
   if (!questions.length) return false;
   if (s.fullscreen) enterFullscreen();
   const limitMs = timeLimitMs(set, questions.length, s);
@@ -489,6 +575,7 @@ export function startExam(set, settings = {}, scope = null) {
     scope: scope ?? (s.only ? 'missed' : questions.length < set.questions.length ? 'part' : 'full'),
     cases: set.cases ?? {},
     questions, // a copy, so later edits to the set file can't break this attempt
+    again: questions.filter(q => missedBefore.has(q.id)).map(q => q.id), // back because they were missed (a tag says so)
     layout: Object.fromEntries(questions.map(q => [q.id, prepareItem(q, { shuffle: s.shuffleChoices })])),
     index: 0,
     responses: {},
@@ -546,6 +633,7 @@ function grade(st, reason, seen = new Set()) {
     items,
     missed: items.filter(i => i.earned < i.max).map(i => i.id), // "missed" = less than full points (SPEC 5.4)
     firstTry: { right: firsts.filter(i => i.earned === i.max).length, total: firsts.length }, // SPEC 11.9
+    again: items.filter(i => (st.again ?? []).includes(i.id)).map(i => ({ id: i.id, right: i.earned === i.max })), // missed before
     settings: st.settings,
     questions,
     layout: st.layout,
@@ -742,6 +830,8 @@ export function examView(root) {
 
   // --- build the page ---
   const counter = h('h1.q-counter', { tabindex: '-1' });
+  // A question that's back because the student missed it last time says so (the owner's choice, 2026-11-13).
+  const againTag = h('span.again-tag', { hidden: true }, icon('redo'), 'Missed before');
   const timeVal = h('span.val');
   const pauseVal = h('span.val');
   const timer = h('div.timer',
@@ -788,7 +878,7 @@ export function examView(root) {
       h('div.m-progress', { 'aria-hidden': 'true' }, progress)),
     h('main.wrap',
       h('div.info-row',
-        h('div.counter-wrap', counter, s.preset === 'practice' ? h('span.mode-tag', 'Practice mode') : null),
+        h('div.counter-wrap', counter, s.preset === 'practice' ? h('span.mode-tag', 'Practice mode') : null, againTag),
         h('div.info-tools', timed ? [timer, pauseBtn] : null, s.calculator ? calcBtn : null)),
       question),
     footer,
@@ -834,6 +924,7 @@ export function examView(root) {
     const q = st.questions[st.index];
     const revealed = showsAnswers && !!st.revealed[q.id];
     counter.textContent = `Question: ${st.index + 1} of ${st.questions.length}`;
+    againTag.hidden = !(st.again ?? []).includes(q.id);
     paintChip(`Question ${st.index + 1} of ${st.questions.length}`);
     document.title = `${st.title} · Question ${st.index + 1}`;
     prevBtn.hidden = st.index === 0;

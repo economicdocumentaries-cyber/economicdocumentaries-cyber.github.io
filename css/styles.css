@@ -1439,6 +1439,33 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .beat-line path { stroke-dashoffset: 0; }
 }
 
+/* How far you've got in a set, practice one topic, and questions back because they were missed (the owner's
+   choices, 2026-11-13). */
+.set-progress { max-width: 760px; margin: 14px 0 0; }
+.progress-line { margin: 0 0 6px; font-size: 14.5px; color: var(--muted); }
+.progress-line b { color: var(--ink); }
+.progress-track { display: block; height: 8px; border-radius: 4px; background: #E7EBEF; overflow: hidden; }
+.progress-fill { display: block; height: 100%; border-radius: 4px; background: var(--accent); }
+.topic-practice { max-width: 760px; margin: 30px 0 0; }
+.topic-practice .section-title { margin: 0; }
+.topic-note { margin: 4px 0 10px; font-size: 14px; color: var(--muted); }
+.topic-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.topic-row { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.topic-info { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 5px 12px; flex: 1; min-width: 0; }
+.topic-name { font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
+.topic-score { font-size: 13.5px; color: var(--muted); white-space: nowrap; }
+.topic-track { grid-column: 1 / -1; display: block; height: 5px; border-radius: 3px; background: #E7EBEF; overflow: hidden; }
+.topic-fill { display: block; height: 100%; background: var(--accent-deep); }
+.again-tag { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; background: #FFF4E5; border: 1px solid #F0C27E;
+  border-radius: 12px; font-size: 12.5px; font-weight: 600; color: #6B4200; white-space: nowrap; }
+.again-line { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; font-size: 15px; color: var(--ink); }
+.again-line svg { flex: none; color: #B26A00; }
+.perf .act-cell { width: 1%; padding-left: 4px; white-space: nowrap; text-align: right; }
+@media (max-width: 700px) {
+  .topic-info { grid-template-columns: minmax(0, 1fr); }
+  .topic-score { white-space: normal; }
+}
+
 /* Search (SPEC 11.14): the box in the header of the homepage, the Saved questions page, and the results page. */
 .search-form { position: relative; display: flex; align-items: center; flex: 0 1 420px; margin-left: auto; }
 .topbar .search-form + .home-saved { margin-left: 0; }

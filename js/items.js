@@ -1134,14 +1134,17 @@ export function validateSet(set) {
   if (set.topicMinimums != null) {
     const mins = set.topicMinimums;
     const topics = new Set(set.questions.map(q => q?.topic).filter(isText));
-    const pair = r => Array.isArray(r) && r.length === 2 && r.every(n => Number.isInteger(n) && n >= 1);
+    // [exam size from, at least]: at least a whole number of questions, or a fraction below 1 for one question in
+    // that share of exams (and none in the others).
+    const pair = r => Array.isArray(r) && r.length === 2 && Number.isInteger(r[0]) && r[0] >= 1
+      && typeof r[1] === 'number' && (Number.isInteger(r[1]) ? r[1] >= 1 : r[1] > 0 && r[1] < 1);
     if (typeof mins !== 'object' || Array.isArray(mins)) {
-      add('"topicMinimums" must give topics their minimums, like { "Ice chips": [[1, 1], [26, 2]] }.');
+      add('"topicMinimums" must give topics their minimums, like { "Ice chips": [[1, 0.5], [11, 1], [26, 2]] }.');
     } else {
       for (const [topic, rules] of Object.entries(mins)) {
         if (!topics.has(topic)) add(`"topicMinimums" names "${topic}", but no question has that topic. Check the spelling.`);
         if (!Array.isArray(rules) || !rules.length || !rules.every(pair)) {
-          add(`"topicMinimums": "${topic}" needs pairs of whole numbers, [exam size from, at least], like [[1, 1], [26, 2]].`);
+          add(`"topicMinimums": "${topic}" needs pairs of [exam size from, at least], like [[1, 0.5], [11, 1], [26, 2]]: whole numbers, or a fraction below 1 for one question in that share of exams.`);
         }
       }
     }
