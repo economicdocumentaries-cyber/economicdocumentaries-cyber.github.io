@@ -559,6 +559,11 @@ span.order-text { flex: 1; font-size: 15px; }
 .set-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .set-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .set-row h3 { font-size: 18px; }
+/* Study guides: the Download button always on the right, however long the description (the owner's request,
+   2026-11-12); phones put it under the text (the 700px rule below). */
+.guide-row { flex-wrap: nowrap; }
+.guide-row .set-info { flex: 1 1 auto; min-width: 0; }
+.guide-row .set-actions { flex: 0 0 auto; }
 .set-desc { margin: 4px 0 2px; }
 .set-meta { margin: 0; font-size: 13px; color: var(--muted); }
 .set-history { margin: 6px 0 0; font-size: 13.5px; color: var(--muted); }

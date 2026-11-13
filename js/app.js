@@ -191,7 +191,18 @@ async function homeView(root, { args, isCurrent }) {
   };
 }
 
-const CLASS_KEY = 'pe.class'; // the class tab chosen last on this browser
+// The class tab chosen during this visit (sessionStorage, so it lasts until the browser tab is closed): a new visit
+// opens the class whose exam comes next, and the student's choice holds while they move around the site
+// (the owner's choice, 2026-11-12).
+const VISIT_KEY = 'pe.classThisVisit';
+const visitClass = {
+  get() {
+    try { return sessionStorage.getItem(VISIT_KEY); } catch { return null; }
+  },
+  set(key) {
+    try { sessionStorage.setItem(VISIT_KEY, key); } catch { /* storage blocked: the next exam's class opens instead */ }
+  },
+};
 const classLink = key => `#/class/${encodeURIComponent(key)}`;
 
 // The homepage tabs: one per class in sets/courses.json, in that order, then
@@ -362,15 +373,28 @@ function examLists(group, next) {
   return [debriefBox, hero, topicsBox, guidesBox, earlier];
 }
 
+// The class with sets or guides whose next exam (sets/courses.json) comes first; -1 when no class has a dated one.
+// A tie keeps the order of the class list.
+function soonestClass(groups) {
+  let best = -1, bestDate = null;
+  groups.forEach((g, i) => {
+    const date = g.course && (g.sets.length || g.guides.length) ? nextExam(g.course)?.date : null;
+    if (date && (bestDate === null || date < bestDate)) [best, bestDate] = [i, date];
+  });
+  return best;
+}
+
 // The tab shown first is the one in the link (#/class/NU1120), else the one
-// chosen last on this browser, else the first with sets or study guides.
-// Choosing a tab changes the link without reloading the page, so it can be shared.
+// chosen during this visit, else the class whose exam comes next, else the
+// first with sets or study guides. Choosing a tab changes the link without
+// reloading the page, so it can be shared.
 function classTabs(groups, wanted, onShow = null) {
   const find = key => (typeof key === 'string' ? groups.findIndex(g => g.key.toLowerCase() === key.toLowerCase()) : -1);
   const linked = find(wanted);
-  let current = linked >= 0 ? linked : find(store.get(CLASS_KEY));
+  let current = linked >= 0 ? linked : find(visitClass.get());
+  if (current < 0) current = soonestClass(groups);
   if (current < 0) current = Math.max(0, groups.findIndex(g => g.sets.length || g.guides.length));
-  if (linked >= 0) store.set(CLASS_KEY, groups[linked].key);
+  if (linked >= 0) visitClass.set(groups[linked].key);
   else if (wanted) history.replaceState(history.state, '', classLink(groups[current].key));
 
   const tabs = groups.map((g, i) => h(g.course ? 'button.tab.class-tab' : 'button.tab.class-tab.other-tab', {
@@ -416,7 +440,7 @@ function classTabs(groups, wanted, onShow = null) {
 
   function choose(i) {
     show(i);
-    store.set(CLASS_KEY, groups[i].key);
+    visitClass.set(groups[i].key);
     history.replaceState(history.state, '', classLink(groups[i].key));
   }
 
