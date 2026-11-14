@@ -120,8 +120,10 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   }
   const limit = s.count ?? Infinity;
   // Each topic's share comes from all the questions that match, the case studies' other runs included.
-  const picked = limit < units.flat().length
+  let picked = limit < units.flat().length
     ? pickBlocks(units, limit, random, seen, set.topicWeights, missed, set.caseStudies, set.topicMinimums, partSeen, blocks.flat()) : units.slice();
+  // The question types (balanceTypes), unless the student asked for these questions (Retake missed, saved, search).
+  if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types));
   // Too few questions without them: more runs of the case studies (part of one to finish).
   let count = picked.flat().length;
   let more = false;
@@ -232,6 +234,102 @@ function apart(order) {
     }
     out.push(b);
   }
+  return out;
+}
+
+// ---------- the question types (the owner's rule, 2026-11-13) ----------
+
+// Multiple choice is at least 65% of an exam (60% up to 10 questions: 6 of 10) and at most 80%, as on the real
+// exams (about 70% multiple choice).
+export const MC_FLOOR = 0.65;
+export const MC_FLOOR_SMALL = 0.6;
+export const MC_CEILING = 0.8;
+export function mcRange(n) {
+  return [Math.ceil(n * (n <= 10 ? MC_FLOOR_SMALL : MC_FLOOR) - 1e-9), Math.floor(n * MC_CEILING + 1e-9)];
+}
+
+// A set's "typeShares" holds a question type at a share of every exam, like { "sata": 0.075 }, so that extra
+// questions of that type, there for practicing it on its own, don't change the mix of an ordinary exam (the owner's
+// rule, 2026-11-14). With some types turned off in Customize, the share is of the types left, in the set's usual mix
+// (each type that isn't held keeps its share of the rest). types: the types the exam uses, or null for every type.
+// Returns [type, share] pairs: none when every type left is held, as in a practice of select-all questions alone.
+export function heldShares(set, types = null) {
+  const held = set.typeShares ?? {};
+  const counts = new Map();
+  for (const q of set.questions) counts.set(q.type, (counts.get(q.type) ?? 0) + 1);
+  const used = [...counts.keys()].filter(t => !types || types.includes(t));
+  if (used.every(t => t in held)) return [];
+  const others = [...counts].reduce((n, [t, c]) => (t in held ? n : n + c), 0);
+  const free = 1 - Object.values(held).reduce((a, b) => a + b, 0);
+  const share = t => (t in held ? held[t] : (counts.get(t) / others) * free);
+  const total = used.reduce((sum, t) => sum + share(t), 0);
+  return used.filter(t => t in held).map(t => [t, share(t) / total]);
+}
+
+// Keeps an exam's question types in line, as far as the questions allow, by swapping a single question for one
+// of the same topic, so each topic keeps its share. First each held type (heldShares) goes to its share of the
+// exam, rounded up or down at random by the fraction (3.75 of 50: 4 in three exams of four, 3 in the other),
+// leaning toward mcRange as it goes; then multiple choice goes into mcRange, trading types that aren't held (a
+// held type only when nothing else is left: select-all and multiple choice alone, say). Out goes the one seen most
+// recently; in comes the one seen longest ago (or never). For multiple choice, never one seen more recently than
+// the one it replaces, so new questions still come first; a held type's share comes before that, so a student
+// with many new questions of that type sees them a few at a time. Questions missed before stay where the review
+// put them (and count toward the shares), and so do a case study's questions.
+function balanceTypes(picked, units, seen, missed, random, held = []) {
+  const n = picked.flat().length;
+  if (n < 5) return picked;
+  const type = b => b[0].type;
+  const isHeld = b => held.some(([t]) => t === type(b));
+  const isMc = b => type(b) === 'mc';
+  const other = b => !isMc(b) && !isHeld(b); // neither multiple choice nor held
+  const age = b => seen.get(b[0].id) ?? -1;
+  const out = picked.slice();
+  const taken = new Set(out);
+  const spare = shuffle(units.filter(b => !taken.has(b) && !isCase(b) && !missed.has(b[0].id)), random);
+  const count = test => out.flat().filter(q => test([q])).length;
+  const [floor, ceiling] = mcRange(n);
+  // One swap: out goes a question of the exam for which goes() is true, in comes a spare one of the same topic for
+  // which comes() is true. fresh: never one seen more recently than the one it replaces. False when none is left.
+  const swap = (goes, comes, fresh) => {
+    const outs = out.map((b, i) => [b, i])
+      .filter(([b]) => !isCase(b) && !missed.has(b[0].id) && goes(b))
+      .sort((x, y) => age(y[0]) - age(x[0]));
+    for (const [b, i] of outs) {
+      const k = spare.reduce((best, c, j) => (comes(c) && c[0].topic === b[0].topic && (!fresh || age(c) <= age(b))
+        && (best < 0 || age(c) < age(spare[best])) ? j : best), -1);
+      if (k < 0) continue;
+      out[i] = spare[k];
+      spare[k] = b;
+      return true;
+    }
+    return false;
+  };
+  // Each held type to its share. These swaps put the share before freshness, and lean toward the multiple-choice
+  // range: what comes in (or goes) is multiple choice while there's too little of it, and another type while
+  // there's too much, when the topic has one.
+  for (const [t, share] of held) {
+    const exact = n * share;
+    const want = Math.floor(exact) + (random() < exact - Math.floor(exact) ? 1 : 0);
+    const isT = b => type(b) === t;
+    const notHeld = b => !isHeld(b);
+    let have = count(isT);
+    while (have > want) {
+      const mc = count(isMc);
+      const lean = mc < floor ? isMc : mc >= ceiling ? other : null;
+      if (!(lean && swap(isT, lean, false)) && !swap(isT, notHeld, false)) break;
+      have--;
+    }
+    while (have < want) {
+      const mc = count(isMc);
+      const lean = mc > ceiling ? isMc : mc <= floor ? other : null;
+      if (!(lean && swap(lean, isT, false)) && !swap(notHeld, isT, false)) break;
+      have++;
+    }
+  }
+  // Then multiple choice into its range, never trading away freshness.
+  let mc = count(isMc);
+  while (mc < floor && (swap(other, isMc, true) || swap(b => !isMc(b), isMc, true))) mc++;
+  while (mc > ceiling && (swap(isMc, other, true) || swap(isMc, c => !isMc(c), true))) mc--;
   return out;
 }
 

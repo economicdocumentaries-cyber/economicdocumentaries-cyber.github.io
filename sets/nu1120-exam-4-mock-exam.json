@@ -4,7 +4,7 @@
   "description": "Exam 4 practice on the endocrine, cardiovascular, respiratory, and lymphatic and immune systems (Weeks 9 to 12), matched to the instructor's Exam 4 study guide and written a level beyond the real exam, with the next-generation question types. Like the real exam, each exam gives 50 questions, split evenly across the four systems, with one case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 300.0,
+  "timeMinutes": 352.5,
   "defaultCount": 50,
   "topicWeights": {
     "Endocrine system": 1,
@@ -82,6 +82,9 @@
         }
       ]
     }
+  },
+  "typeShares": {
+    "sata": 0.075
   },
   "questions": [
     {
@@ -3704,6 +3707,747 @@
       ],
       "answer": 1,
       "rationale": "<p>Infections of the mouth, teeth, and throat drain to the <b>cervical</b> nodes on the <b>same side</b>, which become <b>tender</b> and enlarged as their lymphocytes respond.</p><p><b>Hard, painless nodes</b> isn't the right answer: they're on the right side, but nodes reacting to an infection are tender; hard, painless, fixed nodes need follow-up for other causes. The left side and the armpit don't drain the right jaw.</p><p><b>Takeaway:</b> Head and neck infections: tender cervical nodes on the same side.</p>"
+    },
+    {
+      "id": "m4e-67",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A tumor pressing on a client's anterior pituitary gland was removed, and the gland was damaged. Which of the following hormones should the nurse expect to be low?",
+      "options": [
+        "Thyroid-stimulating hormone (TSH)",
+        "Vasopressin (antidiuretic hormone)",
+        "Adrenocorticotropic hormone (ACTH)",
+        "Luteinizing hormone (LH)",
+        "Parathyroid hormone (PTH)",
+        "Follicle-stimulating hormone (FSH)"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p>The <b>anterior pituitary</b> makes TSH, ACTH, LH, FSH, and prolactin (and growth hormone), so those fall when it's damaged.</p><p><b>Vasopressin</b> isn't right: like oxytocin, it's made in the hypothalamus and stored and released by the <b>posterior</b> pituitary, which wasn't damaged. <b>Parathyroid hormone</b> isn't either: the parathyroid glands make it, in answer to the blood calcium, not to the pituitary.</p><p><b>Takeaway:</b> Anterior pituitary: TSH, ACTH, FSH, LH, prolactin. Posterior: vasopressin and oxytocin, made in the hypothalamus.</p>"
+    },
+    {
+      "id": "m4e-68",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A nurse is reviewing the hormones that link the hypothalamus to the anterior pituitary. Which of the following should the nurse identify as hormones the hypothalamus releases?",
+      "options": [
+        "Corticotropin-releasing hormone (CRH)",
+        "Adrenocorticotropic hormone (ACTH)",
+        "Dopamine",
+        "Thyroid-stimulating hormone (TSH)",
+        "Thyrotropin-releasing hormone (TRH)",
+        "Gonadotropin-releasing hormone (GnRH)"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>The hypothalamus sends <b>CRH</b>, <b>TRH</b>, <b>GnRH</b>, and growth hormone–releasing hormone to the anterior pituitary, along with <b>dopamine</b> and somatostatin, which hold hormones back (dopamine holds back prolactin).</p><p><b>ACTH</b> and <b>TSH</b> aren't right: they're the anterior pituitary's answers to CRH and TRH, one step further down the chain.</p><p><b>Takeaway:</b> Hypothalamus: the releasing hormones (CRH, TRH, GnRH, GHRH) and dopamine. Anterior pituitary: the stimulating hormones (ACTH, TSH, FSH, LH).</p>"
+    },
+    {
+      "id": "m4e-69",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A client has a tumor of the adrenal medulla that releases too much epinephrine and norepinephrine. Which of the following findings should the nurse expect?",
+      "options": [
+        "Heavy sweating",
+        "A blood glucose of 58 mg/dL",
+        "A heart rate of 128/min at rest",
+        "Small, constricted pupils",
+        "A blood pressure of 186/104 mm Hg",
+        "Tremor and a feeling of dread"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>The <b>adrenal medulla</b> makes epinephrine (adrenaline) and norepinephrine (noradrenaline), the fight-or-flight hormones. Too much brings <b>sweating</b>, a <b>fast heart rate</b>, <b>high blood pressure</b>, and <b>tremor with anxiety</b>.</p><p><b>A glucose of 58</b> isn't right: epinephrine <b>raises</b> the glucose for quick energy. <b>Constricted pupils</b> aren't either: fight or flight <b>dilates</b> the pupils.</p><p><b>Takeaway:</b> Adrenal medulla: epinephrine and norepinephrine, fight or flight. Adrenal cortex: cortisol, aldosterone, and androgens.</p>"
+    },
+    {
+      "id": "m4e-70",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client's morning cortisol level is being checked, and the client asks what cortisol does. Which of the following statements should the nurse include?",
+      "options": [
+        "“It helps keep your blood pressure up.”",
+        "“It's made by the inner part of the adrenal gland, the medulla.”",
+        "“It raises your blood glucose.”",
+        "“It's highest around midnight, which is why the test is done then.”",
+        "“It calms inflammation.”",
+        "“It helps regulate your sleep.”"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>Cortisol, a steroid hormone, affects <b>metabolism</b> (it raises the glucose), <b>blood pressure</b>, <b>inflammation</b> (it calms it), and <b>sleep</b>.</p><p><b>The medulla</b> isn't right: cortisol comes from the adrenal <b>cortex</b>; the medulla makes epinephrine. <b>Midnight</b> isn't either: cortisol is highest in the early morning and lowest around midnight, which is why the test is drawn in the morning.</p><p><b>Takeaway:</b> Cortisol: from the adrenal cortex; glucose up, inflammation down, blood pressure and sleep regulated; highest in the morning.</p>"
+    },
+    {
+      "id": "m4e-71",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A client's TSH is high and the free T4 is low. Which of the following findings should the nurse expect?",
+      "options": [
+        "Feeling cold when others are comfortable",
+        "Feeling hot and sweating",
+        "A weight gain of 10 lb (4.5 kg) in 3 months",
+        "Constipation",
+        "A heart rate of 112/min at rest",
+        "Tiredness and slowed thinking"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p>A high TSH with a low T4 means the thyroid isn't making enough hormone despite the pituitary's push: <b>hypothyroidism</b>, which slows the body: <b>cold intolerance</b>, <b>weight gain</b>, <b>constipation</b>, and <b>tiredness with slowed thinking</b>.</p><p><b>Feeling hot</b> and <b>a fast heart rate</b> aren't right: they come with too much thyroid hormone (hyperthyroidism), when the TSH is low.</p><p><b>Takeaway:</b> Read the T4 for the thyroid's output and the TSH for the pituitary's push: a high TSH with a low T4 is an underactive thyroid.</p>"
+    },
+    {
+      "id": "m4e-72",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A client without diabetes has a blood glucose of 168 mg/dL the morning after major surgery. Which of the following hormones could explain the rise?",
+      "options": [
+        "Insulin",
+        "Cortisol",
+        "Melatonin",
+        "Epinephrine",
+        "Calcitonin",
+        "Growth hormone"
+      ],
+      "answer": [
+        1,
+        3,
+        5
+      ],
+      "rationale": "<p>Surgery is a major stress. The stress hormones <b>cortisol</b> and <b>epinephrine</b>, and <b>growth hormone</b>, all raise the blood glucose to make fuel available.</p><p><b>Insulin</b> isn't right: it lowers the glucose by moving it into cells. <b>Melatonin</b> regulates sleep, and <b>calcitonin</b> lowers the blood calcium.</p><p><b>Takeaway:</b> Stress raises the glucose through cortisol, epinephrine, and growth hormone, even in a client without diabetes.</p>"
+    },
+    {
+      "id": "m4e-73",
+      "type": "sata",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A client's parathyroid glands were removed by accident during thyroid surgery. Which of the following findings should the nurse monitor for?",
+      "options": [
+        "Kidney stones with flank pain",
+        "Tingling around the mouth and fingertips",
+        "Slow, weak reflexes in the legs",
+        "Muscle cramps and twitching",
+        "Seizures",
+        "A high blood calcium level"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>Parathyroid hormone <b>raises</b> the blood calcium. Without it, the calcium falls and the nerves and muscles become irritable: <b>tingling around the mouth and fingertips</b>, <b>cramps and twitching</b>, and, when severe, <b>seizures</b>.</p><p><b>Kidney stones</b>, <b>slow, weak reflexes</b>, and <b>a high calcium</b> aren't right: they come with too much parathyroid hormone, the opposite problem.</p><p><b>Takeaway:</b> No parathyroid hormone: low calcium, irritable nerves and muscles. Too much: high calcium, stones, and weakness.</p>"
+    },
+    {
+      "id": "m4c-75",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client's echocardiogram shows a narrowed valve that blood passes through as it leaves a ventricle. Which of the following valves fit this finding?",
+      "options": [
+        "The mitral valve",
+        "The aortic valve",
+        "The tricuspid valve",
+        "The pulmonic valve",
+        "The bicuspid valve"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "rationale": "<p>Blood leaves the ventricles through the <b>semilunar</b> valves: the <b>pulmonic</b> valve (right ventricle to the pulmonary artery) and the <b>aortic</b> valve (left ventricle to the aorta).</p><p><b>The mitral</b>, <b>tricuspid</b>, and <b>bicuspid</b> valves aren't right: they're the atrioventricular valves, which blood passes through as it leaves the atria. The bicuspid valve is another name for the mitral valve.</p><p><b>Takeaway:</b> Atrioventricular valves: tricuspid and mitral (bicuspid). Semilunar valves: pulmonic and aortic, at the ventricles' exits.</p>"
+    },
+    {
+      "id": "m4c-76",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client has arterial insufficiency of the legs. Which of the following findings should the nurse expect?",
+      "options": [
+        "Swelling of the lower legs by the end of the day",
+        "Weak or absent foot pulses",
+        "Cool, pale skin on the feet",
+        "Brownish skin near the ankles",
+        "A capillary refill of 5 seconds in the toes",
+        "Shiny skin with little hair on the lower legs"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>In <b>arterial insufficiency</b>, too little blood reaches the legs: <b>weak or absent pulses</b>, <b>cool, pale skin</b>, a <b>slow capillary refill</b>, and <b>shiny, hairless skin</b>, since the tissues are poorly fed.</p><p><b>Swelling</b> and <b>brownish skin near the ankles</b> aren't right: they come from blood pooling in the veins, venous insufficiency.</p><p><b>Takeaway:</b> Arterial: cool, pale, weak pulses, slow refill. Venous: swollen, brownish, pulses present.</p>"
+    },
+    {
+      "id": "m4c-77",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client has venous insufficiency of the legs. Which of the following findings should the nurse expect?",
+      "options": [
+        "Swelling of the lower legs",
+        "Cool, pale toes",
+        "An open sore near the inner ankle",
+        "A capillary refill of 5 seconds in the toes",
+        "Foot pulses that are present and normal",
+        "Brownish discoloration near the ankles"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>In <b>venous insufficiency</b>, blood pools in the legs: <b>swelling</b>, <b>brownish skin</b> near the ankles, and <b>sores near the inner ankle</b>. Arterial blood still arrives, so the <b>pulses are present</b>.</p><p><b>Cool, pale toes</b> and <b>a slow capillary refill</b> aren't right: they point to too little arterial flow, arterial insufficiency.</p><p><b>Takeaway:</b> Venous: swollen, brownish, ankle sores, pulses present. Arterial: cool, pale, weak pulses, slow refill.</p>"
+    },
+    {
+      "id": "m4c-78",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client with type AB-negative blood needs a transfusion of red blood cells. Which of the following donor units should the nurse recognize as compatible?",
+      "options": [
+        "A-negative",
+        "AB-positive",
+        "O-negative",
+        "B-negative",
+        "O-positive",
+        "AB-negative"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p>Type AB blood has no anti-A or anti-B antibodies, so red cells of <b>any ABO type</b> are compatible. The client is <b>Rh-negative</b>, though, so the units must be Rh-negative: <b>A-negative</b>, <b>B-negative</b>, <b>AB-negative</b>, or <b>O-negative</b>.</p><p><b>AB-positive</b> and <b>O-positive</b> aren't right: they carry the Rh factor, which an Rh-negative client can make antibodies against.</p><p><b>Takeaway:</b> Check the ABO type and the Rh factor separately: an Rh-negative client gets Rh-negative red cells.</p>"
+    },
+    {
+      "id": "m4c-79",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client is frightened just before surgery. Which of the following findings should the nurse expect from the sympathetic nervous system's response?",
+      "options": [
+        "A heart rate of 118/min",
+        "Flushed, warm skin from widened vessels",
+        "Pale, cool hands",
+        "A heart rate of 52/min",
+        "A blood pressure that rises from 118/76 to 146/88 mm Hg"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>The <b>sympathetic</b> system speeds and strengthens the heart and narrows the vessels in the skin, so the client has a <b>fast heart rate</b>, <b>pale, cool hands</b>, and a <b>higher blood pressure</b>.</p><p><b>Flushed, warm skin</b> isn't right: the skin's vessels narrow, not widen, in fight or flight. <b>A heart rate of 52</b> isn't either: slowing is the parasympathetic effect, at rest.</p><p><b>Takeaway:</b> Sympathetic: rate, force, and pressure up; the skin's vessels narrow. Parasympathetic: rate down.</p>"
+    },
+    {
+      "id": "m4c-80",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client asks what plasma is. Which of the following should the nurse include as parts of plasma?",
+      "options": [
+        "Platelets, which plug a cut vessel",
+        "Albumin, which holds fluid in the vessels",
+        "Water, which makes up most of it",
+        "Red blood cells, which carry oxygen",
+        "Fibrinogen, which forms fibrin in a clot",
+        "Salts such as sodium, potassium, and bicarbonate"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>Plasma is mostly <b>water</b>, with dissolved <b>proteins</b> (<b>albumin</b>, which holds fluid in the vessels; <b>fibrinogen</b>, for clotting; and antibodies), <b>salts</b>, hormones, and vitamins.</p><p><b>Platelets</b> and <b>red blood cells</b> aren't right: they're formed elements, carried in the plasma but not part of it.</p><p><b>Takeaway:</b> Plasma: water, proteins, salts, hormones, vitamins. Formed elements: red cells, white cells, platelets.</p>"
+    },
+    {
+      "id": "m4c-81",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A 58-year-old client calls the clinic about discomfort that began 20 minutes ago. Which of the following findings should the nurse recognize as possible signs of a myocardial infarction?",
+      "options": [
+        "Shortness of breath",
+        "Brief, sharp twinges that last a second or two",
+        "Chest pressure that hasn't eased with rest",
+        "Nausea",
+        "Pain that spreads to the jaw or left arm",
+        "Sharp pain that worsens with each deep breath",
+        "Sweating and clammy skin"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "rationale": "<p>A <b>myocardial infarction</b>, heart muscle dying from a blocked coronary artery, brings <b>chest pressure not eased by rest</b>, pain spreading to the <b>jaw or arm</b>, <b>sweating</b>, <b>nausea</b>, and <b>shortness of breath</b>. Women and older adults may have only some of these.</p><p><b>Brief twinges</b> aren't typical: the pain of an infarction lasts. <b>Sharp pain that worsens with breathing</b> points to the pleura or the pericardium, though it still needs assessment.</p><p><b>Takeaway:</b> MI: lasting pressure, spreading pain, sweating, nausea, shortness of breath. Treat them as an emergency.</p>"
+    },
+    {
+      "id": "m4c-82",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A nurse is assessing a client for a cerebrovascular accident (stroke). Which of the following findings should the nurse report at once?",
+      "options": [
+        "Drooping of one side of the face",
+        "Forgetfulness that has grown over several months",
+        "Sudden weakness of one arm",
+        "Tingling in both hands while breathing fast",
+        "Slurred speech",
+        "A sudden, severe headache"
+      ],
+      "answer": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>A <b>stroke</b>, a blocked or bleeding brain artery, shows as sudden <b>facial droop</b>, <b>one-sided weakness</b>, <b>slurred speech</b>, and, with bleeding, a <b>sudden, severe headache</b>. Time matters, so report them at once.</p><p><b>Forgetfulness over months</b> isn't right: it's gradual, not sudden, and points to other causes. <b>Tingling in both hands while breathing fast</b> isn't either: it fits hyperventilation, which lowers the carbon dioxide, and it's on both sides.</p><p><b>Takeaway:</b> Stroke: sudden and one-sided. Face, arm, speech, and the time it started.</p>"
+    },
+    {
+      "id": "m4c-83",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A nurse is teaching a client about heart-healthy eating. Which of the following should the nurse include?",
+      "options": [
+        "Cook with coconut or palm oil",
+        "Choose whole grains over refined grains",
+        "Use extra-virgin olive oil in place of butter",
+        "Choose white bread, since it has fewer calories",
+        "Limit the sodium in the diet",
+        "Choose low-fat dairy products"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>Heart-healthy habits: <b>unsaturated fats</b> (extra-virgin olive oil, avocado oil, and other non-tropical vegetable oils), <b>whole grains</b>, <b>low sodium</b>, and <b>low-fat dairy</b>.</p><p><b>Coconut and palm oil</b> aren't right: they're tropical oils, high in saturated fat. <b>White bread</b> isn't either: it's a refined grain.</p><p><b>Takeaway:</b> Heart-healthy: unsaturated, non-tropical oils, whole grains, low sodium, low-fat dairy.</p>"
+    },
+    {
+      "id": "m4c-84",
+      "type": "sata",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A client is on bed rest after hip surgery. Which of the following should the nurse recognize as raising the client's risk of a thrombus in the leg veins?",
+      "options": [
+        "A platelet count below the normal range",
+        "Lying in bed without moving the legs",
+        "Damage to the vein walls during surgery",
+        "Ankle pumps done hourly while awake",
+        "Dehydration, which thickens the blood"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p>A <b>thrombus</b> forms when blood flow slows, a vessel wall is injured, or the blood clots more easily: <b>not moving the legs</b> slows the flow, surgery can <b>injure the vein walls</b>, and <b>dehydration</b> thickens the blood.</p><p><b>A low platelet count</b> isn't right: it makes clotting harder, not easier. <b>Ankle pumps</b> aren't either: they move the blood and lower the risk.</p><p><b>Takeaway:</b> Clots form with slow flow, an injured vessel wall, and blood that clots easily. Movement and fluids help prevent them.</p>"
+    },
+    {
+      "id": "m4r-92",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A client's arterial blood gases are pH 7.51, PaCO₂ 29 mm Hg, and HCO₃⁻ 24 mEq/L. Which of the following could explain these results?",
+      "options": [
+        "Several days of vomiting after food poisoning",
+        "A panic attack with fast, deep breathing",
+        "An airway blocked by thick mucus",
+        "A fever of 102.6°F (39.2°C)",
+        "Severe diarrhea from a bowel infection",
+        "A ventilator set to move too much air"
+      ],
+      "answer": [
+        1,
+        3,
+        5
+      ],
+      "rationale": "<p>A high pH with a low PaCO₂ and a normal HCO₃⁻ is <b>respiratory alkalosis</b>: too much CO₂ is breathed off. <b>Hyperventilation</b> from panic, a <b>fever</b>, and a <b>ventilator</b> moving too much air all cause it.</p><p><b>Vomiting</b> isn't right: it causes metabolic alkalosis, with a high HCO₃⁻. <b>A blocked airway</b> keeps CO₂ in (respiratory acidosis), and <b>diarrhea</b> loses bicarbonate (metabolic acidosis).</p><p><b>Takeaway:</b> Read the pH, then ask which value explains it: a low PaCO₂ with a high pH is respiratory alkalosis, from breathing off too much CO₂.</p>"
+    },
+    {
+      "id": "m4r-93",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client's chest X-ray shows pneumonia in the middle lobe. Which of the following statements should the nurse recognize as accurate?",
+      "options": [
+        "Both lungs have a middle lobe, so either could be affected",
+        "The pneumonia is in the right lung",
+        "The right lung has three lobes",
+        "The left lung has 10 segments, more than the right",
+        "The left lung has two lobes, with no middle lobe"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p>Only the <b>right lung</b>, with <b>three lobes</b> (upper, middle, and lower), has a middle lobe. The <b>left lung</b> has <b>two lobes</b>, leaving room for the heart.</p><p><b>Both lungs</b> isn't right: the left lung has no middle lobe (its lingula is part of the upper lobe). <b>10 segments on the left</b> isn't either: the right lung has 10 segments, and the left has 8 to 9.</p><p><b>Takeaway:</b> Right: 3 lobes, 10 segments. Left: 2 lobes, 8 to 9 segments. A middle lobe means the right lung.</p>"
+    },
+    {
+      "id": "m4r-94",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 1,
+      "stem": "A nurse is documenting the location of a client's infection. Which of the following structures belong to the upper respiratory tract?",
+      "options": [
+        "The pharynx",
+        "The trachea",
+        "The paranasal sinuses",
+        "The nasal cavity",
+        "The bronchi",
+        "The larynx"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p>The <b>upper respiratory tract</b> is the <b>nasal cavity</b> (with the turbinates), the <b>paranasal sinuses</b>, the <b>pharynx</b>, and the <b>larynx</b>.</p><p><b>The trachea</b> and <b>the bronchi</b> aren't right: they belong to the <b>lower</b> tract, with the bronchioles and alveoli.</p><p><b>Takeaway:</b> Upper: nose, sinuses, pharynx, larynx. Lower: trachea, bronchi, bronchioles, alveoli.</p>"
+    },
+    {
+      "id": "m4r-95",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing the cells of the alveoli. Which of the following are jobs of the type 2 alveolar cells or the alveolar macrophages?",
+      "options": [
+        "Forming most of the surface for gas exchange",
+        "Making surfactant",
+        "Engulfing dust and microbes that reach the alveoli",
+        "Sweeping mucus toward the throat",
+        "Keeping the alveoli from collapsing at the end of a breath out"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p><b>Type 2 cells</b> make <b>surfactant</b>, which lowers surface tension and <b>keeps the alveoli from collapsing</b>. <b>Alveolar macrophages</b> <b>engulf dust and microbes</b> that get past the airways.</p><p><b>Gas exchange</b> isn't right: the thin, flat <b>type 1 cells</b> form most of that surface. <b>Sweeping mucus</b> isn't either: the cilia of the airways do that, and the alveoli have none.</p><p><b>Takeaway:</b> Type 1: gas exchange. Type 2: surfactant. Macrophages: clean up.</p>"
+    },
+    {
+      "id": "m4r-96",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A 67-year-old client who smokes works in a grain mill and drinks little water. Which of the following risk factors for respiratory illness should the nurse focus the teaching on?",
+      "options": [
+        "The client's age",
+        "Smoking",
+        "Dust at work",
+        "The client's ethnicity",
+        "Hydration status"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p>Teaching works on the <b>modifiable</b> risk factors, the ones the client can change: <b>smoking</b>, exposures at work such as <b>dust</b>, and <b>hydration</b>.</p><p><b>Age</b> and <b>ethnicity</b> aren't right: they're non-modifiable, so teaching can't change them, though they still matter for screening.</p><p><b>Takeaway:</b> Teach to what can change: smoking, fluids, and exposures at work.</p>"
+    },
+    {
+      "id": "m4r-97",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is teaching a client who smokes about the mucociliary clearance system. Which of the following statements should the nurse include?",
+      "options": [
+        "“The cilia sweep mucus down into the alveoli to be absorbed.”",
+        "“Mucus traps germs and irritants in the airways.”",
+        "“This system is where oxygen passes into the blood.”",
+        "“Smoking damages the cilia, so mucus and germs build up.”",
+        "“The cilia move mucus up toward the throat to be coughed out or swallowed.”"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>The <b>mucociliary clearance system</b> protects the airways: <b>mucus traps</b> germs and irritants, and the <b>cilia sweep it up toward the throat</b>. <b>Smoking damages the cilia</b>, so mucus and germs stay.</p><p><b>Down into the alveoli</b> isn't right: the cilia sweep mucus up and out. <b>Oxygen passing into the blood</b> isn't either: that's diffusion, in the alveoli.</p><p><b>Takeaway:</b> Mucus traps, cilia sweep up; smoking stops the sweep.</p>"
+    },
+    {
+      "id": "m4r-98",
+      "type": "sata",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A client asks how breathing keeps going during sleep. Which of the following statements should the nurse include?",
+      "options": [
+        "“You have to think about each breath for it to happen.”",
+        "“The medulla oblongata, in the brainstem, sets the basic rhythm of breathing.”",
+        "“Sympathetic signals narrow your airways during exercise.”",
+        "“Sympathetic signals widen your airways during exercise or stress.”",
+        "“Parasympathetic signals narrow your airways at rest.”"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>Breathing is automatic: the <b>medulla oblongata</b> sets its basic rhythm, awake or asleep. The autonomic nervous system adjusts the airways: <b>sympathetic</b> signals <b>widen</b> them for exercise or stress, and <b>parasympathetic</b> signals <b>narrow</b> them at rest.</p><p><b>Thinking about each breath</b> isn't right: you can hold or speed your breathing on purpose, but the brainstem keeps it going without thought. <b>Sympathetic signals narrowing the airways</b> isn't either: that's the parasympathetic effect.</p><p><b>Takeaway:</b> Medulla: the rhythm. Sympathetic: airways wider. Parasympathetic: airways narrower.</p>"
+    },
+    {
+      "id": "m4l-85",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nursing student asks where white blood cells come from. Which of the following statements should the nurse include?",
+      "options": [
+        "“T cells mature in the spleen, then move to the lymph nodes.”",
+        "“They all start as stem cells in the red bone marrow.”",
+        "“B cells mature in the bone marrow.”",
+        "“Neutrophils are made in the lymph nodes during an infection.”",
+        "“T cells finish maturing in the thymus.”",
+        "“Monocytes become macrophages once they leave the blood for the tissues.”"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>Every white blood cell starts as a <b>stem cell in the red bone marrow</b>. <b>B cells</b> mature there too, <b>T cells</b> finish maturing in the <b>thymus</b>, and <b>monocytes</b> become <b>macrophages</b> in the tissues.</p><p><b>The spleen</b> isn't where T cells mature: it filters the blood and holds lymphocytes. <b>The lymph nodes</b> don't make neutrophils: they filter lymph, and the bone marrow makes neutrophils.</p><p><b>Takeaway:</b> Bone marrow: every white cell's start, and B cells' maturing. Thymus: T cells. Tissues: monocytes become macrophages.</p>"
+    },
+    {
+      "id": "m4l-86",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is explaining how the immune system first recognizes a new germ. Which of the following statements about dendritic cells should the nurse include?",
+      "options": [
+        "They make antibodies that fit the germ's surface proteins",
+        "They engulf germs in the skin and other tissues",
+        "They release histamine to widen the nearby vessels",
+        "They carry pieces of the germ to the lymph nodes",
+        "They show the pieces to T cells to start the specific response"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Dendritic cells</b> <b>engulf germs</b> where they enter, <b>carry pieces of them to the lymph nodes</b>, and <b>show the pieces to T cells</b>, starting the specific (adaptive) response.</p><p><b>Making antibodies</b> isn't right: plasma cells, which come from B cells, do that. <b>Releasing histamine</b> isn't either: mast cells and basophils do that.</p><p><b>Takeaway:</b> Dendritic cells: engulf, carry, and show, the link between the first defenses and the T cells.</p>"
+    },
+    {
+      "id": "m4l-87",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client sprained an ankle 2 hours ago. Which of the following findings of acute inflammation should the nurse expect?",
+      "options": [
+        "Redness",
+        "A fever with shaking chills",
+        "Swelling",
+        "Less movement of the ankle",
+        "Scar tissue forming in the ligament",
+        "Warmth",
+        "Pain"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "rationale": "<p><b>Acute inflammation</b>, in the first minutes to days after an injury, brings <b>redness</b> and <b>warmth</b> (more blood flow), <b>swelling</b> (leaky vessels), <b>pain</b>, and <b>less movement</b> (loss of function).</p><p><b>A fever with shaking chills</b> isn't right: a sprain stays local, and chills suggest a body-wide infection. <b>Scar tissue</b> isn't either: it forms later, as the tissue repairs or when inflammation becomes chronic.</p><p><b>Takeaway:</b> Acute inflammation: red, warm, swollen, painful, and harder to move.</p>"
+    },
+    {
+      "id": "m4l-88",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's laboratory results for signs of inflammation. Which of the following tests should the nurse check?",
+      "options": [
+        "Hemoglobin A1C",
+        "C-reactive protein (CRP)",
+        "Procalcitonin",
+        "Thyroid-stimulating hormone (TSH)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "Interleukin-6 (IL-6)"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>Inflammatory markers include <b>C-reactive protein</b>, the <b>sedimentation rate</b> (a faster fall suggests inflammation), <b>procalcitonin</b>, and the <b>interleukins</b> (IL-6, IL-8).</p><p><b>The A1C</b> isn't right: it measures the average blood glucose. <b>TSH</b> isn't either: it's the pituitary's push on the thyroid.</p><p><b>Takeaway:</b> Inflammation markers: CRP, ESR, procalcitonin, IL-6, IL-8. They show that inflammation is there, not where.</p>"
+    },
+    {
+      "id": "m4l-89",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client's knee has been red, warm, and swollen since an injury yesterday: the acute stage of inflammation. Which of the following substances should the nurse expect the body to release in this stage?",
+      "options": [
+        "Surfactant",
+        "Cytokines",
+        "Chemokines",
+        "Insulin",
+        "Tumor necrosis factor",
+        "Interleukins"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>In the <b>acute stage</b>, cells release <b>cytokines</b>, <b>chemokines</b> (which call neutrophils and macrophages to the site), <b>interleukins</b>, <b>tumor necrosis factor</b>, interferons, and acute phase proteins.</p><p><b>Surfactant</b> isn't right: it keeps the alveoli open. <b>Insulin</b> isn't either: it's a pancreatic hormone that lowers the glucose.</p><p><b>Takeaway:</b> Acute inflammation: cytokines, chemokines, interleukins, interferons, TNF, and acute phase proteins bring in the neutrophils and macrophages.</p>"
+    },
+    {
+      "id": "m4l-90",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Bacteria have entered a cut on a client's hand. Which of the following cells should the nurse expect to engulf them?",
+      "options": [
+        "Mast cells",
+        "Neutrophils",
+        "Dendritic cells",
+        "B cells",
+        "Macrophages"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p><b>Neutrophils</b> (the first to arrive), <b>macrophages</b> (grown-up monocytes), and <b>dendritic cells</b> are phagocytes: they engulf germs.</p><p><b>Mast cells</b> aren't right: they release histamine. <b>B cells</b> aren't either: they become plasma cells that make antibodies.</p><p><b>Takeaway:</b> Phagocytes: neutrophils, macrophages, and dendritic cells.</p>"
+    },
+    {
+      "id": "m4l-91",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client is having an allergic reaction with hives. Which of the following cells are most likely releasing the histamine?",
+      "options": [
+        "Neutrophils",
+        "Basophils",
+        "Plasma cells",
+        "Mast cells",
+        "Cytotoxic T cells"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "rationale": "<p><b>Mast cells</b> in the tissues and <b>basophils</b> in the blood release <b>histamine</b>, which widens vessels and makes them leaky: hives, itching, and swelling.</p><p><b>Plasma cells</b> aren't right: they make the antibodies (IgE) that set off the mast cells, but they don't release histamine. <b>Neutrophils</b> engulf bacteria, and <b>cytotoxic T cells</b> kill infected cells.</p><p><b>Takeaway:</b> Histamine comes from mast cells and basophils.</p>"
+    },
+    {
+      "id": "m4l-92",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks what antibodies are and how they work. Which of the following statements should the nurse include?",
+      "options": [
+        "“They're made in the thymus, then stored in the lymph nodes.”",
+        "“They attach to germs and mark them for other cells to engulf.”",
+        "“They enter virus-infected cells and kill them from the inside.”",
+        "“They're proteins made by plasma cells, which come from B cells.”",
+        "“IgG and IgM are two kinds of antibodies in the blood.”"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>Antibodies are <b>proteins made by plasma cells</b>, the working form of B cells. They <b>attach to germs and mark them</b> for phagocytes to engulf. <b>IgG</b> and <b>IgM</b> are two kinds in the plasma.</p><p><b>The thymus</b> isn't right: it's where T cells mature. <b>Killing infected cells</b> isn't either: cytotoxic T cells do that, since antibodies can't get inside cells.</p><p><b>Takeaway:</b> Antibodies: proteins from plasma cells (B cells) that mark germs. Infected cells: cytotoxic T cells.</p>"
+    },
+    {
+      "id": "m4l-93",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client is having the spleen removed after an injury. Which of the following should the nurse include in the teaching?",
+      "options": [
+        "“The spleen filters germs and old red blood cells from the blood.”",
+        "“Your T cells will stop maturing without the spleen.”",
+        "“Without a spleen, your risk of a serious infection is higher.”",
+        "“Your thymus will take over the spleen's filtering.”",
+        "“Keep your vaccines up to date, such as the pneumococcal vaccine.”"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>The <b>spleen filters germs and old red blood cells</b> from the blood and holds immune cells, so without it the <b>risk of a serious infection is higher</b>, and <b>vaccines</b>, such as the pneumococcal vaccine, matter more.</p><p><b>T cells</b> aren't right: they mature in the thymus, not the spleen. <b>The thymus taking over</b> isn't either: it trains T cells and doesn't filter the blood.</p><p><b>Takeaway:</b> No spleen: less filtering of the blood, so a higher infection risk and up-to-date vaccines.</p>"
+    },
+    {
+      "id": "m4l-94",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A 66-year-old client's prostate-specific antigen (PSA) level is high. Which of the following conditions should the nurse recognize as possible causes?",
+      "options": [
+        "Testicular cancer",
+        "Benign prostatic hyperplasia",
+        "A kidney stone",
+        "Prostatitis",
+        "Prostate cancer"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>PSA is made by normal and cancerous prostate cells, so <b>prostate cancer</b> and the benign conditions <b>benign prostatic hyperplasia</b> (an enlarged prostate) and <b>prostatitis</b> can all raise it.</p><p><b>Testicular cancer</b> isn't right: PSA comes from the prostate, and testicular cancer has its own markers. <b>A kidney stone</b> isn't either: it doesn't involve the prostate.</p><p><b>Takeaway:</b> A high PSA needs follow-up, but it doesn't mean cancer by itself.</p>"
+    },
+    {
+      "id": "m4l-95",
+      "type": "sata",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is teaching a nursing student about T cells. Which of the following statements should the nurse include?",
+      "options": [
+        "“Regulatory T cells keep the response from attacking the body.”",
+        "“Helper (CD4+) T cells make the antibodies that coat germs.”",
+        "“Cytotoxic (CD8+) T cells kill infected and abnormal cells.”",
+        "“Memory T cells respond faster when the same germ comes back.”",
+        "“Cytotoxic (CD8+) T cells release histamine during allergic reactions.”",
+        "“Helper (CD4+) T cells activate B cells and other immune cells.”"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p><b>Helper (CD4+)</b> T cells coordinate the response and activate B cells, <b>cytotoxic (CD8+)</b> T cells kill infected and abnormal cells, <b>regulatory</b> T cells calm the response, and <b>memory</b> T cells respond faster the next time.</p><p><b>Making antibodies</b> isn't right: plasma cells, from B cells, do that. <b>Releasing histamine</b> isn't either: mast cells and basophils do that.</p><p><b>Takeaway:</b> Helper: coordinate. Cytotoxic: kill. Regulatory: calm. Memory: remember.</p>"
     }
   ]
 }

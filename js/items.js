@@ -1149,6 +1149,23 @@ export function validateSet(set) {
       }
     }
   }
+  // Type shares (SPEC 11.3): { type: its share of every exam }, like { "sata": 0.075 }. Multiple choice has its own
+  // rule (65% to 80%), so it can't be held.
+  if (set.typeShares != null) {
+    const shares = set.typeShares;
+    const types = new Set(set.questions.map(q => q?.type).filter(isText));
+    if (typeof shares !== 'object' || Array.isArray(shares)) {
+      add('"typeShares" must give question types their share of each exam, like { "sata": 0.075 }.');
+    } else {
+      for (const [type, share] of Object.entries(shares)) {
+        if (type === 'mc') add('"typeShares" can\'t hold "mc": multiple choice keeps its own rule, 65% to 80% of each exam.');
+        else if (!types.has(type)) add(`"typeShares" names "${type}", but no question has that type. Check the spelling.`);
+        if (!(typeof share === 'number' && share > 0 && share < 1)) add(`"typeShares": the share for "${type}" must be a number above 0 and below 1, like 0.075, with no quotes.`);
+      }
+      const sum = Object.values(shares).reduce((a, b) => a + (typeof b === 'number' ? b : 0), 0);
+      if (sum >= 1) add('"typeShares" must add up to less than 1, to leave room for the other question types.');
+    }
+  }
   return problems;
 }
 

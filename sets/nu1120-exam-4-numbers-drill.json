@@ -4,7 +4,7 @@
   "description": "Exam 4 drill, matched to the instructor's study guide: the numbers to know, from the diabetes, cholesterol, and metabolic syndrome cutoffs to the blood gas ranges, capillary refill, the QRS, the lungs' lobes and segments, and more. Most questions show a new number on every attempt.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 55.5,
+  "timeMinutes": 150,
   "defaultCount": 20,
   "questions": [
     {
@@ -1028,6 +1028,1400 @@
         }
       ],
       "rationale": "<p>Cortisol follows a <b>daily rhythm</b>: highest in the <b>early morning</b>, lowest around <b>midnight</b>. A morning blood test (about <b>8 a.m.</b>) catches the peak.</p><p><b>The evening</b> isn't the right answer, even though people often feel most stressed then; cortisol is actually falling at that time.</p><p><b>Takeaway:</b> Cortisol: high in the morning, low at midnight.</p>"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A client's fasting plasma glucose is {g} mg/dL, and the client's A1C is {a}%. How should the nurse interpret these results?",
+      "options": [
+        "The A1C is in the diabetes range; the fasting glucose is in the prediabetes range",
+        "Both results are in the diabetes range",
+        "Both results are in the prediabetes range",
+        "The fasting glucose is in the diabetes range; the A1C is in the prediabetes range"
+      ],
+      "answer": 0,
+      "rationale": "<p>An A1C of {a}% is <b>6.5% or higher: diabetes</b>. A fasting glucose of {g} mg/dL is <b>100 to 125: prediabetes</b>. Each test is read against its own cutoffs.</p><p><b>Both in the diabetes range</b>: the fasting line for diabetes is 126, and {g} is under it. <b>Both in the prediabetes range</b>: the A1C's prediabetes range stops at 6.4%. <b>The fasting glucose in the diabetes range</b> swaps the two results.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "vars": {
+        "g": [
+          104,
+          111,
+          117,
+          122,
+          125
+        ],
+        "a": [
+          6.5,
+          6.7,
+          6.9,
+          7.1
+        ]
+      },
+      "id": "nd-38"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A client's 2-hour glucose tolerance result is {g} mg/dL, and the fasting glucose was {f} mg/dL. How should the nurse interpret these results?",
+      "options": [
+        "The 2-hour result is in the prediabetes range; the fasting result is normal",
+        "The 2-hour result is in the diabetes range; the fasting result is normal",
+        "Both results are in the prediabetes range",
+        "Both results are normal"
+      ],
+      "answer": 0,
+      "rationale": "<p>Two hours after the glucose drink, <b>140 to 199</b> is prediabetes, so {g} mg/dL is prediabetes. A fasting glucose of {f} is <b>under 100: normal</b>.</p><p><b>Both normal</b>: the 2-hour normal line is under 140. <b>The 2-hour result in the diabetes range</b>: its diabetes line is 200, not the fasting 126. <b>Both prediabetes</b>: the fasting result is under 100.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "vars": {
+        "g": [
+          141,
+          156,
+          168,
+          183,
+          197
+        ],
+        "f": [
+          88,
+          92,
+          95,
+          98
+        ]
+      },
+      "id": "nd-39"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A client's fasting glucose was {g1} mg/dL last month and is {g2} mg/dL today. Which change should the nurse recognize?",
+      "options": [
+        "It moved from the normal range into the prediabetes range",
+        "It stayed in the diabetes range",
+        "It moved from the prediabetes range into the diabetes range",
+        "It stayed in the prediabetes range"
+      ],
+      "answer": 2,
+      "rationale": "<p>A fasting glucose of {g1} mg/dL is <b>prediabetes</b> (100 to 125); {g2} mg/dL is <b>126 or higher: diabetes</b>. The client crossed the line.</p><p><b>Stayed in the prediabetes range</b>: the range stops at 125. <b>From normal into prediabetes</b>: normal is under 100, and {g1} isn't. <b>Stayed in the diabetes range</b>: {g1} was under 126.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "vars": {
+        "g1": [
+          108,
+          114,
+          119,
+          123
+        ],
+        "g2": [
+          126,
+          129,
+          133,
+          138
+        ]
+      },
+      "id": "nd-40"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' laboratory results. Which result should the nurse recognize as meeting a criterion for diabetes?",
+      "options": [
+        "Random glucose 212 mg/dL, with constant thirst",
+        "Fasting glucose 125 mg/dL, checked twice",
+        "A1C 6.4%, with frequent urination",
+        "2-hour glucose 198 mg/dL, with blurred vision"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>random glucose of 200 or higher with symptoms</b> (thirst, frequent urination, weight loss) is one of the criteria for diabetes.</p><p>The other three sit one step below their diabetes lines: <b>fasting 125</b> (the line is 126), <b>A1C 6.4%</b> (6.5%), and <b>2-hour 198</b> (200). Each is prediabetes, and symptoms don't change that: only the random test counts symptoms.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-41"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' laboratory results. Which result should the nurse recognize as meeting a criterion for diabetes?",
+      "options": [
+        "A fasting glucose of 124 mg/dL",
+        "An A1C of 6.5%",
+        "A 2-hour glucose of 196 mg/dL",
+        "A random glucose of 230 mg/dL with no symptoms"
+      ],
+      "answer": 1,
+      "rationale": "<p>An <b>A1C of 6.5%</b> is exactly the diabetes line, and the line counts: 6.5% or higher.</p><p><b>Fasting 124</b> and <b>2-hour 196</b> are prediabetes. A <b>random glucose of 230 without symptoms</b> isn't a criterion by itself: the random test counts with classic symptoms.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-42"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A client who just ate a large holiday meal has a random glucose of {g} mg/dL and no thirst, frequent urination, or weight loss. How should the nurse interpret this result?",
+      "options": [
+        "It meets the criteria for diabetes, since it's over 200",
+        "It's in the prediabetes range for a random test",
+        "It's normal for a sample taken after a meal",
+        "It doesn't meet the criteria by itself; it needs a confirming test"
+      ],
+      "answer": 3,
+      "rationale": "<p>A random glucose of 200 or higher meets the criteria <b>only with classic symptoms</b>. Without them, {g} mg/dL right after a big meal needs a confirming test (fasting glucose, A1C, or a 2-hour test).</p><p><b>It meets the criteria</b> leaves out the symptoms the random test needs. <b>Prediabetes for a random test</b>: the random test has no prediabetes range. <b>Normal after a meal</b>: over 200 is high at any time.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "vars": {
+        "g": [
+          205,
+          214,
+          226,
+          238
+        ]
+      },
+      "id": "nd-43"
+    },
+    {
+      "type": "sata",
+      "topic": "Diabetes numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing clients' results. Which results should the nurse recognize as in the prediabetes range? Select all that apply.",
+      "options": [
+        "A fasting glucose of 100 mg/dL",
+        "A fasting glucose of 99 mg/dL",
+        "An A1C of 5.7%",
+        "An A1C of 6.5%",
+        "A 2-hour glucose of 140 mg/dL",
+        "A 2-hour glucose of 200 mg/dL"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>Prediabetes starts exactly at <b>fasting 100</b>, <b>A1C 5.7%</b>, and <b>2-hour 140</b>.</p><p><b>Fasting 99</b> is still normal. <b>A1C 6.5%</b> and <b>2-hour 200</b> are the diabetes lines.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-44"
+    },
+    {
+      "type": "sata",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A nurse is reviewing clients' results. Which results should the nurse report as meeting the criteria for diabetes? Select all that apply.",
+      "options": [
+        "A fasting glucose of 126 mg/dL",
+        "An A1C of 6.4% on two tests",
+        "A 2-hour glucose of 200 mg/dL",
+        "A random glucose of 210 mg/dL with thirst",
+        "A fasting glucose of 125 mg/dL",
+        "A random glucose of 240 mg/dL with no symptoms"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "<p><b>Fasting 126</b> and <b>2-hour 200</b> are exactly on the diabetes lines, which count. A <b>random 210 with thirst</b>, a classic symptom, meets the random criterion.</p><p><b>A1C 6.4%</b> and <b>fasting 125</b> are the top of the prediabetes ranges. <b>Random 240 with no symptoms</b> needs a confirming test.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-45"
+    },
+    {
+      "type": "matrix",
+      "topic": "Diabetes numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's results over time. For each result, specify how the nurse should interpret it.",
+      "rowHeader": "Result",
+      "columns": [
+        "Normal",
+        "Prediabetes",
+        "Diabetes"
+      ],
+      "rows": [
+        "Fasting glucose 99 mg/dL",
+        "A1C 6.5%",
+        "2-hour glucose 139 mg/dL",
+        "Fasting glucose 100 mg/dL",
+        "A1C 5.6%"
+      ],
+      "answer": [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Fasting 99</b>: normal (under 100). <b>A1C 6.5%</b>: diabetes (6.5% or higher). <b>2-hour 139</b>: normal (under 140). <b>Fasting 100</b>: prediabetes (100 to 125). <b>A1C 5.6%</b>: normal (under 5.7%).</p><p>The rows most often missed sit right on a line: 100 and 6.5% are already in the next range, while 99, 139, and 5.6% are not.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-46"
+    },
+    {
+      "type": "matrix",
+      "topic": "Diabetes numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing several clients' results. For each result, specify how the nurse should interpret it.",
+      "rowHeader": "Result",
+      "columns": [
+        "Normal",
+        "Prediabetes",
+        "Diabetes"
+      ],
+      "rows": [
+        "2-hour glucose 140 mg/dL",
+        "A1C 6.4%",
+        "Fasting glucose 126 mg/dL",
+        "A1C 5.7%",
+        "2-hour glucose 200 mg/dL"
+      ],
+      "answer": [
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "rationale": "<p><b>2-hour 140</b> and <b>A1C 5.7%</b>: the first values of prediabetes. <b>A1C 6.4%</b>: the last value of prediabetes. <b>Fasting 126</b> and <b>2-hour 200</b>: the diabetes lines, which count.</p><p>The 2-hour and fasting tests have different lines: 140 is high two hours after the drink but would be diabetes if fasting.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-47"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 2,
+      "stem": "A nurse is checking fingerstick glucose results for four clients. Which result should the nurse treat as hypoglycemia?",
+      "options": [
+        "69 mg/dL",
+        "70 mg/dL",
+        "74 mg/dL",
+        "99 mg/dL"
+      ],
+      "answer": 0,
+      "rationale": "<p>Hypoglycemia is a glucose <b>under 70 mg/dL</b>: 69 is below the line.</p><p><b>70</b> is the bottom of the normal range, not below it. <b>74</b> and <b>99</b> are normal.</p><p><b>Takeaway:</b> Under 70 mg/dL is hypoglycemia: treat it quickly.</p>",
+      "id": "nd-48"
+    },
+    {
+      "type": "sata",
+      "topic": "Diabetes numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's history. Which findings should the nurse identify as risk factors for diabetes? Select all that apply.",
+      "options": [
+        "Diabetes during a past pregnancy",
+        "A BMI of 27",
+        "An A1C of 5.9%",
+        "A BMI of 24",
+        "An A1C of 5.5%",
+        "A total cholesterol of 212 mg/dL"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>The instructor's risk factors for diabetes: a history of <b>gestational diabetes</b>, an <b>A1C over 5.7%</b>, and a <b>BMI over 25</b>.</p><p><b>BMI 24</b> and <b>A1C 5.5%</b> are under those lines. A <b>total cholesterol of 212</b> is a risk factor for cardiovascular disease, not one of the guide's risk factors for diabetes.</p><p><b>Takeaway:</b> Diabetes risk factors: gestational diabetes, A1C over 5.7%, BMI over 25.</p>",
+      "id": "nd-49"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A woman whose A1C is {a}% and BMI is {b} had diabetes during a past pregnancy. How many risk factors for diabetes should the nurse identify?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 3,
+      "rationale": "<p>All three: a history of <b>gestational diabetes</b>, an <b>A1C over 5.7%</b> ({a}%), and a <b>BMI over 25</b> ({b}).</p><p><b>2</b> leaves out the past pregnancy, which counts as gestational diabetes. <b>1</b> and <b>0</b> treat her A1C or BMI as normal, though both are past the guide's lines.</p><p><b>Takeaway:</b> Diabetes risk factors: gestational diabetes, A1C over 5.7%, BMI over 25.</p>",
+      "vars": {
+        "a": [
+          5.8,
+          5.9,
+          6.1,
+          6.3
+        ],
+        "b": [
+          26,
+          28,
+          31,
+          34
+        ]
+      },
+      "id": "nd-50"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Diabetes numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing the criteria for diabetes. Complete the following sentence.",
+      "text": "A fasting glucose of {{0}} or higher, an A1C of {{1}} or higher, or a 2-hour glucose of {{2}} or higher meets the criteria for diabetes.",
+      "blanks": [
+        {
+          "options": [
+            "100 mg/dL",
+            "126 mg/dL",
+            "140 mg/dL"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "5.7%",
+            "6.5%",
+            "7.0%"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "140 mg/dL",
+            "180 mg/dL",
+            "200 mg/dL"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p>Diabetes: <b>fasting 126</b>, <b>A1C 6.5%</b>, or <b>2-hour 200</b> or higher (or a random 200 or higher with symptoms).</p><p><b>100</b>, <b>5.7%</b>, and <b>140</b> are where prediabetes starts.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-51"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Diabetes numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing prediabetes. Complete the following sentence.",
+      "text": "Prediabetes is a fasting glucose of {{0}}, or an A1C of {{1}}.",
+      "blanks": [
+        {
+          "options": [
+            "100 to 125 mg/dL",
+            "70 to 99 mg/dL",
+            "126 to 140 mg/dL"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "5.7% to 6.4%",
+            "4.0% to 5.6%",
+            "6.5% to 7.0%"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>Prediabetes: <b>fasting 100 to 125</b>, <b>A1C 5.7% to 6.4%</b> (and a 2-hour glucose of 140 to 199).</p><p><b>70 to 99</b> and <b>4.0% to 5.6%</b> are normal; <b>126 and up</b> and <b>6.5% and up</b> are diabetes.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "id": "nd-52"
+    },
+    {
+      "type": "mc",
+      "topic": "Diabetes numbers",
+      "level": 3,
+      "stem": "A client's A1C was {a1}% six months ago and is {a2}% today. Which change should the nurse recognize?",
+      "options": [
+        "It moved from the prediabetes range into the diabetes range",
+        "It stayed in the prediabetes range",
+        "It moved from the normal range into the prediabetes range",
+        "It stayed in the normal range"
+      ],
+      "answer": 2,
+      "rationale": "<p>An A1C of {a1}% is <b>normal</b> (under 5.7%); {a2}% is <b>prediabetes</b> (5.7% to 6.4%).</p><p><b>Stayed normal</b>: normal stops below 5.7%. <b>Into the diabetes range</b>: that starts at 6.5%. <b>Stayed prediabetes</b>: {a1}% was still normal.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126 or higher diabetes. A1C: under 5.7% normal, 5.7% to 6.4% prediabetes, 6.5% or higher diabetes. 2-hour: under 140, 140 to 199, 200 or higher.</p>",
+      "vars": {
+        "a1": [
+          5.2,
+          5.4,
+          5.5,
+          5.6
+        ],
+        "a2": [
+          5.7,
+          5.9,
+          6.1,
+          6.3
+        ]
+      },
+      "id": "nd-53"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A client's total cholesterol is {v} mg/dL. How should the nurse interpret this result?",
+      "options": [
+        "Too low, a sign of poor nutrition",
+        "Within the desired range",
+        "A risk factor for heart disease",
+        "Borderline, but not yet a risk factor"
+      ],
+      "answer": 1,
+      "rationale": "<p>The instructor's line is <b>over 200</b>: {v} mg/dL isn't over it, so it isn't a risk factor.</p><p><b>A risk factor</b>: the number sits right at the line, but the line says over (or under), and this value isn't past it. <b>Borderline</b>: the guide has no borderline zone; a value is past the line or it isn't. <b>Too low</b>: nothing here is low.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "vars": {
+        "v": [
+          199,
+          200
+        ]
+      },
+      "id": "nd-54"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A client's LDL is {v} mg/dL. How should the nurse interpret this result?",
+      "options": [
+        "Within the desired range",
+        "A risk factor for heart disease",
+        "Borderline, but not yet a risk factor",
+        "Too low, a sign of poor nutrition"
+      ],
+      "answer": 0,
+      "rationale": "<p>The line for LDL is <b>over 100</b>: {v} mg/dL isn't over it, so it isn't a risk factor.</p><p><b>A risk factor</b>: the number sits right at the line, but the line says over (or under), and this value isn't past it. <b>Borderline</b>: the guide has no borderline zone; a value is past the line or it isn't. <b>Too low</b>: nothing here is low.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "vars": {
+        "v": [
+          99,
+          100
+        ]
+      },
+      "id": "nd-55"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A man's HDL is {v} mg/dL. How should the nurse interpret this result?",
+      "options": [
+        "A risk factor for heart disease",
+        "Borderline, but not yet a risk factor",
+        "Too low, a sign of poor nutrition",
+        "Within the desired range"
+      ],
+      "answer": 3,
+      "rationale": "<p>For men, an HDL <b>under 40</b> is the risk factor: {v} mg/dL isn't under it.</p><p><b>A risk factor</b>: the number sits right at the line, but the line says over (or under), and this value isn't past it. <b>Borderline</b>: the guide has no borderline zone; a value is past the line or it isn't. <b>Too low</b>: nothing here is low.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "vars": {
+        "v": [
+          40,
+          41
+        ]
+      },
+      "id": "nd-56"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A woman's HDL is {v} mg/dL. How should the nurse interpret this result?",
+      "options": [
+        "Borderline, but not yet a risk factor",
+        "Too low, a sign of poor nutrition",
+        "Within the desired range",
+        "A risk factor for heart disease"
+      ],
+      "answer": 2,
+      "rationale": "<p>For women, an HDL <b>under 50</b> is the risk factor: {v} mg/dL isn't under it.</p><p><b>A risk factor</b>: the number sits right at the line, but the line says over (or under), and this value isn't past it. <b>Borderline</b>: the guide has no borderline zone; a value is past the line or it isn't. <b>Too low</b>: nothing here is low.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "vars": {
+        "v": [
+          50,
+          51
+        ]
+      },
+      "id": "nd-57"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A client's body mass index (BMI) is {v}. How should the nurse interpret it for heart disease risk?",
+      "options": [
+        "Too low, a sign of poor nutrition",
+        "Within the desired range",
+        "A risk factor for heart disease",
+        "Borderline, but not yet a risk factor"
+      ],
+      "answer": 1,
+      "rationale": "<p>The guide's risk factor is a BMI <b>over 25</b>: {v} isn't over it.</p><p><b>A risk factor</b>: the number sits right at the line, but the line says over (or under), and this value isn't past it. <b>Borderline</b>: the guide has no borderline zone; a value is past the line or it isn't. <b>Too low</b>: nothing here is low.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "vars": {
+        "v": [
+          24.8,
+          25
+        ]
+      },
+      "id": "nd-58"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A 52-year-old man's results: total cholesterol 196 mg/dL, LDL 108 mg/dL, HDL 43 mg/dL, and BMI 24. He doesn't smoke. Which result should the nurse identify as a risk factor for cardiovascular disease?",
+      "options": [
+        "The LDL",
+        "The total cholesterol",
+        "The HDL",
+        "The BMI"
+      ],
+      "answer": 0,
+      "rationale": "<p>An <b>LDL over 100</b> is a risk factor: 108 is over it.</p><p><b>Total cholesterol 196</b> is under 200. <b>HDL 43</b> is above the men's line of 40. <b>BMI 24</b> is under 25.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "id": "nd-59"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A 47-year-old woman's results: total cholesterol 188 mg/dL, LDL 94 mg/dL, HDL 47 mg/dL, and BMI 23. Which result should the nurse identify as a risk factor for cardiovascular disease?",
+      "options": [
+        "The LDL",
+        "The HDL",
+        "The BMI",
+        "The total cholesterol"
+      ],
+      "answer": 1,
+      "rationale": "<p>For women, an <b>HDL under 50</b> is a risk factor: 47 is under it.</p><p><b>Total cholesterol 188</b> is under 200, <b>LDL 94</b> under 100, and <b>BMI 23</b> under 25. An HDL of 47 would be fine for a man (line 40), but not for a woman.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "id": "nd-60"
+    },
+    {
+      "type": "sata",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A 58-year-old woman smokes. Her total cholesterol is 214 mg/dL, LDL 96 mg/dL, HDL 46 mg/dL, BMI 27, and blood pressure 118/76 mm Hg. Which findings should the nurse identify as risk factors for cardiovascular disease? Select all that apply.",
+      "options": [
+        "Total cholesterol 214 mg/dL",
+        "LDL 96 mg/dL",
+        "HDL 46 mg/dL",
+        "BMI 27",
+        "Smoking",
+        "Blood pressure 118/76 mm Hg"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>Her risk factors: <b>total cholesterol over 200</b>, an <b>HDL under 50</b> (the women's line), a <b>BMI over 25</b>, and <b>smoking</b> (age is one too).</p><p><b>LDL 96</b> is under 100. <b>118/76</b> isn't high blood pressure.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "id": "nd-61"
+    },
+    {
+      "type": "sata",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A 60-year-old man doesn't smoke. His total cholesterol is 203 mg/dL, LDL 112 mg/dL, HDL 46 mg/dL, BMI 25, and he has diabetes. Which findings should the nurse identify as risk factors for cardiovascular disease? Select all that apply.",
+      "options": [
+        "Total cholesterol 203 mg/dL",
+        "LDL 112 mg/dL",
+        "HDL 46 mg/dL",
+        "BMI 25",
+        "Diabetes mellitus",
+        "His age"
+      ],
+      "answer": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "rationale": "<p>His risk factors: <b>total cholesterol over 200</b>, <b>LDL over 100</b>, <b>diabetes</b>, and <b>age</b>.</p><p><b>HDL 46</b> is above the men's line of 40. <b>BMI 25</b> is on the line, not over it.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "id": "nd-62"
+    },
+    {
+      "type": "matrix",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A nurse is reviewing results from several clients. For each finding, specify whether it's a risk factor for cardiovascular disease.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Risk factor",
+        "Not a risk factor"
+      ],
+      "rows": [
+        "An HDL of 45 mg/dL in a man",
+        "An HDL of 45 mg/dL in a woman",
+        "An LDL of 100 mg/dL",
+        "A total cholesterol of 205 mg/dL",
+        "A BMI of 25.5"
+      ],
+      "answer": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "rationale": "<p><b>HDL 45 in a man</b>: not a risk factor (line 40). <b>HDL 45 in a woman</b>: a risk factor (line 50). <b>LDL 100</b>: on the line, not over it. <b>Total cholesterol 205</b> and <b>BMI 25.5</b>: over their lines.</p><p>The same HDL can be fine in one client and a risk in another: check the client's sex first.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or under 50 (women), BMI over 25. A value exactly on the line isn't over it.</p>",
+      "id": "nd-63"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A man's waist is {w} in., his triglycerides are {tg} mg/dL, his HDL is {hdl} mg/dL, his blood pressure is {sbp}/{dbp} mm Hg, and his fasting glucose is {fg} mg/dL. How many metabolic syndrome criteria should the nurse identify?",
+      "options": [
+        "4, so he has metabolic syndrome",
+        "1, so he doesn't have metabolic syndrome",
+        "3, so he has metabolic syndrome",
+        "2, so he doesn't have metabolic syndrome"
+      ],
+      "answer": 2,
+      "rationale": "<p>He meets three: triglycerides of {tg} (150 or more), an HDL of {hdl} (under 40 for men), and a blood pressure of {sbp}/{dbp} (130/85 or more). His waist of {w} in. is under 40, and his glucose of {fg} is under 100. Three criteria means metabolic syndrome.</p><p><b>2</b> leaves out one of the three he meets. <b>4</b> counts his waist or glucose, which are under the lines. <b>1</b> counts only one value past its line.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 of 5: waist 40 in. or more (men) or 35 (women), triglycerides 150 or more, HDL under 40 (men) or 50 (women), blood pressure 130/85 or more, fasting glucose 100 or more.</p>",
+      "vars": {
+        "w": [
+          37,
+          38,
+          39
+        ],
+        "tg": [
+          152,
+          168,
+          185
+        ],
+        "hdl": [
+          34,
+          37,
+          39
+        ],
+        "sbp": [
+          132,
+          136,
+          140
+        ],
+        "dbp": [
+          86,
+          88,
+          90
+        ],
+        "fg": [
+          88,
+          93,
+          97
+        ]
+      },
+      "id": "nd-64"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A woman's waist is {w} in., her triglycerides are {tg} mg/dL, her HDL is {hdl} mg/dL, her blood pressure is {sbp}/{dbp} mm Hg, and her fasting glucose is {fg} mg/dL. How many metabolic syndrome criteria should the nurse identify?",
+      "options": [
+        "1, so she doesn't have metabolic syndrome",
+        "2, so she doesn't have metabolic syndrome",
+        "3, so she has metabolic syndrome",
+        "4, so she has metabolic syndrome"
+      ],
+      "answer": 2,
+      "rationale": "<p>She meets three: a waist of {w} in. (35 or more for women), an HDL of {hdl} (under 50 for women), and a fasting glucose of {fg} (100 or more). Her triglycerides are under 150 and her blood pressure under 130/85.</p><p><b>2</b> usually comes from using the men's lines (waist 40, HDL 40). <b>4</b> counts her triglycerides or blood pressure, which are under the lines. <b>1</b> misses two of her criteria.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 of 5, with different waist and HDL lines for women (35 in., 50) and men (40 in., 40).</p>",
+      "vars": {
+        "w": [
+          35,
+          36,
+          38
+        ],
+        "tg": [
+          118,
+          131,
+          146
+        ],
+        "hdl": [
+          44,
+          46,
+          49
+        ],
+        "sbp": [
+          118,
+          122,
+          126
+        ],
+        "dbp": [
+          76,
+          80,
+          82
+        ],
+        "fg": [
+          100,
+          104,
+          109
+        ]
+      },
+      "id": "nd-65"
+    },
+    {
+      "type": "matrix",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A nurse is assessing a woman for metabolic syndrome. For each finding, specify whether it meets the criterion.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Meets the criterion",
+        "Doesn't meet it"
+      ],
+      "rows": [
+        "Waist 36 in.",
+        "Triglycerides 140 mg/dL",
+        "HDL 52 mg/dL",
+        "Blood pressure 132/86 mm Hg",
+        "Fasting glucose 104 mg/dL"
+      ],
+      "answer": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "rationale": "<p><b>Waist 36 in.</b>: meets it (35 or more for women). <b>Triglycerides 140</b>: under 150. <b>HDL 52</b>: not under 50. <b>132/86</b>: 130/85 or more. <b>Fasting glucose 104</b>: 100 or more. She meets three, so she has metabolic syndrome.</p><p>The women's lines are lower for the waist (35 in.) and higher for the HDL (50) than the men's.</p><p><b>Takeaway:</b> Metabolic syndrome needs 3 of the 5 criteria.</p>",
+      "id": "nd-66"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 1,
+      "stem": "A nurse is reviewing the criteria for metabolic syndrome. Complete the following sentence.",
+      "text": "The criteria include a waist of {{0}} or more in men, triglycerides of {{1}} or more, and a blood pressure of {{2}} or more.",
+      "blanks": [
+        {
+          "options": [
+            "35 in.",
+            "40 in.",
+            "45 in."
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "100 mg/dL",
+            "150 mg/dL",
+            "200 mg/dL"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "120/80 mm Hg",
+            "130/85 mm Hg",
+            "140/90 mm Hg"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>Metabolic syndrome: a waist of <b>40 in. or more in men</b> (35 in women), <b>triglycerides 150 or more</b>, <b>blood pressure 130/85 or more</b>, a low HDL, and a fasting glucose of 100 or more: 3 of the 5.</p><p><b>35 in.</b> is the women's waist line. <b>200</b> is the total cholesterol line. <b>140/90</b> is higher than the metabolic syndrome line.</p><p><b>Takeaway:</b> Waist 40/35, triglycerides 150, blood pressure 130/85, glucose 100, HDL under 40/50.</p>",
+      "id": "nd-67"
+    },
+    {
+      "type": "sata",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 2,
+      "stem": "A nurse is reviewing a woman's results. Which findings count toward metabolic syndrome? Select all that apply.",
+      "options": [
+        "Waist 35 in.",
+        "Triglycerides 150 mg/dL",
+        "HDL 50 mg/dL",
+        "Blood pressure 128/84 mm Hg",
+        "Fasting glucose 100 mg/dL",
+        "Total cholesterol 230 mg/dL"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "rationale": "<p><b>Waist 35 in.</b>, <b>triglycerides 150</b>, and <b>fasting glucose 100</b> are exactly on their lines, and these lines count (or more).</p><p><b>HDL 50</b> isn't under 50. <b>128/84</b> is under 130/85. <b>Total cholesterol</b> isn't a metabolic syndrome criterion.</p><p><b>Takeaway:</b> For metabolic syndrome, the waist, triglyceride, blood pressure, and glucose lines include the line itself.</p>",
+      "id": "nd-68"
+    },
+    {
+      "type": "mc",
+      "topic": "Cholesterol, weight, and metabolic syndrome",
+      "level": 3,
+      "stem": "A man meets two metabolic syndrome criteria: triglycerides of 172 mg/dL and a waist of 42 in. Which additional finding would mean he has metabolic syndrome?",
+      "options": [
+        "A fasting glucose of 102 mg/dL",
+        "An HDL of 43 mg/dL",
+        "A blood pressure of 128/82 mm Hg",
+        "A total cholesterol of 215 mg/dL"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>fasting glucose of 100 or more</b> is the third criterion: 102 completes the three.</p><p><b>HDL 43</b> isn't low for a man (line 40). <b>128/82</b> is under 130/85. <b>Total cholesterol</b> isn't one of the five criteria.</p><p><b>Takeaway:</b> Metabolic syndrome needs 3 of 5, and total cholesterol isn't one of them.</p>",
+      "id": "nd-69"
+    },
+    {
+      "type": "mc",
+      "topic": "Heart and blood numbers",
+      "level": 3,
+      "stem": "A nurse checks a client's toes. The left foot is cool and pale, its pulses are weak, and color returns in {s} seconds after pressing the nail. Which condition do these findings suggest?",
+      "options": [
+        "Venous insufficiency",
+        "Normal circulation in a cool room",
+        "A blood clot in a vein of the leg",
+        "Arterial insufficiency"
+      ],
+      "answer": 3,
+      "rationale": "<p>Capillary refill measures <b>blood flow to the tissues</b>. A refill of {s} seconds (normal is about 2, no more than 3), with a cool, pale foot and weak pulses, points to too little arterial blood reaching the foot: <b>arterial insufficiency</b>.</p><p><b>Venous insufficiency</b> brings swelling and brownish skin with a normal refill. <b>A cool room</b> doesn't explain weak pulses in one foot. <b>A clot in a leg vein</b> causes swelling, warmth, and pain, not a slow refill.</p><p><b>Takeaway:</b> Slow refill, cool, pale, weak pulses: arterial. Swelling, brownish skin, normal refill: venous.</p>",
+      "vars": {
+        "s": [
+          4,
+          5,
+          6
+        ]
+      },
+      "id": "nd-70"
+    },
+    {
+      "type": "mc",
+      "topic": "Heart and blood numbers",
+      "level": 3,
+      "stem": "A client's lower legs are swollen, with brownish skin near the ankles. The pedal pulses are strong, and color returns in 2 seconds after pressing the nails. Which condition do these findings suggest?",
+      "options": [
+        "Normal findings for an older adult",
+        "Reduced blood flow to the toes",
+        "Venous insufficiency",
+        "Arterial insufficiency"
+      ],
+      "answer": 2,
+      "rationale": "<p>Swelling and brownish skin with <b>strong pulses and a normal refill</b> (about 2 seconds) point to blood pooling in the veins: <b>venous insufficiency</b>. Arterial blood is still arriving.</p><p><b>Arterial insufficiency</b> would slow the refill and weaken the pulses. <b>Normal for an older adult</b>: swelling and skin changes need follow-up at any age. <b>Reduced blood flow to the toes</b>: a 2-second refill shows good flow.</p><p><b>Takeaway:</b> Capillary refill tests arterial flow: normal refill with swelling points to the veins.</p>",
+      "id": "nd-71"
+    },
+    {
+      "type": "mc",
+      "topic": "Heart and blood numbers",
+      "level": 2,
+      "stem": "A nurse is teaching a student about capillary refill. Which statement by the student is accurate?",
+      "options": [
+        "\"It shows how much oxygen is in the blood, and color should return at once.\"",
+        "\"It shows how well blood reaches the tissues, and color should return in about 2 seconds.\"",
+        "\"It shows how fast the heart beats, and color should return in about 10 seconds.\"",
+        "\"It shows how well the veins drain, and color should return in about 5 seconds.\""
+      ],
+      "answer": 1,
+      "rationale": "<p>Capillary refill measures <b>peripheral perfusion</b>, blood flow to the tissues: color should return in <b>about 2 seconds</b> (no more than 3).</p><p>It doesn't measure the <b>heart rate</b>, <b>venous drainage</b>, or <b>oxygen</b>, and 10 or 5 seconds would be slow.</p><p><b>Takeaway:</b> Capillary refill: perfusion, about 2 seconds, no more than 3.</p>",
+      "id": "nd-72"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Heart and blood numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing the heart. Complete the following sentence.",
+      "text": "The heart has {{0}} chambers and {{1}} valves.",
+      "blanks": [
+        {
+          "options": [
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2
+        },
+        {
+          "options": [
+            "2",
+            "4",
+            "6"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>The heart has <b>4 chambers</b> (two atria, two ventricles) and <b>4 valves</b> (tricuspid, pulmonic, mitral, aortic).</p><p><b>2 valves</b> counts only the valves between the atria and ventricles, leaving out the two semilunar valves.</p><p><b>Takeaway:</b> 4 chambers, 4 valves.</p>",
+      "id": "nd-73"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Heart and blood numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing the blood. Complete the following sentence.",
+      "text": "Red blood cells live about {{0}}, and platelets live about {{1}}.",
+      "blanks": [
+        {
+          "options": [
+            "120 days",
+            "30 days",
+            "1 year"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "7 to 10 days",
+            "1 to 2 days",
+            "120 days"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>Red blood cells live about <b>120 days</b>; platelets, about <b>7 to 10 days</b>.</p><p><b>120 days</b> for platelets mixes them up with red cells. <b>1 to 2 days</b> is closer to how long some white cells last.</p><p><b>Takeaway:</b> Red cells 120 days; platelets 7 to 10 days.</p>",
+      "id": "nd-74"
+    },
+    {
+      "type": "matrix",
+      "topic": "Heart and blood numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing the electrolytes in plasma. For each electrolyte, specify its charge.",
+      "rowHeader": "Electrolyte",
+      "columns": [
+        "Positive (cation)",
+        "Negative (anion)"
+      ],
+      "rows": [
+        "Sodium",
+        "Potassium",
+        "Calcium",
+        "Chloride",
+        "Bicarbonate",
+        "Phosphate"
+      ],
+      "answer": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "rationale": "<p>The instructor's list: <b>sodium, potassium, calcium, and magnesium</b> are positive; <b>chloride, bicarbonate, and phosphate</b> are negative.</p><p>Bicarbonate is the row most often missed: it's a base, but its charge is negative.</p><p><b>Takeaway:</b> Cations: Na⁺, K⁺, Ca²⁺, Mg²⁺. Anions: Cl⁻, HCO₃⁻, phosphate.</p>",
+      "id": "nd-75"
+    },
+    {
+      "type": "sata",
+      "topic": "Heart and blood numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing the electrolytes in plasma. Which electrolytes should the nurse identify as positively charged? Select all that apply.",
+      "options": [
+        "Sodium",
+        "Chloride",
+        "Potassium",
+        "Magnesium",
+        "Bicarbonate",
+        "Calcium"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p><b>Sodium, potassium, magnesium, and calcium</b> are positive ions (cations).</p><p><b>Chloride</b> and <b>bicarbonate</b> are negative ions (anions).</p><p><b>Takeaway:</b> Cations: Na⁺, K⁺, Ca²⁺, Mg²⁺. Anions: Cl⁻, HCO₃⁻, phosphate.</p>",
+      "id": "nd-76"
+    },
+    {
+      "type": "mc",
+      "topic": "Heart and blood numbers",
+      "level": 3,
+      "stem": "A client's capillary refill is about 1 second in the fingers but 4 seconds in the toes of the left foot only. Which finding should the nurse report?",
+      "options": [
+        "The slow refill in the left toes",
+        "The fast refill in the fingers",
+        "The difference between the hands and the feet",
+        "Nothing: both are within normal limits"
+      ],
+      "answer": 0,
+      "rationale": "<p>A refill of <b>4 seconds</b> is slow (normal is about 2, no more than 3), and in <b>one foot only</b> it suggests reduced arterial flow to that foot: report it.</p><p><b>The fast refill in the fingers</b> is normal. <b>The difference between hands and feet</b>: the problem is the one foot, not the comparison. <b>Nothing</b>: 4 seconds is past the limit.</p><p><b>Takeaway:</b> A slow refill in one limb needs follow-up: it points to that limb's arterial flow.</p>",
+      "id": "nd-77"
+    },
+    {
+      "type": "matrix",
+      "topic": "Lung and blood gas numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing the lungs. For each feature, specify the lung it describes.",
+      "rowHeader": "Feature",
+      "columns": [
+        "Right lung",
+        "Left lung"
+      ],
+      "rows": [
+        "Has 3 lobes",
+        "Has 2 lobes",
+        "Has 10 segments",
+        "Has 8 to 9 segments"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "rationale": "<p>The <b>right lung</b> has 3 lobes and 10 segments; the <b>left lung</b> has 2 lobes and 8 to 9 segments, leaving room for the heart.</p><p>Giving the left lung the larger numbers forgets the space the heart takes up.</p><p><b>Takeaway:</b> Right 3 and 10; left 2 and 8 to 9.</p>",
+      "id": "nd-78"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 2,
+      "stem": "A client's chest x-ray shows a pneumonia in the middle lobe. Which lung should the nurse focus on when listening to the client's breath sounds?",
+      "options": [
+        "The left lung",
+        "Both lungs equally",
+        "The lung on the side the client lies on",
+        "The right lung"
+      ],
+      "answer": 3,
+      "rationale": "<p>Only the <b>right lung</b> has a middle lobe: it has 3 lobes (upper, middle, lower), and the left has 2.</p><p><b>The left lung</b> has no middle lobe (its lingula is part of the upper lobe). <b>Both lungs</b> and <b>the side the client lies on</b> ignore where the middle lobe is.</p><p><b>Takeaway:</b> Right lung: 3 lobes, including the middle lobe.</p>",
+      "id": "nd-79"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 1,
+      "stem": "A nurse is listening to the breath sounds over each lobe of the lungs. How many lobes does the nurse listen over in all?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "rationale": "<p>The right lung has <b>3</b> lobes and the left <b>2</b>: <b>5</b> in all.</p><p><b>4</b> and <b>6</b> give the lungs equal lobes. <b>3</b> counts only the right lung.</p><p><b>Takeaway:</b> Right 3 + left 2 = 5 lobes.</p>",
+      "id": "nd-80"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' arterial blood gases. Which client's results are entirely within normal limits?",
+      "options": [
+        "pH 7.36, PaCO₂ 44 mm Hg, HCO₃⁻ 21 mEq/L, PaO₂ 96 mm Hg",
+        "pH 7.40, PaCO₂ 40 mm Hg, HCO₃⁻ 24 mEq/L, PaO₂ 78 mm Hg",
+        "pH 7.45, PaCO₂ 35 mm Hg, HCO₃⁻ 26 mEq/L, PaO₂ 80 mm Hg",
+        "pH 7.44, PaCO₂ 34 mm Hg, HCO₃⁻ 25 mEq/L, PaO₂ 90 mm Hg"
+      ],
+      "answer": 2,
+      "rationale": "<p>The results with <b>pH 7.45, PaCO₂ 35, HCO₃⁻ 26, and PaO₂ 80</b> are normal: every value sits on an edge of its range, and the edges are normal.</p><p>The others each have one value one step out: a <b>PaCO₂ of 34</b> (below 35), an <b>HCO₃⁻ of 21</b> (below 22), and a <b>PaO₂ of 78</b> (below 80).</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26, PaO₂ 80–100: the edges count as normal.</p>",
+      "id": "nd-81"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' arterial blood gases. Which client's results are entirely within normal limits?",
+      "options": [
+        "pH 7.39, PaCO₂ 38 mm Hg, HCO₃⁻ 27 mEq/L, PaO₂ 94 mm Hg",
+        "pH 7.34, PaCO₂ 42 mm Hg, HCO₃⁻ 23 mEq/L, PaO₂ 88 mm Hg",
+        "pH 7.41, PaCO₂ 46 mm Hg, HCO₃⁻ 24 mEq/L, PaO₂ 92 mm Hg",
+        "pH 7.35, PaCO₂ 45 mm Hg, HCO₃⁻ 22 mEq/L, PaO₂ 100 mm Hg"
+      ],
+      "answer": 3,
+      "rationale": "<p>The results with <b>pH 7.35, PaCO₂ 45, HCO₃⁻ 22, and PaO₂ 100</b> are normal: every value is on an edge of its range.</p><p>The others each miss by one: a <b>pH of 7.34</b>, a <b>PaCO₂ of 46</b>, and an <b>HCO₃⁻ of 27</b>.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26, PaO₂ 80–100: the edges count as normal.</p>",
+      "id": "nd-82"
+    },
+    {
+      "type": "sata",
+      "topic": "Lung and blood gas numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's results. Which values should the nurse recognize as within normal limits? Select all that apply.",
+      "options": [
+        "PaO₂ 100 mm Hg",
+        "pH 7.46",
+        "HCO₃⁻ 22 mEq/L",
+        "Base excess +3 mEq/L",
+        "PaCO₂ 45 mm Hg",
+        "PaO₂ 79 mm Hg"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p><b>PaO₂ 100</b>, <b>HCO₃⁻ 22</b>, and <b>PaCO₂ 45</b> are on the edges of their ranges: normal.</p><p><b>pH 7.46</b>, <b>base excess +3</b>, and <b>PaO₂ 79</b> are one step outside.</p><p><b>Takeaway:</b> pH 7.35–7.45, PaCO₂ 35–45, HCO₃⁻ 22–26, PaO₂ 80–100, base excess −2 to +2.</p>",
+      "id": "nd-83"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 3,
+      "stem": "A client has a spinal cord injury at the level of C2. Which effect on breathing should the nurse anticipate?",
+      "options": [
+        "The diaphragm may stop working, so the client may need a ventilator",
+        "Breathing is unaffected, since the injury is above the phrenic nerve's roots",
+        "The abdominal muscles used in forced exhaling are the main concern",
+        "The scalene and sternocleidomastoid muscles take over without help"
+      ],
+      "answer": 0,
+      "rationale": "<p>The phrenic nerve comes from <b>C3 to C5</b>. An injury at C2, above it, cuts the nerve's link to the brain: the <b>diaphragm may stop working</b>, and the client may need a ventilator.</p><p><b>Unaffected</b>: being above the roots is what makes it dangerous. <b>The abdominal muscles</b> are the main concern only with a lower injury. <b>The accessory muscles take over</b>: they can't replace the diaphragm.</p><p><b>Takeaway:</b> “C3, 4, 5 keeps the diaphragm alive”: an injury at or above it threatens breathing.</p>",
+      "id": "nd-84"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 3,
+      "stem": "A client has a spinal cord injury at the level of C7. Which effect on the diaphragm should the nurse anticipate?",
+      "options": [
+        "The diaphragm stops working, so the client needs a ventilator right away",
+        "The diaphragm works on the right side but not the left",
+        "The diaphragm works during sleep but not while awake",
+        "The diaphragm keeps working, since its nerve leaves the cord higher up"
+      ],
+      "answer": 3,
+      "rationale": "<p>The phrenic nerve leaves the cord at <b>C3 to C5</b>, above a C7 injury, so the <b>diaphragm keeps working</b>. (Muscles supplied below C7 may be weak.)</p><p><b>Stops working</b> fits an injury at or above C3 to C5. <b>One side</b> and <b>during sleep</b> don't follow from the level of the injury.</p><p><b>Takeaway:</b> Injury below C5: the diaphragm keeps working.</p>",
+      "id": "nd-85"
+    },
+    {
+      "type": "mc",
+      "topic": "Lung and blood gas numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing arterial blood gas ranges. Which range should the nurse expect for a normal PaCO₂?",
+      "options": [
+        "80 to 100 mm Hg",
+        "7.35 to 7.45",
+        "35 to 45 mm Hg",
+        "22 to 26 mEq/L"
+      ],
+      "answer": 2,
+      "rationale": "<p>A normal PaCO₂ is <b>35 to 45 mm Hg</b>.</p><p><b>22 to 26</b> is the HCO₃⁻, <b>80 to 100</b> the PaO₂, and <b>7.35 to 7.45</b> the pH.</p><p><b>Takeaway:</b> PaCO₂ 35–45; HCO₃⁻ 22–26; PaO₂ 80–100; pH 7.35–7.45.</p>",
+      "id": "nd-86"
+    },
+    {
+      "type": "dropdown",
+      "topic": "Lung and blood gas numbers",
+      "level": 1,
+      "stem": "A nurse is reviewing a client's PaO₂. Complete the following sentence.",
+      "text": "A normal PaO₂ is {{0}}, so a PaO₂ of 76 mm Hg is {{1}}.",
+      "blanks": [
+        {
+          "options": [
+            "80 to 100 mm Hg",
+            "35 to 45 mm Hg",
+            "95 to 100 mm Hg"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "below the normal range",
+            "within the normal range",
+            "above the normal range"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>A normal PaO₂ is <b>80 to 100 mm Hg</b>; 76 is <b>below</b> it.</p><p><b>35 to 45</b> is the PaCO₂. <b>95 to 100</b> is a normal oxygen saturation in percent, a different measure.</p><p><b>Takeaway:</b> PaO₂ 80–100 mm Hg; oxygen saturation 95% or more.</p>",
+      "id": "nd-87"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 3,
+      "stem": "A client reports weight gain, tiredness, and always feeling cold. The client's TSH is {t} mIU/L (normal about 0.4 to 4.0). Which condition do these findings suggest?",
+      "options": [
+        "Too much cortisol",
+        "An underactive thyroid (hypothyroidism)",
+        "An overactive thyroid (hyperthyroidism)",
+        "A normal thyroid"
+      ],
+      "answer": 1,
+      "rationale": "<p>A <b>high TSH</b> ({t}) means the pituitary is pushing a thyroid that isn't keeping up, and weight gain, tiredness, and cold intolerance fit: <b>hypothyroidism</b>.</p><p><b>Hyperthyroidism</b> lowers the TSH and brings weight loss and heat intolerance. <b>Normal</b>: {t} is above 4.0. <b>Too much cortisol</b> isn't what the TSH measures.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>",
+      "vars": {
+        "t": [
+          6.8,
+          8.4,
+          10.2,
+          12.6
+        ]
+      },
+      "id": "nd-88"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 3,
+      "stem": "A client reports weight loss, a fast heartbeat, and feeling hot all the time. The client's TSH is {t} mIU/L (normal about 0.4 to 4.0). Which condition do these findings suggest?",
+      "options": [
+        "An underactive thyroid (hypothyroidism)",
+        "A normal thyroid",
+        "An overactive thyroid (hyperthyroidism)",
+        "A low blood glucose"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>low TSH</b> ({t}) means the pituitary has backed off because thyroid hormone is high, and weight loss, a fast heartbeat, and heat intolerance fit: <b>hyperthyroidism</b>.</p><p><b>Hypothyroidism</b> raises the TSH. <b>Normal</b>: {t} is below 0.4. <b>A low blood glucose</b> can cause a fast heartbeat, but not a low TSH or constant heat.</p><p><b>Takeaway:</b> High TSH: underactive thyroid. Low TSH: overactive thyroid.</p>",
+      "vars": {
+        "t": [
+          {
+            "value": 0.05,
+            "text": "0.05"
+          },
+          0.1,
+          0.2,
+          0.3
+        ]
+      },
+      "id": "nd-89"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A client's TSH is {t} mIU/L (expected about 0.4 to 4.0). How should the nurse interpret this result?",
+      "options": [
+        "A sign of an underactive thyroid",
+        "A sign of an overactive thyroid",
+        "Too close to call without a repeat test",
+        "Within the normal range"
+      ],
+      "answer": 3,
+      "rationale": "<p>{t} is <b>within 0.4 to 4.0</b>: a normal TSH.</p><p><b>Underactive</b> would raise it above 4.0; <b>overactive</b> would lower it below 0.4. <b>Too close to call</b>: it's inside the range.</p><p><b>Takeaway:</b> TSH about 0.4 to 4.0 is normal.</p>",
+      "vars": {
+        "t": [
+          0.6,
+          1.4,
+          2.2,
+          3.1,
+          3.8
+        ]
+      },
+      "id": "nd-90"
+    },
+    {
+      "type": "fill",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "vars": {
+        "d": [
+          5,
+          6
+        ]
+      },
+      "stem": "A client wants to reach the goal of 150 minutes of exercise a week, exercising on {d} days. How many minutes should each session last?",
+      "answer": "=150 / d",
+      "decimals": 0,
+      "unit": "minutes",
+      "round": "to the nearest whole number",
+      "rationale": "<p>150 minutes ÷ {d} days = <b>{answer} minutes</b> each day, within the instructor's 20 to 30 minutes on 5 to 7 days.</p><p>Dividing by 7 when the client exercises on {d} days, or using 150 a day, are the usual mistakes.</p><p><b>Takeaway:</b> Exercise goal: about 150 minutes a week (20 to 30 minutes on 5 to 7 days).</p>",
+      "id": "nd-91"
+    },
+    {
+      "type": "fill",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "vars": {
+        "m": [
+          15,
+          20,
+          25
+        ]
+      },
+      "stem": "A client walks {m} minutes a day on weekdays only, and nothing on weekends. How many more minutes a week does the client need to reach the goal of 150 minutes?",
+      "answer": "=150 - m * 5",
+      "decimals": 0,
+      "unit": "minutes",
+      "round": "to the nearest whole number",
+      "rationale": "<p>Weekdays only: {m} × 5 = {=m * 5} minutes a week. 150 − {=m * 5} = <b>{answer} more minutes</b>.</p><p>Multiplying by 7 counts the weekend days the client doesn't walk.</p><p><b>Takeaway:</b> Exercise goal: about 150 minutes a week.</p>",
+      "id": "nd-92"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing clients' exercise plans. Which plan should the nurse recognize as meeting the goal of 150 minutes a week?",
+      "options": [
+        "20 minutes, 5 days a week",
+        "60 minutes, once a week",
+        "25 minutes, 6 days a week",
+        "40 minutes, 3 days a week"
+      ],
+      "answer": 2,
+      "rationale": "<p>25 × 6 = <b>150 minutes</b>: it meets the goal.</p><p>40 × 3 = 120, 20 × 5 = 100, and 60 × 1 = 60 all fall short.</p><p><b>Takeaway:</b> Multiply minutes by days: the goal is 150 a week.</p>",
+      "id": "nd-93"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing clients' exercise plans. Which plan should the nurse recognize as meeting the goal of 150 minutes a week?",
+      "options": [
+        "10 minutes, 7 days a week",
+        "45 minutes, 3 days a week",
+        "20 minutes, 7 days a week",
+        "30 minutes, 5 days a week"
+      ],
+      "answer": 3,
+      "rationale": "<p>30 × 5 = <b>150 minutes</b>: it meets the goal.</p><p>45 × 3 = 135 and 20 × 7 = 140 come close but fall short; 10 × 7 = 70 is half.</p><p><b>Takeaway:</b> Multiply minutes by days: the goal is 150 a week.</p>",
+      "id": "nd-94"
+    },
+    {
+      "type": "sata",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing immunizations with a 70-year-old client. Which vaccines should the nurse recommend? Select all that apply.",
+      "options": [
+        "Pneumococcal vaccine",
+        "Shingles vaccine",
+        "Influenza vaccine every year",
+        "COVID-19 vaccine",
+        "Influenza vaccine every 5 years",
+        "Tetanus booster every year"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "<p>The instructor's list for older adults: <b>pneumococcal</b> and <b>shingles</b> vaccines, plus the <b>annual flu</b> and <b>COVID</b> vaccines, with a record kept of each.</p><p>The flu vaccine is given <b>every year</b>, not every 5, since the viruses change. A tetanus booster isn't yearly.</p><p><b>Takeaway:</b> Older adults: pneumococcal and shingles, plus yearly flu and COVID.</p>",
+      "id": "nd-95"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A client asks why the influenza vaccine has to be given again this year. Which response by the nurse is accurate?",
+      "options": [
+        "\"The flu viruses change, so the vaccine changes each year.\"",
+        "\"Last year's vaccine wears off after about six weeks.\"",
+        "\"The body can't make memory cells against the flu.\"",
+        "\"A yearly dose is meant for people over 65.\""
+      ],
+      "answer": 0,
+      "rationale": "<p>The vaccine is given <b>every year</b> because the flu viruses change, so a new vaccine is made for the viruses expected that season.</p><p><b>Wears off after six weeks</b>: protection lasts the season. <b>No memory cells</b>: vaccines work by making them. <b>Meant for people over 65</b>: the yearly vaccine is for nearly everyone.</p><p><b>Takeaway:</b> Flu vaccine every year: the viruses change.</p>",
+      "id": "nd-96"
+    },
+    {
+      "type": "matrix",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A nurse is reviewing clients with inflammation. For each client, specify the stage the nurse should document.",
+      "rowHeader": "Client",
+      "columns": [
+        "Acute",
+        "Subacute",
+        "Chronic"
+      ],
+      "rows": [
+        "Swelling that began 2 hours ago",
+        "Inflammation that has lasted 3 weeks",
+        "Joint inflammation for 8 months",
+        "Redness for 4 days after an injury",
+        "Tendon inflammation for 5 weeks"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "rationale": "<p><b>Acute</b>: minutes to days (2 hours, 4 days). <b>Subacute</b>: about 2 to 6 weeks (3 weeks, 5 weeks). <b>Chronic</b>: months or longer (8 months).</p><p>The 3- and 5-week rows are the ones most often called chronic, but chronic starts after about 6 weeks.</p><p><b>Takeaway:</b> Acute: days. Subacute: 2 to 6 weeks. Chronic: months or longer.</p>",
+      "id": "nd-97"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A client was exposed to a new virus 2 days ago and asks when the body will make antibodies against it. Which response by the nurse is accurate?",
+      "options": [
+        "\"Within a few hours, the antibodies are already made.\"",
+        "\"In about 6 months, after the infection is over.\"",
+        "\"Not from an infection; antibodies come from vaccines.\"",
+        "\"In about 4 to 7 days, the adaptive immune response builds up.\""
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>adaptive</b> (specific) response to a new germ takes about <b>4 to 7 days</b> to build.</p><p><b>Within hours</b> describes the innate defenses, like inflammation. <b>6 months</b> is far too long. <b>Not from an infection</b>: infection makes antibodies too.</p><p><b>Takeaway:</b> Innate: hours. Adaptive: about 4 to 7 days.</p>",
+      "id": "nd-98"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A provider orders a blood test for cortisol. When should the nurse schedule the blood draw?",
+      "options": [
+        "About 8 a.m.",
+        "About 4 p.m.",
+        "About 8 p.m.",
+        "Around midnight"
+      ],
+      "answer": 0,
+      "rationale": "<p>Cortisol is <b>highest in the early morning</b> and lowest around midnight, so the test is usually drawn about <b>8 a.m.</b> to catch the peak.</p><p><b>4 p.m.</b> and <b>8 p.m.</b> fall as the level drops. <b>Midnight</b> is the low point.</p><p><b>Takeaway:</b> Cortisol: high in the morning, low at midnight; test about 8 a.m.</p>",
+      "id": "nd-99"
+    },
+    {
+      "type": "mc",
+      "topic": "Hormone and immunity numbers",
+      "level": 2,
+      "stem": "A client's erythrocyte sedimentation rate (ESR) is faster than normal. Which condition does this result suggest?",
+      "options": [
+        "A low red blood cell count",
+        "A normal immune response",
+        "Inflammation in the body",
+        "Dehydration"
+      ],
+      "answer": 2,
+      "rationale": "<p>The sedimentation rate is how fast red cells settle to the bottom of a tube: <b>faster suggests an inflammatory condition</b>.</p><p><b>Dehydration</b> and a <b>low red cell count</b> aren't what the ESR is used to show. A <b>normal immune response</b> wouldn't raise it.</p><p><b>Takeaway:</b> A faster ESR suggests inflammation; it doesn't say where.</p>",
+      "id": "nd-100"
     }
   ]
 }
