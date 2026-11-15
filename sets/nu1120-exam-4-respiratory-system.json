@@ -4,7 +4,7 @@
   "description": "Week 11, matched to the instructor's Exam 4 study guide: the upper and lower airways, the alveoli and the lobes, the breathing muscles and the nervous control of breathing, ventilation, respiration, perfusion, diffusion, and mucociliary clearance, arterial blood gases, risk factors and prevention, and respiratory distress, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 157.5,
   "defaultCount": 25,
   "cases": {
     "smoker": {
@@ -573,6 +573,942 @@
       "options": ["The right lower lobe", "The left lower lobe", "The right middle lobe", "The left upper lobe"],
       "answer": 2,
       "rationale": "<p>The <b>right middle lobe</b>, between the horizontal and oblique fissures, lies toward the front of the right chest, so it's heard from the front and the right side, not the back. That's how a back-only exam can miss it.</p><p><b>The right lower lobe</b> isn't the right answer: it's on the right too, but most of it lies toward the back, so pneumonia there would change the sounds over the back. Both left lobes reach the back as well.</p><p><b>Takeaway:</b> A complete lung exam covers the front and sides: the right middle lobe can't be heard from the back.</p>"
+    },
+    {
+      "id": "rs-84",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 2,
+      "stem": "A client asks what the turbinates inside the nose do. Which explanation should the nurse give?",
+      "options": [
+        "“They close off your airway each time you swallow food.”",
+        "“They hold lymph tissue that traps germs entering the nose.”",
+        "“They make your voice sound fuller as it passes through the nose.”",
+        "“They swirl the air so it's warmed, moistened, and filtered.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>turbinates</b> (conchae) are curled shelves in the <b>nasal cavity</b> that make the air <b>swirl</b> over the moist lining, so it's <b>warmed, moistened, and filtered</b> before it reaches the lungs.</p><p>The <b>paranasal sinuses</b> add resonance to the voice, the <b>epiglottis</b> closes the airway during swallowing, and the <b>tonsils and adenoids</b> hold the lymph tissue.</p><p><b>Takeaway:</b> Turbinates: swirl, warm, moisten, filter.</p>"
+    },
+    {
+      "id": "rs-85",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 2,
+      "stem": "A client with a stuffy nose breathes through the mouth all night and wakes with a dry, sore throat. Which explanation should the nurse give?",
+      "options": [
+        "“The air skipped your nasal cavity, so it wasn't warmed and moistened.”",
+        "“Breathing through your mouth lets in more oxygen, which dries the throat.”",
+        "“Your sinuses drained into your throat and burned it overnight.”",
+        "“Your larynx stayed closed through the night to protect your airway.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>nasal cavity</b> warms and moistens the air. Breathing through the mouth <b>skips</b> that step, so cool, dry air reaches the throat.</p><p>Mouth breathing doesn't bring in more oxygen, sinus drainage doesn't burn the throat, and the larynx doesn't stay closed during breathing.</p><p><b>Takeaway:</b> The nose conditions the air; the mouth doesn't.</p>"
+    },
+    {
+      "id": "rs-86",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 1,
+      "stem": "A nursing student asks what the larynx does. Which answer should the nurse give?",
+      "options": [
+        "“It warms the air and traps dust as you breathe in.”",
+        "“It carries air from the throat down into the two main bronchi.”",
+        "“It holds the vocal cords and guards the way into the trachea.”",
+        "“It drains mucus from the sinuses into the throat.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>larynx</b> (voice box) holds the <b>vocal cords</b> and, with the epiglottis, <b>guards the entrance to the trachea</b>, the last part of the upper tract.</p><p><b>Warming and filtering</b> happen mainly in the nasal cavity. The <b>trachea</b> carries air to the bronchi, and the <b>sinuses</b> drain through the nasal cavity.</p><p><b>Takeaway:</b> Larynx: voice and airway guard, the end of the upper tract.</p>"
+    },
+    {
+      "id": "rs-87",
+      "type": "sata",
+      "topic": "Upper respiratory tract",
+      "level": 2,
+      "stem": "A nurse is teaching about the paranasal sinuses. Which of the following functions should the nurse include?",
+      "options": [
+        "Making mucus that drains into the nose",
+        "Making the skull lighter",
+        "Exchanging oxygen with the blood",
+        "Adding resonance to the voice",
+        "Making surfactant for the airways"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "<p>The <b>paranasal sinuses</b> are air spaces in the skull bones: they <b>lighten the skull</b>, give the voice <b>resonance</b>, and make <b>mucus</b> that drains into the nasal cavity.</p><p><b>Gas exchange</b> happens only in the alveoli, and <b>surfactant</b> comes from the type 2 alveolar cells.</p><p><b>Takeaway:</b> Sinuses: lighter skull, fuller voice, mucus.</p>"
+    },
+    {
+      "id": "rs-88",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 2,
+      "stem": "A client who works in a woodshop asks how the nose protects the lungs from sawdust. Which explanation should the nurse give?",
+      "options": [
+        "“The larynx coughs each particle back out before it goes deeper.”",
+        "“The alveoli push the sawdust back up into the nose to be blown out.”",
+        "“The sawdust dissolves in the warm air before it reaches the lungs.”",
+        "“Nose hairs and sticky mucus trap the particles as the air swirls.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Nose hairs</b> catch large particles, and the swirling air throws smaller ones onto the <b>sticky mucus</b> of the nasal lining.</p><p>Sawdust doesn't dissolve in air. Coughing helps, but it doesn't catch every particle, and the alveoli can't push particles back out.</p><p><b>Takeaway:</b> The nose filters: hairs, mucus, and swirling air.</p>"
+    },
+    {
+      "id": "rs-89",
+      "type": "dropdown",
+      "topic": "Upper respiratory tract",
+      "level": 2,
+      "stem": "A nurse is reviewing how swallowing protects the airway. Complete the following sentence.",
+      "text": "During swallowing, the {{0}} folds over the opening of the {{1}}, keeping food out of the {{2}}.",
+      "blanks": [
+        {
+          "options": [
+            "uvula",
+            "epiglottis",
+            "soft palate"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "larynx",
+            "esophagus",
+            "nasal cavity"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "esophagus",
+            "stomach",
+            "trachea"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p>The <b>epiglottis</b> folds over the <b>larynx</b> as the client swallows, so food goes into the esophagus instead of the <b>trachea</b>.</p><p>Choosing the <b>uvula</b> is a mistake: it rises to close off the nasal passage, but the epiglottis guards the airway.</p><p><b>Takeaway:</b> Epiglottis over the larynx: food to the esophagus, air to the trachea.</p>"
+    },
+    {
+      "id": "rs-90",
+      "type": "mc",
+      "topic": "Upper respiratory tract",
+      "level": 3,
+      "stem": "A child's adenoids (the tonsil in the upper pharynx) are enlarged. Which finding should the nurse expect?",
+      "options": [
+        "Hoarseness from swollen vocal cords",
+        "Pain with swallowing solid foods and liquids",
+        "Breathing through the mouth and snoring",
+        "A barking cough at night"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>adenoids</b> sit in the <b>nasopharynx</b>, behind the nose. Enlarged, they block air through the nose, so the child <b>breathes through the mouth and snores</b>.</p><p><b>Hoarseness</b> and a <b>barking cough</b> point to the larynx. Pain with swallowing fits the palatine tonsils in the oropharynx more than the adenoids.</p><p><b>Takeaway:</b> Adenoids block the back of the nose: mouth breathing and snoring.</p>"
+    },
+    {
+      "id": "rs-91",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A client breathes in hard during exercise. Which structure keeps the trachea from collapsing?",
+      "options": [
+        "Smooth muscle that contracts with each breath",
+        "Surfactant that lines the inside of the trachea",
+        "C-shaped rings of cartilage in its wall",
+        "The pleura that pulls it open from outside"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>C-shaped rings of cartilage</b> hold the trachea open, even when the pressure inside it drops during a hard breath in.</p><p>Smooth muscle changes the airway's size but doesn't hold it open. <b>Surfactant</b> lines the alveoli, not the trachea, and the pleura surrounds the lungs.</p><p><b>Takeaway:</b> Cartilage rings keep the trachea and bronchi open; bronchioles have none.</p>"
+    },
+    {
+      "id": "rs-92",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A nurse is reviewing the alveoli. Which feature makes them well suited to gas exchange?",
+      "options": [
+        "Thick, muscular walls that squeeze the air into the blood",
+        "Cartilage rings that hold each alveolus open",
+        "Walls one cell thick, wrapped in capillaries",
+        "Cilia that sweep oxygen toward the capillaries"
+      ],
+      "answer": 2,
+      "rationale": "<p>Alveolar walls are <b>one cell thick</b> (mostly type 1 cells) and <b>wrapped in capillaries</b>, so oxygen and carbon dioxide cross a very short distance.</p><p>Alveoli have no muscle or cartilage, and no cilia: gases move by diffusion, not by being swept or squeezed.</p><p><b>Takeaway:</b> Thin walls + many capillaries = easy gas exchange.</p>"
+    },
+    {
+      "id": "rs-93",
+      "type": "sata",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A nurse is reviewing the path of inhaled air. Which structures does the air pass through after the trachea?",
+      "options": [
+        "The larynx",
+        "The pharynx",
+        "The alveoli",
+        "The bronchi",
+        "The bronchioles"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>After the trachea, air passes through the <b>bronchi</b>, then the <b>bronchioles</b>, to the <b>alveoli</b>.</p><p>The <b>pharynx</b> and <b>larynx</b> come <b>before</b> the trachea, in the upper tract.</p><p><b>Takeaway:</b> Trachea → bronchi → bronchioles → alveoli.</p>"
+    },
+    {
+      "id": "rs-94",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A client asks why the left lung has two lobes and the right lung has three. Which explanation should the nurse give?",
+      "options": [
+        "“The left lung shares its space with the heart.”",
+        "“The left lung does less of the breathing work.”",
+        "“The left lung's third lobe is hidden behind the liver.”",
+        "“The right lung receives more blood from the aorta.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>The heart sits slightly to the <b>left</b>, so the left lung is smaller, with <b>2 lobes</b> (8 to 9 segments) and a notch for the heart; the right has <b>3 lobes</b> (10 segments).</p><p>Both lungs share the breathing work. There's no hidden third lobe on the left (the liver is on the right), and the lungs get their blood for gas exchange from the pulmonary arteries.</p><p><b>Takeaway:</b> Left: 2 lobes, room for the heart. Right: 3 lobes.</p>"
+    },
+    {
+      "id": "rs-95",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 3,
+      "stem": "A client's alveoli have been destroyed and merged into a few large air sacs (emphysema). Which change should the nurse expect?",
+      "options": [
+        "More surface area, so oxygen moves into the blood faster",
+        "Less surface area, so less oxygen moves into the blood",
+        "Thicker mucus, so the cilia can't clear the airways",
+        "Stiffer airways, so air flows in more easily"
+      ],
+      "answer": 1,
+      "rationale": "<p>Many small alveoli have far more <b>surface area</b> than a few large sacs. With less surface, <b>less oxygen</b> can diffuse into the blood.</p><p>Merging the alveoli <b>lowers</b> the surface area. Mucus is an airway problem, not an alveolar one, and the airways become floppier, not stiffer.</p><p><b>Takeaway:</b> Gas exchange depends on surface area: lose alveoli, lose oxygen.</p>"
+    },
+    {
+      "id": "rs-96",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A nurse is reviewing the mucociliary lining of the lower tract. Where should the nurse expect to find cilia and mucus?",
+      "options": [
+        "In the pleural space around the lungs",
+        "In the alveolar macrophages",
+        "In the alveoli and the capillaries around them",
+        "In the trachea and the bronchi"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Cilia and mucus</b> line the conducting airways, like the <b>trachea and bronchi</b>, where they trap particles and sweep them up toward the throat.</p><p>The <b>alveoli</b> have no cilia; their macrophages clear what gets that far. The <b>pleural space</b> holds a thin fluid, and macrophages are cells, not a lining.</p><p><b>Takeaway:</b> Cilia in the airways; macrophages in the alveoli.</p>"
+    },
+    {
+      "id": "rs-97",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 1,
+      "stem": "A nurse is reviewing the bronchi. Which statement should the nurse identify as accurate?",
+      "options": [
+        "The trachea splits into two main bronchi, which keep branching",
+        "The bronchi are where oxygen crosses from the air into the blood",
+        "The bronchi connect the larynx to the trachea in the upper neck",
+        "The bronchi have no cartilage, so they can close off fully"
+      ],
+      "answer": 0,
+      "rationale": "<p>The trachea splits into the <b>right and left main bronchi</b>, which branch into smaller bronchi, then bronchioles.</p><p>Gas exchange happens in the <b>alveoli</b>. The <b>trachea</b> connects to the larynx, and the bronchi have cartilage; the bronchioles don't.</p><p><b>Takeaway:</b> Trachea → main bronchi → smaller bronchi → bronchioles → alveoli.</p>"
+    },
+    {
+      "id": "rs-98",
+      "type": "mc",
+      "topic": "Lower respiratory tract",
+      "level": 2,
+      "stem": "A client's chest x-ray shows that the lower lobe of the right lung has collapsed. How many lobes of the right lung are still working?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1,
+      "rationale": "<p>The right lung has <b>three lobes</b>: upper, middle, and lower. With the lower lobe collapsed, <b>two</b> are still working.</p><p><b>One</b> would be left only if two lobes had collapsed. <b>Three</b> is the full right lung, and <b>four</b> is more lobes than either lung has.</p><p><b>Takeaway:</b> Right lung: 3 lobes. Left lung: 2.</p>"
+    },
+    {
+      "id": "rs-99",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "When a client's diaphragm contracts during a breath in, what happens to the pressure in the abdomen?",
+      "options": [
+        "It rises, as the diaphragm moves down onto the abdominal organs",
+        "It falls, as the diaphragm pulls the abdominal organs upward into the chest",
+        "It stays the same, since the diaphragm just moves the ribs",
+        "It falls, since the abdominal muscles fully relax"
+      ],
+      "answer": 0,
+      "rationale": "<p>The diaphragm <b>flattens and moves down</b> as it contracts, pressing on the abdominal organs, so the <b>intra-abdominal pressure rises</b> (which also helps power a forceful breath out).</p><p>The diaphragm moves <b>down</b>, not up. It moves the floor of the chest, not just the ribs.</p><p><b>Takeaway:</b> Diaphragm contracts: chest bigger, abdomen pressure up.</p>"
+    },
+    {
+      "id": "rs-100",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 3,
+      "stem": "A client hyperventilates during a panic attack, and the PaCO₂ falls to 30 mm Hg. Once the client calms, which response from the medulla should the nurse expect?",
+      "options": [
+        "Faster breathing, to keep the CO₂ low",
+        "Breathing that stops until the oxygen falls",
+        "Slower breathing, until the CO₂ builds back up",
+        "No change, since the medulla doesn't sense CO₂"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>medulla oblongata</b> responds mostly to <b>carbon dioxide</b>. With the CO₂ low, it <b>slows the breathing</b> until the CO₂ rises back to normal.</p><p>Faster breathing would lower the CO₂ even more. The medulla doesn't stop breathing to wait for the oxygen to fall, and it does sense CO₂ (through the blood's acid).</p><p><b>Takeaway:</b> Low CO₂: slower breathing. High CO₂: faster breathing.</p>"
+    },
+    {
+      "id": "rs-101",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "A client is struggling to breathe. Which muscles should the nurse expect to see lifting the upper ribs and the sternum?",
+      "options": [
+        "The abdominal muscles",
+        "The internal intercostals",
+        "The scalenes and the sternocleidomastoids",
+        "The diaphragm and the external intercostals"
+      ],
+      "answer": 2,
+      "rationale": "<p>When breathing is hard, the <b>accessory muscles</b>, the <b>scalenes</b> and <b>sternocleidomastoids</b> in the neck, lift the upper ribs and sternum.</p><p>The <b>abdominal muscles</b> and <b>internal intercostals</b> help push air out. The <b>diaphragm and external intercostals</b> do the work of every quiet breath in.</p><p><b>Takeaway:</b> Neck muscles at work: a sign of hard breathing.</p>"
+    },
+    {
+      "id": "rs-102",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 3,
+      "stem": "A client holds their breath for as long as possible. Which explains why the client is soon forced to breathe?",
+      "options": [
+        "The blood runs out of oxygen within the first minute",
+        "The lungs collapse without a fresh breath of air coming in",
+        "Rising carbon dioxide makes the medulla override the hold",
+        "The diaphragm tires and starts contracting by itself"
+      ],
+      "answer": 2,
+      "rationale": "<p>As the breath is held, <b>carbon dioxide rises</b>, and the <b>medulla oblongata</b> overrides the voluntary hold to start breathing again.</p><p>The oxygen doesn't run out in that short time, the lungs don't collapse, and the diaphragm doesn't fire on its own; it follows the medulla's signals.</p><p><b>Takeaway:</b> CO₂ rising: the brainstem takes back control.</p>"
+    },
+    {
+      "id": "rs-103",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "A nurse is reviewing quiet breathing. What do the external intercostal muscles do?",
+      "options": [
+        "They lift the ribs up and out, enlarging the chest",
+        "They pull the ribs down to push air out",
+        "They raise the sternum just when breathing is hard",
+        "They close the larynx between breaths"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>external intercostals</b> lift the ribs <b>up and out</b> with each breath in, working with the diaphragm to enlarge the chest.</p><p>Pulling the ribs down is the <b>internal</b> intercostals' job, in a forced breath out. The neck's accessory muscles raise the sternum when breathing is hard, and the intercostals don't close the larynx.</p><p><b>Takeaway:</b> Quiet breath in: diaphragm + external intercostals.</p>"
+    },
+    {
+      "id": "rs-104",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 3,
+      "stem": "Which change in the blood most strongly drives breathing in a healthy person?",
+      "options": [
+        "A rise in glucose",
+        "A fall in sodium",
+        "A fall in the oxygen level",
+        "A rise in carbon dioxide"
+      ],
+      "answer": 3,
+      "rationale": "<p>In a healthy person, the strongest drive to breathe is a <b>rise in carbon dioxide</b> (which also raises the blood's acid), sensed by the brainstem.</p><p>A <b>fall in oxygen</b> also drives breathing, but it acts more weakly unless the oxygen is quite low. Glucose and sodium don't drive breathing.</p><p><b>Takeaway:</b> CO₂ is the main signal to breathe.</p>"
+    },
+    {
+      "id": "rs-105",
+      "type": "order",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "Place the events of a quiet breath in, in order.",
+      "items": [
+        "The medulla oblongata sends a signal to the diaphragm",
+        "The diaphragm contracts and flattens",
+        "The chest cavity gets larger",
+        "The pressure inside the lungs falls below the air pressure outside",
+        "Air flows into the lungs"
+      ],
+      "rationale": "<p>The <b>medulla</b> signals, the <b>diaphragm contracts</b>, the chest <b>enlarges</b>, the pressure in the lungs <b>falls</b>, and air <b>flows in</b> from higher to lower pressure.</p><p>Putting the air flowing in before the pressure falls is a mistake: air moves because the pressure in the lungs drops.</p><p><b>Takeaway:</b> Signal → contract → bigger chest → lower pressure → air in.</p>"
+    },
+    {
+      "id": "rs-106",
+      "type": "mc",
+      "topic": "Breathing muscles and nervous control",
+      "level": 2,
+      "stem": "A nurse is reviewing the autonomic control of the airways. Which statement about the parasympathetic system is accurate?",
+      "options": [
+        "It widens the airways during exercise",
+        "It has no effect on the airways",
+        "It speeds up the breathing rate when there's danger",
+        "It narrows the airways and adds mucus at rest"
+      ],
+      "answer": 3,
+      "rationale": "<p>At rest, <b>parasympathetic</b> signals (through the vagus nerve) <b>narrow the airways</b> and <b>increase mucus</b>.</p><p><b>Widening</b> the airways is the sympathetic effect, during exercise or danger. The autonomic system does affect the airways, and speeding up in danger is a sympathetic response.</p><p><b>Takeaway:</b> Parasympathetic: narrower airways, more mucus. Sympathetic: wider.</p>"
+    },
+    {
+      "id": "rs-107",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "A client with pneumonia becomes restless and confused, and the SpO₂ is 86%. Which action should the nurse take first?",
+      "options": [
+        "Encourage the client to lie flat and rest",
+        "Raise the head of the bed and give oxygen as prescribed",
+        "Document the findings, and then recheck the SpO₂ in an hour",
+        "Ask the client to cough and breathe deeply later"
+      ],
+      "answer": 1,
+      "rationale": "<p>Restlessness and confusion with an <b>SpO₂ of 86%</b> mean the brain isn't getting enough oxygen. <b>Raising the head of the bed</b> eases breathing, and <b>oxygen</b> treats the low saturation; then the nurse reports the change.</p><p><b>Lying flat</b> makes breathing harder. <b>Waiting an hour</b> or delaying coughing exercises leaves the low oxygen untreated.</p><p><b>Takeaway:</b> New confusion with a low SpO₂: position and oxygenate first.</p>"
+    },
+    {
+      "id": "rs-108",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "A nurse is assessing a client in respiratory distress. Which finding should the nurse recognize as a late sign?",
+      "options": [
+        "Restlessness",
+        "A fast heart rate over 100/min",
+        "A fast respiratory rate",
+        "Bluish lips and fingertips"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Cyanosis</b> (bluish lips and fingertips) appears <b>late</b>, once the oxygen in the blood is very low.</p><p><b>Restlessness</b>, a <b>fast heart rate</b>, and <b>fast breathing</b> come <b>early</b>, as the body tries to make up for low oxygen.</p><p><b>Takeaway:</b> Early: restless, fast. Late: blue, slow, drowsy.</p>"
+    },
+    {
+      "id": "rs-109",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "A client who was calm an hour ago is now restless and anxious, with a respiratory rate of 28/min. Which should the nurse suspect?",
+      "options": [
+        "Early hypoxia",
+        "Normal anxiety about the hospital stay",
+        "A need for more pain medication",
+        "Low blood glucose from a skipped meal"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>new restlessness</b> with <b>fast breathing</b> is an early sign of <b>hypoxia</b> (low oxygen): check the SpO₂ and breathing before anything else.</p><p>Calling it <b>anxiety</b> or a need for medication can miss the low oxygen. A low glucose causes shakiness and sweating, not fast breathing.</p><p><b>Takeaway:</b> New restlessness: think oxygen first.</p>"
+    },
+    {
+      "id": "rs-110",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 2,
+      "stem": "A nurse documents retractions in a client in respiratory distress. Which finding did the nurse see?",
+      "options": [
+        "The skin between the ribs pulling in with each breath",
+        "The nostrils widening out with each breath the client takes in",
+        "The client leaning forward on the knees",
+        "Lips pressed together when breathing out"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Retractions</b> are the skin <b>pulling in between or below the ribs</b> as the client works hard to breathe in.</p><p><b>Widening nostrils</b> is nasal flaring, <b>leaning forward on the knees</b> is the tripod position, and <b>pressed lips</b> is pursed-lip breathing: all signs of hard breathing, but not retractions.</p><p><b>Takeaway:</b> Retractions: skin sucked in between the ribs.</p>"
+    },
+    {
+      "id": "rs-111",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 2,
+      "stem": "A client can say only 2 or 3 words between breaths. Which interpretation should the nurse make?",
+      "options": [
+        "A problem with the vocal cords",
+        "Anxiety about speaking to the nurse",
+        "Mild shortness of breath, which is expected after walking",
+        "Severe respiratory distress"
+      ],
+      "answer": 3,
+      "rationale": "<p>Being able to say <b>only a few words per breath</b> shows <b>severe respiratory distress</b>: the client can't spare the air to talk.</p><p>Mild breathlessness still allows full sentences. The vocal cords would change the voice, not the number of words per breath, and anxiety doesn't explain it.</p><p><b>Takeaway:</b> Short phrases between breaths: severe distress.</p>"
+    },
+    {
+      "id": "rs-112",
+      "type": "matrix",
+      "topic": "Respiratory distress",
+      "level": 2,
+      "stem": "A nurse is assessing an adult client. For each finding, click to specify whether the nurse should expect it or follow it up.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Expected",
+        "Needs follow-up"
+      ],
+      "rows": [
+        "Respiratory rate 16/min",
+        "Nasal flaring",
+        "SpO₂ 97% on room air",
+        "Sitting in the tripod position",
+        "Respiratory rate 30/min",
+        "Clear breath sounds in all areas"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "rationale": "<p>A rate of <b>12 to 20</b>, an <b>SpO₂ of 95% or more</b>, and <b>clear breath sounds</b> are expected. <b>Nasal flaring</b>, the <b>tripod position</b>, and a <b>rate of 30</b> are signs of distress.</p><p>Calling a rate of 30 expected is a mistake: it's well above the adult range of 12 to 20.</p><p><b>Takeaway:</b> Flaring, tripod, fast breathing: follow up.</p>"
+    },
+    {
+      "id": "rs-113",
+      "type": "mc",
+      "topic": "Respiratory distress",
+      "level": 3,
+      "stem": "A client with long-term lung disease breathes out through pursed lips. Which explanation should the nurse give?",
+      "options": [
+        "“It keeps your airways open longer, so more air can leave your lungs.”",
+        "“It warms the air before it leaves your lungs, protecting your throat.”",
+        "“It makes your diaphragm contract harder during each breath.”",
+        "“It lets you take in more oxygen through your mouth.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Pursed-lip breathing</b> creates a little back-pressure that <b>keeps the small airways open</b> longer, so trapped air can leave the lungs.</p><p>It doesn't warm the air going out, change how hard the diaphragm contracts, or bring in more oxygen through the mouth.</p><p><b>Takeaway:</b> Pursed lips: slower, more complete breath out.</p>"
+    },
+    {
+      "id": "rs-114",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "A mucus plug blocks a client's bronchus, but blood still flows past the alveoli beyond it. Which function is impaired in that area?",
+      "options": [
+        "Perfusion",
+        "Ventilation",
+        "Diffusion",
+        "Mucociliary clearance"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Ventilation</b> is air moving in and out. The plug keeps air from <b>reaching</b> those alveoli, even though blood still flows past them.</p><p><b>Perfusion</b> (blood flow) is intact here. <b>Diffusion</b> can't happen without air, but the first problem is ventilation, and the plug is a failure of mucus clearance, not its result.</p><p><b>Takeaway:</b> No air in: ventilation. No blood past: perfusion. Thick walls: diffusion.</p>"
+    },
+    {
+      "id": "rs-115",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 2,
+      "stem": "A nurse is explaining internal respiration. Which statement should the nurse include?",
+      "options": [
+        "“Air moves into and out of your lungs with each breath you take.”",
+        "“Oxygen moves from the blood into your cells, and CO₂ moves out.”",
+        "“Blood flows through the capillaries wrapped around the alveoli.”",
+        "“Mucus is swept up toward the throat.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Respiration</b> is gas exchange. <b>Internal</b> respiration is at the tissues: <b>oxygen moves into the cells</b>, and carbon dioxide moves out into the blood.</p><p>Air moving in and out is <b>ventilation</b>, blood flow past the alveoli is <b>perfusion</b>, and sweeping mucus is <b>mucociliary clearance</b>.</p><p><b>Takeaway:</b> External respiration: lungs. Internal respiration: tissues.</p>"
+    },
+    {
+      "id": "rs-116",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 2,
+      "stem": "A nurse is reviewing diffusion in the lungs. Why does oxygen move from the alveoli into the blood?",
+      "options": [
+        "The heart pumps the oxygen across the alveolar membrane",
+        "Oxygen moves from a higher pressure to a lower one",
+        "The cilia push it into the capillaries",
+        "Surfactant carries it into the blood"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Diffusion</b> moves a gas from <b>higher to lower pressure</b>. Oxygen's pressure is higher in the alveoli than in the blood arriving from the body, so it moves in.</p><p>The heart pumps the blood, not the gas across the membrane. Cilia aren't in the alveoli, and surfactant keeps the alveoli open.</p><p><b>Takeaway:</b> Diffusion: high pressure to low, with no pumping.</p>"
+    },
+    {
+      "id": "rs-117",
+      "type": "matrix",
+      "topic": "Functions of the respiratory system",
+      "level": 1,
+      "stem": "A nurse is reviewing the functions of the respiratory system. For each description, click to specify the function.",
+      "rowHeader": "Description",
+      "columns": [
+        "Ventilation",
+        "Diffusion",
+        "Perfusion",
+        "Respiration",
+        "Mucociliary clearance"
+      ],
+      "rows": [
+        "Blood flows through the lung capillaries",
+        "Mucus is swept up toward the throat",
+        "Air moves into and out of the lungs",
+        "Oxygen moves from the blood into the body's cells",
+        "Oxygen crosses from the alveoli into the capillaries"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "rationale": "<p><b>Ventilation</b>: air in and out. <b>Diffusion</b>: gases crossing the alveolar membrane. <b>Perfusion</b>: blood flow. <b>Respiration</b>: gas exchange, at the lungs and at the cells. <b>Mucociliary clearance</b>: mucus swept up.</p><p>Mixing up ventilation and respiration is a common mistake: ventilation moves the air, and respiration exchanges the gases.</p><p><b>Takeaway:</b> Air, crossing, blood, exchange, and cleaning: five jobs.</p>"
+    },
+    {
+      "id": "rs-118",
+      "type": "sata",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "A nurse is reviewing the mucociliary clearance system. Which of the following can impair it?",
+      "options": [
+        "Drinking plenty of fluids",
+        "Breathing very dry air",
+        "Smoking",
+        "Dehydration",
+        "Regular exercise"
+      ],
+      "answer": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "<p><b>Smoking</b> damages the cilia, and <b>dehydration</b> and <b>very dry air</b> thicken or dry the mucus, so the cilia can't sweep it.</p><p><b>Fluids</b> keep the mucus thin, and <b>exercise</b> helps clear the airways; both support the system.</p><p><b>Takeaway:</b> Cilia need thin mucus and no smoke.</p>"
+    },
+    {
+      "id": "rs-119",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "After abdominal surgery, a client takes shallow breaths because deep breaths hurt. Which problem should the nurse watch for?",
+      "options": [
+        "Too much air reaching the lower alveoli with each breath",
+        "Lower alveoli that don't fill and can collapse",
+        "A faster flow of blood through the lungs",
+        "Thinner mucus that drains too quickly"
+      ],
+      "answer": 1,
+      "rationale": "<p>Shallow breaths don't <b>ventilate</b> the lower alveoli, which can <b>collapse</b> and collect secretions, raising the risk of pneumonia. Deep breathing and coughing help.</p><p>Shallow breathing brings <b>less</b> air, not more. It doesn't speed blood flow, and secretions tend to pool rather than drain.</p><p><b>Takeaway:</b> Shallow breathing: poor ventilation of the lower alveoli.</p>"
+    },
+    {
+      "id": "rs-120",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "A client with severe anemia has an SpO₂ of 98% but is short of breath on exertion. Which explanation should the nurse give?",
+      "options": [
+        "The SpO₂ reading is wrong, since anemia hides the true level of oxygen",
+        "The lungs can't move air in and out with anemia",
+        "Too little hemoglobin carries too little oxygen, even when it's full",
+        "The alveoli are filled with fluid from the anemia"
+      ],
+      "answer": 2,
+      "rationale": "<p>SpO₂ shows how <b>full</b> the hemoglobin is, not how much hemoglobin there is. With <b>little hemoglobin</b>, the blood carries <b>too little oxygen</b> overall, even at 98%.</p><p>The reading can be accurate. Anemia doesn't stop ventilation or fill the alveoli with fluid.</p><p><b>Takeaway:</b> SpO₂ measures how full, not how much.</p>"
+    },
+    {
+      "id": "rs-121",
+      "type": "mc",
+      "topic": "Functions of the respiratory system",
+      "level": 3,
+      "stem": "At a high altitude, the air has a lower oxygen pressure. Which function is most directly affected?",
+      "options": [
+        "Mucociliary clearance",
+        "Perfusion",
+        "Ventilation",
+        "Diffusion"
+      ],
+      "answer": 3,
+      "rationale": "<p>Oxygen diffuses from higher to lower pressure. With <b>less oxygen pressure in the alveoli</b>, the difference is smaller, so <b>less oxygen diffuses</b> into the blood.</p><p>The airways still move air (ventilation), blood still flows past (perfusion), and the cilia still clear mucus; the gradient for diffusion is what shrinks.</p><p><b>Takeaway:</b> Less oxygen pressure, less diffusion.</p>"
+    },
+    {
+      "id": "rs-122",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' histories. Which client has the most risk factors for respiratory illness?",
+      "options": [
+        "A 24-year-old nonsmoker who drinks 2 L of water a day",
+        "A 40-year-old office worker who quit smoking 10 years ago",
+        "A 72-year-old who smokes and sands drywall without a mask",
+        "A 35-year-old runner who works outdoors in clean air"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>72-year-old</b> has three risk factors: <b>age</b>, <b>smoking</b>, and an <b>occupational exposure</b> (dust from sanding).</p><p>The others have few or none: good hydration, quitting smoking long ago, and clean outdoor work lower the risk.</p><p><b>Takeaway:</b> Respiratory risk: age, ethnicity, hydration, smoking, work exposures.</p>"
+    },
+    {
+      "id": "rs-123",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A client asks how regular exercise helps prevent respiratory infections. Which explanation should the nurse give?",
+      "options": [
+        "“It strengthens your breathing muscles and your immune system.”",
+        "“It makes your lungs grow new alveoli each week.”",
+        "“It replaces the need for the yearly flu and pneumonia vaccines.”",
+        "“It keeps you from breathing in any germs while you move.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>Regular exercise <b>strengthens the breathing muscles</b>, helps clear the airways, and supports the <b>immune system</b>, one of the instructor's ways to prevent respiratory infections.</p><p>Exercise doesn't grow new alveoli or replace vaccines, and it doesn't stop germs from being inhaled.</p><p><b>Takeaway:</b> Prevention: exercise, flu vaccine, pneumococcal vaccine.</p>"
+    },
+    {
+      "id": "rs-124",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A client who doesn't smoke lives with a heavy smoker. Which statement should the nurse include?",
+      "options": [
+        "“Secondhand smoke doesn't affect the people who don't smoke it.”",
+        "“Secondhand smoke raises your risk of respiratory illness too.”",
+        "“The smoker's lungs absorb the harmful chemicals, not yours.”",
+        "“Opening a window clears the risk from the smoke.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Secondhand smoke</b> carries the same irritants and toxins, so it <b>raises the risk</b> of respiratory illness for others in the home.</p><p>Saying it doesn't affect nonsmokers, or that just the smoker absorbs it, isn't true, and an open window doesn't clear the smoke.</p><p><b>Takeaway:</b> Smoke harms everyone who breathes it.</p>"
+    },
+    {
+      "id": "rs-125",
+      "type": "matrix",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A nurse is reviewing three clients. For each client, click to specify the modifiable risk factor the nurse should focus on.",
+      "rowHeader": "Client",
+      "columns": [
+        "Smoking",
+        "Work exposure",
+        "Hydration"
+      ],
+      "rows": [
+        "A miner who doesn't wear a mask underground",
+        "A client who drinks one glass of water a day",
+        "A 34-year-old who smokes a pack a day",
+        "A painter who sprays in a closed garage"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "rationale": "<p>The <b>miner</b> and the <b>painter</b> breathe in dust and fumes at work, the client with <b>one glass of water</b> a day is poorly hydrated, and the <b>34-year-old</b> smokes.</p><p>Focusing on age or ethnicity would be a mistake here: they can't be changed, so teaching aims at the modifiable risks.</p><p><b>Takeaway:</b> Teach to what can change: smoking, work exposures, hydration.</p>"
+    },
+    {
+      "id": "rs-126",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A client who smokes asks which single change would lower the risk of respiratory illness the most. Which answer should the nurse give?",
+      "options": [
+        "“Drinking more water each day.”",
+        "“Taking a daily multivitamin.”",
+        "“Quitting smoking.”",
+        "“Moving to a warmer climate.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Quitting smoking</b> lets the cilia recover and removes the biggest modifiable risk for lung disease and infection.</p><p>Hydration helps, but much less than quitting. Vitamins and climate don't address the main risk.</p><p><b>Takeaway:</b> For a smoker, quitting matters most.</p>"
+    },
+    {
+      "id": "rs-127",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A healthy 30-year-old asks whether the flu vaccine is needed. Which response should the nurse give?",
+      "options": [
+        "“It's needed just by adults over 65 and young children.”",
+        "“One dose protects you for about 10 years at a time.”",
+        "“It's needed if you've had the flu before, to prevent another case.”",
+        "“It's recommended every year for nearly everyone over 6 months.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>influenza vaccine</b> is recommended <b>every year</b> for nearly everyone 6 months and older, since the viruses change.</p><p>It isn't limited to older adults or to people who've had the flu, and one dose doesn't last for years.</p><p><b>Takeaway:</b> Flu vaccine: every year, for nearly everyone.</p>"
+    },
+    {
+      "id": "rs-128",
+      "type": "mc",
+      "topic": "Risk factors and prevention",
+      "level": 2,
+      "stem": "A 70-year-old client asks why the pneumococcal vaccine is recommended at this age. Which explanation should the nurse give?",
+      "options": [
+        "“Pneumococcal pneumonia is more common and serious as you age.”",
+        "“The pneumococcal vaccine replaces your yearly flu shot after 65.”",
+        "“It treats any lung infection you already have.”",
+        "“It's needed because your lungs stop making mucus with age.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Pneumococcal</b> infections, like pneumonia, become <b>more common and more serious</b> with age, so the vaccine is recommended for older adults.</p><p>It doesn't replace the flu vaccine, it prevents rather than treats infection, and the lungs don't stop making mucus with age.</p><p><b>Takeaway:</b> Older adults: pneumococcal vaccine plus the yearly flu vaccine.</p>"
+    },
+    {
+      "id": "rs-129",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client's arterial blood gases are pH 7.31, PaCO₂ 52 mm Hg, and HCO₃⁻ 24 mEq/L. Which finding in the history most likely explains them?",
+      "options": [
+        "Several days of vomiting",
+        "A panic attack with fast breathing",
+        "Diabetic ketoacidosis",
+        "An airway blocked by thick mucus"
+      ],
+      "answer": 3,
+      "rationale": "<p>A low pH with a <b>high PaCO₂</b> and a normal HCO₃⁻ is <b>respiratory acidosis</b>: CO₂ is building up, as when an <b>airway is blocked</b>.</p><p><b>Vomiting</b> causes metabolic alkalosis, <b>fast breathing</b> respiratory alkalosis, and <b>ketoacidosis</b> metabolic acidosis, with a low HCO₃⁻.</p><p><b>Takeaway:</b> High CO₂ and low pH: the lungs aren't getting rid of CO₂.</p>"
+    },
+    {
+      "id": "rs-130",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A client's base excess is +6 mEq/L (expected −2 to +2). Which interpretation should the nurse make?",
+      "options": [
+        "There's too much base, a pattern of metabolic alkalosis",
+        "There's too little base, a pattern of metabolic acidosis",
+        "There's too much CO₂, a pattern of respiratory acidosis",
+        "The result is within the expected range"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>base excess</b> shows the metabolic side: <b>above +2</b> means extra base (bicarbonate), a <b>metabolic alkalosis</b> pattern.</p><p>A <b>negative</b> base excess (below −2) means too little base, metabolic acidosis. CO₂ is the respiratory side, read from the PaCO₂, and +6 is outside the expected range.</p><p><b>Takeaway:</b> Base excess: positive = too much base; negative = too little.</p>"
+    },
+    {
+      "id": "rs-131",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A client's PaO₂ is 68 mm Hg. Which interpretation should the nurse make?",
+      "options": [
+        "It's within the expected range of 60 to 80 mm Hg for adults",
+        "It's high, which suggests the client is getting too much oxygen",
+        "It's below the expected 80 to 100, so the blood oxygen is low",
+        "It shows a metabolic acidosis"
+      ],
+      "answer": 2,
+      "rationale": "<p>The expected <b>PaO₂ is 80 to 100 mm Hg</b>, so 68 is <b>low</b> (hypoxemia).</p><p>60 to 80 isn't the expected range, and 68 isn't high. The PaO₂ measures oxygen; acid-base problems are read from the pH, PaCO₂, and HCO₃⁻.</p><p><b>Takeaway:</b> PaO₂: 80 to 100.</p>"
+    },
+    {
+      "id": "rs-132",
+      "type": "matrix",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' arterial blood gases. For each set of results, click to specify the imbalance the nurse should identify.",
+      "rowHeader": "Results",
+      "columns": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "rows": [
+        "pH 7.30, PaCO₂ 40, HCO₃⁻ 16",
+        "pH 7.50, PaCO₂ 41, HCO₃⁻ 33",
+        "pH 7.28, PaCO₂ 55, HCO₃⁻ 25",
+        "pH 7.52, PaCO₂ 29, HCO₃⁻ 24"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "rationale": "<p>Read the pH, then find the value that explains it: a low pH with a <b>low HCO₃⁻</b> is metabolic acidosis; a high pH with a <b>high HCO₃⁻</b> is metabolic alkalosis; a low pH with a <b>high PaCO₂</b> is respiratory acidosis; and a high pH with a <b>low PaCO₂</b> is respiratory alkalosis.</p><p>Naming the imbalance from the PaCO₂ alone is a mistake: in the first two, the PaCO₂ is normal, and the HCO₃⁻ explains the pH.</p><p><b>Takeaway:</b> pH first; then whichever of PaCO₂ or HCO₃⁻ matches it.</p>"
+    },
+    {
+      "id": "rs-133",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client has eaten almost nothing for several days. Which arterial blood gas pattern should the nurse expect?",
+      "options": [
+        "A high pH with a high HCO₃⁻",
+        "A high pH with a low PaCO₂",
+        "A low pH with a high PaCO₂",
+        "A low pH with a low HCO₃⁻"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Starvation</b> makes the body burn fat, producing ketoacids: a <b>metabolic acidosis</b>, with a <b>low pH and a low HCO₃⁻</b>.</p><p>A <b>high pH with a high HCO₃⁻</b> is metabolic alkalosis, and a <b>high pH with a low PaCO₂</b> is respiratory alkalosis. A <b>high PaCO₂</b> points to the lungs.</p><p><b>Takeaway:</b> Starvation, like DKA: ketones → metabolic acidosis.</p>"
+    },
+    {
+      "id": "rs-134",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client with a fever of 103°F (39.4°C) is breathing fast. Which change in the arterial blood gases should the nurse expect?",
+      "options": [
+        "The PaCO₂ falls and the pH rises",
+        "The PaCO₂ rises and the pH falls",
+        "The HCO₃⁻ falls and the pH falls",
+        "The HCO₃⁻ rises and the pH rises"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>fever</b> speeds the breathing, which <b>blows off CO₂</b>: the PaCO₂ falls and the pH rises, a <b>respiratory alkalosis</b>.</p><p>A rising PaCO₂ comes with slow or blocked breathing. Changes led by the HCO₃⁻ are metabolic, not the result of fast breathing.</p><p><b>Takeaway:</b> Fast breathing: CO₂ down, pH up.</p>"
+    },
+    {
+      "id": "rs-135",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client with kidney failure has missed two dialysis treatments. Which imbalance should the nurse expect?",
+      "options": [
+        "Respiratory acidosis",
+        "Metabolic alkalosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis"
+      ],
+      "answer": 3,
+      "rationale": "<p>Failing kidneys can't get rid of acid or make enough bicarbonate, so acid builds up: a <b>metabolic acidosis</b>.</p><p>The lungs aren't the cause here, so it isn't respiratory. <b>Metabolic alkalosis</b> comes from losing acid, as with vomiting or suction.</p><p><b>Takeaway:</b> Kidney failure: acid stays in, metabolic acidosis.</p>"
+    },
+    {
+      "id": "rs-136",
+      "type": "dropdown",
+      "topic": "Arterial blood gases",
+      "level": 2,
+      "stem": "A nurse is reviewing metabolic acidosis. Complete the following sentences.",
+      "text": "In metabolic acidosis, the {{0}} falls, and the pH {{1}}. The lungs try to make up for it by breathing {{2}} to blow off CO₂.",
+      "blanks": [
+        {
+          "options": [
+            "PaCO₂",
+            "HCO₃⁻",
+            "PaO₂"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "rises",
+            "stays the same",
+            "falls"
+          ],
+          "answer": 2
+        },
+        {
+          "options": [
+            "slower and shallower",
+            "faster and deeper",
+            "in short gasps with pauses"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>Metabolic acidosis lowers the <b>HCO₃⁻</b> and the <b>pH</b>. The lungs respond by breathing <b>faster and deeper</b>, blowing off CO₂ to raise the pH.</p><p>Choosing the <b>PaCO₂</b> as the value that falls first is a mistake: it falls only as the lungs make up for the acid.</p><p><b>Takeaway:</b> Metabolic acidosis: HCO₃⁻ down, pH down, breathing up.</p>"
+    },
+    {
+      "id": "rs-137",
+      "type": "sata",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A nurse is reviewing clients at risk of respiratory acidosis. Which of the following conditions raise this risk?",
+      "options": [
+        "Severe diarrhea from a bowel infection",
+        "Fast breathing during a panic attack",
+        "Several days of vomiting after a stomach virus",
+        "A mucus plug blocking a large airway",
+        "Severe pneumonia, with fluid in the alveoli"
+      ],
+      "answer": [
+        3,
+        4
+      ],
+      "rationale": "<p><b>Respiratory acidosis</b> comes from CO₂ that can't leave: an <b>obstructed airway</b>, or lungs that <b>can't diffuse</b> it, like fluid-filled alveoli in severe pneumonia.</p><p><b>Fast breathing</b> lowers the CO₂ (respiratory alkalosis). <b>Vomiting</b> causes metabolic alkalosis, and <b>diarrhea</b> metabolic acidosis.</p><p><b>Takeaway:</b> Respiratory acidosis: blocked airways or lungs that can't get CO₂ out.</p>"
+    },
+    {
+      "id": "rs-138",
+      "type": "mc",
+      "topic": "Arterial blood gases",
+      "level": 3,
+      "stem": "A client is severely dehydrated after days of poor intake in hot weather. Which imbalance should the nurse expect?",
+      "options": [
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis",
+        "Respiratory acidosis"
+      ],
+      "answer": 1,
+      "rationale": "<p>Severe <b>dehydration</b> reduces blood flow to the tissues and kidneys, so acid builds up: a <b>metabolic acidosis</b>, one of the causes on the instructor's list.</p><p>The lungs aren't the cause, so it isn't respiratory, and dehydration from poor intake doesn't cause the acid loss of metabolic alkalosis.</p><p><b>Takeaway:</b> Dehydration, starvation, kidney failure, DKA, diarrhea: metabolic acidosis.</p>"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "description": "Week 12, matched to the instructor's Exam 4 study guide: the lymph nodes and vessels, the bone marrow, thymus, tonsils, and spleen, the white blood cells and what each does, antibodies, memory cells, and vaccines, inflammation and its markers, and supporting immune health, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75.0,
+  "timeMinutes": 157.5,
   "defaultCount": 25,
   "cases": {
     "wound": {
@@ -972,6 +972,935 @@
       ],
       "answer": 1,
       "rationale": "<p>The <b>spleen</b>, the largest lymphatic organ, lies in the left upper quadrant, under the lower left ribs and the diaphragm. It filters the blood, holds lymphocytes and macrophages, and stores red cells and platelets, and a blow there can injure it and cause bleeding.</p><p><b>The liver</b> isn't the right answer: it lies mostly on the right side, and it isn't a lymphatic organ. The thymus is in the upper chest, and the appendix, which has lymphoid tissue, is in the right lower quadrant.</p><p><b>Takeaway:</b> The spleen: the largest lymphatic organ, in the left upper quadrant under the ribs.</p>"
+    },
+    {
+      "id": "li-77",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A client asks how lymph moves through the body without a pump like the heart. Which explanation should the nurse give?",
+      "options": [
+        "“The heart pumps it through a separate chamber of its own.”",
+        "“Gravity carries it upward from the legs to the neck.”",
+        "“Muscles squeeze the vessels, and valves keep it moving one way.”",
+        "“The lymph nodes contract in a steady rhythm to push it forward.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Lymph vessels have <b>valves</b>, and the <b>squeeze of skeletal muscles</b> (and the pressure changes of breathing) push lymph along, one way, toward the neck.</p><p>The heart doesn't pump lymph, gravity works against flow from the legs, and the nodes filter lymph rather than pump it.</p><p><b>Takeaway:</b> Lymph moves by muscle squeezes, breathing, and one-way valves; movement helps it flow.</p>"
+    },
+    {
+      "id": "li-78",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 1,
+      "stem": "A nursing student asks what lymph is. Which answer should the nurse give?",
+      "options": [
+        "“Tissue fluid that enters lymph vessels and returns to the blood.”",
+        "“Blood plasma that still carries its red blood cells with it.”",
+        "“Fluid that flows away from the heart through the arteries.”",
+        "“A fluid the spleen makes for the lymph nodes to fight infection.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Lymph</b> is the fluid that leaks from the capillaries into the tissues, enters the <b>lymph vessels</b>, and is <b>returned to the blood</b> near the heart.</p><p>Lymph has no red cells, it flows in lymph vessels rather than arteries, and the spleen filters blood instead of making lymph.</p><p><b>Takeaway:</b> Lymph: tissue fluid on its way back to the blood.</p>"
+    },
+    {
+      "id": "li-79",
+      "type": "dropdown",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A client asks why the lymph nodes near an infection swell. Complete the following sentence.",
+      "text": "When germs carried in the lymph reach a node, the {{0}} inside it multiply to fight them, and the node {{1}}.",
+      "blanks": [
+        {
+          "options": [
+            "red blood cells",
+            "lymphocytes",
+            "platelets"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "shrinks and hardens",
+            "empties into the thoracic duct",
+            "swells and becomes tender"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p>Lymph nodes <b>filter</b> the lymph. When they catch germs, their <b>lymphocytes multiply</b>, and the node <b>swells and becomes tender</b>.</p><p>Choosing <b>red blood cells</b> is a mistake: nodes hold lymphocytes and macrophages, not red cells.</p><p><b>Takeaway:</b> Swollen, tender node near an infection: lymphocytes at work.</p>"
+    },
+    {
+      "id": "li-80",
+      "type": "matrix",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing lymph drainage. For each body area, click to specify the duct its lymph drains into.",
+      "rowHeader": "Area",
+      "columns": [
+        "Right lymphatic duct",
+        "Thoracic duct"
+      ],
+      "rows": [
+        "The right arm",
+        "The left arm",
+        "Both legs",
+        "The right side of the head",
+        "The abdomen"
+      ],
+      "answer": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "rationale": "<p>The <b>right lymphatic duct</b> drains the <b>right arm</b> and the <b>right side of the head and chest</b>. The <b>thoracic duct</b> drains everything else: the left arm, both legs, and the abdomen.</p><p>Sending the right leg's lymph to the right lymphatic duct is a mistake: both legs drain into the thoracic duct.</p><p><b>Takeaway:</b> Right upper quarter: right lymphatic duct. The rest: thoracic duct.</p>"
+    },
+    {
+      "id": "li-81",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A client with breast cancer asks why the surgeon will check the lymph nodes in the armpit. Which explanation should the nurse give?",
+      "options": [
+        "“The lymph nodes make the cancer cells, so they need to be removed.”",
+        "“Cancer cells can travel in the lymph and lodge in nearby nodes.”",
+        "“The nodes supply blood to the breast tissue around the tumor.”",
+        "“Checking the nodes shows how well your heart is pumping.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>Lymph from the breast drains to the <b>armpit (axillary) nodes</b>, so cancer cells that spread through the <b>lymph</b> often reach those nodes first.</p><p>The nodes don't make cancer cells or supply blood to the breast, and they don't reflect how the heart pumps.</p><p><b>Takeaway:</b> Nodes filter lymph, so they can catch spreading cancer cells.</p>"
+    },
+    {
+      "id": "li-82",
+      "type": "sata",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing the lymphatic system. Which of the following are its functions?",
+      "options": [
+        "Carrying oxygen out to the body's tissues",
+        "Filtering germs in the lymph nodes",
+        "Pumping blood through the lungs and body",
+        "Absorbing fats from the small intestine",
+        "Returning tissue fluid to the blood"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>The lymphatic system <b>returns tissue fluid</b> to the blood, <b>absorbs fats</b> through the lacteals of the small intestine, and <b>filters germs</b> in the lymph nodes.</p><p><b>Pumping blood</b> is the heart's job, and <b>carrying oxygen</b> is the red cells' job.</p><p><b>Takeaway:</b> Lymphatic jobs: fluid return, fat absorption, defense.</p>"
+    },
+    {
+      "id": "li-83",
+      "type": "mc",
+      "topic": "Lymph nodes and vessels",
+      "level": 2,
+      "stem": "A nurse is reviewing lymph nodes. Which cells inside a node attack the germs filtered from the lymph?",
+      "options": [
+        "Red blood cells and platelets",
+        "Mast cells and basophils",
+        "Lymphocytes and macrophages",
+        "Type 2 alveolar cells"
+      ],
+      "answer": 2,
+      "rationale": "<p>Lymph nodes are packed with <b>lymphocytes</b> (T and B cells) and <b>macrophages</b>, which recognize and destroy the germs the node filters.</p><p>Red cells and platelets aren't defense cells. Mast cells and basophils release histamine in tissues and blood, and type 2 cells are in the alveoli.</p><p><b>Takeaway:</b> Lymph nodes: lymphocytes and macrophages.</p>"
+    },
+    {
+      "id": "li-84",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A client had the spleen removed after an injury. Which risk should the nurse teach the client about?",
+      "options": [
+        "A higher risk of serious infections, from certain bacteria",
+        "A higher risk of bleeding from a lack of platelets",
+        "A lower red blood cell count for the rest of the client's life",
+        "A lower ability to absorb fats from food"
+      ],
+      "answer": 0,
+      "rationale": "<p>The spleen <b>filters germs from the blood</b>, so without it the risk of <b>serious infections</b> rises, especially from certain bacteria (like pneumococcus); vaccines matter more.</p><p>Platelets often <b>rise</b> after the spleen is removed, red cells are still made in the bone marrow, and fat absorption happens in the gut's lacteals.</p><p><b>Takeaway:</b> No spleen: watch for infection, keep vaccines current.</p>"
+    },
+    {
+      "id": "li-85",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 3,
+      "stem": "A client with mononucleosis has an enlarged spleen and asks about playing football. Which response should the nurse give?",
+      "options": [
+        "“Play, but wear a brace around your knees and ankles for protection.”",
+        "“Contact sports are fine as soon as your sore throat is gone.”",
+        "“Football is fine, since your ribs protect the enlarged spleen from blows.”",
+        "“Avoid contact sports until cleared, since a swollen spleen can rupture.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>An <b>enlarged spleen</b> pushes below the ribs and is fragile; a blow can <b>rupture</b> it and cause serious bleeding, so contact sports wait until the provider clears the client.</p><p>An enlarged spleen extends past the ribs' protection. A knee brace doesn't protect it, and the spleen can stay enlarged after the sore throat is gone.</p><p><b>Takeaway:</b> Big spleen: no contact sports until cleared.</p>"
+    },
+    {
+      "id": "li-86",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A nurse is reviewing the lymphoid organs. Which one filters the blood, rather than the lymph?",
+      "options": [
+        "The tonsils",
+        "The thymus",
+        "The lymph nodes",
+        "The spleen"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>spleen</b> filters the <b>blood</b>: it removes old red cells and germs and holds immune cells.</p><p>The <b>lymph nodes</b> filter lymph, the <b>tonsils</b> trap germs entering the mouth and nose, and the <b>thymus</b> is where T cells mature.</p><p><b>Takeaway:</b> Spleen: blood. Nodes: lymph.</p>"
+    },
+    {
+      "id": "li-87",
+      "type": "matrix",
+      "topic": "Lymphoid organs",
+      "level": 1,
+      "stem": "A nurse is reviewing the lymphoid organs. For each organ, click to specify its main role.",
+      "rowHeader": "Organ",
+      "columns": [
+        "Where T cells mature",
+        "Filters the blood and removes old red cells",
+        "Filters the lymph",
+        "Traps germs entering the mouth and nose",
+        "Makes blood cells; B cells mature here"
+      ],
+      "rows": [
+        "The spleen",
+        "The bone marrow",
+        "The thymus",
+        "The tonsils",
+        "The lymph nodes"
+      ],
+      "answer": [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      "rationale": "<p>The <b>thymus</b> matures T cells, the <b>spleen</b> filters the blood, the <b>lymph nodes</b> filter lymph, the <b>tonsils</b> guard the mouth and nose, and the <b>bone marrow</b> makes blood cells and matures B cells.</p><p>Giving the thymus the job of making all blood cells is a mistake: that's the bone marrow.</p><p><b>Takeaway:</b> Marrow makes, thymus trains T cells, nodes and spleen filter, tonsils guard.</p>"
+    },
+    {
+      "id": "li-88",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 3,
+      "stem": "An adult's thymus is removed with a tumor. Which statement about the effect on the immune system is accurate?",
+      "options": [
+        "The client can no longer make any antibodies",
+        "The client will need lifelong red blood cell transfusions",
+        "The client already has mature T cells, so the change is small",
+        "The client's lymph nodes will stop filtering lymph"
+      ],
+      "answer": 2,
+      "rationale": "<p>The thymus does most of its work <b>early in life</b>, training T cells that then live in the nodes and spleen. An adult <b>already has mature T cells</b>, so losing the thymus has a small effect.</p><p>Antibodies come from B cells, red cells from the marrow, and the nodes keep filtering without the thymus.</p><p><b>Takeaway:</b> Thymus: most active in childhood; it shrinks after puberty.</p>"
+    },
+    {
+      "id": "li-89",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 2,
+      "stem": "A nurse is reviewing where lymphocytes mature. Which organs should the nurse identify?",
+      "options": [
+        "The spleen and the lymph nodes",
+        "The tonsils and the appendix",
+        "The liver and the kidneys",
+        "The bone marrow and the thymus"
+      ],
+      "answer": 3,
+      "rationale": "<p>Lymphocytes <b>mature</b> in the <b>bone marrow</b> (B cells) and the <b>thymus</b> (T cells), the primary lymphoid organs.</p><p>The <b>spleen</b>, <b>nodes</b>, and <b>tonsils</b> are where mature lymphocytes meet germs. The liver and kidneys aren't lymphoid organs.</p><p><b>Takeaway:</b> Mature in the marrow and thymus; work in the nodes, spleen, and tonsils.</p>"
+    },
+    {
+      "id": "li-90",
+      "type": "mc",
+      "topic": "Lymphoid organs",
+      "level": 3,
+      "stem": "A client's enlarged spleen is removing too many blood cells. Which findings should the nurse expect?",
+      "options": [
+        "Low red cell and platelet counts",
+        "High red cell and platelet counts",
+        "A high white cell count with a fever",
+        "High levels of antibodies in the blood"
+      ],
+      "answer": 0,
+      "rationale": "<p>An overactive spleen <b>removes too many cells</b> from the blood, so the red cell and platelet counts (and sometimes the white cells) are <b>low</b>.</p><p>Removing more cells lowers the counts, not raises them. A high white count with fever suggests infection, and the spleen's filtering doesn't raise antibodies.</p><p><b>Takeaway:</b> Overactive spleen: low counts.</p>"
+    },
+    {
+      "id": "li-91",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 1,
+      "stem": "A client asks what inflammation is. Which statement should the nurse include?",
+      "options": [
+        "“It's how the body protects an injured area and starts repair.”",
+        "“It's an infection that has spread to the bloodstream.”",
+        "“It's the immune system attacking healthy tissue for no reason.”",
+        "“It's the body's way of shutting down blood flow to an injury.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Inflammation</b> is the body's <b>protective response</b> to injury or infection: blood flow increases and <b>white cells and fluid</b> reach the site to contain the damage and start repair.</p><p>It isn't an infection in the blood, it usually isn't an attack on healthy tissue, and blood flow to the area <b>increases</b>.</p><p><b>Takeaway:</b> Inflammation: protect, clean up, repair.</p>"
+    },
+    {
+      "id": "li-92",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A client with an infection asks why they have a fever. Which explanation should the nurse give?",
+      "options": [
+        "“Your white cells release heat as they engulf the germs.”",
+        "“Interleukins raise your brain's set point for body temperature.”",
+        "“Your muscles stop working, so your body traps heat.”",
+        "“The germs give off heat as they multiply in your blood and tissues.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Interleukins</b> and other cytokines reset the hypothalamus's <b>set point</b>, so the body holds in heat; the higher temperature slows some germs and speeds up immune cells.</p><p>Engulfing germs doesn't make the fever, the muscles keep working (shivering even makes heat), and the germs don't heat the blood.</p><p><b>Takeaway:</b> Fever: cytokines reset the thermostat.</p>"
+    },
+    {
+      "id": "li-93",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A client asks why an inflamed wound hurts. Which explanation should the nurse give?",
+      "options": [
+        "“Swelling presses on nerves, and injury chemicals irritate them.”",
+        "“The white cells bite into the nerve endings as they fight the germs.”",
+        "“The extra blood flow overheats the nerves in the wound.”",
+        "“The fever makes the nerves across your body more sensitive.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Swelling presses on nerves</b>, and chemicals released by the injured tissue (like prostaglandins and bradykinin) <b>irritate the nerve endings</b>.</p><p>White cells don't attack nerves, the extra blood doesn't overheat them, and a local wound can hurt without any fever.</p><p><b>Takeaway:</b> Inflammatory pain: pressure plus chemical irritation.</p>"
+    },
+    {
+      "id": "li-94",
+      "type": "sata",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "A nurse is reviewing a client's joint inflammation. Which findings suggest it has become chronic?",
+      "options": [
+        "Lymphocytes and macrophages fill the area",
+        "Scar tissue is forming in the joint",
+        "It has lasted for several months",
+        "The symptoms began 2 hours ago",
+        "Neutrophils fill the joint fluid"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p><b>Chronic</b> inflammation lasts <b>months</b>, with <b>lymphocytes and macrophages</b> in the tissue and ongoing damage and repair that leave <b>scar tissue</b>.</p><p><b>Neutrophils</b> and a start <b>hours ago</b> are features of <b>acute</b> inflammation.</p><p><b>Takeaway:</b> Acute: hours to days, neutrophils. Chronic: months, lymphocytes and macrophages, scarring.</p>"
+    },
+    {
+      "id": "li-95",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "A client's inflamed knee can't bend fully. Which explanation should the nurse give?",
+      "options": [
+        "“The inflammation has fused the bones of the knee together.”",
+        "“Swelling and pain limit the movement, a sign of inflammation.”",
+        "“The cartilage has dissolved, so the joint is locked in place.”",
+        "“The knee is protecting itself by tightening the muscles around it.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Loss of function</b> is a sign of inflammation: <b>swelling and pain</b> limit how far the joint can move.</p><p>Inflammation doesn't fuse bones or dissolve cartilage in a few days, and the limit comes from swelling and pain, not every muscle tightening.</p><p><b>Takeaway:</b> Signs of inflammation: redness, warmth, swelling, pain, loss of function.</p>"
+    },
+    {
+      "id": "li-96",
+      "type": "order",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "Place the events of acute inflammation after an injury in order.",
+      "items": [
+        "The tissue is injured",
+        "Damaged cells release chemicals like histamine and cytokines",
+        "Nearby vessels widen and become leaky",
+        "Redness, warmth, and swelling appear",
+        "Chemokines call neutrophils, then macrophages, to the site",
+        "Germs and debris are cleared, and repair begins"
+      ],
+      "rationale": "<p>Injury → <b>chemical signals</b> → <b>wider, leaky vessels</b> → <b>redness, warmth, swelling</b> → <b>chemokines</b> call neutrophils, then macrophages → clean-up and <b>repair</b>.</p><p>Putting the white cells before the vessel changes is a mistake: the vessels widen and loosen first, which lets the cells reach the tissue.</p><p><b>Takeaway:</b> Signal, vessels open, signs appear, cells arrive, repair.</p>"
+    },
+    {
+      "id": "li-97",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "A client asks why a sprained ankle is inflamed when there's no infection. Which explanation should the nurse give?",
+      "options": [
+        "“The swelling is from your immune system attacking the ankle's own tissue.”",
+        "“Sprains cause an allergy that looks like inflammation.”",
+        "“Some germs must have entered through the skin.”",
+        "“Inflammation is a response to any tissue injury, not just to germs.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Inflammation</b> answers <b>any tissue injury</b>, including a sprain, a burn, or a cut, whether or not germs are present.</p><p>An intact sprain has no entry for germs, it isn't an autoimmune attack, and it isn't an allergy.</p><p><b>Takeaway:</b> Injury of any kind can set off inflammation.</p>"
+    },
+    {
+      "id": "li-98",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 3,
+      "stem": "A client's infected wound is getting worse. Which finding suggests the inflammation is now affecting the whole body?",
+      "options": [
+        "Redness spreading slowly around the wound's edges",
+        "Mild swelling at the wound site",
+        "Warmth over the wound when touched",
+        "A fever with chills and a fast heart rate"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Fever, chills, and a fast heart rate</b> are <b>systemic</b> signs: the inflammatory chemicals are acting throughout the body, which needs prompt follow-up.</p><p>Redness, swelling, and warmth <b>at the wound</b> are local signs of inflammation.</p><p><b>Takeaway:</b> Local: red, warm, swollen. Systemic: fever, chills, fast heart rate.</p>"
+    },
+    {
+      "id": "li-99",
+      "type": "mc",
+      "topic": "Inflammation",
+      "level": 2,
+      "stem": "In the first hours after bacteria enter a cut, which white blood cells should the nurse expect to fill the site?",
+      "options": [
+        "Lymphocytes",
+        "Eosinophils",
+        "Neutrophils",
+        "Basophils"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Neutrophils</b> are the most numerous white cells and the <b>first to arrive</b> at a bacterial infection, called by chemokines; macrophages follow.</p><p><b>Lymphocytes</b> lead the slower, specific response, <b>eosinophils</b> rise with parasites and allergies, and <b>basophils</b> release histamine.</p><p><b>Takeaway:</b> First hours: neutrophils. Later: macrophages and lymphocytes.</p>"
+    },
+    {
+      "id": "li-100",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client with a viral infection has a high lymphocyte count. Which explanation should the nurse give?",
+      "options": [
+        "“Lymphocytes are leaking out of the lymph nodes by mistake.”",
+        "“Lymphocytes rise to replace the red cells the virus destroyed.”",
+        "“Lymphocytes multiply to fight the virus and infected cells.”",
+        "“Lymphocytes rise because the virus is bacterial.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Lymphocytes</b> (T and B cells) lead the fight against <b>viruses</b>: T cells kill infected cells, and B cells make antibodies, so their count rises.</p><p>Viruses aren't bacteria, and a bacterial infection raises neutrophils more. Lymphocytes aren't leaking by mistake, and they don't replace red cells.</p><p><b>Takeaway:</b> Bacteria: neutrophils up. Viruses: lymphocytes up.</p>"
+    },
+    {
+      "id": "li-101",
+      "type": "matrix",
+      "topic": "White blood cells",
+      "level": 1,
+      "stem": "A nurse is reviewing the white blood cells. For each cell, click to specify its group.",
+      "rowHeader": "Cell",
+      "columns": [
+        "Granulocyte",
+        "Agranulocyte"
+      ],
+      "rows": [
+        "Neutrophil",
+        "Lymphocyte",
+        "Eosinophil",
+        "Monocyte",
+        "Basophil"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Granulocytes</b>, with granules in their cytoplasm, are the <b>neutrophils, eosinophils, and basophils</b>. <b>Agranulocytes</b> are the <b>lymphocytes and monocytes</b>.</p><p>Calling monocytes granulocytes is a mistake: they're agranulocytes, which become macrophages in the tissues.</p><p><b>Takeaway:</b> Granulocytes: neutrophils, eosinophils, basophils. Agranulocytes: lymphocytes, monocytes.</p>"
+    },
+    {
+      "id": "li-102",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's white blood cell differential. Which white cell should the nurse expect to be the most numerous?",
+      "options": [
+        "Lymphocytes",
+        "Monocytes",
+        "Basophils",
+        "Neutrophils"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Neutrophils</b> make up about <b>half to two-thirds</b> of the white cells in the blood, the largest share.</p><p><b>Lymphocytes</b> are second, and <b>monocytes</b> and <b>basophils</b> are a small share; basophils are the fewest.</p><p><b>Takeaway:</b> Neutrophils are the most common white cell; basophils the least.</p>"
+    },
+    {
+      "id": "li-103",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "After an infection clears, which cells should the nurse expect to clean up the dead cells and debris?",
+      "options": [
+        "Macrophages",
+        "Platelets",
+        "Plasma cells",
+        "Basophils"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Macrophages</b> (grown-up monocytes) engulf dead cells, worn-out neutrophils, and debris, clearing the way for repair.</p><p><b>Platelets</b> plug vessels, <b>plasma cells</b> make antibodies, and <b>basophils</b> release histamine; none of them clears debris.</p><p><b>Takeaway:</b> Macrophages: the clean-up crew.</p>"
+    },
+    {
+      "id": "li-104",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 3,
+      "stem": "A client's regulatory T cells aren't working properly. Which problem should the nurse expect to be more likely?",
+      "options": [
+        "Frequent viral infections from too few cytotoxic T cells",
+        "The immune system attacking the body's own tissues",
+        "Severe bleeding from a lack of platelets",
+        "A lack of antibodies after vaccines"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Regulatory T cells</b> calm the immune response and keep it from attacking the body. Without them, <b>autoimmune</b> attacks on the body's own tissues become more likely.</p><p>Regulatory T cells don't make cytotoxic T cells, platelets, or antibodies.</p><p><b>Takeaway:</b> Regulatory T cells: the immune system's brakes.</p>"
+    },
+    {
+      "id": "li-105",
+      "type": "sata",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A nurse is reviewing the white blood cells. Which of the following are lymphocytes?",
+      "options": [
+        "Monocytes",
+        "Neutrophils",
+        "Mast cells",
+        "Innate lymphoid cells",
+        "B cells",
+        "T cells"
+      ],
+      "answer": [
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p><b>Lymphocytes</b> include <b>T cells</b>, <b>B cells</b>, and the <b>innate lymphoid cells</b>.</p><p><b>Neutrophils</b> are granulocytes, <b>monocytes</b> are agranulocytes that become macrophages, and <b>mast cells</b> live in the tissues and release histamine.</p><p><b>Takeaway:</b> Lymphocytes: T, B, and innate lymphoid cells.</p>"
+    },
+    {
+      "id": "li-106",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 1,
+      "stem": "A nurse is reviewing B cells. Which cells do B cells become when they make antibodies?",
+      "options": [
+        "Plasma cells",
+        "Macrophages",
+        "Mast cells",
+        "Cytotoxic T cells"
+      ],
+      "answer": 0,
+      "rationale": "<p>Activated <b>B cells</b> become <b>plasma cells</b>, which release large amounts of antibodies (and some become memory B cells).</p><p><b>Macrophages</b> come from monocytes, <b>mast cells</b> are tissue cells that release histamine, and <b>cytotoxic T cells</b> develop from T cells.</p><p><b>Takeaway:</b> B cell → plasma cell → antibodies.</p>"
+    },
+    {
+      "id": "li-107",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 3,
+      "stem": "A nurse is reviewing innate and adaptive immunity. Which example is an innate response, one that needs no earlier exposure?",
+      "options": [
+        "Antibodies made after a measles vaccine",
+        "Memory B cells responding to a second exposure",
+        "Neutrophils engulfing bacteria at a new cut",
+        "Cytotoxic T cells trained against a specific virus"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Innate</b> defenses act right away against any germ, without earlier exposure: <b>neutrophils engulfing bacteria</b> at a new cut, inflammation, and barriers like the skin.</p><p><b>Antibodies</b>, <b>memory cells</b>, and <b>trained cytotoxic T cells</b> belong to the <b>adaptive</b> response, which targets a specific germ and remembers it.</p><p><b>Takeaway:</b> Innate: fast, general. Adaptive: slower, specific, with memory.</p>"
+    },
+    {
+      "id": "li-108",
+      "type": "mc",
+      "topic": "White blood cells",
+      "level": 2,
+      "stem": "A client asks what a white blood cell differential shows. Which answer should the nurse give?",
+      "options": [
+        "“The total number of red and white blood cells together.”",
+        "“The share of each type of white blood cell.”",
+        "“How quickly your white cells settle in a tube.”",
+        "“Whether your white cells carry enough oxygen.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>A <b>differential</b> breaks the white count into the <b>share of each type</b>: neutrophils, lymphocytes, monocytes, eosinophils, and basophils.</p><p>It doesn't count red cells. How fast cells settle is the sedimentation rate, and white cells don't carry oxygen.</p><p><b>Takeaway:</b> Differential: which white cells, and how many of each.</p>"
+    },
+    {
+      "id": "li-109",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A newborn has antibodies that came from the mother before birth. Which type of immunity is this?",
+      "options": [
+        "Active immunity, which lasts for life",
+        "Passive immunity, which fades in a few months",
+        "Active immunity, made by the baby's own B cells",
+        "Passive immunity, which builds memory cells"
+      ],
+      "answer": 1,
+      "rationale": "<p>Antibodies received from someone else give <b>passive</b> immunity: protection right away, but it <b>fades</b> over months, since the baby didn't make them or memory cells.</p><p><b>Active</b> immunity comes from the person's own immune response, after infection or a vaccine. Passive immunity doesn't build memory cells.</p><p><b>Takeaway:</b> Active: you make it, it lasts. Passive: you receive it, it fades.</p>"
+    },
+    {
+      "id": "li-110",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A client asks why a booster dose of a vaccine is needed. Which explanation should the nurse give?",
+      "options": [
+        "“It treats any infection you may have caught since your first dose was given.”",
+        "“It gives you the antibodies directly from someone else.”",
+        "“It replaces the first dose, which didn't work.”",
+        "“It reminds your memory cells and raises your antibody levels again.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>A <b>booster</b> re-exposes the immune system to the antigen, so <b>memory cells</b> respond quickly and <b>antibody levels rise</b> again for lasting protection.</p><p>The first dose did work; the booster builds on it. Vaccines prevent rather than treat, and receiving antibodies from someone else is passive immunity.</p><p><b>Takeaway:</b> Boosters wake up memory cells.</p>"
+    },
+    {
+      "id": "li-111",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A nurse is reviewing antibodies. How do antibodies stop a bacterial toxin from causing harm?",
+      "options": [
+        "They bind the toxin so it can't attach to cells",
+        "They break the toxin down inside the liver's cells",
+        "They make the bacteria release less of the toxin",
+        "They carry the toxin out of the body in the urine"
+      ],
+      "answer": 0,
+      "rationale": "<p>Antibodies <b>bind to the toxin</b> (neutralize it), so it <b>can't attach</b> to the body's cells; the antibody-toxin clump is then cleared.</p><p>Antibodies don't digest the toxin in the liver, control how much the bacteria make, or carry it into the urine.</p><p><b>Takeaway:</b> Antibodies neutralize, mark, and clump germs and toxins.</p>"
+    },
+    {
+      "id": "li-112",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A client doesn't know which vaccines they've had. Which action should the nurse take?",
+      "options": [
+        "Give each vaccine again now, just to be safe",
+        "Skip the vaccines until the client remembers which ones",
+        "Help the client find and keep an immunization record",
+        "Order antibody tests for each vaccine-preventable disease"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Keeping an immunization record</b> (childhood, yearly flu and COVID-19, and pneumococcal and shingles for older adults) is part of immune health; the nurse helps the client find the record from past providers or the state registry.</p><p>Repeating every vaccine or testing for every disease isn't the first step, and skipping vaccines leaves the client unprotected.</p><p><b>Takeaway:</b> Know the record before deciding which vaccines are due.</p>"
+    },
+    {
+      "id": "li-113",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A client asks why the flu vaccine is given every year but the measles vaccine isn't. Which explanation should the nurse give?",
+      "options": [
+        "“Flu viruses change each year, so last year's antibodies may not match.”",
+        "“The measles vaccine is stronger than the flu vaccine.”",
+        "“Flu antibodies last about a week, and measles antibodies last for months.”",
+        "“Measles is no longer a risk, so its vaccine isn't needed.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Flu viruses change</b> from season to season, so the vaccine is updated yearly; the measles virus stays much the same, so childhood doses protect for life.</p><p>It isn't about strength. Flu protection lasts months rather than a week, and measles is still a risk, which is why the vaccine matters.</p><p><b>Takeaway:</b> Changing virus: yearly vaccine.</p>"
+    },
+    {
+      "id": "li-114",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "The day after a vaccine, a client has a sore arm and a low fever. Which explanation should the nurse give?",
+      "options": [
+        "“You've caught the disease from the vaccine.”",
+        "“Your immune system is responding and building protection.”",
+        "“You're allergic to the vaccine and shouldn't get the next dose.”",
+        "“The vaccine was given into a vein by mistake.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>A <b>sore arm and a low fever</b> are common signs that the <b>immune system is responding</b>: inflammation where the vaccine was given and cytokines that raise the temperature.</p><p>These mild reactions don't mean the disease was caught or that there's an allergy (which brings hives, swelling, or trouble breathing), and they don't point to a vein.</p><p><b>Takeaway:</b> Mild soreness and fever: the immune system at work.</p>"
+    },
+    {
+      "id": "li-115",
+      "type": "matrix",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 2,
+      "stem": "A nurse is reviewing immunity. For each example, click to specify the type of immunity it gives.",
+      "rowHeader": "Example",
+      "columns": [
+        "Active immunity",
+        "Passive immunity"
+      ],
+      "rows": [
+        "Antibodies made after a measles infection",
+        "Antibodies a baby gets through breast milk",
+        "Antibodies made after a vaccine",
+        "Antibodies injected after an exposure, to protect right away"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "rationale": "<p><b>Active</b>: the person's own B cells make the antibodies, after an infection or a vaccine. <b>Passive</b>: the antibodies come from someone else, through the placenta, breast milk, or an injection.</p><p>Calling a vaccine passive is a mistake: a vaccine makes the body build its own antibodies and memory.</p><p><b>Takeaway:</b> Made yourself: active. Received: passive.</p>"
+    },
+    {
+      "id": "li-116",
+      "type": "mc",
+      "topic": "Antibodies, memory cells, and vaccines",
+      "level": 3,
+      "stem": "A 70-year-old client had chickenpox as a child and now has shingles. Which explanation should the nurse give?",
+      "options": [
+        "“Shingles is an allergic reaction to the chickenpox vaccine you had.”",
+        "“Shingles comes from a different virus that older adults catch from each other.”",
+        "“You caught chickenpox again from a child who had it recently.”",
+        "“The chickenpox virus slept in your nerves and woke as your immunity weakened.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>After chickenpox, the virus <b>stays dormant in the nerves</b>. As immunity <b>weakens with age</b>, it can reactivate as shingles, which is why the shingles vaccine is recommended for older adults.</p><p>It isn't a new chickenpox infection or an allergy, and it's the same virus that causes chickenpox.</p><p><b>Takeaway:</b> Shingles: the chickenpox virus waking up; vaccinate older adults.</p>"
+    },
+    {
+      "id": "li-117",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "A client has been under stress for months and is healing slowly from a minor wound. Which explanation should the nurse give?",
+      "options": [
+        "“Long-term high cortisol dampens the inflammation needed to heal.”",
+        "“Stress lowers your cortisol, which raises your blood sugar too high.”",
+        "“Cortisol speeds up the inflammation so much that it damages the wound.”",
+        "“Stress has no effect on healing; the wound must be infected.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Cortisol</b>, a steroid hormone, affects <b>inflammation</b>, metabolism, blood pressure, and sleep. Long-term stress keeps it high, which <b>dampens the inflammatory and immune response</b> a wound needs to heal.</p><p>Stress <b>raises</b> cortisol, which <b>calms</b> inflammation rather than speeding it up, and stress does affect healing.</p><p><b>Takeaway:</b> High cortisol: less inflammation, slower healing, more infections.</p>"
+    },
+    {
+      "id": "li-118",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 2,
+      "stem": "A client's erythrocyte sedimentation rate (ESR) is high. Which interpretation should the nurse make?",
+      "options": [
+        "It pinpoints an infection somewhere in the lungs",
+        "It shows that the infection is bacterial, not viral",
+        "Red cells are settling fast, a sign of inflammation",
+        "It means the client is dehydrated and needs fluids"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>ESR</b> measures how fast red cells settle in a tube; <b>faster</b> settling suggests <b>inflammation</b> somewhere in the body.</p><p>The ESR doesn't show <b>where</b> the inflammation is or whether an infection is bacterial (procalcitonin helps with that), and it isn't a test of hydration.</p><p><b>Takeaway:</b> High ESR: inflammation is present, location unknown.</p>"
+    },
+    {
+      "id": "li-119",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "A nurse is reviewing interleukin-8 (IL-8). Which cells does IL-8 mainly call to an infection?",
+      "options": [
+        "Neutrophils",
+        "Red blood cells",
+        "Platelets",
+        "Plasma cells"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>IL-8</b> is a chemokine that <b>calls neutrophils</b> to the site of infection or injury.</p><p>Red cells and platelets aren't called by chemokines to fight infection, and plasma cells stay in the lymphoid tissue making antibodies.</p><p><b>Takeaway:</b> IL-8: a neutrophil magnet.</p>"
+    },
+    {
+      "id": "li-120",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 2,
+      "stem": "A client's C-reactive protein (CRP) is high. Which conclusion should the nurse draw?",
+      "options": [
+        "The client has a bacterial infection somewhere in the lungs",
+        "Inflammation is present, and more tests are needed to find where",
+        "The client has prostate cancer that needs a biopsy",
+        "The client's inflammation has ended, so no follow-up is needed now"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>CRP</b> rises with inflammation <b>anywhere</b> in the body. It shows that inflammation is present, but <b>not where</b> or why, so other findings and tests are needed.</p><p>A high CRP doesn't point to the lungs or to a bacterial cause by itself, it isn't a cancer test, and it rises with active inflammation, not after it ends.</p><p><b>Takeaway:</b> Inflammatory markers: yes or no, not where.</p>"
+    },
+    {
+      "id": "li-121",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "A 64-year-old client's PSA is mildly high. His prostate is enlarged but smooth, and a biopsy found no cancer. Which condition most likely explains the PSA?",
+      "options": [
+        "A kidney infection",
+        "Prostatitis from a bacterial infection",
+        "Benign prostatic hyperplasia",
+        "Prostate cancer that the biopsy missed"
+      ],
+      "answer": 2,
+      "rationale": "<p>PSA is made by <b>normal and cancerous</b> prostate cells. A smooth, <b>enlarged</b> prostate with a negative biopsy fits <b>benign prostatic hyperplasia</b>, a common benign cause.</p><p><b>Prostatitis</b> brings a tender prostate, fever, and painful urination. Cancer isn't ruled out forever, but it isn't the most likely cause here. A kidney infection doesn't raise PSA.</p><p><b>Takeaway:</b> High PSA: cancer, BPH, or prostatitis; it needs follow-up, not alarm.</p>"
+    },
+    {
+      "id": "li-122",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 2,
+      "stem": "A client asks which cells make prostate-specific antigen (PSA). Which answer should the nurse give?",
+      "options": [
+        "“Cells of the bladder lining.”",
+        "“Cancer cells in the prostate, and no others.”",
+        "“Normal and cancerous prostate cells.”",
+        "“White blood cells fighting a prostate infection.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>PSA</b> is a protein made by <b>normal and cancerous</b> prostate cells, which is why benign conditions can raise it too.</p><p><b>Cancer cells alone</b> is a common misunderstanding: normal prostate cells make PSA too. It isn't made by white cells or the bladder.</p><p><b>Takeaway:</b> PSA comes from the prostate itself, healthy or not.</p>"
+    },
+    {
+      "id": "li-123",
+      "type": "mc",
+      "topic": "Inflammatory markers",
+      "level": 3,
+      "stem": "A nurse is reviewing the sedimentation rate. Why do red cells settle faster when there's inflammation?",
+      "options": [
+        "Inflammation makes the red cells much smaller",
+        "Proteins like fibrinogen make the red cells clump, so they sink faster",
+        "Inflammation destroys the red cells, so they break into heavy pieces",
+        "The fever thins the plasma, so the cells fall through it faster"
+      ],
+      "answer": 1,
+      "rationale": "<p>During inflammation, <b>fibrinogen</b> and other proteins rise and make red cells <b>stick together</b>; the clumps <b>sink faster</b> in the tube.</p><p>The red cells don't shrink, break apart, or fall through a thinned plasma.</p><p><b>Takeaway:</b> More inflammatory proteins → red cells clump → faster settling.</p>"
+    },
+    {
+      "id": "li-124",
+      "type": "dropdown",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A nurse is teaching about exercise for immune health. Complete the following sentence.",
+      "text": "The goal is about {{0}} minutes of exercise a week, such as {{1}} minutes on 5 to 7 days.",
+      "blanks": [
+        {
+          "options": [
+            "60",
+            "150",
+            "300"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "5 to 10",
+            "60 to 90",
+            "20 to 30"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p>The instructor's goal: about <b>150 minutes a week</b>, or <b>20 to 30 minutes</b> on 5 to 7 days.</p><p>Choosing 60 to 90 minutes a day is a mistake: it's far more than the goal, which most clients can reach with 20 to 30 minutes on most days.</p><p><b>Takeaway:</b> Immune health: 150 minutes a week.</p>"
+    },
+    {
+      "id": "li-125",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A client asks which way of eating best supports the immune system. Which answer should the nurse give?",
+      "options": [
+        "“Mostly packaged snacks with vitamins added to them.”",
+        "“Whole foods, like vegetables, fruits, and whole grains.”",
+        "“Energy drinks for the extra B vitamins they contain.”",
+        "“A high-sugar diet that gives you quick energy for the day.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>A diet of <b>whole foods</b> supports immune health, one of the instructor's interventions.</p><p><b>Packaged snacks</b>, <b>energy drinks</b>, and <b>high-sugar</b> foods add sugar and artificial ingredients that can drive inflammation.</p><p><b>Takeaway:</b> Whole foods help; sugar and energy drinks hurt.</p>"
+    },
+    {
+      "id": "li-126",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A nurse is reviewing four clients' vaccine records. Which client should the nurse remind about the shingles vaccine?",
+      "options": [
+        "A 9-year-old who is due for school vaccines",
+        "A 32-year-old who is pregnant",
+        "A 25-year-old who had chickenpox at age 6",
+        "A 67-year-old who had chickenpox as a child"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>shingles</b> vaccine is recommended for <b>older adults</b>, in whom the dormant chickenpox virus is more likely to reactivate.</p><p>Younger adults, children, and pregnant clients aren't the group the shingles vaccine is meant for.</p><p><b>Takeaway:</b> Older adults: shingles and pneumococcal vaccines, plus yearly flu and COVID-19.</p>"
+    },
+    {
+      "id": "li-127",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A healthy adult asks which vaccines are needed every year. Which answer should the nurse give?",
+      "options": [
+        "“Tetanus and shingles.”",
+        "“Pneumococcal and hepatitis B.”",
+        "“Flu and COVID-19.”",
+        "“Measles and mumps.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The instructor's list of yearly vaccines: <b>flu and COVID-19</b>.</p><p><b>Measles and mumps</b> are childhood vaccines, and the <b>shingles</b> and <b>pneumococcal</b> vaccines are for older adults; none of them is yearly.</p><p><b>Takeaway:</b> Every year: flu and COVID-19.</p>"
+    },
+    {
+      "id": "li-128",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 3,
+      "stem": "A client wants to start an herbal supplement for the immune system and also takes several prescribed medicines. Which response should the nurse give?",
+      "options": [
+        "“Herbal supplements are natural, so they're safe to start right away.”",
+        "“Ask your provider first, since supplements can interact with medicines.”",
+        "“Stop taking your prescribed medicines for a while as you try the supplement.”",
+        "“Take twice the label dose to get a stronger effect on your immunity.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>Herbal supplements can be part of healthy choices <b>with provider guidance</b>: some interact with prescribed medicines, so the provider should know first.</p><p><b>Natural</b> doesn't mean safe, <b>stopping prescribed medicines</b> could be dangerous, and doubling the dose adds risk.</p><p><b>Takeaway:</b> Supplements: with the provider's guidance, never in place of care.</p>"
+    },
+    {
+      "id": "li-129",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A client with diabetes asks why the flu vaccine matters more for them. Which explanation should the nurse give?",
+      "options": [
+        "“Diabetes weakens your immune response, so flu can be serious.”",
+        "“The flu vaccine lowers your blood glucose level for the winter.”",
+        "“People with diabetes can catch the flu from the vaccine itself.”",
+        "“The vaccine replaces your other diabetes care.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Chronic conditions</b> like diabetes <b>weaken the immune response</b>, so the flu and its complications can be more serious; the yearly vaccine lowers that risk.</p><p>The vaccine doesn't lower glucose or replace diabetes care, and it can't cause the flu.</p><p><b>Takeaway:</b> Chronic illness: more reason for yearly vaccines.</p>"
+    },
+    {
+      "id": "li-130",
+      "type": "mc",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A client asks why older adults are offered extra vaccines. Which explanation should the nurse give?",
+      "options": [
+        "“The immune system weakens with age, so infections hit harder.”",
+        "“Older adults' childhood vaccines wear off and stop working.”",
+        "“Extra vaccines replace the need for exercise and a healthy diet.”",
+        "“Pneumonia is a risk that starts after age 65.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>The immune system <b>weakens with age</b>, so infections like pneumonia and shingles are more common and more dangerous; that's why older adults are offered the <b>pneumococcal and shingles</b> vaccines.</p><p>Childhood vaccines don't all stop working, vaccines don't replace exercise and diet, and pneumonia can strike at any age.</p><p><b>Takeaway:</b> Aging immune system: more vaccines, plus healthy habits.</p>"
+    },
+    {
+      "id": "li-131",
+      "type": "matrix",
+      "topic": "Immune health and lifestyle",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's habits. For each habit, click to specify its effect on immune health.",
+      "rowHeader": "Habit",
+      "columns": [
+        "Supports immune health",
+        "Works against it"
+      ],
+      "rows": [
+        "Walking 30 minutes, 5 days a week",
+        "Drinking three energy drinks a day",
+        "Eating vegetables and whole grains",
+        "Skipping the yearly flu vaccine",
+        "Starting an herbal supplement without telling the provider",
+        "Keeping an immunization record"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Regular exercise</b>, <b>whole foods</b>, and an <b>up-to-date immunization record</b> support immune health. <b>Energy drinks</b> add sugar and artificial ingredients that drive inflammation, <b>skipping the flu vaccine</b> leaves the client unprotected, and a supplement <b>without the provider's guidance</b> can interact with medicines.</p><p>Calling any supplement helpful is a mistake: supplements belong with provider guidance, as part of other healthy choices.</p><p><b>Takeaway:</b> Move, eat whole foods, vaccinate, and talk to the provider.</p>"
     }
   ]
 }

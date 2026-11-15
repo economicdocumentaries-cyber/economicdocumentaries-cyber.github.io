@@ -4,7 +4,7 @@
   "description": "Week 9, matched to the instructor's Exam 4 study guide: the hormones of the hypothalamus, pituitary, thyroid, parathyroid, adrenal glands, pancreas, pineal gland, and gonads, the TSH test, cortisol and how it's measured, diabetes mellitus (diagnosis, risk factors, and signs), metabolic syndrome, and the signs and symptoms of endocrine problems, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 157.5,
   "defaultCount": 25,
   "cases": {
     "screening": {
@@ -647,6 +647,1012 @@
       "options": ["“Darkness lets your pituitary gland release growth hormone, which makes you sleepy.”", "“Darkness lowers your cortisol right away, which puts you to sleep.”", "“Darkness lets your thyroid gland slow your metabolism, so you can sleep.”", "“Darkness lets your pineal gland release melatonin, which helps set your sleep cycle.”"],
       "answer": 3,
       "rationale": "<p>The <b>pineal gland</b>, deep in the brain, releases <b>melatonin</b> in the dark, which promotes sleep and helps set the daily (circadian) rhythm. Light holds melatonin back, so a dark room helps a night worker sleep during the day.</p><p>The <b>growth hormone</b> choice isn't the right answer: growth hormone is released in deep sleep, but it doesn't bring sleep on, and darkness doesn't control it the way it controls melatonin. Cortisol falls through the evening on its own daily rhythm, not the moment the lights go out, and the thyroid doesn't respond to darkness.</p><p><b>Takeaway:</b> Darkness → pineal gland → melatonin → sleep; light holds it back.</p>"
+    },
+    {
+      "id": "es-75",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "Since a delivery with severe bleeding 3 weeks ago, a client's breast milk has never come in, and she feels tired and cold. The provider suspects the blood loss damaged her anterior pituitary. Which hormone's loss best explains the missing milk?",
+      "options": [
+        "Prolactin",
+        "Estrogen",
+        "Vasopressin",
+        "Oxytocin"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Prolactin</b>, from the <b>anterior pituitary</b>, makes the breasts produce milk. Without it, no milk comes in.</p><p><b>Oxytocin</b> isn't right: it lets milk flow once it's made (let-down), and it comes from the posterior pituitary. <b>Estrogen</b> is made mainly by the ovaries, and <b>vasopressin</b> controls the kidneys' water.</p><p><b>Takeaway:</b> Prolactin makes the milk; oxytocin lets it flow.</p>"
+    },
+    {
+      "id": "es-76",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A breastfeeding client asks why her milk starts to flow a minute after the baby latches on. Which explanation should the nurse give?",
+      "options": [
+        "“Suckling makes your anterior pituitary release prolactin, which pushes the milk out fast.”",
+        "“Suckling makes your adrenal glands release epinephrine, which opens the milk ducts.”",
+        "“Suckling makes your posterior pituitary release oxytocin, which squeezes the milk out.”",
+        "“Suckling makes your thyroid release calcitonin, which moves calcium into the milk.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Suckling sends nerve signals to the hypothalamus, and the <b>posterior pituitary</b> releases <b>oxytocin</b>, which contracts the cells around the milk glands: the let-down.</p><p><b>Prolactin</b> isn't right: it makes the milk over hours, but it doesn't push it out. <b>Epinephrine</b> works against let-down (stress can slow it), and <b>calcitonin</b> lowers the blood calcium.</p><p><b>Takeaway:</b> Oxytocin: let-down and labor contractions. Prolactin: milk production.</p>"
+    },
+    {
+      "id": "es-77",
+      "type": "sata",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "After a head injury, a client's posterior pituitary releases too little vasopressin (antidiuretic hormone). Which findings should the nurse expect?",
+      "options": [
+        "Strong thirst",
+        "A low blood sodium level",
+        "Swelling and weight gain from water retention",
+        "A high blood sodium level",
+        "Large amounts of pale, dilute urine",
+        "Dark, concentrated urine"
+      ],
+      "answer": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "<p>Without vasopressin, the kidneys can't hold on to water: the client passes <b>large amounts of dilute urine</b>, feels <b>very thirsty</b>, and the water loss leaves the blood <b>sodium high</b>.</p><p><b>Concentrated urine</b>, <b>swelling</b>, and a <b>low sodium</b> come with too much vasopressin, when the kidneys hold on to too much water.</p><p><b>Takeaway:</b> Too little ADH: lots of dilute urine, thirst, high sodium. Too much: little urine, water retention, low sodium.</p>"
+    },
+    {
+      "id": "es-78",
+      "type": "matrix",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A nurse is reviewing the hypothalamus. For each hormone, click to specify the effect on the anterior pituitary the nurse should expect.",
+      "rowHeader": "Hormone",
+      "columns": [
+        "Makes it release a hormone",
+        "Holds a hormone back"
+      ],
+      "rows": [
+        "Corticotropin-releasing hormone (CRH)",
+        "Dopamine",
+        "Thyrotropin-releasing hormone (TRH)",
+        "Somatostatin",
+        "Gonadotropin-releasing hormone (GnRH)",
+        "Growth hormone–releasing hormone (GHRH)"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "rationale": "<p>The <b>releasing hormones</b> (CRH, TRH, GnRH, GHRH) make the anterior pituitary release ACTH, TSH, FSH and LH, and growth hormone. <b>Dopamine</b> holds back prolactin, and <b>somatostatin</b> holds back growth hormone.</p><p>Calling dopamine a releasing hormone is a mistake: from the hypothalamus, it keeps prolactin low until it's needed.</p><p><b>Takeaway:</b> Releasing hormones turn the pituitary on; dopamine and somatostatin hold it back.</p>"
+    },
+    {
+      "id": "es-79",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "A client's ACTH level is high, but the cortisol level is low. Where is the problem most likely?",
+      "options": [
+        "In the anterior pituitary, which isn't making enough ACTH",
+        "In the hypothalamus, which isn't making enough CRH",
+        "In the adrenal medulla, which isn't making enough epinephrine",
+        "In the adrenal cortex, which isn't answering the ACTH"
+      ],
+      "answer": 3,
+      "rationale": "<p>ACTH tells the <b>adrenal cortex</b> to make cortisol. A <b>high ACTH with a low cortisol</b> means the pituitary is pushing hard, but the adrenal cortex isn't answering.</p><p>A problem in the <b>pituitary</b> or the <b>hypothalamus</b> would make the ACTH <b>low</b>, along with the cortisol. The <b>adrenal medulla</b> makes epinephrine, not cortisol.</p><p><b>Takeaway:</b> High signal + low hormone: the gland is failing. Low signal + low hormone: the pituitary or hypothalamus is.</p>"
+    },
+    {
+      "id": "es-80",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A 12-year-old has a pituitary tumor that releases too much growth hormone. Which finding should the nurse expect?",
+      "options": [
+        "A big gain in height over the past year",
+        "Short height for the child's age",
+        "Weight loss with heat intolerance",
+        "Enlarged hands and jaw with no change in height"
+      ],
+      "answer": 0,
+      "rationale": "<p>Before the growth plates close, too much <b>growth hormone</b> makes the long bones grow: the child grows <b>very tall, very fast</b> (gigantism).</p><p><b>Enlarged hands and jaw without more height</b> is acromegaly, in adults whose growth plates have closed. <b>Short height</b> comes with too little growth hormone, and <b>weight loss with heat intolerance</b> points to the thyroid.</p><p><b>Takeaway:</b> Too much growth hormone: a child grows tall; an adult's hands, feet, and jaw grow.</p>"
+    },
+    {
+      "id": "es-81",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "As a 52-year-old client goes through menopause, her ovaries make much less estrogen. Which change in her follicle-stimulating hormone (FSH) should the nurse expect?",
+      "options": [
+        "FSH falls, since the ovaries no longer need it",
+        "FSH stays the same, since the pituitary isn't affected",
+        "FSH rises, since low estrogen no longer holds it back",
+        "FSH falls, since estrogen is needed to release it"
+      ],
+      "answer": 2,
+      "rationale": "<p>Estrogen normally holds back FSH (negative feedback). When the ovaries make little estrogen, the pituitary releases <b>more FSH</b> to push them, so <b>FSH rises</b>.</p><p><b>FSH falling</b> gets the feedback backward: less of the end hormone means more of the signal. <b>No change</b> ignores that the pituitary responds to the estrogen level.</p><p><b>Takeaway:</b> When the end hormone falls, the pituitary's signal rises (negative feedback).</p>"
+    },
+    {
+      "id": "es-82",
+      "type": "dropdown",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A nurse is reviewing vasopressin. Complete the following sentences.",
+      "text": "Vasopressin (antidiuretic hormone) is made in the {{0}} and released into the blood from the {{1}}. It makes the kidneys {{2}} water.",
+      "blanks": [
+        {
+          "options": [
+            "hypothalamus",
+            "anterior pituitary",
+            "adrenal cortex"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "anterior pituitary gland",
+            "posterior pituitary",
+            "thyroid gland"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "get rid of",
+            "hold on to",
+            "filter more"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p><b>Vasopressin</b> is made in the <b>hypothalamus</b>, stored in and released from the <b>posterior pituitary</b>, and makes the kidneys <b>hold on to</b> water.</p><p>Naming the anterior pituitary is a mistake: it makes its own hormones, while the posterior pituitary releases the two made in the hypothalamus, vasopressin and oxytocin.</p><p><b>Takeaway:</b> Vasopressin and oxytocin: made in the hypothalamus, released by the posterior pituitary.</p>"
+    },
+    {
+      "id": "es-83",
+      "type": "mc",
+      "topic": "Hypothalamus and pituitary",
+      "level": 3,
+      "stem": "A client's TSH is 0.1 mIU/L (expected about 0.4 to 4.0), and the free T4 is high. Which interpretation should the nurse make?",
+      "options": [
+        "The thyroid is overactive, and its T4 is holding back TSH",
+        "The pituitary is failing, so the thyroid has stopped making T4",
+        "The thyroid is underactive, and the pituitary is pushing it harder",
+        "The results are within the expected range for an adult"
+      ],
+      "answer": 0,
+      "rationale": "<p>A <b>high T4</b> holds back the pituitary's TSH (negative feedback), so a <b>low TSH with a high T4</b> means an <b>overactive thyroid</b>.</p><p>A <b>failing pituitary</b> would leave the T4 low too. An <b>underactive thyroid</b> gives the opposite pattern: a high TSH and a low T4. A TSH of 0.1 is below the expected range.</p><p><b>Takeaway:</b> Read TSH and T4 together: low TSH + high T4 = overactive thyroid; high TSH + low T4 = underactive.</p>"
+    },
+    {
+      "id": "es-84",
+      "type": "dropdown",
+      "topic": "Hypothalamus and pituitary",
+      "level": 2,
+      "stem": "A nurse is reviewing how growth hormone is controlled. Complete the following sentences.",
+      "text": "The hypothalamus releases {{0}}, which makes the anterior pituitary release growth hormone. Another hypothalamic hormone, {{1}}, holds the release of growth hormone back.",
+      "blanks": [
+        {
+          "options": [
+            "growth hormone–releasing hormone (GHRH)",
+            "corticotropin-releasing hormone (CRH)",
+            "gonadotropin-releasing hormone (GnRH)"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "dopamine",
+            "somatostatin",
+            "norepinephrine"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p><b>GHRH</b> turns growth hormone on, and <b>somatostatin</b> turns it off, both from the hypothalamus.</p><p>Choosing <b>dopamine</b> is a mistake: it's also a hypothalamic hormone that holds a pituitary hormone back, but its target is prolactin.</p><p><b>Takeaway:</b> Growth hormone: GHRH on, somatostatin off. Prolactin: dopamine off.</p>"
+    },
+    {
+      "id": "es-85",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A client asks about the T3 and T4 results on a lab report. Which statement should the nurse include?",
+      "options": [
+        "“The thyroid releases mostly T3, which your body stores as T4 for later.”",
+        "“The pituitary makes the T4, and your thyroid then makes T3 from it.”",
+        "“T3 and T4 slow your metabolism down whenever their levels rise.”",
+        "“The thyroid releases mostly T4, which your body turns into active T3.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The thyroid gland releases mostly <b>thyroxine (T4)</b>, and the tissues turn it into <b>triiodothyronine (T3)</b>, the more active form. Both raise the metabolic rate.</p><p>Making <b>T3 the main product</b> reverses them. The <b>pituitary</b> makes TSH, not T4, and rising T3 and T4 <b>speed up</b> the metabolism.</p><p><b>Takeaway:</b> Thyroid: mostly T4, turned into the more active T3; both speed the metabolism.</p>"
+    },
+    {
+      "id": "es-86",
+      "type": "sata",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A client's blood calcium is low, and the parathyroid glands release more parathyroid hormone (PTH). Which effects of PTH should the nurse expect?",
+      "options": [
+        "More calcium lost in the urine",
+        "Calcium moved from the blood into the bones",
+        "More calcium absorbed from food, through activated vitamin D",
+        "Less calcium lost in the urine",
+        "Calcium released from the bones into the blood"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>PTH <b>raises</b> the blood calcium three ways: it <b>releases calcium from bone</b>, makes the kidneys <b>keep more calcium</b>, and activates vitamin D so the gut <b>absorbs more calcium</b> from food.</p><p><b>Moving calcium into the bones</b> is what calcitonin does as the calcium rises. <b>Losing more calcium in the urine</b> would lower the calcium, the opposite of PTH's job.</p><p><b>Takeaway:</b> PTH: bone gives calcium up, kidneys keep it, gut absorbs it.</p>"
+    },
+    {
+      "id": "es-87",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 3,
+      "stem": "A client's parathyroid glands release too much parathyroid hormone, and the blood calcium is high. Which findings should the nurse expect?",
+      "options": [
+        "Muscle twitching and tingling around the mouth",
+        "Kidney stones, bone pain, and muscle weakness",
+        "Heat intolerance, weight loss, and tremor",
+        "Large amounts of urine with a high glucose"
+      ],
+      "answer": 1,
+      "rationale": "<p>Too much PTH pulls calcium out of bone (<b>bone pain</b>), the extra calcium in the urine forms <b>kidney stones</b>, and a high calcium dulls the nerves and muscles (<b>weakness</b>).</p><p><b>Twitching and tingling</b> come with a <b>low</b> calcium. <b>Heat intolerance and tremor</b> point to the thyroid, and <b>a high glucose</b> to diabetes.</p><p><b>Takeaway:</b> High calcium: stones, bones, weakness. Low calcium: tingling and twitching.</p>"
+    },
+    {
+      "id": "es-88",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A client with hypothyroidism says, “I'm cold all the time, and I'm constipated.” Which explanation should the nurse give?",
+      "options": [
+        "“Your thyroid is making too much calcitonin, which slows your muscles and your bowels.”",
+        "“Your adrenal glands are making too little epinephrine, which keeps you warm.”",
+        "“Low thyroid hormone slows your metabolism, so you make less heat and digest slowly.”",
+        "“Your body is burning fat too fast, so there's less of it to keep you warm.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Thyroid hormone sets the <b>metabolic rate</b>. With too little, the body <b>makes less heat</b> and the <b>gut moves more slowly</b>.</p><p><b>Calcitonin</b> lowers the blood calcium; it doesn't cause these. <b>Epinephrine</b> isn't the problem in hypothyroidism, and <b>burning fat too fast</b> fits too much thyroid hormone.</p><p><b>Takeaway:</b> Hypothyroid: everything slows (cold, constipated, tired). Hyperthyroid: everything speeds up.</p>"
+    },
+    {
+      "id": "es-89",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "Over 6 months, a 78-year-old client has become slow, forgetful, and cold all the time, and the family blames old age. Which test should the nurse expect the provider to order first?",
+      "options": [
+        "A fasting glucose level",
+        "A morning cortisol level",
+        "A hemoglobin A1C level",
+        "A TSH level"
+      ],
+      "answer": 3,
+      "rationale": "<p>Slowing, forgetfulness, and cold intolerance can be <b>hypothyroidism</b>, which in older adults is easy to mistake for aging. The <b>TSH</b> screens for it.</p><p>A <b>fasting glucose</b> and <b>A1C</b> check for diabetes, which doesn't cause cold intolerance. A <b>low cortisol</b> causes weakness and low blood pressure, not this picture.</p><p><b>Takeaway:</b> In an older adult, “just aging” can be an underactive thyroid: check the TSH.</p>"
+    },
+    {
+      "id": "es-90",
+      "type": "dropdown",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A nurse is reviewing how the body raises a low blood calcium. Complete the following sentence.",
+      "text": "When the blood calcium falls, the {{0}} release {{1}}, which {{2}} calcium from the bones.",
+      "blanks": [
+        {
+          "options": [
+            "parathyroid glands",
+            "thyroid gland's cells",
+            "adrenal cortex cells"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "calcitonin",
+            "parathyroid hormone",
+            "thyroid-stimulating hormone"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "releases",
+            "stores away",
+            "holds back"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>A low calcium makes the <b>parathyroid glands</b> release <b>parathyroid hormone</b>, which <b>releases</b> calcium from the bones into the blood.</p><p>Choosing <b>calcitonin</b> is a mistake: the thyroid releases it when the calcium is <b>high</b>, and it moves calcium into the bones.</p><p><b>Takeaway:</b> Low calcium: PTH releases it from bone. High calcium: calcitonin stores it.</p>"
+    },
+    {
+      "id": "es-91",
+      "type": "mc",
+      "topic": "Thyroid and parathyroid",
+      "level": 2,
+      "stem": "A client with untreated hyperthyroidism has a resting heart rate of 118/min. Which explanation should the nurse give?",
+      "options": [
+        "Too little TSH from the pituitary is weakening the heart",
+        "Too much calcitonin is raising the calcium and the heart rate",
+        "Too little cortisol is lowering the blood pressure, so the heart races",
+        "Too much thyroid hormone is speeding the metabolism and the heart"
+      ],
+      "answer": 3,
+      "rationale": "<p>Thyroid hormone raises the <b>metabolic rate</b> and makes the heart more responsive to adrenaline, so too much gives a <b>fast heart rate</b>.</p><p>A <b>low TSH</b> here is the pituitary's answer to the high thyroid hormone, not the cause. <b>Calcitonin</b> lowers calcium, and <b>low cortisol</b> isn't part of hyperthyroidism.</p><p><b>Takeaway:</b> Too much thyroid hormone: a fast heart, heat intolerance, weight loss.</p>"
+    },
+    {
+      "id": "es-92",
+      "type": "matrix",
+      "topic": "Thyroid and parathyroid",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' thyroid results. For each pattern, click to specify the problem the nurse should suspect.",
+      "rowHeader": "Results",
+      "columns": [
+        "An underactive thyroid gland",
+        "An overactive thyroid gland",
+        "A pituitary that isn't signaling the thyroid",
+        "Normal thyroid function"
+      ],
+      "rows": [
+        "Low TSH, low free T4",
+        "High TSH, low free T4",
+        "Normal TSH, normal free T4",
+        "Low TSH, high free T4"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "rationale": "<p><b>High TSH, low T4</b>: the thyroid isn't answering the pituitary (underactive). <b>Low TSH, high T4</b>: the thyroid is overactive and holding TSH back. <b>Low TSH, low T4</b>: the pituitary isn't sending the signal. Normal and normal is normal function.</p><p>Reading a <b>low TSH</b> alone as “overactive” is a mistake: with a low T4, the problem is the pituitary.</p><p><b>Takeaway:</b> Always read TSH with T4: they move in opposite directions when the thyroid is the problem.</p>"
+    },
+    {
+      "id": "es-93",
+      "type": "sata",
+      "topic": "Thyroid and parathyroid",
+      "level": 3,
+      "stem": "A client's thyroid gland was removed for cancer, and the parathyroid glands were left in place. Which hormones will the client's body no longer make?",
+      "options": [
+        "Thyroxine (T4)",
+        "Calcitonin",
+        "Cortisol",
+        "Triiodothyronine (T3)",
+        "Parathyroid hormone (PTH)"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "<p>The thyroid gland makes <b>T4</b>, <b>T3</b>, and <b>calcitonin</b>, so all three stop when it's removed.</p><p><b>PTH</b> comes from the parathyroid glands, which were left in place, and <b>cortisol</b> from the adrenal cortex.</p><p><b>Takeaway:</b> Thyroid: T4, T3, calcitonin. Parathyroid: PTH. They're neighbors, not the same gland.</p>"
+    },
+    {
+      "id": "es-94",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 3,
+      "stem": "A client has a tumor of the adrenal cortex that releases too much aldosterone. Which findings should the nurse expect?",
+      "options": [
+        "High blood pressure and a low blood potassium",
+        "A round face and thin skin that bruises easily",
+        "Heavy sweating and a pounding headache",
+        "Low blood pressure and a high blood potassium"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Aldosterone</b> makes the kidneys keep sodium and water and get rid of potassium. Too much gives <b>high blood pressure</b> and a <b>low potassium</b>.</p><p><b>Low blood pressure with a high potassium</b> comes with too little aldosterone. <b>A round face and thin skin</b> come from too much cortisol, and <b>sweating with a pounding headache</b> from the adrenal medulla's epinephrine.</p><p><b>Takeaway:</b> Aldosterone: keeps sodium and water, loses potassium.</p>"
+    },
+    {
+      "id": "es-95",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "A provider orders a blood cortisol level. When should the nurse expect the blood to be drawn?",
+      "options": [
+        "At midnight, when cortisol reaches its highest level of the day",
+        "In the early morning, around 8 a.m., when cortisol is highest",
+        "After lunch, when cortisol rises along with the blood glucose",
+        "At bedtime, after the day's stress has built up"
+      ],
+      "answer": 1,
+      "rationale": "<p>Cortisol follows a daily rhythm: <b>highest in the early morning</b> and lowest around midnight, so a blood level is usually drawn <b>around 8 a.m.</b></p><p><b>Midnight</b> is when cortisol is lowest. Cortisol doesn't follow <b>meals</b>, and it doesn't peak at <b>bedtime</b>.</p><p><b>Takeaway:</b> Cortisol: high in the morning, low at midnight; time the blood draw.</p>"
+    },
+    {
+      "id": "es-96",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "A client asks what the DHEA on a lab report is. Which explanation should the nurse give?",
+      "options": [
+        "“A pituitary hormone that signals your adrenal glands.”",
+        "“An adrenal medulla hormone released in fight or flight.”",
+        "“An adrenal cortex hormone your body can turn into sex hormones.”",
+        "“A pancreas hormone that raises your blood glucose between meals.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>DHEA</b> (dehydroepiandrosterone) is an androgen from the <b>adrenal cortex</b> that the body can turn into testosterone and estrogen.</p><p>The <b>pituitary</b>'s signal to the adrenal glands is ACTH. The <b>adrenal medulla</b> releases epinephrine and norepinephrine. DHEA isn't a pancreatic hormone.</p><p><b>Takeaway:</b> Adrenal cortex: cortisol, aldosterone, DHEA and androgens. Medulla: epinephrine and norepinephrine.</p>"
+    },
+    {
+      "id": "es-97",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "A client whose adrenal glands make too much cortisol keeps getting infections. Which explanation should the nurse give?",
+      "options": [
+        "“Cortisol calms inflammation and your immune response.”",
+        "“Cortisol lowers your blood glucose, which starves your white cells.”",
+        "“Cortisol raises your blood pressure, which damages your lymph nodes.”",
+        "“Cortisol stops your body from making red blood cells.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>Cortisol <b>reduces inflammation</b> and <b>suppresses the immune response</b>, so too much of it leaves the client open to infections.</p><p>Cortisol <b>raises</b> the glucose rather than lowering it. Its effect on blood pressure doesn't damage the lymph nodes, and it doesn't stop red blood cell production.</p><p><b>Takeaway:</b> Too much cortisol: infections, high glucose, thin skin, slow healing.</p>"
+    },
+    {
+      "id": "es-98",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 3,
+      "stem": "A client with Cushing syndrome, from too much cortisol, has a fasting glucose of 142 mg/dL. Which explanation should the nurse give?",
+      "options": [
+        "Cortisol destroys the beta cells that make insulin",
+        "Cortisol keeps glucose from leaving the blood through the kidneys",
+        "Cortisol makes the pancreas release far too much insulin after meals",
+        "Cortisol raises the glucose and makes cells respond less to insulin"
+      ],
+      "answer": 3,
+      "rationale": "<p>Cortisol makes the liver release more glucose and makes the cells <b>respond less to insulin</b>, so the glucose stays <b>high</b>.</p><p><b>Destroying beta cells</b> is how type 1 diabetes starts, by an immune attack. Cortisol doesn't trap glucose in the blood, and extra insulin would <b>lower</b> the glucose.</p><p><b>Takeaway:</b> Cortisol: glucose up, insulin works less well.</p>"
+    },
+    {
+      "id": "es-99",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "Which change should the nurse expect to make the adrenal cortex release more aldosterone?",
+      "options": [
+        "A rise in the blood glucose after a meal",
+        "A rise in the blood sodium level after salty food",
+        "A drop in the blood pressure or blood volume",
+        "Darkness at night, as bedtime nears"
+      ],
+      "answer": 2,
+      "rationale": "<p>When the <b>blood pressure or blood volume drops</b>, the kidneys set off a chain (renin and angiotensin) that makes the adrenal cortex release <b>aldosterone</b>, which keeps sodium and water.</p><p>A <b>high sodium</b> holds aldosterone back, since the body has enough. <b>Glucose</b> after a meal triggers insulin, and <b>darkness</b> triggers melatonin.</p><p><b>Takeaway:</b> Low blood pressure or volume: more aldosterone, to keep sodium and water.</p>"
+    },
+    {
+      "id": "es-100",
+      "type": "mc",
+      "topic": "Adrenal glands",
+      "level": 3,
+      "stem": "An autoimmune disease has destroyed a client's adrenal cortex. Which findings should the nurse expect?",
+      "options": [
+        "High blood pressure and a low blood potassium",
+        "Weight gain in the face, belly, and upper back",
+        "Heavy sweating and a fast, pounding heart during stress",
+        "Low blood pressure, weight loss, and craving salt"
+      ],
+      "answer": 3,
+      "rationale": "<p>Without the adrenal cortex, the client lacks <b>aldosterone</b> (sodium and water are lost, so the <b>blood pressure falls</b> and the client <b>craves salt</b>) and <b>cortisol</b> (<b>weight loss</b>, weakness).</p><p><b>High blood pressure with a low potassium</b> comes with too much aldosterone, and <b>weight gain in the face and belly</b> with too much cortisol. <b>Sweating with a pounding heart</b> comes from the medulla, which wasn't affected.</p><p><b>Takeaway:</b> No adrenal cortex: low blood pressure, salt craving, weight loss, weakness.</p>"
+    },
+    {
+      "id": "es-101",
+      "type": "matrix",
+      "topic": "Adrenal glands",
+      "level": 2,
+      "stem": "A nurse is comparing too much and too little cortisol. For each finding, click to specify the problem it suggests.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Too much cortisol",
+        "Too little cortisol"
+      ],
+      "rows": [
+        "A round face and fat over the upper back",
+        "Low blood pressure and weakness",
+        "Thin skin that bruises easily",
+        "A low blood glucose",
+        "A high blood glucose",
+        "Weight loss and a poor appetite"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "rationale": "<p><b>Too much cortisol</b>: a round face, fat over the upper back, thin skin that bruises, and a high glucose. <b>Too little</b>: low blood pressure, weakness, a low glucose, and weight loss.</p><p>Linking a <b>low glucose</b> to too much cortisol gets it backward: cortisol raises the glucose.</p><p><b>Takeaway:</b> Cortisol up: round face, thin skin, high glucose. Cortisol down: weak, thin, low glucose and pressure.</p>"
+    },
+    {
+      "id": "es-102",
+      "type": "mc",
+      "topic": "Pancreas and insulin",
+      "level": 1,
+      "stem": "A nursing student asks which cells make insulin. Which answer should the nurse give?",
+      "options": [
+        "The beta cells in the islets of the pancreas",
+        "The cells of the adrenal cortex",
+        "The cells of the liver",
+        "The alpha cells in the islets of the pancreas"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Insulin</b> is made by the <b>beta cells</b> of the pancreatic islets (islets of Langerhans).</p><p>The <b>alpha cells</b> in the same islets make glucagon, which raises the glucose. The <b>adrenal cortex</b> makes cortisol and aldosterone, and the <b>liver</b> stores glucose but doesn't make insulin.</p><p><b>Takeaway:</b> Insulin: beta cells of the pancreatic islets.</p>"
+    },
+    {
+      "id": "es-103",
+      "type": "mc",
+      "topic": "Pancreas and insulin",
+      "level": 2,
+      "stem": "An hour after a large meal, which change should the nurse expect in a healthy person?",
+      "options": [
+        "Insulin falls, so glucose stays in the blood for energy",
+        "Cortisol rises to store the glucose as fat",
+        "Epinephrine rises to lower the glucose",
+        "Insulin rises and moves glucose into the cells"
+      ],
+      "answer": 3,
+      "rationale": "<p>As the glucose rises after a meal, the beta cells release <b>insulin</b>, which moves glucose <b>into the cells</b> and brings the level back down.</p><p><b>Insulin falling</b> happens between meals. <b>Cortisol</b> and <b>epinephrine</b> both <b>raise</b> the glucose; neither stores it.</p><p><b>Takeaway:</b> After a meal: glucose up, insulin up, glucose into the cells.</p>"
+    },
+    {
+      "id": "es-104",
+      "type": "sata",
+      "topic": "Pancreas and insulin",
+      "level": 2,
+      "stem": "A nurse is teaching a client what insulin does. Which statements should the nurse include?",
+      "options": [
+        "“It lowers your blood glucose.”",
+        "“It raises your glucose between meals.”",
+        "“It moves glucose into your muscle and fat cells.”",
+        "“It breaks down stored fat for energy.”",
+        "“It helps your liver store glucose.”"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>Insulin moves glucose <b>into muscle and fat cells</b>, helps the <b>liver store</b> it (as glycogen), and so <b>lowers the blood glucose</b>.</p><p><b>Breaking down fat</b> happens when insulin is low; insulin holds it back. <b>Raising the glucose between meals</b> is glucagon's job, not insulin's.</p><p><b>Takeaway:</b> Insulin: glucose into cells and storage; blood glucose down.</p>"
+    },
+    {
+      "id": "es-105",
+      "type": "mc",
+      "topic": "Pancreas and insulin",
+      "level": 3,
+      "stem": "A client with type 1 diabetes hasn't had any insulin for 2 days. The client's breath smells fruity, the breathing is deep and fast, and the glucose is 480 mg/dL. Which explanation should the nurse give?",
+      "options": [
+        "Without insulin, cells burn fat for fuel, making acids called ketones",
+        "Without insulin, the extra glucose turns into carbon dioxide in the blood",
+        "The high glucose makes the lungs work harder to absorb oxygen",
+        "The high glucose irritates the airways, so breathing speeds up"
+      ],
+      "answer": 0,
+      "rationale": "<p>Without insulin, glucose can't get into the cells, so they <b>burn fat</b>, making acidic <b>ketones</b> (the fruity breath). The acid builds up (metabolic acidosis, diabetic ketoacidosis), and <b>deep, fast breathing</b> blows off CO₂ to make up for it.</p><p>Glucose doesn't turn into CO₂ in the blood. The breathing changes because of the <b>acid</b>, not because of oxygen or irritated airways.</p><p><b>Takeaway:</b> No insulin: fat burning, ketones, acid; the lungs breathe deep and fast to blow it off.</p>"
+    },
+    {
+      "id": "es-106",
+      "type": "mc",
+      "topic": "Pancreas and insulin",
+      "level": 3,
+      "stem": "A client who skipped lunch before exercising feels shaky and sweaty, and the glucose is 58 mg/dL. Which explanation should the nurse give?",
+      "options": [
+        "The low glucose makes the pancreas release extra insulin",
+        "The low glucose sets off epinephrine, which causes shaking and sweating",
+        "The exercise raised the cortisol level, which then lowered the blood glucose",
+        "The low glucose slows the thyroid, which causes the shaking"
+      ],
+      "answer": 1,
+      "rationale": "<p>A falling glucose sets off the <b>adrenal medulla</b>: <b>epinephrine</b> raises the glucose but also causes <b>shaking, sweating</b>, and a fast heart.</p><p>A low glucose makes the pancreas release <b>less</b> insulin, not more. <b>Cortisol</b> raises the glucose, and the thyroid doesn't cause these quick findings.</p><p><b>Takeaway:</b> Low glucose: epinephrine kicks in, so shaky, sweaty, and fast heart.</p>"
+    },
+    {
+      "id": "es-107",
+      "type": "mc",
+      "topic": "Pineal gland and gonads",
+      "level": 2,
+      "stem": "A 76-year-old client says it's harder to sleep through the night than it used to be. Which age-related change could explain this?",
+      "options": [
+        "The adrenal glands make more aldosterone",
+        "The thyroid makes more calcitonin",
+        "The pineal gland makes less melatonin",
+        "The pituitary makes more growth hormone"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>pineal gland</b> makes <b>less melatonin</b> with age, which can make sleep lighter and shorter.</p><p><b>Aldosterone</b> and <b>calcitonin</b> don't set the sleep cycle, and <b>growth hormone</b> falls rather than rises with age.</p><p><b>Takeaway:</b> Melatonin falls with age; so can sleep quality.</p>"
+    },
+    {
+      "id": "es-108",
+      "type": "mc",
+      "topic": "Pineal gland and gonads",
+      "level": 1,
+      "stem": "Which hormones should the nurse identify as made by the ovaries?",
+      "options": [
+        "Follicle-stimulating hormone and LH",
+        "Prolactin and oxytocin",
+        "Cortisol and aldosterone",
+        "Estrogen and progesterone"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>ovaries</b> make <b>estrogen and progesterone</b>.</p><p><b>FSH and LH</b> come from the anterior pituitary and act on the ovaries. <b>Prolactin</b> is from the anterior pituitary and <b>oxytocin</b> from the posterior. <b>Cortisol and aldosterone</b> are from the adrenal cortex.</p><p><b>Takeaway:</b> Pituitary FSH and LH → ovaries → estrogen and progesterone.</p>"
+    },
+    {
+      "id": "es-109",
+      "type": "mc",
+      "topic": "Pineal gland and gonads",
+      "level": 3,
+      "stem": "A man's pituitary releases too little luteinizing hormone (LH). Which change should the nurse expect?",
+      "options": [
+        "A low testosterone level, since LH signals the testes to make it",
+        "A high estrogen level, since LH turns testosterone into estrogen",
+        "No change, since LH acts on the ovaries but not the testes",
+        "A high testosterone level, since LH normally holds it back"
+      ],
+      "answer": 0,
+      "rationale": "<p>In men, <b>LH</b> tells the <b>testes</b> to make <b>testosterone</b>, so too little LH means a <b>low testosterone</b>.</p><p>LH turns testosterone production <b>on</b>, not off. It doesn't convert testosterone into estrogen, and it acts on the testes as well as the ovaries.</p><p><b>Takeaway:</b> LH → testosterone (testes) or ovulation (ovaries).</p>"
+    },
+    {
+      "id": "es-110",
+      "type": "mc",
+      "topic": "Pineal gland and gonads",
+      "level": 3,
+      "stem": "A 15-year-old hasn't started puberty, and the provider suspects the hypothalamus isn't releasing gonadotropin-releasing hormone (GnRH). Which lab pattern should the nurse expect?",
+      "options": [
+        "High FSH and LH, with low sex hormones",
+        "Low FSH and LH, with high sex hormones",
+        "Normal FSH and LH, with low sex hormones",
+        "Low FSH and LH, with low sex hormones"
+      ],
+      "answer": 3,
+      "rationale": "<p>Without <b>GnRH</b>, the pituitary releases <b>little FSH and LH</b>, so the gonads make <b>little estrogen or testosterone</b>: everything down the chain is low.</p><p><b>High FSH and LH with low sex hormones</b> means the gonads aren't answering a strong signal. <b>High sex hormones</b> with low FSH and LH doesn't fit a missing signal, and <b>normal</b> FSH and LH would mean the hypothalamus is working.</p><p><b>Takeaway:</b> A missing signal at the top: everything below it is low.</p>"
+    },
+    {
+      "id": "es-111",
+      "type": "mc",
+      "topic": "Pineal gland and gonads",
+      "level": 2,
+      "stem": "Which pituitary hormones should the nurse identify as acting on the testes?",
+      "options": [
+        "FSH and LH",
+        "Prolactin and oxytocin",
+        "Growth hormone and vasopressin",
+        "TSH and ACTH"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>FSH</b> (for sperm production) and <b>LH</b> (for testosterone) both act on the <b>testes</b>, as they act on the ovaries.</p><p><b>TSH</b> acts on the thyroid and <b>ACTH</b> on the adrenal cortex. <b>Prolactin and oxytocin</b> act mainly on the breasts and uterus, and <b>vasopressin</b> on the kidneys.</p><p><b>Takeaway:</b> FSH and LH: the gonadotropins, for the ovaries and the testes.</p>"
+    },
+    {
+      "id": "es-112",
+      "type": "matrix",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A nurse is reviewing six clients' results. For each result, click to specify how the nurse should interpret it.",
+      "rowHeader": "Result",
+      "columns": [
+        "Meets a criterion for diabetes",
+        "In the prediabetes range",
+        "Normal"
+      ],
+      "rows": [
+        "Fasting glucose 131 mg/dL",
+        "Hemoglobin A1C 6.1%",
+        "2-hour glucose 214 mg/dL",
+        "Fasting glucose 92 mg/dL",
+        "Hemoglobin A1C 7%",
+        "Fasting glucose 112 mg/dL"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "rationale": "<p>Diabetes criteria: a <b>fasting glucose of 126 or more</b>, a <b>2-hour glucose over 200</b>, an <b>A1C of 6.5% or more</b>, or a random glucose over 200 with signs. A fasting glucose of 100 to 125 or an A1C from 5.7% up is the prediabetes range.</p><p>Calling a <b>fasting glucose of 112</b> normal is a mistake: it's above 100, in the prediabetes range.</p><p><b>Takeaway:</b> Fasting: under 100 normal, 100 to 125 prediabetes, 126+ diabetes. A1C: 5.7% prediabetes, 6.5% diabetes.</p>"
+    },
+    {
+      "id": "es-113",
+      "type": "sata",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A 45-year-old client has a high blood glucose that hasn't been diagnosed yet. Which findings should the nurse recognize as signs of it?",
+      "options": [
+        "Cuts that heal slowly",
+        "Shakiness and sweating",
+        "Weight gain without eating more",
+        "Blurred vision",
+        "Urinating often",
+        "Strong thirst"
+      ],
+      "answer": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p>A high glucose pulls water into the urine (<b>frequent urination</b>, <b>thirst</b>), changes the fluid in the eye's lens (<b>blurred vision</b>), and weakens healing (<b>slow-healing cuts</b>).</p><p><b>Shakiness and sweating</b> are signs of a <b>low</b> glucose. Undiagnosed high glucose more often brings <b>weight loss</b> than weight gain.</p><p><b>Takeaway:</b> High glucose: urinating, thirst, blurred vision, slow healing.</p>"
+    },
+    {
+      "id": "es-114",
+      "type": "mc",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A client's hemoglobin A1C is 7.4%. Which interpretation should the nurse make?",
+      "options": [
+        "The past 2 to 3 months' average glucose meets the diabetes criterion",
+        "The average glucose over 3 months is in the prediabetes range",
+        "Today's fasting glucose is high enough to meet the diabetes criterion",
+        "The client had a single high glucose reading in the past week"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>A1C</b> reflects the <b>average glucose over the past 2 to 3 months</b>, and <b>6.5% or more</b> meets a criterion for diabetes.</p><p>The A1C doesn't measure <b>today's</b> glucose or a <b>single reading</b>. The prediabetes range is 5.7% to 6.4%, below this result.</p><p><b>Takeaway:</b> A1C: the 3-month average; 6.5% or more meets the diabetes criterion.</p>"
+    },
+    {
+      "id": "es-115",
+      "type": "mc",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A client with diabetes has a sore on the foot that has been slow to heal. Which explanation should the nurse give?",
+      "options": [
+        "High glucose makes the skin produce too much oil",
+        "High glucose damages small blood vessels and weakens white cells",
+        "Low insulin makes the bones pull calcium out of the skin",
+        "High glucose raises the body temperature, which slows the healing down"
+      ],
+      "answer": 1,
+      "rationale": "<p>Over time, a high glucose <b>damages small blood vessels</b> (less blood reaches the wound) and <b>weakens white blood cells</b> (germs aren't cleared), so wounds heal slowly.</p><p>High glucose doesn't make the skin oily, pull calcium from the skin, or raise the body temperature.</p><p><b>Takeaway:</b> High glucose: poor blood flow + weak white cells = slow healing.</p>"
+    },
+    {
+      "id": "es-116",
+      "type": "order",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "Place the events that lead to the first symptoms of type 1 diabetes mellitus in order.",
+      "items": [
+        "The immune system destroys the beta cells",
+        "Insulin production falls",
+        "Glucose can't enter most cells",
+        "The blood glucose rises",
+        "Glucose spills into the urine, pulling water with it",
+        "The client urinates often and feels very thirsty"
+      ],
+      "rationale": "<p>An immune attack on the <b>beta cells</b> lowers <b>insulin</b>, so glucose can't enter the cells and <b>builds up in the blood</b>. When it's high enough, it <b>spills into the urine</b>, pulling water with it: <b>frequent urination and thirst</b>.</p><p>Putting the thirst before the glucose rises is a mistake: the thirst comes from the water lost with the glucose in the urine.</p><p><b>Takeaway:</b> Type 1: no beta cells, no insulin, high glucose, glucose in the urine, thirst.</p>"
+    },
+    {
+      "id": "es-117",
+      "type": "mc",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A client with diabetes has glucose in the urine. Which explanation should the nurse give?",
+      "options": [
+        "The kidneys are making glucose from protein in the urine",
+        "The bladder releases stored glucose when it's full",
+        "Insulin is pulling the extra glucose out of the blood and into the urine",
+        "The blood glucose is so high that the kidneys can't reabsorb it all"
+      ],
+      "answer": 3,
+      "rationale": "<p>The kidneys normally <b>reabsorb</b> the glucose they filter. When the blood glucose is <b>very high</b>, they can't take it all back, so it <b>spills into the urine</b>.</p><p>The kidneys don't make glucose from urine protein, the bladder doesn't store glucose, and insulin moves glucose into cells, not into the urine.</p><p><b>Takeaway:</b> Glucose in the urine: the blood glucose is above what the kidneys can reabsorb.</p>"
+    },
+    {
+      "id": "es-118",
+      "type": "mc",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A client with a high blood glucose asks why they're so thirsty. Which explanation should the nurse give?",
+      "options": [
+        "“Glucose in your urine pulls water out with it, so you lose fluid.”",
+        "“High glucose makes your mouth produce less saliva, so it feels dry.”",
+        "“Insulin is making your kidneys hold on to too much sodium.”",
+        "“Your pituitary is releasing too much vasopressin right now.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>Glucose spilling into the urine <b>pulls water with it</b>, so the client urinates more and becomes <b>dehydrated</b>, which sets off <b>thirst</b>.</p><p>Less saliva isn't the cause. Insulin isn't high here, and <b>too much vasopressin</b> would make the kidneys hold water, which would ease thirst rather than cause it.</p><p><b>Takeaway:</b> High glucose: water lost with glucose → urinating → thirst.</p>"
+    },
+    {
+      "id": "es-119",
+      "type": "matrix",
+      "topic": "Diabetes mellitus",
+      "level": 2,
+      "stem": "A nurse is comparing type 1 and type 2 diabetes mellitus. For each feature, click to specify the type the nurse should recognize.",
+      "rowHeader": "Feature",
+      "columns": [
+        "Type 1 diabetes",
+        "Type 2 diabetes"
+      ],
+      "rows": [
+        "The immune system destroys the beta cells",
+        "The cells respond poorly to insulin",
+        "It usually starts in childhood or young adulthood",
+        "It's strongly linked to excess weight and inactivity",
+        "Little or no insulin is made",
+        "It's often found at a routine screening, with no symptoms"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "rationale": "<p><b>Type 1</b>: an immune attack on the beta cells, so little or no insulin, usually starting young. <b>Type 2</b>: insulin resistance, linked to weight and inactivity, often found at screening.</p><p>Calling insulin resistance type 1 is a mistake: in type 1 the insulin is missing; in type 2 it's there but works poorly.</p><p><b>Takeaway:</b> Type 1: no insulin. Type 2: insulin that doesn't work well.</p>"
+    },
+    {
+      "id": "es-120",
+      "type": "mc",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 3,
+      "stem": "A nurse is screening four clients for type 2 diabetes. Which client should the nurse identify as having the most risk factors?",
+      "options": [
+        "BMI 24, A1C 5.8%, and a sister with asthma",
+        "BMI 27, A1C 5.4%, and no pregnancies",
+        "BMI 29, A1C 5.9%, and gestational diabetes 6 years ago",
+        "BMI 22, A1C 5.6%, and gestational diabetes 10 years ago"
+      ],
+      "answer": 2,
+      "rationale": "<p>The instructor's risk factors: a <b>BMI over 25</b>, an <b>A1C over 5.7%</b>, and a <b>history of gestational diabetes</b>. The client with <b>BMI 29, A1C 5.9%, and gestational diabetes</b> has all three.</p><p>The others have one each: an A1C of 5.8%, a BMI of 27, or a history of gestational diabetes (with an A1C of 5.6%, below 5.7%). A sister's asthma isn't a diabetes risk factor.</p><p><b>Takeaway:</b> Diabetes risk: BMI over 25, A1C over 5.7%, gestational diabetes in the past.</p>"
+    },
+    {
+      "id": "es-121",
+      "type": "matrix",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 3,
+      "stem": "A nurse is checking a 49-year-old woman for metabolic syndrome. For each finding, click to specify whether it meets that criterion.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Meets the criterion",
+        "Doesn't meet it"
+      ],
+      "rows": [
+        "Waist 37 in (94 cm)",
+        "Triglycerides 162 mg/dL",
+        "HDL 46 mg/dL",
+        "Blood pressure 128/82 mm Hg",
+        "Fasting glucose 96 mg/dL"
+      ],
+      "answer": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "rationale": "<p>For a woman: a <b>waist over 35 in</b> (88 cm), <b>triglycerides of 150 or more</b>, and an <b>HDL under 50</b> each meet a criterion. Three of the five is metabolic syndrome, so she meets it.</p><p>The <b>blood pressure</b> criterion is 130/85 or more, and the <b>fasting glucose</b> criterion is 100 or more; 128/82 and 96 are just under.</p><p><b>Takeaway:</b> Metabolic syndrome: 3 of waist, triglycerides, HDL, blood pressure, fasting glucose.</p>"
+    },
+    {
+      "id": "es-122",
+      "type": "mc",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 2,
+      "stem": "A client asks why the provider is concerned about metabolic syndrome. Which explanation should the nurse give?",
+      "options": [
+        "“It means you already have type 1 diabetes.”",
+        "“It's a thyroid problem that slows your metabolism.”",
+        "“It raises your risk of type 2 diabetes and heart disease.”",
+        "“It's a short-term problem that goes away without changes.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Metabolic syndrome</b> is a cluster (waist, triglycerides, HDL, blood pressure, glucose) that <b>raises the risk of type 2 diabetes and cardiovascular disease</b>.</p><p>It isn't a diagnosis of <b>type 1 diabetes</b>, an autoimmune disease. Despite the name, it isn't a <b>thyroid</b> problem, and it doesn't resolve without changes in weight, diet, and activity.</p><p><b>Takeaway:</b> Metabolic syndrome: a warning cluster for diabetes and heart disease.</p>"
+    },
+    {
+      "id": "es-123",
+      "type": "mc",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 3,
+      "stem": "A client with prediabetes and a BMI of 31 asks how to lower the risk of type 2 diabetes. Which recommendation should the nurse give?",
+      "options": [
+        "“Lose weight with healthy eating and 150 minutes of exercise a week.”",
+        "“Take a daily multivitamin, and cut fruit and juice out of your meals.”",
+        "“Rest more and limit exercise so your glucose doesn't drop too low.”",
+        "“Get a glucose test once a year, and otherwise keep your habits.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Weight loss</b> with healthy eating and <b>about 150 minutes of exercise a week</b> makes the cells respond better to insulin and lowers the risk of type 2 diabetes.</p><p>A <b>multivitamin</b> doesn't lower the risk, and fruit is part of a healthy diet. <b>Limiting exercise</b> removes one of the best protections, and testing without changes leaves the risk as it is.</p><p><b>Takeaway:</b> Prediabetes: weight loss + 150 minutes of activity a week.</p>"
+    },
+    {
+      "id": "es-124",
+      "type": "mc",
+      "topic": "Diabetes risk and metabolic syndrome",
+      "level": 2,
+      "stem": "A client's hemoglobin A1C is 5.9%. Which interpretation should the nurse make?",
+      "options": [
+        "It meets the A1C criterion for a diagnosis of diabetes",
+        "It's in the prediabetes range, a diabetes risk factor",
+        "It's within the expected range and needs no follow-up",
+        "It shows that the average glucose has been low"
+      ],
+      "answer": 1,
+      "rationale": "<p>An A1C <b>above 5.7%</b> (and under 6.5%) is in the <b>prediabetes</b> range, one of the instructor's risk factors for diabetes.</p><p>The diabetes criterion is <b>6.5% or more</b>. A result above 5.7% needs follow-up, and it reflects a <b>higher</b> average glucose, not a low one.</p><p><b>Takeaway:</b> A1C 5.7% to 6.4%: prediabetes. 6.5%: diabetes.</p>"
+    },
+    {
+      "id": "es-125",
+      "type": "matrix",
+      "topic": "Endocrine signs and symptoms",
+      "level": 3,
+      "stem": "A nurse is reviewing five clients' findings. For each client, click to specify the gland most likely involved.",
+      "rowHeader": "Findings",
+      "columns": [
+        "Thyroid gland",
+        "Parathyroid glands",
+        "Posterior pituitary",
+        "Adrenal cortex",
+        "Adrenal medulla"
+      ],
+      "rows": [
+        "A round face and a high glucose",
+        "Heat intolerance, weight loss, and a fast pulse",
+        "Sudden bouts of a pounding heart, sweating, and headache",
+        "Muscle cramps and tingling after neck surgery",
+        "Large amounts of dilute urine and strong thirst"
+      ],
+      "answer": [
+        3,
+        0,
+        4,
+        1,
+        2
+      ],
+      "rationale": "<p>A <b>round face and high glucose</b>: too much cortisol (adrenal cortex). <b>Heat intolerance and weight loss</b>: the thyroid. <b>Bouts of pounding heart and sweating</b>: epinephrine (adrenal medulla). <b>Cramps and tingling after neck surgery</b>: the parathyroids (low calcium). <b>Dilute urine and thirst</b>: too little vasopressin (posterior pituitary).</p><p>Linking the <b>pounding heart</b> to the thyroid is a mistake here: it comes in sudden bouts, which fits bursts of epinephrine.</p><p><b>Takeaway:</b> Match the hormone's job to the finding, then find the gland.</p>"
+    },
+    {
+      "id": "es-126",
+      "type": "mc",
+      "topic": "Endocrine signs and symptoms",
+      "level": 2,
+      "stem": "A nursing student asks how the nervous and endocrine systems work together. Which statement should the nurse include?",
+      "options": [
+        "“Hormones act faster than nerve signals in an emergency.”",
+        "“The endocrine system sends its hormone messages along the body's nerves.”",
+        "“The hypothalamus links them: nerve signals there control hormones.”",
+        "“The two systems work separately, with no shared control.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>hypothalamus</b> is part of the brain and controls the pituitary, so <b>nerve signals become hormone signals</b> there. The sympathetic nerves also trigger the adrenal medulla.</p><p><b>Nerve signals</b> act faster than hormones, which travel in the blood. Hormones don't travel along nerves, and the two systems share control.</p><p><b>Takeaway:</b> Nerves: fast and short. Hormones: slow and long-lasting. The hypothalamus joins them.</p>"
+    },
+    {
+      "id": "es-127",
+      "type": "sata",
+      "topic": "Endocrine signs and symptoms",
+      "level": 3,
+      "stem": "A client urinates large amounts every day. Which endocrine problems could explain this?",
+      "options": [
+        "Too little thyroid hormone (an underactive thyroid)",
+        "Too much vasopressin (antidiuretic hormone)",
+        "A high blood glucose from diabetes mellitus",
+        "Too little vasopressin (antidiuretic hormone)",
+        "Too little parathyroid hormone (a low calcium)"
+      ],
+      "answer": [
+        2,
+        3
+      ],
+      "rationale": "<p>A <b>high glucose</b> pulls water into the urine, and <b>too little vasopressin</b> leaves the kidneys unable to hold water. Both cause large amounts of urine.</p><p><b>Too much vasopressin</b> makes the kidneys hold water, so there's <b>less</b> urine. <b>Too little thyroid hormone</b> and <b>too little parathyroid hormone</b> don't cause large amounts of urine.</p><p><b>Takeaway:</b> Lots of urine: think high glucose or too little ADH.</p>"
+    },
+    {
+      "id": "es-128",
+      "type": "mc",
+      "topic": "Endocrine signs and symptoms",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' findings. Which client should the nurse see first?",
+      "options": [
+        "A client whose A1C is 7.2% at a routine visit, with no new symptoms",
+        "A client whose TSH is 5.1 mIU/L, with mild tiredness for a month",
+        "A confused client with diabetes whose glucose is 52 mg/dL",
+        "A client whose glucose is 186 mg/dL an hour after a large lunch"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>glucose of 52 with confusion</b> means the brain isn't getting enough glucose, an emergency that can lead to seizures. This client comes first.</p><p>An <b>A1C of 7.2%</b> and a <b>TSH of 5.1</b> need follow-up, but they're stable. A glucose of 186 after a meal is high but not an emergency.</p><p><b>Takeaway:</b> A low glucose with a change in thinking comes first.</p>"
+    },
+    {
+      "id": "es-129",
+      "type": "mc",
+      "topic": "Endocrine signs and symptoms",
+      "level": 2,
+      "stem": "A nurse is explaining how hormones reach their targets. Which statement should the nurse include?",
+      "options": [
+        "“Glands release their hormones through ducts onto the skin's surface.”",
+        "“Hormones travel along the nerves to the target organ.”",
+        "“Hormones act on the organs right next to the gland.”",
+        "“Glands release hormones into the blood, which carries them to cells.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>Endocrine glands release hormones <b>into the blood</b>, which carries them around the body; only <b>target cells</b> with receptors for a hormone respond.</p><p>Releasing through <b>ducts</b> is what exocrine glands, like sweat glands, do. Hormones travel in the blood, not along nerves, and they can act far from the gland.</p><p><b>Takeaway:</b> Endocrine: into the blood, to cells with the right receptors.</p>"
     }
   ]
 }

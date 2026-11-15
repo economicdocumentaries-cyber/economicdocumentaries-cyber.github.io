@@ -4,7 +4,7 @@
   "description": "Week 10, matched to the instructor's Exam 4 study guide: blood flow through the heart, its valves, chambers, and membranes, the ECG's waves, blood components and blood type compatibility, capillary refill and arterial and venous insufficiency, thrombus, aneurysm, heart attack, murmurs, and stroke, autonomic control of the heart and blood pressure, heart-healthy habits, metabolic syndrome, and the risk factors for cardiovascular disease, with a case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 75,
+  "timeMinutes": 157.5,
   "defaultCount": 25,
   "cases": {
     "legpain": {
@@ -667,6 +667,1010 @@
         {"options": ["AV node", "Purkinje fibers", "SA node"], "answer": 0}
       ],
       "rationale": "<p>The <b>P wave</b> shows the <b>atria depolarizing</b> after the <b>SA node</b> fires. With no P waves, the SA node has most likely stopped, and the <b>AV node</b>, the next pacemaker, has taken over at its own slower rate of 40 to 60, which fits a rate of 50.</p><p>The <b>AV node</b> isn't the right answer for the second blank: the rate of 50 points to it, but it's the structure now pacing the heart, not the one that stopped. The QRS shows the ventricles depolarizing, and the T wave their repolarization.</p><p><b>Takeaway:</b> P = atria depolarizing (from the SA node), QRS = ventricles depolarizing, T = ventricles repolarizing.</p>"
+    },
+    {
+      "id": "cv-88",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 3,
+      "stem": "A client's mitral valve is narrowed and doesn't open fully. Where should the nurse expect blood to back up first?",
+      "options": [
+        "Into the left atrium, and then the lungs",
+        "Into the right atrium, and then the body's veins",
+        "Into the left ventricle, and then the aorta",
+        "Into the right ventricle, and then the pulmonary artery"
+      ],
+      "answer": 0,
+      "rationale": "<p>The <b>mitral valve</b> lets blood pass from the <b>left atrium</b> to the left ventricle. When it's narrowed, blood backs up into the <b>left atrium</b>, then into the pulmonary veins and the <b>lungs</b>.</p><p>The <b>right atrium</b> and <b>right ventricle</b> are on the other side of the heart, past the lungs. Blood can't back up into the <b>left ventricle</b>, which is downstream of the narrowed valve.</p><p><b>Takeaway:</b> A narrowed valve backs blood up into the chamber behind it, then the vessels behind that.</p>"
+    },
+    {
+      "id": "cv-89",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nursing student says, “Veins carry oxygen-poor blood, and arteries carry oxygen-rich blood.” Which correction should the nurse make?",
+      "options": [
+        "“The pulmonary arteries carry oxygen-rich blood from the lungs to the body.”",
+        "“The pulmonary veins carry oxygen-rich blood from the lungs to the heart.”",
+        "“The coronary veins carry oxygen-rich blood into the heart muscle itself.”",
+        "“The venae cavae carry oxygen-rich blood back to the right atrium.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>Vessels are named by direction, not oxygen: arteries carry blood <b>away</b> from the heart, and veins carry it <b>toward</b> it. The <b>pulmonary veins</b> bring <b>oxygen-rich</b> blood from the lungs to the left atrium.</p><p>The <b>pulmonary arteries</b> carry oxygen-poor blood <b>to</b> the lungs. The <b>coronary veins</b> and the <b>venae cavae</b> carry oxygen-poor blood.</p><p><b>Takeaway:</b> Arteries go away from the heart, veins toward it; in the lungs, the oxygen is reversed.</p>"
+    },
+    {
+      "id": "cv-90",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nurse is reviewing the ventricles. Why is the left ventricle's wall much thicker than the right's?",
+      "options": [
+        "It holds about twice as much blood as the right ventricle",
+        "It pumps blood to the lungs, which resist the flow strongly",
+        "It receives blood from the venae cavae under high pressure",
+        "It pumps blood to the whole body, against higher pressure"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>left ventricle</b> pumps blood through the aorta to the <b>whole body</b>, against <b>much higher pressure</b> than the lungs offer, so its muscle is thicker.</p><p>Both ventricles hold about the <b>same volume</b>. The <b>right</b> ventricle pumps to the lungs, a low-pressure circuit, and the <b>venae cavae</b> empty into the right atrium.</p><p><b>Takeaway:</b> Left ventricle: the body's pump, the thickest wall.</p>"
+    },
+    {
+      "id": "cv-91",
+      "type": "matrix",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nurse is reviewing the layers and membranes of the heart. For each structure, click to specify its role.",
+      "rowHeader": "Structure",
+      "columns": [
+        "Lines the chambers and covers the valves",
+        "Contracts to pump the blood",
+        "Forms the outer surface of the heart wall",
+        "Lines the sac around the heart",
+        "Lets the heart beat without friction"
+      ],
+      "rows": [
+        "Myocardium",
+        "Pericardial fluid",
+        "Endocardium",
+        "Parietal pericardium",
+        "Epicardium (visceral pericardium)"
+      ],
+      "answer": [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      "rationale": "<p>The <b>endocardium</b> lines the chambers and valves, the <b>myocardium</b> is the muscle that contracts, and the <b>epicardium</b> (visceral pericardium) is the outer surface. The <b>parietal pericardium</b> lines the sac, and the <b>pericardial fluid</b> between them lets the heart beat without friction.</p><p>Giving the pumping job to the epicardium is a mistake: only the myocardium contracts.</p><p><b>Takeaway:</b> Inside out: endocardium, myocardium, epicardium, fluid, parietal pericardium.</p>"
+    },
+    {
+      "id": "cv-92",
+      "type": "dropdown",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nurse is reviewing how blood reaches the lungs. Complete the following sentence.",
+      "text": "Blood leaves the right ventricle through the {{0}} valve into the {{1}}, which carry it to the lungs.",
+      "blanks": [
+        {
+          "options": [
+            "aortic",
+            "pulmonic",
+            "tricuspid"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "pulmonary arteries",
+            "pulmonary veins",
+            "venae cavae"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>The right ventricle pumps oxygen-poor blood through the <b>pulmonic</b> (pulmonary) valve into the <b>pulmonary arteries</b>, to the lungs.</p><p>The <b>aortic</b> valve is the left ventricle's exit, and the <b>tricuspid</b> valve sits between the right atrium and ventricle. The <b>pulmonary veins</b> bring blood back from the lungs.</p><p><b>Takeaway:</b> Right ventricle → pulmonic valve → pulmonary arteries → lungs.</p>"
+    },
+    {
+      "id": "cv-93",
+      "type": "sata",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A nurse is reviewing blood flow through the heart. Which of the following carry oxygen-poor blood?",
+      "options": [
+        "The aorta",
+        "The pulmonary arteries",
+        "The left atrium",
+        "The pulmonary veins",
+        "The right ventricle",
+        "The venae cavae",
+        "The right atrium"
+      ],
+      "answer": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "rationale": "<p>Oxygen-poor blood returns through the <b>venae cavae</b> to the <b>right atrium</b> and <b>right ventricle</b>, which pumps it through the <b>pulmonary arteries</b> to the lungs.</p><p>The <b>pulmonary veins</b>, <b>left atrium</b>, and <b>aorta</b> carry oxygen-rich blood, after the lungs.</p><p><b>Takeaway:</b> Right side: oxygen-poor. Left side: oxygen-rich.</p>"
+    },
+    {
+      "id": "cv-94",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 2,
+      "stem": "A client's aortic valve is narrowed. Which chamber should the nurse expect to work harder?",
+      "options": [
+        "The right atrium, which fills the right ventricle",
+        "The left atrium, which fills the left ventricle",
+        "The left ventricle, which pushes blood through it",
+        "The right ventricle, which pumps into the lungs"
+      ],
+      "answer": 2,
+      "rationale": "<p>The <b>aortic valve</b> is the <b>left ventricle</b>'s exit, so a narrowed valve makes the left ventricle push harder (and, over time, thicken).</p><p>The <b>atria</b> empty into the ventricles through the tricuspid and mitral valves, not the aortic valve. The <b>right ventricle</b> pumps through the pulmonic valve.</p><p><b>Takeaway:</b> A narrowed exit valve: the chamber in front of it works harder.</p>"
+    },
+    {
+      "id": "cv-95",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 1,
+      "stem": "A nurse is reviewing the chambers of the heart. Which statement about the atria is accurate?",
+      "options": [
+        "They pump blood out to the lungs and to the rest of the body",
+        "They receive returning blood and pass it to the ventricles",
+        "They have the thickest muscle walls of any part of the heart",
+        "They hold the semilunar valves at their exits to the arteries"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>atria</b> are the receiving chambers: blood returns to them, and they pass it to the <b>ventricles</b>.</p><p>The <b>ventricles</b> pump blood to the lungs and the body, and the left ventricle has the thickest wall. The <b>semilunar valves</b> sit at the ventricles' exits.</p><p><b>Takeaway:</b> Atria receive; ventricles pump.</p>"
+    },
+    {
+      "id": "cv-96",
+      "type": "mc",
+      "topic": "Blood flow and heart structures",
+      "level": 3,
+      "stem": "A large amount of fluid builds up quickly in a client's pericardial sac. Which effect should the nurse expect?",
+      "options": [
+        "The ventricles can't fill fully, so less blood is pumped out",
+        "The valves leak, so blood flows backward into the atria",
+        "The heart muscle contracts harder, so the blood pressure rises",
+        "The extra fluid cushions the heart, so it beats more easily"
+      ],
+      "answer": 0,
+      "rationale": "<p>The pericardial sac can't stretch quickly, so fluid there <b>squeezes the heart</b>: the ventricles <b>can't fill</b>, and less blood is pumped with each beat.</p><p>The fluid presses on the heart from outside; it doesn't make the valves leak. The output and blood pressure <b>fall</b>, rather than rise, and a normal small amount of fluid, not a large one, eases the heartbeat.</p><p><b>Takeaway:</b> Too much pericardial fluid: the heart can't fill, so output falls.</p>"
+    },
+    {
+      "id": "cv-97",
+      "type": "matrix",
+      "topic": "Blood flow and heart structures",
+      "level": 1,
+      "stem": "A nurse is reviewing the great vessels. For each vessel, click to specify where it carries blood.",
+      "rowHeader": "Vessel",
+      "columns": [
+        "To the right atrium",
+        "To the lungs",
+        "To the left atrium",
+        "To the body"
+      ],
+      "rows": [
+        "Pulmonary artery",
+        "Aorta",
+        "Superior vena cava",
+        "Pulmonary vein"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "rationale": "<p>The <b>venae cavae</b> bring blood to the right atrium, the <b>pulmonary artery</b> takes it to the lungs, the <b>pulmonary veins</b> bring it back to the left atrium, and the <b>aorta</b> sends it to the body.</p><p>Sending the pulmonary vein's blood to the lungs is a mistake: veins carry blood toward the heart.</p><p><b>Takeaway:</b> Venae cavae → right atrium; pulmonary artery → lungs; pulmonary veins → left atrium; aorta → body.</p>"
+    },
+    {
+      "id": "cv-98",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 2,
+      "stem": "A nursing student asks why the QRS complex is much taller than the P wave. Which explanation should the nurse give?",
+      "options": [
+        "“The ventricles depolarize more slowly than the atria do.”",
+        "“The QRS includes the atria's recovery, which adds height.”",
+        "“The ventricles have much more muscle than the atria do.”",
+        "“The P wave shows just the AV node's signal, which is small.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>The size of a wave reflects how much muscle is depolarizing: the <b>ventricles have far more muscle</b> than the atria, so the QRS is taller.</p><p>The ventricles depolarize <b>quickly</b>, which keeps the QRS narrow. The atria's recovery is hidden in the QRS, but it doesn't make it taller, and the P wave shows the atria depolarizing, not the AV node.</p><p><b>Takeaway:</b> Bigger muscle mass, bigger wave: QRS over P.</p>"
+    },
+    {
+      "id": "cv-99",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 3,
+      "stem": "A nurse is reviewing the ECG. Where does the atria's repolarization (recovery) appear?",
+      "options": [
+        "As a separate wave after the T wave",
+        "As the small dip just before the P wave",
+        "Hidden within the QRS complex",
+        "As the flat line after the T wave"
+      ],
+      "answer": 2,
+      "rationale": "<p>The atria repolarize while the much larger ventricles depolarize, so their recovery is <b>hidden in the QRS complex</b>.</p><p>There's no separate atrial recovery wave after the T wave or before the P wave, and the flat line after the T wave is the heart at rest, filling.</p><p><b>Takeaway:</b> P: atria depolarize. QRS: ventricles depolarize (atria recover). T: ventricles recover.</p>"
+    },
+    {
+      "id": "cv-100",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 2,
+      "stem": "A nurse is explaining the ECG to a client. Why does each wave appear just before the matching part of the heart contracts?",
+      "options": [
+        "“The contraction sends an electrical signal that the ECG records afterward.”",
+        "“The electrical wave spreads first, and it sets off the muscle's squeeze.”",
+        "“The ECG records the sound of the valves closing, which comes first.”",
+        "“The ECG shows the blood moving, which happens before the muscle moves.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>The ECG records <b>electrical activity</b>. Depolarization spreads through the muscle first, and it <b>triggers the contraction</b>, so each wave comes just before the squeeze.</p><p>The contraction follows the signal; it doesn't create it. The ECG doesn't record valve sounds or blood flow.</p><p><b>Takeaway:</b> Electrical first, mechanical second: the wave, then the squeeze.</p>"
+    },
+    {
+      "id": "cv-101",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 3,
+      "stem": "A client's cardiac monitor shows a normal pattern of P waves, QRS complexes, and T waves, but the client has no pulse. Which interpretation should the nurse make?",
+      "options": [
+        "The monitor is showing the rhythm from a minute ago",
+        "The heart is pumping, but the pulse is too fast to feel",
+        "The pulse is present, but the client's arteries are too narrow to feel it",
+        "The electrical activity is present, but the heart isn't pumping blood"
+      ],
+      "answer": 3,
+      "rationale": "<p>The ECG shows only <b>electrical</b> activity. Waves with <b>no pulse</b> mean the signals are firing, but the muscle <b>isn't pumping blood</b>, an emergency.</p><p>The monitor shows the current rhythm. A normal-looking pattern doesn't mean the heart is pumping, and the nurse acts on the missing pulse rather than explaining it away.</p><p><b>Takeaway:</b> An ECG shows electricity, not pumping: always check the client.</p>"
+    },
+    {
+      "id": "cv-102",
+      "type": "mc",
+      "topic": "The ECG",
+      "level": 2,
+      "stem": "Damage to a client's atria keeps them from depolarizing normally. Which part of the ECG should the nurse expect to be affected?",
+      "options": [
+        "The QRS complex",
+        "The P wave",
+        "The T wave",
+        "The flat line after the T wave"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>P wave</b> shows the <b>atria depolarizing</b>, so damage there changes or removes the P wave.</p><p>The <b>QRS</b> shows the ventricles depolarizing and the <b>T wave</b> shows them recovering. The flat line after the T wave is the heart at rest.</p><p><b>Takeaway:</b> P wave: atria. QRS and T: ventricles.</p>"
+    },
+    {
+      "id": "cv-103",
+      "type": "matrix",
+      "topic": "The ECG",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' ECGs. For each finding, click to specify the event the nurse should suspect is abnormal.",
+      "rowHeader": "ECG finding",
+      "columns": [
+        "The atria depolarizing",
+        "The ventricles depolarizing",
+        "The ventricles repolarizing"
+      ],
+      "rows": [
+        "No P waves before the QRS complexes",
+        "A wide QRS complex",
+        "Tall, peaked T waves",
+        "Oddly shaped P waves"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "rationale": "<p><b>P waves</b> come from the atria depolarizing, so missing or odd P waves point there. A <b>wide QRS</b> means the ventricles are depolarizing slowly, and <b>peaked T waves</b> mean their recovery (repolarization) has changed.</p><p>Linking peaked T waves to depolarization is a mistake: the T wave is the ventricles' recovery.</p><p><b>Takeaway:</b> Find the wave, then name its event: P atria, QRS ventricles in, T ventricles out.</p>"
+    },
+    {
+      "id": "cv-104",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A client is bleeding heavily after a crash, and there's no time to test the blood type. Which red cells should the nurse expect to be given?",
+      "options": [
+        "O-positive",
+        "A-negative",
+        "AB-positive",
+        "O-negative"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>O-negative</b> red cells have no A, B, or Rh antigens, so almost anyone can receive them: the universal donor for emergencies.</p><p><b>AB-positive</b> is the universal <b>recipient</b>, not donor. <b>O-positive</b> carries the Rh antigen, and <b>A-negative</b> carries the A antigen.</p><p><b>Takeaway:</b> O-negative: the universal donor. AB-positive: the universal recipient.</p>"
+    },
+    {
+      "id": "cv-105",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 3,
+      "stem": "An Rh-negative client receives Rh-positive blood for the first time. Which risk should the nurse explain?",
+      "options": [
+        "“You may now make anti-Rh antibodies, which could attack Rh-positive blood next time.”",
+        "“Your own blood type will slowly change to Rh-positive over the next several weeks.”",
+        "“Your body already has anti-Rh antibodies, so a severe reaction will start right away.”",
+        "“There's no risk, since Rh antibodies form just during a pregnancy.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>An Rh-negative person doesn't have anti-Rh antibodies at first, but exposure to <b>Rh-positive blood</b> can make the immune system <b>form them</b>, so a <b>later</b> exposure can cause a reaction.</p><p>The client's own blood type doesn't change. Anti-Rh antibodies aren't there before the first exposure, unlike anti-A and anti-B, and the Rh factor matters on its own, apart from the ABO type.</p><p><b>Takeaway:</b> Rh-negative: no anti-Rh antibodies until exposed; then a second exposure is the danger.</p>"
+    },
+    {
+      "id": "cv-106",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A client asks where the IgG and IgM antibodies in the plasma come from. Which answer should the nurse give?",
+      "options": [
+        "“They're made by the liver, like the plasma's albumin and fibrinogen.”",
+        "“They're made by platelets as they gather at an injury.”",
+        "“They're made by plasma cells, which develop from B cells.”",
+        "“They're made by red blood cells as they carry oxygen.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>IgG and IgM</b> are antibodies, plasma proteins made by <b>plasma cells</b>, the antibody-making form of <b>B cells</b>.</p><p>The <b>liver</b> makes albumin and fibrinogen but not antibodies. <b>Platelets</b> plug injuries, and <b>red cells</b> carry oxygen; neither makes antibodies.</p><p><b>Takeaway:</b> Plasma proteins: albumin and fibrinogen from the liver; antibodies from plasma (B) cells.</p>"
+    },
+    {
+      "id": "cv-107",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 3,
+      "stem": "A client with severe vomiting and diarrhea has lost a lot of water from the plasma. Which change in the blood tests should the nurse expect?",
+      "options": [
+        "The red cell count and sodium look higher, as the blood is concentrated",
+        "The red cell count and sodium look lower, since the blood is more diluted",
+        "The white cell count falls, since the white cells leave with the water",
+        "The results don't change, since cells and salts aren't lost"
+      ],
+      "answer": 0,
+      "rationale": "<p>Plasma is mostly <b>water</b>. When water is lost, the same cells and salts are in <b>less fluid</b>, so the counts and the sodium look <b>higher</b> (the blood is concentrated).</p><p>The blood becomes <b>more</b> concentrated, not diluted. White cells don't leave with the water, and the results do change because the fluid around the cells shrinks.</p><p><b>Takeaway:</b> Less plasma water: everything in it looks more concentrated.</p>"
+    },
+    {
+      "id": "cv-108",
+      "type": "matrix",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A nurse is reviewing the lymphocytes. For each cell, click to specify its job.",
+      "rowHeader": "Cell",
+      "columns": [
+        "Coordinates the response and activates B cells",
+        "Kills infected and abnormal cells",
+        "Calms the response so it doesn't attack the body",
+        "Makes antibodies",
+        "Responds early, without a specific target"
+      ],
+      "rows": [
+        "CD8+ T cells",
+        "B cells",
+        "CD4+ (helper) T cells",
+        "Innate lymphoid cells",
+        "Regulatory T cells"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "rationale": "<p><b>CD4+</b> (helper) T cells coordinate and activate B cells; <b>CD8+</b> (cytotoxic) T cells kill infected cells; <b>regulatory</b> T cells calm the response; <b>B cells</b> become antibody makers; and <b>innate lymphoid cells</b> respond early, without a specific target.</p><p>Mixing up CD4+ and CD8+ is a common mistake: CD4+ helps (coordinates), and CD8+ kills.</p><p><b>Takeaway:</b> CD4 helps, CD8 kills, regulatory calms, B cells make antibodies, innate lymphoid cells act first.</p>"
+    },
+    {
+      "id": "cv-109",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A nurse is reviewing plasma. Which statement should the nurse identify as accurate?",
+      "options": [
+        "It carries most of the blood's oxygen, bound to hemoglobin",
+        "It's made up mostly of proteins, with a small amount of water",
+        "It holds the platelets that plug a cut vessel",
+        "It carries hormones, vitamins, and nutrients to the tissues"
+      ],
+      "answer": 3,
+      "rationale": "<p>Plasma is mostly water that <b>carries hormones, vitamins, nutrients</b>, salts, and proteins around the body.</p><p><b>Hemoglobin</b> is in the red cells, which carry nearly all the oxygen. Plasma is mostly <b>water</b>, not protein, and <b>platelets</b> are formed elements carried in the plasma, not part of it.</p><p><b>Takeaway:</b> Plasma: the water that carries everything else.</p>"
+    },
+    {
+      "id": "cv-110",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A nurse is reviewing the salts in plasma. Which one helps keep the blood's pH steady?",
+      "options": [
+        "Fibrinogen",
+        "Calcium",
+        "Sodium",
+        "Bicarbonate"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Bicarbonate</b> (HCO₃⁻) is the blood's main buffer: it takes up extra acid, keeping the pH near 7.35 to 7.45.</p><p><b>Sodium</b> mainly holds water in the blood, <b>calcium</b> helps clotting and muscle contraction, and <b>fibrinogen</b> is a clotting protein.</p><p><b>Takeaway:</b> Bicarbonate: the plasma's buffer, the base side of the blood gas.</p>"
+    },
+    {
+      "id": "cv-111",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 3,
+      "stem": "A nurse is reviewing the electrolytes in plasma. Which one most affects how much water stays in the blood?",
+      "options": [
+        "Potassium",
+        "Chloride",
+        "Sodium",
+        "Magnesium"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Sodium</b> is the main positive ion outside the cells, and <b>water follows sodium</b>: it decides most of the blood's water.</p><p><b>Potassium</b> is mostly inside the cells. <b>Chloride</b> follows sodium rather than leading it, and <b>magnesium</b> is in the plasma only in small amounts.</p><p><b>Takeaway:</b> Water follows sodium.</p>"
+    },
+    {
+      "id": "cv-112",
+      "type": "dropdown",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A nurse is reviewing the proteins in plasma. Complete the following sentences.",
+      "text": "Albumin holds {{0}} in the blood vessels by {{1}} pressure. Fibrinogen forms {{2}}, the mesh of a blood clot.",
+      "blanks": [
+        {
+          "options": [
+            "oxygen",
+            "water",
+            "platelets"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "oncotic",
+            "hydrostatic",
+            "atmospheric"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "collagen",
+            "albumin",
+            "fibrin"
+          ],
+          "answer": 2
+        }
+      ],
+      "rationale": "<p><b>Albumin</b> keeps <b>water</b> in the vessels by <b>oncotic</b> pressure (the pull of proteins), and <b>fibrinogen</b> becomes <b>fibrin</b>, the mesh of a clot.</p><p>Choosing <b>hydrostatic</b> pressure is a mistake: that's the pressure of the blood pushing fluid out of the vessels, the force albumin works against.</p><p><b>Takeaway:</b> Albumin holds water in (oncotic pressure); fibrinogen becomes fibrin.</p>"
+    },
+    {
+      "id": "cv-113",
+      "type": "mc",
+      "topic": "Blood components and blood types",
+      "level": 2,
+      "stem": "A client has type B blood. Which antibodies should the nurse expect in the client's plasma?",
+      "options": [
+        "Anti-B antibodies",
+        "Both anti-A and anti-B antibodies",
+        "Anti-A antibodies",
+        "Neither anti-A nor anti-B antibodies"
+      ],
+      "answer": 2,
+      "rationale": "<p>A person makes antibodies against the ABO antigens they <b>don't</b> have: type B blood has B antigens, so its plasma has <b>anti-A</b> antibodies.</p><p><b>Anti-B</b> would attack the client's own red cells. <b>Both</b> antibodies are in type O blood, and <b>neither</b> is in type AB.</p><p><b>Takeaway:</b> Plasma holds antibodies against the antigens the red cells lack.</p>"
+    },
+    {
+      "id": "cv-114",
+      "type": "sata",
+      "topic": "Blood components and blood types",
+      "level": 3,
+      "stem": "A client with type O-positive blood needs a transfusion of red blood cells. Which donor units should the nurse recognize as compatible?",
+      "options": [
+        "A-negative",
+        "AB-positive",
+        "B-positive",
+        "A-positive",
+        "O-positive",
+        "O-negative"
+      ],
+      "answer": [
+        4,
+        5
+      ],
+      "rationale": "<p>Type O blood has both anti-A and anti-B antibodies, so it can receive <b>only type O</b> red cells. The client is Rh-positive, so <b>O-positive</b> and <b>O-negative</b> are both compatible.</p><p><b>A</b>, <b>B</b>, and <b>AB</b> red cells, positive or negative, carry antigens the client's anti-A or anti-B antibodies would attack.</p><p><b>Takeaway:</b> Type O receives type O; Rh-positive can take Rh-positive or Rh-negative.</p>"
+    },
+    {
+      "id": "cv-115",
+      "type": "mc",
+      "topic": "Autonomic control and blood pressure",
+      "level": 3,
+      "stem": "A client strains hard during a bowel movement, which stimulates the vagus nerve. Which change should the nurse expect?",
+      "options": [
+        "Stronger heart contractions",
+        "A higher blood pressure",
+        "A faster heart rate",
+        "A slower heart rate"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>vagus nerve</b> carries <b>parasympathetic</b> signals, which <b>slow the heart rate</b>, sometimes enough to make a client dizzy.</p><p>A <b>faster</b> rate and <b>stronger</b> contractions are sympathetic effects, and a vagal response tends to <b>lower</b> the blood pressure.</p><p><b>Takeaway:</b> Vagus = parasympathetic = slower heart.</p>"
+    },
+    {
+      "id": "cv-116",
+      "type": "mc",
+      "topic": "Autonomic control and blood pressure",
+      "level": 2,
+      "stem": "A client is waiting in a cold exam room. Which change in the blood vessels of the skin should the nurse expect?",
+      "options": [
+        "They widen, to bring warm blood to the skin",
+        "They narrow, to keep warm blood in the body's core",
+        "They don't change, since the heart is what responds to cold",
+        "They widen, to cool the core"
+      ],
+      "answer": 1,
+      "rationale": "<p>In the cold, <b>sympathetic</b> signals <b>narrow</b> the skin's vessels, keeping warm blood in the <b>core</b> (which is why cold fingers can look pale).</p><p><b>Widening</b> the skin's vessels lets heat escape, the response to warmth. The vessels do respond to cold, through the sympathetic nerves.</p><p><b>Takeaway:</b> Cold: skin vessels narrow; heat: they widen.</p>"
+    },
+    {
+      "id": "cv-117",
+      "type": "mc",
+      "topic": "Autonomic control and blood pressure",
+      "level": 2,
+      "stem": "A nurse is reviewing what sets the blood pressure. Which change should the nurse expect to raise it?",
+      "options": [
+        "A slower heart rate",
+        "Widening of the arterioles",
+        "A smaller blood volume after bleeding",
+        "Narrowing of the arterioles"
+      ],
+      "answer": 3,
+      "rationale": "<p>Blood pressure rises with the heart's output (rate and force) and with <b>resistance</b>. <b>Narrower arterioles</b> resist the flow more, so the pressure rises.</p><p>A <b>slower heart rate</b> and a <b>smaller blood volume</b> lower the output, and <b>widening</b> the arterioles lowers the resistance: all three lower the blood pressure.</p><p><b>Takeaway:</b> Blood pressure = output × resistance.</p>"
+    },
+    {
+      "id": "cv-118",
+      "type": "matrix",
+      "topic": "Autonomic control and blood pressure",
+      "level": 2,
+      "stem": "A nurse is reviewing blood pressure regulation. For each change, click to specify its effect on the blood pressure.",
+      "rowHeader": "Change",
+      "columns": [
+        "Raises the blood pressure",
+        "Lowers the blood pressure"
+      ],
+      "rows": [
+        "The heart rate rises",
+        "The arterioles narrow",
+        "The heart contracts less forcefully",
+        "The blood volume drops after bleeding",
+        "The arterioles widen"
+      ],
+      "answer": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "rationale": "<p>A <b>faster rate</b> and <b>narrower arterioles</b> raise the pressure. <b>Weaker contractions</b>, a <b>smaller blood volume</b>, and <b>wider arterioles</b> lower it.</p><p>Thinking a smaller volume raises the pressure is a mistake: less blood in the vessels means less pressure.</p><p><b>Takeaway:</b> Rate, force, volume, and narrowing push the pressure up; their opposites bring it down.</p>"
+    },
+    {
+      "id": "cv-119",
+      "type": "sata",
+      "topic": "Autonomic control and blood pressure",
+      "level": 3,
+      "stem": "A client is jogging. Which changes should the nurse expect?",
+      "options": [
+        "Narrower airways, to slow the breathing",
+        "Narrower blood vessels to the digestive tract",
+        "A slower heart rate, from vagus nerve signals",
+        "A faster heart rate",
+        "Stronger heart contractions",
+        "Wider blood vessels in the leg muscles"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p>Exercise brings a <b>sympathetic</b> response: a <b>faster</b>, <b>stronger</b> heart, <b>wider vessels in the working muscles</b>, and <b>narrower vessels to the gut</b>, sending blood where it's needed.</p><p>A <b>slower heart rate</b> is the parasympathetic effect, at rest. The airways <b>widen</b>, rather than narrow, during exercise.</p><p><b>Takeaway:</b> Exercise: more blood, pumped harder, sent to the muscles.</p>"
+    },
+    {
+      "id": "cv-120",
+      "type": "mc",
+      "topic": "Autonomic control and blood pressure",
+      "level": 2,
+      "stem": "During deep sleep, a healthy client's heart rate drops to 52/min. Which explanation should the nurse give?",
+      "options": [
+        "“Vagus nerve (parasympathetic) signals slow the heart at rest.”",
+        "“Sympathetic signals slow the heart to save energy at night.”",
+        "“The heart's muscle weakens during sleep and can't beat faster.”",
+        "“The blood volume falls at night, so the heart beats less often.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>At rest, <b>parasympathetic</b> signals through the <b>vagus nerve</b> slow the heart, and a healthy heart rate can fall into the 50s during sleep.</p><p><b>Sympathetic</b> signals speed the heart, rather than slow it. The muscle doesn't weaken, and the blood volume doesn't fall overnight.</p><p><b>Takeaway:</b> Rest and digest: parasympathetic, slower heart.</p>"
+    },
+    {
+      "id": "cv-121",
+      "type": "dropdown",
+      "topic": "Autonomic control and blood pressure",
+      "level": 1,
+      "stem": "A nurse is reviewing the sympathetic nervous system. Complete the following sentence.",
+      "text": "When the sympathetic nervous system is activated, the heart rate {{0}}, the heart contracts {{1}}, and the blood vessels in the skin {{2}}.",
+      "blanks": [
+        {
+          "options": [
+            "falls",
+            "rises",
+            "doesn't change"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "less forcefully",
+            "irregularly",
+            "more forcefully"
+          ],
+          "answer": 2
+        },
+        {
+          "options": [
+            "narrow",
+            "widen",
+            "stay the same"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>Sympathetic activation <b>raises the heart rate</b>, makes the heart contract <b>more forcefully</b>, and <b>narrows</b> the skin's vessels, raising the blood pressure.</p><p>Choosing <b>widen</b> is a mistake for the skin: the vessels to the working muscles widen, but those in the skin and gut narrow.</p><p><b>Takeaway:</b> Sympathetic: faster, stronger, skin vessels narrow.</p>"
+    },
+    {
+      "id": "cv-122",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A client asks why a high HDL cholesterol is good for the heart. Which explanation should the nurse give?",
+      "options": [
+        "“HDL carries cholesterol away from the arteries, back to the liver.”",
+        "“HDL widens the arteries so that blood flows through them more easily.”",
+        "“HDL thins the blood so clots form less often.”",
+        "“HDL turns into LDL cholesterol, which the body needs for energy.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>HDL</b> (“good” cholesterol) <b>carries cholesterol away from the artery walls back to the liver</b>, which protects against plaque. An HDL under 40 (men) or 50 (women) is a risk factor.</p><p>HDL doesn't widen arteries or thin the blood, and it doesn't turn into LDL, which carries cholesterol <b>to</b> the arteries.</p><p><b>Takeaway:</b> HDL: high is protective. LDL: high is a risk.</p>"
+    },
+    {
+      "id": "cv-123",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 3,
+      "stem": "A client says, “I switched to coconut oil for all my cooking because it's natural.” Which response should the nurse give?",
+      "options": [
+        "“That's a good choice, since natural oils are heart-healthy for most people.”",
+        "“It's a tropical oil, high in saturated fat; olive or avocado oil is better.”",
+        "“That's fine, as long as you also use butter on most days of the week.”",
+        "“Coconut oil is best for frying, since it doesn't break down at high heat.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Coconut and palm oil</b> are <b>tropical oils</b>, high in saturated fat. The heart-healthy choices are <b>unsaturated</b>: extra-virgin <b>olive oil</b>, <b>avocado oil</b>, and other non-tropical vegetable oils.</p><p>Being natural doesn't make an oil heart-healthy. <b>Butter</b> is another saturated fat, and choosing an oil for frying misses the point of heart-healthy eating.</p><p><b>Takeaway:</b> Heart-healthy oils: olive, avocado, non-tropical vegetable. Not coconut or palm.</p>"
+    },
+    {
+      "id": "cv-124",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A client with high blood pressure asks why limiting sodium helps. Which explanation should the nurse give?",
+      "options": [
+        "“Sodium makes your heart beat faster and harder, raising the pressure.”",
+        "“Sodium narrows your arteries the moment you eat it.”",
+        "“Sodium holds extra water in your blood, raising the pressure.”",
+        "“Sodium thickens your blood, so it clots more easily.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Water follows sodium</b>: extra sodium holds more water in the blood vessels, so the <b>blood volume and pressure rise</b>.</p><p>Sodium doesn't directly speed the heart, narrow the arteries right away, or make the blood clot.</p><p><b>Takeaway:</b> Less sodium, less water held, lower pressure.</p>"
+    },
+    {
+      "id": "cv-125",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 3,
+      "stem": "A nurse is reviewing four clients' histories. Which client should the nurse identify as having the most risk factors for cardiovascular disease?",
+      "options": [
+        "A 38-year-old who doesn't smoke, with a BMI of 23 and an LDL of 96",
+        "A 45-year-old runner with an HDL of 62 and a blood pressure of 118/74 mm Hg",
+        "A 52-year-old with a BMI of 27 and a total cholesterol of 188",
+        "A 62-year-old with diabetes who smokes and has a blood pressure of 148/92"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>62-year-old</b> has four of the instructor's risk factors: <b>age</b>, <b>diabetes</b>, <b>smoking</b>, and <b>high blood pressure</b>.</p><p>The 52-year-old has one (a BMI over 25; a total cholesterol under 200 isn't a risk factor). The runner's HDL of 62 is protective, and the 38-year-old's findings are all within healthy limits.</p><p><b>Takeaway:</b> CVD risk: high blood pressure, cholesterol over 200, LDL over 100, low HDL, smoking, diabetes, age, BMI over 25.</p>"
+    },
+    {
+      "id": "cv-126",
+      "type": "matrix",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's results. For each finding, click to specify whether it's a risk factor for cardiovascular disease.",
+      "rowHeader": "Finding",
+      "columns": [
+        "A risk factor",
+        "Not a risk factor"
+      ],
+      "rows": [
+        "LDL 128 mg/dL",
+        "HDL 62 mg/dL",
+        "Total cholesterol 186 mg/dL",
+        "BMI 28",
+        "Smokes half a pack a day",
+        "Blood pressure 116/74 mm Hg"
+      ],
+      "answer": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "rationale": "<p>An <b>LDL over 100</b>, a <b>BMI over 25</b>, and <b>smoking</b> are risk factors. An <b>HDL of 62</b> is protective, and a total cholesterol under 200 and a blood pressure of 116/74 are within healthy limits.</p><p>Calling a high HDL a risk is a mistake: it's the low HDL (under 40 for men, 50 for women) that raises the risk.</p><p><b>Takeaway:</b> LDL over 100: risk. HDL low: risk; HDL high: protective.</p>"
+    },
+    {
+      "id": "cv-127",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A client asks for a heart-healthy breakfast. Which choice should the nurse suggest?",
+      "options": [
+        "Oatmeal with fruit and low-fat milk",
+        "White toast with butter and jam",
+        "A croissant with a glass of whole milk",
+        "Eggs and bacon fried in palm oil"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Oatmeal</b> is a whole grain, and <b>low-fat milk</b> is the heart-healthy dairy choice.</p><p><b>White toast</b> is a refined grain with saturated fat from the <b>butter</b>. A <b>croissant</b> and <b>whole milk</b> are high in saturated fat, and <b>palm oil</b> is a tropical oil.</p><p><b>Takeaway:</b> Whole grains, low-fat dairy, unsaturated oils, low sodium.</p>"
+    },
+    {
+      "id": "cv-128",
+      "type": "mc",
+      "topic": "Risk factors and heart-healthy habits",
+      "level": 2,
+      "stem": "A client asks why diabetes raises the risk of heart disease. Which explanation should the nurse give?",
+      "options": [
+        "“High glucose damages the vessel walls, speeding up plaque buildup.”",
+        "“Insulin raises your cholesterol each time you eat a meal.”",
+        "“Diabetes slows your heart rate, so less blood reaches the heart muscle.”",
+        "“High glucose thins your blood, so your heart works harder.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>Over time, a <b>high glucose damages the lining of the blood vessels</b>, which speeds up atherosclerosis (plaque) in the heart's arteries and elsewhere.</p><p>Insulin doesn't raise cholesterol with each meal, diabetes doesn't slow the heart rate, and glucose doesn't thin the blood.</p><p><b>Takeaway:</b> Diabetes harms the vessels: a major CVD risk factor.</p>"
+    },
+    {
+      "id": "cv-129",
+      "type": "sata",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A client's right ventricle is failing. Which findings should the nurse expect?",
+      "options": [
+        "An enlarged, tender liver",
+        "Shortness of breath when lying flat",
+        "Swelling of both ankles",
+        "Crackles in both lungs",
+        "Bulging neck veins"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>When the <b>right ventricle</b> fails, blood backs up into the body's veins: <b>swollen ankles</b>, <b>bulging neck veins</b>, and an <b>enlarged liver</b>.</p><p><b>Crackles</b> and <b>shortness of breath lying flat</b> come from fluid in the lungs, when the <b>left</b> ventricle fails.</p><p><b>Takeaway:</b> Right-sided failure: the body swells. Left-sided: the lungs fill.</p>"
+    },
+    {
+      "id": "cv-130",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 2,
+      "stem": "A client with a deep vein thrombosis asks what an embolus is. Which explanation should the nurse give?",
+      "options": [
+        "“A weak spot in an artery wall that balloons out.”",
+        "“A narrowing of an artery caused by plaque.”",
+        "“A clot that stays attached to the wall of the vein where it formed.”",
+        "“A clot, or other mass, that breaks loose and travels in the blood.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>A <b>thrombus</b> is a clot attached where it formed. An <b>embolus</b> is a clot (or other mass) that <b>breaks loose and travels</b>, like a leg clot that lodges in the lungs.</p><p>A clot that <b>stays attached</b> is the thrombus. A <b>ballooning artery</b> is an aneurysm, and a <b>plaque narrowing</b> is atherosclerosis.</p><p><b>Takeaway:</b> Thrombus stays; embolus travels.</p>"
+    },
+    {
+      "id": "cv-131",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 1,
+      "stem": "A client asks what an aneurysm is. Which explanation should the nurse give?",
+      "options": [
+        "“A clot that blocks one of the arteries to the brain.”",
+        "“A blood vessel that has gone into spasm.”",
+        "“A weak area of an artery wall that balloons out.”",
+        "“A valve that lets blood leak backward.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>An <b>aneurysm</b> is a <b>weakened area of an artery wall that balloons out</b>, which can rupture, often linked to high blood pressure, smoking, and atherosclerosis.</p><p>A <b>clot</b> blocking an artery is a thrombus or embolus, a <b>spasm</b> is a sudden tightening, and a <b>leaking valve</b> causes a murmur.</p><p><b>Takeaway:</b> Aneurysm: a bulging weak spot that can burst.</p>"
+    },
+    {
+      "id": "cv-132",
+      "type": "matrix",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 2,
+      "stem": "A nurse is reviewing cerebrovascular accidents. For each description, click to specify the problem the nurse should recognize.",
+      "rowHeader": "Description",
+      "columns": [
+        "Ischemic stroke",
+        "Hemorrhagic stroke",
+        "Transient ischemic attack (TIA)"
+      ],
+      "rows": [
+        "A clot blocks an artery in the brain",
+        "A weak artery in the brain bursts",
+        "One-sided weakness clears within an hour, with no lasting damage",
+        "A clot from the heart travels to the brain"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "rationale": "<p>An <b>ischemic</b> stroke is a <b>blocked</b> artery (by a clot formed there or one that traveled). A <b>hemorrhagic</b> stroke is a <b>burst</b> artery. A <b>TIA</b> is a brief blockage whose symptoms clear without lasting damage, a warning sign.</p><p>Calling a traveling clot hemorrhagic is a mistake: it blocks the artery, so the stroke is ischemic.</p><p><b>Takeaway:</b> Blocked: ischemic. Burst: hemorrhagic. Brief and gone: TIA, a warning.</p>"
+    },
+    {
+      "id": "cv-133",
+      "type": "sata",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A nurse hears a murmur over a client's heart. Which of the following could cause it?",
+      "options": [
+        "Slow, smooth flow through healthy valves",
+        "Very fast blood flow, as in a high fever",
+        "A blocked coronary artery",
+        "A valve that doesn't close fully",
+        "A narrowed (stenotic) valve"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>A <b>murmur</b> is the sound of <b>turbulent</b> blood flow: through a <b>narrowed valve</b>, backward through a <b>valve that doesn't close</b>, or when the flow is <b>very fast</b>, as in a fever or anemia.</p><p><b>Smooth flow through healthy valves</b> is silent. A <b>blocked coronary artery</b> starves the heart muscle (a heart attack); it doesn't by itself make a murmur.</p><p><b>Takeaway:</b> Murmur = turbulence: narrow valves, leaky valves, or fast flow.</p>"
+    },
+    {
+      "id": "cv-134",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A clot blocks an artery on the left side of a client's brain. Which finding should the nurse expect?",
+      "options": [
+        "Weakness of both legs but not the arms",
+        "Loss of vision in both eyes",
+        "Weakness of the left arm and leg",
+        "Weakness of the right arm and leg"
+      ],
+      "answer": 3,
+      "rationale": "<p>Each side of the brain controls the <b>opposite</b> side of the body, so a <b>left-sided</b> stroke weakens the <b>right</b> arm and leg (and often affects speech).</p><p><b>Left-sided weakness</b> comes from a right-sided stroke. Weakness of <b>both legs</b> points to the spinal cord, and a single clot rarely takes vision in <b>both eyes</b>.</p><p><b>Takeaway:</b> The brain controls the opposite side of the body.</p>"
+    },
+    {
+      "id": "cv-135",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 3,
+      "stem": "A client with severe heart failure is making less urine. Which explanation should the nurse give?",
+      "options": [
+        "Less blood flows to the kidneys, so they make less urine",
+        "The kidneys are holding glucose, which blocks the urine",
+        "The bladder can't contract well because the heart muscle is weak",
+        "The extra fluid is leaving through the lungs instead"
+      ],
+      "answer": 0,
+      "rationale": "<p>When the heart pumps poorly, <b>less blood reaches the kidneys</b>, so they make <b>less urine</b> and hold on to salt and water, one of the body-wide impacts of cardiovascular dysfunction.</p><p>Glucose doesn't block urine, the bladder's emptying doesn't depend on the heart's strength, and fluid isn't lost through the lungs in place of urine.</p><p><b>Takeaway:</b> A weak pump means less blood to every organ, the kidneys included.</p>"
+    },
+    {
+      "id": "cv-136",
+      "type": "sata",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 2,
+      "stem": "A nurse is assessing a client for a deep vein thrombosis in the calf. Which findings should the nurse recognize as possible signs?",
+      "options": [
+        "Calf pain or tenderness",
+        "Swelling of both ankles",
+        "Redness over the area",
+        "Warmth over the calf",
+        "A cool, pale foot with a weak pulse",
+        "Swelling of one calf"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p>A <b>DVT</b> blocks the blood's return from the leg, so the calf is <b>swollen</b>, <b>warm</b>, <b>painful</b>, and <b>red</b>, usually on <b>one side</b>.</p><p><b>A cool, pale foot with a weak pulse</b> points to too little arterial flow. <b>Swelling of both ankles</b> suggests a body-wide cause, like heart failure.</p><p><b>Takeaway:</b> DVT: one leg, swollen, warm, red, painful.</p>"
+    },
+    {
+      "id": "cv-137",
+      "type": "mc",
+      "topic": "Cardiovascular pathophysiology",
+      "level": 2,
+      "stem": "A nurse is reviewing risk factors. Which one most raises the risk of a hemorrhagic stroke?",
+      "options": [
+        "A high HDL cholesterol level",
+        "Uncontrolled high blood pressure",
+        "A slow resting heart rate of 54/min",
+        "A low blood glucose"
+      ],
+      "answer": 1,
+      "rationale": "<p>Years of <b>uncontrolled high blood pressure</b> weaken the small arteries of the brain until one bursts: the main risk factor for a <b>hemorrhagic</b> stroke.</p><p>A <b>high HDL</b> is protective, a <b>slow resting heart rate</b> is common in fit people, and a <b>low glucose</b> causes confusion but not a bleed.</p><p><b>Takeaway:</b> High blood pressure: the leading risk for a brain bleed.</p>"
+    },
+    {
+      "id": "cv-138",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 1,
+      "stem": "A nursing student asks what a capillary refill test measures. Which answer should the nurse give?",
+      "options": [
+        "How much oxygen the blood is carrying to the tissues",
+        "How well blood reaches the fingertips and toes",
+        "How fast and how regularly the heart is beating",
+        "How thick the blood is and how easily it clots"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Capillary refill</b> shows how quickly color returns after the nail bed is pressed: a measure of <b>blood flow to the small vessels</b> (peripheral perfusion). Under 3 seconds is expected.</p><p><b>Oxygen</b> is measured by pulse oximetry, the <b>heart rate</b> by the pulse, and the blood's <b>thickness</b> by lab tests.</p><p><b>Takeaway:</b> Capillary refill: peripheral perfusion; under 3 seconds.</p>"
+    },
+    {
+      "id": "cv-139",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "A client's capillary refill is 4 seconds in the toes of the left foot and 2 seconds in the right. Which interpretation should the nurse make?",
+      "options": [
+        "Both feet are within the expected range",
+        "The right foot has reduced blood flow",
+        "The left foot has reduced blood flow, which needs follow-up",
+        "The client is dehydrated, which slows the refill in both feet"
+      ],
+      "answer": 2,
+      "rationale": "<p>A refill over 3 seconds is slow, and the difference between feet points to <b>reduced blood flow to the left foot</b>, which needs follow-up (pulses, color, temperature).</p><p>4 seconds is <b>outside</b> the expected range. The <b>right</b> foot's 2 seconds is expected, and dehydration would slow both feet, not one.</p><p><b>Takeaway:</b> Compare sides: a slow refill on one side points to that limb.</p>"
+    },
+    {
+      "id": "cv-140",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "A nurse checks a client's capillary refill in a cold room. Which effect should the nurse expect the cold to have?",
+      "options": [
+        "It can make the refill look slower than it is",
+        "It can make the refill look faster than it is",
+        "It has no effect on the refill time",
+        "It makes the nail bed easier to blanch"
+      ],
+      "answer": 0,
+      "rationale": "<p>Cold <b>narrows</b> the small vessels of the fingers and toes, so the refill can look <b>slower</b> than it is. Warm the hand or foot and recheck.</p><p>Cold doesn't speed the refill, and it does affect it, through the narrowed vessels. It doesn't change how easily the nail blanches.</p><p><b>Takeaway:</b> Cold fingers can give a falsely slow refill.</p>"
+    },
+    {
+      "id": "cv-141",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "A client's calf aches while walking and eases within a few minutes of rest. Which problem should the nurse suspect?",
+      "options": [
+        "Venous insufficiency",
+        "A deep vein thrombosis",
+        "A muscle strain from exercise",
+        "Arterial insufficiency"
+      ],
+      "answer": 3,
+      "rationale": "<p>Pain while walking that <b>eases with rest</b> (intermittent claudication) means the working muscles need more blood than narrowed arteries can deliver: <b>arterial insufficiency</b>.</p><p><b>Venous insufficiency</b> causes aching and swelling that eases when the legs are raised. A <b>DVT</b> hurts at rest too, and a <b>strain</b> doesn't ease predictably within minutes.</p><p><b>Takeaway:</b> Pain with walking, relief with rest: arterial.</p>"
+    },
+    {
+      "id": "cv-142",
+      "type": "mc",
+      "topic": "Capillary refill and insufficiency",
+      "level": 3,
+      "stem": "A client has a painful sore on the tip of a toe, with a pale, dry base and little drainage. Which problem does this sore suggest?",
+      "options": [
+        "A pressure injury from bed rest",
+        "A burn from a heating pad",
+        "Venous insufficiency",
+        "Arterial insufficiency"
+      ],
+      "answer": 3,
+      "rationale": "<p>A <b>painful</b> sore at the <b>tip of a toe</b>, with a <b>pale, dry base</b>, fits <b>arterial insufficiency</b>: too little blood reaches the tissue.</p><p><b>Venous</b> sores are usually near the inner ankle, moist, and less painful. Nothing here points to a pressure injury or a burn.</p><p><b>Takeaway:</b> Arterial sores: toes, pale, dry, painful. Venous: inner ankle, moist.</p>"
     }
   ]
 }

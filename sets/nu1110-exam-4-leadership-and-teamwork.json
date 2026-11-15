@@ -4,7 +4,7 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 90.0,
+  "timeMinutes": 159,
   "defaultCount": 25,
   "cases": {
     "newgrad": {
@@ -17,6 +17,24 @@
         {
           "title": "Room 12",
           "html": "<h4>Room 12: postoperative day 1 after a bowel resection</h4><table><tr><th></th><th>0800</th><th>0930</th></tr><tr><th>Heart rate</th><td>92/min</td><td>118/min</td></tr><tr><th>Blood pressure</th><td>124/78 mm Hg</td><td>102/64 mm Hg</td></tr><tr><th>Respirations</th><td>18/min</td><td>22/min</td></tr><tr><th>Temperature</th><td>37.2° C</td><td>37.4° C</td></tr><tr><th>Urine output</th><td>45 mL/hr</td><td>20 mL/hr</td></tr></table><p>Abdominal dressing: bright red drainage, outlined at 0800, now past the outline. The client says the pain is the same as earlier.</p>"
+        }
+      ]
+    },
+    "stroketeam": {
+      "intro": "A nurse on a medical unit is caring for a 74-year-old client recovering from a stroke, who is expected to go home tomorrow with home health care.",
+      "tabs": [
+        {
+          "title": "Team Notes",
+          "html": "<h4>Team Notes</h4><p><b>0900, interprofessional rounds:</b> The physical therapist reports that the client walks 30 feet with a walker. The occupational therapist says he needs help dressing. After a swallow study, the speech therapist and dietitian set his diet: <b>thickened liquids only</b>. The provider plans discharge tomorrow.</p><p><b>1000:</b> The client's daughter asks the nurse, “Why are so many different people seeing my father?”</p><p><b>1215:</b> The nurse finds the client's lunch tray with a cup of thin apple juice, half gone. He is coughing.</p>"
+        }
+      ]
+    },
+    "newmanager": {
+      "intro": "A newly hired nurse manager is taking over a medical unit with low morale.",
+      "tabs": [
+        {
+          "title": "Manager's Notes",
+          "html": "<h4>Manager's Notes</h4><p><b>Week 1:</b> Staff say the previous manager “made every decision without asking us” and “only noticed mistakes.” Turnover was 30% last year, and falls have risen. The hospital has set a goal of cutting the unit's falls in half within 12 months.</p><p><b>Week 2:</b> Chart audits show that one nurse skipped the fall-risk assessment for two newly admitted clients this week.</p>"
         }
       ]
     }
@@ -984,6 +1002,761 @@
       ],
       "answer": 3,
       "rationale": "<p>A <b>paternalistic</b> leader is a caring form of the <b>autocratic</b> leader: decisions stay with the leader, “for the good” of the staff, who are looked after but not involved.</p><p><b>Transformational</b> isn't the right answer: the leader cares about the staff, but a transformational leader <b>involves and inspires</b> the staff and shares a vision; this leader keeps every decision.</p><p><b>Takeaway:</b> Paternalistic = autocratic decisions with a caring tone.</p>"
+    },
+    {
+      "id": "lt-62",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "Which response should the nurse give the daughter's question at 1000?",
+      "options": [
+        "“It's so each department can document its own part of his care.”",
+        "“Each of us brings different skills to one shared plan for your father.”",
+        "“The hospital requires several visits a day for each client after a stroke.”",
+        "“The provider can't be here often, so others check on him in between.”"
+      ],
+      "answer": 1,
+      "case": "stroketeam",
+      "rationale": "<p><b>Interprofessional collaboration</b> brings each profession's knowledge and skills (nursing, therapy, nutrition, medicine) to <b>one shared, client-centered plan</b>.</p><p>The team isn't there to fill in for the provider, to meet a visit rule, or to bill; each member has a distinct role in the same plan.</p><p><b>Takeaway:</b> Interprofessional: different professions, one shared goal for the client.</p>"
+    },
+    {
+      "id": "lt-63",
+      "type": "mc",
+      "topic": "Team communication",
+      "level": 3,
+      "stem": "Which action should the nurse take first at 1215?",
+      "options": [
+        "Ask his daughter to watch him for more coughing",
+        "Call the dietitian to ask how the thin juice reached the tray",
+        "Stop the thin liquid, and assess his breathing and swallowing",
+        "Complete an incident report about the wrong liquid"
+      ],
+      "answer": 2,
+      "case": "stroketeam",
+      "rationale": "<p>A client on <b>thickened liquids</b> who drank thin juice and is coughing may be <b>aspirating</b>. The nurse first <b>stops the thin liquid and assesses</b> his airway, breathing, and swallowing, then reports to the provider and the team.</p><p><b>Calling the dietitian</b> and the <b>incident report</b> come after the client is safe. A family member isn't the one to monitor for aspiration.</p><p><b>Takeaway:</b> Client safety first; then fix the communication breakdown that caused it.</p>"
+    },
+    {
+      "id": "lt-64",
+      "type": "sata",
+      "topic": "Team communication",
+      "level": 2,
+      "stem": "Which actions should the nurse take to give a safe handoff to the home health nurse?",
+      "options": [
+        "Send the medication list without the therapy plans",
+        "Use a structured format, like SBAR or I-PASS",
+        "Invite questions, and have the receiving nurse read back key points",
+        "Leave out details the home health nurse can find in the chart later",
+        "Include the thickened-liquid diet and the walker plan"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "case": "stroketeam",
+      "rationale": "<p>A safe handoff is <b>structured</b>, includes the <b>safety-critical plan</b> (thickened liquids, walker, dressing help), and ends with <b>questions and a read-back</b>.</p><p>Sending the <b>medication list alone</b> or leaving details for later invites the kind of breakdown that put thin juice on his tray.</p><p><b>Takeaway:</b> Handoffs: structured, complete, and checked with a read-back.</p>"
+    },
+    {
+      "id": "lt-65",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 3,
+      "stem": "Which leadership style should the new manager use to rebuild morale and keep staff on the unit?",
+      "options": [
+        "Transformational: share a vision, involve staff, and coach each one",
+        "Autocratic: make the decisions, so staff have less to worry about",
+        "Laissez-faire: step back, so staff can recover on their own",
+        "Transactional: reward staff for meeting targets, and correct errors"
+      ],
+      "answer": 0,
+      "case": "newmanager",
+      "rationale": "<p><b>Transformational</b> leadership, a shared vision, staff involvement, and coaching, is linked with <b>job satisfaction, less burnout, and staff who stay</b>, the style the Leadership Article favored.</p><p><b>Autocratic</b> leadership is what drove morale down here. <b>Laissez-faire</b> leaves a struggling unit without direction, and <b>transactional</b> leadership gets expected results but little beyond them.</p><p><b>Takeaway:</b> Low morale, high turnover: lead with a shared vision and coaching.</p>"
+    },
+    {
+      "id": "lt-66",
+      "type": "mc",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "The manager writes the steps, timeline, and measures for cutting the unit's falls in half. Which management function should the nurse identify?",
+      "options": [
+        "Organizing",
+        "Planning",
+        "Coordinating",
+        "Controlling"
+      ],
+      "answer": 1,
+      "case": "newmanager",
+      "rationale": "<p><b>Planning</b> is setting goals from the data and a course of action to reach them: the steps, the timeline, and the measures.</p><p><b>Organizing</b> assigns the staff and equipment, <b>coordinating</b> motivates and delegates, and <b>controlling</b> compares the results with the goal.</p><p><b>Takeaway:</b> Planning: the goal and the route to it.</p>"
+    },
+    {
+      "id": "lt-67",
+      "type": "mc",
+      "topic": "Leaders and managers",
+      "level": 3,
+      "stem": "Which approach should the manager take with the nurse who skipped the fall-risk assessments?",
+      "options": [
+        "Send her a written warning, so there's a record of the problem",
+        "Point out the missed assessments at the next staff meeting, as a lesson for everyone",
+        "Talk with her privately and soon about what was missed, and agree on a plan",
+        "Wait until her yearly evaluation, so the feedback can be put in context"
+      ],
+      "answer": 2,
+      "case": "newmanager",
+      "rationale": "<p><b>Constructive feedback</b> is <b>private, prompt, specific, and about the behavior</b>, with a <b>plan</b> and follow-up, which improves practice without shaming.</p><p>Naming her at a <b>staff meeting</b> is public criticism. <b>Waiting a year</b> lets the risk continue, and a <b>written warning</b> first skips the conversation that could fix it.</p><p><b>Takeaway:</b> Feedback: private, prompt, specific, about the behavior, with a plan.</p>"
+    },
+    {
+      "id": "lt-68",
+      "type": "mc",
+      "topic": "Leaders and managers",
+      "level": 2,
+      "stem": "Which action by a nurse shows a quality of an effective leader?",
+      "options": [
+        "Sharing a vision for safer care, and showing others their part",
+        "Keeping information to themselves to stay in control of things",
+        "Using the authority of the title to make staff follow orders",
+        "Agreeing with everyone, to keep any conflict off the unit"
+      ],
+      "answer": 0,
+      "rationale": "<p>Effective leaders have a <b>vision</b> and help others see their part in it, relying on <b>influence</b>, communication, and example more than authority.</p><p><b>Authority</b> alone is management, not leadership. <b>Avoiding conflict</b> and <b>hoarding information</b> undermine a team.</p><p><b>Takeaway:</b> Leaders: vision, influence, role modeling.</p>"
+    },
+    {
+      "id": "lt-69",
+      "type": "sata",
+      "topic": "Leaders and managers",
+      "level": 2,
+      "stem": "A nurse manager wants to model the qualities of an effective leader. Which qualities should the manager show?",
+      "options": [
+        "Making decisions alone, to save time",
+        "A vision of a better future for the unit",
+        "Integrity",
+        "Relying mainly on the authority of the title",
+        "Humility",
+        "Being a positive role model"
+      ],
+      "answer": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p>An effective leader has a <b>vision</b>, shows <b>humility</b> and <b>integrity</b>, and is a <b>positive role model</b>, respecting each person's dignity.</p><p>Relying on <b>authority</b> and <b>deciding alone</b> are features of an autocratic manager, not the qualities that make people want to follow.</p><p><b>Takeaway:</b> Vision, humility, integrity, role modeling.</p>"
+    },
+    {
+      "id": "lt-70",
+      "type": "mc",
+      "topic": "Leaders and managers",
+      "level": 2,
+      "stem": "A nursing student asks for an example of management rather than leadership. Which example should the nurse give?",
+      "options": [
+        "Inspiring coworkers to adopt a new safety practice on the unit",
+        "Setting the unit's budget and monitoring its staffing costs",
+        "Influencing peers without holding a title",
+        "Modeling calm behavior during a crisis"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Management</b> is an official position responsible for the organization's work: plans, <b>budgets</b>, resources, and results.</p><p><b>Inspiring</b>, <b>influencing without a title</b>, and <b>role modeling</b> are leadership, which anyone can show.</p><p><b>Takeaway:</b> Managers: position, budget, resources. Leaders: influence and vision.</p>"
+    },
+    {
+      "id": "lt-71",
+      "type": "mc",
+      "topic": "Leaders and managers",
+      "level": 3,
+      "stem": "A nurse manager praises a nurse's work in front of the team, but talks with another nurse about a mistake in a private meeting. Which principle of feedback does this follow?",
+      "options": [
+        "Save the feedback for the yearly evaluation, so nothing is forgotten",
+        "Correct mistakes in public, so the whole team learns from them",
+        "Correct mistakes in private; praise can be given in public",
+        "Give praise and correction in private, the same way, so it's fair"
+      ],
+      "answer": 2,
+      "rationale": "<p>Correction is given <b>in private</b>, to protect the person's dignity and keep the talk about the behavior; <b>praise</b> can be shared openly.</p><p>Correcting in <b>public</b> shames the nurse, treating praise and correction the <b>same way</b> ignores privacy, and <b>saving feedback for a year</b> isn't prompt.</p><p><b>Takeaway:</b> Praise in public, correct in private, and do it soon.</p>"
+    },
+    {
+      "id": "lt-72",
+      "type": "mc",
+      "topic": "Classic leadership styles",
+      "level": 2,
+      "stem": "A charge nurse gives a new graduate step-by-step direction, but lets an experienced nurse plan her own day. Which type of leadership should the nurse identify?",
+      "options": [
+        "Autocratic",
+        "Laissez-faire",
+        "Bureaucratic",
+        "Situational"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Situational</b> leadership adapts the style to the task and the person's readiness: telling a new graduate, delegating to an experienced nurse.</p><p><b>Laissez-faire</b> stays hands off with everyone, <b>bureaucratic</b> goes by the book, and <b>autocratic</b> directs everyone.</p><p><b>Takeaway:</b> Situational: it depends on the person and the task.</p>"
+    },
+    {
+      "id": "lt-73",
+      "type": "mc",
+      "topic": "Classic leadership styles",
+      "level": 3,
+      "stem": "A new charge nurse takes a leadership course and practices running huddles until she's comfortable. Which theory of leadership should the nurse identify?",
+      "options": [
+        "Behavioral theory: leadership can be learned",
+        "Shared governance: staff share decisions",
+        "Laissez-faire leadership: the group leads itself",
+        "Trait theory: leaders are born"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Behavioral</b> theories say leadership is <b>learned</b> through education, training, and experience; it's about what leaders do.</p><p><b>Trait</b> theory holds that leaders are born. <b>Shared governance</b> is a decision-making structure, and <b>laissez-faire</b> is a style.</p><p><b>Takeaway:</b> Trait: born. Behavioral: made.</p>"
+    },
+    {
+      "id": "lt-74",
+      "type": "mc",
+      "topic": "Classic leadership styles",
+      "level": 3,
+      "stem": "In which setting should the nurse manager expect a bureaucratic style to be most useful?",
+      "options": [
+        "A team of experts designing a new education program",
+        "Sterile processing, where each step must follow the procedure",
+        "A unit that's trying to rebuild staff morale after layoffs",
+        "A council of staff nurses choosing a new practice for the unit"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Bureaucratic</b> leadership works <b>by the book</b>. Where <b>consistency</b> and exact procedures matter most, like sterile processing, that's a strength.</p><p>Experts designing a program, a unit rebuilding morale, and a staff council choosing a practice all need flexibility and input, which a by-the-book style limits.</p><p><b>Takeaway:</b> Bureaucratic: consistent, but inflexible.</p>"
+    },
+    {
+      "id": "lt-75",
+      "type": "sata",
+      "topic": "Classic leadership styles",
+      "level": 2,
+      "stem": "A nurse is reviewing leadership types. Which actions fit an autocratic leader?",
+      "options": [
+        "Directing the work, with little input from the staff",
+        "Making the decisions alone",
+        "Letting the group decide how to divide the work",
+        "Asking the staff for their ideas",
+        "Adapting the style to each nurse's experience"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "rationale": "<p>An <b>autocratic</b> leader <b>makes the decisions</b> and <b>directs the work</b>, with little input from the staff.</p><p><b>Asking for ideas</b> is participative, <b>letting the group decide</b> is laissez-faire, and <b>adapting the style</b> is situational.</p><p><b>Takeaway:</b> Autocratic: I decide, I direct.</p>"
+    },
+    {
+      "id": "lt-76",
+      "type": "mc",
+      "topic": "Classic leadership styles",
+      "level": 2,
+      "stem": "A nursing student asks how trait theory and behavioral theory differ. Which answer should the nurse give?",
+      "options": [
+        "“Both say leaders are born, but they disagree on which traits matter.”",
+        "“Both describe how staff share decisions through councils.”",
+        "“Trait theory says leaders are born; behavioral theory says leadership can be learned.”",
+        "“Trait theory says leadership can be learned; behavioral theory says leaders are born.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Trait</b> theory: leaders are <b>born</b> with certain traits. <b>Behavioral</b> theory: leadership is <b>learned</b>, through what leaders do.</p><p>The second choice reverses them. They don't agree that leaders are born, and councils describe shared governance.</p><p><b>Takeaway:</b> Trait = born. Behavioral = made.</p>"
+    },
+    {
+      "id": "lt-77",
+      "type": "mc",
+      "topic": "Classic leadership styles",
+      "level": 3,
+      "stem": "Which risk of paternalistic leadership should the nurse identify?",
+      "options": [
+        "Staff lose direction because the leader stays hands off",
+        "Staff follow each rule exactly, even when a change would help",
+        "Staff work for rewards, and do no more than what's required",
+        "Staff feel cared for, but become dependent and don't grow"
+      ],
+      "answer": 3,
+      "rationale": "<p>A <b>paternalistic</b> leader decides “for the staff's own good.” Staff may feel cared for and loyal, but they have <b>no say</b>, become <b>dependent</b>, and don't grow.</p><p><b>Losing direction</b> is the laissez-faire risk, <b>rule-bound</b> work the bureaucratic risk, and <b>working for rewards</b> the transactional one.</p><p><b>Takeaway:</b> Paternalistic: caring, but keeps every decision.</p>"
+    },
+    {
+      "id": "lt-78",
+      "type": "sata",
+      "topic": "Classic leadership styles",
+      "level": 3,
+      "stem": "A nurse manager is matching leadership styles to situations. Which pairs are appropriate?",
+      "options": [
+        "A new graduate learning a skill: situational, telling step by step",
+        "A team of experts planning a project: laissez-faire",
+        "A cardiac arrest: autocratic, with clear direction",
+        "A staff council choosing a practice change: autocratic",
+        "A sterile procedure, with exact steps: laissez-faire"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p><b>Autocratic</b> direction fits a <b>cardiac arrest</b>, <b>laissez-faire</b> fits <b>experts</b> who direct themselves, and <b>situational</b> telling fits a <b>new graduate</b>.</p><p>A <b>staff council</b> exists so staff share decisions, which autocratic leadership removes, and a <b>sterile procedure</b> needs exact steps, not a hands-off approach.</p><p><b>Takeaway:</b> Match the style to the situation and the people.</p>"
+    },
+    {
+      "id": "lt-79",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 2,
+      "stem": "Which action by a nurse manager is transformational rather than transactional?",
+      "options": [
+        "Coaching each nurse to lead part of a safety project",
+        "Correcting nurses when they miss a documentation step",
+        "Posting each nurse's error rate at the end of the month",
+        "Giving a bonus when the unit meets its audit target"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Transformational</b> leaders inspire with a vision and <b>coach and develop</b> each person, so staff take ownership.</p><p>A <b>bonus for a target</b> and <b>correcting errors</b> are transactional: an exchange for meeting set goals. <b>Posting error rates</b> watches for mistakes without developing anyone.</p><p><b>Takeaway:</b> Transactional: rewards and corrections. Transformational: vision and growth.</p>"
+    },
+    {
+      "id": "lt-80",
+      "type": "sata",
+      "topic": "Contemporary leadership",
+      "level": 2,
+      "stem": "The Leadership Article (Poels et al., 2020) linked transformational leadership with which outcomes?",
+      "options": [
+        "Fewer medication errors",
+        "More staff turnover",
+        "Lower quality of care",
+        "Less burnout",
+        "Higher job satisfaction",
+        "Staff well-being"
+      ],
+      "answer": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p>The article linked <b>transformational</b> leadership with staff <b>well-being</b>, <b>job satisfaction</b>, <b>less burnout</b>, staff who stay, and better care, including <b>fewer medication errors</b>.</p><p><b>More turnover</b> and <b>lower quality</b> are the opposite of what the research found.</p><p><b>Takeaway:</b> Transformational leadership: better for staff and for clients.</p>"
+    },
+    {
+      "id": "lt-81",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 3,
+      "stem": "A staff nurse says, “Shared governance just means managers let us do whatever we want.” Which correction should the nurse manager give?",
+      "options": [
+        "“It means each nurse decides her own practice without input.”",
+        "“It's a structure where staff share decisions through councils.”",
+        "“It means the manager decides after hearing the staff's opinions.”",
+        "“It's the same as laissez-faire leadership, but with meetings.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Shared governance</b> is a <b>structure</b>: staff nurses share decision-making about practice, quality, and education, usually through <b>councils</b>, with roles and accountability.</p><p>It isn't one leader asking for input, and it isn't laissez-faire or each nurse deciding alone; decisions are built into the organization.</p><p><b>Takeaway:</b> Shared governance: a seat at the table, with structure.</p>"
+    },
+    {
+      "id": "lt-82",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 2,
+      "stem": "Based on the Leadership Article (Poels et al., 2020), what did the authors call for?",
+      "options": [
+        "Replacing head nurses with outside managers",
+        "Using transactional leadership rewards in place of coaching",
+        "Investing in leadership development for nurse leaders",
+        "Hiring more leaders who use a passive-avoidant style"
+      ],
+      "answer": 2,
+      "rationale": "<p>The authors called for <b>investing in leadership development</b>, since transformational leadership benefits staff and clients, and passive-avoidant leadership was too common.</p><p>The article found <b>too much</b> passive-avoidant leadership, not too little. It didn't call for outside managers, and it favored transformational leadership over rewards alone.</p><p><b>Takeaway:</b> The article's message: develop transformational leaders.</p>"
+    },
+    {
+      "id": "lt-83",
+      "type": "mc",
+      "topic": "Contemporary leadership",
+      "level": 3,
+      "stem": "A nursing student asks what the Full Range of Leadership Model in the Leadership Article includes. Which answer should the nurse give?",
+      "options": [
+        "“Autocratic, democratic, and bureaucratic leadership.”",
+        "“Planning, organizing, coordinating, and controlling.”",
+        "“Values and ethics, roles and responsibilities, communication, and teamwork.”",
+        "“Transformational, transactional, and passive-avoidant leadership.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>Full Range of Leadership Model</b> runs from <b>transformational</b> through <b>transactional</b> to <b>passive-avoidant</b> (laissez-faire) leadership.</p><p><b>Autocratic, democratic, bureaucratic</b> are classic styles, <b>planning to controlling</b> are management functions, and <b>values to teamwork</b> are IPEC's competencies.</p><p><b>Takeaway:</b> Full range: transformational, transactional, passive-avoidant.</p>"
+    },
+    {
+      "id": "lt-84",
+      "type": "mc",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A nurse manager checks that care on the unit follows the hospital's policies and values. Which management function should the nurse identify?",
+      "options": [
+        "Commanding",
+        "Coordinating",
+        "Planning",
+        "Organizing"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Commanding</b> is supervising the work in line with the organization's standards and values.</p><p><b>Planning</b> sets goals, <b>organizing</b> assigns resources and structure, and <b>coordinating</b> motivates and delegates.</p><p><b>Takeaway:</b> Commanding: supervising to the organization's standards.</p>"
+    },
+    {
+      "id": "lt-85",
+      "type": "sata",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A nurse manager is reviewing the controlling function. Which actions are part of it?",
+      "options": [
+        "Writing next year's staffing plan",
+        "Giving feedback on the results",
+        "Setting a performance standard",
+        "Assigning staff to four new beds",
+        "Comparing the actual results with the standard"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p><b>Controlling</b> measures progress: set a <b>standard</b>, <b>compare</b> the actual results with it, and give <b>feedback</b>.</p><p><b>Assigning staff</b> is organizing, and <b>writing a staffing plan</b> is planning.</p><p><b>Takeaway:</b> Controlling: standard, comparison, feedback.</p>"
+    },
+    {
+      "id": "lt-86",
+      "type": "mc",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A nurse manager draws up the unit's reporting structure and names a charge nurse for each shift. Which management function should the nurse identify?",
+      "options": [
+        "Commanding",
+        "Organizing",
+        "Planning",
+        "Controlling"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Organizing</b> sets up the structure (who reports to whom) and assigns the resources, staff included.</p><p><b>Planning</b> sets the goals, <b>controlling</b> measures results, and <b>commanding</b> supervises to the standards.</p><p><b>Takeaway:</b> Organizing: structure and resources.</p>"
+    },
+    {
+      "id": "lt-87",
+      "type": "mc",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A nurse manager is starting a new project to improve hand hygiene. Which management function comes first?",
+      "options": [
+        "Controlling",
+        "Coordinating",
+        "Planning",
+        "Organizing"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Planning</b> comes first: assess the data, set the goal, and choose the course of action. Organizing, coordinating, and controlling follow from the plan.</p><p>There's nothing to <b>control</b> without a goal, and <b>organizing</b> and <b>coordinating</b> carry out a plan that has to exist first.</p><p><b>Takeaway:</b> Plan first; then organize, coordinate, and control.</p>"
+    },
+    {
+      "id": "lt-88",
+      "type": "mc",
+      "topic": "Principles of management",
+      "level": 2,
+      "stem": "A nurse manager has a long list of tasks this week. Which principle of time management should the manager apply?",
+      "options": [
+        "Work through the list in the order the tasks were added, one at a time",
+        "Handle each task personally, so it's done right",
+        "Do the easiest tasks first to build momentum",
+        "Prioritize by urgency and importance, and delegate what you can"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Managing time</b> means <b>prioritizing</b> by urgency and importance and <b>delegating</b> what others can do, so the manager's time goes to what only the manager can do.</p><p>Easiest-first or first-come order ignores what matters most, and doing everything personally wastes the team's skills.</p><p><b>Takeaway:</b> Time: prioritize, delegate, focus.</p>"
+    },
+    {
+      "id": "lt-89",
+      "type": "mc",
+      "topic": "Principles of management",
+      "level": 2,
+      "stem": "A nurse manager is forming a team to reduce pressure injuries. Which step should the manager take first?",
+      "options": [
+        "Set a clear shared goal and clear roles for each member",
+        "Let the members decide later whether they need a goal",
+        "Assign the work to the most experienced nurse alone",
+        "Wait until the injury rate rises further before starting"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Building a team</b> starts with a <b>clear, shared goal</b> and <b>clear roles</b>, so each member knows what the team is for and what part they play.</p><p>A team without a goal drifts, one nurse alone isn't a team, and waiting lets clients be harmed.</p><p><b>Takeaway:</b> Teams: a shared goal and clear roles.</p>"
+    },
+    {
+      "id": "lt-90",
+      "type": "mc",
+      "topic": "Principles of management",
+      "level": 3,
+      "stem": "Two nurses disagree about how to share a heavy assignment. Which approach to the conflict usually works best on a unit?",
+      "options": [
+        "Having the manager decide for them, without any discussion first",
+        "Collaborating to find a solution that meets both nurses' needs",
+        "Letting the more senior nurse decide",
+        "Avoiding the topic until it settles down"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Collaborating</b> works through the conflict to a solution that meets <b>both</b> sides' needs, which builds trust and lasts.</p><p><b>Avoiding</b> lets it grow, a <b>manager's decree</b> leaves one side unheard, and deferring to <b>seniority</b> is a win-lose answer.</p><p><b>Takeaway:</b> Conflict: collaborate when you can.</p>"
+    },
+    {
+      "id": "lt-91",
+      "type": "mc",
+      "topic": "Principles of management",
+      "level": 2,
+      "stem": "A nurse manager wants to improve staff performance and engagement. Which action should the manager take?",
+      "options": [
+        "Keep schedules and decisions to themselves",
+        "Assign the same tasks to the same nurses each day",
+        "Recognize good work and offer chances to develop new skills",
+        "Point out errors at each staff meeting, to keep standards high"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Recognizing good work</b> and offering <b>development</b> (education, new responsibilities) enhance performance and engagement.</p><p>Public error lists discourage staff, keeping decisions private shuts them out, and unchanging tasks limit growth.</p><p><b>Takeaway:</b> Engagement: recognition and growth.</p>"
+    },
+    {
+      "id": "lt-92",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "Which situation should the nurse identify as intraprofessional collaboration?",
+      "options": [
+        "A physical therapist and an occupational therapist planning discharge",
+        "A provider and a dietitian adjusting a client's diet",
+        "A nurse and a pharmacist reviewing a client's medication plan",
+        "An RN and an LPN sharing an assignment and helping each other"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Intraprofessional</b> collaboration is among members of the <b>same profession</b>, like nursing staff (RN, LPN, assistive personnel).</p><p>The other three involve <b>different</b> professions: interprofessional collaboration.</p><p><b>Takeaway:</b> Intra = within nursing. Inter = across professions.</p>"
+    },
+    {
+      "id": "lt-93",
+      "type": "sata",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "A nurse is reviewing barriers to collaboration. Which of the following are barriers?",
+      "options": [
+        "Unclear roles and responsibilities",
+        "Breakdowns at handoffs and shift changes",
+        "A shared goal for the client's care and recovery",
+        "Hesitating to speak up because of the hierarchy",
+        "Silos, with each profession educated only within its own field",
+        "Mutual respect among the members of the team"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>Barriers include <b>silos</b>, the <b>hierarchy</b> that keeps people from speaking up, <b>unclear roles</b>, and <b>breakdowns at handoffs</b> (as well as incivility and bullying).</p><p>A <b>shared goal</b> and <b>mutual respect</b> are what collaboration needs, not barriers to it.</p><p><b>Takeaway:</b> Barriers: silos, hierarchy, unclear roles, handoffs, bullying.</p>"
+    },
+    {
+      "id": "lt-94",
+      "type": "sata",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "Which outcomes are benefits of effective interprofessional collaboration?",
+      "options": [
+        "Fewer errors",
+        "Better client outcomes",
+        "Higher staff satisfaction",
+        "Less need to communicate",
+        "More time spent in meetings",
+        "Quicker referrals"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "rationale": "<p>Effective collaboration brings <b>fewer errors</b>, <b>better outcomes</b>, <b>higher staff and client satisfaction</b>, and <b>quicker referrals</b>.</p><p>It needs <b>more</b> communication, not less, and its goal isn't more meetings.</p><p><b>Takeaway:</b> Collaboration: safer care, better outcomes, happier staff.</p>"
+    },
+    {
+      "id": "lt-95",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "In team meetings, a nurse speaks honestly and keeps the client's interests ahead of the nurse's own convenience. Which IPEC competency should the nurse identify?",
+      "options": [
+        "Values and ethics",
+        "Interprofessional communication",
+        "Teams and teamwork",
+        "Roles and responsibilities"
+      ],
+      "answer": 0,
+      "rationale": "<p>IPEC's <b>values and ethics</b> competency is mutual respect, the <b>client's interests first</b>, and <b>honesty</b> with the team.</p><p><b>Roles and responsibilities</b> is knowing each member's part, <b>communication</b> is clear and timely sharing, and <b>teams and teamwork</b> is shared problem-solving.</p><p><b>Takeaway:</b> IPEC: values and ethics, roles, communication, teams.</p>"
+    },
+    {
+      "id": "lt-96",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 3,
+      "stem": "During rounds, team members disagree about a client's discharge date, talk it through, and agree on a plan together. Which IPEC competency should the nurse identify?",
+      "options": [
+        "Roles and responsibilities",
+        "Teams and teamwork",
+        "Interprofessional communication",
+        "Values and ethics"
+      ],
+      "answer": 1,
+      "rationale": "<p>IPEC's <b>teams and teamwork</b> competency is <b>shared problem-solving and decisions</b>, including working through conflict.</p><p><b>Values and ethics</b> is respect and honesty, <b>roles</b> is knowing each member's part, and <b>communication</b> is how information is shared; the deciding feature here is solving the disagreement together.</p><p><b>Takeaway:</b> Working through a conflict to a shared decision: teams and teamwork.</p>"
+    },
+    {
+      "id": "lt-97",
+      "type": "mc",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "A new nurse asks what effective collaboration requires. Which answer should the nurse give?",
+      "options": [
+        "“Each profession working on its own part, without overlap.”",
+        "“Agreement from everyone before any change is made.”",
+        "“Mutual respect, clear roles, open communication, and a shared goal.”",
+        "“A leader who makes the decisions alone, so that the team doesn't argue.”"
+      ],
+      "answer": 2,
+      "rationale": "<p>Collaboration needs <b>mutual respect and trust</b>, <b>clear roles</b>, <b>open communication</b>, and a <b>shared, client-centered goal</b>.</p><p>A single <b>decider</b>, professions working <b>alone</b>, and requiring <b>unanimous agreement</b> each block real collaboration.</p><p><b>Takeaway:</b> Respect, roles, communication, a shared goal.</p>"
+    },
+    {
+      "id": "lt-98",
+      "type": "mc",
+      "topic": "Team communication",
+      "level": 2,
+      "stem": "A nurse calls a provider and says, “I think she may be bleeding internally.” Which part of SBAR should the nurse identify this statement as?",
+      "options": [
+        "Recommendation",
+        "Situation",
+        "Background",
+        "Assessment"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Assessment</b> is the nurse's conclusion about the problem: “I think she may be bleeding internally.”</p><p><b>Situation</b> is what's happening now, <b>background</b> is the history, and <b>recommendation</b> is what the nurse asks for, like “Please come now.”</p><p><b>Takeaway:</b> SBAR: what's happening, the history, what I think, what I need.</p>"
+    },
+    {
+      "id": "lt-99",
+      "type": "mc",
+      "topic": "Team communication",
+      "level": 2,
+      "stem": "During a handoff, the receiving nurse repeats back the key points and asks questions. Which part of I-SBAR-R should the nurse identify?",
+      "options": [
+        "Read-back",
+        "Introduction",
+        "Background",
+        "Recommendation"
+      ],
+      "answer": 0,
+      "rationale": "<p>The final <b>R</b> in I-SBAR-R is the <b>read-back</b>: the receiver repeats the key points and asks questions, confirming the handoff.</p><p><b>Introduction</b> opens the handoff, <b>background</b> gives the history, and the <b>recommendation</b> is the sender's request.</p><p><b>Takeaway:</b> I-SBAR-R: introduction, situation, background, assessment, recommendation, read-back.</p>"
+    },
+    {
+      "id": "lt-100",
+      "type": "sata",
+      "topic": "Team communication",
+      "level": 2,
+      "stem": "A nurse is reviewing barriers to effective communication. Which of the following are barriers?",
+      "options": [
+        "A read-back of a spoken order",
+        "Using SBAR to organize a report",
+        "Language barriers",
+        "Hesitating to speak up to someone with more authority",
+        "Interruptions during a handoff"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Interruptions</b>, <b>language barriers</b>, and a <b>hierarchy</b> that keeps people from speaking up all block communication.</p><p><b>SBAR</b> and a <b>read-back</b> are tools that make communication safer.</p><p><b>Takeaway:</b> Barriers: interruptions, language, hierarchy.</p>"
+    },
+    {
+      "id": "lt-101",
+      "type": "mc",
+      "topic": "Team communication",
+      "level": 3,
+      "stem": "A nurse asks why The Joint Commission puts so much weight on handoff communication. Which explanation should the charge nurse give?",
+      "options": [
+        "Handoffs are when clients most often ask for changes",
+        "Handoff breakdowns are a major cause of safety events",
+        "Handoff communication is the longest part of each shift",
+        "Handoffs are where most billing errors happen"
+      ],
+      "answer": 1,
+      "rationale": "<p>The Joint Commission names <b>communication</b> a major factor in safety events, and breakdowns often happen at <b>handoffs</b>.</p><p>Handoff rules aren't about shift length, billing, or complaints; they're about client safety.</p><p><b>Takeaway:</b> Handoffs: where information, and safety, can be lost.</p>"
+    },
+    {
+      "id": "lt-102",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "Midshift, after two unexpected admissions, a charge nurse gathers the team for 2 minutes to adjust the plan. Which TeamSTEPPS tool should the nurse identify?",
+      "options": [
+        "A check-back",
+        "A brief",
+        "A huddle",
+        "A debrief"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>huddle</b> is a quick meeting <b>during</b> the shift to reassess and adjust the plan.</p><p>A <b>brief</b> sets the plan at the start, a <b>debrief</b> reviews what happened afterward, and a <b>check-back</b> confirms a message.</p><p><b>Takeaway:</b> Brief: before. Huddle: during. Debrief: after.</p>"
+    },
+    {
+      "id": "lt-103",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "Which effect of bullying should the nurse manager expect on a unit?",
+      "options": [
+        "Stronger teamwork, as staff learn to toughen up",
+        "Lower turnover, as staff become more loyal",
+        "Faster handoffs, as staff avoid each other",
+        "More errors, as staff stop asking questions"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Bullying</b> causes <b>errors</b> and unsafe care (staff stop asking questions), stress, burnout, <b>turnover</b>, and a hostile environment.</p><p>Bullying weakens teamwork and raises turnover, and handoffs that skip communication are less safe, not better.</p><p><b>Takeaway:</b> Bullying: errors, burnout, turnover.</p>"
+    },
+    {
+      "id": "lt-104",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "stem": "Which behavior should the nurse manager recognize as bullying?",
+      "options": [
+        "Repeatedly criticizing a new nurse in public and leaving her out",
+        "A coworker who is short-tempered once during a code",
+        "A single disagreement between two nurses about how to do a procedure",
+        "Private, specific feedback on a missed assessment"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Bullying</b> is <b>repeated</b>, unwanted behavior meant to humiliate or distress, like <b>public criticism</b> and <b>exclusion</b>.</p><p>A <b>single disagreement</b> and a <b>one-time</b> short temper aren't a pattern, and <b>private, specific feedback</b> is constructive.</p><p><b>Takeaway:</b> Bullying: repeated, humiliating, and unwanted.</p>"
+    },
+    {
+      "id": "lt-105",
+      "type": "sata",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "A nurse is reviewing TeamSTEPPS. Which are its four teachable skills?",
+      "options": [
+        "Communication",
+        "Situation monitoring",
+        "Hierarchy",
+        "Mutual support",
+        "Team leadership",
+        "Budgeting"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>TeamSTEPPS teaches <b>communication</b>, <b>team leadership</b>, <b>situation monitoring</b>, and <b>mutual support</b>, toward a lasting culture of safety.</p><p><b>Hierarchy</b> is a barrier TeamSTEPPS works against, and <b>budgeting</b> is a management task.</p><p><b>Takeaway:</b> TeamSTEPPS: communicate, lead, monitor, support.</p>"
+    },
+    {
+      "id": "lt-106",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "stem": "A nurse watches a teammate program an IV pump and catches a wrong rate before it starts. Which TeamSTEPPS skill should the nurse identify?",
+      "options": [
+        "Team leadership",
+        "Situation monitoring",
+        "Communication",
+        "Mutual support (task help)"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Situation monitoring</b>, including <b>cross-monitoring</b>, is watching the client, the team, and the environment to catch errors early.</p><p><b>Mutual support</b> is task help and feedback, <b>team leadership</b> is briefs and huddles, and <b>communication</b> covers tools like SBAR; the deciding feature here is watching a teammate's work.</p><p><b>Takeaway:</b> Cross-monitoring: a safety net of watching each other.</p>"
+    },
+    {
+      "id": "lt-107",
+      "type": "mc",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "Which TeamSTEPPS tool should a charge nurse use to share the plan with the team at the start of a shift?",
+      "options": [
+        "A debrief",
+        "A huddle",
+        "A brief",
+        "A call-out"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>brief</b> is a short planning meeting <b>at the start</b>, so the team shares the plan, roles, and concerns.</p><p>A <b>debrief</b> comes after an event, a <b>huddle</b> adjusts the plan during the shift, and a <b>call-out</b> shares critical information in the moment.</p><p><b>Takeaway:</b> Start: brief. Midway: huddle. After: debrief.</p>"
     }
   ]
 }

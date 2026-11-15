@@ -4,7 +4,7 @@
   "description": "Exam 4 practice, weighted like the professor's blueprint: 60 questions on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math, with one short case study and ice chip questions (one in every exam past 10 questions, two past 25).",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 399.0,
+  "timeMinutes": 627,
   "defaultCount": 60,
   "topicWeights": {"Ethical and legal": 17, "Leadership": 12, "Teamwork and collaboration": 12, "Teaching and learning": 12, "Abbreviations": 2, "Unit conversions and intake": 3, "Ice chips": 2},
   "caseStudies": 1,
@@ -23,6 +23,24 @@
         }
       ]
     },
+    "ednight": {
+      "intro": "A nurse is working a busy Saturday night shift in a community hospital's emergency department, which has no labor and delivery unit.",
+      "tabs": [
+        {
+          "title": "ED Notes",
+          "html": "<h4>ED Notes</h4><p><b>2215:</b> A 27-year-old client arrives by car, 38 weeks pregnant, with contractions every 4 minutes. Her membranes ruptured an hour ago. The charge nurse says, “We don't do deliveries here. Have her partner drive her to City Hospital; it's only 15 minutes away.”</p><p><b>2240:</b> A city council member was brought in after a car crash and asked the staff not to tell anyone he's here. A reporter calls the nurses' station and asks whether he was admitted.</p><p><b>2350:</b> The nurse finds an 80-year-old client on the floor beside his stretcher. Both side rails are down. He says he was trying to get to the bathroom. He has a small cut on his forehead.</p>"
+        }
+      ]
+    },
+    "hospice": {
+      "intro": "A nurse on an oncology unit is caring for a 68-year-old client with advanced lung cancer who is alert, oriented, and able to make decisions.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>Day 2, 0900:</b> The client says, “I don't want any more chemotherapy. I want to go home with hospice.” His son, at the bedside, says, “He doesn't mean it. Don't let him give up.”</p><p><b>1100:</b> The client asks the nurse, “Is the cancer spreading? The doctor keeps changing the subject.” Yesterday's scan shows new spread to the liver; the provider hasn't discussed it with him yet.</p><p><b>1400:</b> In the hallway, the son asks the nurse to change his father's code status from DNR to full code, “without upsetting Dad by telling him.”</p>"
+        }
+      ]
+    },
     "newgrad": {
       "intro": "A charge nurse is leading the day shift on a busy surgical unit.",
       "tabs": [
@@ -36,6 +54,24 @@
         }
       ]
     },
+    "stroketeam": {
+      "intro": "A nurse on a medical unit is caring for a 74-year-old client recovering from a stroke, who is expected to go home tomorrow with home health care.",
+      "tabs": [
+        {
+          "title": "Team Notes",
+          "html": "<h4>Team Notes</h4><p><b>0900, interprofessional rounds:</b> The physical therapist reports that the client walks 30 feet with a walker. The occupational therapist says he needs help dressing. After a swallow study, the speech therapist and dietitian set his diet: <b>thickened liquids only</b>. The provider plans discharge tomorrow.</p><p><b>1000:</b> The client's daughter asks the nurse, “Why are so many different people seeing my father?”</p><p><b>1215:</b> The nurse finds the client's lunch tray with a cup of thin apple juice, half gone. He is coughing.</p>"
+        }
+      ]
+    },
+    "newmanager": {
+      "intro": "A newly hired nurse manager is taking over a medical unit with low morale.",
+      "tabs": [
+        {
+          "title": "Manager's Notes",
+          "html": "<h4>Manager's Notes</h4><p><b>Week 1:</b> Staff say the previous manager “made every decision without asking us” and “only noticed mistakes.” Turnover was 30% last year, and falls have risen. The hospital has set a goal of cutting the unit's falls in half within 12 months.</p><p><b>Week 2:</b> Chart audits show that one nurse skipped the fall-risk assessment for two newly admitted clients this week.</p>"
+        }
+      ]
+    },
     "discharge": {
       "intro": "A nurse on a medical unit is preparing a client for discharge tomorrow.",
       "tabs": [
@@ -46,6 +82,24 @@
         {
           "title": "Teaching Plan",
           "html": "<h4>Teaching Plan: insulin pen</h4><p>By discharge, the client will:</p><ol><li>Prime the pen with 2 units and dial the prescribed dose.</li><li>Inject into the abdomen and hold the needle in place for 10 seconds.</li><li>Explain, in his own words, the signs of low blood glucose and what to do.</li></ol>"
+        }
+      ]
+    },
+    "teenasthma": {
+      "intro": "A school nurse is teaching a 15-year-old who has newly diagnosed asthma how to use a rescue inhaler with a spacer.",
+      "tabs": [
+        {
+          "title": "Nurse's Notes",
+          "html": "<h4>Nurse's Notes</h4><p><b>Visit 1:</b> The student's mother is at the visit. The student texts while the nurse talks and says, “My mom handles my medicine.” He mentions he plays basketball and says, “I can't let my team down.”</p><p><b>Visit 2, a week later:</b> The student correctly explains when to use his rescue inhaler and when to use his controller. When he shows how he uses the inhaler, he breathes in before pressing the canister and doesn't hold his breath afterward.</p>"
+        }
+      ]
+    },
+    "hfhome": {
+      "intro": "A nurse is preparing an 81-year-old client with heart failure for discharge. She lives with her husband, who helps care for her.",
+      "tabs": [
+        {
+          "title": "Nurse's Notes",
+          "html": "<h4>Nurse's Notes</h4><p><b>1000:</b> The client wears hearing aids. She says, “I left school after sixth grade,” and asks the nurse to go over the pills with her husband. She slept poorly and is tired; pain 0/10.</p><p><b>1400:</b> After a nap, she asks, “How will I know if fluid is building up again?” She says, “I want to stay out of the hospital so I can see my granddaughter graduate.”</p>"
         }
       ]
     }
@@ -576,6 +630,552 @@
       "rows": ["A client with diabetes can't be denied health insurance because of the condition", "A hospital must tell clients when a data breach exposed their electronic records", "A client's record can't be shared with the client's employer without permission", "An emergency department must screen and stabilize a woman in labor, whether or not she can pay", "A 24-year-old can stay on a parent's health insurance plan"],
       "answer": [1, 2, 0, 3, 1],
       "rationale": "<p>The <b>Patient Protection and Affordable Care Act (PPACA)</b> expanded coverage: no denial for preexisting conditions, and young adults can stay on a parent's plan until 26. The <b>HITECH Act</b> promoted electronic health records and strengthened HIPAA's rules, including telling clients about breaches. <b>HIPAA</b> protects the privacy of health information. <b>EMTALA</b> requires emergency screening and stabilization regardless of ability to pay.</p><p>Giving the data breach to HIPAA is a mistake, even though it's about privacy. The breach-notification rule for electronic records came with the HITECH Act, which built on HIPAA.</p><p><b>Takeaway:</b> PPACA: coverage. HITECH: electronic records and breaches. HIPAA: privacy. EMTALA: emergency care for all.</p>"
+    },
+    {
+      "id": "el-57",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which action should the nurse take for the client who is in labor?",
+      "options": ["Screen her now, and arrange any transfer with an accepting hospital", "Have her wait for the on-call obstetrician, who will come in the morning", "Have her partner drive her to City Hospital, since it's 15 minutes away", "Ask about her insurance first, since a transfer depends on coverage"],
+      "answer": 0,
+      "case": "ednight",
+      "rationale": "<p>Under <b>EMTALA</b> (the Emergency Medical Treatment and Active Labor Act), the emergency department must <b>screen and stabilize</b> anyone who comes in, including a woman in labor. If she needs care the hospital can't give, the transfer must be an <b>appropriate</b> one: an accepting hospital and qualified staff and equipment for the trip.</p><p><b>Sending her by private car</b> is an unsafe transfer that EMTALA forbids, even to a hospital nearby. <b>Insurance</b> can't delay the screening, and <b>waiting until morning</b> leaves an active labor unassessed.</p><p><b>Takeaway:</b> EMTALA: screen and stabilize everyone, labor included; transfer only the safe, arranged way.</p>"
+    },
+    {
+      "id": "el-58",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "Which response should the nurse give the reporter about the council member?",
+      "options": ["“I can confirm he's here, but I can't share his condition.”", "“I can't share any information. Please call our media office.”", "“Let me transfer you to his room so you can ask him yourself.”", "“Please call back once his family has been told.”"],
+      "answer": 1,
+      "case": "ednight",
+      "rationale": "<p>The client asked that no one be told he's here, so under <b>HIPAA</b> the nurse <b>doesn't confirm or deny</b> that he's a client, and refers the caller to the hospital's media office.</p><p><b>Confirming he's here</b> already discloses health information he asked to keep private. <b>Transferring the call</b> and telling the reporter to <b>call back later</b> both treat his presence as something to share.</p><p><b>Takeaway:</b> No permission, no information, not even whether the client is here.</p>"
+    },
+    {
+      "id": "el-59",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which actions should the nurse take after finding the client on the floor?",
+      "options": ["Write in the client's record that an incident report was filed", "Complete an incident report, following the facility's policy", "Assess the client for injuries before moving him", "Document what the nurse found and did, in objective terms", "Document that the fall happened because a coworker left the rails down", "Notify the provider"],
+      "answer": [1, 2, 3, 5],
+      "case": "ednight",
+      "rationale": "<p>The nurse first <b>assesses the client</b>, then <b>notifies the provider</b>, completes an <b>incident report</b> as policy requires, and <b>documents the facts objectively</b>: what was seen, what the client said, and what was done.</p><p><b>Mentioning the incident report in the record</b> isn't done: the report is an internal quality tool, kept out of the chart. <b>Blaming a coworker</b> in the record is an opinion, not an observed fact, and could support a claim of defamation.</p><p><b>Takeaway:</b> After a fall: assess, notify, report, and chart the facts, not blame.</p>"
+    },
+    {
+      "id": "el-60",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which response should the nurse give the client's question at 1100?",
+      "options": ["“The results are back. I'll have your provider come talk with you today.”", "“The scan looked fine, so try not to worry about it right now.”", "“Your son asked us to protect you, so let's talk about something else.”", "“It isn't my place to discuss scans, so you'll have to ask your doctor about it.”"],
+      "answer": 0,
+      "case": "hospice",
+      "rationale": "<p><b>Veracity</b> means truthfulness, within the nurse's role. The nurse doesn't hide that results exist, and makes sure the <b>provider discusses them with the client today</b>, since the provider shares a new diagnosis.</p><p><b>Saying the scan looked fine</b> is a lie. Following the <b>son's wishes</b> overrides a competent client's right to know, and <b>brushing him off</b> to the doctor leaves his question unanswered with no plan to get him an answer.</p><p><b>Takeaway:</b> Be truthful within your role: don't lie, and get the client the answer.</p>"
+    },
+    {
+      "id": "el-61",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which action should the nurse take about the son's request at 1400?",
+      "options": ["Change it if the provider agrees, without telling the client", "Decline, since the client decides, and tell the provider what the son asked", "Ask the client to talk it over with his son, then change it to a full code", "Change the code status, since the son is the next of kin"],
+      "answer": 1,
+      "case": "hospice",
+      "rationale": "<p>The client is competent, so <b>he decides his code status</b>. The Code of Ethics puts the nurse's <b>first commitment to the client</b> (provision 2) and calls for <b>advocating for his rights</b> (provision 3): the nurse declines and tells the provider about the request.</p><p>The <b>son</b> doesn't decide for a competent father, and a change made <b>behind the client's back</b> violates his rights whoever agrees to it. Changing it after a talk with his son would still let the son's wish override his.</p><p><b>Takeaway:</b> A competent client's wishes rule; advocate for them, even against family.</p>"
+    },
+    {
+      "id": "el-62",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "Which actions should the nurse take to support the client's wish to stop chemotherapy and go home with hospice?",
+      "options": ["Make sure the client's wishes are recorded in an advance directive", "Ask the client to reconsider the chemotherapy for his son's sake", "Tell the provider that the client wants to stop chemotherapy", "Offer a family meeting with the care team, if the client wants one", "Wait until the son agrees before telling the provider about the plan"],
+      "answer": [0, 2, 3],
+      "case": "hospice",
+      "rationale": "<p>The nurse <b>tells the provider</b> what the client wants, makes sure his wishes are <b>recorded in an advance directive</b>, and offers a <b>family meeting</b> to help the son understand, if the client wants it.</p><p><b>Waiting for the son</b> and <b>asking the client to reconsider</b> for his son put the family's wishes ahead of a competent client's choice.</p><p><b>Takeaway:</b> Advocate for the client's choice; help the family understand it, without letting them override it.</p>"
+    },
+    {
+      "id": "el-63",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "At night, a nurse lowers the bed and keeps the call light within reach of a confused client. Which ethical principle should the nurse identify in this action?",
+      "options": ["Justice", "Beneficence", "Nonmaleficence", "Autonomy (self-determination)"],
+      "answer": 2,
+      "rationale": "<p><b>Nonmaleficence</b> is doing no harm and <b>preventing</b> harm, here by lowering the risk of a fall.</p><p><b>Beneficence</b> is doing good for the client, and it's close, but preventing harm is nonmaleficence. <b>Autonomy</b> is the client's right to decide, and <b>justice</b> is fairness.</p><p><b>Takeaway:</b> Preventing harm: nonmaleficence. Doing good: beneficence.</p>"
+    },
+    {
+      "id": "el-64",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "After her shift, a nurse stays to help a frightened client call her daughter overseas, though nothing was promised. Which ethical principle should the nurse identify in this action?",
+      "options": ["Veracity", "Fidelity", "Nonmaleficence", "Beneficence"],
+      "answer": 3,
+      "rationale": "<p><b>Beneficence</b> is doing good and acting in the client's best interest, like comforting a frightened client and helping beyond the bare task.</p><p><b>Fidelity</b> is keeping a promise, and no promise was made. <b>Nonmaleficence</b> is preventing harm, and <b>veracity</b> is telling the truth.</p><p><b>Takeaway:</b> Doing good beyond the task: beneficence.</p>"
+    },
+    {
+      "id": "el-65",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse gives a client who is homeless the same careful pain checks and attention as a client who sits on the hospital's board. Which ethical principle should the nurse identify in this care?",
+      "options": ["Justice", "Fidelity", "Autonomy", "Veracity"],
+      "answer": 0,
+      "rationale": "<p><b>Justice</b> is fairness: the same quality of care for every client, whatever their status.</p><p><b>Fidelity</b> is keeping promises, <b>autonomy</b> is the client's right to decide, and <b>veracity</b> is telling the truth.</p><p><b>Takeaway:</b> Same care for every client: justice.</p>"
+    },
+    {
+      "id": "el-66",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse tells a client that his test was missed because the nurse forgot to send the order, and apologizes. Which ethical principle should the nurse identify in this action?",
+      "options": ["Fidelity", "Veracity", "Beneficence", "Justice"],
+      "answer": 1,
+      "rationale": "<p><b>Veracity</b> is truthfulness, including admitting an error.</p><p><b>Fidelity</b> is keeping a promise, <b>beneficence</b> is doing good, and <b>justice</b> is fairness among clients.</p><p><b>Takeaway:</b> Telling the truth, mistakes included: veracity.</p>"
+    },
+    {
+      "id": "el-67",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A client asks the nurse to choose between two treatment options the provider described. Which response best supports the client's autonomy?",
+      "options": ["“I'd choose the first one; that's what I'd want for myself.”", "“Your family knows you best, so I'll ask them to choose.”", "“Let's go over what each one means for you, so you can decide.”", "“The provider prefers the second one, so you should go with it.”"],
+      "answer": 2,
+      "rationale": "<p><b>Autonomy</b> is the client's right to decide. The nurse supports it by helping the client <b>understand the options</b> and weigh them against his own values, and the choice stays his.</p><p>Choosing <b>for</b> the client, handing the choice to the <b>family</b>, or steering toward the <b>provider's preference</b> all take the decision away from him.</p><p><b>Takeaway:</b> Inform and support; let the client decide.</p>"
+    },
+    {
+      "id": "el-68",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse writes to state lawmakers asking for more funding for the care of uninsured residents. Which professional value should the nurse identify in this action?",
+      "options": ["Fidelity", "Altruism (selflessness)", "Integrity", "Social justice"],
+      "answer": 3,
+      "rationale": "<p><b>Social justice</b> is working for fair treatment and access to care for a <b>whole group</b>, here uninsured residents.</p><p><b>Altruism</b> is concern for one client's welfare, <b>integrity</b> is honesty by the Code, and <b>fidelity</b> is keeping promises.</p><p><b>Takeaway:</b> One client's welfare: altruism. Fairness for a group: social justice.</p>"
+    },
+    {
+      "id": "el-69",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "No one saw a nurse give a medication an hour late, but the nurse reports it and documents it honestly. Which professional value should the nurse identify in this action?",
+      "options": ["Integrity", "Altruism", "Social justice", "Autonomy"],
+      "answer": 0,
+      "rationale": "<p><b>Integrity</b> is acting honestly and by the Code of Ethics, <b>even when no one is watching</b>.</p><p><b>Altruism</b> is putting a client's welfare first, <b>social justice</b> is fair access for a group, and <b>autonomy</b> is the client's right to decide.</p><p><b>Takeaway:</b> Integrity: honest when no one's watching.</p>"
+    },
+    {
+      "id": "el-70",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nursing student asks why nurses should clarify their own values. Which response should the nurse give?",
+      "options": ["“So you can teach clients to share your own values.”", "“So your own values don't quietly steer a client's care.”", "“So you can avoid caring for clients whose values differ.”", "“So you can decide which client's values are the correct ones.”"],
+      "answer": 1,
+      "rationale": "<p>Knowing your own values keeps them from <b>steering a client's care without your noticing</b>, and helps you see where your values and a client's differ.</p><p>Nurses don't teach clients their own values, avoid clients who differ, or judge whose values are right.</p><p><b>Takeaway:</b> Know your values, so they don't decide for the client.</p>"
+    },
+    {
+      "id": "el-71",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "Which actions by the nurse show respect for a client's autonomy?",
+      "options": ["Explaining the options so the client can choose", "Respecting a competent client's refusal of a treatment", "Deciding for the client, since the nurse knows the routine better", "Leaving out facts that might change the client's mind", "Asking whether the client wants a bath now or after lunch"],
+      "answer": [0, 1, 4],
+      "rationale": "<p><b>Autonomy</b> shows in <b>offering choices</b>, giving the <b>information</b> needed to choose, and <b>respecting a competent client's refusal</b>.</p><p><b>Deciding for the client</b> and <b>holding back facts</b> to steer the choice both override the client's right to decide.</p><p><b>Takeaway:</b> Choices, information, and respect for a refusal: autonomy.</p>"
+    },
+    {
+      "id": "el-72",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A client says, “Promise you won't tell anyone, but I'm leaving tonight before my tests are done.” Which response should the nurse give?",
+      "options": ["“If you leave tonight, this hospital won't take you back again.”", "“I promise. Whatever you tell me stays just between the two of us.”", "“I can't promise that; your safety matters. What's worrying you?”", "“I'll keep your secret if you promise to come back here tomorrow.”"],
+      "answer": 2,
+      "rationale": "<p><b>Fidelity</b> is keeping promises, so a nurse doesn't make one that can't be kept. The client's <b>safety</b> means the team must know, so the nurse is honest about that and explores the client's concerns.</p><p><b>Promising secrecy</b> sets up a broken promise or an unsafe one. A <b>bargain</b> still keeps the team uninformed, and a <b>threat</b> about returning is untrue and coercive.</p><p><b>Takeaway:</b> Don't promise secrecy you can't keep; be honest and explore the concern.</p>"
+    },
+    {
+      "id": "el-73",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 1,
+      "stem": "A nursing student asks who wrote and updates the Code of Ethics for Nurses. Which answer should the nurse give?",
+      "options": ["“The state board of nursing.”", "“The National Council of State Boards of Nursing.”", "“The Joint Commission.”", "“The American Nurses Association.”"],
+      "answer": 3,
+      "rationale": "<p>The <b>American Nurses Association (ANA)</b> wrote the Code (first adopted in 1950) and <b>revises</b> it as practice and society change.</p><p>The <b>board of nursing</b> enforces the state's nurse practice act, the <b>NCSBN</b> writes the licensing exam, and <b>The Joint Commission</b> accredits health care organizations.</p><p><b>Takeaway:</b> The Code: written and updated by the ANA.</p>"
+    },
+    {
+      "id": "el-74",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse who isn't an ANA member asks whether the Code of Ethics applies to her. Which response should the nurse manager give?",
+      "options": ["“Yes: it applies to every nurse, in every role and setting.”", "“No: it's meant for the nurses who belong to the ANA.”", "“It applies to bedside nurses, but not to nurse managers.”", "“It applies once a nurse has 5 years of experience or more.”"],
+      "answer": 0,
+      "rationale": "<p>The Code applies to <b>every nurse</b>, in every role and setting, whether or not they belong to the ANA.</p><p>Membership, role, and years of experience don't change who the Code covers.</p><p><b>Takeaway:</b> Every nurse follows the Code.</p>"
+    },
+    {
+      "id": "el-75",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse schedules continuing education and protects time for her own health and rest. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 3: advocating for the client", "Provision 5: duties to self", "Provision 9: speaking for the profession", "Provision 1: respect for each person"],
+      "answer": 1,
+      "rationale": "<p><b>Provision 5</b> covers the nurse's <b>duties to self</b>: health, safety, integrity, competence, and growth.</p><p><b>Provision 1</b> is respect for every person, <b>provision 3</b> is advocacy for the client's rights and safety, and <b>provision 9</b> is the profession speaking through its organizations.</p><p><b>Takeaway:</b> Self-care and learning: provision 5.</p>"
+    },
+    {
+      "id": "el-76",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse joins a committee working to fix unsafe staffing on the unit. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 4: accountability for one's own practice", "Provision 7: advancing the profession through research", "Provision 6: an ethical work environment", "Provision 2: the first commitment to the client"],
+      "answer": 2,
+      "rationale": "<p><b>Provision 6</b> calls on nurses to build an <b>ethical work environment</b> that supports safe, quality care, like raising staffing concerns.</p><p><b>Provision 2</b> is the commitment to the client, <b>provision 4</b> is owning one's own practice and errors, and <b>provision 7</b> is research, scholarship, and standards.</p><p><b>Takeaway:</b> Fixing the workplace: provision 6.</p>"
+    },
+    {
+      "id": "el-77",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse is reviewing the Code of Ethics for Nurses. Which concepts does it include?",
+      "options": ["Obedience to the provider without question", "Confidentiality", "Responsibility", "Advocacy", "Loyalty to the employer over the client", "Accountability"],
+      "answer": [1, 2, 3, 5],
+      "rationale": "<p>The Code includes <b>advocacy</b>, <b>responsibility</b>, <b>accountability</b>, and <b>confidentiality</b>, along with respect, dignity, and social justice.</p><p>The Code puts the nurse's first commitment to the client, so it doesn't call for <b>obedience to the provider</b> or <b>loyalty to the employer</b> over the client.</p><p><b>Takeaway:</b> The Code: advocacy, responsibility, accountability, confidentiality.</p>"
+    },
+    {
+      "id": "el-78",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Halfway through a procedure that she consented to, a client says, “Stop. I've changed my mind.” Which action should the nurse take?",
+      "options": ["Ask her family to persuade her to let the procedure continue", "Give her something to help her relax, and then continue", "Finish quickly, since she already signed the consent form", "Stop, and tell the provider she has withdrawn consent"],
+      "answer": 3,
+      "rationale": "<p>A client can <b>refuse a procedure even after it has begun</b>, without losing her other care. The nurse stops and tells the provider.</p><p>A signed form doesn't override a client's withdrawal of consent; continuing could be battery. Asking the <b>family to persuade</b> her, or sedating her to continue, overrides her choice.</p><p><b>Takeaway:</b> Consent can be withdrawn at any time.</p>"
+    },
+    {
+      "id": "el-79",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "At a mass-casualty scene, a triage nurse treats first the clients most likely to survive with quick care, to save the most lives. Which ethical approach should the nurse identify?",
+      "options": ["Utilitarianism", "Paternalism", "Deontology (duty-based ethics)", "Casuistry"],
+      "answer": 0,
+      "rationale": "<p><b>Utilitarianism</b> judges actions by their consequences: the right act brings the <b>greatest good to the greatest number</b>, as in disaster triage.</p><p><b>Deontology</b> judges by duty and rules, whatever the outcome; <b>casuistry</b> compares similar past cases; and <b>paternalism</b> overrides a person's choice for their supposed good.</p><p><b>Takeaway:</b> The most good for the most people: utilitarianism.</p>"
+    },
+    {
+      "id": "el-80",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse is reviewing situations on a unit. Which of them are ethical dilemmas?",
+      "options": ["A nurse is unsure of the right dose of a new medication for a client", "Two clients need the last ICU bed, and both have strong claims to it", "A nurse disagrees with a coworker about who takes the first lunch break", "A competent client refuses a feeding tube; the nurse values his choice and his life", "A nurse knows the right action, but the hospital's policy keeps the nurse from taking it"],
+      "answer": [1, 3],
+      "rationale": "<p>An <b>ethical dilemma</b> is a choice between two options that each rest on an ethical principle, with <b>no clearly right answer</b>: autonomy against preserving life, or justice between two clients with strong claims.</p><p><b>Knowing the right action</b> but being blocked from it is <b>moral distress</b>. An unsure dose is a knowledge question, and a lunch schedule isn't an ethical problem.</p><p><b>Takeaway:</b> Dilemma: two right-seeming choices. Moral distress: one right choice, blocked.</p>"
+    },
+    {
+      "id": "el-81",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "When should a nurse ask for an ethics consultation?",
+      "options": ["Whenever a client refuses a treatment the team recommends", "When the team and family can't resolve a dilemma about care", "Before each end-of-life conversation with a client and family", "When a coworker breaks a unit policy, as a first step"],
+      "answer": 1,
+      "rationale": "<p>An <b>ethics committee</b> or consultation helps when the team, client, and family <b>can't resolve</b> a dilemma about care.</p><p>A competent client's refusal doesn't need an ethics review, routine end-of-life talks don't either, and a broken policy goes through the chain of command.</p><p><b>Takeaway:</b> Unresolved dilemma: call the ethics committee.</p>"
+    },
+    {
+      "id": "el-82",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse faces an ethical dilemma about a client's care. Which steps should the nurse take?",
+      "options": ["Identify the values and principles in conflict", "Consider the options and their likely outcomes", "Act, then evaluate the result", "Decide by what the family prefers", "Gather the facts of the situation", "Follow what most of the staff would do"],
+      "answer": [0, 1, 2, 4],
+      "rationale": "<p>Ethical decision-making is a process: <b>gather the facts</b>, <b>identify the values and principles</b> in conflict, <b>weigh the options</b> and their outcomes, then <b>act and evaluate</b>.</p><p>Going by the <b>family's preference</b> or what <b>most staff would do</b> skips the reasoning, and can override the client's rights.</p><p><b>Takeaway:</b> Facts, values, options, act, evaluate.</p>"
+    },
+    {
+      "id": "el-83",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Two nurses disagree about telling a client bad news. One says, “Honesty is our duty.” The other says, “Holding off will cause the least harm overall.” Which approach should the nurse educator identify in the second nurse's reasoning?",
+      "options": ["Veracity", "Deontology (duty-based ethics)", "Utilitarianism", "Casuistry"],
+      "answer": 2,
+      "rationale": "<p>Weighing which choice causes the <b>least harm overall</b> judges the act by its <b>consequences</b>: utilitarian reasoning.</p><p>The first nurse's appeal to <b>duty</b> is deontology. <b>Casuistry</b> compares past cases, and <b>veracity</b> is a principle (truthfulness), not an approach.</p><p><b>Takeaway:</b> Duty: deontology. Consequences: utilitarianism. Past cases: casuistry.</p>"
+    },
+    {
+      "id": "el-84",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse feels moral distress after a dying client's family insists on aggressive treatment the nurse believes only prolongs suffering. Which actions can help?",
+      "options": ["Talking with a trusted colleague or the nurse manager", "Keeping the feelings private, to stay professional", "Asking for an ethics consultation", "Avoiding clients in similar situations from now on", "Using the employee assistance program for support"],
+      "answer": [0, 2, 4],
+      "rationale": "<p><b>Talking it through</b>, an <b>ethics consultation</b>, and the <b>employee assistance program</b> help a nurse cope with moral distress and can improve the situation.</p><p><b>Bottling it up</b> leads to burnout, and <b>avoiding similar clients</b> doesn't address the distress.</p><p><b>Takeaway:</b> Moral distress: talk, consult, get support.</p>"
+    },
+    {
+      "id": "el-85",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which action by a nurse is paternalistic?",
+      "options": ["Offering the client a choice of times for wound care", "Asking the client what matters most to her in her care", "Explaining the risks of a treatment the client is considering", "Holding back a client's diagnosis “for her own good”"],
+      "answer": 3,
+      "rationale": "<p><b>Paternalism</b> is deciding for someone “for their own good,” like <b>holding back a diagnosis</b>; it overrides the client's autonomy.</p><p><b>Explaining risks</b>, <b>offering choices</b>, and <b>asking what matters</b> to the client all support her autonomy.</p><p><b>Takeaway:</b> “For your own good,” without your say: paternalism.</p>"
+    },
+    {
+      "id": "el-86",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse thinks, “If I report my near miss, the team will learn and future clients will be safer, even though I'll be embarrassed.” Which ethical approach should the nurse identify in this reasoning?",
+      "options": ["Utilitarianism", "Deontology (duty-based ethics)", "Casuistry", "Paternalism"],
+      "answer": 0,
+      "rationale": "<p>The nurse weighs the <b>outcomes</b>: the most good for the most people (safer future clients) outweighs the nurse's embarrassment, which is <b>utilitarian</b> reasoning.</p><p><b>Deontology</b> would report because it's the nurse's duty, whatever the outcome. <b>Casuistry</b> compares past cases, and <b>paternalism</b> decides for others.</p><p><b>Takeaway:</b> Reasoning by outcomes: utilitarianism.</p>"
+    },
+    {
+      "id": "el-87",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse is moving to another state. Where should the nurse check what an RN may do there?",
+      "options": ["The ANA's Code of Ethics for Nurses, for the scope", "The new state's nurse practice act and board of nursing", "The nurse practice act of the state the nurse is leaving", "The new employer's job description for RNs"],
+      "answer": 1,
+      "rationale": "<p>Each state's <b>nurse practice act</b> defines nursing and its scope of practice there, and its <b>board of nursing</b> enforces it.</p><p>The <b>Code</b> guides ethics, not scope. The <b>old state's</b> act doesn't apply in the new state, and a <b>job description</b> can't go beyond the act.</p><p><b>Takeaway:</b> Scope of practice: the state's nurse practice act.</p>"
+    },
+    {
+      "id": "el-88",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "Which body can discipline a nurse's license?",
+      "options": ["The hospital's human resources office", "The Joint Commission", "The state board of nursing", "The American Nurses Association"],
+      "answer": 2,
+      "rationale": "<p>The <b>state board of nursing</b>, created by the nurse practice act, licenses nurses and can discipline a license to protect the public.</p><p>The <b>ANA</b> is a professional association, <b>human resources</b> handles employment, and <b>The Joint Commission</b> accredits organizations; none of them can discipline a license.</p><p><b>Takeaway:</b> Licenses: granted and disciplined by the board of nursing.</p>"
+    },
+    {
+      "id": "el-89",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse asks whether a hospital's policy can limit what its RNs do more than the state's nurse practice act does. Which response should the nurse manager give?",
+      "options": ["“Yes: a policy can also add tasks the act doesn't allow RNs.”", "“No: the federal government, not hospitals, sets the limits on practice.”", "“No: policies must match the act exactly, word for word.”", "“Yes: a policy can be stricter than the act, but can't widen the scope.”"],
+      "answer": 3,
+      "rationale": "<p>A facility's policy can <b>limit</b> practice further, but it can <b>never widen</b> the scope beyond the state's nurse practice act.</p><p>Policies don't have to match the act exactly, and they can't add tasks the act doesn't allow. Nursing practice is regulated by the states.</p><p><b>Takeaway:</b> Policy can narrow the scope, never widen it.</p>"
+    },
+    {
+      "id": "el-90",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A provider asks a nurse to perform a task the state's nurse practice act doesn't allow RNs to do. Which response should the nurse give?",
+      "options": ["“That's outside the RN scope here. Let's find who can do it.”", "“I'll ask another nurse to do it for you instead.”", "“I'll do it this once, since you're the one asking.”", "“I'll do it if you sign that you take responsibility for it.”"],
+      "answer": 0,
+      "rationale": "<p>The nurse <b>declines</b>, because the task is <b>outside the RN scope</b> under the state's nurse practice act, and helps find someone who's allowed to do it.</p><p>A provider's request or signature doesn't change the scope of practice, and handing the task to <b>another nurse</b> doesn't either.</p><p><b>Takeaway:</b> Outside the scope: decline, explain, and help find the right person.</p>"
+    },
+    {
+      "id": "el-91",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A hospital's electronic records are breached. Which law requires the hospital to tell the affected clients?",
+      "options": ["The Americans with Disabilities Act (ADA)", "The Health Information Technology (HITECH) Act", "The Emergency Medical Treatment and Active Labor Act (EMTALA)", "The Uniform Anatomical Gift Act"],
+      "answer": 1,
+      "rationale": "<p>The <b>HITECH Act</b> promoted electronic health records and strengthened HIPAA's rules, including <b>telling clients about breaches</b>.</p><p>The <b>ADA</b> protects people with disabilities, <b>EMTALA</b> covers emergency care, and the <b>Uniform Anatomical Gift Act</b> governs organ donation.</p><p><b>Takeaway:</b> HIPAA: privacy. HITECH: electronic records and breach notice.</p>"
+    },
+    {
+      "id": "el-92",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A client asks what the Patient Protection and Affordable Care Act (PPACA) does. Which statements should the nurse include?",
+      "options": ["Insurers can't deny coverage for a preexisting condition", "It protects the privacy of clients' health records and charts", "Young adults can stay on a parent's plan until age 26", "It expands access to affordable coverage and preventive care", "It makes care free at any hospital in the country"],
+      "answer": [0, 2, 3],
+      "rationale": "<p>The <b>PPACA</b> expanded <b>affordable coverage</b> and preventive care, kept young adults on a <b>parent's plan until 26</b>, and stopped <b>denials for preexisting conditions</b>.</p><p>It doesn't make care <b>free at any hospital</b>, and record <b>privacy</b> is HIPAA's job.</p><p><b>Takeaway:</b> PPACA: coverage and access.</p>"
+    },
+    {
+      "id": "el-93",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse with a hearing impairment asks the employer for an amplified stethoscope. Which law should the nurse manager identify as supporting this request?",
+      "options": ["The Emergency Medical Treatment and Active Labor Act", "The Health Insurance Portability and Accountability Act (HIPAA)", "The Americans with Disabilities Act", "The nurse practice act"],
+      "answer": 2,
+      "rationale": "<p>The <b>Americans with Disabilities Act</b> protects people with disabilities at work, including <b>reasonable accommodations</b> like an amplified stethoscope.</p><p><b>HIPAA</b> protects health information, the <b>nurse practice act</b> sets the scope of practice, and <b>EMTALA</b> covers emergency care.</p><p><b>Takeaway:</b> Reasonable accommodation, for clients and staff: the ADA.</p>"
+    },
+    {
+      "id": "el-94",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Off duty, a nurse stops to help at a car crash and starts first aid. Which statement about the nurse's duty is accurate?",
+      "options": ["The nurse may leave once the bleeding slows", "The nurse must also ride to the hospital with the injured person", "The nurse may leave whenever another bystander arrives", "The nurse should stay until someone as qualified or more takes over"],
+      "answer": 3,
+      "rationale": "<p>Under <b>Good Samaritan</b> laws, once a nurse starts helping, the nurse should <b>stay until someone at least as qualified</b>, like EMS, takes over; leaving early could be abandonment.</p><p>A bystander without training isn't a safe handoff, and the slowing of the bleeding doesn't end the duty. The nurse doesn't have to ride to the hospital once EMS takes over.</p><p><b>Takeaway:</b> Good Samaritan: help in good faith, within training, and stay until handoff.</p>"
+    },
+    {
+      "id": "el-95",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "During her shift at a clinic, a nurse makes an error and later claims protection under the state's Good Samaritan law. Which statement is accurate?",
+      "options": ["The law doesn't apply, since it covers off-duty emergency help", "The law applies if the error was small", "The law applies if the clinic is a nonprofit", "The law protects her, since she was helping a client"],
+      "answer": 0,
+      "rationale": "<p><b>Good Samaritan</b> laws limit liability for help given <b>off duty</b>, in an emergency, in good faith. Care given <b>on the job</b> isn't covered.</p><p>Helping a client at work, the size of the error, and the clinic's nonprofit status don't bring on-the-job care under the law.</p><p><b>Takeaway:</b> Good Samaritan: off duty, emergency, good faith; not work.</p>"
+    },
+    {
+      "id": "el-96",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse is reviewing laws that shape nursing. Which of the following are state laws?",
+      "options": ["EMTALA", "The nurse practice act", "The Americans with Disabilities Act", "Good Samaritan laws", "HIPAA"],
+      "answer": [1, 3],
+      "rationale": "<p>The <b>nurse practice act</b> and <b>Good Samaritan laws</b> are passed by each <b>state</b>.</p><p><b>HIPAA</b>, <b>EMTALA</b>, and the <b>ADA</b> are federal laws that apply in every state.</p><p><b>Takeaway:</b> State: nurse practice act, Good Samaritan. Federal: HIPAA, HITECH, EMTALA, ADA, PPACA.</p>"
+    },
+    {
+      "id": "el-97",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A coworker who forgot her password asks to use a nurse's electronic health record login for a few minutes. Which response should the nurse give?",
+      "options": ["“Sure, just log out when you're done with it.”", "“I can't share it; the law protects these records.”", "“You can use it if I stay right beside you.”", "“Use it, but don't open any of my clients' records.”"],
+      "answer": 1,
+      "rationale": "<p>Each login ties every action in the record to one person. Sharing it breaks the rules for <b>protecting electronic health information</b> (HIPAA, strengthened by HITECH).</p><p>Logging out afterward, standing beside her, or limiting which charts she opens doesn't change that her actions would be recorded under the nurse's name.</p><p><b>Takeaway:</b> Never share a login.</p>"
+    },
+    {
+      "id": "el-98",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A client who has died had registered as an organ donor on his driver's license, but his family objects to donation. Which statement is accurate?",
+      "options": ["The hospital decides, since he can no longer speak for himself", "The family's objection overrides his registration as an organ donor", "His documented choice stands, under the Uniform Anatomical Gift Act", "Donation can go ahead if a court approves it first"],
+      "answer": 2,
+      "rationale": "<p>The <b>Uniform Anatomical Gift Act</b>, the legal base of organ donation, lets a person <b>decide to donate</b>, and that documented decision stands after death.</p><p>The family decides only when the person left no decision. A court and the hospital don't decide, since he made his choice.</p><p><b>Takeaway:</b> A documented gift stands; family decides only when there's none.</p>"
+    },
+    {
+      "id": "el-99",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A client signed the consent for surgery yesterday. This morning he says, “I don't remember agreeing to this. What are they doing to me?” Which action should the nurse take?",
+      "options": ["Explain the surgery to him in detail, then continue the preparations", "Ask his family to remind him what he agreed to yesterday", "Reassure him that he signed it, and continue the preparations", "Hold the preparations, and ask the surgeon to explain it again"],
+      "answer": 3,
+      "rationale": "<p>Consent must be <b>informed</b>. A client who doesn't know what the procedure is hasn't given informed consent, so the nurse <b>holds</b> and asks the <b>surgeon</b> to explain it again.</p><p>A signature isn't consent if he doesn't understand. The <b>surgeon</b>, not the nurse, explains the procedure, and the <b>family</b> can't consent for a competent client.</p><p><b>Takeaway:</b> No understanding, no consent: hold and call the provider.</p>"
+    },
+    {
+      "id": "el-100",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A client wants to name her sister to make health care decisions if she can't. Which document should the nurse tell her about?",
+      "options": ["A durable power of attorney for health care", "A do-not-resuscitate order from her provider", "A HIPAA release form for her sister", "A living will that lists the treatments she wants"],
+      "answer": 0,
+      "rationale": "<p>A <b>durable power of attorney for health care</b> names someone to make decisions if the client can't.</p><p>A <b>living will</b> states which treatments she would or wouldn't want, a <b>DNR order</b> is written by the provider, and a <b>HIPAA release</b> lets others receive her information.</p><p><b>Takeaway:</b> Naming a decision-maker: durable power of attorney. Listing wishes: living will.</p>"
+    },
+    {
+      "id": "el-101",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "An unconscious client needs emergency surgery after a crash, and no family can be reached. Which statement is accurate?",
+      "options": ["The surgery waits until a family member signs", "The surgery can go ahead under implied consent", "The nurse signs the consent form for the client", "A court order is needed before any emergency treatment"],
+      "answer": 1,
+      "rationale": "<p>In a true emergency, when the client can't consent and no one can be reached, treatment can go ahead under <b>implied (emergency) consent</b>.</p><p>Waiting for <b>family</b> or a <b>court</b> could cost the client's life, and a nurse doesn't sign consent for a client.</p><p><b>Takeaway:</b> Emergency, no one to ask: implied consent.</p>"
+    },
+    {
+      "id": "el-102",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A client who speaks only Spanish is about to sign a consent form, and her 12-year-old son offers to translate. Which action should the nurse take?",
+      "options": ["Have a bilingual visitor translate", "Let the son translate, since the client trusts him", "Get a professional medical interpreter", "Give her the English form and point to where to sign"],
+      "answer": 2,
+      "rationale": "<p>Informed consent requires that the client <b>understands</b>, so the nurse gets a <b>professional medical interpreter</b>.</p><p>A <b>child</b> or a <b>visitor</b> may not translate accurately and can't keep the information private, and a form she can't read isn't informed consent.</p><p><b>Takeaway:</b> Consent in another language: a professional interpreter.</p>"
+    },
+    {
+      "id": "el-103",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse locks the door of a competent client's room so he can't leave before his tests are done. Which tort should the nurse manager identify?",
+      "options": ["Battery", "Invasion of privacy", "Assault", "False imprisonment"],
+      "answer": 3,
+      "rationale": "<p><b>False imprisonment</b> is holding a person against their will without legal cause, like locking in a competent client.</p><p><b>Assault</b> is a threat, <b>battery</b> is touching without consent, and <b>invasion of privacy</b> is sharing private information without permission.</p><p><b>Takeaway:</b> Holding a competent person without cause: false imprisonment.</p>"
+    },
+    {
+      "id": "el-104",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse writes in an email to coworkers that a provider “comes to work drunk,” which isn't true. Which tort should the nurse manager identify?",
+      "options": ["Libel", "Assault", "Invasion of privacy", "Slander"],
+      "answer": 0,
+      "rationale": "<p><b>Defamation</b> is a false statement that harms someone's reputation. In <b>writing</b>, like an email, it's <b>libel</b>.</p><p><b>Slander</b> is spoken defamation. <b>Assault</b> is a threat, and <b>invasion of privacy</b> is sharing true private information without permission.</p><p><b>Takeaway:</b> Libel: letters (written). Slander: spoken.</p>"
+    },
+    {
+      "id": "el-105",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse manager is reviewing events on a unit. Which actions could lead to a claim of battery?",
+      "options": ["Keeping a competent client from leaving the unit", "Telling a client, “Take this, or I'll hold you down”", "Sharing a client's diagnosis with a neighbor", "Removing a mole during surgery that the client didn't consent to", "Giving an injection the client refused"],
+      "answer": [3, 4],
+      "rationale": "<p><b>Battery</b> is <b>touching without consent</b>: an injection after a refusal, or a procedure <b>beyond what was consented</b>.</p><p>A <b>threat</b> without touch is assault, <b>keeping a client from leaving</b> is false imprisonment, and <b>sharing a diagnosis</b> is invasion of privacy.</p><p><b>Takeaway:</b> Touch without consent: battery. Threat: assault.</p>"
+    },
+    {
+      "id": "el-106",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Which situation describes malpractice?",
+      "options": ["A visitor's spilled coffee causes a client in the hallway to slip and fall", "A nurse gives a drug despite a documented allergy, harming the client", "A nurse holds down a client to give a pill he refused", "A nurse discusses a client's diagnosis in the elevator"],
+      "answer": 1,
+      "rationale": "<p><b>Malpractice</b> is negligence by a <b>professional</b>: care below what a reasonably prudent nurse would give, which harms the client, like giving a drug despite a <b>documented allergy</b>.</p><p>A <b>visitor's</b> spill is ordinary negligence at most, since a visitor isn't a professional. Holding a client down for a pill he <b>refused</b> is battery, and talking in the <b>elevator</b> is invasion of privacy.</p><p><b>Takeaway:</b> Malpractice: a professional falls below the standard of care, and harm follows.</p>"
+    },
+    {
+      "id": "el-107",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse gives a client the wrong medication, but it causes no harm. A lawyer says there's no malpractice case. Which element of malpractice is missing?",
+      "options": ["A duty to the client", "A breach of the standard of care", "Harm to the client", "A nursing license"],
+      "answer": 2,
+      "rationale": "<p>Malpractice needs a <b>duty</b>, a <b>breach</b> of the standard of care, <b>harm</b>, and a link between the breach and the harm. Without <b>harm</b>, there's no malpractice claim (though the error still must be reported).</p><p>The nurse had a <b>duty</b> to the client, and the wrong medication was a <b>breach</b>. A <b>license</b> isn't one of the elements.</p><p><b>Takeaway:</b> Malpractice: duty, breach, harm, and cause.</p>"
+    },
+    {
+      "id": "el-108",
+      "type": "sata",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse is reviewing the types of torts. Which of the following are quasi-intentional torts?",
+      "options": ["Battery", "Invasion of privacy", "Negligence", "Assault", "Defamation"],
+      "answer": [1, 4],
+      "rationale": "<p><b>Quasi-intentional</b> torts involve no intent to harm, but a voluntary act, often words, that harms: <b>invasion of privacy</b> and <b>defamation</b>.</p><p><b>Battery</b> and <b>assault</b> are intentional torts, and <b>negligence</b> is unintentional.</p><p><b>Takeaway:</b> Intentional: assault, battery, false imprisonment. Quasi-intentional: privacy, defamation. Unintentional: negligence, malpractice.</p>"
+    },
+    {
+      "id": "el-109",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Two days after surgery, a client refuses to walk, saying it hurts too much. Which action shows beneficence while respecting the client's autonomy?",
+      "options": ["Document the refusal, and skip walking for the rest of the day", "Ask the client's family to insist that he get up and walk", "Tell the client that walking is required, and help him up right away", "Explain why walking helps, treat his pain, and plan the walk with him"],
+      "answer": 3,
+      "rationale": "<p><b>Beneficence</b> is acting for the client's good: explaining how walking prevents complications and <b>treating the pain</b> first. <b>Planning the walk with him</b> respects his autonomy, since the choice stays his.</p><p><b>Requiring</b> the walk, or having the <b>family insist</b>, overrides his choice. <b>Skipping it</b> without addressing the pain or the reasons gives up on doing good for him.</p><p><b>Takeaway:</b> Do good by informing and removing barriers, not by forcing.</p>"
+    },
+    {
+      "id": "el-110",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A client says, “I want to complain about how I was treated here.” Which response should the nurse give?",
+      "options": ["“You have the right to make a complaint. I'll help you reach the patient advocate.”", "“Let's keep this between us, so it doesn't get anyone in trouble.”", "“You'll need to hire a lawyer to raise a concern formally.”", "“Raising concerns can affect your care, so it may be better to wait until discharge.”"],
+      "answer": 0,
+      "rationale": "<p>Clients have the <b>right to express complaints and be heard</b>. The nurse supports that right and helps the client reach the <b>patient advocate</b> (or the facility's complaint process).</p><p>Suggesting that speaking up could <b>affect care</b> is intimidating and untrue, <b>keeping it quiet</b> blocks the client's right, and a <b>lawyer</b> isn't needed to complain.</p><p><b>Takeaway:</b> Clients may complain and be heard; help them do it.</p>"
     },
     {
       "id": "lt-01",
@@ -1180,6 +1780,472 @@
       "rationale": "<p>A <b>paternalistic</b> leader is a caring form of the <b>autocratic</b> leader: decisions stay with the leader, “for the good” of the staff, who are looked after but not involved.</p><p><b>Transformational</b> isn't the right answer: the leader cares about the staff, but a transformational leader <b>involves and inspires</b> the staff and shares a vision; this leader keeps every decision.</p><p><b>Takeaway:</b> Paternalistic = autocratic decisions with a caring tone.</p>"
     },
     {
+      "id": "lt-62",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which response should the nurse give the daughter's question at 1000?",
+      "options": ["“It's so each department can document its own part of his care.”", "“Each of us brings different skills to one shared plan for your father.”", "“The hospital requires several visits a day for each client after a stroke.”", "“The provider can't be here often, so others check on him in between.”"],
+      "answer": 1,
+      "case": "stroketeam",
+      "rationale": "<p><b>Interprofessional collaboration</b> brings each profession's knowledge and skills (nursing, therapy, nutrition, medicine) to <b>one shared, client-centered plan</b>.</p><p>The team isn't there to fill in for the provider, to meet a visit rule, or to bill; each member has a distinct role in the same plan.</p><p><b>Takeaway:</b> Interprofessional: different professions, one shared goal for the client.</p>"
+    },
+    {
+      "id": "lt-63",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 3,
+      "stem": "Which action should the nurse take first at 1215?",
+      "options": ["Ask his daughter to watch him for more coughing", "Call the dietitian to ask how the thin juice reached the tray", "Stop the thin liquid, and assess his breathing and swallowing", "Complete an incident report about the wrong liquid"],
+      "answer": 2,
+      "case": "stroketeam",
+      "rationale": "<p>A client on <b>thickened liquids</b> who drank thin juice and is coughing may be <b>aspirating</b>. The nurse first <b>stops the thin liquid and assesses</b> his airway, breathing, and swallowing, then reports to the provider and the team.</p><p><b>Calling the dietitian</b> and the <b>incident report</b> come after the client is safe. A family member isn't the one to monitor for aspiration.</p><p><b>Takeaway:</b> Client safety first; then fix the communication breakdown that caused it.</p>"
+    },
+    {
+      "id": "lt-64",
+      "type": "sata",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which actions should the nurse take to give a safe handoff to the home health nurse?",
+      "options": ["Send the medication list without the therapy plans", "Use a structured format, like SBAR or I-PASS", "Invite questions, and have the receiving nurse read back key points", "Leave out details the home health nurse can find in the chart later", "Include the thickened-liquid diet and the walker plan"],
+      "answer": [1, 2, 4],
+      "case": "stroketeam",
+      "rationale": "<p>A safe handoff is <b>structured</b>, includes the <b>safety-critical plan</b> (thickened liquids, walker, dressing help), and ends with <b>questions and a read-back</b>.</p><p>Sending the <b>medication list alone</b> or leaving details for later invites the kind of breakdown that put thin juice on his tray.</p><p><b>Takeaway:</b> Handoffs: structured, complete, and checked with a read-back.</p>"
+    },
+    {
+      "id": "lt-65",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "Which leadership style should the new manager use to rebuild morale and keep staff on the unit?",
+      "options": ["Transformational: share a vision, involve staff, and coach each one", "Autocratic: make the decisions, so staff have less to worry about", "Laissez-faire: step back, so staff can recover on their own", "Transactional: reward staff for meeting targets, and correct errors"],
+      "answer": 0,
+      "case": "newmanager",
+      "rationale": "<p><b>Transformational</b> leadership, a shared vision, staff involvement, and coaching, is linked with <b>job satisfaction, less burnout, and staff who stay</b>, the style the Leadership Article favored.</p><p><b>Autocratic</b> leadership is what drove morale down here. <b>Laissez-faire</b> leaves a struggling unit without direction, and <b>transactional</b> leadership gets expected results but little beyond them.</p><p><b>Takeaway:</b> Low morale, high turnover: lead with a shared vision and coaching.</p>"
+    },
+    {
+      "id": "lt-66",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "The manager writes the steps, timeline, and measures for cutting the unit's falls in half. Which management function should the nurse identify?",
+      "options": ["Organizing", "Planning", "Coordinating", "Controlling"],
+      "answer": 1,
+      "case": "newmanager",
+      "rationale": "<p><b>Planning</b> is setting goals from the data and a course of action to reach them: the steps, the timeline, and the measures.</p><p><b>Organizing</b> assigns the staff and equipment, <b>coordinating</b> motivates and delegates, and <b>controlling</b> compares the results with the goal.</p><p><b>Takeaway:</b> Planning: the goal and the route to it.</p>"
+    },
+    {
+      "id": "lt-67",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "Which approach should the manager take with the nurse who skipped the fall-risk assessments?",
+      "options": ["Send her a written warning, so there's a record of the problem", "Point out the missed assessments at the next staff meeting, as a lesson for everyone", "Talk with her privately and soon about what was missed, and agree on a plan", "Wait until her yearly evaluation, so the feedback can be put in context"],
+      "answer": 2,
+      "case": "newmanager",
+      "rationale": "<p><b>Constructive feedback</b> is <b>private, prompt, specific, and about the behavior</b>, with a <b>plan</b> and follow-up, which improves practice without shaming.</p><p>Naming her at a <b>staff meeting</b> is public criticism. <b>Waiting a year</b> lets the risk continue, and a <b>written warning</b> first skips the conversation that could fix it.</p><p><b>Takeaway:</b> Feedback: private, prompt, specific, about the behavior, with a plan.</p>"
+    },
+    {
+      "id": "lt-68",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "Which action by a nurse shows a quality of an effective leader?",
+      "options": ["Sharing a vision for safer care, and showing others their part", "Keeping information to themselves to stay in control of things", "Using the authority of the title to make staff follow orders", "Agreeing with everyone, to keep any conflict off the unit"],
+      "answer": 0,
+      "rationale": "<p>Effective leaders have a <b>vision</b> and help others see their part in it, relying on <b>influence</b>, communication, and example more than authority.</p><p><b>Authority</b> alone is management, not leadership. <b>Avoiding conflict</b> and <b>hoarding information</b> undermine a team.</p><p><b>Takeaway:</b> Leaders: vision, influence, role modeling.</p>"
+    },
+    {
+      "id": "lt-69",
+      "type": "sata",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager wants to model the qualities of an effective leader. Which qualities should the manager show?",
+      "options": ["Making decisions alone, to save time", "A vision of a better future for the unit", "Integrity", "Relying mainly on the authority of the title", "Humility", "Being a positive role model"],
+      "answer": [1, 2, 4, 5],
+      "rationale": "<p>An effective leader has a <b>vision</b>, shows <b>humility</b> and <b>integrity</b>, and is a <b>positive role model</b>, respecting each person's dignity.</p><p>Relying on <b>authority</b> and <b>deciding alone</b> are features of an autocratic manager, not the qualities that make people want to follow.</p><p><b>Takeaway:</b> Vision, humility, integrity, role modeling.</p>"
+    },
+    {
+      "id": "lt-70",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nursing student asks for an example of management rather than leadership. Which example should the nurse give?",
+      "options": ["Inspiring coworkers to adopt a new safety practice on the unit", "Setting the unit's budget and monitoring its staffing costs", "Influencing peers without holding a title", "Modeling calm behavior during a crisis"],
+      "answer": 1,
+      "rationale": "<p><b>Management</b> is an official position responsible for the organization's work: plans, <b>budgets</b>, resources, and results.</p><p><b>Inspiring</b>, <b>influencing without a title</b>, and <b>role modeling</b> are leadership, which anyone can show.</p><p><b>Takeaway:</b> Managers: position, budget, resources. Leaders: influence and vision.</p>"
+    },
+    {
+      "id": "lt-71",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "A nurse manager praises a nurse's work in front of the team, but talks with another nurse about a mistake in a private meeting. Which principle of feedback does this follow?",
+      "options": ["Save the feedback for the yearly evaluation, so nothing is forgotten", "Correct mistakes in public, so the whole team learns from them", "Correct mistakes in private; praise can be given in public", "Give praise and correction in private, the same way, so it's fair"],
+      "answer": 2,
+      "rationale": "<p>Correction is given <b>in private</b>, to protect the person's dignity and keep the talk about the behavior; <b>praise</b> can be shared openly.</p><p>Correcting in <b>public</b> shames the nurse, treating praise and correction the <b>same way</b> ignores privacy, and <b>saving feedback for a year</b> isn't prompt.</p><p><b>Takeaway:</b> Praise in public, correct in private, and do it soon.</p>"
+    },
+    {
+      "id": "lt-72",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A charge nurse gives a new graduate step-by-step direction, but lets an experienced nurse plan her own day. Which type of leadership should the nurse identify?",
+      "options": ["Autocratic", "Laissez-faire", "Bureaucratic", "Situational"],
+      "answer": 3,
+      "rationale": "<p><b>Situational</b> leadership adapts the style to the task and the person's readiness: telling a new graduate, delegating to an experienced nurse.</p><p><b>Laissez-faire</b> stays hands off with everyone, <b>bureaucratic</b> goes by the book, and <b>autocratic</b> directs everyone.</p><p><b>Takeaway:</b> Situational: it depends on the person and the task.</p>"
+    },
+    {
+      "id": "lt-73",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "A new charge nurse takes a leadership course and practices running huddles until she's comfortable. Which theory of leadership should the nurse identify?",
+      "options": ["Behavioral theory: leadership can be learned", "Shared governance: staff share decisions", "Laissez-faire leadership: the group leads itself", "Trait theory: leaders are born"],
+      "answer": 0,
+      "rationale": "<p><b>Behavioral</b> theories say leadership is <b>learned</b> through education, training, and experience; it's about what leaders do.</p><p><b>Trait</b> theory holds that leaders are born. <b>Shared governance</b> is a decision-making structure, and <b>laissez-faire</b> is a style.</p><p><b>Takeaway:</b> Trait: born. Behavioral: made.</p>"
+    },
+    {
+      "id": "lt-74",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "In which setting should the nurse manager expect a bureaucratic style to be most useful?",
+      "options": ["A team of experts designing a new education program", "Sterile processing, where each step must follow the procedure", "A unit that's trying to rebuild staff morale after layoffs", "A council of staff nurses choosing a new practice for the unit"],
+      "answer": 1,
+      "rationale": "<p><b>Bureaucratic</b> leadership works <b>by the book</b>. Where <b>consistency</b> and exact procedures matter most, like sterile processing, that's a strength.</p><p>Experts designing a program, a unit rebuilding morale, and a staff council choosing a practice all need flexibility and input, which a by-the-book style limits.</p><p><b>Takeaway:</b> Bureaucratic: consistent, but inflexible.</p>"
+    },
+    {
+      "id": "lt-75",
+      "type": "sata",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse is reviewing leadership types. Which actions fit an autocratic leader?",
+      "options": ["Directing the work, with little input from the staff", "Making the decisions alone", "Letting the group decide how to divide the work", "Asking the staff for their ideas", "Adapting the style to each nurse's experience"],
+      "answer": [0, 1],
+      "rationale": "<p>An <b>autocratic</b> leader <b>makes the decisions</b> and <b>directs the work</b>, with little input from the staff.</p><p><b>Asking for ideas</b> is participative, <b>letting the group decide</b> is laissez-faire, and <b>adapting the style</b> is situational.</p><p><b>Takeaway:</b> Autocratic: I decide, I direct.</p>"
+    },
+    {
+      "id": "lt-76",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nursing student asks how trait theory and behavioral theory differ. Which answer should the nurse give?",
+      "options": ["“Both say leaders are born, but they disagree on which traits matter.”", "“Both describe how staff share decisions through councils.”", "“Trait theory says leaders are born; behavioral theory says leadership can be learned.”", "“Trait theory says leadership can be learned; behavioral theory says leaders are born.”"],
+      "answer": 2,
+      "rationale": "<p><b>Trait</b> theory: leaders are <b>born</b> with certain traits. <b>Behavioral</b> theory: leadership is <b>learned</b>, through what leaders do.</p><p>The second choice reverses them. They don't agree that leaders are born, and councils describe shared governance.</p><p><b>Takeaway:</b> Trait = born. Behavioral = made.</p>"
+    },
+    {
+      "id": "lt-77",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "Which risk of paternalistic leadership should the nurse identify?",
+      "options": ["Staff lose direction because the leader stays hands off", "Staff follow each rule exactly, even when a change would help", "Staff work for rewards, and do no more than what's required", "Staff feel cared for, but become dependent and don't grow"],
+      "answer": 3,
+      "rationale": "<p>A <b>paternalistic</b> leader decides “for the staff's own good.” Staff may feel cared for and loyal, but they have <b>no say</b>, become <b>dependent</b>, and don't grow.</p><p><b>Losing direction</b> is the laissez-faire risk, <b>rule-bound</b> work the bureaucratic risk, and <b>working for rewards</b> the transactional one.</p><p><b>Takeaway:</b> Paternalistic: caring, but keeps every decision.</p>"
+    },
+    {
+      "id": "lt-78",
+      "type": "sata",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "A nurse manager is matching leadership styles to situations. Which pairs are appropriate?",
+      "options": ["A new graduate learning a skill: situational, telling step by step", "A team of experts planning a project: laissez-faire", "A cardiac arrest: autocratic, with clear direction", "A staff council choosing a practice change: autocratic", "A sterile procedure, with exact steps: laissez-faire"],
+      "answer": [0, 1, 2],
+      "rationale": "<p><b>Autocratic</b> direction fits a <b>cardiac arrest</b>, <b>laissez-faire</b> fits <b>experts</b> who direct themselves, and <b>situational</b> telling fits a <b>new graduate</b>.</p><p>A <b>staff council</b> exists so staff share decisions, which autocratic leadership removes, and a <b>sterile procedure</b> needs exact steps, not a hands-off approach.</p><p><b>Takeaway:</b> Match the style to the situation and the people.</p>"
+    },
+    {
+      "id": "lt-79",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "Which action by a nurse manager is transformational rather than transactional?",
+      "options": ["Coaching each nurse to lead part of a safety project", "Correcting nurses when they miss a documentation step", "Posting each nurse's error rate at the end of the month", "Giving a bonus when the unit meets its audit target"],
+      "answer": 0,
+      "rationale": "<p><b>Transformational</b> leaders inspire with a vision and <b>coach and develop</b> each person, so staff take ownership.</p><p>A <b>bonus for a target</b> and <b>correcting errors</b> are transactional: an exchange for meeting set goals. <b>Posting error rates</b> watches for mistakes without developing anyone.</p><p><b>Takeaway:</b> Transactional: rewards and corrections. Transformational: vision and growth.</p>"
+    },
+    {
+      "id": "lt-80",
+      "type": "sata",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "The Leadership Article (Poels et al., 2020) linked transformational leadership with which outcomes?",
+      "options": ["Fewer medication errors", "More staff turnover", "Lower quality of care", "Less burnout", "Higher job satisfaction", "Staff well-being"],
+      "answer": [0, 3, 4, 5],
+      "rationale": "<p>The article linked <b>transformational</b> leadership with staff <b>well-being</b>, <b>job satisfaction</b>, <b>less burnout</b>, staff who stay, and better care, including <b>fewer medication errors</b>.</p><p><b>More turnover</b> and <b>lower quality</b> are the opposite of what the research found.</p><p><b>Takeaway:</b> Transformational leadership: better for staff and for clients.</p>"
+    },
+    {
+      "id": "lt-81",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "A staff nurse says, “Shared governance just means managers let us do whatever we want.” Which correction should the nurse manager give?",
+      "options": ["“It means each nurse decides her own practice without input.”", "“It's a structure where staff share decisions through councils.”", "“It means the manager decides after hearing the staff's opinions.”", "“It's the same as laissez-faire leadership, but with meetings.”"],
+      "answer": 1,
+      "rationale": "<p><b>Shared governance</b> is a <b>structure</b>: staff nurses share decision-making about practice, quality, and education, usually through <b>councils</b>, with roles and accountability.</p><p>It isn't one leader asking for input, and it isn't laissez-faire or each nurse deciding alone; decisions are built into the organization.</p><p><b>Takeaway:</b> Shared governance: a seat at the table, with structure.</p>"
+    },
+    {
+      "id": "lt-82",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "Based on the Leadership Article (Poels et al., 2020), what did the authors call for?",
+      "options": ["Replacing head nurses with outside managers", "Using transactional leadership rewards in place of coaching", "Investing in leadership development for nurse leaders", "Hiring more leaders who use a passive-avoidant style"],
+      "answer": 2,
+      "rationale": "<p>The authors called for <b>investing in leadership development</b>, since transformational leadership benefits staff and clients, and passive-avoidant leadership was too common.</p><p>The article found <b>too much</b> passive-avoidant leadership, not too little. It didn't call for outside managers, and it favored transformational leadership over rewards alone.</p><p><b>Takeaway:</b> The article's message: develop transformational leaders.</p>"
+    },
+    {
+      "id": "lt-83",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "A nursing student asks what the Full Range of Leadership Model in the Leadership Article includes. Which answer should the nurse give?",
+      "options": ["“Autocratic, democratic, and bureaucratic leadership.”", "“Planning, organizing, coordinating, and controlling.”", "“Values and ethics, roles and responsibilities, communication, and teamwork.”", "“Transformational, transactional, and passive-avoidant leadership.”"],
+      "answer": 3,
+      "rationale": "<p>The <b>Full Range of Leadership Model</b> runs from <b>transformational</b> through <b>transactional</b> to <b>passive-avoidant</b> (laissez-faire) leadership.</p><p><b>Autocratic, democratic, bureaucratic</b> are classic styles, <b>planning to controlling</b> are management functions, and <b>values to teamwork</b> are IPEC's competencies.</p><p><b>Takeaway:</b> Full range: transformational, transactional, passive-avoidant.</p>"
+    },
+    {
+      "id": "lt-84",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager checks that care on the unit follows the hospital's policies and values. Which management function should the nurse identify?",
+      "options": ["Commanding", "Coordinating", "Planning", "Organizing"],
+      "answer": 0,
+      "rationale": "<p><b>Commanding</b> is supervising the work in line with the organization's standards and values.</p><p><b>Planning</b> sets goals, <b>organizing</b> assigns resources and structure, and <b>coordinating</b> motivates and delegates.</p><p><b>Takeaway:</b> Commanding: supervising to the organization's standards.</p>"
+    },
+    {
+      "id": "lt-85",
+      "type": "sata",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager is reviewing the controlling function. Which actions are part of it?",
+      "options": ["Writing next year's staffing plan", "Giving feedback on the results", "Setting a performance standard", "Assigning staff to four new beds", "Comparing the actual results with the standard"],
+      "answer": [1, 2, 4],
+      "rationale": "<p><b>Controlling</b> measures progress: set a <b>standard</b>, <b>compare</b> the actual results with it, and give <b>feedback</b>.</p><p><b>Assigning staff</b> is organizing, and <b>writing a staffing plan</b> is planning.</p><p><b>Takeaway:</b> Controlling: standard, comparison, feedback.</p>"
+    },
+    {
+      "id": "lt-86",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager draws up the unit's reporting structure and names a charge nurse for each shift. Which management function should the nurse identify?",
+      "options": ["Commanding", "Organizing", "Planning", "Controlling"],
+      "answer": 1,
+      "rationale": "<p><b>Organizing</b> sets up the structure (who reports to whom) and assigns the resources, staff included.</p><p><b>Planning</b> sets the goals, <b>controlling</b> measures results, and <b>commanding</b> supervises to the standards.</p><p><b>Takeaway:</b> Organizing: structure and resources.</p>"
+    },
+    {
+      "id": "lt-87",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager is starting a new project to improve hand hygiene. Which management function comes first?",
+      "options": ["Controlling", "Coordinating", "Planning", "Organizing"],
+      "answer": 2,
+      "rationale": "<p><b>Planning</b> comes first: assess the data, set the goal, and choose the course of action. Organizing, coordinating, and controlling follow from the plan.</p><p>There's nothing to <b>control</b> without a goal, and <b>organizing</b> and <b>coordinating</b> carry out a plan that has to exist first.</p><p><b>Takeaway:</b> Plan first; then organize, coordinate, and control.</p>"
+    },
+    {
+      "id": "lt-88",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager has a long list of tasks this week. Which principle of time management should the manager apply?",
+      "options": ["Work through the list in the order the tasks were added, one at a time", "Handle each task personally, so it's done right", "Do the easiest tasks first to build momentum", "Prioritize by urgency and importance, and delegate what you can"],
+      "answer": 3,
+      "rationale": "<p><b>Managing time</b> means <b>prioritizing</b> by urgency and importance and <b>delegating</b> what others can do, so the manager's time goes to what only the manager can do.</p><p>Easiest-first or first-come order ignores what matters most, and doing everything personally wastes the team's skills.</p><p><b>Takeaway:</b> Time: prioritize, delegate, focus.</p>"
+    },
+    {
+      "id": "lt-89",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager is forming a team to reduce pressure injuries. Which step should the manager take first?",
+      "options": ["Set a clear shared goal and clear roles for each member", "Let the members decide later whether they need a goal", "Assign the work to the most experienced nurse alone", "Wait until the injury rate rises further before starting"],
+      "answer": 0,
+      "rationale": "<p><b>Building a team</b> starts with a <b>clear, shared goal</b> and <b>clear roles</b>, so each member knows what the team is for and what part they play.</p><p>A team without a goal drifts, one nurse alone isn't a team, and waiting lets clients be harmed.</p><p><b>Takeaway:</b> Teams: a shared goal and clear roles.</p>"
+    },
+    {
+      "id": "lt-90",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 3,
+      "stem": "Two nurses disagree about how to share a heavy assignment. Which approach to the conflict usually works best on a unit?",
+      "options": ["Having the manager decide for them, without any discussion first", "Collaborating to find a solution that meets both nurses' needs", "Letting the more senior nurse decide", "Avoiding the topic until it settles down"],
+      "answer": 1,
+      "rationale": "<p><b>Collaborating</b> works through the conflict to a solution that meets <b>both</b> sides' needs, which builds trust and lasts.</p><p><b>Avoiding</b> lets it grow, a <b>manager's decree</b> leaves one side unheard, and deferring to <b>seniority</b> is a win-lose answer.</p><p><b>Takeaway:</b> Conflict: collaborate when you can.</p>"
+    },
+    {
+      "id": "lt-91",
+      "type": "mc",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nurse manager wants to improve staff performance and engagement. Which action should the manager take?",
+      "options": ["Keep schedules and decisions to themselves", "Assign the same tasks to the same nurses each day", "Recognize good work and offer chances to develop new skills", "Point out errors at each staff meeting, to keep standards high"],
+      "answer": 2,
+      "rationale": "<p><b>Recognizing good work</b> and offering <b>development</b> (education, new responsibilities) enhance performance and engagement.</p><p>Public error lists discourage staff, keeping decisions private shuts them out, and unchanging tasks limit growth.</p><p><b>Takeaway:</b> Engagement: recognition and growth.</p>"
+    },
+    {
+      "id": "lt-92",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which situation should the nurse identify as intraprofessional collaboration?",
+      "options": ["A physical therapist and an occupational therapist planning discharge", "A provider and a dietitian adjusting a client's diet", "A nurse and a pharmacist reviewing a client's medication plan", "An RN and an LPN sharing an assignment and helping each other"],
+      "answer": 3,
+      "rationale": "<p><b>Intraprofessional</b> collaboration is among members of the <b>same profession</b>, like nursing staff (RN, LPN, assistive personnel).</p><p>The other three involve <b>different</b> professions: interprofessional collaboration.</p><p><b>Takeaway:</b> Intra = within nursing. Inter = across professions.</p>"
+    },
+    {
+      "id": "lt-93",
+      "type": "sata",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A nurse is reviewing barriers to collaboration. Which of the following are barriers?",
+      "options": ["Unclear roles and responsibilities", "Breakdowns at handoffs and shift changes", "A shared goal for the client's care and recovery", "Hesitating to speak up because of the hierarchy", "Silos, with each profession educated only within its own field", "Mutual respect among the members of the team"],
+      "answer": [0, 1, 3, 4],
+      "rationale": "<p>Barriers include <b>silos</b>, the <b>hierarchy</b> that keeps people from speaking up, <b>unclear roles</b>, and <b>breakdowns at handoffs</b> (as well as incivility and bullying).</p><p>A <b>shared goal</b> and <b>mutual respect</b> are what collaboration needs, not barriers to it.</p><p><b>Takeaway:</b> Barriers: silos, hierarchy, unclear roles, handoffs, bullying.</p>"
+    },
+    {
+      "id": "lt-94",
+      "type": "sata",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which outcomes are benefits of effective interprofessional collaboration?",
+      "options": ["Fewer errors", "Better client outcomes", "Higher staff satisfaction", "Less need to communicate", "More time spent in meetings", "Quicker referrals"],
+      "answer": [0, 1, 2, 5],
+      "rationale": "<p>Effective collaboration brings <b>fewer errors</b>, <b>better outcomes</b>, <b>higher staff and client satisfaction</b>, and <b>quicker referrals</b>.</p><p>It needs <b>more</b> communication, not less, and its goal isn't more meetings.</p><p><b>Takeaway:</b> Collaboration: safer care, better outcomes, happier staff.</p>"
+    },
+    {
+      "id": "lt-95",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "In team meetings, a nurse speaks honestly and keeps the client's interests ahead of the nurse's own convenience. Which IPEC competency should the nurse identify?",
+      "options": ["Values and ethics", "Interprofessional communication", "Teams and teamwork", "Roles and responsibilities"],
+      "answer": 0,
+      "rationale": "<p>IPEC's <b>values and ethics</b> competency is mutual respect, the <b>client's interests first</b>, and <b>honesty</b> with the team.</p><p><b>Roles and responsibilities</b> is knowing each member's part, <b>communication</b> is clear and timely sharing, and <b>teams and teamwork</b> is shared problem-solving.</p><p><b>Takeaway:</b> IPEC: values and ethics, roles, communication, teams.</p>"
+    },
+    {
+      "id": "lt-96",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 3,
+      "stem": "During rounds, team members disagree about a client's discharge date, talk it through, and agree on a plan together. Which IPEC competency should the nurse identify?",
+      "options": ["Roles and responsibilities", "Teams and teamwork", "Interprofessional communication", "Values and ethics"],
+      "answer": 1,
+      "rationale": "<p>IPEC's <b>teams and teamwork</b> competency is <b>shared problem-solving and decisions</b>, including working through conflict.</p><p><b>Values and ethics</b> is respect and honesty, <b>roles</b> is knowing each member's part, and <b>communication</b> is how information is shared; the deciding feature here is solving the disagreement together.</p><p><b>Takeaway:</b> Working through a conflict to a shared decision: teams and teamwork.</p>"
+    },
+    {
+      "id": "lt-97",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A new nurse asks what effective collaboration requires. Which answer should the nurse give?",
+      "options": ["“Each profession working on its own part, without overlap.”", "“Agreement from everyone before any change is made.”", "“Mutual respect, clear roles, open communication, and a shared goal.”", "“A leader who makes the decisions alone, so that the team doesn't argue.”"],
+      "answer": 2,
+      "rationale": "<p>Collaboration needs <b>mutual respect and trust</b>, <b>clear roles</b>, <b>open communication</b>, and a <b>shared, client-centered goal</b>.</p><p>A single <b>decider</b>, professions working <b>alone</b>, and requiring <b>unanimous agreement</b> each block real collaboration.</p><p><b>Takeaway:</b> Respect, roles, communication, a shared goal.</p>"
+    },
+    {
+      "id": "lt-98",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A nurse calls a provider and says, “I think she may be bleeding internally.” Which part of SBAR should the nurse identify this statement as?",
+      "options": ["Recommendation", "Situation", "Background", "Assessment"],
+      "answer": 3,
+      "rationale": "<p><b>Assessment</b> is the nurse's conclusion about the problem: “I think she may be bleeding internally.”</p><p><b>Situation</b> is what's happening now, <b>background</b> is the history, and <b>recommendation</b> is what the nurse asks for, like “Please come now.”</p><p><b>Takeaway:</b> SBAR: what's happening, the history, what I think, what I need.</p>"
+    },
+    {
+      "id": "lt-99",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "During a handoff, the receiving nurse repeats back the key points and asks questions. Which part of I-SBAR-R should the nurse identify?",
+      "options": ["Read-back", "Introduction", "Background", "Recommendation"],
+      "answer": 0,
+      "rationale": "<p>The final <b>R</b> in I-SBAR-R is the <b>read-back</b>: the receiver repeats the key points and asks questions, confirming the handoff.</p><p><b>Introduction</b> opens the handoff, <b>background</b> gives the history, and the <b>recommendation</b> is the sender's request.</p><p><b>Takeaway:</b> I-SBAR-R: introduction, situation, background, assessment, recommendation, read-back.</p>"
+    },
+    {
+      "id": "lt-100",
+      "type": "sata",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A nurse is reviewing barriers to effective communication. Which of the following are barriers?",
+      "options": ["A read-back of a spoken order", "Using SBAR to organize a report", "Language barriers", "Hesitating to speak up to someone with more authority", "Interruptions during a handoff"],
+      "answer": [2, 3, 4],
+      "rationale": "<p><b>Interruptions</b>, <b>language barriers</b>, and a <b>hierarchy</b> that keeps people from speaking up all block communication.</p><p><b>SBAR</b> and a <b>read-back</b> are tools that make communication safer.</p><p><b>Takeaway:</b> Barriers: interruptions, language, hierarchy.</p>"
+    },
+    {
+      "id": "lt-101",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 3,
+      "stem": "A nurse asks why The Joint Commission puts so much weight on handoff communication. Which explanation should the charge nurse give?",
+      "options": ["Handoffs are when clients most often ask for changes", "Handoff breakdowns are a major cause of safety events", "Handoff communication is the longest part of each shift", "Handoffs are where most billing errors happen"],
+      "answer": 1,
+      "rationale": "<p>The Joint Commission names <b>communication</b> a major factor in safety events, and breakdowns often happen at <b>handoffs</b>.</p><p>Handoff rules aren't about shift length, billing, or complaints; they're about client safety.</p><p><b>Takeaway:</b> Handoffs: where information, and safety, can be lost.</p>"
+    },
+    {
+      "id": "lt-102",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Midshift, after two unexpected admissions, a charge nurse gathers the team for 2 minutes to adjust the plan. Which TeamSTEPPS tool should the nurse identify?",
+      "options": ["A check-back", "A brief", "A huddle", "A debrief"],
+      "answer": 2,
+      "rationale": "<p>A <b>huddle</b> is a quick meeting <b>during</b> the shift to reassess and adjust the plan.</p><p>A <b>brief</b> sets the plan at the start, a <b>debrief</b> reviews what happened afterward, and a <b>check-back</b> confirms a message.</p><p><b>Takeaway:</b> Brief: before. Huddle: during. Debrief: after.</p>"
+    },
+    {
+      "id": "lt-103",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which effect of bullying should the nurse manager expect on a unit?",
+      "options": ["Stronger teamwork, as staff learn to toughen up", "Lower turnover, as staff become more loyal", "Faster handoffs, as staff avoid each other", "More errors, as staff stop asking questions"],
+      "answer": 3,
+      "rationale": "<p><b>Bullying</b> causes <b>errors</b> and unsafe care (staff stop asking questions), stress, burnout, <b>turnover</b>, and a hostile environment.</p><p>Bullying weakens teamwork and raises turnover, and handoffs that skip communication are less safe, not better.</p><p><b>Takeaway:</b> Bullying: errors, burnout, turnover.</p>"
+    },
+    {
+      "id": "lt-104",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 3,
+      "stem": "Which behavior should the nurse manager recognize as bullying?",
+      "options": ["Repeatedly criticizing a new nurse in public and leaving her out", "A coworker who is short-tempered once during a code", "A single disagreement between two nurses about how to do a procedure", "Private, specific feedback on a missed assessment"],
+      "answer": 0,
+      "rationale": "<p><b>Bullying</b> is <b>repeated</b>, unwanted behavior meant to humiliate or distress, like <b>public criticism</b> and <b>exclusion</b>.</p><p>A <b>single disagreement</b> and a <b>one-time</b> short temper aren't a pattern, and <b>private, specific feedback</b> is constructive.</p><p><b>Takeaway:</b> Bullying: repeated, humiliating, and unwanted.</p>"
+    },
+    {
+      "id": "lt-105",
+      "type": "sata",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A nurse is reviewing TeamSTEPPS. Which are its four teachable skills?",
+      "options": ["Communication", "Situation monitoring", "Hierarchy", "Mutual support", "Team leadership", "Budgeting"],
+      "answer": [0, 1, 3, 4],
+      "rationale": "<p>TeamSTEPPS teaches <b>communication</b>, <b>team leadership</b>, <b>situation monitoring</b>, and <b>mutual support</b>, toward a lasting culture of safety.</p><p><b>Hierarchy</b> is a barrier TeamSTEPPS works against, and <b>budgeting</b> is a management task.</p><p><b>Takeaway:</b> TeamSTEPPS: communicate, lead, monitor, support.</p>"
+    },
+    {
+      "id": "lt-106",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 3,
+      "stem": "A nurse watches a teammate program an IV pump and catches a wrong rate before it starts. Which TeamSTEPPS skill should the nurse identify?",
+      "options": ["Team leadership", "Situation monitoring", "Communication", "Mutual support (task help)"],
+      "answer": 1,
+      "rationale": "<p><b>Situation monitoring</b>, including <b>cross-monitoring</b>, is watching the client, the team, and the environment to catch errors early.</p><p><b>Mutual support</b> is task help and feedback, <b>team leadership</b> is briefs and huddles, and <b>communication</b> covers tools like SBAR; the deciding feature here is watching a teammate's work.</p><p><b>Takeaway:</b> Cross-monitoring: a safety net of watching each other.</p>"
+    },
+    {
+      "id": "lt-107",
+      "type": "mc",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "Which TeamSTEPPS tool should a charge nurse use to share the plan with the team at the start of a shift?",
+      "options": ["A debrief", "A huddle", "A brief", "A call-out"],
+      "answer": 2,
+      "rationale": "<p>A <b>brief</b> is a short planning meeting <b>at the start</b>, so the team shares the plan, roles, and concerns.</p><p>A <b>debrief</b> comes after an event, a <b>huddle</b> adjusts the plan during the shift, and a <b>call-out</b> shares critical information in the moment.</p><p><b>Takeaway:</b> Start: brief. Midway: huddle. After: debrief.</p>"
+    },
+    {
       "id": "tl-01",
       "type": "mc",
       "topic": "Teaching and learning",
@@ -1721,6 +2787,532 @@
       "options": ["Primes the pen with 2 units before dialing his dose", "Says “I understand” after each step the nurse reviews", "Explains in his own words what to do if he feels shaky and sweaty", "Signs the discharge form stating insulin teaching was given", "Injects into his abdomen and holds the needle for 10 seconds", "Watched the full insulin pen video on the room's TV"],
       "answer": [0, 2, 4],
       "rationale": "<p>Each outcome in the teaching plan is met by an observed behavior: he <b>primes the pen with 2 units</b> and <b>injects and holds for 10 seconds</b> (return demonstration of objectives 1 and 2), and <b>explains in his own words what to do for low blood glucose</b> (teach-back for objective 3).</p><p><b>Saying \"I understand\" after each step</b> isn't the right answer: it sounds like confirmation, but agreement isn't evidence of learning. <b>Signing the form</b> shows teaching was given, and <b>watching the video</b> is exposure, not proof.</p><p><b>Takeaway:</b> Evaluate each objective with a matching method: watch the skills, and have the client explain the knowledge in his own words.</p>"
+    },
+    {
+      "id": "tl-55",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "Which approach should the nurse use at the first visit?",
+      "options": ["Involve him directly, and connect the teaching to playing basketball", "Give him a pamphlet to read at home when he has time", "Postpone the teaching until he's ready to put his phone away", "Teach his mother, since she handles his medicines"],
+      "answer": 0,
+      "case": "teenasthma",
+      "rationale": "<p>Teens learn best when they're <b>involved directly</b> and the teaching connects to <b>what matters to them</b>, here basketball and his team.</p><p><b>Teaching only his mother</b> leaves out the learner, who will carry the inhaler. A <b>pamphlet</b> alone doesn't teach a skill, and <b>postponing</b> loses the chance his goal offers.</p><p><b>Takeaway:</b> Teens: involve them directly, and make it relevant.</p>"
+    },
+    {
+      "id": "tl-56",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "Which conclusion about the teaching should the nurse draw at the second visit?",
+      "options": ["He needs a written test on the inhaler steps before more practice", "The teaching is complete, since he explained when to use each inhaler correctly", "He has the knowledge but not yet the skill, so he needs more practice", "He isn't ready to learn, so the teaching should stop for now"],
+      "answer": 2,
+      "case": "teenasthma",
+      "rationale": "<p>He can <b>explain</b> the inhalers (cognitive), but his <b>technique</b> is wrong (psychomotor). Explaining doesn't confirm a skill: he needs more practice and a correct <b>return demonstration</b>.</p><p><b>Calling it complete</b> mistakes knowing for doing. He's engaged, so he <b>is ready</b>, and a <b>written test</b> checks knowledge, which he already has.</p><p><b>Takeaway:</b> Teach-back checks knowledge; return demonstration checks skill.</p>"
+    },
+    {
+      "id": "tl-57",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Which actions should the nurse take to teach the inhaler technique?",
+      "options": ["Rely on teach-back of the steps", "Have him watch a video and sign that he understands", "Use return demonstration until he does it correctly", "Demonstrate each step, then have him practice", "Break the skill into small steps, from simple to complex"],
+      "answer": [2, 3, 4],
+      "case": "teenasthma",
+      "rationale": "<p>A <b>psychomotor</b> skill is taught by <b>demonstration</b>, <b>practice</b> in small steps from simple to complex, and <b>return demonstration</b> until it's correct.</p><p><b>Teach-back</b> checks what he knows, not what he can do, and a <b>video and a signature</b> aren't evidence of learning.</p><p><b>Takeaway:</b> Skills: show, practice, return demonstration.</p>"
+    },
+    {
+      "id": "tl-58",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "Based on the notes, when should the nurse teach the client?",
+      "options": ["At 1400, after resting, when she asks a question and names a goal", "Whenever her husband is present, since he'll manage the pills", "At discharge, so the information is fresh", "At 1000, since her pain is 0/10"],
+      "answer": 0,
+      "case": "hfhome",
+      "rationale": "<p>At <b>1400</b> she has <b>rested</b>, <b>asks a question</b>, and <b>names a goal</b>: clear signs of readiness and motivation.</p><p>At 1000 she's <b>tired</b>, which blocks learning even without pain. Her husband is included, but <b>she is the learner</b>, and waiting until <b>discharge</b> leaves no time to practice or evaluate.</p><p><b>Takeaway:</b> Ready: rested, asking questions, naming a goal.</p>"
+    },
+    {
+      "id": "tl-59",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "Which approach should the nurse use to teach her?",
+      "options": ["Give her a detailed booklet on heart failure to read at home", "Use plain words and pictures, one point at a time, with her husband there", "Speak loudly and in a high pitch, close to her ear, so she can hear", "Teach her husband instead, since she asked the nurse to go over the pills with him"],
+      "answer": 1,
+      "case": "hfhome",
+      "rationale": "<p>For an older adult with hearing loss and limited schooling: <b>plain words and pictures</b>, <b>one point at a time</b>, and her <b>husband included</b> with her consent, not in her place.</p><p><b>Teaching only her husband</b> leaves out the learner. A <b>detailed booklet</b> doesn't fit her reading level, and a <b>high pitch</b> is harder to hear with age-related hearing loss; a lower voice, facing her, works better.</p><p><b>Takeaway:</b> Older adults: time, repetition, plain words, face them; include the caregiver.</p>"
+    },
+    {
+      "id": "tl-60",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Which outcomes should the nurse include in her teaching plan?",
+      "options": ["The client will understand how heart failure affects her heart, by discharge", "The client will know her medications and their side effects before going home", "The client and her husband will state when to call the provider by discharge", "The client will state three signs of fluid buildup by discharge", "The client will weigh herself each morning and record it for 1 week"],
+      "answer": [2, 3, 4],
+      "case": "hfhome",
+      "rationale": "<p>Good outcomes have an <b>observable verb</b>, a <b>measure</b>, and a <b>time</b>: “state three signs by discharge,” “weigh and record each morning for 1 week,” “state when to call by discharge.”</p><p><b>Understand</b> and <b>know</b> can't be observed or measured, even with a time frame.</p><p><b>Takeaway:</b> Outcomes: an action you can see, a measure, and a time.</p>"
+    },
+    {
+      "id": "tl-61",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is writing objectives for a client with high blood pressure. Which objective belongs in the cognitive domain?",
+      "options": ["The client will choose to join a walking group", "The client will express feelings about the diagnosis", "The client will list three foods high in sodium", "The client will demonstrate how to use a home blood pressure cuff"],
+      "answer": 2,
+      "rationale": "<p>The <b>cognitive</b> domain is knowledge and understanding, with verbs like <b>list</b>, state, explain, and identify.</p><p><b>Express feelings</b> and <b>choose to join</b> are affective (feelings and values), and <b>demonstrate</b> is psychomotor (a skill).</p><p><b>Takeaway:</b> Head (cognitive), heart (affective), hands (psychomotor).</p>"
+    },
+    {
+      "id": "tl-62",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "How should the nurse evaluate an affective-domain outcome, like a client accepting a new ostomy?",
+      "options": ["Give the client a written test on ostomy care", "Ask the client to list the steps of pouch care in the right order", "Have the client change the pouch while the nurse watches closely", "Note what the client says and does about the ostomy over time"],
+      "answer": 3,
+      "rationale": "<p>The <b>affective</b> domain is feelings, attitudes, and values, so it's evaluated through the client's <b>statements of values</b> and <b>behavior over time</b>, like looking at the stoma or joining a support group.</p><p><b>Listing steps</b> and a <b>written test</b> check knowledge (cognitive), and <b>changing the pouch</b> checks a skill (psychomotor).</p><p><b>Takeaway:</b> Affective: listen to values, watch behavior over time.</p>"
+    },
+    {
+      "id": "tl-63",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A client recovering from a heart attack says, “I've decided to join a cardiac support group.” Which domain of learning does this show?",
+      "options": ["Affective", "Constructivist", "Cognitive", "Psychomotor"],
+      "answer": 0,
+      "rationale": "<p><b>Choosing</b> to join a group reflects a change in <b>attitudes and values</b>: the affective domain.</p><p><b>Cognitive</b> is knowledge, <b>psychomotor</b> is skills, and <b>constructivist</b> is a learning theory, not a domain.</p><p><b>Takeaway:</b> Choosing, accepting, valuing: affective.</p>"
+    },
+    {
+      "id": "tl-64",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is writing psychomotor objectives. Which verbs should the nurse use?",
+      "options": ["Value", "List", "Give (an injection)", "Demonstrate", "Perform"],
+      "answer": [2, 3, 4],
+      "rationale": "<p><b>Psychomotor</b> objectives use action verbs for skills: <b>demonstrate</b>, <b>perform</b>, <b>give</b>, use.</p><p><b>List</b> is cognitive, and <b>value</b> is affective.</p><p><b>Takeaway:</b> Hands: demonstrate, perform, give, use.</p>"
+    },
+    {
+      "id": "tl-65",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "Which objective should the nurse rewrite as two objectives, because it mixes two domains?",
+      "options": ["The client will list three signs of infection by discharge", "The client will explain and demonstrate wound care by discharge", "The client will change the dressing using clean technique by discharge", "The client will state when to call the provider by discharge"],
+      "answer": 1,
+      "rationale": "<p><b>Explain</b> is cognitive and <b>demonstrate</b> is psychomotor; each needs its own objective, and its own way to evaluate it.</p><p>The others each stay within one domain: <b>list</b> and <b>state</b> are cognitive, and <b>change the dressing</b> is psychomotor.</p><p><b>Takeaway:</b> One objective, one domain, one way to evaluate it.</p>"
+    },
+    {
+      "id": "tl-66",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is choosing strategies for cognitive learning. Which strategies fit?",
+      "options": ["Return demonstration", "Reading material", "Role modeling by a peer who has adjusted", "Discussion", "Questions and answers"],
+      "answer": [1, 3, 4],
+      "rationale": "<p>Cognitive learning, knowledge, is taught through <b>discussion</b>, <b>reading</b>, and <b>questions and answers</b>.</p><p><b>Return demonstration</b> fits psychomotor skills, and <b>peer role modeling</b> fits affective learning.</p><p><b>Takeaway:</b> Knowledge: discuss, read, question.</p>"
+    },
+    {
+      "id": "tl-67",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A client with a new ostomy is struggling to accept it. Which strategy best supports this affective goal?",
+      "options": ["Demonstrating the pouch change one more time, slowly and step by step", "Repeating the pouch-change steps until the client memorizes them", "Exploring feelings and arranging a visit from a peer with an ostomy", "Giving a written quiz on ostomy care"],
+      "answer": 2,
+      "rationale": "<p><b>Affective</b> learning (feelings and acceptance) is supported by <b>exploring feelings</b> and <b>role models</b>, like a peer who lives well with an ostomy.</p><p><b>Memorizing steps</b> and a <b>quiz</b> target knowledge, and <b>another demonstration</b> targets the skill.</p><p><b>Takeaway:</b> Feelings are taught by listening and modeling.</p>"
+    },
+    {
+      "id": "tl-68",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Which outcomes show learning in the psychomotor domain?",
+      "options": ["The client explains why handwashing matters", "The client changes the dressing using clean technique", "The client says she feels ready to care for the wound", "The client draws up the correct dose of insulin", "The client lists the signs of infection"],
+      "answer": [1, 3],
+      "rationale": "<p><b>Changing a dressing</b> and <b>drawing up insulin</b> are skills, performed with the body: psychomotor.</p><p><b>Listing signs</b> and <b>explaining</b> are cognitive, and <b>feeling ready</b> is affective.</p><p><b>Takeaway:</b> Psychomotor outcomes: the client does it while you watch.</p>"
+    },
+    {
+      "id": "tl-69",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Which finding is the weakest evidence that a client has learned to manage a new medication?",
+      "options": ["The client fills a weekly pill organizer correctly", "The client's refill record shows doses taken on time", "The client explains, in her own words, when to take each dose", "The client nods and says, “Yes, I understand”"],
+      "answer": 3,
+      "rationale": "<p>A <b>nod</b> or “<b>I understand</b>” isn't evidence of learning; the client may be embarrassed to say otherwise.</p><p><b>Teach-back</b> in her own words, a correct <b>pill organizer</b>, and <b>on-time refills</b> all show learning in action.</p><p><b>Takeaway:</b> “Do you understand?” proves nothing; ask the client to show or explain.</p>"
+    },
+    {
+      "id": "tl-70",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is choosing ways to evaluate learning. Which methods can the nurse use?",
+      "options": ["Watching the client view a teaching video", "The client's signature on the teaching form", "Devices, like a dose counter or a glucose meter's memory", "Return demonstration", "Written tests", "Oral questions, including teach-back"],
+      "answer": [2, 3, 4, 5],
+      "rationale": "<p>Learning is evaluated with <b>return demonstration</b>, <b>oral questions and teach-back</b>, <b>written tests</b>, self-report, and <b>devices</b> that record what the client did.</p><p>A <b>signature</b> and <b>watching a video</b> show the teaching happened, not that the client learned.</p><p><b>Takeaway:</b> Evaluate what the client can say or do, not what the client saw or signed.</p>"
+    },
+    {
+      "id": "tl-71",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse taught a client the signs of a low blood glucose. Which method best evaluates this knowledge?",
+      "options": ["Ask the client to name the signs in her own words", "Have the client check her glucose with the meter", "Ask, “Do you have any questions?”", "Give the client a handout listing the signs"],
+      "answer": 0,
+      "rationale": "<p>Knowledge (cognitive) is best evaluated by <b>teach-back</b>: the client <b>names the signs in her own words</b>.</p><p><b>Using the meter</b> checks a skill, “<b>Any questions?</b>” doesn't check learning, and a <b>handout</b> is teaching, not evaluation.</p><p><b>Takeaway:</b> Knowledge: teach-back. Skills: return demonstration.</p>"
+    },
+    {
+      "id": "tl-72",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "At evaluation, a client hasn't met the outcome because she was in pain during the teaching. Which action should the nurse take?",
+      "options": ["Document that the client couldn't learn the material", "Treat the pain, then teach again and re-evaluate", "Give the material to the family to teach later", "Mark the outcome as met, since the teaching was done"],
+      "answer": 1,
+      "rationale": "<p>When an outcome isn't met, the nurse finds the reason and <b>modifies the plan</b>: <b>treat the pain</b> first, then reteach and evaluate again.</p><p>Writing that she <b>couldn't learn</b> ignores the fixable barrier, handing it to the <b>family</b> skips the learner, and the outcome wasn't met.</p><p><b>Takeaway:</b> Outcome not met: find the barrier, fix it, reteach.</p>"
+    },
+    {
+      "id": "tl-73",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A new nurse asks why teach-back is so common in nursing. Which answer should the preceptor give?",
+      "options": ["“It replaces the need for return demonstration.”", "“It lets the nurse skip assessing the client's needs.”", "“It's quick, and it shows whether the client really understood.”", "“The Joint Commission requires it in place of other methods.”"],
+      "answer": 2,
+      "rationale": "<p><b>Teach-back</b> is quick and shows whether the client <b>really understood</b>, so mistakes can be corrected on the spot.</p><p>The Joint Commission doesn't require it in place of other methods, it doesn't confirm skills (that's return demonstration), and assessment still comes first.</p><p><b>Takeaway:</b> Teach-back: quick, real proof of understanding.</p>"
+    },
+    {
+      "id": "tl-74",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A client watched a discharge video and signed the teaching form. Which conclusion should the nurse draw?",
+      "options": ["The client learned the material, since the video was complete", "No more teaching is needed before discharge", "The teaching was successful, since the client signed", "Learning hasn't been shown yet; the nurse still needs to evaluate it"],
+      "answer": 3,
+      "rationale": "<p>Watching and signing show the teaching <b>happened</b>, not that the client <b>learned</b>; the nurse still evaluates with teach-back or return demonstration.</p><p>A <b>signature</b> and a <b>complete video</b> aren't evidence of learning, so it's too early to stop teaching.</p><p><b>Takeaway:</b> Seen and signed isn't learned.</p>"
+    },
+    {
+      "id": "tl-75",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 1,
+      "stem": "A nurse asks a client, “Tell me how you'll take this medicine at home.” Which method is the nurse using?",
+      "options": ["Teach-back", "A written test", "Role modeling", "Return demonstration"],
+      "answer": 0,
+      "rationale": "<p><b>Teach-back</b> asks the client to explain, <b>in their own words</b>, what was taught.</p><p><b>Return demonstration</b> is performing a skill, a <b>written test</b> is on paper, and <b>role modeling</b> shows a behavior to copy.</p><p><b>Takeaway:</b> Teach-back: “Tell me, in your own words.”</p>"
+    },
+    {
+      "id": "tl-76",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is assessing a client's readiness to learn. Which statements should the nurse identify as signs of readiness?",
+      "options": ["“Let's do it tomorrow. I'm not up to it.”", "“Can you show me how to do it myself?”", "“I want to get back to work, so I need to learn this.”", "“What happens if I miss a dose?”", "“My wife will handle that.”"],
+      "answer": [1, 2, 3],
+      "rationale": "<p>Readiness shows when the client <b>asks to do it</b>, <b>names a goal</b>, or <b>asks questions</b>.</p><p><b>Putting it off</b> and <b>handing it to the spouse</b> are signs the client isn't ready yet; the nurse explores why.</p><p><b>Takeaway:</b> Ready: asks, reaches for it, names a goal.</p>"
+    },
+    {
+      "id": "tl-77",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Before teaching, a nurse asks a client how she learns best. Why does the nurse ask?",
+      "options": ["To decide how long the hospital stay should be", "To match the teaching to the client's preferred learning style", "To decide whether the client needs teaching before discharge", "To find out which family member should be taught instead"],
+      "answer": 1,
+      "rationale": "<p>Assessing the <b>learning style</b> (visual, auditory, reading and writing, or hands-on) lets the nurse <b>match the teaching</b> to how the client learns best.</p><p>Every client needs teaching, the client remains the learner, and learning style doesn't set the length of stay.</p><p><b>Takeaway:</b> Assess the learning style; teach to it.</p>"
+    },
+    {
+      "id": "tl-78",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A client with newly diagnosed diabetes says, “I'm not sick. I feel fine.” Which action should the nurse take before teaching the meal plan?",
+      "options": ["Teach the client's spouse instead", "Teach the meal plan anyway, since it's needed before discharge", "Explore what the diagnosis means to the client", "Explain the complications of diabetes to motivate the client"],
+      "answer": 2,
+      "rationale": "<p>The client isn't ready to learn: he doesn't yet accept the diagnosis. The nurse first <b>explores what it means to him</b>, which builds readiness.</p><p>Teaching <b>anyway</b> is unlikely to stick, <b>listing complications</b> raises anxiety without exploring what the diagnosis means to him, and the <b>spouse</b> can't learn in the client's place.</p><p><b>Takeaway:</b> Not ready: explore the meaning before teaching the facts.</p>"
+    },
+    {
+      "id": "tl-79",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A client with poor vision but good reading skills needs written discharge instructions. Which material should the nurse choose?",
+      "options": ["A pamphlet written at a lower reading level", "A video with no written material", "A standard handout read aloud once", "A large-print handout with high contrast"],
+      "answer": 3,
+      "rationale": "<p><b>Large print and high contrast</b> fix a <b>vision</b> problem. The client reads well, so the reading level doesn't need to change.</p><p>A <b>lower reading level</b> fixes literacy, not vision. A video alone gives nothing to refer to later, and reading it aloud once doesn't help her read it at home.</p><p><b>Takeaway:</b> Large print fixes vision, not reading ability.</p>"
+    },
+    {
+      "id": "tl-80",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Which factor most enhances a client's learning?",
+      "options": ["The client sees how the teaching connects to her own life and goals", "The nurse covers each topic in one long session", "The client hears the information once, without interruption", "The nurse uses the medical terms the provider uses"],
+      "answer": 0,
+      "rationale": "<p>Learning grows when the client sees its <b>relevance</b> to her own life and goals, which drives motivation.</p><p><b>Long sessions</b> overwhelm, <b>one hearing</b> without repetition fades, and <b>medical terms</b> get in the way.</p><p><b>Takeaway:</b> Relevance drives motivation, and motivation drives learning.</p>"
+    },
+    {
+      "id": "tl-81",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "During teaching about a new inhaler, a client becomes short of breath and anxious. Which action should the nurse take?",
+      "options": ["Continue the teaching, since it's about the breathing problem", "Stop the teaching, and attend to the client's breathing first", "Speed up so the session ends sooner", "Give the client the handout to read while catching her breath"],
+      "answer": 1,
+      "rationale": "<p><b>Physical needs come first</b>: a client who can't breathe can't learn. The nurse stops and attends to the breathing, then teaches later.</p><p>Continuing, rushing, or handing over a handout ignores a need that blocks learning, and may be unsafe.</p><p><b>Takeaway:</b> Meet the physical need first, then teach.</p>"
+    },
+    {
+      "id": "tl-82",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is planning teaching for a client. Which factors should the nurse identify as barriers to learning?",
+      "options": ["Pain", "A quiet setting", "Relevance to the client's goals", "Anxiety", "Fatigue", "Low literacy"],
+      "answer": [0, 3, 4, 5],
+      "rationale": "<p><b>Anxiety</b>, <b>pain</b>, <b>fatigue</b>, and <b>low literacy</b> all block learning.</p><p>A <b>quiet setting</b> and <b>relevance</b> help learning.</p><p><b>Takeaway:</b> Blocks: emotions, pain, fatigue, sensory loss, low literacy.</p>"
+    },
+    {
+      "id": "tl-83",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is writing learning outcomes. Which verb should the nurse avoid?",
+      "options": ["Demonstrate", "State", "Understand", "Perform"],
+      "answer": 2,
+      "rationale": "<p><b>Understand</b> can't be observed or measured, so it doesn't belong in an outcome.</p><p><b>Demonstrate</b>, <b>state</b>, and <b>perform</b> are observable actions the nurse can evaluate.</p><p><b>Takeaway:</b> Outcomes need verbs you can see.</p>"
+    },
+    {
+      "id": "tl-84",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A client is going home on a new anticoagulant and has several learning needs. Which topic should the nurse teach first?",
+      "options": ["The history of the medication", "How to fill the prescription by mail", "How the medicine works in the blood", "The signs of bleeding, and when to get help"],
+      "answer": 3,
+      "rationale": "<p><b>Safety</b> comes first: the <b>signs of bleeding</b> and <b>when to get help</b> protect the client from the medication's main danger.</p><p>How the drug works, its history, and mail-order refills are useful but less urgent.</p><p><b>Takeaway:</b> Teach what keeps the client safe first.</p>"
+    },
+    {
+      "id": "tl-85",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nursing student asks what a learning need is. Which answer should the nurse give?",
+      "options": ["“A gap between what the client knows or does and what's needed.”", "“A topic the nurse knows well and enjoys teaching to clients.”", "“Anything the provider orders the nurse to teach before discharge.”", "“A question the client asks the nurse during a teaching session.”"],
+      "answer": 0,
+      "rationale": "<p>A <b>learning need</b> is a <b>gap</b> between what the client knows or can do and what's needed to reach a health goal.</p><p>Learning needs come from the client's situation, not the nurse's preferences or a provider's order, and they're more than a single question.</p><p><b>Takeaway:</b> Learning need: the gap between now and the goal.</p>"
+    },
+    {
+      "id": "tl-86",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is writing a teaching plan. Which elements should the nurse include?",
+      "options": ["The client's insurance plan", "The nurse's personal opinions", "Learning outcomes", "The teaching methods", "The content to teach", "How learning will be evaluated"],
+      "answer": [2, 3, 4, 5],
+      "rationale": "<p>A teaching plan includes the <b>outcomes</b>, the <b>content</b>, the <b>methods</b>, and the <b>evaluation</b>.</p><p><b>Insurance</b> and the nurse's <b>opinions</b> don't belong in the plan.</p><p><b>Takeaway:</b> Plan: outcomes, content, methods, evaluation.</p>"
+    },
+    {
+      "id": "tl-87",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching a client how to use an incentive spirometer. Which plan best strengthens the client's learning?",
+      "options": ["Reading the steps aloud to the client twice, slowly and clearly", "Showing the device, explaining it, and letting the client try it", "Giving the client a handout with pictures of each step to study later", "Having the client watch the nurse use the device several times"],
+      "answer": 1,
+      "rationale": "<p><b>Seeing</b> the device, <b>hearing</b> the explanation, and <b>handling</b> it engage several senses, which strengthens learning.</p><p>The others rely on <b>one</b> sense: hearing, reading, or watching, with no hands-on practice.</p><p><b>Takeaway:</b> More senses, more learning.</p>"
+    },
+    {
+      "id": "tl-88",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "When should the nurse start teaching a client for discharge?",
+      "options": ["After the provider writes the discharge order", "At the first follow-up visit", "On admission, spread over the stay", "On the morning of discharge"],
+      "answer": 2,
+      "rationale": "<p>Discharge teaching starts <b>on admission</b> and is <b>spread over the stay</b>, so there's time to practice, evaluate, and reteach.</p><p>Waiting for the <b>last morning</b>, the <b>discharge order</b>, or a <b>follow-up visit</b> leaves too little time.</p><p><b>Takeaway:</b> Discharge teaching starts on day one.</p>"
+    },
+    {
+      "id": "tl-89",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A client who has no internet access needs teaching materials to use at home. Which plan should the nurse choose?",
+      "options": ["Skip home materials, since the teaching is done in the hospital", "Ask the client to look things up at the library", "Send a link to an online video the client can watch later", "Give printed materials and a number to call with questions"],
+      "answer": 3,
+      "rationale": "<p>The plan fits the client's <b>resources</b>: <b>printed materials</b> to refer to and a <b>phone number</b> for questions.</p><p>A <b>link</b> doesn't help without internet, <b>skipping materials</b> leaves nothing to refer to, and the library adds a barrier.</p><p><b>Takeaway:</b> Match the materials to the client's resources.</p>"
+    },
+    {
+      "id": "tl-90",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching an adult client who works full time. Which principle of adult learning should the nurse apply?",
+      "options": ["Adults learn best when they know why it matters to them", "Adults learn best through games, points, and small rewards", "Adults learn best when a family member makes the decisions", "Adults learn best from detailed lectures, saving questions for the end"],
+      "answer": 0,
+      "rationale": "<p>Adults learn best when they know <b>why it matters</b>, can <b>build on experience</b>, and can direct their own learning.</p><p><b>Games and rewards</b> fit children, adults make their <b>own</b> decisions, and <b>lectures</b> that hold questions to the end don't engage adults.</p><p><b>Takeaway:</b> Adults: tell them why, and build on what they know.</p>"
+    },
+    {
+      "id": "tl-91",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A 79-year-old client keeps forgetting the steps of a new routine. Which approach should the nurse use?",
+      "options": ["Wait until the client remembers the steps on her own", "Repeat key points in short sessions, with written reminders", "Teach everything once, in a single long session, to avoid confusion", "Teach the routine to a neighbor who can remind her"],
+      "answer": 1,
+      "rationale": "<p>For memory changes: <b>repetition</b>, <b>written reminders</b>, and <b>short sessions</b> help an older adult learn.</p><p>One <b>long session</b> overwhelms, a <b>neighbor</b> isn't the learner, and <b>waiting</b> doesn't teach.</p><p><b>Takeaway:</b> Older adults: repeat, remind, keep it short.</p>"
+    },
+    {
+      "id": "tl-92",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching an older adult with low vision. Which adaptations should the nurse use?",
+      "options": ["Large print", "High contrast, like black print on white", "Glossy paper", "Good lighting without glare", "Light blue print on white paper"],
+      "answer": [0, 1, 3],
+      "rationale": "<p><b>Large print</b>, <b>high contrast</b>, and <b>good lighting without glare</b> help with low vision.</p><p><b>Glossy paper</b> causes glare, and <b>light blue on white</b> is low contrast.</p><p><b>Takeaway:</b> Low vision: big, dark, and well-lit.</p>"
+    },
+    {
+      "id": "tl-93",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching new parents how to care for their baby's umbilical cord. Which approach should the nurse use?",
+      "options": ["Explain it once to the parent who seems more confident", "Teach the grandparents, who have raised children before", "Demonstrate the care, then watch each parent do it", "Give the parents a handout with pictures to read later"],
+      "answer": 2,
+      "rationale": "<p>Cord care is a skill: <b>demonstrate</b> it, then have <b>each parent</b> do a <b>return demonstration</b>.</p><p>A <b>handout</b> alone doesn't teach a skill, <b>one parent</b> leaves the other unprepared, and the <b>parents</b> are the learners.</p><p><b>Takeaway:</b> Parents of infants: teach both, and watch them do it.</p>"
+    },
+    {
+      "id": "tl-94",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A nurse is teaching a 9-year-old with type 1 diabetes. Which approach should the nurse use?",
+      "options": ["Give the child the adult handout to read with the parents", "Wait until the child is a teenager to teach self-care", "Teach the parents, since the child is too young to manage diabetes", "Involve the child in simple tasks, with games and supervision"],
+      "answer": 3,
+      "rationale": "<p>School-age children can learn <b>simple tasks</b> with supervision, and <b>games</b> keep them engaged, along with the parents.</p><p>Leaving the child out, an <b>adult handout</b>, or <b>waiting years</b> misses what a 9-year-old can learn now.</p><p><b>Takeaway:</b> School-age children: hands-on, games, with supervision.</p>"
+    },
+    {
+      "id": "tl-95",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A 16-year-old asks the nurse a question about sexual health. Which action should the nurse take?",
+      "options": ["Talk with the teen privately, respecting confidentiality", "Tell the teen to ask the parent instead", "Give the teen a pamphlet without discussing it", "Answer in front of the parent, so the parent can add information"],
+      "answer": 0,
+      "rationale": "<p>Teens learn best when they're <b>involved directly</b> and their <b>feelings and privacy</b> are respected, so the nurse talks with the teen <b>privately</b>.</p><p>Answering in front of the parent or redirecting to the parent may shut the teen down, and a pamphlet alone skips the conversation.</p><p><b>Takeaway:</b> Teens: privacy, respect, direct involvement.</p>"
+    },
+    {
+      "id": "tl-96",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "Before teaching a child about a procedure, what should the nurse assess first?",
+      "options": ["Which toys the child likes best", "The child's developmental level", "The parents' insurance coverage", "How long the procedure will take"],
+      "answer": 1,
+      "rationale": "<p>The child's <b>developmental level</b> sets how to teach: the words, the props, and how much detail.</p><p>Insurance, procedure length, and favorite toys don't set the teaching approach.</p><p><b>Takeaway:</b> Children: development first.</p>"
+    },
+    {
+      "id": "tl-97",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching a client with low literacy. Which strategies should the nurse use?",
+      "options": ["Plain, everyday words", "Teach-back after each point", "Pictures and diagrams", "Medical terms, for accuracy", "Demonstration of each step", "A detailed booklet to read at home"],
+      "answer": [0, 1, 2, 4],
+      "rationale": "<p>For low literacy: <b>pictures</b>, <b>demonstration</b>, <b>plain words</b>, and <b>teach-back</b> to confirm understanding.</p><p>A <b>detailed booklet</b> and <b>medical terms</b> are barriers for a client who reads poorly.</p><p><b>Takeaway:</b> Low literacy: show, say it simply, check it back.</p>"
+    },
+    {
+      "id": "tl-98",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A client's culture includes foods the standard diabetes handout says to avoid. Which action should the nurse take?",
+      "options": ["Give the standard handout, since the rules are the same for everyone", "Teach a family member who doesn't share the traditions", "Ask about the client's food practices and adapt the plan to them", "Tell the client to stop eating traditional foods"],
+      "answer": 2,
+      "rationale": "<p>Culturally sensitive teaching <b>asks about the client's practices</b> and <b>adapts</b> the plan, so it fits the client's life and is more likely to work.</p><p>Banning traditional foods, ignoring culture, or teaching someone else doesn't fit the plan to the client.</p><p><b>Takeaway:</b> Culture: ask, then adapt.</p>"
+    },
+    {
+      "id": "tl-99",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse gives a child a sticker each time he uses his inhaler correctly. Which learning theory does this reflect?",
+      "options": ["Social learning", "Cognitive", "Constructivist", "Behaviorism"],
+      "answer": 3,
+      "rationale": "<p><b>Behaviorism</b>: a response that's <b>reinforced</b>, like with praise or a sticker, is more likely to be repeated.</p><p><b>Constructivist</b> builds on experience, <b>social learning</b> is watching and imitating, and <b>cognitive</b> is processing information.</p><p><b>Takeaway:</b> Reinforce it, and it repeats: behaviorism.</p>"
+    },
+    {
+      "id": "tl-100",
+      "type": "sata",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is using social learning theory to teach ostomy care. Which actions should the nurse plan?",
+      "options": ["Arranging a visit from a peer who lives well with a stoma", "Starting from what the client already does at home", "Praising each correct step so the client repeats it", "Showing the pouch change, then having the client copy it", "Organizing the information in small, logical steps"],
+      "answer": [0, 3],
+      "rationale": "<p><b>Social learning</b> is learning by <b>watching and imitating</b>: the nurse <b>models</b> the skill, and a <b>peer</b> shows how she manages.</p><p><b>Praise</b> is behaviorism, <b>building on experience</b> is constructivist, and <b>organizing information</b> is cognitive.</p><p><b>Takeaway:</b> Watch, then imitate: social learning.</p>"
+    },
+    {
+      "id": "tl-101",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse begins teaching by asking what the client already does to manage stress, then builds on it. Which learning theory does this reflect?",
+      "options": ["Constructivist", "Multiple intelligences", "Behaviorism", "Cognitive"],
+      "answer": 0,
+      "rationale": "<p><b>Constructivist</b> theory: learning is <b>built on the learner's own experience</b>, so the nurse starts from what the client already does.</p><p><b>Behaviorism</b> uses reinforcement, <b>cognitive</b> theory focuses on processing information, and <b>multiple intelligences</b> teaches through the learner's strengths.</p><p><b>Takeaway:</b> Start from experience: constructivist.</p>"
+    },
+    {
+      "id": "tl-102",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse organizes information in small, logical chunks so a client can take it in, process it, and use it. Which learning theory does this reflect?",
+      "options": ["Social learning", "Cognitive", "Behaviorism", "Constructivist"],
+      "answer": 1,
+      "rationale": "<p><b>Cognitive</b> theory sees learning as <b>taking in, processing, and using</b> information, so the nurse organizes it to fit how the learner thinks.</p><p><b>Social learning</b> is imitation, <b>behaviorism</b> is reinforcement, and <b>constructivist</b> is building on experience.</p><p><b>Takeaway:</b> Process the information: cognitive.</p>"
+    },
+    {
+      "id": "tl-103",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A client who loves music learns her medication times by putting them to a tune. Which learning theory best explains this?",
+      "options": ["Social learning", "Emotional intelligence", "Multiple intelligences", "Behaviorism"],
+      "answer": 2,
+      "rationale": "<p>Gardner's <b>multiple intelligences</b> theory: people have different strengths (musical, spatial, linguistic, body), so the nurse teaches through the client's <b>strongest</b>.</p><p>The tune isn't a reward (behaviorism) or an imitation (social learning), and <b>emotional intelligence</b> is noticing and using feelings, not learning through a strength.</p><p><b>Takeaway:</b> Teach through the learner's strengths: multiple intelligences.</p>"
+    },
+    {
+      "id": "tl-104",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nursing student asks what emotional intelligence is. Which answer should the nurse give?",
+      "options": ["“A high score on an intelligence test, like an IQ test.”", "“Keeping your feelings hidden at work so clients don't see them.”", "“Learning best through music, movement, and other strengths.”", "“Noticing your own and others' feelings, and using them wisely.”"],
+      "answer": 3,
+      "rationale": "<p><b>Emotional intelligence</b> is <b>recognizing your own and others' feelings</b> and <b>using emotions wisely</b>, like keeping frustration out of a response and explaining a repeated question a new way.</p><p>It isn't an IQ score, it isn't hiding feelings, and learning through music is one of the multiple intelligences.</p><p><b>Takeaway:</b> Emotional intelligence: notice feelings, use them wisely.</p>"
+    },
+    {
+      "id": "tl-105",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A new nurse asks whether client teaching needs a provider's order. Which answer should the preceptor give?",
+      "options": ["“No, teaching is a standard of nursing practice.”", "“Yes, but just for discharge teaching.”", "“Yes, unless the client asks to be taught.”", "“Yes, each teaching session needs its own order.”"],
+      "answer": 0,
+      "rationale": "<p><b>Client education is a standard of practice</b>: every nurse teaches every client, without waiting for an order.</p><p>No order is needed, for discharge teaching, a client's request, or any other teaching.</p><p><b>Takeaway:</b> Teaching is part of every nurse's job.</p>"
+    },
+    {
+      "id": "tl-106",
+      "type": "mc",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse educator asks what the “art of teaching” means. Which answer should the new nurse give?",
+      "options": ["“Choosing the teaching topics the nurse knows and enjoys most.”", "“Planned steps toward a change in behavior, with questions invited.”", "“Reading the teaching material aloud, word for word, so nothing is missed.”", "“Covering as much information as possible in one long session.”"],
+      "answer": 1,
+      "rationale": "<p>The <b>art of teaching</b> is <b>planned steps toward a behavior change</b>, the learner's attention held, <b>questions invited</b>, and the nurse honest about what they don't know.</p><p>Reading word for word, covering too much at once, and teaching what the nurse enjoys miss the learner.</p><p><b>Takeaway:</b> The art of teaching: planned, engaging, two-way.</p>"
     },
     {
       "id": "mx4-01",
