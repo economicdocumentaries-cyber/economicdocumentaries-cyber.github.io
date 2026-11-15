@@ -4,7 +4,7 @@
   "description": "Exam 4 review, matched to the professor's Exam 4 study guide: the class's common abbreviations, unit conversions, and intake in mL, including ice chips, with the rounding and zero rules. The numbers change on every attempt.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 61.5,
+  "timeMinutes": 150,
   "defaultCount": 15,
   "questions": [
     {
@@ -986,6 +986,1356 @@
       "round": "to the nearest whole number",
       "strictZeros": true,
       "rationale": "<p>Ice chips: {c1} + {c2} = {=c1 + c2} mL, halved = {=(c1 + c2) / 2} mL. Tea: {t} × 240 = {=t * 240} mL. Total: <b>{answer} mL</b>.</p><p>Halving only one of the two servings of ice chips is a mistake: every serving of ice chips counts as half.</p><p><b>Takeaway:</b> Add all the ice chips, halve them, then add the other fluids.</p>"
+    },
+    {
+      "id": "mx4-42",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client has a prescription for “Acetaminophen 650 mg PO q6h PRN pain.” The client's last dose was at 0800. At 1300, the client asks for another dose. Which action should the nurse take?",
+      "options": [
+        "Give half of the dose now and the other half at 1400, as the client prefers",
+        "Explain that acetaminophen can't be given again until tomorrow morning",
+        "Give the dose now, since PRN means the client can have it when asked",
+        "Explain that the next dose can be given at 1400, and offer comfort measures"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>q6h PRN</b> means as needed, but no more often than <b>every 6 hours</b>. The last dose was at 0800, so the next one can be given at <b>1400</b>; until then, the nurse offers other comfort measures, like repositioning or ice.</p><p><b>Giving it now</b> isn't right: PRN lets the client decide whether to take a dose, not how often. <b>Half now and half at 1400</b> changes the prescribed dose, which the nurse can't do. <b>Not until tomorrow</b> isn't right: q6h allows up to four doses a day.</p><p><b>Takeaway:</b> PRN: when needed. q6h: at least 6 hours apart. Together: only when needed, and no sooner than 6 hours.</p>"
+    },
+    {
+      "id": "mx4-43",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Ondansetron 4 mg PO q8h x3 doses.” The nurse gave the first dose at 0600. When should the nurse give the last dose?",
+      "options": [
+        "At 2200",
+        "On a q8h schedule until the nausea stops",
+        "At 1400",
+        "At 0600 the next day"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>q8h</b> means every 8 hours, and <b>x3 doses</b> means three doses in all: 0600, 1400, and <b>2200</b>.</p><p><b>1400</b> isn't right: it's the second dose. <b>0600 the next day</b> counts three doses after the first one, which makes four. <b>Until the nausea stops</b> ignores the x3, which ends the order after the third dose.</p><p><b>Takeaway:</b> x3 means three times in all, counting the first.</p>"
+    },
+    {
+      "id": "mx4-44",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Latanoprost 1 drop OS hs.” How should the nurse give this medication?",
+      "options": [
+        "One drop in the right eye at bedtime",
+        "One drop in both eyes at bedtime",
+        "One drop in the left eye each hour",
+        "One drop in the left eye at bedtime"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>OS</b> is the left eye, and <b>hs</b> is the hour of sleep, bedtime: one drop in the <b>left eye at bedtime</b>.</p><p><b>The right eye</b> is OD, and <b>both eyes</b> are OU. <b>Each hour</b> mixes up hs with h, which means hour, as in q1h.</p><p><b>Takeaway:</b> OD right eye, OS left eye, OU both eyes; hs at bedtime.</p>"
+    },
+    {
+      "id": "mx4-45",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Docusate 100 mg PO tid pc.” Which schedule should the nurse follow?",
+      "options": [
+        "Three times a day, after meals",
+        "Twice a day, after meals",
+        "Four times a day, after meals and at bedtime",
+        "Three times a day, before meals"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>tid</b> is three times a day, and <b>pc</b> is after meals (p for post): three times a day, <b>after meals</b>.</p><p><b>Before meals</b> is ac. <b>Twice a day</b> is bid, and <b>four times a day</b> is qid.</p><p><b>Takeaway:</b> bid 2, tid 3, qid 4 times a day; ac before meals, pc after.</p>"
+    },
+    {
+      "id": "mx4-46",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client's allergy band reads “ASA.” Which medication order should the nurse question?",
+      "options": [
+        "Docusate 100 mg PO bid",
+        "Aspirin 81 mg PO daily",
+        "Famotidine 20 mg PO bid",
+        "Acetaminophen 650 mg PO q6h PRN pain"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>ASA</b> is aspirin (acetylsalicylic acid), so the <b>aspirin</b> order needs to be questioned before any dose is given.</p><p><b>Acetaminophen</b> isn't right: its abbreviation is APA, a different drug, and the two are easy to mix up. Docusate and famotidine aren't related to aspirin.</p><p><b>Takeaway:</b> ASA aspirin, APA acetaminophen, PCN penicillin: read allergy abbreviations letter by letter.</p>"
+    },
+    {
+      "id": "mx4-47",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client has a DNR order. The client's temperature rises to 101.8°F, and the provider prescribes acetaminophen. Which action should the nurse take?",
+      "options": [
+        "Ask the provider to cancel the DNR order before giving it",
+        "Give the acetaminophen if the family agrees to it",
+        "Give the acetaminophen as prescribed",
+        "Hold the acetaminophen, since a DNR order means no treatment"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>DNR</b> means do not resuscitate: no CPR if the heart or breathing stops. Every other treatment goes on, so the nurse <b>gives the acetaminophen</b> as prescribed.</p><p><b>Holding it</b> isn't right: a DNR order isn't an order to stop care. <b>Canceling the DNR</b> isn't needed, since the order doesn't affect this treatment, and <b>the family's agreement</b> isn't needed for a prescribed medication.</p><p><b>Takeaway:</b> DNR: no CPR. Care, comfort, and treatment continue.</p>"
+    },
+    {
+      "id": "mx4-48",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "Before a client's surgery, a nurse checks that the H&P is on the chart. What is the nurse checking for?",
+      "options": [
+        "The client's height and pulse",
+        "The hospital's policy forms, signed by the client",
+        "The client's hemoglobin and platelet count",
+        "The client's history and physical examination"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>H&P</b> is the <b>history and physical</b>, the provider's record of the client's health history and examination.</p><p><b>Hemoglobin and platelets</b> are lab results, and <b>height and pulse</b> are measurements; neither is the H&P. Signed forms are consents, recorded separately.</p><p><b>Takeaway:</b> H&P: history and physical.</p>"
+    },
+    {
+      "id": "mx4-49",
+      "type": "matrix",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse is reading a client's health history. For each abbreviation, click to specify the condition the nurse should recognize.",
+      "rowHeader": "Abbreviation",
+      "columns": [
+        "A clot in a deep vein, often in the leg",
+        "A clot that has traveled to the lungs",
+        "Heart muscle damaged by a blocked artery",
+        "Breathing that stops and starts during sleep",
+        "An infection of the lungs"
+      ],
+      "rows": [
+        "PE",
+        "OSA",
+        "DVT",
+        "PNA",
+        "MI"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "rationale": "<p>The abbreviations stand for <b>PE</b>, pulmonary embolism (a clot that has traveled to the lungs); <b>OSA</b>, obstructive sleep apnea; <b>DVT</b>, deep vein thrombosis (a clot in a deep vein, often in the leg); <b>PNA</b>, pneumonia; and <b>MI</b>, myocardial infarction.</p><p>Mixing up <b>DVT</b> and <b>PE</b> is a common mistake: a DVT is a clot in a vein, and a PE is a clot that has broken off and reached the lungs.</p><p><b>Takeaway:</b> DVT in the leg, PE in the lungs, MI in the heart, PNA in the lungs' air spaces, OSA in sleep.</p>"
+    },
+    {
+      "id": "mx4-50",
+      "type": "sata",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client's history lists HTN, CKD, and BPH. Which of the following conditions should the nurse identify?",
+      "options": [
+        "High blood pressure",
+        "Heart failure",
+        "Chronic kidney disease",
+        "A blood clot in a leg",
+        "An enlarged prostate",
+        "An underactive thyroid"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p><b>HTN</b> is hypertension, <b>high blood pressure</b>; <b>CKD</b> is <b>chronic kidney disease</b>, long-term kidney damage; and <b>BPH</b> is <b>an enlarged prostate</b>.</p><p><b>Heart failure</b> is HF, a <b>clot in a leg</b> is a DVT, and <b>an underactive thyroid</b> is hypothyroidism; none of them is in the history.</p><p><b>Takeaway:</b> HTN high blood pressure, CKD chronic kidney disease, BPH enlarged prostate.</p>"
+    },
+    {
+      "id": "mx4-51",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client's care plan reads “No BP or blood draws, LUE.” Which action should the nurse take to check the client's blood pressure?",
+      "options": [
+        "Use the right arm",
+        "Ask the client which arm is less sore today",
+        "Use the left arm, with a smaller cuff",
+        "Skip the blood pressure for this shift"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>LUE</b> is the left upper extremity, the <b>left arm</b>, so the blood pressure is taken on the <b>right arm</b>.</p><p><b>The left arm</b> is the one the plan protects, whatever the cuff. <b>Skipping</b> it isn't needed, since the other arm can be used, and <b>asking the client</b> lets comfort override a safety order.</p><p><b>Takeaway:</b> RUE, LUE: right and left arm; RLE, LLE: right and left leg.</p>"
+    },
+    {
+      "id": "mx4-52",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client's order reads “O2 2 L/min by nasal cannula, titrate to keep SpO2 92% or higher.” Which finding should the nurse act on?",
+      "options": [
+        "RR 18/min while talking with a visitor",
+        "SpO2 89% after walking to the bathroom",
+        "AP 76/min and regular at the bedside",
+        "SpO2 95% while resting in bed after lunch"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>SpO2</b> is the oxygen saturation, and the order sets its goal at 92% or higher. <b>89%</b> is below the goal, so the nurse titrates the <b>O2</b> as ordered and rechecks.</p><p><b>95%</b> meets the goal. <b>RR 18</b> (respiratory rate) and <b>AP 76</b> (apical pulse) are within normal limits.</p><p><b>Takeaway:</b> SpO2 oxygen saturation, O2 oxygen, RR respiratory rate, AP apical pulse.</p>"
+    },
+    {
+      "id": "mx4-53",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Metoprolol 25 mg PO bid. Hold if AP below 60/min.” Which action should the nurse take before giving a dose?",
+      "options": [
+        "Count the respirations for a full minute",
+        "Count the radial pulse for 30 seconds and double it",
+        "Listen at the apex of the heart for a full minute",
+        "Take the blood pressure on the right arm"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>AP</b> is the apical pulse, heard with a stethoscope at the <b>apex of the heart</b>, counted for a full minute when a dose depends on it.</p><p><b>The radial pulse</b> is felt at the wrist, not the apex. The <b>blood pressure</b> and the <b>respirations</b> (RR) aren't what the order names.</p><p><b>Takeaway:</b> AP: apical pulse, listened to at the heart's apex.</p>"
+    },
+    {
+      "id": "mx4-54",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Ibuprofen 400 mg PO q6h PRN pain c̄ food.” Which instruction should the nurse give?",
+      "options": [
+        "Take it an hour after you finish eating",
+        "Take it on an empty stomach",
+        "Take it before your meals",
+        "Take it with food"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>c̄</b> (c with a line over it) means <b>with</b>: take it <b>with food</b>.</p><p><b>An empty stomach</b> is the opposite. <b>Before meals</b> is ac, and <b>after</b> is p̄ or pc.</p><p><b>Takeaway:</b> a̅ before, p̄ after, c̄ with.</p>"
+    },
+    {
+      "id": "mx4-55",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Melatonin 3 mg PO hs.” When should the nurse give this medication?",
+      "options": [
+        "At bedtime",
+        "Each hour until the client falls asleep",
+        "In the morning, after breakfast",
+        "At half strength, mixed with water"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>hs</b> is the hour of sleep: <b>bedtime</b>.</p><p><b>Half strength</b> is a known misreading of hs, which is why some facilities write out “at bedtime.” <b>Each hour</b> mixes up hs with h, and <b>the morning</b> is qam.</p><p><b>Takeaway:</b> hs: at bedtime. When in doubt, clarify.</p>"
+    },
+    {
+      "id": "mx4-56",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "During an admission interview, a client says, “I don't take any prescription medicines, just some OTC pain relievers.” Which response should the nurse make?",
+      "options": [
+        "“Those don't need to go on your medication list.”",
+        "“Which ones do you take, and how often?”",
+        "“You'll need to stop taking them while you're here.”",
+        "“Over-the-counter medicines are safe with any prescription.”"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>OTC</b> means over the counter, bought without a prescription. OTC medicines can interact with prescribed ones, so the nurse asks <b>which ones, and how often</b>, and adds them to the list.</p><p><b>Leaving them off the list</b> hides possible interactions. <b>Stopping them</b> is the provider's decision, made with the full list. <b>Safe with any prescription</b> isn't true: OTC pain relievers can interact with prescribed drugs.</p><p><b>Takeaway:</b> OTC: over the counter. Still medications: list them.</p>"
+    },
+    {
+      "id": "mx4-57",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A client has a prescription for “Enoxaparin 40 mg subcut q24h.” The first dose was given Monday at 0900. When is the next dose due?",
+      "options": [
+        "Wednesday at 0900",
+        "Monday at 2100",
+        "Tuesday at 0900",
+        "Tuesday at 2100"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>q24h</b> means every 24 hours, once a day: the next dose is <b>Tuesday at 0900</b>.</p><p><b>Monday at 2100</b> would be q12h. <b>Tuesday at 2100</b> is 36 hours later, and <b>Wednesday</b> is 48 hours later.</p><p><b>Takeaway:</b> q24h: every 24 hours, the same time each day.</p>"
+    },
+    {
+      "id": "mx4-58",
+      "type": "matrix",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse is reviewing a client's medication orders. For each order, click to specify how many doses the nurse should give in 24 hours.",
+      "rowHeader": "Order",
+      "columns": [
+        "1 dose",
+        "2 doses",
+        "3 doses",
+        "4 doses"
+      ],
+      "rows": [
+        "Amoxicillin 500 mg PO tid",
+        "Metoprolol 25 mg PO bid",
+        "Acetaminophen 650 mg PO q6h",
+        "Lisinopril 10 mg PO q24h",
+        "Cephalexin 500 mg PO q12h",
+        "Sucralfate 1 g PO qid"
+      ],
+      "answer": [
+        2,
+        1,
+        3,
+        0,
+        1,
+        3
+      ],
+      "rationale": "<p><b>tid</b> is 3 a day, <b>bid</b> 2, <b>q6h</b> every 6 hours (24 ÷ 6 = 4), <b>q24h</b> 1, <b>q12h</b> every 12 hours (2), and <b>qid</b> 4.</p><p>Reading <b>q6h</b> as 6 doses a day is a mistake: q6h is the time between doses, so it's 24 ÷ 6 = 4 doses.</p><p><b>Takeaway:</b> bid 2, tid 3, qid 4; for qXh, divide 24 by X.</p>"
+    },
+    {
+      "id": "mx4-59",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client's order reads “Turn q2h.” The nurse turned the client at 2300 and again at 0045, after changing the bed. When is the next turn due?",
+      "options": [
+        "0100",
+        "0245",
+        "0300",
+        "0445"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>q2h</b> means every 2 hours from the last turn. The last turn was at 0045, so the next is due at <b>0245</b>.</p><p><b>0100</b> counts from 2300 and ignores the turn at 0045. <b>0300</b> keeps to even hours, which isn't what q2h means, and <b>0445</b> is 4 hours later.</p><p><b>Takeaway:</b> qXh counts from the last time it was done.</p>"
+    },
+    {
+      "id": "mx4-60",
+      "type": "mc",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A client's order reads “NPO except meds.” It's 0800, and the client has scheduled oral medications. Which action should the nurse take?",
+      "options": [
+        "Give the medications with the breakfast tray",
+        "Hold the oral medications until the client can eat",
+        "Give the medications with a full glass of water",
+        "Give the medications with a small sip of water"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>NPO</b> is nothing by mouth, but <b>except meds</b> allows the oral medications, with only <b>a small sip of water</b> to swallow them.</p><p><b>Holding them</b> ignores the exception. <b>A full glass of water</b> and <b>breakfast</b> break the NPO order.</p><p><b>Takeaway:</b> NPO except meds: medications with a sip, nothing else.</p>"
+    },
+    {
+      "id": "mx4-61",
+      "type": "sata",
+      "topic": "Abbreviations",
+      "level": 3,
+      "stem": "A nurse reads this entry in a client's record: “A&O x3. LLE cast. NKDA. Ambulate ad lib with crutches.” Which statements in the hand-off report are accurate?",
+      "options": [
+        "The client knows who they are, where they are, and the time",
+        "The client has a cast on the left arm",
+        "The client has a cast on the left leg",
+        "The client has no known drug allergies",
+        "The client has no allergies of any kind",
+        "The client may walk with crutches as much as they like"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p><b>A&O x3</b> is alert and oriented to person, place, and time; <b>LLE</b> is the left lower extremity, the <b>left leg</b>; <b>NKDA</b> is no known <b>drug</b> allergies; and <b>ad lib</b> is as much as desired.</p><p><b>The left arm</b> would be LUE. <b>No allergies of any kind</b> would be NKA: NKDA rules out drug allergies only, so a food or latex allergy is still possible.</p><p><b>Takeaway:</b> NKDA: no drug allergies; NKA: no allergies at all. LLE: left leg.</p>"
+    },
+    {
+      "id": "mx4-62",
+      "type": "fill",
+      "topic": "Rounding and zeros",
+      "level": 3,
+      "vars": {
+        "v": [
+          1.96,
+          2.04,
+          2.97,
+          3.03,
+          4.96
+        ]
+      },
+      "stem": "A nurse's calculation for an oral liquid comes to {v} mL. Using the class's rounding rules, how many milliliters should the nurse prepare?",
+      "answer": "=v",
+      "decimals": 1,
+      "unit": "mL",
+      "strictZeros": true,
+      "rationale": "<p>The class's rule: an amount <b>over 1 mL</b> is rounded to the <b>tenth</b>. {v} rounds to a tenths place of 0, and a whole number is written <b>without a trailing zero</b>: <b>{answer} mL</b>.</p><p>Writing the zero after the decimal point is a mistake: a missed decimal point turns it into a dose 10 times too big. Leaving {v} unrounded breaks the rule.</p><p><b>Takeaway:</b> Over 1 mL: round to the tenth, then drop a trailing zero.</p>"
+    },
+    {
+      "id": "mx4-63",
+      "type": "mc",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "vars": {
+        "v": [
+          0.376,
+          0.454,
+          0.666,
+          0.828
+        ]
+      },
+      "stem": "A nurse's calculation for an injection comes to {v} mL. Which amount and syringe should the nurse use?",
+      "options": [
+        "{=round(v, 2)} mL, in a 1-mL syringe",
+        "{=round(v, 2)} mL, in a 3-mL syringe",
+        ".{=round(v * 100)} mL, in a 1-mL syringe",
+        "{=round(v, 1)} mL, in a 1-mL syringe"
+      ],
+      "answer": 0,
+      "rationale": "<p>The class's rule: an amount <b>under 1 mL</b> is rounded to the <b>hundredth</b>, with a leading zero, and measured in a <b>1-mL (tuberculin) syringe</b>: <b>{=round(v, 2)} mL</b>.</p><p><b>{=round(v, 1)} mL</b> rounds to the tenth, the rule for amounts over 1 mL. A <b>3-mL syringe</b> can't measure hundredths, and <b>.{=round(v * 100)} mL</b> leaves out the leading zero.</p><p><b>Takeaway:</b> Under 1 mL: the hundredth, a leading zero, and a 1-mL syringe.</p>"
+    },
+    {
+      "id": "mx4-64",
+      "type": "mc",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "stem": "A nurse sees “Give 5.0 mL” on a classmate's medication worksheet. Which error could this cause?",
+      "options": [
+        "No error, since 5.0 mL and 5 mL are the same amount",
+        "Someone could read it as 0.5 mL and underdose the client",
+        "Someone could miss the decimal point and give 50 mL",
+        "Someone could give 5 mg instead of 5 mL"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>trailing zero</b> hides the decimal point: if it's missed, 5.0 reads as <b>50</b>, a dose 10 times too big.</p><p><b>0.5 mL</b> is the risk of a missing leading zero (.5), not a trailing one. The <b>unit</b> isn't changed by the zero, and the amounts are the same only if the decimal point is seen.</p><p><b>Takeaway:</b> No trailing zeros: 5, not 5.0.</p>"
+    },
+    {
+      "id": "mx4-65",
+      "type": "mc",
+      "topic": "Rounding and zeros",
+      "level": 3,
+      "vars": {
+        "c": [
+          100,
+          125,
+          200,
+          250
+        ]
+      },
+      "stem": "A client drank 1/3 of a {c}-mL bottle of a nutrition shake at breakfast, at lunch, and at dinner. How many milliliters should the nurse record for the three meals?",
+      "options": [
+        "{=round(c / 3) * 3} mL",
+        "{=round(c / 3)} mL",
+        "{=c * 3} mL",
+        "{c} mL"
+      ],
+      "answer": 3,
+      "rationale": "<p>Three thirds of the bottle is the whole bottle: <b>{c} mL</b>. The class's rule is to <b>round at the end</b>, not at each step.</p><p><b>{=round(c / 3) * 3} mL</b> rounds each meal's {=round(c / 3, 2)} mL before adding, which builds up an error. <b>{=round(c / 3)} mL</b> is one meal only, and <b>{=c * 3} mL</b> counts three whole bottles.</p><p><b>Takeaway:</b> Round once, at the end of the problem.</p>"
+    },
+    {
+      "id": "mx4-66",
+      "type": "matrix",
+      "topic": "Rounding and zeros",
+      "level": 2,
+      "stem": "A nurse is checking a classmate's calculations. For each result, click to specify how the nurse should round it.",
+      "rowHeader": "Result",
+      "columns": [
+        "To the hundredth, with a leading zero",
+        "To the tenth",
+        "To a whole number"
+      ],
+      "rows": [
+        "0.376 mL of a liquid medication",
+        "1.57 mL of a liquid medication",
+        "A drip rate of 31.25 gtt/min",
+        "0.843 mL of a liquid medication",
+        "2.46 mL of a liquid medication",
+        "A heparin dose of 2,537.5 units"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>Under 1 mL, round to the <b>hundredth</b> with a leading zero (0.376 becomes 0.38, and 0.843 becomes 0.84). Over 1 mL, round to the <b>tenth</b> (1.57 becomes 1.6, and 2.46 becomes 2.5). Drops and units can't be divided, so they're rounded to a <b>whole number</b> (31.25 gtt becomes 31, and 2,537.5 units becomes 2,538).</p><p>Rounding every result the same way is a mistake: the rule depends on the amount and on what can be measured.</p><p><b>Takeaway:</b> Under 1 mL: hundredth. Over 1 mL: tenth. Drops and units: whole number.</p>"
+    },
+    {
+      "id": "mx4-67",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "f": [
+          99.5,
+          100.9,
+          101.8,
+          102.6,
+          103.1
+        ]
+      },
+      "stem": "A client's temperature is {f} °F. Which temperature in degrees Celsius should the nurse document?",
+      "answer": "=(f - 32) * 5 / 9",
+      "decimals": 1,
+      "unit": "°C",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>°C = (°F − 32) × 5/9. First subtract: {f} − 32 = {=round(f - 32, 1)}. Then multiply by 5/9: {=round((f - 32) * 5 / 9, 2)}, which rounds to <b>{answer} °C</b>.</p><p>Multiplying before subtracting 32 is a mistake: subtract first, then multiply.</p><p><b>Takeaway:</b> °C = (°F − 32) × 5/9; °F = °C × 9/5 + 32.</p>"
+    },
+    {
+      "id": "mx4-68",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "t": [
+          {
+            "value": 1,
+            "text": "1 Tbsp"
+          },
+          {
+            "value": 2,
+            "text": "2 Tbsp"
+          }
+        ],
+        "n": [
+          {
+            "value": 2,
+            "text": "bid"
+          },
+          {
+            "value": 3,
+            "text": "tid"
+          },
+          {
+            "value": 4,
+            "text": "qid"
+          }
+        ]
+      },
+      "stem": "A client takes {t} of a liquid antacid {n}. How many milliliters should the nurse expect the client to take in a day?",
+      "answer": "=t * 15 * n",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>1 Tbsp = 15 mL, so one dose is {t} × 15 = {=t * 15} mL. Given {n}, that's {=t * 15} × {=n} = <b>{answer} mL</b> a day.</p><p>Using 5 mL for each tablespoon is a mistake: 5 mL is a teaspoon. Stopping at one dose leaves out the daily total.</p><p><b>Takeaway:</b> 1 tsp = 5 mL, 1 Tbsp = 15 mL; bid 2, tid 3, qid 4 doses.</p>"
+    },
+    {
+      "id": "mx4-69",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "oz": [
+          40,
+          56,
+          64,
+          72
+        ]
+      },
+      "stem": "A client drank {oz} oz of fluids today. How many liters should the nurse document?",
+      "answer": "=oz * 30 / 1000",
+      "decimals": 2,
+      "unit": "L",
+      "round": "to the nearest hundredth",
+      "strictZeros": true,
+      "rationale": "<p>First to mL: {oz} × 30 = {=oz * 30} mL. Then to L: {=oz * 30} ÷ 1,000 = <b>{answer} L</b>.</p><p>Dividing the ounces by 1,000 skips a step: ounces become mL first, then liters.</p><p><b>Takeaway:</b> oz × 30 = mL; mL ÷ 1,000 = L.</p>"
+    },
+    {
+      "id": "mx4-70",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "l": [
+          {
+            "value": 1,
+            "text": "1 L"
+          },
+          {
+            "value": 0.5,
+            "text": "0.5 L"
+          }
+        ],
+        "left": [
+          125,
+          175,
+          300,
+          350
+        ]
+      },
+      "stem": "A client's IV bag held {l} of fluid. At the end of the shift, {left} mL remain in the bag. How many milliliters have infused?",
+      "answer": "=l * 1000 - left",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{l} = {=l * 1000} mL (× 1,000). What infused is what's gone: {=l * 1000} − {left} = <b>{answer} mL</b>.</p><p>Subtracting the mL from the liters without converting is a mistake: change the liters to mL first.</p><p><b>Takeaway:</b> L × 1,000 = mL; infused = start − left.</p>"
+    },
+    {
+      "id": "mx4-71",
+      "type": "mc",
+      "topic": "Unit conversions",
+      "level": 3,
+      "vars": {
+        "d": [
+          325,
+          500,
+          650
+        ]
+      },
+      "stem": "A client has a prescription for “Acetaminophen {d} mg PO q6h.” How many grams should the nurse expect the client to receive in 24 hours?",
+      "options": [
+        "{=d * 4 / 1000} g",
+        "{=d * 4} g",
+        "{=d * 6 / 1000} g",
+        "{=d / 1000} g"
+      ],
+      "answer": 0,
+      "rationale": "<p>q6h is every 6 hours: 24 ÷ 6 = 4 doses. {d} × 4 = {=d * 4} mg, and mg ÷ 1,000 = g: <b>{=d * 4 / 1000} g</b>.</p><p><b>{=d * 6 / 1000} g</b> reads q6h as 6 doses. <b>{=d / 1000} g</b> is one dose, and <b>{=d * 4} g</b> forgets to change mg to g.</p><p><b>Takeaway:</b> Doses a day first, then mg ÷ 1,000 = g.</p>"
+    },
+    {
+      "id": "mx4-72",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "g": [
+          0.8,
+          1.2,
+          1.5,
+          2.3
+        ]
+      },
+      "stem": "A client with heart failure has gained {g} kg since yesterday. How many pounds should the nurse report?",
+      "answer": "=g * 2.2",
+      "decimals": 1,
+      "unit": "lb",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>1 kg = 2.2 lb, so multiply: {g} × 2.2 = {=round(g * 2.2, 2)}, which rounds to <b>{answer} lb</b>.</p><p>Dividing by 2.2 is a mistake: pounds are the smaller unit, so the number gets bigger.</p><p><b>Takeaway:</b> kg to lb: × 2.2; lb to kg: ÷ 2.2.</p>"
+    },
+    {
+      "id": "mx4-73",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 3,
+      "vars": {
+        "vol": [
+          500,
+          1000,
+          1500
+        ],
+        "h": [
+          4,
+          6,
+          8,
+          12
+        ]
+      },
+      "stem": "A provider prescribes {vol} mL of 0.9% sodium chloride IV over {h} hours. At how many mL/hr should the nurse set the pump?",
+      "answer": "=vol / h",
+      "decimals": 0,
+      "unit": "mL/hr",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Rate = volume ÷ hours: {vol} ÷ {h} = {=round(vol / h, 2)}, which rounds to <b>{answer} mL/hr</b>.</p><p>Multiplying the volume by the hours is a mistake: a rate is mL for each hour, so divide.</p><p><b>Takeaway:</b> mL/hr = total mL ÷ hours.</p>"
+    },
+    {
+      "id": "mx4-74",
+      "type": "mc",
+      "topic": "Unit conversions",
+      "level": 3,
+      "vars": {
+        "vol": [
+          50,
+          100
+        ],
+        "m": [
+          20,
+          30,
+          45
+        ]
+      },
+      "stem": "An IV antibiotic of {vol} mL is to infuse over {m} minutes. At how many mL/hr should the nurse set the pump?",
+      "options": [
+        "{=round(vol / m, 2)} mL/hr",
+        "{=round(vol * 60 / m)} mL/hr",
+        "{=round(vol * m / 60)} mL/hr",
+        "{vol} mL/hr"
+      ],
+      "answer": 1,
+      "rationale": "<p>The pump runs in mL per <b>hour</b>, so change the minutes to hours: {m} ÷ 60. Then {vol} ÷ ({m} ÷ 60) = {vol} × 60 ÷ {m} = <b>{=round(vol * 60 / m)} mL/hr</b>.</p><p><b>{=round(vol / m, 2)}</b> is mL per minute, not per hour. <b>{=round(vol * m / 60)}</b> turns the time the wrong way, and <b>{vol} mL/hr</b> gives the whole bag in an hour.</p><p><b>Takeaway:</b> Minutes to hours first: mL/hr = mL × 60 ÷ minutes.</p>"
+    },
+    {
+      "id": "mx4-75",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "vol": [
+          250,
+          500,
+          1000
+        ],
+        "r": [
+          80,
+          100,
+          125
+        ]
+      },
+      "stem": "A {vol}-mL bag of IV fluid is infusing at {r} mL/hr. How many hours should the nurse expect the infusion to take?",
+      "answer": "=vol / r",
+      "decimals": 1,
+      "unit": "hours",
+      "round": "to the nearest tenth",
+      "strictZeros": true,
+      "rationale": "<p>Time = volume ÷ rate: {vol} ÷ {r} = {=round(vol / r, 2)}, which rounds to <b>{answer} hours</b>.</p><p>Multiplying the volume by the rate is a mistake: divide the volume by the mL each hour.</p><p><b>Takeaway:</b> Hours = mL ÷ mL/hr.</p>"
+    },
+    {
+      "id": "mx4-76",
+      "type": "mc",
+      "topic": "Unit conversions",
+      "level": 3,
+      "vars": {
+        "lb": [
+          6,
+          7,
+          8
+        ],
+        "oz": [
+          8,
+          12
+        ]
+      },
+      "stem": "A newborn weighs {lb} lb {oz} oz. Which weight in kilograms should the nurse record?",
+      "options": [
+        "{=round(lb / 2.2, 1)} kg",
+        "{=round((lb + oz / 16) * 2.2, 1)} kg",
+        "{=round((lb + oz / 16) / 2.2, 1)} kg",
+        "{=round((lb + oz / 10) / 2.2, 1)} kg"
+      ],
+      "answer": 2,
+      "rationale": "<p>A pound has <b>16 ounces</b>, so {oz} oz = {=oz / 16} lb, and the newborn weighs {=lb + oz / 16} lb. Then ÷ 2.2: <b>{=round((lb + oz / 16) / 2.2, 1)} kg</b>.</p><p><b>{=round((lb + oz / 10) / 2.2, 1)} kg</b> treats the ounces as a decimal, as if a pound had 10 ounces. <b>{=round(lb / 2.2, 1)} kg</b> leaves out the ounces, and <b>{=round((lb + oz / 16) * 2.2, 1)} kg</b> multiplies instead of dividing.</p><p><b>Takeaway:</b> Ounces ÷ 16 = pounds; then pounds ÷ 2.2 = kg.</p>"
+    },
+    {
+      "id": "mx4-77",
+      "type": "mc",
+      "topic": "Unit conversions",
+      "level": 2,
+      "vars": {
+        "ml": [
+          7.5,
+          10,
+          12.5,
+          15
+        ]
+      },
+      "stem": "A parent will give a child {ml} mL of a liquid medicine at home with a measuring teaspoon. How many teaspoons should the nurse teach the parent to give?",
+      "options": [
+        "{=ml * 5} tsp",
+        "{=round(ml / 30, 2)} tsp",
+        "{=round(ml / 15, 2)} tsp",
+        "{=ml / 5} tsp"
+      ],
+      "answer": 3,
+      "rationale": "<p>1 tsp = 5 mL, so divide: {ml} ÷ 5 = <b>{=ml / 5} tsp</b>.</p><p><b>{=round(ml / 15, 2)} tsp</b> uses 15 mL, which is a tablespoon, and <b>{=round(ml / 30, 2)} tsp</b> uses 30 mL, an ounce. <b>{=ml * 5} tsp</b> multiplies instead of dividing.</p><p><b>Takeaway:</b> 1 tsp = 5 mL; 1 Tbsp = 15 mL; 1 oz = 30 mL.</p>"
+    },
+    {
+      "id": "mx4-78",
+      "type": "fill",
+      "topic": "Unit conversions",
+      "level": 3,
+      "vars": {
+        "vol": [
+          50,
+          100,
+          250
+        ],
+        "r": [
+          100,
+          150,
+          200
+        ]
+      },
+      "stem": "An IV medication of {vol} mL is infusing at {r} mL/hr. How many minutes should the nurse expect the infusion to take?",
+      "answer": "=vol / r * 60",
+      "decimals": 0,
+      "unit": "minutes",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Hours first: {vol} ÷ {r} = {=round(vol / r, 4)} hours. Then × 60: <b>{answer} minutes</b>.</p><p>Stopping at {=round(vol / r, 4)} is a mistake: that's the time in hours, and the question asks for minutes.</p><p><b>Takeaway:</b> Hours = mL ÷ mL/hr; minutes = hours × 60.</p>"
+    },
+    {
+      "id": "mx4-79",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "r": [
+          50,
+          60,
+          75
+        ],
+        "h": [
+          8,
+          12
+        ],
+        "f": [
+          30,
+          60
+        ]
+      },
+      "stem": "A client receives a tube feeding at {r} mL/hr for {h} hours, with a {f}-mL water flush every 4 hours. How many milliliters of intake should the nurse record for the {h} hours?",
+      "answer": "=r * h + h / 4 * f",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Feeding: {r} × {h} = {=r * h} mL. Flushes: {h} hours ÷ 4 = {=h / 4} flushes × {f} = {=h / 4 * f} mL. Total: <b>{answer} mL</b>.</p><p>Leaving out the flushes is a mistake: water given through the tube is intake too.</p><p><b>Takeaway:</b> Tube feedings and flushes both count as intake.</p>"
+    },
+    {
+      "id": "mx4-80",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "r": [
+          75,
+          100,
+          125
+        ],
+        "n": [
+          {
+            "value": 1,
+            "text": "1 IV antibiotic dose"
+          },
+          {
+            "value": 2,
+            "text": "2 IV antibiotic doses"
+          }
+        ],
+        "p": [
+          50,
+          100
+        ]
+      },
+      "stem": "During an 8-hour shift, a client's IV pump ran at {r} mL/hr, and the client also received {n} of {p} mL each. How many milliliters of IV intake should the nurse record for the shift?",
+      "answer": "=r * 8 + n * p",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Pump: {r} × 8 = {=r * 8} mL. Antibiotics: {n} × {p} = {=n * p} mL. Total: <b>{answer} mL</b>.</p><p>Leaving out the IV antibiotics is a mistake: every IV fluid counts toward intake.</p><p><b>Takeaway:</b> IV intake = rate × hours + every other IV fluid given.</p>"
+    },
+    {
+      "id": "mx4-81",
+      "type": "mc",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "a": [
+          8,
+          10
+        ],
+        "b": [
+          4,
+          6
+        ],
+        "iv": [
+          500,
+          800
+        ]
+      },
+      "stem": "During a shift, a client drank {a} oz of water and {b} oz of juice, and {iv} mL of IV fluid infused. Which amount should the nurse record as the client's <b>oral</b> intake?",
+      "options": [
+        "{=(a + b) * 30} mL",
+        "{=a * 30} mL",
+        "{=(a + b) * 15} mL",
+        "{=(a + b) * 30 + iv} mL"
+      ],
+      "answer": 0,
+      "rationale": "<p>Oral intake is what the client took <b>by mouth</b>: ({a} + {b}) × 30 = <b>{=(a + b) * 30} mL</b>. The IV fluid counts in the total intake, not the oral intake.</p><p><b>{=(a + b) * 30 + iv} mL</b> adds the IV fluid, which makes it the total intake. <b>{=a * 30} mL</b> leaves out the juice, and <b>{=(a + b) * 15} mL</b> uses 15 mL an ounce, a tablespoon's worth.</p><p><b>Takeaway:</b> Oral intake: by mouth only. Total intake: oral plus IV and tube feedings.</p>"
+    },
+    {
+      "id": "mx4-82",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "oz": [
+          6,
+          9,
+          12
+        ],
+        "m": [
+          120,
+          240
+        ]
+      },
+      "stem": "A client drank 2/3 of a {oz}-oz cup of tea and half of a {m}-mL carton of milk. How many milliliters should the nurse record?",
+      "answer": "=oz * 30 * 2 / 3 + m / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Tea: {oz} × 30 = {=oz * 30} mL, and 2/3 of it is {=oz * 20} mL. Milk: half of {m} = {=m / 2} mL. Total: <b>{answer} mL</b>.</p><p>Recording the full cup and carton is a mistake: count only what the client drank.</p><p><b>Takeaway:</b> Convert, take the part drunk, then add.</p>"
+    },
+    {
+      "id": "mx4-83",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "g": [
+          8,
+          10
+        ],
+        "left": [
+          2,
+          3
+        ]
+      },
+      "stem": "A client was given a {g}-oz glass of milk and a 240-mL carton of juice. The client finished the juice, and {left} oz of milk remain in the glass. How many milliliters should the nurse record?",
+      "answer": "=(g - left) * 30 + 240",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Milk drunk: {g} − {left} = {=g - left} oz × 30 = {=(g - left) * 30} mL. Juice: 240 mL. Total: <b>{answer} mL</b>.</p><p>Recording the milk that's left is a mistake: intake is what the client drank, the glass minus what remains.</p><p><b>Takeaway:</b> Intake = what was served − what's left.</p>"
+    },
+    {
+      "id": "mx4-84",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "d": [
+          850,
+          920
+        ],
+        "e": [
+          600,
+          740
+        ],
+        "w": [
+          4,
+          6
+        ],
+        "c": [
+          120,
+          200
+        ]
+      },
+      "stem": "For a client's 24-hour intake, the day shift recorded {d} mL and the evening shift {e} mL. On the night shift, the client drank {w} oz of water and ate {c} mL of ice chips. How many milliliters should the nurse record as the 24-hour intake?",
+      "answer": "=d + e + w * 30 + c / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Night shift: water {w} × 30 = {=w * 30} mL, and ice chips {c} ÷ 2 = {=c / 2} mL. 24 hours: {d} + {e} + {=w * 30} + {=c / 2} = <b>{answer} mL</b>.</p><p>Counting the ice chips at full volume is a mistake: they count as half, even inside a 24-hour total.</p><p><b>Takeaway:</b> Add every shift's total; halve the ice chips.</p>"
+    },
+    {
+      "id": "mx4-85",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "lim": [
+          1200,
+          1500,
+          1800
+        ]
+      },
+      "stem": "A client has a fluid restriction of {lim} mL a day: half for the day shift, a third for the evening shift, and the rest for the night shift. How many milliliters should the nurse allow on the night shift?",
+      "answer": "=lim * (1 - 1 / 2 - 1 / 3)",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Day: {lim} ÷ 2 = {=lim / 2} mL. Evening: {lim} ÷ 3 = {=lim / 3} mL. Night gets the rest: {lim} − {=lim / 2} − {=lim / 3} = <b>{answer} mL</b>.</p><p>Giving the night shift a third is a mistake: half plus a third leaves a sixth for nights.</p><p><b>Takeaway:</b> A restriction's shares add up to the whole: 1/2 + 1/3 + 1/6.</p>"
+    },
+    {
+      "id": "mx4-86",
+      "type": "sata",
+      "topic": "Intake in mL",
+      "level": 2,
+      "stem": "A client on intake and output has chicken broth, gelatin, a turkey sandwich, ice cream, mashed potatoes, and a banana for lunch. Which items should the nurse count as fluid intake?",
+      "options": [
+        "Chicken broth",
+        "A turkey sandwich",
+        "Gelatin",
+        "Mashed potatoes",
+        "Ice cream",
+        "A banana"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p>Fluids are anything liquid at room temperature: <b>broth</b>, <b>gelatin</b>, and <b>ice cream</b>, which melts.</p><p><b>A sandwich</b>, <b>mashed potatoes</b>, and <b>a banana</b> are solid foods, which aren't recorded as intake, though they contain some water.</p><p><b>Takeaway:</b> Liquid at room temperature counts: broth, gelatin, ice cream, popsicles.</p>"
+    },
+    {
+      "id": "mx4-87",
+      "type": "matrix",
+      "topic": "Intake in mL",
+      "level": 2,
+      "stem": "A nurse is totaling a client's intake and output. For each item, click to specify how the nurse should record it.",
+      "rowHeader": "Item",
+      "columns": [
+        "Intake, full volume",
+        "Intake, half the volume",
+        "Output",
+        "Not recorded"
+      ],
+      "rows": [
+        "Ice chips",
+        "Gelatin",
+        "Vomit",
+        "A slice of toast",
+        "A saline flush through the IV",
+        "Urine"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        2
+      ],
+      "rationale": "<p><b>Ice chips</b> count as <b>half</b> their volume. <b>Gelatin</b> and a <b>saline flush</b> through the IV count in <b>full</b> (the flush toward the total intake). <b>Vomit</b> and <b>urine</b> are <b>output</b>. <b>Toast</b> is solid food, so it isn't recorded.</p><p>Halving the gelatin is a mistake: only ice chips are halved, since they're mostly air spaces. Subtracting the vomit from the intake is a mistake too: it's recorded as output.</p><p><b>Takeaway:</b> Ice chips: half. Liquids, gelatin, flushes: full. Vomit, urine: output. Solids: not recorded.</p>"
+    },
+    {
+      "id": "mx4-88",
+      "type": "mc",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "a": [
+          6,
+          8
+        ],
+        "b": [
+          4,
+          6
+        ],
+        "s": [
+          180,
+          240
+        ]
+      },
+      "stem": "At lunch, a client drank {a} oz of coffee and {b} oz of juice and ate half of a {s}-mL bowl of soup. Which intake should the nurse record?",
+      "options": [
+        "{=(a + b) * 15 + s / 2} mL",
+        "{=(a + b) * 30 + s / 2} mL",
+        "{=(a + b) * 30} mL",
+        "{=(a + b) * 30 + s} mL"
+      ],
+      "answer": 1,
+      "rationale": "<p>Coffee and juice: ({a} + {b}) × 30 = {=(a + b) * 30} mL. Soup: half of {s} = {=s / 2} mL. Total: <b>{=(a + b) * 30 + s / 2} mL</b>.</p><p><b>{=(a + b) * 30 + s} mL</b> counts the whole bowl of soup. <b>{=(a + b) * 15 + s / 2} mL</b> uses 15 mL an ounce, a tablespoon's worth, and <b>{=(a + b) * 30} mL</b> leaves out the soup, which is a liquid and counts.</p><p><b>Takeaway:</b> 1 oz = 30 mL; count only the part eaten.</p>"
+    },
+    {
+      "id": "mx4-89",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 2,
+      "vars": {
+        "n": [
+          2,
+          3,
+          4
+        ],
+        "w": [
+          120,
+          240
+        ]
+      },
+      "stem": "A client drank {n} cups of coffee from 6-oz cups and {w} mL of water. How many milliliters should the nurse record?",
+      "answer": "=n * 6 * 30 + w",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Each cup holds 6 oz × 30 = 180 mL, so {n} cups = {=n * 180} mL. Add the water: <b>{answer} mL</b>.</p><p>Using 240 mL for each cup is a mistake here: 240 mL is a standard 8-oz cup, and these cups hold 6 oz.</p><p><b>Takeaway:</b> Use the container's real size: oz × 30 = mL.</p>"
+    },
+    {
+      "id": "mx4-90",
+      "type": "fill",
+      "topic": "Intake in mL",
+      "level": 3,
+      "vars": {
+        "r": [
+          75,
+          100,
+          125
+        ],
+        "off": [
+          {
+            "value": 1,
+            "text": "1 hour"
+          },
+          {
+            "value": 2,
+            "text": "2 hours"
+          }
+        ]
+      },
+      "stem": "A client's IV ran at {r} mL/hr from 0700 to 1500, except for {off} while the client was in radiology. How many milliliters of IV intake should the nurse record?",
+      "answer": "=r * (8 - off)",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>0700 to 1500 is 8 hours; minus the time it was off, it ran {=8 - off} hours: {r} × {=8 - off} = <b>{answer} mL</b>.</p><p>Multiplying the rate by all 8 hours is a mistake: the IV wasn't running while it was off.</p><p><b>Takeaway:</b> IV intake = rate × the hours it actually ran.</p>"
+    },
+    {
+      "id": "mx4-91",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "oz": [
+          8,
+          12
+        ],
+        "part": [
+          {
+            "value": 0.25,
+            "text": "1/4"
+          },
+          {
+            "value": 0.5,
+            "text": "half"
+          },
+          {
+            "value": 0.75,
+            "text": "3/4"
+          }
+        ]
+      },
+      "stem": "A client ate {part} of a {oz}-oz cup of ice chips. How many milliliters of intake should the nurse record?",
+      "answer": "=oz * 30 * part / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>The cup holds {oz} × 30 = {=oz * 30} mL. The client ate {part} of it, {=oz * 30 * part} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Halving the cup and forgetting the part eaten is a mistake: find what was eaten, then halve it.</p><p><b>Takeaway:</b> Ounces to mL, the part eaten, then half for ice.</p>"
+    },
+    {
+      "id": "mx4-92",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "c": [
+          60,
+          90,
+          120
+        ],
+        "h": [
+          3,
+          4,
+          5
+        ]
+      },
+      "stem": "A client in labor eats about {c} mL of ice chips each hour. How many milliliters of intake should the nurse record for {h} hours?",
+      "answer": "=c * h / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{c} × {h} = {=c * h} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Recording the full {=c * h} mL is a mistake: ice chips melt down to about half their volume.</p><p><b>Takeaway:</b> Total the ice chips, then halve them.</p>"
+    },
+    {
+      "id": "mx4-93",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          180,
+          240
+        ],
+        "j": [
+          4,
+          6
+        ],
+        "iv": [
+          400,
+          600
+        ]
+      },
+      "stem": "During a shift, a client ate {c} mL of ice chips and drank {j} oz of juice, and {iv} mL of IV fluid infused. How many milliliters should the nurse record as the client's oral intake?",
+      "answer": "=c / 2 + j * 30",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Oral intake is by mouth only: ice chips {c} ÷ 2 = {=c / 2} mL, and juice {j} × 30 = {=j * 30} mL, for <b>{answer} mL</b>. The IV fluid counts in the total intake, not the oral intake.</p><p>Adding the {iv} mL of IV fluid is a mistake here: it isn't taken by mouth.</p><p><b>Takeaway:</b> Oral intake: halve the ice chips, add the drinks, leave out the IV.</p>"
+    },
+    {
+      "id": "mx4-94",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          200,
+          240
+        ],
+        "r": [
+          50,
+          75,
+          100
+        ]
+      },
+      "stem": "During an 8-hour shift, a client ate {c} mL of ice chips, and an IV infused at {r} mL/hr. Which total intake should the nurse record?",
+      "options": [
+        "{=c / 2 + r} mL",
+        "{=c / 2} mL",
+        "{=c / 2 + r * 8} mL",
+        "{=c + r * 8} mL"
+      ],
+      "answer": 2,
+      "rationale": "<p>Ice chips: {c} ÷ 2 = {=c / 2} mL. IV: {r} × 8 = {=r * 8} mL. Total intake: <b>{=c / 2 + r * 8} mL</b>.</p><p><b>{=c + r * 8} mL</b> counts the ice chips at full volume. <b>{=c / 2 + r} mL</b> counts the IV for only 1 hour, and <b>{=c / 2} mL</b> is the oral intake alone.</p><p><b>Takeaway:</b> Total intake: oral (ice chips halved) plus IV.</p>"
+    },
+    {
+      "id": "mx4-95",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "n": [
+          1,
+          2
+        ],
+        "cup": [
+          120,
+          240
+        ]
+      },
+      "stem": "During a shift, a client ate {n} full cups of ice chips and half of one more. Each cup holds {cup} mL. How many milliliters of intake should the nurse record?",
+      "answer": "=(n + 0.5) * cup / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>{n} cups and a half = {=n + 0.5} cups × {cup} = {=(n + 0.5) * cup} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Halving only the last half cup is a mistake: every cup of ice chips counts as half.</p><p><b>Takeaway:</b> Add up all the ice chips, then halve the total.</p>"
+    },
+    {
+      "id": "mx4-96",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          180,
+          240
+        ],
+        "g": [
+          90,
+          120
+        ]
+      },
+      "stem": "A client ate {c} mL of ice chips, {g} mL of gelatin, and a slice of toast. Which intake should the nurse record?",
+      "options": [
+        "{=c + g} mL",
+        "{=c / 2} mL",
+        "{=c / 2 + g / 2} mL",
+        "{=c / 2 + g} mL"
+      ],
+      "answer": 3,
+      "rationale": "<p>Ice chips count as half: {c} ÷ 2 = {=c / 2} mL. Gelatin is liquid at room temperature, so it counts in full: {g} mL. Toast is solid food. Total: <b>{=c / 2 + g} mL</b>.</p><p><b>{=c / 2 + g / 2} mL</b> halves the gelatin too, but only ice chips are halved. <b>{=c + g} mL</b> counts the ice chips in full, and <b>{=c / 2} mL</b> leaves out the gelatin.</p><p><b>Takeaway:</b> Only ice chips are halved; gelatin counts in full; solids aren't recorded.</p>"
+    },
+    {
+      "id": "mx4-97",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "lim": [
+          1000,
+          1200,
+          1500
+        ],
+        "had": [
+          800,
+          900
+        ]
+      },
+      "stem": "A client has a fluid restriction of {lim} mL a day and has had {had} mL so far today. The client asks for ice chips. How many milliliters of ice chips can the client have and stay within the restriction?",
+      "answer": "=(lim - had) * 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>The client has {lim} − {had} = {=lim - had} mL of fluid left. Ice chips count as half their volume, so the client can have twice that in ice chips: {=lim - had} × 2 = <b>{answer} mL</b>.</p><p>Stopping at {=lim - had} mL is a mistake: that's the fluid left, and ice chips only count as half of it.</p><p><b>Takeaway:</b> Fluid left × 2 = the ice chips allowed.</p>"
+    },
+    {
+      "id": "mx4-98",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 2,
+      "vars": {
+        "n": [
+          2,
+          3,
+          4
+        ]
+      },
+      "stem": "During a shift, a client ate {n} cups of ice chips. Each cup holds 6 oz. Which intake should the nurse record?",
+      "options": [
+        "{=n * 90} mL",
+        "{=n * 180} mL",
+        "{=n * 120} mL",
+        "{=n * 45} mL"
+      ],
+      "answer": 0,
+      "rationale": "<p>Each cup holds 6 × 30 = 180 mL of ice chips, which count as half: 90 mL a cup. {n} cups: <b>{=n * 90} mL</b>.</p><p><b>{=n * 180} mL</b> counts the ice chips at full volume. <b>{=n * 120} mL</b> uses an 8-oz (240-mL) cup, and <b>{=n * 45} mL</b> uses 15 mL an ounce.</p><p><b>Takeaway:</b> Container size × 30, then half for ice.</p>"
+    },
+    {
+      "id": "mx4-99",
+      "type": "mc",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "c": [
+          120,
+          200,
+          240
+        ],
+        "p": [
+          60,
+          90
+        ]
+      },
+      "stem": "A client ate {c} mL of ice chips and a {p}-mL fruit popsicle. Which intake should the nurse record?",
+      "options": [
+        "{=c / 2} mL",
+        "{=c / 2 + p} mL",
+        "{=(c + p) / 2} mL",
+        "{=c + p} mL"
+      ],
+      "answer": 1,
+      "rationale": "<p>Ice chips are half air, so they count as half: {c} ÷ 2 = {=c / 2} mL. A popsicle is frozen liquid with no air spaces, so it counts in full: {p} mL. Total: <b>{=c / 2 + p} mL</b>.</p><p><b>{=(c + p) / 2} mL</b> halves the popsicle too. <b>{=c + p} mL</b> counts the ice chips at full volume, and <b>{=c / 2} mL</b> leaves out the popsicle.</p><p><b>Takeaway:</b> Halve ice chips only; popsicles, ice cream, and gelatin count in full.</p>"
+    },
+    {
+      "id": "mx4-100",
+      "type": "fill",
+      "topic": "Ice chips",
+      "level": 3,
+      "vars": {
+        "oz": [
+          8,
+          12
+        ],
+        "left": [
+          {
+            "value": 0.25,
+            "text": "1/4"
+          },
+          {
+            "value": 0.5,
+            "text": "half"
+          }
+        ]
+      },
+      "stem": "A {oz}-oz cup was filled with ice chips at 0700 and refilled at 1100. By 1500, the client had eaten the first cup and all but {left} of the second. How many milliliters of intake should the nurse record?",
+      "answer": "=(oz + oz * (1 - left)) * 30 / 2",
+      "decimals": 0,
+      "unit": "mL",
+      "round": "to the nearest whole number",
+      "strictZeros": true,
+      "rationale": "<p>Eaten: the first cup ({oz} oz) and {=1 - left} of the second ({=oz * (1 - left)} oz), for {=oz + oz * (1 - left)} oz × 30 = {=(oz + oz * (1 - left)) * 30} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Counting both cups in full is a mistake: part of the second wasn't eaten, and all of it is ice.</p><p><b>Takeaway:</b> Add what was eaten from every cup, convert, then halve.</p>"
     }
   ]
 }
