@@ -147,13 +147,13 @@
       "id": "hcs-10", "type": "sata", "topic": "Levels of prevention and care",
       "stem": "A client who has a family history of heart disease asks the nurse for help staying healthy. Which of the following actions by the nurse reflect the nurse's role in health promotion?",
       "options": [
-        "Helping the client choose a specific, measurable goal that the client values",
         "Setting the client's goals, since the nurse knows the evidence best",
-        "Teaching the client how to track progress toward the goal",
+        "Helping the client choose a specific, measurable goal that the client values",
         "Planning with the client how to change the goal if it isn't working",
-        "Telling the client that a family history means heart disease can't be prevented"
+        "Telling the client that a family history means heart disease can't be prevented",
+        "Teaching the client how to track progress toward the goal"
       ],
-      "answer": [0, 2, 3],
+      "answer": [1, 2, 4],
       "rationale": "<p>The nurse's role in health promotion is to teach clients how to stay healthy, and to make sure they understand the importance of setting health goals and can <b>assess, implement, evaluate, and modify</b> their own goals. <b>Helping the client choose a goal the client values</b>, <b>teaching the client to track progress</b>, and <b>planning how to adjust the goal</b> all do that.</p><p><b>Setting the client's goals for them</b> takes control away from the client; health promotion enables people to increase control over their own health. <b>Saying heart disease can't be prevented</b> is false: family history is a risk factor that can't be changed, but many others, like diet, activity, smoking, and blood pressure, can.</p><p><b>Takeaway:</b> In health promotion, the client owns the goals; the nurse teaches and supports.</p>"
     },
     {
@@ -172,14 +172,14 @@
       "id": "hcs-12", "type": "sata", "topic": "Factors affecting health care delivery",
       "stem": "A nurse is explaining factors that affect the delivery of health care to a nursing student. Which of the following statements should the nurse include?",
       "options": [
-        "“New technology can improve care, but it can also raise its cost.”",
         "“Efforts to contain costs have made hospital stays longer.”",
-        "“Health care in the United States is delivered by one government system.”",
-        "“When services are fragmented, clients need more help coordinating their care.”",
         "“Shortages of nurses affect every part of the country equally.”",
-        "“Natural disasters and disease outbreaks can strain a community's health care resources.”"
+        "“When services are fragmented, clients need more help coordinating their care.”",
+        "“Natural disasters and disease outbreaks can strain a community's health care resources.”",
+        "“New technology can improve care, but it can also raise its cost.”",
+        "“Health care in the United States is delivered by one government system.”"
       ],
-      "answer": [0, 3, 5],
+      "answer": [2, 3, 4],
       "rationale": "<p><b>Technology</b> improves care but adds cost. <b>Fragmented services</b>, with many providers who don't coordinate, increase the need for care coordination such as case management. <b>Disasters and outbreaks</b> strain resources, which is why nurses must know their agency's and community's expectations in a disaster.</p><p><b>Longer hospital stays</b> is backward: cost containment has shortened stays and moved care to outpatient and home settings. <b>One government system</b> is wrong: the U.S. system mixes public and private, for-profit and nonprofit insurers and providers, and most people have private insurance through an employer. <b>Equal shortages everywhere</b> is wrong: shortages are uneven and worst in rural areas.</p><p><b>Takeaway:</b> Know the big drivers of health care delivery: cost, technology, aging and chronic illness, the workforce, fragmentation, and disasters.</p>"
     },
     {
@@ -340,14 +340,14 @@
       "id": "hcs-26", "type": "sata", "topic": "Care delivery and payment models",
       "stem": "A nurse is learning about case management. Which of the following statements about case management are accurate?",
       "options": [
-        "“A case manager leads an interprofessional team that coordinates the client's care.”",
-        "“The case manager may be a nurse, a social worker, or another member of the health care team.”",
-        "“Case management is most needed when a client has many care needs and several providers.”",
-        "“The case manager gives all of the client's direct care during each shift.”",
         "“Case management can cover one hospital stay or follow the client into the community.”",
-        "“Only clients who have private insurance can receive case management.”"
+        "“The case manager may be a nurse, a social worker, or another member of the health care team.”",
+        "“The case manager gives all of the client's direct care during each shift.”",
+        "“Only clients who have private insurance can receive case management.”",
+        "“A case manager leads an interprofessional team that coordinates the client's care.”",
+        "“Case management is most needed when a client has many care needs and several providers.”"
       ],
-      "answer": [0, 1, 2, 4],
+      "answer": [0, 1, 4, 5],
       "rationale": "<p>Case management is a <b>collaborative process</b> in which an interprofessional team, <b>led by a case manager</b>, coordinates care. The case manager <b>may be a nurse, a social worker, or another team member</b>. It's essential when a client has <b>multiple care needs requiring multiple providers</b>, and it may be <b>limited to one hospitalization or follow the client across community settings</b>.</p><p>The case manager coordinates care rather than <b>giving all direct care each shift</b>, which describes total patient care. Case management isn't <b>limited to private insurance</b>: hospitals, Medicare and Medicaid programs, and community agencies all use it.</p><p><b>Takeaway:</b> The case manager is the coordinator for complex needs across providers and settings.</p>"
     },
     {
@@ -356,11 +356,11 @@
       "options": [
         "Refer the client to a social worker to check eligibility for Medicaid or marketplace coverage",
         "Tell the client that the clinic can't provide care without insurance",
+        "Help the client look into a low-cost generic or a manufacturer's assistance program for the inhaler",
         "Give the client information about a community health center with sliding-scale fees",
-        "Advise the client to use the emergency department for routine refills, because it can't refuse care",
-        "Help the client look into a low-cost generic or a manufacturer's assistance program for the inhaler"
+        "Advise the client to use the emergency department for routine refills, because it can't refuse care"
       ],
-      "answer": [0, 2, 4],
+      "answer": [0, 2, 3],
       "rationale": "<p>A nurse can help a client without insurance by <b>referring to a social worker or case manager</b> (the client may qualify for Medicaid or for marketplace coverage under the Affordable Care Act), pointing the client to <b>community health centers with sliding-scale fees</b> and free clinics, and finding <b>lower-cost medications</b> through generics or manufacturer assistance programs.</p><p><b>Refusing care without insurance</b> abandons the client and ignores these resources. <b>Using the emergency department for routine refills</b> is costly and inappropriate: emergency departments must screen and stabilize anyone with an emergency, but they aren't a source of routine care.</p><p><b>Takeaway:</b> No insurance doesn't mean no care: refer, connect the client to sliding-scale clinics, and find affordable medications.</p>"
     },
     {
@@ -406,12 +406,12 @@
       "options": [
         "Offering visits by video or phone",
         "Using a qualified medical interpreter service",
-        "Providing bus passes or a ride service for appointments",
         "Requiring payment in full before each visit",
-        "Writing teaching materials in plain language at a 5th- to 6th-grade reading level",
-        "Charging fees on a sliding scale based on income"
+        "Providing bus passes or a ride service for appointments",
+        "Charging fees on a sliding scale based on income",
+        "Writing teaching materials in plain language at a 5th- to 6th-grade reading level"
       ],
-      "answer": [0, 1, 2, 4, 5],
+      "answer": [0, 1, 3, 4, 5],
       "rationale": "<p>Each correct strategy removes a barrier: <b>video or phone visits</b> (distance and transportation), <b>qualified interpreters</b> (language), <b>bus passes or rides</b> (transportation), <b>plain-language materials at a 5th- to 6th-grade level</b> (health literacy), and <b>sliding-scale fees</b> (cost).</p><p><b>Requiring payment in full before each visit</b> adds a financial barrier, and keeps clients with low incomes away.</p><p><b>Takeaway:</b> Match each strategy to a barrier: distance, transportation, language, literacy, or cost.</p>"
     },
     {
@@ -572,14 +572,14 @@
       "id": "hcs-45", "type": "sata", "topic": "Allocation of resources",
       "stem": "During a shortage of influenza vaccine, a clinic must decide who receives its limited supply first. Which of the following clients should the nurse identify as priorities?",
       "options": [
-        "A 72-year-old client who has heart failure",
-        "A healthy 24-year-old college student",
+        "A healthy 16-year-old athlete",
         "A client who is 28 weeks pregnant",
+        "A 72-year-old client who has heart failure",
         "A resident of a long-term care facility",
-        "A healthy 50-year-old office worker",
-        "A healthy 16-year-old athlete"
+        "A healthy 24-year-old college student",
+        "A healthy 50-year-old office worker"
       ],
-      "answer": [0, 2, 3],
+      "answer": [1, 2, 3],
       "rationale": "<p>When a resource is scarce, it goes first to the people at greatest risk of serious harm, which does the greatest good and reflects justice. <b>Older adults with chronic illness</b>, <b>pregnant clients</b>, and <b>long-term care residents</b> are at high risk of severe influenza and its complications.</p><p><b>The healthy 24-year-old, 50-year-old, and 16-year-old</b> are at lower risk, so they can wait until more vaccine is available.</p><p><b>Takeaway:</b> In a shortage, allocate by risk and benefit, using the same criteria for everyone.</p>"
     },
     {

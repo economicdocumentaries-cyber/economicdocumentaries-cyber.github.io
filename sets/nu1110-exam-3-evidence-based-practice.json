@@ -169,14 +169,14 @@
       "id": "ebp-12", "type": "sata", "topic": "EBP and other concepts",
       "stem": "A nurse manager asks staff why they rarely use research in their practice. Which of the following responses describe barriers to evidence-based practice?",
       "options": [
-        "“I don't have time to look things up during my shift.”",
-        "“I'm not sure how to tell whether a study is any good.”",
+        "“I don't think research applies to real nursing.”",
         "“Our unit has computers with access to nursing databases.”",
-        "“We've always done it this way, and it works.”",
+        "“I don't have time to look things up during my shift.”",
         "“My manager gives us paid time for journal club.”",
-        "“I don't think research applies to real nursing.”"
+        "“We've always done it this way, and it works.”",
+        "“I'm not sure how to tell whether a study is any good.”"
       ],
-      "answer": [0, 1, 3, 5],
+      "answer": [0, 2, 4, 5],
       "rationale": "<p>Barriers to EBP include <b>lack of time and heavy workloads</b>, <b>limited knowledge and skill in evaluating evidence</b>, <b>resistance to change from traditional routines</b>, and <b>misperceptions, or not seeing the value of EBP</b>.</p><p><b>Access to nursing databases</b> and <b>paid time for journal club</b> are supports that help overcome barriers, not barriers.</p><p><b>Takeaway:</b> EBP barriers fall into time, skills, access, support, and attitudes, and each has a matching fix.</p>"
     },
     {
@@ -357,14 +357,14 @@
       "id": "ebp-27", "type": "sata", "topic": "Research methodology",
       "stem": "A nurse is helping recruit clients for a research study on the unit. Which of the following actions protect the participants' rights?",
       "options": [
-        "Explaining that taking part is voluntary",
-        "Telling clients they may leave the study at any time without losing any care",
         "Confirming that an institutional review board (IRB) approved the study",
+        "Telling clients they may leave the study at any time without losing any care",
+        "Keeping each participant's data confidential",
         "Listing participants' names in the unit newsletter to thank them",
-        "Promising participants that the new treatment will work",
-        "Keeping each participant's data confidential"
+        "Explaining that taking part is voluntary",
+        "Promising participants that the new treatment will work"
       ],
-      "answer": [0, 1, 2, 5],
+      "answer": [0, 1, 2, 4],
       "rationale": "<p>Research ethics protect participants through <b>voluntary participation</b>, <b>the right to withdraw at any time</b> without penalty, <b>approval by an institutional review board (IRB)</b>, and <b>confidentiality</b> of their data. These rest on respect for persons, beneficence, and justice.</p><p><b>Publishing participants' names</b> breaks confidentiality. <b>Promising that a treatment will work</b> is dishonest and undermines informed consent; the study exists because the answer isn't known yet.</p><p><b>Takeaway:</b> Participants must be informed, take part voluntarily, be free to withdraw, be in an IRB-approved study, and have their data kept confidential.</p>"
     },
     {
@@ -436,26 +436,26 @@
       "id": "ebp-33", "type": "sata", "topic": "Steps of evidence-based practice",
       "stem": "A nurse is looking for credible evidence about preventing falls in older adults. Which of the following sources should the nurse use?",
       "options": [
-        "The CINAHL database of nursing and health literature",
         "A personal blog about home remedies for preventing falls",
         "The Cochrane Library of systematic reviews",
-        "A video about fall prevention posted by a celebrity on social media",
-        "A clinical practice guideline from a professional organization"
+        "A clinical practice guideline from a professional organization",
+        "The CINAHL database of nursing and health literature",
+        "A video about fall prevention posted by a celebrity on social media"
       ],
-      "answer": [0, 2, 4],
+      "answer": [1, 2, 3],
       "rationale": "<p>Credible sources include databases such as <b>CINAHL</b> (and MEDLINE or PubMed), the <b>Cochrane Library</b> of systematic reviews, and <b>clinical practice guidelines</b> from professional organizations and agencies. Nursing databases may give abstracts or full text, and many offer tutorials.</p><p><b>A personal blog</b> and <b>a celebrity's video</b> aren't peer-reviewed and often aren't based on research. Every source should be judged for credibility.</p><p><b>Takeaway:</b> Acquire evidence from peer-reviewed databases, systematic reviews, and professional guidelines.</p>"
     },
     {
       "id": "ebp-34", "type": "sata", "topic": "Steps of evidence-based practice",
       "stem": "A nurse is reviewing journal articles for an evidence-based practice project. Which of the following should the nurse look for in each article?",
       "options": [
-        "An overview of the study, including how it was done",
-        "The number of times the article was shared online",
         "A conclusion based on the study's results",
+        "The number of times the article was shared online",
+        "Whether the author's opinion matches the nurse's own",
         "Relevant references to other research",
-        "Whether the author's opinion matches the nurse's own"
+        "An overview of the study, including how it was done"
       ],
-      "answer": [0, 2, 3],
+      "answer": [0, 3, 4],
       "rationale": "<p>In a literature review, nurses look for the article's scientific elements: <b>an overview of the study, including its methodology</b>, <b>a written conclusion based on the study's results</b>, and <b>relevant references</b>. These show whether the study can be judged and trusted.</p><p><b>Online shares</b> measure popularity, not quality. <b>Agreeing with the nurse's opinion</b> isn't a standard of evidence; looking only for agreement is bias.</p><p><b>Takeaway:</b> Judge an article by its methods, its results-based conclusion, and its references, not by its popularity or whether you agree with it.</p>"
     },
     {

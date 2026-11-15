@@ -219,6 +219,17 @@ export function onSwipe(el, fn) {
   });
 }
 
+// A page that can keep itself when the address changes under it (the exam, so
+// the back button never leaves it without the student choosing; 2026-11-15).
+// The page router asks keepPage(new address) first; true means the page stays.
+let keeper = null;
+export function setKeeper(fn) {
+  keeper = typeof fn === 'function' ? fn : null;
+}
+export function keepPage(address) {
+  return !!keeper && keeper(address) === true;
+}
+
 // ---------- alert boxes (SPEC 3.4) ----------
 
 const openModals = [];

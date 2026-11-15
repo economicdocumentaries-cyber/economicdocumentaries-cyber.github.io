@@ -89,8 +89,8 @@
       "topic": "Neurons and neuroglia",
       "level": 2,
       "stem": "A nurse is teaching a group of nursing students about the myelin sheath. Which of the following statements are accurate?",
-      "options": ["It speeds up the movement of action potentials along the axon.", "Oligodendrocytes form it in the central nervous system.", "It is a protective layer of fat (lipids) and protein.", "Myelinated fibers make up the gray matter of the brain.", "Schwann cells form it in the peripheral nervous system.", "Damage to it makes nerve signals travel faster."],
-      "answer": [0, 1, 2, 4],
+      "options": ["It is a protective layer of fat (lipids) and protein.", "Oligodendrocytes form it in the central nervous system.", "It speeds up the movement of action potentials along the axon.", "Myelinated fibers make up the gray matter of the brain.", "Damage to it makes nerve signals travel faster.", "Schwann cells form it in the peripheral nervous system."],
+      "answer": [0, 1, 2, 5],
       "rationale": "<p>The myelin sheath is a protective layer of <b>fat and protein</b> wrapped around the axon. Like the insulation on an electrical wire, it <b>speeds up</b> the conduction of action potentials. <b>Oligodendrocytes</b> form myelin in the CNS, and <b>Schwann cells</b> form it in the PNS.</p><p><b>Myelinated fibers make up the white matter</b>, not the gray matter; gray matter is mostly nerve cell bodies and unmyelinated fibers. <b>Damaged myelin slows</b> nerve signals, or stops them altogether, as in multiple sclerosis.</p><p><b>Myelinated fibers in the gray matter</b> isn't the right answer: myelin's fat is what makes white matter white. Gray matter is mostly cell bodies and unmyelinated fibers.</p>"
     },
     {
@@ -462,8 +462,8 @@
       "topic": "Autonomic nervous system",
       "level": 3,
       "stem": "A client is having a strong sympathetic (fight-or-flight) response. Which findings should the nurse expect?",
-      "options": ["Dilated pupils", "Constricted bronchioles", "Increased heart rate", "Increased urine output", "Increased sweating", "Decreased bowel sounds"],
-      "answer": [0, 2, 4, 5],
+      "options": ["Increased urine output", "Dilated pupils", "Constricted bronchioles", "Increased heart rate", "Decreased bowel sounds", "Increased sweating"],
+      "answer": [1, 3, 4, 5],
       "rationale": "<p>The sympathetic response readies the body for action: the <b>pupils dilate</b>, the <b>heart rate</b> and contractility increase, <b>sweat glands</b> secrete more, and <b>digestion slows</b>, so bowel sounds decrease.</p><p>The bronchioles <b>dilate</b>, not constrict, to bring in more air. <b>Urine output decreases</b>, because the detrusor muscle relaxes and the urethral sphincters contract. Constricting the bronchioles and emptying the bladder are parasympathetic effects.</p><p><b>Constricted bronchioles</b> isn't the right answer: fight-or-flight opens the airways to bring in more air; parasympathetic stimulation constricts them. Urine output drops, too.</p>"
     },
     {
@@ -881,8 +881,8 @@
       "topic": "Brain structures",
       "level": 2,
       "stem": "A client has a tumor pressing on the hypothalamus. Which changes should the nurse expect?",
-      "options": ["Unstable body temperature", "Clumsy, poorly coordinated movements", "Changes in thirst and appetite", "Changes in hormone release by the pituitary", "Loss of sensation relayed to the cortex", "A disrupted sleep–wake cycle"],
-      "answer": [0, 2, 3, 5],
+      "options": ["Loss of sensation relayed to the cortex", "Changes in thirst and appetite", "A disrupted sleep–wake cycle", "Unstable body temperature", "Changes in hormone release by the pituitary", "Clumsy, poorly coordinated movements"],
+      "answer": [1, 2, 3, 4],
       "rationale": "<p>The <b>hypothalamus</b> keeps the body's internal balance: it regulates <b>body temperature</b>, <b>thirst and appetite</b>, and <b>sleep–wake rhythms</b>, and it controls the <b>pituitary gland's hormone release</b>. Pressure on it can disturb any of these.</p><p>Loss of <b>sensation relayed to the cortex</b> isn't the right answer: the thalamus sits right next to the hypothalamus, but relaying sensations is the thalamus's job. <b>Clumsy, uncoordinated movement</b> points to the cerebellum.</p><p><b>Takeaway:</b> Hypothalamus: temperature, thirst, appetite, sleep, and the pituitary. Thalamus: the sensory relay. Cerebellum: coordination.</p>"
     },
     {
@@ -923,8 +923,8 @@
       "topic": "Cranial nerves",
       "level": 2,
       "stem": "A nurse is assessing a client's vagus nerve (CN X). Which findings should the nurse expect if the nerve is working normally?",
-      "options": ["The uvula and soft palate rise evenly when the client says “ah.”", "The client shrugs both shoulders against resistance.", "The voice sounds clear, with no hoarseness.", "The client repeats words whispered into each ear.", "The client gags when the back of the throat is touched.", "The tongue stays in the midline when stuck out."],
-      "answer": [0, 2, 4],
+      "options": ["The client repeats words whispered into each ear.", "The client gags when the back of the throat is touched.", "The tongue stays in the midline when stuck out.", "The voice sounds clear, with no hoarseness.", "The client shrugs both shoulders against resistance.", "The uvula and soft palate rise evenly when the client says “ah.”"],
+      "answer": [1, 3, 5],
       "rationale": "<p>The <b>vagus nerve</b> moves the muscles of the soft palate, throat, and voice box, so a working CN X shows as a <b>palate and uvula that rise evenly</b> on “ah,” a <b>clear voice</b>, and a <b>gag reflex</b> (shared with CN IX). It also slows the heart and supports digestion.</p><p><b>The tongue in the midline</b> isn't the right answer: the tongue is in the same area, but it tests the hypoglossal nerve (CN XII). <b>Shrugging the shoulders</b> tests the spinal accessory nerve (CN XI), and <b>hearing whispers</b> tests the vestibulocochlear nerve (CN VIII).</p><p><b>Takeaway:</b> CN X: the palate rises evenly on “ah,” the voice is clear, and the gag reflex works (with CN IX). CN XI: shrug. CN XII: tongue.</p>"
     },
     {

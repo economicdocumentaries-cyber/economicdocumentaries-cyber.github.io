@@ -4,7 +4,7 @@
   "description": "Class 17 practice: values and the ethical principles, codes of ethics and client rights, ethical decision making, the sources of law and the scope of practice, federal and state laws, informed consent and advance directives, torts, negligence, and malpractice, and staffing, delegation, and reducing legal risk.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 159,
+  "timeMinutes": 174,
   "defaultCount": 25,
   "cases": {
     "student": {
@@ -176,8 +176,8 @@
       "topic": "Codes of ethics and client rights",
       "level": 2,
       "stem": "A nurse receives several requests from clients on a medical unit. Which requests should the nurse support?",
-      "options": ["A client asks for an itemized copy of the hospital bill.", "A client asks to be seen by a different provider.", "A client asks the nurse not to tell the provider about a fall in the bathroom.", "A client asks to see a chaplain of the client's own faith.", "A client asks the nurse to leave a refusal of care out of the chart.", "A client asks how to make a formal complaint about the care."],
-      "answer": [0, 1, 3, 5],
+      "options": ["A client asks for an itemized copy of the hospital bill.", "A client asks to see a chaplain of the client's own faith.", "A client asks to be seen by a different provider.", "A client asks the nurse to leave a refusal of care out of the chart.", "A client asks the nurse not to tell the provider about a fall in the bathroom.", "A client asks how to make a formal complaint about the care."],
+      "answer": [0, 1, 2, 5],
       "rationale": "<p>Client rights include <b>accurate billing</b>, <b>choosing their own providers</b>, <b>religious freedom</b>, and <b>voicing complaints and being heard</b>. The nurse helps with each.</p><p>Keeping a <b>fall</b> from the provider isn't the right answer. It sounds like privacy, but confidentiality keeps information from people outside the care team, not from the team: a fall needs assessment, a report, and documentation. A <b>refusal of care</b> is documented too, since the record must be accurate and complete.</p><p><b>Takeaway:</b> Client rights include privacy from outsiders, not secrets from the care team: safety events and refusals are shared with the team and documented.</p>"
     },
     {
@@ -236,8 +236,8 @@
       "topic": "Ethical decision making",
       "level": 3,
       "stem": "A newly licensed nurse asks how to prepare for the ethical problems that come up on the unit. Which strategies should the nurse recommend?",
-      "options": ["Follow the lead of the most experienced nurse on the unit.", "Clarify your own values and how they could affect your care.", "Learn the Code of Ethics and the facility's related policies.", "Set personal values aside, and avoid thinking about them at work.", "Use a step-by-step process, as with the nursing process.", "Ask for an ethics consultation when a case needs one."],
-      "answer": [1, 2, 4, 5],
+      "options": ["Learn the Code of Ethics and the facility's related policies.", "Set personal values aside, and avoid thinking about them at work.", "Ask for an ethics consultation when a case needs one.", "Use a step-by-step process, as with the nursing process.", "Follow the lead of the most experienced nurse on the unit.", "Clarify your own values and how they could affect your care."],
+      "answer": [0, 2, 3, 5],
       "rationale": "<p>Strategies that make ethical decisions better: <b>values clarification</b> (knowing your own values and how they could color your care), knowing the <b>Code of Ethics</b> and the facility's <b>policies</b>, using a <b>step-by-step process</b>, and asking for an <b>ethics consultation</b> when a case needs one.</p><p>Setting values <b>aside</b> isn't the right answer. It sounds neutral, but values can't be switched off: the strategy is to know them, so they don't steer care unnoticed. Following <b>the most experienced nurse</b> replaces the nurse's own reasoning with someone else's.</p><p><b>Takeaway:</b> Better ethical decisions: know your own values, the Code, and the policies, use a step-by-step process, and ask for help (an ethics consultation) when a case needs it.</p>"
     },
     {
@@ -476,8 +476,8 @@
       "topic": "Torts, negligence, and malpractice",
       "level": 2,
       "stem": "A nurse manager is reviewing events on the unit. Which actions by staff could lead to a claim of an intentional or quasi-intentional tort?",
-      "options": ["Applying wrist restraints to a calm client without a prescription", "Charting a client's exact words when the client swore at staff", "Giving a flu shot to a client after the client said no", "Telling other staff that a coworker “is always high,” with no facts", "Holding a client's arm to steady the client, after the client agreed", "Leaving a client's record open on a screen in the hallway"],
-      "answer": [0, 2, 3, 5],
+      "options": ["Holding a client's arm to steady the client, after the client agreed", "Applying wrist restraints to a calm client without a prescription", "Giving a flu shot to a client after the client said no", "Telling other staff that a coworker “is always high,” with no facts", "Charting a client's exact words when the client swore at staff", "Leaving a client's record open on a screen in the hallway"],
+      "answer": [1, 2, 3, 5],
       "rationale": "<p>Restraints without a prescription are <b>false imprisonment</b>, a shot the client refused is <b>battery</b>, a damaging spoken claim with no facts is <b>slander</b> (defamation), and leaving a record open is <b>invasion of privacy</b>.</p><p>Charting the client's <b>exact words</b> isn't the right answer: swearing sounds harmful to put in a record, but quoting what a client said is objective documentation, not defamation. Touching a client <b>who agreed</b> isn't battery: battery is touching without consent.</p><p><b>Takeaway:</b> Intentional torts: assault, battery, false imprisonment. Quasi-intentional: invasion of privacy and defamation (slander spoken, libel written). Consent and objective facts are the defenses.</p>"
     },
     {
@@ -660,16 +660,16 @@
       "level": 2,
       "stem": "Which actions should the nurse take to support the client's wish to stop chemotherapy and go home with hospice?",
       "options": [
-        "Make sure the client's wishes are recorded in an advance directive",
-        "Ask the client to reconsider the chemotherapy for his son's sake",
         "Tell the provider that the client wants to stop chemotherapy",
         "Offer a family meeting with the care team, if the client wants one",
-        "Wait until the son agrees before telling the provider about the plan"
+        "Wait until the son agrees before telling the provider about the plan",
+        "Ask the client to reconsider the chemotherapy for his son's sake",
+        "Make sure the client's wishes are recorded in an advance directive"
       ],
       "answer": [
         0,
-        2,
-        3
+        1,
+        4
       ],
       "case": "hospice",
       "rationale": "<p>The nurse <b>tells the provider</b> what the client wants, makes sure his wishes are <b>recorded in an advance directive</b>, and offers a <b>family meeting</b> to help the son understand, if the client wants it.</p><p><b>Waiting for the son</b> and <b>asking the client to reconsider</b> for his son put the family's wishes ahead of a competent client's choice.</p><p><b>Takeaway:</b> Advocate for the client's choice; help the family understand it, without letting them override it.</p>"
@@ -801,15 +801,15 @@
       "level": 2,
       "stem": "Which actions by the nurse show respect for a client's autonomy?",
       "options": [
-        "Explaining the options so the client can choose",
-        "Respecting a competent client's refusal of a treatment",
         "Deciding for the client, since the nurse knows the routine better",
         "Leaving out facts that might change the client's mind",
-        "Asking whether the client wants a bath now or after lunch"
+        "Respecting a competent client's refusal of a treatment",
+        "Asking whether the client wants a bath now or after lunch",
+        "Explaining the options so the client can choose"
       ],
       "answer": [
-        0,
-        1,
+        2,
+        3,
         4
       ],
       "rationale": "<p><b>Autonomy</b> shows in <b>offering choices</b>, giving the <b>information</b> needed to choose, and <b>respecting a competent client's refusal</b>.</p><p><b>Deciding for the client</b> and <b>holding back facts</b> to steer the choice both override the client's right to decide.</p><p><b>Takeaway:</b> Choices, information, and respect for a refusal: autonomy.</p>"
@@ -896,16 +896,16 @@
       "level": 2,
       "stem": "A nurse is reviewing the Code of Ethics for Nurses. Which concepts does it include?",
       "options": [
-        "Obedience to the provider without question",
-        "Confidentiality",
         "Responsibility",
+        "Confidentiality",
+        "Obedience to the provider without question",
         "Advocacy",
         "Loyalty to the employer over the client",
         "Accountability"
       ],
       "answer": [
+        0,
         1,
-        2,
         3,
         5
       ],
@@ -1438,6 +1438,218 @@
       ],
       "answer": 0,
       "rationale": "<p>Clients have the <b>right to express complaints and be heard</b>. The nurse supports that right and helps the client reach the <b>patient advocate</b> (or the facility's complaint process).</p><p>Suggesting that speaking up could <b>affect care</b> is intimidating and untrue, <b>keeping it quiet</b> blocks the client's right, and a <b>lawyer</b> isn't needed to complain.</p><p><b>Takeaway:</b> Clients may complain and be heard; help them do it.</p>"
+    },
+    {
+      "id": "el-111",
+      "type": "sata",
+      "topic": "Informed consent and advance directives",
+      "level": 3,
+      "stem": "A nurse is about to witness a client's signature on a surgical consent form. Which findings should the nurse report to the surgeon before the client signs?",
+      "options": [
+        "The client received IV morphine for pain 20 minutes ago",
+        "The client's daughter asks to read the form before it's signed",
+        "The client asks, “What exactly are they going to remove?”",
+        "The client says no one mentioned any other treatment choices",
+        "The client is nervous but describes the surgery and its risks",
+        "The client is 84 years old and lives alone"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "<p>A client who just had an <b>opioid</b> may not be able to give consent, a client who <b>can't say what the procedure is</b> hasn't been informed, and consent includes the <b>alternatives</b>. The surgeon explains; the nurse <b>holds the signing</b> and tells the surgeon.</p><p><b>Age</b> alone doesn't affect the ability to decide, <b>nervousness</b> is expected in a client who understands the surgery, and a <b>daughter reading the form</b> doesn't change the client's consent.</p><p><b>Takeaway:</b> The nurse witnesses and checks understanding; the provider explains.</p>"
+    },
+    {
+      "id": "el-112",
+      "type": "sata",
+      "topic": "Informed consent and advance directives",
+      "level": 2,
+      "stem": "A client is admitted to a hospital that takes Medicare. Under the Patient Self-Determination Act, which actions should the nurse take?",
+      "options": [
+        "Record in the chart whether the client has an advance directive",
+        "Wait to bring up advance directives until the client is seriously ill",
+        "Tell the client an advance directive is needed before admission",
+        "Ask the client's family to write an advance directive for the client",
+        "Give the client written information about the right to make care decisions",
+        "Ask whether the client has an advance directive"
+      ],
+      "answer": [
+        0,
+        4,
+        5
+      ],
+      "rationale": "<p>The Patient Self-Determination Act requires facilities that take Medicare or Medicaid to <b>give written information</b> about clients' rights to make care decisions, refuse treatment, and make an advance directive, to <b>ask</b> whether the client has one, and to <b>record</b> the answer.</p><p>An advance directive is <b>voluntary</b>, and care can't depend on having one. Only the client can make it, and asking on admission, while the client can decide, is the point.</p><p><b>Takeaway:</b> PSDA: inform, ask, and record; never require.</p>"
+    },
+    {
+      "id": "el-113",
+      "type": "sata",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "A woman in active labor and a man with chest pain arrive at a private hospital's emergency department. Neither has insurance. Under EMTALA, which actions should the nurse expect the hospital to take?",
+      "options": [
+        "Discharge to a free clinic after triage, since neither can pay",
+        "Care to stabilize each client's condition before any transfer",
+        "A medical screening exam for each client, regardless of ability to pay",
+        "Transfer to the public hospital once the lack of insurance is confirmed",
+        "A transfer, if needed, only to a hospital that agrees to accept the client",
+        "Insurance and payment questions before the screening exam"
+      ],
+      "answer": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "<p>EMTALA requires every emergency department to give anyone who comes in a <b>medical screening exam</b> and <b>stabilizing care</b>, including a woman in labor, whether or not they can pay. A transfer needs a <b>receiving hospital that agrees</b>.</p><p>Payment questions can't delay the screening exam, and neither client can be transferred or sent away because they can't pay.</p><p><b>Takeaway:</b> EMTALA: screen, stabilize, then transfer safely, whatever the client can pay.</p>"
+    },
+    {
+      "id": "el-114",
+      "type": "sata",
+      "topic": "Federal and state laws",
+      "level": 2,
+      "stem": "A nurse educator is reviewing the HITECH Act with new nurses. Which statements should the educator include?",
+      "options": [
+        "“It protects people with disabilities from discrimination.”",
+        "“It promoted the use of electronic health records.”",
+        "“It requires telling clients when their health information is breached.”",
+        "“It requires emergency screening for anyone who comes in.”",
+        "“It first gave clients the right to see their own records.”",
+        "“It strengthened HIPAA's privacy rules for electronic records.”"
+      ],
+      "answer": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "<p>The HITECH Act came after HIPAA: it <b>promoted electronic health records</b> and <b>strengthened HIPAA's rules</b> for them, including <b>telling clients about breaches</b>.</p><p>The right to see one's own records comes from <b>HIPAA</b>, emergency screening from <b>EMTALA</b>, and disability rights from the <b>ADA</b>.</p><p><b>Takeaway:</b> HIPAA = privacy; HITECH = electronic records and breaches.</p>"
+    },
+    {
+      "id": "el-115",
+      "type": "sata",
+      "topic": "Sources of law and scope of practice",
+      "level": 2,
+      "stem": "A nurse is moving from Ohio to New Hampshire. Which should the nurse check in New Hampshire's nurse practice act?",
+      "options": [
+        "The scope of practice for registered nurses in the state",
+        "The new hospital's practice of floating nurses between units",
+        "The requirements for getting and keeping a license",
+        "What can lead to discipline by the board of nursing",
+        "The nine provisions of the ANA Code of Ethics",
+        "The federal rules for protecting health information"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "<p>Each state's <b>nurse practice act</b> defines nursing and its <b>scope of practice</b> there, sets <b>licensure</b> requirements, and creates the board of nursing, with what can lead to <b>discipline</b>. Its purpose is to protect the public.</p><p>The ANA Code of Ethics applies to nurses everywhere and is ethics, not state law. Health information privacy is <b>federal</b> (HIPAA), and floating between units is a <b>hospital policy</b>.</p><p><b>Takeaway:</b> Nurse practice act: the state's scope, licenses, and board.</p>"
+    },
+    {
+      "id": "el-116",
+      "type": "sata",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 2,
+      "stem": "A nurse is reviewing a malpractice claim filed after a client's fall. Which elements should the nurse identify as needed for the claim to succeed?",
+      "options": [
+        "The injury was caused by the nurse's failure",
+        "The client was injured",
+        "The nurse meant to cause the client harm",
+        "The nurse had a duty to care for the client",
+        "The client was unhappy with how the nurse spoke to them",
+        "The care fell below what a reasonably prudent nurse would do"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "rationale": "<p>Malpractice needs all four elements: a <b>duty</b>, a <b>breach</b> of the standard of care (what a reasonably prudent nurse would do), <b>harm</b>, and the breach <b>causing</b> the harm.</p><p><b>Intent</b> to harm belongs to intentional torts like battery, not malpractice, and a client's displeasure isn't harm.</p><p><b>Takeaway:</b> Malpractice: duty, breach, harm, and cause.</p>"
+    },
+    {
+      "id": "el-117",
+      "type": "sata",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A charge nurse is making assignments and deciding which clients get the unit's two bariatric beds. Which actions should the charge nurse take to act on the principle of justice?",
+      "options": [
+        "Assign clients by how much care they need, not by insurance",
+        "Tell a client the truth about a delayed test result",
+        "Give a client who is in police custody the same care as others",
+        "Offer a client a choice of bath time",
+        "Give the beds to the clients who need them most",
+        "Keep the promise to bring a client's pain medicine in 15 minutes"
+      ],
+      "answer": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "<p><b>Justice</b> is fairness: care and resources shared by <b>need</b>, and the same care for each client, whatever their <b>insurance</b> or <b>circumstances</b>.</p><p>Keeping a promise is <b>fidelity</b>, telling the truth is <b>veracity</b>, and offering a choice is <b>autonomy</b>: all good care, but not justice.</p><p><b>Takeaway:</b> Justice: a fair share, by need.</p>"
+    },
+    {
+      "id": "el-118",
+      "type": "sata",
+      "topic": "Codes of ethics and client rights",
+      "level": 2,
+      "stem": "A nurse is orienting a newly admitted client to the unit. Which rights should the nurse tell the client about?",
+      "options": [
+        "To choose which nurse is assigned to them each shift",
+        "To have their health information kept private",
+        "To receive any test or treatment they ask for",
+        "To refuse a treatment, even one the provider recommends",
+        "To know about their condition and their treatments",
+        "To voice a concern about their care and have it heard"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p>Clients have the right to <b>know their condition and treatments</b>, to make their own decisions, including <b>refusing treatment</b>, to <b>privacy</b> of their information, and to <b>express concerns and be heard</b>.</p><p>Clients may choose their doctors, but not a nurse each shift, and the right to decide is the right to accept or refuse, not to receive any treatment they ask for.</p><p><b>Takeaway:</b> Client rights: information, decisions, privacy, respect, and a voice.</p>"
+    },
+    {
+      "id": "el-119",
+      "type": "sata",
+      "topic": "Codes of ethics and client rights",
+      "level": 2,
+      "stem": "A nurse wants to act on provision 3 of the Code of Ethics, advocating for clients. Which actions should the nurse take?",
+      "options": [
+        "Make sure a client's wishes are heard at the care conference",
+        "Close the curtain and lower voices when discussing a client's care",
+        "Keep quiet about a safety concern to avoid conflict with the team",
+        "Give an order the nurse believes is unsafe, since the provider wrote it",
+        "Make the decision a client is struggling with, to spare them stress",
+        "Report a coworker who seems impaired on duty"
+      ],
+      "answer": [
+        0,
+        1,
+        5
+      ],
+      "rationale": "<p>Provision 3 of the Code: the nurse <b>advocates for and protects</b> the client's rights, health, and safety, like <b>guarding privacy</b>, <b>speaking up about unsafe or impaired practice</b>, and making sure the <b>client's voice</b> is heard.</p><p>Deciding for a client takes away their autonomy, and an order the nurse believes is unsafe is questioned, not given. Staying quiet about a safety concern leaves the client unprotected.</p><p><b>Takeaway:</b> Advocacy: protect the client's rights, voice, and safety.</p>"
+    },
+    {
+      "id": "el-120",
+      "type": "sata",
+      "topic": "Ethical decision making",
+      "level": 3,
+      "stem": "A nurse is preparing for a care conference about a client with diabetes who still eats sweets daily. Which statements in the nurse's notes should the nurse identify as facts?",
+      "options": [
+        "“He thinks family meals matter more than his diet plan.”",
+        "“He isn't trying to get better.”",
+        "“His A1C this morning was 9.6%.”",
+        "“He ate two pieces of cake at lunch today.”",
+        "“He has missed three of his last four clinic visits.”",
+        "“He'd do better if his wife cooked for him.”"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Facts</b> can be checked and shown true: a lab result, what he ate, and missed visits. Telling them apart from <b>opinions</b> and <b>values</b> is the first step of values clarification.</p><p>“Isn't trying” and what would help him are one person's <b>opinions</b>, and what matters more to him is a <b>value</b>. Knowing which is which keeps the nurse's own values from steering his care.</p><p><b>Takeaway:</b> Values clarification: fact, opinion, or value?</p>"
     }
   ]
 }

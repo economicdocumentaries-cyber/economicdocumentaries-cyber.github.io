@@ -2,7 +2,7 @@
 // pause, calculator, Continue, alerts, full screen, saved progress, the
 // case-study layout, practice feedback, going back and flagging, saving
 // questions (SPEC 11.7), and review mode.
-import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, onSwipe } from './util.js';
+import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, onSwipe, setKeeper } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
@@ -965,7 +965,7 @@ export function examView(root) {
   const progress = h('span');
   // Clicking Save (either one) repaints the bar's icon after the button's own handler.
   saver?.el.addEventListener('click', () => mSave.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed')));
-  const sheetShade = h('div.sheet-shade', { 'aria-hidden': 'true', onclick: () => openSheet(false) });
+  const sheetShade = h('div.sheet-shade', { 'aria-hidden': 'true', onclick: () => foldSheet() });
 
   const page = h('div.page.exam.taking', { 'data-text-size': s.textSize ?? 'standard' },
     siteHeader({ title: st.title, onClose: () => confirmLeave(), link: false }),
@@ -1085,21 +1085,26 @@ export function examView(root) {
   }
 
   // The answer and rationale slide up as a sheet over the question. Its grip
-  // (a tap, or a swipe down or up) folds it to one line, to see the question
-  // again, and opens it again; so does tapping the folded sheet or the shade.
+  // (a tap, or a swipe up) opens it again once folded; so does tapping the
+  // folded sheet. A swipe down anywhere on the open sheet folds it to one line,
+  // following the finger (the owner's request, 2026-11-15), and so does a tap
+  // on the grip or the shade. A swipe that starts while a long rationale is
+  // scrolled down only scrolls it; at the top, the next swipe down folds it.
   let sheet = null;
   function rationaleSheet(feedback) {
     const grip = h('button.sheet-grip', {
-      type: 'button', 'aria-label': 'Rationale', onclick: () => openSheet(feedback.classList.contains('is-folded')),
+      type: 'button', 'aria-label': 'Rationale', onclick: () => (feedback.classList.contains('is-folded') ? openSheet(true) : foldSheet()),
     }, h('span', { 'aria-hidden': 'true' }));
     onSwipe(grip, (way, e) => {
       if (way !== 'up' && way !== 'down') return;
       e.preventDefault(); // no click after the swipe
-      openSheet(way === 'up');
+      if (way === 'up') openSheet(true);
+      else foldSheet(); // usually already folding: the drag below handles a swipe down anywhere
     });
     feedback.addEventListener('click', e => {
       if (feedback.classList.contains('is-folded') && !e.target.closest('button, a')) openSheet(true);
     });
+    dragToFold(feedback);
     feedback.prepend(grip);
     return feedback;
   }
@@ -1109,6 +1114,92 @@ export function examView(root) {
     if (!sheet) return;
     sheet.classList.toggle('is-folded', !open);
     sheet.querySelector('.sheet-grip').setAttribute('aria-expanded', String(open));
+  }
+
+  const sheetIsOpen = () => !!sheet && page.classList.contains('sheet-open') && !sheet.classList.contains('is-folded');
+  const smooth = () => phone.matches && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Folds the open sheet: on phones it slides down until only its top line
+  // shows (the shade fading), then the rest of it hides.
+  function foldSheet() {
+    const el = sheet;
+    if (!el || el.classList.contains('is-folded') || el.dataset.folding) return;
+    if (!smooth()) {
+      el.style.transition = el.style.transform = sheetShade.style.opacity = '';
+      openSheet(false);
+      return;
+    }
+    el.classList.add('is-folded'); // its folded height, measured before anything is drawn
+    const folded = el.offsetHeight;
+    el.classList.remove('is-folded');
+    el.style.transition = 'transform .24s cubic-bezier(.3, .7, .4, 1)';
+    el.style.transform = `translateY(${Math.max(0, el.offsetHeight - folded)}px)`;
+    sheetShade.style.transition = 'opacity .24s';
+    sheetShade.style.opacity = '0';
+    el.dataset.folding = '1';
+    let done = false;
+    const end = () => {
+      if (done) return;
+      done = true;
+      delete el.dataset.folding;
+      el.style.transition = 'none';
+      el.style.transform = sheetShade.style.transition = sheetShade.style.opacity = '';
+      if (el === sheet) openSheet(false);
+      void el.offsetHeight; // the reset takes effect before the transition comes back
+      el.style.transition = '';
+    };
+    el.addEventListener('transitionend', end, { once: true });
+    setTimeout(end, 320);
+  }
+
+  // A swipe down on the open sheet moves it with the finger; let go past a
+  // quarter of its height (or 120 px), or with a quick flick, and it folds;
+  // otherwise it springs back. Only a swipe that starts with the sheet scrolled
+  // to its top moves it.
+  function dragToFold(el) {
+    let start = null;
+    let dy = 0;
+    let dragging = false;
+    el.addEventListener('touchstart', e => {
+      start = phone.matches && e.touches.length === 1 && !el.classList.contains('is-folded') && el.scrollTop <= 0
+        ? { x: e.touches[0].clientX, y: e.touches[0].clientY, t: performance.now() } : null;
+      dy = 0;
+      dragging = false;
+    }, { passive: true });
+    el.addEventListener('touchmove', e => {
+      if (!start) return;
+      const t = e.touches[0];
+      dy = t.clientY - start.y;
+      if (!dragging) {
+        if (Math.abs(dy) < 8 && Math.abs(t.clientX - start.x) < 8) return;
+        if (dy <= 0 || Math.abs(t.clientX - start.x) > dy) {
+          start = null; // scrolling the rationale, or a sideways swipe
+          return;
+        }
+        dragging = true;
+        el.style.transition = 'none';
+      }
+      e.preventDefault();
+      el.style.transform = `translateY(${Math.max(0, dy)}px)`;
+      sheetShade.style.opacity = String(Math.max(0, 1 - dy / Math.max(1, el.offsetHeight)));
+    }, { passive: false });
+    const end = e => {
+      if (!start) return;
+      const fast = dy / Math.max(1, performance.now() - start.t) > 0.5;
+      start = null;
+      if (!dragging) return;
+      dragging = false;
+      if (e.cancelable) e.preventDefault(); // no click after the swipe
+      if (dy > Math.min(120, el.offsetHeight / 4) || (fast && dy > 30)) {
+        foldSheet();
+        return;
+      }
+      el.style.transition = smooth() ? 'transform .18s ease-out' : '';
+      el.style.transform = sheetShade.style.opacity = '';
+      el.addEventListener('transitionend', () => { el.style.transition = ''; }, { once: true });
+    };
+    el.addEventListener('touchend', end);
+    el.addEventListener('touchcancel', end);
   }
 
   // The question chip: every question in a grid (answered, flagged, still to
@@ -1265,10 +1356,14 @@ export function examView(root) {
   }
 
   // Stay, Leave exam (saved for later), or, once a question is answered,
-  // Finish and see results for the questions answered so far.
+  // Finish and see results for the questions answered so far. On phones it
+  // slides up from the bottom, with big buttons near the thumb.
   async function confirmLeave() {
+    if (document.querySelector('.modal.leave-question')) return; // already asking
     const answered = st.questions.filter(q => isAnswered(q, st.responses[q.id])).length;
     const choice = await modal({
+      sheet: phone.matches,
+      kind: 'leave-question',
       title: 'Leave this exam?',
       message: `Your progress is saved and you can resume from the homepage.${timed ? ' The timer keeps running while you are away.' : ''}`
         + (answered ? ` Or finish now and see your results for the ${answered === 1 ? 'question' : `${answered} questions`} you've answered.` : ''),
@@ -1440,6 +1535,59 @@ export function examView(root) {
     e.returnValue = '';
   };
 
+  // The back button (a phone's, or the browser's; the owner's request,
+  // 2026-11-15): it closes an open alert or list, folds an open rationale, and
+  // otherwise asks before leaving (Stay, Leave exam, Finish and see results),
+  // instead of going straight back to the start page. History entries with
+  // this page's address catch it: one for the exam, added at the first tap,
+  // and one while an alert or the rationale is open. They're added only right
+  // after a tap, since Chrome's back button skips entries a page adds without one.
+  const examAddress = location.hash;
+  const guarding = () => !finished && !leaving && location.hash === examAddress;
+  const onTapGuard = e => {
+    if (!e.isTrusted || !guarding()) return;
+    if (!history.state?.peGuard) history.pushState({ peGuard: 'exam' }, '');
+    const layer = document.querySelector('.modal-backdrop') ? 'modal' : sheetIsOpen() ? 'sheet' : null;
+    if (layer && history.state?.peGuard !== layer) history.pushState({ peGuard: layer }, '');
+  };
+  // An alert closes the way its Close button does; one without it (Exam
+  // Paused, the full screen alert) stays until its own button is used.
+  let restoring = false; // putting the exam's address back after a Back that went past those entries
+  const onBack = () => {
+    const top = [...document.querySelectorAll('.modal-backdrop')].at(-1);
+    if (top) top.querySelector('.modal-head .close-btn')?.click();
+    else if (sheetIsOpen()) foldSheet();
+    else confirmLeave();
+  };
+  // After a Back, the entry is put back (browsers other than Chrome keep it;
+  // Chrome's back button skips it, and the router check below takes over).
+  const onPopState = () => {
+    if (restoring || !guarding()) return;
+    onBack();
+    if (!history.state?.peGuard && guarding()) history.pushState({ peGuard: 'exam' }, '');
+  };
+  // When Back goes past those entries (Chrome skips some, or none were added
+  // yet), the page router asks first: the exam stays, its address goes back in
+  // place of the page before it (no new entry), and Back does what it does above.
+  // Only a step back counts (Chrome's navigation.currentEntry tells), so typing
+  // another address or following a link still leaves, as before.
+  let examIndex = window.navigation?.currentEntry?.index ?? null;
+  const keeper = address => {
+    if (finished || leaving) return false;
+    if (address === examAddress) {
+      const was = restoring;
+      restoring = false;
+      return was;
+    }
+    const index = window.navigation?.currentEntry?.index;
+    if (examIndex === null || !Number.isInteger(index) || index >= examIndex) return false;
+    restoring = true;
+    location.replace(examAddress);
+    examIndex = window.navigation.currentEntry?.index ?? index;
+    onBack();
+    return true;
+  };
+
   // --- start up ---
   if (st.onGrid && canGoBack) showGrid(false);
   else showQuestion(false);
@@ -1448,6 +1596,9 @@ export function examView(root) {
   document.addEventListener('fullscreenchange', onFullscreenChange);
   document.addEventListener('visibilitychange', tick);
   document.addEventListener('pointerdown', onPointerDown);
+  document.addEventListener('click', onTapGuard);
+  addEventListener('popstate', onPopState);
+  setKeeper(keeper);
   addEventListener('beforeunload', onBeforeUnload);
 
   // Catch up on time that passed while the student was away.
@@ -1472,6 +1623,9 @@ export function examView(root) {
     document.removeEventListener('fullscreenchange', onFullscreenChange);
     document.removeEventListener('visibilitychange', tick);
     document.removeEventListener('pointerdown', onPointerDown);
+    document.removeEventListener('click', onTapGuard);
+    removeEventListener('popstate', onPopState);
+    setKeeper(null);
     removeEventListener('beforeunload', onBeforeUnload);
     leaving = true;
     closeModals();

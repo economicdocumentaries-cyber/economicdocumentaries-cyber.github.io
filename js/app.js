@@ -2,7 +2,7 @@
 // with its class tabs, setup, results, and saved questions. Group study's pages are in
 // group.js. Routes use #/ links because GitHub Pages has no server-side routing.
 import { SITE_NAME } from './config.js';
-import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone, homeSkeleton, heartbeat } from './util.js';
+import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone, homeSkeleton, heartbeat, keepPage } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
 import { loadSets, nextExam, sameExam } from './sets.js';
 import {
@@ -1258,6 +1258,7 @@ let cleanup = null;
 let routeCount = 0;
 
 async function route() {
+  if (keepPage(location.hash)) return; // an unfinished exam that the back button tried to leave (it asks first)
   if (typeof cleanup === 'function') cleanup();
   cleanup = null;
   const id = ++routeCount;

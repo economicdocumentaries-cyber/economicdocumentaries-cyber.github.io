@@ -91,13 +91,13 @@
       "id": "hp-06", "type": "sata", "topic": "Health policy as an entity and a process",
       "stem": "Which of the following have the force of law?",
       "options": [
-        "A presidential executive order",
-        "A hospital's visitor policy",
-        "A court's interpretation of a law",
         "A nursing unit's break schedule",
-        "A presidential veto of a bill"
+        "A court's interpretation of a law",
+        "A hospital's visitor policy",
+        "A presidential veto of a bill",
+        "A presidential executive order"
       ],
-      "answer": [0, 2, 4],
+      "answer": [1, 3, 4],
       "rationale": "<p>Public health policy is usually first established in law, passed by Congress or a state legislature and signed by the president or a governor. <b>Presidential vetoes</b>, <b>executive orders</b>, and <b>judicial interpretations of law</b> also have the force of law.</p><p><b>A hospital's visitor policy</b> and <b>a unit's break schedule</b> are organizational rules: they apply inside that organization, but they aren't law.</p><p><b>Takeaway:</b> Laws, vetoes, executive orders, and court interpretations carry legal force; organizational policies don't.</p>"
     },
     {
@@ -141,14 +141,14 @@
       "id": "hp-10", "type": "sata", "topic": "Developing health policy",
       "stem": "A nurse wants to influence a proposed state health law. Which of the following actions should the nurse take?",
       "options": [
-        "Testify at a legislative hearing about what the nurse sees in practice",
-        "Stay silent about the bill, so as not to seem too political",
-        "Contact legislators by letter, email, or a meeting",
         "Work through a professional association that lobbies on the issue",
+        "Stay silent about the bill, so as not to seem too political",
         "Comment on the proposed regulations when they're open for public comment",
-        "Wait until the law passes, and then complain about it on social media"
+        "Testify at a legislative hearing about what the nurse sees in practice",
+        "Wait until the law passes, and then complain about it on social media",
+        "Contact legislators by letter, email, or a meeting"
       ],
-      "answer": [0, 2, 3, 4],
+      "answer": [0, 2, 3, 5],
       "rationale": "<p>Nurses influence policy by <b>testifying</b> as experts, <b>contacting legislators</b>, <b>working through professional associations</b> that lobby, and <b>commenting on proposed regulations</b>. Voting, staying informed, and serving on boards and committees help too.</p><p><b>Staying silent</b> leaves the nurse's expertise out of the decision. <b>Complaining after the law passes</b> misses the chance to shape it.</p><p><b>Takeaway:</b> Speak up early, through the channels that reach decision-makers.</p>"
     },
     {
@@ -191,14 +191,14 @@
       "id": "hp-14", "type": "sata", "topic": "Health policy and other concepts",
       "stem": "A nurse is explaining how the Affordable Care Act changed health coverage. Which of the following changes came from the ACA?",
       "options": [
-        "Insurers can no longer deny coverage because of pre-existing conditions",
-        "Medicare was replaced by private insurance for adults over 65",
-        "States could expand Medicaid to cover more adults with low incomes",
         "Health insurance marketplaces were created",
+        "Insurers can no longer deny coverage because of pre-existing conditions",
+        "Many preventive services are covered without cost-sharing",
         "All hospitals became government-owned and government-run",
-        "Many preventive services are covered without cost-sharing"
+        "States could expand Medicaid to cover more adults with low incomes",
+        "Medicare was replaced by private insurance for adults over 65"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [0, 1, 2, 4],
       "rationale": "<p>The ACA <b>banned denials for pre-existing conditions</b>, let states <b>expand Medicaid</b>, created <b>insurance marketplaces</b>, and requires coverage of many <b>preventive services without cost-sharing</b>. It also tied more payment to quality and value. By expanding access, it aimed for better outcomes and more emphasis on prevention.</p><p>Medicare <b>still exists</b> alongside private plans, and the ACA didn't make hospitals <b>government-owned</b>.</p><p><b>Takeaway:</b> The ACA expanded access and protections; it didn't replace Medicare or take over hospitals.</p>"
     },
     {
@@ -478,14 +478,14 @@
       "id": "hp-37", "type": "sata", "topic": "Accrediting organizations",
       "stem": "Which of the following types of organizations does The Joint Commission accredit?",
       "options": [
-        "Hospitals",
         "Schools of nursing",
+        "Hospitals",
+        "Ambulatory care centers",
         "Long-term care facilities",
-        "Behavioral health care providers",
         "Individual nurses",
-        "Ambulatory care centers"
+        "Behavioral health care providers"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [1, 2, 3, 5],
       "rationale": "<p>The Joint Commission sets standards for and accredits health care provider organizations, including <b>hospitals</b>, <b>long-term care facilities</b>, <b>behavioral health care providers</b>, and <b>ambulatory care centers</b>.</p><p><b>Schools of nursing</b> are accredited by nursing education accreditors such as CCNE, ACEN, and the NLN's CNEA. <b>Individual nurses</b> are licensed by the state, and may be certified in a specialty; they aren't accredited.</p><p><b>Takeaway:</b> The Joint Commission accredits health care organizations, not schools or individuals.</p>"
     },
     {
@@ -606,14 +606,14 @@
       "id": "hp-47", "type": "sata", "case": "scooter", "topic": "Developing health policy",
       "stem": "Before the first draft of the bill is written, which of the following should be determined?",
       "options": [
+        "Which stakeholders support or oppose the policy",
+        "The scientific evidence and successful similar models",
+        "The policy's cost-benefit ratio",
         "Which population will benefit from the policy",
         "Which nurse will get credit for the idea",
-        "The policy's cost-benefit ratio",
-        "Which stakeholders support or oppose the policy",
-        "Whether scooter companies will be allowed to write the regulations",
-        "The scientific evidence and successful similar models"
+        "Whether scooter companies will be allowed to write the regulations"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [0, 1, 2, 3],
       "rationale": "<p>Before a bill is drafted, its supporters determine <b>the population that will benefit</b> (riders under 18), <b>the cost-benefit ratio</b>, <b>the stakeholders and their support</b>, and <b>the scientific evidence and successful similar models</b>, such as helmet laws for young bicycle riders.</p><p><b>Credit for the idea</b> doesn't belong in policy planning. And regulations are written by the government agency assigned to carry out the law, not by <b>the companies being regulated</b>.</p><p><b>Takeaway:</b> Before drafting, know who benefits, what it costs, who's for or against it, and what the evidence shows.</p>"
     },
     {
@@ -780,14 +780,14 @@
       "id": "hp-61", "type": "sata", "topic": "Health policy as an entity and a process",
       "stem": "A nurse is teaching staff about protected health information (PHI). Which of the following, when linked to a client's health information, are PHI?",
       "options": [
-        "The client's name",
-        "The unit's nurse-to-client ratio",
-        "The client's date of birth",
-        "The client's medical record number",
         "The generic name of a medication",
+        "The unit's nurse-to-client ratio",
+        "The client's medical record number",
+        "The client's date of birth",
+        "The client's name",
         "A photo of the client's face"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [2, 3, 4, 5],
       "rationale": "<p>Anything that can identify a client makes health information <b>protected</b>: the <b>name</b>, <b>date of birth</b>, <b>medical record number</b>, and a <b>photo of the face</b>, along with others such as the address, phone number, and Social Security number.</p><p>The unit's <b>nurse-to-client ratio</b> and a medication's <b>generic name</b> don't identify any client.</p><p><b>Takeaway:</b> Identifiers such as the name, date of birth, record number, and photo turn health information into PHI.</p>"
     },
     {

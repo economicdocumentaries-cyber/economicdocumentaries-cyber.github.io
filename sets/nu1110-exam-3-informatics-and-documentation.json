@@ -205,13 +205,13 @@
       "id": "inf-15", "type": "sata", "topic": "Health information technology",
       "stem": "A nurse is explaining a new telehealth program to a group of clients. Which of the following are benefits of telehealth?",
       "options": [
-        "Easier access to care for clients who live in rural areas",
-        "Fewer hospital readmissions through remote monitoring at home",
         "No need to protect privacy during video visits from home",
         "Care for clients whose limited mobility makes travel hard",
-        "No need for any in-person visits or hands-on care again"
+        "Fewer hospital readmissions through remote monitoring at home",
+        "No need for any in-person visits or hands-on care again",
+        "Easier access to care for clients who live in rural areas"
       ],
-      "answer": [0, 1, 3],
+      "answer": [1, 2, 4],
       "rationale": "<p>Telehealth, care delivered at a distance through video visits, phone calls, and remote monitoring, <b>improves access</b> for clients in rural areas and for <b>clients with limited mobility</b>, and remote monitoring can catch problems early and <b>reduce readmissions</b>.</p><p>Privacy <b>still</b> matters: video visits need secure platforms and a private space. Telehealth complements in-person care rather than <b>replacing all of it</b>, since some assessments and treatments need the client in person.</p><p><b>Takeaway:</b> Telehealth expands access and monitoring, with the same privacy and documentation duties as any other care.</p>"
     },
     {
@@ -243,13 +243,13 @@
       "stem": "A nurse is learning about clinical decision support systems. Which of the following are examples of clinical decision support?",
       "options": [
         "An alert that a new antibiotic order conflicts with the client's allergy",
-        "A patient portal where clients read their own lab results",
-        "A sepsis warning triggered by the client's vital signs and lab values",
         "A map showing where flu cases are clustered in a county",
+        "A sepsis warning triggered by the client's vital signs and lab values",
+        "A reminder that the client is due for a vaccine",
         "A warning that an ordered dose is above the usual range",
-        "A reminder that the client is due for a vaccine"
+        "A patient portal where clients read their own lab results"
       ],
-      "answer": [0, 2, 4, 5],
+      "answer": [0, 2, 3, 4],
       "rationale": "<p><b>Clinical decision support systems (CDSS)</b> use a client's data plus a knowledge base to give alerts, reminders, and recommendations at the time of a decision: <b>drug-allergy alerts</b>, <b>sepsis warnings</b>, <b>dose-range checks</b>, and <b>reminders for overdue vaccines or screenings</b>. The goal is safer, more consistent, evidence-based decisions.</p><p><b>A patient portal</b> is e-health for clients, and <b>a map of flu clusters</b> is a geographic information system. Neither guides a decision about one client's care.</p><p><b>Takeaway:</b> If it gives an alert, reminder, or recommendation about a client's care, it's decision support.</p>"
     },
     {
@@ -292,14 +292,14 @@
       "id": "inf-22", "type": "sata", "topic": "E-health, decision support, and health literacy",
       "stem": "A nurse is teaching a client who has low health literacy how to use a new inhaler. Which of the following actions should the nurse take?",
       "options": [
-        "Give a detailed handout written at a college reading level",
         "Use plain language instead of medical terms",
-        "Teach the two or three most important points",
         "Accept the client's nod as proof that they understand",
-        "Use pictures and large print in the written materials",
-        "Speak faster to cover all of the information at once"
+        "Teach the two or three most important points",
+        "Give a detailed handout written at a college reading level",
+        "Speak faster to cover all of the information at once",
+        "Use pictures and large print in the written materials"
       ],
-      "answer": [1, 2, 4],
+      "answer": [0, 2, 5],
       "rationale": "<p>For a client with low health literacy, the nurse uses <b>plain language</b>, focuses on <b>the two or three most important points</b>, and gives materials with <b>pictures and large print</b> at about a 5th- to 6th-grade reading level. A qualified interpreter is used when needed, and the teaching and the client's response are documented.</p><p><b>A college-level handout</b> won't be understood. <b>A nod</b> isn't proof of learning. <b>Speaking faster</b> to cover everything overwhelms the client.</p><p><b>Takeaway:</b> Simplify, focus, show, and check understanding.</p>"
     },
     {
@@ -350,14 +350,14 @@
       "id": "inf-27", "type": "sata", "topic": "Documentation guidelines",
       "stem": "A nurse is explaining why complete documentation matters. Which of the following are purposes of the client's health record?",
       "options": [
-        "Communication among the members of the health care team",
-        "Evidence in legal proceedings about the client's care",
+        "Notes about how well coworkers are doing their jobs",
         "A source of learning for students and staff",
-        "Proof of care for insurance payment",
         "Data for quality improvement reviews and research",
-        "Notes about how well coworkers are doing their jobs"
+        "Evidence in legal proceedings about the client's care",
+        "Proof of care for insurance payment",
+        "Communication among the members of the health care team"
       ],
-      "answer": [0, 1, 2, 3, 4],
+      "answer": [1, 2, 3, 4, 5],
       "rationale": "<p>The record serves <b>communication</b> among the team, <b>legal documentation</b> (it can be entered as evidence in court), <b>education</b> (students and staff learn from real records of care), <b>reimbursement</b> (it shows payers what care was given), and <b>quality improvement and research</b>. It also supports care planning, accreditation reviews, and a historical record of care.</p><p><b>Comments about coworkers</b> don't belong in the record at all; concerns about a coworker's performance go to the manager.</p><p><b>Takeaway:</b> The record communicates, proves care, gets care paid for, and feeds quality and research, so it must be complete.</p>"
     },
     {
@@ -496,14 +496,14 @@
       "id": "inf-39", "type": "sata", "topic": "Legal aspects of documentation",
       "stem": "Which of the following people may access a client's medical record?",
       "options": [
-        "The nurse assigned to care for the client",
-        "A nurse on another unit who is curious about the client's injuries",
         "A nursing student assigned to the client",
+        "A unit clerk who is a friend of the client's family",
+        "A nurse on another unit who is curious about the client's injuries",
+        "The nurse assigned to care for the client",
         "The client",
-        "The client's neighbor, who calls to ask how the client is doing",
-        "A unit clerk who is a friend of the client's family"
+        "The client's neighbor, who calls to ask how the client is doing"
       ],
-      "answer": [0, 2, 3],
+      "answer": [0, 3, 4],
       "rationale": "<p>Access is on a <b>need-to-know</b> basis: <b>staff directly involved in the client's care</b>, including <b>students assigned to the client</b>. <b>The client</b> has the right to see and get a copy of their own record.</p><p><b>Curiosity</b> is never a reason to look, even about a coworker, a famous client, or a family member. <b>Neighbors</b> need the client's written authorization, and <b>a staff member who isn't involved in the client's care</b>, like the clerk who knows the family, has no reason to open the record.</p><p><b>Takeaway:</b> Need to know, not want to know, and the client can always see their own record.</p>"
     },
     {
@@ -667,13 +667,13 @@
       "id": "inf-53", "type": "sata", "topic": "Confidentiality and protecting information",
       "stem": "A nurse is reviewing ways to keep client information private on the unit. Which of the following actions protect client confidentiality?",
       "options": [
-        "Speaking quietly when discussing care in a shared room",
-        "Using only clients' first names when talking in the hallway",
         "Closing the curtain before asking about a client's history",
+        "Speaking quietly when discussing care in a shared room",
         "Keeping the computer screen turned away from the hallway",
+        "Using only clients' first names when talking in the hallway",
         "Writing clients' diagnoses next to their names on the hallway board"
       ],
-      "answer": [0, 2, 3],
+      "answer": [0, 1, 2],
       "rationale": "<p>Ways to protect confidentiality include <b>speaking quietly</b> in shared rooms, <b>closing the curtain</b> (or moving to a private space) before asking about a client's history, and <b>positioning the screen</b> so people walking by can't read it.</p><p><b>First names</b> alone, with a room number or details, can still identify a client to anyone listening. <b>Diagnoses on a hallway board</b> next to names are in plain view of every visitor; boards in shared spaces show only what's needed, without diagnoses.</p><p><b>Takeaway:</b> Talk quietly and privately, shield screens, and keep diagnoses off public boards.</p>"
     },
     {
@@ -779,13 +779,13 @@
       "id": "inf-62", "type": "sata", "topic": "Confidentiality and protecting information",
       "stem": "A nurse manager is reviewing reports of possible privacy problems on the unit. Which of the following situations are breaches of client confidentiality?",
       "options": [
-        "Two nurses discussing a client's diagnosis in the cafeteria line",
-        "Giving report on a client to the oncoming nurse in a private area",
-        "Taking a photo of a client's wound with a personal phone",
         "Calling a client's provider to report a change in condition",
-        "Telling a client's coworker, who is visiting, why the client was admitted"
+        "Telling a client's coworker, who is visiting, why the client was admitted",
+        "Giving report on a client to the oncoming nurse in a private area",
+        "Two nurses discussing a client's diagnosis in the cafeteria line",
+        "Taking a photo of a client's wound with a personal phone"
       ],
-      "answer": [0, 2, 4],
+      "answer": [1, 3, 4],
       "rationale": "<p>Three situations are breaches. <b>Discussing a diagnosis in the cafeteria</b> lets others overhear. A <b>photo on a personal phone</b> stores client information on an unsecured device; photos are taken only with consent and facility equipment, following policy. <b>Telling a visiting coworker</b> why the client was admitted shares information without the client's permission.</p><p><b>Report to the oncoming nurse</b> in a private area and <b>calling the provider</b> about a change in condition share information with people caring for the client, which is needed for treatment.</p><p><b>Takeaway:</b> Sharing for care, in private, is allowed; public talk, personal devices, and telling visitors are breaches.</p>"
     },
     {

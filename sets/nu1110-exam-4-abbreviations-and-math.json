@@ -1129,16 +1129,16 @@
       "level": 2,
       "stem": "A client's history lists HTN, CKD, and BPH. Which of the following conditions should the nurse identify?",
       "options": [
-        "High blood pressure",
-        "Heart failure",
-        "Chronic kidney disease",
         "A blood clot in a leg",
         "An enlarged prostate",
+        "Heart failure",
+        "High blood pressure",
+        "Chronic kidney disease",
         "An underactive thyroid"
       ],
       "answer": [
-        0,
-        2,
+        1,
+        3,
         4
       ],
       "rationale": "<p><b>HTN</b> is hypertension, <b>high blood pressure</b>; <b>CKD</b> is <b>chronic kidney disease</b>, long-term kidney damage; and <b>BPH</b> is <b>an enlarged prostate</b>.</p><p><b>Heart failure</b> is HF, a <b>clot in a leg</b> is a DVT, and <b>an underactive thyroid</b> is hypothyroidism; none of them is in the history.</p><p><b>Takeaway:</b> HTN high blood pressure, CKD chronic kidney disease, BPH enlarged prostate.</p>"
@@ -1946,17 +1946,17 @@
       "level": 2,
       "stem": "A client on intake and output has chicken broth, gelatin, a turkey sandwich, ice cream, mashed potatoes, and a banana for lunch. Which items should the nurse count as fluid intake?",
       "options": [
-        "Chicken broth",
-        "A turkey sandwich",
-        "Gelatin",
-        "Mashed potatoes",
+        "A banana",
         "Ice cream",
-        "A banana"
+        "A turkey sandwich",
+        "Mashed potatoes",
+        "Chicken broth",
+        "Gelatin"
       ],
       "answer": [
-        0,
-        2,
-        4
+        1,
+        4,
+        5
       ],
       "rationale": "<p>Fluids are anything liquid at room temperature: <b>broth</b>, <b>gelatin</b>, and <b>ice cream</b>, which melts.</p><p><b>A sandwich</b>, <b>mashed potatoes</b>, and <b>a banana</b> are solid foods, which aren't recorded as intake, though they contain some water.</p><p><b>Takeaway:</b> Liquid at room temperature counts: broth, gelatin, ice cream, popsicles.</p>"
     },

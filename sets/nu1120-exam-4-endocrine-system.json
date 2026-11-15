@@ -151,8 +151,8 @@
       "topic": "Hypothalamus and pituitary",
       "level": 3,
       "stem": "A client has a tumor that has damaged the hypothalamus. Which of the following findings should the nurse expect?",
-      "options": ["Loss of hearing in one ear", "Trouble keeping a normal body temperature", "Changes in thirst", "A higher-than-normal TSH level", "Changes in appetite", "A lower-than-normal thyroid hormone level"],
-      "answer": [1, 2, 4, 5],
+      "options": ["Loss of hearing in one ear", "Trouble keeping a normal body temperature", "Changes in appetite", "Changes in thirst", "A higher-than-normal TSH level", "A lower-than-normal thyroid hormone level"],
+      "answer": [1, 2, 3, 5],
       "rationale": "<p>The <b>hypothalamus</b> links the nervous and endocrine systems. It regulates <b>body temperature</b>, <b>thirst</b>, and <b>appetite</b>, so damage can change all three. It also controls the pituitary with its releasing hormones: without TRH, the anterior pituitary releases less TSH, and the thyroid releases less hormone, so the <b>thyroid hormone level falls</b>.</p><p>For the same reason, TSH would be <b>low</b>, not high; TSH rises when the thyroid fails while the hypothalamus and pituitary keep working. <b>Hearing</b> depends on the ear, the cochlear nerve, and the brain's temporal lobe, not the hypothalamus.</p><p><b>A higher-than-normal TSH</b> isn't the right answer: thyroid hormone falls, but without TRH from the hypothalamus the pituitary releases less TSH, not more.</p><p><b>Takeaway:</b> Damage to the hypothalamus can affect temperature, thirst, and appetite, and lower the hormones of the glands it controls through the pituitary.</p>"
     },
     {
@@ -351,8 +351,8 @@
       "topic": "Diabetes mellitus",
       "level": 2,
       "stem": "A client has had type 2 diabetes mellitus for 12 years, and the blood glucose level has often been high. Which of the following findings could be long-term complications of the client's diabetes?",
-      "options": ["Burning pain and numbness in both feet", "Gradual loss of vision", "Declining kidney function", "Enlarging hands and feet, with coarser facial features", "Chest pain with exertion", "Nausea, bloating, and diarrhea"],
-      "answer": [0, 1, 2, 4, 5],
+      "options": ["Gradual loss of vision", "Declining kidney function", "Burning pain and numbness in both feet", "Nausea, bloating, and diarrhea", "Chest pain with exertion", "Enlarging hands and feet, with coarser facial features"],
+      "answer": [0, 1, 2, 3, 4],
       "rationale": "<p>Years of high blood glucose damage <b>nerves</b> and <b>blood vessels</b>. Nerve damage (diabetic <b>neuropathy</b>) causes <b>numbness, tingling, burning, or sharp pain</b>, usually starting in the feet and hands, and it can affect the gut (<b>nausea, vomiting, diarrhea, constipation</b>) and sexual function. Damage to the small vessels of the eye (<b>retinopathy</b>) causes <b>loss of vision</b>, and damage to the kidneys (<b>nephropathy</b>) causes <b>declining kidney function</b> and chronic kidney disease. Damage to the larger arteries (atherosclerosis) leads to <b>heart disease</b>, which can cause <b>chest pain with exertion</b>, as well as stroke and peripheral artery disease.</p><p><b>Enlarging hands and feet</b> come from too much growth hormone in an adult, not from diabetes.</p><p><b>Enlarging hands and feet</b> isn't the right answer: it's a hormone finding, but it's a sign of too much growth hormone (acromegaly), not of diabetes.</p><p><b>Takeaway:</b> Long-term diabetes damages the nerves (neuropathy), eyes (retinopathy), kidneys (nephropathy), and the heart and blood vessels.</p>"
     },
     {
@@ -372,8 +372,8 @@
       "topic": "Diabetes risk and metabolic syndrome",
       "level": 2,
       "stem": "A nurse is screening clients for type 2 diabetes mellitus at a community health fair. Which of the following findings in a client's history are risk factors for type 2 diabetes?",
-      "options": ["Walks for 30 minutes 5 days a week", "Had gestational diabetes during a pregnancy", "Has a body mass index (BMI) of 22", "Is 51 years old", "Is allergic to penicillin", "Has a brother with type 2 diabetes"],
-      "answer": [1, 3, 5],
+      "options": ["Is 51 years old", "Has a body mass index (BMI) of 22", "Walks for 30 minutes 5 days a week", "Is allergic to penicillin", "Had gestational diabetes during a pregnancy", "Has a brother with type 2 diabetes"],
+      "answer": [0, 4, 5],
       "rationale": "<p>Risk factors for type 2 diabetes include <b>family history</b> (a parent or sibling with type 2 diabetes) and genes, <b>age over 45</b>, overweight and obesity, <b>physical inactivity</b> (exercising fewer than 3 times a week), non-alcoholic fatty liver disease, a history of <b>gestational diabetes</b>, and social and built drivers of health, such as limited access to healthy food.</p><p>Walking 30 minutes, 5 days a week, is regular physical activity, which <b>lowers</b> the risk. A BMI of 22 is in the <b>healthy</b> range. A penicillin allergy has no link to diabetes.</p><p><b>Walking 30 minutes 5 days a week</b> isn't the right answer: activity belongs in the history, but regular activity lowers the risk; inactivity is the risk factor.</p><p><b>Takeaway:</b> Risk factors for type 2 diabetes include family history, age over 45, excess weight, inactivity, fatty liver disease, and past gestational diabetes.</p>"
     },
     {
@@ -685,17 +685,17 @@
       "level": 3,
       "stem": "After a head injury, a client's posterior pituitary releases too little vasopressin (antidiuretic hormone). Which findings should the nurse expect?",
       "options": [
-        "Strong thirst",
-        "A low blood sodium level",
         "Swelling and weight gain from water retention",
+        "Dark, concentrated urine",
+        "A low blood sodium level",
+        "Strong thirst",
         "A high blood sodium level",
-        "Large amounts of pale, dilute urine",
-        "Dark, concentrated urine"
+        "Large amounts of pale, dilute urine"
       ],
       "answer": [
-        0,
         3,
-        4
+        4,
+        5
       ],
       "rationale": "<p>Without vasopressin, the kidneys can't hold on to water: the client passes <b>large amounts of dilute urine</b>, feels <b>very thirsty</b>, and the water loss leaves the blood <b>sodium high</b>.</p><p><b>Concentrated urine</b>, <b>swelling</b>, and a <b>low sodium</b> come with too much vasopressin, when the kidneys hold on to too much water.</p><p><b>Takeaway:</b> Too little ADH: lots of dilute urine, thirst, high sodium. Too much: little urine, water retention, low sodium.</p>"
     },
@@ -1353,16 +1353,16 @@
       "level": 2,
       "stem": "A 45-year-old client has a high blood glucose that hasn't been diagnosed yet. Which findings should the nurse recognize as signs of it?",
       "options": [
+        "Weight gain without eating more",
+        "Urinating often",
         "Cuts that heal slowly",
         "Shakiness and sweating",
-        "Weight gain without eating more",
         "Blurred vision",
-        "Urinating often",
         "Strong thirst"
       ],
       "answer": [
-        0,
-        3,
+        1,
+        2,
         4,
         5
       ],
@@ -1612,14 +1612,14 @@
       "level": 3,
       "stem": "A client urinates large amounts every day. Which endocrine problems could explain this?",
       "options": [
-        "Too little thyroid hormone (an underactive thyroid)",
-        "Too much vasopressin (antidiuretic hormone)",
-        "A high blood glucose from diabetes mellitus",
         "Too little vasopressin (antidiuretic hormone)",
+        "Too much vasopressin (antidiuretic hormone)",
+        "Too little thyroid hormone (an underactive thyroid)",
+        "A high blood glucose from diabetes mellitus",
         "Too little parathyroid hormone (a low calcium)"
       ],
       "answer": [
-        2,
+        0,
         3
       ],
       "rationale": "<p>A <b>high glucose</b> pulls water into the urine, and <b>too little vasopressin</b> leaves the kidneys unable to hold water. Both cause large amounts of urine.</p><p><b>Too much vasopressin</b> makes the kidneys hold water, so there's <b>less</b> urine. <b>Too little thyroid hormone</b> and <b>too little parathyroid hormone</b> don't cause large amounts of urine.</p><p><b>Takeaway:</b> Lots of urine: think high glucose or too little ADH.</p>"

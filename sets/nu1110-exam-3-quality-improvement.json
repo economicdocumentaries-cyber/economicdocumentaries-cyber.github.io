@@ -294,14 +294,14 @@
       "id": "qi-22", "type": "sata", "topic": "QI and other concepts",
       "stem": "Which of the following actions reflect a staff nurse's role in quality improvement?",
       "options": [
-        "Reporting errors, near misses, and unsafe conditions",
         "Leaving quality improvement to the nurse managers",
-        "Collecting data for unit audits, such as fall tracking",
         "Joining the unit's QI team or practice council",
+        "Collecting data for unit audits, such as fall tracking",
+        "Reporting errors, near misses, and unsafe conditions",
         "Not mentioning coworkers' mistakes, to protect them",
         "Following protocols consistently so results can be measured"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [1, 2, 3, 5],
       "rationale": "<p>Staff nurses are central to QI: they <b>identify and report problems</b> (errors, near misses, unsafe conditions), <b>collect data</b>, <b>join QI teams, councils, and root cause analyses</b>, and <b>follow protocols consistently</b> so a change can be measured fairly. Nurses at the bedside are well positioned to spot risks.</p><p><b>Leaving QI to managers</b> wastes the bedside view. <b>Hiding coworkers' mistakes</b> lets the same system problems keep harming clients.</p><p><b>Takeaway:</b> Every nurse does QI: speak up, report, collect data, and take part.</p>"
     },
     {
@@ -428,14 +428,14 @@
       "id": "qi-33", "type": "sata", "topic": "The quality improvement process",
       "stem": "Which of the following activities are part of a hospital's risk management process?",
       "options": [
-        "Identifying risks that could lead to client or staff injury or financial loss",
-        "Reviewing the systems that monitor those risks",
         "Analyzing how often past adverse events happened, how severe they were, and why",
         "Keeping up to date on health care laws",
-        "Assigning blame for each adverse event to one staff member",
-        "Identifying the need for client and staff education"
+        "Identifying the need for client and staff education",
+        "Reviewing the systems that monitor those risks",
+        "Identifying risks that could lead to client or staff injury or financial loss",
+        "Assigning blame for each adverse event to one staff member"
       ],
-      "answer": [0, 1, 2, 3, 5],
+      "answer": [0, 1, 2, 3, 4],
       "rationale": "<p>The risk management process <b>identifies risks</b> of client or staff injury or financial loss, <b>reviews the systems that monitor risks</b>, <b>analyzes the frequency, severity, and causes of past adverse events</b>, <b>stays current on health care laws</b>, and <b>identifies education needs</b>.</p><p><b>Assigning blame to one person</b> isn't part of it: like root cause analysis, risk management looks at systems, so the same event doesn't happen again.</p><p><b>Takeaway:</b> Risk management finds, monitors, analyzes, and teaches; it doesn't hunt for someone to blame.</p>"
     },
     {
@@ -465,13 +465,13 @@
       "id": "qi-36", "type": "sata", "topic": "The quality improvement process",
       "stem": "Which of the following belong in an incident report about a client's fall?",
       "options": [
+        "A note that a copy will be placed in the client's chart",
         "The date, time, and place of the event",
-        "The nurse's opinion about who was at fault",
         "What the nurse saw, described objectively",
-        "The care given and who was notified",
-        "A note that a copy will be placed in the client's chart"
+        "The nurse's opinion about who was at fault",
+        "The care given and who was notified"
       ],
-      "answer": [0, 2, 3],
+      "answer": [1, 2, 4],
       "rationale": "<p>An incident report gives <b>objective facts</b>: <b>the date, time, and place</b>, <b>what the nurse saw</b> and the client's condition, and <b>the care given and who was notified</b>. It's completed by the nurse who witnessed or discovered the event, as soon as possible.</p><p><b>Opinions about fault</b> don't belong, because the report is for finding system problems, not blame. And incident reports are <b>never placed in the chart</b>.</p><p><b>Takeaway:</b> Incident reports are factual, prompt, blame-free, and kept out of the chart.</p>"
     },
     {
@@ -479,13 +479,13 @@
       "stem": "A hospital's QI team wants to reduce medication errors. Which of the following strategies should the team use?",
       "options": [
         "Bar-code scanning of client ID bands and medications",
+        "Labels that highlight the differences between look-alike, sound-alike drug names",
         "Taking verbal orders for routine medications to save time",
-        "Computerized provider order entry",
         "A pharmacist's review before the first dose of a new medication",
         "Storing look-alike medications next to each other",
-        "Labels that highlight the differences between look-alike, sound-alike drug names"
+        "Computerized provider order entry"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [0, 1, 3, 5],
       "rationale": "<p>Strategies that reduce medication errors include <b>bar-code scanning</b>, <b>computerized provider order entry</b>, a <b>pharmacy first-dose review</b>, and managing <b>look-alike, sound-alike names</b>, for example with labels that highlight the differences (such as “hydrOXYzine” and “hydrALAZINE”) and storing those drugs apart.</p><p><b>Verbal orders</b> for routine medications add risk; they're for urgent situations only. <b>Storing look-alikes together</b> invites mix-ups.</p><p><b>Takeaway:</b> Medication safety comes from layered checks: scanning, electronic orders, pharmacy review, and clear labels.</p>"
     },
     {
@@ -726,14 +726,14 @@
       "id": "qi-57", "type": "sata", "topic": "Quality initiatives and agencies",
       "stem": "A nurse is learning about the National Database of Nursing Quality Indicators (NDNQI). Which of the following are nurse-sensitive indicators?",
       "options": [
-        "Rates of hospital-acquired pressure injuries",
-        "The number of physicians on the medical staff",
-        "Rates of catheter-associated urinary tract infections",
-        "Rates of central line-associated bloodstream infections",
         "The number of MRI scans done each month",
+        "The number of physicians on the medical staff",
+        "Rates of hospital-acquired pressure injuries",
+        "Rates of central line-associated bloodstream infections",
+        "Rates of catheter-associated urinary tract infections",
         "Nurse staffing and skill mix"
       ],
-      "answer": [0, 2, 3, 5],
+      "answer": [2, 3, 4, 5],
       "rationale": "<p>Nurse-sensitive indicators include <b>pressure injuries</b>, <b>catheter-associated urinary tract infections (CAUTIs)</b>, <b>central line-associated bloodstream infections (CLABSIs)</b>, and falls: outcomes that nursing care, such as turning, catheter care, and line care, directly affects. <b>Staffing and skill mix</b> are structure indicators: how many nurses there are and how they're prepared affects these outcomes.</p><p>The <b>number of physicians</b> and the <b>number of MRI scans</b> measure staffing and volume outside nursing, not nursing quality.</p><p><b>Takeaway:</b> NDNQI indicators include falls, pressure injuries, CAUTIs, CLABSIs, and nurse staffing.</p>"
     },
     {
@@ -790,11 +790,11 @@
       "options": [
         "Were two strengths of insulin stored next to each other?",
         "Was the nurse interrupted while preparing the dose?",
-        "Which nurse made the error, so that nurse can be disciplined?",
         "Was a second nurse available to double-check the dose?",
+        "Which nurse made the error, so that nurse can be disciplined?",
         "What kind of health insurance does the client have?"
       ],
-      "answer": [0, 1, 3],
+      "answer": [0, 1, 2],
       "rationale": "<p>A root cause analysis looks at <b>the systems and processes</b> that allowed the error: how the medications were <b>stored</b>, <b>interruptions</b> during preparation, and whether a <b>double-check</b> was available. The answers lead to an action plan that makes the error less likely to happen again.</p><p>Finding <b>someone to discipline</b> isn't the goal: an RCA focuses on systems, not individual blame, so staff can report errors openly. The client's <b>insurance</b> has nothing to do with how the error happened.</p><p><b>Takeaway:</b> A root cause analysis asks how systems and processes allowed the error, not who to blame.</p>"
     },
     {

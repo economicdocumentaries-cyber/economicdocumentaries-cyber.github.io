@@ -4,7 +4,7 @@
   "description": "Class 19 practice: the domains of learning, readiness to learn, planning teaching, teach-back and evaluation, teaching across the lifespan, and learning theories and the nurse's role in client education, matched to the professor's Exam 4 blueprint.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 159,
+  "timeMinutes": 174,
   "defaultCount": 25,
   "cases": {
     "discharge": {
@@ -143,16 +143,16 @@
       "level": 3,
       "stem": "A nurse taught a client with a new ileostomy how to care for it. Which observations should the nurse document as evidence that learning occurred?",
       "options": [
-        "Changes the pouch correctly while the nurse watches",
-        "Describes, in his own words, when to call the provider",
         "Nods and says “that makes sense” after each step",
         "Signs the form stating that teaching was received",
+        "Empties the pouch on his own when it is one-third full",
+        "Describes, in his own words, when to call the provider",
         "Watched the full ostomy care video in his room",
-        "Empties the pouch on his own when it is one-third full"
+        "Changes the pouch correctly while the nurse watches"
       ],
       "answer": [
-        0,
-        1,
+        2,
+        3,
         5
       ],
       "rationale": "<p>Evidence of learning is a <b>change in behavior that can be observed and measured</b>. <b>Changing the pouch correctly</b> (return demonstration), <b>describing when to call in his own words</b> (teach-back), and <b>emptying the pouch on his own</b> at the right time are all behaviors the nurse can see.</p><p><b>Nodding and saying \"that makes sense\"</b> isn't the right answer. It sounds like understanding, but agreement isn't evidence: clients often nod to be polite. <b>Signing a form</b> shows teaching was given, not learned, and <b>watching a video</b> is exposure to information, not proof of learning.</p><p><b>Takeaway:</b> Document what the client did or said in his own words, not that he agreed, signed, or watched.</p>"
@@ -395,17 +395,17 @@
       "level": 3,
       "stem": "A nurse is reviewing the unit's handout on inhaler use before teaching a 70-year-old client whose primary language is Spanish. Which findings mean the handout shouldn't be used as it is?",
       "options": [
-        "It is printed only in English.",
+        "It was written by the respiratory therapy department.",
         "It shows an inhaler model the unit no longer stocks.",
-        "It uses large print and simple drawings.",
-        "It was last updated eleven years ago.",
         "It covers the steps in the client's plan of care.",
-        "It was written by the respiratory therapy department."
+        "It is printed only in English.",
+        "It was last updated eleven years ago.",
+        "It uses large print and simple drawings."
       ],
       "answer": [
-        0,
         1,
-        3
+        3,
+        4
       ],
       "rationale": "<p>Teaching content must be <b>accurate, current, consistent</b> with the care the client gets, and <b>adjusted for the learner's age, culture, and ability</b>. A handout <b>only in English</b> isn't adjusted for this client, one showing <b>an inhaler she won't use</b> isn't consistent, and one <b>eleven years old</b> may not be current.</p><p><b>Written by respiratory therapy</b> isn't a problem: it wasn't written by nursing, but a reliable, expert source is a strength. <b>Large print and simple drawings</b> suit an older adult, and <b>covering the plan-of-care steps</b> means it matches the learning outcomes.</p><p><b>Takeaway:</b> Before using teaching material, check that it's accurate, current, consistent with the client's care, and fitted to the client's age, language, and abilities.</p>"
     },
@@ -680,15 +680,15 @@
       "options": [
         "Allow extra time to process each new piece of information",
         "Repeat the key points during and at the end of each session",
-        "Include the primary caregiver, with the client's permission",
         "Schedule the teaching late in the day, after therapy is done",
+        "Include the primary caregiver, with the client's permission",
         "Cover the content in one longer session to save energy",
         "Use a calm approach in a quiet, peaceful setting"
       ],
       "answer": [
         0,
         1,
-        2,
+        3,
         5
       ],
       "rationale": "<p>With older adults, the nurse <b>allows adequate time</b> to process information, <b>provides repetition</b>, <b>includes significant others or caregivers</b>, and uses a <b>calm approach in a peaceful environment</b>.</p><p><b>One longer session to save energy</b> isn't the right answer: energy level does affect learning, but a long session tires the client more and overloads memory; shorter sessions work better. <b>Late in the day after therapy</b> is when energy is lowest.</p><p><b>Takeaway:</b> Older adults learn best with extra time, repetition, a calm quiet setting, short sessions, and their caregivers included.</p>"
@@ -851,15 +851,15 @@
       "case": "discharge",
       "stem": "Which findings in the nurse's notes support the client's readiness to learn the insulin pen at 1400?",
       "options": [
-        "Picks up the pen from the tray and asks to hold it",
+        "Slept poorly the night before because of a roommate",
+        "Lives alone, with a daughter who visits weekly",
         "Says he wants to take care of himself at home",
         "Says he left school in the eighth grade",
-        "Slept poorly the night before because of a roommate",
-        "Lives alone, with a daughter who visits weekly"
+        "Picks up the pen from the tray and asks to hold it"
       ],
       "answer": [
-        0,
-        1
+        2,
+        4
       ],
       "rationale": "<p>Readiness shows as <b>interest and engagement</b> (he <b>reaches for the pen and asks to hold it</b>) and <b>recognizing the learning need</b> (he <b>wants to take care of himself</b>).</p><p><b>Living alone</b> isn't the right answer: it makes the teaching more necessary, but it's a reason the learning matters, not a sign he's ready. <b>Leaving school in eighth grade</b> is a cue to check literacy and plan the materials, not readiness. <b>Poor sleep</b> lowered his readiness in the morning; it's a barrier, not support.</p><p><b>Takeaway:</b> Readiness is what the client shows now (interest, questions, a stated goal); need and literacy shape the plan but don't show readiness.</p>"
     },
@@ -887,17 +887,17 @@
       "case": "discharge",
       "stem": "The next morning, the nurse evaluates the insulin teaching. Which findings show the teaching plan's outcomes have been met?",
       "options": [
-        "Primes the pen with 2 units before dialing his dose",
         "Says “I understand” after each step the nurse reviews",
-        "Explains in his own words what to do if he feels shaky and sweaty",
         "Signs the discharge form stating insulin teaching was given",
+        "Watched the full insulin pen video on the room's TV",
         "Injects into his abdomen and holds the needle for 10 seconds",
-        "Watched the full insulin pen video on the room's TV"
+        "Primes the pen with 2 units before dialing his dose",
+        "Explains in his own words what to do if he feels shaky and sweaty"
       ],
       "answer": [
-        0,
-        2,
-        4
+        3,
+        4,
+        5
       ],
       "rationale": "<p>Each outcome in the teaching plan is met by an observed behavior: he <b>primes the pen with 2 units</b> and <b>injects and holds for 10 seconds</b> (return demonstration of objectives 1 and 2), and <b>explains in his own words what to do for low blood glucose</b> (teach-back for objective 3).</p><p><b>Saying \"I understand\" after each step</b> isn't the right answer: it sounds like confirmation, but agreement isn't evidence of learning. <b>Signing the form</b> shows teaching was given, and <b>watching the video</b> is exposure, not proof.</p><p><b>Takeaway:</b> Evaluate each objective with a matching method: watch the skills, and have the client explain the knowledge in his own words.</p>"
     },
@@ -940,16 +940,16 @@
       "level": 2,
       "stem": "Which actions should the nurse take to teach the inhaler technique?",
       "options": [
+        "Break the skill into small steps, from simple to complex",
         "Rely on teach-back of the steps",
-        "Have him watch a video and sign that he understands",
-        "Use return demonstration until he does it correctly",
         "Demonstrate each step, then have him practice",
-        "Break the skill into small steps, from simple to complex"
+        "Use return demonstration until he does it correctly",
+        "Have him watch a video and sign that he understands"
       ],
       "answer": [
+        0,
         2,
-        3,
-        4
+        3
       ],
       "case": "teenasthma",
       "rationale": "<p>A <b>psychomotor</b> skill is taught by <b>demonstration</b>, <b>practice</b> in small steps from simple to complex, and <b>return demonstration</b> until it's correct.</p><p><b>Teach-back</b> checks what he knows, not what he can do, and a <b>video and a signature</b> aren't evidence of learning.</p><p><b>Takeaway:</b> Skills: show, practice, return demonstration.</p>"
@@ -993,15 +993,15 @@
       "level": 2,
       "stem": "Which outcomes should the nurse include in her teaching plan?",
       "options": [
-        "The client will understand how heart failure affects her heart, by discharge",
         "The client will know her medications and their side effects before going home",
-        "The client and her husband will state when to call the provider by discharge",
         "The client will state three signs of fluid buildup by discharge",
-        "The client will weigh herself each morning and record it for 1 week"
+        "The client will weigh herself each morning and record it for 1 week",
+        "The client will understand how heart failure affects her heart, by discharge",
+        "The client and her husband will state when to call the provider by discharge"
       ],
       "answer": [
+        1,
         2,
-        3,
         4
       ],
       "case": "hfhome",
@@ -1059,16 +1059,16 @@
       "level": 2,
       "stem": "A nurse is writing psychomotor objectives. Which verbs should the nurse use?",
       "options": [
-        "Value",
-        "List",
-        "Give (an injection)",
         "Demonstrate",
-        "Perform"
+        "Perform",
+        "Value",
+        "Give (an injection)",
+        "List"
       ],
       "answer": [
-        2,
-        3,
-        4
+        0,
+        1,
+        3
       ],
       "rationale": "<p><b>Psychomotor</b> objectives use action verbs for skills: <b>demonstrate</b>, <b>perform</b>, <b>give</b>, use.</p><p><b>List</b> is cognitive, and <b>value</b> is affective.</p><p><b>Takeaway:</b> Hands: demonstrate, perform, give, use.</p>"
     },
@@ -1129,15 +1129,15 @@
       "level": 2,
       "stem": "Which outcomes show learning in the psychomotor domain?",
       "options": [
-        "The client explains why handwashing matters",
         "The client changes the dressing using clean technique",
         "The client says she feels ready to care for the wound",
         "The client draws up the correct dose of insulin",
+        "The client explains why handwashing matters",
         "The client lists the signs of infection"
       ],
       "answer": [
-        1,
-        3
+        0,
+        2
       ],
       "rationale": "<p><b>Changing a dressing</b> and <b>drawing up insulin</b> are skills, performed with the body: psychomotor.</p><p><b>Listing signs</b> and <b>explaining</b> are cognitive, and <b>feeling ready</b> is affective.</p><p><b>Takeaway:</b> Psychomotor outcomes: the client does it while you watch.</p>"
     },
@@ -1163,18 +1163,18 @@
       "level": 2,
       "stem": "A nurse is choosing ways to evaluate learning. Which methods can the nurse use?",
       "options": [
-        "Watching the client view a teaching video",
+        "Oral questions, including teach-back",
         "The client's signature on the teaching form",
         "Devices, like a dose counter or a glucose meter's memory",
-        "Return demonstration",
         "Written tests",
-        "Oral questions, including teach-back"
+        "Return demonstration",
+        "Watching the client view a teaching video"
       ],
       "answer": [
+        0,
         2,
         3,
-        4,
-        5
+        4
       ],
       "rationale": "<p>Learning is evaluated with <b>return demonstration</b>, <b>oral questions and teach-back</b>, <b>written tests</b>, self-report, and <b>devices</b> that record what the client did.</p><p>A <b>signature</b> and <b>watching a video</b> show the teaching happened, not that the client learned.</p><p><b>Takeaway:</b> Evaluate what the client can say or do, not what the client saw or signed.</p>"
     },
@@ -1355,16 +1355,16 @@
       "level": 2,
       "stem": "A nurse is planning teaching for a client. Which factors should the nurse identify as barriers to learning?",
       "options": [
-        "Pain",
-        "A quiet setting",
-        "Relevance to the client's goals",
-        "Anxiety",
+        "Low literacy",
         "Fatigue",
-        "Low literacy"
+        "Relevance to the client's goals",
+        "A quiet setting",
+        "Pain",
+        "Anxiety"
       ],
       "answer": [
         0,
-        3,
+        1,
         4,
         5
       ],
@@ -1752,6 +1752,214 @@
       ],
       "answer": 1,
       "rationale": "<p>The <b>art of teaching</b> is <b>planned steps toward a behavior change</b>, the learner's attention held, <b>questions invited</b>, and the nurse honest about what they don't know.</p><p>Reading word for word, covering too much at once, and teaching what the nurse enjoys miss the learner.</p><p><b>Takeaway:</b> The art of teaching: planned, engaging, two-way.</p>"
+    },
+    {
+      "id": "tl-107",
+      "type": "sata",
+      "topic": "Learning theories and the nurse's role",
+      "level": 2,
+      "stem": "A nurse is using behaviorism to help a client learn to use an incentive spirometer. Which actions should the nurse take?",
+      "options": [
+        "Put the steps in a short, logical order to process",
+        "Give a small reward when the client reaches the day's goal",
+        "Show a video of another client using the device well",
+        "Start from the breathing exercises the client already does",
+        "Praise the client right after each correct breath"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "rationale": "<p><b>Behaviorism</b>: a response that's <b>reinforced</b>, with praise or a reward, is more likely to be repeated.</p><p>Watching another client is <b>social learning</b>, building on what the client already does is <b>constructivist</b>, and organizing information to process is <b>cognitive</b>.</p><p><b>Takeaway:</b> Behaviorism: reinforce it, and it repeats.</p>"
+    },
+    {
+      "id": "tl-108",
+      "type": "sata",
+      "topic": "Learning theories and the nurse's role",
+      "level": 3,
+      "stem": "A client asks the nurse the same question about a new medication for the third time, and the nurse feels frustrated. Which actions should the nurse take?",
+      "options": [
+        "Hand the client the written handout and move on",
+        "Ask a coworker to answer, since the nurse is frustrated",
+        "Notice the frustration and keep it out of the response",
+        "Explain the answer a new way, with a picture or an example",
+        "Tell the client the answer was already given twice",
+        "Ask what part is confusing, in a calm voice"
+      ],
+      "answer": [
+        2,
+        3,
+        5
+      ],
+      "rationale": "<p><b>Emotional intelligence</b> is recognizing your own and others' feelings and using emotions wisely: the nurse <b>notices the frustration</b>, keeps it out of the response, finds <b>what's confusing</b>, and <b>explains it a new way</b>.</p><p>Pointing out the repeats, handing over a handout, or passing the client to a coworker lets the frustration decide the response, and leaves the question unanswered.</p><p><b>Takeaway:</b> Notice the feeling; choose the response.</p>"
+    },
+    {
+      "id": "tl-109",
+      "type": "sata",
+      "topic": "Teaching across the lifespan",
+      "level": 2,
+      "stem": "A nurse is preparing a 5-year-old for a blood draw. Which actions should the nurse take?",
+      "options": [
+        "Let the child hold a bandage and a toy syringe first",
+        "Praise the child for holding still afterward",
+        "Explain the procedure in detail a few days ahead",
+        "Talk with the parent instead, since the child is too young",
+        "Use the child's name and simple, honest words",
+        "Tell the child the stick won't hurt, to keep the child calm"
+      ],
+      "answer": [
+        0,
+        1,
+        4
+      ],
+      "rationale": "<p>For children, teach at the child's level: their <b>name</b>, <b>honest, simple words</b>, <b>props</b> to handle, and <b>praise</b>, with the parent there too.</p><p>Saying it won't hurt breaks trust, a detailed explanation days ahead is more than a 5-year-old can use, and the child is a learner too, not just the parent.</p><p><b>Takeaway:</b> Children: name, props, honest simple words, praise.</p>"
+    },
+    {
+      "id": "tl-110",
+      "type": "sata",
+      "topic": "Teaching across the lifespan",
+      "level": 2,
+      "stem": "A nurse is teaching a client who speaks Vietnamese and little English about a new heart medication. Which actions should the nurse take?",
+      "options": [
+        "Use a professional medical interpreter for the teaching",
+        "Ask the client's adult son to interpret, since he's present",
+        "Use teach-back through the interpreter to check understanding",
+        "Ask the client's 12-year-old grandson to interpret",
+        "Speak slowly and loudly in English so the client can follow",
+        "Give written instructions in the client's language to take home"
+      ],
+      "answer": [
+        0,
+        2,
+        5
+      ],
+      "rationale": "<p>For a client who speaks another language: a <b>professional medical interpreter</b>, written materials in the <b>client's language</b>, and <b>teach-back</b> through the interpreter to confirm understanding.</p><p>Family members, and children above all, aren't used as interpreters: they may change or leave out information, and privacy suffers. Speaking louder in English doesn't help the client understand.</p><p><b>Takeaway:</b> Another language: a professional interpreter, not family or a child.</p>"
+    },
+    {
+      "id": "tl-111",
+      "type": "sata",
+      "topic": "Teach-back and evaluation",
+      "level": 2,
+      "stem": "A nurse has taught a client how to take a new blood thinner. Which statements by the nurse use teach-back correctly?",
+      "options": [
+        "“Do you have any questions about the medicine before I go?”",
+        "“You'll take it once a day at the same time and watch for bleeding, right?”",
+        "“What will you do if your gums start to bleed?”",
+        "“I want to be sure I explained it well. How will you take it at home?”",
+        "“In your own words, which other medicines should you ask us about first?”",
+        "“Do you understand how and when to take your new medicine at home?”"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Teach-back</b> asks the client to explain, <b>in their own words</b>, what was taught, framed as a check on the nurse's teaching, with open questions about real situations at home.</p><p>“Do you understand?”, a yes-or-no question that supplies the answer, and “Any questions?” can each be answered without showing any learning.</p><p><b>Takeaway:</b> Teach-back: open questions, the client's own words.</p>"
+    },
+    {
+      "id": "tl-112",
+      "type": "sata",
+      "topic": "Teach-back and evaluation",
+      "level": 3,
+      "stem": "A client with newly diagnosed diabetes has the affective outcome “The client will value checking blood glucose.” Which findings should the nurse identify as meeting it?",
+      "options": [
+        "The client scores 100% on a written quiz about diabetes",
+        "The client plans glucose checks around work breaks without prompting",
+        "The client says, “Testing my sugar is how I stay safe at work.”",
+        "The client states the normal fasting glucose range",
+        "The client uses the meter correctly on the first try",
+        "The client joins a diabetes support group"
+      ],
+      "answer": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "<p>Affective outcomes are met through <b>statements of values</b> and <b>behavior over time</b>: the client explains why testing matters, plans it into the day unprompted, and joins a support group.</p><p>Knowing the range and passing a quiz are <b>cognitive</b>, and using the meter is <b>psychomotor</b>: important, but not evidence of valuing the checks.</p><p><b>Takeaway:</b> Affective: listen for values, watch for choices.</p>"
+    },
+    {
+      "id": "tl-113",
+      "type": "sata",
+      "topic": "Domains of learning",
+      "level": 3,
+      "stem": "A client with new type 2 diabetes says, “I'm not giving up the foods I grew up with.” Which strategies should the nurse use for this affective learning need?",
+      "options": [
+        "Role-play how to turn down sweets at a family party",
+        "Demonstrate the meter, then watch a return demonstration",
+        "Quiz the client on carbohydrate counts",
+        "Explore what the diagnosis means to the client",
+        "Arrange to meet a peer who manages diabetes well",
+        "Give a reading list on how diabetes affects the body"
+      ],
+      "answer": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "<p>Affective learning, feelings and values, is supported by <b>exploring what the change means</b>, <b>role-playing</b> real situations, and <b>role models</b> like a peer who manages well.</p><p>Demonstration fits <b>psychomotor</b> skills, and reading and quizzes fit <b>cognitive</b> learning: useful later, but they don't reach the client's resistance.</p><p><b>Takeaway:</b> Affective needs: explore, role-play, and model.</p>"
+    },
+    {
+      "id": "tl-114",
+      "type": "sata",
+      "topic": "Readiness to learn",
+      "level": 2,
+      "stem": "A nurse plans to teach a client about wound care before discharge. Which findings should the nurse address before starting?",
+      "options": [
+        "The client asks when it's safe to shower",
+        "The client is drowsy after a dose of oxycodone",
+        "The client rates incision pain 7 out of 10",
+        "The client's daughter, who will help at home, is in the room",
+        "The client wears reading glasses and has them on",
+        "The client just learned the biopsy showed cancer and is crying"
+      ],
+      "answer": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "<p><b>Pain</b>, <b>drowsiness</b>, and strong <b>emotions</b> like grief block learning: the nurse treats the pain, waits until the client is alert, and gives the client time and support before teaching.</p><p>A question about showering is a sign of <b>readiness</b>, the daughter who will help is a resource to include, and glasses on mean the client can read the materials.</p><p><b>Takeaway:</b> Meet the physical and emotional needs first, then teach.</p>"
+    },
+    {
+      "id": "tl-115",
+      "type": "sata",
+      "topic": "Planning teaching",
+      "level": 2,
+      "stem": "A nurse is planning teaching for a client who will go home 3 days after a hip replacement. Which actions should the nurse include in the plan?",
+      "options": [
+        "Cover the topics in one long session to save time",
+        "Teach fall prevention and warning signs first",
+        "Use the surgeon's terms so the client learns them",
+        "Plan short sessions over several days of the stay",
+        "Set goals together with the client",
+        "Save the teaching for the morning of discharge"
+      ],
+      "answer": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "<p>A teaching plan sets <b>goals with the client</b>, puts <b>safety first</b> (falls and warning signs), and spreads <b>short sessions</b> over the stay so there's time to practice and evaluate.</p><p>Waiting until discharge leaves no time to practice, medical terms get in the way, and one long session overwhelms.</p><p><b>Takeaway:</b> Plan: shared goals, safety first, short sessions, starting early.</p>"
+    },
+    {
+      "id": "tl-116",
+      "type": "sata",
+      "topic": "Teaching across the lifespan",
+      "level": 2,
+      "stem": "A nurse is teaching a 45-year-old truck driver with new hypertension. Which approaches should the nurse use?",
+      "options": [
+        "Let the client choose which change to start with",
+        "Use games and stickers to reward each correct answer",
+        "Teach the client's spouse instead, since the spouse cooks",
+        "Schedule teaching during the client's work hours",
+        "Explain why each change matters for the client's job and health",
+        "Build on what the client already does to stay healthy on the road"
+      ],
+      "answer": [
+        0,
+        4,
+        5
+      ],
+      "rationale": "<p>Adults learn best when they know <b>why it matters</b>, can <b>build on experience</b>, and can <b>direct their own learning</b>, with teaching that fits around work and family.</p><p>Games and rewards suit children, the client is the learner (family is added, not substituted), and teaching during work hours doesn't fit the client's life.</p><p><b>Takeaway:</b> Adults: why it matters, what they know, what they choose.</p>"
     }
   ]
 }

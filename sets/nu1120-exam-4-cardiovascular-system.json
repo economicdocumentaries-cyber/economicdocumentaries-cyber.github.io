@@ -262,8 +262,8 @@
       "topic": "Risk factors and heart-healthy habits",
       "level": 2,
       "stem": "A nurse is reviewing a 66-year-old client's health record. Which of the following findings are risk factors for cardiovascular disease?",
-      "options": ["Blood pressure of 152/94 mm Hg", "Blood type O-positive, like both of the client's parents", "Type 2 diabetes mellitus", "Smokes a pack of cigarettes a day", "Father had a heart attack at age 50", "Body mass index (BMI) of 34"],
-      "answer": [0, 2, 3, 4, 5],
+      "options": ["Blood type O-positive, like both of the client's parents", "Type 2 diabetes mellitus", "Blood pressure of 152/94 mm Hg", "Father had a heart attack at age 50", "Body mass index (BMI) of 34", "Smokes a pack of cigarettes a day"],
+      "answer": [1, 2, 3, 4, 5],
       "rationale": "<p>Risk factors for cardiovascular disease include <b>high blood pressure</b> (152/94 is above the expected 120/80 or less), <b>diabetes</b>, <b>smoking</b>, a <b>family history</b> of heart disease, especially at a young age, and <b>obesity</b> (a BMI of 34 is above the expected 18.5 to 25). Others are high cholesterol, older age, and physical inactivity. Hypertension accounts for more deaths from cardiovascular disease in the United States than any other modifiable risk factor: a rise of 20 mm Hg in systolic pressure, or 10 mm Hg in diastolic pressure, doubles the risk of death from stroke or heart disease.</p><p><b>Blood type O-positive</b> isn't a risk factor for cardiovascular disease.</p><p><b>Blood type O-positive</b> isn't the right answer: it's in the health record, but blood type isn't a risk factor for cardiovascular disease.</p><p><b>Takeaway:</b> High blood pressure, diabetes, smoking, obesity, high cholesterol, inactivity, and family history raise the risk of cardiovascular disease; hypertension is the leading modifiable one.</p>"
     },
     {
@@ -461,8 +461,8 @@
       "topic": "Capillary refill and insufficiency",
       "level": 3,
       "stem": "Which findings should the nurse expect in a client with venous insufficiency of the legs?",
-      "options": ["Swelling that's worse at the end of the day", "Brown discoloration of the skin around the ankles", "Aching that eases when the legs are raised", "A shallow, draining sore near the inner ankle", "Weak or absent pulses on the top of the feet", "Calf pain with walking that eases with rest", "Feet that turn pale when raised"],
-      "answer": [0, 1, 2, 3],
+      "options": ["Aching that eases when the legs are raised", "Brown discoloration of the skin around the ankles", "Feet that turn pale when raised", "Calf pain with walking that eases with rest", "A shallow, draining sore near the inner ankle", "Weak or absent pulses on the top of the feet", "Swelling that's worse at the end of the day"],
+      "answer": [0, 1, 4, 6],
       "rationale": "<p>In <b>venous insufficiency</b>, leaky vein valves let blood pool: swelling by evening, brown skin around the ankles, aching that eases with elevation, and shallow, draining ulcers near the inner ankle.</p><p><b>Calf pain with walking</b> and <b>weak pulses</b> don't fit venous insufficiency: they're leg circulation problems too, but they belong to <b>arterial</b> insufficiency, as does pallor when the feet are raised.</p><p><b>Takeaway:</b> Venous: swelling, brown skin, relief with elevation. Arterial: claudication, weak pulses, pallor.</p>"
     },
     {
@@ -543,8 +543,8 @@
       "topic": "Risk factors and heart-healthy habits",
       "level": 2,
       "stem": "A client asks which foods fit a heart-healthy eating plan. Which of the following should the nurse include?",
-      "options": ["Cooking with extra-virgin olive oil", "Oatmeal and brown rice", "Skim milk and low-fat yogurt", "Fresh vegetables seasoned with herbs", "Cooking with coconut oil", "Canned soups and deli meats"],
-      "answer": [0, 1, 2, 3],
+      "options": ["Cooking with extra-virgin olive oil", "Canned soups and deli meats", "Cooking with coconut oil", "Skim milk and low-fat yogurt", "Fresh vegetables seasoned with herbs", "Oatmeal and brown rice"],
+      "answer": [0, 3, 4, 5],
       "rationale": "<p>The instructor's heart-healthy habits: <b>unsaturated fats</b> (extra-virgin olive oil, avocado oil, other non-tropical vegetable oils), <b>whole grains</b>, <b>low-fat dairy</b>, and <b>low sodium</b> (fresh foods seasoned with herbs).</p><p><b>Coconut oil</b> isn't the right answer: it's a plant oil, but it's a <b>tropical</b> oil, high in saturated fat. Canned soups and deli meats are high in sodium.</p><p><b>Takeaway:</b> Unsaturated non-tropical oils, whole grains, low-fat dairy, low sodium.</p>"
     },
     {
@@ -613,8 +613,8 @@
       "topic": "Risk factors and heart-healthy habits",
       "level": 3,
       "stem": "Which teaching should the nurse include for this client?",
-      "options": ["Stop smoking, with help from a quit plan", "Follow a heart-healthy diet with unsaturated fats and whole grains", "Walk regularly, resting when the pain starts and then continuing", "Check both feet each day for sores or color changes", "Report a foot that suddenly turns cold, pale, or numb", "Raise the legs on pillows to ease the pain", "Soak the feet in hot water to improve circulation"],
-      "answer": [0, 1, 2, 3, 4],
+      "options": ["Raise the legs on pillows to ease the pain", "Report a foot that suddenly turns cold, pale, or numb", "Walk regularly, resting when the pain starts and then continuing", "Check both feet each day for sores or color changes", "Follow a heart-healthy diet with unsaturated fats and whole grains", "Stop smoking, with help from a quit plan", "Soak the feet in hot water to improve circulation"],
+      "answer": [1, 2, 3, 4, 5],
       "rationale": "<p>Smoking, high LDL, low HDL, high blood pressure, diabetes, a BMI over 25, and age are the client's risk factors; quitting smoking and a heart-healthy diet address several. A walking program builds circulation, daily foot checks catch sores early, and a suddenly cold, pale limb is an emergency.</p><p><b>Soaking in hot water</b> isn't the right answer: warmth seems to help circulation, but feet with poor blood flow (and diabetes) burn easily. Raising the legs worsens arterial pain.</p><p><b>Takeaway:</b> Treat the risk factors, walk, protect the feet, and report a sudden cold, pale limb.</p>"
     },
     {
@@ -1158,16 +1158,16 @@
       "level": 3,
       "stem": "A client with type O-positive blood needs a transfusion of red blood cells. Which donor units should the nurse recognize as compatible?",
       "options": [
-        "A-negative",
+        "O-negative",
         "AB-positive",
         "B-positive",
-        "A-positive",
         "O-positive",
-        "O-negative"
+        "A-negative",
+        "A-positive"
       ],
       "answer": [
-        4,
-        5
+        0,
+        3
       ],
       "rationale": "<p>Type O blood has both anti-A and anti-B antibodies, so it can receive <b>only type O</b> red cells. The client is Rh-positive, so <b>O-positive</b> and <b>O-negative</b> are both compatible.</p><p><b>A</b>, <b>B</b>, and <b>AB</b> red cells, positive or negative, carry antigens the client's anti-A or anti-B antibodies would attack.</p><p><b>Takeaway:</b> Type O receives type O; Rh-positive can take Rh-positive or Rh-negative.</p>"
     },
@@ -1250,17 +1250,17 @@
       "level": 3,
       "stem": "A client is jogging. Which changes should the nurse expect?",
       "options": [
-        "Narrower airways, to slow the breathing",
         "Narrower blood vessels to the digestive tract",
-        "A slower heart rate, from vagus nerve signals",
-        "A faster heart rate",
+        "Narrower airways, to slow the breathing",
         "Stronger heart contractions",
-        "Wider blood vessels in the leg muscles"
+        "Wider blood vessels in the leg muscles",
+        "A slower heart rate, from vagus nerve signals",
+        "A faster heart rate"
       ],
       "answer": [
-        1,
+        0,
+        2,
         3,
-        4,
         5
       ],
       "rationale": "<p>Exercise brings a <b>sympathetic</b> response: a <b>faster</b>, <b>stronger</b> heart, <b>wider vessels in the working muscles</b>, and <b>narrower vessels to the gut</b>, sending blood where it's needed.</p><p>A <b>slower heart rate</b> is the parasympathetic effect, at rest. The airways <b>widen</b>, rather than narrow, during exercise.</p><p><b>Takeaway:</b> Exercise: more blood, pumped harder, sent to the muscles.</p>"
@@ -1441,14 +1441,14 @@
       "level": 3,
       "stem": "A client's right ventricle is failing. Which findings should the nurse expect?",
       "options": [
+        "Crackles in both lungs",
+        "Bulging neck veins",
         "An enlarged, tender liver",
         "Shortness of breath when lying flat",
-        "Swelling of both ankles",
-        "Crackles in both lungs",
-        "Bulging neck veins"
+        "Swelling of both ankles"
       ],
       "answer": [
-        0,
+        1,
         2,
         4
       ],
@@ -1567,18 +1567,18 @@
       "level": 2,
       "stem": "A nurse is assessing a client for a deep vein thrombosis in the calf. Which findings should the nurse recognize as possible signs?",
       "options": [
-        "Calf pain or tenderness",
-        "Swelling of both ankles",
-        "Redness over the area",
         "Warmth over the calf",
+        "Calf pain or tenderness",
+        "Redness over the area",
+        "Swelling of one calf",
         "A cool, pale foot with a weak pulse",
-        "Swelling of one calf"
+        "Swelling of both ankles"
       ],
       "answer": [
         0,
+        1,
         2,
-        3,
-        5
+        3
       ],
       "rationale": "<p>A <b>DVT</b> blocks the blood's return from the leg, so the calf is <b>swollen</b>, <b>warm</b>, <b>painful</b>, and <b>red</b>, usually on <b>one side</b>.</p><p><b>A cool, pale foot with a weak pulse</b> points to too little arterial flow. <b>Swelling of both ankles</b> suggests a body-wide cause, like heart failure.</p><p><b>Takeaway:</b> DVT: one leg, swollen, warm, red, painful.</p>"
     },

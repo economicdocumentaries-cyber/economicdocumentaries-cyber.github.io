@@ -513,8 +513,8 @@
       "topic": "Respiratory distress",
       "level": 3,
       "stem": "Which actions should the nurse take?",
-      "options": ["Raise the head of the bed to high Fowler's position", "Give oxygen as prescribed and recheck the oxygen saturation", "Report the blood gas results and the new confusion to the provider", "Lay the client flat to rest the breathing muscles", "Encourage fluids, unless they're restricted, to thin the mucus", "Give the as-needed sleeping pill to calm the restlessness", "Plan teaching about the pneumococcal vaccine"],
-      "answer": [0, 1, 2, 4, 6],
+      "options": ["Lay the client flat to rest the breathing muscles", "Give oxygen as prescribed and recheck the oxygen saturation", "Encourage fluids, unless they're restricted, to thin the mucus", "Plan teaching about the pneumococcal vaccine", "Give the as-needed sleeping pill to calm the restlessness", "Raise the head of the bed to high Fowler's position", "Report the blood gas results and the new confusion to the provider"],
+      "answer": [1, 2, 3, 5, 6],
       "rationale": "<p>Sitting up lets the diaphragm move and the lungs expand. Oxygen as prescribed treats the low PaO₂, and the provider needs to know about the acidosis and the new confusion. Fluids thin the mucus so it can be cleared, and the missing pneumococcal vaccine is worth teaching about once the client is stable.</p><p><b>The sleeping pill</b> isn't the right answer: the client is restless, but sedatives slow breathing, and the restlessness is a sign of low oxygen and high CO₂. Lying flat makes breathing harder.</p><p><b>Takeaway:</b> Position upright, oxygenate, report, and never sedate restlessness from poor breathing.</p>"
     },
     {
@@ -1150,16 +1150,16 @@
       "level": 3,
       "stem": "A nurse is reviewing the mucociliary clearance system. Which of the following can impair it?",
       "options": [
-        "Drinking plenty of fluids",
-        "Breathing very dry air",
-        "Smoking",
         "Dehydration",
-        "Regular exercise"
+        "Breathing very dry air",
+        "Drinking plenty of fluids",
+        "Regular exercise",
+        "Smoking"
       ],
       "answer": [
+        0,
         1,
-        2,
-        3
+        4
       ],
       "rationale": "<p><b>Smoking</b> damages the cilia, and <b>dehydration</b> and <b>very dry air</b> thicken or dry the mucus, so the cilia can't sweep it.</p><p><b>Fluids</b> keep the mucus thin, and <b>exercise</b> helps clear the airways; both support the system.</p><p><b>Takeaway:</b> Cilia need thin mucus and no smoke.</p>"
     },

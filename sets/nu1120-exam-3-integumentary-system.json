@@ -942,8 +942,8 @@
       "topic": "Other findings",
       "level": 3,
       "stem": "A client has liver failure, the end stage of chronic liver disease. Which of the following findings should the nurse expect?",
-      "options": ["Light-colored stools", "A red, raised, itchy rash", "Jaundice of the skin and sclera", "Dark-colored stools", "Pale yellow urine", "Itchy skin with no rash"],
-      "answer": [0, 2, 5],
+      "options": ["Jaundice of the skin and sclera", "Light-colored stools", "A red, raised, itchy rash", "Dark-colored stools", "Itchy skin with no rash", "Pale yellow urine"],
+      "answer": [0, 1, 4],
       "rationale": "<p>In liver failure, <b>bilirubin</b> isn't cleared into the stool, so it builds up in the body: the skin and sclera turn yellow (<b>jaundice</b>), the urine turns <b>dark</b>, the stools turn <b>light (clay) colored</b>, and the skin <b>itches without a rash</b>. Other signs include abdominal pain, nausea and vomiting, and <b>altered mental status</b>.</p><p>The itching of liver failure comes without a rash, so a red, raised, itchy rash suggests another cause. Stools turn light, not dark, and urine turns dark, not pale.</p><p><b>Dark-colored stools</b> isn't the right answer: liver disease changes colors, but with less bile reaching the intestines, the stools turn light (clay-colored), while the urine turns dark.</p><p><b>Takeaway:</b> Liver failure flips the colors: yellow skin, dark urine, and light stools.</p>"
     },
     {

@@ -4,7 +4,7 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 159,
+  "timeMinutes": 174,
   "defaultCount": 25,
   "cases": {
     "newgrad": {
@@ -219,16 +219,16 @@
       "stem": "A charge nurse usually involves the team in decisions. In which situations should the charge nurse give direct instructions instead of asking the team for input?",
       "options": [
         "Choosing the theme for the unit's practice council meeting",
-        "A client on the unit goes into cardiac arrest",
-        "Planning next month's staff education topics",
         "A smoke alarm sounds and the unit must evacuate",
+        "Deciding which shift tries a new break schedule first",
+        "Planning next month's staff education topics",
         "A new nurse's client has a falling oxygen saturation",
-        "Deciding which shift tries a new break schedule first"
+        "A client on the unit goes into cardiac arrest"
       ],
       "answer": [
         1,
-        3,
-        4
+        4,
+        5
       ],
       "rationale": "<p><b>Direct, autocratic</b> leadership fits emergencies and situations where someone needs clear direction right away: a <b>cardiac arrest</b>, an <b>evacuation</b>, and a <b>new nurse with a client whose oxygen saturation is falling</b> (the novice needs direction, and the client can't wait).</p><p>The <b>break schedule</b> isn't the right answer, even though someone has to decide it. But it isn't urgent, and the people affected have useful input, so involving them builds commitment. The <b>council theme</b> and <b>education topics</b> are also good chances for participation.</p><p><b>Takeaway:</b> Urgent and safety-critical, or a novice who needs direction: give direct instructions. Not urgent: involve the team.</p>"
     },
@@ -589,17 +589,17 @@
       "level": 1,
       "stem": "A hospital is building an interprofessional education program on the Interprofessional Education Collaborative (IPEC) core competency areas. Which areas should the program cover?",
       "options": [
-        "Roles and responsibilities",
-        "Discipline-specific skills checkoffs",
-        "Values and ethics for interprofessional practice",
         "Teams and teamwork",
+        "Values and ethics for interprofessional practice",
+        "Discipline-specific skills checkoffs",
         "Billing for each discipline's services",
+        "Roles and responsibilities",
         "Interprofessional communication"
       ],
       "answer": [
         0,
-        2,
-        3,
+        1,
+        4,
         5
       ],
       "rationale": "<p>IPEC's core competency has <b>four areas</b>: <b>values and ethics</b> for interprofessional practice, <b>roles and responsibilities</b>, <b>interprofessional communication</b>, and <b>teams and teamwork</b>.</p><p><b>Discipline-specific skills checkoffs</b> isn't the right answer, even though every team member needs skills. But checkoffs within one discipline are silo training, not interprofessional competency. <b>Billing</b> isn't part of the competency.</p><p><b>Takeaway:</b> IPEC's four areas: values and ethics, roles and responsibilities, communication, and teamwork.</p>"
@@ -701,18 +701,18 @@
       "level": 2,
       "stem": "A nurse is giving a shift handoff report on a client. Which elements should the nurse include to make the handoff complete?",
       "options": [
-        "Clear, specific information about the client",
-        "A written note in place of a spoken report",
         "Acknowledgment by the receiving nurse",
         "Transfer of responsibility for the client",
+        "Clear, specific information about the client",
+        "Time for the receiving nurse to ask questions",
         "A brief summary given while heading to another room",
-        "Time for the receiving nurse to ask questions"
+        "A written note in place of a spoken report"
       ],
       "answer": [
         0,
+        1,
         2,
-        3,
-        5
+        3
       ],
       "rationale": "<p>A proper <b>handoff</b> transfers <b>responsibility and accountability</b>, gives <b>clear information</b>, is <b>spoken</b>, is <b>acknowledged by the receiver</b>, and leaves <b>time for questions</b> and review.</p><p>A <b>written note</b> isn't the right answer, even though writing seems more precise. But handoffs are given verbally, so the receiver can acknowledge and ask questions; a note can support a report, not replace it. A <b>summary given in passing</b> leaves no time for questions, and interruptions during handoffs are a known cause of errors.</p><p><b>Takeaway:</b> A complete handoff is spoken, clear, acknowledged, and open to questions, and it transfers responsibility.</p>"
     },
@@ -798,20 +798,20 @@
       "level": 3,
       "stem": "A charge nurse sees a new nurse skip the two-identifier check while giving a client's medication. Which features should the charge nurse's feedback have?",
       "options": [
-        "Given soon after the missed check",
-        "Focused on the behavior, not the nurse's character",
-        "Saved for the new nurse's annual evaluation",
-        "Specific about the step that was missed",
+        "Given in front of the team as a teaching moment",
         "Linked to how the missed step could affect the client",
+        "Specific about the step that was missed",
+        "Saved for the new nurse's annual evaluation",
         "Noting what the new nurse did well",
-        "Given in front of the team as a teaching moment"
+        "Given soon after the missed check",
+        "Focused on the behavior, not the nurse's character"
       ],
       "answer": [
-        0,
         1,
-        3,
+        2,
         4,
-        5
+        5,
+        6
       ],
       "rationale": "<p><b>Formative feedback</b> improves team performance. It's <b>timely</b> (soon after the behavior), <b>respectful</b> (about behaviors, not personal attributes), <b>specific</b>, directed toward improvement, <b>appreciative</b> (it notes what the nurse does well), considerate, and <b>client focused</b> (how the behavior affects the client).</p><p><b>Giving it in front of the team</b> isn't the right answer, even though others could learn too. But feedback is considerate: correction in front of coworkers isn't, and it makes the nurse defensive. <b>Saving it for the annual evaluation</b> loses the timeliness that makes feedback work.</p><p><b>Takeaway:</b> Good feedback is timely, specific, respectful, appreciative, considerate, and client focused.</p>"
     },
@@ -1042,16 +1042,16 @@
       "level": 2,
       "stem": "Which actions should the nurse take to give a safe handoff to the home health nurse?",
       "options": [
-        "Send the medication list without the therapy plans",
-        "Use a structured format, like SBAR or I-PASS",
-        "Invite questions, and have the receiving nurse read back key points",
+        "Include the thickened-liquid diet and the walker plan",
         "Leave out details the home health nurse can find in the chart later",
-        "Include the thickened-liquid diet and the walker plan"
+        "Invite questions, and have the receiving nurse read back key points",
+        "Use a structured format, like SBAR or I-PASS",
+        "Send the medication list without the therapy plans"
       ],
       "answer": [
-        1,
+        0,
         2,
-        4
+        3
       ],
       "case": "stroketeam",
       "rationale": "<p>A safe handoff is <b>structured</b>, includes the <b>safety-critical plan</b> (thickened liquids, walker, dressing help), and ends with <b>questions and a read-back</b>.</p><p>Sending the <b>medication list alone</b> or leaving details for later invites the kind of breakdown that put thin juice on his tray.</p><p><b>Takeaway:</b> Handoffs: structured, complete, and checked with a read-back.</p>"
@@ -1224,14 +1224,14 @@
       "stem": "A nurse is reviewing leadership types. Which actions fit an autocratic leader?",
       "options": [
         "Directing the work, with little input from the staff",
-        "Making the decisions alone",
         "Letting the group decide how to divide the work",
-        "Asking the staff for their ideas",
-        "Adapting the style to each nurse's experience"
+        "Adapting the style to each nurse's experience",
+        "Making the decisions alone",
+        "Asking the staff for their ideas"
       ],
       "answer": [
         0,
-        1
+        3
       ],
       "rationale": "<p>An <b>autocratic</b> leader <b>makes the decisions</b> and <b>directs the work</b>, with little input from the staff.</p><p><b>Asking for ideas</b> is participative, <b>letting the group decide</b> is laissez-faire, and <b>adapting the style</b> is situational.</p><p><b>Takeaway:</b> Autocratic: I decide, I direct.</p>"
     },
@@ -1536,17 +1536,17 @@
       "level": 2,
       "stem": "Which outcomes are benefits of effective interprofessional collaboration?",
       "options": [
-        "Fewer errors",
-        "Better client outcomes",
         "Higher staff satisfaction",
         "Less need to communicate",
+        "Better client outcomes",
+        "Quicker referrals",
         "More time spent in meetings",
-        "Quicker referrals"
+        "Fewer errors"
       ],
       "answer": [
         0,
-        1,
         2,
+        3,
         5
       ],
       "rationale": "<p>Effective collaboration brings <b>fewer errors</b>, <b>better outcomes</b>, <b>higher staff and client satisfaction</b>, and <b>quicker referrals</b>.</p><p>It needs <b>more</b> communication, not less, and its goal isn't more meetings.</p><p><b>Takeaway:</b> Collaboration: safer care, better outcomes, happier staff.</p>"
@@ -1757,6 +1757,215 @@
       ],
       "answer": 2,
       "rationale": "<p>A <b>brief</b> is a short planning meeting <b>at the start</b>, so the team shares the plan, roles, and concerns.</p><p>A <b>debrief</b> comes after an event, a <b>huddle</b> adjusts the plan during the shift, and a <b>call-out</b> shares critical information in the moment.</p><p><b>Takeaway:</b> Start: brief. Midway: huddle. After: debrief.</p>"
+    },
+    {
+      "id": "lt-108",
+      "type": "sata",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A nurse manager is getting ready to open six new beds next month. Which actions should the nurse manager identify as part of the organizing function?",
+      "options": [
+        "Setting a goal for the new beds' first-year falls rate",
+        "Deciding who the new staff will report to",
+        "Ordering the equipment and supplies the beds will need",
+        "Encouraging staff at a meeting about the new beds",
+        "Comparing the falls rate with the goal after six months",
+        "Arranging the staff schedule to cover the new beds"
+      ],
+      "answer": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "<p><b>Organizing</b> is identifying and assigning resources, <b>staff</b>, <b>equipment</b>, and <b>supplies</b>, and the structure: <b>who reports to whom</b>.</p><p>Setting a goal is <b>planning</b>, checking results against it is <b>controlling</b>, and motivating the staff is <b>coordinating</b> (directing).</p><p><b>Takeaway:</b> Organizing: the people, the things, and the structure.</p>"
+    },
+    {
+      "id": "lt-109",
+      "type": "sata",
+      "topic": "Principles of management",
+      "level": 3,
+      "stem": "A nurse manager finds the unit's overtime costs are well above the budget's projection. Which actions should the nurse manager take?",
+      "options": [
+        "Cut the time for handoff report to save paid minutes",
+        "Involve staff in finding ways to cover shifts without overtime",
+        "Leave the budget as it is, since staffing costs can't be predicted",
+        "Find out which shifts and causes drive the overtime",
+        "Cancel overtime at once, whatever the census and acuity",
+        "Adjust staffing plans to bring actual spending back toward the budget"
+      ],
+      "answer": [
+        1,
+        3,
+        5
+      ],
+      "rationale": "<p>Managing resources means watching <b>actual costs against the budget</b> and adjusting: finding the <b>cause</b>, changing the <b>staffing plan</b>, and involving the staff, which also supports <b>engagement</b>.</p><p>Stopping overtime whatever the census or acuity, or cutting handoff time, puts clients at risk, and leaving the budget alone ignores a gap the manager is accountable for.</p><p><b>Takeaway:</b> Manage resources: compare, find the cause, adjust.</p>"
+    },
+    {
+      "id": "lt-110",
+      "type": "sata",
+      "topic": "Team tools and conflict",
+      "level": 3,
+      "stem": "Two nurses on a unit disagree about how weekend shifts are split, and the tension is affecting the team. Which actions should the charge nurse take?",
+      "options": [
+        "Let each nurse describe the problem without interruption",
+        "Decide the schedule right away, so the arguing stops",
+        "Keep the focus on the schedule, not on personalities",
+        "Work with both nurses toward a plan they can each accept",
+        "Meet with both nurses together in a private place",
+        "Wait and see whether the conflict settles down on its own"
+      ],
+      "answer": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p>Conflict is managed by bringing it into the open, <b>privately</b>, letting <b>each side be heard</b>, keeping the focus on the <b>problem, not the people</b>, and <b>collaborating</b> toward a solution both can accept.</p><p>Deciding for them ends the argument but not the conflict, and waiting lets it grow and spread to the team.</p><p><b>Takeaway:</b> Conflict: private, heard, on the problem, solved together.</p>"
+    },
+    {
+      "id": "lt-111",
+      "type": "sata",
+      "topic": "Team tools and conflict",
+      "level": 2,
+      "stem": "A nurse believes a client's transfer to a lower level of care is unsafe. Which statements by the nurse use the CUS tool?",
+      "options": [
+        "“Whatever you think is best, doctor.”",
+        "“Can we talk about it after the transfer?”",
+        "“This is a safety issue. I need us to stop and recheck him.”",
+        "“I'll document my concern and move him as ordered.”",
+        "“I'm concerned about his oxygen saturation.”",
+        "“I'm uncomfortable moving him with these vital signs.”"
+      ],
+      "answer": [
+        2,
+        4,
+        5
+      ],
+      "rationale": "<p><b>CUS</b> raises a safety concern in three steps: I'm <b>Concerned</b>, I'm <b>Uncomfortable</b>, this is a <b>Safety</b> issue, with a clear request to stop.</p><p>Deferring, waiting until after the move, or documenting and going ahead leaves the concern unheard while the client is at risk.</p><p><b>Takeaway:</b> CUS: Concerned, Uncomfortable, Safety issue, then stop.</p>"
+    },
+    {
+      "id": "lt-112",
+      "type": "sata",
+      "topic": "Team communication",
+      "level": 2,
+      "stem": "A provider gives a nurse a prescription by phone. Which actions should the nurse take?",
+      "options": [
+        "Get the provider's confirmation that the read-back is correct",
+        "Read back what was written to the provider",
+        "Write it down while the provider is speaking",
+        "Ask a coworker to listen in instead of reading it back",
+        "Repeat the medication name from memory after the call",
+        "Give the first dose, then ask the provider to confirm it later"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p>A spoken prescription is <b>received, recorded, read back</b> from what was written, and <b>confirmed</b> by the provider.</p><p>Repeating from memory skips the written record, a listener doesn't replace the read-back, and giving a dose before confirming risks an error.</p><p><b>Takeaway:</b> Spoken orders: write, read back, confirm.</p>"
+    },
+    {
+      "id": "lt-113",
+      "type": "sata",
+      "topic": "Interprofessional collaboration",
+      "level": 3,
+      "stem": "A primary care provider is managing a client's diabetes, high blood pressure, and new kidney problems. Which situations should the nurse identify as a referral?",
+      "options": [
+        "The client is moved to an intensive care team, which takes over the client's care",
+        "The provider hands the kidney disease to a nephrologist and keeps the rest",
+        "The provider asks a kidney specialist for advice and keeps managing the client's kidney care",
+        "The provider calls a pharmacist for advice about a dose, then decides on it",
+        "The provider sends the client to a podiatrist to manage foot ulcers"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "rationale": "<p>A <b>referral</b> hands over the management of <b>one condition</b> to another provider, while the first keeps the rest: the kidney disease to a nephrologist, the foot ulcers to a podiatrist.</p><p>Asking for advice while keeping the care is a <b>consultation</b>, and handing over <b>all care</b> is a <b>transfer</b>.</p><p><b>Takeaway:</b> Consult = advice; refer = one condition; transfer = all care.</p>"
+    },
+    {
+      "id": "lt-114",
+      "type": "sata",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "Which situations should the nurse identify as interprofessional collaboration?",
+      "options": [
+        "A nurse and a pharmacist plan a client's medication schedule together",
+        "Two RNs on the same shift split a heavy assignment between them",
+        "An experienced nurse precepts a new graduate nurse on the unit",
+        "A nurse and a social worker arrange a client's home care",
+        "A charge nurse and an LPN plan the shift's tasks and breaks together",
+        "A nurse, a physical therapist, and a dietitian set goals with a client"
+      ],
+      "answer": [
+        0,
+        3,
+        5
+      ],
+      "rationale": "<p><b>Interprofessional</b> collaboration brings together <b>different professions</b>, like pharmacy, physical therapy, nutrition, and social work, with the nurse and the client.</p><p>Work among nurses, like RNs, an LPN, or a preceptor and a new graduate, is <b>intraprofessional</b>: within one profession.</p><p><b>Takeaway:</b> Inter = across professions; intra = within nursing.</p>"
+    },
+    {
+      "id": "lt-115",
+      "type": "sata",
+      "topic": "Contemporary leadership",
+      "level": 2,
+      "stem": "A nurse manager uses transactional leadership. Which actions should the nurse expect from this manager?",
+      "options": [
+        "Rewards for meeting set goals, like a bonus for no falls",
+        "Close monitoring for errors, with correction when they occur",
+        "Clear tasks and targets for each shift",
+        "Staff left to set their own goals with little direction",
+        "Coaching each nurse toward long-term career growth",
+        "A shared vision that inspires staff to grow beyond their goals"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "<p><b>Transactional</b> leadership is an <b>exchange</b>: rewards (or consequences) for meeting <b>set tasks and goals</b>, with a watch for <b>errors to correct</b>. It gets the expected results.</p><p>Inspiring a shared vision and coaching growth beyond expectations are <b>transformational</b>, and leaving staff to direct themselves is <b>laissez-faire</b>.</p><p><b>Takeaway:</b> Transactional: tasks, targets, rewards, corrections.</p>"
+    },
+    {
+      "id": "lt-116",
+      "type": "sata",
+      "topic": "Contemporary leadership",
+      "level": 3,
+      "stem": "A hospital is starting shared governance. Which features should the nurse expect?",
+      "options": [
+        "Decisions made by the chief nursing officer, then shared with staff",
+        "Managers who stop making decisions and let units run themselves",
+        "A leadership style the manager chooses for each situation",
+        "Clear roles and accountability for council decisions",
+        "Staff nurses sharing decisions about quality and practice with leaders",
+        "Councils of staff nurses that make decisions about practice"
+      ],
+      "answer": [
+        3,
+        4,
+        5
+      ],
+      "rationale": "<p>Shared governance is a <b>structure</b>: staff nurses share decisions about <b>practice and quality</b> with leaders through <b>councils</b> that have clear <b>roles and accountability</b>.</p><p>It isn't laissez-faire (leaders stay involved), it isn't top-down (the staff decide with leaders), and it isn't a style a manager picks: it's how the organization makes decisions.</p><p><b>Takeaway:</b> Shared governance: the staff have a seat at the table.</p>"
+    },
+    {
+      "id": "lt-117",
+      "type": "sata",
+      "topic": "Leaders and managers",
+      "level": 2,
+      "stem": "A new graduate asks how managers differ from leaders. Which statements about managers should the nurse include?",
+      "options": [
+        "“Staff nurses can't lead; leading is the manager's job.”",
+        "“They're chosen by the staff they manage.”",
+        "“Their authority comes from the job they were hired into.”",
+        "“They hold an official position in the organization.”",
+        "“They're accountable for budgets, staffing, and outcomes.”",
+        "“They influence others even without a title.”"
+      ],
+      "answer": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "<p><b>Managers</b> hold an <b>official position</b>, with authority that comes with the job, and are accountable for resources like <b>budgets and staffing</b>, and for outcomes.</p><p>Influence without a title describes <b>leaders</b>, who can be anyone on the team: every nurse leads. Managers are appointed by the organization, not chosen by the staff.</p><p><b>Takeaway:</b> Leaders influence; managers hold the position.</p>"
     }
   ]
 }
