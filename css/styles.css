@@ -1074,7 +1074,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 
 /* Pieces only phones show. The heading row on the homepage keeps the
    spacing the heading had alone. */
-.m-top, .c-phone, .sheet-grip, .sheet-shade, .chart-card, .chart-back, .cell-col, .timer svg,
+.m-top, .c-phone, .sheet-grip, .sheet-hint, .sheet-shade, .chart-card, .chart-back, .cell-col, .timer svg,
 .swipe-hint, .saved-chip, .more-details, .meta-phone { display: none; }
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; margin: 0 0 10px; }
 .section-head .section-title { margin: 0; }
@@ -1142,7 +1142,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
      a slim row with the mode or the time left; one big button at the
      bottom; and the answer and rationale as a sheet over the question. */
   .taking { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
-  .taking.has-sheet { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
+  .taking.has-sheet { padding-bottom: calc(84px + var(--peek, 66px) + env(safe-area-inset-bottom)); }
   .taking .topbar { display: none; }
   .taking .m-top { display: block; position: sticky; top: 0; z-index: 40; background: #fff; border-top: 4px solid var(--accent); }
   .m-top-row { display: flex; align-items: center; gap: 2px; padding: 8px 8px 8px 12px; }
@@ -1192,23 +1192,31 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .taking .btn-continue.is-next::after { content: "→"; margin-left: 8px; }
   .taking .c-wide { display: none; }
   .taking .c-phone { display: inline; }
+  /* The sheet keeps its full height; folded, it slides down behind the big
+     button until only its top line shows (--peek, that line's height, from
+     exam.js). It moves by transform alone, on its own layer, so a phone can
+     slide it with the finger without redrawing it. */
   .taking .feedback {
     position: fixed; left: 0; right: 0; bottom: calc(72px + env(safe-area-inset-bottom)); z-index: 33;
-    max-height: 66vh; overflow-y: auto; overscroll-behavior: contain;
-    margin: 0; padding: 0 18px 18px; background: #fff; border: 0; border-radius: 18px 18px 0 0;
-    box-shadow: 0 -8px 28px rgba(0, 0, 0, .18);
+    display: flex; flex-direction: column; max-height: 66vh;
+    margin: 0; padding: 0; background: #fff; border: 0; border-radius: 18px 18px 0 0;
+    box-shadow: 0 -8px 28px rgba(0, 0, 0, .18); will-change: transform;
   }
-  .taking .sheet-grip {
-    display: block; position: sticky; top: 0; z-index: 1; width: calc(100% + 36px); height: 28px;
-    margin: 0 -18px 4px; padding: 0; background: #fff; border: 0; border-radius: 18px 18px 0 0;
-  }
+  .taking .feedback.is-folded { transform: translateY(calc(100% - var(--peek, 66px))); cursor: pointer; }
+  .taking .feedback.is-dragging { transition: none; }
+  .taking .sheet-head { flex: none; padding: 0 18px 14px; touch-action: none; }
+  .taking .sheet-grip { display: block; width: calc(100% + 36px); height: 28px; margin: 0 -18px 2px; padding: 0; background: none; border: 0; border-radius: 18px 18px 0 0; }
   .taking .sheet-grip > span { display: block; width: 44px; height: 5px; margin: 0 auto; border-radius: 3px; background: #C6C9CE; }
-  .taking .feedback-result { font-size: 16px; }
-  .taking .feedback.is-folded { overflow: hidden; cursor: pointer; }
-  .taking .feedback.is-folded > :not(.sheet-grip, .feedback-result) { display: none; }
-  .taking .feedback.is-folded .feedback-result { margin: 0; }
-  .taking .feedback.is-folded .feedback-result::after { content: "Rationale ▴"; float: right; margin-left: 10px; font-size: 13.5px; font-weight: 700; color: var(--accent-deep); }
-  .taking.sheet-open .sheet-shade { display: block; position: fixed; inset: 0; z-index: 32; background: rgba(15, 30, 50, .35); }
+  .taking .sheet-line { display: flex; align-items: baseline; gap: 10px; }
+  .taking .feedback-result { flex: 1 1 auto; min-width: 0; margin: 0; font-size: 16px; }
+  .taking .sheet-hint { display: block; flex: none; font-size: 13.5px; font-weight: 700; color: var(--accent-deep); }
+  .taking .feedback:not(.is-folded) .sheet-hint { visibility: hidden; }
+  .taking .sheet-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 18px 18px; }
+  .taking .feedback.is-folded .sheet-body { visibility: hidden; transition: visibility 0s .32s; }
+  .taking .sheet-shade { display: block; position: fixed; inset: 0; z-index: 32; background: rgba(15, 30, 50, .35); opacity: 0; pointer-events: none; }
+  .taking.sheet-open .sheet-shade { opacity: 1; pointer-events: auto; }
+  .taking:is(.sheet-open, .sheet-moving) .sheet-shade { will-change: opacity; }
+  .taking.sheet-moving .sheet-shade { transition: none; }
 
   /* Choices are cards. */
   .choices { gap: 8px; }
@@ -1288,9 +1296,9 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   body:has(.taking) .toasts { bottom: calc(88px + env(safe-area-inset-bottom)); }
   .exam[data-text-size] .question { zoom: 1; }
   .exam[data-text-size="large"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
-  .exam[data-text-size="large"] :is(.case-panel, .taking .feedback) > :not(.sheet-grip) { zoom: 1.12; }
+  .exam[data-text-size="large"] :is(.case-panel > *, .taking .sheet-line, .taking .sheet-body > *) { zoom: 1.12; }
   .exam[data-text-size="larger"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
-  .exam[data-text-size="larger"] :is(.case-panel, .taking .feedback) > :not(.sheet-grip) { zoom: 1.25; }
+  .exam[data-text-size="larger"] :is(.case-panel > *, .taking .sheet-line, .taking .sheet-body > *) { zoom: 1.25; }
 }
 
 @media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
@@ -1298,7 +1306,8 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .class-panel[data-slide="right"] { animation: from-left .22s ease-out; }
   @keyframes from-right { from { opacity: .4; transform: translateX(36px); } }
   @keyframes from-left { from { opacity: .4; transform: translateX(-36px); } }
-  .taking .feedback:not(.is-folded) { animation: sheet-up .2s ease-out; }
+  .taking .feedback { transition: transform .3s cubic-bezier(.2, .8, .25, 1); }
+  .taking .sheet-shade { transition: opacity .3s; }
   .modal-sheet .modal { animation: sheet-up .2s ease-out; }
   @keyframes sheet-up { from { transform: translateY(40px); opacity: .6; } }
 }

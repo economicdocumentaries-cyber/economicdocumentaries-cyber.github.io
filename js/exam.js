@@ -2,7 +2,7 @@
 // pause, calculator, Continue, alerts, full screen, saved progress, the
 // case-study layout, practice feedback, going back and flagging, saving
 // questions (SPEC 11.7), and review mode.
-import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, onSwipe, setKeeper } from './util.js';
+import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, setKeeper } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
@@ -1053,7 +1053,11 @@ export function examView(root) {
     ]);
     sheet = feedback;
     page.classList.toggle('has-sheet', !!feedback);
-    openSheet(checked);
+    sheetSizer.disconnect();
+    if (feedback) {
+      placeSheet(checked);
+      sheetSizer.observe(feedback.querySelector('.sheet-head'));
+    } else setSheet(false);
     paintProgress();
     paintContinue();
     if (moveFocus) {
@@ -1084,119 +1088,134 @@ export function examView(root) {
     continueBtn.classList.toggle('is-next', label === 'Next question');
   }
 
-  // The answer and rationale slide up as a sheet over the question. Its grip
-  // (a tap, or a swipe up) opens it again once folded; so does tapping the
-  // folded sheet. A swipe down anywhere on the open sheet folds it to one line,
-  // following the finger (the owner's request, 2026-11-15), and so does a tap
-  // on the grip or the shade. A swipe that starts while a long rationale is
-  // scrolled down only scrolls it; at the top, the next swipe down folds it.
+  // The answer and rationale on phones: a sheet pinned above the big button.
+  // After Check answer only its top line slides up (the grip, the result, and
+  // "Rationale ▴"), so the question shows with its marks; the rationale waits
+  // until the student pulls the sheet up or taps that line (the owner's idea,
+  // 2026-11-15; OPEN_ON_CHECK brings back the sheet sliding all the way up).
+  // The sheet follows the finger both ways: from anywhere on its top line, and
+  // on the open rationale from anywhere while it's scrolled to its top (one
+  // scrolled down scrolls back up first). Let go a quarter of the way, or with
+  // a flick, and it finishes the move; otherwise it slides back. A tap on the
+  // folded sheet opens it; a tap on the grip or the dimmed question folds it.
+  // Only transform and opacity change as it moves, so phones draw it smoothly.
+  const OPEN_ON_CHECK = false;
   let sheet = null;
   function rationaleSheet(feedback) {
     const grip = h('button.sheet-grip', {
-      type: 'button', 'aria-label': 'Rationale', onclick: () => (feedback.classList.contains('is-folded') ? openSheet(true) : foldSheet()),
+      type: 'button', 'aria-label': 'Rationale', 'aria-expanded': 'false',
+      onclick: () => (feedback.classList.contains('is-folded') ? setSheet(true) : foldSheet()),
     }, h('span', { 'aria-hidden': 'true' }));
-    onSwipe(grip, (way, e) => {
-      if (way !== 'up' && way !== 'down') return;
-      e.preventDefault(); // no click after the swipe
-      if (way === 'up') openSheet(true);
-      else foldSheet(); // usually already folding: the drag below handles a swipe down anywhere
-    });
+    // The top line stays put; the rest scrolls under it.
+    const result = feedback.querySelector(':scope > .feedback-result');
+    const head = h('div.sheet-head', grip, h('div.sheet-line', result, h('span.sheet-hint', { 'aria-hidden': 'true' }, 'Rationale ▴')));
+    const body = h('div.sheet-body', [...feedback.childNodes].filter(n => n !== result));
+    feedback.replaceChildren(head, body);
+    feedback.classList.add('is-folded'); // drawn folded first, so nothing slides until asked
     feedback.addEventListener('click', e => {
-      if (feedback.classList.contains('is-folded') && !e.target.closest('button, a')) openSheet(true);
+      if (feedback.classList.contains('is-folded') && !e.target.closest('button, a')) setSheet(true);
     });
-    dragToFold(feedback);
-    feedback.prepend(grip);
+    dragSheet(feedback, head, body);
     return feedback;
   }
 
-  function openSheet(open) {
+  // Folded, the sheet slides down by its height less its top line's (CSS
+  // --peek, which also keeps the end of the question above that line).
+  function measureSheet(el) {
+    const head = el?.querySelector('.sheet-head');
+    if (head) page.style.setProperty('--peek', `${head.getBoundingClientRect().height}px`);
+  }
+  const sheetSizer = new ResizeObserver(() => measureSheet(sheet));
+
+  // Opens or folds the sheet; CSS slides it there from wherever it is. ms: how
+  // long the slide takes (after a flick, quicker), or the CSS's own time.
+  function setSheet(open, ms = 0) {
     page.classList.toggle('sheet-open', !!sheet && open);
+    page.classList.remove('sheet-moving');
+    sheetShade.style.opacity = '';
     if (!sheet) return;
-    sheet.classList.toggle('is-folded', !open);
-    sheet.querySelector('.sheet-grip').setAttribute('aria-expanded', String(open));
+    const el = sheet;
+    el.style.transitionDuration = sheetShade.style.transitionDuration = ms ? `${ms}ms` : '';
+    if (ms) setTimeout(() => { if (el.style.transitionDuration === `${ms}ms`) el.style.transitionDuration = sheetShade.style.transitionDuration = ''; }, ms + 60);
+    el.classList.remove('is-dragging');
+    el.classList.toggle('is-folded', !open);
+    el.style.transform = '';
+    el.querySelector('.sheet-grip')?.setAttribute('aria-expanded', String(open));
   }
 
   const sheetIsOpen = () => !!sheet && page.classList.contains('sheet-open') && !sheet.classList.contains('is-folded');
+  const foldSheet = () => { if (sheetIsOpen()) setSheet(false); };
   const smooth = () => phone.matches && !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Folds the open sheet: on phones it slides down until only its top line
-  // shows (the shade fading), then the rest of it hides.
-  function foldSheet() {
+  // A new sheet starts folded where it belongs; one for a question just
+  // checked slides up from behind the big button instead (to its top line, or
+  // with OPEN_ON_CHECK all the way).
+  function placeSheet(checked) {
     const el = sheet;
-    if (!el || el.classList.contains('is-folded') || el.dataset.folding) return;
-    if (!smooth()) {
-      el.style.transition = el.style.transform = sheetShade.style.opacity = '';
-      openSheet(false);
-      return;
-    }
-    el.classList.add('is-folded'); // its folded height, measured before anything is drawn
-    const folded = el.offsetHeight;
-    el.classList.remove('is-folded');
-    el.style.transition = 'transform .24s cubic-bezier(.3, .7, .4, 1)';
-    el.style.transform = `translateY(${Math.max(0, el.offsetHeight - folded)}px)`;
-    sheetShade.style.transition = 'opacity .24s';
-    sheetShade.style.opacity = '0';
-    el.dataset.folding = '1';
-    let done = false;
-    const end = () => {
-      if (done) return;
-      done = true;
-      delete el.dataset.folding;
-      el.style.transition = 'none';
-      el.style.transform = sheetShade.style.transition = sheetShade.style.opacity = '';
-      if (el === sheet) openSheet(false);
-      void el.offsetHeight; // the reset takes effect before the transition comes back
-      el.style.transition = '';
-    };
-    el.addEventListener('transitionend', end, { once: true });
-    setTimeout(end, 320);
+    el.style.transition = 'none';
+    measureSheet(el);
+    setSheet(checked && OPEN_ON_CHECK);
+    if (checked && smooth()) el.style.transform = 'translateY(100%)';
+    el.getBoundingClientRect(); // drawn there first, without sliding
+    el.style.transition = el.style.transform = '';
   }
 
-  // A swipe down on the open sheet moves it with the finger; let go past a
-  // quarter of its height (or 120 px), or with a quick flick, and it folds;
-  // otherwise it springs back. Only a swipe that starts with the sheet scrolled
-  // to its top moves it.
-  function dragToFold(el) {
-    let start = null;
-    let dy = 0;
-    let dragging = false;
+  // A finger moving the sheet. On its top line, and anywhere on the folded
+  // sheet, the browser never scrolls (touch-action: none), so the sheet takes
+  // every move. On the open rationale, the first move decides: down, with the
+  // rationale at its top, moves the sheet (the browser can't start a scroll
+  // the page can no longer stop); anything else scrolls the rationale.
+  function dragSheet(el, head, body) {
+    let g = null;
     el.addEventListener('touchstart', e => {
-      start = phone.matches && e.touches.length === 1 && !el.classList.contains('is-folded') && el.scrollTop <= 0
-        ? { x: e.touches[0].clientX, y: e.touches[0].clientY, t: performance.now() } : null;
-      dy = 0;
-      dragging = false;
+      g = null;
+      if (el !== sheet || !phone.matches || e.touches.length !== 1) return;
+      const onHead = el.classList.contains('is-folded') || head.contains(e.target);
+      if (!onHead && body.scrollTop > 0) return;
+      const t = e.touches[0];
+      g = { id: t.identifier, x0: t.clientX, y0: t.clientY, onHead, live: false, wasOpen: page.classList.contains('sheet-open'),
+        track: [[e.timeStamp, t.clientY]] };
     }, { passive: true });
     el.addEventListener('touchmove', e => {
-      if (!start) return;
-      const t = e.touches[0];
-      dy = t.clientY - start.y;
-      if (!dragging) {
-        if (Math.abs(dy) < 8 && Math.abs(t.clientX - start.x) < 8) return;
-        if (dy <= 0 || Math.abs(t.clientX - start.x) > dy) {
-          start = null; // scrolling the rationale, or a sideways swipe
+      const t = g && [...e.touches].find(f => f.identifier === g.id);
+      if (!t) return;
+      const dx = t.clientX - g.x0, dy = t.clientY - g.y0;
+      if (!g.live) {
+        if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return; // still a tap
+        if (g.onHead ? Math.abs(dx) > 2 * Math.abs(dy) : dy <= 0 || Math.abs(dx) > dy) {
+          g = null; // a sideways swipe, or scrolling the rationale
           return;
         }
-        dragging = true;
-        el.style.transition = 'none';
+        g.travel = Math.max(1, el.getBoundingClientRect().height - head.getBoundingClientRect().height);
+        g.from = new DOMMatrixReadOnly(getComputedStyle(el).transform).m42; // where it is, even mid-slide
+        g.live = true;
+        el.classList.add('is-dragging');
+        el.classList.remove('is-folded'); // the rationale shows as it comes up
+        page.classList.add('sheet-moving');
       }
       e.preventDefault();
-      el.style.transform = `translateY(${Math.max(0, dy)}px)`;
-      sheetShade.style.opacity = String(Math.max(0, 1 - dy / Math.max(1, el.offsetHeight)));
+      g.y = Math.min(g.travel, Math.max(0, g.from + dy));
+      el.style.transform = `translateY(${g.y}px)`;
+      sheetShade.style.opacity = String(1 - g.y / g.travel);
+      g.track.push([e.timeStamp, t.clientY]);
+      while (g.track.length > 2 && e.timeStamp - g.track[0][0] > 100) g.track.shift();
     }, { passive: false });
     const end = e => {
-      if (!start) return;
-      const fast = dy / Math.max(1, performance.now() - start.t) > 0.5;
-      start = null;
-      if (!dragging) return;
-      dragging = false;
-      if (e.cancelable) e.preventDefault(); // no click after the swipe
-      if (dy > Math.min(120, el.offsetHeight / 4) || (fast && dy > 30)) {
-        foldSheet();
-        return;
-      }
-      el.style.transition = smooth() ? 'transform .18s ease-out' : '';
-      el.style.transform = sheetShade.style.opacity = '';
-      el.addEventListener('transitionend', () => { el.style.transition = ''; }, { once: true });
+      if (!g || ![...e.changedTouches].some(f => f.identifier === g.id)) return;
+      const d = g;
+      g = null;
+      if (!d.live) return;
+      if (e.cancelable) e.preventDefault(); // no tap after a drag
+      // The finger's speed over its last tenth of a second (px/ms; down is +).
+      const [t0, y0] = d.track[0], [t1, y1] = d.track.at(-1);
+      const v = e.type === 'touchend' && t1 > t0 && e.timeStamp - t1 < 80 ? (y1 - y0) / (t1 - t0) : 0;
+      const moved = d.y - d.from; // how far the sheet came (down is +); a flick needs a little of it too
+      const open = d.wasOpen
+        ? !((v > 0.3 && moved > 20) || (moved > Math.min(96, d.travel / 4) && v > -0.1))
+        : (v < -0.3 && moved < -12) || (-moved > Math.min(48, d.travel / 4) && v < 0.1);
+      const left = Math.abs((open ? 0 : d.travel) - d.y);
+      setSheet(open, Math.round(Math.min(320, Math.max(160, (2 * left) / Math.max(1, Math.abs(v))))));
+      if (open && e.type === 'touchend') onTapGuard(e); // Back folds it again (the drag counts as a tap)
     };
     el.addEventListener('touchend', end);
     el.addEventListener('touchcancel', end);
@@ -1275,7 +1294,7 @@ export function examView(root) {
       save();
       showQuestion(false, true);
       const feedback = question.querySelector('.feedback');
-      feedback?.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      if (!phone.matches) feedback?.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       feedback?.focus({ preventScroll: true });
       return;
     }
@@ -1309,8 +1328,9 @@ export function examView(root) {
     save();
     counter.textContent = 'Review Your Answers';
     paintChip('Review your answers');
-    openSheet(false);
     sheet = null;
+    setSheet(false);
+    sheetSizer.disconnect();
     page.classList.remove('has-sheet');
     paintProgress();
     document.title = `${st.title} · Review your answers`;
@@ -1625,6 +1645,7 @@ export function examView(root) {
     document.removeEventListener('pointerdown', onPointerDown);
     document.removeEventListener('click', onTapGuard);
     removeEventListener('popstate', onPopState);
+    sheetSizer.disconnect();
     setKeeper(null);
     removeEventListener('beforeunload', onBeforeUnload);
     leaving = true;
