@@ -1141,8 +1141,8 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   /* The exam (idea 2): a top bar with Close, the question chip, and icons;
      a slim row with the mode or the time left; one big button at the
      bottom; and the answer and rationale as a sheet over the question. */
-  .taking { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
-  .taking.has-sheet { padding-bottom: calc(84px + var(--peek, 66px) + env(safe-area-inset-bottom)); }
+  .taking { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
+  .taking.has-sheet { padding-bottom: calc(92px + var(--peek, 66px) + env(safe-area-inset-bottom)); }
   .taking .topbar { display: none; }
   .taking .m-top { display: block; position: sticky; top: 0; z-index: 40; background: #fff; border-top: 4px solid var(--accent); }
   .m-top-row { display: flex; align-items: center; gap: 2px; padding: 8px 8px 8px 12px; }
@@ -1217,6 +1217,12 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .taking.sheet-open .sheet-shade { opacity: 1; pointer-events: auto; }
   .taking:is(.sheet-open, .sheet-moving) .sheet-shade { will-change: opacity; }
   .taking.sheet-moving .sheet-shade { transition: none; }
+  /* No blue flash on a tap (Android's tap highlight): the sheet's slide shows the tap (the owner's request, 2026-11-15). */
+  .taking :is(.feedback, .sheet-shade) { -webkit-tap-highlight-color: transparent; }
+  /* The disclaimer line stays on the homepage and on laptops, not under each question in an exam or its review
+     (the owner's request, 2026-11-15). */
+  .exam .site-footer { display: none; }
+  .exam.review main.wrap { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
 
   /* Choices are cards. */
   .choices { gap: 8px; }

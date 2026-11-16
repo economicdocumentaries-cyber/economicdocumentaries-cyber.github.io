@@ -1089,17 +1089,19 @@ export function examView(root) {
   }
 
   // The answer and rationale on phones: a sheet pinned above the big button.
-  // After Check answer only its top line slides up (the grip, the result, and
-  // "Rationale ▴"), so the question shows with its marks; the rationale waits
-  // until the student pulls the sheet up or taps that line (the owner's idea,
-  // 2026-11-15; OPEN_ON_CHECK brings back the sheet sliding all the way up).
-  // The sheet follows the finger both ways: from anywhere on its top line, and
+  // After Check answer it slides up from behind the button: all the way when
+  // the answer was wrong or partly right, so the rationale comes when it
+  // matters most, and only its top line when it was right (the grip, the
+  // result, and "Rationale ▴"), so the question shows with its marks and the
+  // rationale waits for a pull up or a tap on that line (the owner's idea,
+  // 2026-11-15; misses open it, our suggestion, which the owner OK'd on
+  // 2026-11-16; OPEN_ON_CHECK 'always' or 'never' does one or the other). The sheet follows the finger both ways: from anywhere on its top line, and
   // on the open rationale from anywhere while it's scrolled to its top (one
   // scrolled down scrolls back up first). Let go a quarter of the way, or with
   // a flick, and it finishes the move; otherwise it slides back. A tap on the
   // folded sheet opens it; a tap on the grip or the dimmed question folds it.
   // Only transform and opacity change as it moves, so phones draw it smoothly.
-  const OPEN_ON_CHECK = false;
+  const OPEN_ON_CHECK = 'missed';
   let sheet = null;
   function rationaleSheet(feedback) {
     const grip = h('button.sheet-grip', {
@@ -1148,13 +1150,14 @@ export function examView(root) {
   const smooth = () => phone.matches && !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // A new sheet starts folded where it belongs; one for a question just
-  // checked slides up from behind the big button instead (to its top line, or
-  // with OPEN_ON_CHECK all the way).
+  // checked slides up from behind the big button instead, to its top line or
+  // all the way (OPEN_ON_CHECK).
   function placeSheet(checked) {
     const el = sheet;
+    const open = checked && (OPEN_ON_CHECK === 'always' || (OPEN_ON_CHECK === 'missed' && !el.classList.contains('is-correct')));
     el.style.transition = 'none';
     measureSheet(el);
-    setSheet(checked && OPEN_ON_CHECK);
+    setSheet(open);
     if (checked && smooth()) el.style.transform = 'translateY(100%)';
     el.getBoundingClientRect(); // drawn there first, without sliding
     el.style.transition = el.style.transform = '';
