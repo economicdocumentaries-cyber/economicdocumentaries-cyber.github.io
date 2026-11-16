@@ -1276,4 +1276,6 @@ async function route() {
 }
 
 addEventListener('hashchange', route);
+// iPhones show a pressed button's look (:active) only on pages that listen for touches.
+document.addEventListener('touchstart', () => {}, { passive: true });
 route();

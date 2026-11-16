@@ -24,6 +24,13 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* No blue flash on a tap (the browser's tap highlight, on phones and tablets): every tap already
+   shows its result, and on a touch screen what a finger presses darkens a little while pressed,
+   as in phone apps (the owner's request, 2026-11-16). The .btn family has its own pressed colors. */
+html { -webkit-tap-highlight-color: transparent; }
+@media (hover: none) {
+  :is(button, a[href], label, summary, [role="button"], [role="tab"]):not(.btn, .btn-continue, .btn-ink, :disabled, [aria-disabled="true"]):active { filter: brightness(.94); }
+}
 body { margin: 0; background: var(--page); color: var(--text); font: 15px/1.5 var(--sans); }
 h1, h2, h3 { margin: 0; font-family: var(--slab); font-weight: 700; color: var(--ink); line-height: 1.25; }
 p { margin: 0 0 .75em; }
@@ -1189,6 +1196,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .taking .btn-continue::before { display: none; }
   .taking .btn-continue:active { background: #16304F; }
   .taking .btn-continue.is-next { background: var(--accent); color: var(--ink); }
+  .taking .btn-continue.is-next:active { background: #4FA9DC; }
   .taking .btn-continue.is-next::after { content: "→"; margin-left: 8px; }
   .taking .c-wide { display: none; }
   .taking .c-phone { display: inline; }
@@ -1217,8 +1225,6 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .taking.sheet-open .sheet-shade { opacity: 1; pointer-events: auto; }
   .taking:is(.sheet-open, .sheet-moving) .sheet-shade { will-change: opacity; }
   .taking.sheet-moving .sheet-shade { transition: none; }
-  /* No blue flash on a tap (Android's tap highlight): the sheet's slide shows the tap (the owner's request, 2026-11-15). */
-  .taking :is(.feedback, .sheet-shade) { -webkit-tap-highlight-color: transparent; }
   /* The disclaimer line stays on the homepage and on laptops, not under each question in an exam or its review
      (the owner's request, 2026-11-15). */
   .exam .site-footer { display: none; }
