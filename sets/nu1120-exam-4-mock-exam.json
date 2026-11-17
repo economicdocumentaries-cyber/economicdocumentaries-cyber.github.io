@@ -4,7 +4,7 @@
   "description": "Exam 4 practice on the endocrine, cardiovascular, respiratory, and lymphatic and immune systems (Weeks 9 to 12), matched to the instructor's Exam 4 study guide and written a level beyond the real exam, with the next-generation question types. Like the real exam, each exam gives 50 questions, split evenly across the four systems, with one case study.",
   "course": "NU1120",
   "exam": "Exam 4",
-  "timeMinutes": 352.5,
+  "timeMinutes": 408.0,
   "defaultCount": 50,
   "topicWeights": {
     "Endocrine system": 1,
@@ -79,6 +79,23 @@
         {
           "title": "Laboratory Results",
           "html": "<h4>Laboratory Results (last month)</h4><table><tr><th>Total cholesterol</th><td>246&nbsp;mg/dL</td></tr><tr><th>LDL</th><td>162&nbsp;mg/dL</td></tr><tr><th>HDL</th><td>38&nbsp;mg/dL</td></tr><tr><th>Hemoglobin A1C</th><td>8.1%</td></tr><tr><th>Body mass index (BMI)</th><td>32</td></tr></table>"
+        }
+      ]
+    },
+    "tired": {
+      "intro": "A nurse at a primary care clinic is seeing a 71-year-old woman for a routine visit.",
+      "tabs": [
+        {
+          "title": "Nurses' Notes",
+          "html": "<h4>Nurses' Notes</h4><p><b>0930:</b> Client reports feeling more tired over the past 2 months and getting short of breath carrying laundry up the stairs. Now sleeps propped on three pillows because breathing is harder lying flat. Shoes feel tight by evening. Gained 2.3 kg (5 lb) in 2 weeks without eating more. Walks the dog twice a day. Quit smoking 15 years ago. High blood pressure for 20 years. Says, “I just need to get back in shape.” Lungs: fine crackles at both bases. Ankles: pitting edema, 2+. Capillary refill 2 seconds. Alert and oriented.</p>"
+        },
+        {
+          "title": "Vital Signs",
+          "html": "<h4>Vital Signs</h4><table><tr><th>Temperature</th><td>36.8&nbsp;°C (98.2&nbsp;°F)</td></tr><tr><th>Heart rate</th><td>96/min, regular</td></tr><tr><th>Respiratory rate</th><td>22/min</td></tr><tr><th>Blood pressure</th><td>158/92&nbsp;mm&nbsp;Hg</td></tr><tr><th>Oxygen saturation</th><td>94% on room air</td></tr><tr><th>Weight</th><td>84&nbsp;kg (2 weeks ago: 81.7&nbsp;kg)</td></tr><tr><th>Body mass index</th><td>31</td></tr></table>"
+        },
+        {
+          "title": "Laboratory Results",
+          "html": "<h4>Laboratory Results</h4><table><tr><th>Total cholesterol</th><td>236&nbsp;mg/dL</td><td>(under 200)</td></tr><tr><th>LDL cholesterol</th><td>152&nbsp;mg/dL</td><td>(under 100)</td></tr><tr><th>HDL cholesterol</th><td>42&nbsp;mg/dL</td><td>(50 or higher for women)</td></tr><tr><th>Hemoglobin A1c</th><td>5.4%</td><td>(under 5.7%)</td></tr><tr><th>Sodium</th><td>138&nbsp;mEq/L</td><td>(135–145)</td></tr></table>"
         }
       ]
     }
@@ -4448,6 +4465,758 @@
         5
       ],
       "rationale": "<p><b>Helper (CD4+)</b> T cells coordinate the response and activate B cells, <b>cytotoxic (CD8+)</b> T cells kill infected and abnormal cells, <b>regulatory</b> T cells calm the response, and <b>memory</b> T cells respond faster the next time.</p><p><b>Making antibodies</b> isn't right: plasma cells, from B cells, do that. <b>Releasing histamine</b> isn't either: mast cells and basophils do that.</p><p><b>Takeaway:</b> Helper: coordinate. Cytotoxic: kill. Regulatory: calm. Memory: remember.</p>"
+    },
+    {
+      "id": "m4e-74",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client in labor has contractions that grow stronger and closer together as the baby's head presses on the cervix. Which hormone's release explains this pattern?",
+      "options": [
+        "More prolactin from the anterior pituitary",
+        "More vasopressin from the posterior pituitary",
+        "More oxytocin from the posterior pituitary",
+        "More epinephrine from the adrenal medulla"
+      ],
+      "answer": 2,
+      "rationale": "<p>Pressure of the baby's head on the cervix sends signals to the hypothalamus, which makes <b>oxytocin</b>; the <b>posterior pituitary</b> stores it and releases it. Oxytocin strengthens the contractions, which press harder on the cervix and bring still more oxytocin: a <b>positive feedback</b> loop that builds until the birth. Oxytocin also lets milk flow during breastfeeding.</p><p><b>More prolactin</b> isn't the right answer: prolactin, from the anterior pituitary, makes the milk, but it doesn't drive contractions. <b>Vasopressin</b> comes from the same gland as oxytocin but makes the kidneys hold on to water. <b>Epinephrine</b> strengthens the heartbeat in a stress response; it doesn't drive labor.</p><p><b>Takeaway:</b> Oxytocin is made by the hypothalamus and released by the posterior pituitary; it drives labor by positive feedback.</p>"
+    },
+    {
+      "id": "m4e-75",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A tumor is pressing on the stalk that connects the hypothalamus to the pituitary gland, so the hypothalamus's hormones can no longer reach the anterior pituitary. Which hormone level should the nurse expect to rise?",
+      "options": [
+        "Prolactin (PRL)",
+        "Thyroid-stimulating hormone (TSH)",
+        "Adrenocorticotropic hormone (ACTH)",
+        "Luteinizing hormone (LH)"
+      ],
+      "answer": 0,
+      "rationale": "<p>Most of the hypothalamus's hormones tell the anterior pituitary to release more: TRH, CRH, and GnRH. Prolactin is the exception: the hypothalamus holds it back with <b>dopamine</b>. With the stalk pressed, dopamine can't reach the pituitary, so <b>prolactin rises</b> while the other hormones fall.</p><p><b>TSH</b> isn't the right answer: it would rise if the thyroid gland failed, but here TRH, its signal from the hypothalamus, can't get through, so TSH falls. <b>ACTH</b> and <b>LH</b> fall for the same reason: CRH and GnRH can't reach the pituitary.</p><p><b>Takeaway:</b> The hypothalamus's dopamine holds prolactin down; cut the link, and prolactin rises.</p>"
+    },
+    {
+      "id": "m4e-76",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 2,
+      "stem": "A client is losing blood after an injury, and the adrenal medulla releases a surge of norepinephrine. Which effect of this hormone explains how blood keeps flowing to the brain and heart?",
+      "options": [
+        "It widens the airways, so more oxygen reaches the blood",
+        "It signals the kidneys to hold on to water and sodium, raising blood volume",
+        "It slows the heart, so the ventricles fill more fully",
+        "It narrows vessels in the skin and gut, raising blood pressure"
+      ],
+      "answer": 3,
+      "rationale": "<p>The adrenal medulla releases <b>epinephrine and norepinephrine</b> in the stress response. <b>Norepinephrine</b> acts mainly on the blood vessels: it narrows those in the skin and gut, which <b>raises the blood pressure</b> and sends more of the remaining blood to the brain and heart.</p><p><b>Widening the airways</b> isn't the right answer: that's mainly epinephrine's effect. Holding on to water and sodium is the job of ADH and aldosterone, which work over hours, not seconds. A stress hormone speeds the heart rather than slowing it.</p><p><b>Takeaway:</b> Norepinephrine mainly narrows blood vessels and raises blood pressure; epinephrine mainly speeds the heart and opens the airways.</p>"
+    },
+    {
+      "id": "m4e-77",
+      "type": "mc",
+      "topic": "Endocrine system",
+      "level": 3,
+      "stem": "A nurse is reviewing the glucose results of four clients. Which client's results fit the criteria for diabetes mellitus?",
+      "options": [
+        "A fasting glucose of 118 mg/dL on two separate mornings",
+        "A 2-hour glucose of 188 mg/dL after a 75-g glucose drink",
+        "A fasting glucose of 132 mg/dL on two separate mornings",
+        "A random glucose of 194 mg/dL with constant thirst"
+      ],
+      "answer": 2,
+      "rationale": "<p>A <b>fasting glucose of 126 mg/dL or more</b> meets the criterion for diabetes, confirmed by a second test, so 132 mg/dL on two mornings does. The other criteria: a 2-hour glucose of 200 mg/dL or more after a 75-g glucose drink, an A1c of 6.5% or more, or a random glucose of 200 mg/dL or more with symptoms.</p><p><b>A random glucose of 194 mg/dL with thirst</b> isn't the right answer: thirst is a classic symptom, but a random result has to reach 200 mg/dL. A fasting glucose of 118 mg/dL (100 to 125) and a 2-hour glucose of 188 mg/dL (140 to 199) are in the prediabetes range.</p><p><b>Takeaway:</b> Diabetes: fasting 126 or more, 2-hour 200 or more, A1c 6.5% or more, or random 200 or more with symptoms.</p>"
+    },
+    {
+      "id": "m4c-85",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A week after a viral illness, a client has sharp chest pain that is worse lying down, and the nurse hears a scratchy, grating sound with each heartbeat. Which structure is most likely inflamed?",
+      "options": [
+        "The endocardium, the smooth inner lining of the chambers and valves",
+        "The pericardium, the two-layered sac that surrounds the heart",
+        "The interventricular septum, the wall between the ventricles",
+        "The myocardium, the thick muscle layer of the heart wall"
+      ],
+      "answer": 1,
+      "rationale": "<p>The <b>pericardium</b> is a sac around the heart: a tough outer layer, and a thin inner layer folded in two, with a little fluid between its layers so the heart can beat without friction. When it's inflamed, often after a viral illness, the layers rub together, making a scratchy sound (a <b>friction rub</b>) with each heartbeat.</p><p><b>The myocardium</b> isn't the right answer: a virus can inflame the heart muscle too, but that weakens the pump; it doesn't make a rubbing sound. An inflamed endocardium, the lining of the chambers and valves, causes a murmur, and so does an opening in the interventricular septum.</p><p><b>Takeaway:</b> A scratchy rub with each heartbeat: the layers of the pericardium rubbing together.</p>"
+    },
+    {
+      "id": "m4c-86",
+      "type": "dropdown",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A nurse is reviewing how blood moves through the right side of the heart. Complete the following sentences.",
+      "text": "Blood from the body enters the right atrium and passes through the {{0}} valve, one of the {{1}} valves, into the right ventricle. The right ventricle then pushes it through the {{2}} valve, one of the {{3}} valves, into the vessel that carries it to the lungs.",
+      "blanks": [
+        {
+          "options": [
+            "mitral",
+            "tricuspid",
+            "aortic"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "semilunar",
+            "atrioventricular",
+            "interventricular"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "aortic",
+            "tricuspid",
+            "pulmonic"
+          ],
+          "answer": 2
+        },
+        {
+          "options": [
+            "atrioventricular",
+            "semilunar",
+            "interventricular"
+          ],
+          "answer": 1
+        }
+      ],
+      "rationale": "<p>Blood returning from the body fills the <b>right atrium</b>, then passes through the <b>tricuspid valve</b> into the right ventricle. The tricuspid and mitral valves are the <b>atrioventricular (AV) valves</b>, each between an atrium and a ventricle. The right ventricle pushes the blood through the <b>pulmonic valve</b> toward the lungs. The pulmonic and aortic valves are the <b>semilunar valves</b>, where blood leaves a ventricle.</p><p>Choosing <b>mitral</b> for the first blank mixes up the sides: the mitral valve is the left side's AV valve. There are no <b>interventricular</b> valves: the interventricular septum is the wall between the ventricles.</p><p><b>Takeaway:</b> Right side: right atrium, tricuspid (AV) valve, right ventricle, pulmonic (semilunar) valve, lungs.</p>"
+    },
+    {
+      "id": "m4c-87",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A nurse is explaining a blood sample that has been spun so it separates into layers. For each item, click to specify where the nurse should expect to find it.",
+      "rowHeader": "Item",
+      "columns": [
+        "Plasma",
+        "Formed elements"
+      ],
+      "rows": [
+        "Water",
+        "Platelets",
+        "Hormones on their way to target organs",
+        "Calcium, magnesium, and chloride",
+        "Neutrophils",
+        "Vitamins and glucose from digested food"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p><b>Plasma</b>, about 55% of the blood, is mostly <b>water</b> (about 90%), the solvent that carries everything else: electrolytes such as <b>sodium, potassium, calcium, magnesium, chloride, and bicarbonate</b>; proteins such as albumin, fibrinogen, and antibodies; nutrients such as <b>glucose and vitamins</b>; <b>hormones</b>; gases; and wastes. The <b>formed elements</b> are the cells and cell fragments: red blood cells, white blood cells such as <b>neutrophils</b>, and <b>platelets</b>.</p><p>Placing <b>platelets</b> in the plasma is a mistake: they float in it, but they're cell fragments, so they're formed elements.</p><p><b>Takeaway:</b> Plasma is water plus what it carries (salts, proteins, nutrients, hormones). Formed elements: red cells, white cells, and platelets.</p>"
+    },
+    {
+      "id": "m4c-88",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "A nurse is reviewing clients' results at a heart health screening. For each finding, click to specify whether it is a risk factor for cardiovascular disease.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Risk factor",
+        "Not a risk factor"
+      ],
+      "rows": [
+        "Total cholesterol of 214 mg/dL",
+        "HDL of 45 mg/dL in a man",
+        "LDL of 128 mg/dL",
+        "Type 2 diabetes mellitus",
+        "HDL of 45 mg/dL in a woman",
+        "Body mass index (BMI) of 23",
+        "Body mass index (BMI) of 29"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p>These are risk factors for cardiovascular disease: <b>total cholesterol over 200 mg/dL</b>, <b>LDL over 100 mg/dL</b>, <b>HDL under 40 mg/dL in men or under 50 mg/dL in women</b>, a <b>BMI over 25</b>, and <b>diabetes mellitus</b>, along with high blood pressure, smoking, and age. An HDL of 45 mg/dL is above a man's cutoff (40) but below a woman's (50).</p><p>Marking both HDL results the same way is a mistake: HDL's cutoff depends on the client's sex. A BMI of 23 is in the healthy range.</p><p><b>Takeaway:</b> Risk factors: total cholesterol over 200, LDL over 100, HDL under 40 (men) or 50 (women), BMI over 25, and diabetes.</p>"
+    },
+    {
+      "id": "m4c-89",
+      "type": "matrix",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with a high LDL level asks which food swaps help the heart. For each swap, click to specify whether it is heart-healthy.",
+      "rowHeader": "Swap",
+      "columns": [
+        "Heart-healthy",
+        "Not heart-healthy"
+      ],
+      "rows": [
+        "Cooking with avocado oil in place of butter",
+        "Cooking with coconut oil in place of olive oil",
+        "Choosing brown rice over white rice",
+        "Seasoning with herbs and lemon in place of salt",
+        "A frozen dinner labeled low fat, with 1,200 mg of sodium",
+        "Choosing low-fat yogurt over full-fat yogurt"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p>Heart-healthy eating uses <b>unsaturated oils</b>, such as extra-virgin olive oil, avocado oil, and other non-tropical vegetable oils; <b>whole grains</b>; <b>low-fat dairy</b>; and <b>less sodium</b>. <b>Coconut oil</b> is a tropical oil, high in saturated fat, so trading olive oil for it works against a high LDL.</p><p>Choosing the <b>low-fat frozen dinner</b> is a mistake: low fat doesn't make a meal heart-healthy when it has 1,200 mg of sodium, over half a day's limit.</p><p><b>Takeaway:</b> Non-tropical unsaturated oils, whole grains, low-fat dairy, and low sodium.</p>"
+    },
+    {
+      "id": "m4r-99",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 1,
+      "stem": "A nurse is teaching a nursing student about the lungs before a chest assessment. Which statement by the student shows an understanding of the teaching?",
+      "options": [
+        "“The right lung has 2 lobes and 8 or 9 segments, and the left has 3 lobes and 10.”",
+        "“Each lung has 3 lobes and 10 segments, so the two sides match.”",
+        "“The right lung has 3 lobes and 8 or 9 segments, and the left has 2 lobes and 10.”",
+        "“The right lung has 3 lobes and 10 segments, and the left has 2 lobes and 8 or 9.”"
+      ],
+      "answer": 3,
+      "rationale": "<p>The <b>right lung</b> has 3 lobes (upper, middle, and lower) and <b>10 segments</b>. The <b>left lung</b> has 2 lobes and <b>8 or 9 segments</b>, depending on how its lobes divide, since the heart takes up room on the left. Each segment has its own segmental bronchus, so a finding can be traced to one segment.</p><p><b>3 lobes but 8 or 9 segments on the right</b> isn't the right answer: the right lung does have 3 lobes, but it also has more segments, 10. The left lung, with 2 lobes, has fewer.</p><p><b>Takeaway:</b> Right: 3 lobes, 10 segments. Left: 2 lobes, 8 or 9 segments.</p>"
+    },
+    {
+      "id": "m4r-100",
+      "type": "matrix",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A nurse is teaching a 58-year-old client who smokes and works in a sawmill about lowering the risk of lung disease. For each of the client's risk factors, click to specify whether the client can change it.",
+      "rowHeader": "Risk factor",
+      "columns": [
+        "Can be changed",
+        "Can't be changed"
+      ],
+      "rows": [
+        "Smoking a pack of cigarettes a day",
+        "Being 58 years old",
+        "Breathing sawdust at work without a mask",
+        "The client's ethnic background",
+        "Drinking little water during the workday"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "rationale": "<p>Risk factors for respiratory illness that <b>can't be changed</b>: <b>age</b> and <b>ethnicity</b>. Ones that <b>can</b>: <b>smoking</b>, which damages the cilia and airways; <b>exposures at work</b> such as dust, lowered with a fitted mask or respirator; and <b>hydration</b>, since enough water keeps mucus thin so the cilia can clear it.</p><p>Marking <b>hydration</b> as something the client can't change is a mistake: drinking more water is one of the easiest changes, and it helps the airways clear.</p><p><b>Takeaway:</b> Can't change: age and ethnicity. Can change: smoking, work exposures, and hydration.</p>"
+    },
+    {
+      "id": "m4r-101",
+      "type": "mc",
+      "topic": "Respiratory system",
+      "level": 2,
+      "stem": "A 66-year-old client who had two chest infections last winter has had the flu and pneumococcal vaccines. The client asks what else lowers the risk. Which response should the nurse give?",
+      "options": [
+        "“Spend more time indoors once the weather turns cold.”",
+        "“Start a daily echinacea supplement on your own.”",
+        "“Get regular exercise, such as a brisk walk most days.”",
+        "“Rest as much as you can, since exertion weakens immunity.”"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Regular exercise</b> is one of the ways to prevent respiratory infections, along with the yearly flu vaccine and the pneumococcal vaccine the client already has. Activity supports immune function and keeps the lungs and breathing muscles strong; about 150 minutes a week is the goal.</p><p><b>A daily echinacea supplement</b> isn't the right answer: herbal supplements can be part of healthy habits, but only with the provider's guidance, not started alone. Staying indoors in the cold and resting more don't prevent infections: germs spread indoors, and inactivity weakens the lungs.</p><p><b>Takeaway:</b> To prevent respiratory infections: exercise, a yearly flu vaccine, and the pneumococcal vaccine for older adults.</p>"
+    },
+    {
+      "id": "m4r-102",
+      "type": "matrix",
+      "topic": "Respiratory system",
+      "level": 3,
+      "stem": "A nurse is reviewing the histories of clients on a medical unit. For each client, click to specify the acid–base imbalance the nurse should expect.",
+      "rowHeader": "Client",
+      "columns": [
+        "Respiratory acidosis",
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Metabolic alkalosis"
+      ],
+      "rows": [
+        "Type 1 diabetes, a glucose of 540 mg/dL, and large urine ketones",
+        "Continuous nasogastric suction for 3 days",
+        "A large mucus plug partly blocking the main airway",
+        "Severe dehydration, with weak pulses and cool, mottled skin",
+        "Anxiety, with deep breathing at 34/min"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        2,
+        1
+      ],
+      "rationale": "<p><b>Metabolic acidosis</b> comes from acid building up or bicarbonate being lost: diabetic ketoacidosis (ketones are acids), starvation, hypoxia, kidney failure, diarrhea, and severe dehydration, where poorly perfused tissues make lactic acid. <b>Metabolic alkalosis</b> comes from losing stomach acid, as with long vomiting or <b>nasogastric suction</b>. <b>Respiratory acidosis</b> comes from CO₂ that can't get out, as with a <b>blocked airway</b> or lungs that can't exchange gas. <b>Respiratory alkalosis</b> comes from breathing off too much CO₂, as with anxiety, fever, or a ventilator set too high.</p><p>Choosing metabolic alkalosis for the <b>dehydrated client</b> is a mistake: dehydration from vomiting does lead to alkalosis, but here the cool, mottled skin and weak pulses show poor perfusion, and tissues without enough blood flow make lactic acid.</p><p><b>Takeaway:</b> Lost stomach acid: metabolic alkalosis. Ketones, lactic acid, or lost bicarbonate: metabolic acidosis. Trapped CO₂: respiratory acidosis. Blown-off CO₂: respiratory alkalosis.</p>"
+    },
+    {
+      "id": "m4l-96",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Three weeks after a client sprained an ankle, the redness and warmth are gone, the swelling is much smaller, and the ankle is still stiff and a little tender as the tissue repairs. Which stage of inflammation do these findings fit?",
+      "options": [
+        "Acute, since the ankle is still tender and stiff",
+        "Subacute, since the signs are fading with healing",
+        "Chronic, since it has lasted longer than 2 weeks now",
+        "Resolved, since the redness and warmth are gone"
+      ],
+      "answer": 1,
+      "rationale": "<p>Inflammation moves through stages. <b>Acute</b> inflammation lasts hours to days, with redness, warmth, swelling, pain, and loss of function. In the <b>subacute</b> stage, over the following weeks, those signs fade as the tissue repairs. <b>Chronic</b> inflammation lasts months or longer, keeps damaging tissue, and can scar. This ankle, 3 weeks out, with the early signs fading and repair still going on, is in the subacute stage.</p><p><b>Resolved</b> isn't the right answer: the redness and warmth are gone, but the stiffness and tenderness show the repair isn't finished. Three weeks is too short for chronic inflammation, and this ankle is improving.</p><p><b>Takeaway:</b> Acute: hours to days, red and warm. Subacute: weeks, signs fading as repair goes on. Chronic: months, ongoing damage.</p>"
+    },
+    {
+      "id": "m4l-97",
+      "type": "matrix",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing the signals released during inflammation. For each action, click to specify the cytokine that causes it.",
+      "rowHeader": "Action",
+      "columns": [
+        "Interleukin-8",
+        "Interferons",
+        "Interleukin-6",
+        "Tumor necrosis factor"
+      ],
+      "rows": [
+        "An early signal from macrophages that, in a severe infection, can drop the blood pressure",
+        "Draws neutrophils out of the blood to the infected site",
+        "Signals the liver to make C-reactive protein",
+        "Warns nearby cells to resist a virus"
+      ],
+      "answer": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "rationale": "<p>These cytokines work together in inflammation. <b>Interleukin-8</b> is a chemokine: it draws <b>neutrophils</b> out of the blood to the site. <b>Interferons</b>, released by infected cells, warn nearby cells to resist the virus. <b>Interleukin-6</b> signals the liver to make acute phase proteins such as CRP. <b>Tumor necrosis factor (TNF)</b>, released early by macrophages, drives fever and inflammation, and in a severe infection, large amounts widen and leak the vessels enough to drop the blood pressure.</p><p>Matching <b>interleukin-6</b> to the neutrophils is a mistake: both are interleukins, but IL-8 is the one that draws neutrophils; IL-6 acts on the liver.</p><p><b>Takeaway:</b> IL-8 calls neutrophils; interferons fight viruses; IL-6 makes the liver produce CRP; TNF drives fever and, in excess, shock.</p>"
+    },
+    {
+      "id": "m4l-98",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "Within minutes of a bee sting on the forearm, a raised, itchy, red welt forms around the sting. Which of the following, already waiting in the skin, most likely released the histamine causing it?",
+      "options": [
+        "Mast cells",
+        "Basophils",
+        "Eosinophils",
+        "Neutrophils"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Mast cells</b> live in the tissues, especially the skin, airways, and gut, and are packed with histamine. When an allergen or venom triggers them, they release it within minutes, so the nearby vessels widen and leak: a red, raised, itchy welt.</p><p><b>Basophils</b> aren't the right answer: they release histamine too, but they circulate in the blood; the cells already waiting in the skin are mast cells. Eosinophils arrive later in allergic reactions and fight parasites, and neutrophils fight bacteria.</p><p><b>Takeaway:</b> Histamine in the tissues: mast cells. In the blood: basophils.</p>"
+    },
+    {
+      "id": "m4l-99",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "Bacteria enter a client's skin through a cut. A few days later, T cells in the nearby lymph nodes begin responding to that germ. Which cells most likely carried pieces of it from the skin to the lymph nodes?",
+      "options": [
+        "Neutrophils",
+        "Plasma cells",
+        "Dendritic cells",
+        "Natural killer cells"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Dendritic cells</b> wait in the skin and other tissues. They engulf germs, carry pieces of them through the lymph vessels to the nearest lymph nodes, and show the pieces to T cells, which starts the specific (adaptive) response a few days later.</p><p><b>Neutrophils</b> aren't the right answer: they're the first cells to reach the cut, but they engulf the bacteria there and die; they don't travel to the nodes. Plasma cells make antibodies after B cells are activated, and natural killer cells kill infected cells where they find them.</p><p><b>Takeaway:</b> Dendritic cells link the two defenses: they take germ pieces from the tissues to the T cells in the lymph nodes.</p>"
+    },
+    {
+      "id": "m4l-100",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client asks how the body fights a new virus in the first days, before antibodies and T cells are ready. Besides neutrophils and macrophages, which lymphocytes should the nurse identify as acting right away, without having to recognize that specific virus?",
+      "options": [
+        "Cytotoxic (CD8+) T cells",
+        "Innate lymphoid cells",
+        "Memory B cells",
+        "Regulatory T cells"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Innate lymphoid cells</b> are lymphocytes of the innate immune system. They have no receptors for a specific germ, so they act within hours, releasing cytokines, and some, the natural killer cells, kill infected cells directly, while the T and B cells are still being activated.</p><p><b>Cytotoxic (CD8+) T cells</b> aren't the right answer: they do kill virus-infected cells, but each one must first recognize that specific virus, which takes days for a new one. Memory B cells respond fast only to a germ met before, and regulatory T cells hold the response back.</p><p><b>Takeaway:</b> Lymphocytes that act right away, without germ-specific receptors: innate lymphoid cells. T and B cells need days to recognize a new germ.</p>"
+    },
+    {
+      "id": "m4l-101",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client says, “I've been taking an herbal supplement to strengthen my immune system, but I haven't mentioned it to my provider.” Which response should the nurse give?",
+      "options": [
+        "“Keep taking it, and tell your provider at your yearly visit.”",
+        "“Let's tell your provider now, so it fits safely into your care.”",
+        "“Stop it, since supplements can't affect the immune system.”",
+        "“Take it just during flu season, when immunity needs the most help.”"
+      ],
+      "answer": 1,
+      "rationale": "<p>Herbal supplements can support immune health as one part of healthy choices (exercise, a healthy diet, and vaccines), but with the <b>provider's guidance</b>, since some interact with other treatments or conditions. The best response brings the provider in now.</p><p><b>Keep taking it and mention it at the yearly visit</b> isn't the right answer: it does bring in the provider, but months of a supplement nobody has reviewed is the risk to avoid. Saying supplements can't affect immunity isn't accurate, and taking it only in flu season still leaves out the provider.</p><p><b>Takeaway:</b> Supplements can be part of immune health, with the provider's guidance.</p>"
+    },
+    {
+      "id": "m4l-102",
+      "type": "matrix",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A nurse is reviewing vaccine recommendations for clients at a clinic. For each client, click to specify whether the vaccine is recommended now.",
+      "rowHeader": "Client and vaccine",
+      "columns": [
+        "Recommended",
+        "Not routinely recommended"
+      ],
+      "rows": [
+        "A 72-year-old: shingles (zoster) vaccine",
+        "A healthy 28-year-old: pneumococcal vaccine",
+        "A 70-year-old who had a flu vaccine last fall: a flu vaccine this fall",
+        "A healthy 26-year-old: shingles vaccine",
+        "A 75-year-old: pneumococcal vaccine",
+        "A 68-year-old: this season's updated COVID-19 vaccine"
+      ],
+      "answer": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "rationale": "<p>Adults need a <b>flu vaccine every year</b> and an updated <b>COVID-19</b> vaccine each season. <b>Older adults</b> also need the <b>pneumococcal</b> and <b>shingles</b> vaccines. Healthy young adults don't routinely need those two; younger adults get them only with certain health conditions.</p><p>Skipping this fall's <b>flu vaccine</b> because one was given last fall is a mistake: the flu vaccine is yearly, since the virus changes and protection fades.</p><p><b>Takeaway:</b> Every year: flu and COVID-19. Older adults: add pneumococcal and shingles. Keep a record of every dose.</p>"
+    },
+    {
+      "id": "m4l-103",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "A client drinks three energy drinks a day and asks whether they affect anything besides alertness. Which response should the nurse give?",
+      "options": [
+        "“Their sugar and artificial ingredients can lead to inflammation.”",
+        "“Their added B vitamins help lower inflammation in the body over time.”",
+        "“They mainly raise the risk of dehydration, not inflammation.”",
+        "“Their caffeine is the main concern; the rest is harmless.”"
+      ],
+      "answer": 0,
+      "rationale": "<p>Energy drinks are high in <b>sugar</b> and <b>artificial ingredients</b>, which can lead to <b>inflammation</b>; over time, low-grade inflammation is linked to heart disease and diabetes. That's why they're on the list of lifestyle choices that harm health.</p><p><b>Added B vitamins</b> isn't the right answer: vitamins on the label don't undo the sugar and additives, and they don't lower inflammation. Caffeine and dehydration are concerns too, but they aren't the whole story.</p><p><b>Takeaway:</b> Energy drinks are high in sugar and artificial ingredients that feed inflammation.</p>"
+    },
+    {
+      "id": "m4l-104",
+      "type": "matrix",
+      "topic": "Lymphatic and immune system",
+      "level": 1,
+      "stem": "A nurse is teaching a nursing student where white blood cells form and mature. For each description, click to specify the place.",
+      "rowHeader": "Description",
+      "columns": [
+        "Red bone marrow",
+        "Thymus",
+        "Body tissues"
+      ],
+      "rows": [
+        "Where all white blood cells start, as stem cells",
+        "Where T cells finish maturing",
+        "Where monocytes become macrophages",
+        "Where B cells finish maturing",
+        "Where neutrophils are made and mature"
+      ],
+      "answer": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "rationale": "<p>Every white blood cell starts as a stem cell in the <b>red bone marrow</b>, and most mature there: <b>B cells</b> and <b>neutrophils</b> finish in the marrow. <b>T cells</b> leave the marrow young and finish maturing in the <b>thymus</b>, which trains them. <b>Monocytes</b> travel in the blood and become <b>macrophages</b> once they move into the <b>tissues</b>.</p><p>Placing <b>B cells</b> in the thymus is a mistake: only T cells (T for thymus) mature there; B cells mature in the bone marrow.</p><p><b>Takeaway:</b> All start in the red bone marrow. T cells mature in the thymus, B cells in the marrow, and monocytes become macrophages in the tissues.</p>"
+    },
+    {
+      "id": "m4l-105",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A 64-year-old client with benign prostatic hyperplasia (BPH) has a prostate-specific antigen (PSA) level above the normal range. He asks if this means he has cancer. Which response should the nurse give?",
+      "options": [
+        "“Most likely. PSA comes from cancer cells, so a high level points to cancer.”",
+        "“Not necessarily. PSA rises when the prostate is infected or inflamed, not when it's enlarged.”",
+        "“Not necessarily. PSA rises with age, so a high level is expected after 60.”",
+        "“Not necessarily. Healthy prostate cells make PSA too, and an enlarged gland raises it.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>PSA</b> is a protein made by <b>healthy and cancerous</b> prostate cells alike. <b>Benign prostatic hyperplasia</b>, <b>prostatitis</b>, and <b>prostate cancer</b> can all raise it, so a high PSA in a client with BPH isn't a diagnosis; the provider decides on more testing.</p><p><b>PSA rising only with an infected or inflamed prostate</b> isn't the right answer: prostatitis does raise PSA, but so does an enlarged gland, which this client has. PSA does creep up with age, but a level above the normal range still needs follow-up, and cancer cells aren't its only source.</p><p><b>Takeaway:</b> PSA comes from healthy and cancerous prostate cells; BPH, prostatitis, and cancer all raise it.</p>"
+    },
+    {
+      "id": "m4c-90",
+      "type": "highlight",
+      "case": "tired",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "Click to highlight the findings in the nurses' notes that need follow-up.",
+      "passage": "[[Client reports feeling more tired over the past 2 months]] and [[getting short of breath carrying laundry up the stairs]]. [[Now sleeps propped on three pillows]] because breathing is harder lying flat. [[Shoes feel tight by evening]]. [[Gained 2.3 kg (5 lb) in 2 weeks without eating more]]. [[Walks the dog twice a day]]. [[Quit smoking 15 years ago]]. High blood pressure for 20 years. Says, “I just need to get back in shape.” Lungs: [[fine crackles at both bases]]. Ankles: [[pitting edema, 2+]]. [[Capillary refill 2 seconds]]. [[Alert and oriented]].",
+      "answer": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "rationale": "<p>Together, these findings point to the heart not keeping up: <b>tiredness</b> and <b>shortness of breath</b> with everyday activity, needing <b>three pillows</b> to breathe at night, <b>crackles</b> at both lung bases, <b>swollen ankles</b> with pitting edema and tight shoes, and a <b>weight gain of 2.3 kg in 2 weeks</b> without eating more, which is fluid, not fat.</p><p><b>Quitting smoking 15 years ago</b> doesn't need follow-up now: it's part of the history, and stopping lowered her risk. Walking the dog is a healthy habit, and a capillary refill of 2 seconds and being alert and oriented are normal.</p><p><b>Takeaway:</b> Fatigue, breathlessness lying flat, crackles, swelling, and a quick weight gain belong together: fluid the heart isn't moving.</p>"
+    },
+    {
+      "id": "m4c-91",
+      "type": "matrix",
+      "case": "tired",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "The nurse reviews the client's laboratory results. For each result, click to specify whether it is low, normal, or high.",
+      "rowHeader": "Result",
+      "columns": [
+        "Low",
+        "Normal",
+        "High"
+      ],
+      "rows": [
+        "Total cholesterol: 236 mg/dL",
+        "HDL cholesterol: 42 mg/dL",
+        "Hemoglobin A1c: 5.4%",
+        "LDL cholesterol: 152 mg/dL",
+        "Sodium: 138 mEq/L"
+      ],
+      "answer": [
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "rationale": "<p>Her <b>total cholesterol</b> (236, over 200) and <b>LDL</b> (152, over 100) are <b>high</b>, and her <b>HDL</b> (42) is <b>low</b> for a woman, whose HDL should be 50 or higher: three lipid risk factors for cardiovascular disease, on top of 20 years of high blood pressure and a BMI of 31. Her <b>A1c</b> (5.4%) and <b>sodium</b> (138) are normal.</p><p>Calling the HDL normal because it's over 40 is a mistake: 40 is the cutoff for men; for women it's 50.</p><p><b>Takeaway:</b> High total cholesterol and LDL and a low HDL all add to the risk of heart disease; HDL's cutoff is 40 for men and 50 for women.</p>"
+    },
+    {
+      "id": "m4c-92",
+      "type": "dropdown",
+      "case": "tired",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "Complete the following sentences.",
+      "text": "The client's findings most likely show {{0}}: the heart can't {{1}}, so fluid backs up into the {{2}} and collects in the legs.",
+      "blanks": [
+        {
+          "options": [
+            "normal aging",
+            "heart failure",
+            "venous insufficiency"
+          ],
+          "answer": 1
+        },
+        {
+          "options": [
+            "pump blood effectively",
+            "get enough oxygen to its own muscle",
+            "keep a regular rhythm"
+          ],
+          "answer": 0
+        },
+        {
+          "options": [
+            "lungs",
+            "arteries",
+            "lymph nodes"
+          ],
+          "answer": 0
+        }
+      ],
+      "rationale": "<p>In <b>heart failure</b>, the heart <b>can't pump blood effectively</b>. Blood the left ventricle can't move backs up into the <b>lungs</b> (crackles, and breathlessness lying flat), fluid collects in the legs (pitting edema), and the body holds on to fluid (a quick weight gain). Less blood reaching the muscles explains the tiredness. Twenty years of high blood pressure made the heart work harder, a common path to heart failure. Blood backs up behind the weak pump, into the veins of the lungs, not into the arteries ahead of it or the lymph nodes.</p><p><b>Venous insufficiency</b> isn't the right answer: it swells the ankles too, but it doesn't cause crackles, breathlessness lying flat, or a quick weight gain. These changes aren't normal aging. A heart muscle short of oxygen (a myocardial infarction) causes sudden chest pain, which she doesn't have.</p><p><b>Takeaway:</b> Heart failure: a weak pump, with fluid backing up into the lungs and collecting in the body.</p>"
+    },
+    {
+      "id": "m4c-93",
+      "type": "sata",
+      "case": "tired",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "Which actions should the nurse take?",
+      "options": [
+        "Encourage extra fluids to help the kidneys clear the swelling",
+        "Report the findings to the provider today",
+        "Suggest cooking with coconut oil in place of butter",
+        "Have the client sit upright rather than lie flat",
+        "Have the client lie flat with the legs raised to ease the swelling",
+        "Teach the client to limit the sodium in her diet"
+      ],
+      "answer": [
+        1,
+        3,
+        5
+      ],
+      "rationale": "<p>New signs of heart failure need the <b>provider today</b>. <b>Sitting upright</b> lets the fluid settle away from the upper lungs and eases the breathing, and <b>limiting sodium</b> cuts the fluid the body holds on to.</p><p><b>Lying flat with the legs raised</b> isn't the right answer: raising the legs helps the swelling of venous insufficiency, but lying flat sends more fluid back to her lungs. Extra fluids add to the fluid her heart can't move, and coconut oil is a tropical oil, high in saturated fat.</p><p><b>Takeaway:</b> Signs of heart failure: report them, keep the client upright, and teach less sodium.</p>"
+    },
+    {
+      "id": "m4c-94",
+      "type": "matrix",
+      "case": "tired",
+      "topic": "Cardiovascular system",
+      "level": 3,
+      "stem": "Two weeks later, after following the provider's plan and the nurse's teaching, the client returns. For each finding, click to specify whether it has improved, not changed, or gotten worse.",
+      "rowHeader": "Finding",
+      "columns": [
+        "Improved",
+        "Not changed",
+        "Gotten worse"
+      ],
+      "rows": [
+        "Weight: 84 kg then, 81.9 kg now",
+        "Pillows needed to sleep: three then, one now",
+        "Ankle swelling: 2+ pitting edema then, 2+ now",
+        "Blood pressure: 158/92 mm Hg then, 134/82 mm Hg now",
+        "LDL cholesterol: 152 mg/dL then, 166 mg/dL now"
+      ],
+      "answer": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "rationale": "<p>Losing the 2 kg of fluid, sleeping on <b>one pillow</b>, and a lower blood pressure show the plan is working. The ankle swelling <b>hasn't changed</b>, and the LDL has <b>risen</b> further above 100, so both need follow-up.</p><p>Calling the LDL improved because her other numbers are better is a mistake: it moved farther from the goal.</p><p><b>Takeaway:</b> Judge each finding on its own; one good trend doesn't cover another going the wrong way.</p>"
+    },
+    {
+      "id": "m4c-95",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client asks why the hemoglobin A1c reflects the past 2 to 3 months of glucose levels rather than this morning's. Which explanation should the nurse give?",
+      "options": [
+        "Glucose sticks to platelets, which last about 10 days in the blood",
+        "Glucose is stored in white blood cells, which last about 3 months",
+        "Glucose sticks to hemoglobin in red blood cells, which last about 120 days",
+        "Glucose sticks to hemoglobin in red blood cells, which last about 10 days"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Red blood cells</b> (erythrocytes) are disc-shaped cells with no nucleus, packed with <b>hemoglobin</b> to carry oxygen. Each lasts about <b>120 days</b> before the spleen removes it. Glucose sticks to hemoglobin over the cell's life, so the A1c reflects the glucose of the past 2 to 3 months.</p><p><b>Red blood cells that last about 10 days</b> isn't the right answer: hemoglobin is the right carrier, but 7 to 10 days is the life of a platelet, and the A1c would then reflect only the past week. Platelets carry no hemoglobin, and white blood cells don't hold glucose for the test.</p><p><b>Takeaway:</b> Red blood cells carry hemoglobin and last about 120 days, which is why the A1c covers about 3 months.</p>"
+    },
+    {
+      "id": "m4c-96",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client who donates plasma asks what's being collected. Which response should the nurse give?",
+      "options": [
+        "“The liquid part of your blood: mostly water, with salts, proteins, vitamins, and hormones.”",
+        "“The part of your blood that forms clots: mostly platelets, with some red blood cells.”",
+        "“The liquid left after your blood clots, without the proteins that made the clot form.”",
+        "“Your white blood cells, which fight infection and are replaced within a few days.”"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Plasma</b> is the liquid part of the blood, about 55% of it. It's mostly <b>water</b> (about 90%), which carries <b>salts</b> (electrolytes), <b>proteins</b> such as albumin, fibrinogen, and antibodies, <b>nutrients and vitamins</b>, <b>hormones</b>, gases, and wastes.</p><p><b>The liquid left after a clot</b> isn't the right answer: that's serum, which lacks fibrinogen and most clotting factors; plasma keeps them. Platelets and red and white blood cells are formed elements, which plasma carries but doesn't include.</p><p><b>Takeaway:</b> Plasma is mostly water, carrying salts, proteins, nutrients, vitamins, and hormones.</p>"
+    },
+    {
+      "id": "m4c-97",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with type 2 diabetes mellitus asks why the provider checks the client's blood pressure and cholesterol at every visit. Which response should the nurse give?",
+      "options": [
+        "“High blood pressure is what causes type 2 diabetes, so the provider watches it closely.”",
+        "“Those checks are routine for adults your age and aren't related to your diabetes.”",
+        "“Your cholesterol shows how well your glucose has been controlled over the past months.”",
+        "“Diabetes raises the risk of heart disease, so keeping the other risks in range matters even more.”"
+      ],
+      "answer": 3,
+      "rationale": "<p><b>Diabetes mellitus</b> is a risk factor for cardiovascular disease, along with high blood pressure, high total and LDL cholesterol, a low HDL, smoking, age, and a BMI over 25. Risk factors add up, so a client with diabetes gains the most from keeping the others in range.</p><p><b>Routine checks for every adult</b> isn't the right answer: blood pressure and cholesterol are checked in most adults, but in diabetes they matter more, because the risks add up. High blood pressure doesn't cause diabetes, and the A1c, not the cholesterol, reflects past glucose.</p><p><b>Takeaway:</b> Diabetes is a risk factor for heart disease; the other risk factors matter even more with it.</p>"
+    },
+    {
+      "id": "m4c-98",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with severe liver disease has a very low albumin level and swelling of both legs. Which explanation of the swelling should the nurse give?",
+      "options": [
+        "With less albumin, the blood clots more easily and blocks the leg veins",
+        "With less albumin, less fluid is held in the vessels, so it leaks out",
+        "With less albumin, the kidneys hold on to sodium and raise blood volume",
+        "With less albumin, the vein valves weaken, so blood pools in the legs"
+      ],
+      "answer": 1,
+      "rationale": "<p><b>Albumin</b>, made by the liver, is the most plentiful protein in plasma. It holds water in the blood vessels by <b>oncotic pressure</b>. With too little of it, fluid leaks out of the capillaries into the tissues, and the legs swell.</p><p><b>Weakened vein valves</b> isn't the right answer: that's how venous insufficiency causes swelling, but albumin doesn't keep the valves working. Clotting depends on fibrinogen and the clotting factors, and holding on to sodium is aldosterone's job.</p><p><b>Takeaway:</b> Albumin holds fluid in the vessels; low albumin lets fluid leak into the tissues.</p>"
+    },
+    {
+      "id": "m4c-99",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client has a murmur from a leaky valve that lets blood flow back into the right atrium each time the right ventricle contracts. Which valve is affected?",
+      "options": [
+        "The pulmonic valve, a semilunar valve",
+        "The tricuspid valve, an atrioventricular valve",
+        "The mitral valve, an atrioventricular valve",
+        "The aortic valve, a semilunar valve"
+      ],
+      "answer": 1,
+      "rationale": "<p>Blood flowing back into the <b>right atrium</b> as the right ventricle contracts leaks through the valve between them: the <b>tricuspid valve</b>, one of the two <b>atrioventricular (AV) valves</b>. The AV valves (tricuspid and mitral) close as the ventricles contract; the <b>semilunar valves</b> (pulmonic and aortic) let blood out of the ventricles.</p><p><b>The mitral valve</b> isn't the right answer: it's the other AV valve, but it sits on the left side, between the left atrium and the left ventricle. A leaky pulmonic valve lets blood fall back into the right ventricle, not the atrium.</p><p><b>Takeaway:</b> Tricuspid: right atrium to right ventricle (AV). Mitral: left (AV). Pulmonic and aortic: out of the ventricles (semilunar).</p>"
+    },
+    {
+      "id": "m4c-100",
+      "type": "mc",
+      "topic": "Cardiovascular system",
+      "level": 2,
+      "stem": "A client with a high LDL level is planning dinner. Which meal best fits heart-healthy eating?",
+      "options": [
+        "A cheeseburger on a whole-wheat bun, with a side salad",
+        "Canned chicken noodle soup with saltine crackers",
+        "Fried chicken, white rice, and vegetables cooked in coconut oil",
+        "Grilled salmon, brown rice, and vegetables sautéed in olive oil"
+      ],
+      "answer": 3,
+      "rationale": "<p>Heart-healthy eating uses <b>unsaturated, non-tropical oils</b> such as extra-virgin olive oil, <b>whole grains</b> such as brown rice, <b>low-fat dairy</b>, and <b>low sodium</b>. Grilled salmon with brown rice and vegetables in olive oil fits all of them.</p><p><b>The cheeseburger on a whole-wheat bun</b> isn't the right answer: the whole grain helps, but the burger and cheese are high in saturated fat. Canned soup and saltines are high in sodium, and fried chicken cooked in coconut oil, a tropical oil, is high in saturated fat.</p><p><b>Takeaway:</b> Non-tropical unsaturated oils, whole grains, low-fat dairy, and low sodium.</p>"
+    },
+    {
+      "id": "m4l-106",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 2,
+      "stem": "During a bacterial infection, a client's interleukin-8 level is high. Which effect of this cytokine should the nurse expect?",
+      "options": [
+        "More neutrophils drawn into the area",
+        "More C-reactive protein made by the liver",
+        "More histamine released from mast cells",
+        "More resistance to viruses in nearby cells"
+      ],
+      "answer": 0,
+      "rationale": "<p><b>Interleukin-8 (IL-8)</b> is a chemokine: it draws <b>neutrophils</b> out of the blood to the site of an infection. That's why a high IL-8 is one of the markers of inflammation.</p><p><b>More C-reactive protein</b> isn't the right answer: CRP rises when <b>interleukin-6</b> signals the liver. Histamine comes from mast cells and basophils in allergic reactions, and interferons help nearby cells resist a virus.</p><p><b>Takeaway:</b> IL-8 calls in neutrophils; IL-6 tells the liver to make CRP.</p>"
+    },
+    {
+      "id": "m4l-107",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 3,
+      "stem": "A client with a severe bloodstream infection has a falling blood pressure, as large amounts of a substance released by macrophages widen and leak the blood vessels. Which substance is most likely responsible?",
+      "options": [
+        "Interleukin-8 (IL-8)",
+        "Interferons (IFNs)",
+        "Tumor necrosis factor",
+        "Histamine"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Tumor necrosis factor (TNF)</b> is one of the first cytokines macrophages release in inflammation. It drives fever and inflammation, and in a severe infection, large amounts widen and leak the vessels throughout the body, so the blood pressure falls.</p><p><b>Histamine</b> isn't the right answer: it widens and leaks vessels too, as in a severe allergic reaction, but it comes from mast cells and basophils, not macrophages. Interleukin-8 draws neutrophils to a site, and interferons help cells resist viruses.</p><p><b>Takeaway:</b> TNF, from macrophages, drives inflammation; in excess, it can drop the blood pressure in a severe infection.</p>"
+    },
+    {
+      "id": "m4l-108",
+      "type": "mc",
+      "topic": "Lymphatic and immune system",
+      "level": 1,
+      "stem": "A client's white blood cell count includes a differential. Which cells should the nurse recognize as granulocytes?",
+      "options": [
+        "Neutrophils, lymphocytes, and monocytes",
+        "Eosinophils, basophils, and lymphocytes",
+        "Neutrophils, eosinophils, and basophils",
+        "Lymphocytes and monocytes"
+      ],
+      "answer": 2,
+      "rationale": "<p><b>Granulocytes</b> have granules that show when stained: <b>neutrophils</b>, <b>eosinophils</b>, and <b>basophils</b>. <b>Agranulocytes</b> have no visible granules: <b>lymphocytes</b> and <b>monocytes</b>.</p><p><b>Neutrophils, lymphocytes, and monocytes</b> isn't the right answer: neutrophils are granulocytes, but lymphocytes and monocytes are agranulocytes. Lymphocytes and monocytes alone are the agranulocytes.</p><p><b>Takeaway:</b> Granulocytes: neutrophils, eosinophils, basophils. Agranulocytes: lymphocytes and monocytes.</p>"
     }
   ]
 }
