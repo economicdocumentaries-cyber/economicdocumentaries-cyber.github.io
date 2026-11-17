@@ -928,8 +928,10 @@ export function examView(root) {
 
   // --- build the page ---
   const counter = h('h1.q-counter', { tabindex: '-1' });
-  // A question that's back because the student missed it last time says so (the owner's choice, 2026-11-13).
-  const againTag = h('span.again-tag', { hidden: true }, icon('redo'), 'Missed before');
+  // A question that's back because the student missed it last time says so (the owner's choice, 2026-11-13), when the
+  // answers show after each question, as in practice mode. Exam simulation has no tag, like test day (the owner's
+  // choice, 2026-11-17): the question still comes back, and the results still say how those went.
+  const againTag = showsAnswers ? h('span.again-tag', { hidden: true }, icon('redo'), 'Missed before') : null;
   const timeVal = h('span.val');
   const pauseVal = h('span.val');
   const timer = h('div.timer',
@@ -1022,7 +1024,7 @@ export function examView(root) {
     const q = st.questions[st.index];
     const revealed = showsAnswers && !!st.revealed[q.id];
     counter.textContent = `Question: ${st.index + 1} of ${st.questions.length}`;
-    againTag.hidden = !(st.again ?? []).includes(q.id);
+    if (againTag) againTag.hidden = !(st.again ?? []).includes(q.id);
     paintChip(`Question ${st.index + 1} of ${st.questions.length}`);
     document.title = `${st.title} · Question ${st.index + 1}`;
     prevBtn.hidden = st.index === 0;
