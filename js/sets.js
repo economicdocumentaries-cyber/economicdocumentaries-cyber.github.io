@@ -1,9 +1,12 @@
 // Loading the question sets listed in sets/index.json, the class list in
 // sets/courses.json, and the study guides listed in guides/index.json
-// (SPEC 5.2, 5.3, 11). Used by the homepage, setup, results, and group study.
+// (SPEC 5.2, 5.3, 11). The homepage needs only an outline of each set
+// (loadOverview, from sets/summary.json); a page about one set loads just that
+// set (loadSomeSets); search, group study, and the host's pages load them all.
 import { validateSet } from './items.js';
 
-let setsLoading = null;
+let setsLoading = null, basicsLoading = null, summaryLoading = null, overviewLoading = null;
+const fileLoads = new Map(); // each set file's download and check, once per visit
 
 const isText = v => typeof v === 'string' && v.trim() !== '';
 
@@ -18,6 +21,73 @@ const isText = v => typeof v === 'string' && v.trim() !== '';
 export function loadSets() {
   setsLoading ??= fetchSets();
   return setsLoading;
+}
+
+// The homepage's sets: everything but their questions and case studies, from
+// sets/summary.json (tools/set_summary.py makes it from the set files, and
+// tools/publish.py before every publish), so a phone doesn't download every
+// question just to list the sets (the owner's request, 2026-11-16). Each
+// question is only { id } (and hidden), enough for the counts, the times, and
+// Retake missed; such a set is marked light, and a page that needs its
+// questions loads it (loadSomeSets). Without a summary that lists exactly the
+// files in sets/index.json (one couldn't be read, or the list changed since),
+// every set loads, as before, so the homepage can say what's wrong.
+export function loadOverview() {
+  overviewLoading ??= fetchOverview();
+  return overviewLoading;
+}
+
+// The sets with these ids, whole, as loadSets gives them, without downloading
+// the others (sets/summary.json says which file has which set). Without a
+// matching summary, every set loads. Ids that aren't in a file (a set the host
+// made in the console) get nothing here; withChanges adds those.
+export async function loadSomeSets(ids) {
+  if (setsLoading) return setsLoading;
+  const summary = await matchingSummary();
+  if (!summary) return loadSets();
+  const wanted = new Set(ids);
+  return fetchSets(summary.filter(e => wanted.has(e.id)).map(e => e.file));
+}
+
+// The list, the class list, and the study guides, read once.
+function loadBasics() {
+  basicsLoading ??= Promise.all([readJson('sets/index.json'), loadCourses(), readJson('guides/index.json')])
+    .then(([list, classes, guideList]) => ({ list, classes, study: checkGuides(guideList, classes.courses) }));
+  return basicsLoading;
+}
+
+const loadSetOnce = file => {
+  if (!fileLoads.has(file)) fileLoads.set(file, loadSet(file));
+  return fileLoads.get(file);
+};
+
+// sets/summary.json's sets when they're exactly the files in sets/index.json,
+// in order, each with an id and its questions; otherwise null.
+async function matchingSummary() {
+  summaryLoading ??= readJson('sets/summary.json');
+  const [{ list }, summary] = await Promise.all([loadBasics(), summaryLoading]);
+  const files = Array.isArray(list.data) ? [...new Set(list.data)] : null;
+  const entries = Array.isArray(summary.data?.sets) ? summary.data.sets : null;
+  const fits = (e, i) => e && typeof e === 'object' && e.file === files[i] && isText(e.id) && Array.isArray(e.questions);
+  return files && entries && entries.length === files.length && entries.every(fits) ? entries : null;
+}
+
+async function fetchOverview() {
+  if (setsLoading) return setsLoading;
+  const [{ classes, study }, entries] = await Promise.all([loadBasics(), matchingSummary()]);
+  if (!entries) return loadSets();
+  const { courses } = classes;
+  const sets = [], ids = new Set();
+  for (const { file, ...set } of entries) {
+    const course = isText(set.course) && courses ? findCourse(courses, set.course) : null;
+    // Something only the full check can explain: load every set, which reports it.
+    if (ids.has(set.id) || (isText(set.course) && courses && !course)) return loadSets();
+    ids.add(set.id);
+    sets.push({ ...set, ...(isText(set.course) ? { course: course?.code ?? set.course.trim() } : {}), file, light: true });
+  }
+  const problems = [...classes.problems];
+  if (classes.missing && (sets.some(x => x.course) || study.guides.length)) problems.unshift(MISSING_CLASSES);
+  return { sets, courses: courses ?? [], guides: study.guides, problems: [...problems, ...study.problems] };
 }
 
 // Where JSON.parse gave up: the line number from its error message, and that
@@ -195,11 +265,16 @@ function checkGuides({ data, missing, problem, code }, courses) {
   return { guides, problems };
 }
 
-async function fetchSets() {
+const MISSING_CLASSES = {
+  file: 'sets/courses.json',
+  problem: `The class list is missing, so the homepage lists everything without class tabs. It names the classes that the sets' and study guides' "course" fields refer to.`,
+};
+
+// Every set in sets/index.json, or only these files.
+async function fetchSets(only = null) {
   const sets = [], problems = [];
-  const [list, classes, guideList] = await Promise.all([readJson('sets/index.json'), loadCourses(), readJson('guides/index.json')]);
+  const { list, classes, study } = await loadBasics();
   const { courses } = classes;
-  const study = checkGuides(guideList, courses);
   problems.push(...classes.problems);
   const done = () => ({ sets, courses: courses ?? [], guides: study.guides, problems: [...problems, ...study.problems] });
 
@@ -218,7 +293,7 @@ async function fetchSets() {
     return done();
   }
 
-  const results = await Promise.all([...new Set(files)].map(loadSet));
+  const results = await Promise.all((only ?? [...new Set(files)]).map(loadSetOnce));
   const ids = new Set();
   for (const { file, set, title, found } of results) {
     let course = null;
@@ -237,8 +312,6 @@ async function fetchSets() {
       sets.push(isText(set.course) ? { ...set, course: course?.code ?? set.course.trim(), file } : { ...set, file });
     }
   }
-  if (classes.missing && (sets.some(s => s.course) || study.guides.length)) {
-    problems.unshift({ file: 'sets/courses.json', problem: 'The class list is missing, so the homepage lists everything without class tabs. It names the classes that the sets\' and study guides\' "course" fields refer to.' });
-  }
+  if (classes.missing && (sets.some(s => s.course) || study.guides.length)) problems.unshift(MISSING_CLASSES);
   return done();
 }

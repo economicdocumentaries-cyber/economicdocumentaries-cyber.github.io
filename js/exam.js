@@ -2,7 +2,7 @@
 // pause, calculator, Continue, alerts, full screen, saved progress, the
 // case-study layout, practice feedback, going back and flagging, saving
 // questions (SPEC 11.7), and review mode.
-import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, setKeeper } from './util.js';
+import { h, fill, shuffle, store, fmtClock, modal, closeModals, toast, siteHeader, siteFooter, icon, phone, onSwipe, setKeeper } from './util.js';
 import { renderItem, prepareItem, isAnswered, scoreItem, instructionFor, helpFor, unansweredMessage } from './items.js';
 import { createCalculator } from './calc.js';
 import { track } from './analytics.js';
@@ -1673,6 +1673,7 @@ export function reviewView(root, { args = [] } = {}) {
   const missed = new Set(r.missed);
   track('review-open', { set: r.setId, which: onlyMissed ? 'incorrect' : 'all' });
   const list = r.questions.filter(q => !onlyMissed || missed.has(q.id));
+  const scores = new Map((r.items ?? []).map(i => [i.id, i]));
   let index = 0;
   const tabs = new Map();
 
@@ -1680,28 +1681,86 @@ export function reviewView(root, { args = [] } = {}) {
   const tag = h('span.mode-tag');
   const question = h('section.question');
   const prevBtn = h('button.btn.btn-nav', { type: 'button', onclick: () => go(index - 1) }, 'Previous');
+  const nextWide = h('span.c-wide'), nextPhone = h('span.c-phone');
   const nextBtn = h('button.btn-continue', {
     type: 'button',
     onclick: () => {
       if (index < list.length - 1) go(index + 1);
       else location.hash = '#/results';
     },
-  }, 'Next');
+  }, nextWide, nextPhone);
   const saver = saveButton(); // SPEC 11.7
   const actions = h('div.exam-actions', h('div.nav-left', prevBtn, saver.el), nextBtn);
   const area = questionArea(question, r.cases ?? {}, { get: key => tabs.get(key) ?? 0, set: (key, i) => tabs.set(key, i) });
 
+  // Phones (SPEC 11.8; the owner's choice, 2026-11-16): the exam's bar at the
+  // top, with Close (back to the results), a chip that lists the questions, and
+  // Save; one big button at the bottom; and a swipe to the next or previous one.
+  const chip = h('button.m-chip', { type: 'button', 'aria-haspopup': 'dialog', onclick: () => showList() });
+  const mSave = h('button.m-icon.m-save', { type: 'button', 'aria-pressed': 'false', 'aria-label': 'Save', title: 'Save', onclick: () => saver.el.click() }, icon('bookmark'));
+  saver.el.addEventListener('click', () => mSave.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed')));
+  const progress = h('span');
+  const main = h('main.wrap',
+    h('div.info-row',
+      h('div.counter-wrap', counter, tag),
+      h('div.info-tools', h('a.btn', { href: '#/results' }, 'Back to results'))),
+    question);
+
   root.replaceChildren(h('div.page.exam.review', { 'data-text-size': r.settings?.textSize ?? 'standard' },
     siteHeader({ title: r.title, onClose: () => (location.hash = '#/results'), link: false }),
-    h('main.wrap',
-      h('div.info-row',
-        h('div.counter-wrap', counter, tag),
-        h('div.info-tools', h('a.btn', { href: '#/results' }, 'Back to results'))),
-      question),
+    h('div.m-top',
+      h('div.m-top-row',
+        h('button.m-close', { type: 'button', 'aria-label': 'Back to results', title: 'Back to results', onclick: () => (location.hash = '#/results') }, icon('x')),
+        chip, mSave),
+      h('div.m-progress', { 'aria-hidden': 'true' }, progress)),
+    main,
     siteFooter()));
+  // A swipe sideways goes to the next or previous question; not one that
+  // starts on something that scrolls sideways itself, or a form field.
+  onSwipe(main, (way, e) => {
+    if (!phone.matches || e.target.closest('.table-scroll, .tabpanel, .matrix-wrap, input, select, textarea')) return;
+    if (way === 'left' && index < list.length - 1) go(index + 1);
+    else if (way === 'right' && index > 0) go(index - 1);
+  });
+
+  function paintChip(text) {
+    chip.replaceChildren(text, h('span.m-chip-arrow', { 'aria-hidden': 'true' }, '▾'));
+    chip.setAttribute('aria-label', `${text}: show the questions`);
+  }
+
+  // The questions under review in a grid, each marked right, partly right, or
+  // wrong; a tile goes to its question.
+  async function showList() {
+    let box = null, focus = null;
+    const mark = { right: '✓', partial: '◐', wrong: '✗', none: '–' };
+    const said = { right: 'right', partial: 'partly right', wrong: 'wrong', none: 'not answered' };
+    const tiles = list.map((q, i) => {
+      const s = scores.get(q.id);
+      const kind = !s || !s.max ? 'none' : s.earned === s.max ? 'right' : s.earned > 0 ? 'partial' : 'wrong';
+      const n = r.questions.indexOf(q) + 1;
+      const tile = h('button.qtile', {
+        type: 'button', class: `rv-${kind}${i === index ? ' current' : ''}`,
+        'aria-label': `Question ${n}: ${said[kind]}${i === index ? ', this question' : ''}`, onclick: () => box.close(i),
+      }, String(n), h('span.qtile-mark', { 'aria-hidden': 'true' }, mark[kind]));
+      if (i === index) focus = tile;
+      return h('li', tile);
+    });
+    box = modal({
+      sheet: true,
+      title: onlyMissed ? 'Questions you missed' : 'All questions',
+      message: [h('ol.qgrid.nav-grid', tiles)],
+      buttons: [{ label: 'Back to question', value: 'back' }],
+      focus,
+    });
+    focus?.scrollIntoView({ block: 'nearest' });
+    const choice = await box;
+    if (Number.isInteger(choice)) go(choice);
+  }
 
   if (!list.length) {
     counter.textContent = 'Nothing to review';
+    paintChip('Nothing to review');
+    mSave.hidden = true;
     tag.textContent = 'Review';
     area.clear(h('p', 'Every question earned full points, so there are no incorrect answers to review.'),
       h('p', h('a.btn', { href: '#/results' }, 'Back to results')));
@@ -1719,8 +1778,14 @@ export function reviewView(root, { args = [] } = {}) {
     tag.textContent = onlyMissed ? `Incorrect answers · ${index + 1} of ${list.length}` : 'Review';
     document.title = `Review · ${r.title}`;
     prevBtn.hidden = index === 0;
-    nextBtn.textContent = index === list.length - 1 ? 'Finish' : 'Next';
+    const last = index === list.length - 1;
+    nextWide.textContent = last ? 'Finish' : 'Next';
+    nextPhone.textContent = last ? 'Back to results' : 'Next question';
+    nextBtn.classList.toggle('is-next', !last);
+    paintChip(onlyMissed ? `Missed ${index + 1} of ${list.length}` : `Question ${r.questions.indexOf(q) + 1} of ${r.questions.length}`);
+    progress.style.width = `${(100 * (index + 1)) / list.length}%`;
     saver.show(q.src?.set ?? r.setId, q.src?.title ?? r.title, q.src?.id ?? q.id);
+    mSave.setAttribute('aria-pressed', saver.el.getAttribute('aria-pressed'));
     area.show(q, [
       ...questionParts(q, { response: r.responses[q.id], layout: r.layout?.[q.id], review: true }),
       feedbackPanel(q, r.responses[q.id], { report: q.src?.set ?? r.setId }),

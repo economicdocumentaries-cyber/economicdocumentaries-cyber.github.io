@@ -1081,7 +1081,7 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 
 /* Pieces only phones show. The heading row on the homepage keeps the
    spacing the heading had alone. */
-.m-top, .c-phone, .sheet-grip, .sheet-hint, .sheet-shade, .chart-card, .chart-back, .cell-col, .timer svg,
+.m-top, .c-phone, .note-phone, .sheet-grip, .sheet-hint, .sheet-shade, .chart-card, .chart-back, .cell-col, .timer svg,
 .swipe-hint, .saved-chip, .more-details, .meta-phone { display: none; }
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; margin: 0 0 10px; }
 .section-head .section-title { margin: 0; }
@@ -1147,11 +1147,13 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 
   /* The exam (idea 2): a top bar with Close, the question chip, and icons;
      a slim row with the mode or the time left; one big button at the
-     bottom; and the answer and rationale as a sheet over the question. */
-  .taking { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
+     bottom; and the answer and rationale as a sheet over the question. The
+     review after an exam has the same bars (the owner's choice, 2026-11-16),
+     with its rationale under the question. */
+  :is(.taking, .review) { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
   .taking.has-sheet { padding-bottom: calc(92px + var(--peek, 66px) + env(safe-area-inset-bottom)); }
-  .taking .topbar { display: none; }
-  .taking .m-top { display: block; position: sticky; top: 0; z-index: 40; background: #fff; border-top: 4px solid var(--accent); }
+  :is(.taking, .review) .topbar { display: none; }
+  :is(.taking, .review) .m-top { display: block; position: sticky; top: 0; z-index: 40; background: #fff; border-top: 4px solid var(--accent); }
   .m-top-row { display: flex; align-items: center; gap: 2px; padding: 8px 8px 8px 12px; }
   .m-close { display: grid; place-items: center; flex: none; width: 38px; height: 38px; padding: 0; background: #F1F3F5; border: 0; border-radius: 50%; color: var(--ink); }
   .m-chip {
@@ -1169,37 +1171,37 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   .m-calc svg { width: 21px; height: 24px; }
   .m-progress { height: 3px; background: #E7EBEF; }
   .m-progress > span { display: block; width: 0; height: 100%; background: var(--accent); transition: width .2s; }
-  .taking .info-row { gap: 8px; padding-top: 12px; }
-  .taking .q-counter { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  :is(.taking, .review) .info-row { gap: 8px; padding-top: 12px; }
+  :is(.taking, .review) .q-counter { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .taking .calc-toggle { display: none; }
   .taking .timer { margin: 0; font-size: 13.5px; font-weight: 700; color: var(--ink); }
   .taking .timer svg { display: inline-block; margin-right: 5px; vertical-align: -2px; }
   .taking .timer b, .taking .timer > div + div { display: none; }
   .taking .btn-pause { min-width: 0; height: 32px; padding: 0 10px; font-size: 11px; }
-  .taking .question { padding-top: 14px; }
-  .taking .exam-actions {
+  :is(.taking, .review) .question { padding-top: 14px; }
+  :is(.taking, .review) .exam-actions {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 34; flex-wrap: nowrap; gap: 10px;
     margin: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
     background: #fff; box-shadow: 0 -1px 0 var(--line), 0 -6px 16px rgba(31, 58, 95, .06);
   }
   .taking.on-grid .m-flag, .taking.on-grid .m-save { display: none; }
-  .taking .exam-actions .nav-left { width: auto; margin: 0; }
-  .taking .exam-actions .btn-flag, .taking .exam-actions .btn-save { display: none; }
-  .taking .exam-actions .nav-left:not(:has(.btn-nav:not([hidden]))) { display: none; }
-  .taking .btn-nav { flex-direction: column; gap: 2px; width: 64px; min-height: 52px; padding: 0; border-radius: 10px; font-size: 11px; letter-spacing: 0; text-transform: none; }
-  .taking .btn-nav::before { content: "◀"; font-size: 13px; line-height: 1; }
-  .taking .exam-actions > .btn { flex: 1 1 0; min-height: 52px; padding: 0 10px; border-radius: 10px; }
-  .taking .btn-continue {
+  :is(.taking, .review) .exam-actions .nav-left { width: auto; margin: 0; }
+  :is(.taking, .review) .exam-actions .btn-flag, :is(.taking, .review) .exam-actions .btn-save { display: none; }
+  :is(.taking, .review) .exam-actions .nav-left:not(:has(.btn-nav:not([hidden]))) { display: none; }
+  :is(.taking, .review) .btn-nav { flex-direction: column; gap: 2px; width: 64px; min-height: 52px; padding: 0; border-radius: 10px; font-size: 11px; letter-spacing: 0; text-transform: none; }
+  :is(.taking, .review) .btn-nav::before { content: "◀"; font-size: 13px; line-height: 1; }
+  :is(.taking, .review) .exam-actions > .btn { flex: 1 1 0; min-height: 52px; padding: 0 10px; border-radius: 10px; }
+  :is(.taking, .review) .btn-continue {
     flex: 1 1 auto; height: 52px; min-width: 0; padding: 0 16px; background: var(--ink); border-radius: 10px;
     font-size: 15.5px; letter-spacing: .01em; text-transform: none; color: #fff;
   }
-  .taking .btn-continue::before { display: none; }
-  .taking .btn-continue:active { background: #16304F; }
-  .taking .btn-continue.is-next { background: var(--accent); color: var(--ink); }
-  .taking .btn-continue.is-next:active { background: #4FA9DC; }
-  .taking .btn-continue.is-next::after { content: "→"; margin-left: 8px; }
-  .taking .c-wide { display: none; }
-  .taking .c-phone { display: inline; }
+  :is(.taking, .review) .btn-continue::before { display: none; }
+  :is(.taking, .review) .btn-continue:active { background: #16304F; }
+  :is(.taking, .review) .btn-continue.is-next { background: var(--accent); color: var(--ink); }
+  :is(.taking, .review) .btn-continue.is-next:active { background: #4FA9DC; }
+  :is(.taking, .review) .btn-continue.is-next::after { content: "→"; margin-left: 8px; }
+  :is(.taking, .review) .c-wide { display: none; }
+  :is(.taking, .review) .c-phone { display: inline; }
   /* The sheet keeps its full height; folded, it slides down behind the big
      button until only its top line shows (--peek, that line's height, from
      exam.js). It moves by transform alone, on its own layer, so a phone can
@@ -1228,7 +1230,33 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   /* The disclaimer line stays on the homepage and on laptops, not under each question in an exam or its review
      (the owner's request, 2026-11-15). */
   .exam .site-footer { display: none; }
-  .exam.review main.wrap { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+
+  .review .info-tools { display: none; } /* Back to results: the bar's Close does it */
+  .qtile-mark { margin-left: 3px; font-size: 12px; }
+  .nav-grid .qtile.rv-right { background: #F2F9F4; border-color: #8CC5A1; }
+  .nav-grid .qtile.rv-partial { background: #EEF5FB; border-color: #9CC3E4; }
+  .nav-grid .qtile.rv-wrong { background: #FDF3F2; border-color: #E2A39C; }
+
+  /* Results (the owner's choice, 2026-11-16): the score, then big buttons, the
+     first three full width; each topic and question type as a row with its
+     bar and points, and Practice on the right; the scoring note at the end. */
+  .results .score-card { width: auto; gap: 4px 22px; padding: 16px 18px; border-radius: 12px; }
+  .result-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0 26px; }
+  .result-actions .btn { min-height: 48px; padding: 0 10px; border-radius: 10px; font-size: 14.5px; letter-spacing: 0; text-transform: none; text-align: center; }
+  .result-actions .ra-wide { grid-column: 1 / -1; }
+  .result-actions .ra-none { display: none; }
+  .results .table-scroll { overflow: visible; }
+  .results .perf, .results .perf tbody { display: block; }
+  .results .perf thead { display: none; }
+  .results .perf tr { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; grid-template-areas: "name name act" "bar pts act"; gap: 6px 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .results .perf tr > * { padding: 0; border: 0; }
+  .results .perf tbody th { grid-area: name; font-size: 15px; }
+  .results .perf .bar-cell { grid-area: bar; width: auto; min-width: 0; }
+  .results .perf td.num:not(.q-col) { grid-area: pts; font-size: 13.5px; color: var(--muted); }
+  .results .perf .act-cell { grid-area: act; width: auto; padding: 0; }
+  .results .perf .act-cell .btn { padding: 0 16px; border-radius: 10px; font-size: 14px; letter-spacing: 0; text-transform: none; }
+  .note-wide { display: none; }
+  .results .note-phone { display: block; margin-top: 6px; font-size: 13.5px; color: var(--muted); }
 
   /* Choices are cards. */
   .choices { gap: 8px; }
@@ -1304,12 +1332,12 @@ textarea.text-input { min-height: 84px; resize: vertical; }
    the boxes pinned to the screen (the bottom bar, the sheet, the open chart),
    since browsers misplace pinned boxes inside a zoomed one. */
 @media (max-width: 700px) {
-  html:has(.taking) { scroll-padding: 64px 0 96px; }
-  body:has(.taking) .toasts { bottom: calc(88px + env(safe-area-inset-bottom)); }
+  html:has(:is(.taking, .review)) { scroll-padding: 64px 0 96px; }
+  body:has(:is(.taking, .review)) .toasts { bottom: calc(88px + env(safe-area-inset-bottom)); }
   .exam[data-text-size] .question { zoom: 1; }
-  .exam[data-text-size="large"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
+  .exam[data-text-size="large"] :is(.question, .case-question) > :not(.case-layout, :is(.taking, .review) .exam-actions, .taking .feedback),
   .exam[data-text-size="large"] :is(.case-panel > *, .taking .sheet-line, .taking .sheet-body > *) { zoom: 1.12; }
-  .exam[data-text-size="larger"] :is(.question, .case-question) > :not(.case-layout, .taking .exam-actions, .taking .feedback),
+  .exam[data-text-size="larger"] :is(.question, .case-question) > :not(.case-layout, :is(.taking, .review) .exam-actions, .taking .feedback),
   .exam[data-text-size="larger"] :is(.case-panel > *, .taking .sheet-line, .taking .sheet-body > *) { zoom: 1.25; }
 }
 
@@ -1529,4 +1557,32 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 @media (max-width: 700px) {
   .topbar-inner { flex-wrap: wrap; }
   .search-form { order: 5; flex: 1 1 100%; max-width: none; margin: 4px 0 0; }
+}
+
+/* Phones: what a finger taps is at least about 44 px high (the size phone makers
+   recommend), and no label is smaller than 12.5 px (the owner's choice,
+   2026-11-16). The top bar's icons keep their look; an invisible edge makes
+   each one taller to the finger. Links in a sentence get a taller touch area
+   that doesn't move the text. Last in the file, so these win over the rules
+   above. */
+@media (max-width: 700px) {
+  .btn { min-height: 44px; }
+  .btn-small { min-height: 44px; padding: 0 14px; font-size: 12.5px; }
+  .close-btn { min-height: 44px; }
+  :is(.taking, .review) :is(.m-close, .m-chip, .m-icon) { position: relative; }
+  :is(.taking, .review) :is(.m-close, .m-chip, .m-icon)::after { content: ""; position: absolute; inset: -4px -1px; }
+  .strike-btn { width: 44px; height: 44px; }
+  .blank-select { min-height: 44px; }
+  .pick { min-height: 44px; padding: 0 16px; border-radius: 22px; }
+  .about-btn { min-height: 44px; }
+  .reset-btn, .link-button { padding: 12px 4px; margin: -12px -4px; }
+  .taking .btn-pause { height: 40px; font-size: 12.5px; }
+  :is(.taking, .review) .btn-nav { font-size: 12.5px; }
+  .calc-x { position: relative; }
+  .calc-x::after { content: ""; position: absolute; inset: -7px; }
+  .bt-opt { min-height: 44px; }
+  .token { min-height: 44px; }
+  .drop { min-height: 44px; }
+  .case-panel.is-open .tab { min-height: 40px; padding: 8px 16px; }
+  .modal .close-btn, .seg small { font-size: 12.5px; }
 }

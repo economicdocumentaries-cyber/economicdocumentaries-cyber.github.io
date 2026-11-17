@@ -4,7 +4,7 @@
 import { SITE_NAME } from './config.js';
 import { h, fill, modal, toast, store, siteHeader, siteFooter, fmtClock, fmtDate, icon, onSwipe, phone, homeSkeleton, heartbeat, keepPage } from './util.js';
 import { typeLabel, QUESTION_TYPES, keyResponse } from './items.js';
-import { loadSets, nextExam, sameExam } from './sets.js';
+import { loadOverview, loadSomeSets, nextExam, sameExam } from './sets.js';
 import {
   examView, reviewView, startExam, resumeExam, activeExam, discardExam, lastAttempt, setHistory, lastSeen, lastMissed,
   DEFAULT_SETTINGS, PRESETS, presetMatches, chooseQuestions, timeLimitMs, fullscreenAvailable, examCount, practiceCount, countsForBest,
@@ -86,7 +86,12 @@ function trackStart(set, s, chosen, count, topicCount, typeCount) {
 
 // "Retake missed questions": only the questions without full points, with the
 // same settings as before.
-function retakeMissed(set, ids, settings) {
+async function retakeMissed(set, ids, settings) {
+  if (set.light) { // the homepage's outline of the set (sets/summary.json): get its questions
+    const [loaded, changes] = await Promise.all([loadSomeSets([set.id]), currentChanges()]);
+    set = withChanges(loaded.sets, changes, loaded.courses).find(s => s.id === set.id);
+    if (!set) return;
+  }
   const known = new Set(set.questions.map(q => q.id));
   const only = ids.filter(id => known.has(id));
   if (only.length) {
@@ -111,7 +116,7 @@ async function homeView(root, { args, isCurrent }) {
   onSwipe(main, way => main.querySelector('.classes')?.swipe(way)); // phones: change class (SPEC 11.8)
   root.replaceChildren(page(main));
   root.querySelector('.topbar-inner')?.append(searchBox().form); // search both classes, even while the sets load (SPEC 11.14)
-  const { sets, courses, guides, problems } = await loadSets();
+  const { sets, courses, guides, problems } = await loadOverview(); // an outline of each set, not its questions
   if (!isCurrent()) return;
   const live = liveBanner(); // "Group study is live" (SPEC 6.4), when Firebase is set up
   const lists = h('div.home-lists');
@@ -591,7 +596,7 @@ function problemsPanel(problems) {
 async function setupView(root, { args, isCurrent }) {
   const main = h('main.wrap.setup', heartbeat('Getting your practice exam ready…')); // SPEC 11.13
   root.replaceChildren(page(main));
-  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
+  const [loaded, changes] = await Promise.all([loadSomeSets([args[0]]), currentChanges()]); // just this set
   if (!isCurrent()) return;
   const { courses } = loaded;
   const set = withChanges(loaded.sets, changes, courses).find(x => x.id === args[0]); // with the host's changes (SPEC 11.3)
@@ -911,7 +916,7 @@ async function resultsView(root, { isCurrent }) {
       h('p', 'Finish an exam to see your results here. ', h('a', { href: '#/' }, 'Go to the homepage')));
     return;
   }
-  const { sets, courses } = await loadSets();
+  const { sets, courses } = await loadSomeSets([r.setId]);
   if (!isCurrent()) return;
   const set = withChanges(sets, cachedChanges(), courses).find(x => x.id === r.setId);
   // A practice exam from a search (SPEC 11.14) isn't a set on the site: its questions came with the result, so its
@@ -969,20 +974,22 @@ async function resultsView(root, { isCurrent }) {
         h('p', `Time used: ${fmtClock(r.timeUsedMs)}`))),
     firstTry,
     againLine,
-    h('p.note', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'),
+    h('p.note.note-wide', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'),
+    // Phones (the owner's choice, 2026-11-16): big buttons, the first three full width, and the note at the end.
     h('div.result-actions',
-      h('a.btn.btn-accent', { href: '#/review' }, 'Review all answers'),
+      h('a.btn.btn-accent.ra-wide', { href: '#/review' }, 'Review all answers'),
       r.missed.length
-        ? h('a.btn', { href: '#/review/incorrect' }, `Review incorrect only (${r.missed.length})`)
-        : h('button.btn', { type: 'button', disabled: true }, 'No incorrect answers'),
+        ? h('a.btn.ra-wide', { href: '#/review/incorrect' }, `Review incorrect only (${r.missed.length})`)
+        : h('button.btn.ra-none', { type: 'button', disabled: true }, 'No incorrect answers'),
       (set ?? searched) && r.missed.length
-        ? h('button.btn', { type: 'button', onclick: () => retakeMissed(set ?? searched, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
+        ? h('button.btn.ra-wide', { type: 'button', onclick: () => retakeMissed(set ?? searched, r.missed, r.settings) }, `Retake missed questions (${r.missed.length})`)
         : null,
       set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
       savedLink(),
       h('a.btn', { href: '#/' }, 'Home')),
     perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0])), practiceTopic),
-    perfTable('Performance by question type', 'Question type', byType));
+    perfTable('Performance by question type', 'Question type', byType),
+    h('p.note.note-phone', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'));
 }
 
 function groupBy(items, keyOf) {
@@ -1051,7 +1058,7 @@ async function savedView(root, ctx) {
   const main = h('main.wrap.saved-page', h('p.lead', 'Loading…'));
   root.replaceChildren(page(main));
   root.querySelector('.topbar-inner')?.append(searchBox().form); // SPEC 11.14
-  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
+  const [loaded, changes] = await Promise.all([loadSomeSets(Object.keys(savedSets())), currentChanges()]); // the sets with saved questions
   if (!ctx.isCurrent()) return;
   const { courses } = loaded;
   const sets = new Map(withChanges(loaded.sets, changes, courses).filter(s => !s.hidden).map(s => [s.id, s]));
@@ -1156,7 +1163,7 @@ async function savedView(root, ctx) {
 async function savedQuestionView(root, { args, isCurrent }) {
   const [setId, startId] = args;
   root.replaceChildren(page(h('main.wrap.plain-page', h('p.lead', 'Loading…'))));
-  const [loaded, changes] = await Promise.all([loadSets(), currentChanges()]);
+  const [loaded, changes] = await Promise.all([loadSomeSets([setId]), currentChanges()]);
   if (!isCurrent()) return;
   const set = withChanges(loaded.sets, changes, loaded.courses).find(s => s.id === setId && !s.hidden);
   const byId = new Map((set?.questions ?? []).map(q => [q.id, q]));

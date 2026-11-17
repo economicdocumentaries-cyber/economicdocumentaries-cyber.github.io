@@ -16,7 +16,7 @@ import { h, fill, modal, toast, store, fmtDate, seededShuffle } from './util.js'
 import { groupStudyOn, connectStudent, problemText } from './firebase.js';
 import { setHistory, countsForBest } from './exam.js';
 import { toKey, fromKey } from './reports.js';
-import { loadSets } from './sets.js';
+import { loadOverview } from './sets.js';
 import { withChanges, readChanges, cachedChanges } from './set-changes.js';
 
 // The choices, with the keys database.rules.json accepts.
@@ -149,7 +149,7 @@ export async function debriefPage(main, id, { isCurrent }) {
   let db, value, mine, loaded;
   try {
     db = await connectStudent();
-    [value, loaded] = await Promise.all([db.read(`debriefs/${toKey(id)}`), loadSets()]);
+    [value, loaded] = await Promise.all([db.read(`debriefs/${toKey(id)}`), loadOverview()]); // titles and sizes are enough
     mine = value ? await db.read(`debriefAnswers/${toKey(id)}/${db.uid}`).catch(() => null) : null;
   } catch (err) {
     if (isCurrent()) fill(main, title('Exam debrief'), h('p.notice', problemText(err)), homeLink());

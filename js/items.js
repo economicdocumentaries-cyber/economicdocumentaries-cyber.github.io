@@ -1038,11 +1038,16 @@ export const QUESTION_TYPES = Object.keys(TYPES);
 
 export const typeLabel = type => TYPES[type]?.label ?? type;
 
-export const instructionFor = q => q.instruction ?? valueFor(TYPES[q.type].instruction, q) ?? '';
+export const instructionFor = q => q.instruction ?? touchWords(valueFor(TYPES[q.type].instruction, q)) ?? '';
 
-export const helpFor = q => TYPES[q.type].help ?? '';
+export const helpFor = q => touchWords(TYPES[q.type].help) ?? '';
 
-export const unansweredMessage = q => valueFor(TYPES[q.type].prompt, q) ?? 'Select an answer to continue.';
+export const unansweredMessage = q => touchWords(valueFor(TYPES[q.type].prompt, q)) ?? 'Select an answer to continue.';
+
+// On a phone the site's own instructions say tap, not click (SPEC 11.8; the owner's choice, 2026-11-16).
+function touchWords(text) {
+  return phone.matches && typeof text === 'string' ? text.replace(/\bClick\b/g, 'Tap').replace(/\bclick\b/g, 'tap') : text;
+}
 
 // Per-attempt layout, such as shuffled choices. Saved with the attempt.
 // opts: { shuffle, random } (group study passes a seeded random).
