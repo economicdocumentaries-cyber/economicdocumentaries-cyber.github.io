@@ -105,6 +105,9 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   }
   const position = new Map(set.questions.map((q, i) => [q, i]));
   const at = b => position.get(b[0]) ?? -1;
+  // Practice (answers after each question) draws from the whole bank (see below), and a case study's new questions
+  // come before its missed ones, so a case study with questions left isn't passed over for one already done.
+  const practice = s.reveal === 'each';
   const units = [];
   const later = []; // the case studies' other runs, for an exam that needs more questions
   const partSeen = new Set(); // runs of a case study some of whose other questions were seen before
@@ -113,17 +116,30 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
       units.push(b);
       continue;
     }
-    const [first, ...rest] = caseRuns(b, device, random, seen, missed);
+    const [first, ...rest] = caseRuns(b, device, random, seen, missed, practice);
     if (b.some(q => seen.has(q.id)) && !first.some(q => seen.has(q.id))) partSeen.add(first);
     units.push(first);
     later.push(...rest);
   }
   const limit = s.count ?? Infinity;
   // Each topic's share comes from all the questions that match, the case studies' other runs included.
+  // Practice (answers after each question) draws from the whole bank: each topic in proportion to its questions, and
+  // case studies paced with the rest (pacedCases), so a student meets every question before one answered right comes
+  // back. Exam simulation (answers at the end) follows the set's blueprint (topicWeights, topicMinimums) and its case
+  // studies per exam (caseStudies). The owner's choice, 2026-11-17 (SPEC 11.3).
+  const every = blocks.flat();
+  // In practice, the shares and the pace count only the questions that come at the bank's pace: a type held at a share
+  // of every exam (typeShares) comes a few at a time, so counting it would hurry along the topics that have the most.
+  const held = set.typeShares ?? {};
+  const atPace = every.filter(q => !(q.type in held));
+  const shareFrom = practice && atPace.length && new Set(atPace.map(q => q.topic)).size === new Set(every.map(q => q.topic)).size
+    ? atPace : every;
   let picked = limit < units.flat().length
-    ? pickBlocks(units, limit, random, seen, set.topicWeights, missed, set.caseStudies, set.topicMinimums, partSeen, blocks.flat()) : units.slice();
+    ? pickBlocks(units, limit, random, seen, practice ? null : set.topicWeights, missed,
+      practice ? pacedCases(shareFrom, limit, seen, device, random) : set.caseStudies,
+      practice ? null : set.topicMinimums, partSeen, shareFrom) : units.slice();
   // The question types (balanceTypes), unless the student asked for these questions (Retake missed, saved, search).
-  if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types));
+  if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types), practice);
   // Too few questions without them: more runs of the case studies (part of one to finish).
   let count = picked.flat().length;
   let more = false;
@@ -157,8 +173,11 @@ export function caseRunLength(device, random = Math.random) {
 // first run doesn't add a question answered right while new ones are left, so
 // students see new questions first; each run keeps the case study's order.
 // Every run remembers its whole case study (run.whole), for topic weights.
-function caseRuns(block, device, random, seen, missed) {
-  const tier = q => (missed.has(q.id) ? 0 : seen.has(q.id) ? 2 : 1);
+// newFirst (practice, 2026-11-17): ones never seen come before the missed ones.
+function caseRuns(block, device, random, seen, missed, newFirst = false) {
+  const tier = newFirst
+    ? q => (!seen.has(q.id) ? 0 : missed.has(q.id) ? 1 : 2)
+    : q => (missed.has(q.id) ? 0 : seen.has(q.id) ? 2 : 1);
   const ranked = shuffle(block, random).sort((a, b) => tier(a) - tier(b) || (seen.get(a.id) ?? -1) - (seen.get(b.id) ?? -1));
   const fresh = ranked.filter(q => tier(q) < 2).length;
   const runs = [];
@@ -177,6 +196,20 @@ function caseRuns(block, device, random, seen, missed) {
 }
 
 const isCase = b => !!b?.[0]?.case;
+
+// How many case studies a practice takes, so case-study questions are used up at the same pace as the rest of the
+// bank (the owner's choice, 2026-11-17): the questions not seen yet hold some share of case-study questions, and the
+// practice takes that share of its places, in runs of the usual length on this device (caseRunLength: 1.4 on a phone,
+// 2.65 on a laptop), rounded up or down at random by the fraction. Once every question has been seen, the whole bank's
+// share. null for a set without case studies, or without a device (group study keeps case studies whole).
+export function pacedCases(questions, limit, seen, device, random = Math.random) {
+  const cases = questions.filter(q => q.case).length;
+  if (!cases || !device || !Number.isFinite(limit)) return null;
+  const fresh = questions.filter(q => !seen.has(q.id));
+  const [part, whole] = fresh.length ? [fresh.filter(q => q.case).length, fresh.length] : [cases, questions.length];
+  const runs = (limit * part) / whole / (device === 'phone' ? 1.4 : 2.65);
+  return Math.floor(runs) + (random() < runs - Math.floor(runs) ? 1 : 0);
+}
 
 // An exam with more than one run of a case study: its questions in the case
 // study's order across them, each run keeping its place and length.
@@ -275,7 +308,10 @@ export function heldShares(set, types = null) {
 // the one it replaces, so new questions still come first; a held type's share comes before that, so a student
 // with many new questions of that type sees them a few at a time. Questions missed before stay where the review
 // put them (and count toward the shares), and so do a case study's questions.
-function balanceTypes(picked, units, seen, missed, random, held = []) {
+// keepFresh (practice, 2026-11-17): a held type's swaps also never bring in a question seen more recently than the
+// one they replace, so a practice holds a few more (or fewer) of that type rather than bring back a question the
+// student answered right while new ones are left.
+function balanceTypes(picked, units, seen, missed, random, held = [], keepFresh = false) {
   const n = picked.flat().length;
   if (n < 5) return picked;
   const type = b => b[0].type;
@@ -316,13 +352,13 @@ function balanceTypes(picked, units, seen, missed, random, held = []) {
     while (have > want) {
       const mc = count(isMc);
       const lean = mc < floor ? isMc : mc >= ceiling ? other : null;
-      if (!(lean && swap(isT, lean, false)) && !swap(isT, notHeld, false)) break;
+      if (!(lean && swap(isT, lean, keepFresh)) && !swap(isT, notHeld, keepFresh)) break;
       have--;
     }
     while (have < want) {
       const mc = count(isMc);
       const lean = mc > ceiling ? isMc : mc <= floor ? other : null;
-      if (!(lean && swap(lean, isT, false)) && !swap(notHeld, isT, false)) break;
+      if (!(lean && swap(lean, isT, keepFresh)) && !swap(notHeld, isT, keepFresh)) break;
       have++;
     }
   }

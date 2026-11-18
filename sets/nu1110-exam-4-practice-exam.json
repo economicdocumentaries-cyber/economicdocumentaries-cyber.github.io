@@ -1,10 +1,10 @@
 {
   "id": "nu1110-exam-4-practice-exam",
   "title": "Exam 4 Practice Exam",
-  "description": "Exam 4 practice, weighted like the professor's blueprint: 60 questions on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math, with one short case study and ice chip questions (one in every exam past 10 questions, two past 25).",
+  "description": "Exam 4 practice on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math: exam simulation follows the professor's 60-question blueprint, with one short case study and ice chip questions, and practice mode works through the whole bank, new questions first.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 672,
+  "timeMinutes": 681,
   "defaultCount": 60,
   "topicWeights": {"Ethical and legal": 17, "Leadership": 12, "Teamwork and collaboration": 12, "Teaching and learning": 12, "Abbreviations": 2, "Unit conversions and intake": 3, "Ice chips": 2},
   "caseStudies": 1,
@@ -1276,6 +1276,66 @@
       "options": ["“He thinks family meals matter more than his diet plan.”", "“He isn't trying to get better.”", "“His A1C this morning was 9.6%.”", "“He ate two pieces of cake at lunch today.”", "“He has missed three of his last four clinic visits.”", "“He'd do better if his wife cooked for him.”"],
       "answer": [2, 3, 4],
       "rationale": "<p><b>Facts</b> can be checked and shown true: a lab result, what he ate, and missed visits. Telling them apart from <b>opinions</b> and <b>values</b> is the first step of values clarification.</p><p>“Isn't trying” and what would help him are one person's <b>opinions</b>, and what matters more to him is a <b>value</b>. Knowing which is which keeps the nurse's own values from steering his care.</p><p><b>Takeaway:</b> Values clarification: fact, opinion, or value?</p>"
+    },
+    {
+      "id": "el-121",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A client who was brought to the hospital from the county jail is admitted to a medical unit. The nurse asks how he prefers to be addressed and gives him the same courteous, careful care as every other client. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 3: advocating for the client's rights and safety", "Provision 1: respect for each person", "Provision 6: an ethical work environment", "Provision 8: collaborating with other professions and the public"],
+      "answer": 1,
+      "rationale": "<p><b>Provision 1</b>: the nurse practices with compassion and <b>respect for the inherent dignity and worth</b> of every person, whatever the person's background, circumstances, or condition. Asking how he wants to be addressed and giving him the same care honors that.</p><p><b>Provision 3</b> isn't the right answer: advocacy protects a client's rights and safety when something threatens them, and nothing here does; the nurse is showing respect. Provision 6 is about the workplace, and provision 8 about working with other professions and the public.</p><p><b>Takeaway:</b> Respect and dignity for every person, whoever they are: provision 1.</p>"
+    },
+    {
+      "id": "el-122",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse sells vitamin supplements as a side business. A client on the unit asks which supplements might help his recovery. The nurse doesn't offer her products, and suggests he ask his provider. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 1: respect for each person", "Provision 3: advocating for the client's rights and safety", "Provision 7: advancing the profession through research and standards", "Provision 2: the client's interests come first"],
+      "answer": 3,
+      "rationale": "<p><b>Provision 2</b>: the nurse's primary commitment is to the client, so the <b>client's interests come first</b>. When a nurse's own interest, like money from a side business, could pull against the client's, the nurse sets it aside: this is a <b>conflict of interest</b>.</p><p><b>Provision 3</b> isn't the right answer: it covers protecting a client's rights and safety, as from unsafe or impaired practice, while this is about the nurse keeping her own interests out of the client's care. Provision 1 is respect for each person, and provision 7 is research and standards.</p><p><b>Takeaway:</b> The nurse's own interests never come before the client's: provision 2.</p>"
+    },
+    {
+      "id": "el-123",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A provider tells a nurse to give a dose the nurse believes is unsafe, saying, “Just give it. It's my responsibility, not yours.” The nurse holds the dose and asks to discuss it, since the nurse answers for every dose the nurse gives. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 4: accountability for one's own practice", "Provision 2: the client's interests come first", "Provision 6: an ethical work environment", "Provision 9: the profession's voice for social justice"],
+      "answer": 0,
+      "rationale": "<p><b>Provision 4</b>: the nurse has <b>authority, accountability, and responsibility</b> for nursing practice. A nurse answers for his or her own judgments and actions, and can't hand that accountability to someone else, even a provider who offers to take it.</p><p><b>Provision 2</b> isn't the right answer: the client's interests do come first, but what decides this case is that the nurse remains accountable for the dose, whoever ordered it. Provision 6 is the work environment, and provision 9 the profession's voice in policy.</p><p><b>Takeaway:</b> A nurse is accountable for the nurse's own practice and can't pass it to someone else: provision 4.</p>"
+    },
+    {
+      "id": "el-124",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A staff nurse joins a unit council that reads the latest studies on preventing pressure injuries and turns them into the unit's new practice guidelines. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 6: an ethical work environment", "Provision 4: accountability for one's own practice", "Provision 7: advancing the profession through research and standards", "Provision 8: collaborating with other professions and the public"],
+      "answer": 2,
+      "rationale": "<p><b>Provision 7</b>: nurses <b>advance the profession</b> through research and scholarly inquiry, developing <b>professional standards</b>, and shaping nursing and health policy. Turning new studies into the unit's practice guidelines does exactly that.</p><p><b>Provision 6</b> isn't the right answer: a council does improve the unit, but provision 6 is about the ethical climate and conditions of work, like safe staffing, while building practice guidelines from research is provision 7. Provision 4 is accountability for one's own practice, and provision 8 is collaborating with other professions and the public.</p><p><b>Takeaway:</b> Research, scholarship, and practice standards: provision 7.</p>"
+    },
+    {
+      "id": "el-125",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse works with a coalition of physicians, social workers, and city officials that brings free blood pressure screenings to a neighborhood where many residents have untreated hypertension. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 8: collaborating with other professions and the public", "Provision 1: respect for each person", "Provision 6: an ethical work environment", "Provision 9: the profession's voice for social justice"],
+      "answer": 0,
+      "rationale": "<p><b>Provision 8</b>: the nurse <b>collaborates with other health professionals and the public</b> to protect human rights, promote health, and <b>reduce health disparities</b>, like a community coalition bringing screenings to a neighborhood with untreated hypertension.</p><p><b>Provision 9</b> isn't the right answer: it also concerns social justice, but through the nursing profession's own organizations speaking on policy, while here a nurse works directly with other disciplines and the community. Provision 1 is respect for each person, and provision 6 is the work environment.</p><p><b>Takeaway:</b> Working with other professions and the public to reduce health disparities: provision 8.</p>"
+    },
+    {
+      "id": "el-126",
+      "type": "mc",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "Through her state nurses association, a nurse helps prepare testimony for lawmakers that supports a bill expanding health coverage for low-income families. Which provision of the Code of Ethics should the nurse identify?",
+      "options": ["Provision 3: advocating for the client's rights and safety", "Provision 6: an ethical work environment", "Provision 8: collaborating with other professions and the public", "Provision 9: the profession's voice for social justice"],
+      "answer": 3,
+      "rationale": "<p><b>Provision 9</b>: the profession of nursing, <b>through its professional organizations</b>, speaks for nursing's values and works to bring <b>social justice</b> into nursing and health policy, like a nurses association testifying for wider coverage.</p><p><b>Provision 8</b> isn't the right answer: it also aims at fairer health, but by collaborating with other professions and the public, while this nurse works through the profession's own association on legislation. Provision 3 is advocacy for one client's rights and safety, and provision 6 is the work environment.</p><p><b>Takeaway:</b> The profession, through its organizations, speaking for social justice in policy: provision 9.</p>"
     },
     {
       "id": "lt-01",
