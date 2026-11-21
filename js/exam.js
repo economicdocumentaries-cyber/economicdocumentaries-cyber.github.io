@@ -105,7 +105,7 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   }
   const position = new Map(set.questions.map((q, i) => [q, i]));
   const at = b => position.get(b[0]) ?? -1;
-  // Practice (answers after each question) draws from the whole bank (see below), and a case study's new questions
+  // Practice (answers after each question) takes new questions first (see below), and a case study's new questions
   // come before its missed ones, so a case study with questions left isn't passed over for one already done.
   const practice = s.reveal === 'each';
   const units = [];
@@ -122,11 +122,13 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
     later.push(...rest);
   }
   const limit = s.count ?? Infinity;
-  // Each topic's share comes from all the questions that match, the case studies' other runs included.
-  // Practice (answers after each question) draws from the whole bank: each topic in proportion to its questions, and
-  // case studies paced with the rest (pacedCases), so a student meets every question before one answered right comes
-  // back. Exam simulation (answers at the end) follows the set's blueprint (topicWeights, topicMinimums) and its case
-  // studies per exam (caseStudies). The owner's choice, 2026-11-17 (SPEC 11.3).
+  // Each topic's share comes from all the questions that match, the case studies' other runs included, or from the
+  // set's blueprint (topicWeights, topicMinimums), in practice and exam simulation alike (the owner's choice,
+  // 2026-11-20; from 2026-11-17 practice drew from the whole bank instead). Practice (answers after each question)
+  // paces case studies with the rest (pacedCases) and fills each topic's share with new questions; a topic with none
+  // left gives its places to new questions of the others (pickBlocks, newFirst), so a student still meets every
+  // question before one answered right comes back. Exam simulation (answers at the end) has its case studies per exam
+  // (caseStudies), and repeats a topic's questions seen longest ago to keep the blueprint (SPEC 11.3).
   const every = blocks.flat();
   // In practice, the shares and the pace count only the questions that come at the bank's pace: a type held at a share
   // of every exam (typeShares) comes a few at a time, so counting it would hurry along the topics that have the most.
@@ -134,10 +136,17 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   const atPace = every.filter(q => !(q.type in held));
   const shareFrom = practice && atPace.length && new Set(atPace.map(q => q.topic)).size === new Set(every.map(q => q.topic)).size
     ? atPace : every;
+  // A practice brings the set's earlyTopics early: one of their questions every time until the student has met one
+  // (the owner's request, 2026-11-18: ice chips early), as a minimum of 1 on top of any the topic has.
+  const early = practice && Array.isArray(set.earlyTopics)
+    ? set.earlyTopics.filter(t => every.some(q => q.topic === t) && !every.some(q => q.topic === t && seen.has(q.id))) : [];
+  const minimums = early.length
+    ? { ...set.topicMinimums, ...Object.fromEntries(early.map(t => [t, [[1, 1], ...(set.topicMinimums?.[t] ?? [])]])) }
+    : set.topicMinimums;
   let picked = limit < units.flat().length
-    ? pickBlocks(units, limit, random, seen, practice ? null : set.topicWeights, missed,
+    ? pickBlocks(units, limit, random, seen, set.topicWeights, missed,
       practice ? pacedCases(shareFrom, limit, seen, device, random) : set.caseStudies,
-      practice ? null : set.topicMinimums, partSeen, shareFrom) : units.slice();
+      minimums, partSeen, shareFrom, practice) : units.slice();
   // The question types (balanceTypes), unless the student asked for these questions (Retake missed, saved, search).
   if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types), practice);
   // Too few questions without them: more runs of the case studies (part of one to finish).
@@ -405,8 +414,8 @@ export function roundShares(exact, limit, random = Math.random) {
 // How much more each topic weighs for this student: up to half again, by the
 // part of the topic's questions they've seen whose latest result was a miss
 // (once they've seen 3 or more of them). An exam leans toward the topics they
-// struggle with, but the blueprint still holds most of it (the owner's request,
-// 2026-11-13).
+// struggle with (the owner's request, 2026-11-13). Since 2026-11-20, only in a
+// set without a blueprint: a blueprint's counts hold in every exam (pickBlocks).
 export const LEAN = 0.5;
 export function leanToward(questions, seen, missed) {
   const tally = new Map();
@@ -442,13 +451,18 @@ export function leanToward(questions, seen, missed) {
 // studies come up when their turn comes, so an exam may have none or several.
 // minimums: the set's "topicMinimums", { topic: [[from, atLeast], ...] }: in an
 // exam of `from` questions or more, the topic gets at least `atLeast` places,
-// taken from the topics with the most (the owner's request, 2026-11-13: one ice
-// chip question in every NU1110 Exam 4 practice, and two past 25 questions).
+// taken from the topics with the most (the owner's request, 2026-11-13: ice chip
+// questions in the NU1110 Exam 4 exams).
 // partSeen: runs of case studies whose other questions were seen before; they
 // come after case studies never seen, so the case studies take turns.
 // everyQuestion: all the questions that match, for each topic's share when there
 // are no weights (the blocks hold only one run of each case study).
-function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null, partSeen = new Set(), everyQuestion = null) {
+// newFirst (practice, the owner's choice of 2026-11-20): each topic's share takes
+// only questions the student hasn't met (and missed ones coming back); a topic
+// with none left gives its places to the new questions of the topics weighted
+// above 0, so a question answered right comes back only once none are left
+// anywhere (then the blueprint's shares, with the questions seen longest ago).
+function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null, partSeen = new Set(), everyQuestion = null, newFirst = false) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)) + (partSeen.has(b) ? 0.5 : 0); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
   const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
@@ -458,7 +472,9 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   const all = everyQuestion ?? pool;
   const topics = [...new Set(all.map(q => q.topic))];
   const blueprint = !!weights && topics.every(t => weights[t] >= 0) && topics.some(t => weights[t] > 0);
-  const lean = leanToward(all, seen, missed);
+  // A blueprint's counts hold in every exam (the owner's request, 2026-11-20: the professor's 17 ethics,
+  // 3 abbreviation, and 5 or 6 math questions of 58), so the lean is for sets without one.
+  const lean = blueprint ? new Map() : leanToward(all, seen, missed);
   const weightOf = t => (blueprint ? weights[t] : all.filter(q => q.topic === t).length) * (lean.get(t) ?? 1);
   const total = topics.reduce((sum, t) => sum + weightOf(t), 0);
   const exact = topics.map(t => (weightOf(t) * limit) / total);
@@ -593,13 +609,21 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
     }
   }
   // Then single questions: in the order above, and among equals, ones whose topic still needs some.
-  // In a blueprint set, topics that still need some come first, then the order above among them.
+  // In a blueprint set, topics that still need some come first, then the order above among them. In practice
+  // (newFirst) they take only new questions and the missed ones coming back: a topic with none left gives its places
+  // to the new questions of the topics weighted above 0, and its seen ones come back only when none are left anywhere.
   const full = b => (left.get(b[0].topic) > 0 ? 0 : 1);
+  const fresh = b => review.has(b) || age(b) < 0;
   while (count < limit) {
     const singles = queue.filter(b => !isCase(b));
     if (!singles.length) break;
-    const needed = blueprint ? singles.filter(b => !full(b)) : [];
-    const pool = needed.length ? needed : singles;
+    let pool = singles;
+    if (blueprint) {
+      const needed = singles.filter(b => !full(b));
+      const newNeeded = newFirst ? needed.filter(fresh) : needed;
+      const newElsewhere = newFirst ? singles.filter(b => fresh(b) && weights[b[0].topic] > 0) : [];
+      pool = newNeeded.length ? newNeeded : newElsewhere.length ? newElsewhere : needed.length ? needed : singles;
+    }
     take(pool.reduce((best, b) => (rank(b) < rank(best) || (rank(b) === rank(best) && full(b) < full(best)) ? b : best)));
   }
   // Too few single questions: more case studies that fit, then part of one rather than nothing.
@@ -649,23 +673,24 @@ export function defaultCount(set) {
   return Number.isInteger(n) && n >= 1 && n < set.questions.length ? n : null;
 }
 
-// A set whose exams have 60 questions or more, like the real NU1110 exams (the
-// owner's choice, 2026-11-13): shorter on a phone, and a shorter practice on a laptop.
-const LONG_EXAM = 60;
+// A set whose exams are as long as the real NU1110 exams, 55 questions or more (60,
+// and 58 for Exam 4) (the owner's choices, 2026-11-13 and 2026-11-20): half on a
+// phone, and a shorter practice on a laptop.
+const LONG_EXAM = 55;
 const longExam = set => (defaultCount(set) ?? 0) >= LONG_EXAM;
 
 // How many questions practice mode gives (SPEC 4.2; the owner's choices, 2026-11-02
-// and 2026-11-13): 10 on a phone, and 25 on a laptop (15 for a 60-question exam),
+// and 2026-11-13): 10 on a phone, and 25 on a laptop (15 for a long exam),
 // never more than the set's questions per exam. null for every question.
 export function practiceCount(set, onPhone = phone.matches) {
   const n = Math.min(onPhone ? 10 : longExam(set) ? 15 : 25, defaultCount(set) ?? set.questions.length);
   return n < set.questions.length ? n : null;
 }
 
-// How many questions exam simulation gives: the set's questions per exam, but 30
-// on a phone for a 60-question exam. null for every question.
+// How many questions exam simulation gives: the set's questions per exam, but half
+// on a phone for a long exam (30 of 60, 29 of 58). null for every question.
 export function examCount(set, onPhone = phone.matches) {
-  return longExam(set) && onPhone ? 30 : defaultCount(set);
+  return longExam(set) && onPhone ? Math.ceil(defaultCount(set) / 2) : defaultCount(set);
 }
 
 // "Best" on the homepage counts attempts of the whole set, or of at least its

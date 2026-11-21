@@ -1154,6 +1154,15 @@ export function validateSet(set) {
       }
     }
   }
+  // Early topics (SPEC 11.3): ["Ice chips"], topics every practice brings until the student has met one of their questions.
+  if (set.earlyTopics != null) {
+    const topics = new Set(set.questions.map(q => q?.topic).filter(isText));
+    if (!Array.isArray(set.earlyTopics) || !set.earlyTopics.every(isText)) {
+      add('"earlyTopics" must list topics, like ["Ice chips"].');
+    } else {
+      for (const topic of set.earlyTopics) if (!topics.has(topic)) add(`"earlyTopics" names "${topic}", but no question has that topic. Check the spelling.`);
+    }
+  }
   // Type shares (SPEC 11.3): { type: its share of every exam }, like { "sata": 0.075 }. Multiple choice has its own
   // rule (65% to 80%), so it can't be held.
   if (set.typeShares != null) {

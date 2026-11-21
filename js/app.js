@@ -508,7 +508,7 @@ function setRow(set) {
   const total = set.questions.length;
   const count = examCount(set, false) ?? total; // what exam simulation gives (SPEC 11.3)
   const minutes = Math.round(timeLimitMs(set, count, { timer: 'standard' }) / 60000);
-  const phoneCount = examCount(set, true) ?? total; // on a phone: 30 of a 60-question exam
+  const phoneCount = examCount(set, true) ?? total; // on a phone: half of a long exam (30 of 60, 29 of 58)
   const phoneMinutes = Math.round(timeLimitMs(set, phoneCount, { timer: 'standard' }) / 60000);
   const past = setHistory(set.id);
   const last = past.at(-1);

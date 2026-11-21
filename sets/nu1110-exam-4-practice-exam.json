@@ -1,14 +1,14 @@
 {
   "id": "nu1110-exam-4-practice-exam",
   "title": "Exam 4 Practice Exam",
-  "description": "Exam 4 practice on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math: exam simulation follows the professor's 60-question blueprint, with one short case study and ice chip questions, and practice mode works through the whole bank, new questions first.",
+  "description": "Exam 4 practice on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math. Exam simulation follows the professor's blueprint: 58 questions, with 17 on ethics and law, 3 abbreviations, 5 or 6 math (ice chips included), and one short case study; 29 on a phone. Practice mode follows the same blueprint, new questions first.",
   "course": "NU1110",
   "exam": "Exam 4",
   "timeMinutes": 681,
-  "defaultCount": 60,
-  "topicWeights": {"Ethical and legal": 17, "Leadership": 12, "Teamwork and collaboration": 12, "Teaching and learning": 12, "Abbreviations": 2, "Unit conversions and intake": 3, "Ice chips": 2},
+  "defaultCount": 58,
+  "topicWeights": {"Ethical and legal": 17, "Leadership": 11, "Teamwork and collaboration": 10.75, "Teaching and learning": 10.75, "Abbreviations": 3, "Unit conversions and intake": 3.5, "Ice chips": 2},
   "caseStudies": 1,
-  "topicMinimums": {"Ice chips": [[1, 0.5], [11, 1], [26, 2]]},
+  "earlyTopics": ["Ice chips"],
   "cases": {
     "student": {
       "intro": "A nurse on a medical-surgical unit is precepting a nursing student during a short-staffed day shift.",
