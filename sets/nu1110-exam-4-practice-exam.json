@@ -4,10 +4,11 @@
   "description": "Exam 4 practice on ethics and law, leadership, teamwork, teaching and learning, and abbreviations and math. Exam simulation follows the professor's blueprint: 58 questions, with 17 on ethics and law, 3 abbreviations, 5 or 6 math (ice chips included), and one short case study; 29 on a phone. Practice mode follows the same blueprint, new questions first.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 681,
+  "timeMinutes": 706.5,
   "defaultCount": 58,
   "topicWeights": {"Ethical and legal": 17, "Leadership": 11, "Teamwork and collaboration": 10.75, "Teaching and learning": 10.75, "Abbreviations": 3, "Unit conversions and intake": 3.5, "Ice chips": 2},
   "caseStudies": 1,
+  "facts": {"EL01": ["el-02", "el-08", "el-21", "el-67", "el-71", "el-07", "el-40", "el-78", "el-127"], "EL02": ["el-64", "el-109", "el-127"], "EL03": ["el-66", "el-04", "el-60", "el-72", "el-127"], "EL04": ["el-65", "el-05", "el-117", "el-127"], "EL05": ["el-03", "el-127"], "EL06": ["el-63", "el-06", "el-127"], "EL07": ["el-53", "el-83"], "EL08": ["el-16", "el-79", "el-86", "el-83"], "EL09": ["el-54"], "EL10": ["el-43", "el-103", "el-104", "el-45", "el-108"], "EL11": ["el-43", "el-128"], "EL12": ["el-105", "el-45", "el-128"], "EL13": ["el-103", "el-42", "el-45", "el-128"], "EL14": ["el-104", "el-128"], "EL15": ["el-45", "el-128"], "EL16": ["el-108", "el-45", "el-128"], "EL17": ["el-27", "el-46"], "EL18": ["el-44", "el-106", "el-107", "el-116"], "EL19": ["el-108", "el-45"], "EL20": ["el-69", "el-55"], "EL21": ["el-55"], "EL22": ["el-68", "el-55"], "EL23": ["el-01", "el-70", "el-120"], "EL24": ["el-10"], "EL25": ["el-73"], "EL26": ["el-121", "el-129"], "EL27": ["el-122", "el-129"], "EL28": ["el-119", "el-129"], "EL29": ["el-123", "el-129"], "EL30": ["el-75", "el-11", "el-129"], "EL31": ["el-76", "el-130"], "EL32": ["el-124", "el-130"], "EL33": ["el-125", "el-130"], "EL34": ["el-126", "el-130"], "EL35": ["el-77"], "EL36": ["el-74"], "EL37": ["el-32", "el-97", "el-13", "el-58", "el-131"], "EL38": ["el-34", "el-94", "el-95", "el-131"], "EL39": ["el-29", "el-57", "el-113", "el-131"], "EL40": ["el-56", "el-92", "el-132"], "EL41": ["el-33", "el-93", "el-131"], "EL42": ["el-91", "el-114", "el-56", "el-132"], "EL43": ["el-31", "el-98", "el-132"], "EL44": ["el-10", "el-25", "el-87", "el-89", "el-90", "el-115", "el-132"], "EL45": ["el-14", "el-110", "el-118"], "L01": ["lt-15", "lt-17", "lt-79", "lt-65", "lt-20", "lt-118"], "L02": ["lt-72", "lt-11", "lt-13", "lt-78", "lt-118"], "L03": ["lt-07", "lt-118"], "L04": ["lt-10", "lt-74", "lt-118"], "L05": ["lt-16", "lt-79", "lt-115", "lt-21", "lt-118"], "L06": ["lt-08", "lt-75", "lt-78", "lt-118"], "L07": ["lt-61", "lt-77", "lt-118"], "L08": ["lt-68", "lt-69"], "L09": ["lt-14", "lt-73", "lt-76"], "L10": ["lt-14", "lt-76"], "L11": ["lt-59", "lt-81", "lt-116"], "L12": ["lt-87", "lt-66", "lt-23", "lt-26", "lt-119"], "L13": ["lt-24", "lt-86", "lt-108", "lt-119"], "L14": ["lt-84", "lt-119"], "L15": ["lt-25", "lt-119"], "L16": ["lt-22", "lt-27", "lt-85", "lt-119"], "L17": ["lt-88", "lt-31", "lt-30", "lt-90", "lt-91", "lt-89", "lt-32", "lt-109"], "L18": ["lt-01", "lt-04", "lt-70", "lt-117", "lt-02", "lt-29"], "L19": ["lt-71", "lt-67", "lt-49"], "L20": ["lt-80", "lt-82", "lt-83"], "TC01": ["lt-37", "lt-60", "lt-62", "lt-114"], "TC02": ["lt-93", "lt-35", "lt-120"], "TC03": ["lt-92", "lt-114"], "TC04": ["lt-97", "lt-37", "lt-120"], "TC05": ["lt-103", "lt-104", "lt-55", "lt-120"], "TC06": ["lt-94", "lt-120"], "TC07": ["lt-36", "lt-95", "lt-96", "lt-35"], "TC08": ["lt-95", "lt-36"], "TC09": ["lt-36", "lt-60"], "TC10": ["lt-36"], "TC11": ["lt-96", "lt-36"], "TC12": ["lt-56"], "TC13": ["lt-105", "lt-106", "lt-57", "lt-107", "lt-102", "lt-48"], "TC14": ["lt-33", "lt-113"], "TC15": ["lt-34", "lt-113"], "TC16": ["lt-58"], "TC17": ["lt-38", "lt-39", "lt-40", "lt-98", "lt-99", "lt-101", "lt-43", "lt-112", "lt-44"], "TC18": ["lt-100", "lt-101"], "TL01": ["tl-61", "tl-66", "tl-71", "tl-01", "tl-117"], "TL02": ["tl-63", "tl-03", "tl-09", "tl-67", "tl-04", "tl-62", "tl-112", "tl-113", "tl-117"], "TL03": ["tl-01", "tl-05", "tl-64", "tl-68", "tl-02", "tl-117"], "TL04": ["tl-18", "tl-39", "tl-77", "tl-118"], "TL05": ["tl-19", "tl-21", "tl-22", "tl-24", "tl-86", "tl-115", "tl-118"], "TL06": ["tl-25", "tl-47", "tl-87", "tl-05", "tl-118"], "TL07": ["tl-30", "tl-31", "tl-32", "tl-69", "tl-74", "tl-70", "tl-118"], "TL08": ["tl-48", "tl-105", "tl-50"], "TL09": ["tl-71", "tl-06", "tl-26", "tl-117"], "TL10": ["tl-62", "tl-06", "tl-112", "tl-117"], "TL11": ["tl-02", "tl-56", "tl-54", "tl-117"], "TL12": ["tl-26", "tl-73", "tl-75", "tl-27", "tl-28", "tl-111", "tl-117"], "TL13": ["tl-33", "tl-34", "tl-35", "tl-36", "tl-37", "tl-94", "tl-96", "tl-40", "tl-41", "tl-93"], "TL14": ["tl-43", "tl-110"], "TL15": ["tl-13", "tl-14", "tl-97", "tl-79"], "TL16": ["tl-80", "tl-16", "tl-11", "tl-76", "tl-78", "tl-121"], "TL17": ["tl-20", "tl-51", "tl-120"], "TL18": ["tl-44", "tl-98", "tl-120"], "TL19": ["tl-33", "tl-96", "tl-120"], "TL20": ["tl-10", "tl-12", "tl-81", "tl-114", "tl-120"], "TL21": ["tl-21", "tl-46", "tl-98", "tl-120"], "TL22": ["tl-42", "tl-84", "tl-115", "tl-120"], "TL23": ["tl-106"], "TL24": ["tl-48", "tl-105"], "TL25": ["tl-82", "tl-10", "tl-12", "tl-81", "tl-121"], "TL26": ["tl-99", "tl-45", "tl-107", "tl-119"], "TL27": ["tl-102", "tl-119"], "TL28": ["tl-101", "tl-46", "tl-119"], "TL29": ["tl-47", "tl-100", "tl-119"], "TL30": ["tl-103", "tl-119"], "TL31": ["tl-104", "tl-51", "tl-108"], "TL32": ["tl-78", "tl-11", "tl-76", "tl-52", "tl-58", "tl-121"], "AM01": ["mx4-13", "mx4-14", "mx4-15", "mx4-16", "mx4-102"], "AM02": ["mx4-19", "mx4-20", "mx4-72", "mx4-76", "mx4-102"], "AM03": ["mx4-18", "mx4-21", "mx4-69", "mx4-77", "mx4-24", "mx4-102"], "AM04": ["mx4-22", "mx4-67", "mx4-102"], "AM05": ["mx4-25", "mx4-26", "mx4-28", "mx4-30", "mx4-31", "mx4-81", "mx4-82", "mx4-83", "mx4-84", "mx4-88", "mx4-89", "mx4-86", "mx4-87", "mx4-102", "mx4-103"], "AM06": ["mx4-32", "mx4-33", "mx4-34", "mx4-35", "mx4-36", "mx4-37", "mx4-38", "mx4-39", "mx4-40", "mx4-41", "mx4-91", "mx4-92", "mx4-93", "mx4-94", "mx4-95", "mx4-96", "mx4-97", "mx4-98", "mx4-99", "mx4-100"], "AM07": ["mx4-11", "mx4-12", "mx4-62", "mx4-63", "mx4-66", "mx4-65", "mx4-103"], "AM08": ["mx4-64", "mx4-10", "mx4-62", "mx4-102", "mx4-103"], "AM09": ["mx4-11", "mx4-63", "mx4-10", "mx4-103"], "AM10": ["mx4-01", "mx4-42", "mx4-43", "mx4-45", "mx4-57", "mx4-58", "mx4-59", "mx4-06", "mx4-101"], "AM11": ["mx4-03", "mx4-04", "mx4-45", "mx4-55", "mx4-42", "mx4-101"], "AM12": ["mx4-07", "mx4-44", "mx4-09", "mx4-51", "mx4-61", "mx4-101"], "AM13": ["mx4-02", "mx4-05", "mx4-08", "mx4-48", "mx4-56", "mx4-60", "mx4-47", "mx4-61", "mx4-101"], "AM14": ["mx4-49", "mx4-50", "mx4-52", "mx4-53", "mx4-46", "mx4-101"]},
   "earlyTopics": ["Ice chips"],
   "cases": {
     "student": {
@@ -1338,6 +1339,78 @@
       "rationale": "<p><b>Provision 9</b>: the profession of nursing, <b>through its professional organizations</b>, speaks for nursing's values and works to bring <b>social justice</b> into nursing and health policy, like a nurses association testifying for wider coverage.</p><p><b>Provision 8</b> isn't the right answer: it also aims at fairer health, but by collaborating with other professions and the public, while this nurse works through the profession's own association on legislation. Provision 3 is advocacy for one client's rights and safety, and provision 6 is the work environment.</p><p><b>Takeaway:</b> The profession, through its organizations, speaking for social justice in policy: provision 9.</p>"
     },
     {
+      "id": "el-127",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A nurse manager is reviewing care on a medical unit. For each nursing action, click to specify the ethical principle it shows.",
+      "rowHeader": "Nursing action",
+      "columns": ["Autonomy", "Beneficence", "Nonmaleficence", "Justice", "Fidelity", "Veracity"],
+      "rows": ["A nurse comes back at 1400 to finish a dressing change, as she told the client she would", "A nurse tells a client his results are late because the lab lost his first sample", "A nurse asks which arm a client would like the IV in, and starts it there", "A nurse holds a sedative when the client's respirations drop to 9/min", "A nurse gives the open bed to the sickest client waiting, not to the one who asked first", "A nurse arranges a visit from a lonely client's dog, on her own time", "A nurse lowers the bed and raises the side rails for a drowsy client"],
+      "answer": [4, 5, 0, 2, 3, 1, 2],
+      "rationale": "<p><b>Fidelity</b> is keeping promises: coming back at 1400 as she said. <b>Veracity</b> is telling the truth, a mistake included: the lost sample. <b>Autonomy</b> is the client's choice: which arm for the IV. <b>Nonmaleficence</b> is preventing harm: holding a sedative when breathing slows, and making the bed safe for a drowsy client. <b>Justice</b> is fair care by need: the bed goes to the sickest client. <b>Beneficence</b> is doing good beyond the task: the dog's visit.</p><p>Holding the sedative isn't beneficence: it doesn't add something good, it keeps harm from happening, which is nonmaleficence. Giving the bed by acuity isn't beneficence either, though it helps the client: it's about sharing a scarce resource fairly, which is justice. And coming back as promised isn't veracity: the nurse kept her word rather than told a hard truth.</p><p><b>Takeaway:</b> Choice: autonomy. Doing good: beneficence. Preventing harm: nonmaleficence. Fair share by need: justice. A promise kept: fidelity. The truth: veracity.</p>"
+    },
+    {
+      "id": "el-128",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 2,
+      "stem": "A risk manager is reviewing incident reports. For each nurse's action, click to specify the tort it could be.",
+      "rowHeader": "Nurse's action",
+      "columns": ["Assault", "Battery", "False imprisonment", "Invasion of privacy", "Libel", "Slander"],
+      "rows": ["Tells a client who keeps using the call light, “Press it again and I'll tie your hands down”", "Inserts a urinary catheter after the competent client said no", "Stands in the doorway so a competent client can't leave against medical advice", "Posts a photo of a client's wound online, with the room number showing", "Writes in an email to the staff that a coworker steals opioids, which isn't true", "Tells visitors in the elevator that a surgeon comes to work drunk, which isn't true", "Tells a client's employer, who called the unit, what the client's diagnosis is"],
+      "answer": [0, 1, 2, 3, 4, 5, 3],
+      "rationale": "<p><b>Assault</b> is a threat of harmful touch, with no touch: “I'll tie your hands down.” <b>Battery</b> is touching without consent: a catheter the competent client refused. <b>False imprisonment</b> is holding a person without legal cause: blocking the door of a competent client who may leave against medical advice. <b>Invasion of privacy</b> is sharing private information without consent: the wound photo, and the diagnosis given to the employer. Defamation is a false statement that harms a reputation: <b>libel</b> when written (the email), <b>slander</b> when spoken (the elevator).</p><p>The threat isn't battery, since nothing touched the client. The photo isn't libel: nothing in it is false, it's private, so it's invasion of privacy. And the email isn't slander: it was written, which makes it libel.</p><p><b>Takeaway:</b> Threat: assault. Touch without consent: battery. Held without cause: false imprisonment. Private facts shared: invasion of privacy. False and written: libel. False and spoken: slander.</p>"
+    },
+    {
+      "id": "el-129",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse educator is teaching the ANA Code of Ethics for Nurses. For each nurse's action, click to specify the provision it shows.",
+      "rowHeader": "Nurse's action",
+      "columns": ["1: respect for every person", "2: commitment to the client", "3: advocacy for rights and safety", "4: accountability for practice", "5: duties to self"],
+      "rows": ["Gives a client in police custody the same respectful care as every other client", "Turns down a gift from a drug company that wants her to recommend its product to clients", "Stops a coworker who is about to give a medication to the wrong client", "Checks that the vital signs she delegated to an assistant were taken and recorded correctly", "Takes a course on new insulin pumps to keep her skills current", "Turns down an extra shift because she's too tired to practice safely"],
+      "answer": [0, 1, 2, 3, 4, 4],
+      "rationale": "<p><b>Provision 1</b> is respect for the dignity and rights of every person, whoever they are: a client in custody gets the same care. <b>Provision 2</b> is the nurse's primary commitment to the client, so the nurse's own interests, like a company's gift, never come first. <b>Provision 3</b> is advocating for the client's rights, health, and safety: stopping a wrong-client medication. <b>Provision 4</b> is the nurse's authority, accountability, and responsibility for nursing practice: a nurse who delegates a task still answers for it. <b>Provision 5</b> is the nurse's duties to self, including safety, health, and competence: keeping skills current and resting enough to be safe.</p><p>Stopping the coworker isn't provision 4: the nurse is protecting a client's safety, which is advocacy (provision 3), not answering for her own practice. Turning down the gift isn't provision 1: it's about keeping the client ahead of the nurse's own interests, which is provision 2.</p><p><b>Takeaway:</b> 1: respect for every person. 2: the client first. 3: advocacy for rights, health, and safety. 4: accountable for one's own practice. 5: duties to self, competence included.</p>"
+    },
+    {
+      "id": "el-130",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse educator is teaching the ANA Code of Ethics for Nurses. For each nurse's action, click to specify the provision it shows.",
+      "rowHeader": "Nurse's action",
+      "columns": ["6: the work environment", "7: research and standards", "8: collaborating for human rights", "9: social justice through the profession"],
+      "rows": ["Joins a unit council that changes the rules so nurses can report unsafe assignments without blame", "Helps collect data for a study comparing two ways to prevent pressure injuries", "Works with the health department and local clinics to bring vaccines to an underserved neighborhood", "Through the state nurses association, urges lawmakers to fund care for uninsured clients", "Serves on the committee that writes the hospital's new standard for central line care"],
+      "answer": [0, 1, 2, 3, 1],
+      "rationale": "<p><b>Provision 6</b> is building and keeping an ethical work environment: a unit where nurses can report unsafe assignments. <b>Provision 7</b> is advancing the profession through research, scholarship, and practice standards: helping with a study, and writing a standard of care. <b>Provision 8</b> is collaborating with other health professions and the public to protect human rights and reduce health disparities: the vaccine outreach with the health department. <b>Provision 9</b> is the profession, through its organizations, speaking for nursing's values and social justice in health policy: the nurses association before lawmakers.</p><p>The vaccine outreach isn't provision 9, though it serves the same fairness: the nurse is working directly with other professions and the public, while provision 9 is the profession's organized voice in policy. Writing the central line standard isn't provision 6: it's a practice standard (provision 7), not the conditions nurses work in.</p><p><b>Takeaway:</b> 6: an ethical workplace. 7: research and practice standards. 8: working with others for human rights and health equity. 9: the profession's voice for social justice in policy.</p>"
+    },
+    {
+      "id": "el-131",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse is reviewing situations from a busy week. For each situation, click to specify the law that applies.",
+      "rowHeader": "Situation",
+      "columns": ["HIPAA", "Good Samaritan law", "EMTALA", "ADA"],
+      "rows": ["An off-duty nurse gives first aid at a car crash, unpaid, and stays until paramedics take over", "An emergency department screens and stabilizes an uninsured man with chest pain before asking about payment", "A hospital provides a sign language interpreter for a deaf client's discharge teaching", "A nurse won't tell a client's coworker, who calls the unit, whether the client was admitted", "An employer gives a nurse with hearing loss an amplified stethoscope"],
+      "answer": [1, 2, 3, 0, 3],
+      "rationale": "<p>The <b>Good Samaritan law</b> protects a person who gives emergency help in good faith, within their training, without pay, and stays until someone with equal or more training takes over. <b>EMTALA</b> requires an emergency department to screen and stabilize everyone with an emergency, whatever they can pay, with payment questions after. The <b>ADA</b> requires reasonable accommodations for people with disabilities, clients and staff alike: a qualified interpreter, an amplified stethoscope. <b>HIPAA</b> protects the privacy of health information, so the nurse can't confirm an admission to someone the client didn't authorize.</p><p>The interpreter isn't a HIPAA matter, though it involves a client's health information: it's an accommodation for a disability, so it's the ADA. And screening the uninsured man first isn't the Good Samaritan law: that protects people helping outside a care setting, while EMTALA governs emergency departments.</p><p><b>Takeaway:</b> HIPAA: privacy of health information. Good Samaritan: emergency help in good faith, within training. EMTALA: screen and stabilize every emergency. ADA: reasonable accommodations, for clients and staff.</p>"
+    },
+    {
+      "id": "el-132",
+      "type": "matrix",
+      "topic": "Ethical and legal",
+      "level": 3,
+      "stem": "A nurse is reviewing how laws shape health care. For each situation, click to specify the law that applies.",
+      "rowHeader": "Situation",
+      "columns": ["PPACA", "HITECH Act", "Uniform Anatomical Gift Act", "Nurse practice act"],
+      "rows": ["A state law spells out what a licensed nurse may and may not do", "A small-business owner buys health coverage through an insurance marketplace", "A clinic receives federal incentive payments for moving to electronic health records", "A 19-year-old signs up to be an organ donor when she renews her driver's license", "A state board of nursing suspends the license of a nurse who worked while impaired"],
+      "answer": [3, 0, 1, 2, 3],
+      "rationale": "<p>Each state's <b>nurse practice act</b> defines nursing practice and its scope, and gives the board of nursing its power to license nurses and discipline them, as with a nurse who worked impaired. The <b>Patient Protection and Affordable Care Act (PPACA)</b> expanded coverage and access, including the health insurance marketplaces. The <b>HITECH Act</b> promoted electronic health records, with incentive payments for using them, and strengthened privacy rules for them, including breach notice. The <b>Uniform Anatomical Gift Act</b> lets adults choose to donate organs, as on a driver's license, and lets the family consent after death when there's no documented choice.</p><p>The board's suspension isn't a federal law: licenses are granted and disciplined by each state under its nurse practice act. And the incentive payments aren't PPACA, though both are federal: they came with the HITECH Act, which is about electronic records.</p><p><b>Takeaway:</b> PPACA: coverage and access. HITECH: electronic records and breaches. Uniform Anatomical Gift Act: the choice to donate organs. Nurse practice act: each state's law for nursing practice and licenses.</p>"
+    },
+    {
       "id": "lt-01",
       "type": "mc",
       "topic": "Leadership",
@@ -2504,6 +2577,42 @@
       "options": ["“Staff nurses can't lead; leading is the manager's job.”", "“They're chosen by the staff they manage.”", "“Their authority comes from the job they were hired into.”", "“They hold an official position in the organization.”", "“They're accountable for budgets, staffing, and outcomes.”", "“They influence others even without a title.”"],
       "answer": [2, 3, 4],
       "rationale": "<p><b>Managers</b> hold an <b>official position</b>, with authority that comes with the job, and are accountable for resources like <b>budgets and staffing</b>, and for outcomes.</p><p>Influence without a title describes <b>leaders</b>, who can be anyone on the team: every nurse leads. Managers are appointed by the organization, not chosen by the staff.</p><p><b>Takeaway:</b> Leaders influence; managers hold the position.</p>"
+    },
+    {
+      "id": "lt-118",
+      "type": "matrix",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A nursing student is observing charge nurses on several units. For each charge nurse's behavior, click to specify the leadership style it shows.",
+      "rowHeader": "Charge nurse's behavior",
+      "columns": ["Autocratic or paternalistic", "Bureaucratic", "Laissez-faire", "Situational", "Transactional", "Transformational"],
+      "rows": ["Makes every scheduling decision alone, kindly: “I know what's best for all of you”", "Turns down a reasonable shift swap because the policy manual doesn't mention swaps", "Lets the staff run the unit however they like and rarely gives direction", "Gives step-by-step direction to a new graduate but lets an expert nurse work on her own", "Gives a day off to staff who meet the hand-hygiene target, and writes up those who don't", "Shares a vision of a fall-free unit and coaches the staff to find their own solutions", "Decides alone on a new break schedule and announces it without asking the staff"],
+      "answer": [0, 1, 2, 3, 4, 5, 0],
+      "rationale": "<p><b>Autocratic</b> leaders make decisions alone and direct others, like announcing a break schedule; <b>paternalistic</b> leaders do the same with a caring tone (“I know what's best”). <b>Bureaucratic</b> leaders go by the rules, with little flexibility. <b>Laissez-faire</b> leaders are hands-off and let the group decide. <b>Situational</b> leaders fit their style to the person and the task: direction for a novice, freedom for an expert. <b>Transactional</b> leaders use rewards and corrections to get the expected results. <b>Transformational</b> leaders share a vision, coach, and help staff grow and solve problems.</p><p>The kindly scheduler isn't transformational: the warmth doesn't change who decides, and keeping every decision is paternalistic. The hand-hygiene rewards aren't bureaucratic, though they enforce a target: trading rewards and write-ups for results is transactional.</p><p><b>Takeaway:</b> Decides alone: autocratic (with a caring tone: paternalistic). Rules first: bureaucratic. Hands-off: laissez-faire. Fits the style to the person and task: situational. Rewards and corrections: transactional. Vision and growth: transformational.</p>"
+    },
+    {
+      "id": "lt-119",
+      "type": "matrix",
+      "topic": "Leadership",
+      "level": 2,
+      "stem": "A new nurse manager is working on the unit's fall rate. For each action, click to specify the function of management it shows.",
+      "rowHeader": "Manager's action",
+      "columns": ["Planning", "Organizing", "Commanding", "Coordinating", "Controlling"],
+      "rows": ["Sets a goal of cutting falls in half within a year, and decides the steps to get there", "Orders bed alarms and forms a falls team with a nurse from each shift", "Checks on each shift that staff follow the hospital's fall-prevention standards", "Meets the falls team weekly to keep the work moving and the members motivated", "Compares this month's fall rate with the goal and gives the staff feedback"],
+      "answer": [0, 1, 2, 3, 4],
+      "rationale": "<p><b>Planning</b> sets the goal and the course of action to reach it. <b>Organizing</b> lines up the structure, people, and resources to do it: equipment and a team. <b>Commanding</b> is supervising the work to the organization's standards. <b>Coordinating</b> keeps the work and the people moving together, by communicating, motivating, and delegating as it goes. <b>Controlling</b> measures the results against the goal and gives feedback.</p><p>Comparing the fall rate with the goal isn't planning, though the goal came from the plan: measuring results and feeding them back is controlling. Checking that staff follow the standards isn't controlling: it's supervising the work as it happens, which is commanding.</p><p><b>Takeaway:</b> Plan the goal, organize the resources, command (supervise to the standards), coordinate the people, control (measure and give feedback).</p>"
+    },
+    {
+      "id": "lt-120",
+      "type": "matrix",
+      "topic": "Teamwork and collaboration",
+      "level": 2,
+      "stem": "A nurse educator is teaching about teamwork on a medical unit. For each statement, click to specify what it describes.",
+      "rowHeader": "Statement",
+      "columns": ["A barrier to collaboration", "What collaboration requires", "A benefit of collaboration"],
+      "rows": ["Each discipline keeps its own plan and rarely talks with the others", "Team members know and respect each other's roles", "Fewer medication errors and shorter hospital stays", "Nurses stop asking questions after the charge nurse belittles them in front of others", "One shared goal, set with the client at the table", "Higher staff satisfaction and less burnout"],
+      "answer": [0, 1, 2, 0, 1, 2],
+      "rationale": "<p><b>Barriers</b> to collaboration include silos, where each discipline works alone, and bullying, which makes nurses stop speaking up and asking questions, raising errors, burnout, and turnover. Collaboration <b>requires</b> respect, clear roles, open communication, and one shared goal built with the client. Its <b>benefits</b> include safer care, better outcomes like shorter stays, and staff who are more satisfied and less burned out.</p><p>Knowing each other's roles isn't a benefit, though it helps the team: it's something collaboration needs before it can work. And the belittled nurses' silence isn't just a staffing problem: bullying blocks the communication collaboration depends on.</p><p><b>Takeaway:</b> Barriers: silos, unclear roles, bullying. Requires: respect, clear roles, communication, a shared goal. Benefits: safer care, better outcomes, happier staff.</p>"
     },
     {
       "id": "tl-01",
@@ -3673,6 +3782,66 @@
       "options": ["Let the client choose which change to start with", "Use games and stickers to reward each correct answer", "Teach the client's spouse instead, since the spouse cooks", "Schedule teaching during the client's work hours", "Explain why each change matters for the client's job and health", "Build on what the client already does to stay healthy on the road"],
       "answer": [0, 4, 5],
       "rationale": "<p>Adults learn best when they know <b>why it matters</b>, can <b>build on experience</b>, and can <b>direct their own learning</b>, with teaching that fits around work and family.</p><p>Games and rewards suit children, the client is the learner (family is added, not substituted), and teaching during work hours doesn't fit the client's life.</p><p><b>Takeaway:</b> Adults: why it matters, what they know, what they choose.</p>"
+    },
+    {
+      "id": "tl-117",
+      "type": "matrix",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching clients with new diabetes. For each teaching activity or evaluation, click to specify the domain of learning it belongs to.",
+      "rowHeader": "Teaching activity or evaluation",
+      "columns": ["Cognitive", "Affective", "Psychomotor"],
+      "rows": ["Explaining how insulin lowers blood glucose, with a handout", "Helping a client talk through his feelings about giving himself injections", "Showing a client how to draw up insulin, then having him practice", "Watching a client check her blood glucose with her own meter", "Asking a client to explain in her own words when to call the provider", "Noting over several visits that a client now takes her insulin without reminders", "Giving a short quiz on the signs of low blood glucose"],
+      "answer": [0, 1, 2, 2, 0, 1, 0],
+      "rationale": "<p>The <b>cognitive</b> domain is knowledge and thinking: explaining how insulin works is taught that way, and it's evaluated by questions, a quiz, or <b>teach-back</b>, where the client explains in her own words, like when to call the provider. The <b>affective</b> domain is feelings, attitudes, and values: talking through feelings about injections, and evaluated by listening to values and watching behavior over time, like taking insulin without reminders. The <b>psychomotor</b> domain is skills: demonstrating, then having the client practice, and evaluated by <b>return demonstration</b>, watching the client do it.</p><p>Teach-back isn't psychomotor, though the client does something: she explains, which shows knowledge, so it's cognitive. Taking insulin without reminders isn't psychomotor either: the skill was already there, and the change shows she has accepted the treatment, which is affective.</p><p><b>Takeaway:</b> Head: cognitive, checked by teach-back or a quiz. Heart: affective, checked by values and behavior over time. Hands: psychomotor, checked by return demonstration.</p>"
+    },
+    {
+      "id": "tl-118",
+      "type": "matrix",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is teaching a client with a new colostomy. For each nursing action, click to specify the step of teaching it belongs to.",
+      "rowHeader": "Nursing action",
+      "columns": ["Assessing", "Planning", "Implementing", "Evaluating"],
+      "rows": ["Asks what the client already knows about colostomies and how he likes to learn", "Sets a goal with the client that he will empty the pouch by himself by discharge", "Shows him a pouch change, then coaches him through one", "Watches him change the pouch alone the day before discharge", "Chooses a short video and a practice kit for the next morning's session"],
+      "answer": [0, 1, 2, 3, 1],
+      "rationale": "<p><b>Assessing</b> comes first: what the learner already knows, his readiness, and how he likes to learn decide everything after it. <b>Planning</b> sets goals with the client and chooses the methods and materials, like a video and a practice kit. <b>Implementing</b> is the teaching itself: showing, then coaching practice. <b>Evaluating</b> checks the goal, here by watching him change the pouch alone.</p><p>Choosing the video isn't implementing: deciding on methods and materials is part of the plan, and nothing has been taught yet. Watching the solo pouch change isn't implementing either: the nurse isn't teaching, she's checking whether the goal was met.</p><p><b>Takeaway:</b> Assess the learner first, then plan the goals and methods with the client, teach, and evaluate against the goal.</p>"
+    },
+    {
+      "id": "tl-119",
+      "type": "matrix",
+      "topic": "Teaching and learning",
+      "level": 3,
+      "stem": "A nurse educator is reviewing teaching approaches. For each approach, click to specify the learning theory it uses.",
+      "rowHeader": "Teaching approach",
+      "columns": ["Behaviorism", "Cognitive", "Constructivist", "Social learning", "Multiple intelligences"],
+      "rows": ["Praises a client each time she logs her blood pressure, so she keeps doing it", "Breaks new information into small parts and has the client sort it into a chart", "Asks a client how he manages his diet at home, then builds the plan from that", "Pairs a new client with a peer who shows how she uses her inhaler", "Helps a client who loves music remember the steps with a song", "Gives a child a sticker each time he takes his medicine without a fuss"],
+      "answer": [0, 1, 2, 3, 4, 0],
+      "rationale": "<p><b>Behaviorism</b>: behavior that's reinforced is repeated, as with praise for logging blood pressure or a sticker for taking medicine. <b>Cognitive</b> theory: learning is processing information, by perceiving, organizing, and remembering it, as when the client sorts small parts into a chart. <b>Constructivist</b> theory: learners build new knowledge on their own experience, as when the plan starts from how the client eats at home. <b>Social learning</b> theory: people learn by watching others and imitating them, as with the peer and her inhaler. <b>Multiple intelligences</b>: people learn through different strengths, like music.</p><p>The peer isn't constructivist, though she shares real experience: the client learns by watching and copying her, which is social learning. And the diet plan isn't cognitive: it starts from what the client already does, which is constructivist.</p><p><b>Takeaway:</b> Reinforce it: behaviorism. Process it: cognitive. Build on experience: constructivist. Watch and imitate: social learning. Teach through strengths: multiple intelligences.</p>"
+    },
+    {
+      "id": "tl-120",
+      "type": "matrix",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is planning client teaching. For each nursing action, click to specify the concept it relates to most.",
+      "rowHeader": "Nursing action",
+      "columns": ["Communication", "Culture and diversity", "Development", "Health, wellness, illness, and injury", "Nutrition", "Safety"],
+      "rows": ["Writes “high blood pressure” in place of “hypertension” on a teaching sheet", "Asks whether any foods are off-limits in the client's religion before diet teaching", "Uses a doll to show a 4-year-old where the IV will go", "Waits to teach until the client's pain medicine has taken effect", "Plans a list of high-fiber foods with a client who has constipation", "Teaches the parents of a toddler to keep medicines locked up", "Teaches an older adult to remove the throw rugs at home"],
+      "answer": [0, 1, 2, 3, 4, 5, 5],
+      "rationale": "<p><b>Communication</b>: plain words the client uses every day, like “high blood pressure.” <b>Culture and diversity</b>: asking about beliefs and customs, like religious food rules, and fitting the teaching to them. <b>Development</b>: teaching at the learner's age and stage, like a doll for a 4-year-old. <b>Health, wellness, illness, and injury</b>: pain, fatigue, and illness block learning, so the nurse meets the physical need first. <b>Nutrition</b>: what the client eats, like high-fiber foods. <b>Safety</b>: teaching that prevents harm, like locked medicines for a toddler and fewer tripping hazards for an older adult.</p><p>Asking about religious food rules isn't nutrition, though food is involved: the point is the client's beliefs, which is culture and diversity. And waiting for the pain medicine isn't safety: the nurse is waiting until the client can focus, because illness and pain get in the way of learning.</p><p><b>Takeaway:</b> Plain words: communication. Beliefs and customs: culture. Age and stage: development. Pain or illness first: health. Food: nutrition. Preventing harm: safety.</p>"
+    },
+    {
+      "id": "tl-121",
+      "type": "matrix",
+      "topic": "Teaching and learning",
+      "level": 2,
+      "stem": "A nurse is assessing clients before teaching. For each finding, click to specify whether it supports learning now or gets in the way of learning now.",
+      "rowHeader": "Finding",
+      "columns": ["Supports learning now", "Gets in the way of learning now"],
+      "rows": ["The client asks how her new inhaler works and reaches for it", "The client says walking with the walker will get her back to her garden", "The client rates his pain 8 on a scale of 0 to 10", "The client has canceled two teaching sessions this week", "The client is crying an hour after hearing her diagnosis", "The client already gives his wife her insulin and wants to learn to give his own"],
+      "answer": [0, 0, 1, 1, 1, 0],
+      "rationale": "<p>A client who is <b>ready to learn</b> asks questions, reaches for the equipment, and names goals of their own. Learning also grows when the teaching connects to what the client values (getting back to the garden) and builds on what the client already knows and does (giving his wife insulin). <b>Factors that get in the way</b> include pain, fatigue, and strong emotions, like crying after a new diagnosis, and avoiding the teaching, like canceled sessions, is a sign of low readiness.</p><p>The canceled sessions aren't just a scheduling problem: avoiding teaching often means the client isn't ready, and the nurse explores why before teaching. And the client in pain isn't ready yet either, even if he wants to learn: the nurse treats the pain first, then teaches.</p><p><b>Takeaway:</b> Ready and motivated: questions, reaching for the equipment, goals of their own, experience to build on. Not now: pain, fatigue, strong emotions, avoiding the teaching.</p>"
     },
     {
       "id": "mx4-01",
@@ -4894,6 +5063,42 @@
       "round": "to the nearest whole number",
       "strictZeros": true,
       "rationale": "<p>Eaten: the first cup ({oz} oz) and {=1 - left} of the second ({=oz * (1 - left)} oz), for {=oz + oz * (1 - left)} oz × 30 = {=(oz + oz * (1 - left)) * 30} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Counting both cups in full is a mistake: part of the second wasn't eaten, and all of it is ice.</p><p><b>Takeaway:</b> Add what was eaten from every cup, convert, then halve.</p>"
+    },
+    {
+      "id": "mx4-101",
+      "type": "matrix",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse is checking the meanings a new nurse wrote next to abbreviations in her notes. For each one, click to specify whether the meaning is correct or incorrect.",
+      "rowHeader": "Abbreviation and meaning",
+      "columns": ["Correct", "Incorrect"],
+      "rows": ["tid: three times a day", "pc: before meals", "OU: left eye", "NPO: nothing by mouth", "NKDA: no known dietary allergies", "DVT: deep vein thrombosis"],
+      "answer": [0, 1, 1, 0, 1, 0],
+      "rationale": "<p><b>tid</b> is three times a day (bid twice, qid four times). <b>pc</b> is after meals; before meals is ac. <b>OU</b> is both eyes; the left eye is OS, and the right is OD. <b>NPO</b> is nothing by mouth. <b>NKDA</b> is no known drug allergies, not dietary. <b>DVT</b> is deep vein thrombosis, a clot in a deep vein, usually in the leg.</p><p>Mixing up ac and pc changes when a dose is given with meals, and mixing up OU, OD, and OS puts eye drops in the wrong eye, so these are worth checking every time.</p><p><b>Takeaway:</b> tid three times a day, pc after meals (ac before), OU both eyes (OD right, OS left), NPO nothing by mouth, NKDA no known drug allergies, DVT deep vein thrombosis.</p>"
+    },
+    {
+      "id": "mx4-102",
+      "type": "matrix",
+      "topic": "Unit conversions and intake",
+      "level": 3,
+      "stem": "A nurse is checking a student's calculations. For each entry, click to specify whether it's correct or incorrect.",
+      "rowHeader": "Student's entry",
+      "columns": ["Correct", "Incorrect"],
+      "rows": ["0.5 g = 500 mg", "44 lb = 20 kg", "2 tsp = 15 mL", "38 °C = 100.4 °F", "1 1/2 cups of juice = 360 mL of intake", "A volume of 2.5 mL, recorded as “2.50 mL”"],
+      "answer": [0, 0, 1, 0, 0, 1],
+      "rationale": "<p>Grams to milligrams: × 1,000, so 0.5 g = <b>500 mg</b>. Pounds to kilograms: ÷ 2.2, so 44 lb = <b>20 kg</b>. One teaspoon is 5 mL, so 2 tsp = <b>10 mL</b>, not 15 (15 mL is 1 tablespoon). Celsius to Fahrenheit: × 9/5 + 32, so 38 °C = 68.4 + 32 = <b>100.4 °F</b>. One cup is 8 oz, or 240 mL, so 1 1/2 cups = <b>360 mL</b>. And “2.50 mL” has a trailing zero, which isn't allowed: it's written <b>2.5 mL</b>.</p><p>The 15 mL is a tablespoon's volume, so it's easy to give a teaspoon the wrong one; check which spoon the order names.</p><p><b>Takeaway:</b> g to mg: × 1,000. lb to kg: ÷ 2.2. 1 tsp = 5 mL, 1 Tbsp = 15 mL. °F = °C × 9/5 + 32. 1 cup = 240 mL. No trailing zeros.</p>"
+    },
+    {
+      "id": "mx4-103",
+      "type": "matrix",
+      "topic": "Unit conversions and intake",
+      "level": 3,
+      "stem": "A nurse is reviewing how volumes were rounded and written in a client's record. For each entry, click to specify whether it follows the rules or breaks one.",
+      "rowHeader": "Entry",
+      "columns": ["Follows the rules", "Breaks a rule"],
+      "rows": ["A dose of 0.456 mL, written as 0.46 mL", "A dose of 0.75 mL, written as .75 mL", "A dose of 3 mL, written as 3.0 mL", "A dose of 1.46 mL, written as 1.5 mL", "8 oz of milk and 4 oz of soup, recorded as 360 mL of intake", "A dose of 2.25 mL, written as 2.2 mL"],
+      "answer": [0, 1, 1, 0, 0, 1],
+      "rationale": "<p>Under 1 mL, round to the hundredth and write a <b>leading zero</b>: 0.456 becomes <b>0.46 mL</b>, and .75 must be written <b>0.75 mL</b>. A <b>trailing zero</b> is never written: 3 mL, not 3.0. Over 1 mL, round to the tenth, and 5 or more rounds up: 1.46 becomes <b>1.5 mL</b>, and 2.25 becomes <b>2.3 mL</b>, not 2.2. Intake: 8 + 4 = 12 oz, and 12 × 30 = <b>360 mL</b>.</p><p>The 2.2 drops the 5 instead of rounding it up, which underdoses. And “.75” is the right amount but the wrong way to write it: a missing leading zero can be misread as 75.</p><p><b>Takeaway:</b> Under 1 mL: the hundredth, with a leading zero. Over 1 mL: the tenth, 5 or more rounding up. Never a trailing zero. 1 oz = 30 mL.</p>"
     }
   ]
 }

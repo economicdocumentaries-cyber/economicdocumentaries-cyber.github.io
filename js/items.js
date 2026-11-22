@@ -1154,6 +1154,18 @@ export function validateSet(set) {
       }
     }
   }
+  // The study guide's facts (SPEC 11.3): { code: [question ids] }, written by tools/fact_codes.py.
+  if (set.facts != null) {
+    const ids = new Set(set.questions.map(q => q?.id).filter(isText));
+    if (typeof set.facts !== 'object' || Array.isArray(set.facts)) {
+      add('"facts" must give each study-guide fact\'s code its questions, like { "EL01": ["el-02", "el-08"] }.');
+    } else {
+      for (const [code, list] of Object.entries(set.facts)) {
+        if (!Array.isArray(list) || !list.length || !list.every(isText)) add(`"facts": "${code}" needs a list of question ids.`);
+        else for (const id of list) if (!ids.has(id)) add(`"facts": "${code}" names the question "${id}", but the set has no question with that id.`);
+      }
+    }
+  }
   // Early topics (SPEC 11.3): ["Ice chips"], topics every practice brings until the student has met one of their questions.
   if (set.earlyTopics != null) {
     const topics = new Set(set.questions.map(q => q?.topic).filter(isText));

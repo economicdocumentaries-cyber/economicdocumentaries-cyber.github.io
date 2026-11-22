@@ -143,12 +143,15 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   const minimums = early.length
     ? { ...set.topicMinimums, ...Object.fromEntries(early.map(t => [t, [[1, 1], ...(set.topicMinimums?.[t] ?? [])]])) }
     : set.topicMinimums;
+  // The study guide's facts (the set's "facts"; the owner's choice of 2026-11-21: every fact early): among questions
+  // equally new, the ones on facts the student hasn't met yet come first.
+  const facts = factsFor(set, seen);
   let picked = limit < units.flat().length
     ? pickBlocks(units, limit, random, seen, set.topicWeights, missed,
       practice ? pacedCases(shareFrom, limit, seen, device, random) : set.caseStudies,
-      minimums, partSeen, shareFrom, practice) : units.slice();
+      minimums, partSeen, shareFrom, practice, facts) : units.slice();
   // The question types (balanceTypes), unless the student asked for these questions (Retake missed, saved, search).
-  if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types), practice);
+  if (limit < units.flat().length && !s.only) picked = balanceTypes(picked, units, seen, missed, random, heldShares(set, s.types), practice, facts);
   // Too few questions without them: more runs of the case studies (part of one to finish).
   let count = picked.flat().length;
   let more = false;
@@ -164,6 +167,23 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   ordered = inCaseOrder(ordered, q => position.get(q) ?? -1);
   if (more) ordered = spreadRuns(ordered);
   return apart(ordered).flat();
+}
+
+// ---------- the study guide's facts first (the owner's choice, 2026-11-21) ----------
+
+// A set's "facts" names each item of the instructor's study guide by a code, with the questions that test it, like
+// { "EL01": ["el-02", "el-08"] } (SPEC 11.3; tools/fact_codes.py writes it from the coverage map kept next to the class
+// materials, so the guide's wording stays out of the site). Returns of (question id -> its codes) and met (the codes
+// of every question this student has seen), or null for a set without facts.
+export function factsFor(set, seen = new Map()) {
+  if (!set.facts || typeof set.facts !== 'object' || Array.isArray(set.facts)) return null;
+  const of = new Map();
+  for (const [code, ids] of Object.entries(set.facts)) {
+    if (Array.isArray(ids)) for (const id of ids) of.set(id, [...(of.get(id) ?? []), code]);
+  }
+  const met = new Set();
+  for (const [id, codes] of of) if (seen.has(id)) for (const code of codes) met.add(code);
+  return { of, met };
 }
 
 // ---------- case studies a few questions at a time (the owner's request, 2026-11-13) ----------
@@ -320,7 +340,9 @@ export function heldShares(set, types = null) {
 // keepFresh (practice, 2026-11-17): a held type's swaps also never bring in a question seen more recently than the
 // one they replace, so a practice holds a few more (or fewer) of that type rather than bring back a question the
 // student answered right while new ones are left.
-function balanceTypes(picked, units, seen, missed, random, held = [], keepFresh = false) {
+// facts (factsFor, 2026-11-21): among questions seen equally long ago, out goes the one on the fewest facts the student
+// hasn't met, and in comes the one on the most.
+function balanceTypes(picked, units, seen, missed, random, held = [], keepFresh = false, facts = null) {
   const n = picked.flat().length;
   if (n < 5) return picked;
   const type = b => b[0].type;
@@ -328,6 +350,7 @@ function balanceTypes(picked, units, seen, missed, random, held = [], keepFresh 
   const isMc = b => type(b) === 'mc';
   const other = b => !isMc(b) && !isHeld(b); // neither multiple choice nor held
   const age = b => seen.get(b[0].id) ?? -1;
+  const worth = b => (facts ? b.flatMap(q => facts.of.get(q.id) ?? []).filter(c => !facts.met.has(c)).length : 0);
   const out = picked.slice();
   const taken = new Set(out);
   const spare = shuffle(units.filter(b => !taken.has(b) && !isCase(b) && !missed.has(b[0].id)), random);
@@ -338,10 +361,10 @@ function balanceTypes(picked, units, seen, missed, random, held = [], keepFresh 
   const swap = (goes, comes, fresh) => {
     const outs = out.map((b, i) => [b, i])
       .filter(([b]) => !isCase(b) && !missed.has(b[0].id) && goes(b))
-      .sort((x, y) => age(y[0]) - age(x[0]));
+      .sort((x, y) => age(y[0]) - age(x[0]) || worth(x[0]) - worth(y[0]));
     for (const [b, i] of outs) {
       const k = spare.reduce((best, c, j) => (comes(c) && c[0].topic === b[0].topic && (!fresh || age(c) <= age(b))
-        && (best < 0 || age(c) < age(spare[best])) ? j : best), -1);
+        && (best < 0 || age(c) < age(spare[best]) || (age(c) === age(spare[best]) && worth(c) > worth(spare[best]))) ? j : best), -1);
       if (k < 0) continue;
       out[i] = spare[k];
       spare[k] = b;
@@ -462,7 +485,11 @@ export function leanToward(questions, seen, missed) {
 // with none left gives its places to the new questions of the topics weighted
 // above 0, so a question answered right comes back only once none are left
 // anywhere (then the blueprint's shares, with the questions seen longest ago).
-function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null, partSeen = new Set(), everyQuestion = null, newFirst = false) {
+// facts (factsFor, the owner's choice of 2026-11-21): among questions equally new,
+// and after a topic's share, the ones on the most facts this student hasn't met
+// come first, counting the facts this exam has already brought, so the first
+// practices reach every line of the study guide before more versions come.
+function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Set(), caseStudies = null, minimums = null, partSeen = new Set(), everyQuestion = null, newFirst = false, facts = null) {
   const age = b => Math.max(...b.map(q => seen.get(q.id) ?? -1)) + (partSeen.has(b) ? 0.5 : 0); // -1: never seen
   const wasMissed = b => b.some(q => missed.has(q.id));
   const wanted = Number.isInteger(caseStudies) && caseStudies >= 0 ? caseStudies : null;
@@ -540,15 +567,19 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
   }
   // The order to pick in: those missed questions, then questions never seen, then the ones
   // seen longest ago (a missed one a little before one answered right at the same time),
-  // in random order within each.
+  // in random order within each, the ones on more facts not met yet first (facts).
   const rank = b => (review.has(b) ? -2 : age(b) - (wasMissed(b) ? 0.5 : 0));
-  const queue = shuffle(blocks, random).sort((a, b) => rank(a) - rank(b));
+  const metNow = new Set(facts?.met ?? []); // the facts met before, and the ones this exam has brought
+  const unmet = b => (facts ? new Set(b.flatMap(q => (facts.of.get(q.id) ?? []).filter(c => !metNow.has(c)))).size : 0);
+  const unmetAtStart = new Map(facts ? blocks.map(b => [b, unmet(b)]) : []);
+  const queue = shuffle(blocks, random).sort((a, b) => rank(a) - rank(b) || (unmetAtStart.get(b) ?? 0) - (unmetAtStart.get(a) ?? 0));
   const picked = [];
   let count = 0;
   const take = b => {
     queue.splice(queue.indexOf(b), 1);
     picked.push(b);
     for (const q of b) left.set(q.topic, left.get(q.topic) - 1);
+    if (facts) for (const q of b) for (const c of facts.of.get(q.id) ?? []) metNow.add(c);
     count += b.length;
   };
   if (wanted === null) {
@@ -624,7 +655,8 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
       const newElsewhere = newFirst ? singles.filter(b => fresh(b) && weights[b[0].topic] > 0) : [];
       pool = newNeeded.length ? newNeeded : newElsewhere.length ? newElsewhere : needed.length ? needed : singles;
     }
-    take(pool.reduce((best, b) => (rank(b) < rank(best) || (rank(b) === rank(best) && full(b) < full(best)) ? b : best)));
+    const better = (b, best) => rank(b) - rank(best) || full(b) - full(best) || unmet(best) - unmet(b);
+    take(pool.reduce((best, b) => (better(b, best) < 0 ? b : best)));
   }
   // Too few single questions: more case studies that fit, then part of one rather than nothing.
   for (const b of queue.slice()) if (count + b.length <= limit) take(b);

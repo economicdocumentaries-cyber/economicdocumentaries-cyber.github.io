@@ -4,7 +4,7 @@
   "description": "Class 19 practice: the domains of learning, readiness to learn, planning teaching, teach-back and evaluation, teaching across the lifespan, and learning theories and the nurse's role in client education, matched to the professor's Exam 4 blueprint.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 174,
+  "timeMinutes": 181.5,
   "defaultCount": 25,
   "cases": {
     "discharge": {
@@ -1960,6 +1960,66 @@
         5
       ],
       "rationale": "<p>Adults learn best when they know <b>why it matters</b>, can <b>build on experience</b>, and can <b>direct their own learning</b>, with teaching that fits around work and family.</p><p>Games and rewards suit children, the client is the learner (family is added, not substituted), and teaching during work hours doesn't fit the client's life.</p><p><b>Takeaway:</b> Adults: why it matters, what they know, what they choose.</p>"
+    },
+    {
+      "id": "tl-117",
+      "type": "matrix",
+      "topic": "Domains of learning",
+      "level": 2,
+      "stem": "A nurse is teaching clients with new diabetes. For each teaching activity or evaluation, click to specify the domain of learning it belongs to.",
+      "rowHeader": "Teaching activity or evaluation",
+      "columns": ["Cognitive", "Affective", "Psychomotor"],
+      "rows": ["Explaining how insulin lowers blood glucose, with a handout", "Helping a client talk through his feelings about giving himself injections", "Showing a client how to draw up insulin, then having him practice", "Watching a client check her blood glucose with her own meter", "Asking a client to explain in her own words when to call the provider", "Noting over several visits that a client now takes her insulin without reminders", "Giving a short quiz on the signs of low blood glucose"],
+      "answer": [0, 1, 2, 2, 0, 1, 0],
+      "rationale": "<p>The <b>cognitive</b> domain is knowledge and thinking: explaining how insulin works is taught that way, and it's evaluated by questions, a quiz, or <b>teach-back</b>, where the client explains in her own words, like when to call the provider. The <b>affective</b> domain is feelings, attitudes, and values: talking through feelings about injections, and evaluated by listening to values and watching behavior over time, like taking insulin without reminders. The <b>psychomotor</b> domain is skills: demonstrating, then having the client practice, and evaluated by <b>return demonstration</b>, watching the client do it.</p><p>Teach-back isn't psychomotor, though the client does something: she explains, which shows knowledge, so it's cognitive. Taking insulin without reminders isn't psychomotor either: the skill was already there, and the change shows she has accepted the treatment, which is affective.</p><p><b>Takeaway:</b> Head: cognitive, checked by teach-back or a quiz. Heart: affective, checked by values and behavior over time. Hands: psychomotor, checked by return demonstration.</p>"
+    },
+    {
+      "id": "tl-118",
+      "type": "matrix",
+      "topic": "Planning teaching",
+      "level": 2,
+      "stem": "A nurse is teaching a client with a new colostomy. For each nursing action, click to specify the step of teaching it belongs to.",
+      "rowHeader": "Nursing action",
+      "columns": ["Assessing", "Planning", "Implementing", "Evaluating"],
+      "rows": ["Asks what the client already knows about colostomies and how he likes to learn", "Sets a goal with the client that he will empty the pouch by himself by discharge", "Shows him a pouch change, then coaches him through one", "Watches him change the pouch alone the day before discharge", "Chooses a short video and a practice kit for the next morning's session"],
+      "answer": [0, 1, 2, 3, 1],
+      "rationale": "<p><b>Assessing</b> comes first: what the learner already knows, his readiness, and how he likes to learn decide everything after it. <b>Planning</b> sets goals with the client and chooses the methods and materials, like a video and a practice kit. <b>Implementing</b> is the teaching itself: showing, then coaching practice. <b>Evaluating</b> checks the goal, here by watching him change the pouch alone.</p><p>Choosing the video isn't implementing: deciding on methods and materials is part of the plan, and nothing has been taught yet. Watching the solo pouch change isn't implementing either: the nurse isn't teaching, she's checking whether the goal was met.</p><p><b>Takeaway:</b> Assess the learner first, then plan the goals and methods with the client, teach, and evaluate against the goal.</p>"
+    },
+    {
+      "id": "tl-119",
+      "type": "matrix",
+      "topic": "Learning theories and the nurse's role",
+      "level": 3,
+      "stem": "A nurse educator is reviewing teaching approaches. For each approach, click to specify the learning theory it uses.",
+      "rowHeader": "Teaching approach",
+      "columns": ["Behaviorism", "Cognitive", "Constructivist", "Social learning", "Multiple intelligences"],
+      "rows": ["Praises a client each time she logs her blood pressure, so she keeps doing it", "Breaks new information into small parts and has the client sort it into a chart", "Asks a client how he manages his diet at home, then builds the plan from that", "Pairs a new client with a peer who shows how she uses her inhaler", "Helps a client who loves music remember the steps with a song", "Gives a child a sticker each time he takes his medicine without a fuss"],
+      "answer": [0, 1, 2, 3, 4, 0],
+      "rationale": "<p><b>Behaviorism</b>: behavior that's reinforced is repeated, as with praise for logging blood pressure or a sticker for taking medicine. <b>Cognitive</b> theory: learning is processing information, by perceiving, organizing, and remembering it, as when the client sorts small parts into a chart. <b>Constructivist</b> theory: learners build new knowledge on their own experience, as when the plan starts from how the client eats at home. <b>Social learning</b> theory: people learn by watching others and imitating them, as with the peer and her inhaler. <b>Multiple intelligences</b>: people learn through different strengths, like music.</p><p>The peer isn't constructivist, though she shares real experience: the client learns by watching and copying her, which is social learning. And the diet plan isn't cognitive: it starts from what the client already does, which is constructivist.</p><p><b>Takeaway:</b> Reinforce it: behaviorism. Process it: cognitive. Build on experience: constructivist. Watch and imitate: social learning. Teach through strengths: multiple intelligences.</p>"
+    },
+    {
+      "id": "tl-120",
+      "type": "matrix",
+      "topic": "Teaching across the lifespan",
+      "level": 2,
+      "stem": "A nurse is planning client teaching. For each nursing action, click to specify the concept it relates to most.",
+      "rowHeader": "Nursing action",
+      "columns": ["Communication", "Culture and diversity", "Development", "Health, wellness, illness, and injury", "Nutrition", "Safety"],
+      "rows": ["Writes “high blood pressure” in place of “hypertension” on a teaching sheet", "Asks whether any foods are off-limits in the client's religion before diet teaching", "Uses a doll to show a 4-year-old where the IV will go", "Waits to teach until the client's pain medicine has taken effect", "Plans a list of high-fiber foods with a client who has constipation", "Teaches the parents of a toddler to keep medicines locked up", "Teaches an older adult to remove the throw rugs at home"],
+      "answer": [0, 1, 2, 3, 4, 5, 5],
+      "rationale": "<p><b>Communication</b>: plain words the client uses every day, like “high blood pressure.” <b>Culture and diversity</b>: asking about beliefs and customs, like religious food rules, and fitting the teaching to them. <b>Development</b>: teaching at the learner's age and stage, like a doll for a 4-year-old. <b>Health, wellness, illness, and injury</b>: pain, fatigue, and illness block learning, so the nurse meets the physical need first. <b>Nutrition</b>: what the client eats, like high-fiber foods. <b>Safety</b>: teaching that prevents harm, like locked medicines for a toddler and fewer tripping hazards for an older adult.</p><p>Asking about religious food rules isn't nutrition, though food is involved: the point is the client's beliefs, which is culture and diversity. And waiting for the pain medicine isn't safety: the nurse is waiting until the client can focus, because illness and pain get in the way of learning.</p><p><b>Takeaway:</b> Plain words: communication. Beliefs and customs: culture. Age and stage: development. Pain or illness first: health. Food: nutrition. Preventing harm: safety.</p>"
+    },
+    {
+      "id": "tl-121",
+      "type": "matrix",
+      "topic": "Readiness to learn",
+      "level": 2,
+      "stem": "A nurse is assessing clients before teaching. For each finding, click to specify whether it supports learning now or gets in the way of learning now.",
+      "rowHeader": "Finding",
+      "columns": ["Supports learning now", "Gets in the way of learning now"],
+      "rows": ["The client asks how her new inhaler works and reaches for it", "The client says walking with the walker will get her back to her garden", "The client rates his pain 8 on a scale of 0 to 10", "The client has canceled two teaching sessions this week", "The client is crying an hour after hearing her diagnosis", "The client already gives his wife her insulin and wants to learn to give his own"],
+      "answer": [0, 0, 1, 1, 1, 0],
+      "rationale": "<p>A client who is <b>ready to learn</b> asks questions, reaches for the equipment, and names goals of their own. Learning also grows when the teaching connects to what the client values (getting back to the garden) and builds on what the client already knows and does (giving his wife insulin). <b>Factors that get in the way</b> include pain, fatigue, and strong emotions, like crying after a new diagnosis, and avoiding the teaching, like canceled sessions, is a sign of low readiness.</p><p>The canceled sessions aren't just a scheduling problem: avoiding teaching often means the client isn't ready, and the nurse explores why before teaching. And the client in pain isn't ready yet either, even if he wants to learn: the nurse treats the pain first, then teaches.</p><p><b>Takeaway:</b> Ready and motivated: questions, reaching for the equipment, goals of their own, experience to build on. Not now: pain, fatigue, strong emotions, avoiding the teaching.</p>"
     }
   ]
 }

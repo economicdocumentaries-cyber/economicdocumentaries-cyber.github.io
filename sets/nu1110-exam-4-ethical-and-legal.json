@@ -4,7 +4,7 @@
   "description": "Class 17 practice: values and the ethical principles, codes of ethics and client rights, ethical decision making, the sources of law and the scope of practice, federal and state laws, informed consent and advance directives, torts, negligence, and malpractice, and staffing, delegation, and reducing legal risk.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 183,
+  "timeMinutes": 192,
   "defaultCount": 25,
   "cases": {
     "student": {
@@ -1740,6 +1740,78 @@
       ],
       "answer": 3,
       "rationale": "<p><b>Provision 9</b>: the profession of nursing, <b>through its professional organizations</b>, speaks for nursing's values and works to bring <b>social justice</b> into nursing and health policy, like a nurses association testifying for wider coverage.</p><p><b>Provision 8</b> isn't the right answer: it also aims at fairer health, but by collaborating with other professions and the public, while this nurse works through the profession's own association on legislation. Provision 3 is advocacy for one client's rights and safety, and provision 6 is the work environment.</p><p><b>Takeaway:</b> The profession, through its organizations, speaking for social justice in policy: provision 9.</p>"
+    },
+    {
+      "id": "el-127",
+      "type": "matrix",
+      "topic": "Values and ethical principles",
+      "level": 2,
+      "stem": "A nurse manager is reviewing care on a medical unit. For each nursing action, click to specify the ethical principle it shows.",
+      "rowHeader": "Nursing action",
+      "columns": ["Autonomy", "Beneficence", "Nonmaleficence", "Justice", "Fidelity", "Veracity"],
+      "rows": ["A nurse comes back at 1400 to finish a dressing change, as she told the client she would", "A nurse tells a client his results are late because the lab lost his first sample", "A nurse asks which arm a client would like the IV in, and starts it there", "A nurse holds a sedative when the client's respirations drop to 9/min", "A nurse gives the open bed to the sickest client waiting, not to the one who asked first", "A nurse arranges a visit from a lonely client's dog, on her own time", "A nurse lowers the bed and raises the side rails for a drowsy client"],
+      "answer": [4, 5, 0, 2, 3, 1, 2],
+      "rationale": "<p><b>Fidelity</b> is keeping promises: coming back at 1400 as she said. <b>Veracity</b> is telling the truth, a mistake included: the lost sample. <b>Autonomy</b> is the client's choice: which arm for the IV. <b>Nonmaleficence</b> is preventing harm: holding a sedative when breathing slows, and making the bed safe for a drowsy client. <b>Justice</b> is fair care by need: the bed goes to the sickest client. <b>Beneficence</b> is doing good beyond the task: the dog's visit.</p><p>Holding the sedative isn't beneficence: it doesn't add something good, it keeps harm from happening, which is nonmaleficence. Giving the bed by acuity isn't beneficence either, though it helps the client: it's about sharing a scarce resource fairly, which is justice. And coming back as promised isn't veracity: the nurse kept her word rather than told a hard truth.</p><p><b>Takeaway:</b> Choice: autonomy. Doing good: beneficence. Preventing harm: nonmaleficence. Fair share by need: justice. A promise kept: fidelity. The truth: veracity.</p>"
+    },
+    {
+      "id": "el-128",
+      "type": "matrix",
+      "topic": "Torts, negligence, and malpractice",
+      "level": 2,
+      "stem": "A risk manager is reviewing incident reports. For each nurse's action, click to specify the tort it could be.",
+      "rowHeader": "Nurse's action",
+      "columns": ["Assault", "Battery", "False imprisonment", "Invasion of privacy", "Libel", "Slander"],
+      "rows": ["Tells a client who keeps using the call light, “Press it again and I'll tie your hands down”", "Inserts a urinary catheter after the competent client said no", "Stands in the doorway so a competent client can't leave against medical advice", "Posts a photo of a client's wound online, with the room number showing", "Writes in an email to the staff that a coworker steals opioids, which isn't true", "Tells visitors in the elevator that a surgeon comes to work drunk, which isn't true", "Tells a client's employer, who called the unit, what the client's diagnosis is"],
+      "answer": [0, 1, 2, 3, 4, 5, 3],
+      "rationale": "<p><b>Assault</b> is a threat of harmful touch, with no touch: “I'll tie your hands down.” <b>Battery</b> is touching without consent: a catheter the competent client refused. <b>False imprisonment</b> is holding a person without legal cause: blocking the door of a competent client who may leave against medical advice. <b>Invasion of privacy</b> is sharing private information without consent: the wound photo, and the diagnosis given to the employer. Defamation is a false statement that harms a reputation: <b>libel</b> when written (the email), <b>slander</b> when spoken (the elevator).</p><p>The threat isn't battery, since nothing touched the client. The photo isn't libel: nothing in it is false, it's private, so it's invasion of privacy. And the email isn't slander: it was written, which makes it libel.</p><p><b>Takeaway:</b> Threat: assault. Touch without consent: battery. Held without cause: false imprisonment. Private facts shared: invasion of privacy. False and written: libel. False and spoken: slander.</p>"
+    },
+    {
+      "id": "el-129",
+      "type": "matrix",
+      "topic": "Codes of ethics and client rights",
+      "level": 3,
+      "stem": "A nurse educator is teaching the ANA Code of Ethics for Nurses. For each nurse's action, click to specify the provision it shows.",
+      "rowHeader": "Nurse's action",
+      "columns": ["1: respect for every person", "2: commitment to the client", "3: advocacy for rights and safety", "4: accountability for practice", "5: duties to self"],
+      "rows": ["Gives a client in police custody the same respectful care as every other client", "Turns down a gift from a drug company that wants her to recommend its product to clients", "Stops a coworker who is about to give a medication to the wrong client", "Checks that the vital signs she delegated to an assistant were taken and recorded correctly", "Takes a course on new insulin pumps to keep her skills current", "Turns down an extra shift because she's too tired to practice safely"],
+      "answer": [0, 1, 2, 3, 4, 4],
+      "rationale": "<p><b>Provision 1</b> is respect for the dignity and rights of every person, whoever they are: a client in custody gets the same care. <b>Provision 2</b> is the nurse's primary commitment to the client, so the nurse's own interests, like a company's gift, never come first. <b>Provision 3</b> is advocating for the client's rights, health, and safety: stopping a wrong-client medication. <b>Provision 4</b> is the nurse's authority, accountability, and responsibility for nursing practice: a nurse who delegates a task still answers for it. <b>Provision 5</b> is the nurse's duties to self, including safety, health, and competence: keeping skills current and resting enough to be safe.</p><p>Stopping the coworker isn't provision 4: the nurse is protecting a client's safety, which is advocacy (provision 3), not answering for her own practice. Turning down the gift isn't provision 1: it's about keeping the client ahead of the nurse's own interests, which is provision 2.</p><p><b>Takeaway:</b> 1: respect for every person. 2: the client first. 3: advocacy for rights, health, and safety. 4: accountable for one's own practice. 5: duties to self, competence included.</p>"
+    },
+    {
+      "id": "el-130",
+      "type": "matrix",
+      "topic": "Codes of ethics and client rights",
+      "level": 3,
+      "stem": "A nurse educator is teaching the ANA Code of Ethics for Nurses. For each nurse's action, click to specify the provision it shows.",
+      "rowHeader": "Nurse's action",
+      "columns": ["6: the work environment", "7: research and standards", "8: collaborating for human rights", "9: social justice through the profession"],
+      "rows": ["Joins a unit council that changes the rules so nurses can report unsafe assignments without blame", "Helps collect data for a study comparing two ways to prevent pressure injuries", "Works with the health department and local clinics to bring vaccines to an underserved neighborhood", "Through the state nurses association, urges lawmakers to fund care for uninsured clients", "Serves on the committee that writes the hospital's new standard for central line care"],
+      "answer": [0, 1, 2, 3, 1],
+      "rationale": "<p><b>Provision 6</b> is building and keeping an ethical work environment: a unit where nurses can report unsafe assignments. <b>Provision 7</b> is advancing the profession through research, scholarship, and practice standards: helping with a study, and writing a standard of care. <b>Provision 8</b> is collaborating with other health professions and the public to protect human rights and reduce health disparities: the vaccine outreach with the health department. <b>Provision 9</b> is the profession, through its organizations, speaking for nursing's values and social justice in health policy: the nurses association before lawmakers.</p><p>The vaccine outreach isn't provision 9, though it serves the same fairness: the nurse is working directly with other professions and the public, while provision 9 is the profession's organized voice in policy. Writing the central line standard isn't provision 6: it's a practice standard (provision 7), not the conditions nurses work in.</p><p><b>Takeaway:</b> 6: an ethical workplace. 7: research and practice standards. 8: working with others for human rights and health equity. 9: the profession's voice for social justice in policy.</p>"
+    },
+    {
+      "id": "el-131",
+      "type": "matrix",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "A nurse is reviewing situations from a busy week. For each situation, click to specify the law that applies.",
+      "rowHeader": "Situation",
+      "columns": ["HIPAA", "Good Samaritan law", "EMTALA", "ADA"],
+      "rows": ["An off-duty nurse gives first aid at a car crash, unpaid, and stays until paramedics take over", "An emergency department screens and stabilizes an uninsured man with chest pain before asking about payment", "A hospital provides a sign language interpreter for a deaf client's discharge teaching", "A nurse won't tell a client's coworker, who calls the unit, whether the client was admitted", "An employer gives a nurse with hearing loss an amplified stethoscope"],
+      "answer": [1, 2, 3, 0, 3],
+      "rationale": "<p>The <b>Good Samaritan law</b> protects a person who gives emergency help in good faith, within their training, without pay, and stays until someone with equal or more training takes over. <b>EMTALA</b> requires an emergency department to screen and stabilize everyone with an emergency, whatever they can pay, with payment questions after. The <b>ADA</b> requires reasonable accommodations for people with disabilities, clients and staff alike: a qualified interpreter, an amplified stethoscope. <b>HIPAA</b> protects the privacy of health information, so the nurse can't confirm an admission to someone the client didn't authorize.</p><p>The interpreter isn't a HIPAA matter, though it involves a client's health information: it's an accommodation for a disability, so it's the ADA. And screening the uninsured man first isn't the Good Samaritan law: that protects people helping outside a care setting, while EMTALA governs emergency departments.</p><p><b>Takeaway:</b> HIPAA: privacy of health information. Good Samaritan: emergency help in good faith, within training. EMTALA: screen and stabilize every emergency. ADA: reasonable accommodations, for clients and staff.</p>"
+    },
+    {
+      "id": "el-132",
+      "type": "matrix",
+      "topic": "Federal and state laws",
+      "level": 3,
+      "stem": "A nurse is reviewing how laws shape health care. For each situation, click to specify the law that applies.",
+      "rowHeader": "Situation",
+      "columns": ["PPACA", "HITECH Act", "Uniform Anatomical Gift Act", "Nurse practice act"],
+      "rows": ["A state law spells out what a licensed nurse may and may not do", "A small-business owner buys health coverage through an insurance marketplace", "A clinic receives federal incentive payments for moving to electronic health records", "A 19-year-old signs up to be an organ donor when she renews her driver's license", "A state board of nursing suspends the license of a nurse who worked while impaired"],
+      "answer": [3, 0, 1, 2, 3],
+      "rationale": "<p>Each state's <b>nurse practice act</b> defines nursing practice and its scope, and gives the board of nursing its power to license nurses and discipline them, as with a nurse who worked impaired. The <b>Patient Protection and Affordable Care Act (PPACA)</b> expanded coverage and access, including the health insurance marketplaces. The <b>HITECH Act</b> promoted electronic health records, with incentive payments for using them, and strengthened privacy rules for them, including breach notice. The <b>Uniform Anatomical Gift Act</b> lets adults choose to donate organs, as on a driver's license, and lets the family consent after death when there's no documented choice.</p><p>The board's suspension isn't a federal law: licenses are granted and disciplined by each state under its nurse practice act. And the incentive payments aren't PPACA, though both are federal: they came with the HITECH Act, which is about electronic records.</p><p><b>Takeaway:</b> PPACA: coverage and access. HITECH: electronic records and breaches. Uniform Anatomical Gift Act: the choice to donate organs. Nurse practice act: each state's law for nursing practice and licenses.</p>"
     }
   ]
 }

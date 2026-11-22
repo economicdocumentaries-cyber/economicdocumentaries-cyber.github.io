@@ -4,7 +4,7 @@
   "description": "Exam 4 review, matched to the professor's Exam 4 study guide: the class's common abbreviations, unit conversions, and intake in mL, including ice chips, with the rounding and zero rules. The numbers change on every attempt.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 150,
+  "timeMinutes": 154.5,
   "defaultCount": 15,
   "questions": [
     {
@@ -2336,6 +2336,42 @@
       "round": "to the nearest whole number",
       "strictZeros": true,
       "rationale": "<p>Eaten: the first cup ({oz} oz) and {=1 - left} of the second ({=oz * (1 - left)} oz), for {=oz + oz * (1 - left)} oz × 30 = {=(oz + oz * (1 - left)) * 30} mL of ice chips, which count as half: <b>{answer} mL</b>.</p><p>Counting both cups in full is a mistake: part of the second wasn't eaten, and all of it is ice.</p><p><b>Takeaway:</b> Add what was eaten from every cup, convert, then halve.</p>"
+    },
+    {
+      "id": "mx4-101",
+      "type": "matrix",
+      "topic": "Abbreviations",
+      "level": 2,
+      "stem": "A nurse is checking the meanings a new nurse wrote next to abbreviations in her notes. For each one, click to specify whether the meaning is correct or incorrect.",
+      "rowHeader": "Abbreviation and meaning",
+      "columns": ["Correct", "Incorrect"],
+      "rows": ["tid: three times a day", "pc: before meals", "OU: left eye", "NPO: nothing by mouth", "NKDA: no known dietary allergies", "DVT: deep vein thrombosis"],
+      "answer": [0, 1, 1, 0, 1, 0],
+      "rationale": "<p><b>tid</b> is three times a day (bid twice, qid four times). <b>pc</b> is after meals; before meals is ac. <b>OU</b> is both eyes; the left eye is OS, and the right is OD. <b>NPO</b> is nothing by mouth. <b>NKDA</b> is no known drug allergies, not dietary. <b>DVT</b> is deep vein thrombosis, a clot in a deep vein, usually in the leg.</p><p>Mixing up ac and pc changes when a dose is given with meals, and mixing up OU, OD, and OS puts eye drops in the wrong eye, so these are worth checking every time.</p><p><b>Takeaway:</b> tid three times a day, pc after meals (ac before), OU both eyes (OD right, OS left), NPO nothing by mouth, NKDA no known drug allergies, DVT deep vein thrombosis.</p>"
+    },
+    {
+      "id": "mx4-102",
+      "type": "matrix",
+      "topic": "Unit conversions",
+      "level": 3,
+      "stem": "A nurse is checking a student's calculations. For each entry, click to specify whether it's correct or incorrect.",
+      "rowHeader": "Student's entry",
+      "columns": ["Correct", "Incorrect"],
+      "rows": ["0.5 g = 500 mg", "44 lb = 20 kg", "2 tsp = 15 mL", "38 °C = 100.4 °F", "1 1/2 cups of juice = 360 mL of intake", "A volume of 2.5 mL, recorded as “2.50 mL”"],
+      "answer": [0, 0, 1, 0, 0, 1],
+      "rationale": "<p>Grams to milligrams: × 1,000, so 0.5 g = <b>500 mg</b>. Pounds to kilograms: ÷ 2.2, so 44 lb = <b>20 kg</b>. One teaspoon is 5 mL, so 2 tsp = <b>10 mL</b>, not 15 (15 mL is 1 tablespoon). Celsius to Fahrenheit: × 9/5 + 32, so 38 °C = 68.4 + 32 = <b>100.4 °F</b>. One cup is 8 oz, or 240 mL, so 1 1/2 cups = <b>360 mL</b>. And “2.50 mL” has a trailing zero, which isn't allowed: it's written <b>2.5 mL</b>.</p><p>The 15 mL is a tablespoon's volume, so it's easy to give a teaspoon the wrong one; check which spoon the order names.</p><p><b>Takeaway:</b> g to mg: × 1,000. lb to kg: ÷ 2.2. 1 tsp = 5 mL, 1 Tbsp = 15 mL. °F = °C × 9/5 + 32. 1 cup = 240 mL. No trailing zeros.</p>"
+    },
+    {
+      "id": "mx4-103",
+      "type": "matrix",
+      "topic": "Rounding and zeros",
+      "level": 3,
+      "stem": "A nurse is reviewing how volumes were rounded and written in a client's record. For each entry, click to specify whether it follows the rules or breaks one.",
+      "rowHeader": "Entry",
+      "columns": ["Follows the rules", "Breaks a rule"],
+      "rows": ["A dose of 0.456 mL, written as 0.46 mL", "A dose of 0.75 mL, written as .75 mL", "A dose of 3 mL, written as 3.0 mL", "A dose of 1.46 mL, written as 1.5 mL", "8 oz of milk and 4 oz of soup, recorded as 360 mL of intake", "A dose of 2.25 mL, written as 2.2 mL"],
+      "answer": [0, 1, 1, 0, 0, 1],
+      "rationale": "<p>Under 1 mL, round to the hundredth and write a <b>leading zero</b>: 0.456 becomes <b>0.46 mL</b>, and .75 must be written <b>0.75 mL</b>. A <b>trailing zero</b> is never written: 3 mL, not 3.0. Over 1 mL, round to the tenth, and 5 or more rounds up: 1.46 becomes <b>1.5 mL</b>, and 2.25 becomes <b>2.3 mL</b>, not 2.2. Intake: 8 + 4 = 12 oz, and 12 × 30 = <b>360 mL</b>.</p><p>The 2.2 drops the 5 instead of rounding it up, which underdoses. And “.75” is the right amount but the wrong way to write it: a missing leading zero can be misread as 75.</p><p><b>Takeaway:</b> Under 1 mL: the hundredth, with a leading zero. Over 1 mL: the tenth, 5 or more rounding up. Never a trailing zero. 1 oz = 30 mL.</p>"
     }
   ]
 }

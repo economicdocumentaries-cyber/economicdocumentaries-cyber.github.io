@@ -4,7 +4,7 @@
   "description": "Class 18 practice: leaders and managers, classic and contemporary leadership styles, the functions and principles of management, interprofessional collaboration, team communication (SBAR, read-back, handoffs), and team tools for safety and conflict.",
   "course": "NU1110",
   "exam": "Exam 4",
-  "timeMinutes": 174,
+  "timeMinutes": 178.5,
   "defaultCount": 25,
   "cases": {
     "newgrad": {
@@ -1966,6 +1966,42 @@
         4
       ],
       "rationale": "<p><b>Managers</b> hold an <b>official position</b>, with authority that comes with the job, and are accountable for resources like <b>budgets and staffing</b>, and for outcomes.</p><p>Influence without a title describes <b>leaders</b>, who can be anyone on the team: every nurse leads. Managers are appointed by the organization, not chosen by the staff.</p><p><b>Takeaway:</b> Leaders influence; managers hold the position.</p>"
+    },
+    {
+      "id": "lt-118",
+      "type": "matrix",
+      "topic": "Classic leadership styles",
+      "level": 2,
+      "stem": "A nursing student is observing charge nurses on several units. For each charge nurse's behavior, click to specify the leadership style it shows.",
+      "rowHeader": "Charge nurse's behavior",
+      "columns": ["Autocratic or paternalistic", "Bureaucratic", "Laissez-faire", "Situational", "Transactional", "Transformational"],
+      "rows": ["Makes every scheduling decision alone, kindly: “I know what's best for all of you”", "Turns down a reasonable shift swap because the policy manual doesn't mention swaps", "Lets the staff run the unit however they like and rarely gives direction", "Gives step-by-step direction to a new graduate but lets an expert nurse work on her own", "Gives a day off to staff who meet the hand-hygiene target, and writes up those who don't", "Shares a vision of a fall-free unit and coaches the staff to find their own solutions", "Decides alone on a new break schedule and announces it without asking the staff"],
+      "answer": [0, 1, 2, 3, 4, 5, 0],
+      "rationale": "<p><b>Autocratic</b> leaders make decisions alone and direct others, like announcing a break schedule; <b>paternalistic</b> leaders do the same with a caring tone (“I know what's best”). <b>Bureaucratic</b> leaders go by the rules, with little flexibility. <b>Laissez-faire</b> leaders are hands-off and let the group decide. <b>Situational</b> leaders fit their style to the person and the task: direction for a novice, freedom for an expert. <b>Transactional</b> leaders use rewards and corrections to get the expected results. <b>Transformational</b> leaders share a vision, coach, and help staff grow and solve problems.</p><p>The kindly scheduler isn't transformational: the warmth doesn't change who decides, and keeping every decision is paternalistic. The hand-hygiene rewards aren't bureaucratic, though they enforce a target: trading rewards and write-ups for results is transactional.</p><p><b>Takeaway:</b> Decides alone: autocratic (with a caring tone: paternalistic). Rules first: bureaucratic. Hands-off: laissez-faire. Fits the style to the person and task: situational. Rewards and corrections: transactional. Vision and growth: transformational.</p>"
+    },
+    {
+      "id": "lt-119",
+      "type": "matrix",
+      "topic": "Management functions",
+      "level": 2,
+      "stem": "A new nurse manager is working on the unit's fall rate. For each action, click to specify the function of management it shows.",
+      "rowHeader": "Manager's action",
+      "columns": ["Planning", "Organizing", "Commanding", "Coordinating", "Controlling"],
+      "rows": ["Sets a goal of cutting falls in half within a year, and decides the steps to get there", "Orders bed alarms and forms a falls team with a nurse from each shift", "Checks on each shift that staff follow the hospital's fall-prevention standards", "Meets the falls team weekly to keep the work moving and the members motivated", "Compares this month's fall rate with the goal and gives the staff feedback"],
+      "answer": [0, 1, 2, 3, 4],
+      "rationale": "<p><b>Planning</b> sets the goal and the course of action to reach it. <b>Organizing</b> lines up the structure, people, and resources to do it: equipment and a team. <b>Commanding</b> is supervising the work to the organization's standards. <b>Coordinating</b> keeps the work and the people moving together, by communicating, motivating, and delegating as it goes. <b>Controlling</b> measures the results against the goal and gives feedback.</p><p>Comparing the fall rate with the goal isn't planning, though the goal came from the plan: measuring results and feeding them back is controlling. Checking that staff follow the standards isn't controlling: it's supervising the work as it happens, which is commanding.</p><p><b>Takeaway:</b> Plan the goal, organize the resources, command (supervise to the standards), coordinate the people, control (measure and give feedback).</p>"
+    },
+    {
+      "id": "lt-120",
+      "type": "matrix",
+      "topic": "Interprofessional collaboration",
+      "level": 2,
+      "stem": "A nurse educator is teaching about teamwork on a medical unit. For each statement, click to specify what it describes.",
+      "rowHeader": "Statement",
+      "columns": ["A barrier to collaboration", "What collaboration requires", "A benefit of collaboration"],
+      "rows": ["Each discipline keeps its own plan and rarely talks with the others", "Team members know and respect each other's roles", "Fewer medication errors and shorter hospital stays", "Nurses stop asking questions after the charge nurse belittles them in front of others", "One shared goal, set with the client at the table", "Higher staff satisfaction and less burnout"],
+      "answer": [0, 1, 2, 0, 1, 2],
+      "rationale": "<p><b>Barriers</b> to collaboration include silos, where each discipline works alone, and bullying, which makes nurses stop speaking up and asking questions, raising errors, burnout, and turnover. Collaboration <b>requires</b> respect, clear roles, open communication, and one shared goal built with the client. Its <b>benefits</b> include safer care, better outcomes like shorter stays, and staff who are more satisfied and less burned out.</p><p>Knowing each other's roles isn't a benefit, though it helps the team: it's something collaboration needs before it can work. And the belittled nurses' silence isn't just a staffing problem: bullying blocks the communication collaboration depends on.</p><p><b>Takeaway:</b> Barriers: silos, unclear roles, bullying. Requires: respect, clear roles, communication, a shared goal. Benefits: safer care, better outcomes, happier staff.</p>"
     }
   ]
 }
