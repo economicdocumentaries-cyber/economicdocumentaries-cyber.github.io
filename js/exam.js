@@ -14,6 +14,7 @@ import { vary } from './vary.js';
 const ACTIVE = 'pe.active'; // the exam in progress
 const LAST = 'pe.last'; // the most recently finished attempt, for results and review
 const HISTORY = 'pe.history'; // { setId: [last 20 attempts] }
+const RESULTS = 'pe.results'; // { setId: { n, q: { question id: [attempt, right] } } }: every question's latest result
 const HISTORY_LIMIT = 20;
 const PAUSE_MS = 5 * 60 * 1000;
 const LOW_TIME_MS = 5 * 60 * 1000;
@@ -32,6 +33,7 @@ export const DEFAULT_SETTINGS = {
   minutes: null, // for timer: 'custom'
   count: null, // null = every question
   topics: null, // null = every topic
+  evenTopics: false, // true: those topics share the places evenly (several ticked on a topic list)
   types: null, // null = every question type
   only: null, // question ids, for "Retake missed questions"
   calculator: true,
@@ -146,8 +148,11 @@ export function chooseQuestions(set, s, random = Math.random, seen = new Map(), 
   // The study guide's facts (the set's "facts"; the owner's choice of 2026-11-21: every fact early): among questions
   // equally new, the ones on facts the student hasn't met yet come first.
   const facts = factsFor(set, seen);
+  // A practice of several ticked topics shares its places evenly among them (s.evenTopics; the owner's choice,
+  // 2026-11-23), whatever the blueprint gives each.
+  const weights = s.evenTopics && s.topics?.length > 1 ? Object.fromEntries(s.topics.map(t => [t, 1])) : set.topicWeights;
   let picked = limit < units.flat().length
-    ? pickBlocks(units, limit, random, seen, set.topicWeights, missed,
+    ? pickBlocks(units, limit, random, seen, weights, missed,
       practice ? pacedCases(shareFrom, limit, seen, device, random) : set.caseStudies,
       minimums, partSeen, shareFrom, practice, facts) : units.slice();
   // The question types (balanceTypes), unless the student asked for these questions (Retake missed, saved, search).
@@ -669,33 +674,58 @@ function pickBlocks(blocks, limit, random, seen, weights = null, missed = new Se
 // missed ones.
 const attemptIds = (set, a) => a.ids ?? (a.scope === 'full' ? set.questions.map(q => q.id) : a.missed ?? []);
 
+// Every question's latest result at a set, kept for good on this browser (the owner's choice, 2026-11-23; until
+// then it came from the history, which keeps only the last 20 attempts, so older answers dropped off):
+// { n: the attempts counted, q: { question id: [the attempt it was last seen in, 1 if right or 0] } }. A browser
+// without one yet starts from its history. set: for attempts saved before the ids were kept.
+export function setResults(setId, set = null) {
+  const saved = store.get(RESULTS, {})[setId];
+  if (saved && typeof saved === 'object' && saved.q && typeof saved.q === 'object') return saved;
+  const record = { n: 0, q: {} };
+  for (const a of setHistory(setId)) {
+    record.n++;
+    const wrong = new Set(a.missed ?? []);
+    for (const id of set ? attemptIds(set, a) : a.ids ?? a.missed ?? []) record.q[id] = [record.n, wrong.has(id) ? 0 : 1];
+  }
+  return record;
+}
+
+// A finished attempt into each question's latest result (setResults), under the set the question comes from (a
+// copy from a search counts for its original).
+export function rememberResults(result) {
+  const all = store.get(RESULTS, {});
+  const from = new Map((result.questions ?? []).map(q => [q.id, q.src]));
+  const bySet = new Map();
+  for (const item of result.items) {
+    const src = from.get(item.id);
+    const setId = src?.set ?? result.setId;
+    if (!bySet.has(setId)) bySet.set(setId, []);
+    bySet.get(setId).push([src?.id ?? item.id, item.earned === item.max ? 1 : 0]);
+  }
+  for (const [setId, list] of bySet) {
+    const record = all[setId] ?? setResults(setId);
+    record.n++;
+    for (const [id, right] of list) record.q[id] = [record.n, right];
+    all[setId] = record;
+  }
+  store.set(RESULTS, all);
+}
+
 // When each of the set's questions was last seen, as id -> attempt number
 // (higher is more recent).
 export function lastSeen(set) {
-  const seen = new Map();
-  setHistory(set.id).forEach((a, n) => {
-    for (const id of attemptIds(set, a)) seen.set(id, n);
-  });
-  return seen;
+  return new Map(Object.entries(setResults(set.id, set).q).map(([id, [n]]) => [id, n]));
 }
 
 // The questions this browser has seen in earlier attempts at a set. Any other
 // question in an attempt is a first try (SPEC 11.9): the honest measure of how
 // ready a student is, since remembering a question isn't knowing it.
-const seenBefore = setId => new Set(setHistory(setId).flatMap(a => a.ids ?? a.missed ?? []));
+const seenBefore = setId => new Set(Object.keys(setResults(setId).q));
 
 // The questions whose latest result was a miss (less than full points), so new
 // exams bring some of them back (pickBlocks).
 export function lastMissed(set) {
-  const missed = new Set();
-  for (const a of setHistory(set.id)) {
-    const wrong = new Set(a.missed ?? []);
-    for (const id of attemptIds(set, a)) {
-      if (wrong.has(id)) missed.add(id);
-      else missed.delete(id);
-    }
-  }
-  return missed;
+  return new Set(Object.entries(setResults(set.id, set).q).filter(([, [, right]]) => !right).map(([id]) => id));
 }
 
 // How many questions an exam has unless the student changes it (SPEC 11.3):
@@ -836,6 +866,8 @@ function grade(st, reason, seen = new Set()) {
 // The finished attempt goes to the results page, and a summary to the history.
 function saveResult(result) {
   store.set(LAST, result);
+  rememberResults(result); // before the history, which a new browser's record starts from
+
   const all = store.get(HISTORY, {});
   const list = all[result.setId] ?? [];
   list.push({
@@ -915,10 +947,15 @@ export function questionArea(container, cases, tabs) {
   };
 }
 
+// A phone's client chart, open full screen (casePanel), and folding it back to the question.
+const chartIsOpen = () => !!document.querySelector('.case-panel.is-open');
+const closeChart = () => document.querySelector('.case-panel.is-open .chart-back')?.click();
+
 // Intro sentence, exhibit tabs, and the selected exhibit, which scrolls on its own.
 // On phones (SPEC 11.8) the case folds into a "Client chart" card above the
 // question: Open shows the exhibits full screen, and Back to the question
-// folds them again, with the answers and the chosen tab kept.
+// folds them again, with the answers and the chosen tab kept. The phone's
+// back button folds them too (the exam's and the review's back handling).
 function casePanel({ intro, tabs = [] }, start, onSelect) {
   let current = Math.min(start, Math.max(tabs.length - 1, 0));
   const panel = h('div.tabpanel', { role: 'tabpanel', tabindex: '0' });
@@ -1665,15 +1702,18 @@ export function examView(root) {
   const onTapGuard = e => {
     if (!e.isTrusted || !guarding()) return;
     if (!history.state?.peGuard) history.pushState({ peGuard: 'exam' }, '');
-    const layer = document.querySelector('.modal-backdrop') ? 'modal' : sheetIsOpen() ? 'sheet' : null;
+    const layer = document.querySelector('.modal-backdrop') ? 'modal' : chartIsOpen() ? 'chart' : sheetIsOpen() ? 'sheet' : null;
     if (layer && history.state?.peGuard !== layer) history.pushState({ peGuard: layer }, '');
   };
   // An alert closes the way its Close button does; one without it (Exam
-  // Paused, the full screen alert) stays until its own button is used.
+  // Paused, the full screen alert) stays until its own button is used. A
+  // phone's open client chart folds back to the question, as its "Back to the
+  // question" button does (the owner's request, 2026-11-23).
   let restoring = false; // putting the exam's address back after a Back that went past those entries
   const onBack = () => {
     const top = [...document.querySelectorAll('.modal-backdrop')].at(-1);
     if (top) top.querySelector('.modal-head .close-btn')?.click();
+    else if (chartIsOpen()) closeChart();
     else if (sheetIsOpen()) foldSheet();
     else confirmLeave();
   };
@@ -1892,5 +1932,22 @@ export function reviewView(root, { args = [] } = {}) {
     }
   }
 
+  // The phone's back button folds an open client chart back to the question (the owner's request, 2026-11-23): an
+  // entry with this page's address is added when the chart opens (right after the tap, as Chrome needs), so Back
+  // closes the chart instead of leaving the review; closing it with its own button takes the entry away again.
+  const onTap = e => {
+    if (!e.isTrusted) return;
+    if (chartIsOpen() && !history.state?.peChart) history.pushState({ peChart: true }, '');
+    else if (!chartIsOpen() && e.target.closest?.('.chart-back') && history.state?.peChart) history.back();
+  };
+  const onPop = () => {
+    if (chartIsOpen()) closeChart();
+  };
+  document.addEventListener('click', onTap);
+  addEventListener('popstate', onPop);
   show(false);
+  return () => {
+    document.removeEventListener('click', onTap);
+    removeEventListener('popstate', onPop);
+  };
 }

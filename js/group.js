@@ -13,7 +13,7 @@ import { prepareItem, isAnswered, scoreItem, keyResponse, unansweredMessage } fr
 import { vary } from './vary.js';
 import { questionParts, questionArea, feedbackPanel, chooseQuestions } from './exam.js';
 import { createCalculator } from './calc.js';
-import { loadSets } from './sets.js';
+import { loadSets, freshSets } from './sets.js';
 import { groupStudyOn, connectStudent, hostAccount, problemText, HOST_HINT } from './firebase.js';
 import { guidesConsole } from './study-guides.js';
 import { withChanges, currentChanges } from './set-changes.js';
@@ -28,7 +28,7 @@ import { debriefsConsole } from './debriefs.js';
 const NAME = 'pe.groupName'; // the display name, entered once (SPEC 6.4 item 1)
 const DRAFT = 'pe.groupDraft'; // { sid, index, r }: an answer not locked in yet, kept through a reload
 const CHOICE_TYPES = new Set(['mc', 'sata', 'emr']);
-const SEEDED_TYPES = new Set(['order', 'dragdrop', 'bowtie']);
+const SEEDED_TYPES = new Set(['order', 'dragdrop', 'bowtie', 'matrix']); // matrix rows since 2026-11-23
 const COUNTDOWNS = [[0, 'Off'], [30, '30 seconds'], [60, '60 seconds'], [90, '90 seconds'], [120, '2 minutes']];
 
 // ---------- shared ----------
@@ -848,7 +848,7 @@ export async function hostView(root, { args = [], isCurrent }) {
   }
   let account, loaded;
   try {
-    [account, loaded] = await Promise.all([hostAccount(), loadSets()]);
+    [account, loaded] = await Promise.all([hostAccount(), freshSets()]); // the sets as published now
   } catch (err) {
     if (isCurrent()) fill(main, problemBox('The host console could not connect', err));
     return;

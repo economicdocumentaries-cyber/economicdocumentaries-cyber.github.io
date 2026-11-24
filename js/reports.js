@@ -73,6 +73,14 @@ async function openReport(setId, q, onDone) {
     h('p.field-help', 'Please don\'t include your name or anything personal.'),
     problem);
   form.addEventListener('change', () => (problem.textContent = ''));
+  // Typing a note before choosing a reason means none of them fit, so "Something else" is chosen (the owner's
+  // request, 2026-11-23). A reason chosen first stays, and the student can still change it.
+  note.addEventListener('input', () => {
+    if (!note.value.trim() || form.querySelector('input[name=report-reason]:checked')) return;
+    const other = form.querySelector('input[name=report-reason][value=other]');
+    other.checked = true;
+    problem.textContent = '';
+  });
   let reason = null;
   const choice = await modal({
     title: 'Report a Problem',

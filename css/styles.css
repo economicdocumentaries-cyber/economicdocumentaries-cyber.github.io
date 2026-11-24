@@ -1510,9 +1510,18 @@ textarea.text-input { min-height: 84px; resize: vertical; }
 .again-line { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; font-size: 15px; color: var(--ink); }
 .again-line svg { flex: none; color: #B26A00; }
 .perf .act-cell { width: 1%; padding-left: 4px; white-space: nowrap; text-align: right; }
+/* The progress note, and ticking several topics to practice together (the owner's requests, 2026-11-23). */
+.progress-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+/* The box's label reaches 12 px around it, a finger-sized target, without moving the row's text. */
+.pick-label { display: inline-flex; flex: none; padding: 12px; margin: -12px; cursor: pointer; }
+.pick-box { margin: 0; }
+.pick-name { display: inline-flex; align-items: center; gap: 10px; }
+.pick-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 12px 0 0; }
+.pick-hint { font-size: 13.5px; color: var(--muted); }
 @media (max-width: 700px) {
   .topic-info { grid-template-columns: minmax(0, 1fr); }
   .topic-score { white-space: normal; }
+  .pick-start { width: 100%; min-height: 48px; }
 }
 
 /* Search (SPEC 11.14): the box in the header of the homepage, the Saved questions page, and the results page. */

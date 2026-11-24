@@ -6,6 +6,7 @@
 import { validateSet } from './items.js';
 
 let setsLoading = null, basicsLoading = null, summaryLoading = null, overviewLoading = null;
+let setsLoadedAt = 0; // when loadSets last finished, for freshSets
 const fileLoads = new Map(); // each set file's download and check, once per visit
 
 const isText = v => typeof v === 'string' && v.trim() !== '';
@@ -19,8 +20,23 @@ const isText = v => typeof v === 'string' && v.trim() !== '';
 // - each problem is { file, title, question, qid, where, problem, code }, with
 //   file as a path in the site, like "sets/my-set.json".
 export function loadSets() {
-  setsLoading ??= fetchSets();
+  setsLoading ??= fetchSets().then(result => {
+    setsLoadedAt = Date.now();
+    return result;
+  });
   return setsLoading;
+}
+
+// The host console's pages: the sets as they're published now, read again when this page's copy is older than
+// maxAgeMs (a console left open for days kept the sets of the day it opened, so a question published since showed as
+// "isn't in the set any more" on the Reports page; the owner's report, 2026-11-23).
+export function freshSets(maxAgeMs = 60 * 1000) {
+  if (setsLoadedAt && Date.now() - setsLoadedAt > maxAgeMs) {
+    setsLoading = basicsLoading = summaryLoading = overviewLoading = null;
+    fileLoads.clear();
+    setsLoadedAt = 0;
+  }
+  return loadSets();
 }
 
 // The homepage's sets: everything but their questions and case studies, from

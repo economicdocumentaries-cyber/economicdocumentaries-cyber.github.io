@@ -499,6 +499,50 @@ function resumeBanner() {
 }
 
 // The best score on this browser (SPEC 11.3), or null.
+// How much of a set the student knows, for the start page (the owner's choices, 2026-11-23), from each question's
+// latest result. A set with the study guide's facts ("facts", SPEC 11.3): a fact is known once 2 of its questions
+// were last answered right, or its only one. Other sets: the questions last answered right. A question missed the
+// last time never counts. Returns { facts, done, total, pct }, pct rounded down, so 100% means all of it.
+function knownShare(set, seenIds, missedIds) {
+  const right = id => seenIds.has(id) && !missedIds.has(id);
+  const shown = new Set(set.questions.map(q => q.id));
+  const facts = set.facts && typeof set.facts === 'object' && !Array.isArray(set.facts)
+    ? Object.values(set.facts).map(ids => (Array.isArray(ids) ? ids.filter(id => shown.has(id)) : [])).filter(ids => ids.length) : [];
+  const done = facts.length
+    ? facts.filter(ids => ids.filter(right).length >= Math.min(2, ids.length)).length
+    : set.questions.filter(q => right(q.id)).length;
+  const total = facts.length || set.questions.length;
+  return { facts: facts.length > 0, done, total, pct: total ? Math.floor((100 * done) / total) : 0 };
+}
+
+// Practicing several topics together (the owner's request, 2026-11-23), on the start page's and the results page's
+// topic lists: a box on each topic's row, and a button that starts a practice of the ticked topics once two or more
+// are ticked (the usual practice size, split evenly among them: evenTopics). Nothing starts ticked.
+function topicPicker(start) {
+  const ticked = new Set();
+  const button = h('button.btn.btn-accent.pick-start', { type: 'button' });
+  const hint = h('span.pick-hint', 'Tick two or more topics to practice them together.');
+  const paint = () => {
+    button.disabled = ticked.size < 2;
+    fill(button, ticked.size < 2 ? 'Practice the ticked topics' : `Practice ${ticked.size} topics`);
+    hint.hidden = ticked.size >= 2;
+  };
+  button.addEventListener('click', () => ticked.size >= 2 && start([...ticked]));
+  paint();
+  return {
+    box(topic) {
+      const input = h('input.ctl.pick-box', { type: 'checkbox', 'aria-label': `Tick ${topic}` });
+      input.addEventListener('change', () => {
+        if (input.checked) ticked.add(topic);
+        else ticked.delete(topic);
+        paint();
+      });
+      return h('label.pick-label', input);
+    },
+    bar: h('div.pick-bar', button, hint),
+  };
+}
+
 function bestScore(set, past = setHistory(set.id)) {
   const counted = past.filter(a => countsForBest(a, set));
   return counted.length ? Math.max(...counted.map(a => a.percent)) : null;
@@ -854,36 +898,45 @@ async function setupView(root, { args, isCurrent }) {
   const past = setHistory(set.id);
   const best = bestScore(set, past);
 
-  // How far the student has got in this set, from this browser's history (the owner's choice, 2026-11-13).
+  // How much of what's tested the student knows, from every question's latest result on this browser (the owner's
+  // choices, 2026-11-23; until then "You've seen 18 of 50 questions"): a set with the study guide's facts counts the
+  // facts known, and others the questions answered right.
   const seenIds = lastSeen(set);
   const missedIds = lastMissed(set);
   const seenCount = set.questions.filter(q => seenIds.has(q.id)).length;
-  const missedCount = set.questions.filter(q => missedIds.has(q.id)).length;
+  const known = knownShare(set, seenIds, missedIds);
   const progressBox = seenCount ? h('div.set-progress',
-    h('p.progress-line', h('b', `You've seen ${seenCount} of ${plural(set.questions.length, 'question')}`),
-      missedCount ? ` · ${missedCount} missed the last time you saw ${missedCount === 1 ? 'it' : 'them'}` : ''),
+    h('p.progress-line', h('b', `${known.pct}% ${known.facts ? 'of the study guide known' : 'of the questions answered right'}`),
+      ` · ${known.done} of ${plural(known.total, known.facts ? 'fact' : 'question')}, ${known.total - known.done} to go`),
     h('div.progress-track', {
-      role: 'progressbar', 'aria-label': 'Questions seen', 'aria-valuemin': '0',
-      'aria-valuemax': String(set.questions.length), 'aria-valuenow': String(seenCount),
-    }, h('span.progress-fill', { style: `width: ${Math.round((100 * seenCount) / set.questions.length)}%` }))) : null;
+      role: 'progressbar', 'aria-label': known.facts ? 'Study guide facts known' : 'Questions answered right', 'aria-valuemin': '0',
+      'aria-valuemax': String(known.total), 'aria-valuenow': String(known.done),
+    }, h('span.progress-fill', { style: `width: ${known.pct}%` })),
+    h('p.progress-note', known.facts
+      ? 'A fact counts once you\'ve answered 2 of its questions right (its only question, if it has one). A question you missed the last time doesn\'t count.'
+      : 'A question counts once your last answer to it was right.')) : null;
 
-  // Practice one topic, weakest first (the owner's choice, 2026-11-13): each topic with how the student did on its
-  // questions the last time they saw them, the weakest at the top, then the topics not tried yet.
+  // Practice by topic, weakest first (the owner's choice, 2026-11-13): each topic with how the student did on its
+  // questions the last time they saw them, the weakest at the top, then the topics not tried yet. Each row's Practice
+  // starts that topic; ticking two or more starts them together (the owner's request, 2026-11-23).
   const topicRows = topics.length < 2 ? [] : topics.map(t => {
     const qs = set.questions.filter(q => q.topic === t);
     const seen = qs.filter(q => seenIds.has(q.id)).length;
     return { t, total: qs.length, seen, right: seen - qs.filter(q => missedIds.has(q.id)).length };
   }).sort((a, b) => (a.seen ? a.right / a.seen : 2) - (b.seen ? b.right / b.seen : 2) || b.seen - a.seen || a.t.localeCompare(b.t));
+  const picker = topicPicker(chosen => go({ ...modeSettings('practice'), topics: chosen, evenTopics: true }, 'practice'));
   const topicBox = topicRows.length ? h('section.topic-practice', { 'aria-labelledby': 'topic-practice-title' },
-    h('h2.section-title#topic-practice-title', 'Practice one topic'),
-    h('p.topic-note', seenCount ? 'Your weakest topics come first, by your latest answer to each question.' : 'Practice just the questions on one topic.'),
+    h('h2.section-title#topic-practice-title', 'Practice by topic'),
+    h('p.topic-note', seenCount ? 'Your weakest topics come first, by your latest answer to each question.' : 'Practice just the questions on one topic, or tick a few to practice them together.'),
     h('ul.topic-list', topicRows.map(r => h('li.topic-row',
+      picker.box(r.t),
       h('div.topic-info',
         h('span.topic-name', r.t),
         h('span.topic-score', r.seen ? `${r.right} of ${r.seen} right` : `${plural(r.total, 'question')} · not tried yet`),
         r.seen ? h('span.topic-track', { 'aria-hidden': 'true' }, h('span.topic-fill', { style: `width: ${Math.round((100 * r.right) / r.seen)}%` })) : null),
       h('button.btn.btn-small', { type: 'button', 'aria-label': `Practice ${r.t}`, onclick: () => go({ ...modeSettings('practice'), topics: [r.t] }, 'practice') },
-        'Practice'))))) : null;
+        'Practice')))),
+    picker.bar) : null;
 
   fill(main,
     h('p.crumb', h('a', { href: back }, '← ', course ? [h('span.crumb-code', `${course.code} `), course.name] : 'All question sets')),
@@ -951,14 +1004,21 @@ async function resultsView(root, { isCurrent }) {
   const againLine = !again.length ? null : h('p.again-line', icon('redo'), h('span', again.length === 1
     ? againRight ? "You got the question you'd missed before right this time." : "The question you'd missed before is still one to work on."
     : `You got ${againRight} of the ${again.length} questions you'd missed before right this time.`));
-  // Practice a topic from its row (the owner's choice, 2026-11-13).
-  const practiceTopic = set ? topic => (set.questions.some(q => q.topic === topic)
+  // Practice a topic from its row (the owner's choice, 2026-11-13), or tick a few rows to practice them together
+  // (the owner's request, 2026-11-23).
+  const inSet = topic => !!set?.questions.some(q => q.topic === topic);
+  const practiceTopic = set ? topic => (inSet(topic)
     ? h('button.btn.btn-small', {
         type: 'button', 'aria-label': `Practice ${topic}`,
         onclick: () => begin(set, { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', topics: [topic], count: practiceCount(set) },
           () => track('practice-topic', { set: set.id, class: set.course ?? 'other', from: 'results' })),
       }, 'Practice')
     : null) : null;
+  const topicGroups = groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0]));
+  const picker = set && topicGroups.filter(([topic]) => inSet(topic)).length >= 2
+    ? topicPicker(chosen => begin(set, { ...DEFAULT_SETTINGS, ...PRESETS.practice, preset: 'practice', topics: chosen, evenTopics: true, count: practiceCount(set) },
+      () => track('practice-topics', { set: set.id, class: set.course ?? 'other', from: 'results', topics: chosen.length })))
+    : null;
 
   fill(main,
     h('h1.page-title', 'Exam Results'),
@@ -987,7 +1047,7 @@ async function resultsView(root, { isCurrent }) {
       set ? h('a.btn', { href: `#/setup/${encodeURIComponent(set.id)}` }, 'Retake this set') : null,
       savedLink(),
       h('a.btn', { href: '#/' }, 'Home')),
-    perfTable('Performance by topic', 'Topic', groupBy(r.items, i => i.topic).sort((a, b) => a[0].localeCompare(b[0])), practiceTopic),
+    perfTable('Performance by topic', 'Topic', topicGroups, practiceTopic, picker && { box: topic => (inSet(topic) ? picker.box(topic) : null), bar: picker.bar }),
     perfTable('Performance by question type', 'Question type', byType),
     h('p.note.note-phone', 'Next-generation (NGN) questions, such as matrix, drop-down, highlight, and bow tie, can earn partial credit, so your score is the points you earned out of the points possible.'));
 }
@@ -1006,9 +1066,11 @@ function groupBy(items, keyOf) {
 }
 
 // action: a button for a row (Practice, on the topics), or null.
-function perfTable(title, firstHeader, rows, action = null) {
+// pick: { box(name), bar }, a box on each row for practicing several topics together (topicPicker), or null.
+function perfTable(title, firstHeader, rows, action = null, pick = null) {
   return h('section.perf-section',
     h('h2.section-title', title),
+    pick ? h('p.topic-note', 'Tick two or more topics to practice them together, or use a topic\'s own Practice.') : null,
     h('div.table-scroll', h('table.perf',
       h('thead', h('tr',
         h('th', { scope: 'col' }, firstHeader),
@@ -1018,15 +1080,17 @@ function perfTable(title, firstHeader, rows, action = null) {
         action ? h('td.act-cell') : null)),
       h('tbody', rows.map(([name, g]) => {
         const pct = g.max ? Math.round((g.earned / g.max) * 100) : 0;
+        const box = pick?.box(name);
         return h('tr',
-          h('th', { scope: 'row' }, name),
+          h('th', { scope: 'row' }, box ? h('span.pick-name', box, h('span', name)) : name),
           h('td.num.q-col', g.questions),
           h('td.num', `${g.earned} / ${g.max}`),
           h('td.bar-cell', h('div.bar',
             h('span.bar-track', { 'aria-hidden': 'true' }, h('span.bar-fill', { style: `width: ${pct}%` })),
             h('span.bar-pct', `${pct}%`))),
           action ? h('td.act-cell', action(name)) : null);
-      })))));
+      })))),
+    pick?.bar ?? null);
 }
 
 // ---------- saved questions (SPEC 11.7) ----------

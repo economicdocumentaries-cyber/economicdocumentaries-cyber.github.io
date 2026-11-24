@@ -433,16 +433,19 @@ function hotspotUI(q, ctx) {
 }
 
 // Matrix: one radio per row (single) or checkboxes per row (multiple).
+// The rows come in the attempt's order (ctx.layout.rows, shuffled like answer choices since 2026-11-23, the owner's
+// request: rows written in the columns' order gave the answers away); answers stay by each row's place in the file.
 function matrixUI(q, ctx) {
-  const { response, review = false, labelledBy, onChange } = ctx;
+  const { response, layout, review = false, labelledBy, onChange } = ctx;
   const locked = ctx.locked || review;
   const multiple = !!q.multiple;
   const p = ctx.idPrefix ?? '';
   const value = q.rows.map((_, r) => (multiple ? [...(response?.[r] ?? [])] : response?.[r] ?? null));
+  const order = Array.isArray(layout?.rows) && layout.rows.length === q.rows.length ? layout.rows : range(q.rows.length);
   const head = h('thead', h('tr',
     h('th.row-head', { scope: 'col' }, q.rowHeader ?? ''),
     q.columns.map((col, c) => h('th', { scope: 'col', id: `${p}mx-col-${c}`, html: col }))));
-  const body = h('tbody', q.rows.map((row, r) => h('tr',
+  const body = h('tbody', order.map(r => [r, q.rows[r]]).map(([r, row]) => h('tr',
     h('th', { scope: 'row', id: `${p}mx-row-${r}`, html: row }),
     q.columns.map((_, c) => {
       const mine = multiple ? value[r].includes(c) : value[r] === c;
@@ -910,6 +913,8 @@ const TYPES = {
       return problems;
     },
     render: matrixUI,
+    // The rows in a new order each attempt, when answer choices are shuffled (the owner's request, 2026-11-23).
+    prepare: (q, o) => ({ rows: displayOrder(q.rows.length, o.shuffle, o.random) }),
     answered: (q, r) => Array.isArray(r) && q.rows.every((_, i) => (q.multiple ? r[i]?.length > 0 : Number.isInteger(r[i]))),
     // Single: 1 point per row. Multiple: +/- per row, never below 0.
     score(q, r) {
