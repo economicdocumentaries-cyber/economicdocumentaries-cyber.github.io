@@ -261,16 +261,6 @@ function homeLists(group, noSets) {
 
 // ---------- the next exam first (SPEC 11.11, the owner's choice of landing page, 2026-11-05) ----------
 
-// "Exam 4 · Tuesday, Nov 17", and the days until then (null without a date).
-function examWhen(exam) {
-  if (!exam.date) return { title: exam.exam, days: null };
-  const [y, m, d] = exam.date.split('-').map(Number);
-  const day = new Date(y, m - 1, d);
-  const now = new Date();
-  const days = Math.round((day - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
-  return { title: `${exam.exam} · ${day.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}`, days };
-}
-
 // A topic set as a card (SPEC 11.11): its week or class, from the start of its description ("Week 11: …",
 // "Class 17 practice: …"), as a tag above the title, and the rest of the description below it.
 function topicCard(set) {
@@ -284,7 +274,7 @@ function topicCard(set) {
   return row;
 }
 
-// The next exam first: a card with its date and the ways to study for it, its
+// The next exam first: a card with the ways to study for it, its
 // topic sets, and its study guides; earlier exams fold away below. The host's
 // order (SPEC 11.4) holds within each part.
 function examLists(group, next) {
@@ -294,7 +284,6 @@ function examLists(group, next) {
   const practice = current.find(s => /practice-exam|mock-exam/i.test(s.id)) ?? null;
   const topics = current.filter(s => s !== practice);
   const earlierSets = sets.filter(s => !sameExam(s.exam, next.exam));
-  const when = examWhen(next);
   const goTo = target => () => {
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     target.querySelector('h2')?.focus({ preventScroll: true });
@@ -316,15 +305,12 @@ function examLists(group, next) {
   const guidesButton = h('button.btn', { type: 'button', onclick: goTo(guidesBox) }, guidesLabel, arrow('↓'));
   const topicButton = h(`button.btn${practice ? '' : '.btn-accent'}`, { type: 'button', onclick: goTo(topicsBox) },
     h('span', 'Practice one topic'), arrow('↓'));
-  const days = when.days == null ? null
-    : when.days === 0 ? h('p.next-days', h('b', 'Today'))
-    : when.days === 1 ? h('p.next-days', h('b', 'Tomorrow'))
-    : h('p.next-days', h('b', String(when.days)), ' days to go');
   const hero = h('section.next-exam', { 'aria-labelledby': `next-${key}` },
     h('div.next-main',
       h('p.next-eyebrow', 'Up next'),
-      h('h2.next-title', { id: `next-${key}` }, when.title),
-      days,
+      // The exam's name only: no day or days to go, since the class's sections write it on different days (the
+      // owner's request, 2026-11-24). Its date in sets/courses.json still says when it stops being next.
+      h('h2.next-title', { id: `next-${key}` }, next.exam),
       next.covers ? h('p.next-covers', next.covers) : null),
     h('div.next-actions', practice
       ? [h('a.btn.btn-accent', { href: `#/setup/${encodeURIComponent(practice.id)}` }, h('span', `Take the ${next.exam} practice exam`), arrow('→')),

@@ -1378,8 +1378,6 @@ textarea.text-input { min-height: 84px; resize: vertical; }
   background: linear-gradient(135deg, #EAF5FC, #F7FBFE); border: 1px solid #CFE6F4; border-radius: 10px; }
 .next-eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-deep); }
 .next-title { margin: 4px 0 6px; font: 700 27px/1.2 var(--slab); color: var(--ink); }
-.next-days { margin: 0 0 6px; font-weight: 600; color: var(--ink); }
-.next-days b { margin-right: 2px; font: 700 26px/1.1 var(--slab); }
 .next-covers { margin: 0; }
 .next-actions { display: grid; gap: 10px; align-content: center; }
 .next-actions .btn { width: 100%; min-height: 46px; font-size: 13px; }
